@@ -1625,34 +1625,34 @@ might be different for each timezonedb release, and should not be relied upon.
 It is strongly recommended to avoid timezone abbreviations.
 </simpara>'>
 
-<!ENTITY date.timezone.errors.description '<para xmlns="http://docbook.org/ns/docbook">
+<!ENTITY date.timezone.errors.description '<simpara xmlns="http://docbook.org/ns/docbook">
 Every call to a date/time function will generate a <constant>E_WARNING</constant>
-if the time zone is not valid. See also <function>date_default_timezone_set</function></para>'>
+if the time zone is not valid. See also <function>date_default_timezone_set</function></simpara>'>
 
 <!ENTITY date.timezone.errors.changelog '<row xmlns="http://docbook.org/ns/docbook"><entry>5.1.0</entry><entry><para>
 Now issues the <constant>E_STRICT</constant> and <constant>E_NOTICE</constant>
 time zone errors.</para></entry></row>'>
 
 <!ENTITY date.timestamp.description '
-<varlistentry xmlns="http://docbook.org/ns/docbook"><term><parameter>timestamp</parameter></term><listitem><para>
+<varlistentry xmlns="http://docbook.org/ns/docbook"><term><parameter>timestamp</parameter></term><listitem><simpara>
 The optional <parameter>timestamp</parameter> parameter is an
 <type>int</type> Unix timestamp that defaults to the current
 local time if <parameter>timestamp</parameter> is omitted or &null;. In other
 words, it defaults to the value of <function>time</function>.
-</para></listitem></varlistentry>'>
+</simpara></listitem></varlistentry>'>
 
 <!ENTITY date.datetime.description '<varlistentry xmlns="http://docbook.org/ns/docbook"><term><parameter>object</parameter></term>
-<listitem><para>Procedural style only: A <classname>DateTime</classname> object
-returned by <function>date_create</function></para></listitem></varlistentry>'>
+<listitem><simpara>Procedural style only: A <classname>DateTime</classname> object
+returned by <function>date_create</function></simpara></listitem></varlistentry>'>
 
 <!ENTITY date.datetime.description.modified '<varlistentry xmlns="http://docbook.org/ns/docbook"><term><parameter>object</parameter></term>
-<listitem><para>Procedural style only: A <classname>DateTime</classname> object
+<listitem><simpara>Procedural style only: A <classname>DateTime</classname> object
 returned by <function>date_create</function>.
-The function modifies this object.</para></listitem></varlistentry>'>
+The function modifies this object.</simpara></listitem></varlistentry>'>
 
 <!ENTITY date.datetimezone.description '<varlistentry xmlns="http://docbook.org/ns/docbook"><term>
-<parameter>object</parameter></term><listitem><para>Procedural style only: A <classname>DateTimeZone</classname> object
-returned by <function>timezone_open</function></para></listitem></varlistentry>'>
+<parameter>object</parameter></term><listitem><simpara>Procedural style only: A <classname>DateTimeZone</classname> object
+returned by <function>timezone_open</function></simpara></listitem></varlistentry>'>
 
 <!ENTITY date.datetime.return.modifiedobjectorfalseforfailure 'Returns the modified <classname xmlns="http://docbook.org/ns/docbook">DateTime</classname> object for method chaining&return.falseforfailure;.'>
 <!ENTITY date.datetime.return.modifiedobject 'Returns the modified <classname xmlns="http://docbook.org/ns/docbook">DateTime</classname> object for method chaining.'>
@@ -1681,15 +1681,15 @@ returned by <function>timezone_open</function></para></listitem></varlistentry>'
 <!ENTITY dom.node.inserted 'This node will not show up in the document unless
 it is inserted with (e.g.) <function xmlns="http://docbook.org/ns/docbook">DOMNode::appendChild</function>.'>
 
-<!ENTITY dom.malformederror '<para xmlns="http://docbook.org/ns/docbook">While malformed HTML should load successfully, this function may generate <constant>E_WARNING</constant> errors when it encounters bad markup. <link linkend="function.libxml-use-internal-errors">libxml&apos;s error handling functions</link> may be used to handle these errors.</para>'>
-<!ENTITY dom.note.utf8 '<note xmlns="http://docbook.org/ns/docbook"><para>The DOM extension uses UTF-8 encoding. Use <function>mb_convert_encoding</function>, <methodname>UConverter::transcode</methodname>, or <function>iconv</function> to handle other encodings.</para></note>'>
+<!ENTITY dom.malformederror '<simpara xmlns="http://docbook.org/ns/docbook">While malformed HTML should load successfully, this function may generate <constant>E_WARNING</constant> errors when it encounters bad markup. <link linkend="function.libxml-use-internal-errors">libxml&apos;s error handling functions</link> may be used to handle these errors.</simpara>'>
+<!ENTITY dom.note.utf8 '<note xmlns="http://docbook.org/ns/docbook"><simpara>The DOM extension uses UTF-8 encoding. Use <function>mb_convert_encoding</function>, <methodname>UConverter::transcode</methodname>, or <function>iconv</function> to handle other encodings.</simpara></note>'>
 <!ENTITY dom.note.modern.utf8 '<note xmlns="http://docbook.org/ns/docbook">
  <simpara>
   The DOM extension uses UTF-8 encoding when working with methods or properties.
   The parser methods auto-detect the encoding or allow the caller to specify an encoding.
  </simpara>
 </note>'>
-<!ENTITY dom.note.json '<note xmlns="http://docbook.org/ns/docbook"><para>When using <function>json_encode</function> on a <classname>DOMDocument</classname> object the result will be that of encoding an empty object.</para></note>'>
+<!ENTITY dom.note.json '<note xmlns="http://docbook.org/ns/docbook"><simpara>When using <function>json_encode</function> on a <classname>DOMDocument</classname> object the result will be that of encoding an empty object.</simpara></note>'>
 <!ENTITY dom.domdocument.html5 '<warning xmlns="http://docbook.org/ns/docbook">
  <simpara>
   Use <classname>Dom\HTMLDocument</classname> to parse and process modern HTML
@@ -1743,7 +1743,7 @@ it is inserted with (e.g.) <function xmlns="http://docbook.org/ns/docbook">DOMNo
 
 
 <!-- Dom Examples -->
-<!ENTITY dom.book.example '<para xmlns="http://docbook.org/ns/docbook">The following examples use <filename>book.xml</filename> which contains the following:</para>
+<!ENTITY dom.book.example '<simpara xmlns="http://docbook.org/ns/docbook">The following examples use <filename>book.xml</filename> which contains the following:</simpara>
 <programlisting role="xml" xmlns="http://docbook.org/ns/docbook">
 <!-- Warning: The CDATA markup here is a little tricky. Please DO NOT BREAK it! -->
 <![CDATA[
@@ -1777,10 +1777,10 @@ it is inserted with (e.g.) <function xmlns="http://docbook.org/ns/docbook">DOMNo
 ]]></programlisting>'>
 
 <!-- Dom entities -->
-<!ENTITY dom.parameter.options '<para xmlns="http://docbook.org/ns/docbook">
+<!ENTITY dom.parameter.options '<simpara xmlns="http://docbook.org/ns/docbook">
   <link linkend="language.operators.bitwise">Bitwise <literal>OR</literal></link>
   of the <link linkend="libxml.constants">libxml option constants</link>.
-</para>'>
+</simpara>'>
 
 <!ENTITY dom.parameter.compliant.options '&dom.parameter.options;
  <simpara xmlns="http://docbook.org/ns/docbook">
@@ -1807,11 +1807,11 @@ it is inserted with (e.g.) <function xmlns="http://docbook.org/ns/docbook">DOMNo
 <!ENTITY dom.parameters.register_node_ns '<varlistentry xmlns="http://docbook.org/ns/docbook">
  <term><parameter>registerNodeNS</parameter></term>
  <listitem>
-  <para>
+  <simpara>
    Whether to automatically register the in-scope namespace prefixes of the context node to the <classname>DOMXPath</classname> object.
    This can be used to avoid needing to call <methodname>DOMXPath::registerNamespace</methodname> manually for each in-scope namespaces.
    When a namespace prefix conflict exists, only the nearest descendant namespace prefix is registered.
-  </para>
+  </simpara>
  </listitem>
 </varlistentry>'>
 
@@ -1826,32 +1826,32 @@ it is inserted with (e.g.) <function xmlns="http://docbook.org/ns/docbook">DOMNo
 <!ENTITY dom.errors.hierarchy.parent '<varlistentry xmlns="http://docbook.org/ns/docbook">
  <term><constant>DOM_HIERARCHY_REQUEST_ERR</constant></term>
   <listitem>
-  <para>
+  <simpara>
     Raised if the parent is of a type that does not allow children of the
     type of one of the passed <parameter>nodes</parameter>, or if the node to
     put in is one of this node&#39;s ancestors or this node itself.
-  </para>
+  </simpara>
  </listitem>
 </varlistentry>'>
 
 <!ENTITY dom.errors.hierarchy.self '<varlistentry xmlns="http://docbook.org/ns/docbook">
  <term><constant>DOM_HIERARCHY_REQUEST_ERR</constant></term>
   <listitem>
-  <para>
+  <simpara>
     Raised if this node is of a type that does not allow children of the
     type of one of the passed <parameter>nodes</parameter>, or if the node to
     put in is one of this node&#39;s ancestors or this node itself.
-  </para>
+  </simpara>
  </listitem>
 </varlistentry>'>
 
 <!ENTITY dom.errors.wrong_document '<varlistentry xmlns="http://docbook.org/ns/docbook">
  <term><constant>DOM_WRONG_DOCUMENT_ERR</constant></term>
   <listitem>
-  <para>
+  <simpara>
     Raised if one of the passed <parameter>nodes</parameter> was created from a different
     document than the one that created this node.
-  </para>
+  </simpara>
  </listitem>
 </varlistentry>'>
 
@@ -1900,17 +1900,17 @@ it is inserted with (e.g.) <function xmlns="http://docbook.org/ns/docbook">DOMNo
  </listitem>'>
 
 <!-- FileSystem entities -->
-<!ENTITY fs.emits.warning.on.failure '<para xmlns="http://docbook.org/ns/docbook">
+<!ENTITY fs.emits.warning.on.failure '<simpara xmlns="http://docbook.org/ns/docbook">
 Upon failure, an <constant>E_WARNING</constant> is emitted.
-</para>'>
+</simpara>'>
 
-<!ENTITY fs.validfp.all '<para xmlns="http://docbook.org/ns/docbook">The file pointer must be valid, and must point to
+<!ENTITY fs.validfp.all '<simpara xmlns="http://docbook.org/ns/docbook">The file pointer must be valid, and must point to
 a file successfully opened by <function>fopen</function> or
 <function>fsockopen</function> (and not yet closed by
-<function>fclose</function>).</para>'>
+<function>fclose</function>).</simpara>'>
 
-<!ENTITY fs.file.pointer '<para xmlns="http://docbook.org/ns/docbook">A file system pointer <type>resource</type>
-that is typically created using <function>fopen</function>.</para>'>
+<!ENTITY fs.file.pointer '<simpara xmlns="http://docbook.org/ns/docbook">A file system pointer <type>resource</type>
+that is typically created using <function>fopen</function>.</simpara>'>
 
 <!ENTITY fs.file.32bit '<note xmlns="http://docbook.org/ns/docbook"><simpara>
     Because PHP&apos;s integer type is signed and many platforms use 32bit integers,
@@ -1918,27 +1918,27 @@ that is typically created using <function>fopen</function>.</para>'>
     are larger than 2GB.
    </simpara></note>'>
 
-<!ENTITY ini.scanner.typed '<para xmlns="http://docbook.org/ns/docbook">
+<!ENTITY ini.scanner.typed '<simpara xmlns="http://docbook.org/ns/docbook">
     As of PHP 5.6.1 can also be specified as <constant>INI_SCANNER_TYPED</constant>.
     In this mode boolean, null and integer types are preserved when possible.
     String values <literal>"true"</literal>, <literal>"on"</literal> and <literal>"yes"</literal>
     are converted to &true;. <literal>"false"</literal>, <literal>"off"</literal>, <literal>"no"</literal>
     and <literal>"none"</literal> are considered &false;. <literal>"null"</literal> is converted to &null;
     in typed mode. Also, all numeric strings are converted to integer type if it is possible.
-   </para>'>
+   </simpara>'>
 
 <!-- GNUPG -->
-<!ENTITY gnupg.identifier '<para xmlns="http://docbook.org/ns/docbook">The gnupg identifier, from a call to
-<function>gnupg_init</function> or <classname>gnupg</classname>.</para>'>
+<!ENTITY gnupg.identifier '<simpara xmlns="http://docbook.org/ns/docbook">The gnupg identifier, from a call to
+<function>gnupg_init</function> or <classname>gnupg</classname>.</simpara>'>
 
-<!ENTITY gnupg.fingerprint '<para xmlns="http://docbook.org/ns/docbook">The fingerprint key.</para>'>
+<!ENTITY gnupg.fingerprint '<simpara xmlns="http://docbook.org/ns/docbook">The fingerprint key.</simpara>'>
 
 <!-- HaruDoc -->
-<!ENTITY haru.error '<para xmlns="http://docbook.org/ns/docbook">Throws a <classname>HaruException</classname> on error.</para>'>
+<!ENTITY haru.error '<simpara xmlns="http://docbook.org/ns/docbook">Throws a <classname>HaruException</classname> on error.</simpara>'>
 
 <!-- ODBC -->
-<!ENTITY odbc.connection.id '<para xmlns="http://docbook.org/ns/docbook">The ODBC connection object,
-see <function>odbc_connect</function> for details.</para>'>
+<!ENTITY odbc.connection.id '<simpara xmlns="http://docbook.org/ns/docbook">The ODBC connection object,
+see <function>odbc_connect</function> for details.</simpara>'>
 
 <!ENTITY odbc.result.object 'The ODBC result object'>
 
@@ -2022,20 +2022,20 @@ error if the callback function cannot be called, or was not specified.'>
 <!ENTITY oauth.changelog.error.null 'Previously returned &null; on failure, instead of &false;.'>
 
 <!-- Oracle -->
-<!ENTITY oci.db "<para xmlns='http://docbook.org/ns/docbook' xmlns:xlink='http://www.w3.org/1999/xlink'>Contains
+<!ENTITY oci.db "<simpara xmlns='http://docbook.org/ns/docbook' xmlns:xlink='http://www.w3.org/1999/xlink'>Contains
 the <literal>Oracle instance</literal> to connect to. It can be
 an <link xlink:href='&url.oracle.oic.connect;'>Easy Connect
 string</link>, or a Connect Name from
 the <filename>tnsnames.ora</filename> file, or the name of a local
 Oracle instance.
-</para>
-<para xmlns='http://docbook.org/ns/docbook'>If not specified or &null;, PHP uses
+</simpara>
+<simpara xmlns='http://docbook.org/ns/docbook'>If not specified or &null;, PHP uses
 environment variables such as <constant>TWO_TASK</constant> (on Linux)
 or <constant>LOCAL</constant> (on Windows)
 and <constant>ORACLE_SID</constant> to determine the
 <literal>Oracle instance</literal> to connect to.
-</para>
-<para xmlns='http://docbook.org/ns/docbook'>
+</simpara>
+<simpara xmlns='http://docbook.org/ns/docbook'>
 To use the Easy Connect naming method, PHP must be linked with Oracle
 10<emphasis>g</emphasis> or greater Client libraries. The Easy Connect string for Oracle
 10<emphasis>g</emphasis> is of the form:
@@ -2046,32 +2046,32 @@ Further options were introduced with Oracle 19c, including timeout and keep-aliv
 settings.  Refer to Oracle documentation.  Service names can be found by running
 the Oracle utility <literal>lsnrctl status</literal> on the database server
 machine.
-</para>
-<para xmlns='http://docbook.org/ns/docbook'>
+</simpara>
+<simpara xmlns='http://docbook.org/ns/docbook'>
 The <filename>tnsnames.ora</filename> file can be in the Oracle Net search path,
 which
 includes <filename>/your/path/to/instantclient/network/admin</filename>, <filename>$ORACLE_HOME/network/admin</filename>
 and <filename>/etc</filename>.  Alternatively set <literal>TNS_ADMIN</literal>
 so that <filename>$TNS_ADMIN/tnsnames.ora</filename> is read.  Make sure the web
 daemon has read access to the file.
-</para>">
+</simpara>">
 
-<!ENTITY oci.charset "<para xmlns='http://docbook.org/ns/docbook'>Determines
+<!ENTITY oci.charset "<simpara xmlns='http://docbook.org/ns/docbook'>Determines
 the character set used by the Oracle Client libraries.  The character
 set does not need to match the character set used by the database.  If
 it doesn't match, Oracle will do its best to convert data to and from
 the database character set.  Depending on the character sets this may
 not give usable results.  Conversion also adds some time overhead.
-</para>
-<para xmlns='http://docbook.org/ns/docbook'>If not specified, the
+</simpara>
+<simpara xmlns='http://docbook.org/ns/docbook'>If not specified, the
 Oracle Client libraries determine a character set from
 the <constant>NLS_LANG</constant> environment variable.
-</para>
-<para xmlns='http://docbook.org/ns/docbook'>Passing this parameter can
+</simpara>
+<simpara xmlns='http://docbook.org/ns/docbook'>Passing this parameter can
 reduce the time taken to connect.
-</para>">
+</simpara>">
 
-<!ENTITY oci.sessionmode '<para xmlns="http://docbook.org/ns/docbook">This
+<!ENTITY oci.sessionmode '<simpara xmlns="http://docbook.org/ns/docbook">This
 parameter is available since version PHP 5 (PECL OCI8 1.1) and accepts the
 following values: <constant>OCI_DEFAULT</constant>,
 <constant>OCI_SYSOPER</constant> and <constant>OCI_SYSDBA</constant>.
@@ -2081,8 +2081,8 @@ to establish privileged connection using external credentials.
 Privileged connections are disabled by default. To enable them you
 need to set <link linkend="ini.oci8.privileged-connect">oci8.privileged_connect</link>
 to <literal>On</literal>.
-</para>
-<para xmlns="http://docbook.org/ns/docbook">
+</simpara>
+<simpara xmlns="http://docbook.org/ns/docbook">
 PHP 5.3 (PECL OCI8 1.3.4) introduced the
 <constant>OCI_CRED_EXT</constant> mode value. This tells Oracle to use
 External or OS authentication, which must be configured in the
@@ -2090,16 +2090,16 @@ database.  The <constant>OCI_CRED_EXT</constant> flag can only be used
 with username of &quot;/&quot; and a empty password.
 <link linkend="ini.oci8.privileged-connect">oci8.privileged_connect</link>
 may be <literal>On</literal> or <literal>Off</literal>.
-</para>
-<para xmlns="http://docbook.org/ns/docbook">
+</simpara>
+<simpara xmlns="http://docbook.org/ns/docbook">
 <constant>OCI_CRED_EXT</constant> may be combined with the
 <constant>OCI_SYSOPER</constant> or
 <constant>OCI_SYSDBA</constant> modes.
-</para>
-<para xmlns="http://docbook.org/ns/docbook">
+</simpara>
+<simpara xmlns="http://docbook.org/ns/docbook">
 <constant>OCI_CRED_EXT</constant> is not supported on Windows for
 security reasons.
-</para>'>
+</simpara>'>
 
 <!ENTITY oci.datatypes '<para xmlns="http://docbook.org/ns/docbook">For details on the data type mapping performed by
 the OCI8 extension, see the <link linkend="oci8.datatypes">datatypes
