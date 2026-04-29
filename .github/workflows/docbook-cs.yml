@@ -93,19 +93,43 @@ jobs:
         working-directory: "${{ matrix.language }}"
         run: |
           php -r '
-            if (!file_exists("docbook-report.xml")) exit(0);
+            if (!file_exists("docbook-report.xml")) {
+              echo "No report found.\n";
+              exit(0);
+            }
+
             $xml = simplexml_load_file("docbook-report.xml");
-            $hasErrors = false;
+
+            $errorCount = 0;
+            $warningCount = 0;
+
             foreach ($xml->file as $file) {
               $name = (string)$file["name"];
+
+              echo "::group::File: {$name}\n";
+
               foreach ($file->error as $error) {
-                $hasErrors = true;
                 $line = (string)$error["line"];
-                $msg  = (string)$error["message"];
-                $sev  = (string)$error["severity"];
-                $cmd  = $sev === "error" ? "error" : "warning";
+                $msg = (string)$error["message"];
+                $sev = (string)$error["severity"];
+                $cmd = $sev === "error" ? "error" : "warning";
+
+                if ($sev === "error") {
+                  $errorCount++;
+                } else {
+                  $warningCount++;
+                }
+
+                // Human-readable log
+                echo "[{$sev}] {$name}:{$line} {$msg}\n";
+
+                // GitHub annotation
                 echo "::{$cmd} file={$name},line={$line}::{$msg}\n";
               }
+
+              echo "::endgroup::\n";
             }
-            exit($hasErrors ? 1 : 0);
+
+            echo "\nSummary: {$errorCount} error(s), {$warningCount} warning(s)\n";
+            exit($errorCount > 0 ? 1 : 0);
           '
