@@ -3049,10 +3049,10 @@ paths</simpara></warning>
        <row xmlns="http://docbook.org/ns/docbook">
         <entry>PECL mongodb 2.0.0</entry>
         <entry>
-         <para>
+         <simpara>
           This class no longer implements the
           <interfacename>Serializable</interfacename> interface.
-         </para>
+         </simpara>
         </entry>
        </row>
 '>
@@ -3082,9 +3082,9 @@ paths</simpara></warning>
        <row xmlns="http://docbook.org/ns/docbook">
         <entry>PECL mongodb 2.0.0</entry>
         <entry>
-         <para>
+         <simpara>
           This method now throws an exception when called for an unacknowledged write instead of returning &null;.
-         </para>
+         </simpara>
         </entry>
        </row>
 '>
@@ -3094,15 +3094,15 @@ paths</simpara></warning>
           <entry>collation</entry>
           <entry><type class="union"><type>array</type><type>object</type></type></entry>
           <entry>
-           <para>
+           <simpara>
             <link xlink:href="&url.mongodb.docs.collation;" xmlns:xlink="http://www.w3.org/1999/xlink">Collation</link> allows users to specify language-specific rules for string comparison, such as rules for lettercase and accent marks. When specifying collation, the <literal>"locale"</literal> field is mandatory; all other collation fields are optional. For descriptions of the fields, see <link xlink:href="&url.mongodb.docs.collation;#collation-document" xmlns:xlink="http://www.w3.org/1999/xlink">Collation Document</link>.
-           </para>
-           <para>
+           </simpara>
+           <simpara>
             If the collation is unspecified but the collection has a default collation, the operation uses the collation specified for the collection. If no collation is specified for the collection or for the operation, MongoDB uses the simple binary comparison used in prior versions for string comparisons.
-           </para>
-           <para>
+           </simpara>
+           <simpara>
             This option is available in MongoDB 3.4+ and will result in an exception at execution time if specified for an older server version.
-           </para>
+           </simpara>
           </entry>
          </row>
 '>
@@ -3111,12 +3111,12 @@ paths</simpara></warning>
           <entry>let</entry>
           <entry><type class="union"><type>array</type><type>object</type></type></entry>
           <entry>
-           <para>
+           <simpara>
             Map of parameter names and values. Values must be constant or closed expressions that do not reference document fields. Parameters can then be accessed as variables in an aggregate expression context (e.g. <literal>$$var</literal>).
-           </para>
-           <para>
+           </simpara>
+           <simpara>
             This option is available in MongoDB 5.0+ and will result in an exception at execution time if specified for an older server version.
-           </para>
+           </simpara>
           </entry>
          </row>
 '>
@@ -3139,18 +3139,18 @@ paths</simpara></warning>
           <entry>kmsProviders</entry>
           <entry><type>array</type></entry>
           <entry>
-           <para>
+           <simpara>
             A document containing the configuration for one or more KMS providers, which are used to encrypt data keys. Supported providers include <literal>"aws"</literal>, <literal>"azure"</literal>, <literal>"gcp"</literal>, <literal>"kmip"</literal>, and <literal>"local"</literal> and at least one must be specified.
-           </para>
-           <para>
+           </simpara>
+           <simpara>
             If an empty document is specified for <literal>"aws"</literal>,
             <literal>"azure"</literal>, or <literal>"gcp"</literal>, the driver
             will attempt to configure the provider using
             <link xlink:href="&url.mongodb.specs;/blob/master/source/client-side-encryption/client-side-encryption.rst#automatic-credentials">Automatic Credentials</link>.
-           </para>
-           <para>
+           </simpara>
+           <simpara>
             The format for <literal>"aws"</literal> is as follows:
-           </para>
+           </simpara>
            <programlisting role="javascript">
 <![CDATA[
 aws: {
@@ -3160,9 +3160,9 @@ aws: {
 }
 ]]>
            </programlisting>
-           <para>
+           <simpara>
             The format for <literal>"azure"</literal> is as follows:
-           </para>
+           </simpara>
            <programlisting role="javascript">
 <![CDATA[
 azure: {
@@ -3173,9 +3173,9 @@ azure: {
 }
 ]]>
            </programlisting>
-           <para>
+           <simpara>
             The format for <literal>"gcp"</literal> is as follows:
-           </para>
+           </simpara>
            <programlisting role="javascript">
 <![CDATA[
 gcp: {
@@ -3185,9 +3185,9 @@ gcp: {
 }
 ]]>
            </programlisting>
-           <para>
+           <simpara>
             The format for <literal>"kmip"</literal> is as follows:
-           </para>
+           </simpara>
            <programlisting role="javascript">
 <![CDATA[
 kmip: {
@@ -3195,9 +3195,9 @@ kmip: {
 }
 ]]>
            </programlisting>
-           <para>
+           <simpara>
             The format for <literal>"local"</literal> is as follows:
-           </para>
+           </simpara>
            <programlisting role="javascript">
 <![CDATA[
 local: {
@@ -3355,9 +3355,9 @@ local: {
           <entry>tlsOptions</entry>
           <entry><type>array</type></entry>
           <entry>
-           <para>
+           <simpara>
             A document containing the TLS configuration for one or more KMS providers. Supported providers include <literal>"aws"</literal>, <literal>"azure"</literal>, <literal>"gcp"</literal>, and <literal>"kmip"</literal>. All providers support the following options:
-           </para>
+           </simpara>
            <programlisting role="javascript">
 <![CDATA[
 <provider>: {
@@ -3376,14 +3376,14 @@ local: {
           <entry>maxCommitTimeMS</entry>
           <entry>integer</entry>
           <entry>
-           <para>
+           <simpara>
             The maximum amount of time in milliseconds to allow a single
             <literal>commitTransaction</literal> command to run.
-           </para>
-           <para>
+           </simpara>
+           <simpara>
             If specified, <literal>maxCommitTimeMS</literal> must be a signed
             32-bit integer greater than or equal to zero.
-           </para>
+           </simpara>
           </entry>
          </row>
 '>
@@ -3392,14 +3392,14 @@ local: {
           <entry>readConcern</entry>
           <entry><classname>MongoDB\Driver\ReadConcern</classname></entry>
           <entry>
-           <para>
+           <simpara>
             A read concern to apply to the operation.
-           </para>
-           <para>
+           </simpara>
+           <simpara>
             This option is available in MongoDB 3.2+ and will result in an
             exception at execution time if specified for an older server
             version.
-           </para>
+           </simpara>
           </entry>
          </row>
 '>
@@ -3408,9 +3408,9 @@ local: {
           <entry>readPreference</entry>
           <entry><classname>MongoDB\Driver\ReadPreference</classname></entry>
           <entry>
-           <para>
+           <simpara>
             A read preference to use for selecting a server for the operation.
-           </para>
+           </simpara>
           </entry>
          </row>
 '>
@@ -3419,15 +3419,15 @@ local: {
           <entry>session</entry>
           <entry><classname>MongoDB\Driver\Session</classname></entry>
           <entry>
-           <para>
+           <simpara>
             A session to associate with the operation.
-           </para>
+           </simpara>
           </entry>
          </row>
 '>
 <!ENTITY mongodb.option.transactionReadWriteConcern '
      <warning xmlns="http://docbook.org/ns/docbook">
-      <para>
+      <simpara>
        If you are using a <literal>"session"</literal> which has a transaction
        in progress, you cannot specify a <literal>"readConcern"</literal> or
        <literal>"writeConcern"</literal> option. This will result in an
@@ -3435,7 +3435,7 @@ local: {
        being thrown. Instead, you should set these two options when you create
        the transaction with
        <methodname>MongoDB\Driver\Session::startTransaction</methodname>.
-      </para>
+      </simpara>
      </warning>
 '>
 <!ENTITY mongodb.option.writeConcern '
@@ -3443,9 +3443,9 @@ local: {
           <entry>writeConcern</entry>
           <entry><classname>MongoDB\Driver\WriteConcern</classname></entry>
           <entry>
-           <para>
+           <simpara>
             A write concern to apply to the operation.
-           </para>
+           </simpara>
           </entry>
          </row>
 '>
@@ -3453,9 +3453,9 @@ local: {
    <varlistentry xmlns="http://docbook.org/ns/docbook">
     <term><parameter>namespace</parameter> (<type>string</type>)</term>
     <listitem>
-     <para>
+     <simpara>
       A fully qualified namespace (e.g. <literal>"databaseName.collectionName"</literal>).
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
 '>
@@ -3463,9 +3463,9 @@ local: {
    <varlistentry xmlns="http://docbook.org/ns/docbook">
     <term><parameter>db</parameter> (<type>string</type>)</term>
     <listitem>
-     <para>
+     <simpara>
       The name of the database on which to execute the command.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
 '>
@@ -3473,9 +3473,9 @@ local: {
    <varlistentry xmlns="http://docbook.org/ns/docbook">
     <term><parameter>bulk</parameter> (<classname>MongoDB\Driver\BulkWrite</classname>)</term>
     <listitem>
-     <para>
+     <simpara>
       The write(s) to execute.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
 '>
@@ -3483,9 +3483,9 @@ local: {
    <varlistentry xmlns="http://docbook.org/ns/docbook">
     <term><parameter>bulk</parameter> (<classname>MongoDB\Driver\BulkWriteCommand</classname>)</term>
     <listitem>
-     <para>
+     <simpara>
       The write(s) to execute.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
 '>
@@ -3493,9 +3493,9 @@ local: {
    <varlistentry xmlns="http://docbook.org/ns/docbook">
     <term><parameter>command</parameter> (<classname>MongoDB\Driver\Command</classname>)</term>
     <listitem>
-     <para>
+     <simpara>
       The command to execute.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
 '>
@@ -3519,11 +3519,11 @@ local: {
           <entry>algorithm</entry>
           <entry><type>string</type></entry>
           <entry>
-           <para>
+           <simpara>
             The encryption algorithm to be used. This option is required.
             Specify one of the following
             <link linkend="mongodb-driver-clientencryption.constants">ClientEncryption constants</link>:
-           </para>
+           </simpara>
            <simplelist>
             <member><constant>MongoDB\Driver\ClientEncryption::AEAD_AES_256_CBC_HMAC_SHA_512_DETERMINISTIC</constant></member>
             <member><constant>MongoDB\Driver\ClientEncryption::AEAD_AES_256_CBC_HMAC_SHA_512_RANDOM</constant></member>
@@ -3537,74 +3537,74 @@ local: {
           <entry>contentionFactor</entry>
           <entry><type>int</type></entry>
           <entry>
-           <para>
+           <simpara>
             The contention factor for evaluating queries with indexed, encrypted
             payloads.
-           </para>
-           <para>
+           </simpara>
+           <simpara>
             This option only applies and may only be specified when
             <literal>algorithm</literal> is
             <constant>MongoDB\Driver\ClientEncryption::ALGORITHM_INDEXED</constant>
             or
             <constant>MongoDB\Driver\ClientEncryption::ALGORITHM_RANGE</constant>.
-           </para>
+           </simpara>
           </entry>
          </row>
          <row>
           <entry>keyAltName</entry>
           <entry><type>string</type></entry>
           <entry>
-           <para>
+           <simpara>
             Identifies a key vault collection document by
             <literal>keyAltName</literal>. This option is mutually exclusive
             with <literal>keyId</literal> and exactly one is required.
-           </para>
+           </simpara>
           </entry>
          </row>
          <row>
           <entry>keyId</entry>
           <entry><classname>MongoDB\BSON\Binary</classname></entry>
           <entry>
-           <para>
+           <simpara>
             Identifies a data key by <literal>_id</literal>. The value is a UUID
             (binary subtype 4). This option is mutually exclusive with
             <literal>keyAltName</literal> and exactly one is required.
-           </para>
+           </simpara>
           </entry>
          </row>
          <row>
           <entry>queryType</entry>
           <entry><type>string</type></entry>
           <entry>
-           <para>
+           <simpara>
             The query type for evaluating queries with indexed, encrypted
             payloads. Specify one of the following
             <link linkend="mongodb-driver-clientencryption.constants">ClientEncryption constants</link>:
-           </para>
+           </simpara>
            <simplelist>
             <member><constant>MongoDB\Driver\ClientEncryption::QUERY_TYPE_EQUALITY</constant></member>
             <member><constant>MongoDB\Driver\ClientEncryption::QUERY_TYPE_RANGE</constant></member>
            </simplelist>
-           <para>
+           <simpara>
             This option only applies and may only be specified when
             <literal>algorithm</literal> is
             <constant>MongoDB\Driver\ClientEncryption::ALGORITHM_INDEXED</constant>
             or <constant>MongoDB\Driver\ClientEncryption::ALGORITHM_RANGE</constant>.
-           </para>
+           </simpara>
           </entry>
          </row>
          <row>
           <entry>rangeOpts</entry>
           <entry><type>array</type></entry>
           <entry>
-           <para>
+           <simpara>
             Index options for a queryable encryption field supporting "range"
             queries. The options below must match the values set in the
             <literal>encryptedFields</literal> of the target collection. For
             double and decimal128 BSON field types, <literal>min</literal>,
             <literal>max</literal>, and <literal>precision</literal> must all be
             set, or all be unset.
-           </para>
+           </simpara>
            <para>
             <table>
              <title>Range index options</title>
@@ -3669,9 +3669,9 @@ local: {
    <varlistentry xmlns="http://docbook.org/ns/docbook">
     <term><parameter>query</parameter> (<classname>MongoDB\Driver\Query</classname>)</term>
     <listitem>
-     <para>
+     <simpara>
       The query to execute.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
 '>
@@ -3679,9 +3679,9 @@ local: {
    <varlistentry xmlns="http://docbook.org/ns/docbook">
     <term><parameter>typeMap</parameter> (<type>array</type>)</term>
     <listitem>
-     <para>
+     <simpara>
       <link linkend="mongodb.persistence.typemaps">Type map configuration</link>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
 '>
@@ -3689,10 +3689,10 @@ local: {
    <varlistentry xmlns="http://docbook.org/ns/docbook">
     <term><parameter>filter</parameter> (<type class="union"><type>array</type><type>object</type></type>)</term>
     <listitem>
-     <para>
+     <simpara>
       The <link xlink:href="&url.mongodb.docs;tutorial/query-documents/" xmlns:xlink="http://www.w3.org/1999/xlink">query predicate</link>.
       An empty predicate will match all documents in the collection.
-     </para>
+     </simpara>
      <note>
       <simpara>
        When evaluating query criteria, MongoDB compares types and values according to its own <link xlink:href="&url.mongodb.docs;reference/bson-type-comparison-order/" xmlns:xlink="http://www.w3.org/1999/xlink">comparison rules for BSON types</link>, which differs from PHP&apos;s <link linkend="types.comparisons">comparison</link> and <link linkend="language.types.type-juggling">type juggling</link> rules. When matching a special BSON type the query criteria should use the respective <link linkend="mongodb.bson">BSON class</link> (e.g. use <classname>MongoDB\BSON\ObjectId</classname> to match an <link xlink:href="&url.mongodb.docs.objectid;" xmlns:xlink="http://www.w3.org/1999/xlink">ObjectId</link>).
@@ -3701,9 +3701,9 @@ local: {
     </listitem>
    </varlistentry>
 '>
-<!ENTITY mongodb.returns.cursor '<para xmlns="http://docbook.org/ns/docbook">Returns <classname>MongoDB\Driver\Cursor</classname> on success.</para>'>
-<!ENTITY mongodb.returns.writeresult '<para xmlns="http://docbook.org/ns/docbook">Returns <classname>MongoDB\Driver\WriteResult</classname> on success.</para>'>
-<!ENTITY mongodb.returns.bulkwritecommandresult '<para xmlns="http://docbook.org/ns/docbook">Returns <classname>MongoDB\Driver\BulkWriteCommandResult</classname> on success.</para>'>
+<!ENTITY mongodb.returns.cursor '<simpara xmlns="http://docbook.org/ns/docbook">Returns <classname>MongoDB\Driver\Cursor</classname> on success.</simpara>'>
+<!ENTITY mongodb.returns.writeresult '<simpara xmlns="http://docbook.org/ns/docbook">Returns <classname>MongoDB\Driver\WriteResult</classname> on success.</simpara>'>
+<!ENTITY mongodb.returns.bulkwritecommandresult '<simpara xmlns="http://docbook.org/ns/docbook">Returns <classname>MongoDB\Driver\BulkWriteCommandResult</classname> on success.</simpara>'>
 <!ENTITY mongodb.throws.std '&mongodb.throws.argumentparsing;&mongodb.throws.connection;&mongodb.throws.authentication;'>
 <!ENTITY mongodb.throws.session-readwriteconcern '<member xmlns="http://docbook.org/ns/docbook">Throws <classname>MongoDB\Driver\Exception\InvalidArgumentException</classname> if the <literal>"session"</literal> option is used with an associated transaction in combination with a <literal>"readConcern"</literal> or <literal>"writeConcern"</literal> option.</member>'>
 <!ENTITY mongodb.throws.session-unacknowledged '<member xmlns="http://docbook.org/ns/docbook">Throws <classname>MongoDB\Driver\Exception\InvalidArgumentException</classname> if the <literal>"session"</literal> option is used in combination with an unacknowledged write concern.</member>'>
