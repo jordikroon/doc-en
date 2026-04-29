@@ -2101,54 +2101,54 @@ may be <literal>On</literal> or <literal>Off</literal>.
 security reasons.
 </simpara>'>
 
-<!ENTITY oci.datatypes '<para xmlns="http://docbook.org/ns/docbook">For details on the data type mapping performed by
+<!ENTITY oci.datatypes '<simpara xmlns="http://docbook.org/ns/docbook">For details on the data type mapping performed by
 the OCI8 extension, see the <link linkend="oci8.datatypes">datatypes
-supported by the driver</link></para>'>
+supported by the driver</link></simpara>'>
 
-<!ENTITY oci.parameter.connection '<para xmlns="http://docbook.org/ns/docbook">An Oracle connection identifier,
+<!ENTITY oci.parameter.connection '<simpara xmlns="http://docbook.org/ns/docbook">An Oracle connection identifier,
 returned by <function>oci_connect</function>, <function>oci_pconnect</function>,
-or <function>oci_new_connect</function>.</para>'>
+or <function>oci_new_connect</function>.</simpara>'>
 
 <!ENTITY oci.availability.note.10g '<note xmlns="http://docbook.org/ns/docbook"><title>Oracle version requirement</title>
-<para>This function is available when PHP is linked with Oracle Database
-libraries from version 10<emphasis>g</emphasis> onwards.</para></note>'>
+<simpara>This function is available when PHP is linked with Oracle Database
+libraries from version 10<emphasis>g</emphasis> onwards.</simpara></note>'>
 
-<!ENTITY oci.clientinfo.tip '<tip xmlns="http://docbook.org/ns/docbook"><title>Performance</title><para>With older versions of
+<!ENTITY oci.clientinfo.tip '<tip xmlns="http://docbook.org/ns/docbook"><title>Performance</title><simpara>With older versions of
 OCI8 or the Oracle Database, the client information can be set using the Oracle
 <literal>DBMS_APPLICATION_INFO</literal> package. This is less efficient than
-using <function>oci_set_client_info</function>.</para></tip>'>
+using <function>oci_set_client_info</function>.</simpara></tip>'>
 
 <!ENTITY oci.roundtrip.caution '<caution xmlns="http://docbook.org/ns/docbook"><title>Round-trip Gotcha</title>
-<para>Some but not all OCI8 functions cause round-trips.  Round-trips to the
+<simpara>Some but not all OCI8 functions cause round-trips.  Round-trips to the
 database may not occur with queries when result caching is enabled.
-</para></caution>'>
+</simpara></caution>'>
 
-<!ENTITY oci.use.setprefetch '<para xmlns="http://docbook.org/ns/docbook">For
+<!ENTITY oci.use.setprefetch '<simpara xmlns="http://docbook.org/ns/docbook">For
 queries returning a large number of rows, performance can be
 significantly improved by
 increasing <link linkend="ini.oci8.default-prefetch">oci8.default_prefetch</link>
 or using <function>oci_set_prefetch</function>.
-</para>'>
+</simpara>'>
 
 
 <!ENTITY oci.arg.statement.id
-"<para xmlns='http://docbook.org/ns/docbook'>A valid OCI8 statement
+"<simpara xmlns='http://docbook.org/ns/docbook'>A valid OCI8 statement
 identifier created by <function>oci_parse</function> and executed
 by <function>oci_execute</function>, or a <literal>REF
-CURSOR</literal> statement identifier.</para>">
+CURSOR</literal> statement identifier.</simpara>">
 
 <!-- PCNTL Notes -->
-<!ENTITY pcntl.parameter.status '<para xmlns="http://docbook.org/ns/docbook">The <parameter>status</parameter>
+<!ENTITY pcntl.parameter.status '<simpara xmlns="http://docbook.org/ns/docbook">The <parameter>status</parameter>
 parameter is the status parameter supplied to a successful
-call to <function>pcntl_waitpid</function>.</para>'>
+call to <function>pcntl_waitpid</function>.</simpara>'>
 
 <!-- PS Notes -->
-<!ENTITY ps.note.visible '<para xmlns="http://docbook.org/ns/docbook">The note will not be visible if the document
+<!ENTITY ps.note.visible '<simpara xmlns="http://docbook.org/ns/docbook">The note will not be visible if the document
 is printed or viewed but it will show up if the document is converted to
-pdf by either Acrobat Distiller™ or Ghostview.</para>'>
+pdf by either Acrobat Distiller™ or Ghostview.</simpara>'>
 
-<!ENTITY note.open-basedir.func '<note xmlns="http://docbook.org/ns/docbook"><para>This function is affected by <link
-linkend="ini.open-basedir">open_basedir</link>.</para></note>'>
+<!ENTITY note.open-basedir.func '<note xmlns="http://docbook.org/ns/docbook"><simpara>This function is affected by <link
+linkend="ini.open-basedir">open_basedir</link>.</simpara></note>'>
 
 
 <!ENTITY note.language-construct '<note xmlns="http://docbook.org/ns/docbook"><simpara>Because this is a
@@ -2158,16 +2158,16 @@ or <link linkend="functions.named-arguments">named arguments</link>.</simpara>
 </note>'>
 
 <!-- Common pieces in partintro-sections -->
-<!ENTITY no.config '<para xmlns="http://docbook.org/ns/docbook">This extension has no configuration directives defined in &php.ini;.</para>'>
-<!ENTITY no.resource '<para xmlns="http://docbook.org/ns/docbook">This extension has no resource types defined.</para>'>
-<!ENTITY no.constants '<para xmlns="http://docbook.org/ns/docbook">This extension has no constants defined.</para>'>
-<!ENTITY no.requirement '<para xmlns="http://docbook.org/ns/docbook">No external libraries are needed to build this extension.</para>'>
-<!ENTITY no.install '<para xmlns="http://docbook.org/ns/docbook">There is no installation needed to use these
-functions; they are part of the PHP core.</para>'>
+<!ENTITY no.config '<simpara xmlns="http://docbook.org/ns/docbook">This extension has no configuration directives defined in &php.ini;.</simpara>'>
+<!ENTITY no.resource '<simpara xmlns="http://docbook.org/ns/docbook">This extension has no resource types defined.</simpara>'>
+<!ENTITY no.constants '<simpara xmlns="http://docbook.org/ns/docbook">This extension has no constants defined.</simpara>'>
+<!ENTITY no.requirement '<simpara xmlns="http://docbook.org/ns/docbook">No external libraries are needed to build this extension.</simpara>'>
+<!ENTITY no.install '<simpara xmlns="http://docbook.org/ns/docbook">There is no installation needed to use these
+functions; they are part of the PHP core.</simpara>'>
 
 <!-- Used in every chapter that has directive descriptions -->
-<!ENTITY ini.descriptions.title '<para xmlns="http://docbook.org/ns/docbook">Here&apos;s a short explanation of
-the configuration directives.</para>'>
+<!ENTITY ini.descriptions.title '<simpara xmlns="http://docbook.org/ns/docbook">Here&apos;s a short explanation of
+the configuration directives.</simpara>'>
 
 <!-- Common pieces for reference part BEGIN-->
 
@@ -2212,14 +2212,14 @@ driver, if your code can run against multiple drivers.</simpara>'>
 
 <!-- PDO errors -->
 
-<!ENTITY pdo.errors '<para xmlns="http://docbook.org/ns/docbook">
+<!ENTITY pdo.errors '<simpara xmlns="http://docbook.org/ns/docbook">
 Emits an error with level <constant>E_WARNING</constant> if the attribute <constant>PDO::ATTR_ERRMODE</constant> is set
 to <constant>PDO::ERRMODE_WARNING</constant>.
-</para>
-<para xmlns="http://docbook.org/ns/docbook">
+</simpara>
+<simpara xmlns="http://docbook.org/ns/docbook">
 Throws a <classname>PDOException</classname> if the attribute <constant>PDO::ATTR_ERRMODE</constant>
 is set to <constant>PDO::ERRMODE_EXCEPTION</constant>.
-</para>'>
+</simpara>'>
 
 <!-- PECL entities -->
 <!ENTITY pecl.moved 'This &link.pecl; extension is not bundled with PHP.'>
@@ -2267,7 +2267,7 @@ repository and is no longer bundled with PHP as of PHP '>
 
 <!-- PGSQL entities -->
 
-<!ENTITY pgsql.parameter.connection '<para xmlns="http://docbook.org/ns/docbook">An <classname>PgSql\Connection</classname> instance.</para>'>
+<!ENTITY pgsql.parameter.connection '<simpara xmlns="http://docbook.org/ns/docbook">An <classname>PgSql\Connection</classname> instance.</simpara>'>
 
 <!ENTITY pgsql.parameter.connection-with-unspecified-default '<para xmlns="http://docbook.org/ns/docbook">An <classname>PgSql\Connection</classname> instance.
 When <parameter>connection</parameter> is unspecified, the default connection is used.
@@ -2281,18 +2281,18 @@ The default connection is the last connection made by <function>pg_connect</func
 or <function>pg_pconnect</function>.
 <warning><simpara>As of PHP 8.1.0, using the default connection is deprecated.</simpara></warning></para>'>
 
-<!ENTITY pgsql.parameter.result '<para xmlns="http://docbook.org/ns/docbook">An <classname>PgSql\Result</classname> instance, returned by <function>pg_query</function>,
-<function>pg_query_params</function> or <function>pg_execute</function>(among others).</para>'>
+<!ENTITY pgsql.parameter.result '<simpara xmlns="http://docbook.org/ns/docbook">An <classname>PgSql\Result</classname> instance, returned by <function>pg_query</function>,
+<function>pg_query_params</function> or <function>pg_execute</function>(among others).</simpara>'>
 
-<!ENTITY pgsql.parameter.lob '<para xmlns="http://docbook.org/ns/docbook">An <classname>PgSql\Lob</classname> instance, returned by <function>pg_lo_open</function>.</para>'>
+<!ENTITY pgsql.parameter.lob '<simpara xmlns="http://docbook.org/ns/docbook">An <classname>PgSql\Lob</classname> instance, returned by <function>pg_lo_open</function>.</simpara>'>
 
-<!ENTITY pgsql.parameter.mode '<para xmlns="http://docbook.org/ns/docbook">
+<!ENTITY pgsql.parameter.mode '<simpara xmlns="http://docbook.org/ns/docbook">
 An optional parameter that controls how the returned <type>array</type> is indexed.
 <parameter>mode</parameter> is a constant and can take the following values:
 <constant>PGSQL_ASSOC</constant>, <constant>PGSQL_NUM</constant> and <constant>PGSQL_BOTH</constant>.
 Using <constant>PGSQL_NUM</constant>, the function will return an array with numerical indices,
 using <constant>PGSQL_ASSOC</constant> it will return only associative indices
-while <constant>PGSQL_BOTH</constant> will return both numerical and associative indices.</para>'>
+while <constant>PGSQL_BOTH</constant> will return both numerical and associative indices.</simpara>'>
 
 <!ENTITY pgsql.changelog.connection-object '<row xmlns="http://docbook.org/ns/docbook">
  <entry>8.1.0</entry>
@@ -2339,17 +2339,17 @@ extensions in order to use these functions.</simpara>'>
 <!ENTITY sqlsafemode '<link xmlns="http://docbook.org/ns/docbook" linkend="ini.sql.safe-mode">SQL safe mode</link>'>
 
 <!-- CTYPE Notes -->
-<!ENTITY note.ctype.parameter.integer '<note xmlns="http://docbook.org/ns/docbook"><para>
+<!ENTITY note.ctype.parameter.integer '<note xmlns="http://docbook.org/ns/docbook"><simpara>
 If an <type>int</type> between -128 and 255 inclusive is provided, it is interpreted as
 the ASCII value of a single character (negative values have 256 added in order to allow
 characters in the Extended ASCII range). Any other integer is interpreted as a string
-containing the decimal digits of the integer.</para></note>'>
+containing the decimal digits of the integer.</simpara></note>'>
 
-<!ENTITY note.ctype.parameter.non-string '<warning xmlns="http://docbook.org/ns/docbook"><para>
+<!ENTITY note.ctype.parameter.non-string '<warning xmlns="http://docbook.org/ns/docbook"><simpara>
 As of PHP 8.1.0, passing a non-string argument is deprecated.
 In the future, the argument will be interpreted as a string instead of an ASCII codepoint.
 Depending on the intended behavior, the argument should either be cast to &string;
-or an explicit call to <function>chr</function> should be made.</para></warning>'>
+or an explicit call to <function>chr</function> should be made.</simpara></warning>'>
 
 <!ENTITY ctype.result.empty-string 'When called with an empty string the result will always be &false;.'>
 
@@ -2361,55 +2361,55 @@ or an explicit call to <function>chr</function> should be made.</para></warning>
   instance now; previously, a &resource; was expected.
  </entry>
 </row>'>
-<!ENTITY ftp.parameter.ftp '<para xmlns="http://docbook.org/ns/docbook">An <classname>FTP\Connection</classname> instance.</para>'>
+<!ENTITY ftp.parameter.ftp '<simpara xmlns="http://docbook.org/ns/docbook">An <classname>FTP\Connection</classname> instance.</simpara>'>
 
 <!-- GMP Notes -->
 <!ENTITY gmp.return 'A <classname xmlns="http://docbook.org/ns/docbook">GMP</classname> object.'>
-<!ENTITY gmp.parameter '<para xmlns="http://docbook.org/ns/docbook">
+<!ENTITY gmp.parameter '<simpara xmlns="http://docbook.org/ns/docbook">
  A <classname>GMP</classname> object, an &integer;,
  or a &string; that can be interpreted as a number following the same logic
  as if the string was used in <function>gmp_init</function> with automatic
  base detection (i.e. when <parameter>base</parameter> is equal to 0).
-</para>'>
+</simpara>'>
 
 <!-- MySQLi Notes -->
 <!ENTITY mysqli.result.description '<varlistentry xmlns="http://docbook.org/ns/docbook"><term>
-<parameter>result</parameter></term><listitem><para>Procedural style only: A <classname>mysqli_result</classname>
+<parameter>result</parameter></term><listitem><simpara>Procedural style only: A <classname>mysqli_result</classname>
 object returned by <function>mysqli_query</function>, <function>mysqli_store_result</function>,
-<function>mysqli_use_result</function> or <function>mysqli_stmt_get_result</function>.</para></listitem></varlistentry>'>
+<function>mysqli_use_result</function> or <function>mysqli_stmt_get_result</function>.</simpara></listitem></varlistentry>'>
 <!ENTITY mysqli.link.description '<varlistentry xmlns="http://docbook.org/ns/docbook"><term>
-<parameter>mysql</parameter></term><listitem><para>Procedural style only: A <classname>mysqli</classname> object
+<parameter>mysql</parameter></term><listitem><simpara>Procedural style only: A <classname>mysqli</classname> object
 returned by <function>mysqli_connect</function> or <function>mysqli_init</function>
-</para></listitem></varlistentry>'>
+</simpara></listitem></varlistentry>'>
 <!ENTITY mysqli.stmt.description '<varlistentry xmlns="http://docbook.org/ns/docbook"><term>
-<parameter>statement</parameter></term><listitem><para>Procedural style only: A <classname>mysqli_stmt</classname> object
-returned by <function>mysqli_stmt_init</function>.</para></listitem></varlistentry>'>
+<parameter>statement</parameter></term><listitem><simpara>Procedural style only: A <classname>mysqli_stmt</classname> object
+returned by <function>mysqli_stmt_init</function>.</simpara></listitem></varlistentry>'>
 <!ENTITY mysqli.available.mysqlnd 'Available only with <link xmlns="http://docbook.org/ns/docbook"
 linkend="book.mysqlnd">mysqlnd</link>.'>
 <!ENTITY mysqli.charset.note '<note xmlns="http://docbook.org/ns/docbook">
-<para>MySQLnd always assumes the server default charset. This charset is sent during connection
-hand-shake/authentication, which mysqlnd will use.</para><para>Libmysqlclient uses the default charset set in the
+<simpara>MySQLnd always assumes the server default charset. This charset is sent during connection
+hand-shake/authentication, which mysqlnd will use.</simpara><simpara>Libmysqlclient uses the default charset set in the
 <filename>my.cnf</filename> or by an explicit call to <function>mysqli_options</function> prior to
-calling <function>mysqli_real_connect</function>, but after <function>mysqli_init</function>.</para></note>'>
+calling <function>mysqli_real_connect</function>, but after <function>mysqli_init</function>.</simpara></note>'>
 <!ENTITY mysqli.integer.overflow.as.string.note '<note xmlns="http://docbook.org/ns/docbook">
-<para>If the number of rows is greater than <constant>PHP_INT_MAX</constant>,
-the number will be returned as a &string;.</para></note>'>
+<simpara>If the number of rows is greater than <constant>PHP_INT_MAX</constant>,
+the number will be returned as a &string;.</simpara></note>'>
 <!ENTITY mysqli.sqlinjection.warning '<warning xmlns="http://docbook.org/ns/docbook">
-<title>Security warning: SQL injection</title><para>If the query contains any variable
+<title>Security warning: SQL injection</title><simpara>If the query contains any variable
 input then <link linkend="mysqli.quickstart.prepared-statements">parameterized
 prepared statements</link> should be used instead. Alternatively, the
 data must be properly formatted and all strings must be escaped using
 the <function>mysqli_real_escape_string</function>
-function.</para></warning>'>
-<!ENTITY mysqli.conditionalexception '<para xmlns="http://docbook.org/ns/docbook">
+function.</simpara></warning>'>
+<!ENTITY mysqli.conditionalexception '<simpara xmlns="http://docbook.org/ns/docbook">
 If mysqli error reporting is enabled (<constant>MYSQLI_REPORT_ERROR</constant>) and the requested operation fails,
 a warning is generated. If, in addition, the mode is set to <constant>MYSQLI_REPORT_STRICT</constant>,
-a <classname>mysqli_sql_exception</classname> is thrown instead.</para>'>
+a <classname>mysqli_sql_exception</classname> is thrown instead.</simpara>'>
 
 <!-- Notes for PCRE -->
-<!ENTITY pcre.pattern.warning '<para xmlns="http://docbook.org/ns/docbook">
+<!ENTITY pcre.pattern.warning '<simpara xmlns="http://docbook.org/ns/docbook">
 If the regex pattern passed does not compile to a valid regex, an <constant>E_WARNING</constant> is emitted.
-</para>'>
+</simpara>'>
 
 <!-- Notes for SAPI/Apache -->
 <!ENTITY apache.req.module '<simpara xmlns="http://docbook.org/ns/docbook">This function is supported when PHP
@@ -2417,9 +2417,9 @@ is installed as an Apache module webserver.
 </simpara>'>
 
 <!-- Notes for SAPI/FPM -->
-<!ENTITY fpm.intro '<para xmlns="http://docbook.org/ns/docbook">FPM (FastCGI Process Manager) is
+<!ENTITY fpm.intro '<simpara xmlns="http://docbook.org/ns/docbook">FPM (FastCGI Process Manager) is
 a primary PHP FastCGI implementation containing some features (mostly) useful for heavy-loaded sites.
-</para>'>
+</simpara>'>
 
 <!-- SimpleXML Notes -->
 <!ENTITY simplexml.iteration '<note xmlns="http://docbook.org/ns/docbook"><simpara>SimpleXML has made a rule of adding
@@ -2427,34 +2427,34 @@ iterative properties to most methods. They cannot be viewed using <function>var_
 or anything else which can examine objects.</simpara></note>'>
 
 <!-- SQLite Notes -->
-<!ENTITY sqlite.case-fold '<para xmlns="http://docbook.org/ns/docbook">The column names returned by
+<!ENTITY sqlite.case-fold '<simpara xmlns="http://docbook.org/ns/docbook">The column names returned by
 <constant>SQLITE_ASSOC</constant> and <constant>SQLITE_BOTH</constant> will be
 case-folded according to the value of the
 <link linkend="ini.sqlite.assoc-case">sqlite.assoc_case</link> configuration
-option.</para>'>
+option.</simpara>'>
 
-<!ENTITY sqlite.decode-bin '<para xmlns="http://docbook.org/ns/docbook">When the <parameter>decode_binary</parameter>
+<!ENTITY sqlite.decode-bin '<simpara xmlns="http://docbook.org/ns/docbook">When the <parameter>decode_binary</parameter>
 parameter is set to &true; (the default), PHP will decode the binary encoding
 it applied to the data if it was encoded using the
 <function>sqlite_escape_string</function>.  You should normally leave this
 value at its default, unless you are interoperating with databases created by
-other sqlite capable applications.</para>'>
+other sqlite capable applications.</simpara>'>
 
-<!ENTITY sqlite.no-unbuffered '<note xmlns="http://docbook.org/ns/docbook"><para>This function cannot be used with
-unbuffered result handles.</para></note>'>
+<!ENTITY sqlite.no-unbuffered '<note xmlns="http://docbook.org/ns/docbook"><simpara>This function cannot be used with
+unbuffered result handles.</simpara></note>'>
 
 <!ENTITY sqlite.param-compat '<note xmlns="http://docbook.org/ns/docbook"><simpara>Two alternative syntaxes are
 supported for compatibility with other database extensions (such as MySQL).
 The preferred form is the first, where the <parameter>dbhandle</parameter>
 parameter is the first parameter to the function.</simpara></note>'>
 
-<!ENTITY sqlite.result-type '<para xmlns="http://docbook.org/ns/docbook">The optional <parameter>result_type</parameter>
+<!ENTITY sqlite.result-type '<simpara xmlns="http://docbook.org/ns/docbook">The optional <parameter>result_type</parameter>
 parameter accepts a constant and determines how the returned array will be
 indexed. Using <constant>SQLITE_ASSOC</constant> will return only associative
 indices (named fields) while <constant>SQLITE_NUM</constant> will return
 only numerical indices (ordinal field numbers). <constant>SQLITE_BOTH</constant>
 will return both associative and numerical indices.
-<constant>SQLITE_BOTH</constant> is the default for this function.</para>'>
+<constant>SQLITE_BOTH</constant> is the default for this function.</simpara>'>
 
 <!-- Database Notes -->
 <!ENTITY database.field-case '<note xmlns="http://docbook.org/ns/docbook"><simpara>Field names returned by this function
@@ -2466,76 +2466,76 @@ the PHP &null; value.</simpara></note>'>
 <!-- MySQL Notes -->
 <!-- The mysql.*.description entities are used in the parameters refsect1 -->
 <!ENTITY mysql.linkid.description '<varlistentry xmlns="http://docbook.org/ns/docbook"><term>
-<parameter>link_identifier</parameter></term><listitem><para>The MySQL connection. If the
+<parameter>link_identifier</parameter></term><listitem><simpara>The MySQL connection. If the
 link identifier is not specified, the last link opened by
 <function>mysql_connect</function> is assumed. If no such link is found, it
 will try to create one as if <function>mysql_connect</function> had been called
 with no arguments. If no connection is found or established, an
-<constant>E_WARNING</constant> level error is generated.</para></listitem>
+<constant>E_WARNING</constant> level error is generated.</simpara></listitem>
 </varlistentry>'>
 
 <!ENTITY mysql.linkid-noreopen.description '<varlistentry
 xmlns="http://docbook.org/ns/docbook"><term>
-<parameter>link_identifier</parameter></term><listitem><para>The MySQL connection. If the
+<parameter>link_identifier</parameter></term><listitem><simpara>The MySQL connection. If the
 link identifier is not specified, the last link opened by
 <function>mysql_connect</function> is assumed. If no connection is found or
 established, an <constant>E_WARNING</constant> level error is
-generated.</para></listitem></varlistentry>'>
+generated.</simpara></listitem></varlistentry>'>
 
 <!ENTITY mysql.result.description '<varlistentry xmlns="http://docbook.org/ns/docbook"><term>
-<parameter>result</parameter></term><listitem><para>The result <type>resource</type> that
+<parameter>result</parameter></term><listitem><simpara>The result <type>resource</type> that
 is being evaluated. This result comes from a call to
-<function>mysql_query</function>.</para></listitem></varlistentry>'>
+<function>mysql_query</function>.</simpara></listitem></varlistentry>'>
 
 <!ENTITY mysql.field-offset.req.description '<varlistentry xmlns="http://docbook.org/ns/docbook"><term>
-<parameter>field_offset</parameter></term><listitem><para>The numerical field offset. The
+<parameter>field_offset</parameter></term><listitem><simpara>The numerical field offset. The
 <parameter>field_offset</parameter> starts at <literal>0</literal>. If
 <parameter>field_offset</parameter> does not exist, an error of level
-<constant>E_WARNING</constant> is also issued.</para></listitem></varlistentry>'>
+<constant>E_WARNING</constant> is also issued.</simpara></listitem></varlistentry>'>
 
-<!ENTITY mysql.alternative.note '<para xmlns="http://docbook.org/ns/docbook">This extension was deprecated in PHP 5.5.0, and it was removed in PHP 7.0.0.
+<!ENTITY mysql.alternative.note '<simpara xmlns="http://docbook.org/ns/docbook">This extension was deprecated in PHP 5.5.0, and it was removed in PHP 7.0.0.
 Instead, the <link linkend="book.mysqli">MySQLi</link> or <link linkend="ref.pdo-mysql">PDO_MySQL</link> extension should be used.
 See also <link linkend="mysqlinfo.api.choosing">MySQL: choosing an API</link> guide.
-Alternatives to this function include:</para>'>
+Alternatives to this function include:</simpara>'>
 
-<!ENTITY mysql.alternative.note.4-3-0 '<para xmlns="http://docbook.org/ns/docbook">This function was deprecated in PHP 4.3.0, and it
+<!ENTITY mysql.alternative.note.4-3-0 '<simpara xmlns="http://docbook.org/ns/docbook">This function was deprecated in PHP 4.3.0, and it
 and the entire <link linkend="book.mysql">original MySQL extension</link> was removed in PHP 7.0.0.
 Instead, use either the actively developed <link linkend="book.mysqli">MySQLi</link> or <link linkend="ref.pdo-mysql">PDO_MySQL</link> extensions.
 See also the <link linkend="mysqlinfo.api.choosing">MySQL: choosing an API</link> guide.
-Alternatives to this function include:</para>'>
+Alternatives to this function include:</simpara>'>
 
-<!ENTITY mysql.alternative.note.5-3-0 '<para xmlns="http://docbook.org/ns/docbook">This function was deprecated in PHP 5.3.0, and it
+<!ENTITY mysql.alternative.note.5-3-0 '<simpara xmlns="http://docbook.org/ns/docbook">This function was deprecated in PHP 5.3.0, and it
 and the entire <link linkend="book.mysql">original MySQL extension</link> was removed in PHP 7.0.0.
 Instead, use either the actively developed <link linkend="book.mysqli">MySQLi</link> or <link linkend="ref.pdo-mysql">PDO_MySQL</link> extensions.
 See also the <link linkend="mysqlinfo.api.choosing">MySQL: choosing an API</link> guide.
-Alternatives to this function include:</para>'>
+Alternatives to this function include:</simpara>'>
 
-<!ENTITY mysql.alternative.note.5-4-0 '<para xmlns="http://docbook.org/ns/docbook">This function was deprecated in PHP 5.4.0, and it
+<!ENTITY mysql.alternative.note.5-4-0 '<simpara xmlns="http://docbook.org/ns/docbook">This function was deprecated in PHP 5.4.0, and it
 and the entire <link linkend="book.mysql">original MySQL extension</link> was removed in PHP 7.0.0.
 Instead, use either the actively developed <link linkend="book.mysqli">MySQLi</link> or <link linkend="ref.pdo-mysql">PDO_MySQL</link> extensions.
 See also the <link linkend="mysqlinfo.api.choosing">MySQL: choosing an API</link> guide.
-Alternatives to this function include:</para>'>
+Alternatives to this function include:</simpara>'>
 
-<!ENTITY mysql.alternative.note.5-5-0 '<para xmlns="http://docbook.org/ns/docbook">This function was deprecated in PHP 5.5.0, and it
+<!ENTITY mysql.alternative.note.5-5-0 '<simpara xmlns="http://docbook.org/ns/docbook">This function was deprecated in PHP 5.5.0, and it
 and the entire <link linkend="book.mysql">original MySQL extension</link> was removed in PHP 7.0.0.
 Instead, use either the actively developed <link linkend="book.mysqli">MySQLi</link> or <link linkend="ref.pdo-mysql">PDO_MySQL</link> extensions.
 See also the <link linkend="mysqlinfo.api.choosing">MySQL: choosing an API</link> guide.
-Alternatives to this function include:</para>'>
+Alternatives to this function include:</simpara>'>
 
-<!ENTITY mysql.close.connections.result.sets '<para xmlns="http://docbook.org/ns/docbook">
+<!ENTITY mysql.close.connections.result.sets '<simpara xmlns="http://docbook.org/ns/docbook">
 Open non-persistent MySQL connections and result sets are automatically destroyed when a
 PHP script finishes its execution. So, while explicitly closing open
 connections and freeing result sets is optional, doing so is recommended.
 This will immediately return resources to PHP and MySQL, which can
 improve performance. For related information, see
-<link linkend="language.types.resource.self-destruct">freeing resources</link></para>'>
+<link linkend="language.types.resource.self-destruct">freeing resources</link></simpara>'>
 
 <!-- Xattr entities -->
-<!ENTITY xattr.namespace '<para xmlns="http://docbook.org/ns/docbook">Extended attributes have two different namespaces: user
+<!ENTITY xattr.namespace '<simpara xmlns="http://docbook.org/ns/docbook">Extended attributes have two different namespaces: user
 and root. The user namespace is available to all users, while the root namespace
 is available only to users with root privileges. xattr operates on the user
 namespace  by default, but this can be changed with the
-<parameter>flags</parameter> parameter.</para>'>
+<parameter>flags</parameter> parameter.</simpara>'>
 
 <!-- Notes for IPv6 -->
 <!ENTITY ipv6.brackets '<note xmlns="http://docbook.org/ns/docbook"><simpara>When specifying a numerical IPv6 address
@@ -2545,12 +2545,12 @@ brackets—for example, <literal>tcp://[fe80::1]:80</literal>.</simpara></note>'
 <!-- Notes for tidy -->
 <!ENTITY tidy.object 'The <classname xmlns="http://docbook.org/ns/docbook">Tidy</classname> object.'>
 
-<!ENTITY tidy.conf-enc '<para xmlns="http://docbook.org/ns/docbook">The <parameter>config</parameter> parameter
+<!ENTITY tidy.conf-enc '<simpara xmlns="http://docbook.org/ns/docbook">The <parameter>config</parameter> parameter
 can be passed either as an array or as a string. If a string is passed,
 it is interpreted as the name of the configuration file, otherwise, it is
 interpreted as the options themselves. Check
 <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="&url.tidy.conf;">&url.tidy.conf;</link>
-for an explanation about each option.</para><para>The
+for an explanation about each option.</simpara><simpara>The
 <parameter>encoding</parameter> parameter sets the encoding for input/output
 documents. The possible values for <parameter>encoding</parameter> are:
 <literal>ascii</literal>, <literal>latin0</literal>, <literal>latin1</literal>,
@@ -2558,22 +2558,22 @@ documents. The possible values for <parameter>encoding</parameter> are:
 <literal>mac</literal>, <literal>win1252</literal>, <literal>ibm858</literal>,
 <literal>utf16</literal>, <literal>utf16le</literal>,
 <literal>utf16be</literal>, <literal>big5</literal> and
-<literal>shiftjis</literal>.</para>'>
+<literal>shiftjis</literal>.</simpara>'>
 
 <!-- Snippets for the installation section -->
-<!ENTITY warn.apache2.compat '<warning xmlns="http://docbook.org/ns/docbook"><para>We do not recommend using a
+<!ENTITY warn.apache2.compat '<warning xmlns="http://docbook.org/ns/docbook"><simpara>We do not recommend using a
 threaded MPM in production with Apache 2. Use the prefork MPM, which is
 the default MPM with Apache 2.0 and 2.2.
 For information on why, read the related FAQ entry on using
-<link linkend="faq.installation.apache2">Apache2 with a threaded MPM</link></para></warning>'>
+<link linkend="faq.installation.apache2">Apache2 with a threaded MPM</link></simpara></warning>'>
 <!ENTITY warn.install.third-party-support '<warning xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
- <para>
+ <simpara>
   Builds from third-parties are considered unofficial and not directly
   supported by the PHP project. Any bugs encountered should be reported to the
   provider of those unofficial builds unless they can be reproduced using the
   builds from <link xlink:href="&url.php.downloads;">the official download
   area</link>.
- </para>
+ </simpara>
 </warning>'>
 
 <!ENTITY note.apache.slashes '<note xmlns="http://docbook.org/ns/docbook"><simpara>Remember that when adding
