@@ -19,16 +19,16 @@ highly discouraged.</simpara></warning>'>
 
 <!-- Cautions -->
 <!ENTITY caution.cryptographically-insecure '<caution xmlns="http://docbook.org/ns/docbook">
- <para>
+ <simpara>
   This function does not generate cryptographically secure values, and <emphasis>must not</emphasis>
   be used for cryptographic purposes, or purposes that require returned values to be unguessable.
- </para>
- <para>
+ </simpara>
+ <simpara>
   If cryptographically secure randomness is required, the <classname>Random\Randomizer</classname> may be
   used with the <classname>Random\Engine\Secure</classname> engine. For simple use cases, the <function>random_int</function>
   and <function>random_bytes</function> functions provide a convenient and secure <acronym>API</acronym> that is backed by
   the operating system’s <acronym>CSPRNG</acronym>.
- </para>
+ </simpara>
 </caution>'>
 
 <!ENTITY caution.mt19937-global-state '<caution xmlns="http://docbook.org/ns/docbook">
@@ -45,25 +45,25 @@ highly discouraged.</simpara></warning>'>
 </caution>'>
 
 <!ENTITY caution.mt19937-tiny-seed '<caution xmlns="http://docbook.org/ns/docbook">
- <para>
+ <simpara>
   Because the Mt19937 (“Mersenne Twister”) engine accepts only a single 32 bit integer as the
   seed, the number of possible random sequences is limited to just 2<superscript>32</superscript>
   (i.e. 4,294,967,296), despite Mt19937’s huge period of 2<superscript>19937</superscript>-1.
- </para>
- <para>
+ </simpara>
+ <simpara>
   When relying on either implicit or explicit random seeding, duplications will appear
   much earlier. Duplicated seeds are expected with 50&#37; probability after less than
   80,000 randomly generated seeds according to the birthday problem. A 10&#37; probability
   of a duplicated seed happens after randomly generating roughly 30,000 seeds.
- </para>
- <para>
+ </simpara>
+ <simpara>
   This makes Mt19937 unsuitable for applications where duplicated sequences must not happen with
   more than a negligible probability. If reproducible seeding is required, both the
   <classname>Random\Engine\Xoshiro256StarStar</classname> and <classname>Random\Engine\PcgOneseq128XslRr64</classname>
   engines support much larger seeds that are unlikely to collide randomly. If reproducibility
   is not required, the <classname>Random\Engine\Secure</classname> engine provides cryptographically
   secure randomness.
- </para>
+ </simpara>
 </caution>'>
 
 <!-- Notes -->
@@ -78,43 +78,43 @@ more details.</simpara></note>'>
 <!ENTITY note.context-support '<para xmlns="http://docbook.org/ns/docbook">A <link linkend="stream.contexts">context stream</link>
 <type>resource</type>.</para>'>
 
-<!ENTITY note.exec-bg '<note xmlns="http://docbook.org/ns/docbook"><para>If a program is started with this function,
+<!ENTITY note.exec-bg '<note xmlns="http://docbook.org/ns/docbook"><simpara>If a program is started with this function,
 in order for it to continue running in the background, the output of the
 program must be redirected to a file or another output stream. Failing to do so
-will cause PHP to hang until the execution of the program ends.</para></note>'>
+will cause PHP to hang until the execution of the program ends.</simpara></note>'>
 
-<!ENTITY note.exec-bypass-shell '<note xmlns="http://docbook.org/ns/docbook"><para>On Windows <function>exec</function>
+<!ENTITY note.exec-bypass-shell '<note xmlns="http://docbook.org/ns/docbook"><simpara>On Windows <function>exec</function>
 will first start cmd.exe to launch the command. If you want to start an external program without starting cmd.exe
-use <function>proc_open</function> with the <parameter>bypass_shell</parameter> option set.</para></note>'>
+use <function>proc_open</function> with the <parameter>bypass_shell</parameter> option set.</simpara></note>'>
 
-<!ENTITY note.extractto-windows '<note xmlns="http://docbook.org/ns/docbook"><para>Windows NTFS file systems
+<!ENTITY note.extractto-windows '<note xmlns="http://docbook.org/ns/docbook"><simpara>Windows NTFS file systems
 do not support some characters in filenames, namely <literal>&lt;|&gt;*?":</literal>. Filenames with a trailing dot
 are not supported either. Contrary to some extraction tools, this method does not replace these characters with
-an underscore, but instead fails to extract such files.</para></note>'>
+an underscore, but instead fails to extract such files.</simpara></note>'>
 
 <!ENTITY note.func-callback '<note xmlns="http://docbook.org/ns/docbook"><simpara>Instead of a function name, an
 array containing an object reference and a method name can also be
 supplied.</simpara></note>'>
 
-<!ENTITY note.func-callback-exceptions '<note xmlns="http://docbook.org/ns/docbook"><para>Callbacks registered
+<!ENTITY note.func-callback-exceptions '<note xmlns="http://docbook.org/ns/docbook"><simpara>Callbacks registered
 with functions such as <function>call_user_func</function> and <function>call_user_func_array</function> will not be
-called if there is an uncaught exception thrown in a previous callback.</para></note>'>
+called if there is an uncaught exception thrown in a previous callback.</simpara></note>'>
 
-<!ENTITY note.funcbyref '<note xmlns="http://docbook.org/ns/docbook"><para>If the arguments are passed by reference,
+<!ENTITY note.funcbyref '<note xmlns="http://docbook.org/ns/docbook"><simpara>If the arguments are passed by reference,
 any changes to the arguments will be reflected in the values returned by this function. As of PHP 7
-the current values will also be returned if the arguments are passed by value.</para></note>'>
+the current values will also be returned if the arguments are passed by value.</simpara></note>'>
 
-<!ENTITY note.funcnoparam '<note xmlns="http://docbook.org/ns/docbook"><para>Because this function depends on the
+<!ENTITY note.funcnoparam '<note xmlns="http://docbook.org/ns/docbook"><simpara>Because this function depends on the
 current scope to determine parameter details, it cannot be used as a
 function parameter in versions prior to 5.3.0. If this value must be passed, the results should be assigned
-to a variable, and that variable should be passed.</para></note>'>
+to a variable, and that variable should be passed.</simpara></note>'>
 
-<!ENTITY note.func-named-params '<note xmlns="http://docbook.org/ns/docbook"><para>As of PHP 8.0.0, the func_*() family of
+<!ENTITY note.func-named-params '<note xmlns="http://docbook.org/ns/docbook"><simpara>As of PHP 8.0.0, the func_*() family of
 functions is intended to be mostly transparent with regard to named arguments,
 by treating the arguments as if they were all passed positionally,
 and missing arguments are replaced with their defaults.
 This function ignores the collection of unknown named variadic arguments.
-Unknown named arguments which are collected can only be accessed through the variadic parameter.</para></note>'>
+Unknown named arguments which are collected can only be accessed through the variadic parameter.</simpara></note>'>
 
 <!ENTITY note.line-endings '<note xmlns="http://docbook.org/ns/docbook"><simpara>If PHP is not properly recognizing
 the line endings when reading files either on or created by a Macintosh
@@ -148,61 +148,61 @@ to seed the random number generator with <function>srand</function> or
 <function>mt_srand</function> as this is done automatically.
 </simpara></note>'>
 
-<!ENTITY note.is-superglobal "<note xmlns='http://docbook.org/ns/docbook'><para>This is a 'superglobal', or
+<!ENTITY note.is-superglobal "<note xmlns='http://docbook.org/ns/docbook'><simpara>This is a 'superglobal', or
 automatic global, variable. This simply means that it is available in
 all scopes throughout a script. There is no need to do
 <command>global $variable;</command> to access it within functions or methods.
-</para></note>">
+</simpara></note>">
 
-<!ENTITY note.uses-ob '<note xmlns="http://docbook.org/ns/docbook"><para>When the <parameter>return</parameter> parameter
+<!ENTITY note.uses-ob '<note xmlns="http://docbook.org/ns/docbook"><simpara>When the <parameter>return</parameter> parameter
 is used, this function uses internal output buffering so it cannot be used inside an
-<function>ob_start</function> callback function.</para></note>'>
+<function>ob_start</function> callback function.</simpara></note>'>
 
-<!ENTITY note.uses-ob-php70 '<note xmlns="http://docbook.org/ns/docbook"><para>When the <parameter>return</parameter> parameter
+<!ENTITY note.uses-ob-php70 '<note xmlns="http://docbook.org/ns/docbook"><simpara>When the <parameter>return</parameter> parameter
 is used, this function uses internal output buffering prior to PHP 7.1.0, so it cannot be used inside an
-<function>ob_start</function> callback function.</para></note>'>
+<function>ob_start</function> callback function.</simpara></note>'>
 
-<!ENTITY note.filesystem-time-res '<note xmlns="http://docbook.org/ns/docbook"><para>Note that time resolution may differ
-from one file system to another.</para></note>'>
+<!ENTITY note.filesystem-time-res '<note xmlns="http://docbook.org/ns/docbook"><simpara>Note that time resolution may differ
+from one file system to another.</simpara></note>'>
 
 <!ENTITY note.uses-autoload '<note xmlns="http://docbook.org/ns/docbook">
-<para>Using this function will use any registered
-<link linkend="language.oop5.autoload">autoloaders</link> if the class is not already known.</para></note>'>
+<simpara>Using this function will use any registered
+<link linkend="language.oop5.autoload">autoloaders</link> if the class is not already known.</simpara></note>'>
 
 <!ENTITY note.network.header.sapi '<note xmlns="http://docbook.org/ns/docbook">
-   <para>
+   <simpara>
     Headers will only be accessible and output when a SAPI that supports them
     is in use.
-   </para>
+   </simpara>
   </note>
 '>
 
 <!ENTITY note.sigchild '<note xmlns="http://docbook.org/ns/docbook">
- <para>
+ <simpara>
   If PHP has been compiled with --enable-sigchild, the return value of this function is undefined.
- </para>
+ </simpara>
 </note>
 '>
 
 <!ENTITY note.sort-unstable '<note xmlns="http://docbook.org/ns/docbook">
- <para>
+ <simpara>
   If two members compare as equal, they retain their original order.
   Prior to PHP 8.0.0, their relative order in the sorted array was undefined.
- </para>
+ </simpara>
 </note>
 '>
 
 <!ENTITY note.reset-index "<note xmlns='http://docbook.org/ns/docbook'>
- <para>
+ <simpara>
     Resets array's internal pointer to the first element.
- </para>
+ </simpara>
 </note>
 ">
 
 <!ENTITY note.resource-migration-8.0-dead-function '<note xmlns="http://docbook.org/ns/docbook">
- <para>
+ <simpara>
   This function has no effect. Prior to PHP 8.0.0, this function was used to close the resource.
- </para>
+ </simpara>
 </note>
 '>
 
@@ -234,11 +234,11 @@ the output of this function, and save it in a
 
 <!-- Warnings -->
 
-<!ENTITY warn.escapeshell '<warning xmlns="http://docbook.org/ns/docbook"><para>When allowing user-supplied data to be
+<!ENTITY warn.escapeshell '<warning xmlns="http://docbook.org/ns/docbook"><simpara>When allowing user-supplied data to be
 passed to this function, use
 <function>escapeshellarg</function> or <function>escapeshellcmd</function>
 to ensure that users cannot trick the system into executing arbitrary
-commands.</para></warning>'>
+commands.</simpara></warning>'>
 
 <!ENTITY warn.experimental '<warning xmlns="http://docbook.org/ns/docbook"><simpara>This extension is
 <emphasis>EXPERIMENTAL</emphasis>. The behaviour of this extension including
@@ -487,23 +487,23 @@ linkend="book.imap">IMAP</link>, <link linkend="book.recode">recode</link> and
 extensions cannot be used in conjunction, because they
 share the same internal symbols. Note: Yaz 2.0 and above does not suffer from this problem.</simpara></warning>'>
 
-<!ENTITY warn.install.cgi '<warning xmlns="http://docbook.org/ns/docbook"><para>A server deployed in CGI mode is open
+<!ENTITY warn.install.cgi '<warning xmlns="http://docbook.org/ns/docbook"><simpara>A server deployed in CGI mode is open
 to several possible vulnerabilities. Please read our
 <link linkend="security.cgi-bin">CGI security section</link> to learn how to
-defend yourself from such attacks.</para></warning>'>
+defend yourself from such attacks.</simpara></warning>'>
 
 <!ENTITY warn.passwordhashing '
 <warning xmlns="http://docbook.org/ns/docbook">
- <para>
+ <simpara>
   It is not recommended to use this function to secure passwords,
   due to the fast nature of this hashing algorithm. See the
   <link linkend="faq.passwords.fasthash">Password Hashing FAQ</link>
   for details and best practices.
- </para>
+ </simpara>
 </warning>
 '>
 
-<!ENTITY warn.ssl-non-standard '<warning xmlns="http://docbook.org/ns/docbook"><para>When using SSL, Microsoft IIS
+<!ENTITY warn.ssl-non-standard '<warning xmlns="http://docbook.org/ns/docbook"><simpara>When using SSL, Microsoft IIS
 will violate the protocol by closing the connection without sending a
 <literal>close_notify</literal> indicator. PHP will report this as "SSL: Fatal
 Protocol Error" when you reach the end of the data. To work around this, the
@@ -513,7 +513,7 @@ PHP can detect buggy IIS server software when you open
 the stream using the <literal>https://</literal> wrapper and will suppress the
 warning. When using <function>fsockopen</function> to create an
 <literal>ssl://</literal> socket, the developer is responsible for detecting
-and suppressing this warning.</para></warning>'>
+and suppressing this warning.</simpara></warning>'>
 
 <!ENTITY warn.undocumented.class '
 <warning xmlns="http://docbook.org/ns/docbook">
@@ -534,90 +534,90 @@ currently not documented; only its argument list is available.
      en/reference/regex/reference.xml for examples of these in action. -->
 
 <!ENTITY warn.deprecated.function.4-1-0.removed.7-0-0.alternatives '
-<para xmlns="http://docbook.org/ns/docbook">
+<simpara xmlns="http://docbook.org/ns/docbook">
  This function was <emphasis>DEPRECATED</emphasis> in PHP 4.1.0, and
  <emphasis>REMOVED</emphasis> in PHP 7.0.0.
-</para>
-<para xmlns="http://docbook.org/ns/docbook">
+</simpara>
+<simpara xmlns="http://docbook.org/ns/docbook">
  Alternatives to this function include:
-</para>
+</simpara>
 '>
 
 <!ENTITY warn.deprecated.feature.5-3-0.removed.7-0-0.alternatives '
-<para xmlns="http://docbook.org/ns/docbook">
+<simpara xmlns="http://docbook.org/ns/docbook">
  This feature was <emphasis>DEPRECATED</emphasis> in PHP 5.3.0, and
  <emphasis>REMOVED</emphasis> in PHP 7.0.0.
-</para>
-<para xmlns="http://docbook.org/ns/docbook">
+</simpara>
+<simpara xmlns="http://docbook.org/ns/docbook">
  Alternatives to this feature include:
-</para>
+</simpara>
 '>
 
 <!ENTITY warn.deprecated.function.5-3-0.removed.7-0-0.alternatives '
-<para xmlns="http://docbook.org/ns/docbook">
+<simpara xmlns="http://docbook.org/ns/docbook">
  This function was <emphasis>DEPRECATED</emphasis> in PHP 5.3.0, and
  <emphasis>REMOVED</emphasis> in PHP 7.0.0.
-</para>
-<para xmlns="http://docbook.org/ns/docbook">
+</simpara>
+<simpara xmlns="http://docbook.org/ns/docbook">
  Alternatives to this function include:
-</para>
+</simpara>
 '>
 
 <!ENTITY warn.deprecated.function.5-5-0.removed.7-0-0.alternatives '
-<para xmlns="http://docbook.org/ns/docbook">
+<simpara xmlns="http://docbook.org/ns/docbook">
  This function was <emphasis>DEPRECATED</emphasis> in PHP 5.5.0, and
  <emphasis>REMOVED</emphasis> in PHP 7.0.0.
-</para>
-<para xmlns="http://docbook.org/ns/docbook">
+</simpara>
+<simpara xmlns="http://docbook.org/ns/docbook">
  Alternatives to this function include:
-</para>
+</simpara>
 '>
 
 <!ENTITY warn.removed.feature.7-0-0.alternatives '
-<para xmlns="http://docbook.org/ns/docbook">
+<simpara xmlns="http://docbook.org/ns/docbook">
  This feature was <emphasis>REMOVED</emphasis> in PHP 7.0.0.
-</para>
-<para xmlns="http://docbook.org/ns/docbook">
+</simpara>
+<simpara xmlns="http://docbook.org/ns/docbook">
  Alternatives to this feature include:
-</para>
+</simpara>
 '>
 
 <!ENTITY warn.removed.function.7-0-0.alternatives '
-<para xmlns="http://docbook.org/ns/docbook">
+<simpara xmlns="http://docbook.org/ns/docbook">
  This function was <emphasis>REMOVED</emphasis> in PHP 7.0.0.
-</para>
-<para xmlns="http://docbook.org/ns/docbook">
+</simpara>
+<simpara xmlns="http://docbook.org/ns/docbook">
  Alternatives to this function include:
-</para>
+</simpara>
 '>
 
 <!ENTITY warn.deprecated.feature.7-1-0.removed.7-2-0.alternatives '
-<para xmlns="http://docbook.org/ns/docbook">
+<simpara xmlns="http://docbook.org/ns/docbook">
  This feature was <emphasis>DEPRECATED</emphasis> in PHP 7.1.0, and
  <emphasis>REMOVED</emphasis> in PHP 7.2.0.
-</para>
-<para xmlns="http://docbook.org/ns/docbook">
+</simpara>
+<simpara xmlns="http://docbook.org/ns/docbook">
  Alternatives to this feature include:
-</para>
+</simpara>
 '>
 
 <!ENTITY warn.deprecated.function.7-1-0.removed.7-2-0.alternatives '
-<para xmlns="http://docbook.org/ns/docbook">
+<simpara xmlns="http://docbook.org/ns/docbook">
  This function was <emphasis>DEPRECATED</emphasis> in PHP 7.1.0, and
  <emphasis>REMOVED</emphasis> in PHP 7.2.0.
-</para>
-<para xmlns="http://docbook.org/ns/docbook">
+</simpara>
+<simpara xmlns="http://docbook.org/ns/docbook">
  Alternatives to this function include:
-</para>
+</simpara>
 '>
 
 <!ENTITY warn.deprecated.function-8-1-0.alternatives '<warning
 xmlns="http://docbook.org/ns/docbook"><simpara>This function has been
 <emphasis>DEPRECATED</emphasis> as of PHP 8.1.0. Relying on this function
 is highly discouraged.</simpara></warning>
-<para xmlns="http://docbook.org/ns/docbook">
+<simpara xmlns="http://docbook.org/ns/docbook">
  Alternatives to this function include:
-</para>
+</simpara>
 '>
 
 <!-- Misc -->
@@ -626,69 +626,69 @@ is highly discouraged.</simpara></warning>
 
 <!ENTITY version.trunk.changelog 'Future'>
 
-<!ENTITY no.function.parameters '<para xmlns="http://docbook.org/ns/docbook">This function has no parameters.</para>'>
+<!ENTITY no.function.parameters '<simpara xmlns="http://docbook.org/ns/docbook">This function has no parameters.</simpara>'>
 
-<!ENTITY example.outputs '<para xmlns="http://docbook.org/ns/docbook">The above example will output:</para>'>
+<!ENTITY example.outputs '<simpara xmlns="http://docbook.org/ns/docbook">The above example will output:</simpara>'>
 
-<!ENTITY example.outputs.5 '<para xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 5:</para>'>
+<!ENTITY example.outputs.5 '<simpara xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 5:</simpara>'>
 
-<!ENTITY example.outputs.53 '<para xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 5.3:</para>'>
+<!ENTITY example.outputs.53 '<simpara xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 5.3:</simpara>'>
 
-<!ENTITY example.outputs.54 '<para xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 5.4:</para>'>
+<!ENTITY example.outputs.54 '<simpara xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 5.4:</simpara>'>
 
-<!ENTITY example.outputs.55 '<para xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 5.5:</para>'>
+<!ENTITY example.outputs.55 '<simpara xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 5.5:</simpara>'>
 
-<!ENTITY example.outputs.56 '<para xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 5.6:</para>'>
+<!ENTITY example.outputs.56 '<simpara xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 5.6:</simpara>'>
 
-<!ENTITY example.outputs.7 '<para xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 7:</para>'>
+<!ENTITY example.outputs.7 '<simpara xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 7:</simpara>'>
 
-<!ENTITY example.outputs.70 '<para xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 7.0:</para>'>
+<!ENTITY example.outputs.70 '<simpara xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 7.0:</simpara>'>
 
-<!ENTITY example.outputs.71 '<para xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 7.1:</para>'>
+<!ENTITY example.outputs.71 '<simpara xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 7.1:</simpara>'>
 
-<!ENTITY example.outputs.72 '<para xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 7.2:</para>'>
+<!ENTITY example.outputs.72 '<simpara xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 7.2:</simpara>'>
 
-<!ENTITY example.outputs.73 '<para xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 7.3:</para>'>
+<!ENTITY example.outputs.73 '<simpara xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 7.3:</simpara>'>
 
-<!ENTITY example.outputs.8 '<para xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 8:</para>'>
+<!ENTITY example.outputs.8 '<simpara xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 8:</simpara>'>
 
-<!ENTITY example.outputs.8.similar '<para xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 8 is similar to:</para>'>
+<!ENTITY example.outputs.8.similar '<simpara xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 8 is similar to:</simpara>'>
 
-<!ENTITY example.outputs.80 '<para xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 8.0:</para>'>
+<!ENTITY example.outputs.80 '<simpara xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 8.0:</simpara>'>
 
-<!ENTITY example.outputs.81 '<para xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 8.1:</para>'>
+<!ENTITY example.outputs.81 '<simpara xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 8.1:</simpara>'>
 
-<!ENTITY example.outputs.82 '<para xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 8.2:</para>'>
+<!ENTITY example.outputs.82 '<simpara xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 8.2:</simpara>'>
 
-<!ENTITY example.outputs.82.similar '<para xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 8.2 is similar to:</para>'>
+<!ENTITY example.outputs.82.similar '<simpara xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 8.2 is similar to:</simpara>'>
 
-<!ENTITY example.outputs.83 '<para xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 8.3:</para>'>
+<!ENTITY example.outputs.83 '<simpara xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 8.3:</simpara>'>
 
-<!ENTITY example.outputs.83.similar '<para xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 8.3 is similar to:</para>'>
+<!ENTITY example.outputs.83.similar '<simpara xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 8.3 is similar to:</simpara>'>
 
-<!ENTITY example.outputs.84 '<para xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 8.4:</para>'>
+<!ENTITY example.outputs.84 '<simpara xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 8.4:</simpara>'>
 
-<!ENTITY example.outputs.84.similar '<para xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 8.4 is similar to:</para>'>
+<!ENTITY example.outputs.84.similar '<simpara xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 8.4 is similar to:</simpara>'>
 
-<!ENTITY example.outputs.85 '<para xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 8.5:</para>'>
+<!ENTITY example.outputs.85 '<simpara xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 8.5:</simpara>'>
 
-<!ENTITY example.outputs.85.similar '<para xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 8.5 is similar to:</para>'>
+<!ENTITY example.outputs.85.similar '<simpara xmlns="http://docbook.org/ns/docbook">Output of the above example in PHP 8.5 is similar to:</simpara>'>
 
-<!ENTITY example.outputs.32bit '<para xmlns="http://docbook.org/ns/docbook">Output of the above example on 32 bit machines:</para>'>
+<!ENTITY example.outputs.32bit '<simpara xmlns="http://docbook.org/ns/docbook">Output of the above example on 32 bit machines:</simpara>'>
 
-<!ENTITY example.outputs.64bit '<para xmlns="http://docbook.org/ns/docbook">Output of the above example on 64 bit machines:</para>'>
+<!ENTITY example.outputs.64bit '<simpara xmlns="http://docbook.org/ns/docbook">Output of the above example on 64 bit machines:</simpara>'>
 
-<!ENTITY example.outputs.similar '<para xmlns="http://docbook.org/ns/docbook">The above example will output
-something similar to:</para>'>
+<!ENTITY example.outputs.similar '<simpara xmlns="http://docbook.org/ns/docbook">The above example will output
+something similar to:</simpara>'>
 
-<!ENTITY examples.outputs '<para xmlns="http://docbook.org/ns/docbook">The above examples will output:</para>'>
+<!ENTITY examples.outputs '<simpara xmlns="http://docbook.org/ns/docbook">The above examples will output:</simpara>'>
 
-<!ENTITY examples.outputs.32bit '<para xmlns="http://docbook.org/ns/docbook">Output of the above examples on 32 bit machines:</para>'>
+<!ENTITY examples.outputs.32bit '<simpara xmlns="http://docbook.org/ns/docbook">Output of the above examples on 32 bit machines:</simpara>'>
 
-<!ENTITY examples.outputs.64bit '<para xmlns="http://docbook.org/ns/docbook">Output of the above examples on 64 bit machines:</para>'>
+<!ENTITY examples.outputs.64bit '<simpara xmlns="http://docbook.org/ns/docbook">Output of the above examples on 64 bit machines:</simpara>'>
 
-<!ENTITY examples.outputs.similar '<para xmlns="http://docbook.org/ns/docbook">The above examples will output
-something similar to:</para>'>
+<!ENTITY examples.outputs.similar '<simpara xmlns="http://docbook.org/ns/docbook">The above examples will output
+something similar to:</simpara>'>
 
 <!ENTITY array.resetspointer '<note xmlns="http://docbook.org/ns/docbook"><simpara>This function will
 <function>reset</function> the <type>array</type> pointer of the input array after
