@@ -1,79 +1,111 @@
-name: DocBook Lint
+# https://docs.github.com/en/actions
+
+name: "DocBook Lint"
 
 on:
   push:
-    branches: [master]
+    branches:
+      - "master"
   pull_request:
-    branches: [master]
+    branches:
+      - "master"
+
+permissions:
+  contents: "read"
+
+concurrency:
+  group: "${{ github.workflow }}-${{ github.ref }}"
+  cancel-in-progress: true
 
 jobs:
   docbook-cs:
-    name: DocBook Style Check
-    runs-on: ubuntu-latest
+    name: "DocBook Style Check"
+    runs-on: "ubuntu-latest"
+
+    strategy:
+      matrix:
+        language:
+          - "en"
 
     steps:
-      - name: Checkout doc-en
-        uses: actions/checkout@v4
+      - name: "Checkout php/doc-${{ matrix.language }}"
+        uses: "actions/checkout@v6"
         with:
-          ref: ${{ github.event.pull_request.head.sha }}
-          path: en
-          fetch-depth: 0
+          ref: "${{ github.event.pull_request.head.sha }}"
+          path: "${{ matrix.language }}"
+          fetch-depth: 50
 
-      - name: Checkout php/doc-base
-        uses: actions/checkout@v4
+      - name: "Checkout php/doc-base"
+        uses: "actions/checkout@v6"
         with:
-          path: doc-base
-          repository: php/doc-base
+          path: "doc-base"
+          repository: "php/doc-base"
 
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
+      - name: "Fetch base branch with merge-base"
+        working-directory: "${{ matrix.language }}"
+        run: |
+          git fetch origin ${{ github.base_ref }} --depth=50
+          # Deepen until we find the merge-base (handles long-lived PRs)
+          for i in 1 2 3 4 5; do
+            if git merge-base origin/${{ github.base_ref }} HEAD >/dev/null 2>&1; then
+              break
+            fi
+            git fetch --deepen=100 origin ${{ github.base_ref }}
+          done
+
+      - name: "Setup PHP"
+        uses: "shivammathur/setup-php@v2"
         with:
-          php-version: '8.5'
-          extensions: dom, libxml, simplexml
+          php-version: "8.5"
+          extensions: "dom, libxml, simplexml"
+          tools: composer:v2
 
-      - name: Build documentation
-        run: php doc-base/configure.php --disable-libxml-check --enable-xml-details --redirect-stderr-to-stdout --with-lang=en
+      - name: "Build documentation"
+        run: |
+          php doc-base/configure.php \
+            --disable-libxml-check \
+            --enable-xml-details \
+            --redirect-stderr-to-stdout \
+            --with-lang=${{ matrix.language }}
 
-      - name: Install docbook-cs
-        working-directory: en
+      - name: "Install docbook-cs"
+        working-directory: "${{ matrix.language }}"
         run: composer require jordikroon/docbook-cs
 
-      - name: Fetch base branch
-        working-directory: en
-        run: git fetch origin ${{ github.base_ref }}
-
-      - name: Run docbook-cs with diff
-        working-directory: en
+      - name: "Run docbook-cs with diff"
+        working-directory: "${{ matrix.language }}"
         run: |
           set -o pipefail
           git diff origin/${{ github.base_ref }}...HEAD | vendor/bin/docbook-cs \
             --report=checkstyle \
             --diff \
-            --no-colors > docbook-report.xml
+            --no-colors > docbook-report.xml || true
 
-      - name: Upload report
-        if: always()
-        uses: actions/upload-artifact@v4
+      - name: "Upload report"
+        if: ${{ ! cancelled() }}
+        uses: "actions/upload-artifact@v7"
         with:
-          name: docbook-report
-          path: en/docbook-report.xml
+          name: "docbook-report"
+          path: "${{ matrix.language }}/docbook-report.xml"
 
-      - name: Setup reviewdog
-        if: always()
-        uses: reviewdog/action-setup@v1
-        with:
-          reviewdog_version: latest
-
-      - name: Report violations via reviewdog
-        if: always()
-        working-directory: en
-        env:
-          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: "Annotate PR with violations"
+        if: ${{ ! cancelled() }}
+        working-directory: "${{ matrix.language }}"
         run: |
-          cat docbook-report.xml | reviewdog \
-            -f=checkstyle \
-            -name="docbook-cs" \
-            -reporter=github-pr-check \
-            -level=error \
-            -fail-level=any \
-            -filter-mode=nofilter
+          php -r '
+            if (!file_exists("docbook-report.xml")) exit(0);
+            $xml = simplexml_load_file("docbook-report.xml");
+            $hasErrors = false;
+            foreach ($xml->file as $file) {
+              $name = (string)$file["name"];
+              foreach ($file->error as $error) {
+                $hasErrors = true;
+                $line = (string)$error["line"];
+                $msg  = (string)$error["message"];
+                $sev  = (string)$error["severity"];
+                $cmd  = $sev === "error" ? "error" : "warning";
+                echo "::{$cmd} file={$name},line={$line}::{$msg}\n";
+              }
+            }
+            exit($hasErrors ? 1 : 0);
+          '
