@@ -2585,13 +2585,13 @@ slash may also be necessary for directories.</simpara></note>'>
 <!-- Snippets and titles for the contributors section -->
 <!ENTITY Credit.Authors.and.Contributors 'Authors and Contributors'>
 
-<!ENTITY Credit.Introduction '<para xmlns="http://docbook.org/ns/docbook"> There is a large number of contributors who
+<!ENTITY Credit.Introduction '<simpara xmlns="http://docbook.org/ns/docbook"> There is a large number of contributors who
 currently help in our work or have provided a great amount of help to the project
 in the past. There are also a lot of unnamed people who help out with user
 notes on manual pages, which continually get included in the references, the
 work of whom we are also very thankful for. All of the lists provided below are in
 alphabetical order.
-</para>'>
+</simpara>'>
 
 <!ENTITY Credit.Authors.and.Editors 'Authors and Editors'>
 
@@ -2634,8 +2634,8 @@ using public key authentication, use the
 
 <!-- XMLWriter Notes -->
 <!ENTITY xmlwriter.xmlwriter.description '<varlistentry xmlns="http://docbook.org/ns/docbook"><term>
-<parameter>writer</parameter></term><listitem><para>Only for procedural calls.
-The <classname>XMLWriter</classname> instance that is being modified. This object is returned from a call to <function>xmlwriter_open_uri</function> or <function>xmlwriter_open_memory</function>.</para></listitem></varlistentry>'>
+<parameter>writer</parameter></term><listitem><simpara>Only for procedural calls.
+The <classname>XMLWriter</classname> instance that is being modified. This object is returned from a call to <function>xmlwriter_open_uri</function> or <function>xmlwriter_open_memory</function>.</simpara></listitem></varlistentry>'>
 
 <!ENTITY xmlwriter.changelog.writer-param '<row xmlns="http://docbook.org/ns/docbook">
  <entry>8.0.0</entry>
@@ -2646,12 +2646,12 @@ The <classname>XMLWriter</classname> instance that is being modified. This objec
 </row>'>
 
 <!-- SOAP notes -->
-<!ENTITY soap.wsdl.mode.only "<note xmlns='http://docbook.org/ns/docbook'><para>This function only works in WSDL mode.</para></note>">
+<!ENTITY soap.wsdl.mode.only "<note xmlns='http://docbook.org/ns/docbook'><simpara>This function only works in WSDL mode.</simpara></note>">
 
 <!-- Stomp notes -->
-<!ENTITY stomp.param.link "<varlistentry xmlns='http://docbook.org/ns/docbook'><term><parameter>link</parameter></term><listitem><para>Procedural style only: The stomp link identifier returned by <function>stomp_connect</function>.</para></listitem></varlistentry>">
-<!ENTITY stomp.param.headers "<varlistentry xmlns='http://docbook.org/ns/docbook'><term><parameter>headers</parameter></term><listitem><para>Associative array containing the additional headers (example: receipt).</para></listitem></varlistentry>">
-<!ENTITY stomp.note.transaction "<note xmlns='http://docbook.org/ns/docbook'><para>A transaction header may be specified, indicating that the message acknowledgment should be part of the named transaction.</para></note>">
+<!ENTITY stomp.param.link "<varlistentry xmlns='http://docbook.org/ns/docbook'><term><parameter>link</parameter></term><listitem><simpara>Procedural style only: The stomp link identifier returned by <function>stomp_connect</function>.</simpara></listitem></varlistentry>">
+<!ENTITY stomp.param.headers "<varlistentry xmlns='http://docbook.org/ns/docbook'><term><parameter>headers</parameter></term><listitem><simpara>Associative array containing the additional headers (example: receipt).</simpara></listitem></varlistentry>">
+<!ENTITY stomp.note.transaction "<note xmlns='http://docbook.org/ns/docbook'><simpara>A transaction header may be specified, indicating that the message acknowledgment should be part of the named transaction.</simpara></note>">
 <!ENTITY stomp.note.sync "<tip xmlns='http://docbook.org/ns/docbook'><simpara>Stomp is inherently asynchronous. Synchronous communication can be implemented adding a receipt header. This will cause methods to not return anything until the server has acknowledged receipt of the message or until read timeout was reached.</simpara></tip>">
 
 <!-- SVN notes -->
@@ -2660,14 +2660,14 @@ The <classname>XMLWriter</classname> instance that is being modified. This objec
 <!ENTITY svn.referto.type 'Refer to <link xmlns="http://docbook.org/ns/docbook" linkend="svn.constants.type">type constants</link> for possible values.'>
 
 <!-- FANN notes -->
-<!ENTITY fann.ann.description '<para xmlns="http://docbook.org/ns/docbook">Neural network <type>resource</type>.</para>'>
-<!ENTITY fann.train.description '<para xmlns="http://docbook.org/ns/docbook">Neural network training data <type>resource</type>.</para>'>
-<!ENTITY fann.errdat.description '<para xmlns="http://docbook.org/ns/docbook">Either neural network <type>resource</type> or neural network trainining data <type>resource</type>.</para>'>
-<!ENTITY fann.return.void '<para xmlns="http://docbook.org/ns/docbook">No value is returned.</para>'>
-<!ENTITY fann.return.bool '<para xmlns="http://docbook.org/ns/docbook">Returns &true; on success, or &false; otherwise.</para>'>
-<!ENTITY fann.return.ann '<para xmlns="http://docbook.org/ns/docbook"> Returns a neural network <type>resource</type> on success, or &false; on error.</para>'>
-<!ENTITY fann.return.train '<para xmlns="http://docbook.org/ns/docbook"> Returns a train data <type>resource</type> on success, or &false; on error.</para>'>
-<!ENTITY fann.note.function.fann-2.2 '<note xmlns="http://docbook.org/ns/docbook"><para>This function is only available if the fann extension has been build against libfann &gt;= 2.2.</para></note>'>
+<!ENTITY fann.ann.description '<simpara xmlns="http://docbook.org/ns/docbook">Neural network <type>resource</type>.</simpara>'>
+<!ENTITY fann.train.description '<simpara xmlns="http://docbook.org/ns/docbook">Neural network training data <type>resource</type>.</simpara>'>
+<!ENTITY fann.errdat.description '<simpara xmlns="http://docbook.org/ns/docbook">Either neural network <type>resource</type> or neural network trainining data <type>resource</type>.</simpara>'>
+<!ENTITY fann.return.void '<simpara xmlns="http://docbook.org/ns/docbook">No value is returned.</simpara>'>
+<!ENTITY fann.return.bool '<simpara xmlns="http://docbook.org/ns/docbook">Returns &true; on success, or &false; otherwise.</simpara>'>
+<!ENTITY fann.return.ann '<simpara xmlns="http://docbook.org/ns/docbook"> Returns a neural network <type>resource</type> on success, or &false; on error.</simpara>'>
+<!ENTITY fann.return.train '<simpara xmlns="http://docbook.org/ns/docbook"> Returns a train data <type>resource</type> on success, or &false; on error.</simpara>'>
+<!ENTITY fann.note.function.fann-2.2 '<note xmlns="http://docbook.org/ns/docbook"><simpara>This function is only available if the fann extension has been build against libfann &gt;= 2.2.</simpara></note>'>
 
 <!-- Imagick generic return types -->
 <!ENTITY imagick.return.success 'Returns &true; on success.'>
@@ -2734,38 +2734,38 @@ The <classname>XMLWriter</classname> instance that is being modified. This objec
   section</link> for more information.
  </simpara>
 </note>'>
-<!ENTITY note.openssl.param-notext '<para xmlns="http://docbook.org/ns/docbook">
+<!ENTITY note.openssl.param-notext '<simpara xmlns="http://docbook.org/ns/docbook">
  The optional parameter <parameter>notext</parameter> affects
  the verbosity of the output; if it is &false;, then additional human-readable
  information is included in the output. The default value of
  <parameter>notext</parameter> is &true;.
-</para>'>
+</simpara>'>
 
 <!-- COM/Dotnet -->
 <!ENTITY com.variant-arith '<note xmlns="http://docbook.org/ns/docbook">
-<para>
+<simpara>
  As with all the variant arithmetic functions, the parameters for this function
  can be either a PHP native type (integer, string, floating point, boolean or
  &null;), or an instance of a COM, VARIANT or DOTNET class.  PHP native types
  will be converted to variants using the same rules as found in the constructor
  for the <xref linkend="class.variant"/> class.  COM and DOTNET objects
  will have the value of their default property taken and used as the variant value.
-</para>
-<para>
+</simpara>
+<simpara>
  The variant arithmetic functions are wrappers around the similarly named
  functions in the COM library; for more information on these functions, consult
  the MSDN library.  The PHP functions are named slightly differently; for example
  <function>variant_add</function> in PHP corresponds to <literal>VarAdd()
  </literal> in the MSDN documentation.
-</para>
+</simpara>
 </note>
 '>
 
 <!-- phar -->
-<!ENTITY phar.write '<note xmlns="http://docbook.org/ns/docbook"><para>This
+<!ENTITY phar.write '<note xmlns="http://docbook.org/ns/docbook"><simpara>This
 method requires the &php.ini; setting <literal>phar.readonly</literal> to be
 set to <literal>0</literal> in order to work for <classname>Phar</classname>
-objects.  Otherwise, a <classname>PharException</classname> will be thrown.</para></note>'>
+objects.  Otherwise, a <classname>PharException</classname> will be thrown.</simpara></note>'>
 
 <!ENTITY phar.note.performance '<note xmlns="http://docbook.org/ns/docbook">
  <simpara>
@@ -2786,28 +2786,28 @@ objects.  Otherwise, a <classname>PharException</classname> will be thrown.</par
 </note>'>
 
 <!-- XML -->
-<!ENTITY libxml.required '<para xmlns="http://docbook.org/ns/docbook">
+<!ENTITY libxml.required '<simpara xmlns="http://docbook.org/ns/docbook">
  This extension requires the <link linkend="book.libxml">libxml</link> PHP extension.
  This means passing the <option role="configure">--with-libxml</option>,
  or prior to PHP 7.4 the <option role="configure">--enable-libxml</option>,
  configuration flag, although this is implicitly accomplished because libxml
  is enabled by default.
-</para>'>
+</simpara>'>
 
 <!-- XMLReader -->
-<!ENTITY xmlreader.libxml20620.note '<caution xmlns="http://docbook.org/ns/docbook"><para>This function is only available when PHP is compiled against libxml 20620 or later.</para></caution>'>
+<!ENTITY xmlreader.libxml20620.note '<caution xmlns="http://docbook.org/ns/docbook"><simpara>This function is only available when PHP is compiled against libxml 20620 or later.</simpara></caution>'>
 
 <!-- inotify -->
 <!ENTITY inotify.instance.description 'Resource returned by
 <function xmlns="http://docbook.org/ns/docbook">inotify_init</function>'>
 
 <!-- User streams -->
-<!ENTITY userstream.not.implemented.warning '<para xmlns="http://docbook.org/ns/docbook">Emits
+<!ENTITY userstream.not.implemented.warning '<simpara xmlns="http://docbook.org/ns/docbook">Emits
 <constant>E_WARNING</constant> if call to this method fails
-(i.e. not implemented).</para>'>
-<!ENTITY userstream.updates.context '<note xmlns="http://docbook.org/ns/docbook"><para>The
+(i.e. not implemented).</simpara>'>
+<!ENTITY userstream.updates.context '<note xmlns="http://docbook.org/ns/docbook"><simpara>The
 <varname linkend="streamwrapper.props.context">streamWrapper::$context</varname>
-property is updated if a valid context is passed to the caller function.</para></note>'>
+property is updated if a valid context is passed to the caller function.</simpara></note>'>
 
 <!ENTITY stream.bucket.param '<parameter>bucket</parameter> expects a <classname>StreamBucket</classname> instance now; previously, an <classname>stdClass</classname> was expected.'>
 <!ENTITY stream.bucket.return 'This function returns a <classname>StreamBucket</classname> instance now; previously, an <classname>stdClass</classname> was returned.'>
@@ -2833,28 +2833,28 @@ to be references, then they must be references in the passed argument list.'>
 <!ENTITY reflection.getattributes.param.name '<varlistentry xmlns="http://docbook.org/ns/docbook">
 <term><parameter>name</parameter></term>
 <listitem>
- <para>
+ <simpara>
   Filter the results to include only <classname>ReflectionAttribute</classname>
   instances for attributes matching this class name.
- </para>
+ </simpara>
 </listitem>
 </varlistentry>'>
 
 <!ENTITY reflection.getattributes.param.flags '<varlistentry xmlns="http://docbook.org/ns/docbook">
 <term><parameter>flags</parameter></term>
 <listitem>
- <para>
+ <simpara>
   Flags for determining how to filter the results, if <parameter>name</parameter>
   is provided.
- </para>
- <para>
+ </simpara>
+ <simpara>
   Default is <literal>0</literal> which will only return results for attributes that
   are of the class <parameter>name</parameter>.
- </para>
- <para>
+ </simpara>
+ <simpara>
   The only other option available, is to use <constant>ReflectionAttribute::IS_INSTANCEOF</constant>,
   which will instead use <literal>instanceof</literal> for filtering.
- </para>
+ </simpara>
 </listitem>
 </varlistentry>'>
 
@@ -2867,9 +2867,9 @@ to be references, then they must be references in the passed argument list.'>
 <!ENTITY win32service.noerror.false.error 'returned <constant xmlns="http://docbook.org/ns/docbook">WIN32_NO_ERROR</constant> on success&win32service.false.error;'>
 
 <!-- SNMP -->
-<!ENTITY snmp.set.type.values '<para xmlns="http://docbook.org/ns/docbook">
+<!ENTITY snmp.set.type.values '<simpara xmlns="http://docbook.org/ns/docbook">
  The <acronym>MIB</acronym> defines the type of each object id. It has to be specified as a single character from the below list.
-</para>
+</simpara>
 <table xmlns="http://docbook.org/ns/docbook">
  <title>types</title>
  <tgroup cols="2">
@@ -2888,9 +2888,9 @@ to be references, then they must be references in the passed argument list.'>
   </tbody>
  </tgroup>
 </table>
-<para xmlns="http://docbook.org/ns/docbook">
+<simpara xmlns="http://docbook.org/ns/docbook">
  If <constant>OPAQUE_SPECIAL_TYPES</constant> was defined while compiling the <acronym>SNMP</acronym> library, the following are also valid:
-</para>
+</simpara>
 <table xmlns="http://docbook.org/ns/docbook">
  <title>types</title>
  <tgroup cols="2">
@@ -2903,20 +2903,20 @@ to be references, then they must be references in the passed argument list.'>
  </tgroup>
 </table>
 '>
-<!ENTITY snmp.set.type.values.asn.mapping '<para xmlns="http://docbook.org/ns/docbook">
+<!ENTITY snmp.set.type.values.asn.mapping '<simpara xmlns="http://docbook.org/ns/docbook">
  Most of these will use the obvious corresponding ASN.1 type.  &apos;s&apos;, &apos;x&apos;, &apos;d&apos; and &apos;b&apos; are all different ways of specifying an OCTET STRING value, and
  the &apos;u&apos; unsigned type is also used for handling Gauge32 values.
-</para>
+</simpara>
 '>
-<!ENTITY snmp.set.type.values.equal.note '<para xmlns="http://docbook.org/ns/docbook">
+<!ENTITY snmp.set.type.values.equal.note '<simpara xmlns="http://docbook.org/ns/docbook">
  If the MIB-Files are loaded by into the MIB Tree with "snmp_read_mib" or by specifying it in the libsnmp config, &apos;=&apos; may be used as
  the <parameter>type</parameter> parameter for all object ids as the type can then be automatically read from the MIB.
-</para>
+</simpara>
 '>
-<!ENTITY snmp.set.type.values.bitset.note '<para xmlns="http://docbook.org/ns/docbook">
+<!ENTITY snmp.set.type.values.bitset.note '<simpara xmlns="http://docbook.org/ns/docbook">
  Note that there are two ways to set a variable of the type BITS like e.g.
  "SYNTAX    BITS {telnet(0), ftp(1), http(2), icmp(3), snmp(4), ssh(5), https(6)}":
-</para>
+</simpara>
 <itemizedlist xmlns="http://docbook.org/ns/docbook">
  <listitem>
   <simpara>
@@ -2929,19 +2929,19 @@ to be references, then they must be references in the passed argument list.'>
   </simpara>
  </listitem>
 </itemizedlist>
-<para xmlns="http://docbook.org/ns/docbook">
+<simpara xmlns="http://docbook.org/ns/docbook">
  See examples section for more details.
-</para>
+</simpara>
 '>
 <!ENTITY snmp.methods.exceptions_enable.refsect '<refsect1 role="errors" xmlns="http://docbook.org/ns/docbook">
 &reftitle.errors;
-<para>
+<simpara>
  This method does not throw any exceptions by default.
  To enable throwing an SNMPException exception when some of library errors occur
  the SNMP class parameter <parameter>exceptions_enabled</parameter>
  should be set to a corresponding value. See <link linkend="snmp.props.exceptions-enabled">
  <parameter>SNMP::$exceptions_enabled</parameter> explanation</link> for more details.
-</para>
+</simpara>
 </refsect1>
 '>
 
@@ -2954,16 +2954,16 @@ void callback(mixed $data, int $result[, resource $req]);
 <variablelist xmlns="http://docbook.org/ns/docbook">
 <varlistentry xmlns="http://docbook.org/ns/docbook">
 <term><parameter>data</parameter></term>
-<listitem><para>is custom data passed to the request.</para></listitem>
+<listitem><simpara>is custom data passed to the request.</simpara></listitem>
 </varlistentry>
 <varlistentry xmlns="http://docbook.org/ns/docbook">
 <term><parameter>result</parameter></term>
-<listitem><para>request-specific result value; basically, the value returned by corresponding
-system call.</para></listitem>
+<listitem><simpara>request-specific result value; basically, the value returned by corresponding
+system call.</simpara></listitem>
 </varlistentry>
 <varlistentry xmlns="http://docbook.org/ns/docbook">
 <term><parameter>req</parameter></term>
-<listitem><para>is optional request resource which can be used with functions like <function>eio_get_last_error</function>.</para></listitem>
+<listitem><simpara>is optional request resource which can be used with functions like <function>eio_get_last_error</function>.</simpara></listitem>
 </varlistentry>
 </variablelist>
 </para>
