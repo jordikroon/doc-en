@@ -70,7 +70,7 @@ jobs:
 
       - name: "Install docbook-cs"
         working-directory: "${{ matrix.language }}"
-        run: composer require jordikroon/docbook-cs
+        run: composer require jordikroon/docbook-cs:^1.1 staabm/annotate-pull-request-from-checkstyle:^1.8
 
       - name: "Run docbook-cs with diff"
         working-directory: "${{ matrix.language }}"
@@ -91,45 +91,4 @@ jobs:
       - name: "Annotate PR with violations"
         if: ${{ ! cancelled() }}
         working-directory: "${{ matrix.language }}"
-        run: |
-          php -r '
-            if (!file_exists("docbook-report.xml")) {
-              echo "No report found.\n";
-              exit(0);
-            }
-
-            $xml = simplexml_load_file("docbook-report.xml");
-
-            $errorCount = 0;
-            $warningCount = 0;
-
-            foreach ($xml->file as $file) {
-              $name = (string)$file["name"];
-
-              echo "::group::File: {$name}\n";
-
-              foreach ($file->error as $error) {
-                $line = (string)$error["line"];
-                $msg = (string)$error["message"];
-                $sev = (string)$error["severity"];
-                $cmd = $sev === "error" ? "error" : "warning";
-
-                if ($sev === "error") {
-                  $errorCount++;
-                } else {
-                  $warningCount++;
-                }
-
-                // Human-readable log
-                echo "[{$sev}] {$name}:{$line} {$msg}\n";
-
-                // GitHub annotation
-                echo "::{$cmd} file={$name},line={$line}::{$msg}\n";
-              }
-
-              echo "::endgroup::\n";
-            }
-
-            echo "\nSummary: {$errorCount} error(s), {$warningCount} warning(s)\n";
-            exit($errorCount > 0 ? 1 : 0);
-          '
+        run: vendor/bin/cs2pr docbook-report.xml --colorize --prepend-filename
