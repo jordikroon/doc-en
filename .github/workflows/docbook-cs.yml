@@ -70,7 +70,7 @@ jobs:
 
       - name: "Install docbook-cs"
         working-directory: "${{ matrix.language }}"
-        run: composer require jordikroon/docbook-cs staabm/annotate-pull-request-from-checkstyle
+        run: composer require jordikroon/docbook-cs:^1.1 staabm/annotate-pull-request-from-checkstyle:^1.8
 
       - name: "Run docbook-cs with diff"
         working-directory: "${{ matrix.language }}"
@@ -91,4 +91,4 @@ jobs:
       - name: "Annotate PR with violations"
         if: ${{ ! cancelled() }}
         working-directory: "${{ matrix.language }}"
-        run: vendor/bin/cs2pr docbook-report.xml
+        run: vendor/bin/cs2pr docbook-report.xml --colorize --prepend-filename --prepend-source
