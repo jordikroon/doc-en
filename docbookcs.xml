@@ -31,7 +31,6 @@
  </entities>
 
  <exclude>
-  <pattern>*/wkhtmltox/bits/*</pattern>
   <pattern>output/*</pattern>
  </exclude>
 
