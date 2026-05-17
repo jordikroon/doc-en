@@ -58,7 +58,7 @@ jobs:
         with:
           php-version: "8.5"
           extensions: "dom, libxml, simplexml"
-          tools: composer:v2 cs2pr
+          tools: composer:v2, cs2pr:^1.8
 
       - name: "Build documentation"
         run: |
