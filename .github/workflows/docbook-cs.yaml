@@ -74,7 +74,7 @@ jobs:
           tools: composer, cs2pr
 
       - name: "Build documentation"
-        working-directory: "${{ matrix.language }}"
+        working-directory: "doc-${{ matrix.language }}"
         run: |
           php ../doc-base/configure.php \
             --disable-libxml-check \
