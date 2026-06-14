@@ -37,11 +37,11 @@ jobs:
           - "en"
 
     steps:
-      - name: "Checkout php/doc-${{ matrix.language }}"
+      - name: "Checkout php/${{ matrix.language }}"
         uses: "actions/checkout@v6"
         with:
           ref: "${{ github.event.pull_request.head.sha }}"
-          path: "doc-${{ matrix.language }}"
+          path: "${{ matrix.language }}"
           fetch-depth: 50
 
       - name: "Checkout php/doc-base"
@@ -57,7 +57,7 @@ jobs:
           repository: "php/docbook-cs"
 
       - name: "Fetch diff base"
-        working-directory: "doc-${{ matrix.language }}"
+        working-directory: "${{ matrix.language }}"
         run: |
           git fetch origin "$BASE_SHA" --depth=50
           # Deepen until the merge-base is reachable (long-lived branches)
@@ -74,7 +74,7 @@ jobs:
           tools: composer, cs2pr
 
       - name: "Build documentation"
-        working-directory: "doc-${{ matrix.language }}"
+        working-directory: "${{ matrix.language }}"
         run: |
           php ../doc-base/configure.php \
             --disable-libxml-check \
@@ -87,7 +87,7 @@ jobs:
         run: composer install --no-interaction --no-progress
 
       - name: "Run docbook-cs with diff"
-        working-directory: "doc-${{ matrix.language }}"
+        working-directory: "${{ matrix.language }}"
         run: |
           set -o pipefail
           git diff "$BASE_SHA"...HEAD | php ../docbook-cs/bin/docbook-cs \
@@ -104,5 +104,5 @@ jobs:
 
       - name: "Annotate PR with violations"
         if: ${{ ! cancelled() }}
-        working-directory: "doc-${{ matrix.language }}"
+        working-directory: "${{ matrix.language }}"
         run: cs2pr docbook-report.xml --colorize --prepend-filename
