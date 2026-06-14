@@ -74,8 +74,9 @@ jobs:
           tools: composer, cs2pr
 
       - name: "Build documentation"
+        working-directory: "${{ matrix.language }}"
         run: |
-          php doc-base/configure.php \
+          php ../doc-base/configure.php \
             --disable-libxml-check \
             --enable-xml-details \
             --redirect-stderr-to-stdout \
