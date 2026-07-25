@@ -5,20 +5,20 @@
   <refname>ldap_err2str</refname>
   <refpurpose>Convert LDAP error number into string error message</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>string</type><methodname>ldap_err2str</methodname>
    <methodparam><type>int</type><parameter>errno</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the string error message explaining the error number
    <parameter>errno</parameter>. While LDAP errno numbers are standardized,
    different libraries return different or even localized textual error
    messages. Never check for a specific error message text, but always use an
    error number to check.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,9 +28,9 @@
     <varlistentry>
      <term><parameter>errno</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The error number.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -39,9 +39,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the error message, as a string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -5,7 +5,7 @@
   <refname>mb_strpos</refname>
   <refpurpose>Find position of first occurrence of string in a string</refpurpose>
  </refnamediv>
-   
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -15,15 +15,15 @@
    <methodparam choice="opt"><type>int</type><parameter>offset</parameter><initializer>0</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>encoding</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Finds position of the first occurrence of <parameter>needle</parameter> in the <parameter>haystack</parameter> string.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Performs a multi-byte safe
    <function>strpos</function> operation based on number of
    characters. The first character's position is 0, the second character
-   position is 1, and so on. 
-  </para>
+   position is 1, and so on.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -33,29 +33,29 @@
     <varlistentry>
      <term><parameter>haystack</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string from which to get the position of the first occurrence
        of <parameter>needle</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>needle</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string to find in <parameter>haystack</parameter>. In contrast
        with <function>strpos</function>, numeric values are not applied
        as the ordinal value of a character.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The search offset. If it is not specified, 0 is used.
        A negative offset counts from the end of the string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -70,12 +70,12 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the numeric position of
    the first occurrence of <parameter>needle</parameter> in the
    <parameter>haystack</parameter> <type>string</type>. If
    <parameter>needle</parameter> is not found, it returns &false;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -85,7 +85,7 @@
     <simpara>
      If <parameter>offset</parameter> is greater than the length of
      <parameter>haystack</parameter>, a
-     <classname>ValueError</classname> will be thrown.
+     <exceptionname>ValueError</exceptionname> will be thrown.
     </simpara>
    </listitem>
   </itemizedlist>

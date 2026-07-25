@@ -15,13 +15,13 @@
    <methodparam><type>callable</type><parameter>callback</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>type</parameter><initializer><constant>IntlChar::UNICODE_CHAR_NAME</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Enumerate all assigned Unicode characters between the start and limit code points (start inclusive, limit exclusive)
    and call a function for each, passing the code point value and the character name.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    For Unicode 1.0 names, only those are enumerated that differ from the modern names.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,17 +30,17 @@
    <varlistentry>
     <term><parameter>start</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The first code point in the enumeration range.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>end</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       One more than the last code point in the enumeration range (the first one after the range).
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
@@ -76,9 +76,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

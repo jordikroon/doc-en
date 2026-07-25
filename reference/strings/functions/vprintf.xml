@@ -5,7 +5,7 @@
   <refname>vprintf</refname>
   <refpurpose>Output a formatted string</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,15 +13,15 @@
    <methodparam><type>string</type><parameter>format</parameter></methodparam>
    <methodparam><type>array</type><parameter>values</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Display array values as a formatted string according to
    <parameter>format</parameter> (which is described in the documentation
    for <function>sprintf</function>).
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Operates as <function>printf</function> but accepts an array of
    arguments, rather than a variable number of arguments.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -32,8 +32,8 @@
     <varlistentry>
      <term><parameter>values</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -42,9 +42,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the length of the outputted string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -56,7 +56,7 @@
   &reftitle.changelog;
   &strings.changelog.vsprintf;
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>

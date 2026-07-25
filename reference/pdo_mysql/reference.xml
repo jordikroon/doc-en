@@ -9,27 +9,27 @@
 
    <section xml:id="ref.pdo-mysql.intro">
    &reftitle.intro;
-    <para>
+    <simpara>
      PDO_MYSQL is a driver that implements the <link linkend="intro.pdo">PHP
      Data Objects (PDO) interface</link>
      to enable access from PHP to MySQL databases.
-    </para>
-    <para>
+    </simpara>
+    <simpara>
      PDO_MYSQL uses emulated prepares by default.
-    </para>
+    </simpara>
 
-    <para>
+    <simpara>
       <emphasis role="bold">MySQL 8</emphasis>
-    </para>
+    </simpara>
 
-    <para>
+    <simpara>
      When running a PHP version before 7.1.16, or PHP 7.2 before 7.2.4, set
      MySQL 8 Server's default password plugin to <emphasis>mysql_native_password</emphasis>
      or else you will see errors similar to
      <emphasis>The server requested authentication method unknown to the client [caching_sha2_password]</emphasis>
      even when <emphasis>caching_sha2_password</emphasis> is not used.
-    </para>
-    <para>
+    </simpara>
+    <simpara>
      This is because MySQL 8 defaults to caching_sha2_password, a plugin that is
      not recognized by the older PHP (mysqlnd) releases. Instead, change it by
      setting <literal>default_authentication_plugin=mysql_native_password</literal>
@@ -37,16 +37,16 @@
      plugin is fully supported as of PHP 7.4.4. For older releases, the
      <link linkend="book.mysql-xdevapi">mysql_xdevapi</link> extension does
      support it.
-    </para>
+    </simpara>
 
     <warning>
-     <para>
+     <simpara>
       Beware: Some MySQL table types (storage engines) do not support transactions.  When
       writing transactional database code using a table type that does not support
       transactions, MySQL will pretend that a transaction was initiated successfully.
       In addition, any DDL queries issued will implicitly
       commit any pending transactions.
-     </para>
+     </simpara>
     </warning>
     <note>
      <para>
@@ -75,51 +75,51 @@
       <varlistentry>
        <term>DSN prefix</term>
        <listitem>
-        <para>
+        <simpara>
         The DSN prefix is <userinput>mysql:</userinput>.
-        </para>
+        </simpara>
        </listitem>
       </varlistentry>
       <varlistentry>
        <term><literal>host</literal></term>
        <listitem>
-        <para>
+        <simpara>
          The hostname on which the database server resides.
-        </para>
+        </simpara>
        </listitem>
       </varlistentry>
       <varlistentry>
        <term><literal>port</literal></term>
        <listitem>
-        <para>
+        <simpara>
          The port number where the database server is listening.
-        </para>
+        </simpara>
        </listitem>
       </varlistentry>
       <varlistentry>
        <term><literal>dbname</literal></term>
        <listitem>
-        <para>
+        <simpara>
          The name of the database.
-        </para>
+        </simpara>
        </listitem>
       </varlistentry>
       <varlistentry>
        <term><literal>unix_socket</literal></term>
        <listitem>
-        <para>
+        <simpara>
          The MySQL Unix socket (shouldn't be used with <literal>host</literal>
          or <literal>port</literal>).
-        </para>
+        </simpara>
        </listitem>
       </varlistentry>
       <varlistentry>
        <term><literal>charset</literal></term>
        <listitem>
-        <para>
+        <simpara>
          The character set. See the <link linkend="mysqlinfo.concepts.charset">character set</link>
          concepts documentation for more information.
-        </para>
+        </simpara>
        </listitem>
       </varlistentry>
      </variablelist>
@@ -155,13 +155,13 @@ mysql:unix_socket=/tmp/mysql.sock;dbname=testdb
     &reftitle.notes;
     <note>
      <title>Unix only:</title>
-     <para>
+     <simpara>
       When the host name is set to <literal>"localhost"</literal>, then the connection to the
       server is made through a domain socket. If PDO_MYSQL is compiled against libmysqlclient then the
       location of the socket file is at libmysqlclient's compiled in location. If PDO_MYSQL is compiled
       against mysqlnd a default socket can be set through the <link linkend="ini.pdo-mysql.default-socket">
       pdo_mysql.default_socket</link> setting.
-     </para>
+     </simpara>
     </note>
    </refsect1>
   </refentry>

@@ -4,7 +4,7 @@
   <refname>pcntl_rfork</refname>
   <refpurpose>Manipulates process resources</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -12,9 +12,9 @@
    <methodparam><type>int</type><parameter>flags</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>signal</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Manipulates process resources.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,10 +24,10 @@
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <parameter>flags</parameter> parameter determines which resources of the invoking process (parent)
        are shared by the new process (child) or initialized to their default values.
-      </para>
+      </simpara>
       <para>
        <parameter>flags</parameter> is the logical OR of some subset of:
        <simplelist>
@@ -58,9 +58,9 @@
     <varlistentry>
      <term><parameter>signal</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The signal number.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -69,13 +69,13 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    On success, the PID of the child process is returned in the
    parent's thread of execution, and a <literal>0</literal> is returned in the child's
-   thread of execution. 
+   thread of execution.
    On failure, a <literal>-1</literal> will be returned in the
    parent's context, no child process will be created, and a PHP error is raised.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -113,9 +113,9 @@ int(0)
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     This function is only available on BSD systems.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

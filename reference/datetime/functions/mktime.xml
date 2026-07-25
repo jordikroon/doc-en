@@ -17,29 +17,29 @@
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>day</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>year</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the Unix timestamp corresponding to the arguments
    given. This timestamp is a long integer containing the number of
    seconds between the Unix Epoch (January 1 1970 00:00:00 GMT) and the time
    specified.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Any optional
    arguments omitted or &null; will be set to the current value according
    to the local date and time.
-  </para>
+  </simpara>
   <warning>
-   <para>
+   <simpara>
     Please note that the ordering of arguments is in an odd order:
     <parameter>month</parameter>, <parameter>day</parameter>,
     <parameter>year</parameter>, and not in the more reasonable order of
     <parameter>year</parameter>, <parameter>month</parameter>,
     <parameter>day</parameter>.
-   </para>
+   </simpara>
   </warning>
   <simpara>
    Calling <function>mktime</function> without arguments is not supported,
-   and will result in an <classname>ArgumentCountError</classname>.
+   and will result in an <exceptionname>ArgumentCountError</exceptionname>.
    <function>time</function> can be used to get the current timestamp.
   </simpara>
  </refsect1>
@@ -51,79 +51,79 @@
     <varlistentry>
      <term><parameter>hour</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number of the hour relative to the start of the day determined by
        <parameter>month</parameter>, <parameter>day</parameter> and <parameter>year</parameter>.
        Negative values reference the hour before midnight of the day in question.
        Values greater than 23 reference the appropriate hour in the following day(s).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>minute</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number of the minute relative to the start of the <parameter>hour</parameter>.
        Negative values reference the minute in the previous hour.
        Values greater than 59 reference the appropriate minute in the following hour(s).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>second</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number of seconds relative to the start of the <parameter>minute</parameter>.
        Negative values reference the second in the previous minute.
        Values greater than 59 reference the appropriate second in the following minute(s).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>month</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number of the month relative to the end of the previous year.
        Values 1 to 12 reference the normal calendar months of the year in question.
        Values less than 1 (including negative values) reference the months in the previous year in reverse order, so 0 is December, -1 is November, etc.
        Values greater than 12 reference the appropriate month in the following year(s).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>day</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number of the day relative to the end of the previous month.
        Values 1 to 28, 29, 30 or 31 (depending upon the month) reference the normal days in the relevant month.
        Values less than 1 (including negative values) reference the days in the previous month, so 0 is the last day of the previous month, -1 is the day before that, etc.
        Values greater than the number of days in the relevant month reference the appropriate day in the following month(s).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>year</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number of the year, may be a two or four digit value,
        with values between 0-69 mapping to 2000-2069 and 70-100 to
        1970-2000. On systems where time_t is a 32bit signed integer, as
-       most common today, the valid range for <parameter>year</parameter> 
+       most common today, the valid range for <parameter>year</parameter>
        is somewhere between 1901 and 2038.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
- </refsect1>                                                                                                            
-   
-  
+ </refsect1>
+
+
  <refsect1 role="returnvalues">
-  &reftitle.returnvalues; 
-  <para>
+  &reftitle.returnvalues;
+  <simpara>
    <function>mktime</function> returns the Unix timestamp of the arguments
    given, or &false; if the timestamp doesn't fit in a PHP integer.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -188,12 +188,12 @@ July 1, 2000 is on a Saturday
   <para>
    <example>
     <title><function>mktime</function> example</title>
-    <para>
+    <simpara>
      <function>mktime</function> is useful for doing date arithmetic
      and validation, as it will automatically calculate the correct
      value for out-of-range input. For example, each of the following
      lines produces the string "Jan-01-1998".
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -244,11 +244,11 @@ print date('c', $nextyear) . "\n";
     </screen>
    </example>
    <note>
-    <para>
+    <simpara>
      This can be more reliable than simply adding or subtracting the number
      of seconds in a day or month to a timestamp because of daylight saving
      time.
-    </para>
+    </simpara>
    </note>
   </para>
   <para>
@@ -288,7 +288,7 @@ Last day in Feb 2000 is: 29
     <member>The <classname>DateTimeImmutable</classname> class</member>
     <member><function>checkdate</function></member>
     <member><function>gmmktime</function></member>
-    <member><function>date</function></member> 
+    <member><function>date</function></member>
     <member><function>time</function></member>
    </simplelist>
   </para>

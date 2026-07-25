@@ -13,11 +13,11 @@
    <methodparam><type>string</type><parameter>domain</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>codeset</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>bind_textdomain_codeset</function> allows to set or get the
    encoding in which messages from <parameter>domain</parameter> will be returned by
    <function>gettext</function> and similar functions.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,18 +27,18 @@
     <varlistentry>
      <term><parameter>domain</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The domain.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>codeset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The code set.
        If &null;, the currently set encoding is returned.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -47,9 +47,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A <type>string</type> on success.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -100,10 +100,10 @@
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     The <function>bind_textdomain_codeset</function> information is maintained per process,
     not per thread.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 </refentry>

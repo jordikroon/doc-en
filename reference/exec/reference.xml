@@ -9,19 +9,19 @@
    <section xml:id="exec.notes">
     &reftitle.notes;
     <warning>
-     <para>
+     <simpara>
       Open files with lock (especially open sessions) should be closed before
       executing a program in the background.
-     </para>
+     </simpara>
     </warning>
    </section>
 
    <section xml:id="exec.seealso">
    &reftitle.seealso;
-    <para>
-     These functions are also closely related to the 
+    <simpara>
+     These functions are also closely related to the
      <link linkend="language.operators.execution">backtick operator</link>.
-    </para>
+    </simpara>
    </section>
 
   </partintro>

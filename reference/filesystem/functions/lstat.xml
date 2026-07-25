@@ -5,17 +5,17 @@
   <refname>lstat</refname>
   <refpurpose>Gives information about a file or symbolic link</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>array</type><type>false</type></type><methodname>lstat</methodname>
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gathers the statistics of the file or symbolic link named by
-   <parameter>filename</parameter>.  
-  </para>
+   <parameter>filename</parameter>.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path to a file or a symbolic link.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -36,17 +36,17 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    See the manual page for <function>stat</function> for information on
    the structure of the array that <function>lstat</function> returns.
    This function is identical to the <function>stat</function> function
    except that if the <parameter>filename</parameter> parameter is a symbolic
    link, the status of the symbolic link is returned, not the status of the
    file pointed to by the symbolic link.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    On failure, &false; is returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -70,9 +70,9 @@ array_diff(stat('uploads'), lstat('uploads'));
 ]]>
     </programlisting>
     &example.outputs.similar;
-    <para>
+    <simpara>
      Information that differs between the two files.
-    </para>
+    </simpara>
     <screen>
 <![CDATA[
 Array

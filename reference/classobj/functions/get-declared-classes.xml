@@ -11,31 +11,31 @@
    <type>array</type><methodname>get_declared_classes</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the declared classes.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
   &reftitle.parameters;
   &no.function.parameters;
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array of the names of the declared classes in the current
    script.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     Note that depending on what extensions you have compiled or
     loaded into PHP, additional classes could be present. This means that
     you will not be able to define your own classes using these
     names. There is a list of predefined classes in the <link
     linkend="reserved.classes">Predefined Classes</link> section of
     the appendices.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

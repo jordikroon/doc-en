@@ -8,22 +8,22 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="mysqli_result">
    <modifier>public</modifier> <type class="union"><type>null</type><type>int</type><type>float</type><type>string</type><type>false</type></type><methodname>mysqli_result::fetch_column</methodname>
    <methodparam choice="opt"><type>int</type><parameter>column</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type class="union"><type>null</type><type>int</type><type>float</type><type>string</type><type>false</type></type><methodname>mysqli_fetch_column</methodname>
    <methodparam><type>mysqli_result</type><parameter>result</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>column</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Fetches one row of data from the result set and returns the 0-indexed column.
    Each subsequent call to this function will return the value from the next row
    within the result set, or &false; if there are no more rows.
-  </para>
+  </simpara>
   &database.fetch-null;
  </refsect1>
 
@@ -35,10 +35,10 @@
     <varlistentry>
      <term><parameter>column</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        0-indexed number of the column you wish to retrieve from the row. If
        no value is supplied, the first column will be returned.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -47,15 +47,15 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a single column
    from the next row of a result set or &false; if there are no more rows.
-  </para>
+  </simpara>
   <warning>
-   <para>
+   <simpara>
     There is no way to return another column from the same row if you
     use this function to retrieve data.
-   </para>
+   </simpara>
   </warning>
  </refsect1>
 
@@ -63,7 +63,7 @@
   &reftitle.examples;
   <example>
    <title><methodname>mysqli_result::fetch_column</methodname> example</title>
-   <para>&style.oop;</para>
+   <simpara>&style.oop;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -81,7 +81,7 @@ while ($Name = $result->fetch_column(1)) {
 }
 ]]>
    </programlisting>
-   <para>&style.procedural;</para>
+   <simpara>&style.procedural;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://docbook.org/ns/docbook" xml:id="function.chr">
+<refentry xml:id="function.chr" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>chr</refname>
   <refpurpose>Generate a single-byte string from a number</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>string</type><methodname>chr</methodname>
    <methodparam><type>int</type><parameter>codepoint</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a one-character string containing the character specified
    by interpreting <parameter>codepoint</parameter> as an unsigned integer.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This can be used to create a one-character string in a single-byte encoding such as ASCII, ISO-8859, or Windows 1252, by passing the position of a desired character in the encoding's mapping table. However, note that this function is not aware of any string encoding, and in particular cannot be passed a Unicode code point value to generate a string in a multibyte encoding like UTF-8 or UTF-16.
-  </para>
-  <para>
-   This function complements <function>ord</function>. 
-  </para>
+  </simpara>
+  <simpara>
+   This function complements <function>ord</function>.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -31,9 +31,9 @@
     <varlistentry>
      <term><parameter>codepoint</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An integer between 0 and 255.
-      </para>
+      </simpara>
       <para>
        Values outside the valid range (0..255) will be bitwise and'ed with 255,
        which is equivalent to the following algorithm:
@@ -54,9 +54,9 @@ $bytevalue %= 256;
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A single-character string containing the specified byte.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -129,7 +129,7 @@ aA
     </screen>
    </example>
   </para>
-  <para> 
+  <para>
    <example>
     <title>Building a UTF-8 string from individual bytes</title>
     <programlisting role="php">

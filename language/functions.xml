@@ -6,12 +6,12 @@
   <sect1 xml:id="functions.user-defined">
    <title>User-defined functions</title>
 
-   <para>
+   <simpara>
     A function is defined using the <literal>function</literal> keyword,
     a name, a list of parameters (which might be empty) separated by commas
     (<literal>,</literal>) enclosed in parentheses, followed by the body of
     the function enclosed in curly braces, such as the following:
-   </para>
+   </simpara>
    <example>
     <title>Declaring a new function named <literal>foo</literal></title>
     <programlisting role="php" annotations="non-interactive">
@@ -38,7 +38,7 @@ function foo($arg_1, $arg_2,) { }
      </informalexample>
     </para>
    </note>
-   
+
    <simpara>
     Any valid PHP code may appear inside the body of a function, even other
     functions and <link linkend="language.oop5.basic.class">class</link>
@@ -57,11 +57,11 @@ function foo($arg_1, $arg_2,) { }
     <emphasis>except</emphasis> when a function is conditionally defined as
     shown in the two examples below.
    </simpara>
-   <para>
+   <simpara>
     When a function is defined in a conditional manner such as the two
     examples shown. Its definition must be processed <emphasis>prior</emphasis>
     to being called.
-   </para>
+   </simpara>
    <para>
     <example>
      <title>Conditional functions</title>
@@ -70,7 +70,7 @@ function foo($arg_1, $arg_2,) { }
 <?php
 $makefoo = true;
 
-/* We can't call foo() from here 
+/* We can't call foo() from here
    since it doesn't exist yet,
    but we can call bar() */
 if (function_exists('foo')) {
@@ -93,7 +93,7 @@ if ($makefoo) {
 
 if ($makefoo) foo();
 
-function bar() 
+function bar()
 {
   echo "I exist immediately upon program start.\n";
 }
@@ -107,9 +107,9 @@ function bar()
      <programlisting role="php">
 <![CDATA[
 <?php
-function foo() 
+function foo()
 {
-  function bar() 
+  function bar()
   {
     echo "I don't exist until foo() is called.\n";
   }
@@ -132,10 +132,10 @@ bar();
      </programlisting>
     </example>
    </para>
-   <para>
+   <simpara>
     All functions and classes in PHP have the global scope - they can be
     called outside a function even if they were defined inside and vice versa.
-   </para>
+   </simpara>
    <simpara>
     PHP does not support function overloading, nor is it possible to
     undefine or redefine previously-declared functions.
@@ -145,7 +145,7 @@ bar();
      Function names are case-insensitive for the ASCII characters <literal>A</literal> to <literal>Z</literal>, though it is usually good form
      to call functions as they appear in their declaration.
     </simpara>
-   </note>   
+   </note>
    <simpara>
     Both <link linkend="functions.variable-arg-list">variable number of
     arguments</link> and <link linkend="functions.arguments.default">default
@@ -155,7 +155,7 @@ bar();
     <function>func_get_arg</function>, and
     <function>func_get_args</function> for more information.
    </simpara>
-   
+
    <para>
     It is possible to call recursive functions in PHP.
     <example>
@@ -199,7 +199,7 @@ recursion(17);
    </simpara>
 
    <!-- Note: this paragraph feels like it should be moved to the syntax part? -->
-   <para>
+   <simpara>
     PHP supports passing arguments by value (the default), <link
     linkend="functions.arguments.by-reference">passing by
     reference</link>, and <link
@@ -207,7 +207,7 @@ recursion(17);
     values</link>. <link linkend="functions.variable-arg-list">Variable-length
     argument lists</link> and <link linkend="functions.named-arguments">Named Arguments</link>
     are also supported.
-   </para>
+   </simpara>
    <note>
     <para>
      As of PHP 7.3.0, it is possible to have a trailing comma in the argument
@@ -226,11 +226,11 @@ $v = foo(
     </para>
    </note>
 
-   <para>
+   <simpara>
     As of PHP 8.0.0, the list of function parameters may include a trailing comma, which
     will be ignored. That is particularly useful in cases where the list of parameters is
     long or contains long variable names, making it convenient to list parameters vertically.
-   </para>
+   </simpara>
    <example>
     <title>Function parameter list with trailing comma</title>
     <programlisting role="php" annotations="non-interactive">
@@ -259,10 +259,10 @@ function takes_many_args(
      not get changed outside of the function). To allow a function to modify its
      arguments, they must be passed by reference.
     </simpara>
-    <para>
+    <simpara>
      To have an argument to a function always passed by reference, prepend an
      ampersand (&amp;) to the parameter name in the function definition:
-    </para>
+    </simpara>
     <para>
      <example>
       <title>Passing function arguments by reference</title>
@@ -280,20 +280,20 @@ echo $str;    // outputs 'This is a string, and something extra.'
       </programlisting>
      </example>
     </para>
-    <para>
+    <simpara>
      It is an error to pass a constant expression as an argument to a parameter
      that expects to be passed by reference.
-    </para>
+    </simpara>
    </sect2>
    <sect2 xml:id="functions.arguments.default">
     <title>Default parameter values</title>
 
-    <para>
+    <simpara>
      A function may define default values for parameters using syntax similar
      to assigning a variable. The default is used only when the parameter's argument is
      not passed. Note that passing &null; does <emphasis>not</emphasis>
      assign the default value.
-    </para>
+    </simpara>
     <para>
      <example>
       <title>Use of default parameters in functions</title>
@@ -319,11 +319,11 @@ Making a cup of espresso.
       </screen>
      </example>
     </para>
-    <para>
+    <simpara>
      Default parameter values may be scalar values, <type>array</type>s,
      the special type &null;, and as of PHP 8.1.0, objects using the
      <link linkend="language.oop5.basic.new">new ClassName()</link> syntax.
-    </para>
+    </simpara>
     <para>
      <example>
       <title>Using non-scalar types as default values</title>
@@ -386,11 +386,11 @@ Crafting a beautiful coffee just for you.
      The default value must be a constant expression, not (for
      example) a variable, a class member or a function call.
     </simpara>
-    <para>
+    <simpara>
      Note that any optional parameters should be specified after any
      required parameters, otherwise they cannot be omitted from calls.
      Consider the following example:
-    </para>
+    </simpara>
     <para>
      <example>
       <title>Incorrect usage of default function parameters</title>
@@ -419,9 +419,9 @@ Stack trace:
       </screen>
      </example>
     </para>
-    <para>
+    <simpara>
      Now, compare the above with this:
-    </para>
+    </simpara>
     <para>
      <example>
       <title>Correct usage of default function parameters</title>
@@ -444,10 +444,10 @@ Making a bowl of raspberry yogurt.
       </screen>
      </example>
     </para>
-    <para>
+    <simpara>
      As of PHP 8.0.0, <link linkend="functions.named-arguments">named arguments</link>
      can be used to skip over multiple optional parameters.
-    </para>
+    </simpara>
     <para>
      <example>
       <title>Correct usage of default function parameters</title>
@@ -499,7 +499,7 @@ function bar(?A $a, $b) {}       // Recommended
     <note>
      <simpara>
       As of PHP 7.1.0, omitting a parameter which does not specify a default
-      throws an <classname>ArgumentCountError</classname>; in previous versions
+      throws an <exceptionname>ArgumentCountError</exceptionname>; in previous versions
       it raised a Warning.
      </simpara>
     </note>
@@ -580,12 +580,12 @@ echo add(...$a);
      </example>
     </para>
 
-    <para>
+    <simpara>
      You may specify normal positional parameters before the
      <literal>...</literal> token. In this case, only the trailing arguments
      that don't match a positional argument will be added to the array
      generated by <literal>...</literal>.
-    </para>
+    </simpara>
 
     <para>
      It is also possible to add a
@@ -628,32 +628,32 @@ Stack trace:
      </example>
     </para>
 
-    <para>
+    <simpara>
      Finally, variable arguments can also be passed
      <link linkend="functions.arguments.by-reference">by reference</link> by
      prefixing the <literal>...</literal> with an ampersand
      (<literal>&amp;</literal>).
-    </para>
+    </simpara>
 
    </sect2>
 
    <sect2 xml:id="functions.named-arguments">
     <title>Named Arguments</title>
 
-    <para>
+    <simpara>
      PHP 8.0.0 introduced named arguments as an extension of the existing
      positional parameters. Named arguments allow passing arguments to a
      function based on the parameter name, rather than the parameter position.
      This makes the meaning of the argument self-documenting, makes the
      arguments order-independent and allows skipping default values arbitrarily.
-    </para>
+    </simpara>
 
-    <para>
+    <simpara>
      Named arguments are passed by prefixing the value with the parameter name
      followed by a colon. Using reserved keywords as parameter names is allowed.
      The parameter name must be an identifier, specifying dynamically
      is not allowed.
-    </para>
+    </simpara>
 
     <example>
      <title>Named argument syntax</title>
@@ -683,9 +683,9 @@ array_fill(start_index: 0, count: 100, value: 50);
      </programlisting>
     </example>
 
-    <para>
+    <simpara>
      The order in which the named arguments are passed does not matter.
-    </para>
+    </simpara>
 
     <example>
      <title>Same example as above with a different order of parameters</title>
@@ -697,12 +697,12 @@ array_fill(value: 50, count: 100, start_index: 0);
      </programlisting>
     </example>
 
-    <para>
+    <simpara>
      Named arguments can be combined with positional arguments. In this case,
      the named arguments must come after the positional arguments.
      It is also possible to specify only some of the optional arguments of a
      function, regardless of their order.
-    </para>
+    </simpara>
 
     <example>
      <title>Combining named arguments with positional arguments</title>
@@ -716,10 +716,10 @@ htmlspecialchars($string, ENT_QUOTES | ENT_SUBSTITUTE | ENT_HTML401, 'UTF-8', fa
      </programlisting>
     </example>
 
-    <para>
+    <simpara>
      Passing an argument to the same named parameter multiple times results in an
-     <classname>Error</classname> exception.
-    </para>
+     <exceptionname>Error</exceptionname> exception.
+    </simpara>
 
     <example>
      <title>Error thrown when passing an argument to the same named parameter multiple times</title>
@@ -737,10 +737,10 @@ foo(1, param: 2);
      </programlisting>
     </example>
 
-    <para>
+    <simpara>
      As of PHP 8.1.0, it is possible to use named arguments after unpacking the arguments.
      A named argument <emphasis>must not</emphasis> override an already unpacked argument.
-    </para>
+    </simpara>
 
     <example>
      <title>Use named arguments after unpacking</title>
@@ -765,19 +765,19 @@ var_dump(foo(...[1, 2], b: 20)); // Fatal error. Named parameter $b overwrites p
   <sect1 xml:id="functions.returning-values">
    <title>Returning values</title>
 
-   <para>
+   <simpara>
     Values are returned by using the optional return statement. Any
     type may be returned, including arrays and objects. This causes the
     function to end its execution immediately and pass control back to
     the line from which it was called. See <function>return</function>
     for more information.
-   </para>
+   </simpara>
 
    <note>
-    <para>
+    <simpara>
      If the <function>return</function> is omitted the value &null; will be
      returned.
-    </para>
+    </simpara>
    </note>
 
    <sect2>
@@ -798,10 +798,10 @@ echo square(4);   // outputs '16'.
      </example>
     </para>
 
-    <para>
+    <simpara>
      A function can not return multiple values, but similar results can be
      obtained by returning an array.
-    </para>
+    </simpara>
     <para>
      <example>
       <title>Returning an array to get multiple values</title>
@@ -822,11 +822,11 @@ list($zero, $one, $two) = small_numbers();
       </programlisting>
      </example>
     </para>
-    <para>
+    <simpara>
      To return a reference from a function, use the reference operator &amp; in
      both the function declaration and when assigning the returned value to a
      variable:
-    </para>
+    </simpara>
     <para>
      <example>
       <title>Returning a reference from a function</title>
@@ -853,21 +853,21 @@ $newref =& returns_reference();
   <sect1 xml:id="functions.variable-functions">
    <title>Variable functions</title>
 
-   <para>
+   <simpara>
     PHP supports the concept of variable functions. This means that if
     a variable name has parentheses appended to it, PHP will look for
     a function with the same name as whatever the variable evaluates
     to, and will attempt to execute it. Among other things, this can
     be used to implement callbacks, function tables, and so forth.
-   </para>
-   <para>
-    Variable functions won't work with language constructs such 
+   </simpara>
+   <simpara>
+    Variable functions won't work with language constructs such
     as <function>echo</function>, <function>print</function>,
     <function>unset</function>, <function>isset</function>,
     <function>empty</function>, <function>include</function>,
     <function>require</function> and the like. Utilize wrapper functions to make
     use of any of these constructs as variable functions.
-   </para>
+   </simpara>
    <para>
     <example>
      <title>Variable function example</title>
@@ -915,7 +915,7 @@ class Foo
         $name = 'Bar';
         $this->$name(); // This calls the Bar() method
     }
-    
+
     function Bar()
     {
         echo "This is Bar";
@@ -1000,22 +1000,22 @@ $func(); // prints "bar"
     </para>
    </sect2>
   </sect1>
-  
+
   <sect1 xml:id="functions.internal">
    <title>Internal (built-in) functions</title>
-   
-   <para>
+
+   <simpara>
     PHP comes standard with many functions and constructs. There are also
-    functions that require specific PHP extensions compiled in, otherwise 
-    fatal "undefined function" errors will appear. For example, to use 
-    <link linkend="ref.image">image</link> functions such as 
+    functions that require specific PHP extensions compiled in, otherwise
+    fatal "undefined function" errors will appear. For example, to use
+    <link linkend="ref.image">image</link> functions such as
     <function>imagecreatetruecolor</function>, PHP must be compiled with
     <productname>GD</productname> support. Or, to use
     <function>mysqli_connect</function>, PHP must be compiled with
     <link linkend="book.mysqli">MySQLi</link> support. There are many core functions
     that are included in every version of PHP, such as the
-    <link linkend="ref.strings">string</link> and 
-    <link linkend="ref.var">variable</link> functions. A call 
+    <link linkend="ref.strings">string</link> and
+    <link linkend="ref.var">variable</link> functions. A call
     to <function>phpinfo</function> or
     <function>get_loaded_extensions</function> will show which extensions are
     loaded into PHP. Also note that many extensions are enabled by default and
@@ -1023,46 +1023,46 @@ $func(); // prints "bar"
     <link linkend="configuration">configuration</link>,
     <link linkend="install">installation</link>, and individual
     extension chapters, for information on how to set up PHP.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     Reading and understanding a function's prototype is explained within the
     manual section titled <link linkend="about.prototypes">how to read a
     function definition</link>. It's important to realize what a function
     returns or if a function works directly on a passed in value. For example,
-    <function>str_replace</function> will return the modified string while 
+    <function>str_replace</function> will return the modified string while
     <function>usort</function> works on the actual passed in variable
     itself. Each manual page also has specific information for each
     function like information on function parameters, behavior changes,
     return values for both success and failure, and availability information.
     Knowing these important (yet often subtle) differences is crucial for
     writing correct PHP code.
-   </para>
+   </simpara>
    <note>
     <simpara>
-     If the parameters given to a function are not what it expects, such as 
-     passing an <type>array</type> where a <type>string</type> is expected, 
+     If the parameters given to a function are not what it expects, such as
+     passing an <type>array</type> where a <type>string</type> is expected,
      the return value of the function is undefined. In this case it will
-     likely return &null; but this is just a convention, and cannot be relied 
+     likely return &null; but this is just a convention, and cannot be relied
      upon.
-     As of PHP 8.0.0, a <classname>TypeError</classname> exception is supposed to
+     As of PHP 8.0.0, a <exceptionname>TypeError</exceptionname> exception is supposed to
      be thrown in this case.
     </simpara>
    </note>
    <note>
-    <para>
+    <simpara>
      Scalar types for built-in functions are nullable by default in coercive mode.
      As of PHP 8.1.0, passing &null; to an internal function parameter that is not declared nullable
      is discouraged and emits a deprecation notice in coercive mode to align with the behavior of user-defined functions,
      where scalar types need to be marked as nullable explicitly.
-    </para>
+    </simpara>
 
-    <para>
+    <simpara>
      For example, <function>strlen</function> function expects the parameter <literal>$string</literal>
      to be a non-nullable &string;.
      For historical reasons, PHP allows passing &null; for this parameter in coercive mode, and the parameter is
      implicitly cast to <type>string</type>, resulting in a <literal>""</literal> value.
-     In contrast, a <classname>TypeError</classname> is emitted in strict mode.
-    </para>
+     In contrast, a <exceptionname>TypeError</exceptionname> is emitted in strict mode.
+    </simpara>
 
     <informalexample>
      <programlisting role="php">
@@ -1092,7 +1092,7 @@ var_dump(str_contains("foobar", null));
     </para>
    </sect2>
   </sect1>
-  
+
   <sect1 xml:id="functions.anonymous">
    <title>Anonymous functions</title>
 
@@ -1121,7 +1121,7 @@ echo preg_replace_callback('~-([a-z])~', function ($match) {
    </example>
 
    <simpara>
-    Closures can also be used as the values of variables; PHP automatically 
+    Closures can also be used as the values of variables; PHP automatically
     converts such expressions into instances of the
     <classname>Closure</classname> internal class. Assigning a closure to a
     variable uses the same syntax as any other assignment, including the
@@ -1142,7 +1142,7 @@ $greet('PHP');
 ]]>
     </programlisting>
    </example>
-   
+
    <simpara>
     Closures may also inherit variables from the parent scope. Any such
     variables must be passed to the <literal>use</literal> language construct.
@@ -1218,13 +1218,13 @@ string(11) "hello world"
     </screen>
    </example>
 
-   <para>
+   <simpara>
     As of PHP 8.0.0, the list of scope-inherited variables may include a trailing
     comma, which will be ignored.
-   </para>
+   </simpara>
    <simpara>
-    Inheriting variables from the parent scope is <emphasis>not</emphasis> 
-    the same as using global variables. 
+    Inheriting variables from the parent scope is <emphasis>not</emphasis>
+    the same as using global variables.
     Global variables exist in the global scope, which is the same no
     matter what function is executing. The parent scope of a closure is the
     function in which the closure was declared (not necessarily the function it
@@ -1247,22 +1247,22 @@ class Cart
     const PRICE_EGGS    = 6.95;
 
     protected $products = array();
-    
+
     public function add($product, $quantity)
     {
         $this->products[$product] = $quantity;
     }
-    
+
     public function getQuantity($product)
     {
         return isset($this->products[$product]) ? $this->products[$product] :
                FALSE;
     }
-    
+
     public function getTotal($tax)
     {
         $total = 0.00;
-        
+
         $callback =
             function ($quantity, $product) use ($tax, &$total)
             {
@@ -1270,7 +1270,7 @@ class Cart
                     strtoupper($product));
                 $total += ($pricePerItem * $quantity) * ($tax + 1.0);
             };
-        
+
         array_walk($this->products, $callback);
         return round($total, 2);
     }
@@ -1319,22 +1319,22 @@ object(Test)#1 (0) {
     </screen>
    </example>
 
-   <para>
+   <simpara>
     When declared in the context of a class, the current class is
     automatically bound to it, making <literal>$this</literal> available
     inside of the function's scope. If this automatic binding of the current
     class is not wanted, then
     <link linkend="functions.anonymous-functions.static">static anonymous
     functions</link> may be used instead.
-   </para>
+   </simpara>
 
    <sect2 xml:id="functions.anonymous-functions.static">
     <title>Static anonymous functions</title>
-    <para>
+    <simpara>
      Anonymous functions may be declared statically. This
      prevents them from having the current class automatically bound to
      them. Objects may also not be bound to them at runtime.
-    </para>
+    </simpara>
     <para>
      <example>
       <title>Attempting to use <literal>$this</literal> inside a static anonymous function</title>
@@ -1395,7 +1395,7 @@ Stack trace:
      </example>
     </para>
    </sect2>
-   
+
    <sect2 role="changelog">
     &reftitle.changelog;
     <para>
@@ -1445,30 +1445,30 @@ Stack trace:
    <title>Arrow Functions</title>
 
    <simpara>
-    Arrow functions were introduced in PHP 7.4 as a more concise syntax for 
+    Arrow functions were introduced in PHP 7.4 as a more concise syntax for
     <link linkend="functions.anonymous">anonymous functions</link>.
    </simpara>
    <simpara>
-    Both anonymous functions and arrow functions are implemented using the 
+    Both anonymous functions and arrow functions are implemented using the
     <classname>Closure</classname> class.
    </simpara>
 
    <simpara>
-    Arrow functions have the basic form 
+    Arrow functions have the basic form
     <code>fn (argument_list) =&gt; expr</code>.
    </simpara>
 
    <simpara>
-    Arrow functions support the same features as 
-    <link linkend="functions.anonymous">anonymous functions</link>, 
+    Arrow functions support the same features as
+    <link linkend="functions.anonymous">anonymous functions</link>,
     except that using variables from the parent scope is always automatic.
    </simpara>
 
    <simpara>
-    When a variable used in the expression is defined in the parent scope 
+    When a variable used in the expression is defined in the parent scope
     it will be implicitly captured by-value.
-    In the following example, the functions <varname>$fn1</varname> and 
-    <varname>$fn2</varname> behave the same way. 
+    In the following example, the functions <varname>$fn1</varname> and
+    <varname>$fn2</varname> behave the same way.
    </simpara>
 
    <para>
@@ -1497,7 +1497,7 @@ var_export($fn1(3));
     </example>
    </para>
    <simpara>
-    This also works if the arrow functions are nested: 
+    This also works if the arrow functions are nested:
    </simpara>
    <para>
     <example>
@@ -1514,11 +1514,11 @@ var_export($fn(5)(10));
     </example>
    </para>
    <simpara>
-    Similarly to anonymous functions, 
+    Similarly to anonymous functions,
     the arrow function syntax allows arbitrary function signatures,
     including parameter and return types, default values, variadics,
     as well as by-reference passing and returning.
-    All of the following are valid examples of arrow functions: 
+    All of the following are valid examples of arrow functions:
    </simpara>
    <para>
     <example>
@@ -1538,11 +1538,11 @@ fn($x, ...$rest) => $rest;
    </para>
    <simpara>
     Arrow functions use by-value variable binding.
-    This is roughly equivalent to performing a <code>use($x)</code> for every 
+    This is roughly equivalent to performing a <code>use($x)</code> for every
     variable <varname>$x</varname> used inside the arrow function.
-    A by-value binding means that it is not possible to modify any values 
-    from the outer scope. 
-    <link linkend="functions.anonymous">Anonymous functions</link> 
+    A by-value binding means that it is not possible to modify any values
+    from the outer scope.
+    <link linkend="functions.anonymous">Anonymous functions</link>
     can be used instead for by-ref bindings.
    </simpara>
    <para>
@@ -1559,7 +1559,7 @@ var_export($x);  // Outputs 1
      </programlisting>
     </example>
    </para>
-   
+
    <sect2 role="changelog">
     &reftitle.changelog;
     <para>
@@ -1599,11 +1599,11 @@ var_export($x);  // Outputs 1
   <sect1 xml:id="functions.first_class_callable_syntax">
    <title>First class callable syntax</title>
 
-   <para>
+   <simpara>
     The first class callable syntax is introduced as of PHP 8.1.0, as a way of creating <link linkend="functions.anonymous">anonymous functions</link> from <link linkend="language.types.callable">callable</link>.
     It supersedes existing callable syntax using strings and arrays.
     The advantage of this syntax is that it is accessible to static analysis, and uses the scope at the point where the callable is acquired.
-   </para>
+   </simpara>
 
    <para>
     <code>CallableExpr(...)</code> syntax is used to create a <classname>Closure</classname> object from callable. <code>CallableExpr</code> accepts any expression that can be directly called in the PHP grammar:

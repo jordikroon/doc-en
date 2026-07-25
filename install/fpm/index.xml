@@ -7,65 +7,65 @@
     These features include:
     <itemizedlist>
      <listitem>
-      <para>
+      <simpara>
        advanced process management with graceful stop/start;
-      </para>
+      </simpara>
      </listitem>
      <listitem>
-      <para>
+      <simpara>
        pools that give ability to start workers with different
        uid/gid/chroot/environment, listening on different ports and using
        different php.ini (replaces safe_mode);
-      </para>
+      </simpara>
      </listitem>
      <listitem>
-      <para>
+      <simpara>
        configurable stdout and stderr logging;
-      </para>
+      </simpara>
      </listitem>
      <listitem>
-      <para>
+      <simpara>
        emergency restart in case of accidental opcode cache destruction;
-      </para>
+      </simpara>
      </listitem>
      <listitem>
-      <para>
+      <simpara>
        accelerated upload support;
-      </para>
+      </simpara>
      </listitem>
      <listitem>
-      <para>
+      <simpara>
        "slowlog" - logging scripts (not just their names, but their PHP
        backtraces too, using ptrace and similar things to read remote
        process' execute_data) that are executed unusually slow;
-      </para>
+      </simpara>
      </listitem>
      <listitem>
-      <para>
+      <simpara>
        <function>fastcgi_finish_request</function> - special function to finish
        request and flush all data while continuing to do something
        time-consuming (video converting, stats processing etc.);
-      </para>
+      </simpara>
      </listitem>
      <listitem>
-      <para>
+      <simpara>
        dynamic/ondemand/static child spawning;
-      </para>
+      </simpara>
      </listitem>
      <listitem>
-      <para>
+      <simpara>
        basic and extended status info (similar to Apache mod_status) with
        various formats like json, xml and openmetrics supported;
-      </para>
+      </simpara>
      </listitem>
      <listitem>
-      <para>
-       php.ini-based config file. 
-      </para>
+      <simpara>
+       php.ini-based config file.
+      </simpara>
      </listitem>
     </itemizedlist>
    </para>
-   
+
    &install.fpm.install;
    &install.fpm.configuration;
   </chapter>

@@ -23,10 +23,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an indexed array containing the name of all stream filters
    available.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -57,7 +57,7 @@ Array (
    </example>
   </para>
  </refsect1>
-  
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <simplelist>

@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>SplFileObject::ftruncate</methodname>
    <methodparam><type>int</type><parameter>size</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Truncates the file to <parameter>size</parameter> bytes.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,16 +24,16 @@
     <varlistentry>
      <term><parameter>size</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The size to truncate to.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         If <parameter>size</parameter> is larger than the file it is extended with null bytes.
-       </para>
-       <para>
+       </simpara>
+       <simpara>
         If <parameter>size</parameter> is smaller than the file, the extra data will be lost.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
@@ -43,9 +43,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

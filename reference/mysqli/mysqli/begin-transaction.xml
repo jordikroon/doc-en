@@ -9,24 +9,24 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="mysqli">
    <modifier>public</modifier> <type>bool</type><methodname>mysqli::begin_transaction</methodname>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>name</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>&style.procedural;:</para>
+  <simpara>&style.procedural;:</simpara>
   <methodsynopsis>
    <type>bool</type><methodname>mysqli_begin_transaction</methodname>
    <methodparam><type>mysqli</type><parameter>mysql</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>name</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
-   Begins a transaction. Requires the InnoDB 
+  <simpara>
+   Begins a transaction. Requires the InnoDB
    engine (it is enabled by default). For additional details about how MySQL transactions
    work, see <link xlink:href="&url.mysql.docs.commit;">&url.mysql.docs.commit;</link>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -37,29 +37,29 @@
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Valid flags are:
-      </para>
+      </simpara>
       <itemizedlist>
        <listitem>
-        <para>
-         <constant>MYSQLI_TRANS_START_READ_ONLY</constant>: 
+        <simpara>
+         <constant>MYSQLI_TRANS_START_READ_ONLY</constant>:
          Start the transaction as "START TRANSACTION READ ONLY".
          Requires MySQL 5.6 and above.
-        </para>
+        </simpara>
        </listitem>
        <listitem>
-        <para>
-         <constant>MYSQLI_TRANS_START_READ_WRITE</constant>: 
+        <simpara>
+         <constant>MYSQLI_TRANS_START_READ_WRITE</constant>:
          Start the transaction as "START TRANSACTION READ WRITE".
          Requires MySQL 5.6 and above.
-        </para>
+        </simpara>
        </listitem>
        <listitem>
-         <para>
-         <constant>MYSQLI_TRANS_START_WITH_CONSISTENT_SNAPSHOT</constant>: 
+         <simpara>
+         <constant>MYSQLI_TRANS_START_WITH_CONSISTENT_SNAPSHOT</constant>:
          Start the transaction as "START TRANSACTION WITH CONSISTENT SNAPSHOT".
-        </para>
+        </simpara>
        </listitem>
       </itemizedlist>
      </listitem>
@@ -67,9 +67,9 @@
     <varlistentry>
      <term><parameter>name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Savepoint name for the transaction.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -78,9 +78,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -109,7 +109,7 @@
   &reftitle.examples;
   <example xml:id="mysqli.begin-transaction.example.basic">
    <title><methodname>mysqli::begin_transaction</methodname> example</title>
-   <para>&style.oop;</para>
+   <simpara>&style.oop;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -148,7 +148,7 @@ try {
 }
 ]]>
    </programlisting>
-   <para>&style.procedural;</para>
+   <simpara>&style.procedural;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -193,10 +193,10 @@ try {
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     This function does not work with non transactional table types (like
     MyISAM or ISAM).
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

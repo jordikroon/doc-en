@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>void</type><methodname>SplFileObject::seek</methodname>
    <methodparam><type>int</type><parameter>line</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Seek to specified line in the file.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>line</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The zero-based line number to seek to.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,17 +35,17 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws a <classname>LogicException</classname> if the 
+  <simpara>
+   Throws a <exceptionname>LogicException</exceptionname> if the
    <parameter>line</parameter> is negative.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -53,7 +53,7 @@
   <para>
    <example>
     <title><methodname>SplFileObject::seek</methodname> example</title>
-    <para>This example outputs the third line of the script which is found at position 2.</para>
+    <simpara>This example outputs the third line of the script which is found at position 2.</simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

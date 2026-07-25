@@ -14,9 +14,9 @@
    <modifier>public</modifier> <type>string</type><methodname>SQLite3::lastErrorMsg</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns English text describing the most recent failed SQLite request.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,9 +26,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an English string describing the most recent failed SQLite request.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

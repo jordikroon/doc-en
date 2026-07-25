@@ -5,18 +5,18 @@
   <refname>SplFixedArray::__construct</refname>
   <refpurpose>Constructs a new fixed array</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <constructorsynopsis role="SplFixedArray">
    <modifier>public</modifier> <methodname>SplFixedArray::__construct</methodname>
    <methodparam choice="opt"><type>int</type><parameter>size</parameter><initializer>0</initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Initializes a fixed array with a number of &null; values equal to <parameter>size</parameter>.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   <para>
@@ -24,10 +24,10 @@
     <varlistentry>
      <term><parameter>size</parameter></term>
      <listitem>
-      <para>
-       The size of the fixed array. 
+      <simpara>
+       The size of the fixed array.
        This expects a number between <literal>0</literal> and <constant>PHP_INT_MAX</constant>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -36,10 +36,10 @@
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws a <classname>ValueError</classname> when <parameter>size</parameter>
+  <simpara>
+   Throws a <exceptionname>ValueError</exceptionname> when <parameter>size</parameter>
    is a negative integer.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -57,9 +57,9 @@
       <row>
        <entry>8.0.0</entry>
        <entry>
-        Now throws a <classname>ValueError</classname> if
+        Now throws a <exceptionname>ValueError</exceptionname> if
         <parameter>size</parameter> is a negative;
-        previously it threw a <classname>InvalidArgumentException</classname>.
+        previously it threw a <exceptionname>InvalidArgumentException</exceptionname>.
        </entry>
       </row>
      </tbody>
@@ -67,7 +67,7 @@
    </informaltable>
   </para>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>

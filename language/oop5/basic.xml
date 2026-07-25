@@ -6,12 +6,12 @@
 
   <sect2 xml:id="language.oop5.basic.class">
    <title>class</title>
-   <para>
+   <simpara>
     Basic class definitions begin with the
     keyword <literal>class</literal>, followed by a class name,
     followed by a pair of curly braces which enclose the definitions
     of the properties and methods belonging to the class.
-   </para>
+   </simpara>
    <para>
     The class name can be any valid label, provided it is not a
     PHP <link linkend="reserved">reserved word</link>.
@@ -22,11 +22,11 @@
     As a regular expression, it would be expressed thus:
     <code>^[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff]*$</code>.
    </para>
-   <para>
+   <simpara>
     A class may contain its
     own <link linkend="language.oop5.constants">constants</link>, <link linkend="language.oop5.properties">variables</link>
     (called "properties"), and functions (called "methods").
-   </para>
+   </simpara>
    <example>
     <title>Simple Class definition</title>
     <programlisting role="php">
@@ -46,18 +46,18 @@ class SimpleClass
 ]]>
     </programlisting>
    </example>
-   <para>
+   <simpara>
     The pseudo-variable <varname>$this</varname> is available when a
     method is called from within an object context.
     <varname>$this</varname> is the value of the calling object.
-   </para>
+   </simpara>
    <warning>
-    <para>
+    <simpara>
      Calling a non-static method statically throws an
-     <classname>Error</classname>.
+     <exceptionname>Error</exceptionname>.
      Prior to PHP 8.0.0, this would generate a deprecation notice,
      and <varname>$this</varname> would be undefined.
-    </para>
+    </simpara>
     <example xml:id="language.oop5.basic.class.this">
      <title>Some examples of the <varname>$this</varname> pseudo-variable</title>
      <programlisting role="php">
@@ -155,11 +155,11 @@ readonly class Foo {
      </programlisting>
     </informalexample>
 
-    <para>
+    <simpara>
      As neither untyped nor static properties can be marked with the
      <literal>readonly</literal> modifier, readonly classes cannot declare
      them either:
-    </para>
+    </simpara>
     <informalexample>
      <programlisting role="php">
 <![CDATA[
@@ -197,26 +197,26 @@ readonly class Foo
 
   <sect2 xml:id="language.oop5.basic.new">
    <title>new</title>
-   <para>
+   <simpara>
     To create an instance of a class, the <literal>new</literal> keyword must
     be used.  An object will always be created unless the object has a
     <link linkend="language.oop5.decon">constructor</link> defined that throws an
     <link linkend="language.exceptions">exception</link> on error. Classes
     should be defined before instantiation (and in some cases this is a
     requirement).
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     If a variable containing a <type>string</type> with the name of a class is used with
     <literal>new</literal>, a new instance of that class will be created. If
     the class is in a namespace, its fully qualified name must be used when
     doing this.
-   </para>
+   </simpara>
 
    <note>
-    <para>
+    <simpara>
      If there are no arguments to be passed to the class's constructor,
      parentheses after the class name may be omitted.
-    </para>
+    </simpara>
    </note>
 
    <example>
@@ -238,17 +238,17 @@ var_dump($instance);
 ]]>
     </programlisting>
    </example>
-   <para>
+   <simpara>
     As of PHP 8.0.0, using <literal>new</literal> with arbitrary expressions
     is supported. This allows more complex instantiation if the expression
     produces a <type>string</type>. The expressions must be wrapped in parentheses.
-   </para>
+   </simpara>
    <example>
     <title>Creating an instance using an arbitrary expression</title>
-    <para>
+    <simpara>
      In the given example we show multiple examples of valid arbitrary expressions that produce a class name.
      This shows a call to a function, string concatenation, and the <constant>::class</constant> constant.
-    </para>
+    </simpara>
     <programlisting role="php">
      <![CDATA[
 <?php
@@ -285,17 +285,17 @@ object(ClassD)#1 (0) {
 ]]>
     </screen>
    </example>
-   <para>
+   <simpara>
     In the class context, it is possible to create a new object by
     <literal>new self</literal> and <literal>new parent</literal>.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     When assigning an already created instance of a class to a new variable, the new variable
     will access the same instance as the object that was assigned. This
     behaviour is the same when passing instances to a function. A copy
     of an already created object can be made by
     <link linkend="language.oop5.cloning">cloning</link> it.
-   </para>
+   </simpara>
    <example>
     <title>Object Assignment</title>
     <programlisting role="php">
@@ -332,9 +332,9 @@ object(SimpleClass)#1 (1) {
 ]]>
     </screen>
    </example>
-   <para>
+   <simpara>
     It's possible to create instances of an object in a couple of ways:
-   </para>
+   </simpara>
    <example>
     <title>Creating new objects</title>
     <programlisting role="php">
@@ -374,10 +374,10 @@ bool(true)
     </screen>
    </example>
 
-   <para>
+   <simpara>
     It is possible to access a member of a newly created object
     in a single expression:
-   </para>
+   </simpara>
    <example>
     <title>Access member of newly created object</title>
     <programlisting role="php">
@@ -406,16 +406,16 @@ echo new DateTime()->format('Y'), PHP_EOL;
     </simpara>
    </note>
   </sect2>
-  
+
   <sect2 xml:id="language.oop5.basic.properties-methods">
    <title>Properties and methods</title>
-   <para>
+   <simpara>
     Class properties and methods live in separate "namespaces", so it is
     possible to have a property and a method with the same name. Referring to
     both a property and a method has the same notation, and whether a property
     will be accessed or a method will be called, solely depends on the context,
     i.e. whether the usage is a variable access or a function call.
-   </para>
+   </simpara>
    <example>
     <title>Property access vs. method call</title>
     <programlisting role="php">
@@ -424,7 +424,7 @@ echo new DateTime()->format('Y'), PHP_EOL;
 class Foo
 {
     public $bar = 'property';
-    
+
     public function bar() {
         return 'method';
     }
@@ -442,13 +442,13 @@ method
 ]]>
     </screen>
    </example>
-   <para>
+   <simpara>
     That means that calling an <link linkend="functions.anonymous">anonymous
     function</link> which has been assigned to a property is not directly
     possible. Instead the property has to be assigned to a variable first, for
     instance. It is possible to call such a property directly
     by enclosing it in parentheses.
-   </para>
+   </simpara>
    <example>
     <title>Calling an anonymous function stored in a property</title>
     <programlisting role="php">
@@ -457,7 +457,7 @@ method
 class Foo
 {
     public $bar;
-    
+
     public function __construct() {
         $this->bar = function() {
             return 42;
@@ -483,13 +483,13 @@ echo ($obj->bar)(), PHP_EOL;
    <!-- TODO Example about class constant redefinition -->
    <!-- TODO Split into it's own page? -->
    <title>extends</title>
-   <para>
+   <simpara>
     A class can inherit the constants, methods, and properties of another class by
     using the keyword <literal>extends</literal> in the class
     declaration. It is not possible to extend multiple classes; a
     class can only inherit from one base class.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     The inherited constants, methods, and properties can be overridden by
     redeclaring them with the same name defined in the parent
     class. However, if the parent class has defined a method or constant
@@ -497,7 +497,7 @@ echo ($obj->bar)(), PHP_EOL;
     they may not be overridden.  It is possible to access the overridden
     methods or static properties by referencing them
     with <link linkend="language.oop5.paamayim-nekudotayim">parent::</link>.
-   </para>
+   </simpara>
    <note>
     <simpara>
      As of PHP 8.1.0, constants may be declared as final.
@@ -542,7 +542,7 @@ Parent Class
 
    <sect3 xml:id="language.oop.lsp">
     <title>Signature compatibility rules</title>
-    <para>
+    <simpara>
      When overriding a method, its signature must be compatible with the parent
      method. Otherwise, a fatal error is emitted, or, prior to PHP 8.0.0, an
      <constant>E_WARNING</constant> level error is generated.
@@ -555,7 +555,7 @@ Parent Class
      and <literal>private</literal> methods are exempt from these signature
      compatibility rules, and thus won't emit a fatal error in case of a
      signature mismatch.
-    </para>
+    </simpara>
     <example>
      <title>Compatible child methods</title>
      <programlisting role="php">
@@ -600,10 +600,10 @@ Valid
      </screen>
     </example>
 
-    <para>
+    <simpara>
      The following examples demonstrate that a child method which removes a parameter, or makes an optional
      parameter mandatory, is not compatible with the parent method.
-    </para>
+    </simpara>
     <example>
      <title>Fatal error when a child method removes a parameter</title>
      <programlisting role="php">
@@ -664,13 +664,13 @@ Fatal error: Declaration of Extend::foo(int $a) must be compatible with Base::fo
     </example>
 
     <warning>
-     <para>
+     <simpara>
       Renaming a method's parameter in a child class is not a signature
       incompatibility. However, this is discouraged as it will result in a
-      runtime <classname>Error</classname> if
+      runtime <exceptionname>Error</exceptionname> if
       <link linkend="functions.named-arguments">named arguments</link>
       are used.
-     </para>
+     </simpara>
      <example>
       <title>Error when using named arguments and parameters were renamed in a child class</title>
       <programlisting role="php">
@@ -708,13 +708,13 @@ Stack trace:
   <sect2 xml:id="language.oop5.basic.class.class">
    <title>::class</title>
 
-   <para>
+   <simpara>
     The <literal>class</literal> keyword is also used for class
     name resolution.
     To obtain the fully qualified name of a class <literal>ClassName</literal>
     use <literal>ClassName::class</literal>. This is particularly useful with
     <link linkend="language.namespaces">namespaced</link> classes.
-   </para>
+   </simpara>
    <para>
     <example xml:id="language.oop5.basic.class.class.name">
      <title>Class name resolution</title>
@@ -724,7 +724,7 @@ Stack trace:
 namespace NS {
     class ClassName {
     }
-    
+
     echo ClassName::class;
 }
 ?>
@@ -739,12 +739,12 @@ NS\ClassName
     </example>
    </para>
    <note>
-    <para>The class name resolution using <literal>::class</literal> is a
+    <simpara>The class name resolution using <literal>::class</literal> is a
      compile time transformation. That means at the time the class name string
      is created no autoloading has happened yet. As a consequence, class names
      are expanded even if the class does not exist. No error is issued in
      that case.
-    </para>
+    </simpara>
     <example xml:id="language.oop5.basic.class.class.fail">
      <title>Missing class name resolution</title>
      <programlisting role="php">
@@ -762,11 +762,11 @@ Does\Not\Exist
      </screen>
     </example>
    </note>
-   <para>
+   <simpara>
     As of PHP 8.0.0, <literal>::class</literal> may also be used on
     objects. This resolution happens at runtime, not compile time. Its effect is
     the same as calling <function>get_class</function> on the object.
-   </para>
+   </simpara>
    <example xml:id="language.oop5.basic.class.class.object">
     <title>Object name resolution</title>
     <programlisting role="php">
@@ -792,18 +792,18 @@ NS\ClassName
   </sect2>
  <sect2 xml:id="language.oop5.basic.nullsafe">
   <title>Nullsafe methods and properties</title>
-  <para>
+  <simpara>
    As of PHP 8.0.0, properties and methods may also be accessed with the
    "nullsafe" operator instead: <literal>?-></literal>. The nullsafe operator
    works the same as property or method access as above, except that if the
    object being dereferenced is &null; then &null;
    will be returned rather than an exception thrown. If the dereference is part of a
    chain, the rest of the chain is skipped.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The effect is similar to wrapping each access in an <function>is_null</function>
    check first, but more compact.
-  </para>
+  </simpara>
   <para>
    <example>
     <title>Nullsafe Operator</title>
@@ -831,11 +831,11 @@ if (is_null($repository)) {
    </example>
   </para>
   <note>
-   <para>
+   <simpara>
     The nullsafe operator is best used when null is considered a valid and expected
     possible value for a property or method return. For indicating an error,
     a thrown exception is preferable.
-   </para>
+   </simpara>
   </note>
  </sect2>
 </sect1>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.array-flip">
+<refentry xml:id="function.array-flip" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>array_flip</refname>
   <refpurpose>Exchanges all keys with their associated values in an array</refpurpose>
@@ -11,22 +11,22 @@
    <type>array</type><methodname>array_flip</methodname>
    <methodparam><type>array</type><parameter>array</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>array_flip</function> returns an <type>array</type> in flip
    order, i.e. keys from <parameter>array</parameter> become values and values
    from <parameter>array</parameter> become keys.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Note that the values of <parameter>array</parameter> need to be valid
    keys, i.e. they need to be either <type>int</type> or
    <type>string</type>. A warning will be emitted if a value has the wrong
    type, and the key/value pair in question <emphasis>will not be included
    in the result</emphasis>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If a value has several occurrences, the latest key will be
    used as its value, and all others will be lost.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -36,9 +36,9 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An array of key/value pairs to be flipped.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -47,9 +47,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the flipped array.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

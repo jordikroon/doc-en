@@ -5,7 +5,7 @@
   <refname>odbc_statistics</refname>
   <refpurpose>Retrieve statistics about a table</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -17,9 +17,9 @@
    <methodparam><type>int</type><parameter>unique</parameter></methodparam>
    <methodparam><type>int</type><parameter>accuracy</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get statistics about a table and its indexes.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -35,44 +35,44 @@
     <varlistentry>
      <term><parameter>catalog</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &odbc.parameter.catalog;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>schema</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &odbc.parameter.schema;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>table</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The table name.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>unique</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The type of the index.
        One of <constant>SQL_INDEX_UNIQUE</constant> or <constant>SQL_INDEX_ALL</constant>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>accuracy</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        One of <constant>SQL_ENSURE</constant> or <constant>SQL_QUICK</constant>.
        The latter requests that the driver retrieve the <literal>CARDINALITY</literal> and
        <literal>PAGES</literal> only if they are readily available from the server.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -81,9 +81,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &odbc.result.object-return-falseforfailure;
-  </para>
+  </simpara>
   <para>
    The result set has the following columns:
    <itemizedlist>

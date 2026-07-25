@@ -8,22 +8,22 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="IntlCalendar">
    <modifier>public</modifier> <type>true</type><methodname>IntlCalendar::setSkippedWallTimeOption</methodname>
    <methodparam><type>int</type><parameter>option</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type>true</type><methodname>intlcal_set_skipped_wall_time_option</methodname>
    <methodparam><type>IntlCalendar</type><parameter>calendar</parameter></methodparam>
    <methodparam><type>int</type><parameter>option</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets the current strategy for dealing with wall times that are skipped
    whenever the clock is forwarded during dailight saving time start transitions.
    The default value is <constant>IntlCalendar::WALLTIME_LAST</constant> (take
@@ -33,20 +33,20 @@
    with a wall time of one hour less) and
    <constant>IntlCalendar::WALLTIME_NEXT_VALID</constant> (same instant as
    when DST begins).
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This affects only the instant represented by the calendar (as reported by
    <function>IntlCalendar::getTime</function>), the field values will not be
    rewritten accordingly.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The calendar must be <link linkend="intlcalendar.setlenient">lenient</link> for this option to have
    any effect, otherwise attempting to set a non-existing time will cause an
    error.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This function requires ICU 4.9 or later.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -61,11 +61,11 @@
    <varlistentry>
     <term><parameter>option</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       One of the constants <constant>IntlCalendar::WALLTIME_FIRST</constant>,
       <constant>IntlCalendar::WALLTIME_LAST</constant> or
-      <constant>IntlCalendar::WALLTIME_NEXT_VALID</constant>.     
-     </para>
+      <constant>IntlCalendar::WALLTIME_NEXT_VALID</constant>.
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -73,9 +73,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -99,10 +99,10 @@
 
  <refsect1 role="examples">
   &reftitle.examples;
-  <para>
+  <simpara>
    See the example on
    <function>IntlCalendar::getSkippedWallTimeOption</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

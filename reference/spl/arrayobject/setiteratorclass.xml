@@ -11,10 +11,10 @@
    <modifier>public</modifier> <type>void</type><methodname>ArrayObject::setIteratorClass</methodname>
    <methodparam><type>string</type><parameter>iteratorClass</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets the classname of the array iterator that is used by
    <link linkend="arrayobject.getiterator">ArrayObject::getIterator()</link>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>iteratorClass</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The classname of the array iterator to use when iterating over this object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,9 +35,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

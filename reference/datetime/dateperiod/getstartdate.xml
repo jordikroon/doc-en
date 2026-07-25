@@ -10,14 +10,14 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="DatePeriod">
    <modifier>public</modifier> <type>DateTimeInterface</type><methodname>DatePeriod::getStartDate</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the start date of the period.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,16 +27,16 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a <classname>DateTimeImmutable</classname> <type>object</type>
    when the <classname>DatePeriod</classname> is initialized with a
    <classname>DateTimeImmutable</classname> <type>object</type>
    as the <parameter>start</parameter> parameter.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Returns a <classname>DateTime</classname> <type>object</type>
    otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

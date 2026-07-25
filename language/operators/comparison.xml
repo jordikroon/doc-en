@@ -82,7 +82,7 @@
    </tbody>
   </tgroup>
  </table>
- <para>
+ <simpara>
   If both operands are
   <link linkend="language.types.numeric-strings">numeric strings</link>,
   or one operand is a number and the other one is a
@@ -93,7 +93,7 @@
   The type conversion does not take place when the comparison is
   <literal>===</literal> or <literal>!==</literal> as this involves
   comparing the type as well as the value.
- </para>
+ </simpara>
 
  <warning>
   <para>
@@ -200,10 +200,10 @@ echo $a <=> $b, ' '; // 1
   </example>
  </para>
 
- <para>
+ <simpara>
   For various types, comparison is done according to the following
   table (in order).
- </para>
+ </simpara>
  <table xml:id="language.operators.comparison.types">
   <title>Comparison with Various Types</title>
   <tgroup cols="3">
@@ -311,14 +311,14 @@ function standard_array_compare($op1, $op2)
  <warning>
   <title>Comparison of floating point numbers</title>
 
-  <para>
+  <simpara>
    Because of the way <type>float</type>s are represented internally, you
    should not test two <type>float</type>s for equality.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    See the documentation for <type>float</type> for more information.
-  </para>
+  </simpara>
  </warning>
 
  <note>
@@ -380,13 +380,13 @@ if (empty($_POST['action'])) {
    <replaceable>expr3</replaceable> if
    <replaceable>expr1</replaceable> evaluates to &false;.
   </para>
-  <para>
+  <simpara>
    It is possible to leave out the middle part of the ternary operator.
    Expression <literal>expr1 ?: expr3</literal> evaluates to
    the result of <replaceable>expr1</replaceable> if <replaceable>expr1</replaceable>
    evaluates to &true;, and <replaceable>expr3</replaceable> otherwise.
    <replaceable>expr1</replaceable> is only evaluated once in this case.
-  </para>
+  </simpara>
   <note>
    <simpara>
     Please note that the ternary operator is an expression, and that it
@@ -476,11 +476,11 @@ if (isset($_POST['action'])) {
    <replaceable>expr2</replaceable> if <replaceable>expr1</replaceable> is
    &null;, and <replaceable>expr1</replaceable> otherwise.
   </para>
-  <para>
+  <simpara>
    In particular, this operator does not emit a notice or warning if the left-hand side
    value does not exist, just like <function>isset</function>. This is especially
    useful on array keys.
-  </para>
+  </simpara>
   <note>
    <simpara>
     Please note that the null coalescing operator is an expression, and that it
@@ -492,11 +492,11 @@ if (isset($_POST['action'])) {
    </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     The null coalescing operator has low precedence. That means if mixing it
     with other operators (such as string concatenation or arithmetic operators)
     parentheses will likely be required.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

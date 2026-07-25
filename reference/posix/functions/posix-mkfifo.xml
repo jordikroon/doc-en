@@ -5,7 +5,7 @@
   <refname>posix_mkfifo</refname>
   <refpurpose>Create a fifo special file (a named pipe)</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,11 +13,11 @@
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
    <methodparam><type>int</type><parameter>permissions</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>posix_mkfifo</function> creates a special
    <literal>FIFO</literal> file which exists in the file system and acts as
    a bidirectional communication endpoint for processes.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,21 +27,21 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path to the <literal>FIFO</literal> file.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>permissions</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The second parameter <parameter>permissions</parameter> has to be given in
        octal notation (e.g. 0644). The permission of the newly created
        <literal>FIFO</literal> also depends on the setting of the current
        <function>umask</function>. The permissions of the created file are
        (mode &amp; ~umask).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -50,9 +50,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

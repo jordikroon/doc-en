@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.fgetss">
+<refentry xml:id="function.fgetss" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>fgetss</refname>
   <refpurpose>Gets line from file pointer and strip HTML tags</refpurpose>
@@ -18,14 +18,14 @@
    <methodparam choice="opt"><type>int</type><parameter>length</parameter></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>allowable_tags</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Identical to <function>fgets</function>, except that
    <function>fgetss</function> attempts to strip any NUL bytes, HTML and PHP tags from
    the text it reads.
    The function retains the parsing state from call to call, and as such is not
    equivalent to calling <function>strip_tags</function> on the return value of
    <function>fgets</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -41,20 +41,20 @@
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Length of the data to be retrieved.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>allowable_tags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        You can use the optional third parameter to specify tags which should
        not be stripped.
        See <function>strip_tags</function> for details regarding
        <parameter>allowable_tags</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -63,14 +63,14 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a string of up to <parameter>length</parameter> - 1 bytes read from
    the file pointed to by <parameter>handle</parameter>, with all HTML and PHP
    code stripped.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If an error occurs, returns &false;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

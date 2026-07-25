@@ -11,9 +11,9 @@
    <type class="union"><type>string</type><type>false</type></type><methodname>get_parent_class</methodname>
    <methodparam choice="opt"><type class="union"><type>object</type><type>string</type></type><parameter>object_or_class</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Retrieves the parent class name for object or class.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -22,9 +22,9 @@
     <varlistentry>
      <term><parameter>object_or_class</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The tested object or class name.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -32,14 +32,14 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the name of the parent class of the class of which
    <parameter>object_or_class</parameter> is an instance or the name.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If the object does not have a parent or the given class does not exist,
    &false; will be returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

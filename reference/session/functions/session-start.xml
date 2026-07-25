@@ -12,12 +12,12 @@
    <type>bool</type><methodname>session_start</methodname>
    <methodparam choice="opt"><type>array</type><parameter>options</parameter><initializer>[]</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>session_start</function> creates a session or resumes the
    current one based on a session identifier passed via a GET or POST
    request, or passed via a cookie.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    When <function>session_start</function> is called or when a session auto starts,
    PHP will call the open and read session save handlers.  These will either be a built-in
    save handler provided by default or by PHP extensions (such as SQLite or Memcached); or can be
@@ -25,23 +25,23 @@
    The read callback will retrieve any existing session data (stored in a special serialized format)
    and will be unserialized and used to automatically populate the $_SESSION superglobal when the
    read callback returns the saved session data back to PHP session handling.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    To use a named session, call
    <function>session_name</function> before calling
    <function>session_start</function>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    When <link linkend="ini.session.use-trans-sid">session.use_trans_sid</link>
    is enabled, the <function>session_start</function> function will
    register an internal output handler for URL rewriting.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If a user uses <literal>ob_gzhandler</literal> or similar with
    <function>ob_start</function>, the function order is important for
    proper output.  For example,
    <literal>ob_gzhandler</literal> must be registered before starting the session.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -50,19 +50,19 @@
    <varlistentry>
     <term><parameter>options</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       If provided, this is an associative array of options that will override
       the currently set
       <link linkend="session.configuration">session configuration directives</link>.
       The keys should not include the <literal>session.</literal> prefix.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       In addition to the normal set of configuration directives, a
       <literal>read_and_close</literal> option may also be provided. If set to
       &true;, this will result in the session being closed immediately after
       being read, thereby avoiding unnecessary locking if the session data
       won't be changed.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -70,10 +70,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    This function returns &true; if a session was successfully started,
    otherwise &false;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -133,14 +133,14 @@ echo '<br /><a href="page2.php?' . SID . '">page 2</a>';
      </programlisting>
     </example>
    </para>
-   <para>
+   <simpara>
     After viewing <filename>page1.php</filename>, the second page
     <filename>page2.php</filename> will magically contain the session
     data.  Read the <link linkend="ref.session">session reference</link>
     for information on <link linkend="session.idpassing">propagating
     session ids</link> as it, for example, explains what the constant
     <constant>SID</constant> is all about.
-   </para>
+   </simpara>
    <para>
     <example>
      <title><filename>page2.php</filename></title>
@@ -203,23 +203,23 @@ session_start([
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     To use cookie-based sessions, <function>session_start</function>
     must be called before outputting anything to the browser.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     Use of <link linkend="ini.zlib.output-compression">zlib.output_compression</link>
     is recommended instead of <function>ob_gzhandler</function>
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     This function sends out several HTTP headers depending on the
     configuration. See <function>session_cache_limiter</function> to
     customize these headers.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

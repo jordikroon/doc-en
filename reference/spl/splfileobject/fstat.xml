@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>array</type><methodname>SplFileObject::fstat</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gathers the statistics of the file. Behaves identically to <function>fstat</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,10 +24,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array with the statistics of the file; the format of the array
    is described in detail on the <function>stat</function> manual page.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

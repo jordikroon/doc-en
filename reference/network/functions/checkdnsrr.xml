@@ -5,7 +5,7 @@
   <refname>checkdnsrr</refname>
   <refpurpose>Check DNS records corresponding to a given Internet host name or IP address</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,10 +13,10 @@
    <methodparam><type>string</type><parameter>hostname</parameter></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>type</parameter><initializer>"MX"</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Searches DNS for records of type <parameter>type</parameter>
-   corresponding to <parameter>hostname</parameter>. 
-  </para>
+   corresponding to <parameter>hostname</parameter>.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,19 +26,19 @@
     <varlistentry>
      <term><parameter>hostname</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>hostname</parameter> may either be the IP address in
        dotted-quad notation or the host name.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>type</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>type</parameter> may be any one of: A, MX, NS, SOA,
        PTR, CNAME, AAAA, A6, SRV, NAPTR, TXT or ANY.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -47,20 +47,20 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if any records are found; returns &false; if no records
    were found or if an error occurred.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     For compatibility with Windows before this was implemented, then try the
     <link xlink:href="&url.php.pear;">PEAR</link> class
     <link xlink:href="&url.pear.package;Net_DNS">Net_DNS</link>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

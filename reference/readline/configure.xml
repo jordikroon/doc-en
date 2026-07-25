@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<section xmlns="http://docbook.org/ns/docbook" xml:id="readline.installation">
+<section xml:id="readline.installation" xmlns="http://docbook.org/ns/docbook">
  &reftitle.install;
  <simpara>
   To use these functions you must compile the CGI or CLI version of PHP

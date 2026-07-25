@@ -2,14 +2,14 @@
 <sect1 xml:id="language.operators.execution">
  <title>Execution Operators</title>
  <titleabbrev>Execution</titleabbrev>
- <para>
+ <simpara>
   PHP supports one execution operator: backticks (<literal>``</literal>). Note that
   these are not single-quotes! PHP will attempt to execute the
   contents of the backticks as a shell command; the output will be
   returned (i.e., it won't simply be dumped to output; it can be
   assigned to a variable).  Use of the backtick operator is identical
   to <function>shell_exec</function>.
- </para>
+ </simpara>
  <para>
   <example>
    <title>Backtick Operator</title>
@@ -24,16 +24,16 @@ echo "<pre>$output</pre>";
   </example>
  </para>
  <note>
-  <para>
+  <simpara>
    The backtick operator is disabled when
    <function>shell_exec</function> is disabled.
-  </para>
+  </simpara>
  </note>
  <note>
-  <para>
+  <simpara>
    Unlike some other languages, backticks have no special meaning
    within double-quoted strings.
-  </para>
+  </simpara>
  </note>
 
  <sect2 role="changelog">

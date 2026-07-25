@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>array</type><methodname>ReflectionExtension::getDependencies</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets dependencies, by listing both required and conflicting dependencies.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,11 +24,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An associative <type>array</type> with dependencies as keys and
-   either <literal>Required</literal>, <literal>Optional</literal> 
+   either <literal>Required</literal>, <literal>Optional</literal>
    or <literal>Conflicts</literal> as the values.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

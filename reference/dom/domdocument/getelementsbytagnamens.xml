@@ -14,10 +14,10 @@
    <methodparam><type class="union"><type>string</type><type>null</type></type><parameter>namespace</parameter></methodparam>
    <methodparam><type>string</type><parameter>localName</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   Returns a <classname>DOMNodeList</classname> of all elements with a given 
+  <simpara>
+   Returns a <classname>DOMNodeList</classname> of all elements with a given
    local name and a namespace URI.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -26,20 +26,20 @@
     <varlistentry>
      <term><parameter>namespace</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The namespace URI of the elements to match on.
        The special value <literal>"*"</literal> matches all namespaces.
        Passing &null; matches the empty namespace.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>localName</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The local name of the elements to match on.
        The special value <literal>"*"</literal> matches all local names.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -47,10 +47,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   A new <classname>DOMNodeList</classname> object containing all the matched 
+  <simpara>
+   A new <classname>DOMNodeList</classname> object containing all the matched
    elements.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

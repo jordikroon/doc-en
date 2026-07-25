@@ -12,14 +12,14 @@
    <type class="union"><type>string</type><type>false</type></type><methodname>session_encode</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>session_encode</function> returns a serialized string of the
    contents of the current session data stored in the $_SESSION superglobal.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    By default, the serialization method used is internal to PHP, and is not the same as <function>serialize</function>.
    The serialization method can be set using <link linkend="ini.session.serialize-handler">session.serialize_handler</link>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,20 +29,20 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the contents of the current session encoded, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="notes">
   &reftitle.notes;
   <warning>
-   <para>
+   <simpara>
     Must call <function>session_start</function> before using <function>session_encode</function>.
-   </para>
+   </simpara>
   </warning>
- </refsect1> 
- 
+ </refsect1>
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

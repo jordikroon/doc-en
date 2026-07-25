@@ -12,12 +12,12 @@
    <type class="union"><type>string</type><type>false</type></type><methodname>nl_langinfo</methodname>
    <methodparam><type>int</type><parameter>item</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>nl_langinfo</function> is used to access individual elements of
    the locale categories.  Unlike <function>localeconv</function>, which
    returns all of the elements, <function>nl_langinfo</function> allows you
    to select any specific element.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -263,10 +263,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the element as a string, or &false; if <parameter>item</parameter>
    is not valid.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

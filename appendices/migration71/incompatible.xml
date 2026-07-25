@@ -7,12 +7,12 @@
  <sect2 xml:id="migration71.incompatible.too-few-arguments-exception">
   <title>Throw on passing too few function arguments</title>
 
-  <para>
+  <simpara>
    Previously, a warning would be emitted for invoking user-defined functions
    with too few arguments. Now, this warning has been promoted to an Error
    exception. This change only applies to user-defined functions, not internal
    functions. For example:
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -34,12 +34,12 @@ Fatal error: Uncaught ArgumentCountError: Too few arguments to function test(), 
  <sect2 xml:id="migration71.incompatible.forbid-dynamic-calls-to-scope-introspection-functions">
   <title>Forbid dynamic calls to scope introspection functions</title>
 
-  <para>
+  <simpara>
    Dynamic calls for certain functions have been forbidden (in the form of
    <literal>$func()</literal> or <literal>array_map('extract', ...)</literal>,
    etc). These functions either inspect or modify another scope, and present
    with them ambiguous and unreliable behavior. The functions are as follows:
-  </para>
+  </simpara>
 
   <itemizedlist>
    <listitem>
@@ -111,9 +111,9 @@ Warning: Cannot call func_num_args() dynamically in %s on line %d
  <sect2 xml:id="migration71.incompatible.invalid-class-names">
   <title>Invalid class, interface, and trait names</title>
 
-  <para>
+  <simpara>
    The following names cannot be used to name classes, interfaces, or traits:
-  </para>
+  </simpara>
 
   <itemizedlist>
    <listitem>
@@ -128,26 +128,26 @@ Warning: Cannot call func_num_args() dynamically in %s on line %d
  <sect2 xml:id="migration71.incompatible.numerical-strings-scientific-notation">
   <title>Numerical string conversions now respect scientific notation</title>
 
-  <para>
+  <simpara>
    Integer operations and conversions on numerical strings now respect
    scientific notation. This also includes the <literal>(int)</literal> cast
    operation, and the following functions: <function>intval</function> (where
    the base is 10), <function>settype</function>, <function>decbin</function>,
    <function>decoct</function>, and <function>dechex</function>.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration71.incompatible.fixes-to-mt_rand-algorithm">
   <title>Fixes to <function>mt_rand</function> algorithm</title>
 
-  <para>
+  <simpara>
    <function>mt_rand</function> will now default to using the fixed version of
    the Mersenne Twister algorithm. If deterministic output from
    <function>mt_rand</function> was relied upon, then
    <constant>MT_RAND_PHP</constant> can be used as optional second parameter
    to <function>mt_srand</function> to preserve the old (incorrect)
    implementation.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration71.incompatible.rand-srand-aliases">
@@ -156,22 +156,22 @@ Warning: Cannot call func_num_args() dynamically in %s on line %d
    <function>srand</function> aliased to <function>mt_srand</function>
   </title>
 
-  <para>
+  <simpara>
    <function>rand</function> and <function>srand</function> have now been made
    aliases to <function>mt_rand</function> and <function>mt_srand</function>,
    respectively. This means that the output for the following functions have
    changed: <function>rand</function>, <function>shuffle</function>,
    <function>str_shuffle</function>, and <function>array_rand</function>.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration71.incompatible.delete-control-character-in-identifiers">
   <title>Disallow the ASCII delete control character in identifiers</title>
 
-  <para>
+  <simpara>
    The ASCII delete control character (<literal>0x7F</literal>) can no longer
    be used in identifiers that are not quoted.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration71.incompatible.error_log-syslog">
@@ -180,24 +180,24 @@ Warning: Cannot call func_num_args() dynamically in %s on line %d
    value
   </title>
 
-  <para>
+  <simpara>
    If the <parameter>error_log</parameter> ini setting is set to
    <literal>syslog</literal>, the PHP error levels are mapped to the syslog
    error levels. This brings finer differentiation in the error logs in
    contrary to the previous approach where all the errors are logged with the
    notice level only.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration71.incompatible.dont-call-destructors">
   <title>Do not call destructors on incomplete objects</title>
 
-  <para>
+  <simpara>
    Destructors are now never called for objects that throw an exception during
    the execution of their constructor. In previous versions this behavior
    depended on whether the object was referenced outside the constructor (e.g.
    by an exception backtrace).
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration71.incompatible.call_user_func-with-ref-args">
@@ -205,17 +205,17 @@ Warning: Cannot call func_num_args() dynamically in %s on line %d
    <function>call_user_func</function> handling of reference arguments
   </title>
 
-  <para>
+  <simpara>
    <function>call_user_func</function> will now always generate a warning
    upon calls to functions that expect references as arguments. Previously
    this depended on whether the call was fully qualified.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Additionally, <function>call_user_func</function> and
    <function>call_user_func_array</function> will no longer abort the function
    call in this case. The "expected reference" warning will be emitted, but the
    call will proceed as usual.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration71.incompatible.empty-string-index-operator">
@@ -223,10 +223,10 @@ Warning: Cannot call func_num_args() dynamically in %s on line %d
    The empty index operator is not supported for strings anymore
   </title>
 
-  <para>
+  <simpara>
    Applying the empty index operator to a string (e.g. <literal>$str[] = $x</literal>)
    throws a fatal error instead of converting silently to array.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration71.incompatible.empty-string-modifcation-by-character">
@@ -269,9 +269,9 @@ string(11) "          f"
  <sect2 xml:id="migration71.incompatible.removed-ini-directives">
   <title>Removed ini directives</title>
 
-  <para>
+  <simpara>
    The following ini directives have been removed:
-  </para>
+  </simpara>
 
   <itemizedlist>
    <listitem>
@@ -303,11 +303,11 @@ string(11) "          f"
    assignments has changed
   </title>
 
-  <para>
+  <simpara>
    The order of the elements in an array has changed when those elements have
    been automatically created by referencing them in a by reference
    assignment. For example:
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -347,34 +347,34 @@ array(2) {
 
  <sect2 xml:id="migration71.incompatible.sort-order">
   <title>Sort order of equal elements</title>
-  <para>
+  <simpara>
    The internal sorting algorithm has been improved, what may result in
    different sort order of elements, which compare as equal, than before.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     Don't rely on the order of elements which compare as equal; it might change
     anytime.
-   </para>
+   </simpara>
   </note>
  </sect2>
 
  <sect2 xml:id="migration71.incompatible.e-recoverable">
   <title>Error message for E_RECOVERABLE errors</title>
-  <para>
+  <simpara>
    The error message for E_RECOVERABLE errors has been changed from "Catchable
    fatal error" to "Recoverable fatal error".
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration71.incompatible.unserialize">
   <title>$options parameter of unserialize()</title>
-  <para>
+  <simpara>
    The <literal>allowed_classes</literal> element of the $options parameter of
    <function>unserialize</function> is now strictly typed, i.e. if anything
    other than an <type>array</type> or a <type>bool</type> is given,
    unserialize() returns &false; and issues an <constant>E_WARNING</constant>.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration71.incompatible.datetime-microseconds">
@@ -398,131 +398,131 @@ new DateTime() == new DateTime();
  </sect2>
 
  <sect2 xml:id="migration71.incompatible.fatal-errors-to-error-exceptions">
-  <title>Fatal errors to <classname>Error</classname> exceptions conversions</title>
+  <title>Fatal errors to <exceptionname>Error</exceptionname> exceptions conversions</title>
   <para>
    In the Date extension, invalid serialization data for
    <classname>DateTime</classname> or <classname>DatePeriod</classname> classes,
    or timezone initialization failure from serialized data, will now throw an
-   <classname>Error</classname> exception from the
+   <exceptionname>Error</exceptionname> exception from the
    <methodname>__wakeup</methodname> or <methodname>__set_state</methodname>
    methods, instead of resulting in a fatal error.
   </para>
 
-  <para>
+  <simpara>
    In the DBA extension, data modification functions (such as
    <function>dba_insert</function>) will now throw an
-   <classname>Error</classname> exception instead of triggering a catchable
+   <exceptionname>Error</exceptionname> exception instead of triggering a catchable
    fatal error if the key does not contain exactly two elements.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    In the DOM extension, invalid schema or RelaxNG validation contexts will now
-   throw an <classname>Error</classname> exception instead of resulting in a
+   throw an <exceptionname>Error</exceptionname> exception instead of resulting in a
    fatal error. Similarly, attempting to register a node class that does not
    extend the appropriate base class, or attempting to read an invalid property
    or write to a readonly property, will also now throw an
-   <classname>Error</classname> exception.
-  </para>
+   <exceptionname>Error</exceptionname> exception.
+  </simpara>
 
-  <para>
+  <simpara>
    In the IMAP extension, email addresses longer than 16385 bytes will throw an
-   <classname>Error</classname> exception instead of resulting in a fatal error.
-  </para>
+   <exceptionname>Error</exceptionname> exception instead of resulting in a fatal error.
+  </simpara>
 
-  <para>
+  <simpara>
    In the Intl extension, failing to call the parent constructor in a class
    extending <classname>Collator</classname> before invoking the parent methods
-   will now throw an <classname>Error</classname> instead of resulting in a
+   will now throw an <exceptionname>Error</exceptionname> instead of resulting in a
    recoverable fatal error. Also, cloning a
    <classname>Transliterator</classname> object will now throw an
-   <classname>Error</classname> exception on failure to clone the internal
+   <exceptionname>Error</exceptionname> exception on failure to clone the internal
    transliterator instead of resulting in a fatal error.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    In the LDAP extension, providing an unknown modification type to
    <function>ldap_batch_modify</function> will now throw an
-   <classname>Error</classname> exception instead of resulting in a fatal error.
-  </para>
+   <exceptionname>Error</exceptionname> exception instead of resulting in a fatal error.
+  </simpara>
 
-  <para>
+  <simpara>
    In the mbstring extension, the <function>mb_ereg</function> and
    <function>mb_eregi</function> functions will now throw a
-   <classname>ParseError</classname> exception if an invalid PHP expression is
+   <exceptionname>ParseError</exceptionname> exception if an invalid PHP expression is
    provided and the 'e' option is used.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    In the Mcrypt extension, the <function>mcrypt_encrypt</function> and
    <function>mcrypt_decrypt</function> will now throw an
-   <classname>Error</classname> exception instead of resulting in a fatal error
+   <exceptionname>Error</exceptionname> exception instead of resulting in a fatal error
    if mcrypt cannot be initialized.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    In the mysqli extension, attempting to read an invalid property or write to
-   a readonly property will now throw an <classname>Error</classname> exception
+   a readonly property will now throw an <exceptionname>Error</exceptionname> exception
    instead of resulting in a fatal error.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    In the Reflection extension, failing to retrieve a reflection object or
-   retrieve an object property will now throw an <classname>Error</classname>
+   retrieve an object property will now throw an <exceptionname>Error</exceptionname>
    exception instead of resulting in a fatal error.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    In the Session extension, custom session handlers that do not return strings
-   for session IDs will now throw an <classname>Error</classname> exception
+   for session IDs will now throw an <exceptionname>Error</exceptionname> exception
    instead of resulting in a fatal error when a function is called that must
    generate a session ID.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    In the SimpleXML extension, creating an unnamed or duplicate attribute will
-   now throw an <classname>Error</classname> exception instead of resulting in
+   now throw an <exceptionname>Error</exceptionname> exception instead of resulting in
    a fatal error.
-  </para>
+  </simpara>
 
   <para>
    In the SPL extension, attempting to clone an
    <classname>SplDirectory</classname> object will now throw an
-   <classname>Error</classname> exception instead of resulting in a fatal
+   <exceptionname>Error</exceptionname> exception instead of resulting in a fatal
    error. Similarly, calling <methodname>ArrayIterator::append</methodname> when
-   iterating over an object will also now throw an <classname>Error</classname>
+   iterating over an object will also now throw an <exceptionname>Error</exceptionname>
    exception.
   </para>
 
-  <para>
+  <simpara>
    In the standard extension, the <function>assert</function> function, when
    provided with a string argument as its first parameter, will now throw a
-   <classname>ParseError</classname> exception instead of resulting in a
+   <exceptionname>ParseError</exceptionname> exception instead of resulting in a
    catchable fatal error if the PHP code is invalid. Similarly, calling
    <function>forward_static_call</function> outside of a class scope will now
-   throw an <classname>Error</classname> exception.
-  </para>
+   throw an <exceptionname>Error</exceptionname> exception.
+  </simpara>
 
-  <para>
+  <simpara>
    In the Tidy extension, creating a <classname>tidyNode</classname> manually
-   will now throw an <classname>Error</classname> exception instead of
+   will now throw an <exceptionname>Error</exceptionname> exception instead of
    resulting in a fatal error.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    In the WDDX extension, a circular reference when serializing will now throw
-   an <classname>Error</classname> exception instead of resulting in a fatal
+   an <exceptionname>Error</exceptionname> exception instead of resulting in a fatal
    error.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    In the XML-RPC extension, a circular reference when serializing will now
-   throw an instance of <classname>Error</classname> exception instead of
+   throw an instance of <exceptionname>Error</exceptionname> exception instead of
    resulting in a fatal error.
-  </para>
+  </simpara>
 
   <para>
    In the Zip extension, the <methodname>ZipArchive::addGlob</methodname>
-   method will now throw an <classname>Error</classname> exception instead of
+   method will now throw an <exceptionname>Error</exceptionname> exception instead of
    resulting in a fatal error if glob support is not available.
   </para>
  </sect2>
@@ -551,20 +551,20 @@ $f = function ($param) use ($param) {};
 
  <sect2 xml:id="migration71.incompatible.long2ip">
   <title>long2ip() parameter type change</title>
-  <para>
+  <simpara>
    <function>long2ip</function> now expects an <type>int</type> instead of a
    <type>string</type>.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration71.incompatible.json">
   <title>JSON encoding and decoding</title>
-  <para>
+  <simpara>
    The <parameter>serialize_precision</parameter> ini setting now controls the
    serialization precision when encoding <type>float</type>s.
-  </para>
+  </simpara>
   <para>
-   Decoding an empty key now results in an empty property name, rather than 
+   Decoding an empty key now results in an empty property name, rather than
    <literal>_empty_</literal> as a property name.
 
    <informalexample>
@@ -585,11 +585,11 @@ object(stdClass)#1 (1) {
    </screen>
   </informalexample>
   </para>
-  <para>
+  <simpara>
    When supplying the <constant>JSON_UNESCAPED_UNICODE</constant> flag to
    <function>json_encode</function>, the sequences U+2028 and U+2029 are now
    escaped.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration71.incompatible.mbstring">
@@ -597,29 +597,29 @@ object(stdClass)#1 (1) {
    Changes to <function>mb_ereg</function> and <function>mb_eregi</function>
    parameter semantics
   </title>
-  <para>
+  <simpara>
    The third parameter to the <function>mb_ereg</function> and
    <function>mb_eregi</function> functions (<parameter>regs</parameter>) will now be
    set to an empty array if nothing was matched. Formerly, the parameter would
    not have been modified.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration71.incompatible.openssl">
   <title>Drop support for the sslv2 stream</title>
-  <para>
+  <simpara>
    The sslv2 stream has now been dropped in OpenSSL.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration71.incompatible.typed-returns-compile-time">
   <title>Forbid "return;" for typed returns already at compile-time</title>
-  <para>
+  <simpara>
    Return statements without argument in functions which declare a return type
    now trigger <constant>E_COMPILE_ERROR</constant> (unless the return type is
    declared as <type>void</type>), even if the return statement would never be
    reached.
-  </para>
+  </simpara>
  </sect2>
 
 </sect1>

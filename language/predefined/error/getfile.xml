@@ -5,28 +5,28 @@
   <refname>Error::getFile</refname>
   <refpurpose>Gets the file in which the error occurred</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="Error">
    <modifier>final</modifier> <modifier>public</modifier> <type>string</type><methodname>Error::getFile</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get the name of the file the error occurred.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   &no.function.parameters;
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the filename in which the error occurred.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

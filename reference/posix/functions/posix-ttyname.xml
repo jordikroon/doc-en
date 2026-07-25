@@ -5,18 +5,18 @@
   <refname>posix_ttyname</refname>
   <refpurpose>Determine terminal device name</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>posix_ttyname</methodname>
    <methodparam><type class="union"><type>resource</type><type>int</type></type><parameter>file_descriptor</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a <type>string</type> for the absolute path to the current
    terminal device that is open on the file descriptor
    <parameter>file_descriptor</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,18 +30,18 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    On success, returns a <type>string</type> of the absolute path of the
    <parameter>file_descriptor</parameter>. On failure, returns &false;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    On invalid <parameter>file_descriptor</parameter> integer values
    an <constant>E_WARNING</constant> is raised.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

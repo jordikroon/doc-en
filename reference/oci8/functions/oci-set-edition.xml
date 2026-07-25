@@ -5,36 +5,36 @@
   <refname>oci_set_edition</refname>
   <refpurpose>Sets the database edition</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>bool</type><methodname>oci_set_edition</methodname>
    <methodparam><type>string</type><parameter>edition</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets the database "edition" of objects to be used by a subsequent
    connections.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Oracle Editions allow concurrent versions of applications to run
    using the same schema and object names.  This is useful for
    upgrading live systems.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Call <function>oci_set_edition</function> before calling
    <function>oci_connect</function>, <function>oci_pconnect</function>
    or <function>oci_new_connect</function>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If an edition is set that is not valid in the database, connection
    will fail even if <function>oci_set_edition</function> returns success.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    When using persistent connections, if a connection with the
    requested edition setting already exists, it is reused.  Otherwise,
    a different persistent connection is created
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -44,10 +44,10 @@
     <varlistentry>
      <term><parameter>edition</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Oracle Database edition name previously created with the <acronym>SQL</acronym>
        "<literal>CREATE EDITION</literal>" command.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -56,9 +56,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -113,20 +113,20 @@ echo "The result is $r\n";
   &reftitle.notes;
   <note>
    <title>Oracle version requirement</title>
-   <para>
+   <simpara>
     This function is available from Oracle 11<emphasis>g</emphasis>R2 onwards.
-   </para>
+   </simpara>
   </note>
   <caution>
    <title>Persistent connections</title>
-   <para>
+   <simpara>
     To avoid inconsistencies and unexpected errors, do not use ALTER
     SESSION SET EDITION to change the edition on persistent connections.
-   </para>
+   </simpara>
   </caution>
   <caution>
    <title>DRCP Connection Pooling</title>
-   <para>
+   <simpara>
     To avoid inconsistencies and unexpected errors when using editions
     and <link linkend="oci8.connection">DRCP</link> with Oracle
     11.2.0.1, keep a one-to-one correspondence between
@@ -134,7 +134,7 @@ echo "The result is $r\n";
     and the edition name used by applications.  Each pooled server of
     a given connection class should only be used with one edition.
     This restriction has been removed with Oracle 11.2.0.2.
-   </para>
+   </simpara>
   </caution>
  </refsect1>
 

@@ -12,10 +12,10 @@
    <modifier>public</modifier> <methodname>DOMCdataSection::__construct</methodname>
    <methodparam><type>string</type><parameter>data</parameter></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Constructs a new CDATA node. This works like the <classname>DOMText</classname>
    class.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
    <varlistentry>
     <term><parameter>data</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The value of the CDATA node. If not supplied, an empty CDATA node is created.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>

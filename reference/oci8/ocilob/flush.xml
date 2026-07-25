@@ -5,16 +5,16 @@
   <refname>OCILob::flush</refname>
   <refpurpose>Flushes/writes buffer of the LOB to the server</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="OCILob">
    <modifier>public</modifier> <type>bool</type><methodname>OCILob::flush</methodname>
    <methodparam choice="opt"><type>int</type><parameter>flag</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>OCILob::flush</function> actually writes data to the server.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,15 +24,15 @@
     <varlistentry>
      <term><parameter>flag</parameter></term>
      <listitem>
-      <para>
-       By default, resources are not freed, but using flag 
+      <simpara>
+       By default, resources are not freed, but using flag
        <constant>OCI_LOB_BUFFER_FREE</constant> you can do it explicitly.
        Be sure you know what you're doing - next read/write operation to the
        same part of LOB will involve a round-trip to the server and initialize
-       new buffer resources. It is recommended to use 
+       new buffer resources. It is recommended to use
        <constant>OCI_LOB_BUFFER_FREE</constant> flag only when you are not
        going to work with the LOB anymore.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -41,12 +41,12 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Returns &false; if buffering was not enabled or an error occurred.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

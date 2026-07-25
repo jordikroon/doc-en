@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>int</type><methodname>ReflectionProperty::getModifiers</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the modifiers.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,11 +24,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A numeric representation of the modifiers.
    The actual meaning of these modifiers are described under
    <link linkend="reflectionproperty.constants.modifiers">predefined constants</link>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

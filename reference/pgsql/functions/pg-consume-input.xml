@@ -13,10 +13,10 @@
    <type>bool</type><methodname>pg_consume_input</methodname>
    <methodparam><type>PgSql\Connection</type><parameter>connection</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_consume_input</function> consumes any input waiting to be read
    from the database server.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -33,10 +33,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &true; if no error occurred, or &false; if there was an error. Note that
    &true; does not necessarily indicate that input was waiting to be read.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -55,7 +55,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
 </refentry>
 
 <!-- Keep this comment at the end of the file

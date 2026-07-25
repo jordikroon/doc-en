@@ -9,24 +9,24 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="NumberFormatter">
    <modifier>public</modifier> <type>bool</type><methodname>NumberFormatter::setTextAttribute</methodname>
    <methodparam><type>int</type><parameter>attribute</parameter></methodparam>
    <methodparam><type>string</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type>bool</type><methodname>numfmt_set_text_attribute</methodname>
    <methodparam><type>NumberFormatter</type><parameter>formatter</parameter></methodparam>
    <methodparam><type>int</type><parameter>attribute</parameter></methodparam>
    <methodparam><type>string</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Set a text attribute associated with the formatter. An example of a text
    attribute is the suffix for positive numbers. If the formatter does not
    understand the attribute,
@@ -34,7 +34,7 @@
    error is produced. Rule-based formatters only understand
    <constant>NumberFormatter::DEFAULT_RULESET</constant> and
    <constant>NumberFormatter::PUBLIC_RULESETS</constant>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -44,27 +44,27 @@
     <varlistentry>
      <term><parameter>formatter</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <classname>NumberFormatter</classname> object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>attribute</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Attribute specifier - one of the
        <link linkend="intl.numberformatter-constants.unumberformattextattribute">text attribute</link>
        constants.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Text for the attribute value.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -74,9 +74,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

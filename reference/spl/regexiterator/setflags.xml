@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>void</type><methodname>RegexIterator::setFlags</methodname>
    <methodparam><type>int</type><parameter>flags</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets the flags.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The flags to set, a bitmask of class constants.
-      </para>
+      </simpara>
       <para>
        The available flags are listed below. The actual
        meanings of these flags are described in the
@@ -59,9 +59,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -69,9 +69,9 @@
   <para>
    <example xml:id="regexiterator.setflags.example.basic">
     <title><methodname>RegexIterator::setFlags</methodname> example</title>
-    <para>
+    <simpara>
      Creates a new RegexIterator that filters all entries whose key starts with '<literal>test</literal>'.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

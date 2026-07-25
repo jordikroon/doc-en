@@ -8,7 +8,7 @@
   <sect3 xml:id="migration83.deprecated.core.saner-inc-dec-operators">
    <title>Saner Increment/Decrement operators</title>
 
-   <para>
+   <simpara>
     Using the <link linkend="language.operators.increment">increment</link>
     operator (<literal>++</literal>) on empty, non-numeric,
     or non-alphanumeric strings is now deprecated.
@@ -16,22 +16,22 @@
     That means no <constant>E_DEPRECATED</constant> diagnostic is emitted,
     but this feature should not be used when producing new code.
     The new <function>str_increment</function> function should be used instead.
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     Using the <link linkend="language.operators.increment">decrement</link>
     operator (<literal>--</literal>) on empty or non-numeric strings is now deprecated.
-   </para>
+   </simpara>
    <!-- RFC: https://wiki.php.net/rfc/saner-inc-dec-operators -->
   </sect3>
 
   <sect3 xml:id="migration83.deprecated.core.get-class">
    <title>get_class()/get_parent_class() call without arguments</title>
 
-   <para>
+   <simpara>
     Calling <function>get_class</function> and <function>get_parent_class</function>
     without arguments is now deprecated.
-   </para>
+   </simpara>
   </sect3>
  </sect2>
 
@@ -56,15 +56,15 @@
  <sect2 xml:id="migration83.deprecated.intl">
   <title>Intl</title>
 
-  <para>
+  <simpara>
    The <constant>U_MULTIPLE_DECIMAL_SEP*E*RATORS</constant>
    constant had been deprecated, using the
    <constant>U_MULTIPLE_DECIMAL_SEP*A*RATORS</constant>
    constant instead is recommended.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The <constant>NumberFormatter::TYPE_CURRENCY</constant> constant has been deprecated.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration83.deprecated.ldap">
@@ -101,10 +101,10 @@
  <sect2 xml:id="migration83.deprecated.random">
   <title>Random</title>
 
-  <para>
+  <simpara>
    The <constant>MT_RAND_PHP</constant> Mt19937 variant is deprecated.
    <!-- RFC: https://wiki.php.net/rfc/deprecations_php_8_3#mt_rand_php -->
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration83.deprecated.reflection">
@@ -120,21 +120,21 @@
  <sect2 xml:id="migration83.deprecated.standard">
   <title>Standard</title>
 
-  <para>
+  <simpara>
    The <function>assert_options</function> function is now deprecated.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The <constant>ASSERT_ACTIVE</constant>, <constant>ASSERT_BAIL</constant>,
    <constant>ASSERT_CALLBACK</constant>, <constant>ASSERT_EXCEPTION</constant>,
    and <constant>ASSERT_WARNING</constant> constants have been deprecated.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    The <literal>assert.*</literal> INI settings have been deprecated.
    See the
    <link linkend="migration83.other-changes.ini">Changes to INI File Handling</link>
    page for further details.
-  </para>
+  </simpara>
   <!-- RFC: https://wiki.php.net/rfc/assert-string-eval-cleanup -->
  </sect2>
 
@@ -151,10 +151,10 @@
  <sect2 xml:id="migration83.deprecated.zip">
   <title>Zip</title>
 
-  <para>
+  <simpara>
    The <constant>ZipArchive::FL_RECOMPRESS</constant> constant is deprecated
    and will be removed in a future version of libzip.
-  </para>
+  </simpara>
  </sect2>
 
 </sect1>

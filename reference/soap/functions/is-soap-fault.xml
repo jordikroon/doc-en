@@ -13,7 +13,7 @@
    <type>bool</type><methodname>is_soap_fault</methodname>
    <methodparam><type>mixed</type><parameter>object</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function is useful to check if the SOAP call failed, but
    without using exceptions. To use it, create a
    <classname>SoapClient</classname> object with the <literal>exceptions</literal>
@@ -21,13 +21,13 @@
    In this case, the SOAP method will return a special
    <classname>SoapFault</classname> object which encapsulates the fault
    details (faultcode, faultstring, faultactor and faultdetails).
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If <literal>exceptions</literal> is not set then SOAP call will throw
    an exception on error.
    <function>is_soap_fault</function> checks if the given
    parameter is a <classname>SoapFault</classname> object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -37,9 +37,9 @@
     <varlistentry>
      <term><parameter>object</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The object to test.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -49,9 +49,9 @@
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
   <!-- See also &return.success; -->
-  <para>
+  <simpara>
    This will return &true; on error, and &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

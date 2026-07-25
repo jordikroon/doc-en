@@ -5,18 +5,18 @@
   <refname>getprotobynumber</refname>
   <refpurpose>Get protocol name associated with protocol number</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>getprotobynumber</methodname>
    <methodparam><type>int</type><parameter>protocol</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>getprotobynumber</function> returns the protocol name
    associated with protocol <parameter>protocol</parameter> as per
    <filename>/etc/protocols</filename>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,9 +26,9 @@
     <varlistentry>
      <term><parameter>protocol</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The protocol number.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,9 +37,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the protocol name as a string, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

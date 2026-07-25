@@ -5,16 +5,16 @@
   <refname>posix_getuid</refname>
   <refpurpose>Return the real user ID of the current process</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>int</type><methodname>posix_getuid</methodname>
    <void/>
   </methodsynopsis>
-  <para>
-   Return the numeric real user ID of the current process. 
-  </para>
+  <simpara>
+   Return the numeric real user ID of the current process.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the user id, as an <type>int</type>
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

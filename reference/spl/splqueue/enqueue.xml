@@ -12,9 +12,9 @@
    <methodparam><type>mixed</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
 
-  <para>
+  <simpara>
    Enqueues <parameter>value</parameter> at the end of the queue.
-  </para>
+  </simpara>
   <note>
    <para>
     <methodname>SplQueue::enqueue</methodname> is an alias of <methodname>SplDoublyLinkedList::push</methodname>.
@@ -29,9 +29,9 @@
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The value to enqueue.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -40,9 +40,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

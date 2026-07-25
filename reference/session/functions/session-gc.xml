@@ -95,8 +95,8 @@ $gc_time = '/tmp/php_session_last_gc';
 $gc_period = 1800;
 
 session_start();
-// Execute GC only when GC period elapsed. 
-// i.e. Calling session_gc() every request is waste of resources. 
+// Execute GC only when GC period elapsed.
+// i.e. Calling session_gc() every request is waste of resources.
 if (file_exists($gc_time)) {
     if (filemtime($gc_time) < time() - $gc_period) {
         session_gc();

@@ -6,11 +6,11 @@
 
  <partintro xml:id="posix.seealso">
   &reftitle.seealso;
-  <para>
+  <simpara>
    The section about <link
    linkend="book.pcntl">Process Control Functions</link>
    maybe of interest for you.
-  </para>
+  </simpara>
  </partintro>
 
  &reference.posix.entities.functions;

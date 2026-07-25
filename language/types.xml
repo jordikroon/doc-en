@@ -22,7 +22,7 @@
    </itemizedlist>
   </para>
 
-  <para>
+  <simpara>
    PHP is a dynamically typed language, which means that by default there is
    no need to specify the type of a variable, as this will be determined at
    runtime. However, it is possible to statically type some aspect of the
@@ -30,9 +30,9 @@
    <link linkend="language.types.declarations">type declarations</link>.
    Different types that are supported by PHP's type system can be found at the
    <link linkend="language.types.type-system">type system</link> page.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    Types restrict the kind of operations that can be performed on them.
    However, if an expression/variable is used in an operation which
    its type does not support, PHP will attempt to
@@ -41,7 +41,7 @@
    This process depends on the context in which the value is used.
    For more information, see the section on
    <link linkend="language.types.type-juggling">Type Juggling</link>.
-  </para>
+  </simpara>
 
   <tip>
    <simpara>
@@ -50,7 +50,7 @@
     different types are present.
    </simpara>
   </tip>
-  
+
   <note>
    <simpara>
     It is possible to force an expression to be evaluated to a certain type by

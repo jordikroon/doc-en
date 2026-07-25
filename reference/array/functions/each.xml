@@ -16,17 +16,17 @@
    <type>array</type><methodname>each</methodname>
    <methodparam><type class="union"><type>array</type><type>object</type></type><parameter role="reference">array</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Return the current key and value pair from an array and advance the array
    cursor.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    After <function>each</function> has executed, the array cursor
    will be left on the next element of the array, or past the last
    element if it hits the end of the array. You have to use
    <function>reset</function> if you want to traverse the array
    again using each.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -35,9 +35,9 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input array.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -45,7 +45,7 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the current key and value pair from the array
    <parameter>array</parameter>. This pair is returned in a four-element
    array, with the keys <literal>0</literal>, <literal>1</literal>,
@@ -53,12 +53,12 @@
    <literal>0</literal> and <literal>key</literal> contain the key name of
    the array element, and <literal>1</literal> and <literal>value</literal>
    contain the data.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If the internal pointer for the array points past the end of the
    array contents, <function>each</function> returns
    &false;.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;
@@ -74,10 +74,10 @@ print_r($bar);
 ?>
 ]]>
     </programlisting>
-    <para>
+    <simpara>
      <varname>$bar</varname> now contains the following key/value
      pairs:
-    </para>
+    </simpara>
     <screen>
 <![CDATA[
 Array
@@ -102,10 +102,10 @@ print_r($bar);
 ?>
 ]]>
     </programlisting>
-    <para>
+    <simpara>
      <varname>$bar</varname> now contains the following key/value
      pairs:
-    </para>
+    </simpara>
     <screen>
 <![CDATA[
 Array
@@ -148,19 +148,19 @@ c => cranberry
    </example>
   </para>
   <caution>
-   <para>
+   <simpara>
     Because assigning an array to another variable resets the original
     array's pointer, our example above would cause an endless loop had we
     assigned <varname>$fruit</varname> to another variable inside the
     loop.
-   </para>
+   </simpara>
   </caution>
   <warning>
-   <para>
-    <function>each</function> will also accept objects, but may return unexpected 
+   <simpara>
+    <function>each</function> will also accept objects, but may return unexpected
     results. It's therefore not recommended to iterate through object properties
     with <function>each</function>.
-   </para>
+   </simpara>
   </warning>
  </refsect1>
  <refsect1 role="seealso">

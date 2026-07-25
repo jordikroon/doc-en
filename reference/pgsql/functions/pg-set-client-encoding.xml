@@ -16,19 +16,19 @@
    <methodparam choice="opt"><type>PgSql\Connection</type><parameter>connection</parameter></methodparam>
    <methodparam><type>string</type><parameter>encoding</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_set_client_encoding</function> sets the client
    encoding and returns 0 if success or -1 if error.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    PostgreSQL will automatically convert data in the backend database
    encoding into the frontend encoding.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     The function used to be called
     <function>pg_setclientencoding</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -45,17 +45,17 @@
     <varlistentry>
      <term><parameter>encoding</parameter></term>
      <listitem>
-      <para>
-       The required client encoding.  One of <literal>SQL_ASCII</literal>, <literal>EUC_JP</literal>, 
-       <literal>EUC_CN</literal>, <literal>EUC_KR</literal>, <literal>EUC_TW</literal>, 
-       <literal>UNICODE</literal>, <literal>MULE_INTERNAL</literal>, <literal>LATINX</literal> (X=1...9), 
-       <literal>KOI8</literal>, <literal>WIN</literal>, <literal>ALT</literal>, <literal>SJIS</literal>, 
+      <simpara>
+       The required client encoding.  One of <literal>SQL_ASCII</literal>, <literal>EUC_JP</literal>,
+       <literal>EUC_CN</literal>, <literal>EUC_KR</literal>, <literal>EUC_TW</literal>,
+       <literal>UNICODE</literal>, <literal>MULE_INTERNAL</literal>, <literal>LATINX</literal> (X=1...9),
+       <literal>KOI8</literal>, <literal>WIN</literal>, <literal>ALT</literal>, <literal>SJIS</literal>,
        <literal>BIG5</literal> or <literal>WIN1250</literal>.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        The exact list of available encodings depends on your PostgreSQL version, so check your
        PostgreSQL manual for a more specific list.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -64,9 +64,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns <literal>0</literal> on success or <literal>-1</literal> on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -116,7 +116,7 @@ while ($row = pg_fetch_row($result)) {
   echo "Author: $row[0]  E-mail: $row[1]";
   echo "<br />\n";
 }
- 
+
 ?>
 ]]>
     </programlisting>

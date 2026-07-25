@@ -5,7 +5,7 @@
   <refname>oci_define_by_name</refname>
   <refpurpose>Associates a PHP variable with a column for query fetches</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -15,13 +15,13 @@
    <methodparam><type>mixed</type><parameter role="reference">var</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>type</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Associates a PHP variable with a column for query fetches using <function>oci_fetch</function>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
     The <function>oci_define_by_name</function> call must occur before
     executing <function>oci_execute</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -37,37 +37,37 @@
     <varlistentry>
      <term><parameter>column</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The column name used in the query.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Use uppercase for Oracle's default, non-case sensitive column
        names.  Use the exact column name case for case-sensitive
        column names.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>var</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The PHP variable that will contain the returned column value.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>type</parameter></term>
      <listitem>
-      <para>
+      <simpara>
         The data type to be returned.  Generally not needed.  Note that
         Oracle-style data conversions are not performed.  For example,
         <constant>SQLT_INT</constant> will be ignored and the returned
         data type will still be <constant>SQLT_CHR</constant>.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        You can optionally use <function>oci_new_descriptor</function>
        to allocate LOB/ROWID/BFILE descriptors.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -76,9 +76,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

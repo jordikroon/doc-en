@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>void</type><methodname>DOMXPath::registerPhpFunctions</methodname>
    <methodparam choice="opt"><type class="union"><type>string</type><type>array</type><type>null</type></type><parameter>restrict</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This method enables the ability to use PHP functions within XPath expressions.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -25,16 +25,16 @@
     <varlistentry>
      <term><parameter>restrict</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Use this parameter to only allow certain functions to be called from XPath.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        This parameter can be one of the following:
        a <type>string</type> (a function name),
        an indexed <type>array</type> of function names,
        or an associative <type>array</type> with keys being the function name
        and the associated value being the <type>callable</type>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -43,9 +43,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors" xml:id="domxpath.registerphpfunctions..errors">
@@ -102,9 +102,9 @@
 
  <refsect1 role="examples">
   &reftitle.examples;
-  <para>
+  <simpara>
    The following examples use <filename>book.xml</filename> which contains the following:
-  </para>
+  </simpara>
   <para>
    <example>
     <title>book.xml</title>
@@ -186,7 +186,7 @@ $xpath->registerNamespace("php", "http://php.net/xpath");
 
 // Register PHP functions (has_multiple only)
 $xpath->registerPhpFunctions("has_multiple");
- 
+
 function has_multiple($nodes) {
     // Return true if more than one author
     return count($nodes) > 1;

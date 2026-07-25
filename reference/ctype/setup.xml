@@ -6,10 +6,10 @@
 
  <section xml:id="ctype.requirements">
   &reftitle.required;
-  <para>
+  <simpara>
    None besides functions from the standard C library which are
    always available.
-  </para>
+  </simpara>
  </section>
 
  &reference.ctype.configure;

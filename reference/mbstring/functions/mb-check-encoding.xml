@@ -13,14 +13,14 @@
    <methodparam choice="opt"><type class="union"><type>array</type><type>string</type><type>null</type></type><parameter>value</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>encoding</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks if the specified byte stream is valid for the specified encoding.
    If <parameter>value</parameter> is of type &array;, all keys and values are
    validated recursively.
    It is useful to prevent so-called "Invalid Encoding Attack".
-  </para>
-  <para>
-  </para>
+  </simpara>
+  <simpara>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,24 +30,24 @@
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
         The byte stream or &array; to check. If it is omitted, this function checks
         all the input from the beginning of the request.
-      </para>
+      </simpara>
 
       <warning>
-        <para>
+        <simpara>
           As of PHP 8.1.0, omitting this parameter or passing &null; is deprecated.
-        </para>
+        </simpara>
       </warning>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>encoding</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The expected encoding.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -56,9 +56,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

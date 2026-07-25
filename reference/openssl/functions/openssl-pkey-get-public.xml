@@ -5,18 +5,18 @@
   <refname>openssl_pkey_get_public</refname>
   <refpurpose>Extract public key from certificate and prepare it for use</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>OpenSSLAsymmetricKey</type><type>false</type></type><methodname>openssl_pkey_get_public</methodname>
    <methodparam><type class="union"><type>OpenSSLAsymmetricKey</type><type>OpenSSLCertificate</type><type>array</type><type>string</type></type><parameter>public_key</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>openssl_pkey_get_public</function> extracts the public key from
    <parameter>public_key</parameter> and prepares it for use by other
    functions.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -46,9 +46,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an <classname>OpenSSLAsymmetricKey</classname> instance on success, or &false; on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

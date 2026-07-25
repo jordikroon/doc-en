@@ -12,13 +12,13 @@
    <methodparam><type>resource</type><parameter>stream</parameter></methodparam>
    <methodparam><type>int</type><parameter>mode</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Shutdowns (partially or not) a full-duplex connection.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     The associated buffer, or buffers, may or may not be emptied.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -29,22 +29,22 @@
     <varlistentry>
      <term><parameter>stream</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An open stream (opened with <function>stream_socket_client</function>,
        for example)
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>mode</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        One of the following constants: <constant>STREAM_SHUT_RD</constant>
        (disable further receptions), <constant>STREAM_SHUT_WR</constant>
        (disable further transmissions) or
        <constant>STREAM_SHUT_RDWR</constant> (disable further receptions and
        transmissions).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -52,9 +52,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

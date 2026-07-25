@@ -12,12 +12,12 @@
    <type>void</type><methodname>ob_implicit_flush</methodname>
    <methodparam choice="opt"><type>bool</type><parameter>enable</parameter><initializer>&true;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>ob_implicit_flush</function> will turn implicit flushing on or
    off. Implicit flushing will result in a flush operation after every block of
    code resulting in output, so that explicit calls to <function>flush</function>
    will no longer be needed.
-  </para>
+  </simpara>
   <note>
    <simpara>
     Printing empty strings or sending headers is not considered output
@@ -40,9 +40,9 @@
     <varlistentry>
      <term><parameter>enable</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &true; to turn implicit flushing on, &false; otherwise.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -51,9 +51,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

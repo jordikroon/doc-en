@@ -15,16 +15,16 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    The <varname>$http_response_header</varname> <type>array</type> is similar to the
    <function>get_headers</function> function. When using the
-   <link linkend="wrappers.http">HTTP wrapper</link>, 
+   <link linkend="wrappers.http">HTTP wrapper</link>,
    <varname>$http_response_header</varname> will be populated with the HTTP
    response headers. <varname>$http_response_header</varname> will be created
    in the <link linkend="language.variables.scope">local scope</link>.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>

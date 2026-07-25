@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="function.sodium-crypto-pwhash-str">
+<refentry xml:id="function.sodium-crypto-pwhash-str" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>sodium_crypto_pwhash_str</refname>
   <refpurpose>Get an ASCII-encoded hash</refpurpose>

@@ -5,7 +5,7 @@
   <refname>pcntl_signal</refname>
   <refpurpose>Installs a signal handler</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,10 +14,10 @@
    <methodparam><type class="union"><type>callable</type><type>int</type></type><parameter>handler</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>restart_syscalls</parameter><initializer>&true;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    The <function>pcntl_signal</function> function installs a new
    signal handler or replaces the current signal handler for the signal indicated by <parameter>signal</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,25 +27,25 @@
     <varlistentry>
      <term><parameter>signal</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The signal number.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>handler</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The signal handler. This may be either a <type>callable</type>, which
        will be invoked to handle the signal, or either of the two global
        constants <constant>SIG_IGN</constant> or <constant>SIG_DFL</constant>,
        which will ignore the signal or restore the default signal handler
-       respectively. 
-      </para>
-      <para>
+       respectively.
+      </simpara>
+      <simpara>
        If a <type>callable</type> is given, it must implement the following
        signature:
-      </para>
+      </simpara>
       <para>
        <methodsynopsis>
         <type>void</type><methodname><replaceable>handler</replaceable></methodname>
@@ -72,21 +72,21 @@
        </variablelist>
       </para>
       <note>
-       <para>
+       <simpara>
         Note that when you set a handler to an object method, that object's
         reference count is increased which makes it persist until you either
         change the handler to something else, or your script ends.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>restart_syscalls</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Specifies whether system call restarting should be used when this
        signal arrives.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -95,9 +95,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -185,9 +185,9 @@ echo "Done\n";
 
  <refsect1 role="notes"><!-- {{{ -->
   &reftitle.notes;
-  <para>
+  <simpara>
    <function>pcntl_signal</function> doesn't stack the signal handlers, but replaces them.
-  </para>
+  </simpara>
   <refsect2>
    <title>Dispatch Methods</title>
    <para>
@@ -198,10 +198,10 @@ echo "Done\n";
      <member>Manual dispatch with <function>pcntl_signal_dispatch</function></member>
     </simplelist>
    </para>
-   <para>
+   <simpara>
     When signals are dispatched asynchronously or using tick-based execution, blocking functions like
     <function>sleep</function> may be interrupted.
-   </para>
+   </simpara>
   </refsect2>
  </refsect1><!-- }}} -->
 

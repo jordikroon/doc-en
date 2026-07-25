@@ -12,9 +12,9 @@
    <methodparam><type>int</type><parameter>timeout_type</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>timeout</parameter><initializer>-1</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets or fetches the imap timeout.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -23,21 +23,21 @@
     <varlistentry>
      <term><parameter>timeout_type</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        One of the following:
        <constant>IMAP_OPENTIMEOUT</constant>,
        <constant>IMAP_READTIMEOUT</constant>,
        <constant>IMAP_WRITETIMEOUT</constant>, or
        <constant>IMAP_CLOSETIMEOUT</constant>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>timeout</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The timeout, in seconds.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -45,15 +45,15 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    If the <parameter>timeout</parameter> parameter is set, this function
    returns &true; on success and &false; on failure.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If <parameter>timeout</parameter>  is not provided or evaluates to -1,
    the current timeout value of <parameter>timeout_type</parameter> is
    returned as an integer.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;

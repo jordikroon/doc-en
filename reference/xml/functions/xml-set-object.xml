@@ -9,7 +9,7 @@
  <refsynopsisdiv>
   &warn.deprecated.function-8-4-0;
  </refsynopsisdiv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -18,12 +18,12 @@
    <methodparam><type>XMLParser</type><parameter>parser</parameter></methodparam>
    <methodparam><type>object</type><parameter>object</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function allows to use <parameter>parser</parameter> inside
    <parameter>object</parameter>. All callback functions could be set with
    <function>xml_set_element_handler</function> etc and assumed to be
    methods of <parameter>object</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -33,17 +33,17 @@
     <varlistentry>
      <term><parameter>parser</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A reference to the XML parser to use inside the object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>object</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The object where to use the XML parser.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -52,9 +52,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -94,7 +94,7 @@ class CustomXMLParser
 {
     private $parser;
 
-    function __construct() 
+    function __construct()
     {
         $this->parser = xml_parser_create();
 
@@ -103,22 +103,22 @@ class CustomXMLParser
         xml_set_character_data_handler($this->parser, "cdata");
     }
 
-    function parse($data) 
+    function parse($data)
     {
         xml_parse($this->parser, $data);
     }
 
-    function tag_open($parser, $tag, $attributes) 
+    function tag_open($parser, $tag, $attributes)
     {
-        var_dump($tag, $attributes); 
+        var_dump($tag, $attributes);
     }
 
-    function cdata($parser, $cdata) 
+    function cdata($parser, $cdata)
     {
         var_dump($cdata);
     }
 
-    function tag_close($parser, $tag) 
+    function tag_close($parser, $tag)
     {
         var_dump($tag);
     }

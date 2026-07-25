@@ -22,10 +22,10 @@
   </simpara>
  </note>
  <note>
-  <para>
+  <simpara>
    Note that switch/case does
    <link linkend="types.comparisions-loose">loose comparison</link>.
-  </para>
+  </simpara>
  </note>
 
  <para>
@@ -203,10 +203,10 @@ i is not equal to 0, 1 or 2
    </simpara>
   </note>
  </para>
- <para>
+ <simpara>
   If no <literal>case</literal> branch matches, and there is no <literal>default</literal>
   branch, then no code will be executed, just as if no <literal>if</literal> statement was true.
- </para>
+ </simpara>
  <para>
   A case value may be given as an expression. However, that expression will be
   evaluated on its own and then loosely compared with the switch value. That means

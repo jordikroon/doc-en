@@ -5,17 +5,17 @@
   <refname>get_resources</refname>
   <refpurpose>Returns active resources</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>array</type><methodname>get_resources</methodname>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>type</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns an array of all currently active <type>resource</type>s, optionally
    filtered by resource type.
-  </para>
+  </simpara>
   <note>
    <simpara>
     This function is meant for debugging and testing purposes. It is not supposed
@@ -33,19 +33,19 @@
     <varlistentry>
      <term><parameter>type</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If defined, this will cause <function>get_resources</function> to only
        return resources of the given type.
        <link linkend="resource">A list of resource types is available.</link>
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If the <type>string</type> <literal>Unknown</literal> is provided as
        the type, then only resources that are of an unknown type will be
        returned.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If omitted, all resources will be returned.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -54,10 +54,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an <type>array</type> of currently active resources, indexed by
    resource number.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

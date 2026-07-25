@@ -12,9 +12,9 @@
    <modifier>public</modifier> <methodname>ReflectionObject::__construct</methodname>
    <methodparam><type>object</type><parameter>object</parameter></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Constructs a <classname>ReflectionObject</classname>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>object</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An object instance.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

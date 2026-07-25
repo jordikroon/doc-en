@@ -53,7 +53,7 @@
   &reftitle.errors;
   <simpara>
    If <parameter>size</parameter> is less than <literal>1</literal>,
-   a <classname>ValueError</classname> will be thrown.
+   a <exceptionname>ValueError</exceptionname> will be thrown.
   </simpara>
  </refsect1>
 

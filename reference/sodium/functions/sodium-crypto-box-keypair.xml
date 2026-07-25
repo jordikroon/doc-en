@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="function.sodium-crypto-box-keypair">
+<refentry xml:id="function.sodium-crypto-box-keypair" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>sodium_crypto_box_keypair</refname>
   <refpurpose>Randomly generate a secret key and a corresponding public key</refpurpose>

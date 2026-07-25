@@ -5,7 +5,7 @@
   <refname>posix_initgroups</refname>
   <refpurpose>Calculate the group access list</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,9 +13,9 @@
    <methodparam><type>string</type><parameter>username</parameter></methodparam>
    <methodparam><type>int</type><parameter>group_id</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Calculates the group access list for the user specified in name.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,17 +25,17 @@
     <varlistentry>
      <term><parameter>username</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The user to calculate the list for.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>group_id</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Typically the group number from the password file.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -44,9 +44,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type class="union"><type>object</type><type>null</type></type><methodname>ReflectionGenerator::getThis</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get the <literal>$this</literal> value that the generator has access to.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,10 +24,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the <literal>$this</literal> value, or &null; if the generator was
    not created in a class context.
-  </para>
+  </simpara>
  </refsect1>
 
   <refsect1 role="examples">

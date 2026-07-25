@@ -5,17 +5,17 @@
   <refname>getrusage</refname>
   <refpurpose>Gets the current resource usages</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>array</type><type>false</type></type><methodname>getrusage</methodname>
    <methodparam choice="opt"><type>int</type><parameter>mode</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This is an interface to <command>getrusage(2)</command>. It gets data returned
-   from the system call. 
-  </para>
+   from the system call.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,10 +25,10 @@
     <varlistentry>
      <term><parameter>mode</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If <parameter>mode</parameter> is 1, getrusage will be called with
        <constant>RUSAGE_CHILDREN</constant>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,11 +37,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an associative array containing the data returned from the system
    call. All entries are accessible by using their documented field names.
    Returns &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -80,10 +80,10 @@ echo $dat["ru_stime.tv_sec"];  // system time used (seconds)
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
-    On Windows <function>getrusage</function> will only return the following 
+   <simpara>
+    On Windows <function>getrusage</function> will only return the following
     members:
-   </para>
+   </simpara>
    <para>
     <simplelist>
      <member><literal>"ru_stime.tv_sec"</literal></member>
@@ -91,26 +91,26 @@ echo $dat["ru_stime.tv_sec"];  // system time used (seconds)
      <member><literal>"ru_utime.tv_sec"</literal></member>
      <member><literal>"ru_utime.tv_usec"</literal></member>
      <member>
-      <literal>"ru_majflt"</literal> (only if <parameter>mode</parameter> is 
+      <literal>"ru_majflt"</literal> (only if <parameter>mode</parameter> is
       <constant>RUSAGE_SELF</constant>)
      </member>
      <member>
-      <literal>"ru_maxrss"</literal> (only if <parameter>mode</parameter> is 
+      <literal>"ru_maxrss"</literal> (only if <parameter>mode</parameter> is
       <constant>RUSAGE_SELF</constant>)
      </member>
     </simplelist>
    </para>
-   <para>
-    If <function>getrusage</function> is called with <parameter>mode</parameter> 
-    set to <literal>1</literal> (<constant>RUSAGE_CHILDREN</constant>), then 
-    resource usage for threads are collected (meaning that internally the function 
+   <simpara>
+    If <function>getrusage</function> is called with <parameter>mode</parameter>
+    set to <literal>1</literal> (<constant>RUSAGE_CHILDREN</constant>), then
+    resource usage for threads are collected (meaning that internally the function
     is called with <constant>RUSAGE_THREAD</constant>).
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     on BeOS 2000, only the following members are returned:
-   </para>
+   </simpara>
    <para>
     <simplelist>
      <member><literal>"ru_stime.tv_sec"</literal></member>

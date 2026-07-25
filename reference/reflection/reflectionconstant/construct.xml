@@ -33,7 +33,7 @@
  <refsect1 role="errors">
   &reftitle.errors;
   <simpara>
-   Throws a <classname>ReflectionException</classname> in case the given
+   Throws a <exceptionname>ReflectionException</exceptionname> in case the given
    constant does not exist.
   </simpara>
  </refsect1>

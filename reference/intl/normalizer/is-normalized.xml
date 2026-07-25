@@ -11,22 +11,22 @@
  </refnamediv>
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
    <methodsynopsis role="Normalizer">
    <modifier>public</modifier> <modifier>static</modifier> <type>bool</type><methodname>Normalizer::isNormalized</methodname>
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>form</parameter><initializer><constant>Normalizer::FORM_C</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type>bool</type><methodname>normalizer_is_normalized</methodname>
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>form</parameter><initializer><constant>Normalizer::FORM_C</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks if the provided string is already in the specified normalization
    form.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -36,15 +36,15 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>The input string to normalize</para>
+      <simpara>The input string to normalize</simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>form</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        One of the normalization forms.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -54,7 +54,7 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>&true; if normalized, &false; otherwise or if there an error</para>
+  <simpara>&true; if normalized, &false; otherwise or if there an error</simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -68,10 +68,10 @@
 <?php
 $char_A_ring = "\xC3\x85"; // 'LATIN CAPITAL LETTER A WITH RING ABOVE' (U+00C5)
 $char_combining_ring_above = "\xCC\x8A";  // 'COMBINING RING ABOVE' (U+030A)
- 
+
 $char_orig = 'A' . $char_combining_ring_above;
 $char_norm = normalizer_normalize( 'A' . $char_combining_ring_above, Normalizer::FORM_C );
- 
+
 echo ( normalizer_is_normalized($char_orig, Normalizer::FORM_C) ) ? "normalized" : "not normalized";
 echo '; ';
 echo ( normalizer_is_normalized($char_norm, Normalizer::FORM_C) ) ? "normalized" : "not normalized";
@@ -86,10 +86,10 @@ echo ( normalizer_is_normalized($char_norm, Normalizer::FORM_C) ) ? "normalized"
 <?php
 $char_A_ring = "\xC3\x85"; // 'LATIN CAPITAL LETTER A WITH RING ABOVE' (U+00C5)
 $char_combining_ring_above = "\xCC\x8A";  // 'COMBINING RING ABOVE' (U+030A)
- 
+
 $char_orig = 'A' . $char_combining_ring_above;
 $char_norm = Normalizer::normalize( 'A' . $char_combining_ring_above, Normalizer::FORM_C );
- 
+
 echo ( Normalizer::isNormalized($char_orig, Normalizer::FORM_C) ) ? "normalized" : "not normalized";
 echo '; ';
 echo ( Normalizer::isNormalized($char_norm, Normalizer::FORM_C) ) ? "normalized" : "not normalized";

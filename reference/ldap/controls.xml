@@ -10,11 +10,11 @@
    alongside the response to provide more information, usually
    to answer a control object from the request.
   <note>
-   <para>
+   <simpara>
     Not all controls are supported by all LDAP servers. To know which controls
     are supported by a server, you need to query the root DSE by reading an
     empty dn with the filter (objectClass=*).
-   </para>
+   </simpara>
    <example>
     <title>Testing support for paged result control</title>
     <programlisting role="php">
@@ -35,13 +35,13 @@ if (!in_array(LDAP_CONTROL_PAGEDRESULTS, ldap_get_entries($ds, $result)[0]['supp
   </note>
  </para>
 
- <para>
+ <simpara>
    As of PHP 7.3, you can send controls with your request in all
    request functions using the <parameter>controls</parameter> parameter. When a ext
    version of a function exists, you should use it if you want to
    get access to the full response object and be able to parse
    response controls from it using <function>ldap_parse_result</function>.
- </para>
+ </simpara>
 
  <para>
    <parameter>controls</parameter> must be an array containing an array for each control to send,
@@ -96,46 +96,46 @@ if (!in_array(LDAP_CONTROL_PAGEDRESULTS, ldap_get_entries($ds, $result)[0]['supp
    Supported controls to be passed as an array are:
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      <constant>LDAP_CONTROL_PAGEDRESULTS</constant>
      Expected keys are [size] and [cookie]
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <constant>LDAP_CONTROL_ASSERT</constant>
      Expected key is filter
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <constant>LDAP_CONTROL_VALUESRETURNFILTER</constant>
      Expected key is filter
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <constant>LDAP_CONTROL_PRE_READ</constant>
      Expected key is attrs
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <constant>LDAP_CONTROL_POST_READ</constant>
      Expected key is attrs
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <constant>LDAP_CONTROL_SORTREQUEST</constant>
      Expects an array of arrays with keys attr, [oid], [reverse].
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <constant>LDAP_CONTROL_VLVREQUEST</constant>
      Expected keys are before, after, attrvalue|(offset, count), [context]
-    </para>
+    </simpara>
    </listitem>
   </itemizedlist>
  </para>
@@ -144,28 +144,28 @@ if (!in_array(LDAP_CONTROL_PAGEDRESULTS, ldap_get_entries($ds, $result)[0]['supp
    The following controls do not need any value:
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      <constant>LDAP_CONTROL_PASSWORDPOLICYREQUEST</constant>
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <constant>LDAP_CONTROL_MANAGEDSAIT</constant>
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <constant>LDAP_CONTROL_DONTUSECOPY</constant>
-    </para>
+    </simpara>
    </listitem>
   </itemizedlist>
  </para>
 
- <para>
+ <simpara>
    The control <constant>LDAP_CONTROL_PROXY_AUTHZ</constant> is a special case
    as its value is not expected to be BER-encoded, so you can directly
    use a string for its value.
- </para>
+ </simpara>
 
  <para>
    When controls are parsed by <function>ldap_parse_result</function>, values are
@@ -173,40 +173,40 @@ if (!in_array(LDAP_CONTROL_PAGEDRESULTS, ldap_get_entries($ds, $result)[0]['supp
    This is supported for:
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      <constant>LDAP_CONTROL_PASSWORDPOLICYRESPONSE</constant>
      Keys are expire, grace, [error]
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <constant>LDAP_CONTROL_PAGEDRESULTS</constant>
      Keys are size, cookie
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <constant>LDAP_CONTROL_PRE_READ</constant>
      Keys are dn and LDAP attributes names
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <constant>LDAP_CONTROL_POST_READ</constant>
      Keys are dn and LDAP attributes names
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <constant>LDAP_CONTROL_SORTRESPONSE</constant>
      Keys are errcode, [attribute]
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <constant>LDAP_CONTROL_VLVRESPONSE</constant>
      Keys are target, count, errcode, context
-    </para>
+    </simpara>
    </listitem>
   </itemizedlist>
  </para>

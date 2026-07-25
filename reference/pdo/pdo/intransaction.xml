@@ -14,10 +14,10 @@
    <modifier>public</modifier> <type>bool</type><methodname>PDO::inTransaction</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks if a transaction is currently active within the driver. This method
    only works for database drivers that support transactions.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,9 +27,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if a transaction is currently active, and &false; if not.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

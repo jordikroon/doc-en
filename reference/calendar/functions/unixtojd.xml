@@ -12,12 +12,12 @@
    <type class="union"><type>int</type><type>false</type></type><methodname>unixtojd</methodname>
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>timestamp</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Return the Julian Day for a Unix <parameter>timestamp</parameter>
    (seconds since 1.1.1970), or for the current day if no
    <parameter>timestamp</parameter> is given. Either way, the time is regarded
    as local time (not UTC).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,9 +27,9 @@
     <varlistentry>
      <term><parameter>timestamp</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A unix timestamp to convert.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -38,9 +38,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A julian day number as integer, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

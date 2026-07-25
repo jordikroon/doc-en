@@ -5,7 +5,7 @@
   <refname>gmp_hamdist</refname>
   <refpurpose>Hamming distance</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,10 +13,10 @@
    <methodparam><type class="union"><type>GMP</type><type>int</type><type>string</type></type><parameter>num1</parameter></methodparam>
    <methodparam><type class="union"><type>GMP</type><type>int</type><type>string</type></type><parameter>num2</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the hamming distance between <parameter>num1</parameter> and
    <parameter>num2</parameter>. Both operands should be non-negative.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,19 +26,19 @@
     <varlistentry>
      <term><parameter>num1</parameter></term>
      <listitem>
-      &gmp.parameter; 
-      <para>
+      &gmp.parameter;
+      <simpara>
        It should be positive.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>num2</parameter></term>
      <listitem>
-      &gmp.parameter; 
-      <para>
+      &gmp.parameter;
+      <simpara>
        It should be positive.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -47,9 +47,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The hamming distance between <parameter>num1</parameter> and <parameter>num2</parameter>, as an <type>int</type>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

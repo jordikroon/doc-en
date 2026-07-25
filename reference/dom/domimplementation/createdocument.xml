@@ -15,10 +15,10 @@
    <methodparam choice="opt"><type>string</type><parameter>qualifiedName</parameter><initializer>""</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>DOMDocumentType</type><type>null</type></type><parameter>doctype</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Creates a <classname>DOMDocument</classname> object of the specified type
    with its document element.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -27,25 +27,25 @@
     <varlistentry>
      <term><parameter>namespace</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The namespace URI of the document element to create.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>qualifiedName</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The qualified name of the document element to create.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>doctype</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The type of document to create or &null;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -53,12 +53,12 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A new <classname>DOMDocument</classname> object. If
    <parameter>namespace</parameter>, <parameter>qualifiedName</parameter>,
    and <parameter>doctype</parameter> are null, the returned
    <classname>DOMDocument</classname> is empty with no document element.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -72,19 +72,19 @@
     <varlistentry>
      <term><constant>DOM_WRONG_DOCUMENT_ERR</constant></term>
      <listitem>
-      <para>
+      <simpara>
        Raised if <parameter>doctype</parameter> has already been used with a
        different document or was created from a different implementation.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><constant>DOM_NAMESPACE_ERR</constant></term>
      <listitem>
-      <para>
+      <simpara>
        Raised if there is an error with the namespace, as determined by
        <parameter>namespace</parameter> and <parameter>qualifiedName</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -124,7 +124,7 @@
        <entry>8.0.0</entry>
        <entry>
         Calling this function statically will
-        now throw an <classname>Error</classname>.
+        now throw an <exceptionname>Error</exceptionname>.
         Previously, an <constant>E_DEPRECATED</constant> was raised.
        </entry>
       </row>

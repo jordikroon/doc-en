@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.fopen">
+<refentry xml:id="function.fopen" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>fopen</refname>
   <refpurpose>Opens file or URL</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -15,10 +15,10 @@
    <methodparam choice="opt"><type>bool</type><parameter>use_include_path</parameter><initializer>&false;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>resource</type><type>null</type></type><parameter>context</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>fopen</function> binds a named resource, specified by
-   <parameter>filename</parameter>, to a stream. 
-  </para>
+   <parameter>filename</parameter>, to a stream.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,15 +28,15 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If <parameter>filename</parameter> is of the form "scheme://...", it
        is assumed to be a URL and PHP will search for a protocol handler
        (also known as a wrapper) for that scheme. If no wrappers for that
        protocol are registered, PHP will emit a notice to help you track
        potential problems in your script and then continue as though
        <parameter>filename</parameter> specifies a regular file.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If PHP has decided that <parameter>filename</parameter> specifies
        a local file, then it will try to open a stream on that file.
        The file must be accessible to PHP, so you need to ensure that
@@ -44,17 +44,17 @@
        If you have enabled
        <link linkend="ini.open-basedir">open_basedir</link> further
        restrictions may apply.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If PHP has decided that <parameter>filename</parameter> specifies
        a registered protocol, and that protocol is registered as a
        network URL, PHP will check to make sure that
        <link linkend="ini.allow-url-fopen">allow_url_fopen</link> is
        enabled. If it is switched off, PHP will emit a warning and
        the <function>fopen</function> call will fail.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         The list of supported protocols can be found in <xref
         linkend="wrappers"/>. Some protocols (also referred to as
         <literal>wrappers</literal>) support <literal>context</literal>
@@ -62,7 +62,7 @@
         protocol in use for a list of options which can be set. (e.g.
         &php.ini; value <literal>user_agent</literal> used by the
         <literal>http</literal> wrapper).
-       </para>
+       </simpara>
       </note>
       <para>
        On the Windows platform, be careful to escape any backslashes
@@ -153,7 +153,7 @@ $handle = fopen("c:\\folder\\resource.txt", "r");
             generating an error of level <constant>E_WARNING</constant>.  If
             the file does not exist, attempt to create it.  This is equivalent
             to specifying <literal>O_EXCL|O_CREAT</literal> flags for the
-            underlying <literal>open(2)</literal> system call. 
+            underlying <literal>open(2)</literal> system call.
            </entry>
           </row>
           <row>
@@ -205,7 +205,7 @@ $handle = fopen("c:\\folder\\resource.txt", "r");
        </table>
       </para>
       <note>
-       <para>
+       <simpara>
         Different operating system families have different line-ending
         conventions.  When you write a text file and want to insert a line
         break, you need to use the correct line-ending character(s) for your
@@ -213,13 +213,13 @@ $handle = fopen("c:\\folder\\resource.txt", "r");
         line ending character, Windows based systems use <literal>\r\n</literal>
         as the line ending characters and Macintosh based systems (Mac OS Classic) used
         <literal>\r</literal> as the line ending character.
-       </para>
-       <para>
+       </simpara>
+       <simpara>
         If you use the wrong line ending characters when writing your files, you
         might find that other applications that open those files will "look
         funny".
-       </para>
-       <para>
+       </simpara>
+       <simpara>
         Windows offers a text-mode translation flag (<literal>'t'</literal>)
         which will transparently translate <literal>\n</literal> to
         <literal>\r\n</literal> when working with the file.  In contrast, you
@@ -227,28 +227,28 @@ $handle = fopen("c:\\folder\\resource.txt", "r");
         translate your data.  To use these flags, specify either
         <literal>'b'</literal> or <literal>'t'</literal> as the last character
         of the <parameter>mode</parameter> parameter.
-       </para>
-       <para>
+       </simpara>
+       <simpara>
         The default translation mode is <literal>'b'</literal>.
         You can use the <literal>'t'</literal>
         mode if you are working with plain-text files and you use
         <literal>\n</literal> to delimit your line endings in your script, but
         expect your files to be readable with applications such as old versions of notepad.  You
         should use the <literal>'b'</literal> in all other cases.
-       </para>
-       <para>
+       </simpara>
+       <simpara>
         If you specify the 't' flag when working with binary files, you
         may experience strange problems with your data, including broken image
         files and strange problems with <literal>\r\n</literal> characters.
-       </para>
+       </simpara>
       </note>
       <note>
-       <para>
+       <simpara>
         For portability, it is also strongly recommended that
         you re-write code that uses or relies upon the <literal>'t'</literal>
         mode so that it uses the correct line endings and
         <literal>'b'</literal> mode instead.
-       </para>
+       </simpara>
       </note>
       <note>
        <simpara>
@@ -263,11 +263,11 @@ $handle = fopen("c:\\folder\\resource.txt", "r");
     <varlistentry>
      <term><parameter>use_include_path</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The optional third <parameter>use_include_path</parameter> parameter
        can be set to &true; if you want to search for the file in the
        <link linkend="ini.include-path">include_path</link>, too.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -282,10 +282,10 @@ $handle = fopen("c:\\folder\\resource.txt", "r");
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a file pointer resource on success,
    &return.falseforfailure;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -340,20 +340,20 @@ $handle = fopen("ftp://user:password@example.com/somefile.txt", "w");
   &reftitle.notes;
   &warn.ssl-non-standard;
   <note>
-   <para>
+   <simpara>
     If you are experiencing problems with reading and writing to files and
     you're using the server module version of PHP, remember to make sure that
     the files and directories you're using are accessible to the server
     process.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     This function may also succeed when <parameter>filename</parameter> is a
     directory. If you are unsure whether <parameter>filename</parameter> is a
     file or a directory, you may need to use the <function>is_dir</function>
     function before calling <function>fopen</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

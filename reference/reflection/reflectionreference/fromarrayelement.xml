@@ -13,9 +13,9 @@
    <methodparam><type>array</type><parameter>array</parameter></methodparam>
    <methodparam><type class="union"><type>int</type><type>string</type></type><parameter>key</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Creates a <classname>ReflectionReference</classname> from an array element.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,17 +24,17 @@
    <varlistentry>
     <term><parameter>array</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The &array; which contains the potential reference.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>key</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The key; either an &integer; or a &string;.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -42,20 +42,20 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a <classname>ReflectionReference</classname> instance if
    <literal>$array[$key]</literal> is a reference, or &null; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    If <parameter>array</parameter> is not an &array;, or <parameter>key</parameter>
-   is not an &integer; or &string;, a <classname>TypeError</classname> is thrown. 
+   is not an &integer; or &string;, a <exceptionname>TypeError</exceptionname> is thrown.
    If <literal>$array[$key]</literal> does not exist,
-   a <classname>ReflectionException</classname> is thrown.
-  </para>
+   a <exceptionname>ReflectionException</exceptionname> is thrown.
+  </simpara>
  </refsect1>
 
 </refentry>

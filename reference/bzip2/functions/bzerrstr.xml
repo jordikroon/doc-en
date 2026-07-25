@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.bzerrstr">
+<refentry xml:id="function.bzerrstr" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>bzerrstr</refname>
   <refpurpose>Returns a bzip2 error string</refpurpose>

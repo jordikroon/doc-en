@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>ReflectionClass::isInstantiable</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks if the class is instantiable.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
   Returns &true; if the class is instantiable or &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -78,7 +78,7 @@ $classes = array(
 foreach($classes  as $class ) {
     $reflectionClass = new ReflectionClass($class);
     echo "Is $class instantiable?  ";
-    var_dump($reflectionClass->isInstantiable()); 
+    var_dump($reflectionClass->isInstantiable());
 }
 
 ?>

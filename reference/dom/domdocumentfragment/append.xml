@@ -11,9 +11,9 @@
    <modifier>public</modifier> <type>void</type><methodname>DOMDocumentFragment::append</methodname>
    <methodparam rep="repeat"><type class="union"><type>DOMNode</type><type>string</type></type><parameter>nodes</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Appends one or many <parameter>nodes</parameter> to the list of children after the last child node.
-  </para>
+  </simpara>
  </refsect1>
 
  <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('domparentnode.append')/db:refsect1[@role='parameters'])" />
@@ -25,9 +25,9 @@
   &reftitle.examples;
   <example xml:id="domdocumentfragment.append.example.basic">
    <title><methodname>DOMDocumentFragment::append</methodname> example</title>
-   <para>
+   <simpara>
     Appends nodes in the fragment.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

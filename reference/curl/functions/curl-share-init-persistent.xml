@@ -64,7 +64,7 @@
     <simpara>
      If <parameter>share_options</parameter> contains a value not matching
      a <constant>CURL_LOCK_DATA_<replaceable>*</replaceable></constant>,
-     this function throws a <classname>ValueError</classname>.
+     this function throws a <exceptionname>ValueError</exceptionname>.
     </simpara>
    </listitem>
    <listitem>

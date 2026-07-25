@@ -17,16 +17,16 @@
    In order of preference, this function returns the default timezone by:
    <itemizedlist>
     <listitem>
-     <para>
+     <simpara>
       Reading the timezone set using the
       <function>date_default_timezone_set</function> function (if any)
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       Reading the value of the <link linkend="ini.date.timezone">date.timezone</link> ini option
       (if set)
-     </para>
+     </simpara>
     </listitem>
    </itemizedlist>
   </para>
@@ -40,12 +40,12 @@
   &reftitle.parameters;
   &no.function.parameters;
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a <type>string</type>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

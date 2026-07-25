@@ -5,7 +5,7 @@
   <refname>substr</refname>
   <refpurpose>Return part of a string</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,10 +14,10 @@
    <methodparam><type>int</type><parameter>offset</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>length</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the portion of <parameter>string</parameter> specified by the
    <parameter>offset</parameter> and <parameter>length</parameter> parameters.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,15 +27,15 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If <parameter>offset</parameter> is non-negative, the returned string
        will start at the <parameter>offset</parameter>'th position in
        <parameter>string</parameter>, counting from zero. For instance,
@@ -43,16 +43,16 @@
        position <literal>0</literal> is '<literal>a</literal>', the
        character at position <literal>2</literal> is
        '<literal>c</literal>', and so forth.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If <parameter>offset</parameter> is negative, the returned string
        will start at the <parameter>offset</parameter>'th character
        from the end of <parameter>string</parameter>.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If <parameter>string</parameter> is less than
        <parameter>offset</parameter> characters long, an empty string will be returned.
-      </para>
+      </simpara>
       <para>
        <example>
         <title>Using a negative <parameter>offset</parameter></title>
@@ -72,27 +72,27 @@ echo substr("abcdef", -3, 1), PHP_EOL; // returns "d"
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If <parameter>length</parameter> is given and is positive, the string
        returned will contain at most <parameter>length</parameter> characters
        beginning from <parameter>offset</parameter> (depending on the length of
        <parameter>string</parameter>).
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If <parameter>length</parameter> is given and is negative, then that many
        characters will be omitted from the end of <parameter>string</parameter>.
        If <parameter>offset</parameter> denotes the position of this truncation or
        beyond, an empty string will be returned.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If <parameter>length</parameter> is given and is <literal>0</literal>,
        an empty string will be returned.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If <parameter>length</parameter> is omitted or &null;, the substring starting from
        <parameter>offset</parameter> until the end of the string will be
        returned.
-      </para>
+      </simpara>
       <example>
        <title>Using a negative <parameter>length</parameter></title>
        <programlisting role="php">
@@ -114,10 +114,10 @@ echo substr("abcdef", -3, -1), PHP_EOL; // returns "de"
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the extracted part of <parameter>string</parameter>, or
    an empty string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -175,7 +175,7 @@ echo $string[strlen($string)-1], PHP_EOL; // f
 ?>
 ]]>
     </programlisting>
-   </example> 
+   </example>
    <example>
     <title><function>substr</function> casting behaviour</title>
     <programlisting role="php">
@@ -212,10 +212,10 @@ echo "7) ", var_export(substr(1.2e3, 0, 4), true), PHP_EOL;
    </example>
   <example>
    <title>Invalid Character Range</title>
-   <para>
+   <simpara>
     If an invalid character range is requested, <function>substr</function> returns
     an empty string as of PHP 8.0.0; previously, &false; was returned instead.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

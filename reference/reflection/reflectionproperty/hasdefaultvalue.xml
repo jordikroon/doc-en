@@ -12,11 +12,11 @@
    <modifier>public</modifier> <type>bool</type><methodname>ReflectionProperty::hasDefaultValue</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks whether the property was declared with a default value, including an implicit
    &null; default value. Only returns &false; for typed properties without default value (or
    dynamic properties).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,10 +26,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    If the property has any default value (including &null;) &true; is returned;
    if the property is typed without a default value declared or is a dynamic property, &false; is returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -45,7 +45,7 @@ class Foo {
     public ?int $baz;
     public ?int $foo = null;
     public int $boing;
-    
+
     public function __construct()
     {
         $this->ping = '';

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://docbook.org/ns/docbook" xml:id="function.chunk-split">
+<refentry xml:id="function.chunk-split" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>chunk_split</refname>
   <refpurpose>Split a string into smaller chunks</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,12 +14,12 @@
    <methodparam choice="opt"><type>int</type><parameter>length</parameter><initializer>76</initializer></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>separator</parameter><initializer>"\r\n"</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Can be used to split a string into smaller chunks which is useful for
    e.g. converting <function>base64_encode</function> output to match RFC
-   2045 semantics. It inserts <parameter>separator</parameter> every 
+   2045 semantics. It inserts <parameter>separator</parameter> every
    <parameter>length</parameter> characters.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,25 +29,25 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string to be chunked.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The chunk length.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>separator</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The line ending sequence.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -56,9 +56,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the chunked string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -80,7 +80,7 @@ echo $new_string, PHP_EOL;
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

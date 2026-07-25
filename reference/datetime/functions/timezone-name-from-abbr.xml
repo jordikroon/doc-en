@@ -22,26 +22,26 @@
     <varlistentry>
      <term><parameter>abbr</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Time zone abbreviation.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>utcOffset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Offset from GMT in seconds. Defaults to -1 which means that first found
        time zone corresponding to <parameter>abbr</parameter> is returned.
        Otherwise exact offset is searched and only if not found then the first
        time zone with any offset is returned.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>isDST</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Daylight saving time indicator. Defaults to -1, which means that
        whether the time zone has daylight saving or not is not taken into
        consideration when searching. If this is set to 1, then the
@@ -51,7 +51,7 @@
        <parameter>abbr</parameter> doesn't exist then the time zone is
        searched solely by the <parameter>utcOffset</parameter> and
        <parameter>isDST</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -60,9 +60,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns time zone name on success&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

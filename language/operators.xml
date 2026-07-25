@@ -7,7 +7,7 @@
   expressions, in programming jargon) and yields another value (so that the
   construction itself becomes an expression).
  </simpara>
- <para>
+ <simpara>
   Operators can be grouped according to the number of values they take. Unary
   operators take only one value, for example <literal>!</literal> (the
   <link linkend="language.operators.logical">logical not operator</link>) or
@@ -21,14 +21,14 @@
   operator</link>, <literal>? :</literal>, which takes three values; this is
   usually referred to simply as "the ternary operator" (although it could
   perhaps more properly be called the conditional operator).
- </para>
- <para>
+ </simpara>
+ <simpara>
   A full list of PHP operators follows in the section
   <link linkend="language.operators.precedence">Operator Precedence</link>.
   The section also explains operator precedence and associativity, which govern
   exactly how expressions containing several different operators are
   evaluated.
- </para>
+ </simpara>
  <simpara>
   There is a PECL extension that allows for overloading of some operators for
   objects. For more information, see the <link linkend="book.operator">Operator

@@ -5,7 +5,7 @@
   <refname>odbc_result</refname>
   <refpurpose>Get result data</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,9 +13,9 @@
    <methodparam><type>Odbc\Result</type><parameter>statement</parameter></methodparam>
    <methodparam><type class="union"><type>string</type><type>int</type></type><parameter>field</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get result data
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,19 +25,19 @@
     <varlistentry>
      <term><parameter>statement</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &odbc.result.object;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>field</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The field name being retrieved. It can either be an integer containing
        the column number of the field you want; or it can be a string
        containing the name of the field.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -46,10 +46,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the string contents of the field, &false; on error, &null; for
    NULL data, or &true; for binary data.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -73,7 +73,7 @@
 
  <refsect1 role="examples">
   &reftitle.examples;
-  <para>
+  <simpara>
    The first call to <function>odbc_result</function> returns the
    value of the third field in the current record of the query
    result. The second function call to
@@ -84,7 +84,7 @@
    the current record. Similarly, an error occurs if a field with a
    name that is not one of the fieldnames of the table(s) that
    is(are) being queried.
-  </para>
+  </simpara>
   <para>
    <example>
     <title><function>odbc_result</function> examples</title>
@@ -102,7 +102,7 @@ $item_val = odbc_result($Query_ID, "val");
 
  <refsect1 role="notes">
   &reftitle.notes;
-  <para>
+  <simpara>
    Field indices start from 1. Regarding the way binary or
    long column data is returned refer to
    <function>odbc_binmode</function> and
@@ -117,7 +117,7 @@ $item_val = odbc_result($Query_ID, "val");
       retrieve the field in hexadecimal notation.  E.g. "SELECT
       HEX(binary_col) FROM mytable"
    -->
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

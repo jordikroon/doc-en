@@ -14,9 +14,9 @@
    <methodparam choice="opt"><type>int</type><parameter>chunk_size</parameter><initializer>128</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>mode</parameter><initializer><constant>IMG_GD2_RAW</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Outputs or saves the given <parameter>image</parameter> in GD2 format.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -26,25 +26,25 @@
     <varlistentry>
      <term><parameter>file</parameter></term>
      <listitem>
-      <para>&gd.image.path;</para>
+      <simpara>&gd.image.path;</simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>chunk_size</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Chunk size.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>mode</parameter></term>
      <listitem>
-      <para>
-       Either <constant>IMG_GD2_RAW</constant> or 
-       <constant>IMG_GD2_COMPRESSED</constant>. Default is 
+      <simpara>
+       Either <constant>IMG_GD2_RAW</constant> or
+       <constant>IMG_GD2_COMPRESSED</constant>. Default is
        <constant>IMG_GD2_RAW</constant>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -52,9 +52,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
   &gd.return.trueonerror;
  </refsect1>
 
@@ -124,10 +124,10 @@ imagegd2($im, 'simple.gd2');
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     The GD2 format is commonly used to allow fast loading of parts of images.
     Note that the GD2 format is only usable in GD2-compatible applications.
-   </para>
+   </simpara>
   </note>
   &gd.deprecated.gd-formats;
  </refsect1>

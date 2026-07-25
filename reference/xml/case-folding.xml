@@ -2,22 +2,22 @@
 <!-- $Revision$ -->
 <article xml:id="xml.case-folding" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <title>Case Folding</title>
- <para>
+ <simpara>
   The element handler functions may get their element names
-  <glossterm>case-folded</glossterm>.  Case-folding is defined 
+  <glossterm>case-folded</glossterm>.  Case-folding is defined
   as "a process applied to a sequence of
   characters, in which those identified as non-uppercase are
   replaced by their uppercase equivalents".  In other words, when
   it comes to XML, case-folding simply means uppercasing.
- </para>
- <para>
+ </simpara>
+ <simpara>
   By default, all the element names that are passed to the handler
   functions are case-folded.  This behaviour can be queried and
   controlled per XML parser with the
   <function>xml_parser_get_option</function> and
   <function>xml_parser_set_option</function> functions,
   respectively.
- </para>
+ </simpara>
 </article>
 
 <!-- Keep this comment at the end of the file

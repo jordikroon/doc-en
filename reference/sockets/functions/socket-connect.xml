@@ -5,7 +5,7 @@
   <refname>socket_connect</refname>
   <refpurpose>Initiates a connection on a socket</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,11 +14,11 @@
    <methodparam><type>string</type><parameter>address</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>port</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Initiate a connection to <parameter>address</parameter> using the <classname>Socket</classname> instance
    <parameter>socket</parameter>, which must be <classname>Socket</classname>
    instance created with <function>socket_create</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,35 +28,35 @@
     <varlistentry>
      <term><parameter>socket</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A <classname>Socket</classname> instance created with
        <function>socket_create</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>address</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <parameter>address</parameter> parameter is either an IPv4 address
-       in dotted-quad notation (e.g. <literal>127.0.0.1</literal>) if 
-       <parameter>socket</parameter> is <constant>AF_INET</constant>, a valid 
-       IPv6 address (e.g. <literal>::1</literal>) if IPv6 support is enabled and 
+       in dotted-quad notation (e.g. <literal>127.0.0.1</literal>) if
+       <parameter>socket</parameter> is <constant>AF_INET</constant>, a valid
+       IPv6 address (e.g. <literal>::1</literal>) if IPv6 support is enabled and
        <parameter>socket</parameter> is <constant>AF_INET6</constant>
        or the pathname of a Unix domain socket, if the socket family is
        <constant>AF_UNIX</constant>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>port</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <parameter>port</parameter> parameter is only used and is mandatory
-       when connecting to an <constant>AF_INET</constant> or an 
+       when connecting to an <constant>AF_INET</constant> or an
        <constant>AF_INET6</constant> socket, and designates
        the port on the remote host to which a connection should be made.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -65,17 +65,17 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success; The error code can be retrieved with
    <function>socket_last_error</function>. This code may be passed to
    <function>socket_strerror</function> to get a textual explanation of the
    error.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     If the socket is non-blocking then this function returns &false; with an
     error <literal>Operation now in progress</literal>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

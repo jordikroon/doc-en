@@ -11,9 +11,9 @@
    <modifier>public</modifier> <type>void</type><methodname>ArrayObject::setFlags</methodname>
    <methodparam><type>int</type><parameter>flags</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Set the flags that change the behavior of the ArrayObject.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -23,12 +23,12 @@
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The new ArrayObject behavior.
        It takes on either a bitmask, or named constants. Using named
        constants is strongly encouraged to ensure compatibility for future
        versions.
-      </para>
+      </simpara>
       <para>
        The available behavior flags are listed below. The actual
        meanings of these flags are described in the
@@ -67,9 +67,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

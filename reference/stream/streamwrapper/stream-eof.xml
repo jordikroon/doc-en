@@ -13,9 +13,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>streamWrapper::stream_eof</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
    This method is called in response to <function>feof</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Should return &true; if the read/write position is at the end of the stream and if no more data is available to be read, or &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
 <!--
@@ -58,8 +58,8 @@
   &reftitle.notes;
   <warning>
     <para>
-      When reading the whole file (for example, with 
-      <function>file_get_contents</function>), PHP will call     
+      When reading the whole file (for example, with
+      <function>file_get_contents</function>), PHP will call
       <methodname>streamWrapper::stream_read</methodname> followed by
       <methodname>streamWrapper::stream_eof</methodname> in a loop but as long
       as <methodname>streamWrapper::stream_read</methodname> returns a

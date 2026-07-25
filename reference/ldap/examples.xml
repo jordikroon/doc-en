@@ -5,11 +5,11 @@
  &reftitle.examples;
  <section xml:id="ldap.examples-basic">
   <title>Basic usage</title>
-  <para>
+  <simpara>
    Retrieve information for all entries where the surname starts
    with "S" from a directory server, displaying an extract with
    name and email address.
-  </para>
+  </simpara>
 
   <example>
    <title>LDAP search example</title>
@@ -60,9 +60,9 @@ if ($ds) {
  </section>
  <section xml:id="ldap.examples-controls">
   <title>LDAP Controls</title>
-  <para>
+  <simpara>
    Here are some examples of using LDAP Controls with PHP &gt;= 7.3.0.
-  </para>
+  </simpara>
 
   <example>
    <title>Bind with policy information</title>

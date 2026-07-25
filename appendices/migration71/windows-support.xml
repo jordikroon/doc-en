@@ -6,12 +6,12 @@
 
  <sect2 xml:id="migration71.windows-support.long-and-utf8-path">
   <title>Support for long and UTF-8 path</title>
-  <para>
+  <simpara>
     If a web application is UTF-8 conform, no further action is required. For
     applications depending on paths in non UTF-8 encodings for I/O, an explicit
     INI directive has to be set. The encoding INI settings check relies on the
     order in the core:
-  </para>
+  </simpara>
   <itemizedlist>
    <listitem>
     <simpara>
@@ -29,9 +29,9 @@
     </simpara>
    </listitem>
   </itemizedlist>
-  <para>
+  <simpara>
     Several functions for codepage handling were introduced:
-  </para>
+  </simpara>
       <itemizedlist>
        <listitem>
         <simpara>
@@ -54,10 +54,10 @@
         </simpara>
        </listitem>
       </itemizedlist>
-  <para>
+  <simpara>
    These functions are thread safe.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
     The console output codepage is adjusted depending on the encoding used in
     PHP. Depending on the concrete system OEM codepage, the visible output
     might or might be not correct. For example, in the default cmd.exe and on
@@ -68,8 +68,8 @@
     particular console program used. PHP automatically sets the console codepage
     according to the encoding rules from php.ini. Using alternative consoles
     instead of cmd.exe directly might bring better experience in some cases.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
     Nevertheless be aware, runtime codepage switch after the request start
     might bring unexpected side effects on CLI. The preferable way is php.ini,
     When PHP CLI is used in a console emulator, that doesn't support Unicode,
@@ -81,8 +81,8 @@
     mojibake. In rare cases, if PHP happens to crash gracefully, the original
     console codepage might be not restored. In this case, the chcp command
     can be used, to restore it manually.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
     Special awareness for the DBCS systems - the codepage switch on runtime
     using <function>ini_set</function> is likely to cause display issues. The difference to the
     non DBCS systems is, that the extended characters require two console cells
@@ -90,56 +90,56 @@
     the glyph set of the font could happen, no actual font change. This is the
     nature of DBCS systems, the most simple way to prevent display issues is
     to avoid usage of <function>ini_set</function> for the codepage change.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
     As a result of UTF-8 support in the streams, PHP scripts are not limited
     to ASCII or ANSI filenames anymore. This is supported out of the box on
     CLI. For other SAPI, the documentation for the corresponding server
     is useful.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
     Long paths support is transparent. Paths longer than 260 bytes get
     automatically prefixed with <literal>\\?\</literal>. The max path length is limited to
     2048 bytes. Be aware, that the path segment limit (basename length) still
     persists.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
     For the best portability, it is strongely recommended to handle filenames,
     I/O and other related topics UTF-8. Additionally, for the console applications,
     the usage of a TrueType font is preferable and the usage of ini_set() for
     the codepage change is discouraged.
-  </para>
-  <para>
-  </para>
-  <para>
-  </para>
+  </simpara>
+  <simpara>
+  </simpara>
+  <simpara>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration71.windows-support.readline">
   <title>readline</title>
 
-  <para>
+  <simpara>
    The <link linkend="book.readline">readline extension</link> is supported
    through the <link xlink:href="&url.readline.windows;">WinEditLine
    library</link>. Thereby, the interactive <acronym>CLI</acronym> shell is
    supported as well (<literal>php.exe -a</literal>).
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration71.windows-support.php-fcgi-children">
   <title>PHP_FCGI_CHILDREN</title>
-  <para>
-  <varname>PHP_FCGI_CHILDREN</varname> is now respected. If this environment variable is 
-  defined, the first <filename>php-cgi.exe</filename> process will exec the specified number 
+  <simpara>
+  <varname>PHP_FCGI_CHILDREN</varname> is now respected. If this environment variable is
+  defined, the first <filename>php-cgi.exe</filename> process will exec the specified number
   of children. These will share the same TCP socket.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration71.windows-support.ftok">
   <title>ftok()</title>
-  <para>
+  <simpara>
    Added support for <function>ftok</function>
-  </para>
+  </simpara>
  </sect2>
 
 </sect1>

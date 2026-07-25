@@ -9,26 +9,26 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="NumberFormatter">
    <modifier>public</modifier> <type class="union"><type>string</type><type>false</type></type><methodname>NumberFormatter::getSymbol</methodname>
    <methodparam><type>int</type><parameter>symbol</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>numfmt_get_symbol</methodname>
    <methodparam><type>NumberFormatter</type><parameter>formatter</parameter></methodparam>
    <methodparam><type>int</type><parameter>symbol</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get a symbol associated with the formatter. The formatter uses symbols to
    represent the special locale-dependent characters in a number, for example
    the percent sign. This API is not supported for rule-based formatters.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -38,19 +38,19 @@
     <varlistentry>
      <term><parameter>formatter</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <classname>NumberFormatter</classname> object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>symbol</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Symbol specifier, one of the
        <link linkend="intl.numberformatter-constants.unumberformatsymbol">
         format symbol</link> constants.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -60,9 +60,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The symbol string or &false; on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

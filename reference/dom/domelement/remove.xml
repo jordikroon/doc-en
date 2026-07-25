@@ -11,9 +11,9 @@
    <modifier>public</modifier> <type>void</type><methodname>DOMElement::remove</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Removes the element.
-  </para>
+  </simpara>
  </refsect1>
 
  <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('domchildnode.remove')/db:refsect1[@role='parameters'])" />
@@ -23,9 +23,9 @@
   &reftitle.examples;
   <example xml:id="domelement.remove.example.basic">
    <title><methodname>DOMElement::remove</methodname> example</title>
-   <para>
+   <simpara>
     Removes the element.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

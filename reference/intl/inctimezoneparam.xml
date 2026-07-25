@@ -3,30 +3,30 @@
 <itemizedlist xmlns="http://docbook.org/ns/docbook"
 xmlns:xlink="http://www.w3.org/1999/xlink">
  <listitem>
-  <para>
+  <simpara>
    &null;, in which case the default timezone will be used, as specified in
    the ini setting <link linkend="ini.date.timezone">date.timezone</link> or
    through the function <function>date_default_timezone_set</function> and as
    returned by <function>date_default_timezone_get</function>.
-  </para>
+  </simpara>
  </listitem>
  <listitem>
-  <para>
+  <simpara>
    An <classname>IntlTimeZone</classname>, which will be used directly.
-  </para>
+  </simpara>
  </listitem>
  <listitem>
-  <para>
+  <simpara>
    A <classname>DateTimeZone</classname>. Its identifier will be extracted
    and an ICU timezone object will be created; the timezone will be backed
    by ICUʼs database, not PHPʼs.
-  </para>
+  </simpara>
  </listitem>
  <listitem>
-  <para>
+  <simpara>
    A <type>string</type>, which should be a valid ICU timezone identifier.
    See <function>IntlTimeZone::createTimeZoneIDEnumeration</function>. Raw
    offsets such as <literal>"GMT+08:30"</literal> are also accepted.
-  </para>
+  </simpara>
  </listitem>
 </itemizedlist>

@@ -3,7 +3,7 @@
  <chapter xml:id="features.cookies" xmlns="http://docbook.org/ns/docbook">
   <title>Cookies</title>
 
-  <para>
+  <simpara>
    PHP transparently supports <acronym>HTTP</acronym> cookies.  Cookies are a mechanism for
    storing data in the remote browser and thus tracking or identifying return
    users.  You can set cookies using the <function>setcookie</function> or
@@ -14,21 +14,21 @@
    has. You can use the <link linkend="ref.outcontrol">output buffering
    functions</link> to delay the script output until you have decided whether
    or not to set any cookies or send any headers.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    Any cookies sent to server from the client will automatically be included into
    a <varname>$_COOKIE</varname> auto-global
    array if <link linkend="ini.variables-order">variables_order</link>
    contains "C". If you wish to assign multiple values to a single
    cookie, just add <literal>[]</literal> to the cookie name.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    For more details, including notes on browser bugs, see the
    <function>setcookie</function> and <function>setrawcookie</function>
    function.
-  </para>
+  </simpara>
 
  </chapter>
 

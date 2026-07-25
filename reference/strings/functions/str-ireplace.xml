@@ -5,7 +5,7 @@
   <refname>str_ireplace</refname>
   <refpurpose>Case-insensitive version of <function>str_replace</function></refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -15,22 +15,22 @@
    <methodparam><type class="union"><type>string</type><type>array</type></type><parameter>subject</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter role="reference">count</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function returns a string or an array with all occurrences of
    <parameter>search</parameter> in <parameter>subject</parameter>
    (ignoring case) replaced with the given <parameter>replace</parameter>
    value.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     To replace text based on a pattern rather than a fixed string,
     use <function>preg_replace</function> with the <literal>i</literal>
     <link linkend="reference.pcre.pattern.modifiers">pattern modifier</link>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
   &reftitle.parameters;
-  <para>
+  <simpara>
    If <parameter>search</parameter> and <parameter>replace</parameter> are
    arrays, then <function>str_ireplace</function> takes a value from each
    array and uses them to search and replace on
@@ -40,53 +40,53 @@
    array and <parameter>replace</parameter> is a string, then this replacement
    string is used for every value of <parameter>search</parameter>. The
    converse would not make sense, though.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If <parameter>search</parameter> or <parameter>replace</parameter>
    are arrays, their elements are processed first to last.
-  </para>
+  </simpara>
   <para>
    <variablelist>
     <varlistentry>
      <term><parameter>search</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The value being searched for, otherwise known as the
        <emphasis>needle</emphasis>.  An array may be used to designate
        multiple needles.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>replace</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The replacement value that replaces found <parameter>search</parameter>
        values. An array may be used to designate multiple replacements.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>subject</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string or array being searched and replaced on,
        otherwise known as the <emphasis>haystack</emphasis>.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If <parameter>subject</parameter> is an array, then the search and
-       replace is performed with every entry of 
+       replace is performed with every entry of
        <parameter>subject</parameter>, and the return value is an array as
        well.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>count</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If passed, this will be set to the number of replacements performed.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -95,9 +95,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a string or an array of replacements.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -139,12 +139,12 @@ echo $bodytag; // <body text=black>
   &note.bin-safe;
   <caution>
    <title>Replacement order gotcha</title>
-   <para>
+   <simpara>
     Because <function>str_ireplace</function> replaces left to right, it might
     replace a previously inserted value when doing multiple replacements.
     Example #2 in the <function>str_replace</function> documentation
     demonstrates how this may affect you in practice.
-   </para>
+   </simpara>
   </caution>
  </refsect1>
 

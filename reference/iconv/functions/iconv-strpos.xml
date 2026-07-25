@@ -5,7 +5,7 @@
   <refname>iconv_strpos</refname>
   <refpurpose>Finds position of first occurrence of a needle within a haystack</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -15,17 +15,17 @@
    <methodparam choice="opt"><type>int</type><parameter>offset</parameter><initializer>0</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>encoding</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Finds position of first occurrence of a <parameter>needle</parameter>
    within a <parameter>haystack</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    In contrast to <function>strpos</function>, the return value of
    <function>iconv_strpos</function> is the number of characters that
    appear before the needle, rather than the offset in bytes to the
    position where the needle has been found. The characters are counted
    on the basis of the specified character set <parameter>encoding</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -35,58 +35,58 @@
     <varlistentry>
      <term><parameter>haystack</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The entire string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>needle</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The searched substring.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The optional <parameter>offset</parameter> parameter specifies
        the position from which the search should be performed.
        If the offset is negative, it is counted from the end of the string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>encoding</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If <parameter>encoding</parameter> parameter is omitted or &null;,
        <parameter>string</parameter> are assumed to be encoded in
        <link linkend="iconv.configuration">iconv.internal_encoding</link>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
-  <para>
+  <simpara>
    If <parameter>haystack</parameter> or <parameter>needle</parameter> is
    not a string, it is converted to a string and applied as the ordinal
    value of a character.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the numeric position of the first occurrence of
    <parameter>needle</parameter> in <parameter>haystack</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If <parameter>needle</parameter> is not found,
    <function>iconv_strpos</function> will return &false;.
-  </para>
+  </simpara>
   &return.falseproblem;
  </refsect1>
 

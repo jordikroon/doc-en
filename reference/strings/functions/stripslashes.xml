@@ -5,21 +5,21 @@
   <refname>stripslashes</refname>
   <refpurpose>Un-quotes a quoted string</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>string</type><methodname>stripslashes</methodname>
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Un-quotes a quoted string.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    <function>stripslashes</function> can be used if you aren't inserting
    this data into a place (such as a database) that requires escaping.
    For example, if you're simply outputting data straight from an HTML form.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,9 +29,9 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -40,12 +40,12 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a string with backslashes stripped off.
    (<literal>\'</literal> becomes <literal>'</literal> and so on.)
    Double backslashes (<literal>\\</literal>) are made into a single
    backslash (<literal>\</literal>).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -66,11 +66,11 @@ echo stripslashes($str);
    </example>
   </para>
   <note>
-   <para>
+   <simpara>
     <function>stripslashes</function> is not recursive. If you want to apply
     this function to a multi-dimensional array, you need to use a recursive
     function.
-   </para>
+   </simpara>
   </note>
   <para>
    <example>

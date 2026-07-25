@@ -42,7 +42,7 @@
  <refsect1 role="errors">
   &reftitle.errors;
   <simpara>
-   A <classname>ValueError</classname> is thrown when
+   A <exceptionname>ValueError</exceptionname> is thrown when
    <parameter>process_id</parameter> is an invalid process id
    or the cpu mask had failed to be created.
   </simpara>

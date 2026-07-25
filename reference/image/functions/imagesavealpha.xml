@@ -44,9 +44,9 @@
     <varlistentry>
      <term><parameter>enable</parameter></term>
      <listitem>
-      <para>
-       Whether to save the alpha channel or not. Defaults to &false;. 
-      </para>
+      <simpara>
+       Whether to save the alpha channel or not. Defaults to &false;.
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -55,9 +55,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

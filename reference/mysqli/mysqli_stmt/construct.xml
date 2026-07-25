@@ -13,9 +13,9 @@
    <methodparam><type>mysqli</type><parameter>mysql</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>query</parameter><initializer>&null;</initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    This method constructs a new <classname>mysqli_stmt</classname> object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,20 +25,20 @@
     <varlistentry>
      <term><parameter>link</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A valid <classname>mysqli</classname> object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>query</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The query, as a string. If this parameter is &null;, then the
        constructor behaves identically to
        <function>mysqli_stmt_init</function>, otherwise it behaves as
        per <function>mysqli_prepare</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

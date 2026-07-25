@@ -20,14 +20,14 @@
    <methodparam><type>PgSql\Result</type><parameter>result</parameter></methodparam>
    <methodparam><type>mixed</type><parameter>field</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_fetch_result</function> returns the value of a particular
    row and field (column) in an <classname>PgSql\Result</classname> instance.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     This function used to be called <function>pg_result</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -44,20 +44,20 @@
     <varlistentry>
      <term><parameter>row</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Row number in result to fetch.  Rows are numbered from 0 upwards.  If omitted,
        next row is fetched.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>field</parameter></term>
      <listitem>
-      <para>       
+      <simpara>
        A <type>string</type> representing the name of the field (column) to fetch, otherwise
        an <type>int</type> representing the field number to fetch.  Fields are
        numbered from 0 upwards.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -66,17 +66,17 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Boolean is returned as &quot;t&quot; or &quot;f&quot;.  All
    other types, including arrays are returned as strings formatted
    in the same default PostgreSQL manner that you would see in the
    <command>psql</command> program.  Database <literal>NULL</literal>
    values are returned as &null;.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    &false; is returned if <parameter>row</parameter> exceeds the number
    of rows in the set, or on any other error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -112,7 +112,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -140,7 +140,7 @@ First field in the second row is: 2
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

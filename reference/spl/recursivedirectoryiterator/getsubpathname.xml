@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>string</type><methodname>RecursiveDirectoryIterator::getSubPathname</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the sub path and filename.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,25 +24,25 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The sub path (sub directory) and filename.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
    <example xml:id="recursivedirectoryiterator.getsubpathname.example.basic">
     <title><function>getSubPathname</function> example</title>
-     <para>
-      
-    </para>
+     <simpara>
+
+    </simpara>
     <programlisting role="php">
     <![CDATA[
       $directory = '/tmp';
-      
+
       $it = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($directory));
-      
+
       foreach ($it as $file) {
           echo 'SubPathName: ' . $it->getSubPathname() . "\n";
           echo 'SubPath:     ' . $it->getSubPath() . "\n\n";
@@ -54,10 +54,10 @@
     <![CDATA[
      SubPathName: fruit/apple.xml
      SubPath:     fruit
-     
+
      SubPathName: stuff.xml
-     SubPath:     
-     
+     SubPath:
+
      SubPathName: veggies/carrot.xml
      SubPath:     veggies
     ]]>

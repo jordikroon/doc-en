@@ -13,14 +13,14 @@
    <modifier>public</modifier> <type>int</type><methodname>streamWrapper::stream_write</methodname>
    <methodparam><type>string</type><parameter>data</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This method is called in response to <function>fwrite</function>.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     Remember to update the current position of the stream by number of bytes
     that were successfully written.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -31,14 +31,14 @@
     <varlistentry>
      <term><parameter>data</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Should be stored into the underlying stream.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         If there is not enough room in the underlying stream, store as much as
         possible.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
@@ -48,24 +48,24 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Should return the number of bytes that were successfully stored, or 0 if
    none could be stored.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors"><!-- {{{ -->
   &reftitle.errors;
   &userstream.not.implemented.warning;
   <note>
-   <para>
+   <simpara>
     If the return value is greater the length of
     <parameter>data</parameter>, <constant>E_WARNING</constant> will be
     emitted and the return value will truncated to its length.
-   </para>
+   </simpara>
   </note>
  </refsect1><!-- }}} -->
- 
+
 
 <!--
  <refsect1 role="examples">

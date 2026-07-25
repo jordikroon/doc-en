@@ -13,10 +13,10 @@
    <methodparam><type class="union"><type>int</type><type>string</type></type><parameter>codepoint</parameter></methodparam>
    <methodparam><type>int</type><parameter>property</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the property value for an enumerated or integer Unicode property for a code point.
    Also returns binary and mask property values.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -39,20 +39,20 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the numeric value that is directly the property value or, for enumerated properties, corresponds to the
    numeric value of the enumerated constant of the respective property value enumeration type. Returns &null; on failure.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Returns <literal>0</literal> or <literal>1</literal> (for &false;/&true;) for binary Unicode properties.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Returns a bit-mask for mask properties.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Returns <literal>0</literal> if <parameter>property</parameter> is out of bounds or if the Unicode version does not
    have data for the property at all, or not for this code point.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

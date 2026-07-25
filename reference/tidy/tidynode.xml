@@ -3,18 +3,18 @@
 <reference xml:id="class.tidynode" role="class" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
  <title>The <classname>tidyNode</classname> class</title>
  <titleabbrev>tidyNode</titleabbrev>
- 
+
  <partintro>
- 
+
 <!-- {{{ tidyNode intro -->
   <section xml:id="tidynode.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     An HTML node in an HTML file, as detected by tidy.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
- 
+
   <section xml:id="tidynode.synopsis">
    &reftitle.classsynopsis;
 
@@ -96,61 +96,61 @@
     <varlistentry xml:id="tidynode.props.value">
      <term><varname>value</varname></term>
      <listitem>
-      <para>The HTML representation of the node, including the surrounding tags.</para>
+      <simpara>The HTML representation of the node, including the surrounding tags.</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="tidynode.props.name">
      <term><varname>name</varname></term>
      <listitem>
-      <para>The name of the HTML node</para>
+      <simpara>The name of the HTML node</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="tidynode.props.type">
      <term><varname>type</varname></term>
      <listitem>
-      <para>The type of the node (one of the <link linkend="tidy.constants.nodetype">nodetype constants</link>, e.g. <constant>TIDY_NODETYPE_PHP</constant>)</para>
+      <simpara>The type of the node (one of the <link linkend="tidy.constants.nodetype">nodetype constants</link>, e.g. <constant>TIDY_NODETYPE_PHP</constant>)</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="tidynode.props.line">
      <term><varname>line</varname></term>
      <listitem>
-      <para>The line number at which the tags is located in the file</para>
+      <simpara>The line number at which the tags is located in the file</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="tidynode.props.column">
      <term><varname>column</varname></term>
      <listitem>
-      <para>The column number at which the tags is located in the file</para>
+      <simpara>The column number at which the tags is located in the file</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="tidynode.props.proprietary">
      <term><varname>proprietary</varname></term>
      <listitem>
-      <para>Indicates if the node is a proprietary tag</para>
+      <simpara>Indicates if the node is a proprietary tag</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="tidynode.props.id">
      <term><varname>id</varname></term>
      <listitem>
-      <para>The ID of the node (one of the <link linkend="tidy.constants.tag">tag constants</link>, e.g. <constant>TIDY_TAG_FRAME</constant>)</para>
+      <simpara>The ID of the node (one of the <link linkend="tidy.constants.tag">tag constants</link>, e.g. <constant>TIDY_TAG_FRAME</constant>)</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="tidynode.props.attribute">
      <term><varname>attribute</varname></term>
      <listitem>
-      <para>
+      <simpara>
        An array of string, representing
        the attributes names (as keys) of the current node.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="tidynode.props.child">
      <term><varname>child</varname></term>
      <listitem>
-      <para>
+      <simpara>
        An array of <classname>tidyNode</classname>, representing
        the children of the current node.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

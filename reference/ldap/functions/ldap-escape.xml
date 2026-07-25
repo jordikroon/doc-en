@@ -14,10 +14,10 @@
    <methodparam choice="opt"><type>string</type><parameter>ignore</parameter><initializer>""</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Escapes <parameter>value</parameter> for use in the context implied by
    <parameter>flags</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,29 +27,29 @@
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The value to escape.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>ignore</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Characters to ignore when escaping.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The context the escaped string will be used in:
        <constant>LDAP_ESCAPE_FILTER</constant> for filters to be used with
        <function>ldap_search</function>, or
        <constant>LDAP_ESCAPE_DN</constant> for DNs.
        If neither flag is passed, all chars are escaped.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -58,9 +58,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the escaped string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

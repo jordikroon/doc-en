@@ -5,23 +5,23 @@
   <refname>socket_set_block</refname>
   <refpurpose>Sets blocking mode on a socket</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>bool</type><methodname>socket_set_block</methodname>
    <methodparam><type>Socket</type><parameter>socket</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   The <function>socket_set_block</function> function removes the 
-   <constant>O_NONBLOCK</constant> flag on the socket specified by the 
+  <simpara>
+   The <function>socket_set_block</function> function removes the
+   <constant>O_NONBLOCK</constant> flag on the socket specified by the
    <parameter>socket</parameter> parameter.
-  </para>
-  <para>
-   When an operation (e.g. receive, send, connect, accept, ...) is performed on 
+  </simpara>
+  <simpara>
+   When an operation (e.g. receive, send, connect, accept, ...) is performed on
    a blocking socket, the script will pause its execution until it receives
    a signal or it can perform the operation.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -31,10 +31,10 @@
     <varlistentry>
      <term><parameter>socket</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A <classname>Socket</classname> instance created with <function>socket_create</function>
        or <function>socket_accept</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -43,9 +43,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -80,12 +80,12 @@ socket_accept($socket);
 ?>
 ]]>
     </programlisting>
-    <para>
+    <simpara>
      This example creates a listening socket on all interfaces on port 1223 and
-     sets the socket to <constant>O_BLOCK</constant> mode. 
+     sets the socket to <constant>O_BLOCK</constant> mode.
      <function>socket_accept</function> will hang until there is a connection
      to accept.
-    </para>
+    </simpara>
    </example>
   </para>
  </refsect1>

@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>ReflectionFunctionAbstract</type><methodname>ReflectionParameter::getDeclaringFunction</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the declaring function.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A <classname>ReflectionFunction</classname> object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

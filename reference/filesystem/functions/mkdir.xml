@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.mkdir">
+<refentry xml:id="function.mkdir" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>mkdir</refname>
   <refpurpose>Makes directory</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -15,9 +15,9 @@
    <methodparam choice="opt"><type>bool</type><parameter>recursive</parameter><initializer>&false;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>resource</type><type>null</type></type><parameter>context</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Attempts to create the directory specified by <parameter>directory</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -36,31 +36,31 @@
     <varlistentry>
      <term><parameter>permissions</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The permissions are 0777 by default, which means the widest possible
        access. For more information on permissions, read the details
        on the <function>chmod</function> page.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         <parameter>permissions</parameter> is ignored on Windows.
-       </para>
+       </simpara>
       </note>
-      <para>
+      <simpara>
        Note that you probably want to specify the <parameter>permissions</parameter> as an octal number,
        which means it should have a leading zero. The <parameter>permissions</parameter> is also modified
        by the current umask, which you can change using
        <function>umask</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>recursive</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If &true;, then any parent directories to the <parameter>directory</parameter> specified will
        also be created, with the same permissions.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -75,29 +75,29 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     If the directory to be created already exists, that is considered an error
     and &false; will still be returned.  Use <function>is_dir</function> or
     <function>file_exists</function> to check if the directory already exists
     before trying to create it.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    Emits an <constant>E_WARNING</constant> level error if the directory
    already exists.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Emits an <constant>E_WARNING</constant> level error if the relevant
    permissions prevent creating the directory.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -123,7 +123,7 @@ mkdir("/path/to/my/dir", 0700);
 // Desired directory structure
 $structure = './depth1/depth2/depth3/';
 
-// To create the nested structure, the $recursive parameter 
+// To create the nested structure, the $recursive parameter
 // to mkdir() must be specified.
 
 if (!mkdir($structure, 0777, true)) {
@@ -142,7 +142,7 @@ if (!mkdir($structure, 0777, true)) {
   &reftitle.seealso;
   <para>
    <simplelist>
-    <member><function>is_dir</function></member>    
+    <member><function>is_dir</function></member>
     <member><function>rmdir</function></member>
     <member><function>umask</function></member>
    </simplelist>

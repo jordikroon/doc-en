@@ -5,28 +5,28 @@
   <refname>Exception::getTraceAsString</refname>
   <refpurpose>Gets the stack trace as a string</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="Exception">
    <modifier>final</modifier> <modifier>public</modifier> <type>string</type><methodname>Exception::getTraceAsString</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the Exception stack trace as a string.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   &no.function.parameters;
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the Exception stack trace as a string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

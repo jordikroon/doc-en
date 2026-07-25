@@ -72,17 +72,17 @@
     <varlistentry>
      <term><parameter>julian_day</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The Julian Day to operate on
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>mode</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The calendar mode (see table above).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -91,9 +91,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The month name for the given Julian Day and <parameter>mode</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

@@ -2,24 +2,24 @@
 <!-- $Revision$ -->
  <sect1 xml:id="language.oop5.traits" xmlns="http://docbook.org/ns/docbook">
   <title>Traits</title>
-  <para>
+  <simpara>
    PHP implements a way to reuse code called Traits.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Traits are a mechanism for code reuse in single inheritance languages such as
    PHP. A Trait is intended to reduce some limitations of single inheritance by
    enabling a developer to reuse sets of methods freely in several independent
    classes living in different class hierarchies. The semantics of the combination
    of Traits and classes is defined in a way which reduces complexity, and avoids
    the typical problems associated with multiple inheritance and Mixins.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    A Trait is similar to a class, but only intended to group functionality in a
    fine-grained and consistent way. It is not possible to instantiate a Trait on
    its own. It is an addition to traditional inheritance and enables horizontal
    composition of behavior; that is, the application of class members without
    requiring inheritance.
-  </para>
+  </simpara>
   <example xml:id="language.oop5.traits.basicexample">
     <title>Trait example</title>
     <programlisting role="php">
@@ -66,20 +66,20 @@ Hello World!
 
   <sect2 xml:id="language.oop5.traits.precedence">
    <title>Precedence</title>
-   <para>
+   <simpara>
     An inherited member from a base class is overridden by a member inserted
     by a Trait. The precedence order is that members from the current class
     override Trait methods, which in turn override inherited methods.
-   </para>
+   </simpara>
    <example xml:id="language.oop5.traits.precedence.examples.ex1">
     <title>Precedence Order Example</title>
-    <para>
+    <simpara>
      An inherited method from a base class is overridden by the
      method inserted into MyHelloWorld from the SayWorld Trait. The behavior is
      the same for methods defined in the MyHelloWorld class. The precedence order
      is that methods from the current class override Trait methods, which in
      turn override methods from the base class.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -146,10 +146,10 @@ Hello Universe!
 
   <sect2 xml:id="language.oop5.traits.multiple">
    <title>Multiple Traits</title>
-   <para>
+   <simpara>
     Multiple Traits can be inserted into a class by listing them in the <literal>use</literal>
     statement, separated by commas.
-   </para>
+   </simpara>
    <example xml:id="language.oop5.traits.multiple.ex1">
     <title>Multiple Traits Usage</title>
     <programlisting role="php">
@@ -192,34 +192,34 @@ Hello World!
 
   <sect2 xml:id="language.oop5.traits.conflict">
    <title>Conflict Resolution</title>
-   <para>
+   <simpara>
     If two Traits insert a method with the same name, a fatal error is produced,
     if the conflict is not explicitly resolved.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     To resolve naming conflicts between Traits used in the same class,
     the <literal>insteadof</literal> operator needs to be used to choose exactly
     one of the conflicting methods.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     Since this only allows one to exclude methods, the <literal>as</literal>
     operator can be used to add an alias to one of the methods. Note the
     <literal>as</literal> operator does not rename the method and it does not
     affect any other method either.
-   </para>
+   </simpara>
    <example xml:id="language.oop5.traits.conflict.ex1">
     <title>Conflict Resolution</title>
-    <para>
+    <simpara>
       In this example, Talker uses the traits A and B.
       Since A and B have conflicting methods, it defines to use
       the variant of smallTalk from trait B, and the variant of bigTalk from
       trait A.
-    </para>
-    <para>
+    </simpara>
+    <simpara>
       The Aliased_Talker makes use of the <literal>as</literal> operator
       to be able to use B's bigTalk implementation under an additional alias
       <literal>talk</literal>.
-    </para>
+    </simpara>
     <programlisting role="php" annotations="non-interactive">
 <![CDATA[
 <?php
@@ -263,10 +263,10 @@ class Aliased_Talker {
 
   <sect2 xml:id="language.oop5.traits.visibility">
    <title>Changing Method Visibility</title>
-   <para>
+   <simpara>
     Using the <literal>as</literal> syntax, one can also adjust the visibility
     of the method in the exhibiting class.
-   </para>
+   </simpara>
    <example xml:id="language.oop5.traits.visibility.ex1">
     <title>Changing Method Visibility</title>
     <programlisting role="php" annotations="non-interactive">
@@ -296,11 +296,11 @@ class MyClass2 {
 
   <sect2 xml:id="language.oop5.traits.composition">
    <title>Traits Composed from Traits</title>
-   <para>
+   <simpara>
     Just as classes can make use of traits, so can other traits. By using one
     or more traits in a trait definition, it can be composed partially or
     entirely of the members defined in those other traits.
-   </para>
+   </simpara>
    <example xml:id="language.oop5.traits.composition.ex1">
     <title>Traits Composed from Traits</title>
     <programlisting role="php">
@@ -343,11 +343,11 @@ Hello World!
 
   <sect2 xml:id="language.oop5.traits.abstract">
    <title>Abstract Trait Members</title>
-   <para>
+   <simpara>
     Traits support the use of abstract methods in order to impose requirements
     upon the exhibiting class. Public, protected, and private methods are supported.
     Prior to PHP 8.0.0, only public and protected abstract methods were supported.
-   </para>
+   </simpara>
    <caution>
     <simpara>
      As of PHP 8.0.0, the signature of a concrete method must follow the
@@ -385,14 +385,14 @@ class MyHelloWorld {
 
   <sect2 xml:id="language.oop5.traits.static">
    <title>Static Trait Members</title>
-   <para>
+   <simpara>
     Traits can define static variables, static methods and static properties.
-   </para>
+   </simpara>
    <note>
-    <para>
+    <simpara>
      As of PHP 8.1.0, calling a static method, or accessing a static property directly on a trait is deprecated.
      Static methods and properties should only be accessed on a class using the trait.
-    </para>
+    </simpara>
    </note>
    <example xml:id="language.oop5.traits.static.ex1">
     <title>Static Variables</title>
@@ -521,9 +521,9 @@ echo B::$counter, "\n";
 
   <sect2 xml:id="language.oop5.traits.properties">
    <title>Properties</title>
-   <para>
+   <simpara>
     Traits can also define properties.
-   </para>
+   </simpara>
    <example xml:id="language.oop5.traits.properties.example">
     <title>Defining Properties</title>
     <programlisting role="php">
@@ -547,11 +547,11 @@ $example->x;
 ]]>
     </programlisting>
    </example>
-   <para>
+   <simpara>
     If a trait defines a property then a class can not define a property with
     the same name unless it is compatible (same visibility and type,
     readonly modifier, and initial value), otherwise a fatal error is issued.
-   </para>
+   </simpara>
    <example xml:id="language.oop5.traits.properties.conflicts">
     <title>Conflict Resolution</title>
     <programlisting role="php">
@@ -579,9 +579,9 @@ class PropertiesExample {
 
  <sect2 xml:id="language.oop5.traits.constants">
   <title>&Constants;</title>
-  <para>
+  <simpara>
    Traits can, as of PHP 8.2.0, also define constants.
-  </para>
+  </simpara>
   <example xml:id="language.oop5.traits.constants.example">
    <title>Defining Constants</title>
    <programlisting role="php">
@@ -608,11 +608,11 @@ echo $example::FLAG_MUTABLE;
 ]]>
     </screen>
   </example>
-  <para>
+  <simpara>
    If a trait defines a constant then a class can not define a constant with
    the same name unless it is compatible (same visibility, initial value, and
    finality), otherwise a fatal error is issued.
-  </para>
+  </simpara>
   <example xml:id="language.oop5.traits.constants.conflicts">
    <title>Conflict Resolution</title>
    <programlisting role="php">

@@ -11,10 +11,10 @@
    <type>float</type><methodname>tan</methodname>
    <methodparam><type>float</type><parameter>num</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>tan</function> returns the tangent of the <parameter>num</parameter>
    parameter.  The <parameter>num</parameter> parameter is in radians.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -23,9 +23,9 @@
     <varlistentry>
      <term><parameter>num</parameter></term>
      <listitem>
-      <para>
-       The argument to process in radians 
-      </para>
+      <simpara>
+       The argument to process in radians
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -33,9 +33,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The tangent of <parameter>num</parameter>
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;

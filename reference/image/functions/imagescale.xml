@@ -15,16 +15,16 @@
    <methodparam choice="opt"><type>int</type><parameter>height</parameter><initializer>-1</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>mode</parameter><initializer><constant>IMG_BILINEAR_FIXED</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>imagescale</function> scales an image using the given
    interpolation algorithm.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     Unlike many of other image functions, <function>imagescale</function> does
     not modify the passed <parameter>image</parameter>; instead, a
     <emphasis>new</emphasis> image is returned.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -35,18 +35,18 @@
    <varlistentry>
     <term><parameter>width</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The width to scale the image to.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>height</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The height to scale the image to. If omitted or negative, the aspect
       ratio will be preserved.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
@@ -71,19 +71,19 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Return the scaled image object on success&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
   <simpara>
-   Throws a <classname>ValueError</classname> if <parameter>width</parameter>
+   Throws a <exceptionname>ValueError</exceptionname> if <parameter>width</parameter>
    or <parameter>height</parameter> would cause over-/underflow.
   </simpara>
   <simpara>
-   Throws a <classname>ValueError</classname> if <parameter>mode</parameter> is invalid.
+   Throws a <exceptionname>ValueError</exceptionname> if <parameter>mode</parameter> is invalid.
   </simpara>
  </refsect1>
 
@@ -101,14 +101,14 @@
      <row>
       <entry>8.4.0</entry>
       <entry>
-       Now throws a <classname>ValueError</classname> if <parameter>width</parameter>
+       Now throws a <exceptionname>ValueError</exceptionname> if <parameter>width</parameter>
        or <parameter>height</parameter> would cause over-/underflow.
       </entry>
      </row>
      <row>
       <entry>8.4.0</entry>
       <entry>
-       Now throws a <classname>ValueError</classname> if <parameter>mode</parameter> is invalid.
+       Now throws a <exceptionname>ValueError</exceptionname> if <parameter>mode</parameter> is invalid.
       </entry>
      </row>
      <row>

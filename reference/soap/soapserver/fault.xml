@@ -17,13 +17,13 @@
    <methodparam choice="opt"><type>string</type><parameter>name</parameter><initializer>""</initializer></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>lang</parameter><initializer>""</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sends a response to the client of the current request indicating an error.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     This can only be called when handling a request.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -34,41 +34,41 @@
     <varlistentry>
      <term><parameter>code</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The error code to return
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A brief description of the error
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>actor</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A string identifying the actor that caused the fault.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>details</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        More details of the fault
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The name of the fault. This can be used to select a name from a WSDL file.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -83,9 +83,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

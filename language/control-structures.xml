@@ -18,10 +18,10 @@
 
   <sect2 role="seealso">
    &reftitle.seealso;
-   <para>
+   <simpara>
     The following are also considered language constructs even though they are
     referenced under functions in the manual.
-   </para>
+   </simpara>
    <para>
     <simplelist>
      <member><function>list</function></member>

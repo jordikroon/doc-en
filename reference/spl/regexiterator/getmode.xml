@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the operation mode.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

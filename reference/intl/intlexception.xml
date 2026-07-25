@@ -10,10 +10,10 @@
 <!-- {{{ IntlException intro -->
   <section xml:id="intlexception.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     This class is used for generating exceptions when errors occur inside intl
     functions. Such exceptions are only generated when <link linkend="ini.intl.use-exceptions">intl.use_exceptions</link> is enabled.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

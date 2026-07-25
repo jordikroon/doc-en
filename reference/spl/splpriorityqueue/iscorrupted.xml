@@ -21,9 +21,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the priority queue is corrupted, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
 

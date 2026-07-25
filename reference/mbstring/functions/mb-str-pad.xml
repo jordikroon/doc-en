@@ -16,7 +16,7 @@
    <methodparam choice="opt"><type>int</type><parameter>pad_type</parameter><initializer><constant>STR_PAD_RIGHT</constant></initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>encoding</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function returns the <parameter>string</parameter>
    padded on the left, the right, or both sides to the specified
    padding length, where the length is measured in Unicode codepoints. If the optional argument
@@ -24,7 +24,7 @@
    <parameter>string</parameter> is padded with spaces, otherwise it
    is padded with characters from <parameter>pad_string</parameter>
    up to the limit.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -34,42 +34,42 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If the value of <parameter>length</parameter> is negative,
        less than, or equal to the length of the input string, no padding
        takes place, and <parameter>string</parameter> will be returned.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>pad_string</parameter></term>
      <listitem>
       <note>
-       <para>
+       <simpara>
         The <parameter>pad_string</parameter> may be truncated if the
         required number of padding characters can't be evenly divided by the
         <parameter>pad_string</parameter>'s length.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>pad_type</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Optional argument <parameter>pad_type</parameter> can be
        <constant>STR_PAD_RIGHT</constant>, <constant>STR_PAD_LEFT</constant>,
        or <constant>STR_PAD_BOTH</constant>.
        By default <constant>STR_PAD_RIGHT</constant>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -84,9 +84,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the padded string.
-  </para>
+  </simpara>
  </refsect1>
 
 

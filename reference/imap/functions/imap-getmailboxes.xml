@@ -13,9 +13,9 @@
    <methodparam><type>string</type><parameter>reference</parameter></methodparam>
    <methodparam><type>string</type><parameter>pattern</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets information on the mailboxes.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -25,10 +25,10 @@
     <varlistentry>
      <term><parameter>reference</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>reference</parameter> should normally be just the server
        specification as described in <function>imap_open</function>
-      </para>
+      </simpara>
       &imap.mailboxname.insecure;
      </listitem>
     </varlistentry>
@@ -53,46 +53,46 @@
    is a bitmask that can be tested against:
    <itemizedlist>
     <listitem>
-     <para>
+     <simpara>
       <constant>LATT_NOINFERIORS</constant> - This mailbox not contains, and may not contain any
-      "children" (there are no mailboxes below this one). Calling 
+      "children" (there are no mailboxes below this one). Calling
       <function>imap_createmailbox</function> will not work on this mailbox.
-     </para>
+     </simpara>
     </listitem>
    <listitem>
-     <para>
+     <simpara>
       <constant>LATT_NOSELECT</constant> - This is only a container,
       not a mailbox - you cannot open it.
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
-      <constant>LATT_MARKED</constant> - This mailbox is marked. This means that it may 
+     <simpara>
+      <constant>LATT_MARKED</constant> - This mailbox is marked. This means that it may
       contain new messages since the last time it was checked. Not provided by all IMAP
       servers.
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       <constant>LATT_UNMARKED</constant> - This mailbox is not marked, does not contain new
       messages.  If either <constant>MARKED</constant> or <constant>UNMARKED</constant> is
       provided, you can assume the IMAP server  supports this feature for this mailbox.
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       <constant>LATT_REFERRAL</constant> - This container has a referral to a remote mailbox.
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       <constant>LATT_HASCHILDREN</constant> - This mailbox has selectable inferiors.
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       <constant>LATT_HASNOCHILDREN</constant> - This mailbox has no selectable inferiors.
-     </para>
+     </simpara>
     </listitem>
    </itemizedlist>
    The function returns &false; on failure.
@@ -115,7 +115,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>

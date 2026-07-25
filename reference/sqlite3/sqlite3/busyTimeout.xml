@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>SQLite3::busyTimeout</methodname>
    <methodparam><type>int</type><parameter>milliseconds</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets a busy handler that will sleep until the database is not locked or the timeout is reached.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,10 +24,10 @@
     <varlistentry>
      <term><parameter>milliseconds</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The milliseconds to sleep. Setting this value to a value less than
        or equal to zero, will turn off an already set timeout handler.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -36,9 +36,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; on success, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

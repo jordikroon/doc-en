@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>MultipleIterator::containsIterator</methodname>
    <methodparam><type>Iterator</type><parameter>iterator</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks if an iterator is attached or not.
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -27,9 +27,9 @@
     <varlistentry>
      <term><parameter>iterator</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The iterator to check.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -38,9 +38,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

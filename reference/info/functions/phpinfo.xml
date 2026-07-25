@@ -12,23 +12,23 @@
    <type>true</type><methodname>phpinfo</methodname>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer><constant>INFO_ALL</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
-   Outputs a large amount of information about the current state of  PHP. 
+  <simpara>
+   Outputs a large amount of information about the current state of  PHP.
    This includes information about PHP compilation options and extensions,
    the PHP version, server information and environment (if compiled as a
    module), the PHP environment, OS version information, paths, master and
    local values of configuration options, HTTP headers, and the PHP License.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Because every system is setup differently, <function>phpinfo</function> is
    commonly used to check <link linkend="configuration">configuration settings</link> and for available
    <link linkend="language.variables.predefined">predefined variables</link>
    on a given system.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    <function>phpinfo</function> is also a valuable debugging tool as it
    contains all EGPCS (Environment, GET, POST, Cookie, Server) data.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -38,13 +38,13 @@
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The output may be customized by passing one or more of the
        following <emphasis>constants</emphasis> bitwise values summed
        together in the optional <parameter>flags</parameter> parameter.
        One can also combine the respective constants or bitwise values
        together with the <link linkend="language.operators.bitwise">bitwise or operator</link>.
-      </para>
+      </simpara>
       <para>
        <table>
         <title><function>phpinfo</function> options</title>
@@ -131,9 +131,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -162,18 +162,18 @@ phpinfo(INFO_MODULES);
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     In versions of PHP before 5.5, parts of the information displayed are
     disabled when the <link linkend="ini.expose-php">expose_php</link>
     configuration setting is set to <literal>off</literal>. This includes the
     PHP and Zend logos, and the credits.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     <function>phpinfo</function> outputs plain text instead of HTML when
     using the CLI mode.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

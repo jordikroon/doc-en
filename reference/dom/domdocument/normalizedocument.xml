@@ -12,22 +12,22 @@
    <void/>
   </methodsynopsis>
 
-  <para>
+  <simpara>
    This method acts as if you saved and then loaded the document, putting the
    document in a "normal" form.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
   &reftitle.parameters;
   &no.function.parameters;
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

@@ -15,9 +15,9 @@
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>destination</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>additional_headers</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sends an error message to the web server's error log or to a file.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,18 +27,18 @@
     <varlistentry>
      <term><parameter>message</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The error message that should be logged.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>message_type</parameter></term>
      <listitem>
-      <para>
-       Says where the error should go. The possible message types are as 
+      <simpara>
+       Says where the error should go. The possible message types are as
        follows:
-      </para>
+      </simpara>
       <para>
        <table>
         <title><function>error_log</function> log types</title>
@@ -72,7 +72,7 @@
            <entry>3</entry>
            <entry>
             <parameter>message</parameter> is appended to the file
-            <parameter>destination</parameter>. A newline is not automatically 
+            <parameter>destination</parameter>. A newline is not automatically
             added to the end of the <parameter>message</parameter> string.
            </entry>
           </row>
@@ -92,21 +92,21 @@
     <varlistentry>
      <term><parameter>destination</parameter></term>
      <listitem>
-      <para>
-       The destination. Its meaning depends on the 
+      <simpara>
+       The destination. Its meaning depends on the
        <parameter>message_type</parameter> parameter as described above.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>additional_headers</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The extra headers. It's used when the <parameter>message_type</parameter>
        parameter is set to <literal>1</literal>.
-       This message type uses the same internal function as 
+       This message type uses the same internal function as
        <function>mail</function> does.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -115,11 +115,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
    If <parameter>message_type</parameter> is zero, this function always returns &true;,
    regardless of whether the error could be logged or not.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

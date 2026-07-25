@@ -8,32 +8,32 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="IntlCalendar">
    <modifier>public</modifier> <type>true</type><methodname>IntlCalendar::setRepeatedWallTimeOption</methodname>
    <methodparam><type>int</type><parameter>option</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type>true</type><methodname>intlcal_set_repeated_wall_time_option</methodname>
    <methodparam><type>IntlCalendar</type><parameter>calendar</parameter></methodparam>
    <methodparam><type>int</type><parameter>option</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets the current strategy for dealing with wall times that are repeated
    whenever the clock is set back during dailight saving time end transitions.
    The default value is <constant>IntlCalendar::WALLTIME_LAST</constant> (take
    the post-DST instant). The other possible value is
    <constant>IntlCalendar::WALLTIME_FIRST</constant> (take the instant that
    occurs during DST).
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This function requires ICU 4.9 or later.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -48,10 +48,10 @@
    <varlistentry>
     <term><parameter>option</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       One of the constants <constant>IntlCalendar::WALLTIME_FIRST</constant> or
       <constant>IntlCalendar::WALLTIME_LAST</constant>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -59,9 +59,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -85,10 +85,10 @@
 
  <refsect1 role="examples">
   &reftitle.examples;
-  <para>
+  <simpara>
    See the example on
    <function>IntlCalendar::getRepeatedWallTimeOption</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

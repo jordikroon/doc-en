@@ -19,12 +19,12 @@
    to the server so that other SQL statements may be issued, but leaves the
    statement in a state that enables it to be executed again.
   </para>
-  <para>
+  <simpara>
    This method is useful for database drivers that do not support executing
    a PDOStatement object when a previously executed PDOStatement object still
    has unfetched rows. If your database driver suffers from this limitation,
    the problem may manifest itself in an out-of-sequence error.
-  </para>
+  </simpara>
   <para>
    <methodname>PDOStatement::closeCursor</methodname> is implemented either as an
    optional driver specific method (allowing for maximum efficiency), or as
@@ -53,9 +53,9 @@ do {
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

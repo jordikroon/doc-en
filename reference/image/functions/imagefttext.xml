@@ -20,12 +20,12 @@
    <methodparam choice="opt"><type>array</type><parameter>options</parameter><initializer>[]</initializer></methodparam>
   </methodsynopsis>
   <note>
-   <para>
+   <simpara>
     Prior to PHP 8.0.0, <function>imagefttext</function> was an extended variant of
     <function>imagettftext</function> which additionally supported the
     <parameter>options</parameter>.
     As of PHP 8.0.0, <function>imagettftext</function> is an alias of <function>imagefttext</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
  <refsect1 role="parameters">
@@ -36,25 +36,25 @@
     <varlistentry>
      <term><parameter>size</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The font size to use in points.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>angle</parameter></term>
      <listitem>
-      <para> 
+      <simpara>
        The angle in degrees, with 0 degrees being left-to-right reading text.
-       Higher values represent a counter-clockwise rotation. For example, a 
+       Higher values represent a counter-clockwise rotation. For example, a
        value of 90 would result in bottom-to-top reading text.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>x</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The coordinates given by <parameter>x</parameter> and
        <parameter>y</parameter> will define the basepoint of the first
        character (roughly the lower-left corner of the character). This
@@ -62,40 +62,40 @@
        <parameter>x</parameter> and <parameter>y</parameter> define the
        upper-left corner of the first character. For example, "top left"
        is 0, 0.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>y</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The y-ordinate. This sets the position of the fonts baseline, not the
        very bottom of the character.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>color</parameter></term>
      <listitem>
-      <para>
-       The index of the desired color for the text, see 
+      <simpara>
+       The index of the desired color for the text, see
        <function>imagecolorexact</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>font_filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The path to the TrueType font you wish to use.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Depending on which version of the GD library PHP is using, <emphasis>when
        <parameter>font_filename</parameter> does not begin with a leading
        <literal>/</literal> then <literal>.ttf</literal> will be appended</emphasis>
        to the filename and the library will attempt to search for that
        filename along a library-defined font path.
-      </para>
+      </simpara>
       <para>
        In many cases where a font resides in the same directory as the script using it
        the following trick will alleviate any include problems.
@@ -116,9 +116,9 @@ $font = 'SomeFont';
     <varlistentry>
      <term><parameter>text</parameter></term>
      <listitem>
-      <para>
-       Text to be inserted into image. 
-      </para>
+      <simpara>
+       Text to be inserted into image.
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -193,9 +193,9 @@ $font = 'SomeFont';
     </tgroup>
    </informaltable>
   </para>
-  <para>
+  <simpara>
    On failure, &false; is returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

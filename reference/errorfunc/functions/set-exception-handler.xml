@@ -4,7 +4,7 @@
  <refnamediv>
   <refname>set_exception_handler</refname>
   <refpurpose>
-   Sets a user-defined exception handler function 
+   Sets a user-defined exception handler function
   </refpurpose>
  </refnamediv>
 
@@ -14,11 +14,11 @@
    <type class="union"><type>callable</type><type>null</type></type><methodname>set_exception_handler</methodname>
    <methodparam><type class="union"><type>callable</type><type>null</type></type><parameter>callback</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets the default exception handler if an exception is not caught within a
    try/catch block. Execution will stop after the
    <parameter>callback</parameter> is called.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,23 +28,23 @@
     <varlistentry>
      <term><parameter>callback</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The function to be called when an uncaught exception occurs.
        This handler function needs to accept one parameter,
-       which will be the <classname>Throwable</classname> object that was thrown.
-       Both <classname>Error</classname> and <classname>Exception</classname>
-       implement the <classname>Throwable</classname> interface.
+       which will be the <exceptionname>Throwable</exceptionname> object that was thrown.
+       Both <exceptionname>Error</exceptionname> and <exceptionname>Exception</exceptionname>
+       implement the <exceptionname>Throwable</exceptionname> interface.
        This is the handler signature:
-      </para>
+      </simpara>
       <para>
        <methodsynopsis>
         <type>void</type><methodname><replaceable>handler</replaceable></methodname>
         <methodparam><type>Throwable</type><parameter>ex</parameter></methodparam>
        </methodsynopsis>
       </para>
-      <para>
+      <simpara>
        &null; may be passed instead, to reset this handler to its default state.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -53,10 +53,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the previously defined exception handler, or &null; on error. If
    no previous handler was defined, &null; is also returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

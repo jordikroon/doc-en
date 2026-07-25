@@ -14,10 +14,10 @@
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>SQLITE3_OPEN_READWRITE | SQLITE3_OPEN_CREATE</initializer></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>encryptionKey</parameter><initializer>""</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Opens an SQLite 3 Database. If the build includes encryption, then it will
    attempt to use the key.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,9 +27,9 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path to the SQLite database, or <literal>:memory:</literal> to use in-memory database.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -40,22 +40,22 @@
        default, open uses <literal>SQLITE3_OPEN_READWRITE | SQLITE3_OPEN_CREATE</literal>.
        <itemizedlist>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLITE3_OPEN_READONLY</constant>: Open the database for
           reading only.
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLITE3_OPEN_READWRITE</constant>: Open the database for
           reading and writing.
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLITE3_OPEN_CREATE</constant>: Create the database if it
           does not exist.
-         </para>
+         </simpara>
         </listitem>
        </itemizedlist>
       </para>
@@ -64,11 +64,11 @@
     <varlistentry>
      <term><parameter>encryptionKey</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An optional encryption key used when encrypting and decrypting an
        SQLite database. If the SQLite encryption module is not installed,
        this parameter will have no effect.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -78,9 +78,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

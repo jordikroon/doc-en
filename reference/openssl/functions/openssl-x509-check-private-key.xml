@@ -5,7 +5,7 @@
   <refname>openssl_x509_check_private_key</refname>
   <refpurpose>Checks if a private key corresponds to a certificate</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,20 +13,20 @@
    <methodparam><type class="union"><type>OpenSSLCertificate</type><type>string</type></type><parameter>certificate</parameter></methodparam>
    <methodparam><modifier role="attribute">#[\SensitiveParameter]</modifier><type class="union"><type>OpenSSLAsymmetricKey</type><type>OpenSSLCertificate</type><type>array</type><type>string</type></type><parameter>private_key</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks whether the given <parameter>private_key</parameter> is the private key
    that corresponds to <parameter>certificate</parameter>.
-  </para>
+  </simpara>
   <warning>
-    <para>
+    <simpara>
      The function does not check if <parameter>private_key</parameter> is indeed a private key or not.
      It merely compares the public materials (e.g. exponent and modulus of an RSA key)
      and/or key parameters (e.g. EC params of an EC key) of a key pair.
-    </para>
-    <para>
+    </simpara>
+    <simpara>
      This means, for example, that a public key could be given for <parameter>private_key</parameter>
      and the function may return &true;.
-    </para>
+    </simpara>
   </warning>
  </refsect1>
 
@@ -37,17 +37,17 @@
     <varlistentry>
      <term><parameter>certificate</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The certificate.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>private_key</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The private key.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -56,10 +56,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if <parameter>private_key</parameter> is the private key that
    corresponds to <parameter>certificate</parameter>, or &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

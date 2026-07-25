@@ -12,10 +12,10 @@
    <methodparam><type>int</type><parameter>image_type</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>include_dot</parameter><initializer>&true;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the extension for the given <constant>IMAGETYPE_<replaceable>*</replaceable></constant>
    constant.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -24,28 +24,28 @@
     <varlistentry>
      <term><parameter>image_type</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        One of the <constant>IMAGETYPE_<replaceable>*</replaceable></constant> constant.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>include_dot</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Whether to prepend a dot to the extension or not. Default to &true;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A string with the extension corresponding to the given image type, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -72,7 +72,7 @@ imagepng($im, './test' . image_type_to_extension(IMAGETYPE_PNG));
   &reftitle.notes;
   &note.gd.notrequired;
  </refsect1>
- 
+
 </refentry>
 <!-- Keep this comment at the end of the file
 Local variables:

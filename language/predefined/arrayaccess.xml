@@ -9,9 +9,9 @@
 
   <section xml:id="arrayaccess.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Interface to provide accessing objects as arrays.
-   </para>
+   </simpara>
   </section>
 
   <section xml:id="arrayaccess.synopsis">

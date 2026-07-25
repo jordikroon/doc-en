@@ -9,16 +9,16 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <fieldsynopsis><type>int</type><varname linkend="mysqli.connect-errno">mysqli->connect_errno</varname></fieldsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type>int</type><methodname>mysqli_connect_errno</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the error code from the last connection attempt.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,21 +28,21 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An error code for the last connection attempt, if it failed.
    Zero means no error occurred.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Returns the last connection error code regardless of the instance on which it
    is called.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
   &reftitle.examples;
   <example>
    <title><varname>$mysqli->connect_errno</varname> example</title>
-   <para>&style.oop;</para>
+   <simpara>&style.oop;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -56,7 +56,7 @@ if ($mysqli->connect_errno) {
 }
 ]]>
    </programlisting>
-   <para>&style.procedural;</para>
+   <simpara>&style.procedural;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

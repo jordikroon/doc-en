@@ -5,13 +5,13 @@
   <refname>dns_get_mx</refname>
   <refpurpose>&Alias; <function>getmxrr</function></refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &info.function.alias;
    <function>getmxrr</function>.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

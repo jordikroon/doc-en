@@ -3,28 +3,28 @@
 <sect1 xml:id="language.types.declarations">
  <title>Type declarations</title>
 
- <para>
+ <simpara>
   Type declarations can be added to function arguments, return values,
   as of PHP 7.4.0, class properties, and as of PHP 8.3.0, class constants.
   They ensure that the value is of the specified type at call time,
-  otherwise a <classname>TypeError</classname> is thrown.
- </para>
+  otherwise a <exceptionname>TypeError</exceptionname> is thrown.
+ </simpara>
 
- <para>
+ <simpara>
   Every single type that PHP supports, with the exception of
   <type>resource</type> can be used within a user-land type declaration.
   This page contains a changelog of availability of the different types
   and documentation about usage of them in type declarations.
- </para>
+ </simpara>
 
  <note>
-  <para>
+  <simpara>
    When a class implements an interface method or reimplements a method which
    has already been defined by a parent class, it has to be compatible with the
    aforementioned definition.
    A method is compatible if it follows the
    <link linkend="language.oop5.variance">variance</link> rules.
-  </para>
+  </simpara>
  </note>
 
  <sect2 role="changelog">
@@ -144,14 +144,14 @@
   <sect3 xml:id="language.types.declarations.base.scalar">
    <title>Scalar types</title>
    <warning>
-    <para>
+    <simpara>
      Name aliases for scalar types (<type>bool</type>, <type>int</type>,
      <type>float</type>, <type>string</type>) are not supported.
      Instead, they are treated as class or interface names.
      For example, using <literal>boolean</literal> as a type declaration
      will require the value to be an &instanceof; the class or interface
      <literal>boolean</literal>, rather than of type <type>bool</type>:
-    </para>
+    </simpara>
     <informalexample>
      <programlisting role="php">
 <![CDATA[
@@ -201,9 +201,9 @@ function &test(): void {}
 
   <sect3 xml:id="language.types.declarations.base.function">
    <title>Callable types</title>
-   <para>
+   <simpara>
     This type cannot be used as a class property type declaration.
-   </para>
+   </simpara>
 
    <note>
     <simpara>
@@ -255,10 +255,10 @@ Stack trace:
 
  <sect2 xml:id="language.types.declarations.composite">
   <title>Composite Types Usage Notes</title>
-  <para>
+  <simpara>
    Composite type declarations are subject to a couple of restrictions and
    will perform a redundancy check at compile time to prevent simple bugs.
-  </para>
+  </simpara>
 
   <caution>
    <simpara>
@@ -290,11 +290,11 @@ Stack trace:
    <sect4 xml:id="language.types.declarations.nullable">
     <title>Nullable type syntactic sugar</title>
 
-    <para>
+    <simpara>
      A single base type declaration can be marked nullable by prefixing the
      type with a question mark (<literal>?</literal>).
      Thus <literal>?T</literal> and <literal>T|null</literal> are identical.
-    </para>
+    </simpara>
 
     <note>
      <simpara>
@@ -645,20 +645,20 @@ class User {
  <sect2 xml:id="language.types.declarations.strict">
   <title>Strict typing</title>
 
-  <para>
+  <simpara>
    By default, PHP will coerce values of the wrong type into the expected
    scalar type declaration if possible. For example, a function that is given
    an <type>int</type> for a parameter that expects a <type>string</type>
    will get a variable of type <type>string</type>.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    It is possible to enable strict mode on a per-file basis. In strict
    mode, only a value corresponding exactly to the type declaration will be
-   accepted, otherwise a <classname>TypeError</classname> will be thrown.
+   accepted, otherwise a <exceptionname>TypeError</exceptionname> will be thrown.
    The only exception to this rule is that an <type>int</type> value will
    pass a <type>float</type> type declaration.
-  </para>
+  </simpara>
 
   <warning>
    <simpara>
@@ -667,26 +667,26 @@ class User {
    </simpara>
   </warning>
 
-  <para>
+  <simpara>
    To enable strict mode, the &declare; statement is used with the
    <literal>strict_types</literal> declaration:
-  </para>
+  </simpara>
 
   <note>
-   <para>
+   <simpara>
     Strict typing applies to function calls made from
     <emphasis>within</emphasis> the file with strict typing enabled, not to
     the functions declared within that file. If a file without strict
     typing enabled makes a call to a function that was defined in a file
     with strict typing, the caller's preference (coercive typing) will be
     respected, and the value will be coerced.
-   </para>
+   </simpara>
   </note>
 
   <note>
-   <para>
+   <simpara>
     Strict typing is only defined for scalar type declarations.
-   </para>
+   </simpara>
   </note>
 
   <example>

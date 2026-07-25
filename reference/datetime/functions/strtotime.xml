@@ -24,19 +24,19 @@
    recommended.
   </simpara>
   <warning>
-   <para>
+   <simpara>
     The Unix timestamp that this function returns does not contain information
     about time zones. In order to do calculations with date/time information,
     you should use the more capable <classname>DateTimeImmutable</classname>.
-   </para>
+   </simpara>
   </warning>
-  <para>
+  <simpara>
    Each parameter of this function uses the default time zone unless a
    time zone is specified in that parameter.  Be careful not to use
    different time zones in each parameter unless that is intended.
    See <function>date_default_timezone_get</function> on the various
    ways to define the default time zone.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -46,16 +46,16 @@
     <varlistentry>
      <term><parameter>datetime</parameter></term>
      <listitem>
-      <para>&date.formats.parameter;</para>
+      <simpara>&date.formats.parameter;</simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>baseTimestamp</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The timestamp which is used as a base for the calculation of relative
        dates.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -64,16 +64,16 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a timestamp on success, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-   
+
    &date.timezone.errors.description;
- 
+
  </refsect1>
 
  <refsect1 role="changelog">
@@ -153,25 +153,25 @@ if (($timestamp = strtotime($str)) === false) {
    </para>
   </note>
   <note>
-   <para>
+   <simpara>
     If the number of the year is specified in a two digit format, the values
     between 00-69 are mapped to 2000-2069 and 70-99 to 1970-1999. See the notes
-    below for possible differences on 32bit systems (possible dates might end on 
+    below for possible differences on 32bit systems (possible dates might end on
     2038-01-19 03:14:07).
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     The valid range of a timestamp is typically from Fri, 13 Dec
     1901 20:45:54 UTC to Tue, 19 Jan 2038 03:14:07 UTC. (These are
     the dates that correspond to the minimum and maximum values for
     a 32-bit signed integer.)
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     For 64-bit versions of PHP, the valid range of a timestamp is effectively
     infinite, as 64 bits can represent approximately 293 billion years in either
     direction.
-   </para>
+   </simpara>
   </note>
   <note>
    <para>

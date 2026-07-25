@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.openssl-get-publickey">
+<refentry xml:id="function.openssl-get-publickey" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
-  <refname>openssl_get_publickey</refname> 
+  <refname>openssl_get_publickey</refname>
   <refpurpose>&Alias; <function>openssl_pkey_get_public</function></refpurpose>
  </refnamediv>
 

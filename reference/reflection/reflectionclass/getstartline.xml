@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type class="union"><type>int</type><type>false</type></type><methodname>ReflectionClass::getStartLine</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get the starting line number.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The starting line number, as an <type>int</type>, or &false; if unknown.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

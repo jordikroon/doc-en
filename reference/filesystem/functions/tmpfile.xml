@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.tmpfile">
+<refentry xml:id="function.tmpfile" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>tmpfile</refname>
   <refpurpose>Creates a temporary file</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>resource</type><type>false</type></type><methodname>tmpfile</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Creates a temporary file with a unique name in read-write-binary (w+b) mode and
    returns a file handle.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The file is automatically removed when closed (for example, by calling
    <function>fclose</function>, or when there are no remaining references to
    the file handle returned by <function>tmpfile</function>), or when the
    script ends.
-  </para>
+  </simpara>
   <caution>
    <simpara>
     If the script terminates unexpectedly, the temporary file may not be deleted.
@@ -36,10 +36,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a file handle, similar to the one returned by
    <function>fopen</function>, for the new file&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -11,19 +11,19 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <fieldsynopsis><type class="union"><type>int</type><type>string</type></type><varname linkend="mysqli-stmt.affected-rows">mysqli_stmt-&gt;affected_rows</varname></fieldsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type class="union"><type>int</type><type>string</type></type><methodname>mysqli_stmt_affected_rows</methodname>
    <methodparam><type>mysqli_stmt</type><parameter>statement</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the number of rows affected by <literal>INSERT</literal>,
-   <literal>UPDATE</literal>, or <literal>DELETE</literal> query. 
+   <literal>UPDATE</literal>, or <literal>DELETE</literal> query.
    Works like <function>mysqli_stmt_num_rows</function> for
    <literal>SELECT</literal> statements.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -37,21 +37,21 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An integer greater than zero indicates the number of rows affected or
-   retrieved. Zero indicates that no records were updated for an 
+   retrieved. Zero indicates that no records were updated for an
    <literal>UPDATE</literal> statement, no rows matched the
    <literal>WHERE</literal> clause in the query or that no query has yet been
    executed. <literal>-1</literal> indicates that the query returned an error or
    that, for a <literal>SELECT</literal> query,
    <function>mysqli_stmt_affected_rows</function> was called prior to calling
    <function>mysqli_stmt_store_result</function>.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     If the number of affected rows is greater than maximum PHP int value, the
     number of affected rows will be returned as a string value.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -59,7 +59,7 @@
  &reftitle.examples;
   <example>
    <title><methodname>mysqli_stmt_affected_rows</methodname> example</title>
-   <para>&style.oop;</para>
+   <simpara>&style.oop;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -85,7 +85,7 @@ $stmt->execute();
 printf("Rows inserted: %d\n", $stmt->affected_rows);
 ]]>
    </programlisting>
-   <para>&style.procedural;</para>
+   <simpara>&style.procedural;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

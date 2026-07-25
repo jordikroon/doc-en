@@ -5,7 +5,7 @@
   <refname>posix_setrlimit</refname>
   <refpurpose>Set system resource limits</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,10 +14,10 @@
    <methodparam><type>int</type><parameter>soft_limit</parameter></methodparam>
    <methodparam><type>int</type><parameter>hard_limit</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>posix_setrlimit</function> sets the soft and hard limits for a
    given system resource.
-  </para>
+  </simpara>
   &posix.rlimits;
  </refsect1>
 
@@ -28,29 +28,29 @@
     <varlistentry>
      <term><parameter>resource</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The
        <link linkend="posix.constants.setrlimit">resource limit constant</link>
        corresponding to the limit that is being set.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>soft_limit</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The soft limit, in whatever unit the resource limit requires, or
        <constant>POSIX_RLIMIT_INFINITY</constant>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>hard_limit</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The hard limit, in whatever unit the resource limit requires, or
        <constant>POSIX_RLIMIT_INFINITY</constant>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -59,9 +59,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

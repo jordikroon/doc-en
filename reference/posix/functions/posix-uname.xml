@@ -5,21 +5,21 @@
   <refname>posix_uname</refname>
   <refpurpose>Get system name</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>array</type><type>false</type></type><methodname>posix_uname</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets information about the system.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Posix requires that assumptions must not be made about the
    format of the values, e.g. the assumption that a release may contain
    three digits or anything else returned by this function.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -54,14 +54,14 @@
      </simpara></listitem>
    </itemizedlist>
   </para>
-  <para>
+  <simpara>
    domainname is a GNU extension and not part of POSIX.1, so this
    field is only available on GNU systems or when using the GNU
    libc.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The function returns &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

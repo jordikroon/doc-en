@@ -11,9 +11,9 @@
    <modifier>public</modifier> <type>void</type><methodname>DOMCharacterData::after</methodname>
    <methodparam rep="repeat"><type class="union"><type>DOMNode</type><type>string</type></type><parameter>nodes</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Adds the passed <parameter>nodes</parameter> after the character data.
-  </para>
+  </simpara>
  </refsect1>
 
  <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('domchildnode.after')/db:refsect1[@role='parameters'])" />
@@ -25,9 +25,9 @@
   &reftitle.examples;
   <example xml:id="domcharacterdata.after.example.basic">
    <title><methodname>DOMCharacterData::after</methodname> example</title>
-   <para>
+   <simpara>
     Adds nodes after the character data.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

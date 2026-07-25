@@ -8,17 +8,17 @@
   <sect3 xml:id="migration83.incompatible.core.overflowing-call-stack">
 
    <title>Programs that were very close to overflowing the call stack</title>
-   <para>
+   <simpara>
     Programs that were very close to overflowing the call stack may now throw an
-    <classname>Error</classname> when using more than
+    <exceptionname>Error</exceptionname> when using more than
     <!-- link linkend="zend.max_allowed_stack_size-zend.reserved_stack_size" -->zend.max_allowed_stack_size-zend.reserved_stack_size<!-- </link>--> bytes of stack
     (<!-- link linkend="fiber.stack_size-zend.reserved_stack_size" -->fiber.stack_size-zend.reserved_stack_size<!-- </link>--> for fibers).
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration83.incompatible.core.proc-get-status-multiple-times">
    <title>Executing proc_get_status() multiple times</title>
-   <para>
+   <simpara>
     Executing <function>proc_get_status</function> multiple times will now always
     return the right value on POSIX systems. Previously, only the first call
     of the function returned the right value. Executing
@@ -29,25 +29,25 @@
     If the previous behaviour is required, it is possible to check the
     <literal>"cached"</literal> key in the array returned by
     <function>proc_get_status</function> to check whether the result was cached.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration83.incompatible.core.zend-max-execution-timers">
    <title>Zend Max Execution Timers</title>
-   <para>
+   <simpara>
     Zend Max Execution Timers is now enabled by default for ZTS builds on
     Linux.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration83.incompatible.core.traits-with-static-properties">
    <title>Uses of traits with static properties</title>
-   <para>
+   <simpara>
     Uses of traits with static properties will now redeclare static properties
     inherited from the parent class. This will create a separate static
     property storage for the current class. This is analogous to adding the
     static property to the class directly without traits.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration83.incompatible.core.negative-index-to-empty-array">
@@ -60,34 +60,34 @@
 
   <sect3 xml:id="migration83.incompatible.core.class-constant-visibility-check">
    <title>Class constant visibility variance check</title>
-   <para>
+   <simpara>
     Class constant visibility variance is now correctly checked when inherited
     from interfaces.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration83.incompatible.core.weakmap-entries-maps-to-itself">
    <title>WeakMap entries whose key maps to itself</title>
-   <para>
+   <simpara>
     <classname>WeakMap</classname> entries whose key maps to itself (possibly
     transitively) may now be removed during cycle collection if the key is not
     reachable except by iterating over the WeakMap (reachability via iteration is
     considered weak).
     Previously, such entries would never be automatically removed.
-   </para>
+   </simpara>
   </sect3>
  </sect2>
 
  <sect2 xml:id="migration83.incompatible.date">
   <title>Date</title>
 
-  <para>
+  <simpara>
    The DateTime extension has introduced Date extension specific exceptions
-   and errors under the <classname>DateError</classname> and
-   <classname>DateException</classname> hierarchies, instead of warnings and
+   and errors under the <exceptionname>DateError</exceptionname> and
+   <exceptionname>DateException</exceptionname> hierarchies, instead of warnings and
    generic exceptions. This improves error handling, at the expense
    of having to check for errors and exceptions.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration83.incompatible.dom">
@@ -101,13 +101,13 @@
    exception, which is the behaviour demanded by the DOM specification.
   </para>
 
-  <para>
+  <simpara>
    Using the <classname>DOMParentNode</classname>
    and <classname>DOMChildNode</classname> methods without a document now
    works instead of throwing a <constant>DOM_HIERARCHY_REQUEST_ERR</constant>
-   <classname>DOMException</classname>.
+   <exceptionname>DOMException</exceptionname>.
    This is in line with the behaviour demanded by the DOM specification.
-  </para>
+  </simpara>
 
   <para>
    Calling <methodname>DOMDocument::createAttributeNS</methodname> without specifying
@@ -118,12 +118,12 @@
   <para>
    <methodname>DOMDocument::createAttributeNS</methodname> would previously
    incorrectly throw a <constant>DOM_NAMESPACE_ERRNAMESPACE_ERR</constant>
-   <classname>DOMException</classname> when the prefix was already used for a
+   <exceptionname>DOMException</exceptionname> when the prefix was already used for a
    different URI. It now correctly chooses a different prefix when there's a
    prefix name conflict.
   </para>
 
-  <para>
+  <simpara>
    New methods and properties were added to some DOM classes.
    If a userland class inherits from these classes and declare a method or property
    with the same name, the declarations must be compatible. Otherwise, a typical
@@ -131,22 +131,22 @@
    See the <link linkend="migration83.new-features.dom">list of new features</link>
    and <link linkend="migration83.new-functions.dom">new functions</link> for
    a list of the newly implemented methods and properties.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration83.incompatible.ffi">
   <title>FFI</title>
 
-  <para>
+  <simpara>
    C functions that have a return type of <type>void</type> now return &null; instead of
    returning the following object <literal>object(FFI\CData:void) { }</literal>
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration83.incompatible.opcache">
   <title>Opcache</title>
 
-  <para>
+  <simpara>
    The <link linkend="ini.opcache.consistency-checks">opcache.consistency_checks</link>
    INI directive was removed. This feature was broken with the tracing JIT,
    as well as with inheritance cache, and has been disabled without a way to
@@ -155,15 +155,15 @@
    has been persisted by invalidating its checksum. The attempted fix skipped
    over the modifiable pointers but was rejected due to complexity. For this
    reason, it was decided to remove the feature instead.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration83.incompatible.phar">
   <title>Phar</title>
 
-  <para>
+  <simpara>
    The type of <classname>Phar</classname> class constants are now declared.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration83.incompatible.standard">
@@ -221,18 +221,18 @@ range('9', 'A');  // [9, 8, 7, 6, 5, 4, 3, 2, 1, 0], prior to PHP 8.3.0
    were ignored.
   </para>
 
-  <para>
+  <simpara>
    The <function>file</function> flags error check now catches all invalid flags.
    Notably <constant>FILE_APPEND</constant> was previously silently accepted.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration83.incompatible.SNMP">
   <title>SNMP</title>
 
-  <para>
+  <simpara>
    The type of <classname>SNMP</classname> class constants are now declared.
-  </para>
+  </simpara>
  </sect2>
 
 </sect1>

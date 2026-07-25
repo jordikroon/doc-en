@@ -12,9 +12,9 @@
    <methodparam><type>FTP\Connection</type><parameter>ftp</parameter></methodparam>
    <methodparam><type>string</type><parameter>directory</parameter></methodparam>
   </methodsynopsis>
-  <para> 
+  <simpara>
    Changes the current directory to the specified one.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -29,9 +29,9 @@
     <varlistentry>
      <term><parameter>directory</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The target directory.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -39,10 +39,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
    If changing directory fails, PHP will also throw a warning.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -61,7 +61,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -72,10 +72,10 @@
 <?php
 
 // set up basic connection
-$ftp = ftp_connect($ftp_server); 
+$ftp = ftp_connect($ftp_server);
 
 // login with username and password
-$login_result = ftp_login($ftp, $ftp_user_name, $ftp_user_pass); 
+$login_result = ftp_login($ftp, $ftp_user_name, $ftp_user_pass);
 
 // check connection
 if ((!$ftp) || (!$login_result)) {
@@ -87,7 +87,7 @@ echo "Current directory: " . ftp_pwd($ftp) . "\n";
 // try to change the directory to somedir
 if (ftp_chdir($ftp, "somedir")) {
     echo "Current directory is now: " . ftp_pwd($ftp) . "\n";
-} else { 
+} else {
     echo "Couldn't change directory\n";
 }
 

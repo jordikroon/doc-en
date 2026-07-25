@@ -12,14 +12,14 @@
    <modifier>public</modifier> <modifier>static</modifier> <type class="union"><type>array</type><type>null</type></type><methodname>IntlChar::charAge</methodname>
    <methodparam><type class="union"><type>int</type><type>string</type></type><parameter>codepoint</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the "age" of the code point.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The "age" is the Unicode version when the code point was first designated (as a non-character or for Private Use)
    or assigned a character. This can be useful to avoid emitting code points to receiving processes that do not accept
    newer characters.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -36,11 +36,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The Unicode version number, as an <type>array</type>.
    For example, version <emphasis>1.3.31.2</emphasis> would be represented as <literal>[1, 3, 31, 2]</literal>.
    Returns &null; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

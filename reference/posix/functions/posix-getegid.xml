@@ -5,16 +5,16 @@
   <refname>posix_getegid</refname>
   <refpurpose>Return the effective group ID of the current process</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>int</type><methodname>posix_getegid</methodname>
    <void/>
   </methodsynopsis>
-  <para>
-   Return the numeric effective group ID of the current process. 
-  </para>
+  <simpara>
+   Return the numeric effective group ID of the current process.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an <type>int</type> of the effective group ID.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -34,10 +34,10 @@
   <para>
    <example>
     <title><function>posix_getegid</function> example</title>
-    <para>
+    <simpara>
      This example will print out the effective group id, once it is
      changed with <function>posix_setegid</function>.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -54,11 +54,11 @@ echo 'My effective group id is '.posix_getegid(); //40
 
  <refsect1 role="notes">
   &reftitle.notes;
-  <para>
-   <function>posix_getegid</function> is different than 
+  <simpara>
+   <function>posix_getegid</function> is different than
    <function>posix_getgid</function> because effective group ID can be changed by
    a calling process using <function>posix_setegid</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

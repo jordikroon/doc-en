@@ -12,10 +12,10 @@
    <modifier>public</modifier> <type>true</type><methodname>ArrayIterator::uksort</methodname>
    <methodparam><type>callable</type><parameter>callback</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This method sorts the elements by keys using a user-supplied comparison
    function.
-  </para>
+  </simpara>
   &note.sort-unstable;
  </refsect1>
 
@@ -35,9 +35,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

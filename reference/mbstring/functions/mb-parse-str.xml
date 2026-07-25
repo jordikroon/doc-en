@@ -13,14 +13,14 @@
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
    <methodparam><type>array</type><parameter role="reference">result</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Parses GET/POST/COOKIE data and
    sets global variables. Since PHP does not provide raw POST/COOKIE
    data, it can only be used for GET data for now. It parses URL
    encoded data, detects encoding, converts coding to internal
    encoding and set values to the <parameter>result</parameter> <type>array</type> or
    global variables.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,17 +30,17 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The URL encoded data.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>result</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An <type>array</type> containing decoded and character encoded converted values.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -49,9 +49,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

@@ -12,9 +12,9 @@
    <modifier>public</modifier> <modifier>static</modifier> <type class="union"><type>string</type><type>null</type></type><methodname>IntlChar::chr</methodname>
    <methodparam><type class="union"><type>int</type><type>string</type></type><parameter>codepoint</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a string containing the character specified by the Unicode code point value.
-  </para>
+  </simpara>
   <para>
    This method complements <methodname>IntlChar::ord</methodname>.
   </para>
@@ -34,9 +34,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A string containing the single character specified by the Unicode code point value, or &null; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

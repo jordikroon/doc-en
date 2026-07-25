@@ -28,9 +28,9 @@
     <varlistentry>
      <term><parameter>brigade</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The brigade to return a bucket object from.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -39,9 +39,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a bucket object or &null;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

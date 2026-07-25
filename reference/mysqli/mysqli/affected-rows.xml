@@ -9,22 +9,22 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <fieldsynopsis><type class="union"><type>int</type><type>string</type></type><varname linkend="mysqli.affected-rows">mysqli-&gt;affected_rows</varname></fieldsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type class="union"><type>int</type><type>string</type></type><methodname>mysqli_affected_rows</methodname>
    <methodparam><type>mysqli</type><parameter>mysql</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the number of rows affected by the last <literal>INSERT</literal>,
-   <literal>UPDATE</literal>, <literal>REPLACE</literal> or 
+   <literal>UPDATE</literal>, <literal>REPLACE</literal> or
    <literal>DELETE</literal> query.
    Works like <function>mysqli_num_rows</function> for
    <literal>SELECT</literal> statements.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   <para>
@@ -36,21 +36,21 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An integer greater than zero indicates the number of rows affected or
-   retrieved. Zero indicates that no records were updated for an 
+   retrieved. Zero indicates that no records were updated for an
    <literal>UPDATE</literal> statement, no rows matched the
    <literal>WHERE</literal> clause in the query or that no query has yet been
    executed. <literal>-1</literal> indicates that the query returned an error or
    that <function>mysqli_affected_rows</function> was called for an unbuffered
    <literal>SELECT</literal> query.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     If the number of affected rows is greater than the maximum int value
     (<constant>PHP_INT_MAX</constant>), the number of affected rows will be
     returned as a string.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -58,7 +58,7 @@
   &reftitle.examples;
   <example>
    <title><varname>$mysqli-&gt;affected_rows</varname> example</title>
-   <para>&style.oop;</para>
+   <simpara>&style.oop;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -88,7 +88,7 @@ printf("Affected rows (SELECT): %d\n", $mysqli->affected_rows);
 $mysqli->query("DROP TABLE Language");
 ]]>
    </programlisting>
-   <para>&style.procedural;</para>
+   <simpara>&style.procedural;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

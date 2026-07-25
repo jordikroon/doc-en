@@ -13,10 +13,10 @@
    <methodparam><type>array</type><parameter>array</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>preserveKeys</parameter><initializer>&true;</initializer></methodparam>
   </methodsynopsis>
-  <para>
-   Import the PHP array <parameter>array</parameter> 
+  <simpara>
+   Import the PHP array <parameter>array</parameter>
    in a new <classname>SplFixedArray</classname> instance
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,17 +26,17 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The array to import.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>preserveKeys</parameter></term>
      <listitem>
-      <para>
-       Try to save the numeric indexes used in the original array. 
-      </para>
+      <simpara>
+       Try to save the numeric indexes used in the original array.
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -45,10 +45,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   Returns an instance of <classname>SplFixedArray</classname> 
+  <simpara>
+   Returns an instance of <classname>SplFixedArray</classname>
    containing the array content.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

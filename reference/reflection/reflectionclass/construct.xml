@@ -12,9 +12,9 @@
    <modifier>public</modifier> <methodname>ReflectionClass::__construct</methodname>
    <methodparam><type class="union"><type>object</type><type>string</type></type><parameter>objectOrClass</parameter></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Constructs a new <classname>ReflectionClass</classname> object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,10 +24,10 @@
     <varlistentry>
      <term><parameter>objectOrClass</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Either a <type>string</type> containing the name of the class to
        reflect, or an <type>object</type>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -36,9 +36,9 @@
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws <classname>ReflectionException</classname> if the class to reflect does not exist.
-  </para>
+  <simpara>
+   Throws <exceptionname>ReflectionException</exceptionname> if the class to reflect does not exist.
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

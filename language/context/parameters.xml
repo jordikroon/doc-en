@@ -9,10 +9,10 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    These <literal>parameters</literal> can be set on a <literal>context</literal>
    using the <function>stream_context_set_params</function> function.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="options">
@@ -25,13 +25,13 @@
       <type>callable</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        A <type>callable</type> to be called when an event occurs on a stream.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        See <link linkend="function.stream-notification-callback">
        stream_notification_callback</link> for more details.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

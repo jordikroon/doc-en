@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>string</type><methodname>ReflectionAttribute::getName</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the attributes name.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The name of the attribute.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

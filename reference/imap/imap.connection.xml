@@ -8,9 +8,9 @@
   <!-- {{{ IMAP\Connection intro -->
   <section xml:id="imap-connection.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     A fully opaque class which replaces a <literal>imap</literal> resource as of PHP 8.1.0.
-   </para>
+   </simpara>
   </section>
   <!-- }}} -->
 

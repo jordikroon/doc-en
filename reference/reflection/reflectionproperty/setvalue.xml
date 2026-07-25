@@ -6,7 +6,7 @@
   <refname>ReflectionProperty::setValue</refname>
   <refpurpose>Set property value</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="ReflectionProperty">
@@ -18,16 +18,16 @@
    <modifier>public</modifier> <type>void</type><methodname>ReflectionProperty::setValue</methodname>
    <methodparam><type>mixed</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets (changes) the property's value.
-  </para>
+  </simpara>
   <note>
    <simpara>
     To set static property values, use <literal>ReflectionProperty::setValue(null, $value)</literal>.
    </simpara>
   </note>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   <para>
@@ -35,31 +35,31 @@
     <varlistentry>
      <term><parameter>object</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        For static properties, pass in &null;.
        For non-static properties, pass in the object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The new value.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="changelog">
   &reftitle.changelog;
   <informaltable>
@@ -86,7 +86,7 @@
        <methodname>ReflectionProperty::setValue</methodname> right away.
        Previously, they needed to be made accessible by calling
        <methodname>ReflectionProperty::setAccessible</methodname>; otherwise
-       a <classname>ReflectionException</classname> was thrown.
+       a <exceptionname>ReflectionException</exceptionname> was thrown.
       </entry>
      </row>
     </tbody>
@@ -104,7 +104,7 @@
 <?php
 class Foo {
     public static $staticProperty;
-    
+
     public $property;
     protected $privateProperty;
 }
@@ -140,7 +140,7 @@ string(6) "foobar"
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>
@@ -151,7 +151,7 @@ string(6) "foobar"
    </simplelist>
   </para>
  </refsect1>
- 
+
 </refentry>
 
 <!-- Keep this comment at the end of the file

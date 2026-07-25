@@ -3,7 +3,7 @@
 <!-- splitted from ./en/functions/pgsql.xml, last change in rev 1.82 -->
 <refentry xml:id="function.pg-last-notice" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
-  <refname>pg_last_notice</refname> 
+  <refname>pg_last_notice</refname>
   <refpurpose>
    Returns the last notice message from PostgreSQL server
   </refpurpose>
@@ -16,27 +16,27 @@
    <methodparam><type>PgSql\Connection</type><parameter>connection</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>mode</parameter><initializer><constant>PGSQL_NOTICE_LAST</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_last_notice</function> returns the last notice
    message from the PostgreSQL server on the specified
    <parameter>connection</parameter>. The PostgreSQL server sends notice
    messages in several cases, for instance when creating a <literal>SERIAL</literal>
    column in a table.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    With <function>pg_last_notice</function>, you can avoid issuing useless
    queries by checking whether or not the notice is related to your transaction.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Notice message tracking can be set to optional by setting 1 for
    <literal>pgsql.ignore_notice</literal> in &php.ini;.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Notice message logging can be set to optional by setting 0 for
    <literal>pgsql.log_notice</literal> in &php.ini;.
    Unless <literal>pgsql.ignore_notice</literal> is set
    to 0, notice message cannot be logged.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -52,11 +52,11 @@
     <varlistentry>
      <term><parameter>mode</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        One of <constant>PGSQL_NOTICE_LAST</constant> (to return last notice),
        <constant>PGSQL_NOTICE_ALL</constant> (to return all notices),
        or <constant>PGSQL_NOTICE_CLEAR</constant> (to clear notices).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -65,15 +65,15 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   A <type>string</type> containing the last notice on the 
+  <simpara>
+   A <type>string</type> containing the last notice on the
    given <parameter>connection</parameter> with
    <constant>PGSQL_NOTICE_LAST</constant>,
    an <type>array</type> with <constant>PGSQL_NOTICE_ALL</constant>,
    a <type>bool</type> with <constant>PGSQL_NOTICE_CLEAR</constant>.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="changelog">
   &reftitle.changelog;
   <para>
@@ -108,11 +108,11 @@
      <![CDATA[
 <?php
   $pgsql_conn = pg_connect("dbname=mark host=localhost");
-  
+
   $res = pg_query("CREATE TABLE test (id SERIAL)");
-  
+
   $notice = pg_last_notice($pgsql_conn);
-  
+
   echo $notice;
 ?>
 ]]>

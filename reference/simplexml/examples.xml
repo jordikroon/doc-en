@@ -5,13 +5,13 @@
  &reftitle.examples;
  <section xml:id="simplexml.examples-basic">
   <title>Basic SimpleXML usage</title>
-  <para>
+  <simpara>
    Many examples in this reference require an XML string. Instead of
    repeating this string in every example, we put it into a file which
-   we include in each example. This included file is shown in the 
+   we include in each example. This included file is shown in the
    following example section. Alternatively, you could create an XML
    document and read it with <function>simplexml_load_file</function>.
-  </para>
+  </simpara>
   <para>
    <example>
     <title>Include file examples/simplexml-data.php with XML string</title>
@@ -80,7 +80,7 @@ echo $movies->movie[0]->plot;
    </example>
   </para>
   <para>
-   Accessing elements within an XML document that contain characters not permitted under 
+   Accessing elements within an XML document that contain characters not permitted under
    PHP's naming convention (e.g. the hyphen) can be accomplished by encapsulating the
    element name within braces and the apostrophe.
    <example>
@@ -136,11 +136,11 @@ Mr. Coder played by El ActÓr
    </example>
   </para>
   <note>
-   <para>
+   <simpara>
     Properties (<literal>$movies->movie</literal> in previous example) are not
     arrays. They are <link linkend="class.iterator">iterable</link> and
     <link linkend="class.arrayaccess">accessible</link> objects.
-   </para>
+   </simpara>
   </note>
   <para>
    <example>
@@ -185,8 +185,8 @@ foreach ($movies->movie[0]->rating as $rating) {
    <example>
     <title>Comparing Elements and Attributes with Text</title>
     <simpara>
-     To compare an element or attribute with a string or pass it into a 
-     function that requires a string, you must cast it to a string using 
+     To compare an element or attribute with a string or pass it into a
+     function that requires a string, you must cast it to a string using
      <literal>(string)</literal>. Otherwise, PHP treats the element as an object.
     </simpara>
     <programlisting role="php">
@@ -459,20 +459,20 @@ echo count($movies->xpath("//movie")) . "\n";
 
  <section xml:id="simplexml.examples-errors">
   <title>Dealing with XML errors</title>
-  <para>
+  <simpara>
    Dealing with XML errors when loading documents is a very simple task.
    Using the <link linkend="book.libxml">libxml</link> functionality it is
    possible to suppress all XML errors when loading the document and then
    iterate over the errors.
-  </para>
-  <para>
-   The <classname>LibXMLError</classname> object, returned by
+  </simpara>
+  <simpara>
+   The <exceptionname>LibXMLError</exceptionname> object, returned by
    <function>libxml_get_errors</function>, contains several properties
    including the <link linkend="libxmlerror.props.message">message</link>,
    <link linkend="libxmlerror.props.line">line</link> and
    <link linkend="libxmlerror.props.column">column</link> (position) of the
    error.
-  </para>
+  </simpara>
   <para>
    <example>
     <title>Loading broken XML string</title>

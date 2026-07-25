@@ -12,10 +12,10 @@
    <type class="union"><type>int</type><type>bool</type></type><methodname>pg_flush</methodname>
    <methodparam><type>PgSql\Connection</type><parameter>connection</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_flush</function> flushes any outbound query data waiting to be
    sent on the connection.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -32,11 +32,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the flush was successful or no data was waiting to be
    flushed, <literal>0</literal> if part of the pending data was flushed but
    more remains&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

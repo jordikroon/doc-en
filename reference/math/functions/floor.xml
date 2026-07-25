@@ -13,7 +13,7 @@
   </methodsynopsis>
   <simpara>
    Returns the next lowest integer value (as float) by rounding down
-   <parameter>num</parameter> if necessary. 
+   <parameter>num</parameter> if necessary.
   </simpara>
  </refsect1>
  <refsect1 role="parameters">
@@ -23,9 +23,9 @@
     <varlistentry>
      <term><parameter>num</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The numeric value to round
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -33,11 +33,11 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    <parameter>num</parameter> rounded to the next lowest integer.
    The return value of <function>floor</function> is still of type
    <type>float</type>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

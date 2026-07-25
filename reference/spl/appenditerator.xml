@@ -10,9 +10,9 @@
 <!-- {{{ AppendIterator intro -->
   <section xml:id="appenditerator.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     An Iterator that iterates over several iterators one after the other.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

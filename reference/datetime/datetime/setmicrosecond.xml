@@ -11,7 +11,7 @@
    <modifier>public</modifier> <type>static</type><methodname>DateTime::setMicrosecond</methodname>
    <methodparam><type>int</type><parameter>microsecond</parameter></methodparam>
   </methodsynopsis>
-  
+
   <simpara>
    Sets microsecond part of the time.
   </simpara>
@@ -23,7 +23,7 @@
 
  <refsect1 role="parameters">
   &reftitle.parameters;
-  
+
   <variablelist>
    <varlistentry>
     <term><parameter>microsecond</parameter></term>
@@ -34,7 +34,7 @@
     </listitem>
    </varlistentry>
   </variablelist>
- 
+
  </refsect1>
 
  <refsect1 role="returnvalues">

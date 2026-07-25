@@ -2,14 +2,14 @@
 <sect1 xml:id="language.operators.functional">
  <title>Functional Operators</title>
  <titleabbrev>Functional</titleabbrev>
- <para>
+ <simpara>
   PHP 8.5 and later supports one operator that works directly on callables.  The <literal>|&gt;</literal>
   operator, or “pipe,” accepts a single-parameter callable on the right and passes
   the left-side value to it, evaluating to the callable's result.  The callable
   on the right may be any valid PHP callable: a <classname>Closure</classname>,
   a <link linkend="functions.first_class_callable_syntax">first-class callable</link>,
   an object that implements <link linkend="object.invoke">__invoke()</link>, etc.
- </para>
+ </simpara>
  <para>
   That means the following two lines are logically equivalent.
   <example>
@@ -89,20 +89,20 @@ Array
    </screen>
   </example>
  </para>
- <para>
+ <simpara>
   The left-hand side of the pipe may be any value or expression.  The right-hand side
   may be any valid PHP callable that takes a single parameter, or any expression
   that evaluates to such a callable.  Functions with more than one required parameter
   are not allowed and will fail as if the function were called normally
   with insufficient arguments. Functions that take a variable by reference are not allowed.
   If the right-hand side does not evaluate to a valid callable it will throw an Error.
- </para>
+ </simpara>
  <note>
-  <para>
+  <simpara>
    Be aware that, to avoid syntax ambiguity, <link linkend="functions.arrow">arrow functions</link>
    MUST be wrapped in parentheses when used with a pipe operator, as in the examples above.
    Failing to do so will result in a fatal error.
-  </para>
+  </simpara>
  </note>
 
  <sect2 role="seealso">

@@ -5,7 +5,7 @@
   <refname>OCILob::seek</refname>
   <refpurpose>Sets the internal pointer of the large object</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="OCILob">
@@ -13,9 +13,9 @@
    <methodparam><type>int</type><parameter>offset</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>whence</parameter><initializer><constant>OCI_SEEK_SET</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets the internal pointer of the large object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,10 +25,10 @@
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Indicates the amount of bytes, on which internal pointer should be
        moved from the position, pointed by <parameter>whence</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -38,12 +38,12 @@
        May be one of:
        <simplelist>
         <member>
-         <constant>OCI_SEEK_SET</constant> - sets the position equal to 
+         <constant>OCI_SEEK_SET</constant> - sets the position equal to
          <parameter>offset</parameter>
         </member>
         <member>
-         <constant>OCI_SEEK_CUR</constant> - adds <parameter>offset</parameter> 
-         bytes to the current position  
+         <constant>OCI_SEEK_CUR</constant> - adds <parameter>offset</parameter>
+         bytes to the current position
         </member>
         <member>
          <constant>OCI_SEEK_END</constant> - adds <parameter>offset</parameter>
@@ -60,9 +60,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

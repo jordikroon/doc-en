@@ -13,13 +13,13 @@
    <methodparam><type class="union"><type>string</type><type>null</type></type><parameter>extendedClass</parameter></methodparam>
   </methodsynopsis>
 
-  <para>
+  <simpara>
    This method allows you to register your own extended DOM class to be used
    afterward by the PHP DOM extension.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This method is not part of the DOM standard.
-  </para>
+  </simpara>
   <caution>
    <simpara>
     The constructor of the objects of the registered node classes is not called.
@@ -34,20 +34,20 @@
     <varlistentry>
      <term><parameter>baseClass</parameter></term>
      <listitem>
-      <para>
-       The DOM class that you want to extend. You can find a list of these 
+      <simpara>
+       The DOM class that you want to extend. You can find a list of these
        classes in the <link linkend="book.dom">chapter introduction</link>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>extendedClass</parameter></term>
      <listitem>
-      <para>
-       Your extended class name. If &null; is provided, any previously 
+      <simpara>
+       Your extended class name. If &null; is provided, any previously
        registered class extending <parameter>baseClass</parameter> will
        be removed.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -56,9 +56,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -94,13 +94,13 @@
 <?php
 
 class myElement extends DOMElement {
-   function appendElement($name) { 
+   function appendElement($name) {
       return $this->appendChild(new myElement($name));
    }
 }
 
 class myDocument extends DOMDocument {
-   function setRoot($name) { 
+   function setRoot($name) {
       return $this->appendChild(new myElement($name));
    }
 }
@@ -108,7 +108,7 @@ class myDocument extends DOMDocument {
 $doc = new myDocument();
 $doc->registerNodeClass('DOMElement', 'myElement');
 
-// From now on, adding an element to another costs only one method call ! 
+// From now on, adding an element to another costs only one method call !
 $root = $doc->setRoot('root');
 $child = $root->appendElement('child');
 $child->setAttribute('foo', 'bar');
@@ -163,7 +163,7 @@ text in child
   <para>
    <example>
     <title>Retrieving owner document</title>
-    <para>
+    <simpara>
      When instantiating a custom <classname>DOMDocument</classname> the
      <varname>ownerDocument</varname> property will refer to the instantiated
      class. However, if all references to that class are removed, it
@@ -171,7 +171,7 @@ text in child
      created instead. For that reason you might use
      <function>DOMDocument::registerNodeClass</function> with
      <classname>DOMDocument</classname>
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

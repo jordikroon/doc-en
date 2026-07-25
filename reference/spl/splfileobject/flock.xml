@@ -13,9 +13,9 @@
    <methodparam><type>int</type><parameter>operation</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter role="reference">wouldBlock</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Locks or unlocks the file in the same portable way as <function>flock</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -45,19 +45,19 @@
         </listitem>
        </itemizedlist>
       </para>
-      <para>
-       It is also possible to add <constant>LOCK_NB</constant> as a bitmask to one 
+      <simpara>
+       It is also possible to add <constant>LOCK_NB</constant> as a bitmask to one
        of the above operations, if <function>flock</function> should not
        block during the locking attempt.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>wouldBlock</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Set to &true; if the lock would block (EWOULDBLOCK errno condition).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -66,9 +66,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -83,7 +83,7 @@ $file = new SplFileObject("/tmp/lock.txt", "w");
 if ($file->flock(LOCK_EX)) { // do an exclusive lock
     $file->ftruncate(0);     // truncate file
     $file->fwrite("Write something here\n");
-    $file->flock(LOCK_UN);   // release the lock    
+    $file->flock(LOCK_UN);   // release the lock
 } else {
     echo "Couldn't get the lock!";
 }

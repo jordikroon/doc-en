@@ -7,10 +7,10 @@
  <sect2 xml:id="migration56.extensions.curl">
   <title><link linkend="book.curl">cURL</link></title>
 
-  <para>
+  <simpara>
    A number of constants marked obsolete in the cURL library have now been
    removed:
-  </para>
+  </simpara>
 
   <itemizedlist>
    <listitem>
@@ -85,19 +85,19 @@
  <sect2 xml:id="migration56.extensions.zip">
   <title><link linkend="book.zip">Zip</link></title>
 
-  <para>
+  <simpara>
    A <literal>--with-libzip</literal> configure option has been added to use
    a system libzip installation. libzip version 0.11 is required, with 0.11.2
    or later recommended.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration56.extensions.mysqli">
   <title><link linkend="book.mysqli">MySQLi</link></title>
-  <para>
+  <simpara>
    A new <link linkend="ini.mysqli.rollback-on-cached-plink">mysqli.rollback_on_cached_plink</link>
    option was added, which controls the rollback behavior of persistent connections.
-  </para>
+  </simpara>
  </sect2>
 
  <!-- TODO: anything since alpha 1 -->

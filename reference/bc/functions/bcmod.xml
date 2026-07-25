@@ -5,7 +5,7 @@
   <refname>bcmod</refname>
   <refpurpose>Get modulus of an arbitrary precision number</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,11 +14,11 @@
    <methodparam><type>string</type><parameter>num2</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>scale</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get the remainder of dividing <parameter>num1</parameter> by
    <parameter>num2</parameter>.
    The result has the same sign as <parameter>num1</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,9 +27,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the modulus as a string.
-  </para>
+  </simpara>
  </refsect1>
 
  <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('function.bcdiv')/db:refsect1[@role='errors'])" />
@@ -105,7 +105,7 @@ echo bcmod('5.7', '1.3'); // 0.5 as of PHP 7.2.0; 0 previously
    </programlisting>
   </example>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

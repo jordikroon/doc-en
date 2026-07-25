@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="function.phpdbg-break-method">
+<refentry xml:id="function.phpdbg-break-method" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>phpdbg_break_method</refname>
   <refpurpose>Inserts a breakpoint at entry to a method</refpurpose>

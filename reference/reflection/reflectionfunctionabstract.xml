@@ -10,10 +10,10 @@
 <!-- {{{ ReflectionFunctionAbstract intro -->
   <section xml:id="reflectionfunctionabstract.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     A parent class to <classname>ReflectionFunction</classname>, read its
     description for details.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -46,7 +46,7 @@
 
   </section>
 
-  
+
 <!-- {{{ ReflectionFunctionAbstract properties -->
   <section xml:id="reflectionfunctionabstract.props">
    &reftitle.properties;
@@ -54,10 +54,10 @@
     <varlistentry xml:id="reflectionfunctionabstract.props.name">
      <term><varname>name</varname></term>
      <listitem>
-      <para>
+      <simpara>
        Name of the function. Read-only, throws
-       <classname>ReflectionException</classname> in attempt to write.
-      </para>
+       <exceptionname>ReflectionException</exceptionname> in attempt to write.
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

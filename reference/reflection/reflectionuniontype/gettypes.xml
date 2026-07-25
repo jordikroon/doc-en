@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>array</type><methodname>ReflectionUnionType::getTypes</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the reflections of types included in the union type.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An array of <classname>ReflectionType</classname> objects.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

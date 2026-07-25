@@ -14,11 +14,11 @@
    <methodparam choice="opt"><type>int</type><parameter>offset</parameter><initializer>0</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>limit</parameter><initializer>-1</initializer></methodparam>
   </constructorsynopsis>
-  <para>
-   Constructs a new <classname>LimitIterator</classname> from an 
-   <parameter>iterator</parameter> with a given starting 
+  <simpara>
+   Constructs a new <classname>LimitIterator</classname> from an
+   <parameter>iterator</parameter> with a given starting
    <parameter>offset</parameter> and maximum <parameter>limit</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,25 +28,25 @@
     <varlistentry>
      <term><parameter>iterator</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <classname>Iterator</classname> to limit.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Optional offset of the limit.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>limit</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Optional count of the limit.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -55,11 +55,11 @@
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws a <classname>ValueError</classname>
+  <simpara>
+   Throws a <exceptionname>ValueError</exceptionname>
    if the <parameter>offset</parameter> is less than <literal>0</literal>
    or the <parameter>limit</parameter> is less than <literal>-1</literal>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -77,17 +77,17 @@
       <row>
        <entry>8.0.0</entry>
        <entry>
-        Now throws a <classname>ValueError</classname> if
+        Now throws a <exceptionname>ValueError</exceptionname> if
         <parameter>offset</parameter> is less than <literal>0</literal>;
-        previously it threw a <classname>RuntimeException</classname>.
+        previously it threw a <exceptionname>RuntimeException</exceptionname>.
        </entry>
       </row>
       <row>
        <entry>8.0.0</entry>
        <entry>
-        Now throws a <classname>ValueError</classname> if
+        Now throws a <exceptionname>ValueError</exceptionname> if
         <parameter>limit</parameter> is less than <literal>-1</literal>;
-        previously it threw a <classname>RuntimeException</classname>.
+        previously it threw a <exceptionname>RuntimeException</exceptionname>.
        </entry>
       </row>
      </tbody>

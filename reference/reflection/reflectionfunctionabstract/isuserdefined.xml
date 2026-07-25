@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>ReflectionFunctionAbstract::isUserDefined</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks whether the function is user-defined, as opposed to internal.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &true; if it's user-defined, otherwise false;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

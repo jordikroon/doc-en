@@ -15,10 +15,10 @@
    <methodparam><type>mixed</type><parameter>value</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>type</parameter><initializer><constant>PDO::PARAM_STR</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Binds a value to a corresponding named or question mark placeholder
    in the SQL statement that was used to prepare the statement.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,30 +28,30 @@
     <varlistentry>
      <term><parameter>param</parameter></term>
       <listitem>
-       <para>
+       <simpara>
         Parameter identifier. For a prepared statement using named
         placeholders, this will be a parameter name of the form
         <varname>:name</varname>. For a prepared statement using
         question mark placeholders, this will be the 1-indexed position of
-        the parameter. 
-       </para>
+        the parameter.
+       </simpara>
       </listitem>
      </varlistentry>
     <varlistentry>
      <term><parameter>value</parameter></term>
       <listitem>
-       <para>
+       <simpara>
         The value to bind to the parameter.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
     <varlistentry>
      <term><parameter>type</parameter></term>
       <listitem>
-       <para>
+       <simpara>
         Explicit data type for the parameter using the <link linkend="pdo.constants"><literal>PDO::PARAM_*</literal>
         constants</link>.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
    </variablelist>
@@ -60,9 +60,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

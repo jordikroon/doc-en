@@ -3,13 +3,13 @@
 
 <chapter xml:id="array.sorting" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <title>Sorting Arrays</title>
- <para>
+ <simpara>
   PHP has several functions that deal with sorting arrays, and this
   document exists to help sort it all out.
- </para>
- <para>
+ </simpara>
+ <simpara>
   The main differences are:
- </para>
+ </simpara>
  <para>
   <simplelist>
    <member>

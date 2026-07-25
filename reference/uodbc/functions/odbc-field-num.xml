@@ -12,10 +12,10 @@
    <methodparam><type>Odbc\Result</type><parameter>statement</parameter></methodparam>
    <methodparam><type>string</type><parameter>field</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the number of the column slot that corresponds to the named field in
    the given result object.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -24,17 +24,17 @@
     <varlistentry>
      <term><parameter>statement</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &odbc.result.object;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>field</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The field name.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -42,10 +42,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the field number as an integer, or &false; on error.
    Field numbering starts at 1.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

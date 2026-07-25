@@ -5,7 +5,7 @@
   <refname>mb_strimwidth</refname>
   <refpurpose>Get truncated string with specified width</refpurpose>
  </refnamediv>
-   
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -16,13 +16,13 @@
    <methodparam choice="opt"><type>string</type><parameter>trim_marker</parameter><initializer>""</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>encoding</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Truncates <type>string</type> <parameter>string</parameter> to specified <parameter>width</parameter>,
    where halfwidth characters count as <literal>1</literal>, and fullwidth
    characters count as <literal>2</literal>.
    See <link xlink:href="&url.unicode.reports.tr;11/">&url.unicode.reports.tr;11/</link>
    for details regarding East Asian character widths.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -32,19 +32,19 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <type>string</type> being decoded.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>start</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The start position offset. Number of
        characters from the beginning of string (first character is 0),
        or if start is negative, number of characters from the end of the string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -54,9 +54,9 @@
        The width of the desired trim.
        If negative width is specified, count from the end of the string.
        <note>
-        <para>
+        <simpara>
          Passing negative width is deprecated as of PHP 8.3.0.
-        </para>
+        </simpara>
        </note>
       </para>
      </listitem>
@@ -64,10 +64,10 @@
     <varlistentry>
      <term><parameter>trim_marker</parameter></term>
      <listitem>
-      <para>
-       A string that is added to the end of string 
+      <simpara>
+       A string that is added to the end of string
        when string is truncated.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -82,10 +82,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The truncated <type>string</type>. If <parameter>trim_marker</parameter> is set,
    <parameter>trim_marker</parameter> replaces the last chars to match the <parameter>width</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

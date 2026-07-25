@@ -4,91 +4,91 @@
   <title>General Information</title>
   <titleabbrev>General Information</titleabbrev>
 
-  <para>
+  <simpara>
    This section holds the most general questions about PHP:
    what it is and what it does.
-  </para>
+  </simpara>
 
   <qandaset>
    <qandaentry xml:id="faq.general.what">
     <question>
-     <para>What is PHP?</para>
+     <simpara>What is PHP?</simpara>
     </question>
     <answer>
-     <para>
+     <simpara>
       From the <link linkend="preface">preface of the manual</link>:
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       PHP is an HTML-embedded scripting language. Much of
       its syntax is borrowed from C, Java and Perl with a couple of unique
       PHP-specific features thrown in. The goal of the language is to
       allow web developers to write dynamically generated pages quickly.
-     </para>
+     </simpara>
     </answer>
    </qandaentry>
 
    <qandaentry xml:id="faq.general.acronym">
     <question>
-     <para>What does PHP stand for?</para>
+     <simpara>What does PHP stand for?</simpara>
     </question>
     <answer>
-     <para>
-     PHP stands for <emphasis>PHP: Hypertext Preprocessor</emphasis>. 
-     This confuses many people because the first word of the acronym is 
-     the acronym. This type of acronym is called a recursive acronym. 
-     For more information, the curious can visit 
+     <simpara>
+     PHP stands for <emphasis>PHP: Hypertext Preprocessor</emphasis>.
+     This confuses many people because the first word of the acronym is
+     the acronym. This type of acronym is called a recursive acronym.
+     For more information, the curious can visit
      <link xlink:href="&url.foldoc;">Free On-Line Dictionary of Computing</link>
      or the
      <link xlink:href="&url.wiki.recursive-acronym;">Wikipedia entry on
      recursive acronyms</link>.
-     </para>
+     </simpara>
     </answer>
    </qandaentry>
 
    <qandaentry xml:id="faq.general.relation-versions">
     <question>
-     <para>What is the relation between the versions?</para>
+     <simpara>What is the relation between the versions?</simpara>
     </question>
     <answer>
-     <para>
+     <simpara>
       PHP/FI 2.0 is an early and no longer supported version of PHP. PHP 3
       is the successor to PHP/FI 2.0 and is a lot nicer. PHP 8 is the current
       generation of PHP, which uses the Zend
       engine 4 which, among other things, offers many additional
       <link linkend="language.oop5">OOP</link> features.
-     </para>
+     </simpara>
     </answer>
    </qandaentry>
 
    <qandaentry xml:id="faq.general.running-concurent">
     <question>
-     <para>Can I run several versions of PHP at the same time?</para>
+     <simpara>Can I run several versions of PHP at the same time?</simpara>
     </question>
     <answer>
-     <para>
+     <simpara>
        Yes. See the <filename>INSTALL</filename> file that is included
        in the PHP source distribution.
-     </para>
+     </simpara>
     </answer>
    </qandaentry>
 
    <qandaentry xml:id="faq.general.bug">
     <question>
-     <para>
+     <simpara>
       I think I found a bug! Who should I tell?
-     </para>
+     </simpara>
     </question>
     <answer>
-     <para>
+     <simpara>
       You should go to the PHP Bug Database and make sure the bug
       isn't a known bug.  If you don't see it in the database, use
       the reporting form to report the bug.  It is important to use
       the bug database instead of just sending an email to one of the
       mailing lists because the bug will have a tracking number assigned
       and it will then be possible for you to go back later and check
-      on the status of the bug.  The bug database can be found at 
+      on the status of the bug.  The bug database can be found at
       <link xlink:href="&url.php.bugs;">&url.php.bugs;</link>.
-     </para>
+     </simpara>
     </answer>
    </qandaentry>
   </qandaset>

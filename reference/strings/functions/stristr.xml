@@ -5,7 +5,7 @@
   <refname>stristr</refname>
   <refpurpose>Case-insensitive <function>strstr</function></refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,10 +14,10 @@
    <methodparam><type>string</type><parameter>needle</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>before_needle</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns all of <parameter>haystack</parameter> starting from and including the first
    occurrence of <parameter>needle</parameter> to the end.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,44 +27,44 @@
     <varlistentry>
      <term><parameter>haystack</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string to search in
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>needle</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string to search for.
-      </para>
+      </simpara>
       &strings.parameter.needle.non-string;
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>before_needle</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If &true;, <function>stristr</function>
        returns the part of the <parameter>haystack</parameter> before the
        first occurrence of the <parameter>needle</parameter> (excluding needle).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
-  <para>
+  <simpara>
    <parameter>needle</parameter> and <parameter>haystack</parameter>
    are examined in a case-insensitive manner.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the matched substring. If <parameter>needle</parameter> is not
    found, returns &false;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

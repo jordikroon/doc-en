@@ -5,7 +5,7 @@
   <refname>Exception::__construct</refname>
   <refpurpose>Construct the exception</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <constructorsynopsis role="Exception">
@@ -14,11 +14,11 @@
    <methodparam choice="opt"><type>int</type><parameter>code</parameter><initializer>0</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>Throwable</type><type>null</type></type><parameter>previous</parameter><initializer>&null;</initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Constructs the Exception.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   <para>
@@ -26,25 +26,25 @@
     <varlistentry>
      <term><parameter>message</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The Exception message to throw.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>code</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The Exception code.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>previous</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The previous exception used for the exception chaining.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -60,13 +60,13 @@
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
-    The <parameter>message</parameter> is <emphasis>NOT</emphasis> 
+   <simpara>
+    The <parameter>message</parameter> is <emphasis>NOT</emphasis>
     binary safe.
-   </para>
+   </simpara>
   </note>
  </refsect1>
- 
+
 </refentry>
 <!-- Keep this comment at the end of the file
 Local variables:

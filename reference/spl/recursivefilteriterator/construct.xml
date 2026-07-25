@@ -12,9 +12,9 @@
    <modifier>public</modifier> <methodname>RecursiveFilterIterator::__construct</methodname>
    <methodparam><type>RecursiveIterator</type><parameter>iterator</parameter></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Create a <classname>RecursiveFilterIterator</classname> from a <classname>RecursiveIterator</classname>.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -25,9 +25,9 @@
     <varlistentry>
      <term><parameter>iterator</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <classname>RecursiveIterator</classname> to be filtered.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -90,7 +90,7 @@ class StartsWithFilter extends RecursiveFilterIterator {
     public function accept() {
         return $this->hasChildren() OR strpos($this->current(), $this->word) === 0;
     }
-    
+
     public function getChildren() {
         return new self($this->getInnerIterator()->getChildren(), $this->word);
     }

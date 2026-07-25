@@ -12,16 +12,16 @@
    <modifier>public</modifier> <type>string</type><methodname>SplFileInfo::getBasename</methodname>
    <methodparam choice="opt"><type>string</type><parameter>suffix</parameter><initializer>""</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This method returns the base name of the file, directory, or link without
    path info.
-  </para>
+  </simpara>
   <caution>
-   <para>
-    <function>SplFileInfo::getBasename</function> is locale aware, so for it to see the 
-    correct basename with multibyte character paths, the matching locale must 
+   <simpara>
+    <function>SplFileInfo::getBasename</function> is locale aware, so for it to see the
+    correct basename with multibyte character paths, the matching locale must
     be set using the <function>setlocale</function> function.
-   </para>
+   </simpara>
   </caution>
  </refsect1>
 
@@ -32,9 +32,9 @@
     <varlistentry>
      <term><parameter>suffix</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Optional suffix to omit from the base name returned.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -44,9 +44,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the base name without path information.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -73,7 +73,7 @@ var_dump($info->getBasename('.txt'));
 <![CDATA[
 string(8) "file.txt"
 string(8) "file.txt"
-string(4) "file" 
+string(4) "file"
 ]]>
     </screen>
    </example>

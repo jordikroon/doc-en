@@ -12,9 +12,9 @@
    <modifier>public</modifier> <modifier>static</modifier> <type>DateTime</type><methodname>DateTime::__set_state</methodname>
    <methodparam><type>array</type><parameter>array</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    The <link linkend="object.set-state">__set_state()</link> handler.
-  </para>
+  </simpara>
   <para>
    Like <methodname>DateTimeImmutable::__set_state</methodname> but works with
    <classname>DateTime</classname>.
@@ -27,9 +27,9 @@
    <varlistentry>
     <term><parameter>array</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Initialization array.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -37,9 +37,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a new instance of a DateTime object.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

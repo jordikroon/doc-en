@@ -5,21 +5,21 @@
   <refname>func_get_args</refname>
   <refpurpose>Returns an array comprising a function's argument list</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>array</type><methodname>func_get_args</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets an array of the function's argument list.
-  </para>
-  <para>
-   This function may be used in conjunction with 
+  </simpara>
+  <simpara>
+   This function may be used in conjunction with
    <function>func_get_arg</function> and <function>func_num_args</function>
    to allow user-defined functions to accept variable-length argument lists.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,17 +29,17 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array in which each element is a copy of the corresponding
-   member of the current user-defined function's argument list. 
-  </para>
+   member of the current user-defined function's argument list.
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    Generates a warning if called from outside of a user-defined function.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -70,7 +70,7 @@ foo(1, 2, 3);
     &example.outputs;
     <screen>
 <![CDATA[
-Number of arguments: 3 
+Number of arguments: 3
 Second argument is: 2
 Argument 0 is: 1
 Argument 1 is: 2

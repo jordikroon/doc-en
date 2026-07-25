@@ -49,7 +49,7 @@
         Specifies the filter type to filter the logged messages, with the
         supported filter types - <literal>all</literal>,
         <literal>no-ctrl</literal> and <literal>ascii</literal>.
-        Starting with PHP 7.3.8, <literal>raw</literal> is also available, 
+        Starting with PHP 7.3.8, <literal>raw</literal> is also available,
         restoring the way syslog behaved in previous PHP versions.
         This filter will also affect calls to <function>syslog</function>.
        </simpara>
@@ -70,10 +70,10 @@
   <sect3 xml:id="migration73.other-changes.core.gc">
    <title>Garbage Collection</title>
 
-   <para>
+   <simpara>
     The <link linkend="features.gc.collecting-cycles">cyclic GC</link> has been
     enhanced, which may result in considerable performance improvements.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration73.other-changes.core.misc">
@@ -85,17 +85,17 @@
     than using the nonexistent method <methodname>stdClass::__setState</methodname>.
    </para>
 
-   <para>
+   <simpara>
     <function>debug_zval_dump</function> was changed to display recursive arrays
     and objects in the same way as <function>var_dump</function>. Now, it doesn't
     display them twice.
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     <function>array_push</function> and <function>array_unshift</function> can
     now also be called with a single argument, which is particularly convenient
     wrt. the spread operator.
-   </para>
+   </simpara>
   </sect3>
 
  </sect2>
@@ -103,27 +103,27 @@
  <sect2 xml:id="migration73.other-changes.phpdbg">
   <title>Interactive PHP Debugger</title>
 
-  <para>
+  <simpara>
    The unused constants <constant>PHPDBG_FILE</constant>,
    <constant>PHPDBG_METHOD</constant>, <constant>PHPDBG_LINENO</constant> and
    <constant>PHPDBG_FUNC</constant> have been removed.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration73.other-changes.fpm">
   <title>FastCGI Process Manager</title>
 
-  <para>
+  <simpara>
    The <function>getallheaders</function> function is now also available.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration73.other-changes.curl">
   <title>Client URL Library</title>
 
-  <para>
+  <simpara>
    libcurl ≥ 7.15.5 is now required.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration73.other-changes.filter">
@@ -135,28 +135,28 @@
    (<code>"',."</code>) is fully backward compatible with former PHP versions.
   </para>
 
-  <para>
+  <simpara>
    <constant>FILTER_SANITIZE_ADD_SLASHES</constant> has been added as an alias of the
    <literal>magic_quotes</literal> filter (<constant>FILTER_SANITIZE_MAGIC_QUOTES</constant>).
    The <literal>magic_quotes</literal> filter is subject to removal in future versions of PHP.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration73.other-changes.ftp">
   <title>FTP</title>
 
-  <para>
+  <simpara>
    The default transfer mode has been changed to <literal>binary</literal>.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration73.other-changes.intl">
   <title>Internationalization Functions</title>
 
-  <para>
+  <simpara>
    <constant>Normalizer::NONE</constant> is deprecated, when PHP is linked with
    ICU ≥ 56.
-  </para>
+  </simpara>
 
   <para>
    Introduced <constant>Normalizer::FORM_KC_CF</constant> as
@@ -169,98 +169,98 @@
  <sect2 xml:id="migration73.other-changes.json">
   <title>JavaScript Object Notation</title>
 
-  <para>
+  <simpara>
    A new flag has been added, <constant>JSON_THROW_ON_ERROR</constant>, which
    can be used with <function>json_decode</function> or
    <function>json_encode</function> and causes these functions to throw the new
-   <classname>JsonException</classname> upon an error, instead of setting the
+   <exceptionname>JsonException</exceptionname> upon an error, instead of setting the
    global error state that is retrieved with
    <function>json_last_error</function> and <function>json_last_error_msg</function>.
    <constant>JSON_PARTIAL_OUTPUT_ON_ERROR</constant> takes precedence over
    <constant>JSON_THROW_ON_ERROR</constant>.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration73.other-changes.mbstring">
   <title>Multibyte String</title>
 
-  <para>
+  <simpara>
    The configuration option <option role="configure">--with-libmbfl</option> is
    no longer available.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration73.other-changes.uodbc">
   <title>ODBC (Unified)</title>
 
-  <para>
+  <simpara>
    Support for <literal>ODBCRouter</literal> and <literal>Birdstep</literal>
    including the <literal>birdstep.max_links</literal> ini directive has been
    removed.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration73.other-changes.opcache">
   <title>OPcache</title>
 
-  <para>
+  <simpara>
    The <literal>opcache.inherited_hack</literal> ini directive has been removed.
    The value has already been ignored since PHP 5.3.0.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration73.other-changes.openssl">
   <title>OpenSSL</title>
 
-  <para>
+  <simpara>
    The <literal>min_proto_version</literal> and <literal>max_proto_version</literal>
    ssl stream options as well as related constants for possible TLS protocol values
    have been added.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration73.other-changes.pcre">
   <title>Regular Expressions (Perl-Compatible)</title>
 
-  <para>
+  <simpara>
    The <link linkend="book.pcre">PCRE extension</link> has been upgraded to
    PCRE2, which may cause minor behavioral changes (for instance, character
    ranges in classes are now more strictly interpreted), and augments the
    existing regular expression syntax.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    <function>preg_quote</function> now also escapes the <literal>'#'</literal>
    character.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration73.other-changes.pdo-dblib">
   <title>Microsoft SQL Server and Sybase Functions (PDO_DBLIB)</title>
 
-  <para>
+  <simpara>
    The attribute <constant>PDO::DBLIB_ATTR_SKIP_EMPTY_ROWSETS</constant> to enable automatic
    skipping of empty rowsets has been added.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    The <constant>PDO::DBLIB_ATTR_TDS_VERSION</constant> attribute which exposes
    the TDS version has been added.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
     DATETIME2 columns are now treated like DATETIME columns.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration73.other-changes.pdo-sqlite">
   <title>SQLite Functions (PDO_SQLITE)</title>
 
-  <para>
+  <simpara>
    SQLite3 databases can now be opened in read-only mode by setting the
    new <constant>PDO::SQLITE_ATTR_OPEN_FLAGS</constant> attribute to
    <constant>PDO::SQLITE_OPEN_READONLY</constant>.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration73.other-changes.session">
@@ -301,30 +301,30 @@
  <sect2 xml:id="migration73.other-changes.xml">
   <title>XML Parser</title>
 
-  <para>
+  <simpara>
    The return value of the <function>xml_set_external_entity_ref_handler</function>
    callback is no longer ignored if the extension has been built against libxml.
    Formerly, the return value has been ignored, and parsing did never stop.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration73.other-changes.zip">
   <title>Zip</title>
 
-  <para>
+  <simpara>
    Building against the bundled libzip is discouraged, but still possible by
    adding <option role="configure">--without-libzip</option> to the configuration.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration73.other-changes.zlib">
   <title>Zlib Compression</title>
 
-  <para>
+  <simpara>
    The zlib/level context option for the <link
    linkend="wrappers.compression">compress.zlib wrapper</link> to facilitate
    setting the desired compression level has been added.
-  </para>
+  </simpara>
  </sect2>
 
 </sect1>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.gmp-random-bits">
+<refentry xml:id="function.gmp-random-bits" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>gmp_random_bits</refname>
   <refpurpose>Random number</refpurpose>
@@ -12,11 +12,11 @@
    <type>GMP</type><methodname>gmp_random_bits</methodname>
    <methodparam><type>int</type><parameter>bits</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Generate a random number. The number will be between
    <literal>0</literal> and
    <literal>2<superscript>$bits</superscript> - 1</literal>.
-  </para>
+  </simpara>
   <simpara>
    <parameter>bits</parameter> must be greater than 0,
    and the maximum value is restricted by available memory.
@@ -31,9 +31,9 @@
     <varlistentry>
      <term><parameter>bits</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number of bits to generate.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -42,9 +42,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A random GMP number.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

@@ -5,16 +5,16 @@
   <refname>curl_multi_init</refname>
   <refpurpose>Returns a new cURL multi handle</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>CurlMultiHandle</type><methodname>curl_multi_init</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Allows the processing of multiple cURL handles asynchronously.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,11 +24,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a cURL multi handle.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="changelog">
   &reftitle.changelog;
   <informaltable>

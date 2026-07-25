@@ -18,23 +18,23 @@
    <methodparam><type>array</type><parameter>values</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_convert</function> checks and converts the values in
    <parameter>values</parameter> into suitable values for use in an SQL
-   statement. Precondition for <function>pg_convert</function> is the 
+   statement. Precondition for <function>pg_convert</function> is the
    existence of a table <parameter>table_name</parameter> which has at least
    as many columns as <parameter>values</parameter> has elements. The
    fieldnames in <parameter>table_name</parameter> must match the indices in
    <parameter>values</parameter> and the corresponding datatypes must be
    compatible. Returns an array with the converted values on success, &false;
    otherwise.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     Boolean values are accepted and converted to PostgreSQL booleans.
     String representations of boolean values are also supported. &null; is
     converted to PostgreSQL NULL.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -51,27 +51,27 @@
     <varlistentry>
      <term><parameter>table_name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Name of the table against which to convert types.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>values</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Data to be converted.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Any number of <constant>PGSQL_CONV_IGNORE_DEFAULT</constant>,
        <constant>PGSQL_CONV_FORCE_NULL</constant> or
        <constant>PGSQL_CONV_IGNORE_NOT_NULL</constant>, combined.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -80,17 +80,17 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An <type>array</type> of converted values, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   A <classname>ValueError</classname> or <classname>TypeError</classname> is thrown
+  <simpara>
+   A <exceptionname>ValueError</exceptionname> or <exceptionname>TypeError</exceptionname> is thrown
    when the value or type of field does not match properly with a PostgreSQL's type.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -107,7 +107,7 @@
      <row>
       <entry>8.3.0</entry>
       <entry>
-       Now throws a <classname>ValueError</classname> or <classname>TypeError</classname> error
+       Now throws a <exceptionname>ValueError</exceptionname> or <exceptionname>TypeError</exceptionname> error
        when the value or type of field does not match properly with a PostgreSQL's type;
        previously an <constant>E_WARNING</constant> was emitted.
       </entry>
@@ -125,15 +125,15 @@
     <title><function>pg_convert</function> example</title>
     <programlisting role="php">
 <![CDATA[
-<?php 
+<?php
   $dbconn = pg_connect('dbname=foo');
-  
+
   $tmp = array(
       'author' => 'Joe Thackery',
       'year' => 2005,
       'title' => 'My Life, by Joe Thackery'
   );
-  
+
   $vals = pg_convert($dbconn, 'authors', $tmp);
 ?>
 ]]>

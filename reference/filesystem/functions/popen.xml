@@ -5,7 +5,7 @@
   <refname>popen</refname>
   <refpurpose>Opens process file pointer</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,10 +13,10 @@
    <methodparam><type>string</type><parameter>command</parameter></methodparam>
    <methodparam><type>string</type><parameter>mode</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Opens a pipe to a process executed by forking the command given
    by <parameter>command</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,33 +26,33 @@
     <varlistentry>
      <term><parameter>command</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The command
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>mode</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The mode. Either <literal>'r'</literal> for reading, or <literal>'w'</literal>
        for writing.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        On Windows, <function>popen</function> defaults to text mode, i.e. any <literal>\n</literal>
        characters written to or read from the pipe will be translated to <literal>\r\n</literal>.
        If this is not desired, binary mode can be enforced by setting <parameter>mode</parameter>
        to <literal>'rb'</literal> and <literal>'wb'</literal>, respectively.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a file pointer identical to that returned by
    <function>fopen</function>, except that it is unidirectional (may
    only be used for reading or writing) and must be closed with
@@ -62,10 +62,10 @@
    file pointer equals to the STDOUT of the command, when the mode
    is 'w', the returned file pointer equals to the STDIN of the
    command.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If an error occurs, returns &false;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -105,17 +105,17 @@ pclose($handle);
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     If you're looking for bi-directional support (two-way), use
     <function>proc_open</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

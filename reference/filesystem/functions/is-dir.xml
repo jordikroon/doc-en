@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.is-dir">
+<refentry xml:id="function.is-dir" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>is_dir</refname>
   <refpurpose>Tells whether the filename is a directory</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>bool</type><methodname>is_dir</methodname>
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Tells whether the given filename is a directory.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,14 +24,14 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path to the file. If <parameter>filename</parameter> is a relative
        filename, it will be checked relative to the current working
-       directory. If <parameter>filename</parameter> is a symbolic or hard link 
+       directory. If <parameter>filename</parameter> is a symbolic or hard link
        then the link will be resolved and checked. If you have enabled
        <link linkend="ini.open-basedir">open_basedir</link> further
        restrictions may apply.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -40,10 +40,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the filename exists and is a directory, &false;
    otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

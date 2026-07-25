@@ -12,9 +12,9 @@
    <methodparam><type>mixed</type><parameter>left</parameter></methodparam>
    <methodparam><type>mixed</type><parameter>right</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Performs a bitwise equivalence on two variants.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -23,17 +23,17 @@
     <varlistentry>
      <term><parameter>left</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The left operand.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>right</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The right operand.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -42,18 +42,18 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    If each bit in <parameter>left</parameter> is equal to the corresponding
    bit in <parameter>right</parameter> then &true; is returned, otherwise
    &false; is returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    Throws a <classname>com_exception</classname> on failure.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

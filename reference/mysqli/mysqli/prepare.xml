@@ -9,27 +9,27 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="mysqli">
    <modifier>public</modifier> <type class="union"><type>mysqli_stmt</type><type>false</type></type><methodname>mysqli::prepare</methodname>
    <methodparam><type>string</type><parameter>query</parameter></methodparam>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type class="union"><type>mysqli_stmt</type><type>false</type></type><methodname>mysqli_prepare</methodname>
    <methodparam><type>mysqli</type><parameter>mysql</parameter></methodparam>
    <methodparam><type>string</type><parameter>query</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Prepares the SQL query, and returns a statement handle to be used for further
    operations on the statement. The query must consist of a single SQL statement.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The statement template can contain zero or more question mark
    (<literal>?</literal>) parameter markers⁠—also called placeholders.
    The parameter markers must be bound to application variables using
    <function>mysqli_stmt_bind_param</function> before executing the statement.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -40,17 +40,17 @@
     <varlistentry>
      <term><parameter>query</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The query, as a string. It must consist of a single SQL statement.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        The SQL statement may contain zero or more parameter markers
        represented by question mark (<literal>?</literal>) characters
        at the appropriate positions.
-      </para>
+      </simpara>
       <note>
 <!-- Copied from https://dev.mysql.com/doc/c-api/8.0/en/mysql-stmt-prepare.html -->
-       <para>
+       <simpara>
         The markers are legal only in certain places in SQL statements.
         For example, they are permitted in the <literal>VALUES()</literal>
         list of an <literal>INSERT</literal> statement (to specify column
@@ -58,7 +58,7 @@
         <literal>WHERE</literal> clause to specify a comparison value.
         However, they are not permitted for identifiers (such as table or
         column names).
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
@@ -68,9 +68,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    <function>mysqli_prepare</function> returns a statement object or &false; if an error occurred.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -82,7 +82,7 @@
   &reftitle.examples;
   <example>
    <title><methodname>mysqli::prepare</methodname> example</title>
-   <para>&style.oop;</para>
+   <simpara>&style.oop;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -110,7 +110,7 @@ $stmt->fetch();
 printf("%s is in district %s\n", $city, $district);
 ]]>
    </programlisting>
-   <para>&style.procedural;</para>
+   <simpara>&style.procedural;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

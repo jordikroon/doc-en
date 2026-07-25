@@ -5,7 +5,7 @@
   <refname>gmp_div_qr</refname>
   <refpurpose>Divide numbers and get quotient and remainder</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,9 +14,9 @@
    <methodparam><type class="union"><type>GMP</type><type>int</type><type>string</type></type><parameter>num2</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>rounding_mode</parameter><initializer><constant>GMP_ROUND_ZERO</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    The function divides <parameter>num1</parameter> by <parameter>num2</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,28 +26,28 @@
     <varlistentry>
      <term><parameter>num1</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number being divided.
-      </para>
-      &gmp.parameter; 
+      </simpara>
+      &gmp.parameter;
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>num2</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number that <parameter>num1</parameter> is being divided by.
-      </para>
-      &gmp.parameter; 
+      </simpara>
+      &gmp.parameter;
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>rounding_mode</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        See the <function>gmp_div_q</function> function for description
        of the <parameter>rounding_mode</parameter> argument.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -56,12 +56,12 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an <type>array</type>, with the first
    element being <literal>[n/d]</literal> (the integer result of the
    division) and the second being <literal>(n - [n/d] * d)</literal>
    (the remainder of the division).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

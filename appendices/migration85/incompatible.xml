@@ -154,12 +154,12 @@
   <title>Bzip2</title>
 
   <simpara>
-   <function>bzcompress</function> now throws a <classname>ValueError</classname>
+   <function>bzcompress</function> now throws a <exceptionname>ValueError</exceptionname>
    when <parameter>block_size</parameter> is not between 1 and 9.
   </simpara>
 
   <simpara>
-   <function>bzcompress</function> now throws a <classname>ValueError</classname>
+   <function>bzcompress</function> now throws a <exceptionname>ValueError</exceptionname>
    when <parameter>work_factor</parameter> is not between 0 and 250.
   </simpara>
 

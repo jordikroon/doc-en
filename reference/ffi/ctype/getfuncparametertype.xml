@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ffi-ctype.getfuncparametertype">
+<refentry xml:id="ffi-ctype.getfuncparametertype" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>FFI\CType::getFuncParameterType</refname>
   <refpurpose>Retrieve the type of a function parameter</refpurpose>

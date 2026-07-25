@@ -13,9 +13,9 @@
    <methodparam><type class="union"><type>object</type><type>null</type></type><parameter>object</parameter></methodparam>
    <methodparam><type>array</type><parameter>args</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Invokes the reflected method and pass its arguments as array.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -26,18 +26,18 @@
     <varlistentry>
      <term><parameter>object</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The object to invoke the method on. In case of static methods, you can pass
        <type>null</type> to this parameter.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>args</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The parameters to be passed to the function, as an <type>array</type>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -46,20 +46,20 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the method result.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   A <classname>ReflectionException</classname> if the <parameter>object</parameter>
+  <simpara>
+   A <exceptionname>ReflectionException</exceptionname> if the <parameter>object</parameter>
    parameter does not contain an instance of the class that this method was declared in.
-  </para>
-  <para>
-   A <classname>ReflectionException</classname> if the method invocation failed.
-  </para>
+  </simpara>
+  <simpara>
+   A <exceptionname>ReflectionException</exceptionname> if the method invocation failed.
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -120,9 +120,9 @@ Hello Mike
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     &reflection.invoke.reference;
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

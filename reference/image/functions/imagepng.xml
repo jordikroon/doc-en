@@ -14,10 +14,10 @@
    <methodparam choice="opt"><type>int</type><parameter>quality</parameter><initializer>-1</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>filters</parameter><initializer>-1</initializer></methodparam>
   </methodsynopsis>
-  <para>
-   Outputs or saves a <acronym>PNG</acronym> image from the given 
+  <simpara>
+   Outputs or saves a <acronym>PNG</acronym> image from the given
    <parameter>image</parameter>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -27,36 +27,36 @@
     <varlistentry>
      <term><parameter>file</parameter></term>
      <listitem>
-      <para>&gd.image.path;</para>
+      <simpara>&gd.image.path;</simpara>
       <note>
-       <para>
+       <simpara>
         &null; is invalid if the <parameter>quality</parameter> and
         <parameter>filters</parameter> arguments are not used.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>quality</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Compression level: from 0 (no compression) to 9.
        The default (<literal>-1</literal>) uses the zlib compression default.
        For more information see the <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="&url.zlib.manual;">zlib manual</link>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>filters</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Allows reducing the PNG file size. It is a bitmask field which may be
        set to any combination of the <constant>PNG_FILTER_<replaceable>*</replaceable></constant>
-       constants. <constant>PNG_NO_FILTER</constant> or 
+       constants. <constant>PNG_NO_FILTER</constant> or
        <constant>PNG_ALL_FILTERS</constant> may also be used to respectively
        disable or activate all filters.
        The default value (<literal>-1</literal>) disables filtering.
-      </para>
+      </simpara>
       <caution>
        <simpara>
         The <parameter>filters</parameter> parameter is ignored by system libgd.
@@ -69,16 +69,16 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
   &gd.return.trueonerror;
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
   <simpara>
-   Throws a <classname>ValueError</classname> if <parameter>quality</parameter> is invalid.
+   Throws a <exceptionname>ValueError</exceptionname> if <parameter>quality</parameter> is invalid.
   </simpara>
  </refsect1>
 
@@ -96,7 +96,7 @@
      <row>
       <entry>8.4.0</entry>
       <entry>
-       Now throws a <classname>ValueError</classname> if <parameter>quality</parameter> is invalid.
+       Now throws a <exceptionname>ValueError</exceptionname> if <parameter>quality</parameter> is invalid.
       </entry>
      </row>
      &gd.changelog.image-param;

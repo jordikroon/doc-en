@@ -12,16 +12,16 @@
    <modifier>public</modifier> <modifier>static</modifier> <type class="union"><type>bool</type><type>null</type></type><methodname>IntlChar::isbase</methodname>
    <methodparam><type class="union"><type>int</type><type>string</type></type><parameter>codepoint</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Determines whether the specified code point is a base character.  &true; for general categories "L" (letters),
    "N" (numbers), "Mc" (spacing combining marks), and "Me" (enclosing marks).
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     This is different from the Unicode definition in chapter 3.5, conformance clause D13, which defines base characters
     to be all characters (not Cn) that do not graphically combine with preceding characters (M) and that are neither
     control (Cc) or format (Cf) characters.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -39,10 +39,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if
    <parameter>codepoint</parameter> is a base character, &false; if not. Returns &null; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

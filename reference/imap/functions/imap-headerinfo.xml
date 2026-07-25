@@ -14,9 +14,9 @@
    <methodparam choice="opt"><type>int</type><parameter>from_length</parameter><initializer>0</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>subject_length</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets information about the given message number by reading its headers.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -26,27 +26,27 @@
     <varlistentry>
      <term><parameter>message_num</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The message number
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>from_length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Number of characters for the <literal>fetchfrom</literal> property.
        Must be greater than or equal to zero.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>subject_length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Number of characters for the <literal>fetchsubject</literal> property
        Must be greater than or equal to zero.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -64,7 +64,7 @@
     </listitem>
     <listitem>
      <simpara>
-      to - an array of objects from the To: line, with the following 
+      to - an array of objects from the To: line, with the following
       properties: <literal>personal</literal>, <literal>adl</literal>,
       <literal>mailbox</literal>, and <literal>host</literal>
      </simpara>
@@ -76,7 +76,7 @@
     </listitem>
     <listitem>
      <simpara>
-      from - an array of objects from the From: line, with the following 
+      from - an array of objects from the From: line, with the following
       properties: <literal>personal</literal>, <literal>adl</literal>,
       <literal>mailbox</literal>, and <literal>host</literal>
      </simpara>
@@ -88,7 +88,7 @@
     </listitem>
     <listitem>
      <simpara>
-      cc - an array of objects from the Cc: line, with the following 
+      cc - an array of objects from the Cc: line, with the following
       properties: <literal>personal</literal>, <literal>adl</literal>,
       <literal>mailbox</literal>, and <literal>host</literal>
      </simpara>
@@ -100,7 +100,7 @@
     </listitem>
     <listitem>
      <simpara>
-      bcc - an array of objects from the Bcc: line, with the following 
+      bcc - an array of objects from the Bcc: line, with the following
       properties: <literal>personal</literal>, <literal>adl</literal>,
       <literal>mailbox</literal>, and <literal>host</literal>
      </simpara>
@@ -124,7 +124,7 @@
     </listitem>
     <listitem>
      <simpara>
-      sender - an array of objects from the Sender: line, with the following 
+      sender - an array of objects from the Sender: line, with the following
       properties: <literal>personal</literal>, <literal>adl</literal>,
       <literal>mailbox</literal>, and <literal>host</literal>
      </simpara>
@@ -137,14 +137,14 @@
     <listitem>
      <simpara>
       return_path - an array of objects from the Return-Path: line, with the
-      following properties: <literal>personal</literal>, 
-      <literal>adl</literal>, <literal>mailbox</literal>, and 
+      following properties: <literal>personal</literal>,
+      <literal>adl</literal>, <literal>mailbox</literal>, and
       <literal>host</literal>
      </simpara>
     </listitem>
     <listitem>
      <simpara>
-      remail - 
+      remail -
      </simpara>
     </listitem>
     <listitem>
@@ -164,32 +164,32 @@
     </listitem>
     <listitem>
      <simpara>
-      Subject - Same as subject 
+      Subject - Same as subject
      </simpara>
     </listitem>
     <listitem>
      <simpara>
-      in_reply_to - 
+      in_reply_to -
      </simpara>
     </listitem>
     <listitem>
      <simpara>
-      message_id - 
+      message_id -
      </simpara>
     </listitem>
     <listitem>
      <simpara>
-      newsgroups - 
+      newsgroups -
      </simpara>
     </listitem>
     <listitem>
      <simpara>
-      followup_to - 
+      followup_to -
      </simpara>
     </listitem>
     <listitem>
      <simpara>
-      references - 
+      references -
      </simpara>
     </listitem>
     <listitem>
@@ -231,7 +231,7 @@
     </listitem>
     <listitem>
      <simpara>
-      MailDate - 
+      MailDate -
      </simpara>
     </listitem>
     <listitem>
@@ -252,7 +252,7 @@
     </listitem>
     <listitem>
      <simpara>
-      fetchsubject - subject line formatted to fit 
+      fetchsubject - subject line formatted to fit
       <parameter>subject_length</parameter> characters
      </simpara>
     </listitem>

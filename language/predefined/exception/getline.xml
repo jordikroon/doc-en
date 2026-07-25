@@ -5,28 +5,28 @@
   <refname>Exception::getLine</refname>
   <refpurpose>Gets the line in which the exception was created</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="Exception">
    <modifier>final</modifier> <modifier>public</modifier> <type>int</type><methodname>Exception::getLine</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get line number where the exception was created.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   &no.function.parameters;
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the line number where the exception was created.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

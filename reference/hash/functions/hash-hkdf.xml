@@ -28,9 +28,9 @@
        Name of selected hashing algorithm (e.g. <literal>"sha256"</literal>).
        For a list of supported algorithms see <function>hash_hmac_algos</function>.
        <note>
-        <para>
+        <simpara>
          Non-cryptographic hash functions are not allowed.
-        </para>
+        </simpara>
        </note>
       </para>
      </listitem>
@@ -38,41 +38,41 @@
     <varlistentry>
      <term><parameter>key</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Input keying material (raw binary). Cannot be empty.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Desired output length in bytes.
        Cannot be greater than 255 times the chosen hash function size.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If <parameter>length</parameter> is <literal>0</literal>, the output length
        will default to the chosen hash function size.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>info</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Application/context-specific info string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>salt</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Salt to use during derivation.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        While optional, adding random salt significantly improves the strength of HKDF.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -81,20 +81,20 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a string containing a raw binary representation of the derived key
    (also known as output keying material - OKM).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws a <classname>ValueError</classname> exception if <parameter>key</parameter>
+  <simpara>
+   Throws a <exceptionname>ValueError</exceptionname> exception if <parameter>key</parameter>
    is empty, <parameter>algo</parameter> is unknown/non-cryptographic,
    <parameter>length</parameter> is less than <literal>0</literal> or too large
    (greater than 255 times the size of the hash function).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -112,7 +112,7 @@
       <row>
        <entry>8.0.0</entry>
        <entry>
-        Now throws a <classname>ValueError</classname> exception on error.
+        Now throws a <exceptionname>ValueError</exceptionname> exception on error.
         Previously, &false; was returned and an <constant>E_WARNING</constant>
         message was emitted.
        </entry>
@@ -125,11 +125,11 @@
 
  <refsect1 role="examples">
   &reftitle.examples;
-  <para>
+  <simpara>
    The example below produces a pair of separate keys, suitable for creation
    of an encrypt-then-HMAC construct, using AES-256 and SHA-256 for encryption
    and authentication respectively.
-  </para>
+  </simpara>
   <para>
    <example>
     <title><function>hash_hkdf</function> example</title>

@@ -5,19 +5,19 @@
   <refname>fstat</refname>
   <refpurpose>Gets information about a file using an open file pointer</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>array</type><type>false</type></type><methodname>fstat</methodname>
    <methodparam><type>resource</type><parameter>stream</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gathers the statistics of the file opened by the file
    pointer <parameter>stream</parameter>. This function is similar to the
    <function>stat</function> function except that it operates
    on an open file pointer instead of a filename.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -36,11 +36,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array with the statistics of the file; the format of the array
    is described in detail on the <function>stat</function> manual page.
    Returns &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

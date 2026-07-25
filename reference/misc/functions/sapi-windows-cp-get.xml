@@ -13,9 +13,9 @@
    <type>int</type><methodname>sapi_windows_cp_get</methodname>
    <methodparam choice="opt"><type>string</type><parameter>kind</parameter><initializer>""</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the current codepage.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,11 +24,11 @@
    <varlistentry>
     <term><parameter>kind</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The kind of operating system codepage to get,
       either <literal>'ansi'</literal> or <literal>'oem'</literal>.
       Any other value refers to the current codepage of the process.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -36,13 +36,13 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    If <parameter>kind</parameter> is <literal>'ansi'</literal>,
    the current <acronym>ANSI</acronym> code page of the operating system is returned.
    If <parameter>kind</parameter> is <literal>'oem'</literal>,
    the current <acronym>OEM</acronym> code page of the operating system is returned.
    Otherwise, the current codepage of the process is returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

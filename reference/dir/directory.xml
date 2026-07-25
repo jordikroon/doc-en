@@ -10,10 +10,10 @@
 <!-- {{{ Directory intro -->
   <section xml:id="directory.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Instances of <classname>Directory</classname> are created by calling the
     <function>dir</function> function, not by the <link linkend="language.oop5.basic.new">new</link> operator.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -55,19 +55,19 @@
     <varlistentry xml:id="directory.props.path">
      <term><varname>path</varname></term>
      <listitem>
-      <para>
+      <simpara>
        The directory that was opened.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="directory.props.handle">
      <term><varname>handle</varname></term>
      <listitem>
-      <para>
+      <simpara>
        Can be used with other directory functions such as
        <function>readdir</function>, <function>rewinddir</function> and
        <function>closedir</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

@@ -8,9 +8,9 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
     &info.function.alias; <link linkend="mysqli-driver.report-mode">mysqli_driver->report_mode</link>
-  </para>
+  </simpara>
  </refsect1>
 
 

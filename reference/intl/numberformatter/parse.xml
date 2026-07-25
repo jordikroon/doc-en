@@ -9,18 +9,18 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="NumberFormatter">
    <modifier>public</modifier> <type class="union"><type>int</type><type>float</type><type>false</type></type><methodname>NumberFormatter::parse</methodname>
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>type</parameter><initializer><constant>NumberFormatter::TYPE_DOUBLE</constant></initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter role="reference">offset</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>int</type><type>float</type><type>false</type></type><methodname>numfmt_parse</methodname>
    <methodparam><type>NumberFormatter</type><parameter>formatter</parameter></methodparam>
@@ -28,9 +28,9 @@
    <methodparam choice="opt"><type>int</type><parameter>type</parameter><initializer><constant>NumberFormatter::TYPE_DOUBLE</constant></initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter role="reference">offset</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Parse a string into a number using the current formatter rules.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -40,17 +40,17 @@
     <varlistentry>
      <term><parameter>formatter</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <classname>NumberFormatter</classname> object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string to parse for the number.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -69,10 +69,10 @@
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Offset in the string at which to begin parsing. On return, this value
        will hold the offset at which parsing ended.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -82,9 +82,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The value of the parsed number or &false; on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

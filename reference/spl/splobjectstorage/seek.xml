@@ -41,7 +41,7 @@
  <refsect1 role="errors">
   &reftitle.errors;
   <simpara>
-   Throws an <classname>OutOfBoundsException</classname>
+   Throws an <exceptionname>OutOfBoundsException</exceptionname>
    if the <parameter>offset</parameter> is not seekable.
   </simpara>
  </refsect1>

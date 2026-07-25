@@ -11,10 +11,10 @@
    <modifier>public</modifier> <type class="union"><type>string</type><type>null</type></type><methodname>XMLReader::getAttribute</methodname>
    <methodparam><type>string</type><parameter>name</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the value of a named attribute or &null; if the
    attribute does not exist or not positioned on an element node.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -23,9 +23,9 @@
     <varlistentry>
      <term><parameter>name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The name of the attribute.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -34,10 +34,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The value of the attribute, or &null; if no attribute with the given
    <parameter>name</parameter> is found or not positioned on an element node.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

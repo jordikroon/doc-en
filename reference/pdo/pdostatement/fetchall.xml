@@ -47,30 +47,30 @@
        Defaults to value of <constant>PDO::ATTR_DEFAULT_FETCH_MODE</constant>
        (which defaults to <constant>PDO::FETCH_BOTH</constant>)
       </para>
-      <para>
+      <simpara>
        To return an array consisting of all values of a single column from
        the result set, specify <constant>PDO::FETCH_COLUMN</constant>. You
        can specify which column you want with the
        <parameter>column</parameter> parameter.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        To index the resulting array by a certain column's value (instead of
        consecutive numbers), put this column's name first in the column
        list in SQL, and use <constant>PDO::FETCH_UNIQUE</constant>.
        This column must contain only unique values or some data will be lost.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        To group results in the form of a 3-dimensional array indexed by values
        of a specified column, put this column's name first in
        the column list in SQL and use <constant>PDO::FETCH_GROUP</constant>.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        To group results in the form of a 2-dimensional array
        use bitwise-OR <constant>PDO::FETCH_GROUP</constant> with
        <constant>PDO::FETCH_COLUMN</constant>.
        The results will be grouped by the first column, with the array element's value
        being a list array of the corresponding entries from the second column.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -80,37 +80,37 @@
     <varlistentry>
      <term><parameter>column</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Used with <constant>PDO::FETCH_COLUMN</constant>. Returns the indicated
        0-indexed column.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>class</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Used with <constant>PDO::FETCH_CLASS</constant>. Returns instances of the specified
        class, mapping the columns of each row to named properties in the class.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>constructorArgs</parameter></term>
      <listitem>
-      <para>
-       Arguments of custom class constructor when the <parameter>mode</parameter> 
+      <simpara>
+       Arguments of custom class constructor when the <parameter>mode</parameter>
        parameter is <constant>PDO::FETCH_CLASS</constant>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>callback</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Used with <constant>PDO::FETCH_FUNC</constant>. Returns the results of calling the
        specified function, using each row's columns as parameters in the call.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -126,14 +126,14 @@
    corresponding to each column name. An empty array is returned if there
    are zero results to fetch.
   </para>
-  <para>
+  <simpara>
    Using this method to fetch large result sets will result in a heavy
    demand on system and possibly network resources. Rather than retrieving
    all of the data and manipulating it in PHP, consider using the database
    server to manipulate the result sets. For example, use the WHERE and
    ORDER BY clauses in SQL to restrict results before retrieving and
    processing them with PHP.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -216,11 +216,11 @@ Array
     </screen>
    </example>
    <example><title>Fetching all values of a single column from a result set</title>
-    <para>
+    <simpara>
      The following example demonstrates how to return all of the values of a
      single column from a result set, even though the SQL statement itself
      may return multiple columns per row.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -249,14 +249,14 @@ Array(3)
     </screen>
    </example>
    <example><title>Grouping all values by a single column</title>
-    <para>
+    <simpara>
      The following example demonstrates how to return an associative array
      grouped by the values of the specified column in the result set. The
      array contains three keys: values <literal>apple</literal> and
      <literal>pear</literal> are returned as arrays that contain two
      different colours, while <literal>watermelon</literal> is
      returned as an array that contains only one colour.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -301,10 +301,10 @@ array(3) {
     </screen>
    </example>
    <example><title>Instantiating a class for each result</title>
-    <para>
+    <simpara>
      The following example demonstrates the behaviour of the
      <constant>PDO::FETCH_CLASS</constant> fetch style.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -365,10 +365,10 @@ array(3) {
     </screen>
    </example>
    <example><title>Calling a function for each result</title>
-    <para>
+    <simpara>
      The following example demonstrates the behaviour of the
      <constant>PDO::FETCH_FUNC</constant> fetch style.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.session-write-close">
+<refentry xml:id="function.session-write-close" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>session_write_close</refname>
   <refpurpose>Write session data and end session</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>bool</type><methodname>session_write_close</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    End the current session and store session data.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Session data is usually stored after your script terminated without the
    need to call <function>session_write_close</function>, but as session data
    is locked to prevent concurrent writes only one script may operate on a
@@ -23,7 +23,7 @@
    experience the frames loading one by one due to this locking. You can
    reduce the time needed to load all the frames by ending the session as
    soon as all changes to session variables are done.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -33,9 +33,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

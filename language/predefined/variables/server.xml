@@ -6,10 +6,10 @@
   <refname>$_SERVER</refname>
   <refpurpose>Server and execution environment information</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    <varname>$_SERVER</varname> is an &array; containing information
    such as headers, paths, and script locations.
    The entries in this array are created by the web server, therefore there
@@ -18,7 +18,7 @@
    However, most of these variables are accounted for in the
    <link xlink:href="&url.rfc;3875">CGI/1.1 specification</link>,
    and are likely to be defined.
-  </para>
+  </simpara>
   <note>
    <simpara>
     When running PHP on the <link linkend="features.commandline">command line</link>
@@ -140,7 +140,7 @@
       </simpara>
      </listitem>
     </varlistentry>
-    
+
     <varlistentry>
      <term>'<varname>REQUEST_METHOD</varname>'</term>
      <listitem>
@@ -149,11 +149,11 @@
        <literal>'HEAD'</literal>, <literal>'POST'</literal>, <literal>'PUT'</literal>.
       </simpara>
       <note>
-       <para>
+       <simpara>
         PHP script is terminated after sending headers (it means after
         producing any output without output buffering) if the request method
         was <literal>HEAD</literal>.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
@@ -166,7 +166,7 @@
       </simpara>
      </listitem>
     </varlistentry>
-    
+
     <varlistentry>
      <term>'<varname>REQUEST_TIME_FLOAT</varname>'</term>
      <listitem>
@@ -220,7 +220,7 @@
      <listitem>
       <simpara>
        The Host name from which the user is viewing the current
-       page.  The reverse dns lookup is based on the 
+       page.  The reverse dns lookup is based on the
        <varname>REMOTE_ADDR</varname> of the user.
       </simpara>
       <note>
@@ -268,13 +268,13 @@
       <para>
        The absolute pathname of the currently executing script.
        <note>
-        <para>
+        <simpara>
          If a script is executed with the CLI, as a relative path,
-         such as <filename>file.php</filename> or 
-         <filename>../file.php</filename>, 
-         <varname>$_SERVER['SCRIPT_FILENAME']</varname> will 
+         such as <filename>file.php</filename> or
+         <filename>../file.php</filename>,
+         <varname>$_SERVER['SCRIPT_FILENAME']</varname> will
          contain the relative path specified by the user.
-        </para>
+        </simpara>
        </note>
       </para>
      </listitem>
@@ -291,7 +291,7 @@
       </simpara>
      </listitem>
     </varlistentry>
-    
+
     <varlistentry>
      <term>'<varname>SERVER_PORT</varname>'</term>
      <listitem>
@@ -367,8 +367,8 @@
      <term>'<varname>PHP_AUTH_DIGEST</varname>'</term>
      <listitem>
       <simpara>
-       When doing Digest HTTP authentication this variable is set 
-       to the 'Authorization' header sent by the client (which you 
+       When doing Digest HTTP authentication this variable is set
+       to the 'Authorization' header sent by the client (which you
        should then use to make the appropriate validation).
       </simpara>
      </listitem>
@@ -378,7 +378,7 @@
      <term>'<varname>PHP_AUTH_USER</varname>'</term>
      <listitem>
       <simpara>
-       When doing HTTP authentication this variable is set to the 
+       When doing HTTP authentication this variable is set to the
        username provided by the user.
       </simpara>
      </listitem>
@@ -388,7 +388,7 @@
      <term>'<varname>PHP_AUTH_PW</varname>'</term>
      <listitem>
       <simpara>
-       When doing HTTP authentication this variable is set to the 
+       When doing HTTP authentication this variable is set to the
        password provided by the user.
       </simpara>
      </listitem>
@@ -398,7 +398,7 @@
      <term>'<varname>AUTH_TYPE</varname>'</term>
      <listitem>
       <simpara>
-       When doing HTTP authentication this variable is set to the 
+       When doing HTTP authentication this variable is set to the
        authentication type.
       </simpara>
      </listitem>
@@ -431,7 +431,7 @@
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -453,7 +453,7 @@ www.example.com
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="notes">
   &reftitle.notes;
   &note.is-superglobal;

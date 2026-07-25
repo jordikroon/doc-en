@@ -15,14 +15,14 @@
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>length</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>encoding</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>mb_strcut</function> extracts a substring from a string similarly to
    <function>mb_substr</function>, but operates on bytes instead of characters. If the
    cut position happens to be between two bytes of a multi-byte character, the cut is
    performed starting from the first byte of that character. This is also the difference
    to the <function>substr</function> function, which would simply cut the string between
    the bytes and thus result in a malformed byte sequence.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -32,15 +32,15 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <type>string</type> being cut.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>start</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If <parameter>start</parameter> is non-negative, the returned string
        will start at the <parameter>start</parameter>'th <emphasis>byte</emphasis> position in
        <parameter>string</parameter>, counting from zero. For instance,
@@ -48,15 +48,15 @@
        position <literal>0</literal> is '<literal>a</literal>', the
        byte at position <literal>2</literal> is
        '<literal>c</literal>', and so forth.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If <parameter>start</parameter> is negative, the returned string
        will start at the <parameter>start</parameter>'th byte
        counting back from the end of <parameter>string</parameter>. However, if the
        magnitude of a negative <parameter>start</parameter> is greater than the
        length of the string, the returned portion will start from the beginning of
        <parameter>string</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -66,14 +66,14 @@
        Length in <emphasis>bytes</emphasis>. If omitted or &null;
        is passed, extract all bytes to the end of the string.
       </simpara>
-      <para>
+      <simpara>
        If <parameter>length</parameter> is negative, the returned string will
        end at the <parameter>length</parameter>'th byte counting back from the
        end of <parameter>string</parameter>. However, if the magnitude of a negative
        <parameter>length</parameter> is greater than the number of characters
        after the <parameter>start</parameter> position, an empty string will
        be returned.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -88,12 +88,12 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    <function>mb_strcut</function> returns the portion of
    <parameter>string</parameter> specified by the
    <parameter>start</parameter> and
    <parameter>length</parameter> parameters.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

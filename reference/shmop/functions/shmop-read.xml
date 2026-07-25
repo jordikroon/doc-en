@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.shmop-read">
+<refentry xml:id="function.shmop-read" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>shmop_read</refname>
   <refpurpose>Read data from shared memory block</refpurpose>
@@ -62,7 +62,7 @@
   &reftitle.errors;
   <simpara>
    If <parameter>offset</parameter> or <parameter>size</parameter> are out of range,
-   a <classname>ValueError</classname> is thrown.
+   a <exceptionname>ValueError</exceptionname> is thrown.
   </simpara>
  </refsect1>
 
@@ -88,7 +88,7 @@
       <entry>8.0.0</entry>
       <entry>
        If <parameter>offset</parameter> or <parameter>size</parameter> are out of range,
-       a <classname>ValueError</classname> is thrown; previously <constant>E_WARNING</constant>
+       a <exceptionname>ValueError</exceptionname> is thrown; previously <constant>E_WARNING</constant>
        was emitted, and &false; was returned,
       </entry>
      </row>

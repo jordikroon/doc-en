@@ -2,15 +2,15 @@
 <!-- $Revision$ -->
 <sect1 xml:id="install.windows.apache2" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <title>Installation for Apache 2.x on Windows systems</title>
- <para>
+ <simpara>
   This section contains notes and hints specific to Apache 2.x installs
   of PHP on Microsoft Windows systems.
- </para>
+ </simpara>
  <note>
-  <para>
+  <simpara>
    Please read the <link linkend="install.windows.manual">manual
    installation steps</link> first!
-  </para>
+  </simpara>
  </note>
 
  <simpara>
@@ -22,18 +22,18 @@
   for Apache 2.x before reading on here.
  </simpara>
 
- <para>
+ <simpara>
   Download the most recent version of
   <link xlink:href= "&url.apachelounge.download;">Apache 2.x</link>
   and a fitting PHP version. Follow the
   <link linkend="install.windows.manual">Manual Installation Steps</link>
   and come back to go on with the integration of PHP and Apache.
- </para>
+ </simpara>
 
- <para>
+ <simpara>
   There are three ways to set up PHP to work with Apache 2.x on Windows.
   PHP can be run as a handler, as a CGI, or under FastCGI.
- </para>
+ </simpara>
 
  &note.apache.slashes;
 
@@ -77,16 +77,16 @@ PHPIniDir "C:/php"
  <sect2 xml:id="install.windows.apache2.cgi">
   <title>Running PHP as CGI</title>
 
-  <para>
+  <simpara>
    It is strongly recommended to consult the
    <link xlink:href="&url.apache.cgi;">Apache CGI documentation</link>
    for a more complete understanding of running CGI on Apache.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    To run PHP as CGI, the php-cgi files will need to be placed in a
    directory designated as a CGI directory using the ScriptAlias directive.
-  </para>
+  </simpara>
 
   <para>
    A <literal>#!</literal> line will need to be placed in the PHP files,
@@ -110,16 +110,16 @@ PHPIniDir "C:/php"
  <sect2 xml:id="install.windows.apache2.fastcgi">
   <title>Running PHP under FastCGI</title>
 
-  <para>
+  <simpara>
    Running PHP under FastCGI has a number of advantages over running it as a
    CGI. Setting it up this way is fairly straightforward:
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Obtain <literal>mod_fcgid</literal> from
    <link xlink:href="&url.apachelounge.download;">&url.apachelounge;</link>.
    Win32 binaries are available for download from that site.
    Install the module according to the instructions that will come with it.
-  </para>
+  </simpara>
   <para>
    Configure the web server as shown below, taking care to adjust any paths
    to reflect how it is installed on the system:

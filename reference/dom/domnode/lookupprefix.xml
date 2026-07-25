@@ -13,9 +13,9 @@
    <modifier>public</modifier> <type class="union"><type>string</type><type>null</type></type><methodname>DOMNode::lookupPrefix</methodname>
    <methodparam><type>string</type><parameter>namespace</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the namespace prefix of the node based on the namespace URI.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>namespace</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The namespace URI.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -34,9 +34,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The prefix of the namespace or &null; on error.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="seealso">
   &reftitle.seealso;

@@ -13,15 +13,15 @@
    <methodparam><type>array</type><parameter>array</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer><constant>SORT_STRING</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Takes an input <parameter>array</parameter> and returns a new array
    without duplicate values.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Note that keys are preserved. If multiple elements compare equal under
    the given <parameter>flags</parameter>, then the key and value of
    the first equal element will be retained.
-  </para>
+  </simpara>
   <note>
    <simpara>
     Two elements are considered equal if and only if
@@ -38,18 +38,18 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input array.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The optional second parameter <parameter>flags</parameter>
        may be used to modify the comparison behavior using these values:
-      </para>
+      </simpara>
       <para>
        Comparison type flags:
        <itemizedlist>
@@ -78,9 +78,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the filtered array.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

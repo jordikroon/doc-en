@@ -5,7 +5,7 @@
   <refname>sapi_windows_vt100_support</refname>
   <refpurpose>Get or set VT100 support for the specified stream associated to an output buffer of a Windows console.</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,57 +13,57 @@
    <methodparam><type>resource</type><parameter>stream</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>bool</type><type>null</type></type><parameter>enable</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    If <parameter>enable</parameter> is &null;, the function returns &true; if the stream <parameter>stream</parameter> has VT100 control codes enabled, &false; otherwise.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If <parameter>enable</parameter> is a <type>bool</type>, the function will try to enable or disable the VT100 features of the stream <parameter>stream</parameter>.
    If the feature has been successfully enabled (or disabled), the function will return &true;, or &false; otherwise.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    At startup, PHP tries to enable the VT100 feature of the <constant>STDOUT</constant>/<constant>STDERR</constant> streams. By the way, if those streams are redirected to a file, the VT100 features may not be enabled.
-  </para>
-  <para>
-   If VT100 support is enabled, it is possible to use control sequences as they are known from the VT100 terminal. 
+  </simpara>
+  <simpara>
+   If VT100 support is enabled, it is possible to use control sequences as they are known from the VT100 terminal.
    They allow the modification of the terminal's output. On Windows these sequences are called Console Virtual Terminal Sequences.
-  </para>
+  </simpara>
   <warning>
    <simpara>
     This function uses the <constant>ENABLE_VIRTUAL_TERMINAL_PROCESSING</constant> flag implemented in the Windows 10 API, so the VT100 feature may not be available on older Windows versions.
    </simpara>
   </warning>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   <variablelist>
    <varlistentry>
     <term><parameter>stream</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The stream on which the function will operate.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>enable</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       If <type>bool</type>, the VT100 feature will be enabled (if &true;) or disabled (if &false;).
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    If <parameter>enable</parameter> is &null;: returns &true; if the VT100 feature is enabled, &false; otherwise.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If <parameter>enable</parameter> is a <type>bool</type>: &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -87,14 +87,14 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <example>
    <title><function>sapi_windows_vt100_support</function> default state</title>
-   <para>
+   <simpara>
     By default, <constant>STDOUT</constant> and <constant>STDERR</constant> have the VT100 feature enabled.
-   </para>
+   </simpara>
    <programlisting role="sh">
     php -r "var_export(sapi_windows_vt100_support(STDOUT));echo ' ';var_export(sapi_windows_vt100_support(STDERR));"
    </programlisting>
@@ -104,9 +104,9 @@
 true true
 ]]>
    </screen>
-   <para>
+   <simpara>
     By the way, if a stream is redirected, the VT100 feature will not be enabled:
-   </para>
+   </simpara>
    <programlisting role="sh">
     php -r "var_export(sapi_windows_vt100_support(STDOUT));echo ' ';var_export(sapi_windows_vt100_support(STDERR));" 2&gt;NUL
    </programlisting>
@@ -117,9 +117,9 @@ true true
   </example>
   <example>
    <title><function>sapi_windows_vt100_support</function> changing state</title>
-   <para>
+   <simpara>
     You won't be able to enable the VT100 feature of <constant>STDOUT</constant> or <constant>STDERR</constant> if the stream is redirected.
-   </para>
+   </simpara>
    <programlisting role="sh">
     php -r "var_export(sapi_windows_vt100_support(STDOUT, true));echo ' ';var_export(sapi_windows_vt100_support(STDERR, true));" 2&gt;NUL
    </programlisting>

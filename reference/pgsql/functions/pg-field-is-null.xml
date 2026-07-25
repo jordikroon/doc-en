@@ -20,14 +20,14 @@
    <methodparam><type>PgSql\Result</type><parameter>result</parameter></methodparam>
    <methodparam><type>mixed</type><parameter>field</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_field_is_null</function> tests if a field in an <classname>PgSql\Result</classname> instance
    is SQL <literal>NULL</literal> or not.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     This function used to be called <function>pg_fieldisnull</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -44,19 +44,19 @@
     <varlistentry>
      <term><parameter>row</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Row number in result to fetch.  Rows are numbered from 0 upwards.  If omitted,
        current row is fetched.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>field</parameter></term>
       <listitem>
-       <para>
-        Field number (starting from 0) as an <type>int</type> or 
+       <simpara>
+        Field number (starting from 0) as an <type>int</type> or
         the field name as a <type>string</type>.
-       </para>
+       </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -65,10 +65,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns <literal>1</literal> if the field in the given row is SQL <literal>NULL</literal>, <literal>0</literal>
    if not.  &false; is returned if the row is out of range, or upon any other error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -104,7 +104,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>

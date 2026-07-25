@@ -14,19 +14,19 @@
    <methodparam><type>PgSql\Lob</type><parameter>lob</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>length</parameter><initializer>8192</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_lo_read</function> reads at most
    <parameter>length</parameter> bytes from a large object and
    returns it as a <type>string</type>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    To use the large object interface, it is necessary to
    enclose it within a transaction block.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     This function used to be called <function>pg_loread</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -43,9 +43,9 @@
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An optional maximum number of bytes to return.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -54,10 +54,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A <type>string</type> containing <parameter>length</parameter> bytes from the
    large object, or &false; on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -76,7 +76,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -95,10 +95,10 @@
 ?>
 ]]>
     </programlisting>
-   </example> 
+   </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

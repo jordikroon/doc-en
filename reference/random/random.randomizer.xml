@@ -8,9 +8,9 @@
 <!-- {{{ Random\Randomizer intro -->
   <section xml:id="random-randomizer.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Provides a high-level API to the randomness provided by an <classname>Random\Engine</classname>.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -52,9 +52,9 @@
     <varlistentry xml:id="random-randomizer.props.engine">
      <term><varname>engine</varname></term>
      <listitem>
-      <para>
+      <simpara>
        The low-level source of randomness for the <type>Random\Randomizer</type>’s methods.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

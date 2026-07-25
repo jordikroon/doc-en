@@ -9,13 +9,13 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    PHP provides a number of miscellaneous I/O streams that allow access to
    PHP's own input and output streams, the standard input, output and error
    file descriptors, in-memory and disk-backed temporary file streams, and
    filters that can manipulate other file resources as they are read from and
    written to.
-  </para>
+  </simpara>
 
   <refsect2 xml:id="wrappers.php.std">
    <title>php://stdin, php://stdout and php://stderr</title>
@@ -52,11 +52,11 @@
 
   <refsect2 xml:id="wrappers.php.output">
    <title>php://output</title>
-   <para>
+   <simpara>
     <filename>php://output</filename> is a write-only stream that allows you to
     write to the output buffer mechanism in the same way as
     <function>print</function> and <function>echo</function>.
-   </para>
+   </simpara>
   </refsect2>
 
   <refsect2 xml:id="wrappers.php.fd">
@@ -108,11 +108,11 @@
     where there is otherwise no opportunity to apply a filter to the stream
     prior the contents being read.
    </simpara>
-   <para>
+   <simpara>
     The <filename>php://filter</filename> target takes the following parameters
     as part of its path. Multiple filter chains can be specified on one path.
     Please refer to the examples for specifics on using these parameters.
-   </para>
+   </simpara>
    <para>
     <table>
      <title>php://filter parameters</title>
@@ -280,10 +280,10 @@
   &reftitle.examples;
   <example>
    <title>php://temp/maxmemory</title>
-   <para>
+   <simpara>
     This optional parameter allows setting the memory limit before
     <filename>php://temp</filename> starts using a temporary file.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -302,11 +302,11 @@ echo stream_get_contents($fp);
   </example>
   <example>
    <title>php://filter/resource=&lt;stream to be filtered&gt;</title>
-   <para>
+   <simpara>
     This parameter must be located at
     the end of your <filename>php://filter</filename> specification and
     should point to the stream which you want filtered.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -321,10 +321,10 @@ readfile("php://filter/resource=http://www.example.com");
   </example>
   <example>
    <title>php://filter/read=&lt;filter list to apply to read chain&gt;</title>
-   <para>
+   <simpara>
     This parameter takes one or more
     filternames separated by the pipe character <literal>|</literal>.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -341,10 +341,10 @@ readfile("php://filter/read=string.toupper|string.rot13/resource=http://www.exam
   </example>
   <example>
    <title>php://filter/write=&lt;filter list to apply to write chain&gt;</title>
-   <para>
+   <simpara>
     This parameter takes one or more
     filternames separated by the pipe character <literal>|</literal>.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -358,11 +358,11 @@ file_put_contents("php://filter/write=string.rot13/resource=example.txt","Hello 
   </example>
   <example>
    <title>php://memory and php://temp are not reusable</title>
-   <para>
+   <simpara>
     <filename>php://memory</filename> and <filename>php://temp</filename>
     are not reusable, i.e. after the streams have been closed there is no way
     to refer to them again.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -373,10 +373,10 @@ echo file_get_contents('php://memory'); // prints nothing
   </example>
   <example>
    <title>php://input to read JSON data from the request body</title>
-   <para>
+   <simpara>
     This example demonstrates how to read raw JSON data from POST, PUT and
     PATCH requests using <filename>php://input</filename>.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

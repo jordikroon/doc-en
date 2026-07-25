@@ -8,24 +8,24 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="IntlCalendar">
    <modifier>public</modifier> <type class="union"><type>string</type><type>false</type></type><methodname>IntlCalendar::getLocale</methodname>
    <methodparam><type>int</type><parameter>type</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>intlcal_get_locale</methodname>
    <methodparam><type>IntlCalendar</type><parameter>calendar</parameter></methodparam>
    <methodparam><type>int</type><parameter>type</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the locale used by this calendar object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -40,14 +40,14 @@
    <varlistentry>
     <term><parameter>type</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Whether to fetch the actual locale (the locale from which the calendar
       data originates, with <constant>Locale::ACTUAL_LOCALE</constant>) or the
       valid locale, i.e., the most specific locale supported by ICU relatively
       to the requested locale – see <constant>Locale::VALID_LOCALE</constant>.
       From the most general to the most specific, the locales are ordered in
       this fashion – actual locale, valid locale, requested locale.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -55,9 +55,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A locale string&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

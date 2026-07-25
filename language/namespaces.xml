@@ -80,11 +80,11 @@ echo constant($d); // see "Namespaces and dynamic language features" section
     </simpara>
    </note>
   <note>
-   <para>
+   <simpara>
     The Namespace name <literal>PHP</literal>, and compound names starting
     with this name (like <literal>PHP\Classes</literal>) are reserved for internal language use
     and should not be used in the userspace code.
-   </para>
+   </simpara>
   </note>
  </sect1>
 
@@ -92,11 +92,11 @@ echo constant($d); // see "Namespaces and dynamic language features" section
   <title>Defining namespaces</title>
   <titleabbrev>Namespaces</titleabbrev>
   <?phpdoc print-version-for="namespaces"?>
-  <para>
+  <simpara>
    Although any valid PHP code can be contained within a namespace, only the following
    types of code are affected by namespaces: classes (including abstract classes, traits and enums), interfaces,
    functions and constants.
-  </para>
+  </simpara>
   <para>
    Namespaces are declared using the <literal>namespace</literal>
    keyword. A file containing a namespace must declare the namespace
@@ -135,10 +135,10 @@ namespace MyProject; // fatal error - namespace must be the first statement in t
     </programlisting>
    </example>
   </para>
-  <para>
+  <simpara>
    In addition, unlike any other PHP construct, the same namespace may be defined
    in multiple files, allowing splitting up of a namespace's contents across the filesystem.
-  </para>
+  </simpara>
  </sect1>
  <sect1 xml:id="language.namespaces.nested">
   <title>Declaring sub-namespaces</title>
@@ -170,10 +170,10 @@ function connect() { /* ... */  }
   <title>Defining multiple namespaces in the same file</title>
   <titleabbrev>Defining multiple namespaces in the same file</titleabbrev>
   <?phpdoc print-version-for="namespaces"?>
-  <para>
+  <simpara>
    Multiple namespaces may also be declared in the same file. There are two allowed
    syntaxes.
-  </para>
+  </simpara>
   <para>
    <example>
     <title>Declaring multiple namespaces, simple combination syntax</title>
@@ -195,10 +195,10 @@ function connect() { /* ... */  }
     </programlisting>
    </example>
   </para>
-  <para>
+  <simpara>
    This syntax is not recommended for combining namespaces into a single file.
    Instead it is recommended to use the alternate bracketed syntax.
-  </para>
+  </simpara>
   <para>
    <example>
     <title>Declaring multiple namespaces, bracketed syntax</title>
@@ -222,11 +222,11 @@ function connect() { /* ... */  }
     </programlisting>
    </example>
   </para>
-  <para>
+  <simpara>
    It is strongly discouraged as a coding practice to combine multiple namespaces into
    the same file. The primary use case is to combine multiple PHP scripts into the same
    file.
-  </para>
+  </simpara>
   <para>
    To combine global non-namespaced code with namespaced code, only bracketed syntax is
    supported. Global code should be
@@ -415,7 +415,7 @@ echo \Foo\Bar\FOO; // resolves to constant Foo\Bar\FOO
   <para>
    Note that to access any global
    class, function or constant, a fully qualified name can be used, such as
-   <function>\strlen</function> or <classname>\Exception</classname> or
+   <function>\strlen</function> or <exceptionname>\Exception</exceptionname> or
    \<constant>INI_ALL</constant>.
    <example>
     <title>Accessing global classes, functions and constants from within a namespace</title>
@@ -509,20 +509,20 @@ echo constant('namespacename\constname'), "\n"; // also prints namespaced
     </programlisting>
    </example>
   </para>
-  <para>
+  <simpara>
    Be sure to read the <link linkend="language.namespaces.faq.quote">note about
    escaping namespace names in strings</link>.
-  </para>
+  </simpara>
  </sect1>
  <sect1 xml:id="language.namespaces.nsconstants">
   <title>The namespace keyword and __NAMESPACE__ magic constant</title>
   <titleabbrev>namespace keyword and __NAMESPACE__</titleabbrev>
   <?phpdoc print-version-for="namespaces"?>
-  <para>
+  <simpara>
    PHP supports two ways of abstractly accessing elements within the current namespace,
    the <constant>__NAMESPACE__</constant> magic constant, and the <literal>namespace</literal>
    keyword.
-  </para>
+  </simpara>
   <para>
    The value of <constant>__NAMESPACE__</constant> is a string that contains the current
    namespace name. In global, un-namespaced code, it contains an empty string.
@@ -609,14 +609,14 @@ $b = namespace\CONSTANT; // assigns value of constant CONSTANT to $b
   <title>Using namespaces: Aliasing/Importing</title>
   <titleabbrev>Aliasing and Importing</titleabbrev>
   <?phpdoc print-version-for="namespaces"?>
-  <para>
+  <simpara>
    The ability to refer to an external fully qualified name with an alias, or importing,
    is an important feature of namespaces. This is similar to the
    ability of unix-based filesystems to create symbolic links to a file or to a directory.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    PHP can alias(/import) constants, functions, classes, interfaces, traits, enums and namespaces.
-  </para>
+  </simpara>
   <para>
    Aliasing is accomplished with the <literal>use</literal> operator.
    Here is an example showing all 5 kinds of importing:
@@ -712,14 +712,14 @@ $obj = new \Another\thing; // instantiates object of class Another\thing
   </para>
   <sect2 xml:id="language.namespaces.importing.scope">
    <title>Scoping rules for importing</title>
-   <para>
+   <simpara>
     The <literal>use</literal> keyword must be declared in the
     outermost scope of a file (the global scope) or inside namespace
     declarations. This is because the importing is done at compile
     time and not runtime, so it cannot be block scoped. The following
     example will show an illegal use of the <literal>use</literal>
     keyword:
-   </para>
+   </simpara>
    <para>
     <example>
      <title>Illegal importing rule</title>
@@ -739,19 +739,19 @@ function toGreenlandic()
     </example>
    </para>
    <note>
-    <para>
+    <simpara>
      Importing rules are per file basis, meaning included files will
      <emphasis>NOT</emphasis> inherit the parent file's importing rules.
-    </para>
+    </simpara>
    </note>
   </sect2>
   <sect2 xml:id="language.namespaces.importing.group">
    <title>Group <literal>use</literal> declarations</title>
-   <para>
+   <simpara>
     Classes, functions and constants being imported from
     the same &namespace; can be grouped together in a single &use.namespace;
     statement.
-   </para>
+   </simpara>
    <informalexample>
     <programlisting role="php" annotations="non-interactive">
 <![CDATA[
@@ -875,36 +875,36 @@ if (is_array('hi')) { // prints "is not array"
     <varlistentry>
      <term>Unqualified name</term>
      <listitem>
-      <para>
+      <simpara>
        This is an identifier without a namespace separator, such as <literal>Foo</literal>
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term>Qualified name</term>
      <listitem>
-      <para>
+      <simpara>
        This is an identifier with a namespace separator, such as <literal>Foo\Bar</literal>
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term>Fully qualified name</term>
      <listitem>
-      <para>
+      <simpara>
        This is an identifier with a namespace separator that begins with a
        namespace separator, such as <literal>\Foo\Bar</literal>. The namespace
        <literal>\Foo</literal> is also a fully qualified name.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term>Relative name</term>
      <listitem>
-      <para>
+      <simpara>
        This is an identifier starting with <literal>namespace</literal>, such as
        <literal>namespace\Foo\Bar</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -1054,10 +1054,10 @@ A\B::foo();   // calls method "foo" of class "B" from namespace "A\A"
   <title>FAQ: things you need to know about namespaces</title>
   <titleabbrev>FAQ</titleabbrev>
   <?phpdoc print-version-for="namespaces"?>
-  <para>
+  <simpara>
    This FAQ is split into two sections: common questions, and some specifics of
    implementation that are helpful to understand fully.
-  </para>
+  </simpara>
   <para>
    First, the common questions.
    <orderedlist>
@@ -1146,11 +1146,11 @@ A\B::foo();   // calls method "foo" of class "B" from namespace "A\A"
   </para>
   <sect2 xml:id="language.namespaces.faq.shouldicare">
    <title>If I don't use namespaces, should I care about any of this?</title>
-   <para>
+   <simpara>
     No. Namespaces do not affect any existing code in any way, or any
     as-yet-to-be-written code that does not contain namespaces. You can
     write this code if you wish:
-   </para>
+   </simpara>
    <para>
     <example>
      <title>Accessing global classes outside a namespace</title>
@@ -1163,9 +1163,9 @@ print $a::class;
      </programlisting>
     </example>
    </para>
-   <para>
+   <simpara>
     This is functionally equivalent to:
-   </para>
+   </simpara>
    <para>
     <example>
      <title>Accessing global classes outside a namespace</title>
@@ -1265,18 +1265,18 @@ $a = \INI_ALL; // $a is set to the value of constant "INI_ALL"
   </sect2>
   <sect2 xml:id="language.namespaces.faq.qualified">
    <title>How does a name like <literal>my\name</literal> resolve?</title>
-   <para>
+   <simpara>
     Names that contain a backslash but do not begin with a backslash like
     <literal>my\name</literal> can be resolved in 2 different ways.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     If there is
     an import statement that aliases another name to <literal>my</literal>, then
     the import alias is applied to the <literal>my</literal> in <literal>my\name</literal>.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     Otherwise, the current namespace name is prepended to <literal>my\name</literal>.
-   </para>
+   </simpara>
    <para>
     <example>
      <title>Qualified names</title>
@@ -1297,18 +1297,18 @@ $a = my\BAR; // sets $a to the value of constant "foo\my\BAR"
   </sect2>
   <sect2 xml:id="language.namespaces.faq.shortname1">
    <title>How does an unqualified class name like <literal>name</literal> resolve?</title>
-   <para>
+   <simpara>
     Class names that do not contain a backslash like
     <literal>name</literal> can be resolved in 2 different ways.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     If there is
     an import statement that aliases another name to <literal>name</literal>, then
     the import alias is applied.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     Otherwise, the current namespace name is prepended to <literal>name</literal>.
-   </para>
+   </simpara>
    <para>
     <example>
      <title>Unqualified class names</title>
@@ -1330,18 +1330,18 @@ foo::name(); // calls static method "name" in class "blah\blah"
     How does an unqualified function name or unqualified constant name
     like <literal>name</literal> resolve?
    </title>
-   <para>
+   <simpara>
     Function or constant names that do not contain a backslash like
     <literal>name</literal> can be resolved in 2 different ways.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     First, the current namespace name is prepended to <literal>name</literal>.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     Finally, if the constant or function <literal>name</literal> does not exist
     in the current namespace, a global constant or function <literal>name</literal>
     is used if it exists.
-   </para>
+   </simpara>
    <para>
     <example>
      <title>Unqualified function or constant names</title>

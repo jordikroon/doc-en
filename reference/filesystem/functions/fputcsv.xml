@@ -5,7 +5,7 @@
   <refname>fputcsv</refname>
   <refpurpose>Format line as CSV and write to file pointer</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -17,12 +17,12 @@
    <methodparam choice="opt"><type>string</type><parameter>escape</parameter><initializer>"\\"</initializer></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>eol</parameter><initializer>"\n"</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>fputcsv</function> formats a line (passed as a
    <parameter>fields</parameter> array) as <acronym>CSV</acronym> and writes it
    (terminated by a <parameter>eol</parameter>) to the specified
    <parameter>stream</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -38,9 +38,9 @@
     <varlistentry>
      <term><parameter>fields</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An array of <type>string</type>s.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('function.fgetcsv')/db:refsect1[@role='parameters']//db:varlistentry[db:term[db:parameter[text()='separator']]]/.)"/>
@@ -49,29 +49,29 @@
     <varlistentry>
      <term><parameter>eol</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The optional <parameter>eol</parameter> parameter sets
        a custom End of Line sequence.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
   &warning.csv.escape-parameter;
   <note>
-   <para>
+   <simpara>
     If an <parameter>enclosure</parameter> character is contained in a field,
     it will be escaped by doubling it, unless it is immediately preceded by an
     <parameter>escape</parameter>.
-   </para>
-  </note> 
+   </simpara>
+  </note>
  </refsect1>
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the length of the written string &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('function.fgetcsv')/db:refsect1[@role='errors']/.)"/>
@@ -133,7 +133,7 @@ fclose($fp);
 ?>
 ]]>
     </programlisting>
-    <para>The above example will write the following to <literal>file.csv</literal>:</para>
+    <simpara>The above example will write the following to <literal>file.csv</literal>:</simpara>
     <screen>
 <![CDATA[
 aaa,bbb,ccc,dddd

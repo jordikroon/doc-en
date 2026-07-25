@@ -15,7 +15,7 @@
   </constructorsynopsis>
   <para>
    Creates a filtered iterator from a <interfacename>RecursiveIterator</interfacename>
-   using the <parameter>callback</parameter> to determine which 
+   using the <parameter>callback</parameter> to determine which
    items are accepted or rejected.
   </para>
  </refsect1>
@@ -26,22 +26,22 @@
    <varlistentry>
     <term><parameter>iterator</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The recursive iterator to be filtered.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>callback</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The callback, which should return &true; to accept the current item
       or &false; otherwise.
       See <link linkend="recursivecallbackfilteriterator.examples">Examples</link>.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       May be any valid <type>callable</type> value.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>

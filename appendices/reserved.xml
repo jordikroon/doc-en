@@ -3,21 +3,21 @@
 
  <appendix xml:id="reserved" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
   <title>List of Reserved Words</title>
-  <para>
+  <simpara>
    The following is a listing of predefined identifiers in PHP. None
    of the identifiers listed here should be used as identifiers in any of
    your scripts unless explicitly noted otherwise. These lists include keywords and predefined variables,
    constant, and class names. These lists are neither exhaustive nor
    complete.
-  </para>
+  </simpara>
 
   <sect1 xml:id="reserved.keywords">
   <title>List of Keywords</title>
    <simpara>
-    These words have special meaning in PHP. Some of them represent things 
-    which look like functions, some look like constants, and so on - but 
+    These words have special meaning in PHP. Some of them represent things
+    which look like functions, some look like constants, and so on - but
     they're not, really: they are language constructs.
-    The following words cannot be used as constants, class names, or function names. 
+    The following words cannot be used as constants, class names, or function names.
     They are, however, allowed as property, constant, and
     method names of classes, interfaces and traits, except that
     <literal>class</literal> may not be used as constant name.
@@ -290,7 +290,7 @@
        <entry>
         <link linkend="language.constants.magic">__CLASS__</link>
        </entry>
-       <entry> 
+       <entry>
         <link linkend="language.constants.magic">__DIR__</link>
        </entry>
        <entry>
@@ -332,10 +332,10 @@
 
   <sect1 xml:id="reserved.classes">
    <title>Predefined Classes</title>
-   <para>
+   <simpara>
     This section lists standard predefined classes. Miscellaneous extensions
     define other classes which are described in their reference.
-   </para>
+   </simpara>
 
    <sect2 xml:id="reserved.classes.standard">
     <title>Standard Defined Classes</title>
@@ -373,14 +373,14 @@
       </listitem>
      </varlistentry>
      <varlistentry>
-      <term><classname>Exception</classname></term>
+      <term><exceptionname>Exception</exceptionname></term>
       <listitem>
        <simpara>
        </simpara>
       </listitem>
      </varlistentry>
      <varlistentry>
-      <term><classname>ErrorException</classname></term>
+      <term><exceptionname>ErrorException</exceptionname></term>
       <listitem>
        <simpara>
 
@@ -415,49 +415,49 @@
       </listitem>
      </varlistentry>
      <varlistentry>
-      <term><classname>ArithmeticError</classname></term>
+      <term><exceptionname>ArithmeticError</exceptionname></term>
       <listitem>
        <simpara>
        </simpara>
       </listitem>
      </varlistentry>
      <varlistentry>
-      <term><classname>AssertionError</classname></term>
+      <term><exceptionname>AssertionError</exceptionname></term>
       <listitem>
        <simpara>
        </simpara>
       </listitem>
      </varlistentry>
      <varlistentry>
-      <term><classname>DivisionByZeroError</classname></term>
+      <term><exceptionname>DivisionByZeroError</exceptionname></term>
       <listitem>
        <simpara>
        </simpara>
       </listitem>
      </varlistentry>
      <varlistentry>
-      <term><classname>Error</classname></term>
+      <term><exceptionname>Error</exceptionname></term>
       <listitem>
        <simpara>
        </simpara>
       </listitem>
      </varlistentry>
      <varlistentry>
-      <term><classname>Throwable</classname></term>
+      <term><exceptionname>Throwable</exceptionname></term>
       <listitem>
        <simpara>
        </simpara>
       </listitem>
      </varlistentry>
      <varlistentry>
-      <term><classname>ParseError</classname></term>
+      <term><exceptionname>ParseError</exceptionname></term>
       <listitem>
        <simpara>
        </simpara>
       </listitem>
      </varlistentry>
      <varlistentry>
-      <term><classname>TypeError</classname></term>
+      <term><exceptionname>TypeError</exceptionname></term>
       <listitem>
        <simpara>
        </simpara>
@@ -468,12 +468,12 @@
 
    <sect2 xml:id="reserved.classes.special">
     <title>Special classes</title>
-    
+
     <simpara>
      Following identifiers may not be used as a class name as they have
      special purpose.
     </simpara>
-    
+
     <variablelist>
      <varlistentry>
       <term><classname>self</classname></term>
@@ -578,12 +578,12 @@
      </tgroup>
     </table>
    </para>
-   <para>
+   <simpara>
     The following list of words have had soft reservations placed on them.
     Whilst they may still be used as class, interface, and trait names
     usage of them is highly discouraged since they may be
     used in future versions of PHP.
-   </para>
+   </simpara>
    <para>
     <table>
      <title>Soft reserved words</title>

@@ -5,31 +5,31 @@
   <refname>XMLReader::readString</refname>
   <refpurpose>Reads the contents of the current node as a string</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="XMLReader">
    <modifier>public</modifier> <type>string</type><methodname>XMLReader::readString</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Reads the contents of the current node as a string.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   &no.function.parameters;
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the content of the current node as a string. Empty string on
    failure.
-  </para>
+  </simpara>
  </refsect1>
- 
+
 <!--
  <refsect1 role="examples">
   &reftitle.examples;
@@ -63,12 +63,12 @@ Use a screen like we did below
   </para>
  </refsect1>
 -->
- 
+
  <refsect1 role="notes">
   &reftitle.notes;
   &xmlreader.libxml20620.note;
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

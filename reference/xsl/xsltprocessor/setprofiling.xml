@@ -11,10 +11,10 @@
    <modifier>public</modifier> <type>true</type><methodname>XSLTProcessor::setProfiling</methodname>
    <methodparam><type class="union"><type>string</type><type>null</type></type><parameter>filename</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   Sets the file to output profiling information when processing 
+  <simpara>
+   Sets the file to output profiling information when processing
    a stylesheet.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path to the file to dump profiling information.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,9 +35,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -64,10 +64,10 @@ echo trim($proc->transformToDoc($xml)->firstChild->wholeText);
 ?>
 ]]>
     </programlisting>
-    <para>
-     The above code will produce the following information 
+    <simpara>
+     The above code will produce the following information
      in the profiling file:
-    </para>
+    </simpara>
     <screen>
 <![CDATA[
 number               match                name      mode  Calls Tot 100us Avg

@@ -17,15 +17,15 @@
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>bcc</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>return_path</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function allows sending of emails with correct handling of
-   Cc and Bcc receivers. 
-  </para>
-  <para>
+   Cc and Bcc receivers.
+  </simpara>
+  <simpara>
    The parameters <parameter>to</parameter>, <parameter>cc</parameter>
    and <parameter>bcc</parameter> are all strings and are all parsed
    as <link xlink:href="&url.rfc;822">RFC822</link> address lists.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -34,58 +34,58 @@
     <varlistentry>
      <term><parameter>to</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The receiver
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>subject</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The mail subject
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>message</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The mail body, see <function>imap_mail_compose</function>
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>additional_headers</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        As string with additional headers to be set on the mail
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>cc</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>bcc</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The receivers specified in <parameter>bcc</parameter> will get the
        mail, but are excluded from the headers.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>return_path</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Use this parameter to specify return path upon mail delivery failure.
        This is useful when using PHP as a mail client for multiple users.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -93,9 +93,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

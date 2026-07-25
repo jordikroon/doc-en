@@ -15,10 +15,10 @@
    <modifier>public</modifier> <type>int</type><methodname>SQLite3::changes</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the number of database rows that were changed (or inserted or
    deleted) by the most recent SQL statement.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,11 +28,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an <type>int</type> value corresponding to the number of
    database rows changed (or inserted or deleted) by the most recent SQL
    statement.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

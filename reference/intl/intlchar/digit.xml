@@ -13,9 +13,9 @@
    <methodparam><type class="union"><type>int</type><type>string</type></type><parameter>codepoint</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>base</parameter><initializer>10</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the decimal digit value of the code point in the specified radix.
-  </para>
+  </simpara>
   <para>
    If the radix is not in the range <literal>2 &lt;= radix &lt;= 36</literal> or
    if the value of <parameter>codepoint</parameter>
@@ -59,9 +59,9 @@
    <varlistentry>
     <term><parameter>base</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The radix (defaults to <literal>10</literal>).
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -69,10 +69,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the numeric value represented by the character in the specified radix,
    or &false; if there is no value or if the value exceeds the radix. Returns &null; on failure.
-  </para>
+  </simpara>
   &return.falseproblem;
  </refsect1>
 

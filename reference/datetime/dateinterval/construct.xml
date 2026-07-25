@@ -12,9 +12,9 @@
    <modifier>public</modifier> <methodname>DateInterval::__construct</methodname>
    <methodparam><type>string</type><parameter>duration</parameter></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Creates a new DateInterval object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,10 +24,10 @@
     <varlistentry>
      <term><parameter>duration</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An interval specification.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        The format starts with the letter <literal>P</literal>,
        for <quote>period.</quote>
        Each duration period is represented by an integer value
@@ -35,7 +35,7 @@
        If the duration contains time elements, that portion
        of the specification is preceded by the letter
        <literal>T</literal>.
-      </para>
+      </simpara>
       <para>
        <table>
         <title>
@@ -84,14 +84,14 @@
         </tgroup>
        </table>
       </para>
-      <para>
+      <simpara>
        Here are some simple examples.
        Two days is <literal>P2D</literal>.
        Two seconds is <literal>PT2S</literal>.
        Six years and five minutes is <literal>P6YT5M</literal>.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         The unit types must be entered from the largest
         scale unit on the left to the smallest scale unit
         on the right.
@@ -99,19 +99,19 @@
         days before minutes, etc.
         Thus one year and four days must be represented as
         <literal>P1Y4D</literal>, not <literal>P4D1Y</literal>.
-       </para>
+       </simpara>
       </note>
-      <para>
+      <simpara>
        The specification can also be represented as a date time.
        A sample of one year and four days would be
        <literal>P0001-00-04T00:00:00</literal>.
        But the values in this format can not exceed a given period's
        roll-over-point (e.g. <literal>25</literal> hours is invalid).
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        These formats are based on the <link xlink:href="&url.iso-8601.duration;">ISO 8601 duration
        specification</link>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -121,7 +121,7 @@
  <refsect1 role="errors">
   &reftitle.errors;
   <para>
-   Throws an <classname>DateMalformedIntervalStringException</classname> when
+   Throws an <exceptionname>DateMalformedIntervalStringException</exceptionname> when
    the <parameter>duration</parameter> cannot be parsed as an interval. Prior
    to PHP 8.3, this was <exceptionname>Exception</exceptionname>.
   </para>

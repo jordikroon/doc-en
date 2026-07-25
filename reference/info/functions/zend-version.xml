@@ -5,17 +5,17 @@
   <refname>zend_version</refname>
   <refpurpose>Gets the version of the current Zend engine</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>string</type><methodname>zend_version</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a string containing the version of the currently running
    Zend Engine.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the Zend Engine version number, as a string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

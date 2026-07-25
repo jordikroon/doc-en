@@ -6,17 +6,17 @@
   <refname>$_FILES</refname>
   <refpurpose>HTTP File Upload variables</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    An associative <type>array</type> of items uploaded to the current script
    via the HTTP POST method. The structure of this array is outlined in the
    <link linkend="features.file-upload.post-method">POST method uploads</link>
    section.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="notes">
   &reftitle.notes;
   &note.is-superglobal;
@@ -33,7 +33,7 @@
  </refsect1>
 
 </refentry>
- 
+
 <!-- Keep this comment at the end of the file
 Local variables:
 mode: sgml

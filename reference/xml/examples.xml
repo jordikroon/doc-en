@@ -57,12 +57,12 @@ while ($data = fread($fp, 4096)) {
   <para>
    <example>
     <title>Map XML to HTML</title>
-    <para>
+    <simpara>
      This example maps tags in an XML document directly to HTML
      tags.  Elements not found in the "map array" are ignored.  Of
      course, this example will only work with a specific XML
      document type.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -119,17 +119,17 @@ while ($data = fread($fp, 4096)) {
 
  <section xml:id="example.xml-external-entity">
   <title>XML External Entity Example</title>
-  <para>
+  <simpara>
    This example highlights XML code.  It illustrates how to use an
    external entity reference handler to include and parse other
    documents, as well as how PIs can be processed, and a way of
    determining "trust" for PIs containing code.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    XML documents that can be used for this example are found below
    the example (<filename>xmltest.xml</filename> and
    <filename>xmltest2.xml</filename>.)
-  </para>
+  </simpara>
   <para>
    <example>
     <title>External Entity Example</title>

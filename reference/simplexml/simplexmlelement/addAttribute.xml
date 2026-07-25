@@ -15,9 +15,9 @@
    <methodparam><type>string</type><parameter>value</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>namespace</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Adds an attribute to the SimpleXML element.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,25 +27,25 @@
     <varlistentry>
      <term><parameter>qualifiedName</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The name of the attribute to add.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The value of the attribute.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>namespace</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If specified, the namespace to which the attribute belongs.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -54,20 +54,20 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
    <note>
-    <para>
+    <simpara>
      Listed examples may include <literal>examples/simplexml-data.php</literal>,
      which refers to the XML string found in the first example
      of the <link linkend="simplexml.examples-basic">basic usage</link> guide.
-    </para>
+    </simpara>
    </note>
    <example>
     <title>Add attributes and children to a SimpleXML element</title>
@@ -76,7 +76,7 @@
 <?php
 
 include 'examples/simplexml-data.php';
- 
+
 $sxe = new SimpleXMLElement($xmlstr);
 $sxe->addAttribute('type', 'documentary');
 
@@ -91,7 +91,7 @@ $character->addChild('actor', 'John Doe');
 
 $rating = $movie->addChild('rating', '5');
 $rating->addAttribute('type', 'stars');
- 
+
 echo $sxe->asXML();
 
 ?>

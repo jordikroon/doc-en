@@ -15,10 +15,10 @@
    <methodparam choice="opt"><type>int</type><parameter>argCount</parameter><initializer>-1</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Registers a PHP function or user-defined function for use as an SQL scalar
    function for use within SQL statements.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,18 +28,18 @@
     <varlistentry>
      <term><parameter>name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Name of the SQL function to be created or redefined.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>callback</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The name of a PHP function or user-defined function to apply as a
        callback, defining the behavior of the SQL function.
-      </para>
+      </simpara>
       <para>
        This function need to be defined as:
        <methodsynopsis>
@@ -51,42 +51,42 @@
         <varlistentry>
          <term><parameter>value</parameter></term>
          <listitem>
-          <para>
+          <simpara>
            The first argument passed to the SQL function.
-          </para>
+          </simpara>
          </listitem>
         </varlistentry>
         <varlistentry>
          <term><parameter>values</parameter></term>
          <listitem>
-          <para>
+          <simpara>
            Further arguments passed to the SQL function.
-          </para>
+          </simpara>
          </listitem>
         </varlistentry>
        </variablelist>
-      </para> 
+      </para>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>argCount</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number of arguments that the SQL function takes. If
        this parameter is <literal>-1</literal>, then the SQL function may take
        any number of arguments.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A bitwise conjunction of flags. Currently, only
        <constant>SQLITE3_DETERMINISTIC</constant> is supported, which specifies
        that the function always returns the same result given the same inputs
        within a single SQL statement.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -96,9 +96,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; upon successful creation of the function, &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

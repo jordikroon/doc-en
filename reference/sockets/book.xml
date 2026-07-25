@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
- 
+
 <book xml:id="book.sockets" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <?phpdoc extension-membership="bundled" ?>
  <title>Sockets</title>
- 
+
  <!-- {{{ preface -->
  <preface xml:id="intro.sockets">
   &reftitle.intro;
-  <para>
+  <simpara>
    The socket extension implements a low-level interface to the socket
    communication functions based on the popular BSD sockets, providing the
    possibility to act as a socket server as well as a client.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    For a more generic client-side socket interface, see
-   <function>stream_socket_client</function>, 
+   <function>stream_socket_client</function>,
    <function>stream_socket_server</function>,
    <function>fsockopen</function>, and
    <function>pfsockopen</function>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    When using these functions, it is important to remember that while
    many of them have identical names to their C counterparts, they
    often have different declarations. Please be sure to read the
    descriptions to avoid confusion.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Those unfamiliar with socket programming can find a lot
    of useful material in the appropriate Unix man pages, and there is a great
    deal of tutorial information on socket programming in C on the web, much
    of which can be applied, with slight modifications, to socket programming
    in PHP. The <link xlink:href="&url.socket.faq;">Unix Socket
    FAQ</link> might be a good start.
-  </para>
+  </simpara>
  </preface>
  <!-- }}} -->
- 
+
  &reference.sockets.setup;
  &reference.sockets.constants;
  &reference.sockets.examples;

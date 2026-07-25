@@ -14,9 +14,9 @@
    <methodparam><type>DOMDocument</type><parameter>document</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>registerNodeNS</parameter><initializer>&true;</initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Creates a new <classname>DOMXPath</classname> object.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -25,10 +25,10 @@
     <varlistentry>
      <term><parameter>document</parameter></term>
      <listitem>
-      <para>
-       The <classname>DOMDocument</classname> associated with the 
+      <simpara>
+       The <classname>DOMDocument</classname> associated with the
        <classname>DOMXPath</classname>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     &dom.parameters.register_node_ns;

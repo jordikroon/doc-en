@@ -12,11 +12,11 @@
    <methodparam><type>int</type><parameter>width</parameter></methodparam>
    <methodparam><type>int</type><parameter>height</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>imagecreate</function> returns an image identifier
    representing a blank image of specified size.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    In general, we recommend the use of
    <function>imagecreatetruecolor</function> instead of
    <function>imagecreate</function> so that image processing occurs on the
@@ -24,7 +24,7 @@
    <function>imagetruecolortopalette</function> should be called immediately
    before saving the image with <function>imagepng</function> or
    <function>imagegif</function>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -33,17 +33,17 @@
     <varlistentry>
      <term><parameter>width</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The image width.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>height</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The image height.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -51,7 +51,7 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>&gd.return.identifier;</para>
+  <simpara>&gd.return.identifier;</simpara>
  </refsect1>
 
  <refsect1 role="changelog">

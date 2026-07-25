@@ -5,7 +5,7 @@
   <refname>pcntl_sigprocmask</refname>
   <refpurpose>Sets and retrieves blocked signals</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,10 +14,10 @@
    <methodparam><type>array</type><parameter>signals</parameter></methodparam>
    <methodparam choice="opt"><type>array</type><parameter role="reference">old_signals</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    The <function>pcntl_sigprocmask</function> function adds, removes or sets blocked
    signals, depending on the <parameter>mode</parameter> parameter.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,7 +29,7 @@
      <listitem>
       <para>
        Sets the behavior of <function>pcntl_sigprocmask</function>. Possible
-       values: 
+       values:
        <simplelist>
         <member><constant>SIG_BLOCK</constant>: Add the signals to the
          currently blocked signals.</member>
@@ -44,18 +44,18 @@
     <varlistentry>
      <term><parameter>signals</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        List of signals.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>old_signals</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <parameter>old_signals</parameter> parameter is set to an array
        containing the list of the previously blocked signals.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -64,9 +64,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -83,28 +83,28 @@
      <row>
       <entry>8.4.0</entry>
       <entry>
-       A <classname>ValueError</classname> is thrown if <parameter>signal</parameter>
+       A <exceptionname>ValueError</exceptionname> is thrown if <parameter>signal</parameter>
        is empty.
       </entry>
      </row>
      <row>
       <entry>8.4.0</entry>
       <entry>
-       A <classname>TypeError</classname> is thrown if <parameter>signal</parameter>
+       A <exceptionname>TypeError</exceptionname> is thrown if <parameter>signal</parameter>
        value is not an <type>int</type>.
       </entry>
      </row>
      <row>
       <entry>8.4.0</entry>
       <entry>
-       A <classname>ValueError</classname> is thrown if <parameter>signal</parameter>
+       A <exceptionname>ValueError</exceptionname> is thrown if <parameter>signal</parameter>
        value is invalid.
       </entry>
      </row>
      <row>
       <entry>8.4.0</entry>
       <entry>
-       A <classname>ValueError</classname> is thrown if <parameter>mode</parameter>
+       A <exceptionname>ValueError</exceptionname> is thrown if <parameter>mode</parameter>
        value is not <constant>SIG_BLOCK</constant>, <constant>SIG_UNBLOCK</constant> or
        <constant>SIG_SETMASK</constant>.
       </entry>

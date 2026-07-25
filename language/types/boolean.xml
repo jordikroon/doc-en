@@ -10,10 +10,10 @@
 
  <sect2 xml:id="language.types.boolean.syntax">
   <title>Syntax</title>
-  <para>
+  <simpara>
    To specify a <type>bool</type> literal, use the constants &true; or
    &false;. Both are case-insensitive.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -28,11 +28,11 @@ var_dump($foo); // bool(true)
    </programlisting>
   </informalexample>
 
-  <para>
+  <simpara>
    Typically, the result of an <link linkend="language.operators">operator</link>
    which returns a <type>bool</type> value is passed on to a
    <link linkend="language.control-structures">control structure</link>.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -74,10 +74,10 @@ if ($show_separators) {
    <link linkend="language.types.type-juggling">Type Juggling</link> page.
   </simpara>
 
-  <para>
+  <simpara>
    When converting to <type>bool</type>, the following values are considered
    &false;:
-  </para>
+  </simpara>
 
   <itemizedlist>
    <listitem>
@@ -123,11 +123,11 @@ if ($show_separators) {
    </listitem>
   </itemizedlist>
 
-  <para>
+  <simpara>
    Every other value is considered &true;
    (including <link linkend="language.types.resource">resource</link>
    and <constant>NAN</constant>).
-  </para>
+  </simpara>
 
   <warning>
    <simpara>

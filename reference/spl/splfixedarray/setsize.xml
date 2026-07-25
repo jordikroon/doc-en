@@ -5,21 +5,21 @@
   <refname>SplFixedArray::setSize</refname>
   <refpurpose>Change the size of an array</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="SplFixedArray">
    <modifier>public</modifier> <type>true</type><methodname>SplFixedArray::setSize</methodname>
    <methodparam><type>int</type><parameter>size</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   Change the size of an array to the new size of <parameter>size</parameter>. If 
-   <parameter>size</parameter> is less than the current array size, any values after the new size 
-   will be discarded. If <parameter>size</parameter> is greater than the current array size, the 
+  <simpara>
+   Change the size of an array to the new size of <parameter>size</parameter>. If
+   <parameter>size</parameter> is less than the current array size, any values after the new size
+   will be discarded. If <parameter>size</parameter> is greater than the current array size, the
    array will be padded with &null; values.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   <para>
@@ -27,9 +27,9 @@
     <varlistentry>
      <term><parameter>size</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The new array size. This should be a value between <literal>0</literal> and <constant>PHP_INT_MAX</constant>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

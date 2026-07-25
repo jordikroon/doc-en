@@ -12,11 +12,11 @@
    <methodparam><type>GdImage</type><parameter>image</parameter></methodparam>
    <methodparam><type>int</type><parameter>thickness</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>imagesetthickness</function> sets the thickness of the lines
    drawn when drawing rectangles, polygons, arcs etc. to
    <parameter>thickness</parameter> pixels.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -26,9 +26,9 @@
     <varlistentry>
      <term><parameter>thickness</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Thickness, in pixels.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -36,9 +36,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

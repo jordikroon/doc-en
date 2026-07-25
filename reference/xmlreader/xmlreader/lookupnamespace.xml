@@ -11,9 +11,9 @@
    <modifier>public</modifier> <type class="union"><type>string</type><type>null</type></type><methodname>XMLReader::lookupNamespace</methodname>
    <methodparam><type>string</type><parameter>prefix</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Lookup in scope namespace for a given prefix.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -22,9 +22,9 @@
     <varlistentry>
      <term><parameter>prefix</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        String containing the prefix.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -32,9 +32,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The value of the namespace, or &null; if no namespace exists.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

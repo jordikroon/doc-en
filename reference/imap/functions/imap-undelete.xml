@@ -13,10 +13,10 @@
    <methodparam><type>string</type><parameter>message_nums</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Removes the deletion flag for a specified message, which is set by
    <function>imap_delete</function> or <function>imap_mail_move</function>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -26,18 +26,18 @@
     <varlistentry>
      <term><parameter>message_nums</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A &string; representing one or more messages in IMAP4-style sequence format
        (<literal>"n"</literal>, <literal>"n:m"</literal>, or combination of these
        delimited by commas).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -45,9 +45,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -66,7 +66,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

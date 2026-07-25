@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type class="union"><type>string</type><type>array</type><type>false</type></type><methodname>SplFileObject::current</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Retrieves the current line of the file.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,10 +24,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Retrieves the current line of the file. If the <constant>SplFileObject::READ_CSV</constant> flag is set, this method returns an array containing the current line parsed as CSV data.
    If the end of the file is reached, &false; is returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

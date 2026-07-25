@@ -5,7 +5,7 @@
   <refname>oci_field_is_null</refname>
   <refpurpose>Checks if a field in the currently fetched row is &null;</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,10 +13,10 @@
    <methodparam><type>resource</type><parameter>statement</parameter></methodparam>
    <methodparam><type class="union"><type>string</type><type>int</type></type><parameter>column</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks if the given <parameter>column</parameter> from the current row of
-   <parameter>statement</parameter> is &null;. 
-  </para>
+   <parameter>statement</parameter> is &null;.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,17 +26,17 @@
     <varlistentry>
      <term><parameter>statement</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A valid OCI statement identifier.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>column</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Can be the field's index (1-based) or name.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -45,9 +45,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   Returns &true; if <parameter>column</parameter> is &null;, &false; otherwise. 
-  </para>
+  <simpara>
+   Returns &true; if <parameter>column</parameter> is &null;, &false; otherwise.
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -77,7 +77,7 @@ while (($row = oci_fetch_array($stid, OCI_RETURN_NULLS)) != false) {
     $ncols = oci_num_fields($stid);
     for ($col = 1; $col <= $ncols; $col++) {
         var_dump(oci_field_is_null($stid, $col));
-    }    
+    }
 }
 
 // Outputs:

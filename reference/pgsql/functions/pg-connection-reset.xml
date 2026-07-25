@@ -15,10 +15,10 @@
    <type>bool</type><methodname>pg_connection_reset</methodname>
    <methodparam><type>PgSql\Connection</type><parameter>connection</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_connection_reset</function> resets the connection.
    It is useful for error recovery.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -37,9 +37,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-   <para>
+   <simpara>
     &return.success;
-   </para>
+   </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -58,7 +58,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>

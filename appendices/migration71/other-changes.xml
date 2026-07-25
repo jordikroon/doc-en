@@ -7,7 +7,7 @@
  <sect2 xml:id="migration71.other-changes.apprise-on-arithmetic-with-invalid-strings">
   <title>Notices and warnings on arithmetic with invalid strings</title>
 
-  <para>
+  <simpara>
    New <constant>E_WARNING</constant> and <constant>E_NOTICE</constant> errors
    have been introduced when invalid strings are coerced using operators
    expecting numbers (<literal>+</literal> <literal>-</literal>
@@ -18,7 +18,7 @@
    string begins with a numeric value but contains trailing non-numeric
    characters, and an <constant>E_WARNING</constant> is emitted when the string
    does not contain a numeric value.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -40,11 +40,11 @@ Warning: A non-numeric value encountered in %s on line %d
  <sect2 xml:id="migration71.other-changes.warn-on-octal-overflow">
   <title>Warn on octal escape sequence overflow</title>
 
-  <para>
+  <simpara>
    Previously, 3-octet octal string escape sequences would overflow silently.
    Now, they will still overflow, but <constant>E_WARNING</constant> will be
    emitted.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -66,22 +66,22 @@ string(1) "@"
  <sect2 xml:id="migration71.other-changes.inconsistency-fixes-to-this">
   <title>Inconsistency fixes to <literal>$this</literal></title>
 
-  <para>
+  <simpara>
    Whilst <literal>$this</literal> is considered a special variable in PHP, it
    lacked proper checks to ensure it wasn't used as a variable name or
    reassigned. This has now been rectified to ensure that
    <literal>$this</literal> cannot be a user-defined variable, reassigned to a
    different value, or be globalised.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration71.other-changes.session-id-generation-without-hashing">
   <title>Session ID generation without hashing</title>
 
-  <para>
+  <simpara>
    Session IDs will no longer be hashed upon generation. With this change
    brings about the removal of the following four ini settings:
-  </para>
+  </simpara>
 
   <itemizedlist>
    <listitem>
@@ -106,9 +106,9 @@ string(1) "@"
    </listitem>
   </itemizedlist>
 
-  <para>
+  <simpara>
    And the addition of the following two ini settings:
-  </para>
+  </simpara>
 
   <itemizedlist>
    <listitem>
@@ -134,37 +134,37 @@ string(1) "@"
    <varlistentry>
     <term><parameter>precision</parameter></term>
     <listitem>
-     <para>
+     <simpara>
        If the value is set to -1, then the dtoa mode 0 is used. The default
        value is still 14.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>serialize_precision</parameter></term>
     <listitem>
-     <para>
+     <simpara>
        If the value is set to -1, then the dtoa mode 0 is used. The value -1 is
        now used by default.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>gd.jpeg_ignore_warning</parameter></term>
     <listitem>
-     <para>
+     <simpara>
        The default of this &php.ini; setting has been changed to 1, so by
        default libjpeg warnings are ignored.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>opcache.enable_cli</parameter></term>
     <listitem>
-     <para>
+     <simpara>
        The default of this &php.ini; setting has been changed to 1
        (enabled) in PHP 7.1.2, and back to 0 (disabled) in PHP 7.1.7.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -173,20 +173,20 @@ string(1) "@"
  <sect2 xml:id="migration71.other-changes.session-id-csprng-gen">
   <title>Session ID generation with a CSPRNG only</title>
 
-  <para>
+  <simpara>
    Session IDs will now only be generated with a CSPRNG.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration71.other-changes.typeerror-error-messages">
-  <title>More informative <classname>TypeError</classname> messages when &null; is allowed</title>
-  <para>
-   <classname>TypeError</classname> exceptions for arg_info type checks will
+  <title>More informative <exceptionname>TypeError</exceptionname> messages when &null; is allowed</title>
+  <simpara>
+   <exceptionname>TypeError</exceptionname> exceptions for arg_info type checks will
    now provide more informative error messages. If the parameter type or return
    type accepts &null; (by either having a default value of &null; or being a
    nullable type), then the error message will now mention this with a message
    of "must be ... or null" or "must ... or be null."
-  </para>
+  </simpara>
  </sect2>
 </sect1>
 

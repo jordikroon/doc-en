@@ -5,7 +5,7 @@
   <refname>str_split</refname>
   <refpurpose>Convert a string to an array</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,9 +13,9 @@
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>length</parameter><initializer>1</initializer></methodparam>
   </methodsynopsis>
-  <para>
-   Converts a string to an array. 
-  </para>
+  <simpara>
+   Converts a string to an array.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,17 +25,17 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Maximum length of the chunk.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -44,21 +44,21 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    If the optional <parameter>length</parameter> parameter is
    specified, the returned array will be broken down into chunks with each
    being <parameter>length</parameter> in length, except the final chunk
    which may be shorter if the string does not divide evenly.  The default
    <parameter>length</parameter> is <literal>1</literal>, meaning every chunk will be one byte in size.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    If <parameter>length</parameter> is less than <literal>1</literal>,
-   a <classname>ValueError</classname> will be thrown.
-  </para>
+   a <exceptionname>ValueError</exceptionname> will be thrown.
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -83,7 +83,7 @@
       <entry>8.0.0</entry>
       <entry>
        If <parameter>length</parameter> is less than <literal>1</literal>,
-       a <classname>ValueError</classname> will be thrown now;
+       a <exceptionname>ValueError</exceptionname> will be thrown now;
        previously, an error of level <constant>E_WARNING</constant>
        has been raised instead, and the function returned &false;.
       </entry>
@@ -148,14 +148,14 @@ Array
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     <function>str_split</function> will split into bytes, rather than characters when dealing with a multi-byte encoded string.
     <function>mb_str_split</function> can be used to split the string into code points.
     <function>grapheme_str_split</function> can be used to split the string into grapheme clusters.
-   </para>
+   </simpara>
   </note>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

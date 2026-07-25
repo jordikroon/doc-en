@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://docbook.org/ns/docbook" xml:id="function.md5">
+<refentry xml:id="function.md5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>md5</refname>
   <refpurpose>Calculate the md5 hash of a string</refpurpose>
  </refnamediv>
- 
+
  <refsynopsisdiv>
   &warn.passwordhashing;
  </refsynopsisdiv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -17,11 +17,11 @@
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>binary</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Calculates the MD5 hash of <parameter>string</parameter> using the
    <link xlink:href="&url.rfc;1321">RSA Data Security, Inc.
    MD5 Message-Digest Algorithm</link>, and returns that hash.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -31,19 +31,19 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>binary</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If the optional <parameter>binary</parameter> is set to &true;,
        then the md5 digest is instead returned in raw binary format with a
        length of 16.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -52,9 +52,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   Returns the hash as a 32-character hexadecimal number. 
-  </para>
+  <simpara>
+   Returns the hash as a 32-character hexadecimal number.
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

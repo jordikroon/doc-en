@@ -9,23 +9,23 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="ResourceBundle">
    <modifier>public</modifier> <type>string</type><methodname>ResourceBundle::getErrorMessage</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type>string</type><methodname>resourcebundle_get_error_message</methodname>
    <methodparam><type>ResourceBundle</type><parameter>bundle</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get error message from the last function performed by the bundle object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -35,9 +35,9 @@
     <varlistentry>
      <term><parameter>bundle</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <classname>ResourceBundle</classname> object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -47,9 +47,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns error message from last bundle object's call.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -11,12 +11,12 @@
    <type>bool</type><methodname>imap_ping</methodname>
    <methodparam><type>IMAP\Connection</type><parameter>imap</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>imap_ping</function> pings the stream to see if it's still
    active. It may discover new mail; this is the preferred method for a
    periodic "new mail check" as well as a "keep alive" for servers which
    have inactivity timeout.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -28,9 +28,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the stream is still alive, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -49,7 +49,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>

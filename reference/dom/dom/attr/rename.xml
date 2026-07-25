@@ -50,7 +50,7 @@
   &reftitle.errors;
   <variablelist>
    <varlistentry>
-    <term><classname>DOMException</classname> with code <constant>Dom\NAMESPACE_ERR</constant></term>
+    <term><exceptionname>DOMException</exceptionname> with code <constant>Dom\NAMESPACE_ERR</constant></term>
     <listitem>
      <simpara>
       Raised if there is an error with the namespace, as determined by
@@ -59,7 +59,7 @@
     </listitem>
    </varlistentry>
    <varlistentry>
-    <term><classname>DOMException</classname> with code <constant>Dom\INVALID_MODIFICATION_ERR</constant></term>
+    <term><exceptionname>DOMException</exceptionname> with code <constant>Dom\INVALID_MODIFICATION_ERR</constant></term>
     <listitem>
      <simpara>
       Raised if there already exists an attribute in the element with the same

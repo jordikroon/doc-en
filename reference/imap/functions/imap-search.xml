@@ -14,18 +14,18 @@
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer><constant>SE_FREE</constant></initializer></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>charset</parameter><initializer>""</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function performs a search on the mailbox currently opened
-   in the given <acronym>IMAP</acronym> stream. 
-  </para>
-  <para>
+   in the given <acronym>IMAP</acronym> stream.
+  </simpara>
+  <simpara>
    For example, to match all unanswered messages sent by Mom, you'd
    use: "UNANSWERED FROM mom". Searches appear to be case
    insensitive. This list of criteria is from a reading of the UW
    c-client source code and may be incomplete or
-   inaccurate (see also <link xlink:href="&url.rfc;1176">RFC1176</link>, 
+   inaccurate (see also <link xlink:href="&url.rfc;1176">RFC1176</link>,
    section "tag SEARCH search_criteria").
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -170,19 +170,19 @@
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
-       Valid values for <parameter>flags</parameter> are 
+      <simpara>
+       Valid values for <parameter>flags</parameter> are
        <constant>SE_UID</constant>, which causes the returned array to
        contain UIDs instead of messages sequence numbers.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>charset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        MIME character set to use when searching strings.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -190,13 +190,13 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array of message numbers or UIDs.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Return &false; if it does not understand the search
    <parameter>criteria</parameter> or no messages have been found.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

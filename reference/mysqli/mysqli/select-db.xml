@@ -9,27 +9,27 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="mysqli">
    <modifier>public</modifier> <type>bool</type><methodname>mysqli::select_db</methodname>
    <methodparam><type>string</type><parameter>database</parameter></methodparam>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type>bool</type><methodname>mysqli_select_db</methodname>
    <methodparam><type>mysqli</type><parameter>mysql</parameter></methodparam>
    <methodparam><type>string</type><parameter>database</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Selects the default database to be used when performing queries against
    the database connection.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     This function should only be used to change the default database for the
-    connection. You can select the default database with 4th parameter in 
+    connection. You can select the default database with 4th parameter in
     <function>mysqli_connect</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -41,9 +41,9 @@
     <varlistentry>
      <term><parameter>database</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The database name.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -52,9 +52,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -66,7 +66,7 @@
   &reftitle.examples;
   <example>
    <title><methodname>mysqli::select_db</methodname> example</title>
-   <para>&style.oop;</para>
+   <simpara>&style.oop;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -88,7 +88,7 @@ $row = $result->fetch_row();
 printf("Default database is %s.\n", $row[0]);
 ]]>
    </programlisting>
-   <para>&style.procedural;</para>
+   <simpara>&style.procedural;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

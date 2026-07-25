@@ -12,14 +12,14 @@
    <modifier>public</modifier> <type>bool</type><methodname>mysqli_warning::next</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Change warning information to the next warning if possible.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Once the warning has been set to the next warning, new values of properties <literal>message</literal>,
    <literal>sqlstate</literal> and <literal>errno</literal> of <classname>mysqli_warning</classname>
    are available.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -30,10 +30,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if next warning was fetched successfully.
    If there are no more warnings, it will return &false;
-  </para>
+  </simpara>
  </refsect1>
 
 

@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://docbook.org/ns/docbook" xml:id="function.ord">
+<refentry xml:id="function.ord" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>ord</refname>
   <refpurpose>Convert the first byte of a string to a value between 0 and 255</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>int</type><methodname>ord</methodname>
    <methodparam><type>string</type><parameter>character</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Interprets the binary value of the first byte of
    <parameter>character</parameter> as an unsigned integer between 0 and 255.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If the string is in a single-byte encoding, such as ASCII, ISO-8859, or Windows 1252, this is equivalent to returning the position of a character in the character set's mapping table. However, note that this function is not aware of any string encoding, and in particular will never identify a Unicode code point in a multi-byte encoding such as UTF-8 or UTF-16.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This function complements <function>chr</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -31,9 +31,9 @@
     <varlistentry>
      <term><parameter>character</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A character.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -42,9 +42,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An integer between 0 and 255.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -86,7 +86,7 @@ if (ord($str) == 10) {
     </programlisting>
    </example>
  </para>
- <para> 
+ <para>
    <example>
     <title>Examining the individual bytes of a UTF-8 string</title>
     <programlisting role="php">

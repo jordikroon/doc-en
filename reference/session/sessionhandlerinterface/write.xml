@@ -13,21 +13,21 @@
    <methodparam><type>string</type><parameter>id</parameter></methodparam>
    <methodparam><type>string</type><parameter>data</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Writes the session data to the session storage. Called by
    <function>session_write_close</function>, when <function>session_register_shutdown</function> fails, or during a normal shutdown.
    Note: <function>SessionHandlerInterface::close</function> is called immediately after this function.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    PHP will call this method when the session is ready to be saved and closed. It encodes
    the session data from the <varname>$_SESSION</varname> superglobal to a serialized string and passes this
    along with the session ID to this method for storage.  The serialization method used
    is specified in the <link linkend="ini.session.serialize-handler">session.serialize_handler</link> setting.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Note this method is normally called by PHP after the output buffers have been closed unless explicitly
    called by <function>session_write_close</function>
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -36,18 +36,18 @@
    <varlistentry>
     <term><parameter>id</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The session id.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>data</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The encoded session data.  This data is the result of the PHP internally encoding the <varname>$_SESSION</varname> superglobal to a serialized
       string and passing it as this parameter.  Please note sessions use an alternative serialization method.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -55,9 +55,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &returns.session.storage.retval;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

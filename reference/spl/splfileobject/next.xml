@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>void</type><methodname>SplFileObject::next</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Moves ahead to the next line in the file.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

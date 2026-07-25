@@ -9,26 +9,26 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="IntlDateFormatter">
    <modifier>public</modifier> <type>bool</type><methodname>IntlDateFormatter::setTimeZone</methodname>
    <methodparam><type class="union"><type>IntlTimeZone</type><type>DateTimeZone</type><type>string</type><type>null</type></type><parameter>timezone</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type>bool</type><methodname>datefmt_set_timezone</methodname>
    <methodparam><type>IntlDateFormatter</type><parameter>formatter</parameter></methodparam>
    <methodparam><type class="union"><type>IntlTimeZone</type><type>DateTimeZone</type><type>string</type><type>null</type></type><parameter>timezone</parameter></methodparam>
   </methodsynopsis>
 
-  <para>
+  <simpara>
    Sets the timezone used for the IntlDateFormatter.
    object.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -38,18 +38,18 @@
    <varlistentry>
     <term><parameter>formatter</parameter></term>
     <listitem>
-     <para>
+     <simpara>
     The formatter resource.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>timezone</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The timezone to use for this formatter. This can be specified in the
       following forms:
-     </para>
+     </simpara>
      &reference.intl.inctimezoneparam;
     </listitem>
    </varlistentry>
@@ -58,9 +58,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

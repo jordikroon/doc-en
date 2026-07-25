@@ -14,10 +14,10 @@
    <type class="union"><type>array</type><type>false</type></type><methodname>gethostbynamel</methodname>
    <methodparam><type>string</type><parameter>hostname</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a list of IPv4 addresses to which the Internet host
-   specified by <parameter>hostname</parameter> resolves. 
-  </para>
+   specified by <parameter>hostname</parameter> resolves.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,9 +27,9 @@
     <varlistentry>
      <term><parameter>hostname</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The host name.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -38,10 +38,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array of IPv4 addresses or &false; if
    <parameter>hostname</parameter> could not be resolved.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

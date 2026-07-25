@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.chop">
+<refentry xml:id="function.chop" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>chop</refname>
   <refpurpose>&Alias; <function>rtrim</function></refpurpose>
@@ -17,11 +17,11 @@
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     <function>chop</function> is different than the Perl
     <literal>chop()</literal> function, which removes the last
     character in the string.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

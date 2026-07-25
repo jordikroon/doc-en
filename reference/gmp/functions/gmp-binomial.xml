@@ -13,9 +13,9 @@
    <methodparam><type class="union"><type>GMP</type><type>int</type><type>string</type></type><parameter>n</parameter></methodparam>
    <methodparam><type>int</type><parameter>k</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Calculates the binomial coefficient C(n, k).
-  </para>
+  </simpara>
  </refsect1>
 
 
@@ -32,9 +32,9 @@
     <varlistentry>
      <term><parameter>k</parameter></term>
      <listitem>
-      <para>
+      <simpara>
 
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -43,17 +43,17 @@
 
   <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the binomial coefficient C(n, k).
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws <classname>ValueError</classname> if <parameter>k</parameter> is negative.
+  <simpara>
+   Throws <exceptionname>ValueError</exceptionname> if <parameter>k</parameter> is negative.
    Prior to PHP 8.0.0, <constant>E_WARNING</constant> was issued instead.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type class="union"><type>int</type><type>false</type></type><methodname>SplFileInfo::getATime</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the last access time for the file.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,16 +24,16 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the time the file was last accessed on success, or &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws <classname>RuntimeException</classname> on error.
-  </para>
+  <simpara>
+   Throws <exceptionname>RuntimeException</exceptionname> on error.
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

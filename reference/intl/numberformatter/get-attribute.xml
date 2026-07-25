@@ -9,26 +9,26 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="NumberFormatter">
    <modifier>public</modifier> <type class="union"><type>int</type><type>float</type><type>false</type></type><methodname>NumberFormatter::getAttribute</methodname>
    <methodparam><type>int</type><parameter>attribute</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>int</type><type>float</type><type>false</type></type><methodname>numfmt_get_attribute</methodname>
    <methodparam><type>NumberFormatter</type><parameter>formatter</parameter></methodparam>
    <methodparam><type>int</type><parameter>attribute</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get a numeric attribute associated with the formatter. An example of a
    numeric attribute is the number of integer digits the formatter will
    produce.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -38,19 +38,19 @@
     <varlistentry>
      <term><parameter>formatter</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <classname>NumberFormatter</classname> object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>attribute</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Attribute specifier - one of the
        <link linkend="intl.numberformatter-constants.unumberformatattribute">
         numeric attribute</link> constants.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -60,9 +60,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Return attribute value on success, or &false; on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

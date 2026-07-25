@@ -8,9 +8,9 @@
 <!-- {{{ Random\CryptoSafeEngine intro -->
   <section xml:id="random-cryptosafeengine.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     A marker interface indicating that the <type>Random\Engine</type> returns cryptographically secure randomness.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

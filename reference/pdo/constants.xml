@@ -561,7 +561,7 @@
     </term>
     <listitem>
      <simpara>
-      Throw a <classname>PDOException</classname> if an error occurs.
+      Throw a <exceptionname>PDOException</exceptionname> if an error occurs.
       This is the default mode as of PHP 8.0.0.
       See <link linkend="pdo.error-handling">Errors and error handling</link>
       for more information about this attribute.

@@ -5,18 +5,18 @@
   <refname>posix_getcwd</refname>
   <refpurpose>Pathname of current directory</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>posix_getcwd</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the absolute pathname of the script's current working directory.
    On error, it sets errno which can be checked using
    <function>posix_get_last_error</function>
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,11 +26,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   Returns a <type>string</type> of the absolute pathname on success.  
+  <simpara>
+   Returns a <type>string</type> of the absolute pathname on success.
    On error, returns &false; and sets errno which can be checked with
    <function>posix_get_last_error</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -38,10 +38,10 @@
   <para>
    <example>
     <title><function>posix_getcwd</function> example</title>
-    <para>
-     This example will return the absolute path of the current working 
+    <simpara>
+     This example will return the absolute path of the current working
      directory of the script.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -52,7 +52,7 @@ echo 'My current working directory is '.posix_getcwd();
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
@@ -65,7 +65,7 @@ echo 'My current working directory is '.posix_getcwd();
      <listitem>
       <simpara>Pathname no longer exists</simpara>
      </listitem>
-    </itemizedlist> 
+    </itemizedlist>
    </para>
   </note>
  </refsect1>

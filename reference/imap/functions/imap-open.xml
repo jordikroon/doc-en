@@ -16,14 +16,14 @@
    <methodparam choice="opt"><type>int</type><parameter>retries</parameter><initializer>0</initializer></methodparam>
    <methodparam choice="opt"><type>array</type><parameter>options</parameter><initializer>[]</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Opens an <acronym>IMAP</acronym> stream to a <parameter>mailbox</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This function can also be used to open streams to <acronym>POP3</acronym> and
    <acronym>NNTP</acronym> servers, but some functions and features are only
    available on <acronym>IMAP</acronym> servers.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -32,23 +32,23 @@
     <varlistentry>
      <term><parameter>mailbox</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A mailbox name consists of a server and a mailbox path on this server.
        The special name <literal>INBOX</literal> stands for the current users
        personal mailbox. Mailbox names that contain international characters
        besides those in the printable ASCII space have to be encoded with
        <function>imap_utf7_encode</function>.
-      </para>
+      </simpara>
       &imap.mailboxname.insecure;
-      <para>
+      <simpara>
        The server part, which is enclosed in '{' and '}', consists of the servers
        name or ip address, an optional port (prefixed by ':'), and an optional
-       protocol specification (prefixed by '/'). 
-      </para>
-      <para>
+       protocol specification (prefixed by '/').
+      </simpara>
+      <simpara>
        The server part is mandatory in all mailbox
-       parameters. 
-      </para>
+       parameters.
+      </simpara>
       <para>
        All names which start with <literal>{</literal> are remote names, and are
        in the form <literal>"{" remote_system_name [":" port] [flags] "}"
@@ -171,17 +171,17 @@
     <varlistentry>
      <term><parameter>user</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The user name
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>password</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The password associated with the <parameter>user</parameter>
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -248,16 +248,16 @@
     <varlistentry>
      <term><parameter>retries</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Number of maximum connect attempts
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>options</parameter></term>
      <listitem>
       <para>
-       Connection parameters, the following (string) keys maybe used 
+       Connection parameters, the following (string) keys maybe used
        to set one or more connection parameters:
        <itemizedlist>
         <listitem>
@@ -274,9 +274,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an <classname>IMAP\Connection</classname> instance on success,&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

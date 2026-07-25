@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.array-pop">
+<refentry xml:id="function.array-pop" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>array_pop</refname>
   <refpurpose>Pop the element off the end of array</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>mixed</type><methodname>array_pop</methodname>
    <methodparam><type>array</type><parameter role="reference">array</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>array_pop</function> pops and returns the value of
    the last element of <parameter>array</parameter>, shortening the
    <parameter>array</parameter> by one element.
-  </para>
+  </simpara>
   &array.resetspointer;
  </refsect1>
 
@@ -27,9 +27,9 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The array to get the value from.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -38,11 +38,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the value of the last element of <parameter>array</parameter>.
    If <parameter>array</parameter> is empty,
    &null; will be returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -59,9 +59,9 @@ print_r($stack);
 ?>
 ]]>
     </programlisting>
-    <para>
+    <simpara>
      After this, <varname>$stack</varname> will have only 3 elements:
-    </para>
+    </simpara>
     <screen role="php">
 <![CDATA[
 Array
@@ -72,10 +72,10 @@ Array
 )
 ]]>
     </screen>
-    <para>
+    <simpara>
      and <literal>raspberry</literal> will be assigned to
      <varname>$fruit</varname>.
-    </para>
+    </simpara>
    </example>
   </para>
  </refsect1>

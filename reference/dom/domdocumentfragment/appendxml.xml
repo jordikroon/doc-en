@@ -12,18 +12,18 @@
    <modifier>public</modifier> <type>bool</type><methodname>DOMDocumentFragment::appendXML</methodname>
    <methodparam><type>string</type><parameter>data</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   Appends raw XML data to a DOMDocumentFragment. 
-  </para>
-  <para>
+  <simpara>
+   Appends raw XML data to a DOMDocumentFragment.
+  </simpara>
+  <simpara>
    This method is not part of the DOM standard. It was created as a simpler
    approach for appending an XML DocumentFragment in a DOMDocument.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If you want to stick to the standards, you will have to create a temporary
    DOMDocument with a dummy root and then loop through the child nodes of the
-   root of your XML data to append them. 
-  </para>
+   root of your XML data to append them.
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -32,9 +32,9 @@
     <varlistentry>
      <term><parameter>data</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        XML to append.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -42,9 +42,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -60,7 +60,7 @@ $doc->loadXML("<root/>");
 $f = $doc->createDocumentFragment();
 $f->appendXML("<foo>text</foo><bar>text2</bar>");
 $doc->documentElement->appendChild($f);
-echo $doc->saveXML(); 
+echo $doc->saveXML();
 ?>
 ]]>
     </programlisting>

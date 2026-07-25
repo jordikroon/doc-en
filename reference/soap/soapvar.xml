@@ -10,9 +10,9 @@
 <!-- {{{ SoapVar intro -->
   <section xml:id="soapvar.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     A class representing a variable or object for use with SOAP services.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -74,43 +74,43 @@
     <varlistentry xml:id="soapvar.props.enc-name">
      <term><varname>enc_name</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapvar.props.enc-namens">
      <term><varname>enc_namens</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapvar.props.enc-ns">
      <term><varname>enc_ns</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapvar.props.enc-type">
      <term><varname>enc_type</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapvar.props.enc-stype">
      <term><varname>enc_stype</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapvar.props.enc-value">
      <term><varname>enc_value</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>int</type><methodname>SQLite3::lastInsertRowID</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the row ID of the most recent INSERT into the database.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">

@@ -12,9 +12,9 @@
    <methodparam><type>string</type><parameter>where</parameter></methodparam>
    <methodparam><type>DOMElement</type><parameter>element</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Inserts an element at a relative position given by <parameter>where</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -37,9 +37,9 @@
     <varlistentry>
      <term><parameter>element</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The element to insert.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -48,9 +48,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Return <classname>DOMElement</classname> or &null; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

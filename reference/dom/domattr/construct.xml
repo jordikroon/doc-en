@@ -11,14 +11,14 @@
    <modifier>public</modifier> <methodname>DOMAttr::__construct</methodname>
    <methodparam><type>string</type><parameter>name</parameter></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>value</parameter><initializer>""</initializer></methodparam>
-  </constructorsynopsis> 
-  <para>
-   Creates a new DOMAttr object. This object is read only. 
+  </constructorsynopsis>
+  <simpara>
+   Creates a new DOMAttr object. This object is read only.
    It may be appended to a document, but additional nodes may
    not be appended to this node until the node is associated
-   with a document. To create a writable node, use 
+   with a document. To create a writable node, use
    <xref linkend="domdocument.createattribute"/>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -27,17 +27,17 @@
     <varlistentry>
      <term><parameter>name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The tag name of the attribute.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The value of the attribute.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -55,7 +55,7 @@
 $dom = new DOMDocument('1.0', 'utf-8');
 $element = $dom->appendChild(new DOMElement('root'));
 $attr = $element->setAttributeNode(new DOMAttr('attr', 'attrvalue'));
-echo $dom->saveXML(); 
+echo $dom->saveXML();
 
 ?>
 ]]>

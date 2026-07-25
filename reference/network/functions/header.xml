@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://docbook.org/ns/docbook" xml:id="function.header">
+<refentry xml:id="function.header" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>header</refname>
   <refpurpose>Send a raw HTTP header</refpurpose>
@@ -14,11 +14,11 @@
    <methodparam choice="opt"><type>bool</type><parameter>replace</parameter><initializer>&true;</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>response_code</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>header</function> is used to send a raw <acronym>HTTP</acronym>
    header. See the <link xlink:href="&url.rfc;2616">HTTP/1.1 specification</link>
    for more information on <acronym>HTTP</acronym> headers.
-  </para>
+  </simpara>
   <para>
    Remember that <function>header</function> must be called before any
    actual output is sent, either by normal HTML tags, blank lines in a
@@ -50,10 +50,10 @@ exit;
     <varlistentry>
      <term><parameter>header</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The header string.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        There are two special-case header calls.  The first is a header
        that starts with the string "<literal>HTTP/</literal>" (case is not
        significant), which will be used to figure out the HTTP status
@@ -61,7 +61,7 @@ exit;
        use a PHP script to handle requests for missing files (using
        the <literal>ErrorDocument</literal> directive), you may want to
        make sure that your script generates the proper status code.
-      </para>
+      </simpara>
       <para>
        <informalexample>
         <programlisting role="php">
@@ -78,13 +78,13 @@ header("HTTP/1.1 404 Not Found");
         </programlisting>
        </informalexample>
       </para>
-      <para>
+      <simpara>
        The second special case is the "Location:" header.  Not only does
        it send this header back to the browser, but it also returns a
        <literal>REDIRECT</literal> (302) status code to the browser
        unless the <literal>201</literal> or
        a <literal>3xx</literal> status code has already been set.
-      </para>
+      </simpara>
       <para>
        <informalexample>
         <programlisting role="php">
@@ -104,13 +104,13 @@ exit;
     <varlistentry>
      <term><parameter>replace</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The optional <parameter>replace</parameter> parameter indicates
        whether the header should replace a previous similar header, or
        add a second header of the same type.  By default it will replace,
        but if you pass in &false; as the second argument you can force
        multiple headers of the same type.  For example:
-      </para>
+      </simpara>
       <para>
        <informalexample>
         <programlisting role="php">
@@ -128,11 +128,11 @@ header('WWW-Authenticate: NTLM', false);
     <varlistentry>
      <term><parameter>response_code</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Forces the HTTP response code to the specified value. Note that this
        parameter only has an effect if the <parameter>header</parameter> is
        not empty.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -141,17 +141,17 @@ header('WWW-Authenticate: NTLM', false);
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    On failure to schedule the header to be sent, <function>header</function>
    issues an <constant>E_WARNING</constant> level error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -159,13 +159,13 @@ header('WWW-Authenticate: NTLM', false);
   <para>
    <example>
     <title>Download dialog</title>
-    <para>
+    <simpara>
      If you want the user to be prompted to save the data you are
      sending, such as a generated PDF file, you can use the <link
      xlink:href="&url.rfc;2183">Content-Disposition</link> header to
      supply a recommended filename and force the browser to display the
      save dialog.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -185,12 +185,12 @@ readfile('original.pdf');
   <para>
    <example>
     <title>Caching directives</title>
-    <para>
+    <simpara>
      PHP scripts often generate dynamic content that must not be cached
      by the client browser or any proxy caches between the server and the
      client browser. Many proxies and clients can be forced to disable
      caching with:
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -201,20 +201,20 @@ header("Expires: Sat, 26 Jul 1997 05:00:00 GMT"); // Date in the past
     </programlisting>
     <para>
      <note>
-      <para>
+      <simpara>
        You may find that your pages aren't cached even if you don't
        output all of the headers above. There are a number of options
        that users may be able to set for their browser that change its
        default caching behavior. By sending the headers above, you should
        override any settings that may otherwise cause the output of your
        script to be cached.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Additionally, <function>session_cache_limiter</function> and
        the <literal>session.cache_limiter</literal> configuration
        setting can be used to automatically generate the correct
        caching-related headers when sessions are being used.
-      </para>
+      </simpara>
      </note>
     </para>
    </example>
@@ -222,15 +222,15 @@ header("Expires: Sat, 26 Jul 1997 05:00:00 GMT"); // Date in the past
   <para>
    <example>
     <title>Setting a cookie</title>
-    <para>
+    <simpara>
      <function>setcookie</function> provides a convenient way to set cookies.
      To set a cookie that includes attributes which <function>setcookie</function>
      doesn't support, <function>header</function> can be used.
-    </para>
-    <para>
+    </simpara>
+    <simpara>
      For example, the following sets a cookie that includes a
      <literal>Partitioned</literal> attribute.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -246,7 +246,7 @@ header('Set-Cookie: name=value; Secure; Path=/; SameSite=None; Partitioned;');
   &reftitle.notes;
   &note.network.header.sapi;
   <note>
-   <para>
+   <simpara>
     You can use output buffering to get around this problem,
     with the overhead of all of your output to the browser being buffered
     in the server until you send it. You can do this by calling
@@ -254,16 +254,16 @@ header('Set-Cookie: name=value; Secure; Path=/; SameSite=None; Partitioned;');
     in your script, or setting the <literal>output_buffering</literal>
     configuration directive on in your &php.ini; or
     server configuration files.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     The HTTP status header line will always be the first sent
     to the client, regardless of the actual <function>header</function>
     call being the first or not. The status may be overridden
     by calling <function>header</function> with a new status line
     at any time unless the HTTP headers have already been sent.
-   </para>
+   </simpara>
   </note>
   <note>
    <para>
@@ -292,12 +292,12 @@ exit;
    </para>
   </note>
   <note>
-   <para>
+   <simpara>
     Session ID is not passed with Location header even if <link
     linkend="ini.session.use-trans-sid">session.use_trans_sid</link> is
     enabled. It must by passed manually using <constant>SID</constant>
     constant.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

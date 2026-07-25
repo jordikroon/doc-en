@@ -5,16 +5,16 @@
   <refname>posix_setsid</refname>
   <refpurpose>Make the current process a session leader</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>int</type><methodname>posix_setsid</methodname>
    <void/>
   </methodsynopsis>
-  <para>
-   Make the current process a session leader. 
-  </para>
+  <simpara>
+   Make the current process a session leader.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the session id, or -1 on errors.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

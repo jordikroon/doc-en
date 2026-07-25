@@ -12,9 +12,9 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="Locale">
    <modifier>public</modifier>
    <modifier>static</modifier>
@@ -25,9 +25,9 @@
     <initializer>""</initializer>
    </methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type>bool</type><methodname>locale_is_right_to_left</methodname>
    <methodparam><type>string</type><parameter>locale</parameter><initializer>""</initializer></methodparam>

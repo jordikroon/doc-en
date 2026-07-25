@@ -5,16 +5,16 @@
   <refname>OCILob::rewind</refname>
   <refpurpose>Moves the internal pointer to the beginning of the large object</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="OCILob">
    <modifier>public</modifier> <type>bool</type><methodname>OCILob::rewind</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets the internal pointer to the beginning of the large object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

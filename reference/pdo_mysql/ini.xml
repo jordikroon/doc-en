@@ -41,10 +41,10 @@
      <type>string</type>
     </term>
     <listitem>
-     <para>
-      Sets a Unix domain socket. This value can either be set at compile time if 
+     <simpara>
+      Sets a Unix domain socket. This value can either be set at compile time if
       a domain socket is found at configure. This ini setting is Unix only.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="ini.pdo-mysql.debug">
@@ -53,10 +53,10 @@
      <type>bool</type>
     </term>
     <listitem>
-     <para>
-      Enables debugging for PDO_MYSQL. This setting is only available when PDO_MYSQL is 
+     <simpara>
+      Enables debugging for PDO_MYSQL. This setting is only available when PDO_MYSQL is
       compiled against mysqlnd and in PDO debug mode.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>

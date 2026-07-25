@@ -20,7 +20,7 @@
    converts it back into a PHP value.
   </simpara>
   <warning>
-   <para>
+   <simpara>
     Do not pass untrusted user input to <function>unserialize</function> regardless
     of the <parameter>options</parameter> value of <literal>allowed_classes</literal>.
     Unserialization can result in code being loaded and executed due to object
@@ -28,12 +28,12 @@
     this. Use a safe, standard data interchange format such as JSON (via
     <function>json_decode</function> and <function>json_encode</function>) if
     you need to pass serialized data to the user.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     If you need to unserialize externally-stored serialized data, consider using
     <function>hash_hmac</function> for data validation. Make sure data is
     not modified by anyone but you.
-   </para>
+   </simpara>
   </warning>
  </refsect1>
 
@@ -44,27 +44,27 @@
     <varlistentry>
      <term><parameter>data</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The serialized string.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If the variable being unserialized is an object, after successfully
        reconstructing the object PHP will automatically attempt to call the
        <link linkend="object.unserialize">__unserialize()</link> or <link linkend="object.wakeup">__wakeup()</link> methods (if one exists).
-      </para>
+      </simpara>
       <para>
        <note>
         <title>
          <link linkend="ini.unserialize-callback-func">unserialize_callback_func</link>
           directive
         </title>
-        <para>
+        <simpara>
          The callback specified in the
          <link linkend="ini.unserialize-callback-func">unserialize_callback_func</link>
          directive is called when an undefined class is unserialized.
          If no callback is specified, the object will be instantiated as
          <classname>__PHP_Incomplete_Class</classname>.
-        </para>
+        </simpara>
        </note>
       </para>
      </listitem>
@@ -72,10 +72,10 @@
     <varlistentry>
      <term><parameter>options</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Any options to be provided to <function>unserialize</function>, as an
        associative array.
-      </para>
+      </simpara>
       <table>
        <title>Valid options</title>
        <tgroup cols="3">
@@ -131,21 +131,21 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The converted value is returned, and can be a <type>bool</type>,
    <type>int</type>, <type>float</type>, <type>string</type>,
    <type>array</type> or <type>object</type>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    In case the passed string is not unserializeable, &false; is returned and
    <constant>E_WARNING</constant> is issued.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
   <simpara>
-   Objects may throw <classname>Throwable</classname>s in their unserialization handlers.
+   Objects may throw <exceptionname>Throwable</exceptionname>s in their unserialization handlers.
   </simpara>
   <simpara>
    As of PHP 8.4.0, if the <literal>allowed_classes</literal> element of
@@ -277,13 +277,13 @@ unserialize($serialized_object);
  <refsect1 role="notes">
   &reftitle.notes;
   <warning>
-   <para>
+   <simpara>
     &false; is returned both in the case of an error and if unserializing
     the serialized &false; value. It is possible to catch this special case by
     comparing <parameter>data</parameter> with
     <literal>serialize(false)</literal> or by catching the issued
     <constant>E_WARNING</constant>.
-   </para>
+   </simpara>
   </warning>
  </refsect1>
 

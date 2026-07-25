@@ -5,23 +5,23 @@
   <refname>php_ini_scanned_files</refname>
   <refpurpose>Return a list of .ini files parsed from the additional ini dir</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>php_ini_scanned_files</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>php_ini_scanned_files</function> returns a comma-separated
    list of configuration files parsed after &php.ini;. The directories
    searched are set by a compile time option and, optionally, by an
    environment variable at run time: more information can be found in the
    <link linkend="configuration.file.scan">installation guide</link>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The returned configuration files include the full path.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -31,7 +31,7 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a comma-separated string of .ini files on success. Each comma is
    followed by a newline. If the configure directive <option
    role="configure">--with-config-file-scan-dir</option> wasn't set and the
@@ -41,7 +41,7 @@
    the returned string but a PHP error will also result.  This PHP error will
    be seen both at compile time and while using
    <function>php_ini_scanned_files</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

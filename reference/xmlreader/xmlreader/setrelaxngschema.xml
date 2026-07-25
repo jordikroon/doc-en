@@ -11,9 +11,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>XMLReader::setRelaxNGSchema</methodname>
    <methodparam><type class="union"><type>string</type><type>null</type></type><parameter>filename</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Set the filename or URI for the RelaxNG Schema to use for validation.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -22,9 +22,9 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        filename or URI pointing to a RelaxNG Schema.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -32,9 +32,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="seealso">
   &reftitle.seealso;

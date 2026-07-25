@@ -13,9 +13,9 @@
    <methodparam><type>mixed</type><parameter>offset</parameter></methodparam>
    <methodparam><type>mixed</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Assigns a value to the specified offset.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,17 +25,17 @@
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The offset to assign the value to.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The value to set.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -45,9 +45,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="notes">
@@ -81,7 +81,7 @@ Array
   </note>
 
   <note>
-    <para>
+    <simpara>
       This function is not called in assignments by reference and otherwise
       indirect changes to array dimensions overloaded with
       <classname>ArrayAccess</classname> (indirect in the sense they are
@@ -90,7 +90,7 @@ Array
       reference to another variable).
       Instead, <function>ArrayAccess::offsetGet</function> is called. The
       operation will only be successful if that method returns by reference.
-    </para>
+    </simpara>
   </note>
  </refsect1>
 

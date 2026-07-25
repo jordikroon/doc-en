@@ -13,24 +13,24 @@
    <type>int</type><methodname>gzpassthru</methodname>
    <methodparam><type>resource</type><parameter>stream</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Reads to <acronym>EOF</acronym> on the given gz-file pointer from the current position and
    writes the (uncompressed) results to standard output.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     You may need to call <function>gzrewind</function> to reset the file
-    pointer to the beginning of the file if you have already written data 
-    to it. 
-   </para>
+    pointer to the beginning of the file if you have already written data
+    to it.
+   </simpara>
   </note>
   <tip>
-   <para>
-    If you just want to dump the contents of a file to the output buffer, 
-    without first modifying it or seeking to a particular offset, you may 
-    want to use the <function>readgzfile</function> function, which saves 
+   <simpara>
+    If you just want to dump the contents of a file to the output buffer,
+    without first modifying it or seeking to a particular offset, you may
+    want to use the <function>readgzfile</function> function, which saves
     you the <function>gzopen</function> call.
-   </para>
+   </simpara>
   </tip>
  </refsect1>
  <refsect1 role="parameters">
@@ -40,10 +40,10 @@
     <varlistentry>
      <term><parameter>stream</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The gz-file pointer. It must be valid, and must point to a file
        successfully opened by <function>gzopen</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -51,10 +51,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The number of uncompressed characters read from <parameter>gz</parameter>
    and passed through to the input.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;

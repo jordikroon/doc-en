@@ -14,9 +14,9 @@
    <modifier>public</modifier> <modifier>static</modifier> <type>array</type><methodname>SQLite3::version</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the SQLite3 library version as a string constant and as a number.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,10 +26,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an associative array with the keys "versionString" and
    "versionNumber".
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

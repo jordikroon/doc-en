@@ -12,12 +12,12 @@
    <type>int</type><methodname>pg_get_pid</methodname>
    <methodparam><type>PgSql\Connection</type><parameter>connection</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_get_pid</function> gets the backend's (database server
    process) PID. The PID is useful to determine whether or not a <literal>NOTIFY</literal>
    message received via <function>pg_get_notify</function> is sent from another process
    or not.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -36,9 +36,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The backend database process ID.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -57,7 +57,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -65,7 +65,7 @@
     <title>PostgreSQL backend PID</title>
     <programlisting role="php">
 <![CDATA[
-<?php 
+<?php
 $conn = pg_pconnect("dbname=publisher");
 if (!$conn) {
   echo "An error occurred.\n";

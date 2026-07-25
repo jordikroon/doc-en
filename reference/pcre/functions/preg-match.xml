@@ -16,10 +16,10 @@
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>offset</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Searches <parameter>subject</parameter> for a match to the regular
    expression given in <parameter>pattern</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,29 +29,29 @@
     <varlistentry>
      <term><parameter>pattern</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The pattern to search for, as a string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>subject</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>matches</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If <parameter>matches</parameter> is provided, then it is filled with
        the results of search. <varname>$matches[0]</varname> will contain the
        text that matched the full pattern, <varname>$matches[1]</varname>
        will have the text that matched the first captured parenthesized
        subpattern, and so on.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -168,11 +168,11 @@ array(4) {
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Normally, the search starts from the beginning of the subject string.
        The optional parameter <parameter>offset</parameter> can be used to
        specify the alternate place from which to start the search (in bytes).
-      </para>
+      </simpara>
       <note>
        <para>
         Using <parameter>offset</parameter> is not equivalent to passing
@@ -200,9 +200,9 @@ Array
 )
 ]]>
          </screen>
-         <para>
+         <simpara>
           while this example
-         </para>
+         </simpara>
          <programlisting role="php">
 <![CDATA[
 <?php
@@ -213,9 +213,9 @@ print_r($matches);
 ?>
 ]]>
          </programlisting>
-         <para>
+         <simpara>
           will produce
-         </para>
+         </simpara>
          <screen>
 <![CDATA[
 Array
@@ -229,12 +229,12 @@ Array
 )
 ]]>
          </screen>
-         <para>
+         <simpara>
           Alternatively, to avoid using <function>substr</function>, use the
           <literal>\G</literal> assertion rather than the <literal>^</literal> anchor, or
           the <literal>A</literal> modifier instead, both of which work with
           the <parameter>offset</parameter> parameter.
-         </para>
+         </simpara>
         </informalexample>
        </para>
       </note>
@@ -246,10 +246,10 @@ Array
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    <function>preg_match</function> returns 1 if the <parameter>pattern</parameter>
    matches given <parameter>subject</parameter>, 0 if it does not,&return.falseforfailure;.
-  </para>
+  </simpara>
   &return.falseproblem;
  </refsect1>
 
@@ -392,11 +392,11 @@ Array
  <refsect1 role="notes">
   &reftitle.notes;
   <tip>
-   <para>
+   <simpara>
     Do not use <function>preg_match</function> if you only want to check if
     one string is contained in another string. Use
     <function>strpos</function> instead as it will be faster.
-   </para>
+   </simpara>
   </tip>
  </refsect1>
 

@@ -5,7 +5,7 @@
   <refname>pack</refname>
   <refpurpose>Pack data into binary string</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,23 +13,23 @@
    <methodparam><type>string</type><parameter>format</parameter></methodparam>
    <methodparam rep="repeat"><type>mixed</type><parameter>values</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Pack given arguments into a binary string according to
-   <parameter>format</parameter>. 
-  </para>
-  <para>
+   <parameter>format</parameter>.
+  </simpara>
+  <simpara>
    The idea for this function was taken from Perl and all formatting codes
    work the same as in Perl. However, there are some formatting codes that are
    missing such as Perl's "u" format code.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Note that the distinction between signed and unsigned values only
    affects the function <function>unpack</function>, where as
    function <function>pack</function> gives the same result for
    signed and unsigned format codes.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   <para>
@@ -37,7 +37,7 @@
     <varlistentry>
      <term><parameter>format</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <parameter>format</parameter> string consists of format codes
        followed by an optional repeater argument. The repeater argument can
        be either an integer value or <literal>*</literal> for repeating to
@@ -46,7 +46,7 @@
        absolute position where to put the next data, for everything else the
        repeat count specifies how many data arguments are consumed and packed
        into the resulting binary string.
-      </para>
+      </simpara>
       <para>
        Currently implemented formats are:
        <table>
@@ -181,21 +181,21 @@
     <varlistentry>
      <term><parameter>values</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a binary string containing data.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="changelog">
   &reftitle.changelog;
   <para>
@@ -244,28 +244,28 @@ $binarydata = pack("nvc*", 0x1234, 0x5678, 65, 66);
 ?>
 ]]>
     </programlisting>
-    <para>
+    <simpara>
      The resulting binary string will be 6 bytes long and contain
      the byte sequence 0x12, 0x34, 0x78, 0x56, 0x41, 0x42.
-    </para>
+    </simpara>
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="notes">
   &reftitle.notes;
   <caution>
     <simpara>Format codes <literal>q</literal>, <literal>Q</literal>, <literal>J</literal> and <literal>P</literal> are not available on 32-bit PHP builds.</simpara>
   </caution>
   <caution>
-   <para>Note that PHP internally stores <type>int</type> values as
+   <simpara>Note that PHP internally stores <type>int</type> values as
     signed values of a machine-dependent size.
-    Integer literals and operations that yield numbers outside the bounds of the  
+    Integer literals and operations that yield numbers outside the bounds of the
     <type>int</type> type will be stored as <type>float</type>.
-    When packing these floats as integers, they are first cast into the integer   
+    When packing these floats as integers, they are first cast into the integer
     type. This may or may not result in the desired byte pattern.
-   </para>
-   <para>The most relevant case is when packing unsigned numbers that would
+   </simpara>
+   <simpara>The most relevant case is when packing unsigned numbers that would
     be representable with the <type>int</type> type if it were unsigned.
     In systems where the <type>int</type> type has a 32-bit size, the cast
     usually results in the same byte pattern as if the <type>int</type> were
@@ -274,14 +274,14 @@ $binarydata = pack("nvc*", 0x1234, 0x5678, 65, 66);
     <type>int</type> type has 64-bit size, the <type>float</type> most
     likely does not have a mantissa large enough to hold the value without
     loss of precision. If those systems also have a native 64-bit C
-    <literal>int</literal> type (most UNIX-like systems don't), the only way to  
+    <literal>int</literal> type (most UNIX-like systems don't), the only way to
     use the <literal>I</literal> pack format in the upper range is to create
     <type>int</type> negative values with the same byte representation
     as the desired unsigned value.
-   </para>
+   </simpara>
   </caution>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>
@@ -290,7 +290,7 @@ $binarydata = pack("nvc*", 0x1234, 0x5678, 65, 66);
    </simplelist>
   </para>
  </refsect1>
- 
+
 </refentry>
 <!-- Keep this comment at the end of the file
 Local variables:

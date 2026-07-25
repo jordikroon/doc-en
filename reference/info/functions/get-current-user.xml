@@ -5,7 +5,7 @@
   <refname>get_current_user</refname>
   <refpurpose>Gets the name of the owner of the current PHP script</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the username as a string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

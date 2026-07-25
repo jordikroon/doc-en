@@ -13,9 +13,9 @@
    <void/>
   </methodsynopsis>
 
-  <para>
+  <simpara>
    Get the current <classname>DirectoryIterator</classname> item.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The current <classname>DirectoryIterator</classname> item.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -35,9 +35,9 @@
   <para>
    <example>
     <title>A <methodname>DirectoryIterator::current</methodname> example</title>
-    <para>
+    <simpara>
      This example will list the contents of the directory containing the script.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -64,7 +64,7 @@ while($iterator->valid()) {
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

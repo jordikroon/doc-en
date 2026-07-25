@@ -8,9 +8,9 @@
  <!-- {{{ preface -->
  <preface xml:id="intro.mail">
   &reftitle.intro;
-  <para>
+  <simpara>
    The <function>mail</function> function allows you to send mail.
-  </para>
+  </simpara>
  </preface>
  <!-- }}} -->
 

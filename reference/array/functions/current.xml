@@ -11,11 +11,11 @@
    <type>mixed</type><methodname>current</methodname>
    <methodparam><type class="union"><type>array</type><type>object</type></type><parameter>array</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Every array has an internal pointer to its "current" element,
    which is initialized to the first element inserted into the
    array.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The array.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -34,13 +34,13 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The <function>current</function> function simply returns the
    value of the array element that's currently being pointed to by the
    internal pointer.  It does not move the pointer in any way.  If the
-   internal pointer points beyond the end of the elements list or the array is 
+   internal pointer points beyond the end of the elements list or the array is
    empty, <function>current</function> returns &false;.
-  </para>
+  </simpara>
   &return.falseproblem;
  </refsect1>
 
@@ -94,14 +94,14 @@ var_dump(current($arr)); // array(0) { }
    <simpara>
     The results of calling <function>current</function> on an empty array
     and on an array, whose internal pointer points beyond the end of the elements,
-    are indistinguishable from a <type>bool</type> &false; element. 
-    To properly traverse an array which may contain &false; elements, see the 
+    are indistinguishable from a <type>bool</type> &false; element.
+    To properly traverse an array which may contain &false; elements, see the
     &foreach; control structure.
    </simpara>
    <simpara>
-    To still use <function>current</function> and properly check if the value 
-    is really an element of the array, the <function>key</function> 
-    of the <function>current</function> element should be checked to be strictly 
+    To still use <function>current</function> and properly check if the value
+    is really an element of the array, the <function>key</function>
+    of the <function>current</function> element should be checked to be strictly
     different from &null;.
    </simpara>
   </note>

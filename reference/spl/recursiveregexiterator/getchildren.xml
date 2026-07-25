@@ -11,9 +11,9 @@
    <modifier>public</modifier> <type>RecursiveRegexIterator</type><methodname>RecursiveRegexIterator::getChildren</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns an iterator for the current iterator entry.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -23,18 +23,18 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An iterator for the current entry, if it can be iterated over by the inner iterator.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   An <classname>InvalidArgumentException</classname>
+  <simpara>
+   An <exceptionname>InvalidArgumentException</exceptionname>
    will be thrown if the current entry does not contain a value that can be iterated over by
    the inner iterator.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

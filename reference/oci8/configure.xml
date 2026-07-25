@@ -6,38 +6,38 @@
 
 <section xml:id="oci8.configure" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
 <title>Configuring PHP with OCI8</title>
- <para>
+ <simpara>
   Review the
   previous <link linkend="oci8.requirements">Requirements</link>
   section before configuring OCI8.
- </para>
- <para>
+ </simpara>
+ <simpara>
   Before starting the web server, OCI8 typically requires several
   Oracle environment variables (see below) to locate libraries, point
   to configuration files, and set some basic properties such as the
   character set used by Oracle libraries.  The variables must be set
   <emphasis>before</emphasis> any PHP process starts.
- </para>
- <para>
+ </simpara>
+ <simpara>
   The PHP binary must link with the same, or more recent, major version of
   Oracle libraries as it was configured with.  For example, if you build
   OCI8 with Oracle 19 libraries, then PHP should also be deployed
   and run with Oracle 19 libraries. PHP applications can connect to other
   versions of Oracle Database, since Oracle has client-server cross-version compatibility.
- </para>
+ </simpara>
 </section>
 <section>
  <title>Installing OCI8 from PECL Using the pecl Command</title>
- <para xmlns:xlink="http://www.w3.org/1999/xlink">
+ <simpara xmlns:xlink="http://www.w3.org/1999/xlink">
   The OCI8 extension can be added to an existing PHP installation by using
   the <link xlink:href="&url.pecl.package;oci8">PECL</link> repository.
- </para>
+ </simpara>
  <para>
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      If you are behind a firewall, set PEAR's proxy, for example:
-    </para>
+    </simpara>
     <para>
      <informalexample>
       <screen>
@@ -49,9 +49,9 @@ pear config-set http_proxy http://my-proxy.example.com:80/
     </para>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      Run
-    </para>
+    </simpara>
     <para>
      <informalexample>
       <screen>
@@ -61,30 +61,30 @@ pecl install oci8
       </screen>
      </informalexample>
     </para>
-    <para>
+    <simpara>
      For PHP 7, use <literal>pecl install oci8-2.2.0</literal>
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      When prompted, enter either the value of <literal>$ORACLE_HOME</literal>, or
      <literal>instantclient,/path/to/instant/client/lib</literal>.
-    </para>
-    <para>
+    </simpara>
+    <simpara>
       Note: Do not enter variable names like <literal>$ORACLE_HOME</literal>
       or <literal>$HOME</literal> because <literal>pecl</literal> will not
       expand them.  Instead, enter an expanded path, for
       example <literal>/opt/oracle/product/19c/dbhome_1</literal>
       or <literal>instantclient,/Users/myname/Downloads/instantclient_19_8</literal>
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      If you get an error <literal>oci8_dtrace_gen.h: No such file or
      directory</literal>, it means PHP was built
      with <link linkend="features.dtrace">DTrace Dynamic Tracing</link> enabled.
      Install using:
-    </para>
+    </simpara>
    <para>
     <informalexample>
      <screen>
@@ -94,12 +94,12 @@ $ pecl install oci8
 ]]>
      </screen>
     </informalexample>
-   </para>    
-   </listitem>   
+   </para>
+   </listitem>
    <listitem>
-    <para>
+    <simpara>
       Edit your &php.ini; file and add the line:
-    </para>
+    </simpara>
     <para>
       <informalexample>
         <screen>
@@ -109,30 +109,30 @@ extension=oci8.so
         </screen>
       </informalexample>
     </para>
-    <para>
+    <simpara>
       Make sure the &php.ini;
       directive <link linkend="ini.extension-dir">extension_dir</link> is
       set to the directory that <filename>oci8.so</filename> was installed
       in.
-    </para>
+    </simpara>
    </listitem>
   </itemizedlist>
  </para>
 </section>
 <section>
  <title>Installing OCI8 from PECL Using phpize</title>
- <para xmlns:xlink="http://www.w3.org/1999/xlink">
+ <simpara xmlns:xlink="http://www.w3.org/1999/xlink">
   To install OCI8 on an existing PHP installation when
   the <literal>pecl</literal> command is not available, manually download
   the <link xlink:href="&url.pecl.package;oci8">PECL</link> OCI8 package,
   e.g. <filename>oci8-3.0.0.tgz</filename>.
- </para>
+ </simpara>
  <para>
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      Extract the package:
-    </para>
+    </simpara>
     <para>
      <informalexample>
       <screen>
@@ -145,9 +145,9 @@ cd oci8-3.0.0
     </para>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      Prepare the package:
-    </para>
+    </simpara>
     <para>
      <informalexample>
       <screen>
@@ -159,10 +159,10 @@ phpize
     </para>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      Configure the package, either
      using <literal>$ORACLE_HOME</literal> or Instant Client
-    </para>
+    </simpara>
     <para>
      <informalexample>
       <screen>
@@ -172,9 +172,9 @@ phpize
       </screen>
      </informalexample>
     </para>
-    <para>
+    <simpara>
      or
-    </para>
+    </simpara>
     <para>
      <informalexample>
       <screen>
@@ -186,9 +186,9 @@ phpize
     </para>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      Install the package:
-    </para>
+    </simpara>
     <para>
      <informalexample>
       <screen>
@@ -200,13 +200,13 @@ make install
     </para>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      If you get an error <literal>oci8_dtrace_gen.h: No such file or
      directory</literal>, it means PHP was built
      with <link linkend="features.dtrace">DTrace Dynamic Tracing</link> enabled.
      Re-run the <literal>configure</literal> and <literal>make</literal>
      commands after setting this environment variable:
-    </para>
+    </simpara>
     <para>
      <informalexample>
       <screen>
@@ -215,12 +215,12 @@ $ export PHP_DTRACE=yes
 ]]>
      </screen>
     </informalexample>
-   </para>    
+   </para>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
       Edit your &php.ini; file and add the line:
-    </para>
+    </simpara>
     <para>
       <informalexample>
         <screen>
@@ -230,36 +230,36 @@ extension=oci8.so
         </screen>
       </informalexample>
     </para>
-    <para>
+    <simpara>
       Make sure the &php.ini;
       directive <link linkend="ini.extension-dir">extension_dir</link> is
       set to the directory that <filename>oci8.so</filename> was installed
       in.
-    </para>
+    </simpara>
    </listitem>
   </itemizedlist>
  </para>
 </section>
 <section>
  <title>Installing OCI8 as a Shared Extension when Building PHP</title>
- <para>
+ <simpara>
   If you are building PHP from source code, the
   configuration <literal>shared</literal> option can be used to build OCI8 as a shared library
   that can be dynamically loaded into PHP.  Building a shared extension allows
   OCI8 to be upgraded easily without impacting the rest of PHP.
- </para>
- <para>
+ </simpara>
+ <simpara>
   Configure OCI8 using one of the following configure options.
- </para>
+ </simpara>
  <para>
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      If using the free <link xmlns="http://docbook.org/ns/docbook"
      xmlns:xlink="http://www.w3.org/1999/xlink"
      xlink:href="&url.oracle.instant.client;">Oracle Instant
      Client</link> libraries, then do:
-    </para>
+    </simpara>
     <para>
      <informalexample>
       <screen>
@@ -269,15 +269,15 @@ extension=oci8.so
       </screen>
      </informalexample>
     </para>
-    <para>
+    <simpara>
      If Instant Client 12.2 (or earlier) is installed from ZIP files, make sure to create
      the library symbolic link first, for example <literal>ln -s
      libclntsh.so.12.1 libclntsh.so</literal>.
-    </para>
-    <para>
+    </simpara>
+    <simpara>
      If using an RPM-based installation of Oracle Instant Client, the
      configure line will look like this:
-    </para>
+    </simpara>
     <para>
      <informalexample>
       <screen>
@@ -287,14 +287,14 @@ extension=oci8.so
       </screen>
      </informalexample>
     </para>
-    <para>
+    <simpara>
      For example, <option role="configure">--with-oci8=shared,instantclient,/usr/lib/oracle/19.9/client/lib</option>
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      If using an Oracle database or full Oracle Client installation then do:
-    </para>
+    </simpara>
     <para>
      <informalexample>
       <screen>
@@ -304,7 +304,7 @@ extension=oci8.so
       </screen>
      </informalexample>
     </para>
-    <para>
+    <simpara>
      Make sure the web server user
      (<literal>nobody</literal>, <literal>www</literal>) has access to
      the libraries, initialization files
@@ -313,21 +313,21 @@ extension=oci8.so
      10<emphasis>g</emphasis>R2, you may need to run
      the <filename>$ORACLE_HOME/install/changePerm.sh</filename>
      utility to give directory access.
-    </para>
+    </simpara>
    </listitem>
   </itemizedlist>
  </para>
- <para>
+ <simpara>
   After configuration, follow the usual PHP building procedure,
   e.g. <emphasis>make install</emphasis>.  The OCI8 shared extension
   <filename>oci8.so</filename> library will be created.  It may need
   to be manually moved to the PHP extension directory, specified by
   the <link linkend="ini.extension-dir">extension_dir</link> option in
   your &php.ini; file.
- </para>
- <para>
+ </simpara>
+ <simpara>
   To complete installation of OCI8, edit &php.ini; and add the line:
- </para>
+ </simpara>
  <para>
   <informalexample>
    <screen>
@@ -340,16 +340,16 @@ extension=oci8.so
 </section>
 <section>
  <title>Installing OCI8 as a Statically Compiled Extension when Building PHP</title>
- <para>
+ <simpara>
   If you are building PHP from source code, you can configure PHP to include
   OCI8 as a static extension using one of the following configure options.
- </para>
+ </simpara>
  <para>
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      If using Oracle Instant Client, then do:
-    </para>
+    </simpara>
     <para>
      <informalexample>
       <screen>
@@ -361,9 +361,9 @@ extension=oci8.so
     </para>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      If using an Oracle database or full Oracle Client installation then do:
-    </para>
+    </simpara>
     <para>
      <informalexample>
       <screen>
@@ -376,21 +376,21 @@ extension=oci8.so
    </listitem>
   </itemizedlist>
  </para>
- <para>
+ <simpara>
   After configuration, follow the usual PHP building procedure,
   e.g. <emphasis>make install</emphasis>.  After successful
   compilation, you do not need to add <filename>oci8.so</filename> to
   &php.ini;.  No additional build steps are required.
- </para>
+ </simpara>
 </section>
 <section>
  <title>Installing OCI8 on Windows</title>
- <para xmlns:xlink="http://www.w3.org/1999/xlink">
+ <simpara xmlns:xlink="http://www.w3.org/1999/xlink">
   The OCI8 extension can be added to an existing PHP installation by using the
   DLLs from <link xlink:href="&url.pecl.package;oci8">PECL</link> repository or
   the libraries in your PHP installation's <literal>ext</literal> directory.
- </para>
- <para>
+ </simpara>
+ <simpara>
   With Oracle 12<emphasis>c</emphasis> (or later) libraries, uncomment one of
   the &php.ini; lines <literal>extension=php_oci8_12c.dll</literal>
   or <literal>extension=php_oci8_11g.dll</literal>
@@ -399,32 +399,32 @@ extension=oci8.so
   functionality. Not all DLLs may be available for all versions of PHP.  Make
   sure <link linkend="ini.extension-dir">extension_dir</link> is set to the
   directory containing the PHP extension DLLs.
- </para>
- <para>
+ </simpara>
+ <simpara>
   If using Instant Client, set the system <envar>PATH</envar>
   environment variable to the Oracle library directory.
- </para>
+ </simpara>
 </section>
 <section>
  <title>Setting the Oracle Environment</title>
- <para>
+ <simpara>
   Before using this extension, make sure that the Oracle environment
   variables are properly set for the web daemon user.  If your web
   server is automatically started at boot time then make sure that the
   boot-time environment is also configured correctly.
- </para>
+ </simpara>
  <note>
-  <para>
+  <simpara>
    Do not set Oracle environment variables
    using <function>putenv</function> in a PHP script because Oracle
    libraries may be loaded and initialized before your script
    runs. Variables set with <function>putenv</function> may then cause
    conflicts, crashes, or unpredictable behavior.  Some functions may
    work but others might give subtle errors. The variables should be
-   set up <emphasis>before</emphasis> the web server is started.  
-  </para>
+   set up <emphasis>before</emphasis> the web server is started.
+  </simpara>
  </note>
- <para>
+ <simpara>
   On Red Hat Linux and variants, export variables at the end of
   <filename>/etc/sysconfig/httpd</filename>.  Other systems with
   Apache 2 may use an <filename>envvars</filename> script in the
@@ -432,13 +432,13 @@ extension=oci8.so
   Apache <literal>SetEnv</literal> directive
   in <filename>httpd.conf</filename>, may work in some systems but is
   known to be insufficient in others.
- </para>
- <para>
+ </simpara>
+ <simpara>
   To check that environment variables are set correctly,
   use <function>phpinfo</function> and check
   the <emphasis>Environment</emphasis> (not the <emphasis>Apache
   Environment</emphasis>) section contains the expected variables.
- </para>
+ </simpara>
  <para>
   The variables that might be needed are included in the following
   table.  Refer to the Oracle documentation for more information on
@@ -510,12 +510,12 @@ extension=oci8.so
    <literal>TWO_TASK</literal>, <literal>ORA_TZFILE</literal>, and the
    various Oracle globalization settings
    like <literal>NLS*</literal> and the <literal>ORA_NLS_*</literal>
-   variables.  
+   variables.
  </para>
 </section>
 <section>
  <title>Troubleshooting</title>
- <para>
+ <simpara>
   The most common problem with installing OCI8 is not having the
   Oracle environment correctly set.  This typically appears as a
   problem using <function>oci_connect</function>
@@ -524,30 +524,30 @@ extension=oci8.so
   oci_connect()</emphasis>, an Oracle error such as ORA-12705, or even
   an Apache crash.  Check the Apache log files for startup errors and
   see the sections above to resolve this problem.
- </para>
- <para>
+ </simpara>
+ <simpara>
   While network errors like ORA-12154 or ORA-12514 indicate an Oracle
   network naming or configuration issue, the root cause may be because
   the PHP environment is incorrectly set up and Oracle libraries are
   unable to locate the <filename>tnsnames.ora</filename> configuration
   file.
- </para>
- <para>
+ </simpara>
+ <simpara>
   On Windows, having multiple versions of Oracle on the one machine
   can easily cause library clashes unless care is taken to make sure
   PHP only uses the correct version of Oracle.
- </para>
- <para>
+ </simpara>
+ <simpara>
   A utility to examine what libraries are being looked for and loaded
   can help resolve missing or clashing library issues, particularly on
   Windows.
- </para>
+ </simpara>
  <note>
   <title>If the web server doesn't start or crashes at
   startup</title>
-  <para>
+  <simpara>
    Check that Apache is linked with the pthread library:
-  </para>
+  </simpara>
   <para>
    <informalexample>
     <screen>
@@ -563,9 +563,9 @@ extension=oci8.so
     </screen>
    </informalexample>
   </para>
-  <para>
+  <simpara>
    If the libpthread is not listed, then reinstall Apache:
-  </para>
+  </simpara>
   <para>
    <informalexample>
     <screen>
@@ -579,11 +579,11 @@ extension=oci8.so
     </screen>
    </informalexample>
   </para>
-  <para>
+  <simpara>
    Please note that on some systems like UnixWare, it is libthread
    instead of libpthread. PHP and Apache have to be configured with
    EXTRA_LIBS=-lthread.
-  </para>
+  </simpara>
  </note>
 </section>
 

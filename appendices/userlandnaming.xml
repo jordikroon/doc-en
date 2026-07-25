@@ -2,95 +2,95 @@
 <!-- $Revision$ -->
 <appendix xml:id="userlandnaming" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <title>Userland Naming Guide</title>
- <para>
+ <simpara>
   The following is a guide for how to best choose names for identifiers
   in userland PHP code. When choosing names for any code that creates symbols
   in the global namespace, it is important to take into account the following
   guidelines to prevent future versions of PHP from clashing with your
   symbols.
- </para>
+ </simpara>
 
  <section xml:id="userlandnaming.globalnamespace">
   <title>Global Namespace</title>
-  <para>
+  <simpara>
    Here is an overview of code constructs that go into the global namespace:
-  </para>
+  </simpara>
 
   <itemizedlist>
-   <listitem><para>functions</para></listitem>
-   <listitem><para>classes</para></listitem>
-   <listitem><para>interfaces</para></listitem>
-   <listitem><para>constants (not class constants)</para></listitem>
+   <listitem><simpara>functions</simpara></listitem>
+   <listitem><simpara>classes</simpara></listitem>
+   <listitem><simpara>interfaces</simpara></listitem>
+   <listitem><simpara>constants (not class constants)</simpara></listitem>
    <listitem>
-    <para>variables defined outside of functions/methods</para>
+    <simpara>variables defined outside of functions/methods</simpara>
    </listitem>
   </itemizedlist>
  </section>
 
  <section xml:id="userlandnaming.rules">
   <title>Rules</title>
-  <para>
+  <simpara>
    The following list gives an overview of which rights the PHP project
    reserves for itself, when choosing names for new internal identifiers.
    The definitive guide is the official
    <link xlink:href="&url.userlandnaming.cs;">CODING STANDARDS</link>:
-  </para>
+  </simpara>
 
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      PHP owns the top-level namespace but tries to find decent descriptive
      names and avoid any obvious clashes.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      Function names use underscores between words, while class names use
      both the <literal>camelCase</literal> and <literal>PascalCase</literal>
      rules.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      PHP will prefix any global symbols of an extension with the name of
      the extension. (In the past, there have been numerous
      exceptions to this rule.) Examples:
-    </para>
+    </simpara>
 
     <itemizedlist>
-     <listitem><para><function>curl_close</function></para></listitem>
-     <listitem><para><function>mysql_query</function></para></listitem>
-     <listitem><para>PREG_SPLIT_DELIM_CAPTURE</para></listitem>
-     <listitem><para>new DOMDocument()</para></listitem>
+     <listitem><simpara><function>curl_close</function></simpara></listitem>
+     <listitem><simpara><function>mysql_query</function></simpara></listitem>
+     <listitem><simpara>PREG_SPLIT_DELIM_CAPTURE</simpara></listitem>
+     <listitem><simpara>new DOMDocument()</simpara></listitem>
      <listitem>
-      <para>
+      <simpara>
        <function>strpos</function> (example of a past mistake)
-      </para>
+      </simpara>
      </listitem>
-     <listitem><para>new SplFileObject()</para></listitem>
+     <listitem><simpara>new SplFileObject()</simpara></listitem>
     </itemizedlist>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      Iterators and Exceptions are however simply postfixed with
      "<literal>Iterator</literal>" and "<literal>Exception</literal>."
      Examples:
-    </para>
+    </simpara>
     <itemizedlist>
-     <listitem><para><classname>ArrayIterator</classname></para></listitem>
-     <listitem><para><classname>LogicException</classname></para></listitem>
+     <listitem><simpara><classname>ArrayIterator</classname></simpara></listitem>
+     <listitem><simpara><exceptionname>LogicException</exceptionname></simpara></listitem>
     </itemizedlist>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      PHP reserves all symbols starting with <literal>__</literal>
      as magical. It is recommended that you do not create symbols starting
      with <literal>__</literal> in PHP unless
      you want to use documented magical functionality. Examples:
-    </para>
+    </simpara>
     <itemizedlist>
-     <listitem><para><link linkend="object.get">__get()</link></para></listitem>
-     <listitem><para><function>__autoload</function></para></listitem>
+     <listitem><simpara><link linkend="object.get">__get()</link></simpara></listitem>
+     <listitem><simpara><function>__autoload</function></simpara></listitem>
     </itemizedlist>
    </listitem>
   </itemizedlist>
@@ -98,17 +98,17 @@
 
  <section xml:id="userlandnaming.tips">
   <title>Tips</title>
-  <para>
+  <simpara>
    In order to write future-proof code, it is recommended that you don't
    place many variables, functions or classes in the global namespace. This will
    prevent naming conflicts with 3rd party code as well as possible
    future additions to the language.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    One common way to prevent naming conflicts of functions and classes is to
    add them to their own dedicated
    <link linkend="language.namespaces">namespace</link>.
-  </para>
+  </simpara>
   <informalexample>
    <programlisting role="php">
 <![CDATA[
@@ -124,23 +124,23 @@ function my_function() {
 ]]>
    </programlisting>
   </informalexample>
-  <para>
+  <simpara>
    This still needs you to keep track of already used namespaces, but once you
    have decided on a namespace you will be using you can add all functions and
    classes to it without having to think about conflicts again.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    It is considered best practice to limit the number of variables added to
    the global scope in order to prevent naming conflicts with 3rd party
    code.
-  </para>
+  </simpara>
   <note>
    <title>Variable scoping</title>
-   <para>
+   <simpara>
     Because of PHP's <link linkend="language.variables.scope">scoping rules</link>
     variables defined inside functions and methods are not in the global scope
     and as such cannot conflict with other variables defined in the global scope.
-   </para>
+   </simpara>
   </note>
  </section>
 

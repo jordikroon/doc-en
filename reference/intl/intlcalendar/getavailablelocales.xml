@@ -8,24 +8,24 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="IntlCalendar">
    <modifier>public</modifier> <modifier>static</modifier> <type>array</type><methodname>IntlCalendar::getAvailableLocales</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type>array</type><methodname>intlcal_get_available_locales</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gives the list of locales for which calendars are installed. As of ICU 51,
    this is the list of all installed ICU locales.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">

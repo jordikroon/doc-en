@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>string</type><methodname>DirectoryIterator::getExtension</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Retrieves the file extension.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -25,10 +25,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a <type>string</type> containing the file extension, or an
    empty <type>string</type> if the file has no extension.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -64,10 +64,10 @@ gz
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     Another way of getting the extension is to use the
     <function>pathinfo</function> function.
-   </para>
+   </simpara>
    <informalexample>
     <programlisting role="php">
 <![CDATA[
@@ -78,7 +78,7 @@ $extension = pathinfo($fileinfo->getFilename(), PATHINFO_EXTENSION);
     </programlisting>
    </informalexample>
   </note>
- </refsect1> 
+ </refsect1>
 
  <refsect1 role="seealso">
   &reftitle.seealso;

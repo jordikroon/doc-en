@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://docbook.org/ns/docbook" xml:id="function.quoted-printable-encode">
+<refentry xml:id="function.quoted-printable-encode" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>quoted_printable_encode</refname>
   <refpurpose>Convert a 8 bit string to a quoted-printable string</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>string</type><methodname>quoted_printable_encode</methodname>
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a quoted printable string created according to <link
    xlink:href="&url.rfc;2045">RFC2045</link>, section 6.7.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This function is similar to <function>imap_8bit</function>, except this
    one does not require the IMAP module to work.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,9 +29,9 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -40,9 +40,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the encoded string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

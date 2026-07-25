@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>SplFileObject::valid</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Check whether EOF has been reached.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if not reached EOF, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

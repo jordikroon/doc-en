@@ -8,9 +8,9 @@
 <!-- {{{ Random\RandomException intro -->
   <section xml:id="random-randomexception.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     The base class for <type>Exception</type>s that occur during generation or use of randomness.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

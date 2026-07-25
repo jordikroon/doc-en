@@ -10,9 +10,9 @@
 <!-- {{{ SoapHeader intro -->
   <section xml:id="soapheader.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Represents a SOAP header.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -65,36 +65,36 @@
     <varlistentry xml:id="soapheader.props.actor">
      <term><varname>actor</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapheader.props.data">
      <term><varname>data</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapheader.props.mustunderstand">
      <term><varname>mustUnderstand</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapheader.props.name">
      <term><varname>name</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapheader.props.namespace">
      <term><varname>namespace</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

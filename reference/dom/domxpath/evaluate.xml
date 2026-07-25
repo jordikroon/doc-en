@@ -15,10 +15,10 @@
    <methodparam choice="opt"><type class="union"><type>DOMNode</type><type>null</type></type><parameter>contextNode</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>registerNodeNS</parameter><initializer>&true;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Executes the given XPath <parameter>expression</parameter> and returns
    a typed result if possible.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -27,19 +27,19 @@
     <varlistentry>
      <term><parameter>expression</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The XPath expression to execute.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>contextNode</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The optional <parameter>contextNode</parameter> can be specified for
-       doing relative XPath queries. By default, the queries are relative to 
+       doing relative XPath queries. By default, the queries are relative to
        the root element.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     &dom.parameters.register_node_ns;
@@ -49,10 +49,10 @@
  <xi:include xpointer="domxpath.query..errors" />
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   Returns a typed result if possible or a <classname>DOMNodeList</classname> 
-   containing all nodes matching the given XPath <parameter>expression</parameter>. 
-  </para>
+  <simpara>
+   Returns a typed result if possible or a <classname>DOMNodeList</classname>
+   containing all nodes matching the given XPath <parameter>expression</parameter>.
+  </simpara>
   <para>
    If the <parameter>expression</parameter> is malformed or the
    <parameter>contextNode</parameter> is invalid,

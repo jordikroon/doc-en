@@ -22,9 +22,9 @@
    <modifier>public</modifier> <type>array</type><methodname>DateTimeInterface::__serialize</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    The <link linkend="object.serialize">__serialize()</link> handler.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -34,10 +34,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The serialized representation of the
    <classname>DateTime</classname> object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

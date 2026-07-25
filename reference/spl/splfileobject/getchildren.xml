@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>null</type><methodname>SplFileObject::getChildren</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    An <classname>SplFileObject</classname> does not have children so this method returns &null;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &null;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

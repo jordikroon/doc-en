@@ -5,7 +5,7 @@
   <refname>array_diff_ukey</refname>
   <refpurpose>Computes the difference of arrays using a callback function on the keys for comparison</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,16 +14,16 @@
    <methodparam rep="repeat"><type>array</type><parameter>arrays</parameter></methodparam>
    <methodparam><type>callable</type><parameter>key_compare_func</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Compares the keys from <parameter>array</parameter> against the keys
    from <parameter>arrays</parameter> and returns the difference.
    This function is like <function>array_diff</function> except the
    comparison is done on the keys instead of the values.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Unlike <function>array_diff_key</function> a user supplied callback
    function is used for the indices comparison, not internal function.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -34,18 +34,18 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The array to compare from
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
     <varlistentry>
      <term><parameter>arrays</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Arrays to compare against
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -62,10 +62,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an <type>array</type> containing all the entries from
    <parameter>array</parameter> that are not present in any of the other arrays.
-  </para>
+  </simpara>
  </refsect1>
 
 <!--
@@ -74,7 +74,7 @@
   &errors.no.unusual.errors;
  </refsect1>
 -->
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -118,11 +118,11 @@ array(2) {
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     This function only checks one dimension of a n-dimensional
     array. Of course you can check deeper dimensions by using
     <literal>array_diff_ukey($array1[0], $array2[0], 'callback_func');</literal>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

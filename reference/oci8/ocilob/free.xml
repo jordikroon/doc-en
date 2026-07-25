@@ -5,17 +5,17 @@
   <refname>OCILob::free</refname>
   <refpurpose>Frees resources associated with the LOB descriptor</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="OCILob">
    <modifier>public</modifier> <type>bool</type><methodname>OCILob::free</methodname>
    <void/>
   </methodsynopsis>
-  <para>
-   Frees resources associated with the descriptor, previously allocated with 
+  <simpara>
+   Frees resources associated with the descriptor, previously allocated with
    <function>oci_new_descriptor</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

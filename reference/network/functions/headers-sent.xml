@@ -5,7 +5,7 @@
   <refname>headers_sent</refname>
   <refpurpose>Checks if or where headers have been sent</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,15 +13,15 @@
    <methodparam choice="opt"><type>string</type><parameter role="reference">filename</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter role="reference">line</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks if or where headers have been sent.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    You can't add any more header lines using the <function>header</function>
    function once the header block has already been sent. Using this function
    you can at least prevent getting HTTP header related error messages.
    Another option is to use <link linkend="ref.outcontrol">Output Buffering</link>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -31,27 +31,27 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If the optional <parameter>filename</parameter> and
-       <parameter>line</parameter> parameters are set, 
+       <parameter>line</parameter> parameters are set,
        <function>headers_sent</function> will put the PHP source file name
        and line number where output started in the <parameter>filename</parameter>
        and <parameter>line</parameter> variables.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         If the output has started before executing the PHP source file (for example due to a startup error),
         the <parameter>filename</parameter> parameter will be set to an empty string.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>line</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The line number where the output started.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -60,10 +60,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    <function>headers_sent</function> will return &false; if no HTTP headers
    have already been sent or &true; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -103,7 +103,7 @@ if (!headers_sent($filename, $linenum)) {
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="notes">
   &reftitle.notes;
   &note.network.header.sapi;

@@ -5,7 +5,7 @@
   <refname>mb_ereg_search_init</refname>
   <refpurpose>Setup string and regular expression for a multibyte regular expression match</refpurpose>
  </refnamediv>
-   
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,14 +14,14 @@
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>pattern</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>options</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>mb_ereg_search_init</function> sets
    <parameter>string</parameter> and <parameter>pattern</parameter>
    for a multibyte regular expression. These values are used for
    <function>mb_ereg_search</function>,
    <function>mb_ereg_search_pos</function>, and
-   <function>mb_ereg_search_regs</function>. 
-  </para>
+   <function>mb_ereg_search_regs</function>.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -31,31 +31,31 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The search string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>pattern</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The search pattern.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>options</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The search option. See <function>mb_regex_set_options</function> for explanation.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
   <simpara>
@@ -89,7 +89,7 @@
 
  <refsect1 role="notes">
   &reftitle.notes;
-  
+
   &note.mbstring.encoding.internal;
  </refsect1>
 

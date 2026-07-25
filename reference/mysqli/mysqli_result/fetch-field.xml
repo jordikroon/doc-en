@@ -9,21 +9,21 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="mysqli_result">
    <modifier>public</modifier> <type class="union"><type>object</type><type>false</type></type><methodname>mysqli_result::fetch_field</methodname>
    <void/>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type class="union"><type>object</type><type>false</type></type><methodname>mysqli_fetch_field</methodname>
    <methodparam><type>mysqli_result</type><parameter>result</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the definition of one column of a result set as an object. Call
    this function repeatedly to retrieve information about all columns in the
    result set.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -37,10 +37,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an object which contains field definition information or &false;
    if no field information is available.
-  </para>
+  </simpara>
   <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('mysqli-result.fetch-fields')/db:refsect1[@role='returnvalues']/db:table)"/>
  </refsect1>
 

@@ -12,11 +12,11 @@
    <type>string</type><methodname>urldecode</methodname>
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Decodes any <literal>%<replaceable>##</replaceable></literal>
    encoding in the given string. Plus symbols ('<literal>+</literal>') are
    decoded to a space character.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,9 +26,9 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string to be decoded.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,9 +37,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the decoded string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -69,12 +69,12 @@ foreach (explode('&', $query) as $chunk) {
  <refsect1 role="notes">
   &reftitle.notes;
   <warning>
-   <para>
+   <simpara>
     The superglobals <varname>$_GET</varname> and <varname>$_REQUEST</varname>
     are already decoded.  Using <function>urldecode</function> on an element
     in <varname>$_GET</varname> or <varname>$_REQUEST</varname> could have
     unexpected and dangerous results.
-   </para>
+   </simpara>
   </warning>
  </refsect1>
 

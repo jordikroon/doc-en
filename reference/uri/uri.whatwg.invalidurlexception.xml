@@ -56,7 +56,7 @@
      <term><varname>errors</varname></term>
      <listitem>
       <simpara>
-       An &array; of <classname>Uri\WhatWg\UrlValidationError</classname> objects.
+       An &array; of <exceptionname>Uri\WhatWg\UrlValidationError</exceptionname> objects.
       </simpara>
      </listitem>
     </varlistentry>

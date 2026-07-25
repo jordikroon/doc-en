@@ -13,15 +13,15 @@
    <type>bool</type><methodname>ctype_alpha</methodname>
    <methodparam><type>mixed</type><parameter>text</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks if all of the characters in the provided <type>string</type>,
    <parameter>text</parameter>, are alphabetic.
-   In the standard <literal>C</literal> locale letters are just 
-   <literal>[A-Za-z]</literal> and <function>ctype_alpha</function> is 
+   In the standard <literal>C</literal> locale letters are just
+   <literal>[A-Za-z]</literal> and <function>ctype_alpha</function> is
    equivalent to <literal>(ctype_upper($text) || ctype_lower($text))</literal>
-   if $text is just a single character, but other languages have letters that 
+   if $text is just a single character, but other languages have letters that
    are considered neither upper nor lower case.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -44,11 +44,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   Returns &true; if every character in <parameter>text</parameter> is 
+  <simpara>
+   Returns &true; if every character in <parameter>text</parameter> is
    a letter from the current locale, &false; otherwise.
    &ctype.result.empty-string;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -14,23 +14,23 @@
    <methodparam><type>PgSql\Result</type><parameter>result</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>row</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_fetch_assoc</function> returns an associative array that
    corresponds to the fetched row (records).
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    <function>pg_fetch_assoc</function> is equivalent to calling
    <function>pg_fetch_array</function> with <constant>PGSQL_ASSOC</constant> as the
    optional third parameter. It only returns an associative array.
-   If you need the numeric indices, use 
-   <function>pg_fetch_row</function>.  
-  </para>
+   If you need the numeric indices, use
+   <function>pg_fetch_row</function>.
+  </simpara>
   &database.fetch-null;
-  <para>
+  <simpara>
    <function>pg_fetch_assoc</function> is NOT significantly
    slower than using <function>pg_fetch_row</function>, and
    is significantly easier to use.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -46,10 +46,10 @@
     <varlistentry>
      <term><parameter>row</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Row number in result to fetch. Rows are numbered from 0 upwards. If
        omitted or &null;, the next row is fetched.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -58,16 +58,16 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An <type>array</type> indexed associatively (by field name).
-   Each value in the <type>array</type> is represented as a 
+   Each value in the <type>array</type> is represented as a
    <type>string</type>.  Database <literal>NULL</literal>
    values are returned as &null;.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    &false; is returned if <parameter>row</parameter> exceeds the number
    of rows in the set, there are no more rows, or on any other error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -94,7 +94,7 @@
     <title><function>pg_fetch_assoc</function> example</title>
     <programlisting role="php">
 <![CDATA[
-<?php 
+<?php
 $conn = pg_connect("dbname=publisher");
 if (!$conn) {
   echo "An error occurred.\n";

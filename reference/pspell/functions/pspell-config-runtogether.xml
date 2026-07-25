@@ -5,7 +5,7 @@
   <refname>pspell_config_runtogether</refname>
   <refpurpose>Consider run-together words as valid compounds</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,17 +13,17 @@
    <methodparam><type>PSpell\Config</type><parameter>config</parameter></methodparam>
    <methodparam><type>bool</type><parameter>allow</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function determines whether run-together words will be treated as
    legal compounds.  That is, "thecat" will be a legal compound, although
    there should be a space between the two words. Changing this setting only
    affects the results returned by <function>pspell_check</function>;
    <function>pspell_suggest</function> will still return suggestions.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    <function>pspell_config_runtogether</function> should be used on a config
    before calling <function>pspell_new_config</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -39,10 +39,10 @@
     <varlistentry>
      <term><parameter>allow</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &true; if run-together words should be treated as legal compounds,
        &false; otherwise.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -51,9 +51,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

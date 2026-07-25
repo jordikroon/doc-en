@@ -9,32 +9,32 @@
 
   <sect3 xml:id="migration74.other-changes.performance.core">
    <title>PHP Core</title>
-   <para>
+   <simpara>
     A specialized VM opcode for the <function>array_key_exists</function>
     function has been added, which improves performance of this function
     if it can be statically resolved. In namespaced code, this may require
     writing <literal>\array_key_exists()</literal> or explicitly importing
     the function.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration74.other-changes.performance.pcre">
    <title>Regular Expressions (Perl-Compatible)</title>
-   <para>
+   <simpara>
     When <function>preg_match</function> in UTF-8 mode (<literal>"u"</literal> modifier)
     is repeatedly called on the same string (but possibly different offsets),
     it will only be checked for UTF-8 validity once.
-   </para>
+   </simpara>
   </sect3>
  </sect2>
 
  <sect2 xml:id="migration74.other-changes.ini">
   <title>Changes to INI File Handling</title>
-  <para>
+  <simpara>
    <link linkend="ini.zend.exception-ignore-args">zend.exception_ignore_args</link> is a new INI directive
    for including or excluding arguments from stack traces generated
    from exceptions.
-  </para>
+  </simpara>
   <simpara>
    <link linkend="ini.opcache.preload-user">opcache.preload_user</link> is a new INI directive
    for specifying the user account under which preloading
@@ -45,7 +45,7 @@
 
  <sect2 xml:id="migration74.other-changes.pkg-config">
   <title>Migration to pkg-config</title>
-  <para>
+  <simpara>
    A number of extensions have been migrated to exclusively use pkg-config for the
    detection of library dependencies. Generally, this means that instead of using
    <option role="configure">--with-foo-dir=DIR</option> or similar only
@@ -53,10 +53,10 @@
    specified either by adding additional directories to <literal>PKG_CONFIG_PATH</literal>
    or by explicitly specifying compilation options through <literal>FOO_CFLAGS</literal>
    and <literal>FOO_LIBS</literal>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The following extensions and SAPIs are affected:
-  </para>
+  </simpara>
 
   <itemizedlist>
    <listitem>
@@ -347,17 +347,17 @@
   <para>
    <function>fputcsv</function>,
    <function>fgetcsv</function>,
-   <methodname>SplFileObject::fputcsv</methodname>, 
+   <methodname>SplFileObject::fputcsv</methodname>,
    <methodname>SplFileObject::fgetcsv</methodname>, and
    <methodname>SplFileObject::setCsvControl</methodname>
    now accept an empty string as <literal>$escape</literal> argument,
    which disables the proprietary PHP escaping mechanism.
   </para>
-  <para>
+  <simpara>
    The behavior of <function>str_getcsv</function> has been
    adjusted accordingly (formerly, an empty string was identical
    to using the default).
-  </para>
+  </simpara>
   <para>
    <methodname>SplFileObject::getCsvControl</methodname> now may also
    return an empty string for the third array element, accordingly.
@@ -366,19 +366,19 @@
 
  <sect2 xml:id="migration74.other-changes.filter">
   <title>Data Filtering</title>
-  <para>
+  <simpara>
    The <link linkend="book.filter">filter</link> extension no longer exposes
    <option role="configure">--with-pcre-dir</option> for Unix builds and can now reliably
    be built as shared when using <command>./configure</command>
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration74.other-changes.gd">
   <title>GD</title>
-  <para>
+  <simpara>
    The behavior of <function>imagecropauto</function> in the bundled
    libgd has been synced with that of system libgd:
-  </para>
+  </simpara>
   <itemizedlist>
    <listitem>
     <simpara>
@@ -392,34 +392,34 @@
     </simpara>
    </listitem>
   </itemizedlist>
-  <para>
+  <simpara>
    The default <literal>$mode</literal> parameter of
    <function>imagecropauto</function> has been changed to
    <constant>IMG_CROP_DEFAULT</constant>; passing <literal>-1</literal>
    is now deprecated.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    <function>imagescale</function> now supports aspect ratio preserving
    scaling to a fixed height by passing <literal>-1</literal>
    as <literal>$new_width</literal>.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration74.other-changes.hash">
   <title>HASH Message Digest Framework</title>
-  <para>
+  <simpara>
    The <link linkend="book.hash">hash</link> extension cannot be disabled
    anymore and is always an integral part of any PHP build, similar to
    the <link linkend="book.datetime">date</link> extension.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration74.other-changes.intl">
   <title>Intl</title>
-  <para>
+  <simpara>
    The <link linkend="book.intl">intl</link> extension
    now requires at least ICU 50.1.
-  </para>
+  </simpara>
   <para>
    <classname>ResourceBundle</classname> now implements
    <interfacename>Countable</interfacename>.
@@ -428,59 +428,59 @@
 
  <sect2 xml:id="migration74.other-changes.ldap">
   <title>Lightweight Directory Access Protocol</title>
-  <para>
+  <simpara>
    Support for nsldap and umich_ldap has been removed.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration74.other-changes.libxml">
   <title>Libxml</title>
-  <para>
+  <simpara>
    All libxml-based extensions now require libxml 2.7.6 or newer.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration74.other-changes.mbstring">
   <title>Multibyte String</title>
-  <para>
+  <simpara>
    The oniguruma library is no longer bundled with PHP, instead libonig needs
    to be available on the system. Alternatively
    <option role="configure">--disable-mbregex</option> can be used to disable
    the mbregex component.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration74.other-changes.opcache">
   <title>OPcache</title>
-  <para>
+  <simpara>
    The <option role="configure">--disable-opcache-file</option> and
    <option role="configure">--enable-opcache-file</option> configure options
    have been removed in favor of the
    <link linkend="ini.opcache.file-cache">opcache.file_cache</link> INI directive.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration74.other-changes.password">
   <title>Password Hashing</title>
-  <para>
+  <simpara>
    The <function>password_hash</function> and
    <function>password_needs_rehash</function> functions
    now accept nullable &string; and &integer; for <literal>$algo</literal> argument.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration74.other-changes.pear">
   <title>PEAR</title>
-  <para>
+  <simpara>
    Installation of PEAR (including PECL) is no longer enabled by default. It
    can be explicitly enabled using <option role="configure">--with-pear</option>.
    This option is deprecated and may be removed in the future.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration74.other-changes.reflection">
   <title>Reflection</title>
-  <para>
+  <simpara>
    The numeric values of the modifier constants
    (<literal>IS_ABSTRACT</literal>,
    <literal>IS_DEPRECATED</literal>,
@@ -497,7 +497,7 @@
    <classname>ReflectionObject</classname>, and
    <classname>ReflectionProperty</classname>
    classes have changed.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration74.other-changes.simplexml">
@@ -510,32 +510,32 @@
 
  <sect2 xml:id="migration74.other-changes.sqlite3">
   <title>SQLite3</title>
-  <para>
+  <simpara>
    The bundled libsqlite has been removed. To build the
    <link linkend="book.sqlite3">SQLite3</link> extension a
    system libsqlite3 ≥ 3.7.4 is now required. To build the
    <link linkend="ref.pdo-sqlite">PDO_SQLite</link> extension
    a system libsqlite3 ≥ 3.5.0 is now required.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Serialization and unserialization of <classname>SQLite3</classname>,
    <classname>SQLite3Stmt</classname> and <classname>SQLite3Result</classname>
    is now explicitly forbidden. Formerly, serialization of instances of
    these classes was possible, but unserialization yielded unusable objects.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The <literal>@param</literal> notation can now also be used to
    denote SQL query parameters.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration74.other-changes.zip">
   <title>Zip</title>
-  <para>
+  <simpara>
    The bundled libzip library has been removed.
    A system libzip >= 0.11 is now necessary to build the
    <link linkend="book.zip">zip</link> extension.
-  </para>
+  </simpara>
  </sect2>
 
 </sect1>

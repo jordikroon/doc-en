@@ -9,11 +9,11 @@
 <!-- {{{ RecursiveArrayIterator intro -->
   <section xml:id="recursivearrayiterator.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     This iterator allows for unsetting and modifying values and keys while iterating over arrays and objects,
     in the same way as the <type>ArrayIterator</type>. Additionally, it is possible to iterate
     over the current iterator entry.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -65,7 +65,7 @@
      <varlistentry xml:id="recursivearrayiterator.constants.child-arrays-only">
       <term><constant>RecursiveArrayIterator::CHILD_ARRAYS_ONLY</constant></term>
       <listitem>
-       <para>Treat only arrays (not objects) as having children for recursive iteration.</para>
+       <simpara>Treat only arrays (not objects) as having children for recursive iteration.</simpara>
       </listitem>
      </varlistentry>
     </variablelist>

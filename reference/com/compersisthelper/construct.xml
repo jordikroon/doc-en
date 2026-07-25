@@ -12,10 +12,10 @@
    <modifier>public</modifier> <methodname>COMPersistHelper::__construct</methodname>
    <methodparam choice="opt"><type class="union"><type>variant</type><type>null</type></type><parameter>variant</parameter><initializer>&null;</initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Constructs a persistence helper object, usually associated with a
    <parameter>variant</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -45,7 +45,7 @@
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
   <para>
-   
+
   </para>
  </refsect1>
  -->

@@ -11,7 +11,7 @@
    &reftitle.intro;
    <para>
     <interfacename>DateTimeInterface</interfacename> was created
-    so that parameter, return, or property type declarations may accept either 
+    so that parameter, return, or property type declarations may accept either
     <classname>DateTimeImmutable</classname> or <classname>DateTime</classname>
     as a value. It is not possible to
     implement this interface with userland classes.

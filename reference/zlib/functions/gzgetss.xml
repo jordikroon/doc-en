@@ -20,11 +20,11 @@
    <methodparam><type>int</type><parameter>length</parameter></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>allowable_tags</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Identical to <function>gzgets</function>, except that
    <function>gzgetss</function> attempts to strip any HTML and PHP
    tags from the text it reads.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -33,27 +33,27 @@
     <varlistentry>
      <term><parameter>zp</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The gz-file pointer. It must be valid, and must point to a file
        successfully opened by <function>gzopen</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The length of data to get.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>allowable_tags</parameter></term>
      <listitem>
-      <para>
-       You can use this optional parameter to specify tags which should not 
+      <simpara>
+       You can use this optional parameter to specify tags which should not
        be stripped.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -61,9 +61,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The uncompressed and stripped string, or &false; on error.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;
@@ -79,7 +79,7 @@ while (!gzeof($handle)) {
    echo $buffer;
 }
 gzclose($handle);
-?> 
+?>
 ]]>
     </programlisting>
    </example>

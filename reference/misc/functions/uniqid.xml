@@ -5,7 +5,7 @@
   <refname>uniqid</refname>
   <refpurpose>Generate a time-based identifier</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,19 +13,19 @@
    <methodparam choice="opt"><type>string</type><parameter>prefix</parameter><initializer>""</initializer></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>more_entropy</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets an identifier based on the current time with microsecond precision,
    prefixed with the given <parameter>prefix</parameter> and optionally
    appending a randomly generated value.
-  </para>
+  </simpara>
   &caution.cryptographically-insecure;
   <warning>
-    <para>
+    <simpara>
      This function does not guarantee the uniqueness of the return
      value because the value is based on the current time in microseconds
      or the current time with a small amount of random data appended
      if <parameter>more_entropy</parameter> is &true;.
-    </para>
+    </simpara>
   </warning>
  </refsect1>
 
@@ -36,29 +36,29 @@
     <varlistentry>
      <term><parameter>prefix</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Can be useful, for instance, if you generate identifiers
        simultaneously on several hosts that could generate the
        same identifier at the same microsecond. (This can happen
        even on a single host if the system clock is moved backwards,
        such as by an NTP adjustment.)
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        With an empty <parameter>prefix</parameter>, the returned string will
        be 13 characters long.  If <parameter>more_entropy</parameter> is
        &true;, it will be 23 characters.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>more_entropy</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If set to &true;, <function>uniqid</function> will add additional
        entropy (using the combined linear congruential generator) at the end
        of the return value, which increases the likelihood that the result
        will be unique.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -67,13 +67,13 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns timestamp based identifier as a string.
-  </para>
+  </simpara>
   <warning>
-   <para>
+   <simpara>
      This function does not guarantee the uniqueness of the return value.
-   </para>
+   </simpara>
   </warning>
  </refsect1>
 
@@ -88,7 +88,7 @@
 /* A uniqid, like: 4b3403665fea6 */
 printf("uniqid(): %s\r\n", uniqid());
 
-/* We can also prefix the uniqid, this the same as 
+/* We can also prefix the uniqid, this the same as
  * doing:
  *
  * $uniqid = $prefix . uniqid();
@@ -96,7 +96,7 @@ printf("uniqid(): %s\r\n", uniqid());
  */
 printf("uniqid('php_'): %s\r\n", uniqid('php_'));
 
-/* We can also activate the more_entropy parameter, which is 
+/* We can also activate the more_entropy parameter, which is
  * required on some systems, like Cygwin. This makes uniqid()
  * produce a value like: 4b340550242239.64159797
  */
@@ -111,10 +111,10 @@ printf("uniqid('', true): %s\r\n", uniqid('', true));
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
-    Under Cygwin, the <parameter>more_entropy</parameter> must be set 
+   <simpara>
+    Under Cygwin, the <parameter>more_entropy</parameter> must be set
     to &true; for this function to work.
-   </para>
+   </simpara>
   </note>
 
  </refsect1>

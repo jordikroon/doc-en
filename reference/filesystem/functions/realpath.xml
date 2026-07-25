@@ -5,19 +5,19 @@
   <refname>realpath</refname>
   <refpurpose>Returns canonicalized absolute pathname</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>realpath</methodname>
    <methodparam><type>string</type><parameter>path</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>realpath</function> expands all symbolic links and
    resolves references to <literal>/./</literal>, <literal>/../</literal> and extra <literal>/</literal> characters in
    the input <parameter>path</parameter> and returns the canonicalized
-   absolute pathname.  
-  </para>
+   absolute pathname.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,10 +30,10 @@
       <para>
        The path being checked.
        <note>
-        <para>
+        <simpara>
          Whilst a path must be supplied, the value can be an empty string.
          In this case, the value is interpreted as the current directory.
-        </para>
+        </simpara>
        </note>
       </para>
      </listitem>
@@ -41,42 +41,42 @@
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   Returns the canonicalized absolute pathname on success. The resulting path 
+  <simpara>
+   Returns the canonicalized absolute pathname on success. The resulting path
    will have no symbolic link, <literal>/./</literal> or <literal>/../</literal> components. Trailing delimiters,
    such as <literal>\</literal> and <literal>/</literal>, are also removed.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    <function>realpath</function> returns &false; on failure, e.g. if
    the file does not exist.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     The running script must have executable permissions on all directories in
     the hierarchy, otherwise <function>realpath</function> will return
     &false;.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     For case-insensitive filesystems <function>realpath</function> may or may
     not normalize the character case.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     The function <function>realpath</function> will not work for a file which
     is inside a Phar as such path would be a virtual path, not a real one.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     On Windows, junctions and symbolic links to directories are only expanded by
     one level.
-   </para>
+   </simpara>
   </note>
   &fs.file.32bit;
  </refsect1>
@@ -106,10 +106,10 @@ echo realpath('/tmp/') . PHP_EOL;
    </example>
    <example>
     <title><function>realpath</function> on Windows</title>
-    <para>
+    <simpara>
      On windows <function>realpath</function> will change unix style paths to
      windows style.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

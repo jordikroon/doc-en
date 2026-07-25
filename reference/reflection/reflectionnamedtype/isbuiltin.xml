@@ -12,10 +12,10 @@
    <modifier>public</modifier> <type>bool</type><methodname>ReflectionNamedType::isBuiltin</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks if the type is a built-in type in PHP. A built-in type is any type that
    is not a class, interface, or trait.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &true; if it's a built-in type, otherwise &false;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

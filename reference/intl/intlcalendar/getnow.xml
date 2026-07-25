@@ -8,24 +8,24 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="IntlCalendar">
    <modifier>public</modifier> <modifier>static</modifier> <type>float</type><methodname>IntlCalendar::getNow</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type>float</type><methodname>intlcal_get_now</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    The number of milliseconds  that have passed since the reference date. This
    number is derived from the system time.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -36,10 +36,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A <type>float</type> representing a number of milliseconds since the epoch,
    not counting leap seconds.
-  </para>
+  </simpara>
  </refsect1>
 
 

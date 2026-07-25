@@ -15,9 +15,9 @@
    <methodparam><type>string</type><parameter>fromEncoding</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>array</type><type>null</type></type><parameter>options</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Converts <parameter>str</parameter> from <parameter>fromEncoding</parameter> to <parameter>toEncoding</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,25 +26,25 @@
    <varlistentry>
     <term><parameter>str</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The &string; to be converted.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>toEncoding</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The desired encoding of the result.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>fromEncoding</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The current encoding used to interpret <parameter>str</parameter>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
@@ -68,9 +68,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the converted string&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -99,12 +99,12 @@ echo bin2hex($new_utf8_string), "\n";
   </example>
   <example>
    <title>Invalid characters in input</title>
-   <para>
+   <simpara>
     If the input string contains a sequence of bytes which is not valid in
     the encoding specified by <parameter>fromEncoding</parameter>, they are
     replaced by Unicode code point U+FFFD (Replacement Character) before
     converting to <parameter>toEncoding</parameter>.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -123,12 +123,12 @@ fffd
   </example>
   <example>
    <title>Characters which cannot be encoded</title>
-   <para>
+   <simpara>
     If the input string contains characters which cannot be represented
     in <parameter>toEncoding</parameter>, they are replaced with a single
     character. The default character to use depends on the encoding, and
     can be controlled using the <literal>'to_subst'</literal> option.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

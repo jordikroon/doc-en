@@ -5,21 +5,21 @@
   <refname>func_get_arg</refname>
   <refpurpose>Return an item from the argument list</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>mixed</type><methodname>func_get_arg</methodname>
    <methodparam><type>int</type><parameter>position</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the specified argument from a user-defined function's argument list.
-  </para>
-  <para>
-   This function may be used in conjunction with 
+  </simpara>
+  <simpara>
+   This function may be used in conjunction with
    <function>func_get_args</function> and <function>func_num_args</function>
    to allow user-defined functions to accept variable-length argument lists.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,10 +29,10 @@
     <varlistentry>
      <term><parameter>position</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The argument offset. Function arguments are counted starting from
        zero.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -41,18 +41,18 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the specified argument, or &false; on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    Generates a warning if called from outside of a user-defined function, or
    if <parameter>position</parameter> is greater than the number of arguments
    actually passed.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

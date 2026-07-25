@@ -14,12 +14,12 @@
    <type>true</type><methodname>restore_exception_handler</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Used after changing the exception handler function using
    <function>set_exception_handler</function>, to revert to the previous
    exception handler (which could be the built-in or a user defined
    function).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,9 +29,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -70,7 +70,7 @@
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

@@ -15,11 +15,11 @@
    <methodparam choice="opt"><type>string</type><parameter>publicId</parameter><initializer>""</initializer></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>systemId</parameter><initializer>""</initializer></methodparam>
   </methodsynopsis>
-  <para>
-   Creates an empty <classname>DOMDocumentType</classname> object. Entity 
-   declarations and notations are not made available. Entity reference 
+  <simpara>
+   Creates an empty <classname>DOMDocumentType</classname> object. Entity
+   declarations and notations are not made available. Entity reference
    expansions and default attribute additions do not occur.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -28,25 +28,25 @@
     <varlistentry>
      <term><parameter>qualifiedName</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The qualified name of the document type to create.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>publicId</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The external subset public identifier.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>systemId</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The external subset system identifier.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -54,10 +54,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   A new <classname>DOMDocumentType</classname> node with its 
+  <simpara>
+   A new <classname>DOMDocumentType</classname> node with its
    <literal>ownerDocument</literal> set to &null; or &false; on error.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="errors">
   &reftitle.errors;
@@ -70,10 +70,10 @@
     <varlistentry>
      <term><constant>DOM_NAMESPACE_ERR</constant></term>
      <listitem>
-      <para>
-       Raised if there is an error with the namespace, as determined by 
+      <simpara>
+       Raised if there is an error with the namespace, as determined by
        <parameter>qualifiedName</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -95,7 +95,7 @@
        <entry>8.0.0</entry>
        <entry>
         Calling this function statically will
-        now throw an <classname>Error</classname>.
+        now throw an <exceptionname>Error</exceptionname>.
         Previously, an <constant>E_DEPRECATED</constant> was raised.
        </entry>
       </row>

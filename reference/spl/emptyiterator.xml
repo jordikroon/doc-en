@@ -10,9 +10,9 @@
 <!-- {{{ EmptyIterator intro -->
   <section xml:id="emptyiterator.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     The EmptyIterator class for an empty iterator.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

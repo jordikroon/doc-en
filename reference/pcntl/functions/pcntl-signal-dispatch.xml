@@ -5,18 +5,18 @@
   <refname>pcntl_signal_dispatch</refname>
   <refpurpose>Calls signal handlers for pending signals</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>bool</type><methodname>pcntl_signal_dispatch</methodname>
    <void/>
   </methodsynopsis>
-  <para>
-   The <function>pcntl_signal_dispatch</function> function calls the signal 
+  <simpara>
+   The <function>pcntl_signal_dispatch</function> function calls the signal
    handlers installed by <function>pcntl_signal</function> for each pending
    signal.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,9 +26,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

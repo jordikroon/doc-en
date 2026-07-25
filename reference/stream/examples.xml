@@ -94,13 +94,13 @@ fclose($fp);
 
  <section xml:id="stream.streamwrapper.example-1">
   <title>Example class registered as stream wrapper</title>
-  <para>
+  <simpara>
    The example below implements a var:// protocol handler that allows
    read/write access to a named global variable using standard filesystem
    stream functions such as <function>fread</function>. The var:// protocol
    implemented below, given the URL "var://foo" will read/write data
    to/from $GLOBALS["foo"].
-  </para>
+  </simpara>
   <para>
    <example>
     <title>A Stream for reading/writing global variables</title>
@@ -182,7 +182,7 @@ class VariableStream {
         }
     }
 
-    function stream_metadata($path, $option, $var) 
+    function stream_metadata($path, $option, $var)
     {
         if($option == STREAM_META_TOUCH) {
             $url = parse_url($path);

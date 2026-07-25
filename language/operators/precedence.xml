@@ -2,7 +2,7 @@
 <sect1 xml:id="language.operators.precedence">
  <title>Operator Precedence</title>
  <titleabbrev>Operator Precedence</titleabbrev>
- <para>
+ <simpara>
   The precedence of an operator specifies how "tightly" it binds two
   expressions together. For example, in the expression <literal>1 +
   5 * 3</literal>, the answer is <literal>16</literal> and not
@@ -11,32 +11,32 @@
   Parentheses may be used to force precedence, if necessary. For
   instance: <literal>(1 + 5) * 3</literal> evaluates to
   <literal>18</literal>.
- </para>
- <para>
+ </simpara>
+ <simpara>
   When operators have equal precedence their associativity decides
   how the operators are grouped. For example "-" is left-associative, so
   <literal>1 - 2 - 3</literal> is grouped as <literal>(1 - 2) - 3</literal>
   and evaluates to <literal>-4</literal>. "=" on the other hand is
   right-associative, so <literal>$a = $b = $c</literal> is grouped as
   <literal>$a = ($b = $c)</literal>.
- </para>
- <para>
+ </simpara>
+ <simpara>
   Operators of equal precedence that are non-associative cannot be used
   next to each other, for example <literal>1 &lt; 2 &gt; 1</literal> is
   illegal in PHP. The expression <literal>1 &lt;= 1 == 1</literal> on the
   other hand is legal, because the <literal>==</literal> operator has a lower
   precedence than the <literal>&lt;=</literal> operator.
- </para>
- <para>
+ </simpara>
+ <simpara>
   Associativity is only meaningful for binary (and ternary) operators.
   Unary operators are either prefix or postfix so this notion is not applicable.
   For example <literal>!!$a</literal> can only be grouped as <literal>!(!$a)</literal>.
- </para>
- <para>
+ </simpara>
+ <simpara>
   Use of parentheses, even when not strictly necessary, can often increase
   readability of the code by making grouping explicit rather than relying
   on the implicit operator precedence and associativity.
- </para>
+ </simpara>
  <para>
   The following table lists the operators in order of precedence, with
   the highest-precedence ones at the top. Operators on the same line
@@ -330,10 +330,10 @@ var_dump($a, $b);
    </programlisting>
   </example>
  </para>
- <para>
+ <simpara>
   The ternary operator specifically requires the use of parenthesis to
   disambiguate precedence.
- </para>
+ </simpara>
  <para>
   <example>
    <title>Explicit Precedence</title>
@@ -425,13 +425,13 @@ x minus one equals 3, or so I hope
   </example>
  </para>
  <note>
-  <para>
+  <simpara>
    Although <literal>=</literal> has a lower precedence than
    most other operators, PHP will still allow expressions
    similar to the following: <literal>if (!$a = foo())</literal>,
    in which case the return value of <literal>foo()</literal> is
    put into <varname>$a</varname>.
-  </para>
+  </simpara>
   <simpara>
    This is possible because the left-hand side of an assignment must be a
    variable, so the assignment is grouped with that variable rather than with

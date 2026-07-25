@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>array</type><methodname>ReflectionClass::getTraitAliases</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get the array of trait method aliases defined in the current class.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -25,10 +25,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array with new method names in keys and original names (in the
    format <literal>"TraitName::original"</literal>) in values.
-  </para>
+  </simpara>
  </refsect1>
 
 

@@ -11,12 +11,12 @@
    <modifier>public</modifier> <type>DOMNodeList</type><methodname>DOMElement::getElementsByTagName</methodname>
    <methodparam><type>string</type><parameter>qualifiedName</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function returns a new instance of the class
    <classname>DOMNodeList</classname> of all descendant elements with a
    given tag <parameter>qualifiedName</parameter>, in the order in which they are
-   encountered in a preorder traversal of this element tree. 
-  </para>
+   encountered in a preorder traversal of this element tree.
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -25,10 +25,10 @@
     <varlistentry>
      <term><parameter>qualifiedName</parameter></term>
      <listitem>
-      <para>
-       The tag name. Use <literal>*</literal> to return all elements within 
+      <simpara>
+       The tag name. Use <literal>*</literal> to return all elements within
        the element tree.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -36,10 +36,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    This function returns a new instance of the class
    <classname>DOMNodeList</classname> of all matched elements.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="seealso">
   &reftitle.seealso;

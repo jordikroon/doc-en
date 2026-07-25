@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>string</type><methodname>DirectoryIterator::getBasename</methodname>
    <methodparam choice="opt"><type>string</type><parameter>suffix</parameter><initializer>""</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get the base name of the current <classname>DirectoryIterator</classname> item.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,10 +24,10 @@
     <varlistentry>
      <term><parameter>suffix</parameter></term>
      <listitem>
-      <para>
-       If the base name ends in <parameter>suffix</parameter>, 
+      <simpara>
+       If the base name ends in <parameter>suffix</parameter>,
        this will be cut.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -36,9 +36,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The base name of the current <classname>DirectoryIterator</classname> item.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -46,11 +46,11 @@
   <para>
    <example>
     <title>A <methodname>DirectoryIterator::getBasename</methodname> example</title>
-    <para>
-     This example will list the full base name and the base name with 
+    <simpara>
+     This example will list the full base name and the base name with
      suffix <literal>.jpg</literal> removed for the files in the directory
      containing the script.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

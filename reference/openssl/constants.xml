@@ -838,10 +838,10 @@
     </varlistentry>
   </variablelist>
   <note>
-   <para>
+   <simpara>
     This constant requires PHP to be
     built with OpenSSL 0.9.8j or greater.
-   </para>
+   </simpara>
   </note>
  </section>
 

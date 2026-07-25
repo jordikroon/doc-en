@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
- 
+
 <book xml:id="book.gmp" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <?phpdoc extension-membership="bundledexternal" ?>
  <title>GNU Multiple Precision</title>
  <titleabbrev>GMP</titleabbrev>
- 
+
  <!-- {{{ preface -->
  <preface xml:id="intro.gmp">
   &reftitle.intro;
@@ -14,7 +14,7 @@
    the GNU <acronym>MP</acronym> library.
   </simpara>
   <note>
-   <para>
+   <simpara>
     Most GMP functions accept GMP number arguments. These are shown in this
     documentation as <classname>GMP</classname> objects. Most
     of these functions will also accept numeric and string arguments, so long
@@ -22,17 +22,17 @@
     more performant function that can operate on the arguments (integers only),
     then it will be used instead (this is done transparently). See also the
     <function>gmp_init</function> function.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     The
     <link linkend="language.operators.arithmetic">arithmetic</link>,
     <link linkend="language.operators.bitwise">bitwise</link>, and
     <link linkend="language.operators.comparison">comparison</link> operators
     may be used with the <classname>GMP</classname> objects returned from
     <function>gmp_init</function> and other GMP functions.
-   </para>
+   </simpara>
   </note>
   <warning>
    <simpara>
@@ -42,7 +42,7 @@
   </warning>
  </preface>
  <!-- }}} -->
- 
+
  &reference.gmp.setup;
  &reference.gmp.constants;
  &reference.gmp.examples;

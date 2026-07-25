@@ -13,12 +13,12 @@
    <type>array</type><methodname>get_defined_vars</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function returns a multidimensional array containing a list of
    all defined variables, be them environment, server or user-defined
    variables, within the scope that <function>get_defined_vars</function> is
-   called. 
-  </para>
+   called.
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -26,9 +26,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A multidimensional array with all the variables.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;

@@ -14,10 +14,10 @@
    <methodparam choice="opt"><type>int</type><parameter>sorting_order</parameter><initializer><constant>SCANDIR_SORT_ASCENDING</constant></initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>resource</type><type>null</type></type><parameter>context</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns an <type>array</type> of files and directories from the
    <parameter>directory</parameter>.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -28,31 +28,31 @@
     <varlistentry>
      <term><parameter>directory</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The directory that will be scanned.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>sorting_order</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        By default, the sorted order is alphabetical in ascending order.  If
        the optional <parameter>sorting_order</parameter> is set to
        <constant>SCANDIR_SORT_DESCENDING</constant>, then the sort order is
        alphabetical in descending order. If it is set to
        <constant>SCANDIR_SORT_NONE</constant> then the result is unsorted.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>context</parameter></term>
      <listitem>
-      <para>
-       For a description of the <parameter>context</parameter> parameter, 
+      <simpara>
+       For a description of the <parameter>context</parameter> parameter,
        refer to <link linkend="ref.stream">the streams section</link> of
        the manual.
-      </para> 
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -61,12 +61,12 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   Returns an <type>array</type> of filenames on success, or &false; on 
-   failure. If <parameter>directory</parameter> is not a directory, then 
-   boolean &false; is returned, and an error of level 
+  <simpara>
+   Returns an <type>array</type> of filenames on success, or &false; on
+   failure. If <parameter>directory</parameter> is not a directory, then
+   boolean &false; is returned, and an error of level
    <constant>E_WARNING</constant> is generated.
-  </para> 
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

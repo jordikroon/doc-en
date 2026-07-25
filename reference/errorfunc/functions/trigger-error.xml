@@ -13,16 +13,16 @@
    <methodparam><type>string</type><parameter>message</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>error_level</parameter><initializer><constant>E_USER_NOTICE</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Used to trigger a user error condition, it can be used in conjunction
    with the built-in error handler, or with a user defined function that has
    been set as the new error handler
-   (<function>set_error_handler</function>). 
-  </para>
-  <para>
+   (<function>set_error_handler</function>).
+  </simpara>
+  <simpara>
    This function is useful when you need to generate a particular response to
    an exception at runtime.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -32,20 +32,20 @@
     <varlistentry>
      <term><parameter>message</parameter></term>
      <listitem>
-      <para>
-       The designated error message for this error. It's limited to 1024 
-       bytes in length. Any additional characters beyond 1024 bytes will be 
+      <simpara>
+       The designated error message for this error. It's limited to 1024
+       bytes in length. Any additional characters beyond 1024 bytes will be
        truncated.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>error_level</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The designated error type for this error. It only works with the <constant>E_USER_<replaceable>*</replaceable></constant>
        family of constants, and will default to <constant>E_USER_NOTICE</constant>.
-      </para>
+      </simpara>
       <warning>
        <simpara>
         Passing <constant>E_USER_ERROR</constant> as the
@@ -62,19 +62,19 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   This function throws a <classname>ValueError</classname> if
+  <simpara>
+   This function throws a <exceptionname>ValueError</exceptionname> if
    <parameter>error_level</parameter> is not one of
    <constant>E_USER_ERROR</constant>, <constant>E_USER_WARNING</constant>,
    <constant>E_USER_NOTICE</constant>, <constant>E_USER_DEPRECATED</constant>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -107,7 +107,7 @@
      <row>
       <entry>8.0.0</entry>
       <entry>
-       The function now throws a <classname>ValueError</classname> if an invalid
+       The function now throws a <exceptionname>ValueError</exceptionname> if an invalid
        <parameter>error_level</parameter> is specified. Previously, it returned &false;.
       </entry>
      </row>
@@ -121,9 +121,9 @@
   <para>
    <example>
     <title><function>trigger_error</function> example</title>
-    <para>
+    <simpara>
      See <function>set_error_handler</function> for a more extensive example.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -142,11 +142,11 @@ $hash = password_hash($password, PASSWORD_DEFAULT);
  <refsect1 role="notes">
   &reftitle.notes;
   <warning>
-   <para>
+   <simpara>
      HTML entities in <parameter>message</parameter> are not
      escaped. Use <function>htmlentities</function> on the message if
      the error is to be displayed in a browser.
-   </para>
+   </simpara>
   </warning>
  </refsect1>
 

@@ -13,11 +13,11 @@
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>encoding</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Perform a character set conversion from the specified encoding, or the default encoding if no
    encoding was specified, to the same encoding. This has the effect of replacing any invalid
    byte sequences with the substitute character.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -27,21 +27,21 @@
    <varlistentry>
     <term><parameter>string</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The input string.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>encoding</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The encoding used to interpret <parameter>string</parameter>.
       If it is omitted or &null;, the
       <link linkend="ini.mbstring.internal-encoding">mbstring.internal_encoding setting</link>
       will be used if set, otherwise the <link linkend="ini.default-charset">default_charset setting</link>
       will be used.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -49,9 +49,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The &string; result with invalid byte sequences replaced.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

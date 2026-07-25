@@ -8,28 +8,28 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="IntlCalendar">
    <modifier>public</modifier> <type>bool</type><methodname>IntlCalendar::roll</methodname>
    <methodparam><type>int</type><parameter>field</parameter></methodparam>
    <methodparam><type class="union"><type>int</type><type>bool</type></type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type>bool</type><methodname>intlcal_roll</methodname>
    <methodparam><type>IntlCalendar</type><parameter>calendar</parameter></methodparam>
    <methodparam><type>int</type><parameter>field</parameter></methodparam>
    <methodparam><type class="union"><type>int</type><type>bool</type></type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Adds a (signed) amount to a field. The difference with respect to
    <function>IntlCalendar::add</function> is that when the field value
    overflows, it does not carry into more significant fields.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -50,11 +50,11 @@
    <varlistentry>
     <term><parameter>value</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The (signed) amount to add to the field, &true; for rolling up (adding
       <literal>1</literal>), or &false; for rolling down (subtracting
       <literal>1</literal>).
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -62,9 +62,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; on success or &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

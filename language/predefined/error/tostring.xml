@@ -5,28 +5,28 @@
   <refname>Error::__toString</refname>
   <refpurpose>String representation of the error</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="Error">
    <modifier>public</modifier> <type>string</type><methodname>Error::__toString</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the <type>string</type> representation of the error.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   &no.function.parameters;
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the <type>string</type> representation of the error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

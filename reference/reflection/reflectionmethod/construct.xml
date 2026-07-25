@@ -25,9 +25,9 @@
     instead.
    </simpara>
   </warning>
-  <para>
+  <simpara>
    Constructs a new <classname>ReflectionMethod</classname>.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -38,25 +38,25 @@
     <varlistentry>
      <term><parameter>objectOrMethod</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Classname or object (instance of the class) that contains the method.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>method</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Name of the method.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>classMethod</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Class name and method name delimited by <literal>::</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -65,9 +65,9 @@
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   A <classname>ReflectionException</classname> is thrown if the given method does not exist.
-  </para>
+  <simpara>
+   A <exceptionname>ReflectionException</exceptionname> is thrown if the given method does not exist.
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

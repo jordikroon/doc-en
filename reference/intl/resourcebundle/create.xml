@@ -10,36 +10,36 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop; (method)
-  </para>
+  </simpara>
   <methodsynopsis role="ResourceBundle">
    <modifier>public</modifier> <modifier>static</modifier> <type class="union"><type>ResourceBundle</type><type>null</type></type><methodname>ResourceBundle::create</methodname>
    <methodparam><type class="union"><type>string</type><type>null</type></type><parameter>locale</parameter></methodparam>
    <methodparam><type class="union"><type>string</type><type>null</type></type><parameter>bundle</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>fallback</parameter><initializer>&true;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>ResourceBundle</type><type>null</type></type><methodname>resourcebundle_create</methodname>
    <methodparam><type class="union"><type>string</type><type>null</type></type><parameter>locale</parameter></methodparam>
    <methodparam><type class="union"><type>string</type><type>null</type></type><parameter>bundle</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>fallback</parameter><initializer>&true;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.oop; (constructor):
-  </para>
+  </simpara>
    <constructorsynopsis role="ResourceBundle">
    <modifier>public</modifier> <methodname>ResourceBundle::__construct</methodname>
    <methodparam><type class="union"><type>string</type><type>null</type></type><parameter>locale</parameter></methodparam>
    <methodparam><type class="union"><type>string</type><type>null</type></type><parameter>bundle</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>fallback</parameter><initializer>&true;</initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Creates a resource bundle.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -49,25 +49,25 @@
     <varlistentry>
      <term><parameter>locale</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Locale for which the resources should be loaded (locale name, e.g. en_CA).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>bundle</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The directory where the data is stored or the name of the .dat file.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>fallback</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Whether locale should match exactly or fallback to parent locale is allowed.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -77,9 +77,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns <classname>ResourceBundle</classname> object or &null; on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

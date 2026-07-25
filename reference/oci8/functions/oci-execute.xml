@@ -5,7 +5,7 @@
   <refname>oci_execute</refname>
   <refpurpose>Executes a statement</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,23 +13,23 @@
    <methodparam><type>resource</type><parameter>statement</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>mode</parameter><initializer><constant>OCI_COMMIT_ON_SUCCESS</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Executes a <parameter>statement</parameter> previously returned
    from <function>oci_parse</function>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    After execution, statements like <literal>INSERT</literal> will
    have data committed to the database by default.  For statements
    like <literal>SELECT</literal>, execution performs the logic of the
    query. Query results can subsequently be fetched in PHP with
    functions like <function>oci_fetch_array</function>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Each parsed statement may be executed multiple times, saving the
    cost of re-parsing.  This is commonly used
    for <literal>INSERT</literal> statements when data is bound
    with <function>oci_bind_by_name</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -39,9 +39,9 @@
     <varlistentry>
      <term><parameter>statement</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A valid OCI statement identifier.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -81,21 +81,21 @@
         </tgroup>
        </table>
       </para>
-      <para>
+      <simpara>
        Using <constant>OCI_NO_AUTO_COMMIT</constant> mode starts or continues a
        transaction. Transactions are automatically rolled back when
        the connection is closed, or when the script ends.  Explicitly
        call <function>oci_commit</function> to commit a transaction,
        or <function>oci_rollback</function> to abort it.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        When inserting or updating data, using transactions is
        recommended for relational data consistency and for performance
        reasons.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If <constant>OCI_NO_AUTO_COMMIT</constant> mode is used for any
-       statement including queries, and 
+       statement including queries, and
         <function>oci_commit</function>
        or <function>oci_rollback</function> is not subsequently
        called, then OCI8 will perform a rollback at the end of the
@@ -106,7 +106,7 @@
        consistency for the application when
        using <function>oci_execute</function> with different modes in
        the same script.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -115,9 +115,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -243,30 +243,30 @@ for ($i = 1; $i <= oci_num_fields($stid); ++$i) {
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     Transactions are automatically rolled back when connections are
     closed, or when the script ends, whichever is soonest.  Explicitly
     call <function>oci_commit</function> to commit a transaction.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     Any call to <function>oci_execute</function> that uses
     <constant>OCI_COMMIT_ON_SUCCESS</constant> mode explicitly or by
     default will commit any previous uncommitted transaction.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     Any Oracle DDL statement such as <literal>CREATE</literal>
     or <literal>DROP</literal> will automatically commit any
     uncommitted transaction.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     Because the <function>oci_execute</function> function generally
     sends the statement to the
     database, <function>oci_execute</function> can identify some
     statement syntax errors that the lightweight,
     local <function>oci_parse</function> function does not.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

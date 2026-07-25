@@ -7,7 +7,7 @@
 
   <section xml:id="attribute.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Attributes offer the ability to add structured, machine-readable metadata
     information on declarations in code: Classes, methods, functions,
     parameters, properties and class constants can be the target of an attribute.
@@ -15,7 +15,7 @@
     <link linkend="book.reflection">Reflection APIs</link>.
     Attributes could therefore be thought of as a configuration language
     embedded directly into code.
-   </para>
+   </simpara>
   </section>
 
   <section xml:id="attribute.synopsis">
@@ -191,7 +191,7 @@
 
   <section xml:id="attribute.seealso">
    &reftitle.seealso;
-   <para><link linkend="language.attributes">Attributes overview</link></para>
+   <simpara><link linkend="language.attributes">Attributes overview</link></simpara>
   </section>
  </partintro>
 

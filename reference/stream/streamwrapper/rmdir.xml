@@ -14,15 +14,15 @@
    <methodparam><type>string</type><parameter>path</parameter></methodparam>
    <methodparam><type>int</type><parameter>options</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This method is called in response to <function>rmdir</function>.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     In order for the appropriate error message to be returned this method
     should <emphasis>not</emphasis> be defined if the wrapper does not support
     removing directories.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -33,17 +33,17 @@
     <varlistentry>
      <term><parameter>path</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The directory URL which should be removed.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>options</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A bitwise mask of values, such as <constant>STREAM_MKDIR_RECURSIVE</constant>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -52,9 +52,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors"><!-- {{{ -->

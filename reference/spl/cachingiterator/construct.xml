@@ -13,9 +13,9 @@
    <methodparam><type>Iterator</type><parameter>iterator</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer><constant>CachingIterator::CALL_TOSTRING</constant></initializer></methodparam>
   </constructorsynopsis>
-  
+
   &warn.undocumented.func;
-  
+
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,17 +25,17 @@
     <varlistentry>
      <term><parameter>iterator</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Iterator to cache
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Bitmask of flags.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

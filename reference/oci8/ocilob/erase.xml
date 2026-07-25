@@ -5,7 +5,7 @@
   <refname>OCILob::erase</refname>
   <refpurpose>Erases a specified portion of the internal LOB data</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="OCILob">
@@ -13,15 +13,15 @@
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>offset</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>length</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Erases a specified portion of the internal LOB data starting at a
    specified <parameter>offset</parameter>. If called without parameters, it
    erases all LOB data.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    For BLOBs, erasing means that the existing LOB value is overwritten with
    zero-bytes. For CLOBs, the existing LOB value is overwritten with spaces.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -31,15 +31,15 @@
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -48,9 +48,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the actual number of characters/bytes erased &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

@@ -12,9 +12,9 @@
    <modifier>public</modifier> <methodname>ReflectionZendExtension::__construct</methodname>
    <methodparam><type>string</type><parameter>name</parameter></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Constructs a new <type>ReflectionZendExtension</type> object.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -24,9 +24,9 @@
    <varlistentry>
     <term><parameter>name</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The extension name.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -34,9 +34,9 @@
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws <classname>ReflectionException</classname> if the extension to reflect does not exist.
-  </para>
+  <simpara>
+   Throws <exceptionname>ReflectionException</exceptionname> if the extension to reflect does not exist.
+  </simpara>
  </refsect1>
 
 </refentry>

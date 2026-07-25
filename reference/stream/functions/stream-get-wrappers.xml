@@ -11,9 +11,9 @@
    <type>array</type><methodname>stream_get_wrappers</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Retrieve list of registered streams available on the running system.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -23,10 +23,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an indexed array containing the name of all stream wrappers
    available on the running system.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -13,12 +13,12 @@
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>dispatch_interface</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>display_sink</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    The purpose of this function is to help generate a skeleton class for use
    as an event sink.  You may also use it to generate a dump of any COM
    object, provided that it supports enough of the introspection interfaces,
    and that you know the name of the interface you want to display.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -27,28 +27,28 @@
     <varlistentry>
      <term><parameter>variant</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>variant</parameter> should be either an instance of a COM
        object, or be the name of a typelibrary (which will be resolved according
        to the rules set out in <function>com_load_typelib</function>).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>dispatch_interface</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The name of an <literal>IDispatch</literal> descendant interface that you want to display.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>display_sink</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If set to &true;, the corresponding sink interface will be displayed
        instead.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -56,9 +56,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="seealso">
   &reftitle.seealso;

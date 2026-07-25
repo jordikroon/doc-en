@@ -13,12 +13,12 @@
    <methodparam><type>callable</type><parameter>callback</parameter></methodparam>
    <methodparam choice="opt"><type>mixed</type><parameter>initial</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>array_reduce</function> applies iteratively the
    <parameter>callback</parameter> function to the elements of the
    <parameter>array</parameter>, so as to reduce the array to
    a single value.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -27,9 +27,9 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input array.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -44,19 +44,19 @@
        <varlistentry>
         <term><parameter>carry</parameter></term>
         <listitem>
-         <para>
+         <simpara>
           Holds the return value of the previous iteration; in the case of the
-          first iteration it instead holds the value of 
+          first iteration it instead holds the value of
           <parameter>initial</parameter>.
-         </para>
+         </simpara>
         </listitem>
        </varlistentry>
        <varlistentry>
         <term><parameter>item</parameter></term>
         <listitem>
-         <para>
+         <simpara>
           Holds the value of the current iteration.
-         </para>
+         </simpara>
         </listitem>
        </varlistentry>
       </variablelist>
@@ -65,11 +65,11 @@
     <varlistentry>
      <term><parameter>initial</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If the optional <parameter>initial</parameter> is available, it will
        be used at the beginning of the process, or as a final result in case
        the array is empty.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -77,13 +77,13 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the resulting value.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If the array is empty and <parameter>initial</parameter> is not passed,
    <function>array_reduce</function> returns &null;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

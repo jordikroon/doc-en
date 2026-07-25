@@ -11,10 +11,10 @@
    <modifier>public</modifier> <type class="union"><type>DOMNode</type><type>null</type></type><methodname>DOMNamedNodeMap::item</methodname>
    <methodparam><type>int</type><parameter>index</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   Retrieves a node specified by <parameter>index</parameter> within the 
+  <simpara>
+   Retrieves a node specified by <parameter>index</parameter> within the
    <classname>DOMNamedNodeMap</classname> object.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -23,9 +23,9 @@
     <varlistentry>
      <term><parameter>index</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Index into this map.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -33,11 +33,11 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The node at the <parameter>index</parameter>th position in the map, or &null;
-   if that is not a valid index (greater than or equal to the number of nodes 
+   if that is not a valid index (greater than or equal to the number of nodes
    in this map).
-  </para>
+  </simpara>
  </refsect1>
 </refentry>
 <!-- Keep this comment at the end of the file

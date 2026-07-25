@@ -16,12 +16,12 @@
    <methodparam choice="opt"><type>string</type><parameter>enclosure</parameter><initializer>"\""</initializer></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>escape</parameter><initializer>"\\"</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Similar to <function>fgets</function> except that
    <function>fgetcsv</function> parses the line it reads for fields in
    <acronym>CSV</acronym> format and returns an array containing the fields
    read.
-  </para>
+  </simpara>
   <note>
    <simpara>
     The locale settings are taken into account by this function.
@@ -39,55 +39,55 @@
     <varlistentry>
      <term><parameter>stream</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A valid file pointer to a file successfully opened by
        <function>fopen</function>, <function>popen</function>, or
        <function>fsockopen</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Must be greater than the longest line (in characters) to be found in
        the CSV file (allowing for trailing line-end characters). Otherwise the
        line is split in chunks of <parameter>length</parameter> characters,
        unless the split would occur inside an enclosure.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Omitting this parameter (or setting it to 0,
        or &null; in PHP 8.0.0 or later) the maximum line length is not limited,
        which is slightly slower.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>separator</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <parameter>separator</parameter> parameter sets the field separator.
        It must be a single byte character.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>enclosure</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <parameter>enclosure</parameter> parameter sets the field enclosure character.
        It must be a single byte character.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>escape</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <parameter>escape</parameter> parameter sets the escape character.
        It must be a single byte character or the empty string.
        The empty string (<literal>""</literal>) disables the proprietary escape mechanism.
-      </para>
+      </simpara>
       <warning xml:id="function.fgetcsv..warn.escape.parameter">
        <simpara>
         In the input stream, the <parameter>enclosure</parameter> character
@@ -120,15 +120,15 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an indexed array containing the fields read on success, &return.falseforfailure;.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     A blank line in a CSV file will be returned as an array
     comprising a single <type>null</type> field, and will not be treated
     as an error.
-   </para>
+   </simpara>
   </note>
   &note.line-endings;
  </refsect1>

@@ -4,7 +4,7 @@
  <title>Using the bundled PHP prior to macOS Monterey</title>
  <simpara>
   PHP is bundled with macOS since macOS X (10.0.0) prior to macOS Monterey (12.0.0).
-  Enabling PHP with the default web server requires uncommenting a few lines in the 
+  Enabling PHP with the default web server requires uncommenting a few lines in the
   Apache configuration file <filename>httpd.conf</filename> whereas the
   <acronym>CGI</acronym> and/or <acronym>CLI</acronym> are enabled by
   default (easily accessible via the Terminal program).
@@ -77,11 +77,11 @@
     </para>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      Be sure the desired extensions will parse as PHP (examples:
      <filename class="extension">.php</filename>, <filename class="extension">.html</filename>
      and <filename class="extension">.inc</filename>).
-    </para>
+    </simpara>
     <para>
      Due to the following statement already existing in
      <filename>httpd.conf</filename> (as of Mac Panther), once PHP is
@@ -104,11 +104,11 @@
      </screen>
     </para>
     <note>
-     <para>
+     <simpara>
       Before Mac OS X 10.5 (Leopard), PHP 4 was bundled instead of PHP 5 in
       which case the above instructions will differ slightly by changing
       5's to 4's.
-     </para>
+     </simpara>
     </note>
    </listitem>
    <listitem>
@@ -161,13 +161,13 @@
 <?php phpinfo(); ?>
 ]]>
      </programlisting>
-    </para> 
+    </para>
    </listitem>
    <listitem>
     <simpara>
      Restart Apache, and load the PHP file created above
     </simpara>
-    <para>
+    <simpara>
      To restart, either execute <literal>sudo apachectl graceful</literal> in
      the shell or stop/start the "Personal Web Server" option in the
      macOS System Preferences. By default, loading local files in the browser
@@ -175,7 +175,7 @@
      <filename>http://localhost/info.php</filename> Or using the DocumentRoot
      in the user directory is another option and would end up looking like:
      <filename>http://localhost/~yourusername/info.php</filename>
-    </para>
+    </simpara>
    </listitem>
   </orderedlist>
  </para>

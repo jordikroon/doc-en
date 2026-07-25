@@ -15,10 +15,10 @@
    <methodparam choice="opt"><type>float</type><parameter>threshold</parameter><initializer>0.5</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>color</parameter><initializer>-1</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Automatically crops an image according to the given
    <parameter>mode</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,9 +28,9 @@
    <varlistentry>
     <term><parameter>mode</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       One of the following constants:
-     </para>
+     </simpara>
      <variablelist>
       <varlistentry>
        <term><constant>IMG_CROP_DEFAULT</constant></term>
@@ -90,14 +90,14 @@
    <varlistentry>
     <term><parameter>threshold</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Specifies the tolerance in percent to be used while comparing the image
       color and the color to crop. The method used to calculate the color
       difference is based on the color distance in the RGB(a) cube.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       Used only in <constant>IMG_CROP_THRESHOLD</constant> mode.
-     </para>
+     </simpara>
      <note>
       <simpara>
        Before PHP 7.4.0, the bundled libgd used a somewhat different algorithm,
@@ -110,12 +110,12 @@
    <varlistentry>
     <term><parameter>color</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Either an RGB color value or a palette index.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       Used only in <constant>IMG_CROP_THRESHOLD</constant> mode.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -123,10 +123,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a cropped image object on success&return.falseforfailure;.
    &false; is also returned if the whole image was cropped.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -176,13 +176,13 @@
   <para>
    <example>
     <title>Proper handling of auto-cropping</title>
-    <para>
+    <simpara>
      As noted in the return value section, <function>imagecropauto</function>
      returns &false; if the whole image
      was cropped. In this example we have an image object
      <literal>$im</literal> which should be automatically cropped only if there
      is something to crop; otherwise we want to proceed with the original image.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -196,7 +196,7 @@ if ($cropped !== false) { // in case a new image object was returned
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <simplelist>

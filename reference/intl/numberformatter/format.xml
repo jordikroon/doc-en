@@ -9,26 +9,26 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="NumberFormatter">
    <modifier>public</modifier> <type class="union"><type>string</type><type>false</type></type><methodname>NumberFormatter::format</methodname>
    <methodparam><type class="union"><type>int</type><type>float</type></type><parameter>num</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>type</parameter><initializer><constant>NumberFormatter::TYPE_DEFAULT</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>numfmt_format</methodname>
    <methodparam><type>NumberFormatter</type><parameter>formatter</parameter></methodparam>
    <methodparam><type class="union"><type>int</type><type>float</type></type><parameter>num</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>type</parameter><initializer><constant>NumberFormatter::TYPE_DEFAULT</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Format a numeric value according to the formatter rules.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -38,18 +38,18 @@
     <varlistentry>
      <term><parameter>formatter</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <classname>NumberFormatter</classname> object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>num</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The value to format. Can be <type>int</type> or <type>float</type>,
        other values will be converted to a numeric value.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -71,9 +71,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the string containing formatted value, or &false; on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -113,13 +113,13 @@ string(13) "1.234.567,891"
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     Formats achievable by this method of formatting cannot fully use the possibilities of underlying ICU library,
     such as to format currency with narrow currency symbol.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     To fully utilize them use <function>msgfmt_format_message</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

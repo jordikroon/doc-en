@@ -5,7 +5,7 @@
   <refname>gmp_gcd</refname>
   <refpurpose>Calculate GCD</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,11 +13,11 @@
    <methodparam><type class="union"><type>GMP</type><type>int</type><type>string</type></type><parameter>num1</parameter></methodparam>
    <methodparam><type class="union"><type>GMP</type><type>int</type><type>string</type></type><parameter>num2</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Calculate greatest common divisor of <parameter>num1</parameter> and
    <parameter>num2</parameter>. The result is always positive even if
    either of, or both, input operands are negative.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,13 +27,13 @@
     <varlistentry>
      <term><parameter>num1</parameter></term>
      <listitem>
-      &gmp.parameter; 
+      &gmp.parameter;
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>num2</parameter></term>
      <listitem>
-      &gmp.parameter; 
+      &gmp.parameter;
      </listitem>
     </varlistentry>
    </variablelist>
@@ -42,10 +42,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A positive GMP number that divides into both
    <parameter>num1</parameter> and <parameter>num2</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

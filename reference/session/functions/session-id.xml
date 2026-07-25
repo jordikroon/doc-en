@@ -11,16 +11,16 @@
    <type class="union"><type>string</type><type>false</type></type><methodname>session_id</methodname>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>id</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>session_id</function> is used to get or set the session id for
    the current session.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The constant <constant>SID</constant> can also be used to
    retrieve the current name and session id as a string suitable for
    adding to URLs. See also <link linkend="ref.session">Session
    handling</link>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,14 +30,14 @@
     <varlistentry>
      <term><parameter>id</parameter></term>
       <listitem>
-       <para>
+       <simpara>
         If <parameter>id</parameter> is specified and not &null;, it will replace the current
         session id. <function>session_id</function> needs to be called before
         <function>session_start</function> for that purpose. Depending on the
         session handler, not all characters are allowed within the session id.
         For example, the file session handler only allows characters in the
         range <literal>[a-zA-Z0-9,-]</literal>!
-       </para>
+       </simpara>
        <note>
         <simpara>
          When using session cookies, specifying an <parameter>id</parameter>
@@ -54,12 +54,12 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    <function>session_id</function> returns the session id for the current
    session or the empty string (<literal>""</literal>) if there is no current
    session (no current session id exists).
    On failure, &false; is returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

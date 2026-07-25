@@ -4,28 +4,28 @@
   <refname>DOMChildNode::remove</refname>
   <refpurpose>Removes the node</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="DOMChildNode">
    <modifier>public</modifier> <type>void</type><methodname>DOMChildNode::remove</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Removes the node.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   &no.function.parameters;
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

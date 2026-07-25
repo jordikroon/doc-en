@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.strrev">
+<refentry xml:id="function.strrev" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>strrev</refname>
   <refpurpose>Reverse a string</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>string</type><methodname>strrev</methodname>
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns <parameter>string</parameter>, reversed.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string to be reversed.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,9 +35,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the reversed string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -53,7 +53,7 @@ echo strrev("Hello world!"); // outputs "!dlrow olleH"
 ]]>
     </programlisting>
    </example>
-  </para>   
+  </para>
  </refsect1>
 
 </refentry>

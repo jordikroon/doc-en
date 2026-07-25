@@ -16,9 +16,9 @@
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>search_criteria</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>charset</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets and sorts message numbers by the given parameters.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -73,9 +73,9 @@
     <varlistentry>
      <term><parameter>reverse</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Whether to sort in reverse order.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -102,18 +102,18 @@
     <varlistentry>
      <term><parameter>search_criteria</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        IMAP2-format search criteria string. For details see
        <function>imap_search</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>charset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        MIME character set to use when sorting strings.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -121,10 +121,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array of message numbers sorted by the given
    parameters, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

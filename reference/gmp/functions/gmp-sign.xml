@@ -5,16 +5,16 @@
   <refname>gmp_sign</refname>
   <refpurpose>Sign of number</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>int</type><methodname>gmp_sign</methodname>
    <methodparam><type class="union"><type>GMP</type><type>int</type><type>string</type></type><parameter>num</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks the sign of a number.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,11 +24,11 @@
     <varlistentry>
      <term><parameter>num</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Either a <classname>GMP</classname> object, or a numeric
        string provided that it is possible to convert the latter to an
        <type>int</type>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,11 +37,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns 1 if <parameter>num</parameter> is positive,
    -1 if <parameter>num</parameter> is negative,
    and 0 if <parameter>num</parameter> is zero.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

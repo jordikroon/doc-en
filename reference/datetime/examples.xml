@@ -6,10 +6,10 @@
 
  <section xml:id="datetime.examples-arithmetic">
   <title>Date/Time Arithmetic</title>
-  <para>
+  <simpara>
    The following examples show some pitfalls of Date/Time arithmetic with regard
    to DST transitions and months having different numbers of days.
-  </para>
+  </simpara>
   <para>
    <example>
     <title>DateTimeImmutable::add/sub add intervals which cover elapsed time</title>

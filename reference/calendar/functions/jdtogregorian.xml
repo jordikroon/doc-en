@@ -11,10 +11,10 @@
    <type>string</type><methodname>jdtogregorian</methodname>
    <methodparam><type>int</type><parameter>julian_day</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Converts Julian Day Count to a string containing the Gregorian
    date in the format of "month/day/year".
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>julian_day</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A julian day number as integer
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,16 +35,16 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The gregorian date as a string in the form "month/day/year"
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>
    <simplelist>
-    <member><function>gregoriantojd</function></member> 
+    <member><function>gregoriantojd</function></member>
     <member><function>cal_from_jd</function></member>
    </simplelist>
   </para>

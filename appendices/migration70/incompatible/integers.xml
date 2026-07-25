@@ -7,20 +7,20 @@
  <sect3 xml:id="migration70.incompatible.integers.invalid-octals">
   <title>Invalid octal literals</title>
 
-  <para>
+  <simpara>
    Previously, octal literals that contained invalid numbers were silently
    truncated (<literal>0128</literal> was taken as <literal>012</literal>).
    Now, an invalid octal literal will cause a parse error.
-  </para>
+  </simpara>
  </sect3>
 
  <sect3 xml:id="migration70.incompatible.integers.negative-bitshift">
   <title>Negative bitshifts</title>
 
-  <para>
+  <simpara>
    Bitwise shifts by negative numbers will now throw an
-   <classname>ArithmeticError</classname>:
-  </para>
+   <exceptionname>ArithmeticError</exceptionname>:
+  </simpara>
   <informalexample>
    <programlisting role="php">
 <![CDATA[
@@ -50,24 +50,24 @@ Stack trace:
  <sect3 xml:id="migration70.incompatible.integers.out-of-range">
   <title>Out of range bitshifts</title>
 
-  <para>
+  <simpara>
    Bitwise shifts (in either direction) beyond the bit width of an
    <type>int</type> will always result in 0. Previously, the behaviour of
    such shifts was architecture dependent.
-  </para>
+  </simpara>
  </sect3>
 
  <sect3 xml:id="migration70.incompatible.integers.div-by-zero">
   <title>Changes to Division By Zero</title>
 
-  <para>
+  <simpara>
    Previously, when 0 was used as the divisor for either the divide (/) or
    modulus (%) operators, an E_WARNING would be emitted and
    <constant>false</constant> would be returned. Now, the divide operator
    returns a float as either +INF, -INF, or NAN, as specified by IEEE 754. The modulus operator E_WARNING
-   has been removed and will throw a <classname>DivisionByZeroError</classname>
+   has been removed and will throw a <exceptionname>DivisionByZeroError</exceptionname>
    exception.
-  </para>
+  </simpara>
   <informalexample>
    <programlisting role="php">
 <![CDATA[

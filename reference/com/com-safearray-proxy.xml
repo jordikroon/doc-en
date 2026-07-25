@@ -8,10 +8,10 @@
 <!-- {{{ com_safearray_proxy intro -->
   <section xml:id="com-safearray-proxy.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     <classname>com_safearray_proxy</classname> is an internal class
     used for resolving multi-dimensional array accesses on SafeArray types.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

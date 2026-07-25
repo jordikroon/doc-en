@@ -30,34 +30,34 @@
     <varlistentry>
      <term><parameter>server_key</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &memcached.parameter.server_key;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>key</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The key of the item to fetch.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>cache_cb</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Read-through caching callback or &null;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>get_flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Flags to control the returned result. When value of <constant>Memcached::GET_EXTENDED</constant>
        is given will return the CAS token.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

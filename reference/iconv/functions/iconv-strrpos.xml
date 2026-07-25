@@ -5,7 +5,7 @@
   <refname>iconv_strrpos</refname>
   <refpurpose>Finds the last occurrence of a needle within a haystack</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,17 +14,17 @@
    <methodparam><type>string</type><parameter>needle</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>encoding</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Finds the last occurrence of a <parameter>needle</parameter>
    within a <parameter>haystack</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    In contrast to <function>strrpos</function>, the return value of
    <function>iconv_strrpos</function> is the number of characters that
    appear before the needle, rather than the offset in bytes to the
    position where the needle has been found. The characters are counted
    on the basis of the specified character set <parameter>encoding</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -34,48 +34,48 @@
     <varlistentry>
      <term><parameter>haystack</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The entire string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>needle</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The searched substring.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>encoding</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If <parameter>encoding</parameter> parameter is omitted or &null;,
        <parameter>string</parameter> are assumed to be encoded in
        <link linkend="iconv.configuration">iconv.internal_encoding</link>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
-  <para>
+  <simpara>
    If <parameter>haystack</parameter> or <parameter>needle</parameter> is
    not a string, it is converted to a string and applied as the ordinal
    value of a character.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the numeric position of the last occurrence of
    <parameter>needle</parameter> in <parameter>haystack</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If <parameter>needle</parameter> is not found,
    <function>iconv_strrpos</function> will return &false;.
-  </para>
+  </simpara>
   &return.falseproblem;
  </refsect1>
 

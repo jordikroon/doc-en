@@ -8,9 +8,9 @@
   <!-- {{{ PSpell\Config intro -->
   <section xml:id="pspell-config.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     A fully opaque class which replaces a <literal>pspell config</literal> resource as of PHP 8.1.0.
-   </para>
+   </simpara>
   </section>
   <!-- }}} -->
 

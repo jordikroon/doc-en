@@ -4,21 +4,21 @@
  <title>Datastructures</title>
 
  <partintro>
-  <para>
-   SPL provides a set of standard datastructures. They are grouped here by their 
-   underlying implementation which usually defines their general field of 
+  <simpara>
+   SPL provides a set of standard datastructures. They are grouped here by their
+   underlying implementation which usually defines their general field of
    application.
-  </para>
+  </simpara>
 
   <section>
    <title>Doubly Linked Lists</title>
 
-   <para>
-    A Doubly Linked List (DLL) is a list of nodes linked in both directions to 
-    each other. Iterator's operations, access to both ends, addition or 
+   <simpara>
+    A Doubly Linked List (DLL) is a list of nodes linked in both directions to
+    each other. Iterator's operations, access to both ends, addition or
     removal of nodes have a cost of O(1) when the underlying structure is a DLL.
     It hence provides a decent implementation for stacks and queues.
-   </para>
+   </simpara>
 
    <itemizedlist>
     <listitem>
@@ -34,11 +34,11 @@
   <section>
    <title>Heaps</title>
 
-   <para>
+   <simpara>
     Heaps are tree-like structures that follow the heap-property: each node
-    is greater than or equal to its children, when compared using the 
+    is greater than or equal to its children, when compared using the
     implemented compare method which is global to the heap.
-   </para>
+   </simpara>
 
    <itemizedlist>
     <listitem>
@@ -58,10 +58,10 @@
   <section>
    <title>Arrays</title>
 
-   <para>
+   <simpara>
     Arrays are structures that store the data in a contiguous way,
     accessible via indexes.
-   </para>
+   </simpara>
    <note>
     <simpara>
      Do not confuse this with PHP's native <type>array</type> type.
@@ -82,9 +82,9 @@
   <section>
    <title>Map</title>
 
-   <para>
+   <simpara>
     A map is a datastructure holding key-value pairs. PHP arrays can be seen as maps from integers/strings to values. SPL provides a map from objects to data. This map can also be used as an object set.
-   </para>
+   </simpara>
 
    <itemizedlist>
     <listitem>

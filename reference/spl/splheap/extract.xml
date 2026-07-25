@@ -21,16 +21,16 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The value of the extracted node.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws <classname>RuntimeException</classname> when the data-structure is empty.
-  </para>
+  <simpara>
+   Throws <exceptionname>RuntimeException</exceptionname> when the data-structure is empty.
+  </simpara>
  </refsect1>
 
 </refentry>

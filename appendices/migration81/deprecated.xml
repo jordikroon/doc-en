@@ -11,10 +11,10 @@
     <function>__serialize</function> and <function>__unserialize</function>
    </title>
 
-   <para>
+   <simpara>
     Either only the new methods should be implemented, if no support for
     PHP prior to version 7.4 is provided, or both should be implemented.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration81.deprecated.core.null-not-nullable-internal">
@@ -75,10 +75,10 @@ $a[15.0]; // ok, as 15.0 == 15
   <sect3 xml:id="migration81.deprecated.core.magic-sleep">
    <title>Returning a non-&array; from <function>__sleep</function></title>
 
-   <para>
+   <simpara>
     Returning a value which is not an &array; from
     <link linkend="object.sleep">__sleep()</link> now generates a diagnostic.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration81.deprecated.core.void-by-ref">
@@ -148,7 +148,7 @@ $arr[] = 2;
   <sect3 xml:id="migration81.deprecated.ctype.nonstring-arguments">
    <title>Verifying non-string arguments</title>
 
-   <para>
+   <simpara>
     Passing a non-string argument is deprecated.
     In the future, the argument will be interpreted as a string instead
     of an ASCII codepoint.
@@ -156,17 +156,17 @@ $arr[] = 2;
     cast to &string; or an explicit call to
     <function>chr</function> should be made.
     All <literal>ctype_*()</literal> functions are affected.
-   </para>
+   </simpara>
   </sect3>
  </sect2>
 
  <sect2 xml:id="migration81.deprecated.date">
   <title>Date</title>
 
-  <para>
+  <simpara>
    <function>date_sunrise</function> and <function>date_sunset</function>
    have been deprecated in favor of <function>date_sun_info</function>.
-  </para>
+  </simpara>
 
   <para>
    <function>strptime</function> has been deprecated.
@@ -184,25 +184,25 @@ $arr[] = 2;
  <sect2 xml:id="migration81.deprecated.filter">
   <title>Filter</title>
 
-  <para>
+  <simpara>
    The <constant>FILTER_SANITIZE_STRING</constant> and
    <constant>FILTER_SANITIZE_STRIPPED</constant> filters are deprecated.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The <link linkend="ini.filter.default">filter.default</link>
    INI directive is deprecated.
    <!-- TODO Check that filter.default_flags -->
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration81.deprecated.gd">
   <title>GD</title>
 
-  <para>
+  <simpara>
    The <parameter>num_points</parameter> of <function>imagepolygon</function>,
    <function>imageopenpolygon</function> and <function>imagefilledpolygon</function>
    has been deprecated.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration81.deprecated.hash">
@@ -221,10 +221,10 @@ $arr[] = 2;
  <sect2 xml:id="migration81.deprecated.imap">
   <title>IMAP</title>
 
-  <para>
+  <simpara>
    The <constant>NIL</constant> constant has been deprecated.
    Use <literal>0</literal> instead.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration81.deprecated.intl">
@@ -241,21 +241,21 @@ $arr[] = 2;
  <sect2 xml:id="migration81.deprecated.mbstring">
   <title>Multibyte String</title>
 
-  <para>
+  <simpara>
    Calling <function>mb_check_encoding</function> without any arguments
    is deprecated.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration81.deprecated.mysqli">
   <title>MySQLi</title>
 
-  <para>
+  <simpara>
    The <property>mysqli_driver::$driver_version</property> property
    has been deprecated.
    It was meaningless and outdated, use <constant>PHP_VERSION_ID</constant>
    instead.
-  </para>
+  </simpara>
 
   <para>
    Calling <methodname>mysqli::get_client_info</methodname> or
@@ -275,35 +275,35 @@ $arr[] = 2;
  <sect2 xml:id="migration81.deprecated.oci8">
   <title>OCI8</title>
 
-  <para>
+  <simpara>
    The <link linkend="ini.oci8.old-oci-close-semantics">oci8.old_oci_close_semantics</link>
    INI directive is deprecated.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration81.deprecated.odbc">
   <title>ODBC</title>
 
-  <para>
+  <simpara>
    <function>odbc_result_all</function> has been deprecated.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration81.deprecated.pdo">
   <title>PDO</title>
 
-  <para>
+  <simpara>
    The <constant>PDO::FETCH_SERIALIZE</constant> fetch mode has been deprecated.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration81.deprecated.pgsql">
   <title>PgSQL</title>
 
-  <para>
+  <simpara>
    Not passing the connection argument to all <literal>pgsql_*()</literal>
    functions has been deprecated.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration81.deprecated.soap">
@@ -332,17 +332,17 @@ $arr[] = 2;
    <interfacename>Iterator</interfacename>, such as <classname>ArrayIterator</classname>, instead.
   </para>
 
-  <para>
+  <simpara>
    The <link linkend="ini.auto-detect-line-endings">auto_detect_line_endings</link>
    INI directive is deprecated.
    If necessary, handle <literal>"\r"</literal> line breaks manually instead.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    The <constant>FILE_BINARY</constant> and
    <constant>FILE_TEXT</constant> constants have been deprecated.
    They never had any effect.
-  </para>
+  </simpara>
  </sect2>
 
 </sect1>

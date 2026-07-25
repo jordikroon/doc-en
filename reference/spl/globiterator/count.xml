@@ -12,10 +12,10 @@
    <modifier>public</modifier> <type>int</type><methodname>GlobIterator::count</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the number of directories and files found by
    the glob expression.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,10 +25,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The number of returned directories and files, as an
    <type>int</type>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

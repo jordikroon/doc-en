@@ -10,12 +10,12 @@
 <!-- {{{ PhpToken intro -->
   <section xml:id="phptoken.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     This class provides an alternative to <function>token_get_all</function>. While the function returns tokens
     either as a single-character string, or an array with a token ID, token text and line number,
     <function>PhpToken::tokenize</function> normalizes all tokens into PhpToken objects, which makes code operating
     on tokens more memory efficient and readable.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -69,33 +69,33 @@
     <varlistentry xml:id="phptoken.props.id">
      <term><varname>id</varname></term>
      <listitem>
-      <para>
+      <simpara>
        One of the T_* constants, or an ASCII codepoint representing a single-char token.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="phptoken.props.text">
      <term><varname>text</varname></term>
      <listitem>
-      <para>
+      <simpara>
        The textual content of the token.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="phptoken.props.line">
      <term><varname>line</varname></term>
      <listitem>
-      <para>
+      <simpara>
        The starting line number (1-based) of the token.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="phptoken.props.pos">
      <term><varname>pos</varname></term>
      <listitem>
-      <para>
+      <simpara>
        The starting position (0-based) in the tokenized string (the number of bytes).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

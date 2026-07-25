@@ -16,9 +16,9 @@
    <methodparam><type>int</type><parameter>y2</parameter></methodparam>
    <methodparam><type>int</type><parameter>color</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Draws a line between the two given points.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -28,41 +28,41 @@
     <varlistentry>
      <term><parameter>x1</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        x-coordinate for first point.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>y1</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        y-coordinate for first point.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>x2</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        x-coordinate for second point.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>y2</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        y-coordinate for second point.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>color</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The line color. &gd.identifier.color;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -70,9 +70,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

@@ -5,22 +5,22 @@
   <refname>socket_clear_error</refname>
   <refpurpose>Clears the error on the socket or the last error code</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>void</type><methodname>socket_clear_error</methodname>
    <methodparam choice="opt"><type class="union"><type>Socket</type><type>null</type></type><parameter>socket</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function clears the error code on the given socket or the global
    last socket error if no socket is specified.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This function allows explicitly resetting the error code value either of
    a socket or of the extension global last error code. This may be useful
    to detect within a part of the application if an error occurred or not.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,9 +30,9 @@
     <varlistentry>
      <term><parameter>socket</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A <classname>Socket</classname> instance created with <function>socket_create</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -41,9 +41,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

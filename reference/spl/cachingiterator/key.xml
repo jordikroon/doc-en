@@ -13,12 +13,12 @@
    <modifier>public</modifier> <type>scalar</type><methodname>CachingIterator::key</methodname>
    <void />
   </methodsynopsis>
-  
+
   &warn.undocumented.func;
-  
-  <para>
+
+  <simpara>
    This method may return a key for the current element.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">

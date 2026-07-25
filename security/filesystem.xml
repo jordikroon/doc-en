@@ -46,8 +46,8 @@ echo "The file has been deleted!";
 ]]>
      </programlisting>
     </example>
-   Since the username and the filename are postable from a user form, 
-   they can submit a username and a filename belonging to someone else, 
+   Since the username and the filename are postable from a user form,
+   they can submit a username and a filename belonging to someone else,
    and delete it even if they're not supposed to be allowed to do so.
    In this case, you'd want to use some other form of authentication.
    Consider what could happen if the variables submitted were
@@ -145,7 +145,7 @@ if (!ctype_alnum($username) || !preg_match('/^(?:[a-z0-9_-]|\.(?!\.))+$/iD', $us
      </programlisting>
     </example>
    </para>
-   <para>
+   <simpara>
     Depending on your operating system, there are a wide variety of files
     which you should be concerned about, including device entries (<filename>/dev/</filename>
     or <filename>COM1</filename>), configuration files (<filename>/etc/</filename> files and
@@ -153,13 +153,13 @@ if (!ctype_alnum($username) || !preg_match('/^(?:[a-z0-9_-]|\.(?!\.))+$/iD', $us
     <filename>My Documents</filename>), etc. For this
     reason, it's usually easier to create a policy where you forbid
     everything except for what you explicitly allow.
-   </para>
+   </simpara>
    <sect1 xml:id="security.filesystem.nullbytes">
     <title>Null bytes related issues</title>
     <simpara>
      As <acronym>PHP</acronym> uses the underlying C functions for filesystem related
      operations, it may handle null bytes in a quite unexpected way.
-     As null bytes denote the end of a string in C, strings containing them 
+     As null bytes denote the end of a string in C, strings containing them
      won't be considered entirely but rather only until a null byte occurs.
 
      The following example shows a vulnerable code that demonstrates this problem:
@@ -183,17 +183,17 @@ if (file_exists('/home/wwwrun/' . $file . '.php')) {
 ]]>
      </programlisting>
     </example>
-    <para>
+    <simpara>
      Therefore, any tainted string that is used in a filesystem operation should always
      be validated properly. Here is a better version of the previous example:
-    </para>
+    </simpara>
     <example>
      <title>Correctly validating the input</title>
      <programlisting role="php">
 <![CDATA[
 <?php
 
-$file = $_GET['file']; 
+$file = $_GET['file'];
 
 // Whitelisting possible values
 switch ($file) {

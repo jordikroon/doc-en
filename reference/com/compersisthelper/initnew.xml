@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>COMPersistHelper::InitNew</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Initializes an object to a default state.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

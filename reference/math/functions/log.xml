@@ -12,12 +12,12 @@
    <methodparam><type>float</type><parameter>num</parameter></methodparam>
    <methodparam choice="opt"><type>float</type><parameter>base</parameter><initializer><constant>M_E</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
-   If the optional <parameter>base</parameter> parameter is specified, 
+  <simpara>
+   If the optional <parameter>base</parameter> parameter is specified,
    <function>log</function> returns log<subscript>base</subscript>
-   <parameter>num</parameter>, otherwise <function>log</function> 
+   <parameter>num</parameter>, otherwise <function>log</function>
    returns the natural logarithm of <parameter>num</parameter>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -26,18 +26,18 @@
     <varlistentry>
      <term><parameter>num</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The value to calculate the logarithm for
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>base</parameter></term>
      <listitem>
-      <para>
-       The optional logarithmic base to use 
+      <simpara>
+       The optional logarithmic base to use
        (defaults to 'e' and so to the natural logarithm).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -45,11 +45,11 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   The logarithm of <parameter>num</parameter> to 
+  <simpara>
+   The logarithm of <parameter>num</parameter> to
    <parameter>base</parameter>, if given, or the
-   natural logarithm.  
-  </para>
+   natural logarithm.
+  </simpara>
  </refsect1>
  <refsect1 role="seealso">
   &reftitle.seealso;

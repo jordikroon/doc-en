@@ -5,7 +5,7 @@
   <refname>array_chunk</refname>
   <refpurpose>Split an array into chunks</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,10 +14,10 @@
    <methodparam><type>int</type><parameter>length</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>preserve_keys</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Chunks an array into arrays with <parameter>length</parameter> elements.
    The last chunk may contain less than <parameter>length</parameter> elements.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,28 +28,28 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The array to work on
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The size of each chunk
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
     <varlistentry>
      <term><parameter>preserve_keys</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        When set to &true; keys will be preserved.
        Default is &false; which will reindex the chunk numerically
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -59,18 +59,18 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a multidimensional numerically indexed array, starting with zero,
    with each dimension containing <parameter>length</parameter> elements.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    If <parameter>length</parameter> is less than <literal>1</literal>,
-   a <classname>ValueError</classname> will be thrown.
-  </para>
+   a <exceptionname>ValueError</exceptionname> will be thrown.
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -88,7 +88,7 @@
       <entry>8.0.0</entry>
       <entry>
        If <parameter>length</parameter> is less than <literal>1</literal>,
-       a <classname>ValueError</classname> will be thrown now;
+       a <exceptionname>ValueError</exceptionname> will be thrown now;
        previously, an error of level <constant>E_WARNING</constant>
        has been raised instead, and the function returned &null;.
       </entry>

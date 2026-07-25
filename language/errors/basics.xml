@@ -4,23 +4,23 @@
 <sect1 xml:id="language.errors.basics" xmlns="http://docbook.org/ns/docbook">
  <title>Basics</title>
 
- <para>
+ <simpara>
   PHP reports errors in response to a number of internal error conditions.
   These may be used to signal a number of different conditions, and can be
   displayed and/or logged as required.
- </para>
+ </simpara>
 
- <para>
+ <simpara>
   Every error that PHP generates includes a type. A
   <link linkend="errorfunc.constants">list of these error types</link> is available,
   along with a short description of their behaviour and how they can be
   caused.
- </para>
+ </simpara>
 
  <sect2 xml:id="language.errors.basics.handling">
   <title>Handling errors with PHP</title>
 
-  <para>
+  <simpara>
    If no error handler is set, then PHP will handle any errors that occur
    according to its configuration. Which errors are reported and which are
    ignored is controlled by the
@@ -29,7 +29,7 @@
    <function>error_reporting</function>. It is strongly recommended that the
    configuration directive be set, however, as some errors can occur before
    execution of your script begins.
-  </para>
+  </simpara>
 
   <para>
    In a development environment, you should always set
@@ -42,16 +42,16 @@
    provide early warning of potential issues.
   </para>
 
-  <para>
+  <simpara>
    What PHP does with these errors depends on two further php.ini directives.
    <link linkend="ini.display-errors"><parameter>display_errors</parameter></link>
    controls whether the error is shown as part of the script's output. This
    should always be disabled in a production environment, as it can include
    confidential information such as database passwords, but is often useful to
    enable in development, as it ensures immediate reporting of issues.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    In addition to displaying errors, PHP can log errors when the
    <link linkend="ini.log-errors"><parameter>log_errors</parameter></link>
    directive is enabled. This will log any errors to the file or syslog
@@ -59,13 +59,13 @@
    <link linkend="ini.error-log"><parameter>error_log</parameter></link>. This
    can be extremely useful in a production environment, as you can log errors
    that occur and then generate reports based on those errors.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="language.errors.basics.user">
   <title>User error handlers</title>
 
-  <para>
+  <simpara>
    If PHP's default error handling is inadequate, you can also handle many
    types of error with your own custom error handler by installing it with
    <function>set_error_handler</function>. While some error types cannot be
@@ -73,10 +73,10 @@
    that your script sees fit: for example, this can be used to show a custom
    error page to the user and then report more directly than via a log, such
    as by sending an e-mail.
-  </para>
+  </simpara>
  </sect2>
 </sect1>
- 
+
 <!-- Keep this comment at the end of the file
 Local variables:
 mode: sgml

@@ -13,15 +13,15 @@
    <type class="union"><type>string</type><type>false</type><type>null</type></type><methodname>shell_exec</methodname>
    <methodparam><type>string</type><parameter>command</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function is identical to the <link linkend="language.operators.execution">backtick operator</link>.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     On Windows, the underlying pipe is opened in text mode which can cause the
     function to fail for binary output. Consider to use <function>popen</function>
     instead for such cases.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -32,9 +32,9 @@
     <varlistentry>
      <term><parameter>command</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The command that will be executed.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -43,26 +43,26 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A &string; containing the output from the executed command, &false; if the pipe
    cannot be established or &null; if an error occurs or the command produces no output.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     This function can return &null; both when an error occurs or the program
     produces no output. It is not possible to detect execution failures using
     this function. <function>exec</function> should be used when access to the
     program exit code is required.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    An <constant>E_WARNING</constant> level error is generated
    when the pipe cannot be established.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

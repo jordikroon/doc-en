@@ -15,10 +15,10 @@
    <methodparam><type>int</type><parameter role="reference">consumed</parameter></methodparam>
    <methodparam><type>bool</type><parameter>closing</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This method is called whenever data is read from or written to
    the attached stream (such as with <function>fread</function> or <function>fwrite</function>).
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -28,41 +28,41 @@
    <varlistentry>
     <term><parameter>in</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       <parameter>in</parameter> is a resource pointing to a <literal>bucket brigade</literal>
       which contains one or more <literal>bucket</literal> objects containing data to be filtered.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>out</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       <parameter>out</parameter> is a resource pointing to a second <literal>bucket brigade</literal>
       into which your modified buckets should be placed.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>consumed</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       <parameter>consumed</parameter>, which must <emphasis>always</emphasis>
       be declared by reference, should be incremented by the length of the data
       which your filter reads in and alters.  In most cases this means you will
       increment <parameter>consumed</parameter> by <literal>$bucket-&gt;datalen</literal>
       for each <literal>$bucket</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>closing</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       If the stream is in the process of closing
       (and therefore this is the last pass through the filterchain),
       the <parameter>closing</parameter> parameter will be set to &true;.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>

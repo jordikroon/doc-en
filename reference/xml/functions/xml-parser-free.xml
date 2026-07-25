@@ -18,17 +18,17 @@
    <methodparam><type>XMLParser</type><parameter>parser</parameter></methodparam>
   </methodsynopsis>
   &note.resource-migration-8.0-dead-function;
-  <para>
+  <simpara>
    Frees the given XML <parameter>parser</parameter>.
-  </para>
+  </simpara>
   <caution>
-   <para>
+   <simpara>
     In addition to calling <function>xml_parser_free</function> when the parsing
     is finished, prior to PHP 8.0.0, it was necessary to also explicitly unset the
     reference to <parameter>parser</parameter> to avoid memory leaks,
     if the parser resource is referenced from an object, and this object references
     that parser resource.
-   </para>
+   </simpara>
   </caution>
  </refsect1>
 
@@ -50,9 +50,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

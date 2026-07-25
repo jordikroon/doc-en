@@ -12,10 +12,10 @@
    <type class="union"><type>string</type><type>null</type></type><methodname>curl_multi_strerror</methodname>
    <methodparam><type>int</type><parameter>error_code</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a text error message describing the given
    <constant>CURLM_<replaceable>*</replaceable></constant> error code.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -25,9 +25,9 @@
    <varlistentry>
     <term><parameter>error_code</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       One of the <constant>CURLM_<replaceable>*</replaceable></constant> constants.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -35,9 +35,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns error string for valid error code, &null; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

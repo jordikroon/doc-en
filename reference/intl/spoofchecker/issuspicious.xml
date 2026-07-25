@@ -13,10 +13,10 @@
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter role="reference">errorCode</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks if given string contains any suspicious characters like letters which
    are almost identical visually, but are Unicode characters from different sets.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,18 +25,18 @@
    <varlistentry>
     <term><parameter>string</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       String to test.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>errorCode</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       This variable is set by-reference to &integer; containing an error, if there
       was any.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -44,9 +44,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if there are suspicious characters, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

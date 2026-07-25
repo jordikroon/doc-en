@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.fwrite">
+<refentry xml:id="function.fwrite" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>fwrite</refname>
   <refpurpose>Binary-safe file write</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -17,7 +17,7 @@
   <simpara>
    <function>fwrite</function> writes the contents of
    <parameter>data</parameter> to the file stream pointed to by
-   <parameter>stream</parameter>. 
+   <parameter>stream</parameter>.
   </simpara>
  </refsect1>
 
@@ -34,19 +34,19 @@
     <varlistentry>
      <term><parameter>data</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string that is to be written.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If <parameter>length</parameter> is an &integer;, writing will stop
        after <parameter>length</parameter> bytes have been written or the
        end of <parameter>data</parameter> is reached, whichever comes first.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -63,9 +63,9 @@
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    <function>fwrite</function> raises <constant>E_WARNING</constant> on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -157,14 +157,14 @@ function fwrite_stream($fp, $string) {
   </note>
 
   <note>
-   <para>
+   <simpara>
     On systems which differentiate between binary and text files
     (i.e. Windows) the file must be opened with 'b' included in
     <function>fopen</function> mode parameter.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     If <parameter>stream</parameter> was <function>fopen</function>ed in
     append mode, <function>fwrite</function>s are atomic (unless the size of
     <parameter>data</parameter> exceeds the filesystem's block size, on some
@@ -172,7 +172,7 @@ function fwrite_stream($fp, $string) {
     there is no need to <function>flock</function> a resource before calling
     <function>fwrite</function>; all of the data will be written without
     interruption.
-   </para>
+   </simpara>
   </note>
   <note>
    <para>

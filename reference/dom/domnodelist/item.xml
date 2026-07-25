@@ -13,16 +13,16 @@
    <modifier>public</modifier> <type class="union"><type>DOMElement</type><type>DOMNode</type><type>DOMNameSpaceNode</type><type>null</type></type><methodname>DOMNodeList::item</methodname>
    <methodparam><type>int</type><parameter>index</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   Retrieves a node specified by <parameter>index</parameter> within the 
+  <simpara>
+   Retrieves a node specified by <parameter>index</parameter> within the
    <classname>DOMNodeList</classname> object.
-  </para>
+  </simpara>
   <tip>
-   <para>
-    If you need to know the number of nodes in the collection, use 
-    the <literal>length</literal> property of the 
+   <simpara>
+    If you need to know the number of nodes in the collection, use
+    the <literal>length</literal> property of the
     <classname>DOMNodeList</classname> object.
-   </para>
+   </simpara>
   </tip>
  </refsect1>
  <refsect1 role="parameters">
@@ -32,9 +32,9 @@
     <varlistentry>
      <term><parameter>index</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Index of the node into the collection.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -42,11 +42,11 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   The node at the <parameter>index</parameter>th position in the 
+  <simpara>
+   The node at the <parameter>index</parameter>th position in the
    <classname>DOMNodeList</classname>, or &null; if that is not a valid
    index.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;

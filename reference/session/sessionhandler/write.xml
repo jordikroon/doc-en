@@ -13,26 +13,26 @@
    <methodparam><type>string</type><parameter>id</parameter></methodparam>
    <methodparam><type>string</type><parameter>data</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Writes the session data to the session storage. Called by normal PHP shutdown, by
    <function>session_write_close</function>, or when <function>session_register_shutdown</function> fails.
    PHP will call <function>SessionHandler::close</function> immediately after this method returns.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This method wraps the internal PHP save handler defined in the
    <link linkend="ini.session.save-handler">session.save_handler</link> ini setting that was set
    before this handler was set by <function>session_set_save_handler</function>.
-  </para>
+  </simpara>
   <simpara>
    If this class is extended by inheritance, calling the parent <parameter>write</parameter> method will invoke the
    wrapper for this method and therefore invoke the associated internal callback.  This allows this method to be
    overridden and or intercepted and filtered (for example, encrypting the <parameter>data</parameter> value
    before sending it to the parent <parameter>write</parameter> method).
   </simpara>
-  <para>
+  <simpara>
    For more information on what this method is expected to do, please refer to the documentation
    at <function>SessionHandlerInterface::write</function>.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -42,18 +42,18 @@
    <varlistentry>
     <term><parameter>id</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The session id.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>data</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The encoded session data.  This data is the result of the PHP internally encoding the <varname>$_SESSION</varname> superglobal to a serialized
       string and passing it as this parameter.  Please note sessions use an alternative serialization method.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -61,9 +61,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &returns.session.storage.retval;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

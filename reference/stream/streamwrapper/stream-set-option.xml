@@ -15,9 +15,9 @@
    <methodparam><type>int</type><parameter>arg1</parameter></methodparam>
    <methodparam><type>int</type><parameter>arg2</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This method is called to set options on the stream.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -72,11 +72,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
    If <parameter>option</parameter> is not implemented, &false; should be
    returned.
-  </para>
+  </simpara>
  </refsect1>
 
 <!--

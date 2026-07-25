@@ -5,16 +5,16 @@
   <refname>OCICollection::max</refname>
   <refpurpose>Returns the maximum number of elements in the collection</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="OCICollection">
    <modifier>public</modifier> <type class="union"><type>int</type><type>false</type></type><methodname>OCICollection::max</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the maximum number of elements in the collection.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,12 +24,12 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the maximum number as an integer, or &false; on errors.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If the returned value is 0, then the number of elements is not limited.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

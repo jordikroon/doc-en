@@ -21,9 +21,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &false; if the iterator has been closed. Otherwise returns &true;.
-  </para>
+  </simpara>
  </refsect1>
 
 

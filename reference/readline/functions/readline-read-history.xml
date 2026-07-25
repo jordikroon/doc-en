@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.readline-read-history">
+<refentry xml:id="function.readline-read-history" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>readline_read_history</refname>
   <refpurpose>Reads the history</refpurpose>

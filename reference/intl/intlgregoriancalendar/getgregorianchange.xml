@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>float</type><methodname>IntlGregorianCalendar::getGregorianChange</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -27,9 +27,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the change date.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

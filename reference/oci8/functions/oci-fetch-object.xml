@@ -5,7 +5,7 @@
   <refname>oci_fetch_object</refname>
   <refpurpose>Returns the next row from a query as an object</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,12 +13,12 @@
    <methodparam><type>resource</type><parameter>statement</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>mode</parameter><initializer>OCI_ASSOC | OCI_RETURN_NULLS</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns an object containing the next result-set row of a query.
    Each attribute of the object corresponds to a column of the row.
    This function is typically called in a loop until it returns
    &false;, indicating no more rows exist.
-  </para>
+  </simpara>
   &oci.datatypes;
  </refsect1>
 
@@ -38,32 +38,32 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an object.  Each attribute of the object corresponds to a
    column of the row.  If there are no more rows in
    the <parameter>statement</parameter> then &false; is returned.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
     Any <literal>LOB</literal> columns are returned as LOB descriptors.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    <literal>DATE</literal> columns are returned as strings formatted
    to the current date format.  The default format can be changed with
    Oracle environment variables such as <literal>NLS_LANG</literal> or
    by a previously executed <literal>ALTER SESSION SET
    NLS_DATE_FORMAT</literal> command.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Oracle's default, non-case sensitive column names will have
    uppercase attribute names.  Case-sensitive column names will have
    attribute names using the exact column case.
    Use <function>var_dump</function> on the result object to verify
    the appropriate case for attribute access.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
     Attribute values will be &null; for any <literal>NULL</literal>
     data fields.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -94,7 +94,7 @@ oci_execute($stid);
 while (($row = oci_fetch_object($stid)) != false) {
     // Use upper case attribute names for each standard Oracle column
     echo $row->ID . "<br>\n";
-    echo $row->DESCRIPTION . "<br>\n"; 
+    echo $row->DESCRIPTION . "<br>\n";
 }
 
 // Output is:
@@ -136,7 +136,7 @@ while (($row = oci_fetch_object($stid)) != false) {
     // Use upper case attribute names for each standard Oracle column
     echo $row->ID . "<br>\n";
     // Use the exact case for the case sensitive column name
-    echo $row->MyDescription . "<br>\n";   
+    echo $row->MyDescription . "<br>\n";
 }
 
 // Output is:
@@ -177,7 +177,7 @@ oci_execute($stid);
 while (($row = oci_fetch_object($stid)) != false) {
     echo $row->ID . "<br>\n";
     // The following will output the first 11 bytes from DESCRIPTION
-    echo $row->DESCRIPTION->read(11) . "<br>\n"; 
+    echo $row->DESCRIPTION->read(11) . "<br>\n";
 }
 
 // Output is:

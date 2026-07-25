@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>SplFileInfo::isExecutable</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks if the file is executable.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if executable, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -38,7 +38,7 @@
 <![CDATA[
 <?php
 $info = new SplFileInfo('/usr/bin/php');
-var_dump($info->isExecutable()); 
+var_dump($info->isExecutable());
 
 $info = new SplFileInfo('/usr/bin');
 var_dump($info->isExecutable());

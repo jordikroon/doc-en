@@ -63,17 +63,17 @@
        <varlistentry>
         <term><parameter>value</parameter></term>
         <listitem>
-         <para>
+         <simpara>
           The first argument passed to the SQL function.
-         </para>
+         </simpara>
         </listitem>
        </varlistentry>
        <varlistentry>
         <term><parameter>values</parameter></term>
         <listitem>
-         <para>
+         <simpara>
           Further arguments passed to the SQL function.
-         </para>
+         </simpara>
         </listitem>
        </varlistentry>
       </variablelist>

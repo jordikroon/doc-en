@@ -5,16 +5,16 @@
   <refname>usleep</refname>
   <refpurpose>Delay execution in microseconds</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>void</type><methodname>usleep</methodname>
    <methodparam><type>int</type><parameter>microseconds</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Delays program execution for the given number of microseconds.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,10 +24,10 @@
     <varlistentry>
      <term><parameter>microseconds</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Halt time in microseconds. A microsecond is one millionth of a
        second.
-      </para>
+      </simpara>
       <note>
        <simpara>
         Values larger than <literal>1000000</literal> (i.e. sleeping for more than a second)
@@ -48,9 +48,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

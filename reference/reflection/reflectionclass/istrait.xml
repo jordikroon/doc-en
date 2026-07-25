@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>ReflectionClass::isTrait</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Check whether this <type>ReflectionClass</type> refers to a trait.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if this is a trait, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
 

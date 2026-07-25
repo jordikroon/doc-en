@@ -12,9 +12,9 @@
    <modifier>public</modifier> <modifier>static</modifier> <type class="union"><type>int</type><type>string</type><type>null</type></type><methodname>IntlChar::getBidiPairedBracket</methodname>
    <methodparam><type class="union"><type>int</type><type>string</type></type><parameter>codepoint</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Maps the specified character to its paired bracket character.
-  </para>
+  </simpara>
   <para>
    For <code>IntlChar::PROPERTY_BIDI_PAIRED_BRACKET_TYPE !== IntlChar::BPT_NONE</code>, this is the same as <function>IntlChar::charMirror</function>.
    Otherwise <parameter>codepoint</parameter> itself is returned.
@@ -35,10 +35,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the paired bracket code point, or <parameter>codepoint</parameter> itself if there is no such mapping. Returns
    &null; on failure.
-  </para>
+  </simpara>
   &intl.codepoint.return;
  </refsect1>
 
@@ -67,9 +67,9 @@ string(1) "]"
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     This method is available as of ICU version 52.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

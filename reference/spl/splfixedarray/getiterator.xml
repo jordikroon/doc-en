@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>Iterator</type><methodname>SplFixedArray::getIterator</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the iterator to go through the array.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,10 +24,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An instance of an object implementing <classname>Iterator</classname> to go
    through the array.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

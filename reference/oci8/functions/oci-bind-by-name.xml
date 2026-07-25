@@ -5,7 +5,7 @@
   <refname>oci_bind_by_name</refname>
   <refpurpose>Binds a PHP variable to an Oracle placeholder</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -16,29 +16,29 @@
    <methodparam choice="opt"><type>int</type><parameter>max_length</parameter><initializer>-1</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>type</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Binds a PHP variable <parameter>var</parameter> to the Oracle
    bind variable placeholder <parameter>param</parameter>.  Binding
    is important for Oracle database performance and also as a way to
    avoid SQL Injection security issues.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
     Binding allows the database to reuse the statement context and
     caches from previous executions of the statement, even if another
     user or process originally executed it.  Binding reduces SQL
     Injection concerns because the data associated with a bind
     variable is never treated as part of the SQL statement.  It does
     not need quoting or escaping.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
     PHP variables that have been bound can be changed and the
     statement re-executed without needing to re-parse the statement or
     re-bind.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
     In Oracle, bind variables are commonly divided
     into <literal>IN</literal> binds for values that are passed into
     the database, and <literal>OUT</literal> binds for values that are
@@ -46,15 +46,15 @@
     both <literal>IN</literal> and <literal>OUT</literal>.  Whether a
     bind variable will be used for input or output is determined at
     run-time.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
     You must specify <parameter>max_length</parameter> when using
     an <literal>OUT</literal> bind so that PHP allocates enough memory
     to hold the returned value.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
     For <literal>IN</literal> binds it is recommended to set
     the <parameter>max_length</parameter> length if the statement is
     re-executed multiple times with different values for the PHP
@@ -65,9 +65,9 @@
     each <function>oci_execute</function> call. Binding an
     unnecessarily large length will have an impact on process memory
     in the database.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
     A bind call tells Oracle which memory address to read data from.
     For <literal>IN</literal> binds that address needs to contain
     valid data when <function>oci_execute</function> is called.  This
@@ -76,9 +76,9 @@
     "ORA-01460: unimplemented or unreasonable conversion requested"
     may occur.  For <literal>OUT</literal> binds one symptom is no
     value being set in the PHP variable.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
     For a statement that is repeatedly executed, binding values that
     never change may reduce the ability of the Oracle optimizer to
     choose the best statement execution plan.  Long running statements
@@ -86,7 +86,7 @@
     in both cases, binding might be safer than joining strings into a
     SQL statement, as this can be a security risk if unfiltered user
     text is concatenated.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -96,136 +96,136 @@
     <varlistentry>
      <term><parameter>statement</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A valid OCI8 statement identifier.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>param</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The colon-prefixed bind variable placeholder used in the
        statement.  The colon is optional
        in <parameter>param</parameter>. Oracle does not use question
        marks for placeholders.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>var</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The PHP variable to be associated with <parameter>param</parameter>
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>max_length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Sets the maximum length for the data. If you set it to -1, this
        function will use the current length
        of <parameter>var</parameter> to set the maximum
        length. In this case the <parameter>var</parameter> must
        exist and contain data
        when <function>oci_bind_by_name</function> is called.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>type</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The datatype that Oracle will treat the data as.  The
        default <parameter>type</parameter> used
        is <constant>SQLT_CHR</constant>. Oracle will convert the data
        between this type and the database column (or PL/SQL variable
        type), when possible.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If you need to bind an abstract datatype (LOB/ROWID/BFILE) you
        need to allocate it first using the
        <function>oci_new_descriptor</function> function. The
        <parameter>length</parameter> is not used for abstract datatypes
        and should be set to -1.
-      </para>
+      </simpara>
       <para>
        Possible values for <parameter>type</parameter> are:
        <itemizedlist>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLT_BFILEE</constant> or <constant>OCI_B_BFILE</constant>
           <!-- really only single E --> - for BFILEs;
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLT_CFILEE</constant> or <constant>OCI_B_CFILEE</constant>
           - for CFILEs;
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLT_CLOB</constant> or <constant>OCI_B_CLOB</constant>
           - for CLOBs;
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLT_BLOB</constant> or <constant>OCI_B_BLOB</constant>
           - for BLOBs;
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLT_RDD</constant> or <constant>OCI_B_ROWID</constant>
           - for ROWIDs;
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLT_NTY</constant> or <constant>OCI_B_NTY</constant>
           - for named datatypes;
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLT_INT</constant> or <constant>OCI_B_INT</constant> - for integers;
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLT_CHR</constant> - for VARCHARs;
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLT_BIN</constant> or <constant>OCI_B_BIN</constant>
           - for RAW columns;
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLT_LNG</constant> - for LONG columns;
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLT_LBI</constant> - for LONG RAW columns;
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLT_RSET</constant> - for cursors created
           with <function>oci_new_cursor</function>;
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLT_BOL</constant> or <constant>OCI_B_BOL</constant>
           - for PL/SQL BOOLEANs (Requires Oracle Database 12c)
-         </para>
+         </simpara>
         </listitem>
        </itemizedlist>
       </para>
@@ -237,9 +237,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -464,12 +464,12 @@ oci_close($conn);
    </example>
   </para>
 
-  <para>
+  <simpara>
     For a small, fixed number of IN clause conditions, use individual
     bind variables. Values unknown at run time can be set to NULL.
     This allows a single statement to be used by all application
     users, maximizing Oracle DB cache efficiency.
-  </para>
+  </simpara>
 
   <para>
    <example>
@@ -754,7 +754,7 @@ print '<table border="1">';
 while ($row = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_LOBS)) {
     print '<tr><td>'.$row['MYCLOB'].'</td></tr>';
     // In a loop, freeing the large variable before the 2nd fetch reduces PHP's peak memory usage
-    unset($row);  
+    unset($row);
 }
 print '</table>';
 
@@ -777,7 +777,7 @@ if (!$conn) {
     trigger_error(htmlentities($e['message']), E_USER_ERROR);
 }
 
-$plsql = 
+$plsql =
   "begin
     :output1 := true;
     :output2 := false;
@@ -801,30 +801,30 @@ var_dump($output2);  // false
  <refsect1 role="notes">
   &reftitle.notes;
   <warning>
-   <para>
+   <simpara>
     Do not use <function>addslashes</function>
     and <function>oci_bind_by_name</function> simultaneously as no
     quoting is needed. Any magically applied quotes will be written
     into your database because <function>oci_bind_by_name</function>
     inserts data verbatim and does not remove quotes or escape
     characters.
-   </para>
+   </simpara>
   </warning>
   <note>
-   <para>
+   <simpara>
     If you bind a string to a <literal>CHAR</literal> column in
     a <literal>WHERE</literal> clause, remember that Oracle uses
     blank-padded comparison semantics for <literal>CHAR</literal>
     columns.  Your PHP variable should be blank padded to the same
     width as the column for the <literal>WHERE</literal> clause to
     succeed.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
      The PHP <parameter>var</parameter> argument is a reference.  Some
      forms of loops do not work as expected:
-   </para>
+   </simpara>
    <informalexample>
      <programlisting role="php">
 <![CDATA[
@@ -836,11 +836,11 @@ foreach ($myarray as $key => $value)  {
 ]]>
      </programlisting>
    </informalexample>
-   <para>
+   <simpara>
      This binds each key to the location of $value, so all bound
      variables end up pointing to the last loop iteration's
      value. Instead use the following:
-   </para>
+   </simpara>
    <informalexample>
      <programlisting role="php">
 <![CDATA[

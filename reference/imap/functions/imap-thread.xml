@@ -12,9 +12,9 @@
    <methodparam><type>IMAP\Connection</type><parameter>imap</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer><constant>SE_FREE</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets a tree of a threaded message.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -24,8 +24,8 @@
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -33,24 +33,24 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    <function>imap_thread</function> returns an associative array containing
    a tree of messages threaded by <literal>REFERENCES</literal>, or &false;
    on error.
-  </para>
+  </simpara>
   <para>
    Every message in the current mailbox will be represented by three entries
    in the resulting array:
    <itemizedlist>
-    <listitem><para>
+    <listitem><simpara>
      <varname>$thread["XX.num"]</varname> - current message number
-    </para></listitem>
-    <listitem><para>
+    </simpara></listitem>
+    <listitem><simpara>
      <varname>$thread["XX.next"]</varname>
-    </para></listitem>
-    <listitem><para>
+    </simpara></listitem>
+    <listitem><simpara>
      <varname>$thread["XX.branch"]</varname>
-    </para></listitem>
+    </simpara></listitem>
    </itemizedlist>
   </para>
  </refsect1>
@@ -71,7 +71,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>

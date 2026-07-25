@@ -5,7 +5,7 @@
   <refname>ldap_get_attributes</refname>
   <refpurpose>Get attributes from a search result entry</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,9 +13,9 @@
    <methodparam><type>LDAP\Connection</type><parameter>ldap</parameter></methodparam>
    <methodparam><type>LDAP\ResultEntry</type><parameter>entry</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   Reads attributes and values from an entry in the search result. 
-  </para>
+  <simpara>
+   Reads attributes and values from an entry in the search result.
+  </simpara>
   <para>
    Having located a specific entry in the directory, you can find out what
    information is held for that entry by using this call. You would use this
@@ -46,17 +46,17 @@ return_value["attribute"][i] = (i+1)th value of the attribute
     <varlistentry>
      <term><parameter>ldap</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &ldap.parameter.ldap;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>entry</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &ldap.parameter.entry;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -65,9 +65,9 @@ return_value["attribute"][i] = (i+1)th value of the attribute
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a complete entry information in a multi-dimensional array.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

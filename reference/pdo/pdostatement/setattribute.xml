@@ -18,10 +18,10 @@
   <para>
    Sets an attribute on the statement. Currently, no generic attributes are set but only driver specific:
    <itemizedlist>
-    <listitem><para><literal>PDO::ATTR_CURSOR_NAME</literal>
+    <listitem><simpara><literal>PDO::ATTR_CURSOR_NAME</literal>
      (Firebird and ODBC specific):
      Set the name of cursor for <literal>UPDATE ... WHERE CURRENT OF</literal>.
-    </para></listitem>
+    </simpara></listitem>
    </itemizedlist>
    Note that driver specific attributes <emphasis>must not</emphasis> be used
    with other drivers.
@@ -36,18 +36,18 @@
     <varlistentry>
      <term><parameter>attribute</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The attribute to modify.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The value to set the <parameter>attribute</parameter>,
        might require a specific type depending on the attribute.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -56,9 +56,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

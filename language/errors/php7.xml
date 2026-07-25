@@ -4,84 +4,84 @@
 <sect1 xml:id="language.errors.php7" xmlns="http://docbook.org/ns/docbook">
  <title>Errors in PHP 7</title>
 
- <para>
+ <simpara>
   PHP 7 changes how most errors are reported by PHP. Instead of reporting
   errors through the traditional error reporting mechanism used by PHP 5, most
-  errors are now reported by throwing <classname>Error</classname> exceptions.
- </para>
+  errors are now reported by throwing <exceptionname>Error</exceptionname> exceptions.
+ </simpara>
 
- <para>
-  As with normal exceptions, these <classname>Error</classname> exceptions
+ <simpara>
+  As with normal exceptions, these <exceptionname>Error</exceptionname> exceptions
   will bubble up until they reach the first matching
   <link linkend="language.exceptions.catch"><literal>catch</literal></link>
   block. If there are no matching blocks, then any default exception handler
   installed with <function>set_exception_handler</function> will be called,
   and if there is no default exception handler, then the exception will be
   converted to a fatal error and will be handled like a traditional error.
- </para>
+ </simpara>
 
  <para>
-  As the <classname>Error</classname> hierarchy does not inherit from
-  <classname>Exception</classname>, code that uses
+  As the <exceptionname>Error</exceptionname> hierarchy does not inherit from
+  <exceptionname>Exception</exceptionname>, code that uses
   <code>catch (Exception $e) { ... }</code> blocks to handle uncaught
-  exceptions in PHP 5 will find that these <classname>Error</classname>s are
+  exceptions in PHP 5 will find that these <exceptionname>Error</exceptionname>s are
   not caught by these blocks. Either a <code>catch (Error $e) { ... }</code>
   block or a <function>set_exception_handler</function> handler is required.
  </para>
 
  <sect2 xml:id="language.errors.php7.hierarchy">
-  <title><classname>Error</classname> hierarchy</title>
+  <title><exceptionname>Error</exceptionname> hierarchy</title>
 
   <itemizedlist>
    <listitem>
-    <simpara><classname>Throwable</classname></simpara>
+    <simpara><exceptionname>Throwable</exceptionname></simpara>
     <itemizedlist>
      <listitem>
-      <simpara><classname>Error</classname></simpara>
+      <simpara><exceptionname>Error</exceptionname></simpara>
       <itemizedlist>
        <listitem>
-        <simpara><classname>ArithmeticError</classname></simpara>
+        <simpara><exceptionname>ArithmeticError</exceptionname></simpara>
         <itemizedlist>
          <listitem>
-          <simpara><classname>DivisionByZeroError</classname></simpara>
+          <simpara><exceptionname>DivisionByZeroError</exceptionname></simpara>
          </listitem>
         </itemizedlist>
        </listitem>
        <listitem>
-        <simpara><classname>AssertionError</classname></simpara>
+        <simpara><exceptionname>AssertionError</exceptionname></simpara>
        </listitem>
        <listitem>
-        <simpara><classname>CompileError</classname></simpara>
+        <simpara><exceptionname>CompileError</exceptionname></simpara>
         <itemizedlist>
          <listitem>
-          <simpara><classname>ParseError</classname></simpara>
+          <simpara><exceptionname>ParseError</exceptionname></simpara>
          </listitem>
         </itemizedlist>
        </listitem>
        <listitem>
-        <simpara><classname>TypeError</classname></simpara>
+        <simpara><exceptionname>TypeError</exceptionname></simpara>
         <itemizedlist>
          <listitem>
-          <simpara><classname>ArgumentCountError</classname></simpara>
+          <simpara><exceptionname>ArgumentCountError</exceptionname></simpara>
          </listitem>
         </itemizedlist>
        </listitem>
        <listitem>
-        <simpara><classname>ValueError</classname></simpara>
+        <simpara><exceptionname>ValueError</exceptionname></simpara>
        </listitem>
        <listitem>
-        <simpara><classname>UnhandledMatchError</classname></simpara>
+        <simpara><exceptionname>UnhandledMatchError</exceptionname></simpara>
        </listitem>
        <listitem>
-        <simpara><classname>FiberError</classname></simpara>
+        <simpara><exceptionname>FiberError</exceptionname></simpara>
        </listitem>
        <listitem>
-        <simpara><classname>RequestParseBodyException</classname></simpara>
+        <simpara><exceptionname>RequestParseBodyException</exceptionname></simpara>
        </listitem>
       </itemizedlist>
      </listitem>
      <listitem>
-      <simpara><classname>Exception</classname></simpara>
+      <simpara><exceptionname>Exception</exceptionname></simpara>
       <itemizedlist>
        <listitem>
         <simpara>...</simpara>

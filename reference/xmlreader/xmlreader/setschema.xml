@@ -5,19 +5,19 @@
   <refname>XMLReader::setSchema</refname>
   <refpurpose>Validate document against XSD</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="XMLReader">
    <modifier>public</modifier> <type>bool</type><methodname>XMLReader::setSchema</methodname>
    <methodparam><type class="union"><type>string</type><type>null</type></type><parameter>filename</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Use W3C XSD schema to validate the document as it is processed. Activation
    is only possible before the first Read().
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   <para>
@@ -25,31 +25,31 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The filename of the XSD schema.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    Issues <constant>E_WARNING</constant> if libxml was built without schema
    support, the schema contains errors or if
    <function>XMLReader::read</function> has already been called.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <!--
  <refsect1 role="examples">
   &reftitle.examples;
@@ -83,12 +83,12 @@ Use a screen like we did below
   </para>
  </refsect1>
  -->
- 
+
  <refsect1 role="notes">
   &reftitle.notes;
   &xmlreader.libxml20620.note;
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

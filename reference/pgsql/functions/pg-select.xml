@@ -19,37 +19,37 @@
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer><constant>PGSQL_DML_EXEC</constant></initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>mode</parameter><initializer><constant>PGSQL_ASSOC</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_select</function> selects records specified by
    <parameter>conditions</parameter> which has
    <literal>field=&gt;value</literal>. For a successful query, it returns an
    array containing all records and fields that match the condition
    specified by <parameter>conditions</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If <parameter>flags</parameter> is set,
    <function>pg_convert</function> is applied to
    <parameter>conditions</parameter> with the specified flags.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If <parameter>mode</parameter> is set,
    the return value will be in the form of an array
    with <constant>PGSQL_NUM</constant>, an associative array
    with <constant>PGSQL_ASSOC</constant> (default) or both
    with <constant>PGSQL_BOTH</constant>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    By default <function>pg_select</function> passes raw values. Values
    must be escaped or PGSQL_DML_ESCAPE option must be
    specified. PGSQL_DML_ESCAPE quotes and escapes
    parameters/identifiers. Therefore, table/column names became case
    sensitive.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Note that neither escape nor prepared query can protect LIKE query,
    JSON, Array, Regex, etc. These parameters should be handled
    according to their contexts. i.e. Escape/validate values.
-  </para>
+  </simpara>
  </refsect1>
 
   <refsect1 role="parameters">
@@ -65,26 +65,26 @@
      <varlistentry>
       <term><parameter>table_name</parameter></term>
       <listitem>
-       <para>
+       <simpara>
         Name of the table from which to select rows.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry>
       <term><parameter>conditions</parameter></term>
       <listitem>
-       <para>
+       <simpara>
         An <type>array</type> whose keys are field names in the table <parameter>table_name</parameter>,
         and whose values are the conditions that a row must meet to be retrieved.
         As of PHP 8.4.0, when an empty array is provided, no conditions will apply.
         Previously, the function failed with an empty <parameter>conditions</parameter> argument.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry>
       <term><parameter>flags</parameter></term>
       <listitem>
-       <para>
+       <simpara>
         Any number of <constant>PGSQL_CONV_FORCE_NULL</constant>,
         <constant>PGSQL_DML_NO_CONV</constant>,
         <constant>PGSQL_DML_ESCAPE</constant>,
@@ -93,13 +93,13 @@
         <constant>PGSQL_DML_STRING</constant> combined. If <constant>PGSQL_DML_STRING</constant> is part of the
         <parameter>flags</parameter> then the query string is returned. When <constant>PGSQL_DML_NO_CONV</constant>
         or <constant>PGSQL_DML_ESCAPE</constant> is set, it does not call <function>pg_convert</function> internally.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry>
       <term><parameter>mode</parameter></term>
       <listitem>
-       <para>
+       <simpara>
         Any number of <constant>PGSQL_ASSOC</constant>,
         <constant>PGSQL_NUM</constant> or
         <constant>PGSQL_BOTH</constant>
@@ -107,7 +107,7 @@
         with <constant>PGSQL_NUM</constant> the return value will be an <type>array</type>, and
         with <constant>PGSQL_BOTH</constant> the return value will be both an associative and
         numerically indexed <type>array</type>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -116,10 +116,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns <type>string</type> if <constant>PGSQL_DML_STRING</constant> is passed
    via <parameter>flags</parameter>, otherwise it returns an <type>array</type> on success, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -160,7 +160,7 @@
     <title><function>pg_select</function> example</title>
     <programlisting role="php">
      <![CDATA[
-<?php 
+<?php
   $db = pg_connect('dbname=foo');
   // This is safe somewhat, since all values are escaped.
   // However PostgreSQL supports JSON/Array. These are not

@@ -5,7 +5,7 @@
   <refname>call_user_func_array</refname>
   <refpurpose>Call a callback with an array of parameters</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,10 +13,10 @@
    <methodparam><type>callable</type><parameter>callback</parameter></methodparam>
    <methodparam><type>array</type><parameter>args</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Calls the <parameter>callback</parameter> given by the first parameter with
    the parameters in <parameter>args</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,33 +26,33 @@
     <varlistentry>
      <term><parameter>callback</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <type>callable</type> to be called.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>args</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The parameters to be passed to the callback, as an array.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
         If the keys of <parameter>args</parameter> are all numeric,
         the keys are ignored and each element will be passed to
         <parameter>callback</parameter> as a positional argument, in
         order.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
         If any keys of <parameter>args</parameter> are strings,
         those elements will be passed to <parameter>callback</parameter>
         as named arguments, with the name given by the key.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
         It is a fatal error to have a numeric key in <parameter>args</parameter>
         appear after a string key, or to have a string key that does not
         match the name of any parameter of <parameter>callback</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -61,9 +61,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the return value of the callback, or &false; on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

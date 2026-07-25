@@ -8,24 +8,24 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="IntlCalendar">
    <modifier>public</modifier> <type>bool</type><methodname>IntlCalendar::before</methodname>
    <methodparam><type>IntlCalendar</type><parameter>other</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type>bool</type><methodname>intlcal_before</methodname>
    <methodparam><type>IntlCalendar</type><parameter>calendar</parameter></methodparam>
    <methodparam><type>IntlCalendar</type><parameter>other</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns whether this objectʼs time precedes the argumentʼs time.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -40,9 +40,9 @@
    <varlistentry>
     <term><parameter>other</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The calendar whose time will be checked against the primary objectʼs time.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -50,10 +50,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if this objectʼs current time is before that of the
    <parameter>calendar</parameter> argumentʼs time. Returns &false; otherwise.
-  </para>
+  </simpara>
   &intl.error.intl-calendar;
  </refsect1>
 

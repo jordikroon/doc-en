@@ -2,44 +2,44 @@
 <!-- $Revision$ -->
 <section xml:id="ref.pdo-mysql.installation" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  &reftitle.install;
- <para>
+ <simpara>
   The common Unix distributions include binary versions of PHP that can
   be installed. Although these binary versions are typically built with
   support for the MySQL extensions, the extension libraries
   themselves may need to be installed using an additional package. Check
   the package manager that comes with your chosen distribution for
   availability.
- </para>
- 
- <para>
+ </simpara>
+
+ <simpara>
   For example, on Ubuntu the <literal>php5-mysql</literal> package installs
-  the ext/mysql, ext/mysqli, and PDO_MYSQL PHP extensions. On CentOS, 
-  the <literal>php-mysql</literal> package also installs these three 
+  the ext/mysql, ext/mysqli, and PDO_MYSQL PHP extensions. On CentOS,
+  the <literal>php-mysql</literal> package also installs these three
   PHP extensions.
- </para>
+ </simpara>
 
- <para>
-  Alternatively, you can compile this extension yourself. Building PHP from 
-  source allows you to specify the MySQL extensions you want to use, as well 
+ <simpara>
+  Alternatively, you can compile this extension yourself. Building PHP from
+  source allows you to specify the MySQL extensions you want to use, as well
   as your choice of client library for each extension.
- </para>
+ </simpara>
 
- <para>
+ <simpara>
   When compiling, use <option role="configure">--with-pdo-mysql[=DIR]</option> to install
   the PDO MySQL extension, where the optional <literal>[=DIR]</literal>
   is the MySQL base library. <link linkend="book.mysqlnd">Mysqlnd</link>
   is the default library. For details about choosing a library, see
   <link linkend="mysqlinfo.library.choosing">Choosing a MySQL library</link>.
- </para>
- <para>
+ </simpara>
+ <simpara>
   Optionally, the <option role="configure">--with-mysql-sock[=DIR]</option> sets to location
   to the MySQL unix socket pointer for all MySQL extensions, including PDO_MYSQL. If
   unspecified, the default locations are searched.
- </para>
- <para>
+ </simpara>
+ <simpara>
   Optionally, the <option role="configure">--with-zlib-dir[=DIR]</option> is used to set
   the path to the libz install prefix.
- </para>
+ </simpara>
  <para>
   <screen>
 <![CDATA[

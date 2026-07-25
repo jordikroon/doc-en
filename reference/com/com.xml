@@ -9,10 +9,10 @@
 <!-- {{{ com intro -->
   <section xml:id="com.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     The com class allows you to instantiate an OLE compatible COM object and
     call its methods and access its properties.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -39,18 +39,18 @@
 
   <section xml:id="class.com.overloadedmethods">
    <title>Overloaded Methods</title>
-   <para>
+   <simpara>
     The returned object is an overloaded object, which means that PHP does
     not see any fixed methods as it does with regular classes; instead, any
     property or method accesses are passed through to COM.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     PHP will automatically detect methods that accept
     parameters by reference, and will automatically convert regular PHP
     variables to a form that can be passed by reference.  This means that you
     can call the method very naturally; you needn't go to any extra effort in
     your code.
-   </para>
+   </simpara>
   </section>
 
   <section xml:id="class.com.examples">

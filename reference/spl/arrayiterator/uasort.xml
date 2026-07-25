@@ -12,11 +12,11 @@
    <modifier>public</modifier> <type>true</type><methodname>ArrayIterator::uasort</methodname>
    <methodparam><type>callable</type><parameter>callback</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This method sorts the elements such that indices maintain their correlation
    with the values they are associated with, using a user-defined comparison
    function.
-  </para>
+  </simpara>
   &note.sort-unstable;
  </refsect1>
 
@@ -36,9 +36,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

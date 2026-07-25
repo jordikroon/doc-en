@@ -9,28 +9,28 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="NumberFormatter">
    <modifier>public</modifier> <type>bool</type><methodname>NumberFormatter::setSymbol</methodname>
    <methodparam><type>int</type><parameter>symbol</parameter></methodparam>
    <methodparam><type>string</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type>bool</type><methodname>numfmt_set_symbol</methodname>
    <methodparam><type>NumberFormatter</type><parameter>formatter</parameter></methodparam>
    <methodparam><type>int</type><parameter>symbol</parameter></methodparam>
    <methodparam><type>string</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Set a symbol associated with the formatter. The formatter uses symbols to
    represent the special locale-dependent characters in a number, for example
    the percent sign. This API is not supported for rule-based formatters.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -40,27 +40,27 @@
     <varlistentry>
      <term><parameter>formatter</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <classname>NumberFormatter</classname> object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>symbol</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Symbol specifier, one of the
        <link linkend="intl.numberformatter-constants.unumberformatsymbol">
         format symbol</link> constants.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Text for the symbol.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -70,9 +70,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -14,9 +14,9 @@
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>iteratorClass</parameter><initializer><constant>ArrayIterator::class</constant></initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    This constructs a new array <type>object</type>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,10 +26,10 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <parameter>array</parameter> parameter accepts an
        <type>array</type> or an <type>Object</type>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -44,10 +44,10 @@
     <varlistentry>
      <term><parameter>iteratorClass</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Specify the class that will be used for iteration of the <classname>ArrayObject</classname> object.
        The class must be a subtype of the <classname>ArrayIterator</classname> class.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

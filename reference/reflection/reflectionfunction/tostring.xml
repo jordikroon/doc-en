@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>string</type><methodname>ReflectionFunction::__toString</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get a human-readable description of the function, its parameters and return values.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

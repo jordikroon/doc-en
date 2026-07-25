@@ -3,24 +3,24 @@
 <reference xml:id="class.domtext" role="class" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
  <title>The DOMText class</title>
  <titleabbrev>DOMText</titleabbrev>
- 
+
  <partintro>
- 
+
 <!-- {{{ DOMText intro -->
   <section xml:id="domtext.intro">
    &reftitle.intro;
-   <para>
-    The <classname>DOMText</classname> class inherits from 
+   <simpara>
+    The <classname>DOMText</classname> class inherits from
     <classname>DOMCharacterData</classname> and represents the textual
-    content of a <classname>DOMElement</classname> or 
+    content of a <classname>DOMElement</classname> or
     <classname>DOMAttr</classname>.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
- 
+
   <section xml:id="domtext.synopsis">
    &reftitle.classsynopsis;
- 
+
 <!-- {{{ Synopsis -->
    <classsynopsis class="class">
     <ooclass>
@@ -56,9 +56,9 @@
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.domnode')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[@role='DOMNode'])"/>
    </classsynopsis>
 <!-- }}} -->
- 
+
   </section>
- 
+
 <!-- {{{ DOMText properties -->
   <section xml:id="domtext.props">
    &reftitle.properties;
@@ -66,10 +66,10 @@
     <varlistentry xml:id="domtext.props.wholetext">
      <term><varname>wholeText</varname></term>
      <listitem>
-      <para>
-       Holds all the text of logically-adjacent (not separated by Element, 
+      <simpara>
+       Holds all the text of logically-adjacent (not separated by Element,
        Comment or Processing Instruction) Text nodes.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -111,11 +111,11 @@
   </section>
 -->
 <!-- }}} -->
- 
+
  </partintro>
- 
+
  &reference.dom.entities.domtext;
- 
+
 </reference>
 <!-- Keep this comment at the end of the file
 Local variables:

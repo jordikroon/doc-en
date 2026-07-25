@@ -9,30 +9,30 @@
 
   <section xml:id="dateinterval.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Represents a date interval.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     A date interval stores either a fixed amount of time (in years, months,
     days, hours etc) or a relative time string in the format that
     <classname>DateTimeImmutable</classname>'s and
     <classname>DateTime</classname>'s constructors support.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     More specifically, the information in an object of the
     <classname>DateInterval</classname> class is an instruction to get from
     one date/time to another date/time. This process is not always reversible.
-   </para>
+   </simpara>
    <para>
     A common way to create a <classname>DateInterval</classname> object
     is by calculating the difference between two date/time objects through
     <methodname>DateTimeInterface::diff</methodname>.
    </para>
-   <para>
+   <simpara>
     Since there is no well defined way to compare date intervals,
     <classname>DateInterval</classname> instances are
     <link linkend="language.operators.comparison.incomparable">incomparable</link>.
-   </para>
+   </simpara>
   </section>
 
   <section xml:id="dateinterval.synopsis">
@@ -99,77 +99,77 @@
      <type>string</type>
      <varname linkend="dateinterval.props.date-string">date_string</varname>
     </fieldsynopsis>
-    
+
     <classsynopsisinfo role="comment">&Methods;</classsynopsisinfo>
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.dateinterval')/db:refentry/db:refsect1[@role='description']/descendant::db:constructorsynopsis[@role='DateInterval'])"/>
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.dateinterval')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[@role='DateInterval'])"/>
    </classsynopsis>
 
   </section>
-  
+
   <section xml:id="dateinterval.props">
    &reftitle.properties;
    <warning>
-    <para>
+    <simpara>
      The available properties listed below depend on PHP version, and should
      be considered as <emphasis>readonly</emphasis>.
-    </para>
+    </simpara>
    </warning>
    <variablelist>
     <varlistentry xml:id="dateinterval.props.y">
      <term><varname>y</varname></term>
      <listitem>
-      <para>
+      <simpara>
        Number of years.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="dateinterval.props.m">
      <term><varname>m</varname></term>
      <listitem>
-      <para>
+      <simpara>
        Number of months.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="dateinterval.props.d">
      <term><varname>d</varname></term>
      <listitem>
-      <para>
+      <simpara>
        Number of days.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="dateinterval.props.h">
      <term><varname>h</varname></term>
      <listitem>
-      <para>
+      <simpara>
        Number of hours.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="dateinterval.props.i">
      <term><varname>i</varname></term>
      <listitem>
-      <para>
+      <simpara>
        Number of minutes.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="dateinterval.props.s">
      <term><varname>s</varname></term>
      <listitem>
-      <para>
+      <simpara>
        Number of seconds.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="dateinterval.props.f">
      <term><varname>f</varname></term>
      <listitem>
-      <para>
+      <simpara>
        Number of microseconds, as a fraction of a second.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="dateinterval.props.invert">

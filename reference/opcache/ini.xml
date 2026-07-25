@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="opcache.configuration">
+<sect1 xml:id="opcache.configuration" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  &reftitle.runtime;
  &extension.runtime;
  <para>
@@ -1130,11 +1130,11 @@ function getA() { return A; }
     <type>string</type>
    </term>
    <listitem>
-    <para>
+    <simpara>
      On Windows, all processes running the same <acronym>PHP</acronym> <acronym>SAPI</acronym>
      under the same user account having the same cache ID share a single OPcache instance.
      The value of the cache ID can be freely chosen.
-    </para>
+    </simpara>
     <tip>
      <simpara>
       For IIS, different application pools can have their own OPcache instance

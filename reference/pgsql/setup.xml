@@ -7,17 +7,17 @@
  <!-- {{{ Requirements -->
  <section xml:id="pgsql.requirements">
   &reftitle.required;
-  <para>
+  <simpara>
    To use PostgreSQL support, you need libpq (the PostgreSQL C client
    library).
    As of PHP 8.0.0, libpq 9.1 or later is required.
    As of PHP 8.4.0, libpq 10.0 or later is required.
    PostgreSQL supports many character encodings including
    multibyte character encoding. The current version and more
-   information about PostgreSQL is available at 
+   information about PostgreSQL is available at
    <link xlink:href="&url.pgsql;">&url.pgsql;</link> and
    the <link xlink:href="&url.pgsql.manual;">PostgreSQL Documentation</link>.
-  </para>
+  </simpara>
  </section>
  <!-- }}} -->
 
@@ -32,11 +32,11 @@
  <!-- {{{ Resources -->
  <section xml:id="pgsql.resources">
   &reftitle.resources;
-  <para>
+  <simpara>
    Prior to PHP 8.1.0, there were two resource types used in the PostgreSQL module. The first one
    is the link identifier for a database connection, the second a resource
    which holds the result of a query.
-  </para>
+  </simpara>
  </section>
  <!-- }}} -->
 

@@ -11,9 +11,9 @@
    <modifier>public</modifier> <methodname>Random\Engine\Xoshiro256StarStar::__construct</methodname>
    <methodparam choice="opt"><type class="union"><type>string</type><type>int</type><type>null</type></type><parameter>seed</parameter><initializer>&null;</initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -80,13 +80,13 @@
    <listitem>
     <simpara>
      If the length of a <type>string</type> <parameter>seed</parameter> is
-     not 32 bytes, a <classname>ValueError</classname> will be thrown.
+     not 32 bytes, a <exceptionname>ValueError</exceptionname> will be thrown.
     </simpara>
    </listitem>
    <listitem>
     <simpara>
      If a <type>string</type> <parameter>seed</parameter> consists of
-     32 NUL bytes (<literal>"\x00"</literal>), a <classname>ValueError</classname>
+     32 NUL bytes (<literal>"\x00"</literal>), a <exceptionname>ValueError</exceptionname>
      will be thrown.
     </simpara>
    </listitem>

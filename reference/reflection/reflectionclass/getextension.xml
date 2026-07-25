@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type class="union"><type>ReflectionExtension</type><type>null</type></type><methodname>ReflectionClass::getExtension</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets a <classname>ReflectionExtension</classname> object for the extension which defined the class.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -25,12 +25,12 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A <classname>ReflectionExtension</classname> object representing the extension which defined the class,
    or &null; for user-defined classes.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>

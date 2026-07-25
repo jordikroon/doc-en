@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
- 
+
 <book xml:id="book.libxml" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" annotations="interactive">
  <?phpdoc extension-membership="bundledexternal" ?>
  <title>libxml</title>
- 
+
  <!-- {{{ preface -->
  <preface xml:id="intro.libxml">
   &reftitle.intro;
-  <para>
+  <simpara>
    These functions/constants are available as of PHP 5.1.0, and
    the following core extensions rely on this libxml extension:
    <link linkend="book.dom">DOM</link>,
@@ -21,10 +21,10 @@
    <link linkend="book.xmlreader">XMLReader</link>,
    <link linkend="book.xmlrpc">XMLRPC</link>&listendand;
    <link linkend="book.xmlwriter">XMLWriter</link>.
-  </para>
+  </simpara>
  </preface>
  <!-- }}} -->
- 
+
  &reference.libxml.setup;
  &reference.libxml.constants;
  &reference.libxml.libxmlerror;

@@ -15,14 +15,14 @@
    <methodparam choice="opt"><type>int</type><parameter>offset</parameter><initializer>0</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>encoding</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Performs a multibyte safe
-   <function>strrpos</function> operation based on the 
+   <function>strrpos</function> operation based on the
    number of characters. <parameter>needle</parameter> position is
    counted from the beginning of
    <parameter>haystack</parameter>. First character's position is
-   0. Second character position is 1. 
-  </para>
+   0. Second character position is 1.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -32,18 +32,18 @@
     <varlistentry>
      <term><parameter>haystack</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <type>string</type> being checked, for the last occurrence
        of <parameter>needle</parameter>
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>needle</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <type>string</type> to find in <parameter>haystack</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -68,12 +68,12 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the numeric position of
    the last occurrence of <parameter>needle</parameter> in the
    <parameter>haystack</parameter> <type>string</type>. If
    <parameter>needle</parameter> is not found, it returns &false;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -83,7 +83,7 @@
    <simpara>
     If <parameter>offset</parameter> is greater than the length of
     <parameter>haystack</parameter>, a
-    <classname>ValueError</classname> will be thrown.
+    <exceptionname>ValueError</exceptionname> will be thrown.
    </simpara>
   </listitem>
  </itemizedlist>
@@ -104,7 +104,7 @@
      <row>
       <entry>8.0.0</entry>
       <entry>
-       Passing the <parameter>encoding</parameter> as the third argument 
+       Passing the <parameter>encoding</parameter> as the third argument
        instead of an <parameter>offset</parameter> has been removed.
       </entry>
      </row>

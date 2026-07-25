@@ -14,13 +14,13 @@
    <methodparam><type>int</type><parameter>offset</parameter></methodparam>
    <methodparam><type>int</type><parameter>whence</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This method is called in response to <function>fseek</function>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The read/write position of the stream should be updated according to the
    <parameter>offset</parameter> and <parameter>whence</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,9 +30,9 @@
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The stream offset to seek to.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -61,9 +61,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Return &true; if the position was updated, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
 <!--
@@ -93,13 +93,13 @@
  <refsect1 role="notes"><!-- {{{ -->
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     If not implemented, &false; is assumed as the return value.
-   </para>
+   </simpara>
   </note>
   <note>
    <para>
-    Upon success, 
+    Upon success,
     <methodname>streamWrapper::stream_tell</methodname> is called directly after
     calling <methodname>streamWrapper::stream_seek</methodname>. If
     <methodname>streamWrapper::stream_tell</methodname> fails, the return
@@ -107,12 +107,12 @@
    </para>
   </note>
   <note>
-   <para>
+   <simpara>
     Not all seeks operations on the stream will result in this function being
     called. PHP streams have read buffering enabled by default (see also
     <function>stream_set_read_buffer</function>) and seeking may be done by
     merely moving the buffer pointer.
-   </para>
+   </simpara>
   </note>
  </refsect1><!-- }}} -->
 

@@ -12,10 +12,10 @@
    <methodparam><type>mixed</type><parameter>left</parameter></methodparam>
    <methodparam><type>mixed</type><parameter>right</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Divides <parameter>left</parameter> by <parameter>right</parameter> and
    returns the remainder.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -24,17 +24,17 @@
     <varlistentry>
      <term><parameter>left</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The left operand.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>right</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The right operand.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -43,16 +43,16 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the remainder of the division.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    Throws a <classname>com_exception</classname> on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

@@ -5,7 +5,7 @@
   <refname>openssl_pkcs12_read</refname>
   <refpurpose>Parse a <acronym>PKCS</acronym>#12 Certificate Store into an array</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,11 +14,11 @@
    <methodparam><type>array</type><parameter role="reference">certificates</parameter></methodparam>
    <methodparam><modifier role="attribute">#[\SensitiveParameter]</modifier><type>string</type><parameter>passphrase</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>openssl_pkcs12_read</function> parses the <acronym>PKCS</acronym>#12 certificate store supplied by
    <parameter>pkcs12</parameter> into an array named
    <parameter>certificates</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,25 +28,25 @@
     <varlistentry>
      <term><parameter>pkcs12</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The certificate store contents, not its file name.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>certificates</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        On success, this will hold the Certificate Store Data.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>passphrase</parameter></term>
      <listitem>
-      <para>
+      <simpara>
       Encryption password for unlocking the <acronym>PKCS</acronym>#12 file.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -55,9 +55,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

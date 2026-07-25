@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>ArrayIterator::offsetExists</methodname>
    <methodparam><type>mixed</type><parameter>key</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks if the offset exists.
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -27,9 +27,9 @@
     <varlistentry>
      <term><parameter>key</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The offset being checked.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -38,9 +38,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &true; if the offset exists, otherwise &false;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

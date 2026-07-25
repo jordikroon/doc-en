@@ -9,22 +9,22 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="Collator">
    <modifier>public</modifier> <type>true</type><methodname>Collator::setStrength</methodname>
    <methodparam><type>int</type><parameter>strength</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type>true</type><methodname>collator_set_strength</methodname>
    <methodparam><type>Collator</type><parameter>object</parameter></methodparam>
    <methodparam><type>int</type><parameter>strength</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    The
    <link xlink:href="&url.icu.home;">ICU</link>
    Collation Service supports many levels of comparison (named "Levels", but
@@ -32,20 +32,20 @@
    strings precisely according to local conventions. However, by allowing the
    levels to be selectively employed, searching for a string in text can be
    performed with various matching conditions.
-  </para>
+  </simpara>
   <para>
    <orderedlist>
     <listitem>
-     <para> 
+     <simpara>
       <emphasis>Primary Level</emphasis>:
       Typically, this is used to denote differences between base characters
       (for example, "a" &lt; "b"). It is the strongest difference. For
       example, dictionaries are divided into different sections by base
       character. This is also called the <literal>level 1</literal> strength.
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para> 
+     <para>
       <emphasis>Secondary Level</emphasis>:
       Accents in the characters are considered secondary differences (for
       example, "as" &lt; "às" &lt; "at"). Other differences between letters
@@ -53,17 +53,17 @@
       A secondary difference is ignored when there is a primary difference
       anywhere in the strings. This is also called the <literal>level 2</literal> strength.
       <note>
-       <para>
+       <simpara>
         Note: In some languages (such as Danish), certain accented letters are
         considered to be separate base characters. In most languages, however,
         an accented letter only has a secondary difference from the unaccented
         version of that letter.
-       </para>
+       </simpara>
       </note>
      </para>
     </listitem>
     <listitem>
-     <para> 
+     <simpara>
       <emphasis>Tertiary Level</emphasis>:
       Upper and lower case differences in characters are distinguished at
       the tertiary level (for example, "ao" &lt; "Ao" &lt; "aò"). In addition,
@@ -72,10 +72,10 @@
       and small Kana. A tertiary difference is ignored when there is a primary
       or secondary difference anywhere in the strings. This is also called the
       <literal>level 3</literal> strength.
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para> 
+     <simpara>
       <emphasis>Quaternary Level</emphasis>:
       When punctuation is ignored (see Ignoring Punctuations ) at levels 1-3,
       an additional level can be used to distinguish words with and without
@@ -84,10 +84,10 @@
       is also known as the <literal>level 4</literal> strength. The quaternary level should only
       be used if ignoring punctuation is required or when processing Japanese
       text (see Hiragana processing).
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para> 
+     <simpara>
       <emphasis>Identical Level</emphasis>:
       When all other levels are equal, the identical level is used as a
       tiebreaker. The Unicode code point values of the NFD form of each string
@@ -98,11 +98,11 @@
       Using this level substantially decreases the performance for both
       incremental comparison and sort key generation (as well as increasing
       the sort key length). It is also known as <literal>level 5</literal> strength.
-     </para>
+     </simpara>
     </listitem>
    </orderedlist>
   </para>
-  <para>
+  <simpara>
    For example, people may choose to ignore accents or ignore accents and case
    when searching for text. Almost all characters are distinguished by the
    first three levels, and in most locales the default value is thus Tertiary.
@@ -114,7 +114,7 @@
    Mathematical Italic Small A.). However, using levels higher than Tertiary
    the Identical strength result in significantly longer sort keys, and slower
    string comparison performance for equal strings.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -124,47 +124,47 @@
     <varlistentry>
      <term><parameter>object</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <classname>Collator</classname> object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>strength</parameter></term>
      <listitem>
-      <para>Strength to set.</para>
+      <simpara>Strength to set.</simpara>
       <para>
        Possible values are:
        <itemizedlist>
         <listitem>
-         <para>
+         <simpara>
           <constant>Collator::PRIMARY</constant>
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>Collator::SECONDARY</constant>
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>Collator::TERTIARY</constant>
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>Collator::QUATERNARY</constant>
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>Collator::IDENTICAL</constant>
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>Collator::DEFAULT_STRENGTH</constant>
-         </para>
+         </simpara>
         </listitem>
        </itemizedlist>
       </para>
@@ -176,9 +176,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -193,7 +193,7 @@ $arr  = array( 'aò', 'Ao', 'ao' );
 $coll = collator_create( 'en_US' );
 
 // Sort array using default strength.
-collator_sort( $coll, $arr ); 
+collator_sort( $coll, $arr );
 var_export( $arr );
 
 // Sort array using primary strength.

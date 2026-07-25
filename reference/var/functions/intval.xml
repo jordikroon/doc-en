@@ -13,13 +13,13 @@
    <methodparam><type>mixed</type><parameter>value</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>base</parameter><initializer>10</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the <type>int</type> value of <parameter>value</parameter>,
-   using the specified <parameter>base</parameter> for the conversion 
+   using the specified <parameter>base</parameter> for the conversion
    (the default is base 10). <function>intval</function> should not be used
    on objects, as doing so will emit an <constant>E_WARNING</constant> level
    error and return 1.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,17 +29,17 @@
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The scalar value being converted to an integer
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>base</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The base for the conversion
-      </para>
+      </simpara>
       <note>
        <para>
         If <parameter>base</parameter> is 0, the base used is determined
@@ -79,23 +79,23 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The integer value of <parameter>value</parameter> on success, or 0 on
    failure. Empty arrays return 0, non-empty arrays return 1.
-  </para>
-  <para>
-   The maximum value depends on the system. 32 bit systems have a 
-   maximum signed integer range of -2147483648 to 2147483647. So for example 
-   on such a system, <literal>intval('1000000000000')</literal> will return 
-   2147483647. The maximum signed integer value for 64 bit systems is 
+  </simpara>
+  <simpara>
+   The maximum value depends on the system. 32 bit systems have a
+   maximum signed integer range of -2147483648 to 2147483647. So for example
+   on such a system, <literal>intval('1000000000000')</literal> will return
+   2147483647. The maximum signed integer value for 64 bit systems is
    9223372036854775807.
-  </para>
-  <para>
-   Strings will most likely return 0 although this depends on the 
-   leftmost characters of the string. The common rules of 
-   <link linkend="language.types.integer.casting">integer casting</link> 
+  </simpara>
+  <simpara>
+   Strings will most likely return 0 although this depends on the
+   leftmost characters of the string. The common rules of
+   <link linkend="language.types.integer.casting">integer casting</link>
    apply.
-  </para>
+  </simpara>
   <note>
    <simpara>
     Numeric strings using scientific notation (containing the letter
@@ -150,9 +150,9 @@ echo intval('42.42e42'); // 9223372036854775807 on 64-bit systems
   <para>
    <example>
     <title><function>intval</function> examples</title>
-    <para>
+    <simpara>
      The following examples are based on a 64 bit system.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -187,10 +187,10 @@ echo intval(true), PHP_EOL;                    // 1
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     The <parameter>base</parameter> parameter has no effect unless the
     <parameter>value</parameter> parameter is a string.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

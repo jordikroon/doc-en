@@ -12,12 +12,12 @@
    <modifier>public</modifier> <modifier>static</modifier> <type class="union"><type>int</type><type>null</type></type><methodname>IntlChar::charDigitValue</methodname>
    <methodparam><type class="union"><type>int</type><type>string</type></type><parameter>codepoint</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the decimal digit value of a decimal digit character.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Such characters have the general category "Nd" (decimal digit numbers) and a Numeric_Type of Decimal.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -34,10 +34,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The decimal digit value of <parameter>codepoint</parameter>,
    or <literal>-1</literal> if it is not a decimal digit character. Returns &null; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

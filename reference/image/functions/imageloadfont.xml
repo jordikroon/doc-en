@@ -11,10 +11,10 @@
    <type class="union"><type>GdFont</type><type>false</type></type><methodname>imageloadfont</methodname>
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>imageloadfont</function> loads a user-defined bitmap and returns
    its identifier.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -23,11 +23,11 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The font file format is currently binary and architecture
        dependent.  This means you should generate the font files on the
        same type of CPU as the machine you are running PHP on.
-      </para>
+      </simpara>
       <para>
        <table>
         <title>Font file format</title>
@@ -81,9 +81,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an <classname>GdFont</classname> instance,&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

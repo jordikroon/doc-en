@@ -9,25 +9,25 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="DateTimeImmutable">
    <modifier>public</modifier> <modifier>static</modifier> <type class="union"><type>DateTimeImmutable</type><type>false</type></type><methodname>DateTimeImmutable::createFromFormat</methodname>
    <methodparam><type>string</type><parameter>format</parameter></methodparam>
    <methodparam><type>string</type><parameter>datetime</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>DateTimeZone</type><type>null</type></type><parameter>timezone</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type class="union"><type>DateTimeImmutable</type><type>false</type></type><methodname>date_create_immutable_from_format</methodname>
    <methodparam><type>string</type><parameter>format</parameter></methodparam>
    <methodparam><type>string</type><parameter>datetime</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>DateTimeZone</type><type>null</type></type><parameter>timezone</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a new DateTimeImmutable object representing the date and time specified by the
    <parameter>datetime</parameter> string, which was formatted in the given
    <parameter>format</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters" xml:id="datetimeimmutable.createfromformat.parameters">
@@ -36,12 +36,12 @@
    <varlistentry>
     <term><parameter>format</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The format that the passed in <type>string</type> should be in. See the
       formatting options below. In most cases, the same letters as for the
       <function>date</function> can be used.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       All fields are initialised with the current date/time. In most cases you
       would want to reset these to "zero" (the Unix epoch, <literal>1970-01-01
       00:00:00 UTC</literal>). You do that by including the
@@ -49,16 +49,16 @@
       <parameter>format</parameter>, or <literal>|</literal> as your last.
       Please see the documentation for each character below for more
       information.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       The format is parsed from left to right, which means that in some
       situations the order in which the format characters are present affects
       the result. In the case of <literal>z</literal> (the day of the year),
       it is required that a year has already been parsed,
       for example through the <literal>Y</literal> or <literal>y</literal>
       characters.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       Letters that are used for parsing numbers allow a wide range of values,
       outside of what the logical range would be. For example, the
       <literal>d</literal> (day of the month) accepts values in the range from
@@ -66,15 +66,15 @@
       on the amount of digits. The date/time parser's overflow mechanism is
       used when out-of-range values are given. The examples below show some of
       this behaviour.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       This also means that the data parsed for a format letter is greedy, and
       will read up to the amount of digits its format allows for. That can
       then also mean that there are no
       longer enough characters in the <parameter>datetime</parameter> string
       for following format characters. An example on this page also
       illustrates this issue.
-     </para>
+     </simpara>
      <para>
       <table>
        <title>The following characters are recognized in the
@@ -371,61 +371,61 @@
       structure. You can query error messages with
       <methodname>DateTimeImmutable::getLastErrors</methodname>.
      </para>
-     <para>
+     <simpara>
       To include literal characters in <parameter>format</parameter>, you have
       to escape them with a backslash (<literal>\</literal>).
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       If <parameter>format</parameter> does not contain the character
       <literal>!</literal> then portions of the generated date/time which are not
       specified in <parameter>format</parameter> will be set to the current
       system time.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       If <parameter>format</parameter> contains the
       character <literal>!</literal>, then portions of the generated
       date/time not provided in <parameter>format</parameter>, as well as
       values to the left-hand side of the <literal>!</literal>, will
       be set to corresponding values from the Unix epoch.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       If any time character is parsed, then all other time-related fields are
       set to "0", unless also parsed.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       The Unix epoch is 1970-01-01 00:00:00 UTC.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>datetime</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       String representing the time.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>timezone</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       A <classname>DateTimeZone</classname> object representing the
       desired time zone.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       If <parameter>timezone</parameter> is omitted or &null; and
       <parameter>datetime</parameter> contains no timezone,
       the current timezone will be used.
-     </para>
+     </simpara>
      <note>
-      <para>
+      <simpara>
        The <parameter>timezone</parameter> parameter
        and the current timezone are ignored when the
        <parameter>datetime</parameter> parameter either
        contains a UNIX timestamp (e.g. <literal>946684800</literal>)
        or specifies a timezone
        (e.g. <literal>2010-01-28T15:00:00+02:00</literal>).
-      </para>
+      </simpara>
      </note>
     </listitem>
    </varlistentry>
@@ -434,9 +434,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a new DateTimeImmutable instance&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -498,7 +498,7 @@
   &reftitle.examples;
   <example>
    <title><function>DateTimeImmutable::createFromFormat</function> example</title>
-   <para>&style.oop;</para>
+   <simpara>&style.oop;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -510,7 +510,7 @@ echo $date->format('Y-m-d');
 
   <example>
    <title>Using predefined format constants with <function>DateTimeImmutable::createFromFormat</function></title>
-   <para>&style.oop;</para>
+   <simpara>&style.oop;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -527,7 +527,7 @@ $date = DateTimeImmutable::createFromFormat(
 echo $date->format('c e') . "\n";
 ]]>
    </programlisting>
-   <para>
+   <simpara>
     The <link linkend="datetimeinterface.constants.types">formatting constants</link>
     as used in this example consist of
     a string of characters for <link linkend="datetime.format">formatting</link> a
@@ -535,7 +535,7 @@ echo $date->format('c e') . "\n";
     letters match with the same elements of date/time information as the ones defined in the <link
     linkend="datetimeimmutable.createfromformat.parameters">parameters</link>
     section above, but they tend to be more lenient.
-   </para>
+   </simpara>
   </example>
 
   <example>
@@ -609,10 +609,10 @@ echo DateTimeImmutable::createFromFormat('Y-m-d H:i:s', '2021-17-35 16:60:97')->
 Sat, 04 Jun 2022 17:01:37 +0000
 ]]>
    </screen>
-   <para>
+   <simpara>
     Although the result looks odd, it is correct, as the following overflows
     happen:
-   </para>
+   </simpara>
    <orderedlist>
     <listitem>
      <simpara>
@@ -657,10 +657,10 @@ echo $d->format(DateTime::RFC1123), "\n";
 Mon, 10 Aug 2020 01:00:00 +0000
 ]]>
    </screen>
-   <para>
+   <simpara>
     Although the result looks odd, it is correct, as the following overflows
     happen:
-   </para>
+   </simpara>
    <orderedlist>
     <listitem>
      <simpara>
@@ -755,26 +755,26 @@ Array
 )
 ]]>
    </screen>
-   <para>
+   <simpara>
     The <literal>G</literal> format is to parse 24 hour clock hours, with or
     without leading zero. This requires to parse 1 or 2 digits. Because there
     are two following digits, it greedily reads this as <literal>60</literal>.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     The following <literal>i</literal> and <literal>s</literal> format
     characters both require two digits. This means that <literal>10</literal>
     is passed as minute (<literal>i</literal>), and that there are then not
     enough digits left to parse for as second (<literal>s</literal>).
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     The <literal>errors</literal> array indicates this problem.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     Additionally, an hour of <literal>60</literal> is outside the range
     <literal>0</literal>-<literal>24</literal>, which causes the
     <literal>warnings</literal> array to include a warning that the time is
     invalid.
-   </para>
+   </simpara>
   </example>
 
  </refsect1>

@@ -7,11 +7,11 @@
  <sect2 xml:id="migration72.new-features.object-type">
   <title>New object type</title>
 
-  <para>
+  <simpara>
    A new type, <type>object</type>, has been introduced that can be used for
    (contravariant) parameter typing and (covariant) return typing of any
    objects.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -32,21 +32,21 @@ test(new stdClass());
  <sect2 xml:id="migration72.new-features.ext-loading-by-name">
   <title>Extension loading by name</title>
 
-  <para>
+  <simpara>
    Shared extensions no longer require their file extension
    (<literal>.so</literal> for Unix or <literal>.dll</literal> for Windows) to
    be specified. This is enabled in the php.ini file, as well as in the
    <function>dl</function> function.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration72.new-features.abstract-method-overriding">
   <title>Abstract method overriding</title>
 
-  <para>
+  <simpara>
    Abstract methods can now be overridden when an abstract class extends
    another abstract class.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -70,22 +70,22 @@ abstract class B extends A
  <sect2 xml:id="migration72.new-features.sodium">
   <title><link linkend="book.sodium">Sodium</link> is now a core extension</title>
 
-  <para>
+  <simpara>
    The modern Sodium cryptography library has now become a core extension in PHP.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    For a complete function reference, see the <link linkend="book.sodium">Sodium</link>
    chapter.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration72.new-features.pws-hashing-with-argon2">
   <title>Password hashing with Argon2</title>
 
-  <para>
-   Argon2 has been added to the <link linkend="book.password">password hashing API</link>, 
+  <simpara>
+   Argon2 has been added to the <link linkend="book.password">password hashing API</link>,
    where the following constants have been exposed:
-  </para>
+  </simpara>
 
   <itemizedlist>
    <listitem>
@@ -114,10 +114,10 @@ abstract class B extends A
  <sect2 xml:id="migration72.new-features.pdo-extended-str-types">
   <title>Extended string types for <link linkend="book.pdo">PDO</link></title>
 
-  <para>
+  <simpara>
    PDO's string type has been extended to support the national character type
    when emulating prepares. This has been done with the following constants:
-  </para>
+  </simpara>
 
   <itemizedlist>
    <listitem>
@@ -137,10 +137,10 @@ abstract class B extends A
    </listitem>
   </itemizedlist>
 
-  <para>
+  <simpara>
    These constants are utilised by bitwise <literal>OR</literal>'ing them with
    <constant>PDO::PARAM_STR</constant>:
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -156,22 +156,22 @@ $db->quote('über', PDO::PARAM_STR | PDO::PARAM_STR_NATL);
  <sect2 xml:id="migration72.new-features.additional-emulated-prepares-debugging-info">
   <title>Additional emulated prepares debugging information for <link linkend="book.pdo">PDO</link></title>
 
-  <para>
+  <simpara>
    The <function>PDOStatement::debugDumpParams</function> method has been
    updated to include the SQL being sent to the DB, where the full, raw query
    (including the replaced placeholders with their bounded values) will be
    shown. This has been added to aid with debugging emulated prepares (and so
    it will only be available when emulated prepares are turned on).
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration72.new-features.extended-ops-in-ldap">
   <title>Support for extended operations in <link linkend="book.ldap">LDAP</link></title>
 
-  <para>
+  <simpara>
    Support for EXOP has been added to the LDAP extension. This has been done by
    exposing the following functions and constants:
-  </para>
+  </simpara>
 
   <itemizedlist>
    <listitem>
@@ -225,11 +225,11 @@ $db->quote('über', PDO::PARAM_STR | PDO::PARAM_STR_NATL);
  <sect2 xml:id="migration72.new-features.addr-info-in-sockets">
   <title>Address Information additions to the <link linkend="book.sockets">Sockets</link> extension</title>
 
-  <para>
+  <simpara>
    The sockets extension now has the ability to lookup address information, as
    well as connect to it, bind to it, and explain it. The following four
    functions have been added for this:
-  </para>
+  </simpara>
 
   <itemizedlist>
    <listitem>
@@ -258,11 +258,11 @@ $db->quote('über', PDO::PARAM_STR | PDO::PARAM_STR_NATL);
  <sect2 xml:id="migration72.new-features.param-type-widening">
   <title>Parameter type widening</title>
 
-  <para>
+  <simpara>
    Parameter types from overridden methods and from interface implementations
    may now be omitted. This is still in compliance with LSP, since parameters
    types are contravariant.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -286,10 +286,10 @@ class B implements A
  <sect2 xml:id="migration72.new-features.trailing-comma-in-grouped-namespaces">
   <title>Allow a trailing comma for grouped namespaces</title>
 
-  <para>
+  <simpara>
    A trailing comma can now be added to the group-use syntax introduced in
    PHP 7.0.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -309,29 +309,29 @@ use Foo\Bar\{
  <sect2 xml:id="migration72.new-features.proc_nice-windows-support">
   <title><function>proc_nice</function> support on Windows</title>
 
-  <para>
+  <simpara>
    The <function>proc_nice</function> function is now supported on Windows.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration72.new-features.pack-unpack-endian-support">
   <title><function>pack</function> and <function>unpack</function> endian support</title>
 
-  <para>
+  <simpara>
    The <function>pack</function> and <function>unpack</function> functions now
    support float and double in both little and big endian.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration72.new-features.exif-features">
   <title>Enhancements to the <link linkend="book.exif">EXIF</link> extension</title>
 
-  <para>
-   The EXIF extension has been updated to support a much larger range of formats. This 
-   means that their format specific tags are now properly translated when parsing images 
-   with the <function>exif_read_data</function> function. The following new formats are 
+  <simpara>
+   The EXIF extension has been updated to support a much larger range of formats. This
+   means that their format specific tags are now properly translated when parsing images
+   with the <function>exif_read_data</function> function. The following new formats are
    now supported:
-  </para>
+  </simpara>
 
   <itemizedlist>
    <listitem>
@@ -391,10 +391,10 @@ use Foo\Bar\{
    </listitem>
   </itemizedlist>
 
-  <para>
-   The EXIF functions <function>exif_read_data</function> and <function>exif_thumbnail</function> 
+  <simpara>
+   The EXIF functions <function>exif_read_data</function> and <function>exif_thumbnail</function>
    now support passing streams as their first argument.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration72.new-features.pcre">
@@ -421,28 +421,28 @@ use Foo\Bar\{
  <sect2 xml:id="migration72.new-features.oci8">
   <title><link linkend="book.oci8">Oracle OCI8</link> Transparent Application Failover Callbacks</title>
 
-  <para>
+  <simpara>
    Support for <link linkend="oci8.taf">Oracle Database Transparent Application Failover (TAF) callbacks</link>
    has been added. TAF allows PHP OCI8 applications to
    automatically reconnect to a preconfigured database when a connection
    is broken.  The new TAF callback support allows PHP applications to
-   monitor and control reconnection during failover. 
-  </para>
+   monitor and control reconnection during failover.
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration72.new-features.zip">
   <title>Enhancements to the <link linkend="book.zip">ZIP</link> extension</title>
 
-  <para>
+  <simpara>
    Read and write support for encrypted archives has been added (requires libzip 1.2.0).
-  </para>
+  </simpara>
   <para>
-   The <classname>ZipArchive</classname> class now implements the <interfacename>Countable</interfacename> 
+   The <classname>ZipArchive</classname> class now implements the <interfacename>Countable</interfacename>
    interface.
   </para>
-  <para>
+  <simpara>
    The <literal>zip://</literal> stream now accepts a <literal>'password'</literal> context option.
-  </para>
+  </simpara>
  </sect2>
 
 </sect1>

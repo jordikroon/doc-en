@@ -13,9 +13,9 @@
    <modifier>public</modifier> <type class="union"><type>DOMNode</type><type>null</type></type><methodname>DOMNamedNodeMap::getNamedItem</methodname>
    <methodparam><type>string</type><parameter>qualifiedName</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Retrieves a node specified by its <literal>nodeName</literal>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>qualifiedName</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <literal>nodeName</literal> of the node to retrieve.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -34,10 +34,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   A node (of any type) with the specified <literal>nodeName</literal>, or 
+  <simpara>
+   A node (of any type) with the specified <literal>nodeName</literal>, or
    &null; if no node is found.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;

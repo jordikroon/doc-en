@@ -50,9 +50,9 @@
      <type>int</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       PCRE's backtracking limit. Defaults to 100000 for PHP &lt; 5.3.7.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="ini.pcre.recursion-limit">
@@ -61,12 +61,12 @@
      <type>int</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       PCRE's recursion limit. Please note that if you set this value to a high
       number you may consume all the available process stack and eventually
       crash PHP (due to reaching the stack size limit imposed by the Operating
       System).
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="ini.pcre.jit">
@@ -75,9 +75,9 @@
      <type>bool</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Whether PCRE's just-in-time compilation is going to be used.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>

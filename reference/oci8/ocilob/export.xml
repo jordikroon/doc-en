@@ -5,7 +5,7 @@
   <refname>OCILob::export</refname>
   <refpurpose>Exports LOB's contents to a file</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="OCILob">
@@ -14,9 +14,9 @@
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>offset</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>length</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
-   Exports LOB contents to a file. 
-  </para>
+  <simpara>
+   Exports LOB contents to a file.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,25 +26,25 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path to the file.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Indicates from where to start exporting.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
-       Indicates the length of data to be exported.   
-      </para>
+      <simpara>
+       Indicates the length of data to be exported.
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -53,9 +53,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>ReflectionProperty::isInitialized</methodname>
    <methodparam choice="opt"><type class="union"><type>object</type><type>null</type></type><parameter>object</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks whether a property is initialized.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -23,10 +23,10 @@
    <varlistentry>
     <term><parameter>object</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       If the property is non-static an object must be provided to fetch the
       property from.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -34,17 +34,17 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &false; for typed properties prior to initialization,
    and for properties that have been explicitly <function>unset</function>.
    For all other properties &true; will be returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
   <para>
-   Throws a <classname>ReflectionException</classname> if the property is inaccessible.
+   Throws a <exceptionname>ReflectionException</exceptionname> if the property is inaccessible.
    You can make a protected or private property accessible using
    <methodname>ReflectionProperty::setAccessible</methodname>.
   </para>

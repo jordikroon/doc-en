@@ -13,16 +13,16 @@
    <methodparam choice="opt"><type>PgSql\Connection</type><parameter>connection</parameter></methodparam>
    <methodparam><type>string</type><parameter>name</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
     Looks up a current parameter setting of the server.
-  </para>
-  <para>
-    Certain parameter values are reported by the server automatically at 
-    connection startup or whenever their values change. <function>pg_parameter_status</function> can be 
-    used to interrogate these settings. It returns the current value of a 
+  </simpara>
+  <simpara>
+    Certain parameter values are reported by the server automatically at
+    connection startup or whenever their values change. <function>pg_parameter_status</function> can be
+    used to interrogate these settings. It returns the current value of a
     parameter if known, or &false; if the parameter is not known.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
     Parameters reported by the server include <literal>server_version</literal>,
     <literal>server_encoding</literal>, <literal>client_encoding</literal>,
     <literal>is_superuser</literal>, <literal>session_authorization</literal>,
@@ -30,7 +30,7 @@
     Note that
     <literal>server_version</literal>, <literal>server_encoding</literal> and <literal>integer_datetimes</literal>
     cannot change after PostgreSQL startup.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -46,13 +46,13 @@
     <varlistentry>
      <term><parameter>name</parameter></term>
      <listitem>
-        <para>
+        <simpara>
          Possible <parameter>name</parameter> values include <literal>server_version</literal>,
         <literal>server_encoding</literal>, <literal>client_encoding</literal>,
         <literal>is_superuser</literal>, <literal>session_authorization</literal>,
         <literal>DateStyle</literal>, <literal>TimeZone</literal>, and
         <literal>integer_datetimes</literal>.  Note that this value is case-sensitive.
-        </para>
+        </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -61,8 +61,8 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>A <type>string</type> containing the value of the parameter, &false; on failure or invalid
-  <parameter>name</parameter>.</para>
+  <simpara>A <type>string</type> containing the value of the parameter, &false; on failure or invalid
+  <parameter>name</parameter>.</simpara>
  </refsect1>
 
  <refsect1 role="changelog">

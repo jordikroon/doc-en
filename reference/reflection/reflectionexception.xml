@@ -10,9 +10,9 @@
 <!-- {{{ ReflectionException intro -->
   <section xml:id="reflectionexception.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     The ReflectionException class.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -41,7 +41,7 @@
 
   </section>
 
-  
+
  </partintro>
 
 </reference>

@@ -42,9 +42,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Canonicalized locale string.
-  </para>
+  </simpara>
   &intl.locale-len.return;
  </refsect1>
 

@@ -12,9 +12,9 @@
    <type class="union"><type>string</type><type>false</type></type><methodname>openssl_spki_export_challenge</methodname>
    <methodparam><type>string</type><parameter>spki</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
     Exports challenge from encoded signed public key and challenge
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -23,9 +23,9 @@
     <varlistentry>
      <term><parameter>spki</parameter></term>
      <listitem>
-      <para>
-        Expects a valid signed public key and challenge 
-      </para>
+      <simpara>
+        Expects a valid signed public key and challenge
+      </simpara>
      </listitem>
     </varlistentry>
   </variablelist>
@@ -33,26 +33,26 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the associated challenge string or &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
   <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    Emits an <constant>E_WARNING</constant> level error if an invalid argument
    is passed via the <parameter>spki</parameter> parameter.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
   &reftitle.examples;
   <example xml:id="openssl_spki_export_challenge.example.basic">
    <title><function>openssl_spki_export_challenge</function> example</title>
-   <para>
+   <simpara>
       Extracts the associated challenge string or NULL on failure.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -65,9 +65,9 @@ $challenge = openssl_spki_export_challenge(preg_replace('/SPKAC=/', '', $spkac))
   </example>
   <example xml:id="openssl_spki_export_challenge.example.keygen">
    <title><function>openssl_spki_export_challenge</function> example from &lt;keygen&gt;</title>
-   <para>
-      Extracts the associated challenge string issued from the &lt;keygen&gt; element 
-   </para>
+   <simpara>
+      Extracts the associated challenge string issued from the &lt;keygen&gt; element
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

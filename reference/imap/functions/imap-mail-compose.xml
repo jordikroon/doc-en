@@ -12,10 +12,10 @@
    <methodparam><type>array</type><parameter>envelope</parameter></methodparam>
    <methodparam><type>array</type><parameter>bodies</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Create a MIME message based on the given <parameter>envelope</parameter>
    and <parameter>bodies</parameter> sections.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -36,11 +36,11 @@
     <varlistentry>
      <term><parameter>bodies</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An indexed array of bodies. The first body is the main body of the message;
        only if it has a type of <constant>TYPEMULTIPART</constant>, further bodies
        are processed; these bodies constitute the bodies of the parts.
-      </para>
+      </simpara>
       <para>
        <table>
         <title>Body Array Structure</title>
@@ -140,9 +140,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the MIME message as &string;, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;

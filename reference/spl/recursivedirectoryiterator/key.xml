@@ -23,9 +23,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The path and filename of the current dir entry.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

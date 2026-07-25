@@ -5,17 +5,17 @@
   <refname>posix_getpgid</refname>
   <refpurpose>Get process group id for job control</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>int</type><type>false</type></type><methodname>posix_getpgid</methodname>
    <methodparam><type>int</type><parameter>process_id</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the process group identifier of the process
    <parameter>process_id</parameter>&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
     <varlistentry>
      <term><parameter>process_id</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The process id.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -36,9 +36,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the identifier, as an <type>int</type>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -61,12 +61,12 @@ echo posix_getpgid($pid); //35
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     This is a not POSIX function, but is common on BSD and System V
     systems. If the system does not support this function, then it
     will not be included at compile time.  This may be checked with
     <function>function_exists</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

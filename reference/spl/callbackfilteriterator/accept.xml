@@ -12,14 +12,14 @@
    <modifier>public</modifier> <type>bool</type><methodname>CallbackFilterIterator::accept</methodname>
    <void/>
   </methodsynopsis>
-  <para>
-   This method calls the callback with the current value, current key 
+  <simpara>
+   This method calls the callback with the current value, current key
    and the inner iterator.
-  </para>
-  <para>
-   The callback is expected to return &true; if the current item is 
+  </simpara>
+  <simpara>
+   The callback is expected to return &true; if the current item is
    to be accepted, or &false; otherwise.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -30,9 +30,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; to accept the current item, or &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

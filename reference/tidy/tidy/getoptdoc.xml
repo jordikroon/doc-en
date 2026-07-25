@@ -10,26 +10,26 @@
  </refnamediv>
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="tidy">
    <modifier>public</modifier> <type class="union"><type>string</type><type>false</type></type><methodname>tidy::getOptDoc</methodname>
    <methodparam><type>string</type><parameter>option</parameter></methodparam>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>tidy_get_opt_doc</methodname>
    <methodparam><type>tidy</type><parameter>tidy</parameter></methodparam>
    <methodparam><type>string</type><parameter>option</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>tidy_get_opt_doc</function> returns the documentation for the
    given option name.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     You need at least libtidy from 25 April, 2005 for this function be
     available.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -40,17 +40,17 @@
     <varlistentry>
      <term><parameter>tidy</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &tidy.object;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>option</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The option name
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -59,10 +59,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a string if the option exists and has documentation available, or
    &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

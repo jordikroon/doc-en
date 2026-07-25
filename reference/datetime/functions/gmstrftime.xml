@@ -22,13 +22,13 @@
    <methodparam><type>string</type><parameter>format</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>timestamp</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Behaves the same as <function>strftime</function> except that the
    time returned is Greenwich Mean Time (GMT). For example, when run
    in Eastern Standard Time (GMT -0500), the first line below prints
    "Dec 31 1998 20:00:00", while the second prints "Jan 01 1999
    01:00:00".
-  </para>
+  </simpara>
   <warning>
    <para>
     This function depends on operating system locale information, which might
@@ -45,9 +45,9 @@
     <varlistentry>
      <term><parameter>format</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        See description in <function>strftime</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     &date.timestamp.description;
@@ -57,14 +57,14 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a string formatted according to the given format string
    using the given <parameter>timestamp</parameter> or the current
    local time if no timestamp is given.  Month and weekday names and
    other language dependent strings respect the current locale set
    with <function>setlocale</function>.
    On failure, &false; is returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

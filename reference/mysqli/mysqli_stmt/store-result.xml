@@ -9,29 +9,29 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="mysqli_stmt">
    <modifier>public</modifier> <type>bool</type><methodname>mysqli_stmt::store_result</methodname>
    <void/>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type>bool</type><methodname>mysqli_stmt_store_result</methodname>
    <methodparam><type>mysqli_stmt</type><parameter>statement</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   This function should be called for queries that successfully 
+  <simpara>
+   This function should be called for queries that successfully
    produce a result set (e.g. <literal>SELECT, SHOW, DESCRIBE, EXPLAIN</literal>)
    only if the complete result set needs to be buffered in PHP. Each subsequent
    <function>mysqli_stmt_fetch</function> call will return buffered data.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     It is unnecessary to call <function>mysqli_stmt_store_result</function> for other queries,
     but if you do, it will not harm or cause any notable performance loss in all cases.
     You can detect whether the query produced a result set by checking if
     <function>mysqli_stmt_result_metadata</function> returns &false;.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -46,9 +46,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

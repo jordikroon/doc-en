@@ -5,7 +5,7 @@
   <refname>odbc_tables</refname>
   <refpurpose>Get the list of table names stored in a specific data source</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -16,9 +16,9 @@
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>table</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>types</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Lists all tables in the requested range.
-  </para>
+  </simpara>
   <para>
    To support enumeration of qualifiers, owners, and table types,
    the following special semantics for the
@@ -59,7 +59,7 @@
    </itemizedlist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   <para>
@@ -73,33 +73,33 @@
     <varlistentry>
      <term><parameter>catalog</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &odbc.parameter.catalog;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>schema</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &odbc.parameter.schema;
        &odbc.parameter.search;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>table</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The name.
        &odbc.parameter.search;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>types</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If <parameter>table_type</parameter> is not an empty string, it
        must contain a list of comma-separated values for the types of
        interest; each value may be enclosed in single quotes (<literal>'</literal>) or
@@ -107,7 +107,7 @@
        data source does not support a specified table type,
        <function>odbc_tables</function> does not return any results for
        that type.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -116,10 +116,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &odbc.result.object-return; containing the information
    &return.falseforfailure;.
-  </para>
+  </simpara>
   <para>
    The result set has the following columns:
    <itemizedlist>

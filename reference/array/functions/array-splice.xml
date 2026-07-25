@@ -14,16 +14,16 @@
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>length</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>mixed</type><parameter>replacement</parameter><initializer>[]</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Removes the elements designated by <parameter>offset</parameter> and
    <parameter>length</parameter> from the <parameter>array</parameter> array,
    and replaces them with the elements of the
    <parameter>replacement</parameter> array, if supplied.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     Numerical keys in <parameter>array</parameter> are not preserved.
-   </para>
+   </simpara>
   </note>
   <note>
    <simpara>
@@ -41,46 +41,46 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input array.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If <parameter>offset</parameter> is positive then the start of the
        removed portion is at that offset from the beginning of the
        <parameter>array</parameter> array.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If <parameter>offset</parameter> is negative then the start of the
        removed portion is at that offset from the end of the
        <parameter>array</parameter> array.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If <parameter>length</parameter> is omitted, removes everything
        from <parameter>offset</parameter> to the end of the array.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If <parameter>length</parameter> is specified and is positive,
        then that many elements will be removed.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If <parameter>length</parameter> is specified and is negative,
        then the end of the removed portion will be that many elements
        from the end of the array.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If <parameter>length</parameter> is specified and is zero,
        no elements will be removed.
-      </para>
+      </simpara>
       <tip>
        <para>
         To remove everything from <parameter>offset</parameter> to the end of
@@ -93,26 +93,26 @@
     <varlistentry>
      <term><parameter>replacement</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If <parameter>replacement</parameter> array is specified, then the
        removed elements are replaced with elements from this array.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If <parameter>offset</parameter> and <parameter>length</parameter>
        are such that nothing is removed, then the elements from the
        <parameter>replacement</parameter> array are inserted in the place
        specified by the <parameter>offset</parameter>.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         Keys in the <parameter>replacement</parameter> array are not preserved.
-        </para>
+        </simpara>
       </note>
-      <para>
+      <simpara>
        If <parameter>replacement</parameter> is just one element it is
        not necessary to put <literal>array()</literal> or square brackets
        around it, unless the element is an array itself, an object or &null;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -120,9 +120,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array consisting of the extracted elements.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -213,9 +213,9 @@ array(5) {
   <para>
    <example>
     <title>Equivalent statements to various <function>array_splice</function> examples</title>
-    <para>
+    <simpara>
      The following statements are equivalent:
-    </para>
+    </simpara>
     <programlisting role="php" annotations="non-interactive">
 <![CDATA[
 <?php

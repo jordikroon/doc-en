@@ -5,7 +5,7 @@
   <refname>strncmp</refname>
   <refpurpose>Binary safe string comparison of the first n characters</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,14 +14,14 @@
    <methodparam><type>string</type><parameter>string2</parameter></methodparam>
    <methodparam><type>int</type><parameter>length</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function is similar to <function>strcmp</function>, with the
    difference that you can specify the (upper limit of the) number of
    characters from each string to be used in the comparison.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Note that this comparison is case sensitive.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -31,25 +31,25 @@
     <varlistentry>
      <term><parameter>string1</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The first string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>string2</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The second string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Number of characters to use in the comparison.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

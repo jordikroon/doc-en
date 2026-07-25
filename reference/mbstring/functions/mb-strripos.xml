@@ -33,28 +33,28 @@
     <varlistentry>
      <term><parameter>haystack</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string from which to get the position of the last occurrence
        of <parameter>needle</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>needle</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string to find in <parameter>haystack</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        May be specified to begin searching an arbitrary number of characters into
        the <parameter>haystack</parameter>. Negative values will stop searching at an arbitrary point
        prior to the end of the <parameter>haystack</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -68,12 +68,12 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Return the numeric position of
    the last occurrence of <parameter>needle</parameter> in the
    <parameter>haystack</parameter> string, or &false;
    if <parameter>needle</parameter> is not found.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -83,7 +83,7 @@
     <simpara>
      If <parameter>offset</parameter> is greater than the length of
      <parameter>haystack</parameter>, a
-     <classname>ValueError</classname> will be thrown.
+     <exceptionname>ValueError</exceptionname> will be thrown.
     </simpara>
    </listitem>
   </itemizedlist>

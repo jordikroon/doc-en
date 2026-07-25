@@ -11,10 +11,10 @@
    <type>bool</type><methodname>imageistruecolor</methodname>
    <methodparam><type>GdImage</type><parameter>image</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>imageistruecolor</function> finds whether the image
    <parameter>image</parameter> is a truecolor image.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -26,10 +26,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the <parameter>image</parameter> is truecolor, &false;
    otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

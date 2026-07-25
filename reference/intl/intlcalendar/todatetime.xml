@@ -8,27 +8,27 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="IntlCalendar">
    <modifier>public</modifier> <type class="union"><type>DateTime</type><type>false</type></type><methodname>IntlCalendar::toDateTime</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>DateTime</type><type>false</type></type><methodname>intlcal_to_date_time</methodname>
    <methodparam><type>IntlCalendar</type><parameter>calendar</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Create a <classname>DateTime</classname> object that represents the same
    instant (up to second precision, with a rounding error of less than 1
    second) and has an analog timezone to this object (the difference being
    <classname>DateTime</classname>ʼs timezone will be backed by PHPʼs timezone
    while <classname>IntlCalendar</classname>ʼs timezone is backed by ICUʼs).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -45,12 +45,12 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A <classname>DateTime</classname> object with the same timezone as this
    object (though using PHPʼs database instead of ICUʼs) and the same time,
    except for the smaller precision (second precision instead of millisecond).
    Returns &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
 

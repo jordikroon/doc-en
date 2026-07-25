@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>int</type><methodname>DOMNodeList::count</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the number of nodes in the list.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -25,12 +25,12 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the number of nodes in the list, which is identical to the
    <link linkend="domnodelist.props.length">length</link> property.
-  </para>
+  </simpara>
  </refsect1>
- 
+
 </refentry>
 <!-- Keep this comment at the end of the file
 Local variables:

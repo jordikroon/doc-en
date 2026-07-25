@@ -9,18 +9,18 @@
  <!-- {{{ preface -->
  <preface xml:id="intro.exec">
   &reftitle.intro;
-  <para>
+  <simpara>
    Those functions provide means to execute commands on the
    system itself, and means to secure such commands.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     All execution functions call the commands through
     <literal>cmd.exe</literal> under Windows. Therefore the user calling these
     functions needs appropriate privilege to run this command. The only
     exception is <function>proc_open</function> with
     <literal>bypass_shell</literal> option.
-   </para>
+   </simpara>
   </note>
  </preface>
  <!-- }}} -->

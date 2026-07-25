@@ -15,26 +15,26 @@
    <methodparam><type>int</type><parameter>oid</parameter></methodparam>
    <methodparam><type>string</type><parameter>mode</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_lo_open</function> opens a large object in the database
    and returns an <classname>PgSql\Lob</classname> instance so that it can be manipulated.
-  </para>
+  </simpara>
   <warning>
-   <para>
+   <simpara>
     Do not close the database connection before closing the <classname>PgSql\Lob</classname> instance.
-   </para>
+   </simpara>
   </warning>
-  <para>
+  <simpara>
    To use the large object interface, it is necessary to
    enclose it within a transaction block.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     This function used to be called <function>pg_loopen</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   <para>
@@ -48,18 +48,18 @@
     <varlistentry>
      <term><parameter>oid</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <varname>OID</varname> of the large object in the database.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>mode</parameter></term>
      <listitem>
-      <para>
-       Can be either "r" for read-only, "w" for write only or "rw" for read and 
+      <simpara>
+       Can be either "r" for read-only, "w" for write only or "rw" for read and
        write.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -68,9 +68,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An <classname>PgSql\Lob</classname> instance, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -96,7 +96,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -117,10 +117,10 @@
 ?>
 ]]>
     </programlisting>
-   </example> 
+   </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

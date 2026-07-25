@@ -4,34 +4,34 @@
  <title>Obtaining PHP</title>
   <titleabbrev>Obtaining PHP</titleabbrev>
 
-   <para>
+   <simpara>
     This section has details about PHP download locations, and
     OS issues.
-   </para>
+   </simpara>
 
   <qandaset>
    <qandaentry xml:id="faq.obtaining.where">
     <question>
-     <para>Where can I obtain PHP?</para>
+     <simpara>Where can I obtain PHP?</simpara>
     </question>
     <answer>
-     <para>
+     <simpara>
       You can download PHP from any of the members of the
-      PHP network of sites. These can be found at 
+      PHP network of sites. These can be found at
       <link xlink:href="&url.php;">&url.php;</link>.
       You can also use anonymous Git to get the absolute latest
-      version of the source. For more information, go to 
+      version of the source. For more information, go to
       <link xlink:href="&url.php.anongit;">&url.php.anongit;</link>.
-     </para>
+     </simpara>
     </answer>
    </qandaentry>
 
    <qandaentry xml:id="faq.obtaining.precompiled">
     <question>
-     <para>Are pre-compiled binary versions available?</para>
+     <simpara>Are pre-compiled binary versions available?</simpara>
     </question>
     <answer>
-     <para>
+     <simpara>
       We only distribute precompiled binaries for Windows systems,
       as we are not able to compile PHP for every major Linux/Unix
       platform with every extension combination. Also note, that
@@ -39,16 +39,16 @@
       Windows binaries can be downloaded from our <link
       xlink:href="&url.php.downloads;">Downloads</link> page, for Linux
       binaries, please visit your distribution's website.
-     </para>
+     </simpara>
     </answer>
    </qandaentry>
 
    <qandaentry xml:id="faq.obtaining.optional">
     <question>
-     <para>
+     <simpara>
       Where can I get libraries needed to compile some of
       the optional PHP extensions?
-     </para>
+     </simpara>
     </question>
     <answer>
      <para>
@@ -67,7 +67,7 @@
        </listitem>
        <listitem>
         <simpara>
-         <link xlink:href="&url.ldap.netscape.sdk;">LDAP (Unix/Win)</link> : 
+         <link xlink:href="&url.ldap.netscape.sdk;">LDAP (Unix/Win)</link> :
          Mozilla Directory (LDAP) SDK
         </simpara>
        </listitem>
@@ -109,7 +109,7 @@
        </listitem>
        <listitem>
         <simpara>
-         <link xlink:href="&url.sybase;">Sybase-CT* (Linux, libc5)</link> : 
+         <link xlink:href="&url.sybase;">Sybase-CT* (Linux, libc5)</link> :
          Available locally.
         </simpara>
        </listitem>
@@ -167,64 +167,64 @@
      </para>
     </answer>
    </qandaentry>
-  
+
    <qandaentry xml:id="faq.obtaining.how">
     <question>
-     <para>How do I get these libraries to work?</para>
+     <simpara>How do I get these libraries to work?</simpara>
     </question>
     <answer>
-     <para>
+     <simpara>
       You will need to follow instructions provided with the library. Some of
       these libraries are detected automatically when you run the 'configure'
       script of PHP (such as the GD library), and others you will have to
-      enable using '<literal>--with-EXTENSION</literal>' options to 
-      '<literal>configure</literal>'. Run 
-      '<literal>configure --help</literal>' for a listing of these.     
-     </para>
+      enable using '<literal>--with-EXTENSION</literal>' options to
+      '<literal>configure</literal>'. Run
+      '<literal>configure --help</literal>' for a listing of these.
+     </simpara>
     </answer>
    </qandaentry>
    <qandaentry xml:id="faq.obtaining.compilent">
     <question>
-     <para>
+     <simpara>
       I got the latest version of the PHP source code from the Git
       repository on my Windows machine, what do I need to compile it?
-     </para>
+     </simpara>
     </question>
     <answer>
-     <para>
+     <simpara>
       See the PHP Wiki for the latest instructions: <link xlink:href="&url.php.win.build2;">Step by Step Build Instructions</link>
-      
-    </para>
+
+    </simpara>
     </answer>
    </qandaentry>
    <qandaentry xml:id="faq.obtaining.browscap">
     <question>
-     <para>Where do I find the Browser Capabilities File?</para>
+     <simpara>Where do I find the Browser Capabilities File?</simpara>
     </question>
     <answer>
-     <para>
-      You can find a <filename>browscap.ini</filename> file at 
+     <simpara>
+      You can find a <filename>browscap.ini</filename> file at
       <link xlink:href="&url.browscap.download;">&url.browscap.download;</link>.
-     </para>
+     </simpara>
     </answer>
    </qandaentry>
    <qandaentry xml:id="faq.obtaining.threadsafety">
     <question>
-     <para>What does thread safety mean when downloading PHP?</para>
+     <simpara>What does thread safety mean when downloading PHP?</simpara>
     </question>
     <answer>
-     <para>
-      Thread Safety means that binary can work in a multithreaded webserver 
-      context, such as Apache 2 on Windows. Thread Safety works by creating 
-      a local storage copy in each thread, so that the data won't collide 
+     <simpara>
+      Thread Safety means that binary can work in a multithreaded webserver
+      context, such as Apache 2 on Windows. Thread Safety works by creating
+      a local storage copy in each thread, so that the data won't collide
       with another thread.
-     </para>
-     <para>
-      So what do I choose? If you choose to run PHP as a CGI binary, then 
-      you won't need thread safety, because the binary is invoked at each 
-      request. For multithreaded webservers, such as IIS5 and IIS6, you should 
+     </simpara>
+     <simpara>
+      So what do I choose? If you choose to run PHP as a CGI binary, then
+      you won't need thread safety, because the binary is invoked at each
+      request. For multithreaded webservers, such as IIS5 and IIS6, you should
       use the threaded version of PHP.
-     </para>
+     </simpara>
     </answer>
    </qandaentry>
   </qandaset>

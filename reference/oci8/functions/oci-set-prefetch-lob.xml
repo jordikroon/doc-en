@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.oci-set-prefetch-lob">
+<refentry xml:id="function.oci-set-prefetch-lob" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>oci_set_prefetch_lob</refname>
   <refpurpose>Sets the amount of data prefetched for each CLOB or BLOB.</refpurpose>
@@ -13,27 +13,27 @@
    <methodparam><type>resource</type><parameter>statement</parameter></methodparam>
    <methodparam><type>int</type><parameter>prefetch_lob_size</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets the internal buffer size used to fetch each CLOB or BLOB value when the
    implementation gets the internal Oracle LOB locator from the database after
    a successful query call to <function>oci_execute</function> and for each
    subsequent internal fetch request to the database.  Increasing this value
    can improve the performance of fetching smaller LOBs by reducing round-trips
    between PHP and the database.  Memory usage will change.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The value affects LOBs returned as OCILob instances and also those returned
    using <constant>OCI_RETURN_LOBS</constant>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Call <function>oci_set_prefetch_lob</function> before
    calling <function>oci_execute</function>.  If it is not called, the value
    of <link linkend="ini.oci8.prefetch-lob-size">oci8.prefetch_lob_size</link>
    is used.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The LOB prefetch value should only be set with Oracle Database 12.2 or later.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -49,9 +49,9 @@
     <varlistentry>
      <term><parameter>prefetch_lob_size</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number of bytes of each LOB to be prefetched, &gt;= 0
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -60,9 +60,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

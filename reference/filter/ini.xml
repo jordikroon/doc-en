@@ -43,16 +43,16 @@
     <type>string</type>
    </term>
    <listitem>
-    <para>
+    <simpara>
      Filter all <varname>$_GET</varname>, <varname>$_POST</varname>,
      <varname>$_COOKIE</varname>,  <varname>$_REQUEST</varname> and
      <varname>$_SERVER</varname> data by this filter.
      Original data can be accessed through <function>filter_input</function>.
-    </para>
-    <para>
+    </simpara>
+    <simpara>
      Must be the name of a filter which can be determined by using
      <function>filter_list</function> and <function>filter_id</function>.
-    </para>
+    </simpara>
     <note>
      <simpara>
       Be careful about the default flags for the default filters.

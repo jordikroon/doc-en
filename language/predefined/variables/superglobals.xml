@@ -6,15 +6,15 @@
   <refname>Superglobals</refname>
   <refpurpose>Built-in variables that are always available in all scopes</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    Several predefined variables in PHP are "superglobals", which means they
    are available in all scopes throughout a script. There is no need to do
    <command>global $variable;</command> to access them within functions
    or methods.
-  </para>
+  </simpara>
   <para>
    These superglobal variables are:
    <simplelist>
@@ -35,20 +35,20 @@
   &reftitle.notes;
   <note>
    <title>Variable availability</title>
-   <para>
+   <simpara>
     By default, all of the superglobals are available but there are
     directives that affect this availability. For further information, refer
     to the documentation for
     <link linkend="ini.variables-order">variables_order</link>.
-   </para>
+   </simpara>
   </note>
   <note>
    <title>Variable variables</title>
-   <para>
-    Superglobals cannot be used as 
+   <simpara>
+    Superglobals cannot be used as
     <link linkend="language.variables.variable">variable variables</link>
     inside functions or class methods.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -64,7 +64,7 @@
  </refsect1>
 
 </refentry>
- 
+
 <!-- Keep this comment at the end of the file
 Local variables:
 mode: sgml

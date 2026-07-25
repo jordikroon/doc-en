@@ -14,14 +14,14 @@
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>resolution_x</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>resolution_y</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>imageresolution</function> allows to set and get the resolution of
    an image in DPI (dots per inch). If the optional parameters are &null;,
    the current resolution is returned as an indexed array. If only
    <parameter>resolution_x</parameter> is not &null;, the horizontal and vertical resolution
    are set to this value. If none of the optional parameters are &null;, the horizontal
    and vertical resolution are set to these values, respectively.
-  </para>
+  </simpara>
   <simpara>
    The resolution is only used as meta information when images are read from and
    written to formats supporting this kind of information (currently PNG and
@@ -37,17 +37,17 @@
    <varlistentry>
     <term><parameter>resolution_x</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The horizontal resolution in DPI.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>resolution_y</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The vertical resolution in DPI.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -55,12 +55,12 @@
 
  <refsect1 role="returnvalues"><!-- {{{ -->
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    When used as getter,
    it returns an indexed array of the horizontal and vertical resolution on
    success.
    When used as setter, it always returns &true;.
-  </para>
+  </simpara>
  </refsect1><!-- }}} -->
 
 

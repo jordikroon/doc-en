@@ -14,9 +14,9 @@
    <methodparam choice="opt"><type>bool</type><parameter>recursive</parameter><initializer>&false;</initializer></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>fromRoot</parameter><initializer>&true;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns namespaces declared in document
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,19 +26,19 @@
     <varlistentry>
      <term><parameter>recursive</parameter></term>
      <listitem>
-      <para>
-       If specified, returns all namespaces declared in parent and child nodes. 
+      <simpara>
+       If specified, returns all namespaces declared in parent and child nodes.
        Otherwise, returns only namespaces declared in root node.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>fromRoot</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Allows you to recursively check namespaces under a child node instead of
        from the root of the XML doc.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -47,10 +47,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   The <literal>getDocNamespaces</literal> method returns an <type>array</type> 
+  <simpara>
+   The <literal>getDocNamespaces</literal> method returns an <type>array</type>
    of namespace names with their associated URIs.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -69,7 +69,7 @@ $xml = <<<XML
     <p:person id="2">Susie Q. Public</p:person>
 </people>
 XML;
- 
+
 $sxe = new SimpleXMLElement($xml);
 
 $namespaces = $sxe->getDocNamespaces();
@@ -105,7 +105,7 @@ $xml = <<<XML
     </p:person>
 </people>
 XML;
- 
+
 $sxe = new SimpleXMLElement($xml);
 
 $namespaces = $sxe->getDocNamespaces(TRUE);

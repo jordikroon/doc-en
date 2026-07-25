@@ -11,11 +11,11 @@
    <type>float</type><methodname>asinh</methodname>
    <methodparam><type>float</type><parameter>num</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the inverse hyperbolic sine of
    <parameter>num</parameter>, i.e. the value whose
    hyperbolic sine is <parameter>num</parameter>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>num</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The argument to process
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -34,9 +34,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   The inverse hyperbolic sine of <parameter>num</parameter> 
-  </para>
+  <simpara>
+   The inverse hyperbolic sine of <parameter>num</parameter>
+  </simpara>
  </refsect1>
  <refsect1 role="seealso">
   &reftitle.seealso;

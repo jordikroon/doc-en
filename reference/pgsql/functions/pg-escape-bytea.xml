@@ -16,17 +16,17 @@
    <methodparam choice="opt"><type>PgSql\Connection</type><parameter>connection</parameter></methodparam>
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_escape_bytea</function> escapes string for
    bytea datatype.  It returns escaped string.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     When you <literal>SELECT</literal> a bytea type, PostgreSQL returns octal byte values
     prefixed with '\' (e.g. \032). Users are supposed to convert back to
     binary format manually.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     This function requires PostgreSQL 7.2 or later. With PostgreSQL
     7.2.0 and 7.2.1, bytea values must be cast when you enable
     multi-byte support. i.e. <literal>INSERT INTO test_table (image)
@@ -34,7 +34,7 @@
     later does not need a cast. The exception is when the client and backend
     character encoding does not match, and there may be multi-byte
     stream error. User must then cast to bytea to avoid this error.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -51,10 +51,10 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A <type>string</type> containing text or binary data to be inserted into a bytea
        column.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -63,9 +63,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A <type>string</type> containing the escaped data.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -92,16 +92,16 @@
     <title><function>pg_escape_bytea</function> example</title>
     <programlisting role="php">
 <![CDATA[
-<?php 
+<?php
   // Connect to the database
   $dbconn = pg_connect('dbname=foo');
-  
+
   // Read in a binary file
   $data = file_get_contents('image1.jpg');
-  
+
   // Escape the binary data
   $escaped = pg_escape_bytea($data);
-  
+
   // Insert it into the database
   pg_query("INSERT INTO gallery (name, data) VALUES ('Pine trees', '{$escaped}')");
 ?>
@@ -110,7 +110,7 @@
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

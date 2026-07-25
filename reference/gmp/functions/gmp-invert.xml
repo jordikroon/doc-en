@@ -5,7 +5,7 @@
   <refname>gmp_invert</refname>
   <refpurpose>Inverse by modulo</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,10 +13,10 @@
    <methodparam><type class="union"><type>GMP</type><type>int</type><type>string</type></type><parameter>num1</parameter></methodparam>
    <methodparam><type class="union"><type>GMP</type><type>int</type><type>string</type></type><parameter>num2</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Computes the inverse of <parameter>num1</parameter> modulo
-   <parameter>num2</parameter>. 
-  </para>
+   <parameter>num2</parameter>.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,13 +26,13 @@
     <varlistentry>
      <term><parameter>num1</parameter></term>
      <listitem>
-      &gmp.parameter; 
+      &gmp.parameter;
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>num2</parameter></term>
      <listitem>
-      &gmp.parameter; 
+      &gmp.parameter;
      </listitem>
     </varlistentry>
    </variablelist>
@@ -41,9 +41,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A GMP number on success or &false; if an inverse does not exist.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

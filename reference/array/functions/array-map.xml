@@ -5,7 +5,7 @@
   <refname>array_map</refname>
   <refpurpose>Applies the callback to the elements of the given arrays</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,7 +14,7 @@
    <methodparam><type>array</type><parameter>array</parameter></methodparam>
    <methodparam rep="repeat"><type>array</type><parameter>arrays</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>array_map</function> returns an &array; containing
    the results of applying the <parameter>callback</parameter>
    to the corresponding value of <parameter>array</parameter>
@@ -23,9 +23,9 @@
    The number of parameters that the <parameter>callback</parameter>
    function accepts should match the number of arrays
    passed to <function>array_map</function>. Excess
-   input arrays are ignored. An <classname>ArgumentCountError</classname>
+   input arrays are ignored. An <exceptionname>ArgumentCountError</exceptionname>
    is thrown if an insufficient number of arguments is provided.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -35,9 +35,9 @@
     <varlistentry>
      <term><parameter>callback</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A <type>callable</type> to run for each element in each array.
-      </para>
+      </simpara>
       <para>
        &null; can be passed as a value to <parameter>callback</parameter>
        to perform a zip operation on multiple arrays and return an array
@@ -51,18 +51,18 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An array to run through the <parameter>callback</parameter> function.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>arrays</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Supplementary variable list of array arguments to run through the
        <parameter>callback</parameter> function.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -71,17 +71,17 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array containing the results of applying the <parameter>callback</parameter>
    function to the corresponding value of <parameter>array</parameter>
    (and <parameter>arrays</parameter> if more arrays are provided)
    used as arguments for the callback.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The returned array will preserve the keys of the array argument if and only
    if exactly one array is passed. If more than one array is passed, the
    returned array will have sequential integer keys.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -120,9 +120,9 @@ print_r($b);
 ?>
 ]]>
     </programlisting>
-    <para>
+    <simpara>
      This makes <varname>$b</varname> have:
-    </para>
+    </simpara>
     <screen>
 <![CDATA[
 Array
@@ -244,18 +244,18 @@ Array
     </screen>
    </example>
   </para>
-  <para>
+  <simpara>
    Usually when using two or more arrays, they should be of equal length
    because the callback function is applied in parallel to the corresponding
    elements.
    If the arrays are of unequal length, shorter ones will be extended with empty
    elements to match the length of the longest.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    An interesting use of this function is to construct an array of arrays,
    which can be easily performed by using &null;
    as the name of the callback function
-  </para>
+  </simpara>
   <para>
    <example>
     <title>Performing a zip operation of arrays</title>
@@ -316,7 +316,7 @@ Array
     </screen>
    </example>
   </para>
-  
+
   <para>
    <example>
     <title>
@@ -403,10 +403,10 @@ array(1) {
    </example>
    <example>
     <title><function>array_map</function> - associative arrays</title>
-    <para>
+    <simpara>
      While <function>array_map</function> does not directly support
      using the array key as an input, that may be simulated using <function>array_keys</function>.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

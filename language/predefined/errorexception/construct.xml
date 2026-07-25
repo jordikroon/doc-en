@@ -5,7 +5,7 @@
   <refname>ErrorException::__construct</refname>
   <refpurpose>Constructs the exception</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <constructorsynopsis role="ErrorException">
@@ -17,11 +17,11 @@
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>line</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>Throwable</type><type>null</type></type><parameter>previous</parameter><initializer>&null;</initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Constructs the Exception.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   <para>
@@ -29,55 +29,55 @@
     <varlistentry>
      <term><parameter>message</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The Exception message to throw.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>code</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The Exception code.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>severity</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The severity level of the exception.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         While the severity can be any <type>int</type> value, it is intended that the
         <link linkend="errorfunc.constants">error constants</link> be used.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The filename where the exception is thrown.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>line</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The line number where the exception is thrown.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>previous</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The previous exception used for the exception chaining.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

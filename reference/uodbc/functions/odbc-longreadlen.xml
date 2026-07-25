@@ -12,11 +12,11 @@
    <methodparam><type>Odbc\Result</type><parameter>statement</parameter></methodparam>
    <methodparam><type>int</type><parameter>length</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Controls handling of <literal>LONG</literal>, <literal>LONGVARCHAR</literal> and <literal>LONGVARBINARY</literal> columns.
    The default length can be set using the
    <link linkend="ini.uodbc.defaultlrl">uodbc.defaultlrl</link> &php.ini; directive.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -25,19 +25,19 @@
     <varlistentry>
      <term><parameter>statement</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &odbc.result.object;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number of bytes returned to PHP is controlled by the parameter
        length. If it is set to <literal>0</literal>, long column data is passed through to the
        client (i.e. printed) when retrieved with <function>odbc_result</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -45,9 +45,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -70,10 +70,10 @@
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     Handling of <literal>LONGVARBINARY</literal> columns is also affected by
     <function>odbc_binmode</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 </refentry>

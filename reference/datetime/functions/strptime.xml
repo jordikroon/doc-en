@@ -11,7 +11,7 @@
  <refsynopsisdiv>
   &warn.deprecated.function-8-1-0;
  </refsynopsisdiv>
- 
+
    <refsect1 role="description">
     &reftitle.description;
     <methodsynopsis>
@@ -20,14 +20,14 @@
    <methodparam><type>string</type><parameter>timestamp</parameter></methodparam>
    <methodparam><type>string</type><parameter>format</parameter></methodparam>
   </methodsynopsis>
-    <para>
+    <simpara>
      <function>strptime</function> returns an array with the
      <parameter>timestamp</parameter> parsed, or &false; on error.
-    </para>
-    <para>
+    </simpara>
+    <simpara>
      Month and weekday names and other language dependent strings respect the
      current locale set with <function>setlocale</function> (<constant>LC_TIME</constant>).
-    </para>
+    </simpara>
    </refsect1>
 
    <refsect1 role="parameters">
@@ -37,26 +37,26 @@
      <varlistentry>
       <term><parameter>timestamp</parameter> (<type>string</type>)</term>
       <listitem>
-       <para>
+       <simpara>
         The string to parse (e.g. returned from <function>strftime</function>).
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry>
       <term><parameter>format</parameter> (<type>string</type>)</term>
       <listitem>
-       <para>
+       <simpara>
         The format used in <parameter>timestamp</parameter> (e.g. the same as
         used in <function>strftime</function>). Note that some of the format
         options available to <function>strftime</function> may not have any
         effect within <function>strptime</function>; the exact subset that are
         supported will vary based on the operating system and C library in
         use.
-       </para>
-       <para>
+       </simpara>
+       <simpara>
         For more information about the format options, read the
         <function>strftime</function> page.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
     </variablelist>
@@ -65,9 +65,9 @@
 
   <refsect1 role="returnvalues">
    &reftitle.returnvalues;
-   <para>
+   <simpara>
     Returns an array&return.falseforfailure;.
-   </para>
+   </simpara>
 
     <para>
      <table>
@@ -193,21 +193,21 @@ Array
   &reftitle.notes;
   &note.no-windows;
   <note>
-   <para>
+   <simpara>
     Internally, this function calls the <literal>strptime()</literal>
     function provided by the system's C library. This function can exhibit
     noticeably different behaviour across different operating systems. The
     use of <function>date_parse_from_format</function>, which does not
     suffer from these issues, is recommended.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     <literal>"tm_sec"</literal> includes any leap seconds (currently upto 2
     a year). For more information on leap seconds, see the <link
     xlink:href="&url.wiki.leap-seconds;">Wikipedia article
     on leap seconds</link>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

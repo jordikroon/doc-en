@@ -13,10 +13,10 @@
    <methodparam><type>int</type><parameter>julian_day</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>mode</parameter><initializer><constant>CAL_DOW_DAYNO</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the day of the week.  Can return a string or an integer
    depending on the mode.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,9 +26,9 @@
     <varlistentry>
      <term><parameter>julian_day</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A julian day number as integer
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -45,20 +45,20 @@
         </thead>
         <tbody>
          <row>
-          <entry>0 (Default)</entry> 
+          <entry>0 (Default)</entry>
           <entry>
            Return the day number as an int (0=Sunday, 1=Monday, etc)
           </entry>
          </row>
          <row>
-          <entry>1</entry> 
+          <entry>1</entry>
           <entry>
            Returns string containing the day of week
            (English-Gregorian)
           </entry>
          </row>
          <row>
-          <entry>2</entry> 
+          <entry>2</entry>
           <entry>
            Return a string containing the abbreviated day of week
            (English-Gregorian)
@@ -75,9 +75,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The gregorian weekday as either an integer or string.
-  </para>
+  </simpara>
  </refsect1>
 </refentry>
 <!-- Keep this comment at the end of the file

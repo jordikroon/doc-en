@@ -5,16 +5,16 @@
   <refname>posix_getgid</refname>
   <refpurpose>Return the real group ID of the current process</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>int</type><methodname>posix_getgid</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Return the numeric real group ID of the current process.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the real group id, as an <type>int</type>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -34,10 +34,10 @@
   <para>
    <example>
     <title><function>posix_getgid</function> example</title>
-    <para>
+    <simpara>
      This example will print out the real group id, even once the effective
      group id has been changed.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

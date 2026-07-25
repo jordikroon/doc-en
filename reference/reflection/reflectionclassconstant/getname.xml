@@ -21,9 +21,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the constant's name.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -40,7 +40,7 @@
      <row>
       <entry>8.1.0</entry>
       <entry>
-       Throws an <classname>Error</classname> in case the <property>name</property> property has not been initialized.
+       Throws an <exceptionname>Error</exceptionname> in case the <property>name</property> property has not been initialized.
        Previously, the method returned &false; on failure.
       </entry>
      </row>

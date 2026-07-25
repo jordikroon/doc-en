@@ -11,10 +11,10 @@
    <modifier>public</modifier> <type>string</type><methodname>ArrayObject::getIteratorClass</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the class name of the array iterator that is used by
    <link linkend="arrayobject.getiterator">ArrayObject::getIterator()</link>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the iterator class name that is used to iterate over this object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

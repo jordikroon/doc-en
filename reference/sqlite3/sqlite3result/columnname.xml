@@ -12,14 +12,14 @@
    <modifier>public</modifier> <type class="union"><type>string</type><type>false</type></type><methodname>SQLite3Result::columnName</methodname>
    <methodparam><type>int</type><parameter>column</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the name of the column specified by the
    <parameter>column</parameter>.
    Note that the name of a result column is the value of the <literal>AS</literal> clause
    for that column, if there is an <literal>AS</literal> clause. If there is no <literal>AS</literal>
    clause then the name of the column is unspecified and may change from one release of libsqlite3
    to the next.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,9 +29,9 @@
     <varlistentry>
      <term><parameter>column</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The numeric zero-based index of the column.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -41,10 +41,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the <type>string</type> name of the column identified by
    <parameter>column</parameter>, or &false; if the column does not exist.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

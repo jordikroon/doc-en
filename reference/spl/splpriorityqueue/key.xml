@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>int</type><methodname>SplPriorityQueue::key</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function returns the current node index
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The current node index.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

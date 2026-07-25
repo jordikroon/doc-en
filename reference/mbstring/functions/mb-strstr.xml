@@ -15,12 +15,12 @@
    <methodparam choice="opt"><type>bool</type><parameter>before_needle</parameter><initializer>&false;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>encoding</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>mb_strstr</function> finds the first occurrence of
    <parameter>needle</parameter> in <parameter>haystack</parameter>
    and returns the portion of <parameter>haystack</parameter>.
    If <parameter>needle</parameter> is not found, it returns &false;.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -29,18 +29,18 @@
     <varlistentry>
      <term><parameter>haystack</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string from which to get the first occurrence
        of <parameter>needle</parameter>
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>needle</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string to find in <parameter>haystack</parameter>
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -67,10 +67,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the portion of <parameter>haystack</parameter>,
    or &false; if <parameter>needle</parameter> is not found.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

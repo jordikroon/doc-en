@@ -12,10 +12,10 @@
    <modifier>public</modifier> <type>array</type><methodname>ReflectionFunctionAbstract::getParameters</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get the parameters as an array of <type>ReflectionParameter</type>,
    in the order in which they are defined in the source.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The parameters, as a <classname>ReflectionParameter</classname> object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

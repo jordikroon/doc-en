@@ -14,10 +14,10 @@
    <methodparam><type>string</type><parameter>digest_algo</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>binary</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Computes a digest hash value for the given data using a given method,
    and returns a raw or binhex encoded string.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -28,26 +28,26 @@
     <varlistentry>
      <term><parameter>data</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The data.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>digest_algo</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The digest method to use, e.g. "sha256", see <function>openssl_get_md_methods</function> for a list of available digest methods.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>binary</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Setting to &true; will return as raw output data, otherwise the return
        value is binhex encoded.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -56,17 +56,17 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the digested hash value on success&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    Emits an <constant>E_WARNING</constant> level error if an unknown signature algorithm
    is passed via the <parameter>digest_algo</parameter> parameter.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

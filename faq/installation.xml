@@ -4,23 +4,23 @@
   <title>Installation</title>
   <titleabbrev>Installation</titleabbrev>
 
-  <para>
+  <simpara>
    This section holds common questions about the way to install
    PHP. PHP is available for almost any OS, and almost any web server.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    To install PHP, follow the instructions in <xref linkend="install"/>.
-  </para>
+  </simpara>
 
   <qandaset>
    <qandaentry xml:id="faq.installation.apache2">
     <question>
-     <para>
+     <simpara>
       Why shouldn't I use Apache2 with a threaded MPM in a production environment?
-     </para>
+     </simpara>
     </question>
     <answer>
-     <para>
+     <simpara>
       PHP is glue. It is the glue used to build cool web applications by
       sticking dozens of 3rd-party libraries together and making it all appear
       as one coherent entity through an intuitive and easy to learn language
@@ -32,59 +32,59 @@
       completely separate execution threads, completely separate memory
       segments and a strong sandbox for each request to play in, further
       weaknesses are introduced into PHP's system.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       If you want to use a threaded MPM, look at a FastCGI configuration
-      where PHP is running in its own memory space.  
-     </para>
+      where PHP is running in its own memory space.
+     </simpara>
     </answer>
    </qandaentry>
 
    <qandaentry xml:id="faq.installation.phpini">
     <question>
-     <para>
+     <simpara>
       Unix/Windows: Where should my &php.ini; file be
       located?
-     </para>
+     </simpara>
     </question>
     <answer>
      <para>
       By default on Unix it should be in <filename>/usr/local/lib</filename>
       which is <filename>&lt;install-path&gt;/lib</filename>.
-      Most people will want to change this at compile-time with the 
+      Most people will want to change this at compile-time with the
       <link linkend="configure.with-config-file-path">--with-config-file-path</link>
       flag. You would, for example, set it with something like:
       <programlisting role="shell">
 --with-config-file-path=/etc
       </programlisting>
-      And then you would copy <filename>php.ini-development</filename> from 
+      And then you would copy <filename>php.ini-development</filename> from
       the distribution to <filename>/etc/php.ini</filename> and
       edit it to make any local changes you want.
      </para>
       <programlisting role="shell">
---with-config-file-scan-dir=PATH 
+--with-config-file-scan-dir=PATH
       </programlisting>
-     <para>
+     <simpara>
       On Windows the default path for the &php.ini; file is the Windows
       directory. If you're using the Apache webserver, &php.ini; is first
       searched in the Apaches install directory, e.g. <filename>c:\program
       files\apache group\apache</filename>. This way you can have
       different &php.ini; files for different versions of Apache on the same
       machine.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
      See also the chapter about the <link
      linkend="configuration.file">configuration file</link>.
-     </para>
+     </simpara>
     </answer>
    </qandaentry>
 
    <qandaentry xml:id="faq.installation.nodata">
     <question>
-     <para>
-      Unix: I installed PHP, but every time I load a document, I get the 
+     <simpara>
+      Unix: I installed PHP, but every time I load a document, I get the
       message 'Document Contains No Data'! What's going on here?
-     </para>
+     </simpara>
     </question>
     <answer>
      <para>
@@ -97,73 +97,73 @@
       PHP as an Apache module try something like:
       <itemizedlist>
        <listitem>
-        <para>
+        <simpara>
          Stop your httpd processes
-        </para>
+        </simpara>
        </listitem>
        <listitem>
-        <para>
+        <simpara>
          gdb httpd
-        </para>
+        </simpara>
        </listitem>
        <listitem>
-        <para>
+        <simpara>
          Stop your httpd processes
-        </para>
+        </simpara>
        </listitem>
        <listitem>
-        <para>
+        <simpara>
          &gt; run -X -f /path/to/httpd.conf
-        </para>
+        </simpara>
        </listitem>
        <listitem>
-        <para>
+        <simpara>
          Then fetch the URL causing the problem with your browser
-        </para>
-       </listitem>      
-       <listitem>
-        <para>
-         &gt; run -X -f /path/to/httpd.conf
-        </para>
-       </listitem>      
-       <listitem>
-        <para>
-         If you are getting a core dump, gdb should inform you of this now
-        </para>
-       </listitem>      
-       <listitem>
-        <para>
-         type: bt
-        </para>
+        </simpara>
        </listitem>
        <listitem>
-        <para>
-         You should include your backtrace in your bug report. This should be submitted to 
-         <link xlink:href="&url.php.bugs;">&url.php.bugs;</link> 
-        </para>
+        <simpara>
+         &gt; run -X -f /path/to/httpd.conf
+        </simpara>
+       </listitem>
+       <listitem>
+        <simpara>
+         If you are getting a core dump, gdb should inform you of this now
+        </simpara>
+       </listitem>
+       <listitem>
+        <simpara>
+         type: bt
+        </simpara>
+       </listitem>
+       <listitem>
+        <simpara>
+         You should include your backtrace in your bug report. This should be submitted to
+         <link xlink:href="&url.php.bugs;">&url.php.bugs;</link>
+        </simpara>
        </listitem>
       </itemizedlist>
      </para>
-     <para>
+     <simpara>
       If your script uses the regular expression functions
-      (<function>preg_match</function> and friends), you should make sure 
-      that you compiled PHP and Apache with the same regular 
+      (<function>preg_match</function> and friends), you should make sure
+      that you compiled PHP and Apache with the same regular
       expression package. This should happen automatically with
       PHP and Apache 1.3.x
-     </para>
+     </simpara>
     </answer>
    </qandaentry>
 
    <qandaentry xml:id="faq.installation.processing">
     <question>
-     <para>
-      Unix: I installed PHP using RPMS, but Apache isn't processing the 
+     <simpara>
+      Unix: I installed PHP using RPMS, but Apache isn't processing the
       PHP pages! What's going on here?
-     </para>
+     </simpara>
     </question>
     <answer>
      <para>
-      Assuming you installed both Apache and PHP from RPM packages, 
+      Assuming you installed both Apache and PHP from RPM packages,
       you need to uncomment or add some or all of the following lines
       in your &httpd.conf; file:
       <programlisting role="apache-conf">
@@ -184,7 +184,7 @@ LoadModule perl_module        modules/libperl.so
 AddType application/x-httpd-php .php
 ]]>
       </programlisting>
-      ... to the global properties, or to the properties of the 
+      ... to the global properties, or to the properties of the
       VirtualDomain you want to have PHP support added to.
      </para>
     </answer>
@@ -192,51 +192,51 @@ AddType application/x-httpd-php .php
 
    <qandaentry xml:id="faq.installation.frontpage">
     <question>
-     <para>
+     <simpara>
       Unix: I patched Apache with the FrontPage extensions patch, and
       suddenly PHP stopped working. Is PHP incompatible with the
       Apache FrontPage extensions?
-     </para>
+     </simpara>
     </question>
     <answer>
-     <para>
+     <simpara>
       No, PHP works fine with the FrontPage extensions. The problem
       is that the FrontPage patch modifies several Apache structures,
       that PHP relies on. Recompiling PHP (using 'make clean ; make')
       after the FP patch is applied would solve the problem.
-     </para>
+     </simpara>
     </answer>
    </qandaentry>
 
    <qandaentry xml:id="faq.installation.blankscreen">
     <question>
-     <para>
+     <simpara>
       Unix/Windows: I have installed PHP, but when I try to
       access a PHP script file via my browser, I get a blank screen.
-     </para>
+     </simpara>
     </question>
     <answer>
-     <para>
+     <simpara>
       Do a 'view source' in the web browser and you will probably
       find that you can see the source code of your PHP script.
       This means that the web server did not send the script to
       PHP for interpretation. Something is wrong with the server
       configuration - double check the server configuration against
       the PHP installation instructions.
-     </para>
+     </simpara>
     </answer>
    </qandaentry>
 
    <qandaentry xml:id="faq.installation.500error">
     <question>
-     <para>
+     <simpara>
       Unix/Windows: I have installed PHP, but when try to
       access a PHP script file via my browser, I get a
       server 500 error.
-     </para>
+     </simpara>
     </question>
     <answer>
-     <para>
+     <simpara>
       Something went wrong when the server tried to run PHP. To
       get to see a sensible error message, from the command line,
       change to the directory containing the PHP executable
@@ -248,13 +248,13 @@ AddType application/x-httpd-php .php
       <function>phpinfo</function> function) then PHP is working,
       and your problem may be related to your server configuration
       which you should double check.
-     </para>
+     </simpara>
     </answer>
    </qandaentry>
 
    <qandaentry xml:id="faq.installation.undefinedsyms">
     <question>
-     <para> 
+     <para>
       Some operating systems: I have installed PHP without errors,
       but when I try to start Apache I get undefined symbol errors:
       <programlisting role="shell">
@@ -266,12 +266,12 @@ AddType application/x-httpd-php .php
      </para>
     </question>
     <answer>
-     <para>
+     <simpara>
       This has actually nothing to do with PHP, but with the MySQL
       client libraries. Some need <option
       role="configure">--with-zlib</option>, others do not. This
       is also covered in the MySQL FAQ.
-     </para>
+     </simpara>
     </answer>
    </qandaentry>
 
@@ -291,7 +291,7 @@ cgi error:
      </para>
     </question>
     <answer>
-     <para>
+     <simpara>
       This error message means that PHP failed to output anything
       at all. To get to see a sensible error message, from the
       command line, change to the directory containing the PHP
@@ -301,12 +301,12 @@ cgi error:
       give you a clue as to what needs to be done next. If you
       get a screen full of HTML codes (the output of the
       <function>phpinfo</function> function) then PHP is working.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       Once PHP is working at the command line, try accessing the
       script via the browser again. If it still fails then it
       could be one of the following:
-     </para>
+     </simpara>
      <itemizedlist>
       <listitem>
        <simpara>
@@ -336,59 +336,59 @@ cgi error:
 
    <qandaentry xml:id="faq.installation.phpandiis">
     <question>
-     <para>
+     <simpara>
       Windows: I've followed all the instructions, but still can't
       get PHP and IIS to work together!
-     </para>
+     </simpara>
     </question>
     <answer>
-     <para>
+     <simpara>
       Make sure any user who needs to run a PHP script has the rights
       to run <filename>php.exe</filename>! IIS uses an anonymous user
       which is added at the time IIS is installed. This user needs
       rights to <filename>php.exe</filename>. Also, any authenticated
       user will also need rights to execute <filename>php.exe</filename>.
       And for IIS4 you need to tell it that PHP is a script engine.
-      Also, you will want to read 
+      Also, you will want to read
       <link linkend="faq.installation.forceredirect">this faq</link>.
-     </para>
+     </simpara>
     </answer>
    </qandaentry>
 
    <qandaentry xml:id="faq.installation.forceredirect">
     <question>
-     <para>
+     <simpara>
        When running PHP as CGI with IIS, PWS, OmniHTTPD or Xitami,
-       I get the following error: <literal>Security Alert! PHP CGI 
+       I get the following error: <literal>Security Alert! PHP CGI
        cannot be accessed directly.</literal>.
-     </para>
+     </simpara>
     </question>
     <answer>
-     <para>
+     <simpara>
       You must set the <link linkend="ini.cgi.force-redirect">
       cgi.force_redirect</link> directive to <literal>0</literal>.
       It defaults to <literal>1</literal> so be sure the directive
       isn't commented out (with a <literal>;</literal>).  Like
       all directives, this is set in &php.ini;
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       Because the default is <literal>1</literal>, it's critical
-      that you're 100% sure that the correct &php.ini; file is being 
+      that you're 100% sure that the correct &php.ini; file is being
       read.  Read <link linkend="faq.installation.findphpini">this faq</link>
       for details.
-     </para>
+     </simpara>
     </answer>
    </qandaentry>
 
    <qandaentry xml:id="faq.installation.findphpini">
     <question>
-     <para>
+     <simpara>
       How do I know if my &php.ini; is being found and read?  It
       seems like it isn't as my changes aren't being implemented.
-     </para>
+     </simpara>
     </question>
     <answer>
-     <para>
+     <simpara>
       To be sure your &php.ini; is being read by PHP, make a call to
       <function>phpinfo</function>. Near the top, there will be a
       listing called <literal>Configuration File (php.ini)</literal>.
@@ -397,54 +397,54 @@ cgi error:
       then it's not being read, and you should put your &php.ini;
       in that directory. If &php.ini; is included within the <envar>PATH</envar>,
       it is being read.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       If &php.ini; is being read and you're running PHP as a module,
       then be sure to restart your web server after making changes to
-      &php.ini; 
-     </para>
-     <para>
+      &php.ini;
+     </simpara>
+     <simpara>
       See also <function>php_ini_loaded_file</function>.
-     </para>
+     </simpara>
     </answer>
    </qandaentry>
 
    <qandaentry xml:id="faq.installation.addtopath">
     <question>
-     <para>
+     <simpara>
       How do I add my PHP directory to the <envar>PATH</envar>
       on Windows?
-     </para>
+     </simpara>
     </question>
     <answer>
      <para>
       On Windows:
       <itemizedlist>
-       <listitem><para>
+       <listitem><simpara>
         Go to Control Panel and open the System icon (Start → Control Panel)
-       </para></listitem>
-       <listitem><para>
+       </simpara></listitem>
+       <listitem><simpara>
         Go to the Advanced tab
-       </para></listitem>
-       <listitem><para>
+       </simpara></listitem>
+       <listitem><simpara>
         Click on the 'Environment Variables' button
-       </para></listitem>
-       <listitem><para>
+       </simpara></listitem>
+       <listitem><simpara>
         Look into the 'System Variables' pane
-       </para></listitem>
-       <listitem><para>
+       </simpara></listitem>
+       <listitem><simpara>
         Find the Path entry (you may need to scroll to find it)
-       </para></listitem>
-       <listitem><para>
+       </simpara></listitem>
+       <listitem><simpara>
         Double click on the Path entry
-       </para></listitem>
-       <listitem><para>
+       </simpara></listitem>
+       <listitem><simpara>
         Enter your PHP directory at the end, including ';' before (e.g.
         <literal>;C:\php</literal>)
-       </para></listitem>
-       <listitem><para>
+       </simpara></listitem>
+       <listitem><simpara>
         Press OK
-       </para></listitem>
+       </simpara></listitem>
       </itemizedlist>
      </para>
      <note>
@@ -458,16 +458,16 @@ cgi error:
 
    <qandaentry xml:id="faq.installation.phprc">
     <question>
-     <para>
+     <simpara>
       How do I make the &php.ini; file available to PHP on Windows?
-     </para>
+     </simpara>
     </question>
     <answer>
-     <para>
+     <simpara>
       There are several ways of doing this. If you are using Apache,
       refer to the Apache documentation, otherwise
       you must set the <varname>PHPRC</varname> environment variable.
-     </para>
+     </simpara>
     </answer>
    </qandaentry>
 
@@ -500,10 +500,10 @@ cgi error:
 
    <qandaentry xml:id="faq.installation.apache.multiviews">
     <question>
-     <para>
+     <simpara>
       Is it possible to use Apache content negotiation (MultiViews option)
       with PHP?
-     </para>
+     </simpara>
     </question>
     <answer>
      <para>
@@ -527,9 +527,9 @@ AddType text/html php
 
    <qandaentry xml:id="faq.installation.requestmethods">
     <question>
-     <para>
+     <simpara>
       Is PHP limited to process GET and POST request methods only?
-     </para>
+     </simpara>
     </question>
     <answer>
      <para>

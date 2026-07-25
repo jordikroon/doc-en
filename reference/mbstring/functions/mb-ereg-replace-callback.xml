@@ -6,7 +6,7 @@
   <refpurpose>Perform a regular expression search and replace with multibyte support using a callback
   </refpurpose>
  </refnamediv>
-   
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -16,17 +16,17 @@
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>options</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Scans <parameter>string</parameter> for matches to
    <parameter>pattern</parameter>, then replaces the matched text
-   with the output of <parameter>callback</parameter> function.  
-  </para>
-  <para>
-    The behavior of this function is almost identical to <function>mb_ereg_replace</function>, 
+   with the output of <parameter>callback</parameter> function.
+  </simpara>
+  <simpara>
+    The behavior of this function is almost identical to <function>mb_ereg_replace</function>,
     except for the fact that instead of
     <parameter>replacement</parameter> parameter, one should specify a
     <parameter>callback</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -36,23 +36,23 @@
     <varlistentry>
      <term><parameter>pattern</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The regular expression pattern.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Multibyte characters may be used in <parameter>pattern</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>callback</parameter></term>
      <listitem>
-      <para>
+      <simpara>
         A callback that will be called and passed an array of matched elements
         in the  <parameter>string</parameter> string. The callback should
        return the replacement string.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
         You'll often need the <parameter>callback</parameter> function
         for a <function>mb_ereg_replace_callback</function> in just one place.
         In this case you can use an
@@ -61,37 +61,37 @@
         <function>mb_ereg_replace_callback</function>. By doing it this way
         you have all information for the call in one place and do not
         clutter the function namespace with a callback function's name
-        not used anywhere else.        
-      </para>
+        not used anywhere else.
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <type>string</type> being checked.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>options</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The search option. See <function>mb_regex_set_options</function> for explanation.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The resultant <type>string</type> on success, or &false; on error.
    If <parameter>string</parameter> is not valid for the current encoding, &null;
    is returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

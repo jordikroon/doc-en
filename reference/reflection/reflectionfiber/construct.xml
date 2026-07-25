@@ -11,9 +11,9 @@
    <modifier>public</modifier> <methodname>ReflectionFiber::__construct</methodname>
    <methodparam><type>Fiber</type><parameter>fiber</parameter></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Constructs a <classname>ReflectionFiber</classname> object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -22,9 +22,9 @@
    <varlistentry>
     <term><parameter>fiber</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The <classname>Fiber</classname> to reflect.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>

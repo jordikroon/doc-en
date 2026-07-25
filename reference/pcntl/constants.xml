@@ -2,11 +2,11 @@
 <!-- $Revision$ -->
 <appendix xml:id="pcntl.constants" xmlns="http://docbook.org/ns/docbook">
  &reftitle.constants;
- <para>
+ <simpara>
   The following list of signals are supported by the Process Control
   functions. Please see your systems signal(7) man page for details
   of the default behavior of these signals.
- </para>
+ </simpara>
 
  <variablelist xml:id="pcntl.constants.common">
   <title>Process Control constants</title>

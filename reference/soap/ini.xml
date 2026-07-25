@@ -62,9 +62,9 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Enables or disables the WSDL caching feature.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="ini.soap.wsdl-cache-dir">
@@ -73,9 +73,9 @@
       <type>string</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Sets the directory name where the SOAP extension will put cache files.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="ini.soap.wsdl-cache-ttl">
@@ -84,10 +84,10 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Sets the number of seconds (time to live) that cached files will be used
        instead of the originals.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="ini.soap.wsdl-cache">
@@ -96,7 +96,7 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        If <parameter>soap.wsdl_cache_enabled</parameter> is on, this setting
        determines the type of caching. It can be any of:
        <constant>WSDL_CACHE_NONE</constant> (<literal>0</literal>),
@@ -106,7 +106,7 @@
        also be set via the <parameter>options</parameter> array in the
        <classname>SoapClient</classname> or <classname>SoapServer</classname>
        constructor.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="ini.soap.wsdl-cache-limit">
@@ -115,10 +115,10 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Maximum number of in-memory cached WSDL files. Adding further files into
        a full memory cache will delete the oldest files from it.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 

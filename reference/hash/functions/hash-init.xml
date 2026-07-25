@@ -28,10 +28,10 @@
        Name of selected hashing algorithm (e.g. <literal>"sha256"</literal>).
        For a list of supported algorithms see <function>hash_algos</function>.
        <note>
-        <para>
+        <simpara>
          Non-cryptographic hash functions are not allowed if the <constant>HASH_HMAC</constant>
          flag is specified.
-        </para>
+        </simpara>
        </note>
       </para>
      </listitem>
@@ -39,31 +39,31 @@
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Optional settings for hash generation, currently supports only one option:
        <constant>HASH_HMAC</constant>.  When specified, the <parameter>key</parameter>
        <emphasis>must</emphasis> be specified.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>key</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        When <constant>HASH_HMAC</constant> is specified for <parameter>flags</parameter>,
        a shared secret key to be used with the HMAC hashing method must be supplied in this
        parameter.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>options</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An array of options for the various hashing algorithms.
        Currently, only the <literal>"seed"</literal> parameter is
        supported by the MurmurHash variants.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -72,11 +72,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a Hashing Context for use with <function>hash_update</function>,
    <function>hash_update_stream</function>, <function>hash_update_file</function>,
    and <function>hash_final</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -84,7 +84,7 @@
   <itemizedlist>
    <listitem>
     <simpara>
-     Throws a <classname>ValueError</classname> exception if
+     Throws a <exceptionname>ValueError</exceptionname> exception if
      <parameter>algo</parameter> is unknown or is a non-cryptographic hash
      function, or if <parameter>key</parameter> is empty.
     </simpara>
@@ -125,7 +125,7 @@
       <row>
        <entry>8.0.0</entry>
        <entry>
-        Now throws an <classname>ValueError</classname> exception if the
+        Now throws an <exceptionname>ValueError</exceptionname> exception if the
         <parameter>algo</parameter> is unknown or is a non-cryptographic hash
         function, or if <parameter>key</parameter> is empty. Previously,
         &false; was returned and an <constant>E_WARNING</constant> message was

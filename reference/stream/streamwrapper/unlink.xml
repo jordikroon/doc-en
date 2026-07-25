@@ -13,15 +13,15 @@
    <modifier>public</modifier> <type>bool</type><methodname>streamWrapper::unlink</methodname>
    <methodparam><type>string</type><parameter>path</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This method is called in response to <function>unlink</function>.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     In order for the appropriate error message to be returned this method
     should <emphasis>not</emphasis> be defined if the wrapper does not support
     removing files.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -32,9 +32,9 @@
     <varlistentry>
      <term><parameter>path</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The file URL which should be deleted.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -43,16 +43,16 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors"><!-- {{{ -->
   &reftitle.errors;
   &userstream.not.implemented.warning;
  </refsect1><!-- }}} -->
- 
+
 <!--
  <refsect1 role="examples">
   &reftitle.examples;
@@ -81,7 +81,7 @@
   &reftitle.notes;
   &userstream.updates.context;
  </refsect1><!-- }}} -->
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

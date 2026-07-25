@@ -13,9 +13,9 @@
    <methodparam><type class="union"><type>GMP</type><type>int</type><type>string</type></type><parameter>num</parameter></methodparam>
    <methodparam><type>int</type><parameter>index</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Tests if the specified bit is set.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,15 +25,15 @@
     <varlistentry>
      <term><parameter>num</parameter></term>
      <listitem>
-      &gmp.parameter; 
+      &gmp.parameter;
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>index</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The bit to test
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -42,19 +42,19 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   Returns &true; if the bit is set in <parameter>num</parameter>, 
+  <simpara>
+   Returns &true; if the bit is set in <parameter>num</parameter>,
    otherwise &false;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   An <constant>E_WARNING</constant> level error is issued when 
+  <simpara>
+   An <constant>E_WARNING</constant> level error is issued when
    <parameter>index</parameter> is less than zero, and &false;
    is returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

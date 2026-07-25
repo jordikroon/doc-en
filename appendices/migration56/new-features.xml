@@ -7,12 +7,12 @@
  <sect2 xml:id="migration56.new-features.const-scalar-exprs">
   <title>Constant expressions</title>
 
-  <para>
+  <simpara>
    It is now possible to provide a scalar expression involving numeric and
    string literals and/or constants in contexts where PHP previously expected
    a static value, such as constant and property declarations and default
    function arguments.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -45,10 +45,10 @@ The value of THREE is 3
    </screen>
   </informalexample>
 
-  <para>
+  <simpara>
    It is also now possible to define a constant <type>array</type> using the
    <literal>const</literal> keyword:
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -72,11 +72,11 @@ a
  <sect2 xml:id="migration56.new-features.variadics">
   <title>Variadic functions via <literal>...</literal></title>
 
-  <para>
+  <simpara>
    <link linkend="functions.variable-arg-list">Variadic functions</link> can
    now be implemented using the <literal>...</literal> operator, instead of
    relying on <function>func_get_args</function>.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -145,11 +145,11 @@ echo add(1, ...$operators);
  <sect2 xml:id="migration56.new-features.exponentiation">
   <title>Exponentiation via <literal>**</literal></title>
 
-  <para>
+  <simpara>
    A right associative <literal>**</literal> operator has been added to
    support exponentiation, along with a <literal>**=</literal> shorthand
    assignment operator.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -178,14 +178,14 @@ a ==           8
  <sect2 xml:id="migration56.new-features.use">
   <title><literal>use function</literal> and <literal>use const</literal></title>
 
-  <para>
+  <simpara>
    The
-   <link linkend="language.namespaces.importing"><literal>use</literal></link> 
+   <link linkend="language.namespaces.importing"><literal>use</literal></link>
    operator has been extended to support importing functions and constants in
    addition to classes. This is achieved via the
    <literal>use function</literal> and <literal>use const</literal>
    constructs, respectively.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -219,17 +219,17 @@ Name\Space\f
  <sect2 xml:id="migration56.new-features.phpdbg">
   <title>phpdbg</title>
 
-  <para>
+  <simpara>
    PHP now includes an interactive debugger called phpdbg implemented as a
    SAPI module. For more information, please visit the
    <link linkend="book.phpdbg">phpdbg documentation</link>.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration56.new-features.default-encoding">
   <title>Default character encoding</title>
 
-  <para>
+  <simpara>
    <link linkend="ini.default-charset">default_charset</link> is now used as
    the default character set for the <function>htmlentities</function>,
    <function>html_entity_decode</function> and
@@ -237,40 +237,40 @@ Name\Space\f
    deprecated) iconv and mbstring encoding settings are set, they will take
    precedence over default_charset for iconv and mbstring functions,
    respectively.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    The default value for this setting is <literal>UTF-8</literal>.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration56.new-features.reusable-input">
   <title><link linkend="wrappers.php.input"><literal>php://input</literal></link> is reusable</title>
 
-  <para>
+  <simpara>
    <link linkend="wrappers.php.input"><literal>php://input</literal></link>
    may now be reopened and read as many times as required. This work has also
    resulted in a major reduction in the amount of memory required to deal
    with POST data.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration56.new-features.large-file">
   <title>Large file uploads</title>
 
-  <para>
+  <simpara>
    Files larger than 2 gigabytes in size are now accepted.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration56.new-features.gmp">
   <title><link linkend="book.gmp">GMP</link> supports operator overloading</title>
 
-  <para>
+  <simpara>
    <link linkend="book.gmp">GMP</link> objects now support operator
    overloading and casting to scalar types. This allows for more expressive
    code using GMP:
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -305,7 +305,7 @@ if (version_compare(PHP_VERSION, '5.6', '<')) {
  <sect2 xml:id="migration56.new-features.hash-equals">
   <title><function>hash_equals</function> for timing attack safe string comparison</title>
 
-  <para>
+  <simpara>
    The <function>hash_equals</function> function has been added to compare
    two strings in constant time. This should be used to mitigate timing
    attacks; for instance, when testing <function>crypt</function> password
@@ -313,7 +313,7 @@ if (version_compare(PHP_VERSION, '5.6', '<')) {
    <function>password_hash</function> and
    <function>password_verify</function>, which aren't susceptible to timing
    attacks).
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -341,12 +341,12 @@ bool(false)
  <sect2 xml:id="migration56.new-features.debuginfo">
   <title><literal>__debugInfo()</literal></title>
 
-  <para>
+  <simpara>
    The <link linkend="language.oop5.magic.debuginfo">__debugInfo()</link>
    magic method has been added to allow objects to change the properties and
    values that are shown when the object is output using
    <function>var_dump</function>.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -385,18 +385,18 @@ object(C)#1 (1) {
  <sect2 xml:id="migration56.new-features.gost">
   <title>gost-crypto hash algorithm</title>
 
-  <para>
+  <simpara>
    The <literal>gost-crypto</literal> hash algorithm has been added. This
    implements the GOST hash function using the CryptoPro S-box tables as
    specified by
    <link xlink:href="&url.rfc;4357">RFC 4357, section 11.2</link>.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration56.new-features.openssl">
   <title>SSL/TLS improvements</title>
 
-  <para>
+  <simpara>
    A wide range of improvements have been made to the SSL/TLS support in PHP
    5.6. These include
    <link linkend="migration56.incompatible.peer-verification">enabling peer verification by default</link>,
@@ -405,19 +405,19 @@ object(C)#1 (1) {
    <link linkend="context.ssl">SSL context options</link> to allow more fine
    grained control over protocol and verification settings when using
    encrypted streams.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    These changes are described in more detail in the
    <link linkend="migration56.openssl">OpenSSL changes in PHP 5.6.x</link>
    section of this migration guide.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration56.new-features.postgresql">
   <title><link linkend="book.pgsql">pgsql</link> async support</title>
 
-  <para>
+  <simpara>
    The <link linkend="book.pgsql">pgsql</link> extension now supports
    asynchronous connections and queries, thereby enabling non-blocking
    behaviour when interacting with PostgreSQL databases. Asynchronous
@@ -426,7 +426,7 @@ object(C)#1 (1) {
    <function>pg_connect_poll</function>, <function>pg_socket</function>,
    <function>pg_consume_input</function> and <function>pg_flush</function>
    functions may be used to handle asynchronous connections and queries.
-  </para>
+  </simpara>
  </sect2>
 </sect1>
 

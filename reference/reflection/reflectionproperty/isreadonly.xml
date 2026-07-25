@@ -11,9 +11,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>ReflectionProperty::isReadOnly</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks whether the <link linkend="language.oop5.properties.readonly-properties">property is readonly</link>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -23,9 +23,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &true; if the property is readonly, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

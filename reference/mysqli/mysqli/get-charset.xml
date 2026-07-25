@@ -9,21 +9,21 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="mysqli">
    <modifier>public</modifier> <type class="union"><type>object</type><type>null</type></type><methodname>mysqli::get_charset</methodname>
    <void/>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type class="union"><type>object</type><type>null</type></type><methodname>mysqli_get_charset</methodname>
    <methodparam><type>mysqli</type><parameter>mysql</parameter></methodparam>
   </methodsynopsis>
 
-  <para>
-   Returns a character set object providing several properties 
+  <simpara>
+   Returns a character set object providing several properties
    of the current active character set.
-  </para> 
+  </simpara>
 
  </refsect1>
 
@@ -43,31 +43,31 @@
    <variablelist>
     <varlistentry>
      <term><parameter>charset</parameter></term>
-     <listitem><para>Character set name</para></listitem>
+     <listitem><simpara>Character set name</simpara></listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>collation</parameter></term>
-     <listitem><para>Collation name</para></listitem>
+     <listitem><simpara>Collation name</simpara></listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>dir</parameter></term>
-     <listitem><para>Directory the character set description was fetched from or "" for built-in character sets</para></listitem>
+     <listitem><simpara>Directory the character set description was fetched from or "" for built-in character sets</simpara></listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>min_length</parameter></term>
-     <listitem><para>Minimum character length in bytes</para></listitem>
+     <listitem><simpara>Minimum character length in bytes</simpara></listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>max_length</parameter></term>
-     <listitem><para>Maximum character length in bytes</para></listitem>
+     <listitem><simpara>Maximum character length in bytes</simpara></listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>number</parameter></term>
-     <listitem><para>Internal character set number</para></listitem>
+     <listitem><simpara>Internal character set number</simpara></listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>state</parameter></term>
-     <listitem><para>As of PHP 8.2.0, it is always <literal>1</literal></para></listitem>
+     <listitem><simpara>As of PHP 8.2.0, it is always <literal>1</literal></simpara></listitem>
     </varlistentry>
    </variablelist>
   </para>
@@ -77,7 +77,7 @@
   &reftitle.examples;
   <example>
    <title><methodname>mysqli::get_charset</methodname> example</title>
-   <para>&style.oop;</para>
+   <simpara>&style.oop;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -88,7 +88,7 @@
 ?>
 ]]>
    </programlisting>
-   <para>&style.procedural;</para>
+   <simpara>&style.procedural;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

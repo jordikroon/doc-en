@@ -9,23 +9,23 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="Locale">
    <modifier>public</modifier> <modifier>static</modifier> <type class="union"><type>string</type><type>null</type></type><methodname>Locale::getPrimaryLanguage</methodname>
    <methodparam><type>string</type><parameter>locale</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>string</type><type>null</type></type><methodname>locale_get_primary_language</methodname>
    <methodparam><type>string</type><parameter>locale</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the primary language for the input locale
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -35,9 +35,9 @@
     <varlistentry>
      <term><parameter>locale</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The locale to extract the primary language code from
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -47,9 +47,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The language code associated with the language.
-  </para>
+  </simpara>
   &intl.locale-len.return;
  </refsect1>
 

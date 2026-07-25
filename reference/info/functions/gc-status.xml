@@ -13,9 +13,9 @@
    <type>array</type><methodname>gc_status</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets information about the current state of the garbage collector.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -32,7 +32,7 @@
      <simpara>
       <literal>"runs"</literal>
      </simpara>
-    </listitem> 
+    </listitem>
     <listitem>
      <simpara>
       <literal>"collected"</literal>
@@ -88,7 +88,7 @@
       <literal>"free_time"</literal>
      </simpara>
     </listitem>
-   </itemizedlist> 
+   </itemizedlist>
   </para>
  </refsect1>
 

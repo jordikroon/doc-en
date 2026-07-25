@@ -2,7 +2,7 @@
 <!-- $Revision$ -->
 <refentry xml:id="function.juliantojd" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
-  <refname>juliantojd</refname> 
+  <refname>juliantojd</refname>
   <refpurpose>Converts a Julian Calendar date to Julian Day Count</refpurpose>
  </refnamediv>
  <refsect1 role="description">
@@ -13,23 +13,23 @@
    <methodparam><type>int</type><parameter>day</parameter></methodparam>
    <methodparam><type>int</type><parameter>year</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Valid Range for Julian Calendar 4713 B.C. to 9999 A.D.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Although this function can handle dates all the way back to 4713
    B.C., such use may not be meaningful. The calendar was created in
    46 B.C., but the details did not stabilize until at least 8 A.D.,
    and perhaps as late as the 4th century. Also, the beginning of a
    year varied from one culture to another - not all accepted
    January as the first month.
-  </para>
+  </simpara>
   <caution>
-   <para>
+   <simpara>
     Remember, the current calendar system being used worldwide is the
     Gregorian calendar.  <function>gregoriantojd</function> can be used to
     convert such dates to their Julian Day count.
-   </para>
+   </simpara>
   </caution>
  </refsect1>
 
@@ -40,43 +40,43 @@
     <varlistentry>
      <term><parameter>month</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The month as a number from 1 (for January) to 12 (for December)
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>day</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The day as a number from 1 to 31
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>year</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The year as a number between -4713 and 9999
-      </para>
+      </simpara>
      </listitem>
-    </varlistentry>  
+    </varlistentry>
    </variablelist>
   </para>
  </refsect1>
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The julian day for the given julian date as an integer.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>
    <simplelist>
-    <member><function>jdtojulian</function></member> 
+    <member><function>jdtojulian</function></member>
     <member><function>cal_to_jd</function></member>
    </simplelist>
   </para>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.readline-callback-handler-install">
+<refentry xml:id="function.readline-callback-handler-install" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>readline_callback_handler_install</refname>
   <refpurpose>Initializes the readline callback interface and terminal, prints the prompt and returns immediately</refpurpose>

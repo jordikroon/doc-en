@@ -3,21 +3,21 @@
 <reference xml:id="class.mysqli-result" role="class" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
  <title>The mysqli_result class</title>
  <titleabbrev>mysqli_result</titleabbrev>
- 
+
  <partintro>
- 
+
 <!-- {{{ ClassName intro -->
   <section xml:id="mysqli-result.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Represents the result set obtained from a query against the database.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
- 
+
   <section xml:id="mysqli-result.synopsis">
    &reftitle.classsynopsis;
- 
+
 <!-- {{{ Synopsis -->
    <classsynopsis class="class">
     <ooclass>
@@ -65,7 +65,7 @@
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.mysqli-result')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[@role='mysqli_result'])"/>
    </classsynopsis>
 <!-- }}} -->
- 
+
   </section>
 
   <section xml:id="mysqli-result.props">
@@ -76,11 +76,11 @@
       <varname>type</varname>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Stores whether the result is buffered or unbuffered as an &integer;
        (<constant>MYSQLI_STORE_RESULT</constant> or
        <constant>MYSQLI_USE_RESULT</constant>, respectively).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -110,7 +110,7 @@
    </informaltable>
   </section>
  </partintro>
- 
+
  &reference.mysqli.entities.mysqli-result;
 
 </reference>

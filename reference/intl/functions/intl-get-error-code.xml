@@ -13,10 +13,10 @@
    <methodname>intl_get_error_code</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
    Useful to handle errors occurred in static methods when there's no object to
    get error code from.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,9 +26,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Error code returned by the last API function call.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

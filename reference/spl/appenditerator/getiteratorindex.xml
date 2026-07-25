@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type class="union"><type>int</type><type>null</type></type><methodname>AppendIterator::getIteratorIndex</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the index of the current inner iterator.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the zero-based, integer index of the current inner iterator if it exists, or &null; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

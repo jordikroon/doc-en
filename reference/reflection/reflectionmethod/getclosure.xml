@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>Closure</type><methodname>ReflectionMethod::getClosure</methodname>
    <methodparam choice="opt"><type class="union"><type>object</type><type>null</type></type><parameter>object</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Create a closure which will call the method.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -24,9 +24,9 @@
    <varlistentry>
     <term><parameter>object</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Forbidden for static methods, required for other methods.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -34,19 +34,19 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the newly created <classname>Closure</classname>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws a <classname>ValueError</classname> if <parameter>object</parameter> is &null; but the method is non-static.
-  </para>
-  <para>
-   Throws a <classname>ReflectionException</classname> if <parameter>object</parameter> is not an instance of the class this method was declared in.
-  </para>
+  <simpara>
+   Throws a <exceptionname>ValueError</exceptionname> if <parameter>object</parameter> is &null; but the method is non-static.
+  </simpara>
+  <simpara>
+   Throws a <exceptionname>ReflectionException</exceptionname> if <parameter>object</parameter> is not an instance of the class this method was declared in.
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

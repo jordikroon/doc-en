@@ -5,7 +5,7 @@
   <refname>version_compare</refname>
   <refpurpose>Compares two "PHP-standardized" version number strings</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,26 +14,26 @@
    <methodparam><type>string</type><parameter>version2</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>operator</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>version_compare</function> compares two "PHP-standardized"
    version number strings.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The function first replaces <literal>_</literal>, <literal>-</literal> and
    <literal>+</literal> with a dot <literal>.</literal> in the version
    strings and also inserts dots <literal>.</literal> before and after any
    non number so that for example '4.3.2RC1' becomes '4.3.2.RC.1'. Then it
    compares the parts starting from left to right. If a part contains
    special version strings these are handled in the following order:
-   <literal>any string not found in this list</literal> &lt; 
+   <literal>any string not found in this list</literal> &lt;
    <literal>dev</literal> &lt; <literal>alpha</literal> =
    <literal>a</literal> &lt; <literal>beta</literal> =
-   <literal>b</literal> &lt; <literal>RC</literal> =  
+   <literal>b</literal> &lt; <literal>RC</literal> =
    <literal>rc</literal> &lt; <literal>#</literal> &lt;
    <literal>pl</literal> = <literal>p</literal>. This way not only versions
    with different levels like '4.1' and '4.1.2' can be compared but also any
    PHP specific version containing development state.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -43,23 +43,23 @@
     <varlistentry>
      <term><parameter>version1</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        First version number.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>version2</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Second version number.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>operator</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An optional operator. The possible operators
        are: <literal>&lt;</literal>, <literal>lt</literal>,
        <literal>&lt;=</literal>, <literal>le</literal>, <literal>&gt;</literal>,
@@ -67,10 +67,10 @@
        <literal>==</literal>, <literal>=</literal>, <literal>eq</literal>,
        <literal>!=</literal>, <literal>&lt;&gt;</literal>, <literal>ne</literal>
        respectively.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        This parameter is case-sensitive, values should be lowercase.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -79,26 +79,26 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    By default, <function>version_compare</function> returns
    <literal>-1</literal> if the first version is lower than the second,
    <literal>0</literal> if they are equal, and
    <literal>1</literal> if the second is lower.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    When using the optional <parameter>operator</parameter> argument, the
    function will return &true; if the relationship is the one specified
    by the operator, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
   &reftitle.examples;
-  <para>
+  <simpara>
    The examples below use the <constant>PHP_VERSION</constant> constant,
    because it contains the value of the PHP version that is executing
    the code.
-  </para>
+  </simpara>
   <para>
    <example>
     <title><function>version_compare</function> examples</title>
@@ -130,24 +130,24 @@ if (version_compare(PHP_VERSION, '5.0.0', '<')) {
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     The <constant>PHP_VERSION</constant> constant holds current PHP version.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     Note that pre-release versions, such as 5.3.0-dev, are considered
     lower than their final release counterparts (like 5.3.0).
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     Special version strings such as <literal>alpha</literal> and
     <literal>beta</literal> are case sensitive. Version strings from arbitrary
     sources that do not adhere to the PHP standard may need to be lowercased
     via <function>strtolower</function> before calling
     <function>version_compare</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

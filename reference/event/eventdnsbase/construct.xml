@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="eventdnsbase.construct">
+<refentry xml:id="eventdnsbase.construct" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>EventDnsBase::__construct</refname>
   <refpurpose>Constructs EventDnsBase object</refpurpose>
@@ -19,9 +19,9 @@
     <parameter>initialize</parameter>
    </methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Constructs EventDnsBase object.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -31,9 +31,9 @@
      <parameter>base</parameter>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Event base.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>

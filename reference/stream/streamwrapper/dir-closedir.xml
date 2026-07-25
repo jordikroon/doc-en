@@ -13,13 +13,13 @@
    <modifier>public</modifier> <type>bool</type><methodname>streamWrapper::dir_closedir</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
    This method is called in response to <function>closedir</function>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Any resources which were locked, or allocated, during opening and use of
    the directory stream should be released.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -30,9 +30,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
 <!--

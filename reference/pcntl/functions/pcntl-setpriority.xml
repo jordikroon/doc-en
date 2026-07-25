@@ -5,7 +5,7 @@
   <refname>pcntl_setpriority</refname>
   <refpurpose>Change the priority of any process</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,10 +14,10 @@
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>process_id</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>mode</parameter><initializer><constant>PRIO_PROCESS</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pcntl_setpriority</function> sets the priority of
-   <parameter>process_id</parameter>. 
-  </para>
+   <parameter>process_id</parameter>.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,32 +27,32 @@
     <varlistentry>
      <term><parameter>priority</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>priority</parameter> is generally a value in the range
        <literal>-20</literal> to <literal>20</literal>. The default priority
        is <literal>0</literal> while a lower numerical value causes more
        favorable scheduling.  Because priority levels can differ between
        system types and kernel versions, please see your system's setpriority(2)
        man page for specific details.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>process_id</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If &null;, the process id of the current process is used.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>mode</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        One of <constant>PRIO_PGRP</constant>, <constant>PRIO_USER</constant>,
        <constant>PRIO_PROCESS</constant>,
        <constant>PRIO_DARWIN_BG</constant> or <constant>PRIO_DARWIN_THREAD</constant>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -61,9 +61,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

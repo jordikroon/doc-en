@@ -8,23 +8,23 @@
  </refnamediv>
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
    <methodsynopsis role="IntlDateFormatter">
    <modifier>public</modifier> <type>int</type><methodname>IntlDateFormatter::getErrorCode</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type>int</type><methodname>datefmt_get_error_code</methodname>
    <methodparam><type>IntlDateFormatter</type><parameter>formatter</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the error code from the last formatting operation.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -34,9 +34,9 @@
     <varlistentry>
      <term><parameter>formatter</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The formatter resource.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -45,9 +45,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The error code, one of UErrorCode values. Initial value is U_ZERO_ERROR.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

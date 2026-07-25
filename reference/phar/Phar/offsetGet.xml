@@ -15,7 +15,7 @@
   <para>
    This is an implementation of the <interfacename>ArrayAccess</interfacename>
    interface allowing direct manipulation of the contents of a Phar archive using
-   array access brackets. <methodname>Phar::offsetGet</methodname> is used 
+   array access brackets. <methodname>Phar::offsetGet</methodname> is used
    for retrieving files from a Phar archive.
   </para>
 
@@ -27,9 +27,9 @@
     <varlistentry>
      <term><parameter>localName</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The filename (relative path) to look for in a Phar.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,18 +37,18 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A <classname>PharFileInfo</classname> object is returned that can be used to
    iterate over a file's contents or to retrieve information about the current file.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   This method throws <classname>BadMethodCallException</classname> if the file
+  <simpara>
+   This method throws <exceptionname>BadMethodCallException</exceptionname> if the file
    does not exist in the Phar archive.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -86,7 +86,7 @@ Entry doesnotexist.txt does not exist
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

@@ -10,10 +10,10 @@
 <!-- {{{ ReflectionExtension intro -->
   <section xml:id="reflectionextension.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     The <classname>ReflectionExtension</classname> class reports
     information about an extension.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -46,7 +46,7 @@
 
   </section>
 
-  
+
 <!-- {{{ ReflectionExtension properties -->
   <section xml:id="reflectionextension.props">
    &reftitle.properties;
@@ -55,8 +55,8 @@
      <term><varname>name</varname></term>
      <listitem>
       <para>
-       Name of the extension, same as calling the 
-       <methodname>ReflectionExtension::getName</methodname> 
+       Name of the extension, same as calling the
+       <methodname>ReflectionExtension::getName</methodname>
        method.
       </para>
      </listitem>

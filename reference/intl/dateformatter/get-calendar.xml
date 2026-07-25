@@ -8,22 +8,22 @@
  </refnamediv>
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
    <methodsynopsis role="IntlDateFormatter">
    <modifier>public</modifier> <type class="union"><type>int</type><type>false</type></type><methodname>IntlDateFormatter::getCalendar</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>int</type><type>false</type></type><methodname>datefmt_get_calendar</methodname>
    <methodparam><type>IntlDateFormatter</type><parameter>formatter</parameter></methodparam>
   </methodsynopsis>
-  <para>
-  </para> 
+  <simpara>
+  </simpara>
   </refsect1>
 
  <refsect1 role="parameters">
@@ -33,27 +33,27 @@
     <varlistentry>
      <term><parameter>formatter</parameter></term>
      <listitem>
-      <para>
-       The formatter resource      
-      </para>
+      <simpara>
+       The formatter resource
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
-   
- 
+
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The <link linkend="intl.intldateformatter-constants.calendartypes">calendar
    type</link> being used by the formatter. Either
    <constant>IntlDateFormatter::TRADITIONAL</constant> or
    <constant>IntlDateFormatter::GREGORIAN</constant>.
    Returns &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
    <example>

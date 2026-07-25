@@ -13,24 +13,24 @@
    <type>string</type><methodname>pg_last_error</methodname>
    <methodparam choice="opt"><type class="union"><type>PgSql\Connection</type><type>null</type></type><parameter>connection</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_last_error</function> returns the last error message
-   for a given <parameter>connection</parameter>. 
-  </para>
-  <para>
+   for a given <parameter>connection</parameter>.
+  </simpara>
+  <simpara>
    Error messages may be overwritten by internal PostgreSQL (libpq)
    function calls. It may not return an appropriate error message if
    multiple errors occur inside a PostgreSQL module function.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Use <function>pg_result_error</function>, <function>pg_result_error_field</function>,
    <function>pg_result_status</function> and
    <function>pg_connection_status</function> for better error handling.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     This function used to be called <function>pg_errormessage</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -50,10 +50,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   A <type>string</type> containing the last error message on the 
+  <simpara>
+   A <type>string</type> containing the last error message on the
    given <parameter>connection</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -91,7 +91,7 @@
 
   // Query that fails
   $res = pg_query($dbconn, "select * from doesnotexist");
-  
+
   echo pg_last_error($dbconn);
 ?>
 ]]>
@@ -99,7 +99,7 @@
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

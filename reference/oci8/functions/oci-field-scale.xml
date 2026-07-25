@@ -5,7 +5,7 @@
   <refname>oci_field_scale</refname>
   <refpurpose>Tell the scale of the field</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,14 +13,14 @@
    <methodparam><type>resource</type><parameter>statement</parameter></methodparam>
    <methodparam><type class="union"><type>string</type><type>int</type></type><parameter>column</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the scale of the column with <parameter>column</parameter> index.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    For FLOAT columns, precision is nonzero and scale is -127.
    If precision is 0, then column is NUMBER. Else it's
    NUMBER(precision, scale).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,17 +30,17 @@
     <varlistentry>
      <term><parameter>statement</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A valid OCI statement identifier.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>column</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Can be the field's index (1-based) or name.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -49,9 +49,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the scale as an integer,&return.falseforfailure;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -77,8 +77,8 @@ oci_execute($stid, OCI_DESCRIBE_ONLY); // Use OCI_DESCRIBE_ONLY if not fetching 
 
 $ncols = oci_num_fields($stid);
 for ($i = 1; $i <= $ncols; $i++) {
-    echo oci_field_name($stid, $i) . " " 
-        . oci_field_precision($stid, $i) . " " 
+    echo oci_field_name($stid, $i) . " "
+        . oci_field_precision($stid, $i) . " "
         . oci_field_scale($stid, $i) . "<br>\n";
 }
 

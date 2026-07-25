@@ -3,16 +3,16 @@
 <reference xml:id="class.arrayiterator" role="class" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
  <title>The ArrayIterator class</title>
  <titleabbrev>ArrayIterator</titleabbrev>
- 
+
  <partintro>
- 
+
 <!-- {{{ ArrayIterator intro -->
   <section xml:id="arrayiterator.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Allows the removal of elements, and the modification of
     keys or values while iterating over <type>array</type>s or <type>object</type>s.
-   </para>
+   </simpara>
    <para>
     To iterate the same array more than once, it is recommended to
     instantiate <classname>ArrayObject</classname> and use the
@@ -22,10 +22,10 @@
    </para>
   </section>
 <!-- }}} -->
- 
+
   <section xml:id="arrayiterator.synopsis">
    &reftitle.classsynopsis;
- 
+
 <!-- {{{ Synopsis -->
    <classsynopsis class="class">
     <ooclass>
@@ -67,7 +67,7 @@
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.arrayiterator')/db:refentry/db:refsect1[@role='description']/descendant::db:constructorsynopsis[@role='ArrayIterator'])"/>
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.arrayiterator')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[@role='ArrayIterator'])"/>
    </classsynopsis>
- 
+
   </section>
 
   <section xml:id="arrayiterator.constants">
@@ -79,17 +79,17 @@
      <varlistentry xml:id="arrayiterator.constants.std-prop-list">
       <term><constant>ArrayIterator::STD_PROP_LIST</constant></term>
       <listitem>
-       <para>
+       <simpara>
         Properties of the object have their normal functionality
         when accessed as list (<function>var_dump</function>, &foreach;, etc.).
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
 
      <varlistentry xml:id="arrayiterator.constants.array-as-props">
       <term><constant>ArrayIterator::ARRAY_AS_PROPS</constant></term>
       <listitem>
-       <para>Entries can be accessed as properties (read and write).</para>
+       <simpara>Entries can be accessed as properties (read and write).</simpara>
       </listitem>
      </varlistentry>
     </variablelist>
@@ -109,11 +109,11 @@
    </variablelist>
   </section>
 }}} -->
- 
+
  </partintro>
- 
+
  &reference.spl.entities.arrayiterator;
- 
+
 </reference>
 <!-- Keep this comment at the end of the file
 Local variables:

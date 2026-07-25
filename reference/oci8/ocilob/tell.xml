@@ -5,16 +5,16 @@
   <refname>OCILob::tell</refname>
   <refpurpose>Returns the current position of internal pointer of large object</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="OCILob">
    <modifier>public</modifier> <type class="union"><type>int</type><type>false</type></type><methodname>OCILob::tell</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the current position of a LOB's internal pointer.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,10 +24,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns current position of a LOB's internal pointer or &false; if an
    error occurred.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

@@ -3,12 +3,12 @@
  <chapter xml:id="security.sessions" xmlns="http://docbook.org/ns/docbook">
   <title>Session Security</title>
 
-  <para>
+  <simpara>
    It is important to keep your HTTP session management secure. Session
    related security is described in the
    <link linkend="session.security">Session Security</link> section
    of <link linkend="book.session">Session module</link> reference.
-  </para>
+  </simpara>
 
  </chapter>
 

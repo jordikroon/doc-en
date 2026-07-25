@@ -7,10 +7,10 @@
  <!-- {{{ Requirements -->
  <section xml:id="gettext.requirements">
   &reftitle.required;
-  <para>
+  <simpara>
    To use these functions you must download and install the GNU gettext
    package from <link xlink:href="&url.gettext;">&url.gettext;</link>
-  </para>
+  </simpara>
  </section>
  <!-- }}} -->
 

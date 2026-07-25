@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>void</type><methodname>SoapServer::addFunction</methodname>
    <methodparam><type class="union"><type>array</type><type>string</type><type>int</type></type><parameter>functions</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Exports one or more functions for remote clients
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,16 +24,16 @@
     <varlistentry>
      <term><parameter>functions</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        To export one function, pass the function name into this parameter as
        a string.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        To export several functions, pass an array of function names.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        To export all the functions, pass an array of function names.
-      </para>
+      </simpara>
       <simpara>
        As of PHP 8.4.0, passing an <type>int</type> value (including
        <constant>SOAP_FUNCTIONS_ALL</constant>) is deprecated.
@@ -41,12 +41,12 @@
        and pass them as an array instead.
       </simpara>
       <note>
-       <para>
+       <simpara>
         <parameter>functions</parameter> must receive all input arguments in the same
         order as defined in the WSDL file (They should not receive any output parameters
         as arguments) and return one or more values. To return several values they must
         return an array with named output parameters.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
@@ -56,9 +56,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="changelog">
   &reftitle.changelog;

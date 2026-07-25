@@ -14,10 +14,10 @@
    <type>bool</type><methodname>time_sleep_until</methodname>
    <methodparam><type>float</type><parameter>timestamp</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Makes the script sleep until the specified
-   <parameter>timestamp</parameter>. 
-  </para>
+   <parameter>timestamp</parameter>.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,9 +27,9 @@
     <varlistentry>
      <term><parameter>timestamp</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The timestamp when the script should wake.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -38,17 +38,17 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    If the specified <parameter>timestamp</parameter> is in the past, this
    function will generate a <constant>E_WARNING</constant>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

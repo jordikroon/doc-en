@@ -9,19 +9,19 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="mysqli">
    <modifier>public</modifier> <type>true</type><methodname>mysqli::debug</methodname>
    <methodparam><type>string</type><parameter>options</parameter></methodparam>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type>true</type><methodname>mysqli_debug</methodname>
    <methodparam><type>string</type><parameter>options</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Performs debugging operations using the Fred Fish debugging library.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -31,15 +31,15 @@
     <varlistentry>
      <term><parameter>options</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A string representing the debugging operation to perform
-      </para>
-      <para>
+      </simpara>
+      <simpara>
         The debug control string is a sequence of colon separated fields as follows:
         <literal><![CDATA[<field_1>:<field_2>:<field_N>]]></literal>
         Each field consists of a mandatory flag character followed by an optional <literal>,</literal> and comma separated list of modifiers:
         <literal>flag[,modifier,modifier,...,modifier]</literal>
-      </para>
+      </simpara>
       <para>
        <table>
         <title>Recognized Flag Characters</title>
@@ -107,9 +107,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -158,10 +158,10 @@ mysqli_debug("d:t:o,/tmp/client.trace");
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     To use the <function>mysqli_debug</function> function you must compile
     the MySQL client library to support debugging.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

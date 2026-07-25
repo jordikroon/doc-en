@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.rename">
+<refentry xml:id="function.rename" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>rename</refname>
   <refpurpose>Renames a file or directory</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,14 +14,14 @@
    <methodparam><type>string</type><parameter>to</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>resource</type><type>null</type></type><parameter>context</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Attempts to rename <parameter>from</parameter> to
    <parameter>to</parameter>, moving it between directories if necessary.
    If renaming a file and <parameter>to</parameter> exists,
    it will be overwritten. If renaming a directory and
    <parameter>to</parameter> exists,
    this function will emit a warning.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -31,15 +31,15 @@
     <varlistentry>
      <term><parameter>from</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The old name.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         The wrapper used in <parameter>from</parameter>
         <emphasis>must</emphasis> match the wrapper used in
         <parameter>to</parameter>.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
@@ -69,9 +69,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

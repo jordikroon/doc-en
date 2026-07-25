@@ -3,7 +3,7 @@
 <!-- splitted from ./en/functions/strings.xml, last change in rev 1.2 -->
 <refentry xml:id="function.trim" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
-  <refname>trim</refname> 
+  <refname>trim</refname>
   <refpurpose>Strip whitespace (or other characters) from the beginning and end of a string</refpurpose>
  </refnamediv>
 
@@ -29,9 +29,9 @@
    <varlistentry>
     <term><parameter>string</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The <type>string</type> that will be trimmed.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
@@ -109,9 +109,9 @@ string(14) "Example string"
     <programlisting role="php">
 <![CDATA[
 <?php
-function trim_value(&$value) 
-{ 
-    $value = trim($value); 
+function trim_value(&$value)
+{
+    $value = trim($value);
 }
 
 $fruit = array('apple','banana ', ' cranberry ');
@@ -153,13 +153,13 @@ array(3) {
   &reftitle.notes;
   <note>
    <title>Possible gotcha: removing middle characters</title>
-   <para>
+   <simpara>
     Because <function>trim</function> trims characters from the beginning and end of
     a <type>string</type>, it may be confusing when characters are (or are not) removed from
     the middle. <literal>trim('abc', 'bad')</literal> removes both 'a' and 'b' because it
     trims 'a' thus moving 'b' to the beginning to also be trimmed. So, this is why it "works"
     whereas <literal>trim('abc', 'b')</literal> seemingly does not.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

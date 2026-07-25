@@ -13,13 +13,13 @@
    <type>string</type><methodname>spl_object_hash</methodname>
    <methodparam><type>object</type><parameter>object</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function returns a unique identifier for the object. This id can be
    used as a hash key for storing objects, or for identifying an object, as long
-   as the object is not destroyed. Once the object is destroyed, its hash may 
+   as the object is not destroyed. Once the object is destroyed, its hash may
    be reused for other objects. This behavior is similar to
    <function>spl_object_id</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,9 +29,9 @@
      <varlistentry>
       <term><parameter>object</parameter></term>
       <listitem>
-       <para>
-        Any object. 
-       </para>
+       <simpara>
+        Any object.
+       </simpara>
       </listitem>
      </varlistentry>
     </variablelist>
@@ -40,10 +40,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A string that is unique for each currently existing object and is always
    the same for each object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -66,9 +66,9 @@ $storage[$id] = $object;
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     When an object is destroyed, its hash may be reused for other objects.
-   </para>
+   </simpara>
   </note>
   <note>
    <para>
@@ -78,7 +78,7 @@ $storage[$id] = $object;
     For example: <literal>0000000000000e600000000000000000</literal>.
    </para>
   </note>
- </refsect1> 
+ </refsect1>
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

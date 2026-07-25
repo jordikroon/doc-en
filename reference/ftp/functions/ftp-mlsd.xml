@@ -26,9 +26,9 @@
     <varlistentry>
      <term><parameter>directory</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The directory to be listed.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -36,10 +36,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array of arrays with file infos from the specified directory on success or
    &false; on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -58,7 +58,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -81,7 +81,7 @@ $contents = ftp_mlsd($ftp, ".");
 var_dump($contents);
 
 ?>
-]]>  
+]]>
     </programlisting>
     &example.outputs.similar;
     <screen>

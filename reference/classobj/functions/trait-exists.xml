@@ -13,9 +13,9 @@
    <methodparam><type>string</type><parameter>trait</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>autoload</parameter><initializer>&true;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -25,18 +25,18 @@
    <varlistentry>
     <term><parameter>trait</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Name of the trait to check
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>autoload</parameter></term>
     <listitem>
-      <para>
+      <simpara>
        Whether to <link linkend="language.oop5.autoload">autoload</link>
        if not already loaded.
-      </para>
+      </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -44,9 +44,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if trait exists, and &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
 

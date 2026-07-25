@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>mixed</type><methodname>WeakMap::offsetGet</methodname>
    <methodparam><type>object</type><parameter>object</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the value pointed to by a certain object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -23,9 +23,9 @@
    <varlistentry>
     <term><parameter>object</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Some object contained as key in the map.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -33,16 +33,16 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the value associated to the object passed as argument.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws an <classname>Error</classname> on failure.
-  </para>
+  <simpara>
+   Throws an <exceptionname>Error</exceptionname> on failure.
+  </simpara>
  </refsect1>
 
 </refentry>

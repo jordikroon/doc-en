@@ -5,7 +5,7 @@
  <refnamediv>
   <refname>pg_set_error_verbosity</refname>
   <refpurpose>
-   Determines the verbosity of messages returned by <function>pg_last_error</function> 
+   Determines the verbosity of messages returned by <function>pg_last_error</function>
    and <function>pg_result_error</function>
   </refpurpose>
  </refnamediv>
@@ -17,19 +17,19 @@
    <methodparam choice="opt"><type>PgSql\Connection</type><parameter>connection</parameter></methodparam>
    <methodparam><type>int</type><parameter>verbosity</parameter></methodparam>
   </methodsynopsis>
-  <para>
-    Determines the verbosity of messages returned by <function>pg_last_error</function> 
+  <simpara>
+    Determines the verbosity of messages returned by <function>pg_last_error</function>
     and <function>pg_result_error</function>.
-  </para>
-  <para>
-   <function>pg_set_error_verbosity</function> sets the verbosity mode, returning the connection's previous 
-   setting. In <constant>PGSQL_ERRORS_TERSE</constant> mode, returned messages include severity, primary text, and 
+  </simpara>
+  <simpara>
+   <function>pg_set_error_verbosity</function> sets the verbosity mode, returning the connection's previous
+   setting. In <constant>PGSQL_ERRORS_TERSE</constant> mode, returned messages include severity, primary text, and
    position only; this will normally fit on a single line. The default mode (<constant>PGSQL_ERRORS_DEFAULT</constant>)
-   produces messages that include the above plus any detail, hint, or context 
-   fields (these may span multiple lines). The <constant>PGSQL_ERRORS_VERBOSE</constant> mode includes all available 
-   fields. Changing the verbosity does not affect the messages available from 
+   produces messages that include the above plus any detail, hint, or context
+   fields (these may span multiple lines). The <constant>PGSQL_ERRORS_VERBOSE</constant> mode includes all available
+   fields. Changing the verbosity does not affect the messages available from
    already-existing result objects, only subsequently-created ones.
-  </para>
+  </simpara>
  </refsect1>
 
 <refsect1 role="parameters">
@@ -45,11 +45,11 @@
     <varlistentry>
      <term><parameter>verbosity</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The required verbosity: <constant>PGSQL_ERRORS_TERSE</constant>,
        <constant>PGSQL_ERRORS_DEFAULT</constant>
        or <constant>PGSQL_ERRORS_VERBOSE</constant>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -58,11 +58,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The previous verbosity level: <constant>PGSQL_ERRORS_TERSE</constant>,
    <constant>PGSQL_ERRORS_DEFAULT</constant>
    or <constant>PGSQL_ERRORS_VERBOSE</constant>, or &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -81,7 +81,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -95,7 +95,7 @@
   if (!pg_connection_busy($dbconn)) {
       pg_send_query($dbconn, "select * from doesnotexist;");
   }
-  
+
   pg_set_error_verbosity($dbconn, PGSQL_ERRORS_VERBOSE);
   $res1 = pg_get_result($dbconn);
   echo pg_result_error($res1);

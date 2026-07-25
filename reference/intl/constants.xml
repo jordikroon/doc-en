@@ -183,10 +183,10 @@
    </varlistentry>
   </variablelist>
   <variablelist xml:id="constant.idna-errors">
-   <para>
+   <simpara>
     The following errors are part of a bitmask returned by the UTS #46 algorithm in
     <function>idn_to_utf8</function> and <function>idn_to_ascii</function>.
-   </para>
+   </simpara>
    <varlistentry xml:id="constant.idna-error-empty-label">
     <term>
      <constant>IDNA_ERROR_EMPTY_LABEL</constant>

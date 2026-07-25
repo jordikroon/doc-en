@@ -7,11 +7,11 @@
 
   <section xml:id="sensitiveparameter.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     <!-- TODO Link -->
     This attribute is used to mark a parameter that is sensitive and should
     have its value redacted if present in a stack trace.
-   </para>
+   </simpara>
   </section>
 
   <section xml:id="sensitiveparameter.synopsis">

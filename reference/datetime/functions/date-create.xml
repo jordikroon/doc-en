@@ -17,25 +17,25 @@
    This is the procedural version of
    <methodname>DateTime::__construct</methodname>.
   </para>
-  <para>
+  <simpara>
    Unlike the <classname>DateTime</classname> constructor, it will return
    &false; instead of an exception if the passed in
    <parameter>datetime</parameter> string is invalid.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
-  <para>
+  <simpara>
    See <link linkend="datetimeimmutable.construct">DateTimeImmutable::__construct</link>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a new DateTime instance &return.falseforfailure;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

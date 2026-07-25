@@ -10,10 +10,10 @@
 <!-- {{{ OuterIterator intro -->
   <section xml:id="outeriterator.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Classes implementing <classname>OuterIterator</classname> can be used to iterate
     over iterators.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

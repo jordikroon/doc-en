@@ -12,10 +12,10 @@
    <type>bool</type><methodname>is_infinite</methodname>
    <methodparam><type>float</type><parameter>num</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns whether the given <parameter>num</parameter> is either <constant>INF</constant>
    or -<constant>INF</constant>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
     <varlistentry>
      <term><parameter>num</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The &float; to check
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -36,10 +36,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &true; if <parameter>num</parameter> is either <constant>INF</constant>
    or -<constant>INF</constant>, else &false;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

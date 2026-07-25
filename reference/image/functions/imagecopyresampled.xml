@@ -20,22 +20,22 @@
    <methodparam><type>int</type><parameter>src_width</parameter></methodparam>
    <methodparam><type>int</type><parameter>src_height</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>imagecopyresampled</function> copies a rectangular
    portion of one image to another image, smoothly interpolating pixel
    values so that, in particular, reducing the size of an image still
    retains a great deal of clarity.
-  </para>
-  <para>
-   In other words, <function>imagecopyresampled</function> will take a 
-   rectangular area from <parameter>src_image</parameter> of width 
-   <parameter>src_width</parameter> and height <parameter>src_height</parameter> at 
-   position (<parameter>src_x</parameter>,<parameter>src_y</parameter>) 
-   and place it in a rectangular area of <parameter>dst_image</parameter> 
+  </simpara>
+  <simpara>
+   In other words, <function>imagecopyresampled</function> will take a
+   rectangular area from <parameter>src_image</parameter> of width
+   <parameter>src_width</parameter> and height <parameter>src_height</parameter> at
+   position (<parameter>src_x</parameter>,<parameter>src_y</parameter>)
+   and place it in a rectangular area of <parameter>dst_image</parameter>
    of width <parameter>dst_width</parameter> and height <parameter>dst_height</parameter>
    at position (<parameter>dst_x</parameter>,<parameter>dst_y</parameter>).
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If the source and destination coordinates and width and heights
    differ, appropriate stretching or shrinking of the image fragment
    will be performed. The coordinates refer to the upper left
@@ -43,7 +43,7 @@
    same image (if <parameter>dst_image</parameter> is the same as
    <parameter>src_image</parameter>) but if the regions overlap the
    results will be unpredictable.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -52,73 +52,73 @@
     <varlistentry>
      <term><parameter>dst_image</parameter></term>
      <listitem>
-      <para>&gd.image.destination;</para>
+      <simpara>&gd.image.destination;</simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>src_image</parameter></term>
      <listitem>
-      <para>&gd.image.source;</para>
+      <simpara>&gd.image.source;</simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>dst_x</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        x-coordinate of destination point.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>dst_y</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        y-coordinate of destination point.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>src_x</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        x-coordinate of source point.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>src_y</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        y-coordinate of source point.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>dst_width</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Destination width.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>dst_height</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Destination height.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>src_width</parameter></term>
      <listitem>
-      <para>&gd.source.width;</para>
+      <simpara>&gd.source.width;</simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>src_height</parameter></term>
      <listitem>
-      <para>&gd.source.height;</para>
+      <simpara>&gd.source.height;</simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -126,9 +126,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -166,9 +166,9 @@
   <para>
    <example>
     <title>Simple example</title>
-    <para>
+    <simpara>
      This example will resample an image to half its original size.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -206,10 +206,10 @@ imagejpeg($image_p, null, 100);
   <para>
    <example>
     <title>Resampling an image proportionally</title>
-    <para>
+    <simpara>
      This example will display an image with the maximum width,
      or height, of 200 pixels.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -257,7 +257,7 @@ imagejpeg($image_p, null, 100);
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     There is a problem due to palette image limitations (255+1 colors).
     Resampling or filtering an image commonly needs more colors than 255, a
     kind of approximation is used to calculate the new resampled pixel and its
@@ -267,7 +267,7 @@ imagejpeg($image_p, null, 100);
     blank (or visually blank) images.  To skip this problem, please use a
     truecolor image as a destination image, such as one created by
     <function>imagecreatetruecolor</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

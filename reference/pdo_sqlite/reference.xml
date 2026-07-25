@@ -9,15 +9,15 @@
 
    <section xml:id="ref.pdo-sqlite.intro">
    &reftitle.intro;
-    <para>
+    <simpara>
      PDO_SQLITE is a driver that implements the <link linkend="intro.pdo">PHP
      Data Objects (PDO) interface</link> to enable access to SQLite 3 databases.
-    </para>
+    </simpara>
     <note>
-     <para>
+     <simpara>
       PDO_SQLITE allows using strings apart from streams together with
       <constant>PDO::PARAM_LOB</constant>.
-     </para>
+     </simpara>
     </note>
    </section>
 
@@ -43,22 +43,22 @@
          The DSN prefix is <userinput>sqlite:</userinput>.
          <itemizedlist>
           <listitem>
-           <para>
+           <simpara>
             To access a database on disk, the absolute path has to be appended to the
             DSN prefix.
-           </para>
+           </simpara>
           </listitem>
           <listitem>
-           <para>
+           <simpara>
             To create a database in memory, <literal>:memory:</literal> has to be appended
             to the DSN prefix.
-           </para>
+           </simpara>
           </listitem>
           <listitem>
-           <para>
+           <simpara>
             If the DSN consists of the DSN prefix only, a temporary database is used,
             which is deleted when the connection is closed.
-           </para>
+           </simpara>
           </listitem>
          </itemizedlist>
         </para>

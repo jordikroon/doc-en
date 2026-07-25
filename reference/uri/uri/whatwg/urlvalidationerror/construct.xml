@@ -14,7 +14,7 @@
    <methodparam><type>bool</type><parameter>failure</parameter></methodparam>
   </constructorsynopsis>
   <simpara>
-   Constructs a <classname>Uri\WhatWg\UrlValidationError</classname> object.
+   Constructs a <exceptionname>Uri\WhatWg\UrlValidationError</exceptionname> object.
   </simpara>
  </refsect1>
 

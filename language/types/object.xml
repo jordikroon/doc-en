@@ -6,10 +6,10 @@
  <sect2 xml:id="language.types.object.init">
   <title>Object Initialization</title>
 
-  <para>
+  <simpara>
    To create a new <type>object</type>, use the <literal>new</literal> statement
    to instantiate a class:
-  </para>
+  </simpara>
 
   <example>
    <title>Object Construction</title>
@@ -41,7 +41,7 @@ $bar->do_foo();
  <sect2 xml:id="language.types.object.casting">
   <title>Converting to object</title>
 
-  <para>
+  <simpara>
    If an <type>object</type> is converted to an <type>object</type>, it is not
    modified. If a value of any other type is converted to an
    <type>object</type>, a new instance of the <classname>stdClass</classname>
@@ -49,7 +49,7 @@ $bar->do_foo();
    empty. An <type>array</type> converts to an <type>object</type> with properties
    named by keys and corresponding values. Note that in this case before PHP 7.2.0 numeric keys
    have been inaccessible unless iterated.
-  </para>
+  </simpara>
 
   <example>
    <title>Casting to an Object</title>
@@ -66,10 +66,10 @@ var_dump(key($obj)); // outputs 'string(1) "1"'
    </programlisting>
   </example>
 
-  <para>
+  <simpara>
    For any other value, a member variable named <literal>scalar</literal> will contain
    the value.
-  </para>
+  </simpara>
 
   <example>
    <title><literal>(object)</literal> cast</title>

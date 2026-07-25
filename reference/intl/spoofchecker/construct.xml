@@ -12,9 +12,9 @@
    <modifier>public</modifier> <methodname>Spoofchecker::__construct</methodname>
    <void/>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Creates new instance of Spoofchecker.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">

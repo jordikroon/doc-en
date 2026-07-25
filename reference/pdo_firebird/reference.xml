@@ -9,10 +9,10 @@
 
    <section xml:id="ref.pdo-firebird.intro">
    &reftitle.intro;
-    <para>
+    <simpara>
      PDO_FIREBIRD is a driver that implements the PHP Data Objects (PDO)
      interface to enable access from PHP to Firebird database.
-    </para>
+    </simpara>
    </section>
    &reference.pdo-firebird.configure;
    &reference.pdo-firebird.constants;
@@ -32,43 +32,43 @@
       <varlistentry>
        <term>DSN prefix</term>
        <listitem>
-        <para>
+        <simpara>
         The DSN prefix is <userinput>firebird:</userinput>.
-        </para>
+        </simpara>
        </listitem>
       </varlistentry>
       <varlistentry>
        <term><literal>dbname</literal></term>
        <listitem>
-        <para>
+        <simpara>
          The name of the database.
-        </para>
+        </simpara>
        </listitem>
       </varlistentry>
       <varlistentry>
        <term><literal>charset</literal></term>
        <listitem>
-        <para>
+        <simpara>
          The character set.
-        </para>
+        </simpara>
        </listitem>
       </varlistentry>
       <varlistentry>
        <term><literal>role</literal></term>
        <listitem>
-        <para>
+        <simpara>
          The SQL role name.
-        </para>
+        </simpara>
        </listitem>
       </varlistentry>
       <varlistentry>
        <term><literal>dialect</literal></term>
        <listitem>
-        <para>
+        <simpara>
          The dialect of the database; either <literal>1</literal> or <literal>3</literal>.
          If not specified, the dialect defaults to <literal>3</literal>.
          Available as of PHP 7.4.0.
-        </para>
+        </simpara>
        </listitem>
       </varlistentry>
      </variablelist>
@@ -112,11 +112,11 @@ firebird:dbname=localhost:/var/lib/firebird/2.5/data/employee.fdb
      </example>
      <example>
       <title>PDO_FIREBIRD DSN to connect to a dialect 1 database</title>
-      <para>
+      <simpara>
        The following example shows a PDO_FIREBIRD DSN for connecting to
        a Firebird database test.fdb which has been created using dialect 1.
        This is only supported as of PHP 7.4.0.
-      </para>
+      </simpara>
       <programlisting>
 <![CDATA[
 firebird:dbname=localhost:/var/lib/firebird/2.5/data/test.fdb;charset=utf-8;dialect=1

@@ -11,10 +11,10 @@
    <modifier>public</modifier> <type>bool</type><methodname>XMLReader::isValid</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a boolean indicating if the document being parsed is currently valid according to the DTD, or an XML or RelaxNG schema.
    If there is no schema, and the DTD validation option is not provided, this method will return &false;.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -22,9 +22,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; when the document is valid or &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;
@@ -36,7 +36,7 @@
 <?php
 $xml = XMLReader::open('examples/book-simple.xml');
 
-// The validate parser option must be enabled for 
+// The validate parser option must be enabled for
 // this method to work properly
 $xml->setParserProperty(XMLReader::VALIDATE, true);
 

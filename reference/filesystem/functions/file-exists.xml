@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.file-exists">
+<refentry xml:id="function.file-exists" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>file_exists</refname>
   <refpurpose>Checks whether a file or directory exists</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>bool</type><methodname>file_exists</methodname>
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks whether a file or directory exists.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,14 +24,14 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path to the file or directory.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        On windows, use <filename>//computername/share/filename</filename> or
        <filename>\\computername\share\filename</filename> to check files on
        network shares.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -40,20 +40,20 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the file or directory specified by
    <parameter>filename</parameter> exists; &false; otherwise.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     This function will return &false; for symlinks pointing to non-existing
     files.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     The check is done using the real UID/GID instead of the effective one.
-   </para>
+   </simpara>
   </note>
   &fs.file.32bit;
  </refsect1>

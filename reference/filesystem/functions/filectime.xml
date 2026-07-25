@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.filectime">
+<refentry xml:id="function.filectime" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>filectime</refname>
   <refpurpose>Gets inode change time of file</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>int</type><type>false</type></type><methodname>filectime</methodname>
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the inode change time of a file.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path to the file.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,10 +35,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the time the file was last changed, &return.falseforfailure;.
    The time is returned as a Unix timestamp.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -72,21 +72,21 @@ if (file_exists($filename)) {
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     Note: In most Unix filesystems, a file is considered changed when its
     inode data is changed; that is, when the permissions, owner, group, or
     other metadata from the inode is updated. See also
     <function>filemtime</function> (which is what you want to use when you
     want to create "Last Modified" footers on web pages) and
     <function>fileatime</function>.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     Note also that in some Unix texts the ctime of a file is referred to as
     being the creation time of the file. This is wrong. There is no creation
     time for Unix files in most Unix filesystems.
-   </para>
+   </simpara>
   </note>
   &note.filesystem-time-res;
   &note.clearstatcache;

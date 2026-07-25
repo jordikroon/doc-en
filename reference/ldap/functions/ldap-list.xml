@@ -20,17 +20,17 @@
    <methodparam choice="opt"><type>int</type><parameter>deref</parameter><initializer><constant>LDAP_DEREF_NEVER</constant></initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>array</type><type>null</type></type><parameter>controls</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Performs the search for a specified <parameter>filter</parameter> on the
    directory with the scope <constant>LDAP_SCOPE_ONELEVEL</constant>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    <constant>LDAP_SCOPE_ONELEVEL</constant> means that the search should only
    return information that is at the level immediately below the
    <parameter>base</parameter> given in the call.
    (Equivalent to typing "<command>ls</command>" and getting a list of files and folders in the
    current working directory.)
-  </para>
+  </simpara>
    &ldap.return-result-array-info;
  </refsect1>
 
@@ -41,85 +41,85 @@
     <varlistentry>
      <term><parameter>ldap</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &ldap.parameter.ldap;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>base</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The base DN for the directory.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>filter</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>attributes</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An array of the required attributes, e.g. array("mail", "sn", "cn").
        Note that the "dn" is always returned irrespective of which attributes
        types are requested.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Using this parameter is much more efficient than the default action
        (which is to return all attributes and their associated values).
        The use of this parameter should therefore be considered good
        practice.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>attributes_only</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Should be set to 1 if only attribute types are wanted. If set to 0
        both attributes types and attribute values are fetched which is the
        default behaviour.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>sizelimit</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Enables you to limit the count of entries fetched. Setting this to 0
        means no limit.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         This parameter can NOT override server-side preset sizelimit. You can
         set it lower though.
-       </para>
-       <para>
+       </simpara>
+       <simpara>
         Some directory server hosts will be configured to return no more than
         a preset number of entries. If this occurs, the server will indicate
         that it has only returned a partial results set. This also occurs if
         you use this parameter to limit the count of fetched entries.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>timelimit</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Sets the number of seconds how long is spend on the search. Setting
        this to 0 means no limit.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         This parameter can NOT override server-side preset timelimit. You can
         set it lower though.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
@@ -162,9 +162,9 @@
     <varlistentry>
      <term><parameter>controls</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Array of <link linkend="ldap.controls">LDAP Controls</link> to send with the request.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -173,9 +173,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &ldap.return-result-array;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

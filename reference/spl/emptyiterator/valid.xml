@@ -12,14 +12,14 @@
    <modifier>public</modifier> <type>false</type><methodname>EmptyIterator::valid</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks whether the current element is valid.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     The <classname>EmptyIterator</classname> is always empty and will never have a valid value.
     The return value is always &false;.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -30,9 +30,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &false;
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

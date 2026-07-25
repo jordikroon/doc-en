@@ -37,10 +37,10 @@
   </table>
  </para>
  <note>
-  <para>
+  <simpara>
    Writing implementation-dependent scripts with these constants is strongly
    discouraged.
-  </para>
+  </simpara>
  </note>
  <para>
   The following constants are

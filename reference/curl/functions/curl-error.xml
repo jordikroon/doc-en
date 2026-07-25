@@ -5,16 +5,16 @@
   <refname>curl_error</refname>
   <refpurpose>Return a string containing the last error for the current session</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>string</type><methodname>curl_error</methodname>
    <methodparam><type>CurlHandle</type><parameter>handle</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a clear text error message for the last cURL operation.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,10 +28,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the error message or <literal>''</literal> (the empty string) if no
    error occurred.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -77,7 +77,7 @@ else
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

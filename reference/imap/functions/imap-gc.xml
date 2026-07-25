@@ -12,9 +12,9 @@
    <methodparam><type>IMAP\Connection</type><parameter>imap</parameter></methodparam>
    <methodparam><type>int</type><parameter>flags</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Purges the cache of entries of a specific type.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -24,13 +24,13 @@
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Specifies the cache to purge. It may one or a combination
-       of the following constants: 
-       <constant>IMAP_GC_ELT</constant> (message cache elements), 
+       of the following constants:
+       <constant>IMAP_GC_ELT</constant> (message cache elements),
        <constant>IMAP_GC_ENV</constant> (envelope and bodies),
        <constant>IMAP_GC_TEXTS</constant> (texts).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -39,17 +39,17 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws a <classname>ValueError</classname> if <parameter>flags</parameter>
+  <simpara>
+   Throws a <exceptionname>ValueError</exceptionname> if <parameter>flags</parameter>
    is invalid.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -67,7 +67,7 @@
      <row>
       <entry>8.0.0</entry>
       <entry>
-       A <classname>ValueError</classname> is now thrown on invalid
+       A <exceptionname>ValueError</exceptionname> is now thrown on invalid
        <parameter>flags</parameter> parameter values. Previously,
        a warning was emitted and the function returned &false;.
       </entry>
@@ -76,7 +76,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>

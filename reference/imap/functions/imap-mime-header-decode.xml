@@ -11,10 +11,10 @@
    <type class="union"><type>array</type><type>false</type></type><methodname>imap_mime_header_decode</methodname>
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Decodes MIME message header extensions that are non ASCII text (see <link
    xlink:href="&url.rfc;2047">RFC2047</link>).
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -23,9 +23,9 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The MIME text
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -33,19 +33,19 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The decoded elements are returned in an array of objects, where each
-   object has two properties, <literal>charset</literal> and 
+   object has two properties, <literal>charset</literal> and
    <literal>text</literal>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If the element hasn't been encoded, and in other words is in
    plain US-ASCII, the <literal>charset</literal> property of that element is
    set to <literal>default</literal>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The function returns &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;
@@ -77,11 +77,11 @@ Text:  <keld@example.com>
     </screen>
    </example>
   </para>
-  <para>
+  <simpara>
    In the above example we would have two elements, whereas the first
    element had previously been encoded with ISO-8859-1, and the second
    element would be plain US-ASCII.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="seealso">
   &reftitle.seealso;

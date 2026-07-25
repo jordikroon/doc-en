@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>void</type><methodname>SeekableIterator::seek</methodname>
    <methodparam><type>int</type><parameter>offset</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Seeks to a given position in the iterator.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -25,9 +25,9 @@
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The position to seek to.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -36,15 +36,15 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
   <simpara>
-   Implementations should throw an <classname>OutOfBoundsException</classname>
+   Implementations should throw an <exceptionname>OutOfBoundsException</exceptionname>
    if the <parameter>offset</parameter> is not seekable.
   </simpara>
  </refsect1>
@@ -54,10 +54,10 @@
   <para>
    <example>
     <title><methodname>SeekableIterator::seek</methodname> example</title>
-    <para>
-     Seek to the item at position 3 in the iterator 
+    <simpara>
+     Seek to the item at position 3 in the iterator
      (<classname>ArrayIterator</classname> implements <classname>SeekableIterator</classname>).
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

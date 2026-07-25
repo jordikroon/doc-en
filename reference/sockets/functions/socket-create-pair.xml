@@ -5,7 +5,7 @@
   <refname>socket_create_pair</refname>
   <refpurpose>Creates a pair of indistinguishable sockets and stores them in an array</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -15,11 +15,11 @@
    <methodparam><type>int</type><parameter>protocol</parameter></methodparam>
    <methodparam><type>array</type><parameter role="reference">pair</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>socket_create_pair</function> creates two connected and
    indistinguishable sockets, and stores them in <parameter>pair</parameter>.
    This function is commonly used in IPC (InterProcess Communication).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,27 +29,27 @@
     <varlistentry>
      <term><parameter>domain</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <parameter>domain</parameter> parameter specifies the protocol
        family to be used by the socket. See <function>socket_create</function>
        for the full list.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>type</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <parameter>type</parameter> parameter selects the type of communication
-       to be used by the socket. See <function>socket_create</function> for the 
+       to be used by the socket. See <function>socket_create</function> for the
        full list.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>protocol</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <parameter>protocol</parameter> parameter sets the specific
        protocol within the specified <parameter>domain</parameter> to be used
        when communicating on the returned socket. The proper value can be retrieved by
@@ -57,19 +57,19 @@
        the desired protocol is TCP, or UDP the corresponding constants
        <constant>SOL_TCP</constant>, and <constant>SOL_UDP</constant>
        can also be used.
-      </para>
-      <para>
-       See <function>socket_create</function> for the full list of supported 
+      </simpara>
+      <simpara>
+       See <function>socket_create</function> for the full list of supported
        protocols.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>pair</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Reference to an array in which the two <classname>Socket</classname> instances will be inserted.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -78,9 +78,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

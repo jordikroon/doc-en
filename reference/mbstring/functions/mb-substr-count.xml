@@ -5,7 +5,7 @@
   <refname>mb_substr_count</refname>
   <refpurpose>Count the number of substring occurrences</refpurpose>
  </refnamediv>
-   
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,11 +14,11 @@
    <methodparam><type>string</type><parameter>needle</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>encoding</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Counts the number of times the
    <parameter>needle</parameter> substring occurs in the
    <parameter>haystack</parameter> <type>string</type>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,17 +28,17 @@
     <varlistentry>
      <term><parameter>haystack</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <type>string</type> being checked.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>needle</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <type>string</type> being found.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -53,11 +53,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The number of times the
    <parameter>needle</parameter> substring occurs in the
    <parameter>haystack</parameter> <type>string</type>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

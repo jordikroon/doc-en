@@ -5,30 +5,30 @@
   <refname>XMLReader::readOuterXml</refname>
   <refpurpose>Retrieve XML from current node, including itself</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="XMLReader">
    <modifier>public</modifier> <type>string</type><methodname>XMLReader::readOuterXml</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Reads the contents of the current node, including the node itself.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   &no.function.parameters;
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the contents of current node, including itself, as a string. Empty string on failure.
-  </para>
+  </simpara>
  </refsect1>
- 
+
 <!--
  <refsect1 role="examples">
   &reftitle.examples;
@@ -62,12 +62,12 @@ Use a screen like we did below
   </para>
  </refsect1>
 -->
- 
+
  <refsect1 role="notes">
   &reftitle.notes;
   &xmlreader.libxml20620.note;
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

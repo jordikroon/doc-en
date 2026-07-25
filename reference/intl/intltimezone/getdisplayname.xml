@@ -9,14 +9,14 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop; (method):</para>
+  <simpara>&style.oop; (method):</simpara>
   <methodsynopsis role="IntlTimeZone">
    <modifier>public</modifier> <type class="union"><type>string</type><type>false</type></type><methodname>IntlTimeZone::getDisplayName</methodname>
    <methodparam choice="opt"><type>bool</type><parameter>dst</parameter><initializer>&false;</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>style</parameter><initializer><constant>IntlTimeZone::DISPLAY_LONG</constant></initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>locale</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>&style.procedural;:</para>
+  <simpara>&style.procedural;:</simpara>
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>intltz_get_display_name</methodname>
    <methodparam><type>IntlTimeZone</type><parameter>timezone</parameter></methodparam>
@@ -24,9 +24,9 @@
    <methodparam choice="opt"><type>int</type><parameter>style</parameter><initializer><constant>IntlTimeZone::DISPLAY_LONG</constant></initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>locale</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -38,25 +38,25 @@
    <varlistentry>
     <term><parameter>dst</parameter></term>
     <listitem>
-     <para>
-      
-     </para>
+     <simpara>
+
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>style</parameter></term>
     <listitem>
-     <para>
-      
-     </para>
+     <simpara>
+
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>locale</parameter></term>
     <listitem>
-     <para>
-      
-     </para>
+     <simpara>
+
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -64,9 +64,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   
-  </para>
+  <simpara>
+
+  </simpara>
  </refsect1>
 
 

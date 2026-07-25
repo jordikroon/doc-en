@@ -12,10 +12,10 @@
    <modifier>public</modifier> <type>array</type><methodname>SplFixedArray::jsonSerialize</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Serializes the array to a value that can be serialized natively by
    <function>json_encode</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,10 +25,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns array data which can be serialized by <function>json_encode</function>,
    which is a value of any type other than a &resource;.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

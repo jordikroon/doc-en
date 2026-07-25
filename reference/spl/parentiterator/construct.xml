@@ -12,9 +12,9 @@
    <modifier>public</modifier> <methodname>ParentIterator::__construct</methodname>
    <methodparam><type>RecursiveIterator</type><parameter>iterator</parameter></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Constructs a <classname>ParentIterator</classname> on an iterator.
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -27,9 +27,9 @@
     <varlistentry>
      <term><parameter>iterator</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The iterator being constructed upon.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

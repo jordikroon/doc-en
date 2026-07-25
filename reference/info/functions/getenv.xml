@@ -13,15 +13,15 @@
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>name</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>local_only</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the value of a single or all environment variables.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    You can see a list of all the environmental variables by using
    <function>phpinfo</function>. Many of these variables are listed within
    <link xlink:href="&url.rfc;3875">RFC 3875</link>, specifically
    section 4.1, "Request Meta-Variables".
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -31,18 +31,18 @@
     <varlistentry>
      <term><parameter>name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The variable name as a &string; or &null;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>local_only</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        When set to &true;, only local environment variables are returned, set by the operating system or putenv. It only has
        an effect when <parameter>name</parameter> is a &string;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -51,13 +51,13 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the value of the environment variable
    <parameter>name</parameter>, or &false; if the environment
    variable <parameter>name</parameter> does not exist.
    If <parameter>name</parameter> is &null;, all environment variables are
    returned as an associative <type>array</type>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -109,7 +109,7 @@ $ip = getenv('REMOTE_ADDR');
 // Or simply use a Superglobal ($_SERVER or $_ENV)
 $ip = $_SERVER['REMOTE_ADDR'];
 
-// Safely get the value of an environment variable, ignoring whether 
+// Safely get the value of an environment variable, ignoring whether
 // or not it was set by a SAPI or has been changed with putenv
 $ip = getenv('REMOTE_ADDR', true) ?: getenv('REMOTE_ADDR')
 ?>
@@ -122,13 +122,13 @@ $ip = getenv('REMOTE_ADDR', true) ?: getenv('REMOTE_ADDR')
  <refsect1 role="notes">
   &reftitle.notes;
   <warning>
-   <para>
+   <simpara>
     If PHP is running in a SAPI such as Fast CGI, this function will
     always return the value of an environment variable set by the SAPI,
     even if <function>putenv</function> has been used to set a local
     environment variable of the same name. Use the <parameter>local_only</parameter>
     parameter to return the value of locally-set environment variables.
-   </para>
+   </simpara>
   </warning>
  </refsect1>
 

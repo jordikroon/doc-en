@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.localeconv">
+<refentry xml:id="function.localeconv" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>localeconv</refname>
   <refpurpose>Get numeric formatting information</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>array</type><methodname>localeconv</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns an associative array containing localized numeric and
    monetary formatting information.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -142,11 +142,11 @@
     </tgroup>
    </informaltable>
   </para>
-  <para>
+  <simpara>
    The <literal>p_sign_posn</literal>, and <literal>n_sign_posn</literal> contain a string
    of formatting options. Each number representing one of the above listed conditions.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The grouping fields contain arrays that define the way numbers should be
    grouped. For example, the monetary grouping field for the nl_NL locale (in
    UTF-8 mode with the euro sign), would contain a 2 item array with the
@@ -154,7 +154,7 @@
    grouping is. If an array element is equal to <constant>CHAR_MAX</constant>,
    no further grouping is done. If an array element is equal to 0, the previous
    element should be used.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -206,7 +206,7 @@ Array
 )
 ]]>
     </screen>
-   </example>   
+   </example>
   </para>
  </refsect1>
 

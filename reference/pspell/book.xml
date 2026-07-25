@@ -12,10 +12,10 @@
     This extension is <emphasis>DEPRECATED</emphasis> and <emphasis>UNBUNDLED</emphasis> as of PHP 8.4.0.
    </simpara>
   </warning>
-  <para>
+  <simpara>
    These functions allow you to check the spelling of a word and offer
    suggestions.
-  </para>
+  </simpara>
  </preface>
  <!-- }}} -->
 

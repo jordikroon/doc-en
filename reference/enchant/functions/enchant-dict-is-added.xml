@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.enchant-dict-is-added">
+<refentry xml:id="function.enchant-dict-is-added" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>enchant_dict_is_added</refname>
   <refpurpose>Whether or not 'word' exists in this spelling-session</refpurpose>

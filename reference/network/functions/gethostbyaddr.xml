@@ -13,10 +13,10 @@
    <type class="union"><type>string</type><type>false</type></type><methodname>gethostbyaddr</methodname>
    <methodparam><type>string</type><parameter>ip</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the host name of the Internet host specified by
    <parameter>ip</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,9 +26,9 @@
     <varlistentry>
      <term><parameter>ip</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The host IP address.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,10 +37,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the host name on success, the unmodified <parameter>ip</parameter>
    on failure, or &false; on malformed input.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

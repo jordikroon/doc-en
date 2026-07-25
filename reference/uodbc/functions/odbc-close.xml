@@ -11,9 +11,9 @@
    <type>void</type><methodname>odbc_close</methodname>
    <methodparam><type>Odbc\Connection</type><parameter>odbc</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Closes down the connection to the database server.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -30,9 +30,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -55,10 +55,10 @@
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     This function will fail if there are open transactions on this
     connection. The connection will remain open in this case.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 </refentry>

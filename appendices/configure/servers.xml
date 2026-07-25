@@ -2,22 +2,22 @@
 <!-- $Revision$ -->
  <sect3 xml:id="configure.options.servers" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
   <title>SAPI options</title>
-  <para>
+  <simpara>
    The following list contains the available SAPI&amp;s (<literal>Server
    Application Programming Interface</literal>) for PHP.
-  </para>
+  </simpara>
   <variablelist>
    <varlistentry xml:id="configure.with-apxs">
     <term>
      <option role="configure">--with-apxs[=FILE]</option>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Build shared Apache module. FILE is the optional pathname to the Apache
       apxs tool; defaults to apxs. Make sure you specify the version of apxs that
       is actually installed on your system and NOT the one that is in the apache
       source tarball.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="configure.with-apache">
@@ -25,10 +25,10 @@
      <option role="configure">--with-apache[=DIR]</option>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Build a static Apache module. DIR is the top-level Apache build directory,
       defaults to <filename>/usr/local/apache</filename>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="configure.with-mod-charset">
@@ -36,9 +36,9 @@
      <option role="configure">--with-mod_charset</option>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Enable transfer tables for mod_charset (Russian Apache).
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="configure.with-apxs2">
@@ -46,10 +46,10 @@
      <option role="configure">--with-apxs2[=FILE]</option>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Build shared Apache 2.0 module. FILE is the optional pathname to the Apache
       apxs tool; defaults to apxs.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
 
@@ -58,23 +58,23 @@
      <option role="configure">--disable-cli</option>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Disable building the CLI version of PHP (this
       forces <link linkend="configure.without-pear">--without-pear</link>).
       More information is available in the section about
       <link linkend="features.commandline">Using PHP from the command line</link>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
-   
+
    <varlistentry xml:id="configure.enable-phpdbg">
     <term>
      <option role="configure">--enable-phpdbg</option>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Enable phpdbg interactive debugger SAPI module support.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
 
@@ -83,11 +83,11 @@
      <option role="configure">--enable-embed[=TYPE]</option>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Enable building of the embedded SAPI library. TYPE is either
       <literal>shared</literal> or <literal>static</literal>, which
       defaults to <literal>shared</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
 
@@ -96,10 +96,10 @@
      <option role="configure">--with-servlet[=DIR]</option>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Include servlet support. DIR is the base install directory for the JSDK.
       This SAPI requires the java extension must be built as a shared dl.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
 
@@ -108,12 +108,12 @@
      <option role="configure">--disable-cgi</option>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Disable building CGI version of PHP.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       This argument also enables FastCGI.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
 

@@ -5,7 +5,7 @@
   <refname>openssl_csr_export_to_file</refname>
   <refpurpose>Exports a <acronym>CSR</acronym> to a file</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,12 +14,12 @@
    <methodparam><type>string</type><parameter>output_filename</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>no_text</parameter><initializer>&true;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>openssl_csr_export_to_file</function> takes the Certificate
    Signing Request represented by <parameter>csr</parameter> and saves it
    in <acronym>PEM</acronym> format into the file named by
    <parameter>output_filename</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,9 +30,9 @@
     <varlistentry>
      <term><parameter>output_filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path to the output file.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -47,9 +47,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>string</type><methodname>ReflectionClass::__toString</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the string representation of the ReflectionClass object.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A string representation of this <classname>ReflectionClass</classname> instance.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

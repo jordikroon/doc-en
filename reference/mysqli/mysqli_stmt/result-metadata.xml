@@ -9,22 +9,22 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="mysqli_stmt">
    <modifier>public</modifier> <type class="union"><type>mysqli_result</type><type>false</type></type><methodname>mysqli_stmt::result_metadata</methodname>
    <void/>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type class="union"><type>mysqli_result</type><type>false</type></type><methodname>mysqli_stmt_result_metadata</methodname>
    <methodparam><type>mysqli_stmt</type><parameter>statement</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    If a statement passed to <function>mysqli_prepare</function> is one that produces
    a result set, <function>mysqli_stmt_result_metadata</function> returns the result object
    that can be used to process the meta information such as total number of fields
    and individual field information.
-  </para>
+  </simpara>
   <simpara>
    This function returns an empty <classname>mysqli_result</classname> object
    which can be used to access metadata information from the prepared statement
@@ -37,14 +37,14 @@
     This result set object can be passed as an argument only to the
     field-based functions that process result set metadata, such as:
     <itemizedlist>
-     <listitem><para><function>mysqli_num_fields</function></para></listitem>
-     <listitem><para><function>mysqli_fetch_field</function></para></listitem>
-     <listitem><para><function>mysqli_fetch_field_direct</function></para></listitem>
-     <listitem><para><function>mysqli_fetch_fields</function></para></listitem>
-     <listitem><para><function>mysqli_field_count</function></para></listitem>
-     <listitem><para><function>mysqli_field_seek</function></para></listitem>
-     <listitem><para><function>mysqli_field_tell</function></para></listitem>
-     <listitem><para><function>mysqli_free_result</function></para></listitem>
+     <listitem><simpara><function>mysqli_num_fields</function></simpara></listitem>
+     <listitem><simpara><function>mysqli_fetch_field</function></simpara></listitem>
+     <listitem><simpara><function>mysqli_fetch_field_direct</function></simpara></listitem>
+     <listitem><simpara><function>mysqli_fetch_fields</function></simpara></listitem>
+     <listitem><simpara><function>mysqli_field_count</function></simpara></listitem>
+     <listitem><simpara><function>mysqli_field_seek</function></simpara></listitem>
+     <listitem><simpara><function>mysqli_field_tell</function></simpara></listitem>
+     <listitem><simpara><function>mysqli_free_result</function></simpara></listitem>
     </itemizedlist>
    </para>
   </note>

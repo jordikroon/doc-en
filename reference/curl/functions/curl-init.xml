@@ -12,9 +12,9 @@
    <type class="union"><type>CurlHandle</type><type>false</type></type><methodname>curl_init</methodname>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>url</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Initializes a new session and returns a cURL handle.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,16 +24,16 @@
     <varlistentry>
      <term><parameter>url</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If provided, the <constant>CURLOPT_URL</constant> option will be set
        to its value. This can be set manually using the
        <function>curl_setopt</function> function.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         The <literal>file</literal> protocol is disabled by cURL if
         <link linkend="ini.open-basedir">open_basedir</link> is set.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
@@ -43,9 +43,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a cURL handle on success, &false; on errors.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

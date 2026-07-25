@@ -5,7 +5,7 @@
   <refname>html_entity_decode</refname>
   <refpurpose>Convert HTML entities to their corresponding characters</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,19 +14,19 @@
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>ENT_QUOTES | ENT_SUBSTITUTE | ENT_HTML401</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>encoding</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>html_entity_decode</function> is the opposite of
    <function>htmlentities</function> in that it converts HTML entities
    in the <parameter>string</parameter> to their corresponding characters.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    More precisely, this function decodes all the entities (including all numeric
    entities) that a) are necessarily valid for the chosen document type — i.e.,
    for XML, this function does not decode named entities that might be defined
    in some DTD — and b) whose character or characters are in the coded character
    set associated with the chosen encoding and are permitted in the chosen
    document type. All other entities are left as is.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -36,9 +36,9 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -119,9 +119,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the decoded string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -172,20 +172,20 @@ echo $b, PHP_EOL; // I'll "walk" the <b>dog</b> now
 ?>
 ]]>
     </programlisting>
-   </example>   
+   </example>
   </para>
  </refsect1>
 
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     You might wonder why trim(html_entity_decode('&amp;nbsp;')); doesn't
     reduce the string to an empty string, that's because the '&amp;nbsp;'
     entity is not ASCII code 32 (which is stripped by
     <function>trim</function>) but ASCII code 160 (0xa0) in the default ISO
     8859-1 encoding.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

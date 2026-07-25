@@ -12,7 +12,7 @@
    <type>int</type><methodname>error_reporting</methodname>
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>error_level</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    The <function>error_reporting</function> function sets the
    <link linkend="ini.error-reporting">error_reporting</link>
    directive at runtime.  PHP has many levels of errors, using
@@ -20,7 +20,7 @@
    your script. If the optional <parameter>error_level</parameter> is
    not set, <function>error_reporting</function> will just return
    the current error reporting level.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,18 +30,18 @@
     <varlistentry>
      <term><parameter>error_level</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The new <link linkend="ini.error-reporting">error_reporting</link>
-       level. It takes on either a bitmask, or named constants. Using named 
-       constants is strongly encouraged to ensure compatibility for future 
-       versions. As error levels are added, the range of integers increases, 
+       level. It takes on either a bitmask, or named constants. Using named
+       constants is strongly encouraged to ensure compatibility for future
+       versions. As error levels are added, the range of integers increases,
        so older integer-based error levels will not always behave as expected.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        The available error level constants and the actual
        meanings of these error levels are described in the
        <link linkend="errorfunc.constants">predefined constants</link>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -50,11 +50,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the <link linkend="ini.error-reporting">error_reporting</link>
    level, <emphasis>before</emphasis> it is changed to
    <parameter>error_level</parameter>.
-  </para>
+  </simpara>
   <note>
    <simpara>
     The <link linkend="language.operators.errorcontrol">error control</link>

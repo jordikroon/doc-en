@@ -5,7 +5,7 @@
 
  <sect1 xml:id="configure.about">
   <title>List of core configure options</title>
-  <para>
+  <simpara>
    Below is a partial list of configure options used by the PHP
    <filename>configure</filename> scripts when compiling in Unix-like
    environments. Most configure options are listed in their appropriate
@@ -17,14 +17,14 @@
    <link xlink:href="&url.gnu.configure;">GNU configure</link> documentation for
    information on additional <command>configure</command> options such as
    <literal>--prefix=PREFIX</literal>.
-  </para>
-  
+  </simpara>
+
   <note>
-   <para>
+   <simpara>
     These are only used at compile time. If you want to alter PHP's
     runtime configuration, please see the chapter on <link
     linkend="configuration">Runtime Configuration</link>.
-   </para>
+   </simpara>
   </note>
 
   <itemizedlist>

@@ -12,7 +12,7 @@
    <methodparam><type>GdImage</type><parameter>image</parameter></methodparam>
    <methodparam><type>bool</type><parameter>enable</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>imagealphablending</function> allows for two different
    modes of drawing on truecolor images. In blending mode, the
    alpha channel component of the color supplied to all drawing function,
@@ -23,7 +23,7 @@
    non-blending mode, the drawing color is copied literally with its alpha channel
    information, replacing the destination pixel.  Blending mode is not available
    when drawing on palette images.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -33,10 +33,10 @@
     <varlistentry>
      <term><parameter>enable</parameter></term>
      <listitem>
-      <para>
-       Whether to enable the blending mode or not. On true color images 
+      <simpara>
+       Whether to enable the blending mode or not. On true color images
        the default value is &true; otherwise the default value is &false;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -44,9 +44,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

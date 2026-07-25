@@ -17,19 +17,19 @@
     <type>mixed</type><methodname>min</methodname>
     <methodparam><type>array</type><parameter>value_array</parameter></methodparam>
    </methodsynopsis>
-  <para>
+  <simpara>
    If the first and only parameter is an array, <function>min</function>
-   returns the lowest value in that array. If at least two parameters are 
+   returns the lowest value in that array. If at least two parameters are
    provided, <function>min</function> returns the smallest of these values.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     Values of different types will be compared using the <link linkend="language.operators.comparison">
     standard comparison rules</link>. For instance, a non-numeric <type>string</type> will be
     compared to an <type>int</type> as though it were <literal>0</literal>, but multiple non-numeric
     <type>string</type> values will be compared alphanumerically. The actual value returned will be of the
     original type with no conversion applied.
-   </para>
+   </simpara>
   </note>
   <caution>
    <simpara>
@@ -45,27 +45,27 @@
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Any <link linkend="language.operators.comparison">comparable</link>
        value.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>values</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Any <link linkend="language.operators.comparison">comparable</link>
        values.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>value_array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An array containing the values.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -73,18 +73,18 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    <function>min</function> returns the parameter value considered "lowest" according to standard
    comparisons. If multiple values of different types evaluate as equal (e.g. <literal>0</literal>
    and <literal>'abc'</literal>) the first provided to the function will be returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   If an empty array is passed, <function>min</function> throws a <classname>ValueError</classname>.
-  </para>
+  <simpara>
+   If an empty array is passed, <function>min</function> throws a <exceptionname>ValueError</exceptionname>.
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -101,7 +101,7 @@
      <row>
       <entry>8.0.0</entry>
       <entry>
-       <function>min</function> throws a <classname>ValueError</classname> on failure now;
+       <function>min</function> throws a <exceptionname>ValueError</exceptionname> on failure now;
        previously, &false; was returned and an <constant>E_WARNING</constant> error was emitted.
       </entry>
      </row>
@@ -148,7 +148,7 @@ $val = min('string', array(2, 5, 7), 42);   // string
 var_dump($val);
 
 // If one argument is NULL or a boolean, it will be compared against
-// other values using the rules FALSE < TRUE and NULL == FALSE regardless of the 
+// other values using the rules FALSE < TRUE and NULL == FALSE regardless of the
 // other types involved
 // In the below examples, both -10 and 10 are treated as TRUE in the comparison
 $val = min(-10, FALSE, 10); // FALSE

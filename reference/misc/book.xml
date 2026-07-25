@@ -8,10 +8,10 @@
 
  <preface xml:id="intro.misc">
   &reftitle.intro;
-  <para>
+  <simpara>
    These functions were placed here because none of the other
    categories seemed to fit.
-  </para>
+  </simpara>
  </preface>
 
 
@@ -19,9 +19,9 @@
  &reference.misc.constants;
  &reference.misc.reference;
 
-<appendix xmlns="http://docbook.org/ns/docbook" xml:id="changelog.misc">
+<appendix xml:id="changelog.misc" xmlns="http://docbook.org/ns/docbook">
  <title>&ChangelogListingTitle;</title>
- <para>&ChangelogListingDescription;</para>
+ <simpara>&ChangelogListingDescription;</simpara>
  <?phpdoc generate-changelog-for="ref.misc"?>
 </appendix>
 

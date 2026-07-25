@@ -2,7 +2,7 @@
 <!-- $Revision$ -->
 <refentry xml:id="function.xml-get-current-column-number" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
-  <refname>xml_get_current_column_number</refname> 
+  <refname>xml_get_current_column_number</refname>
   <refpurpose>
    Get current column number for an XML parser
   </refpurpose>
@@ -14,9 +14,9 @@
    <type>int</type><methodname>xml_get_current_column_number</methodname>
    <methodparam><type>XMLParser</type><parameter>parser</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the current column number of the given XML parser.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,9 +26,9 @@
     <varlistentry>
      <term><parameter>parser</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A reference to the XML parser to get column number from.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,12 +37,12 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns which column on
    the current line (as given by
    <function>xml_get_current_line_number</function>) the parser is
    currently at.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

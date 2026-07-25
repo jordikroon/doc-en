@@ -2,12 +2,12 @@
 <!-- $Revision$ -->
  <sect1 xml:id="language.oop5.late-static-bindings" xmlns="http://docbook.org/ns/docbook">
   <title>Late Static Bindings</title>
-  <para>
+  <simpara>
    PHP implements a feature called late static bindings which
    can be used to reference the called class in a context of static inheritance.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    More precisely, late static bindings work by storing the class named in the
    last "non-forwarding call". In case of static method calls, this is the
    class explicitly named (usually the one on the left of the
@@ -17,13 +17,13 @@
    <literal>parent::</literal>, <literal>static::</literal>, or, if going
    up in the class hierarchy, <function>forward_static_call</function>.
    <!-- technically, static:: may be non forwarding, but it's irrelevant -->
-   
+
    The function <function>get_called_class</function> can be used to retrieve
    a string with the name of the called class and <literal>static::</literal>
    introduces its scope.
-  </para>
-  
-  <para>
+  </simpara>
+
+  <simpara>
    This feature was named "late static bindings" with an internal perspective in
    mind. "Late binding" comes from the fact that <literal>static::</literal>
    will not be resolved using the class where the method is defined but it will
@@ -31,15 +31,15 @@
 
    It was also called a "static binding" as it can be used for (but is not
    limited to) static method calls.
-  </para>
+  </simpara>
 
   <sect2 xml:id="language.oop5.late-static-bindings.self">
    <title>Limitations of <literal>self::</literal></title>
-   <para>
+   <simpara>
     Static references to the current class like <literal>self::</literal> or
     <literal>__CLASS__</literal> are resolved using the class in which the
     function belongs, as in where it was defined:
-   </para>
+   </simpara>
    <example>
     <title><literal>self::</literal> usage</title>
     <programlisting role="php">
@@ -85,14 +85,14 @@ A
   <sect2 xml:id="language.oop5.late-static-bindings.usage">
    <title>Late Static Bindings' usage</title>
 
-   <para>
+   <simpara>
     Late static bindings tries to solve that limitation by introducing a
     keyword that references the class that was initially called at runtime.
     Basically, a keyword that would allow referencing
     <literal>B</literal> from <literal>test()</literal> in the previous
     example. It was decided not to introduce a new keyword but rather use
     <literal>static</literal> that was already reserved.
-   </para>
+   </simpara>
 
    <example>
     <title><literal>static::</literal> simple usage</title>
@@ -134,13 +134,13 @@ B
     </screen>
    </example>
    <note>
-    <para>
+    <simpara>
      In non-static contexts, the called class will be the class of the object
      instance. Since <literal>$this-></literal> will try to call private
      methods from the same scope, using <literal>static::</literal> may give
      different results. Another difference is that <literal>static::</literal>
      can only refer to static properties.
-    </para>
+    </simpara>
    </note>
    <example>
     <title><literal>static::</literal> usage in a non-static context</title>
@@ -200,12 +200,12 @@ Call to private method C::foo() from scope A
     </screen>
    </example>
    <note>
-    <para>
+    <simpara>
      Late static bindings' resolution will stop at a fully resolved static call
      with no fallback. On the other hand, static calls using keywords like
      <literal>parent::</literal> or <literal>self::</literal> will forward the
      calling information.
-    </para>
+    </simpara>
     <example>
      <title>Forwarding and non-forwarding calls</title>
      <programlisting role="php">

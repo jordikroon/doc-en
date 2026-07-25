@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>string</type><methodname>SplFileInfo::__toString</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    This method will return the file name of the referenced file.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the path to the file.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -53,7 +53,7 @@ echo $info.PHP_EOL;
 string(3) "foo"
 foo
 string(12) "/usr/bin/php"
-/usr/bin/php 
+/usr/bin/php
 ]]>
     </screen>
    </example>

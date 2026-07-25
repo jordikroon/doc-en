@@ -5,7 +5,7 @@
   <refname>odbc_specialcolumns</refname>
   <refpurpose>Retrieves special columns</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -18,11 +18,11 @@
    <methodparam><type>int</type><parameter>scope</parameter></methodparam>
    <methodparam><type>int</type><parameter>nullable</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Retrieves either the optimal set of columns that uniquely identifies a
    row in the table, or columns that are automatically updated when any
    value in the row is updated by a transaction.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -54,44 +54,44 @@
     <varlistentry>
      <term><parameter>catalog</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &odbc.parameter.catalog;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>schema</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &odbc.parameter.schema;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>table</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The table.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>scope</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The scope, which orders the result set.
        One of <constant>SQL_SCOPE_CURROW</constant>, <constant>SQL_SCOPE_TRANSACTION</constant>
        or <constant>SQL_SCOPE_SESSION</constant>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>nullable</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Determines whether to return special columns that can have a NULL value.
        One of <constant>SQL_NO_NULLS</constant> or <constant>SQL_NULLABLE</constant>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -100,9 +100,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &odbc.result.object-return-falseforfailure;
-  </para>
+  </simpara>
   <para>
    The result set has the following columns:
    <itemizedlist>

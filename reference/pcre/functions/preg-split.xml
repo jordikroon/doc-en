@@ -15,9 +15,9 @@
    <methodparam choice="opt"><type>int</type><parameter>limit</parameter><initializer>-1</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Split the given string by a regular expression.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,27 +27,27 @@
     <varlistentry>
      <term><parameter>pattern</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The pattern to search for, as a string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>subject</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>limit</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If specified, then only substrings up to <parameter>limit</parameter>
        are returned with the rest of the string being placed in the last
        substring.  A <parameter>limit</parameter> of -1 or 0 means "no limit".
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -78,13 +78,13 @@
         <varlistentry>
          <term><constant>PREG_SPLIT_OFFSET_CAPTURE</constant></term>
          <listitem>
-          <para>
+          <simpara>
            If this flag is set, for every occurring match the appendant string
            offset will also be returned. Note that this changes the return
            value in an array where every element is an array consisting of the
            matched string at offset <literal>0</literal> and its string offset
            into <parameter>subject</parameter> at offset <literal>1</literal>.
-          </para>
+          </simpara>
          </listitem>
         </varlistentry>
        </variablelist>
@@ -97,10 +97,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array containing substrings of <parameter>subject</parameter>
    split along boundaries matched by <parameter>pattern</parameter>, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -209,16 +209,16 @@ Array
  <refsect1 role="notes">
   &reftitle.notes;
   <tip>
-   <para>
+   <simpara>
     If you don't need the power of regular expressions, you can choose
     faster (albeit simpler) alternatives like <function>explode</function>
     or <function>str_split</function>.
-   </para>
+   </simpara>
   </tip>
   <tip>
-   <para>
+   <simpara>
     If matching fails, an array with a single element containing the input string will be returned.
-   </para>
+   </simpara>
   </tip>
  </refsect1>
 

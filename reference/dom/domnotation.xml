@@ -12,23 +12,23 @@ Remove me once you perform substitutions
 <reference xml:id="class.domnotation" role="class" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
  <title>The DOMNotation class</title>
  <titleabbrev>DOMNotation</titleabbrev>
- 
+
  <partintro>
- 
+
 <!-- {{{ DOMNotation intro -->
 <!-- FIXME:
   <section xml:id="domnotation.intro">
    &reftitle.intro;
    <para>
-    
+
    </para>
   </section>
 -->
 <!-- }}} -->
- 
+
   <section xml:id="domnotation.synopsis">
    &reftitle.classsynopsis;
- 
+
 <!-- {{{ Synopsis -->
    <classsynopsis class="class">
     <ooclass>
@@ -64,9 +64,9 @@ Remove me once you perform substitutions
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.domnode')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[@role='DOMNode'])"/>
    </classsynopsis>
 <!-- }}} -->
- 
+
   </section>
- 
+
 <!-- {{{ DOMNotation properties -->
   <section xml:id="domnotation.props">
    &reftitle.properties;
@@ -88,7 +88,7 @@ Remove me once you perform substitutions
    </variablelist>
   </section>
 <!-- }}} -->
-  
+
 <!-- {{{ See also -->
 <!--
   <section role="seealso">
@@ -101,9 +101,9 @@ Remove me once you perform substitutions
   </section>
 -->
 <!-- }}} -->
- 
+
  </partintro>
- 
+
 </reference>
 <!-- Keep this comment at the end of the file
 Local variables:

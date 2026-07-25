@@ -9,7 +9,7 @@
  <!-- {{{ preface -->
  <preface xml:id="intro.pdo">
   &reftitle.intro;
-  <para>
+  <simpara>
    The <literal>PHP Data Objects</literal> (<acronym>PDO</acronym>) extension defines a lightweight, consistent interface
    for accessing databases in PHP. Each database driver that
    implements the PDO interface can expose database-specific
@@ -17,18 +17,18 @@
    perform any database functions using the PDO extension by
    itself; you must use a <link linkend="pdo.drivers">database-specific
    PDO driver</link> to access a database server.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    PDO provides a <emphasis>data-access</emphasis> abstraction layer, which
    means that, regardless of which database you're using, you use the same
    functions to issue queries and fetch data.  PDO does
    <emphasis>not</emphasis> provide a <emphasis>database</emphasis>
    abstraction; it doesn't rewrite SQL or emulate missing features.  You
    should use a full-blown abstraction layer if you need that facility.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    PDO ships with PHP.
-  </para>
+  </simpara>
  </preface>
  <!-- }}} -->
 

@@ -12,9 +12,9 @@
    <modifier>public</modifier> <methodname>Attribute::__construct</methodname>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer><constant>Attribute::TARGET_ALL</constant></initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Constructs a new <classname>Attribute</classname> instance.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -23,8 +23,8 @@
    <variablelist>
     <varlistentry><term><parameter>flags</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

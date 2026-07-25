@@ -15,10 +15,10 @@
    <methodparam><type>string</type><parameter>qualifiedName</parameter></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>value</parameter><initializer>""</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function creates a new element node with an associated namespace.
    &dom.node.inserted;
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -27,26 +27,26 @@
     <varlistentry>
      <term><parameter>namespace</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The URI of the namespace.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>qualifiedName</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The qualified name of the element, as <literal>prefix:tagname</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The value of the element. By default, an empty element will be created.
        You can also set the value later with <link linkend="domnode.props.nodevalue">DOMElement::$nodeValue</link>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -54,9 +54,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The new <classname>DOMElement</classname> or &false; if an error occurred.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="errors">
   &reftitle.errors;
@@ -69,18 +69,18 @@
     <varlistentry>
      <term><constant>DOM_INVALID_CHARACTER_ERR</constant></term>
      <listitem>
-      <para>
+      <simpara>
        Raised if <parameter>qualifiedName</parameter> contains an invalid character.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><constant>DOM_NAMESPACE_ERR</constant></term>
      <listitem>
-      <para>
+      <simpara>
        Raised if <parameter>qualifiedName</parameter> is a malformed qualified
        name.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

@@ -5,7 +5,7 @@
   <refname>gmp_powm</refname>
   <refpurpose>Raise number into power with modulo</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,11 +14,11 @@
    <methodparam><type class="union"><type>GMP</type><type>int</type><type>string</type></type><parameter>exponent</parameter></methodparam>
    <methodparam><type class="union"><type>GMP</type><type>int</type><type>string</type></type><parameter>modulus</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Calculate (<parameter>num</parameter> raised into power
    <parameter>exponent</parameter>) modulo <parameter>modulus</parameter>. If
    <parameter>exponent</parameter> is negative, result is undefined.
-  </para>
+  </simpara>
  </refsect1>
 
 
@@ -29,28 +29,28 @@
     <varlistentry>
      <term><parameter>num</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The base number.
-      </para>
-      &gmp.parameter; 
+      </simpara>
+      &gmp.parameter;
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>exponent</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The positive power to raise the <parameter>num</parameter>.
-      </para>
-      &gmp.parameter; 
+      </simpara>
+      &gmp.parameter;
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>modulus</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The modulo.
-      </para>
-      &gmp.parameter; 
+      </simpara>
+      &gmp.parameter;
      </listitem>
     </varlistentry>
    </variablelist>
@@ -59,9 +59,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The new (raised) number, as a GMP number.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

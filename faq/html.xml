@@ -4,20 +4,20 @@
   <title>PHP and HTML</title>
   <titleabbrev>PHP and HTML</titleabbrev>
 
-  <para>
+  <simpara>
    PHP and HTML interact a lot: PHP can generate HTML, and HTML
    can pass information to PHP.  Before reading these faqs, it's
    important you learn how to retrieve <link linkend="language.variables.external">
    variables from external sources</link>.  The manual page on
    this topic includes many examples as well.
-  </para>
+  </simpara>
 
   <qandaset>
    <qandaentry xml:id="faq.html.encoding">
     <question>
-     <para>
+     <simpara>
       What encoding/decoding do I need when I pass a value through a form/URL?
-     </para>
+     </simpara>
     </question>
     <answer>
      <para>
@@ -27,18 +27,18 @@
       relevant stages:
       <itemizedlist>
        <listitem>
-        <para>
+        <simpara>
          HTML interpretation. In order to specify a random string, you
-         <emphasis>must</emphasis> include it in double quotes, and 
+         <emphasis>must</emphasis> include it in double quotes, and
          <function>htmlspecialchars</function> the whole value.
-        </para>
+        </simpara>
        </listitem>
        <listitem>
-        <para>
+        <simpara>
          URL: A URL consists of several parts. If you want your data to be
          interpreted as one item, you <emphasis>must</emphasis> encode it with
          <function>urlencode</function>.
-        </para>
+        </simpara>
        </listitem>
       </itemizedlist>
      </para>
@@ -127,12 +127,12 @@
 
    <qandaentry xml:id="faq.html.form-image">
     <question>
-     <para>
-      I'm trying to use an &lt;input type="image"&gt; tag, but 
+     <simpara>
+      I'm trying to use an &lt;input type="image"&gt; tag, but
       the <varname>$foo.x</varname> and <varname>$foo.y</varname> variables
       aren't available.  <varname>$_GET['foo.x']</varname> isn't existing
-      either.  Where are they?  
-     </para>
+      either.  Where are they?
+     </simpara>
     </question>
     <answer>
      <para>
@@ -152,13 +152,13 @@
       make invalid variable names in PHP, they are automagically converted to
       <varname>foo_x</varname> and <varname>foo_y</varname>. That is, the
       periods are replaced with underscores.  So, you'd access these variables
-      like any other described within the section on retrieving 
-      <link linkend="language.variables.external">variables from external 
+      like any other described within the section on retrieving
+      <link linkend="language.variables.external">variables from external
       sources</link>.  For example, <varname>$_GET['foo_x']</varname>.
       <note>
-       <para>
+       <simpara>
          Spaces in request variable names are converted to underscores.
-       </para>
+       </simpara>
       </note>
      </para>
     </answer>
@@ -166,11 +166,11 @@
 
    <qandaentry xml:id="faq.html.arrays">
     <question>
-     <para>How do I create arrays in a HTML &lt;form&gt;?</para>
+     <simpara>How do I create arrays in a HTML &lt;form&gt;?</simpara>
     </question>
     <answer>
      <para>
-      To get your &lt;form&gt; result sent as an 
+      To get your &lt;form&gt; result sent as an
       <link linkend="language.types.array">array</link> to your PHP script
       you name the &lt;input&gt;, &lt;select&gt; or &lt;textarea&gt;
       elements like this:
@@ -208,27 +208,27 @@
       </para>
       <para>
        <note>
-        <para>
+        <simpara>
          Specifying array keys is optional in HTML.  If you do not specify
          the keys, the array gets filled in the order the elements appear in
          the form.  Our first example will contain keys 0, 1, 2 and 3.
-        </para>
+        </simpara>
        </note>
       </para>
-      <para>
+      <simpara>
       See also
       <link linkend="ref.array">Array Functions</link> and
       <link linkend="language.variables.external">Variables From External
       Sources</link>.
-     </para>
+     </simpara>
     </answer>
    </qandaentry>
 
    <qandaentry xml:id="faq.html.select-multiple">
     <question>
-     <para>
+     <simpara>
       How do I get all the results from a select multiple HTML tag?
-     </para>
+     </simpara>
     </question>
     <answer>
      <para>
@@ -279,18 +279,18 @@ variable = document.forms[0].elements['var[]'];
 
    <qandaentry xml:id="faq.html.javascript-variable">
     <question>
-     <para>
+     <simpara>
       How can I pass a variable from Javascript to PHP?
-     </para>
+     </simpara>
     </question>
     <answer>
-     <para>
+     <simpara>
       Since Javascript is (usually) a client-side technology, and
       PHP is (usually) a server-side technology, and since HTTP is a
       "stateless" protocol, the two languages cannot directly share
       variables.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       It is, however, possible to pass variables between the two.
       One way of accomplishing this is to generate Javascript code
       with PHP, and have the browser refresh itself, passing specific
@@ -298,7 +298,7 @@ variable = document.forms[0].elements['var[]'];
       precisely how to do this -- it allows PHP code to capture screen
       height and width, something that is normally only possible on
       the client side.
-     </para>
+     </simpara>
      <para>
       <example>
        <title>Generating Javascript with PHP</title>

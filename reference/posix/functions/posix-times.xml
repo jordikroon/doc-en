@@ -5,16 +5,16 @@
   <refname>posix_times</refname>
   <refpurpose>Get process times</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>array</type><type>false</type></type><methodname>posix_times</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets information about the current CPU usage.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -94,10 +94,10 @@ Array
  <refsect1 role="notes">
   &reftitle.notes;
   <warning>
-   <para>
+   <simpara>
     This function isn't reliable to use, it may return negative values for
     high times.
-   </para>
+   </simpara>
   </warning>
  </refsect1>
 

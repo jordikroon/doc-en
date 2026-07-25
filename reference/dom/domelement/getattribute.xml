@@ -11,10 +11,10 @@
    <modifier>public</modifier> <type>string</type><methodname>DOMElement::getAttribute</methodname>
    <methodparam><type>string</type><parameter>qualifiedName</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   Gets the value of the attribute with name <parameter>qualifiedName</parameter> 
+  <simpara>
+   Gets the value of the attribute with name <parameter>qualifiedName</parameter>
    for the current node.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -23,9 +23,9 @@
     <varlistentry>
      <term><parameter>qualifiedName</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The name of the attribute.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -33,10 +33,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The value of the attribute, or an empty string if no attribute with the
    given <parameter>qualifiedName</parameter> is found.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="seealso">
   &reftitle.seealso;

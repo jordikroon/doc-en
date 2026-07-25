@@ -12,19 +12,19 @@
    <methodparam><type>array</type><parameter>array</parameter></methodparam>
    <methodparam><type>int</type><parameter>num</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Uniformly selects <parameter>num</parameter> distinct array keys of the input <parameter>array</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Each key of the input <parameter>array</parameter> is equally likely to be returned.
-  </para>
+  </simpara>
   <caution>
-   <para>
+   <simpara>
     The selection of the array keys depends on the internal structure of the input
     <parameter>array</parameter>. The returned array keys might be different for
     two equal input arrays and two <classname>Random\Engine</classname>s with
     identical state, depending on how the input arrays have been created.
-   </para>
+   </simpara>
   </caution>
  </refsect1>
 
@@ -34,18 +34,18 @@
    <varlistentry>
     <term><parameter>array</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The array whose array keys are selected.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>num</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The number of array keys to return; must be between <literal>1</literal>
       and the number of elements in <parameter>array</parameter>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -53,13 +53,13 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An &array; containing <parameter>num</parameter> distinct array keys of <parameter>array</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The returned &array; will be a list (<function>array_is_list</function>). It will be a subset
    of the &array; returned by <function>array_keys</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -69,7 +69,7 @@
     <simpara>
      If <parameter>num</parameter> is less than <literal>1</literal> or
      greater than the number of elements in <parameter>array</parameter>, a
-     <classname>ValueError</classname> will be thrown.
+     <exceptionname>ValueError</exceptionname> will be thrown.
     </simpara>
    </listitem>
    &random.engineErrors;

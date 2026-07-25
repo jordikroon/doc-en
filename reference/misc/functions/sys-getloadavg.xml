@@ -11,11 +11,11 @@
    <type class="union"><type>array</type><type>false</type></type><methodname>sys_getloadavg</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns three samples representing the average system load
    (the number of processes in the system run queue) over the last 1, 5 and 15
    minutes, respectively. Returns &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,10 +25,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an <type>array</type> with three samples (last 1, 5 and 15
    minutes).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

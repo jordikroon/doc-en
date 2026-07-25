@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="function.hex2bin">
+<refentry xml:id="function.hex2bin" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>hex2bin</refname>
   <refpurpose>Decodes a hexadecimally encoded binary string</refpurpose>
@@ -12,14 +12,14 @@
    <type class="union"><type>string</type><type>false</type></type><methodname>hex2bin</methodname>
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Decodes a hexadecimally encoded binary string.
-  </para>
+  </simpara>
   <caution>
-   <para>
+   <simpara>
     This function does <emphasis>NOT</emphasis> convert a hexadecimal number to a binary
     number. This can be done using the <function>base_convert</function> function.
-   </para>
+   </simpara>
   </caution>
  </refsect1>
 
@@ -29,9 +29,9 @@
    <varlistentry>
     <term><parameter>string</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Hexadecimal representation of data.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -39,17 +39,17 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the binary representation of the given data &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    If the hexadecimal input string is of odd length or invalid hexadecimal string
    an <constant>E_WARNING</constant> level error is thrown.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

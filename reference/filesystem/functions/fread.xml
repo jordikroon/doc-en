@@ -5,7 +5,7 @@
   <refname>fread</refname>
   <refpurpose>Binary-safe file read</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -60,9 +60,9 @@
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Up to <parameter>length</parameter> number of bytes read.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -71,9 +71,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the read string &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -98,11 +98,11 @@ fclose($handle);
    <example>
     <title>Binary <function>fread</function> example</title>
     <warning>
-     <para>
+     <simpara>
       On systems which differentiate between binary and text files
       (i.e. Windows) the file must be opened with 'b' included in
       <function>fopen</function> mode parameter.
-     </para>
+     </simpara>
     </warning>
     <programlisting role="php">
 <![CDATA[
@@ -120,14 +120,14 @@ fclose($handle);
    <example>
     <title>Remote <function>fread</function> examples</title>
     <warning>
-     <para>
+     <simpara>
       When reading from anything that is not a regular local file, such as
       streams returned when
       reading <link linkend="features.remote-files">remote files</link> or from
       <function>popen</function> and <function>fsockopen</function>, reading
       will stop after a packet is available.  This means that you should
       collect the data together in chunks as shown in the examples below.
-     </para>
+     </simpara>
     </warning>
     <programlisting role="php">
 <![CDATA[
@@ -162,19 +162,19 @@ fclose($handle);
 <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     If you just want to get the contents of a file into a string, use
     <function>file_get_contents</function> as it has much better performance
     than the code above.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
-    Note that <function>fread</function> reads from the current position of 
-    the file pointer. Use <function>ftell</function> to find the current 
-    position of the pointer and <function>rewind</function> to rewind the 
+   <simpara>
+    Note that <function>fread</function> reads from the current position of
+    the file pointer. Use <function>ftell</function> to find the current
+    position of the pointer and <function>rewind</function> to rewind the
     pointer position.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

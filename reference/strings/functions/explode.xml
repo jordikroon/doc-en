@@ -5,7 +5,7 @@
   <refname>explode</refname>
   <refpurpose>Split a string by a string</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,11 +14,11 @@
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>limit</parameter><initializer><constant>PHP_INT_MAX</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns an array of strings, each of which is a substring of
    <parameter>string</parameter> formed by splitting it on
    boundaries formed by the string <parameter>separator</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,67 +28,67 @@
     <varlistentry>
      <term><parameter>separator</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The boundary string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>limit</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If <parameter>limit</parameter> is set and positive, the returned array will contain
        a maximum of <parameter>limit</parameter> elements with the last
        element containing the rest of <parameter>string</parameter>.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If the <parameter>limit</parameter> parameter is negative, all components
        except the last -<parameter>limit</parameter> are returned.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If the <parameter>limit</parameter> parameter is zero, then this is treated as 1.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
   <note>
-   <para>
+   <simpara>
     Prior to PHP 8.0, <function>implode</function> accepted its parameters in either order.
     <function>explode</function> has never supported this: you must ensure that the
     <parameter>separator</parameter> argument comes before the
     <parameter>string</parameter> argument.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an <type>array</type> of <type>string</type>s
    created by splitting the <parameter>string</parameter> parameter on
    boundaries formed by the <parameter>separator</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If <parameter>separator</parameter> is an empty <type>string</type> (""),
-   <function>explode</function> throws a <classname>ValueError</classname>.
+   <function>explode</function> throws a <exceptionname>ValueError</exceptionname>.
    If <parameter>separator</parameter> contains a value that is not
    contained in <parameter>string</parameter> and a negative
    <parameter>limit</parameter> is used, then an empty <type>array</type> will be
    returned, otherwise an <type>array</type> containing
-   <parameter>string</parameter> will be returned. If <parameter>separator</parameter> 
-   values appear at the start or end of <parameter>string</parameter>, said values 
-   will be added as an empty <type>array</type> value either in the first or last 
+   <parameter>string</parameter> will be returned. If <parameter>separator</parameter>
+   values appear at the start or end of <parameter>string</parameter>, said values
+   will be added as an empty <type>array</type> value either in the first or last
    position of the returned <type>array</type> respectively.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -105,7 +105,7 @@
      <row>
       <entry>8.0.0</entry>
       <entry>
-       <function>explode</function> will now throw <classname>ValueError</classname>
+       <function>explode</function> will now throw <exceptionname>ValueError</exceptionname>
        when <parameter>separator</parameter> parameter is given an empty string
        (<literal>""</literal>).
        Previously, <function>explode</function> returned &false; instead.
@@ -146,7 +146,7 @@ echo $pass, PHP_EOL; // *
     <programlisting role="php">
 <![CDATA[
 <?php
-/* 
+/*
    A string that doesn't contain the delimiter will simply
    return a one-length array of the original string.
 */

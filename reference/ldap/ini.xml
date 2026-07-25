@@ -27,9 +27,9 @@
  </table>
  &ini.php.constants;
  </para>
- 
+
  &ini.descriptions.title;
- 
+
  <para>
   <variablelist>
    <varlistentry xml:id="ini.ldap.max_links">
@@ -38,9 +38,9 @@
      <type>int</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       The maximum number of LDAP connections per process.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>

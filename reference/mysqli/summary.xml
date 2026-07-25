@@ -707,10 +707,10 @@
  </table>
 
  <note>
-  <para>
+  <simpara>
    Alias functions are provided for backward compatibility purposes
    only. Do not use them in new projects.
-  </para>
+  </simpara>
  </note>
 
 </chapter>

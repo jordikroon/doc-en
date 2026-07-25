@@ -17,10 +17,10 @@
    must be a <link linkend="language.constants">constant</link> value.
   </para>
   <note>
-   <para>
+   <simpara>
     An obsolete way of declaring class properties, is by using the
     <literal>var</literal> keyword instead of a modifier.
-   </para>
+   </simpara>
   </note>
   <note>
    <simpara>
@@ -28,19 +28,19 @@
     modifier will be declared as <literal>public</literal>.
    </simpara>
   </note>
-  <para>
-   Within class methods non-static properties may be accessed by using 
-   <literal>-&gt;</literal> (Object Operator): <varname>$this-&gt;property</varname> 
-   (where <literal>property</literal> is the name of the property). 
+  <simpara>
+   Within class methods non-static properties may be accessed by using
+   <literal>-&gt;</literal> (Object Operator): <varname>$this-&gt;property</varname>
+   (where <literal>property</literal> is the name of the property).
    Static properties are accessed by using the <literal>::</literal> (Double Colon):
    <varname>self::$property</varname>. See <xref linkend="language.oop5.static" />
    for more information on the difference between static and non-static properties.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The pseudo-variable <varname>$this</varname> is available inside
    any class method when that method is called from within an object context.
    <varname>$this</varname> is the value of the calling object.
-  </para>
+  </simpara>
 
   <para>
    <example>
@@ -73,16 +73,16 @@ EOD;
 }
 ?>
 ]]>
-    </programlisting>   
+    </programlisting>
    </example>
   </para>
 
   <note>
-   <para>
+   <simpara>
     There are various functions to handle classes and objects.
     See the <link linkend="ref.classobj">Class/Object Functions</link>
     reference.
-   </para>
+   </simpara>
   </note>
 
   <sect2 xml:id="language.oop5.properties.typed-properties">
@@ -129,7 +129,7 @@ NULL
 
    <para>
     Typed properties must be initialized before accessing, otherwise an
-    <classname>Error</classname> is thrown.
+    <exceptionname>Error</exceptionname> is thrown.
     <example>
      <title>Accessing properties</title>
      <programlisting role="php">
@@ -226,19 +226,19 @@ $test->prop = "foobar";
      </programlisting>
     </example>
     <note>
-     <para>
+     <simpara>
       The readonly modifier can only be applied to <link linkend="language.oop5.properties.typed-properties">typed properties</link>.
       A readonly property without type constraints can be created using the <xref linkend="language.types.mixed"/> type.
-     </para>
+     </simpara>
     </note>
     <note>
-     <para>
+     <simpara>
       Readonly static properties are not supported.
-     </para>
+     </simpara>
     </note>
    </para>
    <para>
-    A readonly property can only be initialized once, and only from the scope where it has been declared. Any other assignment or modification of the property will result in an <classname>Error</classname> exception.
+    A readonly property can only be initialized once, and only from the scope where it has been declared. Any other assignment or modification of the property will result in an <exceptionname>Error</exceptionname> exception.
     <example>
      <title>Illegal initialization of readonly properties</title>
      <programlisting role="php" annotations="non-interactive">
@@ -276,12 +276,12 @@ class Test {
     </para>
    </note>
    <note>
-    <para>
+    <simpara>
      Readonly properties cannot be <function>unset</function> once they are initialized. However, it is possible to unset a readonly property prior to initialization, from the scope where the property has been declared.
-    </para>
+    </simpara>
    </note>
    <para>
-    Modifications are not necessarily plain assignments, all of the following will also result in an <classname>Error</classname> exception:
+    Modifications are not necessarily plain assignments, all of the following will also result in an <exceptionname>Error</exceptionname> exception:
     <informalexample>
      <programlisting role="php" annotations="non-interactive">
 <![CDATA[
@@ -365,12 +365,12 @@ var_dump($test2->prop); // NULL
 
   <sect2 xml:id="language.oop5.properties.dynamic-properties">
    <title>Dynamic properties</title>
-   <para>
+   <simpara>
     If trying to assign to a non-existent property on an &object;,
     PHP will automatically create a corresponding property.
     This dynamically created property will <emphasis>only</emphasis> be
     available on this class instance.
-   </para>
+   </simpara>
 
    <warning>
     <simpara>

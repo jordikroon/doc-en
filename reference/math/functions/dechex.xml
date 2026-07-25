@@ -11,17 +11,17 @@
    <type>string</type><methodname>dechex</methodname>
    <methodparam><type>int</type><parameter>num</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a string containing a hexadecimal representation of the given
    unsigned <parameter>num</parameter> argument.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The largest number that can be converted is
    <constant>PHP_INT_MAX</constant><literal> * 2 + 1</literal> (or
    <literal>-1</literal>): on 32-bit platforms, this will be
    <literal>4294967295</literal> in decimal, which results in
    <function>dechex</function> returning <literal>ffffffff</literal>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -30,14 +30,14 @@
     <varlistentry>
      <term><parameter>num</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The decimal value to convert.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        As PHP's <type>int</type> type is signed, but
        <function>dechex</function> deals with unsigned integers, negative
        integers will be treated as though they were unsigned.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -45,9 +45,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Hexadecimal string representation of <parameter>num</parameter>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
- 
+
 <book xml:id="book.pgsql" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <?phpdoc extension-membership="bundledexternal" ?>
  <title>PostgreSQL</title>
- 
+
  <!-- {{{ preface -->
  <preface xml:id="intro.pgsql">
   &reftitle.intro;
-  <para>
+  <simpara>
    PostgreSQL database is an open source product and available without
    cost. Postgres, developed originally in the UC Berkeley Computer
    Science Department, pioneered many of the object-relational concepts
@@ -16,10 +16,10 @@
    SQL92/SQL99 language support, transactions, referential integrity,
    stored procedures and type extensibility. PostgreSQL is an open source
    descendant of this original Berkeley code.
-  </para>
+  </simpara>
  </preface>
  <!-- }}} -->
- 
+
  &reference.pgsql.setup;
  &reference.pgsql.constants;
  &reference.pgsql.examples;

@@ -22,10 +22,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a numerically indexed array containing the list of supported hashing
    algorithms suitable for <function>hash_hmac</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -96,11 +96,11 @@ Array
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     Before PHP 7.2.0 the only means to get a list of supported hash algorithms
     has been to call <function>hash_algos</function> which also returns hash
     algorithms that are not suitable for <function>hash_hmac</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

@@ -10,11 +10,11 @@
 <!-- {{{ COMPersistHelper intro -->
   <section xml:id="compersisthelper.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     <classname>COMPersistHelper</classname> improves the interoperability of <acronym>COM</acronym>
     and <acronym>PHP</acronym> with regard to the &php.ini; directive <link linkend="ini.open-basedir">open_basedir</link>,
     and stream &resource;s.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

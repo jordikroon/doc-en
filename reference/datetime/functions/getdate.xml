@@ -12,31 +12,31 @@
    <type>array</type><methodname>getdate</methodname>
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>timestamp</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns an associative <type>array</type> containing the date
    information of the <parameter>timestamp</parameter>, or the current
    local time if <parameter>timestamp</parameter> is omitted or &null;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
   &reftitle.parameters;
   <para>
    <variablelist>
-    
+
     &date.timestamp.description;
-   
+
    </variablelist>
   </para>
  </refsect1>
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an associative <type>array</type> of information related to
-   the <parameter>timestamp</parameter>. Elements from the returned 
+   the <parameter>timestamp</parameter>. Elements from the returned
    associative array are as follows:
-  </para>
+  </simpara>
   <para>
    <table>
     <title>Key elements of the returned associative array</title>

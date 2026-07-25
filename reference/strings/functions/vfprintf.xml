@@ -5,7 +5,7 @@
   <refname>vfprintf</refname>
   <refpurpose>Write a formatted string to a stream</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,14 +14,14 @@
    <methodparam><type>string</type><parameter>format</parameter></methodparam>
    <methodparam><type>array</type><parameter>values</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Write a string produced according to <parameter>format</parameter> to the
    stream resource specified by <parameter>stream</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Operates as <function>fprintf</function> but accepts an array of
    arguments, rather than a variable number of arguments.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -31,16 +31,16 @@
     <varlistentry>
      <term><parameter>stream</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     &strings.parameter.format;
     <varlistentry>
      <term><parameter>values</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -49,9 +49,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the length of the outputted string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

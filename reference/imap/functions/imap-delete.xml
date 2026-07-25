@@ -13,13 +13,13 @@
    <methodparam><type>string</type><parameter>message_nums</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Marks messages listed in <parameter>message_nums</parameter> for deletion.
    Messages marked for deletion will stay in the mailbox until either
    <function>imap_expunge</function> is called or
    <function>imap_close</function> is called with the optional parameter
    <constant>CL_EXPUNGE</constant>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -29,21 +29,21 @@
     <varlistentry>
      <term><parameter>message_nums</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A &string; representing one or more messages in IMAP4-style sequence format
        (<literal>"n"</literal>, <literal>"n:m"</literal>, or combination of these
        delimited by commas).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        You can set the <constant>FT_UID</constant> which tells the function
        to treat the <parameter>message_nums</parameter> argument as a
        <literal>UID</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -52,17 +52,17 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws a <classname>ValueError</classname> if <parameter>flags</parameter>
+  <simpara>
+   Throws a <exceptionname>ValueError</exceptionname> if <parameter>flags</parameter>
    is invalid.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -80,7 +80,7 @@
      <row>
       <entry>8.0.0</entry>
       <entry>
-       A <classname>ValueError</classname> is now thrown on invalid
+       A <exceptionname>ValueError</exceptionname> is now thrown on invalid
        <parameter>flags</parameter> parameter values. Previously,
        a warning was emitted and the function returned &false;.
       </entry>
@@ -89,7 +89,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -125,12 +125,12 @@ imap_close($mbox);
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     IMAP mailboxes may not have their message flags saved between connections,
     so <function>imap_expunge</function> should be called during the same
     connection in order to guarantee that messages marked for deletion will
     actually be purged.
-   </para>
+   </simpara>
   </note>
  </refsect1>
  <refsect1 role="seealso">

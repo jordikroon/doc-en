@@ -9,20 +9,20 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <fieldsynopsis><type>string</type><varname linkend="mysqli-stmt.sqlstate">mysqli_stmt-&gt;sqlstate</varname></fieldsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type>string</type><methodname>mysqli_stmt_sqlstate</methodname>
    <methodparam><type>mysqli_stmt</type><parameter>statement</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a string containing the SQLSTATE error code
    for the most recently invoked prepared statement function that can succeed or fail.
    The error code consists of five characters. <literal>'00000'</literal> means no error.
    The values are specified by ANSI SQL and ODBC. For a list of possible values, see
    <link xlink:href="&url.mysql.docs.error;">&url.mysql.docs.error;</link>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -36,10 +36,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a string containing the SQLSTATE error code for the last error.
    The error code consists of five characters. <literal>'00000'</literal> means no error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -133,10 +133,10 @@ Error: 42S02.
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     Note that not all MySQL errors are yet mapped to SQLSTATE's.
     The value <literal>HY000</literal> (general error) is used for unmapped errors.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

@@ -14,10 +14,10 @@
    <methodparam><type>string</type><parameter>feature</parameter></methodparam>
    <methodparam><type>string</type><parameter>version</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   Checks if the asked <parameter>feature</parameter> is supported for the 
+  <simpara>
+   Checks if the asked <parameter>feature</parameter> is supported for the
    specified <parameter>version</parameter>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -27,7 +27,7 @@
      <term><parameter>feature</parameter></term>
      <listitem>
       <para>
-       The feature to test. See the example of 
+       The feature to test. See the example of
        <methodname>DOMImplementation::hasFeature</methodname> for a
        list of features.
       </para>
@@ -36,9 +36,9 @@
     <varlistentry>
      <term><parameter>version</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The version number of the <parameter>feature</parameter> to test.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -46,9 +46,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="seealso">
   &reftitle.seealso;

@@ -5,7 +5,7 @@
   <refname>fsockopen</refname>
   <refpurpose>Open Internet or Unix domain socket connection</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -16,25 +16,25 @@
    <methodparam choice="opt"><type>string</type><parameter role="reference">error_message</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>float</type><type>null</type></type><parameter>timeout</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Initiates a socket connection to the resource specified by
    <parameter>hostname</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    PHP supports targets in the Internet and Unix domains as described in
    <xref linkend="transports"/>.  A list of supported transports can also be
    retrieved using <function>stream_get_transports</function>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The socket will by default be opened in blocking mode.  You can
    switch it to non-blocking mode by using
    <function>stream_set_blocking</function>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The function <function>stream_socket_client</function> is similar but
    provides a richer set of options, including non-blocking connection and the
    ability to provide a stream context.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -43,64 +43,64 @@
     <varlistentry>
      <term><parameter>hostname</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If OpenSSL support <link linkend="openssl.installation">is
        installed</link>, you may prefix the <parameter>hostname</parameter>
        with either <literal>ssl://</literal> or <literal>tls://</literal> to
        use an SSL or TLS client connection over TCP/IP to connect to the
        remote host.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>port</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The port number. This can be omitted and skipped with
        <literal>-1</literal> for transports that do not use ports, such as
        <literal>unix://</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>error_code</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If provided, holds the system level error number that occurred in the
        system-level <literal>connect()</literal> call.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If the value returned in <parameter>error_code</parameter> is
        <literal>0</literal> and the function returned &false;, it is an
-       indication that the error occurred before the 
+       indication that the error occurred before the
        <literal>connect()</literal> call. This is most likely due to a
        problem initializing the socket.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>error_message</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The error message as a string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>timeout</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The connection timeout, in seconds. When &null;, the
        <link linkend="ini.default-socket-timeout">default_socket_timeout</link> &php.ini; setting is used.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         If you need to set a timeout for reading/writing data over the
         socket, use <function>stream_set_timeout</function>, as the
         <parameter>timeout</parameter> parameter to
         <function>fsockopen</function> only applies while connecting the
         socket.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
@@ -109,20 +109,20 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    <function>fsockopen</function> returns a file pointer which may be used
    together with the other file functions (such as
    <function>fgets</function>, <function>fgetss</function>,
    <function>fwrite</function>, <function>fclose</function>, and
    <function>feof</function>). If the call fails, it will return &false;
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    Throws <constant>E_WARNING</constant> if <parameter>hostname</parameter> is
    not a valid domain.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog"><!-- {{{ -->
@@ -176,10 +176,10 @@ if (!$fp) {
   <para>
    <example>
     <title>Using UDP connection</title>
-    <para>
+    <simpara>
      The example below shows how to retrieve the day and time from the UDP
      service "daytime" (port 13) in your own machine.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -200,20 +200,20 @@ if (!$fp) {
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     Depending on the environment, the Unix domain or the optional
     connect timeout may not be available.
-   </para>
+   </simpara>
   </note>
   <warning>
-   <para>
+   <simpara>
     UDP sockets will sometimes appear to have opened without an error,
     even if the remote host is unreachable.  The error will only
     become apparent when you read or write data to/from the socket.
     The reason for this is because UDP is a "connectionless" protocol,
     which means that the operating system does not try to establish
     a link for the socket until it actually needs to send or receive data.
-   </para>
+   </simpara>
   </warning>
   &ipv6.brackets;
  </refsect1>

@@ -12,10 +12,10 @@
    <modifier>public</modifier> <type class="union"><type>int</type><type>false</type></type><methodname>SQLite3Result::columnType</methodname>
    <methodparam><type>int</type><parameter>column</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the type of the column identified by
    <parameter>column</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
     <varlistentry>
      <term><parameter>column</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The numeric zero-based index of the column.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,13 +37,13 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the data type index of the column identified by
    <parameter>column</parameter> (one of
    <constant>SQLITE3_INTEGER</constant>, <constant>SQLITE3_FLOAT</constant>,
    <constant>SQLITE3_TEXT</constant>, <constant>SQLITE3_BLOB</constant>, or
    <constant>SQLITE3_NULL</constant>), or &false; if the column does not exist.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>true</type><methodname>SQLite3Stmt::close</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Closes the prepared statement.
-  </para>
+  </simpara>
   <note>
    <simpara>
     Note that all <classname>SQLite3Result</classname>s that have been retrieved
@@ -31,9 +31,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

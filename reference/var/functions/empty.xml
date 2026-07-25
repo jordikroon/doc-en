@@ -11,9 +11,9 @@
    <type>bool</type><methodname>empty</methodname>
    <methodparam><type>mixed</type><parameter>var</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Determine whether a variable is considered to be empty. A variable is considered empty if it does not exist or if its value equals &false;. <function>empty</function> does not generate a warning if the variable does not exist.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -22,15 +22,15 @@
     <varlistentry>
      <term><parameter>var</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Variable to be checked
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        No warning is generated if the variable does not exist.
        That means <function>empty</function> is essentially the
        concise equivalent to <command>!isset($var) || $var == false</command>.
        This also applies to nested structures, such as a multidimensional array or chained properties.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -38,11 +38,11 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if <parameter>var</parameter> does not exist or has a value that is empty or equal to zero,
    aka falsey, see <link linkend="language.types.boolean.casting">conversion to boolean</link>.
    Otherwise returns &false;.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;
@@ -51,7 +51,7 @@
     <title>
      A simple <function>empty</function> / <function>isset</function>
      comparison.
-    </title>  
+    </title>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -133,11 +133,11 @@ bool(false)
   &reftitle.notes;
   &note.language-construct;
   <note>
-   <para>
+   <simpara>
     When using <function>empty</function> on inaccessible object properties,
     the <link linkend="object.isset">__isset()</link>
     overloading method will be called, if declared.
-   </para>
+   </simpara>
   </note>
  </refsect1>
  <refsect1 role="seealso">
@@ -148,7 +148,7 @@ bool(false)
     <member><link linkend="object.isset">__isset()</link></member>
     <member><function>unset</function></member>
     <member><function>array_key_exists</function></member>
-    <member><function>count</function></member> 
+    <member><function>count</function></member>
     <member><function>strlen</function></member>
     <member><link linkend="types.comparisons">The type comparison tables</link></member>
    </simplelist>

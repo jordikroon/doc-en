@@ -5,7 +5,7 @@
   <refname>oci_new_collection</refname>
   <refpurpose>Allocates new collection object</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,9 +14,9 @@
    <methodparam><type>string</type><parameter>type_name</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>schema</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Allocates a new collection object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,27 +26,27 @@
     <varlistentry>
      <term><parameter>connection</parameter></term>
      <listitem>
-      <para>
-       An Oracle connection identifier, returned by 
+      <simpara>
+       An Oracle connection identifier, returned by
        <function>oci_connect</function> or <function>oci_pconnect</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>type_name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Should be a valid named type (uppercase).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>schema</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Should point to the scheme, where the named type was created. The name
        of the current user is used when &null; is passed.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -55,10 +55,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a new <classname>OCICollection</classname> object or &false; on
    error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -86,9 +86,9 @@
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     The <classname>OCICollection</classname> class was called <classname>OCI-Collection</classname> prior to PHP 8 and OCI8 3.0.0.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

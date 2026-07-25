@@ -9,9 +9,9 @@
 
   <section xml:id="mysqli-sql-exception.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     The mysqli exception handling class.
-   </para>
+   </simpara>
   </section>
 
   <section xml:id="mysqli-sql-exception.synopsis">
@@ -53,9 +53,9 @@
     <varlistentry xml:id="mysqli-sql-exception.props.sqlstate">
      <term><varname>sqlstate</varname></term>
      <listitem>
-      <para>
+      <simpara>
        The sql state with the error.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

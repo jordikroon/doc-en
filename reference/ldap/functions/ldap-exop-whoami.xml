@@ -12,9 +12,9 @@
    <type class="union"><type>string</type><type>false</type></type><methodname>ldap_exop_whoami</methodname>
    <methodparam><type>LDAP\Connection</type><parameter>ldap</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Performs a WHOAMI extended operation and returns the data.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -24,9 +24,9 @@
    <varlistentry>
     <term><parameter>ldap</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       &ldap.parameter.ldap;
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -34,9 +34,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The data returned by the server, or &false; on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

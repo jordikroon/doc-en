@@ -37,21 +37,21 @@
     <methodname>DatePeriod::createFromISO8601String</methodname> instead.
    </simpara>
   </warning>
-  <para>
+  <simpara>
    Creates a new DatePeriod object.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    <classname>DatePeriod</classname> objects can be used as an iterator to
    generate a number of <classname>DateTimeImmutable</classname> or
    <classname>DateTime</classname> object from a <parameter>start</parameter>
    date, a <parameter>interval</parameter>, and an <parameter>end</parameter>
    date or the number of <parameter>recurrences</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The class of returned objects is equivalent to the
    <classname>DateTimeImmutable</classname> or <classname>DateTime</classname>
    ancestor class of the <parameter>start</parameter> object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -61,49 +61,49 @@
     <varlistentry>
      <term><parameter>start</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The start date of the period. Included by default in the result set.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>interval</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The interval between recurrences within the period.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>recurrences</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number of recurrences. The number of returned results is
        one higher than this, as the start date is included in the result set
        by default. Must be greater than <literal>0</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>end</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The end date of the period. Excluded by default from the result set.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>isostr</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A subset of the <link
        xlink:href="&url.iso-8601.repeating_intervals;">ISO 8601 repeating
        interval specification</link>.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Examples of some ISO 8601 interval specification features that PHP does
        not support are:
-      </para>
+      </simpara>
       <orderedlist>
        <listitem>
         <simpara>
@@ -121,20 +121,20 @@
     <varlistentry>
      <term><parameter>options</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A bit field which can be used to control certain behaviour with start-
        and end- dates.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        With <constant>DatePeriod::EXCLUDE_START_DATE</constant> you
        exclude the start date from the set of recurring dates within the
        period.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        With <constant>DatePeriod::INCLUDE_END_DATE</constant> you
        include the end date in the set of recurring dates within the
        period.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -144,7 +144,7 @@
  <refsect1 role="errors">
   &reftitle.errors;
   <para>
-   Throws an <classname>DateMalformedPeriodStringException</classname> when
+   Throws an <exceptionname>DateMalformedPeriodStringException</exceptionname> when
    the <parameter>isostr</parameter> cannot be parsed as a valid ISO 8601
    period. Prior to PHP 8.3, this was
    <exceptionname>Exception</exceptionname>.

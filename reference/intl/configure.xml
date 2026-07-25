@@ -2,21 +2,21 @@
 <!-- $Revision$ -->
 <section xml:id="intl.installation" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  &reftitle.install;
- <para>
+ <simpara>
   <option role="configure">--enable-intl</option> will enable the
   extension while compiling PHP.
- </para>
- <para>
+ </simpara>
+ <simpara>
   If your ICU is installed to a non-standard directory then you might want to
   specify its location in
   <constant>LD_LIBRARY_PATH</constant>
   environment variable so that dynamic linker can find it:
- </para>
+ </simpara>
  <screen>$ export LD_LIBRARY_PATH=/opt/icu/lib</screen>
- <para>
+ <simpara>
   Otherwise, if PHP and ICU are installed to their default locations, then the
   additional options to <command>configure</command> are not needed.
- </para>
+ </simpara>
 </section>
 
 <!-- Keep this comment at the end of the file

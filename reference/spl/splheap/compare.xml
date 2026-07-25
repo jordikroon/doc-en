@@ -14,14 +14,14 @@
    <methodparam><type>mixed</type><parameter>value2</parameter></methodparam>
   </methodsynopsis>
 
-  <para>
+  <simpara>
    Compare <parameter>value1</parameter> with <parameter>value2</parameter>.
-  </para>
+  </simpara>
   <warning>
    <para>
     Throwing exceptions in <methodname>SplHeap::compare</methodname> can
     corrupt the Heap and place it in a blocked state. You can unblock it by
-    calling <methodname>SplHeap::recoverFromCorruption</methodname>. 
+    calling <methodname>SplHeap::recoverFromCorruption</methodname>.
     However, some elements might not be placed correctly and it may hence
     break the heap-property.
    </para>
@@ -35,17 +35,17 @@
     <varlistentry>
      <term><parameter>value1</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The value of the first node being compared.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>value2</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The value of the second node being compared.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -54,13 +54,13 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Result of the comparison, positive integer if <parameter>value1</parameter> is greater than <parameter>value2</parameter>, 0 if they are equal, negative integer otherwise.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     Having multiple elements with the same value in a Heap is not recommended. They will end up in an arbitrary relative position.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

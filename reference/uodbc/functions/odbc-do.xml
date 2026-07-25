@@ -7,10 +7,10 @@
  </refnamediv>
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &info.function.alias;
    <function>odbc_exec</function>.
-  </para>
+  </simpara>
  </refsect1>
 </refentry>
 

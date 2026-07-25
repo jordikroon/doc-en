@@ -4,31 +4,31 @@
  &reftitle.install;
  <section xml:id="pspell.installation.php84">
   <title>PHP 8.4</title>
-  <para>
+  <simpara>
    &pecl.moved-ver;8.4.0
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    &pecl.info;
    <link xlink:href="&url.pecl.package;pspell">&url.pecl.package;pspell</link>.
-  </para>
+  </simpara>
  </section>
 
  <section xml:id="pspell.installation.phplt84">
   <title>PHP &lt; 8.4</title>
-  <para>
+  <simpara>
    To enable this extension compile PHP with the
    <option role="configure">--with-pspell[=dir]</option> option.
-  </para>
+  </simpara>
   <note>
    <title>Note to Win32 Users</title>
-   <para>
+   <simpara>
     &ext.windows.path.dll;
     <filename>aspell-15.dll</filename> from the
     <filename>bin</filename> folder of the aspell installation.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     Win32 support requires at least aspell version 0.50.
-   </para>
+   </simpara>
   </note>
  </section>
 </section>

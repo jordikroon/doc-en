@@ -10,9 +10,9 @@
 <!-- {{{ SplTempFileObject intro -->
   <section xml:id="spltempfileobject.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     The SplTempFileObject class offers an object-oriented interface for a temporary file.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

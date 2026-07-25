@@ -9,7 +9,7 @@
  <refsynopsisdiv>
   &warn.deprecated.function-8-1-0;
  </refsynopsisdiv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -17,9 +17,9 @@
    <type class="union"><type>int</type><type>false</type></type><methodname>mhash_get_block_size</methodname>
    <methodparam><type>int</type><parameter>algo</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the size of a block of the specified <parameter>algo</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,9 +29,9 @@
     <varlistentry>
      <term><parameter>algo</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The hash ID. One of the <constant>MHASH_hashname</constant> constants.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -40,10 +40,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the size in bytes or &false;, if the <parameter>algo</parameter>
    does not exist.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

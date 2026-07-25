@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>int</type><methodname>Throwable::getCode</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the error code associated with the thrown object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,12 +24,12 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the exception code as <type>int</type> in
-   <classname>Exception</classname> but possibly as other type in
-   <classname>Exception</classname> descendants (for example as
-   <type>string</type> in <classname>PDOException</classname>).
-  </para>
+   <exceptionname>Exception</exceptionname> but possibly as other type in
+   <exceptionname>Exception</exceptionname> descendants (for example as
+   <type>string</type> in <exceptionname>PDOException</exceptionname>).
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

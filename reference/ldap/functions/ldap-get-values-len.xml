@@ -5,7 +5,7 @@
   <refname>ldap_get_values_len</refname>
   <refpurpose>Get all binary values from a result entry</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,13 +14,13 @@
    <methodparam><type>LDAP\ResultEntry</type><parameter>entry</parameter></methodparam>
    <methodparam><type>string</type><parameter>attribute</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Reads all the values of the attribute in the entry in the result.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This function is used exactly like <function>ldap_get_values</function>
    except that it handles binary data and not string data.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,24 +30,24 @@
     <varlistentry>
      <term><parameter>ldap</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &ldap.parameter.ldap;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>entry</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &ldap.parameter.entry;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>attribute</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -56,12 +56,12 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array of values for the attribute on success and &false; on
    error. Individual values are accessed by integer index in the array. The
    first index is 0. The number of values can be found by indexing "count"
-   in the resultant array. 
-  </para>
+   in the resultant array.
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

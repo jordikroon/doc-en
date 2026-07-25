@@ -13,16 +13,16 @@
    <methodparam><type>int</type><parameter>x</parameter></methodparam>
    <methodparam><type>int</type><parameter>y</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the index of the color of the pixel at the
    specified location in the image specified by <parameter>image</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If the image is a
    truecolor image, this function returns the RGB value of that pixel as
    integer. Use bitshifting and masking to access the distinct red, green and blue
    component values:
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -32,17 +32,17 @@
     <varlistentry>
      <term><parameter>x</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        x-coordinate of the point.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>y</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        y-coordinate of the point.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -50,9 +50,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the index of the color &return.falseforfailure;.
-  </para>
+  </simpara>
   &return.falseproblem;
  </refsect1>
 

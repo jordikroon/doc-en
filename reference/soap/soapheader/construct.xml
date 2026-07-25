@@ -16,9 +16,9 @@
    <methodparam choice="opt"><type>bool</type><parameter>mustunderstand</parameter></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>actor</parameter></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Constructs a new SoapHeader object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,44 +28,44 @@
     <varlistentry>
      <term><parameter>namespace</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The namespace of the SOAP header element.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The name of the SoapHeader object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>data</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A SOAP header's content. It can be a PHP value or a
        <classname>SoapVar</classname> object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>mustUnderstand</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Value of the <literal>mustUnderstand</literal> attribute of the SOAP
        header element.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>actor</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Value of the <literal>actor</literal> attribute of the SOAP header
        element.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

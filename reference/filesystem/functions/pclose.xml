@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.pclose">
+<refentry xml:id="function.pclose" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>pclose</refname>
   <refpurpose>Closes process file pointer</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>int</type><methodname>pclose</methodname>
    <methodparam><type>resource</type><parameter>handle</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Closes a file pointer to a pipe opened by <function>popen</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,10 +24,10 @@
     <varlistentry>
      <term><parameter>handle</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The file pointer must be valid, and must have been returned by a
        successful call to <function>popen</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -36,10 +36,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   Returns the termination status of the process that was run. In case of 
+  <simpara>
+   Returns the termination status of the process that was run. In case of
    an error then <literal>-1</literal> is returned.
-  </para>
+  </simpara>
   &note.sigchild;
  </refsect1>
 
@@ -64,12 +64,12 @@ pclose($handle);
   &reftitle.notes;
   <note>
    <title>Unix Only:</title>
-   <para>
-    <function>pclose</function> is internally implemented using the 
-    <literal>waitpid(3)</literal> system call. To obtain the real exit 
-    status code the <function>pcntl_wexitstatus</function> function 
+   <simpara>
+    <function>pclose</function> is internally implemented using the
+    <literal>waitpid(3)</literal> system call. To obtain the real exit
+    status code the <function>pcntl_wexitstatus</function> function
     should be used.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

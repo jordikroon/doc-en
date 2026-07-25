@@ -14,14 +14,14 @@
    <methodparam><type>string</type><parameter>needle</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>offset</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Find the numeric position of the last occurrence of
    <parameter>needle</parameter> in the <parameter>haystack</parameter> string.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Unlike the <function>strrpos</function>, <function>strripos</function> is
    case-insensitive.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -31,39 +31,39 @@
     <varlistentry>
      <term><parameter>haystack</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string to search in.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>needle</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string to search for.
-      </para>
+      </simpara>
       &strings.parameter.needle.non-string;
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If zero or positive, the search is performed left to right skipping the
        first <parameter>offset</parameter> bytes of the
        <parameter>haystack</parameter>.
-      </para>
+      </simpara>
       <para>
        If negative, the search is performed right to left skipping the
        last <parameter>offset</parameter> bytes of the
        <parameter>haystack</parameter> and searching for the first occurrence
        of <parameter>needle</parameter>.
        <note>
-        <para>
+        <simpara>
          This is effectively looking for the last occurrence of
          <parameter>needle</parameter> before the last
          <parameter>offset</parameter> bytes.
-        </para>
+        </simpara>
        </note>
       </para>
      </listitem>
@@ -84,9 +84,9 @@
     </simpara>
    </note>
   </para>
-  <para>
+  <simpara>
    Returns &false; if the <parameter>needle</parameter> was not found.
-  </para>
+  </simpara>
   &return.falseproblem;
  </refsect1>
 
@@ -97,7 +97,7 @@
     <simpara>
      If <parameter>offset</parameter> is greater than the length of
      <parameter>haystack</parameter>, a
-     <classname>ValueError</classname> will be thrown.
+     <exceptionname>ValueError</exceptionname> will be thrown.
     </simpara>
    </listitem>
   </itemizedlist>

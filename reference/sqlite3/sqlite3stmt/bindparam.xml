@@ -14,9 +14,9 @@
    <methodparam><type>mixed</type><parameter role="reference">var</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>type</parameter><initializer><constant>SQLITE3_TEXT</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Binds a parameter to a statement variable.
-  </para>
+  </simpara>
   <caution>
    <para>
     Before PHP 7.2.14 and 7.3.0, respectively,
@@ -51,9 +51,9 @@
     <varlistentry>
      <term><parameter>var</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The parameter to bind to a statement variable.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -63,38 +63,38 @@
        The data type of the parameter to bind.
        <itemizedlist>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLITE3_INTEGER</constant>: The value is a signed integer,
           stored in 1, 2, 3, 4, 6, or 8 bytes depending on the magnitude of
           the value.
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLITE3_FLOAT</constant>: The value is a floating point
           value, stored as an 8-byte IEEE floating point number.
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLITE3_TEXT</constant>: The value is a text string, stored
           using the database encoding (UTF-8, UTF-16BE or UTF-16-LE).
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLITE3_BLOB</constant>: The value is a blob of data, stored
           exactly as it was input.
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLITE3_NULL</constant>: The value is a NULL value.
-         </para>
+         </simpara>
         </listitem>
        </itemizedlist>
       </para>
-      <para>
+      <simpara>
        As of PHP 7.0.7, if <parameter>type</parameter> is omitted, it is automatically
        detected from the type of the <parameter>var</parameter>: <type>bool</type>
        and <type>int</type> are treated as <constant>SQLITE3_INTEGER</constant>,
@@ -102,13 +102,13 @@
        as <constant>SQLITE3_NULL</constant> and all others as <constant>SQLITE3_TEXT</constant>.
        Formerly, if <parameter>type</parameter> has been omitted, it has defaulted
        to <constant>SQLITE3_TEXT</constant>.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         If <parameter>var</parameter> is &null;, it is always treated as
         <constant>SQLITE3_NULL</constant>, regardless of the given
         <parameter>type</parameter>.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
@@ -118,10 +118,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the parameter is bound to the statement variable, &false;
    on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -152,10 +152,10 @@
   <para>
    <example>
     <title><function>SQLite3Stmt::bindParam</function> Usage</title>
-    <para>
+    <simpara>
      This example shows how a single prepared statement with a single parameter
      binding can be used to insert multiple rows with different values.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

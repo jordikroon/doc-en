@@ -121,57 +121,57 @@ $ svn checkout https://svn.php.net/repository/pecl/extname/trunk extname
 
  <sect1 xml:id="install.pecl.windows">
   <title>Installing a PHP extension on Windows</title>
-  <para>
+  <simpara>
    There are two ways to load a PHP extension on Windows: either compile it into
    PHP, or load the DLL.
    Loading a pre-compiled extension is the easiest and preferred way.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    To load an extension, it has to be available as a
    <filename>.dll</filename>
    file on the system.
    All the extensions are automatically and periodically compiled by the PHP
    Group (see next section for the download).
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    To compile an extension into PHP, please refer to the
    <link linkend="install.windows.building">building from source</link>
    documentation.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    To compile a standalone extension (aka a DLL file), please refer to the
    <link linkend="install.windows.building">building from source</link>
    documentation.
    If the DLL file is available neither with the PHP distribution nor in PECL,
    it may be necessary to compile it before the extension can be used.
-  </para>
+  </simpara>
   <sect2 xml:id="install.pecl.windows.find">
    <title>Where to find an extension?</title>
-   <para>
+   <simpara>
     PHP extensions are usually called <filename>php_*.dll</filename> (where the
     star represents the name of the extension), and they are located under the
     <filename>PHP\ext</filename>
     folder.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     PHP ships with the extensions most useful to the majority of developers.
     They are called <emphasis>bundled</emphasis> extensions.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     However, if the bundled extensions do not provide the needed functionality,
     one extension that does may still be found in &link.pecl;.
     The PHP Extension Community Library (PECL) is a repository for PHP
     Extensions, providing a directory of all known extensions and hosting
     facilities for downloading and developing PHP extensions.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     If an extension has been developed for particular uses, it may be hosted on
     PECL so that others with the same needs can benefit from it.
     A nice side effect is that it's a good chance to receive feedback,
     (hopefully) thanks, bug reports and even fixes/patches.
     Before submitting an extension for hosting on PECL, please read
     <link xlink:href="&url.pecl.submit;">PECL submit</link>.
-   </para>
+   </simpara>
   </sect2>
 
   <sect2 xml:id="install.pecl.windows.which">
@@ -208,12 +208,12 @@ $ svn checkout https://svn.php.net/repository/pecl/extname/trunk extname
      </listitem>
     </itemizedlist>
    </para>
-   <para>
+   <simpara>
     Keep in mind that the extension settings should match all the settings of
     the PHP executable being used.
     The following PHP script will tell <emphasis>all</emphasis> about the PHP
     settings:
-   </para>
+   </simpara>
    <para>
     <example>
      <title>
@@ -241,19 +241,19 @@ drive:\path\to\php\executable\php.exe -i
 
   <sect2 xml:id="install.pecl.windows.loading">
    <title>Loading an extension</title>
-   <para>
+   <simpara>
     The most common way to load a PHP extension is to include it in
     the &php.ini; configuration file.
     Please note that many extensions are already present in the &php.ini; and
     that the semicolon only needs to be removed to activate them.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     Note that, as of PHP 7.2.0, the extension name may be used
     instead of the extension's file name.
     As this is OS-independent and easier, especially for newcomers, it becomes
     the recommended way of specifying extensions to load.
     File names remain supported for compatibility with prior versions.
-   </para>
+   </simpara>
    <screen>
 <![CDATA[
 ;extension=php_extname.dll
@@ -271,12 +271,12 @@ extension=extname
 zend_extension=another_extension
 ]]>
    </screen>
-   <para>
+   <simpara>
     However, some web servers are confusing because they do not use
     the &php.ini; located alongside the PHP executable.
     To find out where the actual &php.ini; resides, look for its path
     in <function>phpinfo</function>:
-   </para>
+   </simpara>
    <screen>
 <![CDATA[
 Configuration File (php.ini) Path  C:\WINDOWS
@@ -287,40 +287,40 @@ Configuration File (php.ini) Path  C:\WINDOWS
 Loaded Configuration File   C:\Program Files\PHP\8.2\php.ini
 ]]>
    </screen>
-   <para>
+   <simpara>
     After activating an extension, save &php.ini;, restart the web server, and
     check <function>phpinfo</function> again.
     The new extension should now have its own section.
-   </para>
+   </simpara>
   </sect2>
 
   <sect2 xml:id="install.pecl.windows.problemsolving">
    <title>Resolving problems</title>
-   <para>
+   <simpara>
     If the extension does not appear in <function>phpinfo</function>,
     the logs should be checked to learn where the problem comes from.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     If PHP is being used from the command line (CLI), the extension loading
     error can be read directly on the screen.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     If PHP is being used with a web server, the location and format of the logs
     vary depending on the software.
     Please read the web server documentation to locate the logs, as it has
     nothing to do with PHP itself.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     Common problems are the location of the DLL and the DLLs it depends on, the
     value of the "<link linkend="ini.extension-dir">extension_dir</link>"
     setting inside &php.ini; and compile-time setting mismatches.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     If the problem lies in a compile-time setting mismatch, probably the DLL
     downloaded is not the right one.
     Try downloading the extension again with the proper settings.
     Again, <function>phpinfo</function> can be of great help.
-   </para>
+   </simpara>
   </sect2>
 
  </sect1>
@@ -359,19 +359,19 @@ $ pecl install extname
 $ pecl install extname-beta
 ]]>
   </screen>
-  <para>
+  <simpara>
    A specific version may also be installed using this variant:
-  </para>
+  </simpara>
   <screen>
 <![CDATA[
 $ pecl install extname-0.1
 ]]>
   </screen>
   <note>
-   <para>
+   <simpara>
     After enabling the extension in &php.ini;, restarting the web service is
     required for the changes to be picked up.
-   </para>
+   </simpara>
   </note>
  </sect1>
 
@@ -427,22 +427,22 @@ $ make
   <title>
    <command>php-config</command>
   </title>
-  
-  <para>
+
+  <simpara>
    <command>php-config</command>
    is a simple shell script for obtaining information about the installed PHP
    configuration.
-  </para>
-  
-  <para>
+  </simpara>
+
+  <simpara>
    When the extensions are being compiled, if multiple PHP versions are
    installed, the installation for which to build can be specified by using the
    <option role="configure">--with-php-config</option>
    option during configuration, setting the path of the respective
    <command>php-config</command>
    script.
-  </para>
-  
+  </simpara>
+
   <para>
    The list of command line options provided by the
    <command>php-config</command>
@@ -467,7 +467,7 @@ Options:
 ]]>
    </screen>
   </para>
-  
+
   <para>
    <table>
     <title>Command line options</title>

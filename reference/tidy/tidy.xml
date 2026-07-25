@@ -3,18 +3,18 @@
 <reference xml:id="class.tidy" role="class" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
  <title>The <classname>tidy</classname> class</title>
  <titleabbrev>tidy</titleabbrev>
- 
+
  <partintro>
- 
+
 <!-- {{{ tidy intro -->
   <section xml:id="tidy.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     An HTML node in an HTML file, as detected by tidy.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
- 
+
   <section xml:id="tidy.synopsis">
    &reftitle.classsynopsis;
 
@@ -52,7 +52,7 @@
     <varlistentry xml:id="tidy.props.value">
      <term><varname>value</varname></term>
      <listitem>
-      <para>The HTML representation of the node, including the surrounding tags.</para>
+      <simpara>The HTML representation of the node, including the surrounding tags.</simpara>
      </listitem>
     </varlistentry>
    </variablelist>

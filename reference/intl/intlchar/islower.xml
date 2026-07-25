@@ -12,13 +12,13 @@
    <modifier>public</modifier> <modifier>static</modifier> <type class="union"><type>bool</type><type>null</type></type><methodname>IntlChar::islower</methodname>
    <methodparam><type class="union"><type>int</type><type>string</type></type><parameter>codepoint</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Determines whether the specified code point has the general category "Ll" (lowercase letter).
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     This misses some characters that are also lowercase but have a different general category value. In order to include those, use <function>IntlChar::isULowercase</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -36,10 +36,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if
    <parameter>codepoint</parameter> is an Ll lowercase letter, &false; if not. Returns &null; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

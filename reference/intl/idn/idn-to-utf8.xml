@@ -7,7 +7,7 @@
  </refnamediv>
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>idn_to_utf8</methodname>
    <methodparam><type>string</type><parameter>domain</parameter></methodparam>
@@ -15,9 +15,9 @@
    <methodparam choice="opt"><type>int</type><parameter>variant</parameter><initializer><constant>INTL_IDNA_VARIANT_UTS46</constant></initializer></methodparam>
    <methodparam choice="opt"><type>array</type><parameter role="reference">idna_info</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function converts a Unicode domain name from an IDNA ASCII-compatible format to plain Unicode, encoded in UTF-8.
-  </para> 
+  </simpara>
   </refsect1>
 
  <refsect1 role="parameters">
@@ -27,33 +27,33 @@
     <varlistentry>
      <term><parameter>domain</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Domain to convert in an IDNA ASCII-compatible format.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Conversion options - combination of IDNA_* constants
        (except IDNA_ERROR_* constants).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>variant</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Either <constant>INTL_IDNA_VARIANT_2003</constant> (deprecated as of PHP 7.2.0) for IDNA 2003 or
        <constant>INTL_IDNA_VARIANT_UTS46</constant> (only available as of ICU 4.6) for UTS #46.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>idna_info</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        This parameter can be used only if
        <constant>INTL_IDNA_VARIANT_UTS46</constant> was used for
        <parameter>variant</parameter>. In that case, it will be filled with an
@@ -64,7 +64,7 @@
        or would have changed the result and <literal>'errors'</literal>,
        which is an <type>int</type> representing a bitset of the error
        constants IDNA_ERROR_*.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -73,9 +73,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The domain name in Unicode, encoded in UTF-8, &return.falseforfailure;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -125,7 +125,7 @@
    </informaltable>
   </para>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <example>
@@ -134,7 +134,7 @@
 <![CDATA[
 <?php
 
-echo idn_to_utf8('xn--tst-qla.de'); 
+echo idn_to_utf8('xn--tst-qla.de');
 
 ?>
 ]]>

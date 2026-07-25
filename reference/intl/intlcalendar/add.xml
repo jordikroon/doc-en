@@ -8,35 +8,35 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="IntlCalendar">
    <modifier>public</modifier> <type>bool</type><methodname>IntlCalendar::add</methodname>
    <methodparam><type>int</type><parameter>field</parameter></methodparam>
    <methodparam><type>int</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type>bool</type><methodname>intlcal_add</methodname>
    <methodparam><type>IntlCalendar</type><parameter>calendar</parameter></methodparam>
    <methodparam><type>int</type><parameter>field</parameter></methodparam>
    <methodparam><type>int</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Add a signed amount to a field. Adding a positive amount allows advances in
    time, even if the numeric value of the field decreases (e.g. when working
    with years in BC dates).
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Other fields may need to adjusted – for instance, adding a month to the 31st
    of January will result in the 28th (or 29th) of February. Contrary to
    <function>IntlCalendar::roll</function>, when a value wraps around, more
    significant fields may change. For instance, adding a day to the 31st of
    January will result in the 1st of February, not the 1st of January.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -57,12 +57,12 @@
    <varlistentry>
     <term><parameter>value</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The signed amount to add to the current field. If the amount is positive,
       the instant will be moved forward; if it is negative, the instant will be
       moved into the past. The unit is implicit to the field type. For instance,
       hours for <constant>IntlCalendar::FIELD_HOUR_OF_DAY</constant>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -70,9 +70,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; on success&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
 

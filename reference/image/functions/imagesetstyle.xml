@@ -12,13 +12,13 @@
    <methodparam><type>GdImage</type><parameter>image</parameter></methodparam>
    <methodparam><type>array</type><parameter>style</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>imagesetstyle</function> sets the style to be used by all
    line drawing functions (such as <function>imageline</function>
    and <function>imagepolygon</function>) when drawing with the special
    color <constant>IMG_COLOR_STYLED</constant> or lines of images with color
    <constant>IMG_COLOR_STYLEDBRUSHED</constant>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -28,12 +28,12 @@
     <varlistentry>
      <term><parameter>style</parameter></term>
      <listitem>
-      <para>
-       An array of pixel colors. You can use the 
-       <constant>IMG_COLOR_TRANSPARENT</constant> constant to add a 
+      <simpara>
+       An array of pixel colors. You can use the
+       <constant>IMG_COLOR_TRANSPARENT</constant> constant to add a
        transparent pixel.
        Note that <parameter>style</parameter> must not be an empty <type>array</type>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -41,9 +41,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

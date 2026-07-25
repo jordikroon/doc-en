@@ -9,22 +9,22 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
    <methodsynopsis role="Transliterator">
    <modifier>public</modifier> <type>string</type><methodname>Transliterator::getErrorMessage</methodname>
    <void/>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type>string</type><methodname>transliterator_get_error_message</methodname>
    <methodparam><type>Transliterator</type><parameter>transliterator</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the last error message for this transliterator.
-  </para>
-  
+  </simpara>
+
   &warn.undocumented.func;
- 
+
  </refsect1>
 
  <refsect1 role="parameters">
@@ -33,8 +33,8 @@
    <varlistentry>
     <term><parameter>transliterator</parameter></term>
     <listitem>
-     <para>
-     </para>
+     <simpara>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -42,10 +42,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The error message on success,
    or &false; if none exists, or on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

@@ -12,24 +12,24 @@
    <methodparam><type>GdImage</type><parameter>image</parameter></methodparam>
    <methodparam><type>GdImage</type><parameter>tile</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>imagesettile</function> sets the tile image to be
    used by all region filling functions (such as <function>imagefill</function>
    and <function>imagefilledpolygon</function>) when filling with the special
    color <constant>IMG_COLOR_TILED</constant>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    A tile is an image used to fill an area with a repeated pattern. <emphasis>Any</emphasis>
    GD image can be used as a tile, and by setting the transparent color index of the tile
    image with <function>imagecolortransparent</function>, a tile allows certain parts
    of the underlying area to shine through can be created.
-  </para>
+  </simpara>
   <caution>
-   <para>
+   <simpara>
     You need not take special action when you are finished with a tile, but if you
     destroy the tile image (or let PHP destroy it), you must not use the <constant>IMG_COLOR_TILED</constant>
     color until you have set a new tile image!
-   </para>
+   </simpara>
   </caution>
  </refsect1>
  <refsect1 role="parameters">
@@ -40,9 +40,9 @@
     <varlistentry>
      <term><parameter>tile</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The image object to be used as a tile.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -50,9 +50,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

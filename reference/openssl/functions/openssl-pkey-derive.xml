@@ -14,10 +14,10 @@
    <methodparam><modifier role="attribute">#[\SensitiveParameter]</modifier><type class="union"><type>OpenSSLAsymmetricKey</type><type>OpenSSLCertificate</type><type>array</type><type>string</type></type><parameter>private_key</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>key_length</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>openssl_pkey_derive</function> takes a set of a <parameter>public_key</parameter>
    and <parameter>private_key</parameter> and derives a shared secret, for either DH or EC keys.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -27,27 +27,27 @@
    <varlistentry>
     <term><parameter>public_key</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       <parameter>public_key</parameter> is the public key for the derivation.
       See <link linkend="openssl.certparams">Public/Private Key parameters</link> for a list of valid values.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>private_key</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       <parameter>private_key</parameter> is the private key for the derivation.
       See <link linkend="openssl.certparams">Public/Private Key parameters</link> for a list of valid values.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>key_length</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       If not zero, will attempt to set the desired length of the derived secret.
-     </para>
+     </simpara>
      <caution>
       <simpara>
        This parameter is deprecated and should not be used, as it does not work as expected. It
@@ -62,9 +62,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The derived secret on success&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
   <refsect1 role="changelog">

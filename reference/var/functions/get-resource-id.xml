@@ -14,10 +14,10 @@
    <type>int</type><methodname>get_resource_id</methodname>
    <methodparam><type>resource</type><parameter>resource</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function provides a type-safe way for generating the integer identifier
    for a resource.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,9 +27,9 @@
     <varlistentry>
      <term><parameter>resource</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The evaluated resource handle.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -38,13 +38,13 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The <type>int</type> identifier for the given <parameter>resource</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This function is essentially an <type>int</type> cast of
    <parameter>resource</parameter> to make it easier to retrieve the resource ID.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -16,9 +16,9 @@
    <methodparam choice="opt"><modifier role="attribute">#[\SensitiveParameter]</modifier><type class="union"><type>OpenSSLAsymmetricKey</type><type>OpenSSLCertificate</type><type>array</type><type>string</type><type>null</type></type><parameter>private_key</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>encoding</parameter><initializer><constant>OPENSSL_ENCODING_SMIME</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Decrypts a CMS message.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,42 +27,42 @@
    <varlistentry>
     <term><parameter>input_filename</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The name of a file containing encrypted content.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>output_filename</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The name of the file to deposit the decrypted content.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>certificate</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The name of the file containing a certificate of the recipient.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>private_key</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The name of the file containing a <acronym>PKCS</acronym>#8 key.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>encoding</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The encoding of the input file. One of <constant>OPENSSL_ENCODING_SMIME</constant>,
       <constant>OPENSSL_ENCODING_DER</constant> or <constant>OPENSSL_ENCODING_PEM</constant>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -70,9 +70,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

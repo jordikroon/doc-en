@@ -9,10 +9,10 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    Context options for <literal>http://</literal> and <literal>https://</literal>
    transports.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="options">
@@ -25,13 +25,13 @@
       <type>string</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        <constant>GET</constant>, <constant>POST</constant>, or
        any other HTTP method supported by the remote server.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Defaults to <constant>GET</constant>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="context.http.header">
@@ -40,7 +40,7 @@
       <type>array</type> or <type>string</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Additional headers to be sent during request. Values
        in this option will override other values (such as
        <literal>User-agent:</literal>, <literal>Host:</literal>,
@@ -48,14 +48,14 @@
        even when following <literal>Location:</literal> redirects.
        Thus it is not recommended to set a <literal>Host:</literal> header,
        if <parameter>follow_location</parameter> is enabled.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        String value should be <literal>Key: value</literal> pairs delimited by
        <literal>\r\n</literal>, e.g.
        <literal>"Content-Type: application/json\r\nConnection: close"</literal>.
        Array value should be a list of <literal>Key: value</literal> pairs, e.g.
        <literal>["Content-Type: application/json", "Connection: close"]</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="context.http.user-agent">
@@ -64,16 +64,16 @@
       <type>string</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Value to send with <literal>User-Agent:</literal> header. This value will
        only be used if user-agent is <emphasis>not</emphasis> specified
        in the <literal>header</literal> context option above.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        By default the
        <link linkend="ini.user-agent">user_agent</link>
        &php.ini; setting is used.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="context.http.content">
@@ -82,10 +82,10 @@
       <type>string</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Additional data to be sent after the headers. Typically used
        with POST or PUT requests.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="context.http.proxy">
@@ -94,10 +94,10 @@
       <type>string</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        URI specifying address of proxy server (e.g.
        <literal>tcp://proxy.example.com:5100</literal>).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="context.http.request-fulluri">
@@ -106,16 +106,16 @@
       <type>bool</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        When set to &true;, the entire URI will be used when
        constructing the request (e.g.
        <literal>GET http://www.example.com/path/to/file.html HTTP/1.0</literal>).
        While this is a non-standard request format, some
        proxy servers require it.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Defaults to &false;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="context.http.follow-location">
@@ -124,13 +124,13 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Follow <literal>Location</literal> header redirects. Set to
        <literal>0</literal> to disable.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Defaults to <literal>1</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="context.http.max-redirects">
@@ -139,13 +139,13 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        The max number of redirects to follow. Value <literal>1</literal> or
        less means that no redirects are followed.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Defaults to <literal>20</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="context.http.protocol-version">
@@ -154,13 +154,13 @@
       <type>float</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        HTTP protocol version.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Defaults to <literal>1.1</literal> as of PHP 8.0.0;
        prior to that version the default was <literal>1.0</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="context.http.timeout">
@@ -169,15 +169,15 @@
       <type>float</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Read timeout in seconds, specified by a <type>float</type>
        (e.g. <literal>10.5</literal>).
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        By default the
        <link linkend="ini.default-socket-timeout">default_socket_timeout</link>
        &php.ini; setting is used.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="context.http.ignore-errors">
@@ -186,12 +186,12 @@
       <type>bool</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Fetch the content even on failure status codes.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Defaults to &false;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

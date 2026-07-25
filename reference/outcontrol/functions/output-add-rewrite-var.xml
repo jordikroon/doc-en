@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.output-add-rewrite-var">
+<refentry xml:id="function.output-add-rewrite-var" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>output_add_rewrite_var</refname>
   <refpurpose>Add URL rewriter values</refpurpose>
@@ -13,7 +13,7 @@
    <methodparam><type>string</type><parameter>name</parameter></methodparam>
    <methodparam><type>string</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function starts the <literal>'URL-Rewriter'</literal> output buffer handler
    if it is not active,
    stores the <parameter>name</parameter> and <parameter>value</parameter> parameters,
@@ -21,8 +21,8 @@
    and forms based on the applicable ini settings.
    Subsequent calls to this function will store all additional name/value pairs
    until the handler is turned off.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    When the output buffer is flushed
    (by calling <function>ob_flush</function>, <function>ob_end_flush</function>,
    <function>ob_get_flush</function> or at the end of the script)
@@ -32,13 +32,13 @@
    <link linkend="ini.url-rewriter.tags">url_rewriter.tags</link> and
    <link linkend="ini.url-rewriter.hosts">url_rewriter.hosts</link>
    configuration directives.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Each name/value pair added to the <literal>'URL-Rewriter'</literal> handler
    is added to the <acronym>URL</acronym>s and/or forms
    even if this results in duplicate <acronym>URL</acronym> query parameters
    or elements with the same name attributes.
-  </para>
+  </simpara>
   <note>
    <simpara>
     Once the <literal>'URL-Rewriter'</literal> handler has been turned off
@@ -61,17 +61,17 @@
     <varlistentry>
      <term><parameter>name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The variable name.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The variable value.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -80,9 +80,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

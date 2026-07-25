@@ -7,7 +7,7 @@
    Set up unparsed entity declaration handler
   </refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -15,10 +15,10 @@
    <methodparam><type>XMLParser</type><parameter>parser</parameter></methodparam>
    <methodparam><type class="union"><type>callable</type><type>string</type><type>null</type></type><parameter>handler</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets the unparsed entity declaration handler function for the XML parser
    <parameter>parser</parameter>.
-  </para>
+  </simpara>
   <para>
    The <parameter>handler</parameter> will be called if the XML parser
    encounters an external entity declaration with an NDATA declaration, like
@@ -30,11 +30,11 @@
 ]]>
    </programlisting>
   </para>
-  <para>
+  <simpara>
    See <link xlink:href="&url.rec-xml;#sec-external-ent">section 4.2.2 of
    the XML 1.0 spec</link> for the definition of notation declared
    external entities.
-  </para> 
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -87,7 +87,7 @@
         <varlistentry>
          <term><parameter>public_id</parameter></term>
          <listitem>
-          <simpara> 
+          <simpara>
            Public identifier for the external entity.
           </simpara>
          </listitem>
@@ -95,7 +95,7 @@
         <varlistentry>
          <term><parameter>notation_name</parameter></term>
          <listitem>
-          <simpara> 
+          <simpara>
            Name of the notation of this entity (see
            <function>xml_set_notation_decl_handler</function>).
           </simpara>
@@ -111,9 +111,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

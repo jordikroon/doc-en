@@ -12,16 +12,16 @@
    <methodparam><type>mysqli</type><parameter>mysql</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>result_mode</parameter><initializer><constant>MYSQLI_STORE_RESULT</constant></initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    This method constructs a new <classname>mysqli_result</classname> object.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    It can be used to create the <classname>mysqli_result</classname> object
    after calling the <function>mysqli_real_query</function> or
    <function>mysqli_multi_query</function> function. Constructing the object
    manually is equivalent to calling the <function>mysqli_store_result</function>
    or <function>mysqli_use_result</function> function.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -31,24 +31,24 @@
    <varlistentry>
     <term><parameter>result_mode</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The result mode can be one of 2 constants indicating how the result will
       be returned from the MySQL server.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       <constant>MYSQLI_STORE_RESULT</constant> (default) - creates a
       <classname>mysqli_result</classname> object with buffered result set.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       <constant>MYSQLI_USE_RESULT</constant> - creates a
-      <classname>mysqli_result</classname> object with unbuffered result set. 
+      <classname>mysqli_result</classname> object with unbuffered result set.
       As long as there are pending records waiting to be fetched, the
-      connection line will be busy and all subsequent calls will return error 
-      <literal>Commands out of sync</literal>. To avoid the error all records 
+      connection line will be busy and all subsequent calls will return error
+      <literal>Commands out of sync</literal>. To avoid the error all records
       must be fetched from the server or the result set must be discarded by
       calling <function>mysqli_free_result</function>. The connection must
       remain open for the rows to be fetched.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>

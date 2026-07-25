@@ -13,23 +13,23 @@
    <methodparam><type>int</type><parameter>encoding</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>array</type><type>object</type></type><parameter>options</parameter><initializer>[]</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Initializes an incremental deflate context using the specified
    <parameter>encoding</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Note that the <literal>window</literal> option here only sets the window size
    of the algorithm, differently from the zlib filters where the same parameter
    also sets the encoding to use; the encoding must be set with the
    <parameter>encoding</parameter> parameter.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Limitation: there is currently no way to set the header information on a GZIP
    compressed stream, which are set as follows: GZIP signature
    (<literal>\x1f\x8B</literal>); compression method (<literal>\x08</literal>
    == DEFLATE); 6 zero bytes; the operating system set to the current system
    (<literal>\x00</literal> = Windows, <literal>\x03</literal> = Unix, etc.)
-  </para>
+  </simpara>
  </refsect1><!-- }}} -->
 
  <refsect1 role="parameters"><!-- {{{ -->
@@ -38,9 +38,9 @@
    <varlistentry>
     <term><parameter>encoding</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       One of the <constant>ZLIB_ENCODING_<replaceable>*</replaceable></constant> constants.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
@@ -52,49 +52,49 @@
        <varlistentry>
         <term><varname>level</varname></term>
         <listitem>
-         <para>
+         <simpara>
           The compression level in range -1..9; defaults to -1.
-         </para>
+         </simpara>
         </listitem>
        </varlistentry>
        <varlistentry>
         <term><varname>memory</varname></term>
         <listitem>
-         <para>
+         <simpara>
           The compression memory level in range 1..9; defaults to 8.
-         </para>
+         </simpara>
         </listitem>
        </varlistentry>
        <varlistentry>
         <term><varname>window</varname></term>
         <listitem>
-         <para>
+         <simpara>
           The zlib window size (logarithmic) in range <literal>8</literal>..<literal>15</literal>;
           defaults to <literal>15</literal>.
           zlib changes a window size of <literal>8</literal> to <literal>9</literal>,
           and as of zlib 1.2.8 fails with a warning, if a window size of <literal>8</literal>
           is requested for <constant>ZLIB_ENCODING_RAW</constant> or <constant>ZLIB_ENCODING_GZIP</constant>.
-         </para>
+         </simpara>
         </listitem>
        </varlistentry>
        <varlistentry>
         <term><varname>strategy</varname></term>
         <listitem>
-         <para>
+         <simpara>
           One of <constant>ZLIB_FILTERED</constant>,
           <constant>ZLIB_HUFFMAN_ONLY</constant>, <constant>ZLIB_RLE</constant>,
           <constant>ZLIB_FIXED</constant> or
           <constant>ZLIB_DEFAULT_STRATEGY</constant> (the default).
-         </para>
+         </simpara>
         </listitem>
        </varlistentry>
        <varlistentry>
         <term><varname>dictionary</varname></term>
         <listitem>
-         <para>
+         <simpara>
           A <type>string</type> or an <type>array</type> of <type>strings</type>
           of the preset dictionary (default: no preset dictionary).
-         </para>
+         </simpara>
         </listitem>
        </varlistentry>
       </variablelist>
@@ -106,19 +106,19 @@
 
  <refsect1 role="returnvalues"><!-- {{{ -->
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a deflate context resource (<literal>zlib.deflate</literal>) on
    success, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1><!-- }}} -->
 
  <refsect1 role="errors"><!-- {{{ -->
   &reftitle.errors;
-  <para>
+  <simpara>
    If an invalid option is passed to <parameter>options</parameter> or the
    context couldn't be created, an error of level <constant>E_WARNING</constant>
    is generated.
-  </para>
+  </simpara>
  </refsect1><!-- }}} -->
 
  <refsect1 role="changelog">

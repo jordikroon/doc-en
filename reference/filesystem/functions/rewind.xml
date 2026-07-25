@@ -5,22 +5,22 @@
   <refname>rewind</refname>
   <refpurpose>Rewind the position of a file pointer</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>bool</type><methodname>rewind</methodname>
    <methodparam><type>resource</type><parameter>stream</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets the file position indicator for <parameter>stream</parameter>
    to the beginning of the file stream.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     If you have opened the file in append ("a" or "a+") mode, any data you
     write to the file will always be appended, regardless of the file pointer position.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -31,10 +31,10 @@
     <varlistentry>
      <term><parameter>stream</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The file pointer must be valid, and must point to a file
        successfully opened by <function>fopen</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -43,9 +43,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

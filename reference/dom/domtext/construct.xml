@@ -13,9 +13,9 @@
    <modifier>public</modifier> <methodname>DOMText::__construct</methodname>
    <methodparam choice="opt"><type>string</type><parameter>data</parameter><initializer>""</initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Creates a new <classname>DOMText</classname> object.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>data</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The value of the text node. If not supplied an empty text node is created.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

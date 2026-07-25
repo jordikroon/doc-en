@@ -13,10 +13,10 @@
    <methodparam><type>int</type><parameter>property</parameter></methodparam>
    <methodparam><type>string</type><parameter>name</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the property value integer for a given value name, as specified in the Unicode database file PropertyValueAliases.txt.
    Short, long, and any other variants are recognized.
-  </para>
+  </simpara>
   <note>
    <para>
     Some of the names in PropertyValueAliases.txt will only be recognized with
@@ -44,18 +44,18 @@
     <term><parameter>property</parameter></term>
     <listitem>
      &intl.property.parameter;
-     <para>
+     <simpara>
       If out of range, or this method doesn't work with the given value,
       <constant>IntlChar::PROPERTY_INVALID_CODE</constant> is returned.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>name</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The value name to be matched.  The name is compared using "loose matching" as described in PropertyValueAliases.txt.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -63,10 +63,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the corresponding value integer, or <constant>IntlChar::PROPERTY_INVALID_CODE</constant> if the given name
    does not match any value of the given property, or if the property is invalid.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -3,23 +3,23 @@
 <reference xml:id="class.domdocumentfragment" role="class" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
  <title>The DOMDocumentFragment class</title>
  <titleabbrev>DOMDocumentFragment</titleabbrev>
- 
+
  <partintro>
- 
+
 <!-- {{{ DOMDocumentFragment intro -->
 <!--
   <section xml:id="domdocumentfragment.intro">
    &reftitle.intro;
    <para>
-    
+
    </para>
   </section>
 -->
 <!-- }}} -->
- 
+
   <section xml:id="domdocumentfragment.synopsis">
    &reftitle.classsynopsis;
- 
+
 <!-- {{{ Synopsis -->
    <classsynopsis class="class">
     <ooclass>
@@ -77,19 +77,19 @@
     <varlistentry xml:id="domdocumentfragment.props.childelementcount">
      <term><varname>childElementCount</varname></term>
      <listitem>
-      <para>The number of child elements.</para>
+      <simpara>The number of child elements.</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domdocumentfragment.props.firstelementchild">
      <term><varname>firstElementChild</varname></term>
      <listitem>
-      <para>First child element or &null;.</para>
+      <simpara>First child element or &null;.</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domdocumentfragment.props.lastelementchild">
      <term><varname>lastElementChild</varname></term>
      <listitem>
-      <para>Last child element or &null;.</para>
+      <simpara>Last child element or &null;.</simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -124,7 +124,7 @@
     </tgroup>
    </informaltable>
   </section>
-  
+
 <!-- {{{ See also -->
 <!--
   <section role="seealso">
@@ -137,11 +137,11 @@
   </section>
 -->
 <!-- }}} -->
- 
+
  </partintro>
- 
+
  &reference.dom.entities.domdocumentfragment;
- 
+
 </reference>
 <!-- Keep this comment at the end of the file
 Local variables:

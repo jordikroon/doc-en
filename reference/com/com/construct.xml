@@ -15,9 +15,9 @@
    <methodparam choice="opt"><type>int</type><parameter>codepage</parameter><initializer><constant>CP_ACP</constant></initializer></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>typelib</parameter><initializer>""</initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Constructs a new com object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">

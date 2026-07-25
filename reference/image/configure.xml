@@ -2,7 +2,7 @@
 <!-- $Revision$ -->
 <section xml:id="image.installation" xmlns="http://docbook.org/ns/docbook">
  &reftitle.install;
- <para>
+ <simpara>
   To enable GD-support configure PHP
   <option role="configure">--with-gd[=DIR]</option>, where DIR is the GD base
   install directory. To use the recommended bundled version of the GD library,
@@ -15,12 +15,12 @@
   extension at all) and <option role="configure">--with-external-gd</option>
   (to opt into using an external <productname>libgd</productname>, rather than
   the bundled one).
- </para>
- <para>
+ </simpara>
+ <simpara>
   In Windows, you'll include the GD DLL <filename>php_gd.dll</filename> as
   an extension in &php.ini;.
   Prior to PHP 8.0.0, the DLL was named <filename>php_gd2.dll</filename>.
- </para>
+ </simpara>
 
  <para>
   Enhance the capabilities of GD to handle more image formats by specifying

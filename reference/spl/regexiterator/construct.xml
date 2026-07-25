@@ -31,17 +31,17 @@
     <varlistentry>
      <term><parameter>iterator</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The iterator to apply this regex filter to.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>pattern</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The regular expression to match.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -65,9 +65,9 @@
     <varlistentry>
      <term><parameter>pregFlags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The regular expression flags. These flags depend on the operation mode parameter:
-      </para>
+      </simpara>
       <para>
       <table>
         <title><classname>RegexIterator</classname> preg_flags</title>
@@ -118,22 +118,22 @@
    </variablelist>
   </para>
  </refsect1>
- 
+
 <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws an <classname>InvalidArgumentException</classname> if the <parameter>pattern</parameter> argument is invalid.
-  </para>
+  <simpara>
+   Throws an <exceptionname>InvalidArgumentException</exceptionname> if the <parameter>pattern</parameter> argument is invalid.
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
    <example>
     <title><function>RegexIterator::__construct</function> example</title>
-    <para>
+    <simpara>
       Creates a new RegexIterator that filters all strings that start with 'test'.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

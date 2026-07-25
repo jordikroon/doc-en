@@ -5,7 +5,7 @@
   <refname>sleep</refname>
   <refpurpose>Delay execution</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -32,9 +32,9 @@
     <varlistentry>
      <term><parameter>seconds</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Halt time in seconds (must be greater than or equal to <literal>0</literal>).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -43,25 +43,25 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns zero on success.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If the call was interrupted by a signal, <function>sleep</function> returns
    a non-zero value. On Windows, this value will always be
    <literal>192</literal> (the value of the
    <constant>WAIT_IO_COMPLETION</constant> constant within the Windows API).
    On other platforms, the return value will be the number of seconds left to
    sleep.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    If the specified number of <parameter>seconds</parameter> is negative,
-   this function will throw a <classname>ValueError</classname>.
-  </para>
+   this function will throw a <exceptionname>ValueError</exceptionname>.
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -78,7 +78,7 @@
      <row>
       <entry>8.0.0</entry>
       <entry>
-       The function throws a <classname>ValueError</classname> on negative <parameter>seconds</parameter>;
+       The function throws a <exceptionname>ValueError</exceptionname> on negative <parameter>seconds</parameter>;
        previously, an <constant>E_WARNING</constant> was raised instead, and the function returned &false;.
       </entry>
      </row>
@@ -108,9 +108,9 @@ echo date('h:i:s') . "\n";
 ?>
 ]]>
     </programlisting>
-    <para>
+    <simpara>
      This example will output (after 10 seconds)
-    </para>
+    </simpara>
     <screen>
 <![CDATA[
 05:31:23

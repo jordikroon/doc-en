@@ -12,18 +12,18 @@
    <type>int</type><methodname>time</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the current time measured in the number of seconds since
    the Unix Epoch (January 1 1970 00:00:00 GMT).
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     Unix timestamps do not contain any information with regards to any local
     timezone. It is recommended to use the
     <classname>DateTimeImmutable</classname> class for handling date and time
     information in order to avoid the pitfalls that come with just Unix
     timestamps.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -34,9 +34,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the current timestamp.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -63,10 +63,10 @@ Now: 1660338149
  <refsect1 role="notes">
   &reftitle.notes;
   <tip>
-   <para>
+   <simpara>
     Timestamp of the start of the request is available in
     <varname>$_SERVER['REQUEST_TIME']</varname>.
-   </para>
+   </simpara>
   </tip>
  </refsect1>
 

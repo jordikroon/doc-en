@@ -9,7 +9,7 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="mysqli">
    <modifier>public</modifier> <type>true</type><methodname>mysqli::ssl_set</methodname>
    <methodparam><type class="union"><type>string</type><type>null</type></type><parameter>key</parameter></methodparam>
@@ -18,7 +18,7 @@
    <methodparam><type class="union"><type>string</type><type>null</type></type><parameter>ca_path</parameter></methodparam>
    <methodparam><type class="union"><type>string</type><type>null</type></type><parameter>cipher_algos</parameter></methodparam>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type>true</type><methodname>mysqli_ssl_set</methodname>
    <methodparam><type>mysqli</type><parameter>mysql</parameter></methodparam>
@@ -28,11 +28,11 @@
    <methodparam><type class="union"><type>string</type><type>null</type></type><parameter>ca_path</parameter></methodparam>
    <methodparam><type class="union"><type>string</type><type>null</type></type><parameter>cipher_algos</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Used for establishing secure connections using SSL. It must be called
    before <function>mysqli_real_connect</function>. This function does
    nothing unless OpenSSL support is enabled.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -44,42 +44,42 @@
     <varlistentry>
      <term><parameter>key</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The path name to the key file.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>certificate</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The path name to the certificate file.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>ca_certificate</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The path name to the certificate authority file.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>ca_path</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The pathname to a directory that contains trusted SSL CA certificates
        in <acronym>PEM</acronym> format.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>cipher_algos</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A list of allowable ciphers to use for SSL encryption.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -88,11 +88,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always; If SSL setup is
    incorrect <function>mysqli_real_connect</function> will return an error
    when you attempt to connect.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

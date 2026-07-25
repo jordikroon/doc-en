@@ -2,15 +2,15 @@
 <!-- $Revision$ -->
 <sect1 xml:id="install.windows.commandline" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <title>Running PHP on the command line on Windows systems</title>
- <para>
+ <simpara>
   This section contains notes and hints specific to getting PHP running
   from the command line for Windows.
- </para>
+ </simpara>
  <note>
-  <para>
+  <simpara>
    Read the <link linkend="install.windows.manual">manual
    installation steps</link> first!
-  </para>
+  </simpara>
  </note>
  <para>
   Getting PHP to run from the command line can be performed without making
@@ -18,7 +18,7 @@
   <screen>
 <![CDATA[
 C:\php\php.exe -f "C:\PHP Scripts\script.php" -- -arg1 -arg2 -arg3
-]]>     
+]]>
   </screen>
  </para>
 
@@ -29,23 +29,23 @@ C:\php\php.exe -f "C:\PHP Scripts\script.php" -- -arg1 -arg2 -arg3
 
   <itemizedlist>
    <note>
-    <para>
+    <simpara>
      Both <envar>PATH</envar> and <envar>PATHEXT</envar> are important
      pre-existing system variables in Windows,
      and care should be taken to not overwrite either variable,
      only to add to them.
-    </para>
+    </simpara>
    </note>
 
    <listitem>
-    <para>
+    <simpara>
      Append the location of the PHP executable (<filename>php.exe</filename>,
      <filename>php-win.exe</filename> or <filename>php-cli.exe</filename>
      depending upon the PHP version and display preferences) to the
      <envar>PATH</envar> environment variable. Read more about how to
      add the appropriate directory to <envar>PATH</envar> in the <link
      linkend="faq.installation.addtopath">corresponding FAQ entry</link>.
-    </para>
+    </simpara>
    </listitem>
 
    <listitem>
@@ -58,13 +58,13 @@ C:\php\php.exe -f "C:\PHP Scripts\script.php" -- -arg1 -arg2 -arg3
      <varname>PATHEXT</varname> environment variable rather than the
      <envar>PATH</envar> environment variable.
      <note>
-      <para>
+      <simpara>
        The position in which the <literal>.PHP</literal> is placed will
        determine which script or program is executed when there are matching
        filenames. For example, placing <literal>.PHP</literal> before
        <literal>.BAT</literal> will cause the script to run, rather than
        the batch file, if there is a batch file with the same name.
-      </para>
+      </simpara>
      </note>
     </para>
    </listitem>
@@ -76,7 +76,7 @@ C:\php\php.exe -f "C:\PHP Scripts\script.php" -- -arg1 -arg2 -arg3
      <screen>
 <![CDATA[
 assoc .php=phpfile
-]]>     
+]]>
      </screen>
     </para>
    </listitem>
@@ -88,7 +88,7 @@ assoc .php=phpfile
      <screen>
 <![CDATA[
 ftype phpfile="C:\php\php.exe" -f "%1" -- %~2
-]]>     
+]]>
      </screen>
     </para>
    </listitem>
@@ -96,11 +96,11 @@ ftype phpfile="C:\php\php.exe" -f "%1" -- %~2
   </itemizedlist>
  </para>
 
- <para>
+ <simpara>
   Following these steps will allow PHP scripts to be run from any directory
   without the need to type the PHP executable or the <literal>.PHP</literal>
   extension and all parameters will be supplied to the script for processing.
- </para>
+ </simpara>
 
  <para>
   The example below details some of the registry changes that can be made manually.

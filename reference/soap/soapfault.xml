@@ -10,9 +10,9 @@
 <!-- {{{ SoapFault intro -->
   <section xml:id="soapfault.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Represents a SOAP fault.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -98,50 +98,50 @@
     <varlistentry xml:id="soapfault.props.name">
      <term><varname>_name</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapfault.props.detail">
      <term><varname>detail</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapfault.props.faultactor">
      <term><varname>faultactor</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapfault.props.faultcode">
      <term><varname>faultcode</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapfault.props.faultcodens">
      <term><varname>faultcodens</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapfault.props.faultstring">
      <term><varname>faultstring</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapfault.props.headerfault">
      <term><varname>headerfault</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapfault.props.lang">

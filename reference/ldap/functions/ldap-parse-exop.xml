@@ -15,9 +15,9 @@
    <methodparam choice="opt"><type>string</type><parameter role="reference">response_data</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>string</type><parameter role="reference">response_oid</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Parse LDAP extended operation data from result object <parameter>result</parameter>
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,33 +26,33 @@
    <varlistentry>
     <term><parameter>ldap</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       &ldap.parameter.ldap;
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>result</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       &ldap.parameter.result;
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>response_data</parameter></term>
     <listitem>
-     <para>
+     <simpara>
        Will be filled by the response data.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>response_oid</parameter></term>
     <listitem>
-     <para>
+     <simpara>
        Will be filled by the response OID.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -60,9 +60,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

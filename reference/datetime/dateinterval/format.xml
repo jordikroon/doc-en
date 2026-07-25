@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>string</type><methodname>DateInterval::format</methodname>
    <methodparam><type>string</type><parameter>format</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Formats the interval.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -144,9 +144,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the formatted interval.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -246,15 +246,15 @@ echo $interval->format('%m month, %d days');
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
    <para>
-    The <methodname>DateInterval::format</methodname> method does not 
-    recalculate carry over points in time strings nor in date segments. This 
+    The <methodname>DateInterval::format</methodname> method does not
+    recalculate carry over points in time strings nor in date segments. This
     is expected because it is not possible to overflow values like <literal>"32 days"</literal>
-    which could be interpreted as anything from <literal>"1 month and 4 days"</literal> 
+    which could be interpreted as anything from <literal>"1 month and 4 days"</literal>
     to <literal>"1 month and 1 day"</literal>.
    </para>
   </note>

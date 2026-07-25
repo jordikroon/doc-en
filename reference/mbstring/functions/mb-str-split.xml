@@ -14,11 +14,11 @@
    <methodparam choice="opt"><type>int</type><parameter>length</parameter><initializer>1</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>encoding</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function will return an array of strings, it is a version of <function>str_split</function> with support for encodings of variable character size as well as fixed-size encodings of 1,2 or 4 byte characters.
    If the <parameter>length</parameter> parameter is specified, the string is broken down into chunks of the specified length in characters (not bytes).
    The <parameter>encoding</parameter> parameter can be optionally specified and it is good practice to do so.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,26 +28,26 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The &string; to split into characters or chunks.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
         If specified, each element of the returned array will be composed of multiple characters instead of a single character.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>encoding</parameter></term>
      <listitem>
       &mbstring.encoding.parameter;
-      <para>
+      <simpara>
         A string specifying one of the <link linkend="mbstring.supported-encodings">supported encodings</link>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -56,9 +56,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    <function>mb_str_split</function> returns an array of strings.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

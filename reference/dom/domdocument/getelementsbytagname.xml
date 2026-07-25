@@ -11,11 +11,11 @@
    <modifier>public</modifier> <type>DOMNodeList</type><methodname>DOMDocument::getElementsByTagName</methodname>
    <methodparam><type>string</type><parameter>qualifiedName</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function returns a new instance of class
    <classname>DOMNodeList</classname> containing all the elements with a given
    local tag name.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -24,10 +24,10 @@
     <varlistentry>
      <term><parameter>qualifiedName</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The local name (without namespace) of the tag to match on. The special value <literal>*</literal>
-       matches all tags. 
-      </para>
+       matches all tags.
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,10 +35,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   A new <classname>DOMNodeList</classname> object containing all the matched 
+  <simpara>
+   A new <classname>DOMNodeList</classname> object containing all the matched
    elements.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;

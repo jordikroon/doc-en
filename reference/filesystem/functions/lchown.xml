@@ -5,7 +5,7 @@
   <refname>lchown</refname>
   <refpurpose>Changes user ownership of symlink</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,13 +13,13 @@
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
    <methodparam><type class="union"><type>string</type><type>int</type></type><parameter>user</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Attempts to change the owner of the symlink <parameter>filename</parameter>
    to user <parameter>user</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Only the superuser may change the owner of a symlink.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,17 +29,17 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path to the file.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>user</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        User name or number.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -48,9 +48,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

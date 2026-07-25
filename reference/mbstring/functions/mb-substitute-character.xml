@@ -12,19 +12,19 @@
    <type class="union"><type>string</type><type>int</type><type>bool</type></type><methodname>mb_substitute_character</methodname>
    <methodparam choice="opt"><type class="union"><type>string</type><type>int</type><type>null</type></type><parameter>substitute_character</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Specifies a substitution character when input character encoding is invalid
    or character code does not exist in output character
    encoding. Invalid characters may be substituted <literal>"none"</literal> (no output),
    <type>string</type> or <type>int</type> value (Unicode character code value).
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This setting affects <function>mb_convert_encoding</function>,
    <function>mb_convert_variables</function>,
    <function>mb_output_handler</function>,
    <function>mb_scrub</function>,
    and <function>mb_send_mail</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -35,7 +35,7 @@
      <term><parameter>substitute_character</parameter></term>
      <listitem>
       <para>
-       Specify the Unicode value as an <type>int</type>, 
+       Specify the Unicode value as an <type>int</type>,
        or as one of the following <type>string</type>s:
        <itemizedlist>
         <listitem>
@@ -65,12 +65,12 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    If <parameter>substitute_character</parameter> is set, it returns &true; for success,
-   otherwise returns &false;. 
+   otherwise returns &false;.
    If <parameter>substitute_character</parameter> is not set, it returns the current
    setting.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

@@ -11,15 +11,15 @@
    <type>bool</type><methodname>is_float</methodname>
    <methodparam><type>mixed</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Finds whether the type of the given variable is float.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     To test if a variable is a number or a numeric string (such as form
     input, which is always a string), you must use
     <function>is_numeric</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
  <refsect1 role="parameters">
@@ -29,9 +29,9 @@
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The variable being evaluated.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -39,10 +39,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if <parameter>value</parameter> is a <type>float</type>,
    &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;

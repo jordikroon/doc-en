@@ -5,7 +5,7 @@
   <refname>openssl_pkey_export_to_file</refname>
   <refpurpose>Gets an exportable representation of a key into a file</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -15,11 +15,11 @@
    <methodparam choice="opt"><modifier role="attribute">#[\SensitiveParameter]</modifier><type class="union"><type>string</type><type>null</type></type><parameter>passphrase</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>array</type><type>null</type></type><parameter>options</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>openssl_pkey_export_to_file</function> saves an ascii-armoured
    (<acronym>PEM</acronym> encoded) rendition of <parameter>key</parameter> into the file named
-   by <parameter>output_filename</parameter>.  
-  </para>
+   by <parameter>output_filename</parameter>.
+  </simpara>
   &note.openssl.cnf;
  </refsect1>
 
@@ -30,36 +30,36 @@
     <varlistentry>
      <term><parameter>key</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>output_filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path to the output file.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>passphrase</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The key can be optionally protected by a
        <parameter>passphrase</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>options</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>options</parameter> can be used to fine-tune the export
        process by specifying and/or overriding options for the openssl
        configuration file. See <function>openssl_csr_new</function> for more
        information about <parameter>options</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -68,9 +68,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

@@ -10,10 +10,10 @@
 <!-- {{{ SplSubject intro -->
   <section xml:id="splsubject.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     The <classname>SplSubject</classname> interface is used alongside
     <classname>SplObserver</classname> to implement the Observer Design Pattern.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

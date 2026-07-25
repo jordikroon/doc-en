@@ -12,22 +12,22 @@
    <methodparam><type class="union"><type>array</type><type>string</type></type><parameter>var_name</parameter></methodparam>
    <methodparam rep="repeat"><type class="union"><type>array</type><type>string</type></type><parameter>var_names</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Creates an array containing variables and their values.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    For each of these, <function>compact</function> looks for a
    variable with that name in the current
    <link linkend="features.gc.refcounting-basics">symbol table</link>
    and adds it to the output array such that the variable name becomes the key
    and the contents of the variable become the value for that key.
    In short, it does the opposite of <function>extract</function>.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     Before PHP 7.3, any strings that are not set will silently be skipped.
-   </para>
-  </note> 
+   </simpara>
+  </note>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -37,13 +37,13 @@
      <term><parameter>var_name</parameter></term>
      <term><parameter>var_names</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <function>compact</function> takes a variable number of parameters.
        Each parameter can be either a string containing the name of the
        variable, or an array of variable names.  The array can contain other
        arrays of variable names inside it; <function>compact</function>
        handles it recursively.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -51,17 +51,17 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the output array with all the variables added to it.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    <function>compact</function> issues an <constant>E_WARNING</constant> level error if a given string
    refers to an unset variable.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog"><!-- {{{ -->
@@ -132,13 +132,13 @@ Array
   &reftitle.notes;
   <note>
    <title>Gotcha</title>
-   <para>
+   <simpara>
     Because <link linkend="language.variables.variable">variable
     variables</link> may not be used with PHP's
     <link linkend="language.variables.superglobals">Superglobal
     arrays</link> within functions, the Superglobal arrays may not be passed
     into <function>compact</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
  <refsect1 role="seealso">

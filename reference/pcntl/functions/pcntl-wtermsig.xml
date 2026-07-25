@@ -5,18 +5,18 @@
   <refname>pcntl_wtermsig</refname>
   <refpurpose>Returns the signal which caused the child to terminate</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>int</type><type>false</type></type><methodname>pcntl_wtermsig</methodname>
    <methodparam><type>int</type><parameter>status</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the number of the signal that caused the child process to
    terminate. This function is only useful if
    <function>pcntl_wifsignaled</function> returned &true;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -35,10 +35,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the signal number.
    If the functionality is not supported by the OS, &false; is returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

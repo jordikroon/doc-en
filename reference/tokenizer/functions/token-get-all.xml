@@ -12,15 +12,15 @@
    <methodparam><type>string</type><parameter>code</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
-   <function>token_get_all</function> parses the given <parameter>code</parameter> 
+  <simpara>
+   <function>token_get_all</function> parses the given <parameter>code</parameter>
    string into PHP language tokens using the Zend engine&apos;s lexical scanner.
-  </para>
-  <para>
-   For a list of parser tokens, see <xref linkend="tokens"/>, or use 
+  </simpara>
+  <simpara>
+   For a list of parser tokens, see <xref linkend="tokens"/>, or use
    <function>token_name</function> to translate a token value into its string
    representation.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -29,9 +29,9 @@
     <varlistentry>
      <term><parameter>code</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The PHP source to parse.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -55,13 +55,13 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An array of token identifiers. Each individual token identifier is either
-   a single character (i.e.: <literal>;</literal>, <literal>.</literal>, 
+   a single character (i.e.: <literal>;</literal>, <literal>.</literal>,
    <literal>&gt;</literal>, <literal>!</literal>, etc...),
    or a three element array containing the token index in element 0, the string
    content of the original token in element 1 and the line number in element 2.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;

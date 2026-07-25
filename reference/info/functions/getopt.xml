@@ -14,9 +14,9 @@
    <methodparam choice="opt"><type>array</type><parameter>long_options</parameter><initializer>[]</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter role="reference">rest_index</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Parses options passed to the script.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -90,26 +90,26 @@
     </simplelist>
   </para>
   <note>
-   <para>
+   <simpara>
     The format for the <parameter>short_options</parameter> and
     <parameter>long_options</parameter> is almost the same, the only difference is
     that <parameter>long_options</parameter> takes an array of options (where each
     element is the option) whereas <parameter>short_options</parameter> takes a
     string (where each character is the option).
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    This function will return an array of option / argument pairs, &return.falseforfailure;.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     The parsing of options will end at the first non-option found, anything
     that follows is discarded.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

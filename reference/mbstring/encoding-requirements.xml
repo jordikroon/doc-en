@@ -42,7 +42,7 @@
         that represents a single character.
        </simpara>
       </listitem>
-     </itemizedlist>  
+     </itemizedlist>
     </para>
    </listitem>
   </itemizedlist>
@@ -58,32 +58,32 @@ JIS, SJIS, ISO-2022-JP, BIG-5
    </programlisting>
   </informalexample>
  </para>
- <para>
+ <simpara>
   Although PHP scripts written in any of those encodings might not work,
   especially in the case where encoded strings appear as identifiers
   or literals in the script, you can almost avoid using these encodings
   by setting up the <literal>mbstring</literal>'s transparent encoding
   filter function for incoming HTTP queries.
- </para>
+ </simpara>
  <note>
-  <para>
+  <simpara>
    It's highly discouraged to use SJIS, BIG5, CP936, CP949 and GB18030 for
    the internal encoding unless you are familiar with the parser, the
    scanner and the character encoding.
-  </para>
+  </simpara>
  </note>
  <note>
-  <para>
+  <simpara>
    If you are connecting to a database with PHP, it is recommended that
    you use the same character encoding for both the database and the
    <literal>internal encoding</literal> for ease of use and better
    performance.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If you are using PostgreSQL, the character encoding used in the
    database and the one used in PHP may differ as it supports
    automatic character set conversion between the backend and the frontend.
-  </para>
+  </simpara>
  </note>
 </chapter>
 

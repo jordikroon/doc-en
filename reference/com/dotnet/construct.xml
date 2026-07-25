@@ -14,9 +14,9 @@
    <methodparam><type>string</type><parameter>datatype_name</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>codepage</parameter><initializer><constant>CP_ACP</constant></initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Constructs a new dotnet object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">

@@ -13,9 +13,9 @@
    <type class="union"><type>string</type><type>false</type></type><methodname>getcwd</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the current working directory.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,17 +25,17 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the current working directory on success, or &false; on
    failure.
-  </para> 
-  <para>
+  </simpara>
+  <simpara>
    On some Unix variants, <function>getcwd</function> will return
    &false; if any one of the parent directories does not have the
    readable or search mode set, even if the current directory
    does. See <function>chmod</function> for more information on
    modes and permissions.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -72,13 +72,13 @@ echo getcwd() . "\n";
  <refsect1 role="notes">
   &reftitle.notes;
   <caution>
-   <para>
+   <simpara>
     If the PHP interpreter has been built with ZTS (Zend Thread Safety) enabled,
     the current working directory returned by <function>getcwd</function>
     may be different from that returned by operating system interfaces.
     External libraries (invoked through <link linkend="book.ffi">FFI</link>)
     which depend on the current working directory will be affected.
-   </para>
+   </simpara>
   </caution>
  </refsect1>
 

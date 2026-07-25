@@ -11,10 +11,10 @@
    <modifier>public</modifier> <type class="union"><type>string</type><type>null</type></type><methodname>ReflectionFiber::getExecutingFile</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the full path and file name of the current execution point in the reflected <classname>Fiber</classname>.
-   If the fiber has not been started or has terminated, an <classname>Error</classname> is thrown.
-  </para>
+   If the fiber has not been started or has terminated, an <exceptionname>Error</exceptionname> is thrown.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,10 +24,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The full path and file name of the reflected fiber.
    If the reflected fiber is used outside a user-defined function, &null; is returned.
-  </para>
+  </simpara>
  </refsect1>
 
 

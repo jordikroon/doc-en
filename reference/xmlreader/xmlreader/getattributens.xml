@@ -12,10 +12,10 @@
    <methodparam><type>string</type><parameter>name</parameter></methodparam>
    <methodparam><type>string</type><parameter>namespace</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   Returns the value of an attribute by name and namespace URI or an empty 
+  <simpara>
+   Returns the value of an attribute by name and namespace URI or an empty
    string if attribute does not exist or not positioned on an element node.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,17 +25,17 @@
     <varlistentry>
      <term><parameter>name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The local name.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>namespace</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The namespace URI.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -44,11 +44,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The value of the attribute, or &null; if no attribute with the given
    <parameter>name</parameter> and <parameter>namespace</parameter> is
    found or not positioned of element.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

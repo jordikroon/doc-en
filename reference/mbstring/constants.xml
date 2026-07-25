@@ -6,7 +6,7 @@
  <variablelist>
   <varlistentry xml:id="constant.mb-overload-mail">
    <term>
-    <constant>MB_OVERLOAD_MAIL</constant> 
+    <constant>MB_OVERLOAD_MAIL</constant>
     (<type>int</type>)
    </term>
    <listitem>
@@ -17,7 +17,7 @@
   </varlistentry>
   <varlistentry xml:id="constant.mb-overload-string">
    <term>
-    <constant>MB_OVERLOAD_STRING</constant> 
+    <constant>MB_OVERLOAD_STRING</constant>
     (<type>int</type>)
    </term>
    <listitem>
@@ -28,7 +28,7 @@
   </varlistentry>
   <varlistentry xml:id="constant.mb-overload-regex">
    <term>
-    <constant>MB_OVERLOAD_REGEX</constant> 
+    <constant>MB_OVERLOAD_REGEX</constant>
     (<type>int</type>)
    </term>
    <listitem>

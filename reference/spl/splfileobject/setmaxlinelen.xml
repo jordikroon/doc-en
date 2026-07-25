@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>void</type><methodname>SplFileObject::setMaxLineLen</methodname>
    <methodparam><type>int</type><parameter>maxLength</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets the maximum length of a line to be read.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>maxLength</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The maximum length of a line.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,17 +35,17 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws <classname>DomainException</classname> when
+  <simpara>
+   Throws <exceptionname>DomainException</exceptionname> when
    <parameter>maxLength</parameter> is less than zero.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -64,7 +64,7 @@ foreach ($file as $line) {
 ?>
 ]]>
     </programlisting>
-    <para>Contents of lipsum.txt</para>
+    <simpara>Contents of lipsum.txt</simpara>
     <programlisting role="txt">
 <![CDATA[
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -84,7 +84,7 @@ is, ac sodales nisl
 .
 
 Nulla vitae magna v
-itae purus aliquet 
+itae purus aliquet
 consequat.
 ]]>
     </screen>

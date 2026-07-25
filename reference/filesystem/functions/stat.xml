@@ -5,25 +5,25 @@
   <refname>stat</refname>
   <refpurpose>Gives information about a file</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>array</type><type>false</type></type><methodname>stat</methodname>
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gathers the statistics of the file named by
    <parameter>filename</parameter>.  If <parameter>filename</parameter> is a
    symbolic link, statistics are from the file itself, not the symlink.
    Prior to PHP 7.4.0, on Windows <abbrev>NTS</abbrev> builds the <literal>size</literal>,
    <literal>atime</literal>, <literal>mtime</literal> and <literal>ctime</literal>
    statistics have been from the symlink, in this case.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    <function>lstat</function> is identical to <function>stat</function>
    except it would instead be based off the symlinks status.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -33,9 +33,9 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path to the file.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -126,32 +126,32 @@
     </tgroup>
    </table>
   </para>
-  <para>
+  <simpara>
    * On Windows this will always be <literal>0</literal>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    ** Only valid on systems supporting the st_blksize type - other
    systems (e.g. Windows) return <literal>-1</literal>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    *** On Windows, as of PHP 7.4.0, this is the serial number of the volume that contains the file,
    which is a 64-bit <emphasis>unsigned</emphasis> integer, so may overflow.
    Previously, it was the numeric representation of the drive letter (e.g. <literal>2</literal>
    for <literal>C:</literal>) for <function>stat</function>, and <literal>0</literal> for
    <function>lstat</function>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    **** On Windows, as of PHP 7.4.0, this is the identifier associated with the file,
    which is a 64-bit <emphasis>unsigned</emphasis> integer, so may overflow.
    Previously, it was always <literal>0</literal>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    ***** On Windows, the writable permission bit is set according to the read-only
    file attribute, and the same value is reported for all users, group and owner.
    The ACL is not taken into account, contrary to <function>is_writable</function>.
-  </para>
+  </simpara>
   <para>
-  The value of <literal>mode</literal> contains information read by several functions. 
+  The value of <literal>mode</literal> contains information read by several functions.
   When written in octal, starting from the right, the first three digits are returned by
   <function>chmod</function>. The next digit is ignored by PHP. The next two digits indicate
   the file type:
@@ -199,17 +199,17 @@
    So for example a regular file could be <literal>0100644</literal> and a directory could be
    <literal>0040755</literal>.
   </para>
-  <para>
+  <simpara>
    In case of error, <function>stat</function> returns &false;.
-  </para>
+  </simpara>
   &fs.file.32bit;
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    Upon failure, an <constant>E_WARNING</constant> is emitted.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -255,13 +255,13 @@
 $stat = stat('C:\php\php.exe');
 
 /*
- * Print file access time, this is the same 
+ * Print file access time, this is the same
  * as calling fileatime()
  */
 echo 'Access time: ' . $stat['atime'];
 
 /*
- * Print file modification time, this is the 
+ * Print file modification time, this is the
  * same as calling filemtime()
  */
 echo 'Modification time: ' . $stat['mtime'];
@@ -287,7 +287,7 @@ if (!$stat) {
     echo 'stat() call failed...';
 } else {
     /*
-     * We want the access time to be 1 week 
+     * We want the access time to be 1 week
      * after the current access time.
      */
     $atime = $stat['atime'] + 604800;

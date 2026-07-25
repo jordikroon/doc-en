@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type class="union"><type>int</type><type>false</type></type><methodname>SplFileInfo::getSize</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the filesize in bytes for the file referenced.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,16 +24,16 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The filesize in bytes on success, or &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   A <classname>RuntimeException</classname> will be thrown if the file does not exist or an error occurs.
-  </para>
+  <simpara>
+   A <exceptionname>RuntimeException</exceptionname> will be thrown if the file does not exist or an error occurs.
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

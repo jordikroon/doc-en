@@ -10,21 +10,21 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <fieldsynopsis><type>string</type><varname linkend="mysqli.get-server-info">mysqli-&gt;server_info</varname></fieldsynopsis>
   <methodsynopsis role="mysqli">
    <modifier>public</modifier> <type>string</type><methodname>mysqli::get_server_info</methodname>
    <void/>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type>string</type><methodname>mysqli_get_server_info</methodname>
    <methodparam><type>mysqli</type><parameter>mysql</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a string representing the version of the MySQL server that the
    MySQLi extension is connected to.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -38,16 +38,16 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A character string representing the server version.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
   &reftitle.examples;
   <example>
    <title><varname>$mysqli-&gt;server_info</varname> example</title>
-   <para>&style.oop;</para>
+   <simpara>&style.oop;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -59,7 +59,7 @@ $mysqli = new mysqli("localhost", "my_user", "my_password");
 printf("Server version: %s\n", $mysqli->server_info);
 ]]>
    </programlisting>
-   <para>&style.procedural;</para>
+   <simpara>&style.procedural;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

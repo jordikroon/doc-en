@@ -30,17 +30,17 @@
     <varlistentry>
      <term><parameter>name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Property name.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        New property value.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -49,9 +49,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -70,7 +70,7 @@
       <entry>
        Using <methodname>ReflectionClass::setStaticPropertyValue</methodname> to set
        a private or protected property now results in a fatal error. Previously, it
-       threw a <classname>ReflectionException</classname>.
+       threw a <exceptionname>ReflectionException</exceptionname>.
       </entry>
      </row>
     </tbody>

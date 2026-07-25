@@ -5,16 +5,16 @@
   <refname>convert_uudecode</refname>
   <refpurpose>Decode a uuencoded string</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>convert_uudecode</methodname>
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>convert_uudecode</function> decodes a uuencoded string.
-  </para>
+  </simpara>
   <note>
    <simpara>
     <function>convert_uudecode</function> neither accepts the <literal>begin</literal>
@@ -30,9 +30,9 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The uuencoded data.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -41,9 +41,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the decoded data as a string &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

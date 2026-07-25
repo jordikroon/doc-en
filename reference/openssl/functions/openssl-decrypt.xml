@@ -18,9 +18,9 @@
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>tag</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>aad</parameter><initializer>""</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Takes a raw or base64 encoded string and decrypts it using a given method and passphrase.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -31,28 +31,28 @@
     <varlistentry>
      <term><parameter>data</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The encrypted message to be decrypted.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>cipher_algo</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The cipher method. For a list of available cipher methods, use
        <function>openssl_get_cipher_methods</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>passphrase</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The passphrase. If the passphrase is shorter than expected, it is silently padded with
        <literal>NUL</literal> characters; if the passphrase is longer than expected, it is
        silently truncated.
-      </para>
+      </simpara>
       <caution>
        <simpara>
         There is no key derivation function used for <parameter>passphrase</parameter> as its name
@@ -65,30 +65,30 @@
     <varlistentry>
       <term><parameter>options</parameter></term>
       <listitem>
-       <para>
+       <simpara>
         <parameter>options</parameter> can be one of
         <constant>OPENSSL_RAW_DATA</constant>,
         <constant>OPENSSL_ZERO_PADDING</constant>
         or <constant>OPENSSL_DONT_ZERO_PAD_KEY</constant>.
-       </para>
+       </simpara>
       </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>iv</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A non-&null; Initialization Vector. If the IV is shorter than expected, it is padded with
        <literal>NUL</literal> characters and warning is emitted; if the passphrase is longer
        than expected, it is truncated and warning is emitted.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>tag</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The authentication tag in AEAD cipher mode. If it is incorrect, the authentication fails and the function returns &false;.
-      </para>
+      </simpara>
       <caution>
        <simpara>
         The length of the <parameter>tag</parameter> is not checked by the function.
@@ -103,9 +103,9 @@
     <varlistentry>
      <term><parameter>aad</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Additional authenticated data.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -114,21 +114,21 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The decrypted string on success&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    Emits an <constant>E_WARNING</constant> level error if an unknown cipher algorithm
    is passed via the <parameter>cipher_algo</parameter> parameter.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Emits an <constant>E_WARNING</constant> level error if an empty value is passed
    in via the <parameter>iv</parameter> parameter.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

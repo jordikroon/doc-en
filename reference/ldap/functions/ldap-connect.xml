@@ -5,7 +5,7 @@
   <refname>ldap_connect</refname>
   <refpurpose>Connect to an LDAP server</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -22,10 +22,10 @@
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>host</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>port</parameter><initializer>389</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Creates an <classname>LDAP\Connection</classname> connection and checks whether the given
    <parameter>uri</parameter> is plausible.
-  </para>
+  </simpara>
   <note>
    <simpara>
     This function does <emphasis>not</emphasis> open a connection.
@@ -42,32 +42,32 @@
     <varlistentry>
      <term><parameter>uri</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A full LDAP URI of the form <literal>ldap://hostname:port</literal>
        or <literal>ldaps://hostname:port</literal> for SSL encryption.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        You can also provide multiple LDAP-URIs separated by a space as one string
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Note that <literal>hostname:port</literal> is not a supported LDAP URI as the schema is missing.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>host</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The hostname to connect to.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>port</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The port to connect to.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -76,7 +76,7 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an <classname>LDAP\Connection</classname> instance when the provided LDAP URI
    seems plausible. It's a syntactic check of the provided parameter but the server(s) will not
    be contacted! If the syntactic check fails it returns &false;.
@@ -85,11 +85,11 @@
    initializes the connecting parameters.  The actual connect happens with
    the next calls to ldap_* functions, usually with
    <function>ldap_bind</function>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If no argument is specified then the <classname>LDAP\Connection</classname> instance of the already
    opened connection will be returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

@@ -67,14 +67,14 @@
 
    <itemizedlist>
     <listitem>
-     <para>
+     <simpara>
       <literal>match</literal> is now a reserved keyword.
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       <literal>mixed</literal> is now a reserved word, so it cannot be used to name a class, interface or trait, and is also prohibited from being used in namespaces.
-     </para>
+     </simpara>
     </listitem>
     <listitem>
      <para>
@@ -83,17 +83,17 @@
      </para>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       Methods with the same name as the class are no longer interpreted as constructors. The
       <link linkend="object.construct">__construct()</link> method should be used instead.
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       The ability to call non-static methods statically has been removed. Thus
       <function>is_callable</function> will fail when checking for a non-static method with a classname
       (must check with an object instance).
-     </para>
+     </simpara>
     </listitem>
     <listitem>
      <para>
@@ -101,40 +101,40 @@
      </para>
     </listitem>
     <listitem>
-      <para>
+      <simpara>
        The <link linkend="ini.track-errors">track_errors</link> ini directive has been removed. This
        means that <varname>php_errormsg</varname> is no longer available. The
        <function>error_get_last</function> function may be used instead.
-      </para>
+      </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       The ability to define case-insensitive constants has been removed. The third argument to
       <function>define</function> may no longer be &true;.
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       The ability to specify an autoloader using an <function>__autoload</function> function has been
       removed. <function>spl_autoload_register</function> should be used instead.
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       The <parameter>errcontext</parameter> argument will no longer be passed to custom error handlers
       set with <function>set_error_handler</function>.
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       <function>create_function</function> has been removed. Anonymous functions may be used instead.
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       <function>each</function> has been removed. &foreach; or <classname>ArrayIterator</classname>
       should be used instead.
-     </para>
+     </simpara>
     </listitem>
     <listitem>
      <para>
@@ -144,60 +144,60 @@
      </para>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       The ability to unbind <varname>this</varname> from proper closures that contain uses of
       <varname>this</varname> has also been removed.
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       The ability to use <function>array_key_exists</function> with objects has been removed.
       <function>isset</function> or <function>property_exists</function> may be used instead.
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       The behavior of <function>array_key_exists</function> regarding the type of the
       <parameter>key</parameter> parameter has been made consistent with <function>isset</function> and
       normal array access. All key types now use the usual coercions and array/object keys throw a
-      <classname>TypeError</classname>.
-     </para>
+      <exceptionname>TypeError</exceptionname>.
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       Any array that has a number <replaceable>n</replaceable> as its first numeric key will use
       <replaceable>n+1</replaceable> for its next implicit key, even if <replaceable>n</replaceable> is
       negative.
       <!-- RFC: https://wiki.php.net/rfc/negative_array_index -->
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       The default error_reporting level is now <constant>E_ALL</constant>. Previously it excluded
       <constant>E_NOTICE</constant> and <constant>E_DEPRECATED</constant>.
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       <link linkend="ini.display-startup-errors">display_startup_errors</link> is now enabled by
       default.
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       Using <type>parent</type> inside a class that has no parent will now result in a fatal
       compile-time error.
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       The <literal>@</literal> operator will no longer silence fatal errors
       (<constant>E_ERROR</constant>, <constant>E_CORE_ERROR</constant>,
       <constant>E_COMPILE_ERROR</constant>, <constant>E_USER_ERROR</constant>,
       <constant>E_RECOVERABLE_ERROR</constant>, <constant>E_PARSE</constant>). Error handlers that
       expect error_reporting to be <literal>0</literal> when <literal>@</literal> is used, should be
       adjusted to use a mask check instead:
-     </para>
+     </simpara>
      <para>
       <programlisting role="php">
 <![CDATA[
@@ -228,24 +228,24 @@ function my_error_handler($err_no, $err_msg, $filename, $linenum) {
      </para>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       <literal>#[</literal> is no longer interpreted as the start of a comment,
       as this syntax is now used for attributes.
       <!-- RFC: https://wiki.php.net/rfc/shorter_attribute_syntax_change -->
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       Inheritance errors due to incompatible method signatures (LSP violations) will now always
       generate a fatal error. Previously a warning was generated in some cases.
       <!-- RFC: https://wiki.php.net/rfc/lsp_errors -->
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       The precedence of the concatenation operator has changed relative to bitshifts and addition as
       well as subtraction.
-     </para>
+     </simpara>
      <para>
       <programlisting role="php">
 <![CDATA[
@@ -262,11 +262,11 @@ echo "Sum:" . ($a + $b);
      </para>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       Arguments with a default value that resolves to &null; at runtime will no longer implicitly mark
       the argument type as nullable. Either an explicit nullable type, or an explicit &null; default
       value has to be used instead.
-     </para>
+     </simpara>
      <para>
       <programlisting role="php">
 <![CDATA[
@@ -283,9 +283,9 @@ function test(int $arg = null) {}
      </para>
     </listitem>
     <listitem>
-     <para>
-      A number of warnings have been converted into <classname>Error</classname> exceptions:
-     </para>
+     <simpara>
+      A number of warnings have been converted into <exceptionname>Error</exceptionname> exceptions:
+     </simpara>
      <para>
       <simplelist>
        <member>
@@ -308,17 +308,17 @@ function test(int $arg = null) {}
        </member>
        <member>
         Passing the wrong number of arguments to a non-variadic built-in
-        function will throw an <classname>ArgumentCountError</classname>.
+        function will throw an <exceptionname>ArgumentCountError</exceptionname>.
        </member>
        <member>
         Passing invalid countable types to <function>count</function> will throw
-        a <classname>TypeError</classname>.
+        a <exceptionname>TypeError</exceptionname>.
        </member>
       </simplelist>
      </para>
-     <para>
+     <simpara>
       A number of notices have been converted into warnings:
-     </para>
+     </simpara>
      <para>
       <simplelist>
        <member>Attempting to read an undefined variable.</member>
@@ -336,40 +336,40 @@ function test(int $arg = null) {}
      </para>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       Attempting to assign multiple bytes to a string offset will now emit a warning.
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       Unexpected characters in source files (such as NUL bytes outside of strings) will now result in a
-      <classname>ParseError</classname> exception instead of a compile warning.
-     </para>
+      <exceptionname>ParseError</exceptionname> exception instead of a compile warning.
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       Uncaught exceptions now go through "clean shutdown", which means that destructors will be called
       after an uncaught exception.
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       The compile time fatal error "Only variables can be passed by reference" has been delayed until
       runtime, and converted into an "Argument cannot be passed by reference"
-      <classname>Error</classname> exception.
-     </para>
+      <exceptionname>Error</exceptionname> exception.
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       Some "Only variables should be passed by reference" notices have been converted to "Argument
       cannot be passed by reference" exception.
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       The generated name for anonymous classes has changed. It will now include the name of the first
       parent or interface:
-     </para>
+     </simpara>
      <para>
       <programlisting role="php">
 <![CDATA[
@@ -384,15 +384,15 @@ new class {};
 ]]>
       </programlisting>
      </para>
-     <para>
+     <simpara>
       The name shown above is still followed by a NUL byte and a unique suffix.
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       Non-absolute trait method references in trait alias adaptations are now required to be
       unambiguous:
-     </para>
+     </simpara>
      <para>
       <programlisting role="php">
 <![CDATA[
@@ -415,10 +415,10 @@ class X {
      </para>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       The signature of abstract methods defined in traits is now checked against the implementing class
       method:
-     </para>
+     </simpara>
      <para>
       <programlisting role="php">
 <![CDATA[
@@ -440,33 +440,33 @@ class MyClass {
      </para>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       Disabled functions are now treated exactly like non-existent functions. Calling a disabled
       function will report it as unknown, and redefining a disabled function is now possible.
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       <literal>data://</literal> stream wrappers are no longer writable, which matches the documented
       behavior.
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       The arithmetic and bitwise operators <literal>+</literal>, <literal>-</literal>,
       <literal>*</literal>, <literal>/</literal>, <literal>**</literal>, <literal>%</literal>,
       <literal>&lt;&lt;</literal>, <literal>&gt;&gt;</literal>, <literal>&amp;</literal>,
       <literal>|</literal>, <literal>^</literal>, <literal>~</literal>, <literal>++</literal>,
-      <literal>--</literal> will now consistently throw a <classname>TypeError</classname> when one of
+      <literal>--</literal> will now consistently throw a <exceptionname>TypeError</exceptionname> when one of
       the operands is an &array;, &resource; or non-overloaded &object;. The only exception to this is
       the array <literal>+</literal> array merge operation, which remains supported.
       <!-- RFC: https://wiki.php.net/rfc/arithmetic_operator_type_checks -->
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       Float to string casting will now always behave locale-independently.
-     </para>
+     </simpara>
      <para>
       <programlisting role="php">
 <![CDATA[
@@ -487,9 +487,9 @@ echo $f, "\n";
      </para>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       Support for deprecated curly braces for offset access has been removed.
-     </para>
+     </simpara>
      <para>
       <programlisting role="php">
 <![CDATA[
@@ -507,17 +507,17 @@ $array["key"];
      </para>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       Applying the final modifier on a private method will now produce a warning unless that method is
       the constructor.
       <!-- FC: https://wiki.php.net/rfc/inheritance_private_methods -->
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       If an object constructor <function>exit</function>s, the object destructor will no longer be
       called. This matches the behavior when the constructor throws.
-     </para>
+     </simpara>
     </listitem>
     <listitem>
      <para>
@@ -530,10 +530,10 @@ $array["key"];
      </para>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       Nested ternaries now require explicit parentheses.
       <!-- RFC: https://wiki.php.net/rfc/ternary_associativity -->
-     </para>
+     </simpara>
     </listitem>
     <listitem>
      <para>
@@ -543,11 +543,11 @@ $array["key"];
      </para>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       Numeric string handling has been altered to be more intuitive and less error-prone. Trailing
       whitespace is now allowed in numeric strings for consistency with how leading whitespace is
       treated. This mostly affects:
-     </para>
+     </simpara>
      <para>
       <simplelist>
        <member>The <function>is_numeric</function> function</member>
@@ -556,32 +556,32 @@ $array["key"];
        <member>Increment and decrement operations</member>
       </simplelist>
      </para>
-     <para>
+     <simpara>
       The concept of a "leading-numeric string" has been mostly dropped; the cases where this remains
       exist in order to ease migration. Strings which emitted an <constant>E_NOTICE</constant> "A non
       well-formed numeric value encountered" will now emit an <constant>E_WARNING</constant> "A
       non-numeric value encountered" and all strings which emitted an <constant>E_WARNING</constant> "A
       non-numeric value encountered" will now throw a
-      <classname>TypeError</classname>. This mostly affects:
-     </para>
+      <exceptionname>TypeError</exceptionname>. This mostly affects:
+     </simpara>
      <para>
       <simplelist>
        <member>Arithmetic operations</member>
        <member>Bitwise operations</member>
       </simplelist>
      </para>
-     <para>
-      This <constant>E_WARNING</constant> to <classname>TypeError</classname> change also affects the
+     <simpara>
+      This <constant>E_WARNING</constant> to <exceptionname>TypeError</exceptionname> change also affects the
       <constant>E_WARNING</constant> "Illegal string offset 'string'" for illegal string offsets. The
       behavior of explicit casts to int/float from strings has not been changed.
       <!-- RFC: https://wiki.php.net/rfc/saner-numeric-strings -->
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       Magic Methods will now have their arguments and return types checked if they have them declared.
       The signatures should match the following list:
-     </para>
+     </simpara>
      <para>
       <simplelist>
        <member><code>__call(string $name, array $arguments): mixed</code></member>
@@ -603,18 +603,18 @@ $array["key"];
      </para>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       <function>call_user_func_array</function> array keys will now be interpreted as parameter names,
       instead of being silently ignored.
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       Declaring a function called <literal>assert()</literal> inside a namespace is
       no longer allowed, and issues <constant>E_COMPILE_ERROR</constant>.
       The <function>assert</function> function is subject to special handling by the engine,
       which may lead to inconsistent behavior when defining a namespaced function with the same name.
-     </para>
+     </simpara>
     </listitem>
    </itemizedlist>
   </sect3>
@@ -623,90 +623,90 @@ $array["key"];
  <sect2 xml:id="migration80.incompatible.resource2object">
   <title>Resource to Object Migration</title>
 
-  <para>
+  <simpara>
    Several &resource;s have been migrated to &object;s.
    Return value checks using <function>is_resource</function> should be replaced with checks for &false;.
-  </para>
+  </simpara>
   <itemizedlist>
     <listitem>
-     <para>
+     <simpara>
       <function>curl_init</function> will now return a <classname>CurlHandle</classname> object rather
       than a &resource;. The <function>curl_close</function> function no longer has an effect,
       instead the <classname>CurlHandle</classname> instance is automatically destroyed if it is no
       longer referenced.
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       <function>curl_multi_init</function> will now return a <classname>CurlMultiHandle</classname>
       object rather than a &resource;. The <function>curl_multi_close</function> function no
       longer has an effect, instead the <classname>CurlMultiHandle</classname> instance is
       automatically destroyed if it is no longer referenced.
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       <function>curl_share_init</function> will now return a <classname>CurlShareHandle</classname>
       object rather than a &resource;. The <function>curl_share_close</function> function no
       longer has an effect, instead the <classname>CurlShareHandle</classname> instance is
       automatically destroyed if it is no longer referenced.
-     </para>
+     </simpara>
     </listitem>
    <listitem>
-    <para>
+    <simpara>
      <function>enchant_broker_init</function> will now return an <classname>EnchantBroker</classname>
      object rather than a &resource;.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <function>enchant_broker_request_dict</function> and
      <function>enchant_broker_request_pwl_dict</function> will now return an
      <classname>EnchantDictionary</classname> object rather than a &resource;.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The GD extension now uses <classname>GdImage</classname> objects as the underlying data structure
      for images, rather than &resource;s.
      The <function>imagedestroy</function> function no longer has an effect; instead the
      <classname>GdImage</classname> instance is automatically destroyed if it is no longer referenced.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <function>openssl_x509_read</function> and <function>openssl_csr_sign</function> will now return
      an <classname>OpenSSLCertificate</classname> object rather than a &resource;.
      The <function>openssl_x509_free</function> function is deprecated and no longer has an effect,
      instead the <classname>OpenSSLCertificate</classname> instance is automatically destroyed if it
      is no longer referenced.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <function>openssl_csr_new</function> will now return an
      <classname>OpenSSLCertificateSigningRequest</classname> object rather than a &resource;.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <function>openssl_pkey_new</function> will now return an
      <classname>OpenSSLAsymmetricKey</classname> object rather than a &resource;.
      The <function>openssl_pkey_free</function> function is deprecated and no longer has an effect,
      instead the <classname>OpenSSLAsymmetricKey</classname> instance is automatically destroyed if it
      is no longer referenced.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <function>shmop_open</function> will now return a <classname>Shmop</classname> object rather than
      a &resource;. The <function>shmop_close</function> function no longer has an effect, and is
      deprecated; instead the <classname>Shmop</classname> instance is automatically destroyed if it is
      no longer referenced.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <function>socket_create</function>, <function>socket_create_listen</function>,
      <function>socket_accept</function>, <function>socket_import_stream</function>,
      <function>socket_addrinfo_connect</function>, <function>socket_addrinfo_bind</function>, and
@@ -714,51 +714,51 @@ $array["key"];
      <classname>Socket</classname> object rather than a &resource;.
      <function>socket_addrinfo_lookup</function> will now return an array of
      <classname>AddressInfo</classname> objects rather than &resource;s.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <function>msg_get_queue</function> will now return an <classname>SysvMessageQueue</classname>
      object rather than a &resource;.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <function>sem_get</function> will now return an <classname>SysvSemaphore</classname> object
      rather than a &resource;.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <function>shm_attach</function> will now return an <classname>SysvSharedMemory</classname> object
      rather than a &resource;.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <function>xml_parser_create</function> and <function>xml_parser_create_ns</function> will now
      return an <classname>XMLParser</classname> object rather than a &resource;. The
      <function>xml_parser_free</function> function no longer has an effect, instead the XMLParser
      instance is automatically destroyed if it is no longer referenced.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The <link linkend="book.xmlwriter">XMLWriter</link> functions now accept and return, respectively,
      <classname>XMLWriter</classname> objects instead of &resource;s.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <function>inflate_init</function> will now return an <classname>InflateContext</classname> object
      rather than a &resource;.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <function>deflate_init</function> will now return a <classname>DeflateContext</classname> object
      rather than a &resource;.
-    </para>
+    </simpara>
    </listitem>
   </itemizedlist>
  </sect2>
@@ -766,13 +766,13 @@ $array["key"];
  <sect2 xml:id="migration80.incompatible.com">
   <title>COM and .Net (Windows)</title>
 
-  <para>
+  <simpara>
    The ability to import case-insensitive constants from type libraries has been removed.
    The second argument to <function>com_load_typelib</function> may no longer be false;
    <link linkend="ini.com.autoregister-casesensitive">com.autoregister_casesensitive</link>
    may no longer be disabled; case-insensitive markers in
    <link linkend="ini.com.typelib-file">com.typelib_file</link> are ignored.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration80.incompatible.curl">
@@ -788,26 +788,26 @@ $array["key"];
  <sect2 xml:id="migration80.incompatible.datetime">
   <title>Date and Time</title>
 
-  <para>
+  <simpara>
    <function>mktime</function> and <function>gmmktime</function> now require at least one
    argument. <function>time</function> can be used to get the current timestamp.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration80.incompatible.dom">
   <title>DOM</title>
 
-  <para>
+  <simpara>
    Unimplemented classes from the DOM extension that had no behavior and contained test
    data have been removed. These classes have also been removed in the latest version of
    the DOM standard:
-  </para>
+  </simpara>
   <para>
    <simplelist>
     <member><classname>DOMNameList</classname></member>
     <member><classname>DomImplementationList</classname></member>
     <member><classname>DOMConfiguration</classname></member>
-    <member><classname>DomError</classname></member>
+    <member><exceptionname>DomError</exceptionname></member>
     <member><classname>DomErrorHandler</classname></member>
     <member><classname>DOMImplementationSource</classname></member>
     <member><classname>DOMLocator</classname></member>
@@ -816,9 +816,9 @@ $array["key"];
     <member><classname>DOMStringExtend</classname></member>
    </simplelist>
   </para>
-  <para>
+  <simpara>
    Unimplemented methods from the DOM extension that had no behavior have been removed:
-  </para>
+  </simpara>
   <para>
    <simplelist>
     <member><methodname>DOMNamedNodeMap::setNamedItem</methodname></member>
@@ -841,10 +841,10 @@ $array["key"];
 
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      <function>enchant_broker_list_dicts</function>, <function>enchant_broker_describe</function> and
      <function>enchant_dict_suggest</function> will now return an empty array instead of &null;.
-    </para>
+    </simpara>
    </listitem>
   </itemizedlist>
  </sect2>
@@ -852,10 +852,10 @@ $array["key"];
  <sect2 xml:id="migration80.incompatible.exif">
   <title>Exif</title>
 
-  <para>
+  <simpara>
    <function>read_exif_data</function> has been removed; <function>exif_read_data</function>
    should be used instead.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration80.incompatible.filter">
@@ -863,19 +863,19 @@ $array["key"];
 
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      The <constant>FILTER_FLAG_SCHEME_REQUIRED</constant> and
      <constant>FILTER_FLAG_HOST_REQUIRED</constant> flags for the
      <constant>FILTER_VALIDATE_URL</constant> filter have been removed. The <literal>scheme</literal>
      and <literal>host</literal> are (and have been) always required.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The <constant>INPUT_REQUEST</constant> and <constant>INPUT_SESSION</constant> source for
      <function>filter_input</function> etc. have been removed. These were never implemented and their
      use always generated a warning.
-    </para>
+    </simpara>
    </listitem>
   </itemizedlist>
  </sect2>
@@ -885,28 +885,28 @@ $array["key"];
 
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      The deprecated function <function>image2wbmp</function> has been removed.
      <!-- RFC: https://wiki.php.net/rfc/image2wbmp -->
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The deprecated functions <function>png2wbmp</function> and <function>jpeg2wbmp</function> have
      been removed.
      <!-- RFC: https://wiki.php.net/rfc/deprecate-png-jpeg-2wbmp -->
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The default <parameter>mode</parameter> parameter of <function>imagecropauto</function> no longer
      accepts <literal>-1</literal>. <constant>IMG_CROP_DEFAULT</constant> should be used instead.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      On Windows, <filename>php_gd2.dll</filename> has been renamed to <filename>php_gd.dll</filename>.
-    </para>
+    </simpara>
    </listitem>
   </itemizedlist>
  </sect2>
@@ -914,19 +914,19 @@ $array["key"];
  <sect2 xml:id="migration80.incompatible.gmp">
   <title>GMP</title>
 
-  <para>
+  <simpara>
    <function>gmp_random</function> has been removed. One of <function>gmp_random_range</function> or
    <function>gmp_random_bits</function> should be used instead.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration80.incompatible.iconv">
   <title>Iconv</title>
 
-  <para>
+  <simpara>
    iconv implementations which do not properly set <varname>errno</varname> in case of errors are no
    longer supported.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration80.incompatible.imap">
@@ -934,16 +934,16 @@ $array["key"];
 
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      The unused <parameter>default_host</parameter> argument of <function>imap_headerinfo</function>
      has been removed.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The <function>imap_header</function> function which is an alias of
      <function>imap_headerinfo</function> has been removed.
-    </para>
+    </simpara>
    </listitem>
   </itemizedlist>
  </sect2>
@@ -953,15 +953,15 @@ $array["key"];
 
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      The deprecated constant <constant>INTL_IDNA_VARIANT_2003</constant> has been removed.
      <!-- RFC: https://wiki.php.net/rfc/deprecate-and-remove-intl_idna_variant_2003 -->
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The deprecated <constant>Normalizer::NONE</constant> constant has been removed.
-    </para>
+    </simpara>
    </listitem>
   </itemizedlist>
  </sect2>
@@ -971,18 +971,18 @@ $array["key"];
 
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      The deprecated functions <function>ldap_sort</function>,
      <function>ldap_control_paged_result</function> and
      <function>ldap_control_paged_result_response</function> have been removed.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The interface of <function>ldap_set_rebind_proc</function> has changed; the
      <parameter>callback</parameter> parameter does not accept empty strings anymore; &null; should be
      used instead.
-    </para>
+    </simpara>
    </listitem>
   </itemizedlist>
  </sect2>
@@ -992,25 +992,25 @@ $array["key"];
 
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      The <link linkend="ini.mbstring.func-overload">mbstring.func_overload</link> directive has been
      removed. The related <constant>MB_OVERLOAD_MAIL</constant>,
      <constant>MB_OVERLOAD_STRING</constant>, and <constant>MB_OVERLOAD_REGEX</constant> constants
      have also been removed. Finally, the <literal>"func_overload"</literal> and
      <literal>"func_overload_list"</literal> entries in <function>mb_get_info</function> have been
      removed.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <function>mb_parse_str</function> can no longer be used without specifying a result array.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      A number of deprecated mbregex aliases have been removed. See the following
      list for which functions should be used instead:
-    </para>
+    </simpara>
     <para>
      <simplelist>
       <member><function>mbregex_encoding</function> → <function>mb_regex_encoding</function></member>
@@ -1031,47 +1031,47 @@ $array["key"];
     </para>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The <literal>e</literal> modifier for <function>mb_ereg_replace</function> has been removed.
      <function>mb_ereg_replace_callback</function> should be used instead.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      A non-string pattern argument to <function>mb_ereg_replace</function> will now be interpreted as
      a string instead of an ASCII codepoint. The previous behavior may be restored with an explicit
      call to <function>chr</function>.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The <parameter>needle</parameter> argument for <function>mb_strpos</function>,
      <function>mb_strrpos</function>, <function>mb_stripos</function>,
      <function>mb_strripos</function>, <function>mb_strstr</function>,
      <function>mb_stristr</function>, <function>mb_strrchr</function> and
      <function>mb_strrichr</function> can now be empty.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The <parameter>is_hex</parameter> parameter, which was not used internally, has been removed from
      <function>mb_decode_numericentity</function>.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The legacy behavior of passing the encoding as the third argument instead of an offset for the
      <function>mb_strrpos</function> function has been removed; an explicit <literal>0</literal>
      offset with the encoding should be provided as the fourth argument instead.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The <literal>ISO_8859-*</literal> character encoding aliases have been replaced by
      <literal>ISO8859-*</literal> aliases for better interoperability with the iconv extension. The
      mbregex ISO 8859 aliases with underscores (<literal>ISO_8859_*</literal> and
      <literal>ISO8859_*</literal>) have also been removed.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
     <para>
@@ -1089,22 +1089,22 @@ $array["key"];
 
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      The <classname>OCI-Lob</classname> class is now called <classname>OCILob</classname>, and the
      <classname>OCI-Collection</classname> class is now called <classname>OCICollection</classname>
      for name compliance enforced by PHP 8 arginfo type annotation tooling.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      Several alias functions have been marked as deprecated.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <function>oci_internal_debug</function> and its alias <function>ociinternaldebug</function> have
      been removed.
-    </para>
+    </simpara>
    </listitem>
   </itemizedlist>
  </sect2>
@@ -1114,15 +1114,15 @@ $array["key"];
 
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      <function>odbc_connect</function> no longer reuses connections.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The unused <parameter>flags</parameter> parameter of <function>odbc_exec</function> has been
      removed.
-    </para>
+    </simpara>
    </listitem>
   </itemizedlist>
  </sect2>
@@ -1132,11 +1132,11 @@ $array["key"];
 
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      <function>openssl_seal</function> and <function>openssl_open</function> now require
      <parameter>method</parameter> to be passed, as the previous default of <literal>"RC4"</literal>
      is considered insecure.
-    </para>
+    </simpara>
    </listitem>
   </itemizedlist>
  </sect2>
@@ -1144,10 +1144,10 @@ $array["key"];
  <sect2 xml:id="migration80.incompatible.pcre">
   <title>Regular Expressions (Perl-Compatible)</title>
 
-  <para>
+  <simpara>
    When passing invalid escape sequences they are no longer interpreted as literals. This behavior
    previously required the <literal>X</literal> modifier – which is now ignored.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration80.incompatible.pdo">
@@ -1155,16 +1155,16 @@ $array["key"];
 
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      The default error handling mode has been changed from "silent" to "exceptions". See
      <link linkend="pdo.error-handling">Errors and error handling</link> for details.
      <!-- RFC: https://wiki.php.net/rfc/pdo_default_errmode -->
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The signatures of some PDO methods have changed:
-    </para>
+    </simpara>
     <para>
      <simplelist>
       <member><code>PDO::query(string $query, ?int $fetchMode  = null, mixed  ...$fetchModeArgs)</code></member>
@@ -1178,11 +1178,11 @@ $array["key"];
  <sect2 xml:id="migration80.incompatible.pdo-odbc">
   <title>PDO ODBC</title>
 
-  <para>
+  <simpara>
    The &php.ini; directive
    <link linkend="ini.pdo-odbc.db2-instance-name">pdo_odbc.db2_instance_name</link> has been
    removed.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration80.incompatible.pdo-mysql">
@@ -1201,23 +1201,23 @@ $array["key"];
 
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      The deprecated <function>pg_connect</function> syntax using multiple parameters instead of a
      connection string is no longer supported.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The deprecated <function>pg_lo_import</function> and <function>pg_lo_export</function> signature
      that passes the connection as the last argument is no longer supported. The connection should be
      passed as first argument instead.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <function>pg_fetch_all</function> will now return an empty array instead of &false; for result
      sets with zero rows.
-    </para>
+    </simpara>
    </listitem>
   </itemizedlist>
  </sect2>
@@ -1225,11 +1225,11 @@ $array["key"];
  <sect2 xml:id="migration80.incompatible.phar">
   <title>Phar</title>
 
-  <para>
+  <simpara>
    Metadata associated with a phar will no longer be automatically unserialized, to fix potential
    security vulnerabilities due to object instantiation, autoloading, etc.
    <!-- RFC: https://wiki.php.net/rfc/phar_stop_autoloading_metadata -->
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration80.incompatible.reflection">
@@ -1237,9 +1237,9 @@ $array["key"];
 
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      The method signatures
-    </para>
+    </simpara>
     <para>
      <simplelist>
       <member><code>ReflectionClass::newInstance($args)</code></member>
@@ -1247,9 +1247,9 @@ $array["key"];
       <member><code>ReflectionMethod::invoke($object, $args)</code></member>
      </simplelist>
     </para>
-    <para>
+    <simpara>
      have been changed to:
-    </para>
+    </simpara>
     <para>
      <simplelist>
       <member><code>ReflectionClass::newInstance(...$args)</code></member>
@@ -1257,10 +1257,10 @@ $array["key"];
       <member><code>ReflectionMethod::invoke($object, ...$args)</code></member>
      </simplelist>
     </para>
-    <para>
+    <simpara>
      Code that must be compatible with both PHP 7 and PHP 8 can use the following
      signatures to be compatible with both versions:
-    </para>
+    </simpara>
     <para>
      <simplelist>
       <member><code>ReflectionClass::newInstance($arg = null, ...$args)</code></member>
@@ -1278,10 +1278,10 @@ $array["key"];
     </para>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      Reflection export() methods have been removed.
      Instead reflection objects can be cast to string.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
     <para>
@@ -1307,11 +1307,11 @@ $array["key"];
 
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      The deprecated <constant>AI_IDN_ALLOW_UNASSIGNED</constant> and
      <constant>AI_IDN_USE_STD3_ASCII_RULES</constant> <parameter>flags</parameter> for
      <function>socket_addrinfo_lookup</function> have been removed.
-    </para>
+    </simpara>
    </listitem>
   </itemizedlist>
  </sect2>
@@ -1345,11 +1345,11 @@ $array["key"];
     </para>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <function>spl_autoload_register</function> will now always throw a
-     <classname>TypeError</classname> on invalid arguments, therefore the second argument
+     <exceptionname>TypeError</exceptionname> on invalid arguments, therefore the second argument
      <parameter>do_throw</parameter> is ignored and a notice will be emitted if it is set to &false;.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
     <para>
@@ -1383,73 +1383,73 @@ $array["key"];
     </para>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <function>parse_str</function> can no longer be used without specifying a result array.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The <link linkend="filters.string.strip_tags">string.strip_tags</link> filter has been removed.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The <parameter>needle</parameter> argument of <function>strpos</function>,
      <function>strrpos</function>, <function>stripos</function>, <function>strripos</function>,
      <function>strstr</function>, <function>strchr</function>, <function>strrchr</function>, and
      <function>stristr</function> will now always be interpreted as a string. Previously non-string
      needles were interpreted as an ASCII code point. An explicit call to <function>chr</function> can
      be used to restore the previous behavior.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The <parameter>needle</parameter> argument for <function>strpos</function>,
      <function>strrpos</function>, <function>stripos</function>, <function>strripos</function>,
      <function>strstr</function>, <function>stristr</function> and <function>strrchr</function> can
      now be empty.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The <parameter>length</parameter> argument for <function>substr</function>,
      <function>substr_count</function>, <function>substr_compare</function>, and
      <function>iconv_substr</function> can now be &null;. &null; values will behave as if no length
      argument was provided and will therefore return the remainder of the string instead of an empty
      string.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The <parameter>length</parameter> argument for <function>array_splice</function> can now be
      &null;. &null; values will behave identically to omitting the argument, thus removing everything
      from the <parameter>offset</parameter> to the end of the array.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The <parameter>args</parameter> argument of <function>vsprintf</function>,
      <function>vfprintf</function>, and <function>vprintf</function> must now be an array. Previously
      any type was accepted.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The <literal>'salt'</literal> option of <function>password_hash</function> is no longer
      supported. If the <literal>'salt'</literal> option is used a warning is generated, the provided
      salt is ignored, and a generated salt is used instead.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The <function>quotemeta</function> function will now return an empty string if an empty string
      was passed. Previously &false; was returned.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The following functions have been removed:
-    </para>
+    </simpara>
     <para>
      <simplelist>
       <member><function>hebrevc</function></member>
@@ -1464,9 +1464,9 @@ $array["key"];
     </para>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <constant>FILTER_SANITIZE_MAGIC_QUOTES</constant> has been removed.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
     <para>
@@ -1475,9 +1475,9 @@ $array["key"];
     </para>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <function>parse_url</function> will now distinguish absent and empty queries and fragments:
-    </para>
+    </simpara>
     <para>
      <simplelist>
       <member><code>http://example.com/foo → query = null, fragment = null</code></member>
@@ -1489,65 +1489,65 @@ $array["key"];
     </para>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <function>var_dump</function> and <function>debug_zval_dump</function> will now print
      floating-point numbers using <link linkend="ini.serialize-precision">serialize_precision</link>
      rather than <link linkend="ini.precision">precision</link>. In a default configuration, this
      means that floating-point numbers are now printed with full accuracy by these debugging
      functions.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      If the array returned by <link linkend="object.sleep">__sleep()</link> contains non-existing
      properties, these are now silently ignored. Previously, such properties would have been
      serialized as if they had the value &null;.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The default locale on startup is now always <literal>"C"</literal>. No locales are inherited from
      the environment by default. Previously, <constant>LC_ALL</constant> was set to
      <literal>"C"</literal>, while <constant>LC_CTYPE</constant> was inherited from the environment.
      However, some functions did not respect the inherited locale without an explicit
      <function>setlocale</function> call. An explicit <function>setlocale</function> call is now
      always required if a locale component should be changed from the default.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The deprecated DES fallback in <function>crypt</function> has been removed. If an unknown salt
      format is passed to <function>crypt</function>, the function will fail with <literal>*0</literal>
      instead of falling back to a weak DES hash now.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      Specifying out of range rounds for SHA256/SHA512 <function>crypt</function> will now fail with
      <literal>*0</literal> instead of clamping to the closest limit. This matches glibc behavior.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The result of sorting functions may have changed, if the array contains elements that compare as
      equal.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      Any functions accepting callbacks that are not explicitly specified to accept parameters by
      reference will now warn if a callback with reference parameters is used. Examples include
      <function>array_filter</function> and <function>array_reduce</function>. This was already the
      case for most, but not all, functions previously.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The HTTP stream wrapper as used by functions like <function>file_get_contents</function>
      now advertises HTTP/1.1 rather than HTTP/1.0 by default. This does not change the behavior of the
      client, but may cause servers to respond differently. To retain the old behavior, set the
      <literal>'protocol_version'</literal> stream context option, e.g.
-    </para>
+    </simpara>
     <para>
      <programlisting role="php">
 <![CDATA[
@@ -1560,26 +1560,26 @@ echo file_get_contents('http://example.org', false, $ctx);
     </para>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      Calling <function>crypt</function> without an explicit salt is no longer supported. If you would
      like to produce a strong hash with an auto-generated salt, use
      <function>password_hash</function> instead.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
     <function>substr</function>, <function>mb_substr</function>, <function>iconv_substr</function> and
     <function>grapheme_substr</function> now consistently clamp out-of-bounds offsets to the string
     boundary. Previously, &false; was returned instead of the empty string in some cases.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      On Windows, the program execution functions (<function>proc_open</function>, <function>exec</function>,
      <function>popen</function> etc.) using the shell, now consistently execute <command>%comspec% /s
      /c "$commandline"</command>, which has the same effect as executing
      <command>$commandline</command> (without additional quotes).
-    </para>
+    </simpara>
    </listitem>
   </itemizedlist>
  </sect2>
@@ -1589,10 +1589,10 @@ echo file_get_contents('http://example.org', false, $ctx);
 
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      The <parameter>auto_release</parameter> parameter of <function>sem_get</function> was changed to
      accept bool values rather than int.
-    </para>
+    </simpara>
    </listitem>
   </itemizedlist>
  </sect2>
@@ -1602,10 +1602,10 @@ echo file_get_contents('http://example.org', false, $ctx);
 
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      The <parameter>use_include_path</parameter> parameter, which was not used internally, has been
      removed from <function>tidy_repair_string</function>.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
     <para>
@@ -1621,12 +1621,12 @@ echo file_get_contents('http://example.org', false, $ctx);
 
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      <constant>T_COMMENT</constant> tokens will no longer include a trailing newline. The newline will
      instead be part of a following <constant>T_WHITESPACE</constant> token. It should be noted that
      <constant>T_COMMENT</constant> is not always followed by whitespace, it may also be followed by
      <constant>T_CLOSE_TAG</constant> or end-of-file.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
     <para>
@@ -1654,19 +1654,19 @@ echo file_get_contents('http://example.org', false, $ctx);
  <sect2 xml:id="migration80.incompatible.xmlrpc">
   <title>XML-RPC</title>
 
-  <para>
+  <simpara>
    The XML-RPC extension has been moved to PECL and is no longer part of the PHP
    distribution.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration80.incompatible.zip">
   <title>Zip</title>
 
-  <para>
+  <simpara>
    <constant>ZipArchive::OPSYS_Z_CPM</constant> has been removed (this name was a typo). Use
    <constant>ZipArchive::OPSYS_CPM</constant> instead.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration80.incompatible.zlib">
@@ -1674,15 +1674,15 @@ echo file_get_contents('http://example.org', false, $ctx);
 
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      <function>gzgetss</function> has been removed.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <link linkend="ini.zlib.output-compression">zlib.output_compression</link> is no longer
      automatically disabled for <literal>Content-Type: image/*</literal>.
-    </para>
+    </simpara>
    </listitem>
   </itemizedlist>
  </sect2>
@@ -1690,10 +1690,10 @@ echo file_get_contents('http://example.org', false, $ctx);
  <sect2 xml:id="migration80.incompatible.php-test-packs">
   <title>Windows PHP Test Packs</title>
 
-  <para>
+  <simpara>
    The test runner has been renamed from <filename>run-test.php</filename> to
    <filename>run-tests.php</filename>, to match its name in php-src.
-  </para>
+  </simpara>
  </sect2>
 </sect1>
 

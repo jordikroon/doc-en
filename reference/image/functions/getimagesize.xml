@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://docbook.org/ns/docbook" xml:id="function.getimagesize">
+<refentry xml:id="function.getimagesize" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>getimagesize</refname>
   <refpurpose>Get the size of an image</refpurpose>
@@ -19,26 +19,26 @@
    normal <acronym>HTML</acronym> <tag>IMG</tag> tag and the
    correspondent <acronym>HTTP</acronym> content type.
   </para>
-  <para>
+  <simpara>
    <function>getimagesize</function> can also return some more information
    in <parameter>image_info</parameter> parameter.
-  </para>
+  </simpara>
   <caution>
-   <para>
+   <simpara>
     This function expects <parameter>filename</parameter> to be a valid
     image file. If a non-image file is supplied, it may be incorrectly
     detected as an image and the function will return successfully, but
     the array may contain nonsensical values.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     Do not use <function>getimagesize</function> to check that a given
     file is a valid image. Use a purpose-built solution such as the
     <link linkend="book.fileinfo">Fileinfo</link> extension instead.
-   </para>
+   </simpara>
   </caution>
   <note>
    <simpara>
-    Note that JPC and JP2 are capable of having components with different 
+    Note that JPC and JP2 are capable of having components with different
     bit depths. In this case, the value for "bits" is the highest bit depth encountered. Also, JP2
     files may contain <literal>multiple JPEG 2000 codestreams</literal>. In this case,
     <function>getimagesize</function> returns the values for the first
@@ -60,7 +60,7 @@
    </simpara>
   </note>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   <para>
@@ -68,54 +68,54 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
         This parameter specifies the file you wish to retrieve information
         about. It can reference a local file or (configuration permitting) a
         remote file using one of the <link linkend="wrappers">supported streams</link>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>image_info</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        This optional parameter allows you to extract some extended
        information from the image file. Currently, this will return the
        different <acronym>JPG</acronym> APP markers as an associative array.
-       Some programs use these APP markers to embed text information in 
-       images. A very common one is to embed 
+       Some programs use these APP markers to embed text information in
+       images. A very common one is to embed
        <link xlink:href="&url.iptc;">IPTC</link> information in the APP13 marker.
        You can use the <function>iptcparse</function> function to parse the
        binary APP13 marker into something readable.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         The <parameter>image_info</parameter> only supports
         <acronym>JFIF</acronym> files.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array with up to 7 elements. Not all image types will include
    the <literal>channels</literal> and <literal>bits</literal> elements.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Index 0 and 1 contains respectively the width and the height of the image.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     Some formats may contain no image or may contain multiple images. In these
     cases, <function>getimagesize</function> might not be able to properly
     determine the image size. <function>getimagesize</function> will return
     zero for width and height in these cases.
-   </para>
+   </simpara>
   </note>
   <note>
    <simpara>
@@ -125,18 +125,18 @@
     i.e. the contain the height and width, respectively.
    </simpara>
   </note>
-  <para>
+  <simpara>
    Index 2 is one of the <constant>IMAGETYPE_<replaceable>*</replaceable></constant> constants indicating
    the type of the image.
-  </para>
-  <para>
-   Index 3 is a text string with the correct 
+  </simpara>
+  <simpara>
+   Index 3 is a text string with the correct
    <literal>height="yyy" width="xxx"</literal> string that can be used
    directly in an <acronym>IMG</acronym> tag.
-  </para>
+  </simpara>
   <para>
    <literal>mime</literal> is the corresponding MIME type of the image.
-   This information can be used to deliver images with the correct HTTP 
+   This information can be used to deliver images with the correct HTTP
    <literal>Content-type</literal> header:
    <example>
     <title><function>getimagesize</function> and MIME types</title>
@@ -157,34 +157,34 @@ if ($size && $fp) {
     </programlisting>
    </example>
   </para>
-  <para>
+  <simpara>
    <literal>channels</literal> will be 3 for RGB pictures and 4 for CMYK
    pictures.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    <literal>bits</literal> is the number of bits for each color.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    For some image types, the presence of <literal>channels</literal> and
    <literal>bits</literal> values can be a bit
    confusing. As an example, <acronym>GIF</acronym> always uses 3 channels
    per pixel, but the number of bits per pixel cannot be calculated for an
    animated <acronym>GIF</acronym> with a global color table.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    On failure, &false; is returned.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    If accessing the <parameter>filename</parameter> image is impossible
    <function>getimagesize</function> will generate an error of level
    <constant>E_WARNING</constant>. On read error,
    <function>getimagesize</function> will generate an error of level
    <constant>E_NOTICE</constant>.
-  </para>
+  </simpara>
   <para>
    As of PHP 8.0.0, a <exceptionname>ValueError</exceptionname> is thrown
    if <parameter>filename</parameter> is empty.
@@ -230,7 +230,7 @@ if ($size && $fp) {
    </informaltable>
   </para>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -275,12 +275,12 @@ if (isset($info["APP13"])) {
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="notes">
   &reftitle.notes;
   &note.gd.notrequired;
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <simplelist>

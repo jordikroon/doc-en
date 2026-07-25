@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.realpath-cache-get">
+<refentry xml:id="function.realpath-cache-get" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>realpath_cache_get</refname>
   <refpurpose>Get realpath cache entries</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>array</type><methodname>realpath_cache_get</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get the contents of the realpath cache.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,11 +24,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array of realpath cache entries. The keys are original path
    entries, and the values are arrays of data items, containing the resolved
    path, expiration date, and other options kept in the cache.
-   </para>
+   </simpara>
  </refsect1>
 
  <refsect1 role="examples">

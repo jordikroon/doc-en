@@ -11,9 +11,9 @@
    <modifier>public</modifier> <type class="union"><type>DOMNode</type><type>false</type></type><methodname>DOMDocument::adoptNode</methodname>
    <methodparam><type>DOMNode</type><parameter>node</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Transfer a node from another document into the current document.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -23,9 +23,9 @@
     <varlistentry>
      <term><parameter>node</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The node to transfer.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -34,9 +34,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The node that was transferred, or &false; on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -49,9 +49,9 @@
     <varlistentry>
      <term><constant>DOM_NOT_SUPPORTED_ERR</constant></term>
      <listitem>
-      <para>
+      <simpara>
        Raised if the node type is not supported for document transfers.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -61,9 +61,9 @@
   &reftitle.examples;
   <example xml:id="domdocument.adoptnode.example.basic">
    <title><methodname>DOMDocument::adoptNode</methodname> example</title>
-   <para>
+   <simpara>
     Transfers the hello element from the first document to the second one.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

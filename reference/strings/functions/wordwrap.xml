@@ -5,7 +5,7 @@
   <refname>wordwrap</refname>
   <refpurpose>Wraps a string to a given number of characters</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -15,12 +15,12 @@
    <methodparam choice="opt"><type>string</type><parameter>break</parameter><initializer>"\n"</initializer></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>cut_long_words</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Wraps a string to a given number of characters using a string break
    character.
    Strings wrap after a space (U+0020) character unless <parameter>cut_long_words</parameter>
    is set to &true;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,38 +30,38 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>width</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number of characters at which the string will be wrapped.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>break</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The line is broken using the optional <parameter>break</parameter> parameter.
        It must not be an empty string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>cut_long_words</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If the <parameter>cut_long_words</parameter> is set to &true;, the string is
        always wrapped at or before the specified <parameter>width</parameter>.  So if you have
        a word that is larger than the given width, it is broken apart.
        (See second example). When &false; the function does not split the word
        even if the <parameter>width</parameter> is smaller than the word width.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -70,16 +70,16 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the given string wrapped at the specified length.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
   <simpara>
    If <parameter>break</parameter> is an empty string,
-   a <classname>ValueError</classname> is thrown.
+   a <exceptionname>ValueError</exceptionname> is thrown.
   </simpara>
  </refsect1>
 
@@ -98,7 +98,7 @@
       <entry>8.0.0</entry>
       <entry>
        If <parameter>break</parameter> is empty string,
-       a <classname>ValueError</classname> is thrown;
+       a <exceptionname>ValueError</exceptionname> is thrown;
        previously in this case it emitted an <constant>E_WARNING</constant> and returned &false;.
       </entry>
      </row>

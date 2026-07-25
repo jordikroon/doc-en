@@ -11,9 +11,9 @@
    <modifier>public</modifier> <type>void</type><methodname>DOMDocument::replaceChildren</methodname>
    <methodparam rep="repeat"><type class="union"><type>DOMNode</type><type>string</type></type><parameter>nodes</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Replaces the children in the document with new <parameter>nodes</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('domparentnode.replacechildren')/db:refsect1[@role='parameters'])" />
@@ -25,9 +25,9 @@
   &reftitle.examples;
   <example xml:id="domdocument.replacechildren.example.basic">
    <title><methodname>DOMDocument::replaceChildren</methodname> example</title>
-   <para>
+   <simpara>
     Replaces the children with new nodes.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

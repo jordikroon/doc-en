@@ -14,9 +14,9 @@
    <methodparam choice="opt"><type>int</type><parameter>code</parameter><initializer>0</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>Throwable</type><type>null</type></type><parameter>previous</parameter><initializer>&null;</initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Constructs the Error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,41 +26,41 @@
     <varlistentry>
      <term><parameter>message</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The error message.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>code</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The error code.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>previous</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The previous throwable used for the exception chaining.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
-    The <parameter>message</parameter> is <emphasis>NOT</emphasis> 
+   <simpara>
+    The <parameter>message</parameter> is <emphasis>NOT</emphasis>
     binary safe.
-   </para>
+   </simpara>
   </note>
  </refsect1>
- 
+
 </refentry>
 <!-- Keep this comment at the end of the file
 Local variables:

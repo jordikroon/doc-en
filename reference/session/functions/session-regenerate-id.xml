@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.session-regenerate-id">
+<refentry xml:id="function.session-regenerate-id" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>session_regenerate_id</refname>
   <refpurpose>
@@ -14,22 +14,22 @@
    <type>bool</type><methodname>session_regenerate_id</methodname>
    <methodparam choice="opt"><type>bool</type><parameter>delete_old_session</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>session_regenerate_id</function> will replace the current
    session id with a new one, and keep the current session information.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    When <link linkend="ini.session.use-trans-sid">session.use_trans_sid</link>
    is enabled, output must be started after <function>session_regenerate_id</function>
    call. Otherwise, old session ID is used.
-  </para>
+  </simpara>
   <warning>
-   <para>
+   <simpara>
     Currently, session_regenerate_id does not handle an unstable network well,
     e.g. Mobile and WiFi network. Therefore, you may experience a lost
     session by calling session_regenerate_id.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     You should not destroy old session data immediately, but should use
     destroy time-stamp and control access to old session ID. Otherwise,
     concurrent access to page may result in inconsistent state, or you
@@ -37,7 +37,7 @@
     condition and may create many session ID needlessly. Immediate
     session data deletion disables session hijack attack detection
     and prevention also.
-   </para>
+   </simpara>
   </warning>
  </refsect1>
 
@@ -48,12 +48,12 @@
     <varlistentry>
      <term><parameter>delete_old_session</parameter></term>
       <listitem>
-       <para>
+       <simpara>
         Whether to delete the old associated session file or not.
         You should not delete old session if you need to avoid
         races caused by deletion or detect/avoid session hijack
         attacks.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
    </variablelist>
@@ -62,9 +62,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -112,10 +112,10 @@ print_r($_SESSION);
    </example>
   </para>
 
-  <para>
+  <simpara>
    Current session module does not handle unstable network well. You should
    manage session ID to avoid lost session by session_regenerate_id.
-  </para>
+  </simpara>
 
   <para>
    <example>
@@ -156,10 +156,10 @@ function my_session_regenerate_id() {
     // when session ID is not set due to unstable network.
     $new_session_id = session_create_id();
     $_SESSION['new_session_id'] = $new_session_id;
-    
+
     // Set destroy timestamp
     $_SESSION['destroyed'] = time();
-    
+
     // Write and close current session;
     session_commit();
 
@@ -168,7 +168,7 @@ function my_session_regenerate_id() {
     ini_set('session.use_strict_mode', 0);
     session_start();
     ini_set('session.use_strict_mode', 1);
-    
+
     // New session does not need them
     unset($_SESSION['destroyed']);
     unset($_SESSION['new_session_id']);

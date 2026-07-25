@@ -10,10 +10,10 @@
 <!-- {{{ ReflectionReference intro -->
   <section xml:id="reflectionreference.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     The <classname>ReflectionReference</classname> class provides information about
     a reference.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

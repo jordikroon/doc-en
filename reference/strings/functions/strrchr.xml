@@ -5,7 +5,7 @@
   <refname>strrchr</refname>
   <refpurpose>Find the last occurrence of a character in a string</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,11 +14,11 @@
    <methodparam><type>string</type><parameter>needle</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>before_needle</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function returns the portion of <parameter>haystack</parameter> which
    starts at the last occurrence of <parameter>needle</parameter> and goes
    until the end of <parameter>haystack</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,30 +28,30 @@
     <varlistentry>
      <term><parameter>haystack</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string to search in
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>needle</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If <parameter>needle</parameter> contains more than one character,
        only the first is used. This behavior is different from that of
        <function>strstr</function>.
-      </para>
+      </simpara>
       &strings.parameter.needle.non-string;
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>before_needle</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If &true;, <function>strrchr</function>
        returns the part of the <parameter>haystack</parameter> before the
        last occurrence of the <parameter>needle</parameter> (excluding the needle).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -60,10 +60,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    This function returns the portion of string, or &false; if
    <parameter>needle</parameter> is not found.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type class="union"><type>int</type><type>false</type></type><methodname>SplFileInfo::getInode</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the inode number for the filesystem object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,16 +24,16 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the inode number for the filesystem object on success, or &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws <classname>RuntimeException</classname> on error.
-  </para>
+  <simpara>
+   Throws <exceptionname>RuntimeException</exceptionname> on error.
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

@@ -7,7 +7,7 @@
  </refnamediv>
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>grapheme_extract</methodname>
    <methodparam><type>string</type><parameter>haystack</parameter></methodparam>
@@ -16,9 +16,9 @@
    <methodparam choice="opt"><type>int</type><parameter>offset</parameter><initializer>0</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter role="reference">next</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
-   Function to extract a sequence of default grapheme clusters from a text buffer, which must be encoded in UTF-8. 
-  </para> 
+  <simpara>
+   Function to extract a sequence of default grapheme clusters from a text buffer, which must be encoded in UTF-8.
+  </simpara>
   </refsect1>
 
  <refsect1 role="parameters">
@@ -28,25 +28,25 @@
     <varlistentry>
      <term><parameter>haystack</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        String to search.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>size</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Maximum number items - based on the <parameter>type</parameter> - to return.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>type</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Defines the type of units referred to by the <parameter>size</parameter> parameter:
-      </para>
+      </simpara>
        <para>
         <simplelist>
          <member>GRAPHEME_EXTR_COUNT (default) -<parameter>size</parameter> is the number of default
@@ -62,39 +62,39 @@
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Starting position in <parameter>haystack</parameter> in bytes - if given, it must be zero or a
        positive value that is less than or equal to the length of <parameter>haystack</parameter> in
        bytes, or a negative value that counts from the end of <parameter>haystack</parameter>.
        If <parameter>offset</parameter> does not point to the first byte of a UTF-8
        character, the start position is moved to the next character boundary.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>next</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Reference to a value that will be set to the next starting position.
        When the call returns, this may point to the first byte position past the end of the string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
- 
+
    </variablelist>
   </para>
  </refsect1>
-   
- 
+
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A string starting at offset <parameter>offset</parameter> and ending on a default grapheme cluster
    boundary that conforms to the <parameter>size</parameter> and <parameter>type</parameter> specified,
    &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="changelog">
   &reftitle.changelog;
   <informaltable>

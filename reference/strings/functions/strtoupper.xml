@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.strtoupper">
+<refentry xml:id="function.strtoupper" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>strtoupper</refname>
   <refpurpose>Make a string uppercase</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>string</type><methodname>strtoupper</methodname>
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns <parameter>string</parameter> with all ASCII alphabetic characters
    converted to uppercase.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Bytes in the range <literal>"a"</literal> (0x61) to <literal>"z"</literal>
    (0x7a) will be converted to the corresponding uppercase letter by subtracting
    32 from each byte value.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This can be used to convert ASCII characters within strings encoded with
    UTF-8, since multibyte UTF-8 characters will be ignored. To convert multibyte
    non-ASCII characters, use <function>mb_strtoupper</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -35,9 +35,9 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -46,9 +46,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the uppercased string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -82,7 +82,7 @@ echo $str; // Prints MARY HAD A LITTLE LAMB AND SHE LOVED IT SO
 ?>
 ]]>
     </programlisting>
-   </example>   
+   </example>
   </para>
  </refsect1>
 

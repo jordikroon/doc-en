@@ -5,26 +5,26 @@
   <refname>set_time_limit</refname>
   <refpurpose>Limits the maximum execution time</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>bool</type><methodname>set_time_limit</methodname>
    <methodparam><type>int</type><parameter>seconds</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Set the number of seconds a script is allowed to run. If this is reached,
    the script returns a fatal error. The default limit is 30 seconds or, if
    it exists, the <literal>max_execution_time</literal> value defined in the
    &php.ini;.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    When called, <function>set_time_limit</function> restarts the timeout
    counter from zero. In other words, if the timeout is the default 30
    seconds, and 25 seconds into script execution a call such as
    <literal>set_time_limit(20)</literal> is made, the script will run for a
    total of 45 seconds before timing out.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -34,10 +34,10 @@
     <varlistentry>
      <term><parameter>seconds</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The maximum execution time, in seconds. If set to zero, no time limit
        is imposed.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -46,16 +46,16 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; on success, or &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
-    The <function>set_time_limit</function> function and the configuration 
+   <simpara>
+    The <function>set_time_limit</function> function and the configuration
     directive <link linkend="ini.max-execution-time">max_execution_time</link>
     only affect the execution time of the script itself.  Any time spent on
     activity that happens outside the execution of the script such as system
@@ -63,7 +63,7 @@
     queries, etc. is not included when determining the maximum time that the
     script has been running.
     This is not true on Windows where the measured time is real.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

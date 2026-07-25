@@ -9,24 +9,24 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="Collator">
    <modifier>public</modifier> <type class="union"><type>string</type><type>false</type></type><methodname>Collator::getLocale</methodname>
    <methodparam><type>int</type><parameter>type</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>collator_get_locale</methodname>
    <methodparam><type>Collator</type><parameter>object</parameter></methodparam>
    <methodparam><type>int</type><parameter>type</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get collector locale name.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -36,20 +36,20 @@
     <varlistentry>
      <term><parameter>object</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <classname>Collator</classname> object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>type</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        You can choose between valid and actual locale (
-       <constant>Locale::VALID_LOCALE</constant> and 
+       <constant>Locale::VALID_LOCALE</constant> and
        <constant>Locale::ACTUAL_LOCALE</constant>,
        respectively).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -59,10 +59,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Real locale name from which the collation data comes. If the collator was
    instantiated from rules or an error occurred, returns &false;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

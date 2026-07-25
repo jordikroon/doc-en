@@ -5,7 +5,7 @@
   <refname>openssl_pkey_export</refname>
   <refpurpose>Gets an exportable representation of a key into a string</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -15,11 +15,11 @@
    <methodparam choice="opt"><modifier role="attribute">#[\SensitiveParameter]</modifier><type class="union"><type>string</type><type>null</type></type><parameter>passphrase</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>array</type><type>null</type></type><parameter>options</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>openssl_pkey_export</function> exports
    <parameter>key</parameter> as a <acronym>PEM</acronym> encoded string and stores it into
    <parameter>output</parameter> (which is passed by reference).
-  </para>
+  </simpara>
   &note.openssl.cnf;
  </refsect1>
 
@@ -30,34 +30,34 @@
     <varlistentry>
      <term><parameter>key</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>output</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>passphrase</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The key is optionally protected by <parameter>passphrase</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>options</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>options</parameter> can be used to fine-tune the export
        process by specifying and/or overriding options for the openssl
        configuration file.  See <function>openssl_csr_new</function> for more
        information about <parameter>options</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -66,9 +66,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

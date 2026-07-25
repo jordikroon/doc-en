@@ -67,7 +67,7 @@
     <type>bool</type>/<type>int</type>
    </term>
    <listitem>
-    <para>
+    <simpara>
      Output buffering for all files can be enabled by setting this directive
      to <literal>"On"</literal>.
      To limit the size of the buffer, a number/quantity corresponding to the
@@ -75,7 +75,7 @@
      <literal>"On"</literal> for the value of this directive.
      For example <literal>output_buffering=4096</literal>.
      This directive is always Off in PHP-CLI.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
 
@@ -85,15 +85,15 @@
     <type>string</type>
    </term>
    <listitem>
-    <para>
+    <simpara>
      The output of scripts can be redirected to a function.
      For example setting <literal>output_handler</literal>
      to <function>mb_output_handler</function>, character encoding will be
      transparently converted to the specified encoding.
      Setting any output handler automatically turns on output buffering.
-    </para>
+    </simpara>
     <note>
-     <para>
+     <simpara>
       <function>mb_output_handler</function> and
       <function>ob_iconv_handler</function> cannot be used together
       and <function>ob_gzhandler</function> and
@@ -105,13 +105,13 @@
       the 'URL-Rewriter' handler
       (see <link linkend="ini.session.use-trans-sid">session.use_trans_sid</link>
       and <function>output_add_rewrite_var</function>).
-     </para>
+     </simpara>
     </note>
     <note>
-     <para>
+     <simpara>
       Only built-in functions can be used with this directive.
       For user defined functions, use <function>ob_start</function>.
-     </para>
+     </simpara>
     </note>
    </listitem>
   </varlistentry>
@@ -122,7 +122,7 @@
     <type>bool</type>
    </term>
    <listitem>
-    <para>
+    <simpara>
      &false; by default. Changing this to &true; tells PHP to tell the
      output layer to flush itself automatically after every output block.
      This is equivalent to calling the PHP function
@@ -130,16 +130,16 @@
      any function producing output (such as
      <function>print</function> or <function>echo</function>)
      and each and every HTML block.
-    </para>
-    <para>
+    </simpara>
+    <simpara>
      When using PHP within an web environment, turning
      this option on has serious performance implications and is generally
      recommended for debugging purposes only. This value defaults to
      &true; when operating under the <literal>CLI SAPI</literal>.
-    </para>
-    <para>
+    </simpara>
+    <simpara>
      See also <function>ob_implicit_flush</function>.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
 

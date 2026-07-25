@@ -76,17 +76,17 @@
     </listitem>
    </itemizedlist>
   </para>
-  <para>
+  <simpara>
    If <filename>php-SAPI.ini</filename> exists (where SAPI is the SAPI in use,
    so, for example, <filename>php-cli.ini</filename> or
    <filename>php-apache.ini</filename>), it is used instead of &php.ini;.
    The SAPI name can be determined with <function>php_sapi_name</function>.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     The Apache web server changes the directory to root at startup, causing
     PHP to attempt to read &php.ini; from the root filesystem if it exists.
-   </para>
+   </simpara>
   </note>
   <simpara>
    Environment variables can be referenced within configuration values
@@ -105,7 +105,7 @@ max_execution_time = ${PHP_MAX_EXECUTION_TIME:-30}
 ]]>
    </programlisting>
   </example>
-  <para>
+  <simpara>
    The &php.ini; directives handled by extensions are documented
    on the respective pages of the extensions themselves. A <link linkend="ini">list of
    the core directives</link> is available in the appendix. Not all
@@ -114,7 +114,7 @@ max_execution_time = ${PHP_MAX_EXECUTION_TIME:-30}
    &php.ini; file. Alternatively, you may find
    <link xlink:href="&url.php.git.phpini;">the latest &php.ini;</link> from Git
    helpful too.
-  </para>
+  </simpara>
   <para>
    <example>
     <title>&php.ini; example</title>
@@ -138,23 +138,23 @@ include_path = ".;c:\php\lib"
     <!-- TODO: add more details about values and expressions -->
    </example>
   </para>
-  <para>
+  <simpara>
    It is possible to refer to existing .ini variables from
    within .ini files. Example: <literal>open_basedir = ${open_basedir}
    ":/new/dir"</literal>.
-  </para>
+  </simpara>
   <sect2 xml:id="configuration.file.scan">
    <title>Scan directories</title>
 
-   <para>
+   <simpara>
     It is possible to configure PHP to scan for .ini files in a directory
     after reading &php.ini;. This can be done at compile time by setting the
     <option role="configure">--with-config-file-scan-dir</option> option.
     The scan directory can then be overridden at run time
     by setting the <varname>PHP_INI_SCAN_DIR</varname> environment variable.
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     It is possible to scan multiple directories by separating them with the
     platform-specific path separator (<literal>;</literal> on Windows, NetWare
     and RISC OS; <literal>:</literal> on all other platforms; the value PHP is
@@ -162,15 +162,15 @@ include_path = ".;c:\php\lib"
     If a blank directory is given in <varname>PHP_INI_SCAN_DIR</varname>, PHP
     will also scan the directory given at compile time via
     <option role="configure">--with-config-file-scan-dir</option>.
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     Within each directory, PHP will scan all files ending in
     <literal>.ini</literal> in alphabetical order. A list of the files that
     were loaded, and in what order, is available by calling
     <function>php_ini_scanned_files</function>, or by running PHP with the
     <option>--ini</option> option.
-   </para>
+   </simpara>
 
    <informalexample>
     <screen>
@@ -245,15 +245,15 @@ $ PHP_INI_SCAN_DIR=/usr/local/etc/php.d: php
  <sect1 xml:id="configuration.changes.modes">
   <title>Where a configuration setting may be set</title>
 
-  <para>
+  <simpara>
    These modes determine when and where a PHP directive may or may not
    be set, and each directive within the manual refers to one of these
    modes. For example, some settings may be set within a PHP script
    using <function>ini_set</function>, whereas others may require
    &php.ini; or &httpd.conf;.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    For example, the
    <link linkend="ini.output-buffering">output_buffering</link> setting
    is <constant>INI_PERDIR</constant> therefore it may not be set using
@@ -261,7 +261,7 @@ $ PHP_INI_SCAN_DIR=/usr/local/etc/php.d: php
    <link linkend="ini.display-errors">display_errors</link> directive is
    <constant>INI_ALL</constant> therefore it may be set anywhere,
    including with <function>ini_set</function>.
-  </para>
+  </simpara>
 
   <para>
    <variablelist>
@@ -336,14 +336,14 @@ but needs all top-level xml:id's removed (see XInclude 1.1 set-xml-id).
     "AllowOverride Options" or "AllowOverride All" privileges to do so.
    </simpara>
 
-   <para>
+   <simpara>
     There are several Apache directives that allow you
     to change the PHP configuration from within the Apache configuration
     files.  For a listing of which directives are
     <constant>INI_ALL</constant>, <constant>INI_PERDIR</constant>,
     or <constant>INI_SYSTEM</constant>, have a look at the
     <link linkend="ini.list">List of php.ini directives</link> appendix.
-   </para>
+   </simpara>
 
    <para>
     <variablelist>
@@ -354,11 +354,11 @@ but needs all top-level xml:id's removed (see XInclude 1.1 set-xml-id).
        <parameter>value</parameter>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Sets the value of the specified directive.
         Can be used only with <constant>INI_ALL</constant> and <constant>INI_PERDIR</constant> type directives.
         To clear a previously set value use <literal>none</literal> as the value.
-       </para>
+       </simpara>
        <note>
         <simpara>
          Don't use <systemitem role="directive">php_value</systemitem> to set boolean values.
@@ -374,11 +374,11 @@ but needs all top-level xml:id's removed (see XInclude 1.1 set-xml-id).
        <parameter>on|off</parameter>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Used to set a boolean configuration directive.
         Can be used only with <constant>INI_ALL</constant> and
         <constant>INI_PERDIR</constant> type directives.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry>
@@ -388,13 +388,13 @@ but needs all top-level xml:id's removed (see XInclude 1.1 set-xml-id).
        <parameter>value</parameter>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Sets the value of the specified directive.
         This <emphasis>can not be used</emphasis> in &htaccess; files.
         Any directive type set with <systemitem role="directive">php_admin_value</systemitem>
         can not be overridden by &htaccess; or <function>ini_set</function>.
         To clear a previously set value use <literal>none</literal> as the value.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry>
@@ -404,12 +404,12 @@ but needs all top-level xml:id's removed (see XInclude 1.1 set-xml-id).
        <parameter>on|off</parameter>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Used to set a boolean configuration directive.
         This <emphasis>can not be used</emphasis> in &htaccess; files.
         Any directive type set with <systemitem role="directive">php_admin_flag</systemitem>
         can not be overridden by &htaccess; or <function>ini_set</function>.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
     </variablelist>
@@ -432,7 +432,7 @@ but needs all top-level xml:id's removed (see XInclude 1.1 set-xml-id).
     </example>
    </para>
    <caution>
-    <para>
+    <simpara>
      PHP constants do not exist outside of PHP. For example, in
      &httpd.conf; you can not use PHP constants
      such as <constant>E_ALL</constant> or <constant>E_NOTICE</constant>
@@ -440,7 +440,7 @@ but needs all top-level xml:id's removed (see XInclude 1.1 set-xml-id).
      directive as they will have no meaning and will evaluate to
      <emphasis>0</emphasis>. Use the associated bitmask values instead.
      These constants can be used in &php.ini;
-    </para>
+    </simpara>
    </caution>
   </sect2>
 
@@ -468,19 +468,19 @@ but needs all top-level xml:id's removed (see XInclude 1.1 set-xml-id).
 
   <sect2 xml:id="configuration.changes.other">
    <title>Other interfaces to PHP</title>
-   <para>
+   <simpara>
     Regardless of how you run PHP, you can change certain values at runtime
     of your scripts through <function>ini_set</function>. See the documentation
     on the <function>ini_set</function> page for more information.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     If you are interested in a complete list of configuration settings
     on your system with their current values, you can execute the
     <function>phpinfo</function> function, and review the resulting
     page. You can also access the values of individual configuration
     directives at runtime using <function>ini_get</function> or
     <function>get_cfg_var</function>.
-   </para>
+   </simpara>
   </sect2>
  </sect1>
 

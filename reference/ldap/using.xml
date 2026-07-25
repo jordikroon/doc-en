@@ -7,23 +7,23 @@
   Before you can use the LDAP calls you will need to know...
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      The name or address of the directory server you will use
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The "base dn" of the server (the part of the world directory
      that is held on this server, which could be "o=My
      Company,c=US")
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      Whether you need a password to access the server (many servers
      will provide read access for an "anonymous bind" but require a
      password for anything else)
-    </para>
+    </simpara>
    </listitem>
   </itemizedlist>
  </para>

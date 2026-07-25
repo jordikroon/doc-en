@@ -23,17 +23,17 @@
    <varlistentry>
     <term><parameter>message</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The value of the <property linkend="deprecated.props.message">message</property> property.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>since</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The value of the <property linkend="deprecated.props.since">since</property> property.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>

@@ -14,13 +14,13 @@
    <methodparam><type>string</type><parameter>data</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flush_mode</parameter><initializer><constant>ZLIB_SYNC_FLUSH</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Incrementally inflates encoded data in the specified <parameter>context</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Limitation: header information from GZIP compressed data are not made
    available.
-  </para>
+  </simpara>
  </refsect1><!-- }}} -->
 
  <refsect1 role="parameters"><!-- {{{ -->
@@ -29,23 +29,23 @@
    <varlistentry>
     <term><parameter>context</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       A context created with <function>inflate_init</function>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>data</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       A chunk of compressed data.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>flush_mode</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       One of <constant>ZLIB_BLOCK</constant>,
       <constant>ZLIB_NO_FLUSH</constant>,
       <constant>ZLIB_PARTIAL_FLUSH</constant>,
@@ -56,7 +56,7 @@
       with the last chunk of data. See the <link
       xlink:href="&url.zlib.manual;">zlib manual</link> for a
       detailed description of these constants.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -64,19 +64,19 @@
 
  <refsect1 role="returnvalues"><!-- {{{ -->
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a chunk of uncompressed data, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1><!-- }}} -->
 
  <refsect1 role="errors"><!-- {{{ -->
   &reftitle.errors;
-  <para>
+  <simpara>
    If invalid parameters are given, inflating the data requires a preset
    dictionary, but none is specified, the compressed stream is corrupt or has an
    invalid checksum, an error of level <constant>E_WARNING</constant> is
    generated.
-  </para>
+  </simpara>
  </refsect1><!-- }}} -->
 
  <refsect1 role="changelog">

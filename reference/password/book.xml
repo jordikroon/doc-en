@@ -7,12 +7,12 @@
 
  <preface xml:id="intro.password">
   &reftitle.intro;
-  <para>
+  <simpara>
    The password hashing API provides an easy to use wrapper around
    <function>crypt</function> and some other password hashing algorithms,
    to make it easy to create and manage passwords
    in a secure manner.
-  </para>
+  </simpara>
  </preface>
 
  &reference.password.setup;

@@ -13,10 +13,10 @@
    <methodparam><type>string</type><parameter>name</parameter></methodparam>
    <methodparam><type>callable</type><parameter>callback</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Registers a PHP function or user-defined function for use as a collating
    function within SQL statements.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,21 +25,21 @@
    <varlistentry>
     <term><parameter>name</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Name of the SQL collating function to be created or redefined
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>callback</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The name of a PHP function or user-defined function to apply as a
       callback, defining the behavior of the collation.  It should accept two
       values and return as <function>strcmp</function> does, i.e. it should
       return -1, 1, or 0 if the first string sorts before, sorts after, or is
       equal to the second.
-     </para>
+     </simpara>
       <para>
        This function need to be defined as:
        <methodsynopsis>
@@ -55,9 +55,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -65,10 +65,10 @@
   <para>
    <example>
     <title><function>SQLite3::createCollation</function> example</title>
-    <para>
+    <simpara>
      Register the PHP function <function>strnatcmp</function> as a collating
      sequence in the SQLite3 database.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

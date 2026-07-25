@@ -13,9 +13,9 @@
    <modifier>public</modifier> <type>void</type><methodname>FilesystemIterator::next</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
    Move to the next file.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -35,9 +35,9 @@
   <para>
    <example>
     <title><methodname>FilesystemIterator::next</methodname> example</title>
-    <para>
+    <simpara>
      List the contents of a directory using a while loop.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

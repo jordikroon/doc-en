@@ -16,9 +16,9 @@
    <methodparam choice="opt"><type>int</type><parameter>second</parameter><initializer>0</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>microsecond</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a new DateTimeImmutable object with the time set to the given time.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,33 +27,33 @@
    <varlistentry>
     <term><parameter>hour</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Hour of the time.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>minute</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Minute of the time.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>second</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Second of the time.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>microsecond</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Microsecond of the time.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -61,9 +61,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &date.datetimeimmutable.return.modifiedobject;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -97,7 +97,7 @@
   &reftitle.examples;
   <example>
    <title><function>DateTimeImmutable::setTime</function> example</title>
-   <para>&style.oop;</para>
+   <simpara>&style.oop;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>false</type><methodname>SplFileObject::hasChildren</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    An <classname>SplFileObject</classname> does not have children so this method always return &false;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &false;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

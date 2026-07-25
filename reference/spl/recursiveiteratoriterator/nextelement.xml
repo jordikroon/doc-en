@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>void</type><methodname>RecursiveIteratorIterator::nextElement</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Called when the next element is available.
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -27,9 +27,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
 

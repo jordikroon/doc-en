@@ -3,24 +3,24 @@
 <reference xml:id="class.jsonexception" role="exception" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
  <title>The JsonException class</title>
  <titleabbrev>JsonException</titleabbrev>
- 
+
  <partintro>
- 
+
 <!-- {{{ JsonException intro -->
   <section xml:id="jsonexception.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Exception thrown if <constant>JSON_THROW_ON_ERROR</constant> option is
     set for <function>json_encode</function> or
     <function>json_decode</function>. <varname>code</varname> contains the error
     type, for possible values see <function>json_last_error</function>.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
- 
+
   <section xml:id="jsonexception.synopsis">
    &reftitle.classsynopsis;
- 
+
 <!-- {{{ Synopsis -->
    <classsynopsis class="class">
     <ooexception>
@@ -40,15 +40,15 @@
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.exception')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[@role='Exception'])"/>
    </classsynopsis>
 <!-- }}} -->
- 
+
   </section>
- 
+
  </partintro>
- 
+
  <!-- If the exception has any methods you'd like to document use this
  &reference.extname.entities.classname;
  -->
- 
+
 </reference>
 <!-- Keep this comment at the end of the file
 Local variables:

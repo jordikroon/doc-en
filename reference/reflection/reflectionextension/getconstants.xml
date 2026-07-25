@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>array</type><methodname>ReflectionExtension::getConstants</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get defined constants from an extension.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An associative array with constant names as keys.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

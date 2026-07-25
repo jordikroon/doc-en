@@ -8,22 +8,22 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="IntlCalendar">
    <modifier>public</modifier> <type class="union"><type>int</type><type>false</type></type><methodname>IntlCalendar::getDayOfWeekType</methodname>
    <methodparam><type>int</type><parameter>dayOfWeek</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>int</type><type>false</type></type><methodname>intlcal_get_day_of_week_type</methodname>
    <methodparam><type>IntlCalendar</type><parameter>calendar</parameter></methodparam>
    <methodparam><type>int</type><parameter>dayOfWeek</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns whether the passed day is a weekday
    (<constant>IntlCalendar::DOW_TYPE_WEEKDAY</constant>), a weekend day
    (<constant>IntlCalendar::DOW_TYPE_WEEKEND</constant>), a day during which a
@@ -31,17 +31,17 @@
    (<constant>IntlCalendar::DOW_TYPE_WEEKEND_OFFSET</constant>) or a day during
    which the weekend ceases
    (<constant>IntlCalendar::DOW_TYPE_WEEKEND_CEASE</constant>).
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If the return is either
    <constant>IntlCalendar::DOW_TYPE_WEEKEND_OFFSET</constant> or
    <constant>IntlCalendar::DOW_TYPE_WEEKEND_CEASE</constant>, then
    <function>IntlCalendar::getWeekendTransition</function> can be called to
    obtain the time of the transition.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This function requires ICU 4.4 or later.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -57,11 +57,11 @@
    <varlistentry>
     <term><parameter>dayOfWeek</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       One of the constants <constant>IntlCalendar::DOW_SUNDAY</constant>,
       <constant>IntlCalendar::DOW_MONDAY</constant>, …,
       <constant>IntlCalendar::DOW_SATURDAY</constant>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -69,13 +69,13 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   Returns one of the constants 
+  <simpara>
+   Returns one of the constants
    <constant>IntlCalendar::DOW_TYPE_WEEKDAY</constant>,
    <constant>IntlCalendar::DOW_TYPE_WEEKEND</constant>,
    <constant>IntlCalendar::DOW_TYPE_WEEKEND_OFFSET</constant> or
    <constant>IntlCalendar::DOW_TYPE_WEEKEND_CEASE</constant>&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
 

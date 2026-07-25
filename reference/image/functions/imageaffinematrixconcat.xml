@@ -13,11 +13,11 @@
    <methodparam><type>array</type><parameter>matrix1</parameter></methodparam>
    <methodparam><type>array</type><parameter>matrix2</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the concatenation of two affine transformation matrices,
    what is useful if multiple transformations should be applied to the same
    image in one go.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,19 +26,19 @@
    <varlistentry>
     <term><parameter>matrix1</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       An affine transformation matrix (an array with keys
       <literal>0</literal> to <literal>5</literal> and float values).
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>matrix2</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       An affine transformation matrix (an array with keys
       <literal>0</literal> to <literal>5</literal> and float values).
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -46,11 +46,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An affine transformation matrix (an array with keys
    <literal>0</literal> to <literal>5</literal> and float values)
    &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

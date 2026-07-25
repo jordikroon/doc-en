@@ -12,15 +12,15 @@
    <methodparam><type>array</type><parameter role="reference">array</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer><constant>SORT_REGULAR</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sorts <parameter>array</parameter> in place in descending order,
    such that its keys maintain their correlation with the values they
    are associated with.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This is used mainly when sorting associative arrays where the actual
    element order is significant.
-  </para>
+  </simpara>
   &note.sort-unstable;
   &note.reset-index;
  </refsect1>
@@ -31,9 +31,9 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input array.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     &sort.flags.parameter;
@@ -43,9 +43,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -92,10 +92,10 @@ b = banana
 c = apple
 ]]>
     </screen>
-    <para>
+    <simpara>
      The fruits have been sorted in reverse alphabetical order, and
      the index associated with each element has been maintained.
-    </para>
+    </simpara>
    </example>
   </para>
  </refsect1>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.convert-cyr-string">
+<refentry xml:id="function.convert-cyr-string" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>convert_cyr_string</refname>
   <refpurpose>Convert from one Cyrillic character set to another</refpurpose>
@@ -18,9 +18,9 @@
    <methodparam><type>string</type><parameter>from</parameter></methodparam>
    <methodparam><type>string</type><parameter>to</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   Converts from one Cyrillic character set to another.  
-  </para>
+  <simpara>
+   Converts from one Cyrillic character set to another.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,25 +30,25 @@
     <varlistentry>
      <term><parameter>str</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string to be converted.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>from</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The source Cyrillic character set, as a single character.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>to</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The target Cyrillic character set, as a single character.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -92,9 +92,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the converted string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

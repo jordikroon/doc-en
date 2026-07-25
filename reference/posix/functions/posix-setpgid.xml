@@ -5,7 +5,7 @@
   <refname>posix_setpgid</refname>
   <refpurpose>Set process group id for job control</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,10 +13,10 @@
    <methodparam><type>int</type><parameter>process_id</parameter></methodparam>
    <methodparam><type>int</type><parameter>process_group_id</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Let the process <parameter>process_id</parameter> join the process group
-   <parameter>process_group_id</parameter>. 
-  </para>
+   <parameter>process_group_id</parameter>.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,17 +26,17 @@
     <varlistentry>
      <term><parameter>process_id</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The process id.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>process_group_id</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The process group id.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -45,9 +45,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

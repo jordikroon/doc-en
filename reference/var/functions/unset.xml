@@ -13,14 +13,14 @@
    <methodparam><type>mixed</type><parameter>var</parameter></methodparam>
    <methodparam rep="repeat"><type>mixed</type><parameter>vars</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   <function>unset</function> destroys the specified variables. 
-  </para>
-  <para>
+  <simpara>
+   <function>unset</function> destroys the specified variables.
+  </simpara>
+  <simpara>
    The behavior of <function>unset</function> inside of a function
    can vary depending on what type of variable you are attempting to
    destroy.
-  </para>
+  </simpara>
   <para>
    If a globalized variable is <function>unset</function> inside of
    a function, only the local variable is destroyed.  The variable
@@ -31,7 +31,7 @@
     <programlisting role="php">
 <![CDATA[
 <?php
-function destroy_foo() 
+function destroy_foo()
 {
     global $foo;
     unset($foo);
@@ -54,7 +54,7 @@ echo $foo;
     <programlisting role="php">
 <![CDATA[
 <?php
-function foo() 
+function foo()
 {
     unset($GLOBALS['bar']);
 }
@@ -77,7 +77,7 @@ foo();
     <programlisting role="php">
 <![CDATA[
 <?php
-function foo(&$bar) 
+function foo(&$bar)
 {
     unset($bar);
     $bar = "blah";
@@ -130,17 +130,17 @@ foo();
     <varlistentry>
      <term><parameter>var</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The variable to be unset.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>vars</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Further variables.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -149,9 +149,9 @@ foo();
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -181,32 +181,32 @@ unset($foo1, $foo2, $foo3);
   &reftitle.notes;
   &note.language-construct;
   <note>
-   <para>
+   <simpara>
     It is possible to unset object properties visible in the current context.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
      If declared,
      <link linkend="object.get">__get()</link>
      is called when accessing an unset property, and
      <link linkend="object.set">__set()</link>
      is called when setting an unset property.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     It is not possible to unset <literal>$this</literal> inside an object
     method.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     When using <function>unset</function> on inaccessible object properties,
     the <link linkend="object.unset">__unset()</link>
     overloading method will be called, if declared.
-   </para>
+   </simpara>
   </note>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

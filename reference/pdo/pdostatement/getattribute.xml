@@ -17,10 +17,10 @@
   <para>
    Gets an attribute of the statement. Currently, no generic attributes exist but only driver specific:
    <itemizedlist>
-    <listitem><para><literal>PDO::ATTR_CURSOR_NAME</literal>
+    <listitem><simpara><literal>PDO::ATTR_CURSOR_NAME</literal>
      (Firebird and ODBC specific):
      Get the name of cursor for <literal>UPDATE ... WHERE CURRENT OF</literal>.
-    </para></listitem>
+    </simpara></listitem>
    </itemizedlist>
    Note that driver specific attributes <emphasis>must not</emphasis> be used
    with other drivers.
@@ -35,9 +35,9 @@
     <varlistentry>
      <term><parameter>name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The attribute to query.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -46,9 +46,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the attribute value.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

@@ -17,9 +17,9 @@
    <methodparam choice="opt"><type>string</type><parameter>namespace_or_prefix</parameter><initializer>""</initializer></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>is_prefix</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Takes a well-formed XML string and returns it as an object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,20 +29,20 @@
     <varlistentry>
      <term><parameter>data</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A well-formed XML string
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>class_name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        You may use this optional parameter so that
-       <function>simplexml_load_string</function> will return an object of 
-       the specified class. That class should extend the 
+       <function>simplexml_load_string</function> will return an object of
+       the specified class. That class should extend the
        <type>SimpleXMLElement</type> class.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -54,18 +54,18 @@
     <varlistentry>
      <term><parameter>namespace_or_prefix</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Namespace prefix or URI.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>is_prefix</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &true; if <parameter>namespace_or_prefix</parameter> is a prefix, &false; if it's a URI;
        defaults to &false;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -74,25 +74,25 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an <type>object</type> of class <type>SimpleXMLElement</type> with
    properties containing the data held within the xml document,&return.falseforfailure;.
-  </para>
+  </simpara>
   &return.falseproblem;
  </refsect1>
 
  <refsect1 role="errors"><!-- {{{ -->
   &reftitle.errors;
-  <para>
+  <simpara>
    Produces an <constant>E_WARNING</constant> error message for each error
    found in the XML data.
-  </para>
+  </simpara>
   <tip>
-   <para>
+   <simpara>
     Use <function>libxml_use_internal_errors</function> to suppress all XML
     errors, and <function>libxml_get_errors</function> to iterate over them
     afterwards.
-   </para>
+   </simpara>
   </tip>
  </refsect1><!-- }}} -->
 
@@ -105,7 +105,7 @@
 <![CDATA[
 <?php
 $string = <<<XML
-<?xml version='1.0'?> 
+<?xml version='1.0'?>
 <document>
  <title>Forty What?</title>
  <from>Joe</from>

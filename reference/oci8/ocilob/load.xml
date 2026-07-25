@@ -5,19 +5,19 @@
   <refname>OCILob::load</refname>
   <refpurpose>Returns large object's contents</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="OCILob">
    <modifier>public</modifier> <type class="union"><type>string</type><type>false</type></type><methodname>OCILob::load</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns large object's contents. As script execution is terminated
    when the <link linkend="ini.memory-limit">memory_limit</link> is reached,
    ensure that the LOB does not exceed this limit. In most cases it's
    recommended to use <xref linkend="ocilob.read"/> instead.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,9 +27,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the contents of the object, or &false; on errors.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

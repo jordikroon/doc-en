@@ -12,9 +12,9 @@
    <modifier>public</modifier> <modifier>static</modifier> <type>int</type><methodname>IntlChar::getIntPropertyMaxValue</methodname>
    <methodparam><type>int</type><parameter>property</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the maximum value for an enumerated/integer/binary Unicode property.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -31,10 +31,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The maximum value returned by <function>IntlChar::getIntPropertyValue</function> for a Unicode property.
    <literal>&lt;=0</literal> if the property selector is out of range.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

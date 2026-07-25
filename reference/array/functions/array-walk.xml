@@ -17,11 +17,11 @@
    Applies the user-defined <parameter>callback</parameter> function to each
    element of the <parameter>array</parameter> array.
   </simpara>
-  <para>
+  <simpara>
    <function>array_walk</function> is not affected by the internal array
    pointer of <parameter>array</parameter>.  <function>array_walk</function>
    will walk through the entire array regardless of pointer position.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -30,54 +30,54 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input array.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>callback</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Typically, <parameter>callback</parameter> takes on two parameters.
        The <parameter>array</parameter> parameter's value being the first, and
        the key/index second.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         If <parameter>callback</parameter> needs to be working with the
         actual values of the array, specify the first parameter of
         <parameter>callback</parameter> as a
         <link linkend="language.references">reference</link>. Then,
         any changes made to those elements will be made in the
         original array itself.
-       </para>
+       </simpara>
       </note>
       <note>
-        <para>
+        <simpara>
           Many internal functions (for example <function>strtolower</function>)
           will throw if more than the expected number of arguments
           are passed in and are not usable directly as a
           <parameter>callback</parameter>.
-        </para>
+        </simpara>
       </note>
-      <para>
+      <simpara>
        Only the values of the <parameter>array</parameter> may potentially be
        changed; its structure cannot be altered, i.e., the programmer cannot
        add, unset or reorder elements. If the callback does not respect this
-       requirement, the behavior of this function is undefined, and      
+       requirement, the behavior of this function is undefined, and
        unpredictable.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>arg</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If the optional <parameter>arg</parameter> parameter is supplied,
        it will be passed as the third parameter to the
        <parameter>callback</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -85,21 +85,21 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   As of PHP 7.1.0, an <classname>ArgumentCountError</classname> will be thrown if the <parameter>callback</parameter> function 
+  <simpara>
+   As of PHP 7.1.0, an <exceptionname>ArgumentCountError</exceptionname> will be thrown if the <parameter>callback</parameter> function
    requires more than 2 parameters (the value and key of the array member),
    or more than 3 parameters if the <parameter>arg</parameter> is also passed.
    Previously, in this case
-   an error of level <link linkend="errorfunc.constants">E_WARNING</link> would be generated each time 
+   an error of level <link linkend="errorfunc.constants">E_WARNING</link> would be generated each time
    <function>array_walk</function> calls <parameter>callback</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

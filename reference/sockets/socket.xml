@@ -10,9 +10,9 @@
 <!-- {{{ Socket intro -->
   <section xml:id="socket.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     A fully opaque class which replaces <literal>Socket</literal> resources as of PHP 8.0.0.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

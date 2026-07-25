@@ -13,12 +13,12 @@
    <methodparam choice="opt"><type>int</type><parameter>precision</parameter><initializer>0</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>int</type><type>RoundingMode</type></type><parameter>mode</parameter><initializer><constant>RoundingMode::HalfAwayFromZero</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the rounded value of <parameter>num</parameter> to
    specified <parameter>precision</parameter>
    (number of digits after the decimal point).
    <parameter>precision</parameter> can also be negative or zero (default).
-  </para>
+  </simpara>
   <!-- It's not true
   <para>
    <caution>
@@ -43,21 +43,21 @@
     <varlistentry>
      <term><parameter>num</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The value to round.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>precision</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The optional number of decimal digits to round to.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If the <parameter>precision</parameter> is positive, <parameter>num</parameter> is
        rounded to <parameter>precision</parameter> significant digits after the decimal point.
-      </para>
+      </simpara>
       <para>
        If the <parameter>precision</parameter> is negative, <parameter>num</parameter> is
        rounded to <parameter>precision</parameter> significant digits before the decimal point,
@@ -121,9 +121,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The value rounded to the given <parameter>precision</parameter> as a &float;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

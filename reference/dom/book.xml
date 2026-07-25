@@ -8,10 +8,10 @@
 
  <preface xml:id="intro.dom">
   &reftitle.intro;
-  <para>
+  <simpara>
    The DOM extension allows operations on XML and HTML documents through the DOM
    API with PHP.
-  </para>
+  </simpara>
   &dom.note.utf8;
  </preface>
 

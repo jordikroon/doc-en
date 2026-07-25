@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.session-unset">
+<refentry xml:id="function.session-unset" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>session_unset</refname>
   <refpurpose>Free all session variables</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>bool</type><methodname>session_unset</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    The <function>session_unset</function> function frees all session variables
    currently registered.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

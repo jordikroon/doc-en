@@ -9,11 +9,11 @@
 
   <section xml:id="serializable.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Interface for customized serializing.
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     Classes that implement this interface no longer support
     <link linkend="object.sleep">__sleep()</link> and
     <link linkend="object.wakeup">__wakeup()</link>. The method serialize is
@@ -22,8 +22,8 @@
     unserialized the class is known and the appropriate unserialize() method is called as
     a constructor instead of calling __construct(). If you need to execute the standard
     constructor you may do so in the method.
-   </para>
-   
+   </simpara>
+
    <warning>
     <para>
      As of PHP 8.1.0, a class which implements <interfacename>Serializable</interfacename> without also implementing <link linkend="object.serialize">__serialize()</link> and <link linkend="object.unserialize">__unserialize()</link> will generate a deprecation warning.

@@ -14,22 +14,22 @@
  <!-- {{{ Installation -->
  <section xml:id="xmlwriter.installation">
   &reftitle.install;
-  <para>
+  <simpara>
    The XMLWriter ships with PHP source.
    &installation.enabled.disable;
    <option role="configure">--disable-xmlwriter</option>
-  </para>
+  </simpara>
  </section>
  <!-- }}} -->
 
  <!-- {{{ Resources -->
  <section xml:id="xmlwriter.resources">
   &reftitle.resources;
-  <para>
+  <simpara>
    Prior to PHP 8.0.0, there was one resource type used by the procedural version of the XMLWriter
    extension: returned by <function>xmlwriter_open_memory</function> or
    <function>xmlwriter_open_uri</function>.
-  </para>
+  </simpara>
  </section>
  <!-- }}} -->
 

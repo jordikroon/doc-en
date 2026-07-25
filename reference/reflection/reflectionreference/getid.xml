@@ -12,11 +12,11 @@
    <modifier>public</modifier> <type>string</type><methodname>ReflectionReference::getId</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns an ID which is unique for the reference for the lifetime of that reference.
    This ID can be used to compare references for equality, or to maintain a map of
    known references.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,9 +26,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a &string; of unspecified format.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

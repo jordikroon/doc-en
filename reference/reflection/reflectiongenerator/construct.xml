@@ -12,9 +12,9 @@
    <modifier>public</modifier> <methodname>ReflectionGenerator::__construct</methodname>
    <methodparam><type>Generator</type><parameter>generator</parameter></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Constructs a <classname>ReflectionGenerator</classname> object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>generator</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A generator object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

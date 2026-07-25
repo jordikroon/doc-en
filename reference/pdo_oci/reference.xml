@@ -26,9 +26,9 @@
       <varlistentry>
        <term>DSN prefix</term>
        <listitem>
-        <para>
+        <simpara>
         The DSN prefix is <userinput>oci:</userinput>.
-        </para>
+        </simpara>
        </listitem>
       </varlistentry>
       <varlistentry>
@@ -46,9 +46,9 @@
       <varlistentry>
        <term><literal>charset</literal></term>
        <listitem>
-        <para>
+        <simpara>
          The client-side character set for the current environment handle.
-        </para>
+        </simpara>
        </listitem>
       </varlistentry>
      </variablelist>

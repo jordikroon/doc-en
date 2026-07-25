@@ -14,11 +14,11 @@
    <methodparam><type>int</type><parameter>green</parameter></methodparam>
    <methodparam><type>int</type><parameter>blue</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the index of the specified color in the palette of the
    image.
-  </para>
-  <para>&gd.image.colors;</para>
+  </simpara>
+  <simpara>&gd.image.colors;</simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -28,19 +28,19 @@
     <varlistentry>
      <term><parameter>red</parameter></term>
      <listitem>
-      <para>&gd.value.red;</para>
+      <simpara>&gd.value.red;</simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>green</parameter></term>
      <listitem>
-      <para>&gd.value.green;</para>
+      <simpara>&gd.value.green;</simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>blue</parameter></term>
      <listitem>
-      <para>&gd.value.blue;</para>
+      <simpara>&gd.value.blue;</simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -48,10 +48,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the index of the specified color in the palette, or -1 if the
    color does not exist.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

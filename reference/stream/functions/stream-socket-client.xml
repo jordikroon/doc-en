@@ -5,7 +5,7 @@
   <refname>stream_socket_client</refname>
   <refpurpose>Open Internet or Unix domain socket connection</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -17,7 +17,7 @@
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer><constant>STREAM_CLIENT_CONNECT</constant></initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>resource</type><type>null</type></type><parameter>context</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Initiates a stream or datagram connection to the destination specified
    by <parameter>address</parameter>.  The type of socket created
    is determined by the transport specified using standard URL formatting:
@@ -27,13 +27,13 @@
    a hostname or IP address followed by a colon and a port number.  For Unix
    domain sockets, the <literal>target</literal> portion should point
    to the socket file on the filesystem.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     The stream will by default be opened in blocking mode.  You can
     switch it to non-blocking mode by using
     <function>stream_set_blocking</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -44,25 +44,25 @@
     <varlistentry>
      <term><parameter>address</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Address to the socket to connect to.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>error_code</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Will be set to the system level error number if connection fails.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>error_message</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Will be set to the system level error message if the connection fails.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -79,12 +79,12 @@
         </simpara>
        </note>
        <note>
-        <para>
+        <simpara>
          To set a timeout for reading/writing data over the socket, use the
          <function>stream_set_timeout</function>, as the
          <parameter>timeout</parameter> only applies while making connecting
          the socket.
-        </para>
+        </simpara>
        </note>
       </para>
      </listitem>
@@ -92,21 +92,21 @@
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Bitmask field which may be set to any combination of connection flags.
        Currently the select of connection flags is limited to
        <constant>STREAM_CLIENT_CONNECT</constant> (default),
        <constant>STREAM_CLIENT_ASYNC_CONNECT</constant> and
        <constant>STREAM_CLIENT_PERSISTENT</constant>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>context</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A valid context resource created with <function>stream_context_create</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -115,18 +115,18 @@
 
  <refsect1 role="returnvalues"><!-- {{{ -->
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    On success a stream resource is returned which may
    be used together with the other file functions (such as
    <function>fgets</function>, <function>fgetss</function>,
    <function>fwrite</function>, <function>fclose</function>, and
    <function>feof</function>), &false; on failure.
-  </para>
+  </simpara>
  </refsect1><!-- }}} -->
 
  <refsect1 role="errors"><!-- {{{ -->
   &reftitle.errors;
-  <para>
+  <simpara>
    On failure the <parameter>error_code</parameter> and
    <parameter>error_message</parameter> arguments will be populated with the actual
    system level error that occurred in the system-level
@@ -138,7 +138,7 @@
    the <parameter>error_code</parameter> and
    <parameter>error_message</parameter> arguments will always be passed by
    reference.
-  </para>
+  </simpara>
  </refsect1><!-- }}} -->
 
  <refsect1 role="changelog">
@@ -162,7 +162,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples"><!-- {{{ -->
   &reftitle.examples;
   <para>
@@ -187,10 +187,10 @@ if (!$fp) {
    </example><!-- }}} -->
    <example xml:id="stream-socket-client.example.daytime"><!-- {{{ -->
     <title>Using UDP connection</title>
-    <para>
+    <simpara>
      Retrieving the day and time from the UDP service "daytime" (port 13)
      on localhost.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -223,12 +223,12 @@ if (!$fp) {
   </warning>
   &ipv6.brackets;
   <note>
-   <para>
+   <simpara>
     Depending on the environment, the Unix domain or the optional
     connect timeout may not be available.  A list of available
     transports can be retrieved using <function>stream_get_transports</function>.
     See <xref linkend="transports"/> for a list of built in transports.
-   </para>
+   </simpara>
   </note>
  </refsect1><!-- }}} -->
 

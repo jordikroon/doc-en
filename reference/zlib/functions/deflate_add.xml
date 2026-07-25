@@ -14,9 +14,9 @@
    <methodparam><type>string</type><parameter>data</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flush_mode</parameter><initializer><constant>ZLIB_SYNC_FLUSH</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Incrementally deflates data in the specified context.
-  </para>
+  </simpara>
  </refsect1><!-- }}} -->
 
  <refsect1 role="parameters"><!-- {{{ -->
@@ -25,23 +25,23 @@
    <varlistentry>
     <term><parameter>context</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       A context created with <function>deflate_init</function>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>data</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       A chunk of data to compress.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>flush_mode</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       One of <constant>ZLIB_BLOCK</constant>,
       <constant>ZLIB_NO_FLUSH</constant>,
       <constant>ZLIB_PARTIAL_FLUSH</constant>,
@@ -52,7 +52,7 @@
       with the last chunk of data. See the <link
       xlink:href="&url.zlib.manual;">zlib manual</link> for a
       detailed description of these constants.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -60,17 +60,17 @@
 
  <refsect1 role="returnvalues"><!-- {{{ -->
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a chunk of compressed data, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1><!-- }}} -->
 
  <refsect1 role="errors"><!-- {{{ -->
   &reftitle.errors;
-  <para>
+  <simpara>
    If invalid arguments are given, an error of level
    <constant>E_WARNING</constant> is generated.
-  </para>
+  </simpara>
  </refsect1><!-- }}} -->
 
  <refsect1 role="changelog">

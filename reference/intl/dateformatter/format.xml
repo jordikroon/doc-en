@@ -8,24 +8,24 @@
  </refnamediv>
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
    <methodsynopsis role="IntlDateFormatter">
    <modifier>public</modifier> <type class="union"><type>string</type><type>false</type></type><methodname>IntlDateFormatter::format</methodname>
    <methodparam><type class="union"><type>IntlCalendar</type><type>DateTimeInterface</type><type>array</type><type>string</type><type>int</type><type>float</type></type><parameter>datetime</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>datefmt_format</methodname>
    <methodparam><type>IntlDateFormatter</type><parameter>formatter</parameter></methodparam>
    <methodparam><type class="union"><type>IntlCalendar</type><type>DateTimeInterface</type><type>array</type><type>string</type><type>int</type><type>float</type></type><parameter>datetime</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Formats the time value as a string.
-  </para> 
+  </simpara>
   </refsect1>
 
  <refsect1 role="parameters">
@@ -35,22 +35,22 @@
     <varlistentry>
      <term><parameter>formatter</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The date formatter resource.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>datetime</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Value to format. This may be a <classname>DateTimeInterface</classname> object, an
        <classname>IntlCalendar</classname> object, a <type>numeric</type> type
        representing a (possibly fractional) number of seconds since epoch or an
        <type>array</type> in the format output by
        <function>localtime</function>.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If a <classname>DateTime</classname> or an
        <classname>IntlCalendar</classname> object is passed, its timezone is not
        considered. The object will be formatted using the formaterʼs configured
@@ -58,21 +58,21 @@
        <function>IntlDateFormatter::setTimeZone</function> must be called before
        with the objectʼs timezone. Alternatively, the static function
        <function>IntlDateFormatter::formatObject</function> may be used instead.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
-   
- 
+
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   The formatted string or, if an error occurred, &false;.   
-  </para>
+  <simpara>
+   The formatted string or, if an error occurred, &false;.
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="changelog">
   &reftitle.changelog;
   <para>

@@ -5,7 +5,7 @@
   <refname>ob_iconv_handler</refname>
   <refpurpose>Convert character encoding as output buffer handler</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,31 +13,31 @@
    <methodparam><type>string</type><parameter>contents</parameter></methodparam>
    <methodparam><type>int</type><parameter>status</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Converts the string encoded in <parameter>internal_encoding</parameter> to
    <parameter>output_encoding</parameter>.
-  </para>
-  <para>
-   <parameter>internal_encoding</parameter> and 
+  </simpara>
+  <simpara>
+   <parameter>internal_encoding</parameter> and
    <parameter>output_encoding</parameter> should be defined in the &php.ini;
    file or in <function>iconv_set_encoding</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
   &reftitle.parameters;
-  <para>
+  <simpara>
    See <function>ob_start</function> for information about this handler
    parameters.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    See <function>ob_start</function> for information about this handler
    return values.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

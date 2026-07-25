@@ -8,7 +8,7 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&Alias; <function>OCILob::close</function></para>
+  <simpara>&Alias; <function>OCILob::close</function></simpara>
   &warn.deprecated.alias-5-4-0;
  </refsect1>
 

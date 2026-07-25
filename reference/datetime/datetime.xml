@@ -9,23 +9,23 @@
 
   <section xml:id="datetime.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Representation of date and time.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     This class behaves the same as <classname>DateTimeImmutable</classname>,
     except objects are modified itself when modification methods such as
     <function>DateTime::modify</function> are called.
-   </para>
+   </simpara>
    <warning>
-    <para>
+    <simpara>
      Calling methods on objects of the class <classname>DateTime</classname>
      will change the information encapsulated in these objects, if you want to
      prevent that you will have to use <literal>clone</literal> operator to
      create a new object. Use <classname>DateTimeImmutable</classname>
      instead of <classname>DateTime</classname> to obtain this recommended
      behaviour by default.
-    </para>
+    </simpara>
    </warning>
   </section>
 

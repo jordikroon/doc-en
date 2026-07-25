@@ -9,9 +9,9 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="IntlCalendar">
    <modifier>public</modifier> <type>true</type><methodname>IntlCalendar::set</methodname>
    <methodparam><type>int</type><parameter>field</parameter></methodparam>
@@ -26,9 +26,9 @@
    <methodparam choice="opt"><type>int</type><parameter>minute</parameter><initializer>NULL</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>second</parameter><initializer>NULL</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type>true</type><methodname>intlcal_set</methodname>
    <methodparam><type>IntlCalendar</type><parameter>cal</parameter></methodparam>
@@ -45,18 +45,18 @@
    <methodparam choice="opt"><type>int</type><parameter>minute</parameter><initializer>NULL</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>second</parameter><initializer>NULL</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets either a specific field to the given value, or sets at once several
    common fields. The range of values that are accepted depend on whether the
    calendar is using the <link linkend="intlcalendar.setlenient">lenient
    mode</link>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    For fields that conflict, the fields that are set later have priority.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This method cannot be called with exactly four arguments.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -77,60 +77,60 @@
    <varlistentry>
     <term><parameter>value</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The new value of the given field.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>year</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The new value for <constant>IntlCalendar::FIELD_YEAR</constant>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>month</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The new value for <constant>IntlCalendar::FIELD_MONTH</constant>.
       The month sequence is zero-based, i.e., January is represented by 0,
       February by 1, …, December is 11 and Undecember (if the calendar has
       it) is 12.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>dayOfMonth</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The new value for <constant>IntlCalendar::FIELD_DAY_OF_MONTH</constant>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>hour</parameter></term>
     <listitem>
-     <para>
-      The new value for <constant>IntlCalendar::FIELD_HOUR_OF_DAY</constant>. 
-     </para>
+     <simpara>
+      The new value for <constant>IntlCalendar::FIELD_HOUR_OF_DAY</constant>.
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>minute</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The new value for <constant>IntlCalendar::FIELD_MINUTE</constant>.
-      </para>
+      </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>second</parameter></term>
     <listitem>
-     <para>
-      The new value for <constant>IntlCalendar::FIELD_SECOND</constant>.  
-     </para>
+     <simpara>
+      The new value for <constant>IntlCalendar::FIELD_SECOND</constant>.
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -138,9 +138,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

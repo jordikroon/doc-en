@@ -14,12 +14,12 @@
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>length</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>preserve_keys</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>array_slice</function> returns the sequence of elements
    from the array <parameter>array</parameter> as specified by the
    <parameter>offset</parameter> and <parameter>length</parameter>
    parameters.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -28,62 +28,62 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input array.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If <parameter>offset</parameter> is non-negative, the sequence will
        start at that offset in the <parameter>array</parameter>.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If <parameter>offset</parameter> is negative, the sequence will
        start that far from the end of the <parameter>array</parameter>.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         The <parameter>offset</parameter> parameter denotes the position
         in the array, not the key.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If <parameter>length</parameter> is given and is positive,
        then the sequence will have up to that many elements in it.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If the array is shorter than the <parameter>length</parameter>,
        then only the available array elements will be present.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If <parameter>length</parameter> is given and is negative then the
        sequence will stop that many elements from the end of the array.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If it is omitted, then the sequence will have everything
        from <parameter>offset</parameter> up until the end of the
        <parameter>array</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>preserve_keys</parameter></term>
      <listitem>
       <note>
-       <para>
+       <simpara>
         <function>array_slice</function> will reorder and reset the
         integer array indices by default. This behaviour can be changed
         by setting <parameter>preserve_keys</parameter> to &true;.
         String keys are always preserved, regardless of this parameter.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
@@ -92,10 +92,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the slice. If the offset is larger than the size of the array,
    an empty array is returned.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;

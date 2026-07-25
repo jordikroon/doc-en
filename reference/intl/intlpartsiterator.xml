@@ -10,19 +10,19 @@
 <!-- {{{ IntlPartsIterator intro -->
   <section xml:id="intlpartsiterator.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Objects of this class can be obtained from
     <classname>IntlBreakIterator</classname> objects. While the break
     iterators provide a sequence of boundary positions when iterated,
     <classname>IntlPartsIterator</classname> objects provide, as a
     convenience, the text fragments comprehended between two successive
     boundaries.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     The keys may represent the offset of the left boundary, right boundary, or
     they may just the sequence of non-negative integers. See
     <function>IntlBreakIterator::getPartsIterator</function>.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

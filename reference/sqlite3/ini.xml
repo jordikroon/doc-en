@@ -48,9 +48,9 @@
       <type>string</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Path to the directory where the loadable extensions for SQLite reside.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    <varlistentry xml:id="ini.sqlite3.defensive">
@@ -59,13 +59,13 @@
       <type>bool</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        When the defensive flag is enabled, language features that allow ordinary
        SQL to deliberately corrupt the database file are disabled. This forbids
        writing directly to the schema, shadow tables (eg. FTS data tables), or
        the sqlite_dbpage virtual table.
        This &php.ini; setting is only effective for libsqlite ≥ 3.26.0.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
   </variablelist>

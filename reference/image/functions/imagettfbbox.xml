@@ -15,17 +15,17 @@
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
    <methodparam choice="opt"><type>array</type><parameter>options</parameter><initializer>[]</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function calculates and returns the bounding box in pixels
    for a TrueType text.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     Prior to PHP 8.0.0, <function>imageftbbox</function> was an extended variant of
     <function>imagettfbbox</function> which additionally supported the
     <parameter>extrainfo</parameter>.
     As of PHP 8.0.0, <function>imagettfbbox</function> is an alias of <function>imageftbbox</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
  <refsect1 role="parameters">
@@ -35,32 +35,32 @@
     <varlistentry>
      <term><parameter>size</parameter></term>
      <listitem>
-      <para>&gd.font.size;</para>
+      <simpara>&gd.font.size;</simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>angle</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Angle in degrees in which <parameter>string</parameter> will be measured.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     &gd.ttf.fontfile;
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string to be measured.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>options</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Same as in <function>imagettftext</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -117,11 +117,11 @@
     </tgroup>
    </informaltable>
   </para>
-  <para>
+  <simpara>
    The points are relative to the <emphasis>text</emphasis> regardless of the
-   <parameter>angle</parameter>, so "upper left" means in the top left-hand 
+   <parameter>angle</parameter>, so "upper left" means in the top left-hand
    corner seeing the text horizontally.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

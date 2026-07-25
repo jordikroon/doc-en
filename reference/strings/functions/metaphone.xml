@@ -13,21 +13,21 @@
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>max_phonemes</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Calculates the metaphone key of <parameter>string</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Similar to <function>soundex</function> metaphone creates the same key for
    similar sounding words. It's more accurate than
    <function>soundex</function> as it knows the basic rules of English
    pronunciation.  The metaphone generated keys are of variable length.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Metaphone was developed by Lawrence Philips
    &lt;lphilips at verity dot com&gt;. It is described in ["Practical
    Algorithms for Programmers", Binstock &amp; Rex, Addison Wesley,
    1995].
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -37,21 +37,21 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>max_phonemes</parameter></term>
      <listitem>
-      <para>
-       This parameter restricts the returned metaphone key to 
+      <simpara>
+       This parameter restricts the returned metaphone key to
        <parameter>max_phonemes</parameter> <emphasis>characters</emphasis> in length.
        However, the resulting phonemes are always transcribed completely, so the
        resulting string length may be slightly longer than <parameter>max_phonemes</parameter>.
        The default value of <literal>0</literal> means no restriction.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -60,9 +60,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the metaphone key as a string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

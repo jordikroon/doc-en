@@ -3,21 +3,21 @@
 <reference xml:id="class.splmaxheap" role="class" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
  <title>The SplMaxHeap class</title>
  <titleabbrev>SplMaxHeap</titleabbrev>
- 
+
  <partintro>
- 
+
 <!-- {{{ splmaxheap intro -->
   <section xml:id="splmaxheap.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     The SplMaxHeap class provides the main functionalities of a heap, keeping the maximum on the top.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
- 
+
   <section xml:id="splmaxheap.synopsis">
    &reftitle.classsynopsis;
- 
+
 <!-- {{{ Synopsis -->
    <classsynopsis class="class">
     <ooclass>
@@ -35,7 +35,7 @@
     <classsynopsisinfo role="comment">&InheritedMethods;</classsynopsisinfo>
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.splheap')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[@role='SplHeap'])"/>
    </classsynopsis>
- 
+
   </section>
 
 
@@ -52,9 +52,9 @@
    </variablelist>
   </section>
 }}} -->
- 
+
  </partintro>
- 
+
  &reference.spl.entities.splmaxheap;
 
 </reference>

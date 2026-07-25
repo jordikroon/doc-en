@@ -9,26 +9,26 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="Collator">
    <modifier>public</modifier> <type class="union"><type>int</type><type>false</type></type><methodname>Collator::compare</methodname>
    <methodparam><type>string</type><parameter>string1</parameter></methodparam>
    <methodparam><type>string</type><parameter>string2</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>int</type><type>false</type></type><methodname>collator_compare</methodname>
    <methodparam><type>Collator</type><parameter>object</parameter></methodparam>
    <methodparam><type>string</type><parameter>string1</parameter></methodparam>
    <methodparam><type>string</type><parameter>string2</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Compare two Unicode strings according to collation rules.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -38,25 +38,25 @@
     <varlistentry>
      <term><parameter>object</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <classname>Collator</classname> object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>string1</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The first string to compare.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>string2</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The second string to compare.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -65,26 +65,26 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>Return comparison result:</para>
+  <simpara>Return comparison result:</simpara>
   <para>
    <itemizedlist>
     <listitem>
-     <para>
-      1 if <parameter>string1</parameter> is <emphasis>greater</emphasis> than 
+     <simpara>
+      1 if <parameter>string1</parameter> is <emphasis>greater</emphasis> than
       <parameter>string2</parameter> ;
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
-      0 if <parameter>string1</parameter> is <emphasis>equal</emphasis> to 
+     <simpara>
+      0 if <parameter>string1</parameter> is <emphasis>equal</emphasis> to
       <parameter>string2</parameter>;
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
-      -1 if <parameter>string1</parameter> is <emphasis>less</emphasis> than 
+     <simpara>
+      -1 if <parameter>string1</parameter> is <emphasis>less</emphasis> than
       <parameter>string2</parameter> .
-     </para>
+     </simpara>
     </listitem>
    </itemizedlist>
    Returns &false; on failure.
@@ -143,12 +143,12 @@ if ( $c->compare( 'Séan', 'Sean' ) == 0 )
     <screen>
      The same
     </screen>
-    <para>
+    <simpara>
      This example instructs the collator to compare with only taking the base
      characters into account. The documentation for
      <function>Collator->setStrength</function> explains the different
      strengths.
-    </para>
+    </simpara>
    </example>
   </para>
  </refsect1>

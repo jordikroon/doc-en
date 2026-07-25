@@ -5,7 +5,7 @@
   <refname>str_repeat</refname>
   <refpurpose>Repeat a string</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,10 +13,10 @@
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
    <methodparam><type>int</type><parameter>times</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns <parameter>string</parameter> repeated
    <parameter>times</parameter> times.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,23 +26,23 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string to be repeated.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>times</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Number of time the <parameter>string</parameter> string should be
        repeated.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        <parameter>times</parameter> has to be greater than or equal to 0.
        If the <parameter>times</parameter> is set to 0, the function
        will return an empty string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -51,9 +51,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the repeated string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -74,7 +74,7 @@ echo str_repeat("-=", 10);
 -=-=-=-=-=-=-=-=-=-=
 ]]>
     </screen>
-   </example>   
+   </example>
   </para>
  </refsect1>
 

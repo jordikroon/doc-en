@@ -10,15 +10,15 @@
 <!-- {{{ IntlRuleBasedBreakIterator intro -->
   <section xml:id="intlrulebasedbreakiterator.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     A subclass of <classname>IntlBreakIterator</classname> that encapsulates
     ICU break iterators whose behavior is specified using a set of rules. This
     is the most common kind of break iterators.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     These rules are described in the <link xlink:href="&url.icu.rulebasedbreakiteratorguide;">ICU Boundary Analysis
     User Guide</link>.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

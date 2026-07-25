@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type class="union"><type>string</type><type>int</type><type>null</type></type><methodname>ArrayIterator::key</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function returns the current array key
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The current <type>array</type> key.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -14,9 +14,9 @@
    <methodparam choice="opt"><type>int</type><parameter>mode</parameter><initializer><constant>RecursiveIteratorIterator::LEAVES_ONLY</constant></initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Creates a <classname>RecursiveIteratorIterator</classname> from a <classname>RecursiveIterator</classname>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,10 +26,10 @@
     <varlistentry>
      <term><parameter>iterator</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The iterator being constructed from. Either a
        <classname>RecursiveIterator</classname> or <classname>IteratorAggregate</classname>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -105,9 +105,9 @@ foreach ($iterator as $key => $leaf) {
 ?>
 ]]>
     </programlisting>
-    <para xml:id="recursiveiteratoriterator.examples.basic.leaves-only">
+    <simpara xml:id="recursiveiteratoriterator.examples.basic.leaves-only">
      Output with <literal>$mode = RecursiveIteratorIterator::LEAVES_ONLY</literal>
-    </para>
+    </simpara>
     <screen>
 <![CDATA[
 0 => leaf-0-0-0-0
@@ -119,9 +119,9 @@ foreach ($iterator as $key => $leaf) {
 0 => leaf-0-0
 ]]>
     </screen>
-    <para xml:id="recursiveiteratoriterator.examples.basic.self-first">
+    <simpara xml:id="recursiveiteratoriterator.examples.basic.self-first">
      Output with <literal>$mode = RecursiveIteratorIterator::SELF_FIRST</literal>
-    </para>
+    </simpara>
     <screen>
 <![CDATA[
 0 => Array
@@ -138,9 +138,9 @@ foreach ($iterator as $key => $leaf) {
 2 => leaf-0-0
 ]]>
     </screen>
-    <para xml:id="recursiveiteratoriterator.examples.basic.child-first">
+    <simpara xml:id="recursiveiteratoriterator.examples.basic.child-first">
      Output with <literal>$mode = RecursiveIteratorIterator::CHILD_FIRST</literal>
-    </para>
+    </simpara>
     <screen>
 <![CDATA[
 0 => leaf-0-0-0-0

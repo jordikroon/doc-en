@@ -14,16 +14,16 @@
    <methodparam><type>int</type><parameter>seconds</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>microseconds</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets the timeout value on <parameter>stream</parameter>,
    expressed in the sum of <parameter>seconds</parameter> and
-   <parameter>microseconds</parameter>. 
-  </para>
-  <para>
+   <parameter>microseconds</parameter>.
+  </simpara>
+  <simpara>
    When the stream times out, the 'timed_out' key of the array returned by
    <function>stream_get_meta_data</function> is set to &true;, although no
    error/warning is generated.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -33,25 +33,25 @@
     <varlistentry>
      <term><parameter>stream</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The target stream.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>seconds</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The seconds part of the timeout to be set.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>microseconds</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The microseconds part of the timeout to be set.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -60,9 +60,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -98,21 +98,21 @@ if (!$fp) {
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     This function doesn't work with advanced operations like
     <function>stream_socket_recvfrom</function>, use
     <function>stream_select</function> with timeout parameter instead.
-   </para>
+   </simpara>
   </note>
-  <para>
+  <simpara>
    This function was previously called as
    <function>set_socket_timeout</function> and later
    <function>socket_set_timeout</function> but this usage is deprecated.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

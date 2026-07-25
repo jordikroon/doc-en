@@ -98,7 +98,7 @@
  <refsect1 role="errors">
   &reftitle.errors;
   <simpara>
-   An <classname>Error</classname> if the class is internal or extends an
+   An <exceptionname>Error</exceptionname> if the class is internal or extends an
    internal class except <classname>stdClass</classname>.
   </simpara>
  </refsect1>

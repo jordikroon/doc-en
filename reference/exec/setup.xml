@@ -7,10 +7,10 @@
  <!-- {{{ Resources -->
  <section xml:id="exec.resources">
   &reftitle.resources;
-  <para>
+  <simpara>
    This extension defines a <literal>process</literal> resource, returned by
    <function>proc_open</function>.
-  </para>
+  </simpara>
  </section>
  <!-- }}} -->
 

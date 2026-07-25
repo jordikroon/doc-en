@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type class="union"><type>ReflectionType</type><type>null</type></type><methodname>ReflectionParameter::getType</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the associated type of a parameter.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,10 +24,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a <classname>ReflectionType</classname> object if a parameter type is
    specified, &null; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -94,13 +94,13 @@ NULL
    </example>
    <example>
    <title><methodname>ReflectionParameter::getType</methodname> Usage in PHP 8.0.0 and later</title>
-    <para>
+    <simpara>
      As of PHP 8.0.0, this method may return a <classname>ReflectionNamedType</classname> instance or
      a <classname>ReflectionUnionType</classname> instance.  The latter is a collection of the former.
      To analyze a type, it is often convenient to normalize it to an array of <classname>ReflectionNamedType</classname>
      objects.  The following function will return an array of <literal>0</literal> or more <classname>ReflectionNamedType</classname>
      instances.
-    </para>
+    </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

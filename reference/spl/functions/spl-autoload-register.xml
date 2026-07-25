@@ -13,24 +13,24 @@
    <methodparam choice="opt"><type>bool</type><parameter>throw</parameter><initializer>&true;</initializer></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>prepend</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Register a function with the spl provided __autoload queue. If the queue
-   is not yet activated it will be activated.  
-  </para>
-  <para>
+   is not yet activated it will be activated.
+  </simpara>
+  <simpara>
    If your code has an existing <function>__autoload</function> function then
    this function must be explicitly registered on the __autoload queue. This
    is because <function>spl_autoload_register</function> will effectively
    replace the engine cache for the <function>__autoload</function> function
    by either <function>spl_autoload</function> or
    <function>spl_autoload_call</function>.
-  </para>
-  <para>
-   If there must be multiple autoload functions, <function>spl_autoload_register</function> 
+  </simpara>
+  <simpara>
+   If there must be multiple autoload functions, <function>spl_autoload_register</function>
    allows for this. It effectively creates a queue of autoload functions, and
-   runs through each of them in the order they are defined. By contrast, 
+   runs through each of them in the order they are defined. By contrast,
    <function>__autoload</function> may only be defined once.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -40,47 +40,47 @@
     <varlistentry>
      <term><parameter>callback</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The autoload function being registered.
        If &null;, then the default implementation of
-       <function>spl_autoload</function> will be registered.      
-      </para>
+       <function>spl_autoload</function> will be registered.
+      </simpara>
       <methodsynopsis>
        <type>void</type><methodname><replaceable>callback</replaceable></methodname>
        <methodparam><type>string</type><parameter>class</parameter></methodparam>
       </methodsynopsis>
-      <para>
+      <simpara>
        The <parameter>class</parameter> will not contain the leading
        backslash of a fully-qualified identifier.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>throw</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        This parameter specifies whether
-       <function>spl_autoload_register</function> should throw 
+       <function>spl_autoload_register</function> should throw
        exceptions when the <parameter>callback</parameter>
        cannot be registered.
-      </para>
+      </simpara>
       <warning>
-        <para>
+        <simpara>
           This parameter is ignored as of PHP 8.0.0, and a notice will be
           emitted if set to &false;. <function>spl_autoload_register</function>
-          will now always throw a <classname>TypeError</classname> on invalid
+          will now always throw a <exceptionname>TypeError</exceptionname> on invalid
           arguments.
-        </para>
+        </simpara>
       </warning>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>prepend</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If &true;, <function>spl_autoload_register</function> will prepend
        the autoloader on the autoload queue instead of appending it.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -89,9 +89,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -205,7 +205,7 @@ string(26) "AbsoluteName\WithNamespace"
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

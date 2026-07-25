@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.str-ends-with">
+<refentry xml:id="function.str-ends-with" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>str_ends_with</refname>
   <refpurpose>Checks if a string ends with a given substring</refpurpose>
@@ -13,10 +13,10 @@
    <methodparam><type>string</type><parameter>haystack</parameter></methodparam>
    <methodparam><type>string</type><parameter>needle</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Performs a case-sensitive check indicating if
    <parameter>haystack</parameter> ends with <parameter>needle</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,17 +26,17 @@
     <varlistentry>
      <term><parameter>haystack</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string to search in.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>needle</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The substring to search for in the <parameter>haystack</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -45,10 +45,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if <parameter>haystack</parameter> ends with
    <parameter>needle</parameter>, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

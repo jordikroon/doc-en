@@ -15,10 +15,10 @@
    <methodparam choice="opt"><type>int</type><parameter>column</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
 
-  <para>
+  <simpara>
    Returns a single column from the next row of a result set or &false; if
    there are no more rows.
-  </para>
+  </simpara>
 
   <note>
    <para>

@@ -9,9 +9,9 @@
 <!-- {{{ RecursiveRegexIterator intro -->
   <section xml:id="recursiveregexiterator.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     This recursive iterator can filter another recursive iterator via a regular expression.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

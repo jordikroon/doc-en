@@ -9,17 +9,17 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <fieldsynopsis><type>array</type><varname linkend="mysqli-stmt.error-list">mysqli_stmt-&gt;error_list</varname></fieldsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type>array</type><methodname>mysqli_stmt_error_list</methodname>
    <methodparam><type>mysqli_stmt</type><parameter>statement</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns an array of errors for the most recently invoked
    statement function that can succeed or fail.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -33,10 +33,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A list of errors, each as an associative <type>array</type>
    containing the errno, error, and sqlstate.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -67,7 +67,7 @@ if ($stmt = $mysqli->prepare($query)) {
 
     /* execute query */
     $stmt->execute();
-    
+
     echo "Error:\n";
     print_r($stmt->error_list);
 
@@ -107,7 +107,7 @@ if ($stmt = mysqli_prepare($link, $query)) {
 
     /* execute query */
     mysqli_stmt_execute($stmt);
-    
+
     echo "Error:\n";
     print_r(mysqli_stmt_error_list($stmt));
 

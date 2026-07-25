@@ -5,16 +5,16 @@
   <refname>OCILob::getBuffering</refname>
   <refpurpose>Returns current state of buffering for the large object</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="OCILob">
    <modifier>public</modifier> <type>bool</type><methodname>OCILob::getBuffering</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Tells whether the buffering for the large object is on or off.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,10 +24,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &false; if buffering for the large object is off and &true; if
    buffering is used.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

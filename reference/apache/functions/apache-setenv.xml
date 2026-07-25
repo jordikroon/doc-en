@@ -15,17 +15,17 @@
    <methodparam><type>string</type><parameter>value</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>walk_to_top</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>apache_setenv</function> sets the value of the Apache
    environment variable specified by
    <parameter>variable</parameter>.
-  </para>
+  </simpara>
   <note>
-   <para>
-    When setting an Apache environment variable, the corresponding 
+   <simpara>
+    When setting an Apache environment variable, the corresponding
     <varname>$_SERVER</varname>
     variable is not changed.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -36,25 +36,25 @@
     <varlistentry>
      <term><parameter>variable</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The environment variable that's being set.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The new <parameter>variable</parameter> value.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>walk_to_top</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Whether to set the top-level variable available to all Apache layers.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -63,9 +63,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -87,12 +87,12 @@ apache_setenv("EXAMPLE_VAR", "Example Value");
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     <function>apache_setenv</function> can be paired up with
     <function>apache_getenv</function> across separate pages or for setting
     variables to pass to Server Side Includes (.shtml) that have been
     included in PHP scripts.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

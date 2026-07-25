@@ -5,7 +5,7 @@
   <refname>oci_lob_is_equal</refname>
   <refpurpose>Compares two LOB/FILE locators for equality</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,9 +13,9 @@
    <methodparam><type>OCILob</type><parameter>lob1</parameter></methodparam>
    <methodparam><type>OCILob</type><parameter>lob2</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   Compares two LOB/FILE locators. 
-  </para>
+  <simpara>
+   Compares two LOB/FILE locators.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,17 +25,17 @@
     <varlistentry>
      <term><parameter>lob1</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A LOB identifier.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>lob2</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A LOB identifier.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -44,17 +44,17 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if these objects are equal, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     The OCILob class was called OCI-Lob prior to PHP 8 and PECL OCI8 3.0.0.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

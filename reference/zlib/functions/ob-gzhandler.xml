@@ -5,7 +5,7 @@
   <refname>ob_gzhandler</refname>
   <refpurpose>ob_start callback function to gzip output buffer</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,17 +13,17 @@
    <methodparam><type>string</type><parameter>data</parameter></methodparam>
    <methodparam><type>int</type><parameter>flags</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>ob_gzhandler</function> is intended to be used as a callback
    function for <function>ob_start</function> to help facilitate sending
-   gz-encoded data to web browsers that support compressed web pages.  
+   gz-encoded data to web browsers that support compressed web pages.
    Before <function>ob_gzhandler</function> actually sends compressed data,
    it determines what type of content encoding the browser will accept
    ("gzip", "deflate" or none at all) and will return its output accordingly.
    All browsers are supported since it's up to the browser to send the
    correct header saying that it accepts compressed web pages. If a browser
    doesn't support compressed pages this function returns &false;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -33,15 +33,15 @@
     <varlistentry>
      <term><parameter>data</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -50,9 +50,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   
-  </para>
+  <simpara>
+
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -81,17 +81,17 @@ ob_start("ob_gzhandler");
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     <function>ob_gzhandler</function> requires the <link linkend="ref.zlib">zlib</link> extension.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     You cannot use both <function>ob_gzhandler</function> and <link linkend="ini.zlib.output-compression">zlib.output_compression</link>.
     Also note that using <link linkend="ini.zlib.output-compression">
     zlib.output_compression</link> is preferred over
     <function>ob_gzhandler</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

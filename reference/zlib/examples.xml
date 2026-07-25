@@ -3,10 +3,10 @@
 
 <chapter xml:id="zlib.examples" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  &reftitle.examples;
- <para>
-  This example opens a temporary file and writes a test string 
+ <simpara>
+  This example opens a temporary file and writes a test string
   to it, then it prints out the content of this file twice.
- </para>
+ </simpara>
  <example>
   <title>Small Zlib Example</title>
   <programlisting role="php">

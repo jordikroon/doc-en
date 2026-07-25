@@ -3,24 +3,24 @@
  <chapter xml:id="features.remote-files" xmlns="http://docbook.org/ns/docbook">
   <title>Using remote files</title>
 
-  <para>
+  <simpara>
    As long as <option>allow_url_fopen</option> is enabled in
-   &php.ini;, you can use <acronym>HTTP</acronym> and <acronym>FTP</acronym> 
+   &php.ini;, you can use <acronym>HTTP</acronym> and <acronym>FTP</acronym>
    URLs with most of the functions
    that take a filename as a parameter.  In addition, URLs can be
    used with the <function>include</function>,
    <function>include_once</function>, <function>require</function> and
-   <function>require_once</function> statements 
+   <function>require_once</function> statements
    (<option>allow_url_include</option> must be enabled for these).
    See <xref linkend="wrappers"/> for more information about the protocols
    supported by PHP.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    For example, you can use this to open a file on a remote web server,
    parse the output for the data you want, and then use that data in a
    database query, or simply to output it in a style matching the rest
    of your website.
-  </para>
+  </simpara>
   <para>
    <example>
     <title>Getting the title of a remote page</title>
@@ -46,20 +46,20 @@ fclose($file);
     </programlisting>
    </example>
   </para>
-  <para>
+  <simpara>
    You can also write to files on an FTP server (provided that you
    have connected as a user with the correct access rights). You
    can only create new files using this method; if you try to overwrite
    a file that already exists, the <function>fopen</function> call will
    fail.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    To connect as a user other than 'anonymous', you need to specify
    the username (and possibly password) within the URL, such as
    '<literal>ftp://user:password@ftp.example.com/path/to/file</literal>'.
    (You can use the same sort of syntax to access files via
    <acronym>HTTP</acronym> when they require Basic authentication.)
-  </para>
+  </simpara>
   <para>
    <example>
     <title>Storing data on a remote server</title>
@@ -75,19 +75,19 @@ if (!$file) {
 fwrite ($file, $_SERVER['HTTP_USER_AGENT'] . "\n");
 fclose ($file);
 ?>
-]]>  
+]]>
     </programlisting>
    </example>
   </para>
   <para>
    <note>
-    <para>
+    <simpara>
      You might get the idea from the example above that you can use
      this technique to write to a remote log file. Unfortunately
      that would not work because the <function>fopen</function> call will
      fail if the remote file already exists. To do distributed logging
      like that, you should take a look at <function>syslog</function>.
-    </para> 
+    </simpara>
    </note>
   </para>
 

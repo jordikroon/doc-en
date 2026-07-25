@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type class="union"><type>Iterator</type><type>null</type></type><methodname>IteratorIterator::getInnerIterator</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get the inner iterator.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">

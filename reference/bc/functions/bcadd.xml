@@ -5,7 +5,7 @@
   <refname>bcadd</refname>
   <refpurpose>Add two arbitrary precision numbers</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,10 +14,10 @@
    <methodparam><type>string</type><parameter>num2</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>scale</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sums <parameter>num1</parameter> and
    <parameter>num2</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,17 +27,17 @@
     <varlistentry>
      <term><parameter>num1</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The left operand, as a string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>num2</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The right operand, as a string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="function.bcadd..parameters.scale">
@@ -57,9 +57,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The sum of the two operands, as a string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -119,7 +119,7 @@ echo bcadd($a, $b, 4);  // 6.2340
    </programlisting>
   </example>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

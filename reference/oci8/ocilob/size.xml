@@ -5,16 +5,16 @@
   <refname>OCILob::size</refname>
   <refpurpose>Returns size of large object</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="OCILob">
    <modifier>public</modifier> <type class="union"><type>int</type><type>false</type></type><methodname>OCILob::size</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the size of the large object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,10 +24,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns length of large object value &return.falseforfailure;.
    Empty objects have zero length.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

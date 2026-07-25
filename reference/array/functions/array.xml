@@ -11,11 +11,11 @@
    <type>array</type><methodname>array</methodname>
    <methodparam rep="repeat"><type>mixed</type><parameter>values</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Creates an array. Read the section on the
    <link linkend="language.types.array">array type</link> for more information
    on what an array is, including details about the alternative bracket syntax (<literal>[]</literal>).
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -24,18 +24,18 @@
     <varlistentry>
      <term><parameter>values</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Syntax "index =&gt; values", separated by commas, define index
        and values. index may be of type string or integer. When index is
        omitted, an integer index is automatically generated, starting
        at 0. If index is an integer, next generated index will
        be the biggest integer index + 1. Note that when two identical
        indices are defined, the last overwrites the first.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Having a trailing comma after the last defined array entry, while
        unusual, is a valid syntax.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -43,12 +43,12 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array of the parameters.  The parameters can be given
    an index with the <literal>=&gt;</literal> operator.  Read the section
    on the <link linkend="language.types.array">array type</link> for more
    information on what an array is.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;
@@ -101,11 +101,11 @@ Array
     </screen>
    </example>
   </para>
-  <para>
+  <simpara>
    Note that index '3' is defined twice, and keep its final value of 13.
    Index 4 is defined after index 8, and next generated index (value 19)
    is 9, since biggest index was 8.
-  </para>
+  </simpara>
   <para>
    This example creates a 1-based array.
    <example>
@@ -151,10 +151,10 @@ echo "Hello {$foo['bar']}!"; // Hello baz!
   &reftitle.notes;
   <para>
    <note>
-    <para>
+    <simpara>
      <function>array</function> is a language construct used to
      represent literal arrays, and not a regular function.
-    </para>
+    </simpara>
    </note>
   </para>
  </refsect1>

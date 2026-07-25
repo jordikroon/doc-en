@@ -5,7 +5,7 @@
   <refname>mb_convert_kana</refname>
   <refpurpose>Convert "kana" one from another ("zen-kaku", "han-kaku" and more)</refpurpose>
  </refnamediv>
-   
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,10 +14,10 @@
    <methodparam choice="opt"><type>string</type><parameter>mode</parameter><initializer>"KV"</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>encoding</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
-   Performs a "han-kaku" - "zen-kaku" conversion for <type>string</type> <parameter>string</parameter>. 
+  <simpara>
+   Performs a "han-kaku" - "zen-kaku" conversion for <type>string</type> <parameter>string</parameter>.
    This function is only useful for Japanese.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,17 +27,17 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <type>string</type> being converted.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>mode</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The conversion option.
-      </para>
+      </simpara>
       <para>
        Specify with a combination of following options.
        <table>
@@ -157,21 +157,21 @@
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The converted <type>string</type>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws a <classname>ValueError</classname> if the combination of
+  <simpara>
+   Throws a <exceptionname>ValueError</exceptionname> if the combination of
    different <parameter>mode</parameter>s is invalid.
    For example <literal>"sS"</literal>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -188,7 +188,7 @@
      <row>
       <entry>8.2.0</entry>
        <entry>
-        A <classname>ValueError</classname> is now thrown if the
+        A <exceptionname>ValueError</exceptionname> is now thrown if the
         combination of different <parameter>mode</parameter>s is invalid.
        </entry>
      </row>
@@ -208,7 +208,7 @@
 /* Convert all "han-kaku" "kata-kana" to "zen-kaku" "hira-gana" */
 echo mb_convert_kana('ﾔﾏﾀﾞ ﾊﾅｺ', "HV") . "\n";
 
-/* Convert "han-kaku" "kata-kana" to "zen-kaku" "kata-kana" 
+/* Convert "han-kaku" "kata-kana" to "zen-kaku" "kata-kana"
    and "zen-kaku" alphanumeric to "han-kaku" */
 echo mb_convert_kana('ｺｳｻﾞﾊﾞﾝｺﾞｳ ０１２３４５６', "KVa") . "\n";
 ?>

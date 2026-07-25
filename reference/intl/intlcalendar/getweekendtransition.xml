@@ -8,35 +8,35 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="IntlCalendar">
    <modifier>public</modifier> <type class="union"><type>int</type><type>false</type></type><methodname>IntlCalendar::getWeekendTransition</methodname>
    <methodparam><type>int</type><parameter>dayOfWeek</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>int</type><type>false</type></type><methodname>intlcal_get_weekend_transition</methodname>
    <methodparam><type>IntlCalendar</type><parameter>calendar</parameter></methodparam>
    <methodparam><type>int</type><parameter>dayOfWeek</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the number of milliseconds after midnight at which the weekend
    begins or ends.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This is only applicable for days of the week for which
    <function>IntlCalendar::getDayOfWeekType</function> returns either
    <constant>IntlCalendar::DOW_TYPE_WEEKEND_OFFSET</constant> or
    <constant>IntlCalendar::DOW_TYPE_WEEKEND_CEASE</constant>. Calling this
    function for other days of the week is an error condition.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This function requires ICU 4.4 or later.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -51,11 +51,11 @@
    <varlistentry>
     <term><parameter>dayOfWeek</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       One of the constants <constant>IntlCalendar::DOW_SUNDAY</constant>,
       <constant>IntlCalendar::DOW_MONDAY</constant>, …,
       <constant>IntlCalendar::DOW_SATURDAY</constant>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -63,18 +63,18 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The number of milliseconds into the day at which the weekend begins or
    ends&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
 
  <refsect1 role="examples">
   &reftitle.examples;
-  <para>
+  <simpara>
    See example on <function>IntlCalendar::getDayOfWeekType</function>.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

@@ -5,18 +5,18 @@
   <refname>OCICollection::assign</refname>
   <refpurpose>Assigns a value to the collection from another existing collection</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="OCICollection">
    <modifier>public</modifier> <type>bool</type><methodname>OCICollection::assign</methodname>
    <methodparam><type>OCICollection</type><parameter>from</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Assigns a value to the collection from another, previously created
-   collection. Both collections must be created with 
+   collection. Both collections must be created with
    <function>oci_new_collection</function> prior to using them.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,9 +26,9 @@
     <varlistentry>
      <term><parameter>from</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An instance of OCICollection.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,9 +37,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

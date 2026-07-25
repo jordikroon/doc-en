@@ -13,13 +13,13 @@
    <methodparam><type>int</type><parameter>codepoint</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>encoding</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a string containing the character specified by the Unicode code point value,
    encoded in the specified encoding.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This function complements <function>mb_ord</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,9 +28,9 @@
    <varlistentry>
     <term><parameter>codepoint</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       A Unicode codepoint value, e.g. <literal>128024</literal> for <emphasis>U+1F418 ELEPHANT</emphasis>
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
@@ -44,10 +44,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A string containing the requested character, if it can be represented in the specified
    encoding &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

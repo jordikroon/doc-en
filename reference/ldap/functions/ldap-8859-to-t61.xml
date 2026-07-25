@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.ldap-8859-to-t61">
+<refentry xml:id="function.ldap-8859-to-t61" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>ldap_8859_to_t61</refname>
   <refpurpose>Translate 8859 characters to t61 characters</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>ldap_8859_to_t61</methodname>
    <methodparam><type>string</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Translate <literal>ISO-8859</literal> characters to <literal>t61</literal>
    characters.
-  </para>
-  <para>
-   This function is useful if you have to talk to a legacy 
+  </simpara>
+  <simpara>
+   This function is useful if you have to talk to a legacy
    <literal>LDAPv2</literal> server.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,9 +29,9 @@
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The text to be translated.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -40,10 +40,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Return the <literal>t61</literal> translation of
    <parameter>value</parameter>, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

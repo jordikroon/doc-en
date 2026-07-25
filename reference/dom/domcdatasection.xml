@@ -10,11 +10,11 @@
 <!-- {{{ DOMCdataSection intro -->
   <section xml:id="domcdatasection.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     The <classname>DOMCdataSection</classname> class inherits from
     <classname>DOMText</classname> for textual representation
     of CData constructs.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

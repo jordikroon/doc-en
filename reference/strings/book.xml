@@ -7,27 +7,27 @@
 
  <preface xml:id="intro.strings">
   &reftitle.intro;
-  <para>
+  <simpara>
    These functions all manipulate strings in various ways. Some more
    specialized sections can be found in the <link linkend="book.pcre">regular expression</link> and
    <link linkend="book.url">URL handling</link> sections.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    For information on how strings behave, especially with regard to
    usage of single quotes, double quotes, and escape sequences, see
    the <link linkend="language.types.string">Strings</link> entry in
    the <link linkend="language.types">Types</link> section of the
    manual.
-  </para>
+  </simpara>
  </preface>
 
  &reference.strings.setup;
  &reference.strings.constants;
  &reference.strings.reference;
 
-<appendix xmlns="http://docbook.org/ns/docbook" xml:id="changelog.strings">
+<appendix xml:id="changelog.strings" xmlns="http://docbook.org/ns/docbook">
  <title>&ChangelogListingTitle;</title>
- <para>&ChangelogListingDescription;</para>
+ <simpara>&ChangelogListingDescription;</simpara>
  <?phpdoc generate-changelog-for="ref.strings"?>
 </appendix>
 

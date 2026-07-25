@@ -13,9 +13,9 @@
    <methodparam><type class="union"><type>object</type><type>string</type></type><parameter>class</parameter></methodparam>
    <methodparam><type>string</type><parameter>constant</parameter></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Constructs a new <classname>ReflectionClassConstant</classname> object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,18 +25,18 @@
     <varlistentry>
      <term><parameter>class</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Either a <type>string</type> containing the name of the class to
        reflect, or an <type>object</type>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>constant</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The name of the class constant.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -45,9 +45,9 @@
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws an <classname>Exception</classname> in case the given class constant does not exist.
-  </para>
+  <simpara>
+   Throws an <exceptionname>Exception</exceptionname> in case the given class constant does not exist.
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

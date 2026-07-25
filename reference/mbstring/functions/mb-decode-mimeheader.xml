@@ -5,16 +5,16 @@
   <refname>mb_decode_mimeheader</refname>
   <refpurpose>Decode string in MIME header field</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>string</type><methodname>mb_decode_mimeheader</methodname>
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   Decodes encoded-word <type>string</type> <parameter>string</parameter> in MIME header. 
-  </para>
+  <simpara>
+   Decodes encoded-word <type>string</type> <parameter>string</parameter> in MIME header.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <type>string</type> being decoded.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,9 +35,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The decoded <type>string</type> in internal character encoding.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

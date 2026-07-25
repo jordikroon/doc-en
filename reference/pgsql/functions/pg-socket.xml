@@ -15,10 +15,10 @@
    <type class="union"><type>resource</type><type>false</type></type><methodname>pg_socket</methodname>
    <methodparam><type>PgSql\Connection</type><parameter>connection</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_socket</function> returns a read only <type>resource</type>
    corresponding to the socket underlying the given PostgreSQL connection.
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -38,9 +38,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A socket resource on success&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -59,7 +59,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
 </refentry>
 
 <!-- Keep this comment at the end of the file

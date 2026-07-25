@@ -5,16 +5,16 @@
   <refname>getmyinode</refname>
   <refpurpose>Gets the inode of the current script</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>int</type><type>false</type></type><methodname>getmyinode</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the inode of the current script.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the current script's inode as an integer, or &false; on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

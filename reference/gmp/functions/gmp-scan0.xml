@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.gmp-scan0">
+<refentry xml:id="function.gmp-scan0" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>gmp_scan0</refname>
   <refpurpose>Scan for 0</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,11 +13,11 @@
    <methodparam><type class="union"><type>GMP</type><type>int</type><type>string</type></type><parameter>num1</parameter></methodparam>
    <methodparam><type>int</type><parameter>start</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Scans <parameter>num1</parameter>, starting with bit
    <parameter>start</parameter>, towards more significant bits,
-   until the first clear bit is found. 
-  </para>
+   until the first clear bit is found.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,18 +27,18 @@
     <varlistentry>
      <term><parameter>num1</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number to scan.
-      </para>
-      &gmp.parameter; 
+      </simpara>
+      &gmp.parameter;
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>start</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The starting bit.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -47,10 +47,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the index of the found bit, as an <type>int</type>. The
    index starts from 0.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

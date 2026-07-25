@@ -13,9 +13,9 @@
    <methodparam><type class="union"><type>string</type><type>array</type><type>object</type></type><parameter>function</parameter></methodparam>
    <methodparam><type class="union"><type>int</type><type>string</type></type><parameter>param</parameter></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Constructs a <classname>ReflectionParameter</classname> instance.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,18 +25,18 @@
     <varlistentry>
      <term><parameter>function</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The function to reflect parameters from.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>param</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Either an &integer; specifying the position of the parameter (starting with
        zero), or the parameter name as &string;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

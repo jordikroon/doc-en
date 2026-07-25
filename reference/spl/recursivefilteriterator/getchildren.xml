@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type class="union"><type>RecursiveFilterIterator</type><type>null</type></type><methodname>RecursiveFilterIterator::getChildren</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Return the inner iterator's children contained in a <classname>RecursiveFilterIterator</classname>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a <classname>RecursiveFilterIterator</classname> containing the inner iterator's children.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

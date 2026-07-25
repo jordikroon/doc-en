@@ -9,14 +9,14 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="mysqli_stmt">
    <modifier>public</modifier> <type>bool</type><methodname>mysqli_stmt::bind_param</methodname>
    <methodparam><type>string</type><parameter>types</parameter></methodparam>
    <methodparam><type>mixed</type><parameter role="reference">var</parameter></methodparam>
    <methodparam rep="repeat"><type>mixed</type><parameter role="reference">vars</parameter></methodparam>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type>bool</type><methodname>mysqli_stmt_bind_param</methodname>
    <methodparam><type>mysqli_stmt</type><parameter>statement</parameter></methodparam>
@@ -24,25 +24,25 @@
    <methodparam><type>mixed</type><parameter role="reference">var</parameter></methodparam>
    <methodparam rep="repeat"><type>mixed</type><parameter role="reference">vars</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Bind variables for the parameter markers in the SQL statement prepared by
    <function>mysqli_prepare</function> or <function>mysqli_stmt_prepare</function>.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     If data size of a variable exceeds max. allowed packet size
     (max_allowed_packet), you have to specify <literal>b</literal> in
     <parameter>types</parameter> and use
     <function>mysqli_stmt_send_long_data</function> to send the data in packets.
-   </para>
+   </simpara>
   </note>
   <note>
-    <para>
+    <simpara>
       Care must be taken when using <function>mysqli_stmt_bind_param</function> in conjunction
       with <function>call_user_func_array</function>. Note that <function>mysqli_stmt_bind_param</function>
       requires parameters to be passed by reference, whereas <function>call_user_func_array</function>
       can accept as a parameter a list of variables that can represent references or values.
-    </para>
+    </simpara>
   </note>
  </refsect1>
 
@@ -93,10 +93,10 @@
      <term><parameter>var</parameter></term>
      <term><parameter>vars</parameter></term>
      <listitem>
-      <para>
-       The number of variables and length of string 
+      <simpara>
+       The number of variables and length of string
        <parameter>types</parameter> must match the parameters in the statement.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -105,9 +105,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -119,7 +119,7 @@
   &reftitle.examples;
   <example>
    <title><methodname>mysqli_stmt::bind_param</methodname> example</title>
-   <para>&style.oop;</para>
+   <simpara>&style.oop;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -144,7 +144,7 @@ $mysqli->query("DELETE FROM CountryLanguage WHERE Language='Bavarian'");
 printf("%d row deleted.\n", $mysqli->affected_rows);
 ]]>
    </programlisting>
-   <para>&style.procedural;</para>
+   <simpara>&style.procedural;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -179,10 +179,10 @@ printf("%d row deleted.\n", mysqli_affected_rows($link));
   </example>
   <example>
    <title>Using <literal>...</literal> to provide arguments</title>
-   <para>
+   <simpara>
     The <literal>...</literal> operator can be used to provide variable-length
     argument list, e.g. in a <literal>WHERE IN</literal> clause.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

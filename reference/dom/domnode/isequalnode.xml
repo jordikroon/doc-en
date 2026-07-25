@@ -11,9 +11,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>DOMNode::isEqualNode</methodname>
    <methodparam><type class="union"><type>DOMNode</type><type>null</type></type><parameter>otherNode</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks that both nodes are equal.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -23,9 +23,9 @@
     <varlistentry>
      <term><parameter>otherNode</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The node.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -34,9 +34,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if both nodes are equal, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

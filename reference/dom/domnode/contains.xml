@@ -11,9 +11,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>DOMNode::contains</methodname>
    <methodparam><type class="union"><type>DOMNode</type><type>DOMNameSpaceNode</type><type>null</type></type><parameter>other</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks if node contains <parameter>other</parameter> node.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -23,9 +23,9 @@
     <varlistentry>
      <term><parameter>other</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Node to be checked.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -34,9 +34,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if node contains <parameter>other</parameter> node, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

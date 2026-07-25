@@ -10,9 +10,9 @@
 <!-- {{{ UConverter intro -->
   <section xml:id="uconverter.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
 
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -280,7 +280,7 @@
 <!-- }}} -->
 
   </section>
-  
+
 <!-- {{{ UConverter constants -->
   <section xml:id="uconverter.constants">
    &reftitle.constants;

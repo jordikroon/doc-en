@@ -11,9 +11,9 @@
    <modifier>public</modifier> <type>void</type><methodname>DOMDocumentFragment::prepend</methodname>
    <methodparam rep="repeat"><type class="union"><type>DOMNode</type><type>string</type></type><parameter>nodes</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Prepends one or many <parameter>nodes</parameter> to the list of children before the first child node.
-  </para>
+  </simpara>
  </refsect1>
 
  <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('domparentnode.prepend')/db:refsect1[@role='parameters'])" />
@@ -25,9 +25,9 @@
   &reftitle.examples;
   <example xml:id="domdocumentfragment.prepend.example.basic">
    <title><methodname>DOMDocumentFragment::prepend</methodname> example</title>
-   <para>
+   <simpara>
     Prepends nodes before the fragment root.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

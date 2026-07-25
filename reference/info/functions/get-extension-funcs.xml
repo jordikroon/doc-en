@@ -5,17 +5,17 @@
   <refname>get_extension_funcs</refname>
   <refpurpose>Returns an array with the names of the functions of a module</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>array</type><type>false</type></type><methodname>get_extension_funcs</methodname>
    <methodparam><type>string</type><parameter>extension</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function returns the names of all the functions defined in
    the module indicated by <parameter>extension</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,13 +25,13 @@
     <varlistentry>
      <term><parameter>extension</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The module name.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         This parameter must be in <emphasis>lowercase</emphasis>.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
@@ -41,10 +41,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   Returns an array with all the functions, or &false; if 
+  <simpara>
+   Returns an array with all the functions, or &false; if
    <parameter>extension</parameter> is not a valid extension.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

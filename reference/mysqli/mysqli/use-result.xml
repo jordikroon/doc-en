@@ -9,29 +9,29 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="mysqli">
    <modifier>public</modifier> <type class="union"><type>mysqli_result</type><type>false</type></type><methodname>mysqli::use_result</methodname>
    <void/>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type class="union"><type>mysqli_result</type><type>false</type></type><methodname>mysqli_use_result</methodname>
    <methodparam><type>mysqli</type><parameter>mysql</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Used to initiate the retrieval of a result set from the last query
    executed using the <function>mysqli_real_query</function> function on the
    database connection.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Either this or the <function>mysqli_store_result</function> function must
    be called before the results of a query can be retrieved, and one or the
    other must be called to prevent the next query on that database connection
    from failing.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     The <function>mysqli_use_result</function> function does not transfer
     the entire result set from the database and hence cannot be used functions
     such as <function>mysqli_data_seek</function> to move to a particular
@@ -41,7 +41,7 @@
     the client side is performed, since this will tie up the server and
     prevent other threads from updating any tables from which the data is
     being fetched.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -52,9 +52,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an unbuffered result object or &false; if an error occurred.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -66,7 +66,7 @@
   &reftitle.examples;
   <example>
    <title><methodname>mysqli::use_result</methodname> example</title>
-   <para>&style.oop;</para>
+   <simpara>&style.oop;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -103,7 +103,7 @@ $mysqli->close();
 ?>
 ]]>
    </programlisting>
-   <para>&style.procedural;</para>
+   <simpara>&style.procedural;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

@@ -11,11 +11,11 @@
    <type>variant</type><methodname>variant_date_from_timestamp</methodname>
    <methodparam><type>int</type><parameter>timestamp</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Converts <parameter>timestamp</parameter> from a unix timestamp value
    into a variant of type <constant>VT_DATE</constant>.  This allows easier
    interopability between the unix-ish parts of PHP and COM.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>timestamp</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A unix timestamp.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -34,9 +34,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a <constant>VT_DATE</constant> variant.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="seealso">
   &reftitle.seealso;

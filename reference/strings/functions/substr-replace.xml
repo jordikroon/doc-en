@@ -5,7 +5,7 @@
   <refname>substr_replace</refname>
   <refpurpose>Replace text within a portion of a string</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -15,13 +15,13 @@
    <methodparam><type class="union"><type>array</type><type>int</type></type><parameter>offset</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>array</type><type>int</type><type>null</type></type><parameter>length</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>substr_replace</function> replaces a copy of
    <parameter>string</parameter> delimited by the
    <parameter>offset</parameter> and (optionally)
    <parameter>length</parameter> parameters with the string given in
-   <parameter>replace</parameter>. 
-  </para>
+   <parameter>replace</parameter>.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -31,10 +31,10 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input string.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        An <type>array</type> of <type>string</type>s can be provided, in which
        case the replacements will occur on each string in turn. In this case,
        the <parameter>replace</parameter>, <parameter>offset</parameter>
@@ -42,36 +42,36 @@
        scalar values to be applied to each input string in turn, or as
        <type>array</type>s, in which case the corresponding array element will
        be used for each input string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>replace</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The replacement string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If <parameter>offset</parameter> is non-negative, the replacing will
        begin at the <parameter>offset</parameter>'th offset into
        <parameter>string</parameter>.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If <parameter>offset</parameter> is negative, the replacing will
        begin at the <parameter>offset</parameter>'th character from the
        end of <parameter>string</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If given and is positive, it represents the length of the portion of
        <parameter>string</parameter> which is to be replaced. If it is
        negative, it represents the number of characters from the end of
@@ -83,7 +83,7 @@
        effect of inserting <parameter>replace</parameter> into
        <parameter>string</parameter> at the given
        <parameter>offset</parameter> offset.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -92,10 +92,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The result string is returned. If <parameter>string</parameter> is an
    array then array is returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

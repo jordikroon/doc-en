@@ -11,14 +11,14 @@
    <type class="union"><type>array</type><type>false</type></type><methodname>imap_errors</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets all of the <acronym>IMAP</acronym> errors (if any) that have occurred
    during this page request or since the error stack was reset.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    When <function>imap_errors</function> is called, the error stack is
    subsequently cleared.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,12 +28,12 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    This function returns an array of all of the IMAP error messages
    generated since the last <function>imap_errors</function> call,
    or the beginning of the page. Returns &false; if no error messages are
-   available. 
-  </para>
+   available.
+  </simpara>
  </refsect1>
  <refsect1 role="seealso">
   &reftitle.seealso;

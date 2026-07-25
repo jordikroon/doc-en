@@ -12,9 +12,9 @@
    <type class="union"><type>callable</type><type>int</type></type><methodname>pcntl_signal_get_handler</methodname>
    <methodparam><type>int</type><parameter>signal</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    The <function>pcntl_signal_get_handler</function> function will get the current handler for the specified <parameter>signal</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -23,9 +23,9 @@
    <varlistentry>
     <term><parameter>signal</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The signal number.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -33,10 +33,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    This function may return an integer value that refers to <constant>SIG_DFL</constant> or <constant>SIG_IGN</constant>.
    If a custom handler has been set, that <type>callable</type> is returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

@@ -7,13 +7,13 @@
  <!-- {{{ Requirements -->
  <section xml:id="ldap.requirements">
   &reftitle.required;
-  <para>
+  <simpara>
    You will need to get and compile LDAP client libraries from either
    <link xlink:href="&url.ldap.openldap.source;">OpenLDAP</link> or <link
    xlink:href="&url.ldap.bind9;">Bind9.net</link> in order to compile PHP with
    LDAP support.
    For PHP 5.6 or newer you will need OpenLDAP 2.4 or newer.
-  </para>
+  </simpara>
  </section>
  <!-- }}} -->
 
@@ -28,11 +28,11 @@
  <!-- {{{ Resources -->
  <section xml:id="ldap.resources">
   &reftitle.resources;
-  <para>
+  <simpara>
    Prior to PHP 8.1.0, most LDAP functions operate on or return resources (e.g.
    <function>ldap_connect</function> returns a positive LDAP link identifier
    required by most LDAP functions).
-  </para>
+  </simpara>
  </section>
  <!-- }}} -->
 

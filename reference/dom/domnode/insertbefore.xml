@@ -14,14 +14,14 @@
    <methodparam><type>DOMNode</type><parameter>node</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>DOMNode</type><type>null</type></type><parameter>child</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function inserts a new node right before the reference node.
    If you plan to do further modifications on the appended child you must use
    the returned node.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    When using an existing node it will be moved.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -30,18 +30,18 @@
     <varlistentry>
      <term><parameter>node</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The new node.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>child</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The reference node. If not supplied, <parameter>node</parameter> is
        appended to the children.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -49,9 +49,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The inserted node or &false; on error.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="errors">
   &reftitle.errors;
@@ -64,37 +64,37 @@
     <varlistentry>
      <term><constant>DOM_NO_MODIFICATION_ALLOWED_ERR</constant></term>
      <listitem>
-      <para>
+      <simpara>
        Raised if this node is readonly or if the previous parent of the node
        being inserted is readonly.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><constant>DOM_HIERARCHY_REQUEST_ERR</constant></term>
      <listitem>
-      <para>
+      <simpara>
        Raised if this node is of a type that does not allow children of the
        type of the <parameter>node</parameter> node, or if the node to
        append is one of this node's ancestors or this node itself.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><constant>DOM_WRONG_DOCUMENT_ERR</constant></term>
      <listitem>
-      <para>
+      <simpara>
        Raised if <parameter>node</parameter> was created from a different
        document than the one that created this node.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><constant>DOM_NOT_FOUND_ERR</constant></term>
      <listitem>
-      <para>
+      <simpara>
        Raised if <parameter>child</parameter> is not a child of this node.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

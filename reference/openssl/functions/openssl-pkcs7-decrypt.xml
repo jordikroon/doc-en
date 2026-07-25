@@ -5,7 +5,7 @@
   <refname>openssl_pkcs7_decrypt</refname>
   <refpurpose>Decrypts an S/MIME encrypted message</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -15,12 +15,12 @@
    <methodparam><modifier role="attribute">#[\SensitiveParameter]</modifier><type class="union"><type>OpenSSLCertificate</type><type>string</type></type><parameter>certificate</parameter></methodparam>
    <methodparam choice="opt"><modifier role="attribute">#[\SensitiveParameter]</modifier><type class="union"><type>OpenSSLAsymmetricKey</type><type>OpenSSLCertificate</type><type>array</type><type>string</type><type>null</type></type><parameter>private_key</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Decrypts the S/MIME encrypted message contained in the file specified by
    <parameter>input_filename</parameter> using the certificate and its
    associated private key specified by <parameter>certificate</parameter> and
    <parameter>private_key</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,31 +30,31 @@
     <varlistentry>
      <term><parameter>input_filename</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>output_filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The decrypted message is written to the file specified by
        <parameter>output_filename</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>certificate</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>private_key</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -63,9 +63,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

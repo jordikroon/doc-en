@@ -15,45 +15,45 @@
    return type of <type>static</type>, previously it was <type>DateTimeImmutable</type>.
   </para>
 
-  <para>
+  <simpara>
    <literal>number</literal> symbols in <link linkend="datetime.formats.relative">relative formats</link>
    no longer accept multiple signs, e.g. <literal>+-2</literal>.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration82.incompatible.odbc">
   <title>ODBC</title>
 
-  <para>
+  <simpara>
    The ODBC extension now escapes the username and password for the case when
    both a connection string and username/password are passed, and the string
    must be appended to. Before, user values containing values needing escaping
    could have created a malformed connection string, or injected values from
    user-provided data. The escaping rules should be identical to the .NET BCL
    DbConnectionOptions behaviour.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration82.incompatible.pdo-odbc">
   <title>PDO_ODBC</title>
 
-  <para>
+  <simpara>
    The PDO_ODBC extension also escapes the username and password when a
    connection string is passed. See the <link linkend="migration82.incompatible.odbc">change to the ODBC extension</link> for
    further details.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration82.incompatible.standard">
   <title>Standard</title>
 
-  <para>
+  <simpara>
    <function>glob</function> now returns an empty &array; if all paths are
    restricted by <link linkend="ini.open-basedir">open_basedir</link>.
    Previously it returned &false;.
    Moreover, a warning is now emitted even if only some paths are restricted by
    <link linkend="ini.open-basedir">open_basedir</link>.
-  </para>
+  </simpara>
 
   <para>
    <methodname>FilesystemIterator::__construct</methodname>: prior to PHP 8.2.0,
@@ -64,7 +64,7 @@
    not been modified.
   </para>
 
-  <para>
+  <simpara>
    <function>strtolower</function>,
    <function>strtoupper</function>,
    <function>stristr</function>,
@@ -78,24 +78,24 @@
    Localized versions of these functions are available in the <link linkend="book.mbstring">MBString extension</link>.
    Moreover, <function>array_change_key_case</function>, and sorting with
    <constant>SORT_FLAG_CASE</constant> now also use ASCII case conversion.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    <function>str_split</function> returns an empty &array; for an empty &string; now.
    Previously it returned an array with a single empty string entry.
    <function>mb_str_split</function> is not affected by this change as it was
    already behaving like that.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    <function>ksort</function> and <function>krsort</function> now do numeric string
    comparison under <constant>SORT_REGULAR</constant> using the standard PHP 8 rules now.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    <function>var_export</function> no longer omits the leading backslash for exported classes,
    i.e. these are now fully qualified.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration82.incompatible.spl">
@@ -124,13 +124,13 @@
    <type class="union"><type>RecursiveIterator</type><type>null</type></type>.
   </para>
 
-  <para>
+  <simpara>
    <classname>GlobIterator</classname> now returns an empty &array; if all
    paths are restricted by <link linkend="ini.open-basedir">open_basedir</link>.
    Previously it returned &false;.
    Moreover, a warning is now emitted even if only some paths are restricted by
    <link linkend="ini.open-basedir">open_basedir</link>.
-  </para>
+  </simpara>
  </sect2>
 
 </sect1>

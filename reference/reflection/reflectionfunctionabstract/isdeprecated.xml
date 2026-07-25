@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>ReflectionFunctionAbstract::isDeprecated</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks whether the function is deprecated.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &true; if it's deprecated, otherwise &false;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -9,20 +9,20 @@
  </refnamediv>
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="XMLWriter">
    <modifier>public</modifier> <type>bool</type><methodname>XMLWriter::setIndent</methodname>
    <methodparam><type>bool</type><parameter>enable</parameter></methodparam>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type>bool</type><methodname>xmlwriter_set_indent</methodname>
    <methodparam><type>XMLWriter</type><parameter>writer</parameter></methodparam>
    <methodparam><type>bool</type><parameter>enable</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Toggles indentation on or off.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -32,9 +32,9 @@
     <varlistentry>
      <term><parameter>enable</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Whether indentation is enabled.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -43,9 +43,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -69,10 +69,10 @@
   &reftitle.examples;
   <example xml:id="xmlwriter-set-indent.example.mixed-content">
    <title><methodname>XMLWriter::setIndent</methodname> and mixed Content</title>
-   <para>
+   <simpara>
     Enabling indentation is not suitable for mixed content, because the indent
     string is also inserted before inline elements.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -104,9 +104,9 @@ after</p>
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     The indent is reset when an xmlwriter is opened.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

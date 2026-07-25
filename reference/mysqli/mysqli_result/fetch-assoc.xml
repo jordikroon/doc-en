@@ -9,30 +9,30 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="mysqli_result">
    <modifier>public</modifier> <type class="union"><type>array</type><type>null</type><type>false</type></type><methodname>mysqli_result::fetch_assoc</methodname>
    <void/>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type class="union"><type>array</type><type>null</type><type>false</type></type><methodname>mysqli_fetch_assoc</methodname>
    <methodparam><type>mysqli_result</type><parameter>result</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Fetches one row of data from the result set and returns it as an associative
    array.
    Each subsequent call to this function will return the next row within the
    result set, or &null; if there are no more rows.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If two or more columns of the result have the same name, the last
    column will take precedence and overwrite any previous data. To
    access multiple columns with the same name,
    <function>mysqli_fetch_row</function> may be used to fetch the numerically
    indexed array, or aliases may be used in the SQL query select list to give
    columns different names.
-  </para>
+  </simpara>
   &database.field-case;
   &database.fetch-null;
  </refsect1>
@@ -48,19 +48,19 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an associative array representing the fetched row,
    where each key in the array represents the name of one of the result
    set's columns, &null; if there
    are no more rows in the result set, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
   &reftitle.examples;
   <example>
    <title><methodname>mysqli_result::fetch_assoc</methodname> example</title>
-   <para>&style.oop;</para>
+   <simpara>&style.oop;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -78,7 +78,7 @@ while ($row = $result->fetch_assoc()) {
 }
 ]]>
    </programlisting>
-   <para>&style.procedural;</para>
+   <simpara>&style.procedural;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -109,10 +109,10 @@ Santa Clara (USA)
   </example>
   <example xml:id="mysqli-result.example.iterator">
    <title>Comparison of <classname>mysqli_result</classname> <classname>iterator</classname> and <methodname>mysqli_result::fetch_assoc</methodname> usage</title>
-   <para>
+   <simpara>
     <classname>mysqli_result</classname> can be iterated using &foreach;.
     The result set will always be iterated from the first row, regardless of the current position.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

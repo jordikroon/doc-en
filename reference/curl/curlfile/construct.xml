@@ -9,23 +9,23 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <constructorsynopsis role="CURLFile">
    <modifier>public</modifier> <methodname>CURLFile::__construct</methodname>
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>mime_type</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>posted_filename</parameter><initializer>&null;</initializer></methodparam>
   </constructorsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type>CURLFile</type><methodname>curl_file_create</methodname>
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>mime_type</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>posted_filename</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Creates a <classname>CURLFile</classname> object, used to upload a file with <constant>CURLOPT_POSTFIELDS</constant>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -34,25 +34,25 @@
    <varlistentry>
     <term><parameter>filename</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Path to the file which will be uploaded.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>mime_type</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Mimetype of the file.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>posted_filename</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Name of the file to be used in the upload data.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -60,9 +60,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a <classname>CURLFile</classname> object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -92,7 +92,7 @@
   &reftitle.examples;
   <example>
    <title><function>CURLFile::__construct</function> example</title>
-   <para>&style.oop;</para>
+   <simpara>&style.oop;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -116,7 +116,7 @@ curl_exec($ch);
 ?>
 ]]>
    </programlisting>
-   <para>&style.procedural;</para>
+   <simpara>&style.procedural;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -163,7 +163,7 @@ array(1) {
   </example>
   <example>
    <title><function>CURLFile::__construct</function> uploading multiple files example</title>
-   <para>&style.oop;</para>
+   <simpara>&style.oop;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -182,13 +182,13 @@ echo curl_exec($request);
 var_dump(curl_getinfo($request));
 ]]>
    </programlisting>
-   <para>&style.procedural;</para>
+   <simpara>&style.procedural;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
 // procedural
 $request = curl_init('http://www.example.com/upload.php');
-curl_setopt($request, CURLOPT_POST, true); 
+curl_setopt($request, CURLOPT_POST, true);
 curl_setopt($request, CURLOPT_SAFE_UPLOAD, true);
 curl_setopt($request, CURLOPT_POSTFIELDS, [
     'blob[0]' => curl_file_create(realpath('first-file.jpg'), 'image/jpeg'),

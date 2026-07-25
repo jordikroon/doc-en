@@ -17,7 +17,7 @@
    </caption>
   </mediaobject>
  </para>
- <para>
+ <simpara>
   The <literal>goto</literal> operator can be used to jump to another
   section in the program.  The target point is specified by a <emphasis>case-sensitive</emphasis> label
   followed by a colon, and the instruction is given as
@@ -28,7 +28,7 @@
   cannot jump into any sort of loop or switch structure.  You may jump
   out of these, and a common use is to use a <literal>goto</literal>
   in place of a multi-level <literal>break</literal>.
- </para>
+ </simpara>
  <para>
   <example>
    <title><literal>goto</literal> example</title>

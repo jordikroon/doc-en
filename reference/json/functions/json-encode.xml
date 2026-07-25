@@ -14,21 +14,21 @@
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>depth</parameter><initializer>512</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a string containing the JSON representation of the supplied
    <parameter>value</parameter>.  If the parameter is an &array; or &object;,
    it will be serialized recursively.
-  </para>
+  </simpara>
   <para>
    If a value to be serialized is an object, then by default only publicly visible
    properties will be included. Alternatively, a class may implement <interfacename>JsonSerializable</interfacename>
    to control how its values are serialized to <acronym>JSON</acronym>.
   </para>
-  <para>
+  <simpara>
    The encoding is affected by the supplied <parameter>flags</parameter>
    and additionally the encoding of float values depends on the value of
    <link linkend="ini.serialize-precision">serialize_precision</link>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -38,20 +38,20 @@
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <parameter>value</parameter> being encoded. Can be any type except
        a &resource;.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        All string data must be UTF-8 encoded.
-      </para>
+      </simpara>
       &json.implementation.superset;
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Bitmask consisting of
        <constant>JSON_FORCE_OBJECT</constant>,
        <constant>JSON_HEX_QUOT</constant>,
@@ -70,15 +70,15 @@
        <constant>JSON_THROW_ON_ERROR</constant>.
        The behaviour of these constants is described on the
        <link linkend="json.constants">JSON constants</link> page.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>depth</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Set the maximum depth. Must be greater than zero.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -87,9 +87,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a JSON encoded &string; on success &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -358,31 +358,31 @@ string(2) "12"
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     In the event of a failure to encode, <function>json_last_error</function>
     can be used to determine the exact nature of the error.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     When encoding an array, if the keys are not a continuous numeric
     sequence starting from 0, all keys are encoded as strings, and
     specified explicitly for each key-value pair.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     Like the reference JSON encoder, <function>json_encode</function> will
     generate JSON that is a simple value (that is, neither an object nor an
     array) if given a &string;, &integer;, &float; or &boolean; as an input
     <parameter>value</parameter>. While most decoders will accept these values
     as valid JSON, some may not, as the specification is ambiguous on this
     point.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     To summarise, always test that your JSON decoder can handle the output you
     generate from <function>json_encode</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

@@ -13,9 +13,9 @@
    <methodparam choice="opt"><type class="union"><type>array</type><type>object</type></type><parameter>array</parameter><initializer>[]</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Constructs an <classname>ArrayIterator</classname> <type>object</type>.
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -28,9 +28,9 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The array or object to be iterated on.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>

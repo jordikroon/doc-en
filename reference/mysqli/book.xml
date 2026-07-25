@@ -11,34 +11,34 @@
 
  <preface xml:id="intro.mysqli">
   &reftitle.intro;
-  <para>
+  <simpara>
    The <literal>mysqli</literal> extension allows you to access the
    functionality provided by MySQL 4.1 and above. More information about
    the MySQL Database server can be found at
    <link xlink:href="&url.mysql;">&url.mysql;</link>
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    An overview of software available for using MySQL from PHP can be found
    at <xref linkend="mysqli.overview"/>
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    Documentation for MySQL can be found at
    <link
    xlink:href="&url.mysql.docs;">&url.mysql.docs;</link>.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    Parts of this documentation included from MySQL manual with
    permissions of Oracle Corporation.
-  </para>
-  
-  <para>
+  </simpara>
+
+  <simpara>
    Examples use either the <link xlink:href="&url.mysql.example;">world</link>
    or <link xlink:href="&url.mysql.sakila;">sakila</link> database, which are
    freely available.
-  </para>
+  </simpara>
 
  </preface>
 
@@ -59,9 +59,9 @@
  &reference.mysqli.mysqli-sql-exception;
  &reference.mysqli.reference;
 
-<appendix xmlns="http://docbook.org/ns/docbook" xml:id="changelog.mysqli">
+<appendix xml:id="changelog.mysqli" xmlns="http://docbook.org/ns/docbook">
  <title>&ChangelogListingTitle;</title>
- <para>&ChangelogListingDescription;</para>
+ <simpara>&ChangelogListingDescription;</simpara>
  <?phpdoc generate-changelog-for="ref.mysqli class.mysqli class.mysqli-stmt class.mysqli-result class.mysqli-driver class.mysqli-warning class.mysqli-sql-exception"?>
 </appendix>
 

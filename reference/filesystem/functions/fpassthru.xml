@@ -5,28 +5,28 @@
   <refname>fpassthru</refname>
   <refpurpose>Output all remaining data on a file pointer</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>int</type><methodname>fpassthru</methodname>
    <methodparam><type>resource</type><parameter>stream</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Reads to EOF on the given file pointer from the current position and
    writes the results to the output buffer.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    You may need to call <function>rewind</function> to reset the file
    pointer to the beginning of the file if you have already written data
    to the file.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If you just want to dump the contents of a file to the output buffer,
    without first modifying it or seeking to a particular offset, you may
    want to use the <function>readfile</function>, which saves you
    the <function>fopen</function> call.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -45,10 +45,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the number of characters read from <parameter>stream</parameter>
    and passed through to the output.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -82,17 +82,17 @@ exit;
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     When using <function>fpassthru</function> on a binary file on Windows
     systems, you should make sure to open the file in binary mode by
     appending a <literal>b</literal> to the mode used in the call to
     <function>fopen</function>.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     You are encouraged to use the <literal>b</literal> flag when dealing
     with binary files, even if your system does not require it, so that
     your scripts will be more portable.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

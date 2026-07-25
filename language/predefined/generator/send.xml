@@ -12,10 +12,10 @@
    <modifier>public</modifier> <type>mixed</type><methodname>Generator::send</methodname>
    <methodparam><type>mixed</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sends the given value to the generator as the result of the current &yield;
    expression and resumes execution of the generator.
-  </para>
+  </simpara>
   <para>
    If the generator is not at a &yield; expression when this method is called, it
    will first be let to advance to the first &yield; expression before sending the
@@ -30,10 +30,10 @@
    <varlistentry>
     <term><parameter>value</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Value to send into the generator. This value will be the return value of the
       &yield; expression the generator is currently at.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -41,9 +41,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the yielded value.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

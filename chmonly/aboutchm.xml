@@ -3,7 +3,7 @@
  <chapter xml:id="chm.about" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
   <title>About This Edition</title>
 
-  <para>
+  <simpara>
    The Windows HTML Help Edition of the PHP Manual is aimed at
    developers, who want the manual at hand every time, and would like
    to read manual pages and user notes without waiting for a remote
@@ -11,9 +11,9 @@
    manual plus the user notes, with some great features provided by
    the viewer application by the scripts we use to generate this
    format and by other contributors in the form of skins.
-  </para>
-  
-  <para>
+  </simpara>
+
+  <simpara>
    This distribution of the PHP Manual contains many files, including the
    main manual file <filename>php_manual_en.chm</filename>. You can view
    the manual by double clicking on this file (as you already guessed).
@@ -27,16 +27,16 @@
    You may also see a <filename>php_manual_en.chw</filename> file in the
    directory, it's generated the first time you use the index tab, and
    it contains an index with the manual's pages.
-  </para>
-  
-  <para>
+  </simpara>
+
+  <simpara>
    For those interested in technical details about Microsoft HTML Help,
    <link xlink:href="&url.chm.helpware;">&url.chm.helpware;</link> is a great
    resource. For more information and positioning of Windows HTML Help
    in the Microsoft help formats and services history, see this
    <link xlink:href="&url.chm.history;">WinWriters article</link>.
-  </para>
-   
+  </simpara>
+
  </chapter>
 
 <!-- Keep this comment at the end of the file

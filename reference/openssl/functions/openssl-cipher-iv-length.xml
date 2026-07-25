@@ -12,9 +12,9 @@
    <type class="union"><type>int</type><type>false</type></type><methodname>openssl_cipher_iv_length</methodname>
    <methodparam><type>string</type><parameter>cipher_algo</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the cipher initialization vector (iv) length.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -23,9 +23,9 @@
    <varlistentry>
     <term><parameter>cipher_algo</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The cipher method, see <function>openssl_get_cipher_methods</function> for a list of potential values.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -33,17 +33,17 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   Returns the cipher length on success, or &false; on failure. 
-  </para>
+  <simpara>
+   Returns the cipher length on success, or &false; on failure.
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    Emits an <constant>E_WARNING</constant> level error when the cipher algorithm
    is unknown.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -8,23 +8,23 @@
  </refnamediv>
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="IntlDateFormatter">
    <modifier>public</modifier> <type>bool</type><methodname>IntlDateFormatter::isLenient</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type>bool</type><methodname>datefmt_is_lenient</methodname>
    <methodparam><type>IntlDateFormatter</type><parameter>formatter</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
     Check if the parser is strict or lenient in interpreting inputs that do not match the pattern exactly.
-  </para> 
+  </simpara>
   </refsect1>
 
  <refsect1 role="parameters">
@@ -34,23 +34,23 @@
     <varlistentry>
      <term><parameter>formatter</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The formatter resource.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
-   
- 
+
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &true; if parser is lenient, &false; if parser is strict. By default the parser is lenient.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
    <example>
@@ -148,8 +148,8 @@ Trying to do parse('35/13/1971').
 Result is : -2147483
 Now lenient of the formatter is : FALSE
 Trying to do parse('35/13/1971').
-Result is : 
-Error_msg is : Date parsing failed: U_PARSE_ERROR 
+Result is :
+Error_msg is : Date parsing failed: U_PARSE_ERROR
 Error_code is : 9
 ]]>
      </screen>

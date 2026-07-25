@@ -5,7 +5,7 @@
   <refname>openssl_sign</refname>
   <refpurpose>Generate signature</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -16,13 +16,13 @@
    <methodparam choice="opt"><type class="union"><type>string</type><type>int</type></type><parameter>algorithm</parameter><initializer><constant>OPENSSL_ALGO_SHA1</constant></initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>padding</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>openssl_sign</function> computes a signature for the
    specified <parameter>data</parameter> by generating a cryptographic
    digital signature using the private key associated with
    <parameter>private_key</parameter>. Note that the data itself is
    not encrypted.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -32,40 +32,40 @@
     <varlistentry>
      <term><parameter>data</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string of data you wish to sign
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>signature</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If the call was successful the signature is returned in
        <parameter>signature</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>private_key</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <classname>OpenSSLAsymmetricKey</classname> - a key, returned by <function>openssl_get_privatekey</function>
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        <type>string</type> - a <acronym>PEM</acronym> formatted key
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>algorithm</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <type>int</type> - one of these <link linkend="openssl.signature-algos">Signature Algorithms</link>.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        <type>string</type> - a valid string returned by <function>openssl_get_md_methods</function> example, "sha256WithRSAEncryption" or "sha384".
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -80,9 +80,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -171,7 +171,7 @@ var_dump($r);
 ]]>
     </programlisting>
    </example>
- 
+
   </para>
  </refsect1>
 

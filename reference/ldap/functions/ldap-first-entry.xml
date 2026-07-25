@@ -5,7 +5,7 @@
   <refname>ldap_first_entry</refname>
   <refpurpose>Return first result id</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,16 +13,16 @@
    <methodparam><type>LDAP\Connection</type><parameter>ldap</parameter></methodparam>
    <methodparam><type>LDAP\Result</type><parameter>result</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the entry identifier for first entry in the result. This entry
    identifier is then supplied to <function>ldap_next_entry</function>
    routine to get successive entries from the result.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Entries in the LDAP result are read sequentially using the
    <function>ldap_first_entry</function> and
    <function>ldap_next_entry</function> functions.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -32,17 +32,17 @@
     <varlistentry>
      <term><parameter>ldap</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &ldap.parameter.ldap;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>result</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &ldap.parameter.result;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -51,9 +51,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an <classname>LDAP\ResultEntry</classname> instance,&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

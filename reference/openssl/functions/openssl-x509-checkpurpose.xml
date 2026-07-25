@@ -5,7 +5,7 @@
   <refname>openssl_x509_checkpurpose</refname>
   <refpurpose>Verifies if a certificate can be used for a particular purpose</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -15,10 +15,10 @@
    <methodparam choice="opt"><type>array</type><parameter>ca_info</parameter><initializer>[]</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>untrusted_certificates_file</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>openssl_x509_checkpurpose</function> examines a certificate to
    see if it can be used for the specified <parameter>purpose</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,9 +28,9 @@
     <varlistentry>
      <term><parameter>certificate</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The examined certificate.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -88,21 +88,21 @@
     <varlistentry>
      <term><parameter>ca_info</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>ca_info</parameter> should be an array of trusted CA files/dirs
        as described in <link linkend="openssl.cert.verification">Certificate
        Verification</link>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>untrusted_certificates_file</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If specified, this should be the name of a <acronym>PEM</acronym> encoded file holding
        certificates that can be used to help verify the certificate, although
        no trust is placed in the certificates that come from that file.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -111,10 +111,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the certificate can be used for the intended purpose,
    &false; if it cannot, or -1 on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

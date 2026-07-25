@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>void</type><methodname>SplFileObject::rewind</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Rewinds the file back to the first line.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,16 +24,16 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws a <classname>RuntimeException</classname> if cannot be rewound.
-  </para>
+  <simpara>
+   Throws a <exceptionname>RuntimeException</exceptionname> if cannot be rewound.
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

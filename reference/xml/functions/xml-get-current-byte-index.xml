@@ -12,9 +12,9 @@
    <type>int</type><methodname>xml_get_current_byte_index</methodname>
    <methodparam><type>XMLParser</type><parameter>parser</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the current byte index of the given XML parser.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>parser</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A reference to the XML parser to get byte index from.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,10 +35,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns which byte index
    the parser is currently at in its data buffer (starting at 0).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -61,10 +61,10 @@
  <refsect1 role="notes">
   &reftitle.notes;
   <warning>
-   <para>
+   <simpara>
     This function returns byte index according to UTF-8 encoded text
     disregarding if input is in another encoding.
-   </para>
+   </simpara>
   </warning>
  </refsect1>
 

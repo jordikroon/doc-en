@@ -5,16 +5,16 @@
   <refname>SplDoublyLinkedList::current</refname>
   <refpurpose>Return current array entry</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="SplDoublyLinkedList">
    <modifier>public</modifier> <type>mixed</type><methodname>SplDoublyLinkedList::current</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get the current doubly linked list node.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The current node value.
-  </para>
+  </simpara>
  </refsect1>
 </refentry>
 <!-- Keep this comment at the end of the file

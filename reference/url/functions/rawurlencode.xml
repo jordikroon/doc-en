@@ -12,10 +12,10 @@
    <type>string</type><methodname>rawurlencode</methodname>
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   Encodes the given string according to <link 
+  <simpara>
+   Encodes the given string according to <link
    xlink:href="&url.rfc;3986">RFC 3986</link>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The URL to be encoded.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -36,7 +36,7 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a string in which all non-alphanumeric characters except
    <literal>-_.~</literal> have been replaced with a percent
    (<literal>%</literal>) sign followed by two hex digits.  This is the
@@ -44,7 +44,7 @@
    protecting literal characters from being interpreted as special URL
    delimiters, and for protecting URLs from being mangled by transmission
    media with character conversions (like some email systems).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -68,9 +68,9 @@ echo '<a href="ftp://user:', rawurlencode('foo @+%/'),
     </screen>
    </example>
   </para>
-  <para>
+  <simpara>
    Or, if you pass information in a PATH_INFO component of the URL:
-  </para>
+  </simpara>
   <para>
    <example>
     <title><function>rawurlencode</function> example 2</title>

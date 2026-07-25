@@ -14,9 +14,9 @@
    <methodparam><type>string</type><parameter>dn</parameter></methodparam>
    <methodparam><type>int</type><parameter>ttl</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Performs a Refresh extended operation and returns the data.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,27 +25,27 @@
    <varlistentry>
     <term><parameter>ldap</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       &ldap.parameter.ldap;
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>dn</parameter></term>
     <listitem>
-     <para>
+     <simpara>
        dn of the entry to refresh.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>ttl</parameter></term>
     <listitem>
-     <para>
+     <simpara>
        Time in seconds (between 1 and 31557600) that the
        client requests that the entry exists in the directory before being
        automatically removed.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -53,7 +53,7 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    From RFC:
    The responseTtl field is the time in seconds which the server chooses
    to have as the time-to-live field for that entry.  It must not be any
@@ -64,7 +64,7 @@
    time-to-live value, down to a minimum of 86400 seconds (one day).
 
    &false; will be returned on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

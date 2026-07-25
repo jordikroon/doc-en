@@ -5,9 +5,9 @@
  <title>Predefined Exceptions</title>
 
  <partintro>
-  <para>
+  <simpara>
    See also the <link linkend="spl.exceptions">SPL Exceptions</link>.
-  </para>
+  </simpara>
  </partintro>
 
  &language.predefined.exception;

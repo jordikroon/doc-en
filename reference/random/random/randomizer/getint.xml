@@ -12,9 +12,9 @@
    <methodparam><type>int</type><parameter>min</parameter></methodparam>
    <methodparam><type>int</type><parameter>max</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -23,17 +23,17 @@
    <varlistentry>
     <term><parameter>min</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The lowest value to be returned.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>max</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The highest value to be returned.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -41,12 +41,12 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A uniformly selected integer from the closed interval
    [<parameter>min</parameter>, <parameter>max</parameter>]. Both
    <parameter>min</parameter> and <parameter>max</parameter> are
    possible return values.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -55,7 +55,7 @@
    <listitem>
     <simpara>
      If <parameter>max</parameter> is less than <parameter>min</parameter>, a
-     <classname>ValueError</classname> will be thrown.
+     <exceptionname>ValueError</exceptionname> will be thrown.
     </simpara>
    </listitem>
    &random.engineErrors;

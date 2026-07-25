@@ -11,9 +11,9 @@
    <modifier>public</modifier> <type class="union"><type>int</type><type>string</type></type><methodname>ReflectionEnumBackedCase::getBackingValue</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the scalar value backing this Enum case.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -23,9 +23,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The scalar equivalent of this enum case.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

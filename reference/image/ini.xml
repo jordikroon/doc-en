@@ -38,9 +38,9 @@
      <type>bool</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Ignore warnings (but not errors) created by libjpeg(-turbo).
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -66,17 +66,17 @@
    </tgroup>
   </table>
  </para>
- <para>
+ <simpara>
   See also the <link linkend="exif.configuration">exif</link> configuration
   directives.
- </para>
- 
+ </simpara>
+
  <warning>
-  <para>
+  <simpara>
    Image functions are very memory intensive. Be sure to set <link
    linkend="ini.memory-limit">memory_limit</link> high enough, if you are using
    the bundled version of the GD library.
-  </para>
+  </simpara>
  </warning>
 </section>
 

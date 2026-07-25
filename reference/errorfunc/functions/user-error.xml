@@ -8,9 +8,9 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &info.function.alias; <function>trigger_error</function>.
-  </para>
+  </simpara>
  </refsect1>
 </refentry>
 

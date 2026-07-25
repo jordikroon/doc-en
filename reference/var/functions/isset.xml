@@ -5,7 +5,7 @@
   <refname>isset</refname>
   <refpurpose>Determine if a variable is declared and is different than &null;</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
  &reftitle.description;
   <methodsynopsis>
@@ -13,26 +13,26 @@
    <methodparam><type>mixed</type><parameter>var</parameter></methodparam>
    <methodparam rep="repeat"><type>mixed</type><parameter>vars</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Determine if a variable is considered set,
    this means if a variable is declared and is different than &null;.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If a variable has been unset with the <function>unset</function>
    function, it is no longer considered to be set.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    <function>isset</function> will return &false; when checking a
    variable that has been assigned to &null;.
    Also note that a null character (<literal>"\0"</literal>) is not
    equivalent to the PHP &null; constant.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If multiple parameters are supplied then <function>isset</function>
    will return &true; only if all of the parameters are considered set.
    Evaluation goes from left to right and stops as soon as an unset
    variable is encountered.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -42,17 +42,17 @@
     <varlistentry>
      <term><parameter>var</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The variable to be checked.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>vars</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Further variables.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -61,10 +61,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if <parameter>var</parameter> exists and has
    any value other than &null;. &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -120,7 +120,7 @@ var_dump(isset($a['foo']));             // FALSE
 var_dump(isset($a['hello']));           // FALSE
 
 // The key 'hello' equals NULL so is considered unset
-// If you want to check for NULL key values then try: 
+// If you want to check for NULL key values then try:
 var_dump(array_key_exists('hello', $a)); // TRUE
 
 // Checking deeper array values
@@ -165,20 +165,20 @@ bool(false)
  <refsect1 role="notes">
   &reftitle.notes;
   <warning>
-   <para>
+   <simpara>
     <function>isset</function> only works with variables as passing anything
-    else will result in a parse error.  For checking if 
-    <link linkend="language.constants">constants</link> are set use the 
+    else will result in a parse error.  For checking if
+    <link linkend="language.constants">constants</link> are set use the
     <function>defined</function> function.
-   </para>
+   </simpara>
   </warning>
   &note.language-construct;
   <note>
-   <para>
+   <simpara>
     When using <function>isset</function> on inaccessible object properties,
     the <link linkend="object.isset">__isset()</link>
     overloading method will be called, if declared.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

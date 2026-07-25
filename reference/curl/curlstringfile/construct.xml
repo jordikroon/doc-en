@@ -13,9 +13,9 @@
    <methodparam><type>string</type><parameter>postname</parameter></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>mime</parameter><initializer>"application/octet-stream"</initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Creates a <classname>CURLStringFile</classname> object, used to upload a file with <constant>CURLOPT_POSTFIELDS</constant>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,25 +24,25 @@
    <varlistentry>
     <term><parameter>data</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The contents to be uploaded.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>postname</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The name of the file to be used in the upload data.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>mime</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       MIME type of the file (default is <literal>application/octet-stream</literal>).
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>

@@ -12,12 +12,12 @@
    <modifier>public</modifier> <type class="union"><type>string</type><type>false</type></type><methodname>SQLite3Stmt::getSQL</methodname>
    <methodparam choice="opt"><type>bool</type><parameter>expand</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Retrieves the SQL of the prepared statement. If <parameter>expand</parameter>
    is &false;, the unmodified SQL is retrieved. If <parameter>expand</parameter>
    is &true;, all query parameters are replaced with their bound values, or with
    an SQL <literal>NULL</literal>, if not already bound.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,10 +26,10 @@
    <varlistentry>
     <term><parameter>expand</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Whether to retrieve the expanded SQL. Passing &true; is only supported as
       of libsqlite 3.14.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -37,16 +37,16 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the SQL of the prepared statement, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
   <para>
    If <parameter>expand</parameter> is &true;, but the libsqlite version is less
-   than 3.14, an error of level <constant>E_WARNING</constant> or an <classname>Exception</classname>
+   than 3.14, an error of level <constant>E_WARNING</constant> or an <exceptionname>Exception</exceptionname>
    is issued, according to <methodname>SQLite3::enableExceptions</methodname>.
   </para>
  </refsect1>

@@ -5,28 +5,28 @@
   <refname>Error::getMessage</refname>
   <refpurpose>Gets the error message</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="Error">
    <modifier>final</modifier> <modifier>public</modifier> <type>string</type><methodname>Error::getMessage</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the error message.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   &no.function.parameters;
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the error message as a string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

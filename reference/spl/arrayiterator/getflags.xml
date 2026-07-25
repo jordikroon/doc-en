@@ -12,11 +12,11 @@
    <modifier>public</modifier> <type>int</type><methodname>ArrayIterator::getFlags</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the behavior flags of the <classname>ArrayIterator</classname>. See the
    <link linkend="arrayiterator.setflags">ArrayIterator::setFlags</link>
    method for a list of the available flags.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,9 +26,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the behavior flags of the ArrayIterator.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

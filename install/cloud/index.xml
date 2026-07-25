@@ -2,9 +2,9 @@
 <!-- $Revision$ -->
 <chapter xml:id="install.cloud" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <title>Installation on Cloud Computing platforms</title>
- <para>
+ <simpara>
   PHP installs on the cloud. To the PHP cloud!
- </para>
+ </simpara>
  &install.cloud.azure;
  &install.cloud.ec2;
  &install.cloud.digitalocean;

@@ -34,13 +34,13 @@ libexpat.a: $(OBJS)
  <!-- {{{ Resources -->
  <section xml:id="xml.resources">
   &reftitle.resources;
-  <para>
+  <simpara>
    Prior to PHP 8.0.0, the <literal>xml</literal> resource as returned by
    <function>xml_parser_create</function> and
    <function>xml_parser_create_ns</function> referenced an xml
    parser instance to be used with the functions provided by this
    extension.
-  </para>
+  </simpara>
  </section>
  <!-- }}} -->
 

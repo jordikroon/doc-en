@@ -8,25 +8,25 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="IntlCalendar">
    <modifier>public</modifier> <type>bool</type><methodname>IntlCalendar::setTimeZone</methodname>
    <methodparam><type class="union"><type>IntlTimeZone</type><type>DateTimeZone</type><type>string</type><type>null</type></type><parameter>timezone</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type>bool</type><methodname>intlcal_set_time_zone</methodname>
    <methodparam><type>IntlCalendar</type><parameter>calendar</parameter></methodparam>
    <methodparam><type class="union"><type>IntlTimeZone</type><type>DateTimeZone</type><type>string</type><type>null</type></type><parameter>timezone</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Defines a new timezone for this calendar. The time represented by the
    object is preserved to the detriment of the field values.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -53,9 +53,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; on success and &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
 

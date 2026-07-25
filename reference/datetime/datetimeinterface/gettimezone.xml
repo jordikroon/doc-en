@@ -11,7 +11,7 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="DateTimeInterface">
    <modifier>public</modifier> <type class="union"><type>DateTimeZone</type><type>false</type></type><methodname>DateTimeInterface::getTimezone</methodname>
    <void/>
@@ -24,14 +24,14 @@
    <modifier>public</modifier> <type class="union"><type>DateTimeZone</type><type>false</type></type><methodname>DateTime::getTimezone</methodname>
    <void/>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type class="union"><type>DateTimeZone</type><type>false</type></type><methodname>date_timezone_get</methodname>
    <methodparam><type>DateTimeInterface</type><parameter>object</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Return time zone relative to given DateTime.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -43,17 +43,17 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a <classname>DateTimeZone</classname> object on success
    &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
   &reftitle.examples;
   <example>
    <title><function>DateTime::getTimezone</function> example</title>
-   <para>&style.oop;</para>
+   <simpara>&style.oop;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -68,7 +68,7 @@ echo $tz->getName();
 Europe/London
 ]]>
    </screen>
-   <para>&style.procedural;</para>
+   <simpara>&style.procedural;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

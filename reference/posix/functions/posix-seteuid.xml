@@ -5,18 +5,18 @@
   <refname>posix_seteuid</refname>
   <refpurpose>Set the effective UID of the current process</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>bool</type><methodname>posix_seteuid</methodname>
    <methodparam><type>int</type><parameter>user_id</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Set the effective user ID of the current process. This is a privileged
    function and needs appropriate privileges (usually root) on
    the system to be able to perform this function.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,9 +26,9 @@
     <varlistentry>
      <term><parameter>user_id</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The user id.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,9 +37,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

@@ -12,8 +12,8 @@
    <methodparam><type class="union"><type>int</type><type>float</type></type><parameter>num</parameter></methodparam>
   </methodsynopsis>
   <simpara>
-   Returns the next highest integer value by rounding up 
-   <parameter>num</parameter> if necessary. 
+   Returns the next highest integer value by rounding up
+   <parameter>num</parameter> if necessary.
   </simpara>
  </refsect1>
  <refsect1 role="parameters">
@@ -23,9 +23,9 @@
     <varlistentry>
      <term><parameter>num</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The value to round
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -33,13 +33,13 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    <parameter>num</parameter> rounded up to the next highest
    integer.
    The return value of <function>ceil</function> is still of type
-   <type>float</type> as the value range of <type>float</type> is 
+   <type>float</type> as the value range of <type>float</type> is
    usually bigger than that of <type>int</type>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

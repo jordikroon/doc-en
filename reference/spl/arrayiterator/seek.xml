@@ -17,7 +17,7 @@
    Seeks to a given position in the iterator.
   </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   <para>
@@ -25,9 +25,9 @@
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The position to seek to.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -36,15 +36,15 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
   <simpara>
-   Throws an <classname>OutOfBoundsException</classname>
+   Throws an <exceptionname>OutOfBoundsException</exceptionname>
    if the <parameter>offset</parameter> is not seekable.
   </simpara>
  </refsect1>

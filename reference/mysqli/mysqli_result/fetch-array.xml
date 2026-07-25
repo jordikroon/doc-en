@@ -9,33 +9,33 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="mysqli_result">
    <modifier>public</modifier> <type class="union"><type>array</type><type>null</type><type>false</type></type><methodname>mysqli_result::fetch_array</methodname>
    <methodparam choice="opt"><type>int</type><parameter>mode</parameter><initializer><constant>MYSQLI_BOTH</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type class="union"><type>array</type><type>null</type><type>false</type></type><methodname>mysqli_fetch_array</methodname>
    <methodparam><type>mysqli_result</type><parameter>result</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>mode</parameter><initializer><constant>MYSQLI_BOTH</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Fetches one row of data from the result set and returns it as an array.
    Each subsequent call to this function will return the next row within the
    result set, or &null; if there are no more rows.
-  </para>
-  <para>
-   In addition to storing the data in the numeric indices of the result array, 
-   this function can also store the data in associative indices 
+  </simpara>
+  <simpara>
+   In addition to storing the data in the numeric indices of the result array,
+   this function can also store the data in associative indices
    by using the field names of the result set as keys.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If two or more columns of the result have the same name, the last
    column will take precedence and overwrite any previous data. To
    access multiple columns with the same name, the numerically indexed
    version of the row must be used.
-  </para>
+  </simpara>
   &database.field-case;
   &database.fetch-null;
  </refsect1>
@@ -48,20 +48,20 @@
     <varlistentry>
      <term><parameter>mode</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        This optional parameter is a constant indicating what type of array
        should be produced from the current row data. The possible values for
        this parameter are the constants <constant>MYSQLI_ASSOC</constant>,
        <constant>MYSQLI_NUM</constant>, or <constant>MYSQLI_BOTH</constant>.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        By using the <constant>MYSQLI_ASSOC</constant> constant this function
        will behave identically to the <function>mysqli_fetch_assoc</function>,
        while <constant>MYSQLI_NUM</constant> will behave identically to the
-       <function>mysqli_fetch_row</function> function. The final option 
+       <function>mysqli_fetch_row</function> function. The final option
        <constant>MYSQLI_BOTH</constant> will create a single array with the
        attributes of both.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -70,17 +70,17 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array representing the fetched row, &null; if there
    are no more rows in the result set, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
   &reftitle.examples;
   <example>
    <title><methodname>mysqli_result::fetch_array</methodname> example</title>
-   <para>&style.oop;</para>
+   <simpara>&style.oop;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -104,7 +104,7 @@ $row = $result->fetch_array(MYSQLI_BOTH);
 printf("%s (%s)\n", $row[0], $row["CountryCode"]);
 ]]>
    </programlisting>
-   <para>&style.procedural;</para>
+   <simpara>&style.procedural;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

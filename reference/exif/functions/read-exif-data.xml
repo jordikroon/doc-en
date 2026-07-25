@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
 <!-- splitted from ./en/functions/image.xml, last change in rev 1.78 -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.read-exif-data">
+<refentry xml:id="function.read-exif-data" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>read_exif_data</refname>
   <refpurpose>&Alias; <function>exif_read_data</function></refpurpose>

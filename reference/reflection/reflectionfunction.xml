@@ -10,10 +10,10 @@
 <!-- {{{ ReflectionFunction intro -->
   <section xml:id="reflectionfunction.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     The <classname>ReflectionFunction</classname> class reports
     information about a function.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -51,7 +51,7 @@
    </classsynopsis>
 <!-- }}} -->
   </section>
-  
+
 <!-- {{{ ReflectionFunction constants -->
   <section xml:id="reflectionfunction.constants">
    &reftitle.constants;
@@ -65,9 +65,9 @@
        <type>int</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Indicates deprecated functions.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
 

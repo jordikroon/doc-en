@@ -9,21 +9,21 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <constructorsynopsis role="DateTimeImmutable">
    <modifier>public</modifier> <methodname>DateTimeImmutable::__construct</methodname>
    <methodparam choice="opt"><type>string</type><parameter>datetime</parameter><initializer>"now"</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>DateTimeZone</type><type>null</type></type><parameter>timezone</parameter><initializer>&null;</initializer></methodparam>
   </constructorsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type class="union"><type>DateTimeImmutable</type><type>false</type></type><methodname>date_create_immutable</methodname>
    <methodparam choice="opt"><type>string</type><parameter>datetime</parameter><initializer>"now"</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>DateTimeZone</type><type>null</type></type><parameter>timezone</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns new a DateTimeImmutable object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -32,7 +32,7 @@
    <varlistentry>
     <term><parameter>datetime</parameter></term>
     <listitem>
-     <para>&date.formats.parameter;</para>
+     <simpara>&date.formats.parameter;</simpara>
      <simpara>
       Enter <literal>"now"</literal> here to obtain the current time when using
       the <parameter>timezone</parameter> parameter.
@@ -68,9 +68,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a new DateTimeImmutable instance.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -117,7 +117,7 @@
   &reftitle.examples;
   <example>
    <title><function>DateTimeImmutable::__construct</function> example</title>
-   <para>&style.oop;</para>
+   <simpara>&style.oop;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -137,7 +137,7 @@ echo $date->format('Y-m-d');
 2000-01-01
 ]]>
    </screen>
-   <para>&style.procedural;</para>
+   <simpara>&style.procedural;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -204,10 +204,10 @@ echo $date->format('Y-m-d H:i:sP') . "\n";
 ]]>
    </screen>
    <note>
-    <para>
+    <simpara>
      Rolled over dates can be detected by checking for warnings using
      <function>DateTimeImmutable::getLastErrors</function>.
-    </para>
+    </simpara>
    </note>
   </example>
 

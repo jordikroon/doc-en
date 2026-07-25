@@ -5,7 +5,7 @@
   <refname>iconv</refname>
   <refpurpose>Convert a string from one character encoding to another</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,10 +14,10 @@
    <methodparam><type>string</type><parameter>to_encoding</parameter></methodparam>
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Converts <parameter>string</parameter> from <parameter>from_encoding</parameter>
    to <parameter>to_encoding</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,18 +27,18 @@
     <varlistentry>
      <term><parameter>from_encoding</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The current encoding used to interpret <parameter>string</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>to_encoding</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The desired encoding of the result.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If the string <literal>//TRANSLIT</literal> is appended to
        <parameter>to_encoding</parameter>, then transliteration is activated. This
        means that when a character can't be represented in the target charset,
@@ -47,24 +47,24 @@
        characters that cannot be represented in the target charset are silently
        discarded. Otherwise, <constant>E_NOTICE</constant> is generated and the function
        will return &false;.
-      </para>
+      </simpara>
       <caution>
-       <para>
+       <simpara>
         If and how <literal>//TRANSLIT</literal> works exactly depends on the
         system's iconv() implementation (cf. <constant>ICONV_IMPL</constant>).
         Some implementations are known to ignore <literal>//TRANSLIT</literal>,
         so the conversion is likely to fail for characters which are illegal for
         the <parameter>to_encoding</parameter>.
-       </para>
+       </simpara>
       </caution>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The &string; to be converted.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -73,9 +73,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the converted string,&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -113,12 +113,12 @@ Notice: iconv(): Detected an illegal character in input string in .\iconv-exampl
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     The character encodings and options available depend on the installed implementation
     of iconv. If the argument to <parameter>from_encoding</parameter>
     or <parameter>to_encoding</parameter> is not supported on the current system, &false;
     will be returned.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

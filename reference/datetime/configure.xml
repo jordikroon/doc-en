@@ -8,10 +8,10 @@
 
  <note>
   <title>Getting the latest timezone database</title>
-  <para>
+  <simpara>
    The latest version of the timezone database can be installed via PECL's
    <link xlink:href="&url.pecl.package.get;timezonedb">timezonedb</link>.
-  </para>
+  </simpara>
  </note>
 
 </section>

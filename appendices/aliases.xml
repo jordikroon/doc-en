@@ -2,7 +2,7 @@
 <!-- $Revision$ -->
 <appendix xml:id="aliases" xmlns="http://docbook.org/ns/docbook">
  <title>List of Function Aliases</title>
- <para>
+ <simpara>
   There are quite a few functions in PHP which you can call with more
   than one name. In some cases there is no preferred name among the
   multiple ones, <function>is_int</function> and
@@ -13,7 +13,7 @@
   these kind of aliases, as they may be bound to obsolescence or
   renaming, which will lead to unportable script. This list is provided
   to help those who want to upgrade their old scripts to newer syntax.
- </para>
+ </simpara>
  <para>
   <table>
    <title>Aliases</title>

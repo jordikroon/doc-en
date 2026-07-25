@@ -9,20 +9,20 @@
   where token <code>==</code> is internally represented by <constant>T_IS_EQUAL</constant>.
  </para>
 
- <para>
+ <simpara>
   The following table lists all tokens. They are also available as PHP constants.
- </para>
+ </simpara>
 
  <note>
   <title>Usage of T_* constants</title>
-  <para>
+  <simpara>
    T_* constants values are automatically generated based on PHP's underlying parser infrastructure.
    This means that the concrete value of a token may change between two PHP
    versions.
    This means that your code should never rely directly
    on the original T_* values taken from PHP version X.Y.Z, to provide some compatibility
    across multiple PHP versions.
-  </para>
+  </simpara>
 
   <para>
    To make use of T_* constants across multiple PHP versions, undefined constants
@@ -1370,9 +1370,9 @@ defined('T_FN') || define('T_FN', 10001);
    </tbody>
   </tgroup>
  </table>
- <para>
+ <simpara>
   See also <function>token_name</function>.
- </para>
+ </simpara>
 </appendix>
 <!-- Keep this comment at the end of the file
 Local variables:

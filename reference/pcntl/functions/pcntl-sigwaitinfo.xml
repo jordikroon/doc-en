@@ -5,7 +5,7 @@
   <refname>pcntl_sigwaitinfo</refname>
   <refpurpose>Waits for signals</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,13 +13,13 @@
    <methodparam><type>array</type><parameter>signals</parameter></methodparam>
    <methodparam choice="opt"><type>array</type><parameter role="reference">info</parameter><initializer>[]</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    The <function>pcntl_sigwaitinfo</function> function suspends execution of the
    calling script until one of the signals given in <parameter>signals</parameter>
    are delivered. If one of the signal is already pending (e.g. blocked by
    <function>pcntl_sigprocmask</function>),
    <function>pcntl_sigwaitinfo</function> will return immediately.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,18 +29,18 @@
     <varlistentry>
      <term><parameter>signals</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Array of signals to wait for.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>info</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <parameter>info</parameter> parameter is set to an array containing
        information about the signal.
-      </para>
+      </simpara>
       <para>
        The following elements are set for all signals:
        <simplelist>
@@ -83,9 +83,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a signal number on success,&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -102,21 +102,21 @@
      <row>
       <entry>8.4.0</entry>
       <entry>
-       A <classname>ValueError</classname> is thrown if <parameter>signal</parameter>
+       A <exceptionname>ValueError</exceptionname> is thrown if <parameter>signal</parameter>
        is empty.
       </entry>
      </row>
      <row>
       <entry>8.4.0</entry>
       <entry>
-       A <classname>TypeError</classname> is thrown if <parameter>signal</parameter>
+       A <exceptionname>TypeError</exceptionname> is thrown if <parameter>signal</parameter>
        value is not an <type>int</type>.
       </entry>
      </row>
      <row>
       <entry>8.4.0</entry>
       <entry>
-       A <classname>ValueError</classname> is thrown if <parameter>signal</parameter>
+       A <exceptionname>ValueError</exceptionname> is thrown if <parameter>signal</parameter>
        value is invalid.
       </entry>
      </row>

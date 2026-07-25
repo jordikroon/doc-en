@@ -12,11 +12,11 @@
    <type class="union"><type>string</type><type>false</type></type><methodname>session_cache_limiter</methodname>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>value</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>session_cache_limiter</function> returns the name of the
    current cache limiter.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The cache limiter defines which cache control HTTP headers are sent to
    the client.  These headers determine the rules by which the page content
    may be cached by the client and intermediate proxies.  Setting the cache
@@ -24,24 +24,24 @@
    A value of <literal>public</literal> permits caching by proxies and the
    client, whereas <literal>private</literal> disallows caching by proxies
    and permits the client to cache the contents.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    In <literal>private</literal> mode, the Expire header sent to the client
    may cause confusion for some browsers, including <productname>Mozilla</productname>.
    You can avoid this problem by using <literal>private_no_expire</literal> mode. The
    <literal>Expire</literal> header is never sent to the client in this mode.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Setting the cache limiter to <literal>''</literal> will turn off automatic sending
    of cache headers entirely.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The cache limiter is reset to the default value stored in
    <link linkend="ini.session.cache-limiter">session.cache_limiter</link>
    at request startup time. Thus, you need to call
    <function>session_cache_limiter</function> for every
    request (and before <function>session_start</function> is called).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -51,10 +51,10 @@
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If <parameter>value</parameter> is specified and not &null;, the name of the
        current cache limiter is changed to the new value.
-      </para>
+      </simpara>
       <table>
        <title>Possible values</title>
        <tgroup cols="2">
@@ -123,10 +123,10 @@ Pragma: no-cache
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the name of the current cache limiter.
    On failure to change the value, &false; is returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

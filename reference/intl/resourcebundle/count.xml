@@ -9,23 +9,23 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="ResourceBundle">
    <modifier>public</modifier> <type>int</type><methodname>ResourceBundle::count</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type>int</type><methodname>resourcebundle_count</methodname>
    <methodparam><type>ResourceBundle</type><parameter>bundle</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get the number of elements in the bundle.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -35,9 +35,9 @@
     <varlistentry>
      <term><parameter>bundle</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <classname>ResourceBundle</classname> object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -47,9 +47,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns number of elements in the bundle.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

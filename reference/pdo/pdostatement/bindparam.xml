@@ -24,14 +24,14 @@
    reference and will only be evaluated at the time that
    <methodname>PDOStatement::execute</methodname> is called.
   </para>
-  <para>
+  <simpara>
    Most parameters are input parameters, that is, parameters that are used
    in a read-only fashion to build up the query (but may nonetheless be cast
    according to <parameter>type</parameter>).  Some drivers support the
    invocation of stored procedures that return data as output parameters,
    and some also as input/output parameters that both send in data and are
    updated to receive it.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -42,52 +42,52 @@
     <varlistentry>
      <term><parameter>param</parameter></term>
       <listitem>
-       <para>
+       <simpara>
         Parameter identifier. For a prepared statement using named
         placeholders, this will be a parameter name of the form
         <varname>:name</varname>. For a prepared statement using
         question mark placeholders, this will be the 1-indexed position of
-        the parameter. 
-       </para>
+        the parameter.
+       </simpara>
       </listitem>
      </varlistentry>
     <varlistentry>
      <term><parameter>var</parameter></term>
       <listitem>
-       <para>
+       <simpara>
         Name of the PHP variable to bind to the SQL statement parameter.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
     <varlistentry>
      <term><parameter>type</parameter></term>
       <listitem>
-       <para>
+       <simpara>
         Explicit data type for the parameter using the <link linkend="pdo.constants"><literal>PDO::PARAM_*</literal>
         constants</link>.
-        To return an INOUT parameter from a stored procedure, 
+        To return an INOUT parameter from a stored procedure,
         use the bitwise OR operator to set the <constant>PDO::PARAM_INPUT_OUTPUT</constant> bits
         for the <parameter>type</parameter> parameter.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
     <varlistentry>
      <term><parameter>maxLength</parameter></term>
       <listitem>
-       <para>
+       <simpara>
         Length of the data type. To indicate that a parameter is an OUT
         parameter from a stored procedure, you must explicitly set the
         length.
         Meaningful only when <parameter>type</parameter> parameter is <constant>PDO::PARAM_INPUT_OUTPUT</constant>.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
     <varlistentry>
      <term><parameter>driverOptions</parameter></term>
      <listitem>
-      <para>
-         
-      </para>
+      <simpara>
+
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -96,9 +96,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

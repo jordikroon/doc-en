@@ -122,11 +122,11 @@ Dynamic arrays:
   </screen>
  </example>
  <note>
-  <para>
+  <simpara>
    <literal>foreach</literal> does not support the ability to
    suppress error messages using the
    <link linkend="language.operators.errorcontrol"><literal>@</literal></link>.
-  </para>
+  </simpara>
  </note>
 
  <sect2 xml:id="control-structures.foreach.list">

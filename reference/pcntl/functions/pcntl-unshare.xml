@@ -4,19 +4,19 @@
   <refname>pcntl_unshare</refname>
   <refpurpose>Dissociates parts of the process execution context</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>bool</type><methodname>pcntl_unshare</methodname>
    <methodparam><type>int</type><parameter>flags</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pcntl_unshare</function> allows a process to disassociate parts of its execution context that are
    currently being shared with other processes.
    The main use of <function>pcntl_unshare</function> is to allow a process to control
    its shared execution context without creating a new process.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -47,10 +47,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns <literal>0</literal> on success, <literal>-1</literal> otherwise.
    On failure it sets an error code, that can be retrieved with <function>pcntl_get_last_error</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

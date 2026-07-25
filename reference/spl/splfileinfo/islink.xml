@@ -12,10 +12,10 @@
    <modifier>public</modifier> <type>bool</type><methodname>SplFileInfo::isLink</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Use this method to check if the file referenced by the SplFileInfo object
    is a link.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the file is a link, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

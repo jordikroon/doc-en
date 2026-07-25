@@ -3,7 +3,7 @@
 <!-- splitted from ./en/functions/pgsql.xml, last change in rev 1.2 -->
 <refentry xml:id="function.pg-free-result" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
-  <refname>pg_free_result</refname> 
+  <refname>pg_free_result</refname>
   <refpurpose>Free result memory</refpurpose>
  </refnamediv>
 
@@ -13,19 +13,19 @@
    <type>bool</type><methodname>pg_free_result</methodname>
    <methodparam><type>PgSql\Result</type><parameter>result</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_free_result</function> frees the memory and data associated with the
    specified <classname>PgSql\Result</classname> instance.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This function need only be called if memory
-   consumption during script execution is a problem.   Otherwise, all result memory will 
+   consumption during script execution is a problem.   Otherwise, all result memory will
    be automatically freed when the script ends.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     This function used to be called <function>pg_freeresult</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -45,9 +45,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

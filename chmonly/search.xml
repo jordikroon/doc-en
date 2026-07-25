@@ -3,18 +3,18 @@
  <chapter xml:id="chm.search" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
   <title>The Full Text Search</title>
 
-  <para>
+  <simpara>
    This edition of the PHP Manual includes an advanced full text
    search possibility provided by the viewer application. This enables
    users to search through every word in the help file to find a
    match. For example, if a user does a full-text search on the word
-   "Apache", every topic that contains the word "Apache" will be listed. 
+   "Apache", every topic that contains the word "Apache" will be listed.
    Advanced full-text search allows a user to search using boolean,
    wildcard, and nested expressions. A user can also limit the search
    to previous results, match similar words, or search topic titles only.
-  </para>
-  
-  <para>
+  </simpara>
+
+  <simpara>
    The usage of the search feature is fairly straightforward. Click on
    the search tab, type in the desired words and press ENTER (or click
    on "List Topics"). Then you'll receive a list of matches from the
@@ -24,27 +24,27 @@
    (Title, Location and Rank) to sort the topic list. The default order
    is by Rank. You can also adjust some parameters at the bottom of this
    tab.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    The words found are highlighted on the current page in the Topic pane
    by default. You can turn off this feature by choosing the "Search
    Highlight Off" menu item in the Options menu. To can get this feature
    back similarly. If you are viewing a long topic, only the first 500
    instances of a search word or phrase will be highlighted, due to a
-   limitation of the viewer. 
-  </para>
+   limitation of the viewer.
+  </simpara>
 
   <sect1 xml:id="chm.search.rules">
    <title>General searching rules</title>
-   <para>
+   <simpara>
     A basic search consists of the word or phrase you want to find. You
     can use wildcard expressions, nested expressions, boolean operators,
     similar word matches, a previous results list, or topic titles to further
     define your search.
-   </para>
+   </simpara>
    <para>
-    The basic rules for formulating queries are as follows: 
+    The basic rules for formulating queries are as follows:
     <itemizedlist>
      <listitem>
       <simpara>Searches are not case-sensitive, so you can type your search in uppercase or lowercase characters.</simpara>
@@ -55,13 +55,13 @@
        You cannot search for single letters (a, b, c, etc.) and common
        words, like: an, and, as, at, be, but, by, do, for, from, have, he,
        in, it, not, of, on, or, she, that, the, there, they, this, to, we,
-       which, with, you. 
+       which, with, you.
       </simpara>
      </listitem>
      <listitem>
       <simpara>
        Punctuation marks such as the period (.), colon (:), semicolon (;), comma (,),
-       and hyphen (-) are ignored during a search. 
+       and hyphen (-) are ignored during a search.
       </simpara>
      </listitem>
      <listitem>
@@ -71,17 +71,17 @@
    </para>
    <para>
     <note>
-     <para>
+     <simpara>
       If you are searching for a file name with an extension, you should group
       the entire string in double quotes, ("filename.ext"). Otherwise, the period
       will break the file name into two separate terms. The default operation
       between terms is AND, so you will create the logical equivalent to
       "filename AND ext."
-     </para>
+     </simpara>
     </note>
    </para>
   </sect1>
-  
+
   <sect1 xml:id="chm.search.words">
    <title>Searching for words or phrases</title>
    <para>
@@ -140,7 +140,7 @@
    </para>
    <para>
     <note>
-     <para>
+     <simpara>
       Select the Match similar words check box to include minor grammatical variations
       for the phrase you search. This feature only locates variations of the word with
       common suffixes. For example, a search on the word "add" will find "added," but
@@ -148,11 +148,11 @@
       If you do a titles-only search, variations in titles will be matched. If you use
       quotes (or any other query operator) any variation of the word can appear; for
       example, "stemmed search" will also match "stemming search".
-     </para>
+     </simpara>
     </note>
    </para>
   </sect1>
-  
+
   <sect1 xml:id="chm.search.terms">
    <title>Defining search terms</title>
    <para>
@@ -198,24 +198,24 @@
    </para>
    <para>
     <note>
-     <para>
+     <simpara>
       The |, &amp;, and ! characters can also be used in place of OR AND and
       NOT respectively. This may not work if you use a very old version of the
       viewer.
-     </para>
+     </simpara>
     </note>
    </para>
   </sect1>
 
   <sect1 xml:id="chm.search.nested">
    <title>Using nested expressions when searching</title>
-   <para>
+   <simpara>
     Nested expressions allow you to create complex searches for information.
     For example, "html AND ((smtp OR pop3) NEAR mail)" finds topics
     containing the word "html" along with the words "smtp" and "mail"
     close together, or containing "html" along with the words "pop3" and
     "mail" close together.
-   </para>
+   </simpara>
    <para>
     The basic rules for searching help topics using nested expressions are
     as follows:
@@ -289,7 +289,7 @@
    </para>
   </sect1>
   -->
-  
+
  </chapter>
 
 <!-- Keep this comment at the end of the file

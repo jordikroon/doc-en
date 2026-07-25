@@ -11,10 +11,10 @@
    <modifier>public</modifier> <type>bool</type><methodname>ReflectionEnum::isBacked</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    A Backed Enum is one that has a native backing scalar equivalent, either a
    <type>string</type> or an <type>int</type>.  Not all Enums are backed.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &true; if the Enum has a backing scalar, &false; if not.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

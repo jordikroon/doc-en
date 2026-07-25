@@ -5,114 +5,114 @@
  <note>
   <simpara>See also the <exceptionname>Exception</exceptionname> class</simpara>
  </note>
- <para>
+ <simpara>
   PHP has an exception model similar to that of other programming
   languages. An exception can be &throw;n, and caught ("&catch;ed") within
   PHP. Code may be surrounded in a &try; block, to facilitate the catching
   of potential exceptions. Each &try; must have at least one corresponding
   &catch; or &finally; block.
- </para>
- <para>
+ </simpara>
+ <simpara>
   If an exception is thrown and its current function scope has no &catch;
   block, the exception will "bubble up" the call stack to the calling
   function until it finds a matching &catch; block. All &finally; blocks it encounters
   along the way will be executed. If the call stack is unwound all the way to the
   global scope without encountering a matching &catch; block, the program will
   terminate with a fatal error unless a global exception handler has been set.
- </para>
+ </simpara>
  <para>
   The thrown object must be an &instanceof; <interfacename>Throwable</interfacename>.
   Trying to throw an object that is not will result in a PHP Fatal Error.
  </para>
- <para>
+ <simpara>
   As of PHP 8.0.0, the &throw; keyword is an expression and may be used in any expression
   context. In prior versions it was a statement and was required to be on its own line.
- </para>
+ </simpara>
 
   <sect1 annotations="chunk:false" xml:id="language.exceptions.catch">
    <title><literal>catch</literal></title>
-   <para>
+   <simpara>
     A &catch; block defines how to respond to a thrown exception. A &catch;
     block defines one or more types of exception or error it can handle, and
     optionally a variable to which to assign the exception. (The variable was
     required prior to PHP 8.0.0.)  The first &catch; block a thrown exception
     or error encounters that matches the type of the thrown object will handle
     the object.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     Multiple &catch; blocks can be used to catch different classes of
     exceptions. Normal execution (when no exception is thrown within the &try;
     block) will continue after that last &catch; block defined in sequence.
     Exceptions can be &throw;n (or re-thrown) within a &catch; block. If not,
     execution will continue after the &catch; block that was triggered.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     When an exception is thrown, code following the statement will not be
     executed, and PHP will attempt to find the first matching &catch; block.
     If an exception is not caught, a PHP Fatal Error will be issued with an
     "<literal>Uncaught Exception ...</literal>" message, unless a handler has
     been defined with <function>set_exception_handler</function>.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     As of PHP 7.1.0, a &catch; block may specify multiple exceptions
     using the pipe (<literal>|</literal>) character. This is useful for when
     different exceptions from different class hierarchies are handled the
     same.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     As of PHP 8.0.0, the variable name for a caught exception is optional.
     If not specified, the &catch; block will still execute but will not
     have access to the thrown object.
-   </para>
+   </simpara>
   </sect1>
 
   <sect1 annotations="chunk:false" xml:id="language.exceptions.finally">
    <title><literal>finally</literal></title>
-   <para>
+   <simpara>
     A &finally; block may also be specified after or
     instead of &catch; blocks. Code within the &finally; block will always be
     executed after the &try; and &catch; blocks, regardless of whether an
     exception has been thrown, and before normal execution resumes.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     One notable interaction is between the &finally; block and a &return; statement.
     If a &return; statement is encountered inside either the &try; or the &catch; blocks,
     the &finally; block will still be executed. Moreover, the &return; statement is
     evaluated when encountered, but the result will be returned after the &finally; block
     is executed. Additionally, if the &finally; block also contains a &return; statement,
     the value from the &finally; block is returned.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     Another notable interaction is between an exception thrown from within a &try; block,
     and an exception thrown from within a &finally; block. If both blocks throw an exception,
     then the exception thrown from the &finally; block will be the one that is propagated,
     and the exception thrown from the &try; block will be used as its previous exception.
-   </para>
+   </simpara>
   </sect1>
 
  <sect1 annotations="chunk:false" xml:id="language.exceptions.exception-handler">
   <title>Global exception handler</title>
-  <para>
+  <simpara>
    If an exception is allowed to bubble up to the global scope, it may be caught
    by a global exception handler if set. The <function>set_exception_handler</function>
    function can set a function that will be called in place of a &catch; block if no
    other block is invoked. The effect is essentially the same as if the entire program
    were wrapped in a &try;-&catch; block with that function as the &catch;.
-  </para>
+  </simpara>
  </sect1>
 
  <sect1 annotations="chunk:false" xml:id="language.exceptions.notes">
    &reftitle.notes;
 
    <note>
-    <para>
+    <simpara>
      Internal PHP functions mainly use
      <link linkend="ini.error-reporting">Error reporting</link>, only modern
      <link linkend="language.oop5">Object-oriented</link>
      extensions use exceptions. However, errors can be easily translated to
      exceptions with <link linkend="class.errorexception">ErrorException</link>.
      This technique only works with non-fatal errors, however.
-    </para>
+    </simpara>
     <example>
      <title>Converting error reporting to exceptions</title>
      <programlisting role="php" annotations="non-interactive">
@@ -128,11 +128,11 @@ set_error_handler('exceptions_error_handler');
     </example>
    </note>
    <tip>
-    <para>
+    <simpara>
      The <link linkend="intro.spl">Standard PHP Library (SPL)</link> provides
      a good number of <link linkend="spl.exceptions">built-in
      exceptions</link>.
-    </para>
+    </simpara>
    </tip>
  </sect1>
 
@@ -307,7 +307,7 @@ string(11) "MyException"
    </example>
    <example>
     <title>Omitting the caught variable</title>
-    <para>Only permitted in PHP 8.0.0 and later.</para>
+    <simpara>Only permitted in PHP 8.0.0 and later.</simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -334,7 +334,7 @@ A SpecificException was thrown, but we don't care about the details.
    </example>
    <example>
     <title>Throw as an expression</title>
-    <para>Only permitted in PHP 8.0.0 and later.</para>
+    <simpara>Only permitted in PHP 8.0.0 and later.</simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -445,11 +445,11 @@ class Exception implements Throwable
    to provide a custom output when the object is presented as a string.
   </para>
   <note>
-   <para>
+   <simpara>
     Exceptions cannot be cloned. Attempting to <link
     linkend="language.oop5.cloning">clone</link> an Exception will result in a
     fatal <constant>E_ERROR</constant> error.
-   </para>
+   </simpara>
   </note>
   <example>
    <title>Extending the Exception class</title>
@@ -567,7 +567,7 @@ var_dump($o); // TestException
  </sect1>
 
  </chapter>
- 
+
 <!-- Keep this comment at the end of the file
 Local variables:
 mode: sgml

@@ -13,16 +13,16 @@
    <type>int</type><methodname>pg_transaction_status</methodname>
    <methodparam><type>PgSql\Connection</type><parameter>connection</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
     Returns the current in-transaction status of the server.
-  </para>
+  </simpara>
   <caution>
-    <para>
+    <simpara>
       <function>pg_transaction_status</function> will give incorrect results when using
       a PostgreSQL 7.3 server that has the parameter <literal>autocommit</literal>
       set to off.  The server-side autocommit feature has been
       deprecated and does not exist in later server versions.
-    </para>
+    </simpara>
   </caution>
  </refsect1>
 
@@ -42,14 +42,14 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>The status can be <constant>PGSQL_TRANSACTION_IDLE</constant> (currently idle),
+  <simpara>The status can be <constant>PGSQL_TRANSACTION_IDLE</constant> (currently idle),
     <constant>PGSQL_TRANSACTION_ACTIVE</constant> (a command is in progress),
     <constant>PGSQL_TRANSACTION_INTRANS</constant> (idle, in a valid transaction block),
     or <constant>PGSQL_TRANSACTION_INERROR</constant> (idle, in a failed transaction block).
     <constant>PGSQL_TRANSACTION_UNKNOWN</constant> is reported if the connection is bad.
     <constant>PGSQL_TRANSACTION_ACTIVE</constant> is reported only when a query
     has been sent to the server and not yet completed.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -68,7 +68,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -85,7 +85,7 @@
       echo 'Connection is currently idle';
   } else {
       echo 'Connection is in a transaction state';
-  }    
+  }
 ?>
 ]]>
     </programlisting>

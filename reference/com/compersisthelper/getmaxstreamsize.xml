@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>int</type><methodname>COMPersistHelper::GetMaxStreamSize</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Retrieves the size of the stream (in bytes) needed to save the object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the size of the stream (in bytes) needed to save the object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

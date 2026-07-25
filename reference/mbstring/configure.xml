@@ -2,12 +2,12 @@
 <!-- $Revision$ -->
 <section xml:id="mbstring.installation" xmlns="http://docbook.org/ns/docbook">
   &reftitle.install;
-  <para>
+  <simpara>
    <literal>mbstring</literal> is a non-default extension. This means it
    is not enabled by default. You must explicitly enable the module with
    the <literal>configure</literal> option. See the
    <link linkend="install">Install</link> section for details.
-  </para>
+  </simpara>
   <simpara>
    The following configure options are related to the
    <literal>mbstring</literal> module.
@@ -15,37 +15,37 @@
   <para>
    <itemizedlist>
     <listitem>
-     <para>
+     <simpara>
       <option role="configure">--enable-mbstring</option>: Enable
       <literal>mbstring</literal> functions. This option is
       required to use <literal>mbstring</literal> functions.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       <productname>libmbfl</productname> is necessary for <literal>mbstring</literal>.
       <productname>libmbfl</productname> is bundled with <literal>mbstring</literal>.
       Prior to PHP 7.3.0, if <productname>libmbfl</productname> is already installed on the system,
-      <option role="configure">--with-libmbfl[=DIR]</option> can be specified to use 
+      <option role="configure">--with-libmbfl[=DIR]</option> can be specified to use
       the installed library.
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       <option role="configure">--disable-mbregex</option>: Disable
       regular expression functions with multibyte character support.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       <productname>Oniguruma</productname> is necessary for the regular
       expression functions with multibyte character support.
       As of PHP 7.4.0, pkg-config is used to detect the libonig library.
       Prior to PHP 7.4.0, <productname>Oniguruma</productname> was bundled with
       <literal>mbstring</literal>, but it was possible to build against an already
       installed libonig by passing <option role="configure">--with-onig[=DIR]</option>.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       It is possible to disable the multibyte regex backtrack
       check by specifying <option
       role="configure">--disable-mbregex-backtrack</option>.
-     </para>
+     </simpara>
     </listitem>
    </itemizedlist>
   </para>

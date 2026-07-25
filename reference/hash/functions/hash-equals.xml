@@ -13,10 +13,10 @@
    <methodparam><modifier role="attribute">#[\SensitiveParameter]</modifier><type>string</type><parameter>known_string</parameter></methodparam>
    <methodparam><modifier role="attribute">#[\SensitiveParameter]</modifier><type>string</type><parameter>user_string</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks whether two strings are equal without leaking information about the
    contents of <parameter>known_string</parameter> via the execution time.
-  </para>
+  </simpara>
   <para>
    This function can be used to mitigate timing attacks. Performing a regular
    comparison with <code>===</code> will take more or less time to execute
@@ -25,10 +25,10 @@
    the contents of the secret <parameter>known_string</parameter>.
   </para>
   <caution>
-   <para>
+   <simpara>
     It is important to provide the user-supplied string as the second
     parameter, rather than the first.
-   </para>
+   </simpara>
   </caution>
  </refsect1>
 
@@ -38,17 +38,17 @@
    <varlistentry>
     <term><parameter>known_string</parameter></term>
     <listitem>
-     <para>
+     <simpara>
        The known &string; that must be kept secret.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>user_string</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The user-supplied &string; to compare against.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -56,9 +56,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
     Returns &true; when the two strings are equal, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -97,11 +97,11 @@ The value is correctly signed.
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     Both arguments must be of the same length to be compared successfully.
     When arguments of differing length are supplied, &false; is returned immediately and
     the length of the known string may be leaked in case of a timing attack.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

@@ -8,29 +8,29 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="IntlCalendar">
    <modifier>public</modifier> <type>true</type><methodname>IntlCalendar::clear</methodname>
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>field</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type>true</type><methodname>intlcal_clear</methodname>
    <methodparam><type>IntlCalendar</type><parameter>calendar</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>field</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Clears either all of the fields or a specific field. A cleared field is
    marked as unset, giving it the lowest priority against overlapping fields or
    even default values when calculating the time. Additionally, its value is set
    to <literal>0</literal>, though given the fieldʼs low priority, its value may
    have been internally set to another value by the time the field has finished
    been queried.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -53,9 +53,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

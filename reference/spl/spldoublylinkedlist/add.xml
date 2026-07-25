@@ -14,12 +14,12 @@
    <methodparam><type>mixed</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
 
-  <para>
+  <simpara>
    Insert the value <parameter>value</parameter> at the
    specified <parameter>index</parameter>, shuffling the
    previous value at that index (and all subsequent values)
    up through the list.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,17 +29,17 @@
     <varlistentry>
      <term><parameter>index</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The index where the new value is to be inserted.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The new value for the <parameter>index</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -48,18 +48,18 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws <classname>OutOfRangeException</classname> when 
-   <parameter>index</parameter> is out of bounds or when 
+  <simpara>
+   Throws <exceptionname>OutOfRangeException</exceptionname> when
+   <parameter>index</parameter> is out of bounds or when
    <parameter>index</parameter> cannot be parsed as an integer.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

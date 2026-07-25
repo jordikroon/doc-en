@@ -13,9 +13,9 @@
    <methodparam><type>XMLParser</type><parameter>parser</parameter></methodparam>
    <methodparam><type>int</type><parameter>option</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets an option value from an XML parser.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -48,22 +48,22 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the option's value.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws a <classname>ValueError</classname> when an invalid value is passed
+  <simpara>
+   Throws a <exceptionname>ValueError</exceptionname> when an invalid value is passed
    to <parameter>option</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Prior to PHP 8.0.0, passing an invalid value to
    <parameter>option</parameter> generated a <constant>E_WARNING</constant>
    as well as making the function return &false;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -87,7 +87,7 @@
      <row>
       <entry>8.0.0</entry>
       <entry>
-       A <classname>ValueError</classname> is now thrown if
+       A <exceptionname>ValueError</exceptionname> is now thrown if
        <parameter>option</parameter> is invalid.
       </entry>
      </row>

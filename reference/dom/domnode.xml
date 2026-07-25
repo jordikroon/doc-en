@@ -3,21 +3,21 @@
 <reference xml:id="class.domnode" role="class" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
  <title>The DOMNode class</title>
  <titleabbrev>DOMNode</titleabbrev>
- 
+
  <partintro>
- 
-<!-- {{{ DOMNode intro 
+
+<!-- {{{ DOMNode intro
   <section xml:id="domnode.intro">
    &reftitle.intro;
    <para>
-    
+
    </para>
   </section>
  }}} -->
- 
+
   <section xml:id="domnode.synopsis">
    &reftitle.classsynopsis;
- 
+
 <!-- {{{ Synopsis -->
    <classsynopsis class="class">
     <ooclass>
@@ -179,7 +179,7 @@
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.domnode')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[@role='DOMNode'])"/>
    </classsynopsis>
 <!-- }}} -->
- 
+
   </section>
 
   <section xml:id="domnode.constants">
@@ -257,134 +257,134 @@
     <varlistentry xml:id="domnode.props.nodename">
      <term><varname>nodeName</varname></term>
      <listitem>
-      <para>Returns the most accurate name for the current node type</para>
+      <simpara>Returns the most accurate name for the current node type</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domnode.props.nodevalue">
      <term><varname>nodeValue</varname></term>
      <listitem>
-      <para>
+      <simpara>
        The value of this node, depending on its type.
        Contrary to the W3C specification, the node value of
        <classname>DOMElement</classname> nodes is equal to <link linkend="domnode.props.textcontent">DOMNode::textContent</link> instead
        of &null;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domnode.props.nodetype">
      <term><varname>nodeType</varname></term>
      <listitem>
-      <para>Gets the type of the node. One of the predefined <constant>XML_<replaceable>*</replaceable>_NODE</constant> constants</para>
+      <simpara>Gets the type of the node. One of the predefined <constant>XML_<replaceable>*</replaceable>_NODE</constant> constants</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domnode.props.parentnode">
      <term><varname>parentNode</varname></term>
      <listitem>
-      <para>The parent of this node. If there is no such node, this returns &null;.</para>
+      <simpara>The parent of this node. If there is no such node, this returns &null;.</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domnode.props.parentelement">
      <term><varname>parentElement</varname></term>
      <listitem>
-      <para>The parent element of this element. If there is no such element, this returns &null;.</para>
+      <simpara>The parent element of this element. If there is no such element, this returns &null;.</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domnode.props.childnodes">
      <term><varname>childNodes</varname></term>
      <listitem>
-      <para>
+      <simpara>
        A <classname>DOMNodeList</classname> that contains all
        children of this node. If there are no children, this is an empty
        <classname>DOMNodeList</classname>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domnode.props.firstchild">
      <term><varname>firstChild</varname></term>
      <listitem>
-      <para>
+      <simpara>
        The first child of this node. If there is no such node, this
        returns &null;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domnode.props.lastchild">
      <term><varname>lastChild</varname></term>
      <listitem>
-      <para>The last child of this node. If there is no such node, this returns &null;.</para>
+      <simpara>The last child of this node. If there is no such node, this returns &null;.</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domnode.props.previoussibling">
      <term><varname>previousSibling</varname></term>
      <listitem>
-      <para>
+      <simpara>
        The node immediately preceding this node. If there is no such
        node, this returns &null;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domnode.props.nextsibling">
      <term><varname>nextSibling</varname></term>
      <listitem>
-      <para>
+      <simpara>
        The node immediately following this node. If there is no such
        node, this returns &null;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domnode.props.attributes">
      <term><varname>attributes</varname></term>
      <listitem>
-      <para>
+      <simpara>
        A <classname>DOMNamedNodeMap</classname> containing the
        attributes of this node (if it is a <classname>DOMElement</classname>)
        or &null; otherwise.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domnode.props.isconnected">
      <term><varname>isConnected</varname></term>
      <listitem>
-      <para>Whether the node is connected to a document</para>
+      <simpara>Whether the node is connected to a document</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domnode.props.ownerdocument">
      <term><varname>ownerDocument</varname></term>
      <listitem>
-      <para>The <classname>DOMDocument</classname> object associated with this node, or &null; if this node does not have an associated document (e.g. if it is detached, or if it is a <classname>DOMDocument</classname>).</para>
+      <simpara>The <classname>DOMDocument</classname> object associated with this node, or &null; if this node does not have an associated document (e.g. if it is detached, or if it is a <classname>DOMDocument</classname>).</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domnode.props.namespaceuri">
      <term><varname>namespaceURI</varname></term>
      <listitem>
-      <para>The namespace URI of this node, or &null; if it is unspecified.</para>
+      <simpara>The namespace URI of this node, or &null; if it is unspecified.</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domnode.props.prefix">
      <term><varname>prefix</varname></term>
      <listitem>
-      <para>The namespace prefix of this node.</para>
+      <simpara>The namespace prefix of this node.</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domnode.props.localname">
      <term><varname>localName</varname></term>
      <listitem>
-      <para>Returns the local part of the qualified name of this node.</para>
+      <simpara>Returns the local part of the qualified name of this node.</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domnode.props.baseuri">
      <term><varname>baseURI</varname></term>
      <listitem>
-      <para>
+      <simpara>
        The absolute base URI of this node or &null; if the implementation
        wasn't able to obtain an absolute URI.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domnode.props.textcontent">
      <term><varname>textContent</varname></term>
      <listitem>
-      <para>The text content of this node and its descendants.</para>
+      <simpara>The text content of this node and its descendants.</simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -468,11 +468,11 @@
    </para>
   </section>
 <!-- }}} -->
- 
+
  </partintro>
- 
+
  &reference.dom.entities.domnode;
- 
+
 </reference>
 <!-- Keep this comment at the end of the file
 Local variables:

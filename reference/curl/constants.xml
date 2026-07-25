@@ -3,11 +3,11 @@
 <appendix xml:id="curl.constants" xmlns="http://docbook.org/ns/docbook">
  &reftitle.constants;
  &extension.constants;
- <para>
+ <simpara>
   Descriptions and uses for these constants are described within the
   <function>curl_setopt</function>, <function>curl_multi_setopt</function> and
   <function>curl_getinfo</function> documentation.
- </para>
+ </simpara>
  <variablelist role="constant_list">
   <varlistentry xml:id="constant.curlaltsvc-h1">
    <term>

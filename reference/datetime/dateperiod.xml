@@ -10,13 +10,13 @@
 <!-- {{{ DatePeriod intro -->
   <section xml:id="dateperiod.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Represents a date period.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     A date period allows iteration over a set of dates and times, recurring at
     regular intervals, over a given period.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -110,7 +110,7 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>Exclude start date, used in <function>DatePeriod::__construct</function>.</para>
+      <simpara>Exclude start date, used in <function>DatePeriod::__construct</function>.</simpara>
      </listitem>
     </varlistentry>
 
@@ -120,7 +120,7 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>Include end date, used in <function>DatePeriod::__construct</function>.</para>
+      <simpara>Include end date, used in <function>DatePeriod::__construct</function>.</simpara>
      </listitem>
     </varlistentry>
 
@@ -134,10 +134,10 @@
     <varlistentry xml:id="dateperiod.props.recurrences">
      <term><varname>recurrences</varname></term>
      <listitem>
-      <para>
+      <simpara>
        The minimum amount of instances as returned by the iterator.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If the number of recurrences has been explicitly passed through the
        <varname>recurrences</varname> parameter in the constructor of the
        <classname>DatePeriod</classname> instance, then this property contains
@@ -145,8 +145,8 @@
        through <constant>DatePeriod::EXCLUDE_START_DATE</constant>,
        <emphasis>plus</emphasis> one if the end date has been enabled through
        <constant>DatePeriod::INCLUDE_END_DATE</constant>.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If the number of recurrences has not been explicitly passed, then this
        property contains the minimum number of returned instances. This would
        be <literal>0</literal>, <emphasis>plus</emphasis> one if the start date
@@ -154,7 +154,7 @@
        <constant>DatePeriod::EXCLUDE_START_DATE</constant>,
        <emphasis>plus</emphasis> one if the end date has been enabled through
        <constant>DatePeriod::INCLUDE_END_DATE</constant>.
-      </para>
+      </simpara>
       <para>
        <informalexample>
         <programlisting role="php">
@@ -203,49 +203,49 @@ echo $period->recurrences, "\n";
     <varlistentry xml:id="dateperiod.props.include-end-date">
      <term><varname>include_end_date</varname></term>
      <listitem>
-      <para>
+      <simpara>
        Whether to include the end date in the set of recurring dates or not.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="dateperiod.props.include-start-date">
      <term><varname>include_start_date</varname></term>
      <listitem>
-      <para>
+      <simpara>
        Whether to include the start date in the set of recurring dates or not.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="dateperiod.props.start">
      <term><varname>start</varname></term>
      <listitem>
-      <para>
+      <simpara>
        The start date of the period.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="dateperiod.props.current">
      <term><varname>current</varname></term>
      <listitem>
-      <para>
+      <simpara>
        During iteration this will contain the current date within the period.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="dateperiod.props.end">
      <term><varname>end</varname></term>
      <listitem>
-      <para>
+      <simpara>
        The end date of the period.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="dateperiod.props.interval">
      <term><varname>interval</varname></term>
      <listitem>
-      <para>
+      <simpara>
        An ISO 8601 repeating interval specification.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

@@ -8,10 +8,10 @@
      <option role="configure">--enable-maintainer-mode</option>
     </term>
     <listitem>
-     <para>
-      Enable make rules and dependencies not useful (and sometimes confusing) 
+     <simpara>
+      Enable make rules and dependencies not useful (and sometimes confusing)
       to the casual installer.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="configure.with-config-file-path">
@@ -19,9 +19,9 @@
      <option role="configure">--with-config-file-path=PATH</option>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Sets the path in which to look for &php.ini;, defaults to <literal>PREFIX/lib</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="configure.disable-short-tags">
@@ -29,9 +29,9 @@
      <option role="configure">--disable-short-tags</option>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Disable the short-form &lt;? start tag by default.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="configure.with-libdir">
@@ -39,12 +39,12 @@
      <option role="configure">--with-libdir</option>
     </term>
     <listitem>
-     <para>
-      Specifies the directory where the libraries to build PHP exist on a 
-      Unix system. For 64bit systems, its needed to specify this argument 
-      to the <literal>lib64</literal> directory like: 
+     <simpara>
+      Specifies the directory where the libraries to build PHP exist on a
+      Unix system. For 64bit systems, its needed to specify this argument
+      to the <literal>lib64</literal> directory like:
       <literal>--with-libdir=lib64</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="configure.enable-zts">
@@ -52,11 +52,11 @@
      <option role="configure">--enable-zts</option>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Enables thread safety.
       Prior to PHP 8.0.0 on non-Windows systems, the option was called
       <option role="configure">--enable-maintainer-zts</option>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>

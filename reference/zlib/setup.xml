@@ -7,12 +7,12 @@
  <!-- {{{ Requirements -->
  <section xml:id="zlib.requirements">
   &reftitle.required;
-  <para>
+  <simpara>
    This module uses the functions of <link xlink:href="&url.zlib;">zlib</link>
    by Jean-loup Gailly and Mark Adler.
    As of PHP 8.4.0, the minimum zlib version required is 1.2.11.
    Prior to PHP 8.4.0, the minimum zlib version required was 1.2.0.4.
-  </para>
+  </simpara>
  </section>
  <!-- }}} -->
 
@@ -27,12 +27,12 @@
  <!-- {{{ Resources -->
  <section xml:id="zlib.resources">
   &reftitle.resources;
-  <para>
+  <simpara>
    This extension defines a file pointer resource returned by
    <function>gzopen</function>.
    Prior to PHP 8.0.0, <literal>zlib.deflate</literal> and <literal>zlib.inflate</literal>
    resources were also defined.
-  </para>
+  </simpara>
  </section>
  <!-- }}} -->
 

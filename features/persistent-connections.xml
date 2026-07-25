@@ -63,16 +63,16 @@
    already established connection to the SQL server.
   </simpara>
   <note>
-   <para>
+   <simpara>
    The method in use can be checked by looking at the value of
    "Server API" in the output of <function>phpinfo</function> or the value of
    <constant>PHP_SAPI</constant>, run from a web request.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     If the Server API is "Apache 2 Handler" or "FPM/FastCGI", then persistent
     connections will be used across requests served by the same worker. For any
     other value, persistent connections will not persist after each request.
-   </para>
+   </simpara>
   </note>
  </simplesect>
 

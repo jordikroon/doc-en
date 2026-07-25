@@ -3,16 +3,16 @@
 <sect1 xml:id="language.oop5.variance" xmlns="http://docbook.org/ns/docbook">
  <title>Covariance and Contravariance</title>
 
- <para>
+ <simpara>
   In PHP 7.2.0, partial contravariance was introduced by removing type restrictions
   on parameters in a child method. As of PHP 7.4.0, full covariance and contravariance
   support was added.
- </para>
- <para>
+ </simpara>
+ <simpara>
   Covariance allows a child's method to return a more specific type than the return type
   of its parent's method. Contravariance allows a parameter type to be less
   specific in a child method, than that of its parent.
- </para>
+ </simpara>
  <para>
   A type declaration is considered more specific in the following case:
   <itemizedlist>
@@ -46,11 +46,11 @@
  <sect2 xml:id="language.oop5.variance.covariance">
   <title>Covariance</title>
 
-  <para>
+  <simpara>
    To illustrate how covariance works, a simple abstract parent class, <varname>Animal</varname>
-   is created. <varname>Animal</varname> will be extended by children classes, 
+   is created. <varname>Animal</varname> will be extended by children classes,
    <varname>Cat</varname>, and <varname>Dog</varname>.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -77,7 +77,7 @@ class Dog extends Animal
     }
 }
 
-class Cat extends Animal 
+class Cat extends Animal
 {
     public function speak()
     {
@@ -88,11 +88,11 @@ class Cat extends Animal
    </programlisting>
   </informalexample>
 
-  <para>
-   Note that there aren't any methods which return values in this example. A few factories 
-   will be added which return a new object of class type <varname>Animal</varname>, 
+  <simpara>
+   Note that there aren't any methods which return values in this example. A few factories
+   will be added which return a new object of class type <varname>Animal</varname>,
    <varname>Cat</varname>, or <varname>Dog</varname>.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -141,13 +141,13 @@ Mavrick barks
  <sect2 xml:id="language.oop5.variance.contravariance">
   <title>Contravariance</title>
 
-  <para>
-   Continuing with the previous example with the classes <varname>Animal</varname>, 
-   <varname>Cat</varname>, and <varname>Dog</varname>, a class called 
-   <varname>Food</varname> and <varname>AnimalFood</varname> will be included, and 
-   a method <varname>eat(AnimalFood $food)</varname> is added to the <varname>Animal</varname> 
+  <simpara>
+   Continuing with the previous example with the classes <varname>Animal</varname>,
+   <varname>Cat</varname>, and <varname>Dog</varname>, a class called
+   <varname>Food</varname> and <varname>AnimalFood</varname> will be included, and
+   a method <varname>eat(AnimalFood $food)</varname> is added to the <varname>Animal</varname>
    abstract class.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -176,11 +176,11 @@ abstract class Animal
    </programlisting>
   </informalexample>
 
-  <para>
+  <simpara>
    In order to see the behavior of contravariance, the
-   <varname>eat</varname> method is overridden in the <varname>Dog</varname> class to allow 
+   <varname>eat</varname> method is overridden in the <varname>Dog</varname> class to allow
    any <varname>Food</varname> type object. The <varname>Cat</varname> class remains unchanged.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -197,9 +197,9 @@ class Dog extends Animal
    </programlisting>
   </informalexample>
 
-  <para>
+  <simpara>
    The next example will show the behavior of contravariance.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">

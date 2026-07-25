@@ -13,9 +13,9 @@
    <methodname>EventBase::free</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
    Deallocates resources allocated by libevent for the <classname>EventBase</classname> object.
-  </para>
+  </simpara>
   <warning>
    <para>
     The
@@ -25,11 +25,11 @@
     <function>unset</function>,
     or assign &null;.
    </para>
-   <para>
+   <simpara>
     This method does not deallocate or detach any of the events that are
     currently associated with the <classname>EventBase</classname> object, or
     close any of their sockets - beware.
-   </para>
+   </simpara>
   </warning>
  </refsect1>
  <refsect1 role="parameters">
@@ -38,9 +38,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="seealso">
   &reftitle.seealso;

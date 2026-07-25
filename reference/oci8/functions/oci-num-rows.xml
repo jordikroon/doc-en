@@ -5,16 +5,16 @@
   <refname>oci_num_rows</refname>
   <refpurpose>Returns number of rows affected during statement execution</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>int</type><type>false</type></type><methodname>oci_num_rows</methodname>
    <methodparam><type>resource</type><parameter>statement</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the number of rows affected during statement execution.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>statement</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A valid OCI statement identifier.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,9 +35,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the number of rows affected as an integer,&return.falseforfailure;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -82,11 +82,11 @@ oci_close($conn);
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     This function <emphasis>does not</emphasis> return number of rows selected!
     For SELECT statements this function will return the number of rows, that were
     fetched to the buffer with <function>oci_fetch*</function> functions.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

@@ -5,7 +5,7 @@
   <refname>iconv_strlen</refname>
   <refpurpose>Returns the character count of string</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,13 +13,13 @@
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>encoding</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    In contrast to <function>strlen</function>,
    <function>iconv_strlen</function> counts the occurrences of characters
    in the given byte sequence <parameter>string</parameter> on the basis of
    the specified character set, the result of which is not necessarily
    identical to the length of the string in bytes.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,19 +29,19 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>encoding</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If <parameter>encoding</parameter> parameter is omitted or &null;,
        <parameter>string</parameter> is assumed to be encoded in
        <link linkend="iconv.configuration">iconv.internal_encoding</link>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -50,10 +50,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the character count of <parameter>string</parameter>, as an integer,
    or &false; if an error occurs during the encoding.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

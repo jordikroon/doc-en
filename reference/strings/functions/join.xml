@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.join">
+<refentry xml:id="function.join" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>join</refname>
   <refpurpose>&Alias; <function>implode</function></refpurpose>

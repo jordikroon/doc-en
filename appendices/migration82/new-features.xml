@@ -18,62 +18,62 @@
   <sect3 xml:id="migration82.new-features.core.error-log-mode-ini">
    <title>error_log_mode INI directive</title>
 
-   <para>
+   <simpara>
     The <link linkend="ini.error-log-mode">error_log_mode</link> INI directive has been added which allows setting
     the permissions for the error log file.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration82.new-features.core.enums-property-constant-expression">
    <title>Enumerations properties in constant expressions</title>
 
-   <para>
+   <simpara>
     It is now possible to fetch properties of
     <link linkend="language.enumerations">Enumerations</link>
     in constant expressions.
     <!-- RFC: https://wiki.php.net/rfc/fetch_property_in_const_expressions -->
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration82.new-features.core.type-system">
    <title>Type System Improvements</title>
 
-   <para>
+   <simpara>
     It is now possible to use <type>null</type> and <type>false</type>
     as stand-alone types.
     <!-- RFC: https://wiki.php.net/rfc/null-false-standalone-types -->
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     The <type>true</type> type has been added.
     <!-- RFC: https://wiki.php.net/rfc/true-type -->
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     It is now possible to combine intersection and union types.
     The type needs to be written in <acronym>DNF</acronym>.
     <!-- TODO Add an example -->
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration82.new-features.core.constant-in-traits">
    <title>Constants in Traits</title>
 
-   <para>
+   <simpara>
     It is now possible to define constants in traits.
     <!-- TODO Add an example -->
-   </para>
+   </simpara>
    <!-- RFC: https://wiki.php.net/rfc/constants_in_traits -->
   </sect3>
 
   <sect3 xml:id="migration82.new-features.core.readonly-classes">
    <title>Readonly Classes</title>
 
-   <para>
+   <simpara>
     Support for <link linkend="language.oop5.basic.class.readonly">readonly
     on classes</link> has been added.
     <!-- RFC: https://wiki.php.net/rfc/readonly_classes -->
-   </para>
+   </simpara>
   </sect3>
 
  </sect2>
@@ -81,62 +81,62 @@
  <sect2 xml:id="migration82.new-features.curl">
   <title>cURL</title>
 
-  <para>
+  <simpara>
    Added the <constant>CURLINFO_EFFECTIVE_METHOD</constant> option,
    which returns the effective <acronym>HTTP</acronym> method in the return value of
    <function>curl_getinfo</function>.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    Exposed <link linkend="migration82.constants.curl">multiple new constants</link> from libcurl 7.62 to 7.80.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    Added the <function>curl_upkeep</function> function to perform any connection upkeep checks.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration82.new-features.dba">
   <title>DBA</title>
 
-  <para>
+  <simpara>
    The LMDB Driver now accepts the <constant>DBA_LMDB_USE_SUB_DIR</constant> or
    <constant>DBA_LMDB_NO_SUB_DIR</constant> flags to determine if it should
    create a subdirectory or not when creating a database file.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration82.new-features.oci8">
   <title>OCI8</title>
 
-  <para>
+  <simpara>
    Added the <link linkend="ini.oci8.prefetch-lob-size">oci8.prefetch_lob_size</link> INI directive and
    <function>oci_set_prefetch_lob</function> function to tune LOB query
    performance by reducing the number of round-trips between PHP and
    Oracle Databases when fetching LOBS.
    This is usable with Oracle Database 12.2 or later.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration82.new-features.openssl">
   <title>OpenSSL</title>
 
-  <para>
+  <simpara>
    Added AEAD support for the chacha20-poly1305 algorithm.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration82.new-features.odbc">
   <title>ODBC</title>
 
-  <para>
+  <simpara>
    Added the <function>odbc_connection_string_is_quoted</function>,
    <function>odbc_connection_string_should_quote</function>, and
    <function>odbc_connection_string_quote</function> functions.
    These are primarily used behind the scenes in the ODBC and PDO_ODBC extensions,
    but are exposed to userland for easier unit testing, and for user
    applications and libraries to perform quoting themselves.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration82.new-features.pcre">
@@ -155,13 +155,13 @@
  <sect2 xml:id="migration82.new-features.random">
   <title>Random</title>
 
-  <para>
+  <simpara>
    This is a new extension which organises and consolidates existing
    implementations related to random number generators.
    New and better RNGs are available with scope issues eliminated.
    <!-- RFC: https://wiki.php.net/rfc/rng_extension -->
    <!-- RFC: https://wiki.php.net/rfc/random_extension_improvement -->
-  </para>
+  </simpara>
  </sect2>
 
 </sect1>

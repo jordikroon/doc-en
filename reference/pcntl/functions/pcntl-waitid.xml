@@ -16,10 +16,10 @@
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer><constant>WEXITED</constant></initializer></methodparam>
    <methodparam choice="opt"><type>array</type><parameter role="reference">resource_usage</parameter><initializer>[]</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Obtains status information pertaining to termination, stop, and/or continue
    events in one of the caller's child processes.
-  </para>
+  </simpara>
 
   <para>
    Unless <constant>WNOHANG</constant> flag is passed, the calling process will
@@ -42,21 +42,21 @@
    </itemizedlist>
   </para>
 
-  <para>
+  <simpara>
    If matching status information is available prior to the call to
    <function>pcntl_waitid</function>, return shall be immediate. If matching
    status information is available for two or more child processes, the order
    in which their status is reported is unspecified.
-  </para>
+  </simpara>
 
   <note>
-   <para>
+   <simpara>
     This documentation covers the POSIX specification of the
     <literal>waitid</literal> function, along with some additional parameters
     specific to implementations on Linux, NetBSD and FreeBSD. Please see your
     system's <literal>waitid(2)</literal> man page for specific details as to
     how <literal>waitid</literal> works on your system.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -170,10 +170,10 @@
    <varlistentry>
     <term><parameter>info</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The <parameter>info</parameter> parameter is set to an array
       containing information about the signal.
-     </para>
+     </simpara>
      <para>
       <parameter>info</parameter> array may contain the following keys:
       <simplelist>
@@ -249,13 +249,13 @@
    <varlistentry>
     <term><parameter>resource_usage</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The <parameter>resource_usage</parameter> parameter is set to an array
       containing resource usage statistics from the child process.
 
       This is supported either if the wait6 system call is available
       (e.g. on FreeBSD), or on Linux through the raw waitid system call.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -263,29 +263,29 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    <function>pcntl_waitid</function> returns &true; if
    <constant>WNOHANG</constant> was specified and status is not available for
    any process specified by <parameter>idtype</parameter> and
    <parameter>id</parameter>.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    <function>pcntl_waitid</function> returns &true; due to the change of state
    of one of its children.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    Otherwise, &false; is returned and <function>pcntl_get_last_error</function>
    can be used to get the <literal>errno</literal> error number.
-  </para>
+  </simpara>
 
   <note>
-   <para>
+   <simpara>
     Once an <literal>errno</literal> error number has been obtained,
     <function>pcntl_strerror</function> can be used to get the text message
     associated with it.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

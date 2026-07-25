@@ -12,11 +12,11 @@
    <void/>
   </methodsynopsis>
 
-  <para>
+  <simpara>
    Determines if the current <classname>DirectoryIterator</classname>
    item is a directory and either
    <literal>.</literal> or <literal>..</literal>
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,21 +26,21 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &true; if the entry is <literal>.</literal> or <literal>..</literal>,
    otherwise &false;
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
    <example>
     <title>A <methodname>DirectoryIterator::isDot</methodname> example</title>
-    <para>
+    <simpara>
       This example will list all files, omitting the <literal>.</literal> and
       <literal>..</literal> entries.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

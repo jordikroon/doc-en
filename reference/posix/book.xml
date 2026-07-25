@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
- 
+
 <book xml:id="book.posix" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <?phpdoc extension-membership="bundled" ?>
  <title>POSIX</title>
- 
+
  <!-- {{{ preface -->
  <preface xml:id="intro.posix">
   &reftitle.intro;
-  <para>
+  <simpara>
    This module contains an interface to those functions defined in
    the IEEE 1003.1 (POSIX.1) standards document which are not
-   accessible through other means. 
-  </para>
+   accessible through other means.
+  </simpara>
   <warning>
-   <para>
+   <simpara>
     Sensitive data can be retrieved with the POSIX functions, e.g.
     <function>posix_getpwnam</function> and friends.
-   </para>
+   </simpara>
   </warning>
   &note.no-windows.extension;
  </preface>
  <!-- }}} -->
- 
+
  &reference.posix.setup;
  &reference.posix.constants;
  &reference.posix.reference;

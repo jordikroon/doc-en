@@ -5,17 +5,17 @@
   <refname>oci_statement_type</refname>
   <refpurpose>Returns the type of a statement</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>oci_statement_type</methodname>
    <methodparam><type>resource</type><parameter>statement</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a keyword identifying the type of the
    OCI8 <parameter>statement</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
     <varlistentry>
      <term><parameter>statement</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A valid OCI8 statement identifier from <function>oci_parse</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -97,9 +97,9 @@
     </tgroup>
    </table>
   </para>
-  <para>
+  <simpara>
    Returns &false; on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

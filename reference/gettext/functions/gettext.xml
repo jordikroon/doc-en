@@ -5,16 +5,16 @@
   <refname>gettext</refname>
   <refpurpose>Lookup a message in the current domain</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>string</type><methodname>gettext</methodname>
    <methodparam><type>string</type><parameter>message</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Looks up a message in the current domain.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>message</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The message being translated.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,10 +35,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   Returns a translated <type>string</type> if one is found in the 
+  <simpara>
+   Returns a translated <type>string</type> if one is found in the
    translation table, or the submitted message if not found.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -71,21 +71,21 @@ echo _("Have a nice day");
     </programlisting>
    </example>
   </para>
- </refsect1> 
+ </refsect1>
 
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     You may use the underscore character '_' as an alias to this function.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
-    Setting a language isn't enough for some systems and the 
-    <function>putenv</function> should be used to define the 
+   <simpara>
+    Setting a language isn't enough for some systems and the
+    <function>putenv</function> should be used to define the
     current locale.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

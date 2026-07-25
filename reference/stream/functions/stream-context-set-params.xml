@@ -5,7 +5,7 @@
   <refname>stream_context_set_params</refname>
   <refpurpose>Set parameters for a stream/wrapper/context</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,11 +13,11 @@
    <methodparam><type>resource</type><parameter>context</parameter></methodparam>
    <methodparam><type>array</type><parameter>params</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets parameters on the specified context.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters"><!-- {{{ -->
   &reftitle.parameters;
   <para>
@@ -25,18 +25,18 @@
     <varlistentry>
      <term><parameter>context</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The stream or context to apply the parameters too.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>params</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An associative array of parameters to be set in the following format:
        <literal>$params['paramname'] = "paramvalue";</literal>.
-      </para>
+      </simpara>
       <table>
        <title>Supported parameters</title>
        <tgroup cols="2">
@@ -76,11 +76,11 @@
 
  <refsect1 role="returnvalues"><!-- {{{ -->
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1><!-- }}} -->
- 
+
  <refsect1 role="seealso"><!-- {{{ -->
   &reftitle.seealso;
   <simplelist>

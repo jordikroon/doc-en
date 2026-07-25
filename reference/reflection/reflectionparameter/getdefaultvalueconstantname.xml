@@ -12,12 +12,12 @@
    <modifier>public</modifier> <type class="union"><type>string</type><type>null</type></type><methodname>ReflectionParameter::getDefaultValueConstantName</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the default value's constant name of the parameter of any user-defined
    or internal function or method, if default value is constant or null.
-   If the parameter is not optional a <classname>ReflectionException</classname>
+   If the parameter is not optional a <exceptionname>ReflectionException</exceptionname>
    will be thrown.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,9 +27,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns string on success or &null; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
   <refsect1 role="changelog">
@@ -48,7 +48,7 @@
        <entry>8.0.0</entry>
        <entry>
         This method now allows getting the default values' constant names of built-in functions and
-        built-in class methods. Previously, a <classname>ReflectionException</classname> was thrown.
+        built-in class methods. Previously, a <exceptionname>ReflectionException</exceptionname> was thrown.
        </entry>
       </row>
      </tbody>
@@ -94,7 +94,7 @@ Default value: PHP_INT_MIN
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

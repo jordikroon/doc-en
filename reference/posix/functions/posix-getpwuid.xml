@@ -5,17 +5,17 @@
   <refname>posix_getpwuid</refname>
   <refpurpose>Return info about a user by user id</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>array</type><type>false</type></type><methodname>posix_getpwuid</methodname>
    <methodparam><type>int</type><parameter>user_id</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   Returns an <type>array</type> of information about the user 
+  <simpara>
+   Returns an <type>array</type> of information about the user
    referenced by the given user ID.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
     <varlistentry>
      <term><parameter>user_id</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The user identifier.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

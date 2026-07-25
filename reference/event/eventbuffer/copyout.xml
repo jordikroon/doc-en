@@ -40,9 +40,9 @@
      <parameter>data</parameter>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Output string.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
@@ -50,20 +50,20 @@
      <parameter>max_bytes</parameter>
     </term>
     <listitem>
-     <para>
+     <simpara>
       The number of bytes to copy.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the number of bytes copied, or
    <constant>-1</constant>
    on failure.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="seealso">
   &reftitle.seealso;

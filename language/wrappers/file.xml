@@ -9,7 +9,7 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    <literal>file://</literal> is the default wrapper used with PHP and
    represents the local filesystem.
    When a relative path is specified (a path which does not begin with
@@ -19,7 +19,7 @@
    resides unless it has been changed. Using the <acronym>CLI</acronym>
    <acronym>SAPI</acronym>, this defaults to the directory from which the
    script was called.
-  </para>
+  </simpara>
   <simpara>
    With some functions, such as <function>fopen</function> and
    <function>file_get_contents</function>, <literal>include_path</literal>

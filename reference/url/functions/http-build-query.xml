@@ -15,10 +15,10 @@
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>arg_separator</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>encoding_type</parameter><initializer><constant>PHP_QUERY_RFC1738</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Generates a URL-encoded query string from the associative (or indexed)
    array provided.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,18 +28,18 @@
     <varlistentry>
      <term><parameter>data</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        May be an array or object containing properties.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If <parameter>data</parameter> is an array, it may be a simple
        one-dimensional structure, or an array of arrays (which in
        turn may contain other arrays).
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If <parameter>data</parameter> is an object, then only public
        properties will be incorporated into the result.
-      </para>
+      </simpara>
       <note>
        <simpara>
         The <link linkend="object.tostring">__toString()</link> magic method is
@@ -52,46 +52,46 @@
     <varlistentry>
      <term><parameter>numeric_prefix</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If numeric indices are used in the base array and this parameter is
        provided, it will be prepended to the numeric index for elements in
        the base array only.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        This is meant to allow for legal variable names when the data is
        decoded by PHP or another CGI application later on.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>arg_separator</parameter></term>
      <listitem>
-      <para>
-       The argument separator. If not set or &null;, 
+      <simpara>
+       The argument separator. If not set or &null;,
        <link linkend="ini.arg-separator.output">arg_separator.output</link>
        is used to separate arguments.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>encoding_type</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        By default, <constant>PHP_QUERY_RFC1738</constant>.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If <parameter>encoding_type</parameter> is
        <constant>PHP_QUERY_RFC1738</constant>, then encoding is performed per
        <link xlink:href="&url.rfc;1738">RFC 1738</link> and the
        <literal>application/x-www-form-urlencoded</literal> media type, which
        implies that spaces are encoded as plus (<literal>+</literal>) signs.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If <parameter>encoding_type</parameter> is
        <constant>PHP_QUERY_RFC3986</constant>, then encoding is performed
        according to <link xlink:href="&url.rfc;3986">RFC 3986</link>, and
        spaces will be percent encoded (<literal>%20</literal>).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -100,9 +100,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a URL-encoded string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -208,9 +208,9 @@ echo http_build_query($data, 'flags_');
 ?>
 ]]>
    </programlisting>
-   <para>
+   <simpara>
     The above example will output: (word wrapped for readability)
-   </para>
+   </simpara>
    <screen>
 <![CDATA[
 user%5Bname%5D=Bob+Smith&user%5Bage%5D=47&user%5Bsex%5D=M&
@@ -222,11 +222,11 @@ children%5Bsally%5D%5Bsex%5D=F&flags_0=CEO
    </screen>
    <para>
     <note>
-     <para>
+     <simpara>
       Only the numerically indexed element in the base array "CEO" received a
       prefix.  The other numeric indices, found under pastimes, do not
       require a string prefix to be legal variable names.
-     </para>
+     </simpara>
     </note>
    </para>
   </example>

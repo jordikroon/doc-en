@@ -12,11 +12,11 @@
    <modifier>public</modifier> <type>void</type><methodname>SplPriorityQueue::rewind</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    This rewinds the iterator to the beginning. This is a no-op for heaps
-   as the iterator is virtual and in fact never moves from the top of the 
+   as the iterator is virtual and in fact never moves from the top of the
    heap.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,9 +26,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

@@ -8,9 +8,9 @@
 <!-- {{{ SQLite3Exception intro -->
   <section xml:id="sqlite3exception.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Represents a SQLite3 specific exception.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

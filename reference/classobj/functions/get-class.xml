@@ -11,9 +11,9 @@
    <type>string</type><methodname>get_class</methodname>
    <methodparam choice="opt"><type>object</type><parameter>object</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the name of the class of the given <parameter>object</parameter>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -22,14 +22,14 @@
     <varlistentry>
      <term><parameter>object</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The tested object.
-      </para>
+      </simpara>
       <note>
        <simpara>
         Explicitly passing &null; as the <parameter>object</parameter> is no
         longer allowed as of PHP 7.2.0 and emits an <constant>E_WARNING</constant>.
-        As of PHP 8.0.0, a <classname>TypeError</classname> is emitted when
+        As of PHP 8.0.0, a <exceptionname>TypeError</exceptionname> is emitted when
         &null; is used.
        </simpara>
       </note>
@@ -40,27 +40,27 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the name of the class of which <parameter>object</parameter> is an
    instance.
-  </para>
-  <para>
-   If the <parameter>object</parameter> is an instance of a class which exists 
+  </simpara>
+  <simpara>
+   If the <parameter>object</parameter> is an instance of a class which exists
    in a namespace, the qualified namespaced name of that class is returned.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    If <function>get_class</function> is called with anything other than an
-   object, <classname>TypeError</classname> is raised. Prior to PHP 8.0.0,
+   object, <exceptionname>TypeError</exceptionname> is raised. Prior to PHP 8.0.0,
    an <constant>E_WARNING</constant> level error was raised.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If <function>get_class</function> is called with no arguments from outside a class,
-   an <classname>Error</classname> is thrown. Prior to PHP 8.0.0,
+   an <exceptionname>Error</exceptionname> is thrown. Prior to PHP 8.0.0,
    an <constant>E_WARNING</constant> level error was raised.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="changelog">
   &reftitle.changelog;
@@ -86,7 +86,7 @@
        <entry>8.0.0</entry>
        <entry>
         Calling this function from outside a class, without any arguments,
-        will now throw an <classname>Error</classname>.
+        will now throw an <exceptionname>Error</exceptionname>.
         Previously, an <constant>E_WARNING</constant> was raised
         and the function returned &false;.
        </entry>

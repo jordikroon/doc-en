@@ -13,9 +13,9 @@
    <methodparam><type>Iterator</type><parameter>iterator</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>int</type><type>null</type></type><parameter>info</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Attaches iterator information.
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -28,18 +28,18 @@
     <varlistentry>
      <term><parameter>iterator</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The new iterator to attach.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>info</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The associative information for the Iterator, which must be an
-       <type>int</type>, a <type>string</type>, or &null;. 
-      </para>
+       <type>int</type>, a <type>string</type>, or &null;.
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -48,18 +48,18 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Description...
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   An <classname>IllegalValueException</classname> if the <parameter>iterator</parameter> parameter
+  <simpara>
+   An <exceptionname>IllegalValueException</exceptionname> if the <parameter>iterator</parameter> parameter
    is invalid, or if <parameter>info</parameter> is already associated
    information.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

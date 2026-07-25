@@ -5,16 +5,16 @@
   <refname>mb_internal_encoding</refname>
   <refpurpose>Set/Get internal character encoding</refpurpose>
  </refnamediv>
-   
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>string</type><type>bool</type></type><methodname>mb_internal_encoding</methodname>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>encoding</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Set/Get the internal character encoding
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,37 +24,37 @@
     <varlistentry>
      <term><parameter>encoding</parameter></term>
      <listitem>
-      <para>
-       <parameter>encoding</parameter> is the character encoding name 
-       used for the HTTP input character encoding conversion, HTTP output 
-       character encoding conversion, and the default character encoding 
+      <simpara>
+       <parameter>encoding</parameter> is the character encoding name
+       used for the HTTP input character encoding conversion, HTTP output
+       character encoding conversion, and the default character encoding
        for string functions defined by the mbstring module.
        You should notice that the internal encoding is totally different from the one for multibyte regex.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   If <parameter>encoding</parameter> is set, then 
+  <simpara>
+   If <parameter>encoding</parameter> is set, then
    &return.success;
    In this case, the character encoding for multibyte regex is NOT changed.
-   If <parameter>encoding</parameter> is omitted, then 
+   If <parameter>encoding</parameter> is omitted, then
    the current character encoding name is returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   As of PHP 8.0.0, a <classname>ValueError</classname> is thrown if the
+  <simpara>
+   As of PHP 8.0.0, a <exceptionname>ValueError</exceptionname> is thrown if the
    value of <parameter>encoding</parameter> is an invalid encoding.
    Prior to PHP 8.0.0, a <constant>E_WARNING</constant> was emitted instead.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -72,7 +72,7 @@
      <row>
       <entry>8.0.0</entry>
       <entry>
-       Now throws a <classname>ValueError</classname> if
+       Now throws a <exceptionname>ValueError</exceptionname> if
        <parameter>encoding</parameter> is an invalid encoding.
        Previously a <constant>E_WARNING</constant> was emitted instead.
       </entry>
@@ -105,7 +105,7 @@ echo mb_internal_encoding();
  <!--
  <refsect1 role="notes">
   &reftitle.notes;
-  
+
  </refsect1>
  -->
 

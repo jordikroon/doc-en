@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.is-file">
+<refentry xml:id="function.is-file" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>is_file</refname>
   <refpurpose>Tells whether the filename is a regular file</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>bool</type><methodname>is_file</methodname>
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Tells whether the given file is a regular file. If <parameter>filename</parameter> is a
    symbolic link, it will resolve the symlink and will give information about the referred file.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path to the file.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -36,10 +36,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the filename exists and is a regular file, &false;
    otherwise.
-  </para>
+  </simpara>
   &fs.file.32bit;
  </refsect1>
 

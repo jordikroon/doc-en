@@ -5,7 +5,7 @@
   <refname>unpack</refname>
   <refpurpose>Unpack data from binary string</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,17 +14,17 @@
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>offset</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Unpacks from a binary string into an array according to the given
-   <parameter>format</parameter>. 
-  </para>
-  <para>
+   <parameter>format</parameter>.
+  </simpara>
+  <simpara>
    The unpacked data is stored in an associative array. To
    accomplish this you have to name the different format codes and
    separate them by a slash /. If a repeater argument is present,
    then each of the array keys will have a sequence number behind
    the given name.
-  </para>
+  </simpara>
   <para>
    Changes were made to bring this function into line with Perl:
    <simplelist>
@@ -50,25 +50,25 @@
     <varlistentry>
      <term><parameter>format</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        See <function>pack</function> for an explanation of the format codes.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The packed data.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The offset to begin unpacking from.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -77,10 +77,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an associative array containing unpacked elements of binary
    string, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -170,19 +170,19 @@ Array
  <refsect1 role="notes">
   &reftitle.notes;
   <caution>
-   <para>
+   <simpara>
     Note that PHP internally stores integral values as signed. If you
     unpack a large unsigned long and it is of the same size as PHP
     internally stored values the result will be a negative number
     even though unsigned unpacking was specified.
-   </para>
+   </simpara>
   </caution>
   <caution>
-   <para>
+   <simpara>
     If you do not name an element, numeric indices starting from <literal>1</literal> are used.
     Be aware that if you have more than one unnamed element, some data is
     overwritten because the numbering restarts from <literal>1</literal> for each element.
-   </para>
+   </simpara>
    <para>
     <example>
      <title><function>unpack</function> example with unnamed keys</title>
@@ -206,12 +206,12 @@ array(2) {
 }
 ]]>
      </screen>
-     <para>
+     <simpara>
       Note that the
-      first value from the <literal>c</literal> specifier is 
+      first value from the <literal>c</literal> specifier is
       overwritten by the first value from the <literal>n</literal>
       specifier.
-     </para>
+     </simpara>
     </example>
    </para>
   </caution>

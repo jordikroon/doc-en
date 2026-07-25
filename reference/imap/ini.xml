@@ -31,9 +31,9 @@
   &ini.php.constants;
 
  </para>
- 
+
  &ini.descriptions.title;
- 
+
  <para>
   <variablelist>
 
@@ -43,10 +43,10 @@
      <type>bool</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Establishing a connection to a server may invoke <command>rsh</command> or
       <command>ssh</command> commands, unless this &php.ini; option is disabled.
-     </para>
+     </simpara>
      <warning>
       <simpara>
        Neither <acronym>PHP</acronym> nor the <acronym>IMAP</acronym> library filter

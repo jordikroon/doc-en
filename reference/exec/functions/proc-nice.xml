@@ -12,17 +12,17 @@
    <type>bool</type><methodname>proc_nice</methodname>
    <methodparam><type>int</type><parameter>priority</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>proc_nice</function> changes the priority of the current
    process by the amount specified in <parameter>priority</parameter>. A
    positive <parameter>priority</parameter> will lower the priority of the
    current process, whereas a negative <parameter>priority</parameter>
    will raise the priority.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    <function>proc_nice</function> is not related to
    <function>proc_open</function> and its associated functions in any way.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -32,17 +32,17 @@
     <varlistentry>
      <term><parameter>priority</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The new priority value, the value of this may differ on platforms.
-      </para>
-      <para>
-       On Unix, a low value, such as <literal>-20</literal> means high priority 
+      </simpara>
+      <simpara>
+       On Unix, a low value, such as <literal>-20</literal> means high priority
        whereas positive values have a lower priority.
-      </para>
-      <para>
-       For Windows the <parameter>priority</parameter> parameter has the 
+      </simpara>
+      <simpara>
+       For Windows the <parameter>priority</parameter> parameter has the
        following meaning:
-      </para>
+      </simpara>
       <informaltable>
        <tgroup cols="3">
         <thead>
@@ -67,7 +67,7 @@
          <row>
           <entry valign="top">Normal priority</entry>
           <entry valign="top">
-           <parameter>priority</parameter> <literal>&lt; 5</literal> &amp; 
+           <parameter>priority</parameter> <literal>&lt; 5</literal> &amp;
            <parameter>priority</parameter> <literal>&gt; -5</literal>
           </entry>
          </row>
@@ -94,11 +94,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-   If an error occurs, like the user lacks permission to change the priority, 
+   If an error occurs, like the user lacks permission to change the priority,
    an error of level <constant>E_WARNING</constant> is also generated.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -147,18 +147,18 @@ proc_nice(-20);
   &reftitle.notes;
   <note>
    <title>Availability</title>
-   <para>
+   <simpara>
     <function>proc_nice</function> will only exist if your system has 'nice'
     capabilities. 'nice' conforms to: SVr4, SVID EXT, AT&amp;T, X/OPEN, BSD
     4.3.
-   </para>
+   </simpara>
   </note>
   <note>
    <title>Windows only</title>
-   <para>
+   <simpara>
     <function>proc_nice</function> will change the current <emphasis>process</emphasis>
     priority, even if PHP was compiled using thread safety.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

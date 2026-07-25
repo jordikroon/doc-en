@@ -6,9 +6,9 @@
 
  <preface xml:id="intro.random">
   &reftitle.intro;
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </preface>
 
  &reference.random.constants;

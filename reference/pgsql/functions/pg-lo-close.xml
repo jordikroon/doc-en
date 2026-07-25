@@ -13,17 +13,17 @@
    <type>bool</type><methodname>pg_lo_close</methodname>
    <methodparam><type>PgSql\Lob</type><parameter>lob</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_lo_close</function> closes a large object.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    To use the large object interface, it is necessary to
    enclose it within a transaction block.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     This function used to be called <function>pg_loclose</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -43,9 +43,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -64,7 +64,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -85,10 +85,10 @@
 ?>
 ]]>
     </programlisting>
-   </example> 
+   </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

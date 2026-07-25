@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>int</type><methodname>DOMNamedNodeMap::count</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the number of nodes in the map.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,10 +24,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the number of nodes in the map, which is identical to the
    <link linkend="domnamednodemap.props.length">length</link> property.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

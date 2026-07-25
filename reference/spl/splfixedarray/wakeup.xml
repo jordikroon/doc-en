@@ -17,9 +17,9 @@
    <modifier>public</modifier> <type>void</type><methodname>SplFixedArray::__wakeup</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Reinitialises the array after being unserialised.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,9 +29,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

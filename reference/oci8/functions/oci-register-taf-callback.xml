@@ -5,7 +5,7 @@
   <refname>oci_register_taf_callback</refname>
   <refpurpose>Register a user-defined callback function for Oracle Database TAF</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,26 +13,26 @@
    <methodparam><type>resource</type><parameter>connection</parameter></methodparam>
    <methodparam><type class="union"><type>callable</type><type>null</type></type><parameter>callback</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Registers a user-defined callback function to <parameter>connection</parameter>.
    If <parameter>connection</parameter> fails due to instance or network failure,
    the registered callback function will be invoked for several times during
    failover. See <link linkend="oci8.taf">OCI8 Transparent Application Failover
    (TAF) Support</link> for information.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    When <function>oci_register_taf_callback</function> is called multiple times,
    each registration overwrites the previous one.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Use <function>oci_unregister_taf_callback</function> to explicitly unregister a
    user-defined callback.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    TAF callback registration will NOT be saved across
    persistent connections, therefore the callback needs to be re-registered for
-   a new persistent connection. 
-  </para>
+   a new persistent connection.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -42,31 +42,31 @@
     <varlistentry>
      <term><parameter>connection</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An Oracle connection identifier.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>callback</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A user-defined callback to register for Oracle TAF. It can be a
        string of the function name or a Closure (anonymous function).
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        The interface of a TAF user-defined callback function is as follows:
-      </para>
+      </simpara>
       <methodsynopsis>
        <type>int</type><methodname>userCallbackFn</methodname>
        <methodparam><type>resource</type><parameter>connection</parameter></methodparam>
        <methodparam><type>int</type><parameter>event</parameter></methodparam>
        <methodparam><type>int</type><parameter>type</parameter></methodparam>
       </methodsynopsis>
-      <para>
+      <simpara>
        See the parameter description and an example on <link linkend="oci8.taf">
        OCI8 Transparent Application Failover (TAF) Support</link> page.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -75,9 +75,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

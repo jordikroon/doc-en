@@ -13,21 +13,21 @@
    <methodparam><type>int</type><parameter>size</parameter></methodparam>
    <methodparam choice="opt"><type>string</type><parameter role="reference">response</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
-   Sends an <literal>ALLO</literal> command to the remote FTP server to 
+  <simpara>
+   Sends an <literal>ALLO</literal> command to the remote FTP server to
    allocate space for a file to be uploaded.
-  </para>
+  </simpara>
   <note>
-   <para>
-    Many FTP servers do not support this command.  These servers may return a failure 
+   <simpara>
+    Many FTP servers do not support this command.  These servers may return a failure
     code (&false;) indicating the command is not supported or a success code (&true;)
     to indicate that pre-allocation is not necessary and the client should continue
     as though the operation were successful.  Because of this, it may be best to reserve
     this function for servers which explicitly require preallocation.
-   </para>
+   </simpara>
   </note>
-  <para>
-  </para>
+  <simpara>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -42,18 +42,18 @@
     <varlistentry>
      <term><parameter>size</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number of bytes to allocate.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>response</parameter></term>
      <listitem>
-      <para>
-       A textual representation of the servers response will be returned by 
+      <simpara>
+       A textual representation of the servers response will be returned by
        reference in <parameter>response</parameter> if a variable is provided.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -61,9 +61,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -82,7 +82,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>

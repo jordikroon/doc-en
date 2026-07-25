@@ -11,13 +11,13 @@
    <type>mixed</type><methodname>prev</methodname>
    <methodparam><type class="union"><type>array</type><type>object</type></type><parameter role="reference">array</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Rewind the internal array pointer.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    <function>prev</function> behaves just like <function>next</function>,
    except it rewinds the internal array pointer one place instead of advancing it.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -26,9 +26,9 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input array.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -36,11 +36,11 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the array value in the previous place that's pointed to by
    the internal array pointer, or &false; if there are no more
    elements.
-  </para>
+  </simpara>
   &return.falseproblem;
  </refsect1>
 
@@ -60,7 +60,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -86,7 +86,7 @@ echo $mode = end($transport), PHP_EOL;     // $mode = 'plane';
   <note>
    <simpara>
     The beginning of an array is indistinguishable from a
-    <type>bool</type> &false; element. To make the distinction, check that 
+    <type>bool</type> &false; element. To make the distinction, check that
     the <function>key</function> of the <function>prev</function> element is not
     &null;.
    </simpara>

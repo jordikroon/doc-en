@@ -5,7 +5,7 @@
   <refname>mb_ereg</refname>
   <refpurpose>Regular expression match with multibyte support</refpurpose>
  </refnamediv>
-   
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -26,48 +26,48 @@
     <varlistentry>
      <term><parameter>pattern</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The search pattern.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The search <type>string</type>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>matches</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If matches are found for parenthesized substrings of
        <parameter>pattern</parameter> and the function is called with the
        third argument <parameter>matches</parameter>, the matches will be stored
        in the elements of the array <parameter>matches</parameter>.
        If no matches are found, <parameter>matches</parameter> is set to an empty
        array.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        <varname>$matches[1]</varname> will contain the substring which starts at
        the first left parenthesis; <varname>$matches[2]</varname> will contain
        the substring starting at the second, and so on.
        <varname>$matches[0]</varname> will contain a copy of the complete string
        matched.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns whether <parameter>pattern</parameter> matches <parameter>string</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog"><!-- {{{ -->
@@ -106,7 +106,7 @@
 
  <refsect1 role="notes">
   &reftitle.notes;
-  
+
   &note.mbstring.encoding.internal;
  </refsect1>
 

@@ -18,9 +18,9 @@
    <methodparam choice="opt"><type>array</type><parameter role="reference">referrals</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>array</type><parameter role="reference">controls</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Parses an LDAP search result.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,62 +30,62 @@
     <varlistentry>
      <term><parameter>ldap</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &ldap.parameter.ldap;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>result</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &ldap.parameter.result;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>error_code</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A reference to a variable that will be set to the LDAP error code in
        the result, or <literal>0</literal> if no error occurred.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>matched_dn</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A reference to a variable that will be set to a matched DN if one was
        recognised within the request, otherwise it will be set to &null;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>error_message</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A reference to a variable that will be set to the LDAP error message in
        the result, or an empty string if no error occurred.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>referrals</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A reference to a variable that will be set to an <type>array</type> set
        to all of the referral strings in the result, or an empty array if no
        referrals were returned.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>controls</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An <type>array</type> of LDAP Controls which have been sent with the response.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -94,9 +94,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

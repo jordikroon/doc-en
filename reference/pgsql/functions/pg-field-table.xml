@@ -2,7 +2,7 @@
 <!-- $Revision$ -->
 <refentry xml:id="function.pg-field-table" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
-  <refname>pg_field_table</refname> 
+  <refname>pg_field_table</refname>
   <refpurpose>Returns the name or oid of the tables field</refpurpose>
  </refnamediv>
 
@@ -14,12 +14,12 @@
    <methodparam><type>int</type><parameter>field</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>oid_only</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
-   <function>pg_field_table</function> returns the name of the table that field 
+  <simpara>
+   <function>pg_field_table</function> returns the name of the table that field
    belongs to, or the table's oid if <parameter>oid_only</parameter> is &true;.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   <para>
@@ -33,19 +33,19 @@
     <varlistentry>
      <term><parameter>field</parameter></term>
       <listitem>
-       <para>
+       <simpara>
         Field number, starting from 0.
-       </para>
+       </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>oid_only</parameter></term>
       <listitem>
-       <para>
+       <simpara>
         By default the tables name that field belongs to is returned but
         if <parameter>oid_only</parameter> is set to &true;, then the
         oid will instead be returned.
-       </para>
+       </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -54,9 +54,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    On success either the fields table name or oid, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -75,7 +75,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -105,17 +105,17 @@ foo
 bool(false)
 ]]>
     </screen>
-   </example> 
+   </example>
   </para>
  </refsect1>
 
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     Returning the oid is much faster than returning the table name because
     fetching the table name requires a query to the database system table.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

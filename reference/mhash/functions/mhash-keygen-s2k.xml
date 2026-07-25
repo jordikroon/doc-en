@@ -9,7 +9,7 @@
  <refsynopsisdiv>
   &warn.deprecated.function-8-1-0;
  </refsynopsisdiv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -20,22 +20,22 @@
    <methodparam><type>string</type><parameter>salt</parameter></methodparam>
    <methodparam><type>int</type><parameter>length</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Generates a key according to the given <parameter>algo</parameter>, using an user
    provided <parameter>password</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This is the Salted S2K algorithm as specified in the OpenPGP
    document (<link xlink:href="&url.rfc;2440">RFC 2440</link>).
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Keep in mind that user supplied passwords are not really suitable
    to be used as keys in cryptographic algorithms, since users normally
    choose keys they can write on keyboard. These passwords use
    only 6 to 7 bits per character (or less). It is highly recommended
    to use some kind of transformation (like this function) to the user
    supplied key.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -45,38 +45,38 @@
     <varlistentry>
      <term><parameter>algo</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The hash ID used to create the key.
        One of the <constant>MHASH_hashname</constant> constants.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>password</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An user supplied password.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>salt</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Must be different and random enough for every key you generate in
        order to create different keys. Because <parameter>salt</parameter>
        must be known when you check the keys, it is a good idea to append
        the key to it. Salt has a fixed length of 8 bytes and will be padded
        with zeros if you supply less bytes.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The key length, in bytes.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -85,9 +85,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the generated key as a string, or &false; on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -114,7 +114,7 @@
    </informaltable>
   </para>
  </refsect1>
- 
+
 </refentry>
 <!-- Keep this comment at the end of the file
 Local variables:

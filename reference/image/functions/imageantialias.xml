@@ -12,20 +12,20 @@
    <methodparam><type>GdImage</type><parameter>image</parameter></methodparam>
    <methodparam><type>bool</type><parameter>enable</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Activate the fast drawing antialiased methods for lines and wired polygons.
    It does not support alpha components. It works using a direct blend
    operation. It works only with truecolor images.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Thickness and styled are not supported.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Using antialiased primitives with transparent background color can end with
    some unexpected results. The blend method uses the background color as any
    other colors. The lack of alpha component support does not allow an alpha
    based antialiasing method.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -35,9 +35,9 @@
     <varlistentry>
      <term><parameter>enable</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Whether to enable antialiasing or not.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -45,9 +45,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

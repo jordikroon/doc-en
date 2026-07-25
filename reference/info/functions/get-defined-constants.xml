@@ -5,18 +5,18 @@
   <refname>get_defined_constants</refname>
   <refpurpose>Returns an associative array with the names of all the constants and their values</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>array</type><methodname>get_defined_constants</methodname>
    <methodparam choice="opt"><type>bool</type><parameter>categorize</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the names and values of all the constants currently defined.
    This includes those created by extensions as well as those created with
    the <function>define</function> function.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">

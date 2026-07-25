@@ -11,9 +11,9 @@
    <modifier>public</modifier> <type class="union"><type>Iterator</type><type>null</type></type><methodname>OuterIterator::getInnerIterator</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the inner iterator for the current iterator entry.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -23,9 +23,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the inner iterator for the current entry if it exists, or &null; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

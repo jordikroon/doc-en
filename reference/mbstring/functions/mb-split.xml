@@ -5,7 +5,7 @@
   <refname>mb_split</refname>
   <refpurpose>Split multibyte string using regular expression</refpurpose>
  </refnamediv>
-   
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -29,24 +29,24 @@
     <varlistentry>
      <term><parameter>pattern</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The regular expression pattern.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <type>string</type> being split.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>limit</parameter></term>
      <listitem>
       <simpara>
-       If optional parameter <parameter>limit</parameter> is specified, 
+       If optional parameter <parameter>limit</parameter> is specified,
        it will be split in <parameter>limit</parameter> elements as
        maximum.
       </simpara>
@@ -58,14 +58,14 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The result as an <type>array</type>, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="notes">
   &reftitle.notes;
-  
+
   &note.mbstring.encoding.current;
  </refsect1>
 

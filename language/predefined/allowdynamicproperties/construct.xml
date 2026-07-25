@@ -12,9 +12,9 @@
    <modifier>public</modifier> <methodname>AllowDynamicProperties::__construct</methodname>
    <void/>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Constructs a new <classname>AllowDynamicProperties</classname> instance.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">

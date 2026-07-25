@@ -12,10 +12,10 @@
    <modifier>public</modifier> <type>void</type><methodname>ReflectionExtension::info</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Prints out the "<function>phpinfo</function>" snippet
    for the given extension.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Information about the extension.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

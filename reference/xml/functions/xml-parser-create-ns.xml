@@ -5,7 +5,7 @@
   <refname>xml_parser_create_ns</refname>
   <refpurpose>Create an XML parser with namespace support</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,11 +13,11 @@
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>encoding</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>separator</parameter><initializer>":"</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>xml_parser_create_ns</function> creates a new XML parser
-   with XML namespace support and returns a <classname>XMLParser</classname> 
+   with XML namespace support and returns a <classname>XMLParser</classname>
    instance to be used by the other XML functions.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,23 +27,23 @@
     <varlistentry>
      <term><parameter>encoding</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input encoding is automatically detected, so that the
        <parameter>encoding</parameter> parameter specifies only the output
        encoding. The default output charset is UTF-8. The supported
        encodings are <literal>ISO-8859-1</literal>, <literal>UTF-8</literal> and
        <literal>US-ASCII</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>separator</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        With a namespace aware parser tag parameters passed to the various
        handler functions will consist of namespace and tag name separated by
        the string specified in <parameter>separator</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -52,9 +52,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a new <classname>XMLParser</classname> instance.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

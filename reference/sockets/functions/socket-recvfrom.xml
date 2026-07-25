@@ -5,7 +5,7 @@
   <refname>socket_recvfrom</refname>
   <refpurpose>Receives data from a socket whether or not it is connection-oriented</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -17,7 +17,7 @@
    <methodparam><type>string</type><parameter role="reference">address</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter role="reference">port</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    The <function>socket_recvfrom</function> function receives
    <parameter>length</parameter> bytes of data in <parameter>data</parameter> from
    <parameter>address</parameter> on port <parameter>port</parameter> (if the
@@ -26,8 +26,8 @@
    used to gather data from both connected and unconnected sockets.
    Additionally, one or more flags can be specified to modify the behaviour of
    the function.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The <parameter>address</parameter> and <parameter>port</parameter> must be
    passed by reference. If the socket is not connection-oriented,
    <parameter>address</parameter> will be set to the internet protocol address of
@@ -35,8 +35,8 @@
    connection-oriented, <parameter>address</parameter> is &null;. Additionally,
    the <parameter>port</parameter> will contain the port of the remote host in
    the case of an unconnected <constant>AF_INET</constant> or
-   <constant>AF_INET6</constant> socket. 
-  </para>
+   <constant>AF_INET6</constant> socket.
+  </simpara>
   &note.bin-safe;
  </refsect1>
 
@@ -47,41 +47,41 @@
     <varlistentry>
      <term><parameter>socket</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <parameter>socket</parameter> must be a <classname>Socket</classname> instance previously
        created by socket_create().
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
     <varlistentry>
      <term><parameter>data</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The data received will be fetched to the variable specified with
        <parameter>data</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Up to <parameter>length</parameter> bytes will be fetched from remote host.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
-       The value of <parameter>flags</parameter> can be any combination of 
+      <simpara>
+       The value of <parameter>flags</parameter> can be any combination of
        the following flags, joined with the binary OR (<literal>|</literal>)
        operator.
-      </para>
-      
+      </simpara>
+
       <table>
        <title>Possible values for <parameter>flags</parameter></title>
        <tgroup cols="2">
@@ -129,40 +129,40 @@
     <varlistentry>
      <term><parameter>address</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If the socket is of the type <constant>AF_UNIX</constant> type,
        <parameter>address</parameter> is the path to the file. Else, for
        unconnected sockets, <parameter>address</parameter> is the IP address of,
        the remote host, or &null; if the socket is connection-oriented.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
     <varlistentry>
      <term><parameter>port</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        This argument only applies to <constant>AF_INET</constant> and
        <constant>AF_INET6</constant> sockets, and specifies the remote port
        from which the data is received. If the socket is connection-oriented,
        <parameter>port</parameter> will be &null;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
-    
+
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    <function>socket_recvfrom</function> returns the number of bytes received,
-   or &false; if there was an error. The actual error code can be retrieved by 
+   or &false; if there was an error. The actual error code can be retrieved by
    calling <function>socket_last_error</function>. This error code may be
    passed to <function>socket_strerror</function> to get a textual explanation
    of the error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -202,10 +202,10 @@ echo "Received $buf from remote address $from and remote port $port" . PHP_EOL;
 ?>
 ]]>
     </programlisting>
-    <para>
+    <simpara>
      This example will initiate a UDP socket on port 1223 of 127.0.0.1
      and print at most 12 characters received from a remote host.
-    </para>
+    </simpara>
    </example>
   </para>
  </refsect1>

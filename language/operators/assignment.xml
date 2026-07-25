@@ -46,27 +46,27 @@ var_dump($a, $b);
    </programlisting>
   </example>
  </para>
- <para>
+ <simpara>
   Note that the assignment copies the original variable to the new
   one (assignment by value), so changes to one will not affect the
   other. This may also have relevance if you need to copy something
   like a large array inside a tight loop.
- </para>
- <para>
+ </simpara>
+ <simpara>
   An exception to the usual assignment by value behaviour within PHP occurs
   with <type>object</type>s, which are assigned by reference.
   Objects may be explicitly copied via the <link
   linkend="language.oop5.cloning">clone</link> keyword.
- </para>
+ </simpara>
 
  <sect2 xml:id="language.operators.assignment.reference">
   <title>Assignment by Reference</title>
-  <para>
+  <simpara>
    Assignment by reference is also supported, using the
    "<computeroutput>$var = &amp;$othervar;</computeroutput>" syntax.
    Assignment by reference means that both variables end up pointing at the
    same data, and nothing is copied anywhere.
-  </para>
+  </simpara>
   <para>
    <example>
     <title>Assigning by reference</title>
@@ -89,11 +89,11 @@ print "$b\n"; // prints 4 as well, since $b is a reference to $a, which has
     </programlisting>
    </example>
   </para>
-  <para>
+  <simpara>
    The <link linkend="language.oop5.basic.new">new</link>
    operator returns a reference automatically, as such assigning the result of
    <link linkend="language.oop5.basic.new">new</link> by reference is an error.
-  </para>
+  </simpara>
   <para>
    <example>
     <title>new Operator By-Reference</title>
@@ -114,11 +114,11 @@ Parse error: syntax error, unexpected token ";", expecting "("
     </screen>
    </example>
   </para>
-  <para>
+  <simpara>
    More information on references and their potential uses can be found in
    the <link linkend="language.references">References Explained</link>
    section of the manual.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="language.operators.assignment.arithmetic">

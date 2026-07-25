@@ -12,10 +12,10 @@
    <methodparam><type>GdImage</type><parameter>image</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>method</parameter><initializer><constant>IMG_BILINEAR_FIXED</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
-   Sets the interpolation method, setting an interpolation method affects the rendering 
+  <simpara>
+   Sets the interpolation method, setting an interpolation method affects the rendering
    of various functions in GD, such as the <function>imagerotate</function> function.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -144,9 +144,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -177,7 +177,7 @@
 // Load an image
 $im = imagecreate(500, 500);
 
-// By default interpolation is IMG_BILINEAR_FIXED, switch 
+// By default interpolation is IMG_BILINEAR_FIXED, switch
 // to use the 'Mitchell' filter:
 imagesetinterpolation($im, IMG_MITCHELL);
 
@@ -192,7 +192,7 @@ imagesetinterpolation($im, IMG_MITCHELL);
  <refsect1 role="notes">
   &reftitle.notes;
   <para>
-   Changing the interpolation method affects the following functions 
+   Changing the interpolation method affects the following functions
    when rendering:
 
    <itemizedlist>

@@ -9,24 +9,24 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="Normalizer">
    <modifier>public</modifier> <modifier>static</modifier> <type class="union"><type>string</type><type>null</type></type><methodname>Normalizer::getRawDecomposition</methodname>
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>form</parameter><initializer><constant>Normalizer::FORM_C</constant></initializer></methodparam>
   </methodsynopsis>
 
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type class="union"><type>string</type><type>null</type></type><methodname>normalizer_get_raw_decomposition</methodname>
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>form</parameter><initializer><constant>Normalizer::FORM_C</constant></initializer></methodparam>
   </methodsynopsis>
 
-  <para>
+  <simpara>
    Gets the Decomposition_Mapping property, as specified in the
    Unicode Character Database (UCD), for the given UTF-8 encoded code point.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -35,9 +35,9 @@
    <varlistentry>
     <term><parameter>string</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The input string, which should be a single, UTF-8 encoded, code point.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -45,12 +45,12 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a <type>string</type> containing the Decomposition_Mapping property, if present in the UCD.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Returns &null; if there is no Decomposition_Mapping property for the character.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

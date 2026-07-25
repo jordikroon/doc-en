@@ -13,10 +13,10 @@
    <methodparam><type>string</type><parameter>directory</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>recursive</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
-   <function>ftp_rawlist</function> executes the FTP 
+  <simpara>
+   <function>ftp_rawlist</function> executes the FTP
    <command>LIST</command> command, and returns the result as an array.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -31,18 +31,18 @@
     <varlistentry>
      <term><parameter>directory</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The directory path. May include arguments for the <command>LIST</command>
        command.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>recursive</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If set to &true;, the issued command will be <command>LIST -R</command>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -50,15 +50,15 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array where each element corresponds to one line of text. Returns
    &false; when passed <parameter>directory</parameter> is invalid.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The output is not parsed in any way. The system type identifier returned by
-   <function>ftp_systype</function> can be used to determine how the results 
+   <function>ftp_systype</function> can be used to determine how the results
    should be interpreted.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -77,7 +77,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>

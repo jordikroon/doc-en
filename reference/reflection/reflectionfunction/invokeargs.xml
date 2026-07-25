@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>mixed</type><methodname>ReflectionFunction::invokeArgs</methodname>
    <methodparam><type>array</type><parameter>args</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Invokes the function and pass its arguments as array.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -25,10 +25,10 @@
     <varlistentry>
      <term><parameter>args</parameter></term>
      <listitem>
-      <para>
-       The passed arguments to the function as an array, much like 
+      <simpara>
+       The passed arguments to the function as an array, much like
        <function>call_user_func_array</function> works.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,9 +37,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the result of the invoked function
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -137,9 +137,9 @@ array(2) {
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     &reflection.invoke.reference;
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

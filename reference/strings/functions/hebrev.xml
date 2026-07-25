@@ -5,7 +5,7 @@
   <refname>hebrev</refname>
   <refpurpose>Convert logical Hebrew text to visual text</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,12 +13,12 @@
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>max_chars_per_line</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Converts logical Hebrew text to visual text.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The function tries to avoid breaking words.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,18 +28,18 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A Hebrew input string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>max_chars_per_line</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        This optional parameter indicates maximum number of characters per
        line that will be returned.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -48,9 +48,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the visual string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

@@ -2,7 +2,7 @@
 <!-- $Revision$ -->
 <refentry xml:id="function.jewishtojd" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
-  <refname>jewishtojd</refname> 
+  <refname>jewishtojd</refname>
   <refpurpose>Converts a date in the Jewish Calendar to Julian Day Count</refpurpose>
  </refnamediv>
  <refsect1 role="description">
@@ -13,13 +13,13 @@
    <methodparam><type>int</type><parameter>day</parameter></methodparam>
    <methodparam><type>int</type><parameter>year</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Although this function can handle dates all the way back to the year 1
    (3761 B.C.), such use may not be meaningful.  The Jewish calendar has
    been in use for several thousand years, but in the early days there was
    no formula to determine the start of a month. A new month was started
    when the new moon was first observed.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,50 +29,50 @@
     <varlistentry>
      <term><parameter>month</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The month as a number from <literal>1</literal> to <literal>13</literal>,
        where <literal>1</literal> means <literal>Tishri</literal>,
        <literal>13</literal> means <literal>Elul</literal>, and
        <literal>6</literal> <emphasis>and</emphasis> <literal>7</literal> mean
        <literal>Adar</literal> in regular years, but <literal>Adar I</literal>
        and <literal>Adar II</literal>, respectively, in leap years.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>day</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The day as a number from <literal>1</literal> to <literal>30</literal>.
        If the month has only 29 days, the first day of the following month is
        assumed.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>year</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The year as a number between 1 and 9999
-      </para>
+      </simpara>
      </listitem>
-    </varlistentry>  
+    </varlistentry>
    </variablelist>
   </para>
  </refsect1>
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The julian day for the given jewish date as an integer.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>
    <simplelist>
-    <member><function>jdtojewish</function></member> 
+    <member><function>jdtojewish</function></member>
     <member><function>cal_to_jd</function></member>
    </simplelist>
   </para>

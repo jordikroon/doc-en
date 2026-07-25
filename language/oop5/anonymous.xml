@@ -3,9 +3,9 @@
 <sect1 xml:id="language.oop5.anonymous" xmlns="http://docbook.org/ns/docbook">
  <title>Anonymous classes</title>
 
- <para>
+ <simpara>
   Anonymous classes are useful when simple, one-off objects need to be created.
- </para>
+ </simpara>
 
  <informalexample>
   <programlisting role="php">
@@ -34,10 +34,10 @@ $util->setLogger(new class {
   </programlisting>
  </informalexample>
 
- <para>
+ <simpara>
   They can pass arguments through to their constructors, extend other classes,
   implement interfaces, and use traits just like a normal class can:
- </para>
+ </simpara>
 
  <informalexample>
   <programlisting role="php">
@@ -71,14 +71,14 @@ object(class@anonymous)#1 (1) {
   </screen>
  </informalexample>
 
- <para>
+ <simpara>
   Nesting an anonymous class within another class does not give it access to
   any private or protected methods or properties of that outer class. In order
   to use the outer class' protected properties or methods, the anonymous class
   can extend the outer class. To use the private properties of
   the outer class in the anonymous class, they must be passed through its
   constructor:
- </para>
+ </simpara>
 
  <informalexample>
   <programlisting role="php">
@@ -124,10 +124,10 @@ echo (new Outer)->func2()->func3();
   </screen>
  </informalexample>
 
- <para>
+ <simpara>
   All objects created by the same anonymous class declaration are instances of
   that very class.
- </para>
+ </simpara>
 
  <informalexample>
   <programlisting role="php">
@@ -153,11 +153,11 @@ same class
  </informalexample>
 
  <note>
-  <para>
+  <simpara>
    Note that anonymous classes are assigned a name by the engine, as
    demonstrated in the following example. This name has to be regarded an
    implementation detail, which should not be relied upon.
-  </para>
+  </simpara>
   <informalexample>
    <programlisting role="php">
 <![CDATA[

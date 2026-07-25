@@ -11,9 +11,9 @@
    <modifier>public</modifier> <type class="union"><type>RecursiveArrayIterator</type><type>null</type></type><methodname>RecursiveArrayIterator::getChildren</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns an iterator for the current iterator entry.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -23,17 +23,17 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An iterator for the current entry, if it is an <type>array</type> or <type>object</type>; or &null; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   An <classname>InvalidArgumentException</classname>
+  <simpara>
+   An <exceptionname>InvalidArgumentException</exceptionname>
    will be thrown if the current entry does not contain an <type>array</type> or an <type>object</type>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

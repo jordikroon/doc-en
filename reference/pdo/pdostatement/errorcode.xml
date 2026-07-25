@@ -23,7 +23,7 @@
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
   <para>
-   Identical to <methodname>PDO::errorCode</methodname>, except that 
+   Identical to <methodname>PDO::errorCode</methodname>, except that
    <methodname>PDOStatement::errorCode</methodname> only retrieves error codes
    for operations performed with PDOStatement objects.
   </para>

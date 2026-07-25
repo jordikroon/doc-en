@@ -8,9 +8,9 @@
 <!-- {{{ DateError intro -->
   <section xml:id="dateerror.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Thrown when the timezone database is not found, or contains invalid data.
-   </para>
+   </simpara>
    <para>
     This error should never occur, and is not dependent on code. There are two
     child-exceptions (<exceptionname>DateObjectError</exceptionname> and

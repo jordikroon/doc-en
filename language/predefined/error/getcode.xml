@@ -5,28 +5,28 @@
   <refname>Error::getCode</refname>
   <refpurpose>Gets the error code</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="Error">
    <modifier>final</modifier> <modifier>public</modifier> <type>int</type><methodname>Error::getCode</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the error code.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   &no.function.parameters;
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the error code as <type>int</type>
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

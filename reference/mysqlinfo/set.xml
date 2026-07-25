@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Revision$ --><set xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="set.mysqlinfo">
+<!-- $Revision$ --><set xml:id="set.mysqlinfo" xmlns:xlink="http://www.w3.org/1999/xlink">
  <title>MySQL Drivers and Plugins</title>
  <titleabbrev>MySQL</titleabbrev>
 
@@ -47,7 +47,7 @@
    </simpara>
   </preface>
 
-  <chapter xmlns="http://docbook.org/ns/docbook" xml:id="mysqlinfo.terminology">
+  <chapter xml:id="mysqlinfo.terminology" xmlns="http://docbook.org/ns/docbook">
    <title>Terminology overview</title>
    <simpara>
     This section provides an introduction to the options available to
@@ -164,7 +164,7 @@
    </simpara>
   </chapter>
 
-  <chapter xmlns="http://docbook.org/ns/docbook" xml:id="mysqlinfo.api.choosing">
+  <chapter xml:id="mysqlinfo.api.choosing" xmlns="http://docbook.org/ns/docbook">
    <title>Choosing an API</title>
    <simpara>
     PHP offers different APIs to connect to MySQL. Below we show
@@ -323,7 +323,7 @@ echo htmlentities($row['District']);
    </informaltable>
   </chapter>
 
-  <chapter xmlns="http://docbook.org/ns/docbook" xml:id="mysqlinfo.library.choosing">
+  <chapter xml:id="mysqlinfo.library.choosing" xmlns="http://docbook.org/ns/docbook">
    <title>Choosing a library</title>
    <simpara>
     The mysqli and PDO_MySQL PHP extensions are lightweight wrappers on

@@ -13,14 +13,14 @@
    <methodparam><type>string</type><parameter>mode</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>use_include_path</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
-   Opens a gzip (.gz) file for reading or writing. 
-  </para>
-  <para>
+  <simpara>
+   Opens a gzip (.gz) file for reading or writing.
+  </simpara>
+  <simpara>
    <function>gzopen</function> can be used to read a file which is
    not in gzip format; in this case <function>gzread</function> will
    directly read from the file without decompression.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -29,24 +29,24 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The file name.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>mode</parameter></term>
      <listitem>
-      <para>
-       As in <function>fopen</function> (<literal>rb</literal> or 
-       <literal>wb</literal>) but can also include a compression level 
+      <simpara>
+       As in <function>fopen</function> (<literal>rb</literal> or
+       <literal>wb</literal>) but can also include a compression level
        (<literal>wb9</literal>) or a strategy: <literal>f</literal> for
        filtered data as in <literal>wb6f</literal>, <literal>h</literal> for
        <literal>Huffman only compression</literal> as in <literal>wb1h</literal>.
        (See the description of <literal>deflateInit2</literal>
-       in <filename>zlib.h</filename> for 
+       in <filename>zlib.h</filename> for
        more information about the strategy parameter.)
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -62,14 +62,14 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a file pointer to the file opened, after that, everything you read
-   from this file descriptor will be transparently decompressed and what you 
+   from this file descriptor will be transparently decompressed and what you
    write gets compressed.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If the open fails, the function returns &false;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

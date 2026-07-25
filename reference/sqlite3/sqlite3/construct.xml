@@ -16,11 +16,11 @@
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>SQLITE3_OPEN_READWRITE | SQLITE3_OPEN_CREATE</initializer></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>encryptionKey</parameter><initializer>""</initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Instantiates an SQLite3 object and opens a connection to an
    SQLite 3 database. If the build includes encryption, then it will attempt
    to use the key.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,12 +30,12 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path to the SQLite database, or <literal>:memory:</literal> to use in-memory database.
        If <parameter>filename</parameter> is an empty string, then a private, temporary on-disk
        database will be created. This private database will be automatically
        deleted as soon as the database connection is closed.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -46,22 +46,22 @@
        default, open uses <literal>SQLITE3_OPEN_READWRITE | SQLITE3_OPEN_CREATE</literal>.
        <itemizedlist>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLITE3_OPEN_READONLY</constant>: Open the database for
           reading only.
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLITE3_OPEN_READWRITE</constant>: Open the database for
           reading and writing.
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLITE3_OPEN_CREATE</constant>: Create the database if it
           does not exist.
-         </para>
+         </simpara>
         </listitem>
        </itemizedlist>
       </para>
@@ -70,11 +70,11 @@
     <varlistentry>
      <term><parameter>encryptionKey</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An optional encryption key used when encrypting and decrypting an
        SQLite database. If the SQLite encryption module is not installed,
        this parameter will have no effect.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -84,9 +84,9 @@
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws an <classname>Exception</classname> on failure.
-  </para>
+  <simpara>
+   Throws an <exceptionname>Exception</exceptionname> on failure.
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

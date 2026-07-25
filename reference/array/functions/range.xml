@@ -12,20 +12,20 @@
    <methodparam><type class="union"><type>string</type><type>int</type><type>float</type></type><parameter>end</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>int</type><type>float</type></type><parameter>step</parameter><initializer>1</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Create an array containing a range of elements.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If both <parameter>start</parameter> and <parameter>end</parameter> are
    <type>string</type>s, and <parameter>step</parameter> is <type>int</type>
    the produced array will be a sequence of bytes.
    Otherwise, the produced array will be a sequence of numbers.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The sequence is increasing if <parameter>start</parameter> is less than
    equal to <parameter>end</parameter>.
    Otherwise, the sequence is decreasing.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -35,33 +35,33 @@
     <varlistentry>
      <term><parameter>start</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        First value of the sequence.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>end</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Last possible value of the sequence.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>step</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>step</parameter> indicates by how much is the produced
        sequence progressed between values of the sequence.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        <parameter>step</parameter> may be negative for decreasing sequences.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If <parameter>step</parameter> is a <type>float</type> without a
        fractional part, it is interpreted as <type>int</type>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -70,31 +70,31 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a sequence of elements as an <type>array</type> with the first
    element being <parameter>start</parameter> going up to
    <parameter>end</parameter>, with each value of the sequence being
    <parameter>step</parameter> values apart.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The last element of the returned array is either <parameter>end</parameter>
    or the previous element of the sequence,
    depending on the value of <parameter>step</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If both <parameter>start</parameter> and <parameter>end</parameter> are
    <type>string</type>s, and <parameter>step</parameter> is <type>int</type>
    the produced array will be a sequence of bytes,
    generally latin <abbrev>ASCII</abbrev> characters.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If at least one of <parameter>start</parameter>, <parameter>end</parameter>,
    or <parameter>step</parameter> is <type>float</type>
    the produced array will be a sequence of <type>float</type>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Otherwise, the produced array will be a sequence of <type>int</type>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -103,14 +103,14 @@
    <listitem>
     <simpara>
      If <parameter>step</parameter> is <literal>0</literal>,
-     a <classname>ValueError</classname> is thrown.
+     a <exceptionname>ValueError</exceptionname> is thrown.
     </simpara>
    </listitem>
    <listitem>
     <simpara>
      If <parameter>start</parameter>, <parameter>end</parameter>,
      or <parameter>step</parameter> is not <function>is_finite</function>,
-     a <classname>ValueError</classname> is thrown.
+     a <exceptionname>ValueError</exceptionname> is thrown.
     </simpara>
    </listitem>
    <listitem>
@@ -118,7 +118,7 @@
      If <parameter>step</parameter> is negative,
      but the produced range is increasing
      (i.e. <code>$start &lt;= $end</code>),
-     a <classname>ValueError</classname> is thrown.
+     a <exceptionname>ValueError</exceptionname> is thrown.
     </simpara>
    </listitem>
    <listitem>
@@ -210,7 +210,7 @@
      <row>
       <entry>8.3.0</entry>
       <entry>
-       A <classname>ValueError</classname> is now thrown if
+       A <exceptionname>ValueError</exceptionname> is now thrown if
        <parameter>step</parameter> is negative when producing an increasing
        range.
       </entry>
@@ -218,14 +218,14 @@
      <row>
       <entry>8.3.0</entry>
       <entry>
-       A <classname>ValueError</classname> is now thrown if
+       A <exceptionname>ValueError</exceptionname> is now thrown if
        <parameter>step</parameter> is not finite.
       </entry>
      </row>
      <row>
       <entry>8.3.0</entry>
       <entry>
-       A <classname>TypeError</classname> is now thrown if
+       A <exceptionname>TypeError</exceptionname> is now thrown if
        <parameter>start</parameter> or <parameter>end</parameter>
        is an <type>array</type>, <type>object</type>, or <type>resource</type>.
        Previously they were implicitly cast to <type>int</type>.

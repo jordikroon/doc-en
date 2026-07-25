@@ -5,7 +5,7 @@
   <refname>openssl_pkcs7_sign</refname>
   <refpurpose>Sign an S/MIME message</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -18,13 +18,13 @@
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer><constant>PKCS7_DETACHED</constant></initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>untrusted_certificates_filename</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>openssl_pkcs7_sign</function> takes the contents of the file
    named <parameter>input_filename</parameter> and signs them using the
    certificate and its matching private key specified by
    <parameter>certificate</parameter> and <parameter>private_key</parameter>
    parameters.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -34,64 +34,64 @@
     <varlistentry>
      <term><parameter>input_filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
         The input file you are intending to digitally sign.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>output_filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
         The file which the digital signature will be written to.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>certificate</parameter></term>
      <listitem>
-      <para>
+      <simpara>
         The X.509 certificate used to digitally sign <parameter>input_filename</parameter>.
         See <link linkend="openssl.certparams">Key/Certificate parameters</link> for a list of valid values.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>private_key</parameter></term>
      <listitem>
-      <para>
+      <simpara>
         <parameter>private_key</parameter> is the private key corresponding to <parameter>certificate</parameter>.
         See <link linkend="openssl.certparams">Public/Private Key parameters</link> for a list of valid values.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>headers</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>headers</parameter> is an array of headers that
        will be prepended to the data after it has been signed (see
        <function>openssl_pkcs7_encrypt</function> for more information about
        the format of this parameter).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>flags</parameter> can be used to alter the output - see <link linkend="openssl.pkcs7.flags">PKCS7 constants</link>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>untrusted_certificates_filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>untrusted_certificates_filename</parameter> specifies the name of a file containing
        a bunch of extra certificates to include in the signature which can for
        example be used to help the recipient to verify the certificate that you used.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -100,9 +100,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

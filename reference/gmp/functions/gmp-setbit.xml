@@ -14,9 +14,9 @@
    <methodparam><type>int</type><parameter>index</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>value</parameter><initializer>&true;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets bit <parameter>index</parameter> in <parameter>num</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,25 +26,25 @@
     <varlistentry>
      <term><parameter>num</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A <classname>GMP</classname> object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>index</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The index of the bit to set.  Index 0 represents the least significant bit.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        True to set the bit (set it to 1/on); false to clear the bit (set it to 0/off).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -53,9 +53,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -130,12 +130,12 @@ echo gmp_strval($a), ' -> 0b', gmp_strval($a, 2), "\n";
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     Unlike most of the other GMP functions, <function>gmp_setbit</function>
     must be called with a GMP object that already exists (using
     <function>gmp_init</function> for example). One will not be
     automatically created.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

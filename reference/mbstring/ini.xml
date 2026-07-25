@@ -95,9 +95,9 @@
   </table>
   &ini.php.constants;
  </para>
- 
+
  &ini.descriptions.title;
- 
+
  <para>
   <variablelist>
    <varlistentry xml:id="ini.mbstring.language">
@@ -106,12 +106,12 @@
      <type>string</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       The default national language setting (NLS) used in mbstring. Note that this option
       automagically defines <literal>mbstring.internal_encoding</literal> and
       <literal>mbstring.internal_encoding</literal> should be placed
       after <literal>mbstring.language</literal> in &php.ini;
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="ini.mbstring.encoding-translation">
@@ -120,11 +120,11 @@
      <type>bool</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Enables the transparent character encoding filter for the incoming HTTP queries,
       which performs detection and conversion of the input encoding to the
-      internal character encoding. 
-     </para>
+      internal character encoding.
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="ini.mbstring.internal-encoding">
@@ -134,16 +134,16 @@
     </term>
     <listitem>
      <warning>
-      <para>&removed.php.future;</para>
+      <simpara>&removed.php.future;</simpara>
      </warning>
-     <para>
+     <simpara>
       Defines the default internal character encoding.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       Users should leave this empty and set
       <link linkend="ini.default-charset"><parameter>default_charset</parameter></link>
       instead.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="ini.mbstring.http-input">
@@ -153,16 +153,16 @@
     </term>
     <listitem>
      <warning>
-      <para>&removed.php.future;</para>
+      <simpara>&removed.php.future;</simpara>
      </warning>
-     <para>
+     <simpara>
       Defines the default HTTP input character encoding.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       Users should leave this empty and set
       <link linkend="ini.default-charset"><parameter>default_charset</parameter></link>
       instead.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="ini.mbstring.http-output">
@@ -172,16 +172,16 @@
     </term>
     <listitem>
      <warning>
-      <para>&removed.php.future;</para>
+      <simpara>&removed.php.future;</simpara>
      </warning>
-     <para>
+     <simpara>
       Defines the default HTTP output character encoding (output will be converted from the internal encoding to the HTTP output encoding upon output).
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       Users should leave this empty and set
       <link linkend="ini.default-charset"><parameter>default_charset</parameter></link>
       instead.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="ini.mbstring.detect-order">
@@ -190,10 +190,10 @@
      <type>string</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Defines default character code detection order. See also
-      <function>mb_detect_order</function>. 
-     </para>
+      <function>mb_detect_order</function>.
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="ini.mbstring.substitute-character">
@@ -202,10 +202,10 @@
      <type>string</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Defines character to substitute for invalid character encoding.
       See <function>mb_substitute_character</function> for supported values.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="ini.mbstring.func-overload">
@@ -215,14 +215,14 @@
     </term>
     <listitem>
      &warn.deprecated.feature-7-2-0.removed-8-0-0;
-     <para>
+     <simpara>
       Overloads a set of single byte functions by the mbstring counterparts. See
       <link linkend="mbstring.overload">Function overloading</link> for more
       information.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       This setting can only be changed from the &php.ini; file.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="ini.mbstring.http-output-conv-mimetypes">
@@ -231,8 +231,8 @@
      <type>string</type>
     </term>
     <listitem>
-     <para>
-     </para>
+     <simpara>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="ini.mbstring.strict-detection">
@@ -241,10 +241,10 @@
      <type>bool</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Enables strict encoding detection. See <function>mb_detect_encoding</function>
       for a description and examples.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="ini.mbstring.regex-retry-limit">
@@ -253,13 +253,13 @@
      <type>int</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Limits the amount of backtracking that may be performed during one mbregex
       match.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       This setting only takes effect when linking against oniguruma >= 6.8.0.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="ini.mbstring.regex-stack-limit">
@@ -268,29 +268,29 @@
      <type>int</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Limits the stack depth of mbstring regular expressions.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
  </para>
 
- <para>
+ <simpara>
   According to the <link xlink:href="&url.spec.html401.accept-charset;">HTML 4.01 specification</link>,
   Web browsers are allowed to encode a form being submitted with a character
   encoding different from the one used for the page.
   See <function>mb_http_input</function> to detect character encoding
   used by browsers.
- </para>
- <para>
+ </simpara>
+ <simpara>
   Although popular browsers are capable of giving a reasonably accurate guess
   to the character encoding of a given HTML document, it would be better to
   set the <literal>charset</literal> parameter in the
   <literal>Content-Type</literal> HTTP header to the appropriate value by
   <function>header</function> or
   <link linkend="ini.sect.data-handling">default_charset</link> ini setting.
- </para>
+ </simpara>
  <para>
   <example>
   <title>&php.ini; setting examples</title>
@@ -298,7 +298,7 @@
 <![CDATA[
 ; Set default language
 mbstring.language        = Neutral; Set default language to Neutral(UTF-8) (default)
-mbstring.language        = English; Set default language to English 
+mbstring.language        = English; Set default language to English
 mbstring.language        = Japanese; Set default language to Japanese
 
 ;; Set default internal encoding
@@ -310,13 +310,13 @@ mbstring.encoding_translation = On
 
 ;; Set default HTTP input character encoding
 ;; Note: Script cannot change http_input setting.
-mbstring.http_input           = pass    ; No conversion. 
+mbstring.http_input           = pass    ; No conversion.
 mbstring.http_input           = auto    ; Set HTTP input to auto
                                 ; "auto" is expanded according to mbstring.language
 mbstring.http_input           = SJIS    ; Set HTTP input to SJIS
 mbstring.http_input           = UTF-8,SJIS,EUC-JP ; Specify order
 
-;; Set default HTTP output character encoding 
+;; Set default HTTP output character encoding
 mbstring.http_output          = pass    ; No conversion
 mbstring.http_output          = UTF-8   ; Set HTTP output encoding to UTF-8
 
@@ -341,7 +341,7 @@ mbstring.substitute_character = long    ; Long Example: U+3000,JIS+7E7E
 output_buffering      = Off
 
 ;; Set HTTP header charset
-default_charset       = EUC-JP    
+default_charset       = EUC-JP
 
 ;; Set default language to Japanese
 mbstring.language = Japanese
@@ -350,16 +350,16 @@ mbstring.language = Japanese
 mbstring.encoding_translation = On
 
 ;; Set HTTP input encoding conversion to auto
-mbstring.http_input   = auto 
+mbstring.http_input   = auto
 
 ;; Convert HTTP output to EUC-JP
-mbstring.http_output  = EUC-JP    
+mbstring.http_output  = EUC-JP
 
 ;; Set internal encoding to EUC-JP
-mbstring.internal_encoding = EUC-JP    
+mbstring.internal_encoding = EUC-JP
 
 ;; Do not print invalid characters
-mbstring.substitute_character = none   
+mbstring.substitute_character = none
 ]]>
    </programlisting>
   </example>
@@ -382,16 +382,16 @@ default_charset      = Shift_JIS
 mbstring.language = Japanese
 
 ;; Set http input encoding conversion to auto
-mbstring.http_input  = auto 
+mbstring.http_input  = auto
 
 ;; Convert to SJIS
-mbstring.http_output = SJIS    
+mbstring.http_output = SJIS
 
 ;; Set internal encoding to EUC-JP
-mbstring.internal_encoding = EUC-JP    
+mbstring.internal_encoding = EUC-JP
 
 ;; Do not print invalid characters
-mbstring.substitute_character = none   
+mbstring.substitute_character = none
 ]]>
    </programlisting>
   </example>

@@ -8,25 +8,25 @@
  </refnamediv>
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="IntlDateFormatter">
    <modifier>public</modifier> <type class="union"><type>string</type><type>false</type></type><methodname>IntlDateFormatter::getPattern</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>datefmt_get_pattern</methodname>
    <methodparam><type>IntlDateFormatter</type><parameter>formatter</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get pattern used by the formatter.
-  </para> 
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   <para>
@@ -34,23 +34,23 @@
     <varlistentry>
      <term><parameter>formatter</parameter></term>
      <listitem>
-      <para>
-       The formatter resource.      
-      </para>
+      <simpara>
+       The formatter resource.
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
- 
- 
+
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The pattern string being used to format/parse, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <example>
@@ -108,7 +108,7 @@ Second Formatted output is 19690031 04:00:00 PST
 ]]>
   </screen>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

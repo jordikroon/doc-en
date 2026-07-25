@@ -433,9 +433,9 @@
  <sect2 xml:id="migration82.constants.sockets">
   <title>Sockets</title>
 
-  <para>
+  <simpara>
    The following socket options are now defined if they are supported:
-  </para>
+  </simpara>
   <itemizedlist>
    <listitem>
     <simpara><constant>SO_INCOMING_CPU</constant></simpara>

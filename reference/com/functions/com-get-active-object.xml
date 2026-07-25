@@ -12,7 +12,7 @@
    <methodparam><type>string</type><parameter>prog_id</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>codepage</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>com_get_active_object</function> is similar to creating a new
    instance of a <xref linkend="class.com"/> object, except that it will
    only return an object to your script if the object is already running.
@@ -20,7 +20,7 @@
    allow well-known applications to be launched only once; this function
    exposes the COM library function GetActiveObject() to get a handle on a
    running instance.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -29,20 +29,20 @@
     <varlistentry>
      <term><parameter>prog_id</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>prog_id</parameter> must be either the ProgID or CLSID for
        the object that you want to access (for example
        <literal>Word.Application</literal>).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>codepage</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Acts in precisely the same way that it does for the <xref
        linkend="class.com"/> class.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -50,20 +50,20 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    If the requested object is running, it will be returned to your script
    just like any other COM object.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    There are a variety of reasons why this function might fail, the most
    common being that the object is not already running.  In that situation,
    the exception error code will be <constant>MK_E_UNAVAILABLE</constant>;
    you can use the <literal>getCode</literal> method of the exception object
    to check the exception code.
-  </para>
+  </simpara>
  </refsect1>
 
 
@@ -92,7 +92,7 @@
  <refsect1 role="notes">
   &reftitle.notes;
   <warning>
-   <para>
+   <simpara>
     Using <function>com_get_active_object</function> in a web server context
     is not always a smart idea.  Most COM/OLE applications are not designed
     to handle more than one client concurrently, even (or especially!)
@@ -100,7 +100,7 @@
     xlink:href="&url.msoffice.serverside;">Considerations for Server-Side
     Automation of Office</link> for more information on the general issues
     involved.
-   </para>
+   </simpara>
   </warning>
  </refsect1>
 </refentry>

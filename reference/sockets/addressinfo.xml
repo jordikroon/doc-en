@@ -10,9 +10,9 @@
 <!-- {{{ AddressInfo intro -->
   <section xml:id="addressinfo.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     A fully opaque class which replaces <literal>AddressInfo</literal> resources as of PHP 8.0.0.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

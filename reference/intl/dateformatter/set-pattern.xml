@@ -8,24 +8,24 @@
  </refnamediv>
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="IntlDateFormatter">
    <modifier>public</modifier> <type>bool</type><methodname>IntlDateFormatter::setPattern</methodname>
    <methodparam><type>string</type><parameter>pattern</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type>bool</type><methodname>datefmt_set_pattern</methodname>
    <methodparam><type>IntlDateFormatter</type><parameter>formatter</parameter></methodparam>
    <methodparam><type>string</type><parameter>pattern</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Set the pattern used for the IntlDateFormatter.
-  </para> 
+  </simpara>
   </refsect1>
 
  <refsect1 role="parameters">
@@ -35,34 +35,34 @@
     <varlistentry>
      <term><parameter>formatter</parameter></term>
      <listitem>
-      <para>
+      <simpara>
      The formatter resource.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>pattern</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        New pattern string to use.
        Possible patterns are documented at <link
        xlink:href="&url.icu.datepattern;">&url.icu.datepattern;</link>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
-   
- 
+
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
    Bad formatstrings are usually the cause of the failure.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
    <example>

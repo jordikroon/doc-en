@@ -9,7 +9,7 @@
  <refsynopsisdiv>
   &warn.deprecated.function-8-0-0;
  </refsynopsisdiv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -17,10 +17,10 @@
    <type>void</type><methodname>openssl_free_key</methodname>
    <methodparam><type>OpenSSLAsymmetricKey</type><parameter>key</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>openssl_free_key</function> frees the key associated with
    the specified <parameter>key</parameter> from memory.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,8 +30,8 @@
     <varlistentry>
      <term><parameter>key</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -40,9 +40,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

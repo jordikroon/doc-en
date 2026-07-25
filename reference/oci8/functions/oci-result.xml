@@ -5,7 +5,7 @@
   <refname>oci_result</refname>
   <refpurpose>Returns field's value from the fetched row</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,10 +13,10 @@
    <methodparam><type>resource</type><parameter>statement</parameter></methodparam>
    <methodparam><type class="union"><type>string</type><type>int</type></type><parameter>column</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the data from <parameter>column</parameter> in the current row,
-   fetched by <function>oci_fetch</function>. 
-  </para>
+   fetched by <function>oci_fetch</function>.
+  </simpara>
   &oci.datatypes;
  </refsect1>
 
@@ -27,19 +27,19 @@
     <varlistentry>
      <term><parameter>statement</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>column</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Can be either use the column number (1-based) or the column name.
        The case of the column name must be the case that Oracle meta data
        describes the column as, which is uppercase for columns created
        case insensitively.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -48,10 +48,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns everything as strings except for abstract types (ROWIDs, LOBs and
    FILEs). Returns &false; on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

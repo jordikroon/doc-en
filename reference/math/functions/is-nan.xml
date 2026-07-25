@@ -12,21 +12,21 @@
    <type>bool</type><methodname>is_nan</methodname>
    <methodparam><type>float</type><parameter>num</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns whether the given <parameter>num</parameter> is <constant>NAN</constant> (<quote>Not A Number</quote>).
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    <constant>NAN</constant> is returned from mathematical operations that are undefined,
    for example when passing parameters outside of function’s input domain. The square root
    (<function>sqrt</function>) is only defined for positive numbers, passing a negative number
    will result in <constant>NAN</constant>. Other examples of operations returning <constant>NAN</constant>
    are dividing <constant>INF</constant> by <constant>INF</constant> and any operation involving an
    existing <constant>NAN</constant> value.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     Despite its name of <quote>Not A Number</quote>, <constant>NAN</constant> is a valid value of type &float;.
-   </para>
+   </simpara>
   </note>
   <caution>
    <para>
@@ -44,9 +44,9 @@
     <varlistentry>
      <term><parameter>num</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The &float; to check
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -55,9 +55,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &true; if <parameter>num</parameter> is <constant>NAN</constant>, else &false;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

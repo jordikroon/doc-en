@@ -5,7 +5,7 @@
   <refname>openssl_pkcs7_verify</refname>
   <refpurpose>Verifies the signature of an S/MIME signed message</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -18,10 +18,10 @@
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>content</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>output_filename</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>openssl_pkcs7_verify</function> reads the S/MIME message
    contained in the given file and examines the digital signature.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -31,80 +31,80 @@
     <varlistentry>
      <term><parameter>input_filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path to the message.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>flags</parameter> can be used to affect how the signature is
        verified - see <link linkend="openssl.pkcs7.flags">PKCS7 constants</link>
        for more information.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>signers_certificates_filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If the <parameter>signers_certificates_filename</parameter> is specified, it should be a
        string holding the name of a file into which the certificates of the
        persons that signed the messages will be stored in <acronym>PEM</acronym> format.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>ca_info</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If the <parameter>ca_info</parameter> is specified, it should hold
        information about the trusted CA certificates to use in the verification
        process - see <link linkend="openssl.cert.verification">certificate
        verification</link> for more information about this parameter.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>untrusted_certificates_filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If the <parameter>untrusted_certificates_filename</parameter> is specified, it is the filename
        of a file containing a bunch of certificates to use as untrusted CAs.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>content</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        You can specify a filename with <parameter>content</parameter> that will
        be filled with the verified data, but with the signature information
        stripped.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>output_filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
 
-      </para>
+      </simpara>
      </listitem>
-    </varlistentry> 
+    </varlistentry>
    </variablelist>
   </para>
  </refsect1>
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the signature is verified, &false; if it is not correct
    (the message has been tampered with, or the signing certificate is invalid),
    or -1 on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -140,7 +140,7 @@
   &reftitle.notes;
   <note>
    <simpara>
-    As specified in RFC 2045, lines may not be longer than 76 characters 
+    As specified in RFC 2045, lines may not be longer than 76 characters
     in the <parameter>input_filename</parameter> parameter.
    </simpara>
   </note>

@@ -12,10 +12,10 @@
    <methodparam><type class="union"><type>string</type><type>null</type></type><parameter>namespace</parameter></methodparam>
    <methodparam><type>string</type><parameter>localName</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   This function fetch all the descendant elements with a given 
+  <simpara>
+   This function fetch all the descendant elements with a given
    <parameter>localName</parameter> and <parameter>namespace</parameter>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -24,20 +24,20 @@
     <varlistentry>
      <term><parameter>namespace</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The namespace URI of the elements to match on.
        The special value <literal>"*"</literal> matches all namespaces.
        Passing &null; matches the empty namespace.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>localName</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The local name of the elements to match on.
        The special value <literal>"*"</literal> matches all local names.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -45,11 +45,11 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    This function returns a new instance of the class
    <classname>DOMNodeList</classname> of all matched elements in the order in
    which they are encountered in a preorder traversal of this element tree.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

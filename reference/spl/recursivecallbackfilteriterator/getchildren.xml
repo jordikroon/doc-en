@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>RecursiveCallbackFilterIterator</type><methodname>RecursiveCallbackFilterIterator::getChildren</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Fetches the filtered children of the inner iterator.
-  </para>
+  </simpara>
   <para>
    <methodname>RecursiveCallbackFilterIterator::hasChildren</methodname> should be used
    to determine if there are children to be fetched.
@@ -28,10 +28,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a <classname>RecursiveCallbackFilterIterator</classname> containing
    the children.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

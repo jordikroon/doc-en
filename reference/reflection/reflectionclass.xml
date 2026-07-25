@@ -10,10 +10,10 @@
 <!-- {{{ ReflectionClass intro -->
   <section xml:id="reflectionclass.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     The <classname>ReflectionClass</classname> class reports
     information about a class.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -84,7 +84,7 @@
 
   </section>
 
-  
+
 <!-- {{{ ReflectionClass properties -->
   <section xml:id="reflectionclass.props">
    &reftitle.properties;
@@ -92,17 +92,17 @@
     <varlistentry xml:id="reflectionclass.props.name">
      <term><varname>name</varname></term>
      <listitem>
-      <para>
+      <simpara>
        Name of the class. Read-only, throws
-       <classname>ReflectionException</classname> in attempt to write.
-      </para>
+       <exceptionname>ReflectionException</exceptionname> in attempt to write.
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </section>
 <!-- }}} -->
 
-  
+
 <!-- {{{ ReflectionClass constants -->
   <section xml:id="reflectionclass.constants">
    &reftitle.constants;
@@ -116,10 +116,10 @@
        <type>int</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Indicates the class is <link linkend="language.oop5.abstract">
         abstract</link> because it has some abstract methods.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
 
@@ -129,10 +129,10 @@
        <type>int</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Indicates the class is <link linkend="language.oop5.abstract">
         abstract</link> because of its definition.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
 
@@ -142,9 +142,9 @@
        <type>int</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Indicates the class is <link linkend="language.oop5.final">final</link>.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
 
@@ -154,9 +154,9 @@
        <type>int</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Indicates the class is <link linkend="language.oop5.basic.class.readonly">readonly</link>.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
 

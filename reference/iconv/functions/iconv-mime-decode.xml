@@ -5,7 +5,7 @@
   <refname>iconv_mime_decode</refname>
   <refpurpose>Decodes a <literal>MIME</literal> header field</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,9 +14,9 @@
    <methodparam choice="opt"><type>int</type><parameter>mode</parameter><initializer>0</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>encoding</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Decodes a <literal>MIME</literal> header field.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,9 +26,9 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The encoded header, as a string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -79,12 +79,12 @@
     <varlistentry>
      <term><parameter>encoding</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The optional <parameter>encoding</parameter> parameter specifies the
        character set to represent the result by. If omitted or &null;,
        <link linkend="iconv.configuration">iconv.internal_encoding</link>
        will be used.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -93,10 +93,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a decoded <literal>MIME</literal> field on success,
    or &false; if an error occurs during the decoding.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

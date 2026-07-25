@@ -6,18 +6,18 @@
   <refpurpose>Parse an X.509 certificate and return an object for
   it</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>OpenSSLCertificate</type><type>false</type></type><methodname>openssl_x509_read</methodname>
    <methodparam><type class="union"><type>OpenSSLCertificate</type><type>string</type></type><parameter>certificate</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>openssl_x509_read</function> parses the certificate supplied by
    <parameter>certificate</parameter> and returns an <classname>OpenSSLCertificate</classname> object for
    it.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,9 +27,9 @@
     <varlistentry>
      <term><parameter>certificate</parameter></term>
      <listitem>
-      <para>
+      <simpara>
         X509 certificate. See <link linkend="openssl.certparams">Key/Certificate parameters</link> for a list of valid values.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -38,9 +38,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an <classname>OpenSSLCertificate</classname> on success&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

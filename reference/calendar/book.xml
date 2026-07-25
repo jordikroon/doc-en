@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
- 
+
 <book xml:id="book.calendar" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <?phpdoc extension-membership="bundled" ?>
  <title>Calendar</title>
- 
+
  <!-- {{{ preface -->
  <preface xml:id="intro.calendar">
   &reftitle.intro;
-  <para>
+  <simpara>
    The calendar extension presents a series of functions to simplify
    converting between different calendar formats.  The intermediary or
    standard it is based on is the Julian Day Count.  The Julian Day Count is
@@ -20,10 +20,10 @@
    information on calendar systems visit <link
    xlink:href="&url.calendar;">&url.calendar;</link>.  Excerpts from this page are
    included in these instructions, and are in quotes.
-  </para>
+  </simpara>
  </preface>
  <!-- }}} -->
- 
+
  &reference.calendar.setup;
  &reference.calendar.constants;
  &reference.calendar.reference;

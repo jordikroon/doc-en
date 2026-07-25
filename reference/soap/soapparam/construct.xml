@@ -13,9 +13,9 @@
    <methodparam><type>mixed</type><parameter>data</parameter></methodparam>
    <methodparam><type>string</type><parameter>name</parameter></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Constructs a new <classname>SoapParam</classname> object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,19 +25,19 @@
     <varlistentry>
      <term><parameter>data</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The data to pass or return. This parameter can be passed directly as PHP
        value, but in this case it will be named as <literal>paramN</literal> and
        the SOAP service may not understand it.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The parameter name.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

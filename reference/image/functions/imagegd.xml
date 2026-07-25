@@ -12,9 +12,9 @@
    <methodparam><type>GdImage</type><parameter>image</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>file</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Outputs or saves the given <parameter>image</parameter> in GD format.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -24,7 +24,7 @@
     <varlistentry>
      <term><parameter>file</parameter></term>
      <listitem>
-      <para>&gd.image.path;</para>
+      <simpara>&gd.image.path;</simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -32,9 +32,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
   &gd.return.trueonerror;
  </refsect1>
 
@@ -113,10 +113,10 @@ imagegd($im, 'simple.gd');
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     The GD format is commonly used to allow fast loading of parts of images.
     Note that the GD format is only usable in GD-compatible applications.
-   </para>
+   </simpara>
   </note>
   &gd.deprecated.gd-formats;
  </refsect1>

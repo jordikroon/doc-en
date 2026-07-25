@@ -13,12 +13,12 @@
     <methodname>DateTime::sub</methodname> when an unsupported operation is
     attempted.
    </para>
-   <para>
+   <simpara>
     An example of such an unsupported operation is using a
     <classname>DateInterval</classname> object representing relative time
     specifications such as <literal>next weekday</literal>, as no logical
     reversed statement can be constructed.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

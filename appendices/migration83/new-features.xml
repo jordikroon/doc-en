@@ -8,49 +8,49 @@
   <sect3 xml:id="migration83.new-features.core.readonly-modifier-improvements">
    <title>Readonly Amendments</title>
 
-   <para>
+   <simpara>
     Anonymous classes may now be marked as readonly.
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     Readonly properties can now be reinitialized during cloning.
     <!-- RFC: https://wiki.php.net/rfc/readonly_amendments -->
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration83.new-features.core.typed-class-constants">
    <title>Typed Class Constants</title>
 
-   <para>
+   <simpara>
     Class, interface, trait, and enum constants now support type declarations.
     <!-- RFC: https://wiki.php.net/rfc/typed_class_constants -->
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration83.new-features.core.closures-created-from-magic-methods">
    <title>Closures created from magic methods</title>
 
-   <para>
+   <simpara>
     Closures created from magic methods can now accept named arguments.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration83.new-features.core.final-modifier-method-from-trait">
    <title>The final modifier with a method from a trait</title>
 
-   <para>
+   <simpara>
     The final modifier may now be used when using a method from a trait.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration83.new-features.core.override-attribute">
    <title>Override Attribute</title>
 
-   <para>
+   <simpara>
     Added the #[\Override] attribute to check that a method exists in a parent
     class or implemented interface.
     <!-- RFC: https://wiki.php.net/rfc/marking_overriden_methods -->
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration83.new-features.core.fetch-class-constant-dynamically-syntax">
@@ -102,40 +102,40 @@ echo $user_ini['listen']; // localhost:9000
  <sect2 xml:id="migration83.new-features.cli">
   <title>CLI</title>
 
-  <para>
+  <simpara>
    It is now possible to lint multiple files.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration83.new-features.dom">
   <title>DOM</title>
 
-  <para>
+  <simpara>
    Added properties <property>DOMElement::$className</property>
    and <property>DOMElement::$id</property>.
    These are not binary-safe at the moment because of underlying limitations
    of libxml2.
    This means that the property values will be cut off at a NUL byte.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    Added properties <property>DOMNode::$isConnected</property>
    and <property>DOMNameSpaceNode::$isConnected</property>.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    Added properties <property>DOMNode::$parentElement</property>
    and <property>DOMNameSpaceNode::$parentElement</property>.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration83.new-features.ffi">
   <title>FFI</title>
 
-  <para>
+  <simpara>
    It is now possible to assign <classname>FFI\CData</classname> to other FFI\CData.
    Meaning CData can now be assigned to structs and fields.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration83.new-features.opcache">
@@ -158,25 +158,25 @@ echo $user_ini['listen']; // localhost:9000
    <parameter>resource</parameter> parameter to allow fetching a single resource limit.
   </simpara>
 
-  <para>
+  <simpara>
    <function>posix_isatty</function> now raises type warnings for integers
    following the usual ZPP semantics.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    <function>posix_ttyname</function> now raises type warnings for integers
    following the usual ZPP semantics and value warnings for invalid file
    descriptor integers.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration83.new-features.streams">
   <title>Streams</title>
 
-  <para>
+  <simpara>
    Streams can now emit the <constant>STREAM_NOTIFY_COMPLETED</constant>
    notification. This was previously not implemented.
-  </para>
+  </simpara>
  </sect2>
 
 </sect1>

@@ -5,7 +5,7 @@
   <refname>pspell_add_to_personal</refname>
   <refpurpose>Add the word to a personal wordlist</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -18,7 +18,7 @@
    wordlist. If you used <function>pspell_new_config</function> with
    <function>pspell_config_personal</function> to open the dictionary,
    you can save the wordlist later with
-   <function>pspell_save_wordlist</function>. 
+   <function>pspell_save_wordlist</function>.
   </simpara>
  </refsect1>
 
@@ -35,9 +35,9 @@
     <varlistentry>
      <term><parameter>word</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The added word.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -46,9 +46,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -92,10 +92,10 @@ pspell_save_wordlist($pspell);
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     This function will not work unless you have pspell .11.2 and aspell .32.5
     or later.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

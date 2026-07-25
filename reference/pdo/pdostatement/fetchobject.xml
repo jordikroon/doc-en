@@ -19,10 +19,10 @@
    <constant>PDO::FETCH_CLASS</constant> or
    <constant>PDO::FETCH_OBJ</constant> style.
   </para>
-  <para>
+  <simpara>
    When an object is fetched, its properties are assigned from respective
    column values, and afterwards its constructor is invoked.
-  </para>
+  </simpara>
 
  </refsect1>
  <refsect1 role="parameters">
@@ -32,17 +32,17 @@
     <varlistentry>
      <term><parameter>class</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Name of the created class.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>constructorArgs</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Elements of this array are passed to the constructor.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -50,10 +50,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an instance of the required class with property names that
    correspond to the column names &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

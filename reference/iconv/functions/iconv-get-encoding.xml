@@ -5,16 +5,16 @@
   <refname>iconv_get_encoding</refname>
   <refpurpose>Retrieve internal configuration variables of iconv extension</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>array</type><type>string</type><type>false</type></type><methodname>iconv_get_encoding</methodname>
    <methodparam choice="opt"><type>string</type><parameter>type</parameter><initializer>"all"</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Retrieve internal configuration variables of iconv extension.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -41,15 +41,15 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the current value of the internal configuration variable if
    successful&return.falseforfailure;.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If <parameter>type</parameter> is omitted or set to "all",
    <function>iconv_get_encoding</function> returns an array that
    stores all these variables.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -13,10 +13,10 @@
    <modifier>public</modifier> <type>bool</type><methodname>DOMDocument::relaxNGValidateSource</methodname>
    <methodparam><type>string</type><parameter>source</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Performs <link xlink:href="&url.relaxng;">relaxNG</link> validation on the document
    based on the given RNG source.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -25,9 +25,9 @@
     <varlistentry>
      <term><parameter>source</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A string containing the RNG schema.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,9 +35,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="seealso">
   &reftitle.seealso;

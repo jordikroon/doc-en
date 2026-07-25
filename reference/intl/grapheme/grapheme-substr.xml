@@ -7,7 +7,7 @@
  </refnamediv>
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>grapheme_substr</methodname>
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
@@ -15,9 +15,9 @@
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>length</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>locale</parameter><initializer>""</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Return part of a string
-  </para> 
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,35 +27,35 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
-       The input string. Must be valid UTF-8. 
-      </para>
+      <simpara>
+       The input string. Must be valid UTF-8.
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Start position in default grapheme units.
        If <parameter>offset</parameter> is non-negative, the returned string will start at the
        <parameter>offset</parameter>'th position in <parameter>string</parameter>, counting from zero. If <parameter>offset</parameter> is negative,
-       the returned string will start at the <parameter>offset</parameter>'th grapheme unit from the 
+       the returned string will start at the <parameter>offset</parameter>'th grapheme unit from the
        end of string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Length in grapheme units.
        If <parameter>length</parameter> is given and is positive, the string returned will contain
-       at most <parameter>length</parameter> grapheme units beginning from <parameter>offset</parameter> (depending on the 
+       at most <parameter>length</parameter> grapheme units beginning from <parameter>offset</parameter> (depending on the
        length of string). If <parameter>length</parameter> is given and is negative, then
        that many grapheme units will be omitted from the end of string (after the
        start position has been calculated when <parameter>offset</parameter> is negative). If <parameter>offset</parameter>
        denotes a position beyond this truncation, an empty string will be returned.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -70,9 +70,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the extracted part of <parameter>string</parameter>, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

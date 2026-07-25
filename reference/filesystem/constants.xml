@@ -460,10 +460,10 @@
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
+    <simpara>
      Failed to write file to disk.
      The value of the constant is <literal>7</literal>.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
   <varlistentry xml:id="constant.upload-err-extension">
@@ -472,12 +472,12 @@
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
+    <simpara>
      A PHP extension stopped the file upload. PHP does not
      provide a way to ascertain which extension caused the file upload to
      stop; examining the list of loaded extensions with <function>phpinfo</function> may help.
      The value of the constant is <literal>8</literal>.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
   <varlistentry xml:id="constant.upload-err-form-size">
@@ -486,11 +486,11 @@
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
+    <simpara>
      The uploaded file exceeds the <emphasis>MAX_FILE_SIZE</emphasis>
      directive that was specified in the HTML form.
      The value of the constant is <literal>2</literal>.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
   <varlistentry xml:id="constant.upload-err-ini-size">
@@ -499,12 +499,12 @@
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
+    <simpara>
      The uploaded file exceeds the
      <link linkend="ini.upload-max-filesize">upload_max_filesize</link>
      directive in &php.ini;.
      The value of the constant is <literal>1</literal>.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
   <varlistentry xml:id="constant.upload-err-no-file">
@@ -513,10 +513,10 @@
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
+    <simpara>
      No file was uploaded.
      The value of the constant is <literal>4</literal>.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
   <varlistentry xml:id="constant.upload-err-no-tmp-dir">
@@ -525,10 +525,10 @@
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
+    <simpara>
      Missing a temporary folder.
      The value of the constant is <literal>6</literal>.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
   <varlistentry xml:id="constant.upload-err-ok">
@@ -537,10 +537,10 @@
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
+    <simpara>
      There is no error, the file uploaded with success.
      The value of the constant is <literal>0</literal>.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
   <varlistentry xml:id="constant.upload-err-partial">
@@ -549,10 +549,10 @@
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
+    <simpara>
      The uploaded file was only partially uploaded.
      The value of the constant is <literal>3</literal>.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
  </variablelist>

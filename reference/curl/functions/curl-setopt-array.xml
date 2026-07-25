@@ -12,11 +12,11 @@
    <methodparam><type>CurlHandle</type><parameter>handle</parameter></methodparam>
    <methodparam><type>array</type><parameter>options</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets multiple options for a cURL session. This function is
    useful for setting a large number of cURL options without repetitively
    calling <function>curl_setopt</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,11 +27,11 @@
     <varlistentry>
      <term><parameter>options</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An <type>array</type> specifying which options to set and their values.
        The keys should be valid <function>curl_setopt</function> constants or
        their integer equivalents.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -40,11 +40,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if all options were successfully set. If an option could
    not be successfully set, &false; is immediately returned, ignoring any
    future options in the <parameter>options</parameter> array.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -96,13 +96,13 @@ curl_exec($ch);
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
-    As with <function>curl_setopt</function>, passing an array to 
-    <constant>CURLOPT_POST</constant> will encode the data as 
-    <emphasis>multipart/form-data</emphasis>, while passing a 
-    URL-encoded string will encode the data as 
+   <simpara>
+    As with <function>curl_setopt</function>, passing an array to
+    <constant>CURLOPT_POST</constant> will encode the data as
+    <emphasis>multipart/form-data</emphasis>, while passing a
+    URL-encoded string will encode the data as
     <emphasis>application/x-www-form-urlencoded</emphasis>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

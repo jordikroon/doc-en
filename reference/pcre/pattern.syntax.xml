@@ -7,7 +7,7 @@
 
  <section xml:id="regexp.introduction">
   <title>Introduction</title>
-  <para>
+  <simpara>
    The syntax and semantics of the regular expressions
    supported by PCRE are described in this section. Regular expressions are
    also described in the Perl documentation and in a number of
@@ -15,8 +15,8 @@
    Friedl's "Mastering Regular Expressions", published by
    O'Reilly (ISBN 1-56592-257-3), covers them in great detail.
    The description here is intended as reference documentation.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    A regular expression is a pattern that is matched against a
    subject string from left to right. Most characters stand for
    themselves in a pattern, and match the corresponding
@@ -24,16 +24,16 @@
    <literal>The quick brown fox</literal>
    matches a portion of a subject string that is identical to
    itself.
-  </para>
+  </simpara>
  </section>
  <section xml:id="regexp.reference.delimiters">
   <title>Delimiters</title>
-  <para>
+  <simpara>
    When using the PCRE functions, it is required that the pattern is enclosed
    by <emphasis>delimiters</emphasis>. A delimiter can be any non-alphanumeric,
    non-backslash, non-whitespace character.
    Leading whitespace before a valid delimiter is silently ignored.
-  </para>
+  </simpara>
   <para>
    Often used delimiters are forward slashes (<literal>/</literal>), hash
    signs (<literal>#</literal>) and tildes (<literal>~</literal>). The
@@ -101,13 +101,13 @@
  </section>
  <section xml:id="regexp.reference.meta">
   <title>Meta-characters</title>
-  <para>
+  <simpara>
    The power of regular expressions comes from the
    ability to include alternatives and repetitions in the
    pattern. These are encoded in the pattern by the use of
    <emphasis>meta-characters</emphasis>, which do not stand for themselves but instead
    are interpreted in some special way.
-  </para>
+  </simpara>
   <para>
    There are two different sets of meta-characters: those that
    are recognized anywhere in the pattern except within square
@@ -204,38 +204,38 @@
 
  <section xml:id="regexp.reference.escape">
   <title>Escape sequences</title>
-  <para>
+  <simpara>
    The backslash character has several uses. Firstly, if it is
    followed by a non-alphanumeric character, it takes away any
    special meaning that character may have. This use of
    backslash as an escape character applies both inside and
    outside character classes.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    For example, if you want to match a "*" character, you write
    "\*" in the pattern. This applies whether or not the
    following character would otherwise be interpreted as a
    meta-character, so it is always safe to precede a non-alphanumeric
    with "\" to specify that it stands for itself. In
    particular, if you want to match a backslash, you write "\\".
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     Single and double quoted PHP <link
     linkend="language.types.string.syntax">strings</link> have special
     meaning of backslash. Thus if \ has to be matched with a regular
     expression \\, then "\\\\" or '\\\\' must be used in PHP code.
-   </para>
+   </simpara>
   </note>
-  <para>
+  <simpara>
    If a pattern is compiled with the
    <link linkend="reference.pcre.pattern.modifiers">PCRE_EXTENDED</link> option,
    whitespace in the pattern (other than in a character class) and
    characters between a "#" outside a character class and the next newline
    character are ignored. An escaping backslash can be used to include a
    whitespace or "#" character as part of the pattern.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    A second use of backslash provides a way of encoding
    non-printing characters in patterns in a visible manner. There
    is no restriction on the appearance of non-printing characters,
@@ -243,7 +243,7 @@
    but when a pattern is being prepared by text editing, it is
    usually easier to use one of the following escape sequences
    than the binary character it represents:
-  </para>
+  </simpara>
   <para>
    <variablelist>
     <varlistentry>
@@ -330,15 +330,15 @@
     </varlistentry>
    </variablelist>
   </para>
-  <para>
+  <simpara>
    The precise effect of "<literal>\cx</literal>" is as follows:
    if "<literal>x</literal>" is a lower case letter, it is converted
    to upper case. Then bit 6 of the character (hex 40) is inverted.
    Thus "<literal>\cz</literal>" becomes hex 1A, but
    "<literal>\c{</literal>" becomes hex 3B, while "<literal>\c;</literal>"
    becomes hex 7B.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    After "<literal>\x</literal>", up to two hexadecimal digits are
    read (letters can be in upper or lower case).
    In <emphasis>UTF-8 mode</emphasis>, "<literal>\x{...}</literal>" is
@@ -347,16 +347,16 @@
    given hexadecimal number. The original hexadecimal escape sequence,
    <literal>\xhh</literal>, matches a two-byte UTF-8 character if the value
    is greater than 127.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    After "<literal>\0</literal>" up to two further octal digits are read.
    In both cases, if there are fewer than two digits, just those that
    are present are used. Thus the sequence "<literal>\0\x\07</literal>"
    specifies two binary zeros followed by a BEL character. Make sure you
    supply two digits after the initial zero if the character
    that follows is itself an octal digit.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The handling of a backslash followed by a digit other than 0
    is complicated. Outside a character class, PCRE reads it
    and any following digits as a decimal number. If the number
@@ -365,15 +365,15 @@
    entire sequence is taken as a <emphasis>back reference</emphasis>. A description
    of how this works is given later, following the discussion
    of parenthesized subpatterns.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Inside a character class, or if the decimal number is
    greater than 9 and there have not been that many capturing
    subpatterns, PCRE re-reads up to three octal digits following
    the backslash, and generates a single byte from the
    least significant 8 bits of the value. Any subsequent digits
    stand for themselves. For example:
-  </para>
+  </simpara>
   <para>
    <variablelist>
     <varlistentry>
@@ -434,22 +434,22 @@
     </varlistentry>
    </variablelist>
   </para>
-  <para>
+  <simpara>
    Note that octal values of 100 or greater must not be
    introduced by a leading zero, because no more than three octal
    digits are ever read.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    All the sequences that define a single byte value can be
    used both inside and outside character classes. In addition,
    inside a character class, the sequence "<literal>\b</literal>"
    is interpreted as the backspace character (hex 08). Outside a character
    class it has a different meaning (see below).
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The third use of backslash is for specifying generic
    character types:
-  </para>
+  </simpara>
   <para>
    <variablelist>
     <varlistentry>
@@ -494,18 +494,18 @@
     </varlistentry>
    </variablelist>
   </para>
-  <para>
+  <simpara>
    Each pair of escape sequences partitions the complete set of
    characters into two disjoint sets. Any given character
    matches one, and only one, of each pair.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The "whitespace" characters are HT (9), LF (10), FF (12), CR (13),
    and space (32). However, if locale-specific matching is happening,
    characters with code points in the range 128-255 may also be considered
    as whitespace characters, for instance, NBSP (A0).
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    A "word" character is any letter or digit or the underscore
    character, that is, any character which can be part of a
    Perl "<emphasis>word</emphasis>". The definition of letters and digits is
@@ -513,22 +513,22 @@
    matching is taking place. For example, in the "fr" (French) locale, some
    character codes greater than 128 are used for accented letters,
    and these are matched by <literal>\w</literal>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    These character type sequences can appear both inside and
    outside character classes. They each match one character of
    the appropriate type. If the current matching point is at
    the end of the subject string, all of them fail, since there
    is no character to match.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The fourth use of backslash is for certain simple
    assertions. An assertion specifies a condition that has to be met
    at a particular point in a match, without consuming any
    characters from the subject string. The use of subpatterns
    for more complicated assertions is described below. The
    backslashed assertions are
-  </para>
+  </simpara>
   <para>
    <variablelist>
     <varlistentry>
@@ -562,20 +562,20 @@
     </varlistentry>
    </variablelist>
   </para>
-  <para>
+  <simpara>
    These assertions may not appear in character classes (but
    note that "<literal>\b</literal>" has a different meaning, namely the backspace
    character, inside a character class).
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    A word boundary is a position in the subject string where
    the current character and the previous character do not both
    match <literal>\w</literal> or <literal>\W</literal> (i.e. one matches
    <literal>\w</literal> and the other matches
    <literal>\W</literal>), or the start or end of the string if the first
    or last character matches <literal>\w</literal>, respectively.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The <literal>\A</literal>, <literal>\Z</literal>, and
    <literal>\z</literal> assertions differ from the traditional
    circumflex and dollar (described in <link linkend="regexp.reference.anchors">anchors</link> )
@@ -587,45 +587,45 @@
    <literal>\z</literal> is that <literal>\Z</literal> matches before a
    newline that is the last character of the string as well as at the end of
    the string, whereas <literal>\z</literal> matches only at the end.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The <literal>\G</literal> assertion is true only when the current
    matching position is at the start point of the match, as specified by
    the <parameter>offset</parameter> argument of
    <function>preg_match</function>. It differs from <literal>\A</literal>
    when the value of <parameter>offset</parameter> is non-zero.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    <literal>\Q</literal> and <literal>\E</literal> can be used to ignore
    regexp metacharacters in the pattern. For example:
    <literal>\w+\Q.$.\E$</literal> will match one or more word characters,
    followed by literals <literal>.$.</literal> and anchored at the end of
-   the string. Note that this does not change the behavior of 
+   the string. Note that this does not change the behavior of
    delimiters; for instance the pattern <literal>#\Q#\E#$</literal>
    is not valid, because the second <literal>#</literal> marks the end
    of the pattern, and the <literal>\E#</literal> is interpreted as invalid
    modifiers.
-  </para>
+  </simpara>
 
-  <para>
-   <literal>\K</literal> can be used to reset the match start. 
+  <simpara>
+   <literal>\K</literal> can be used to reset the match start.
    For example, the pattern <literal>foo\Kbar</literal> matches
    "foobar", but reports that it has matched "bar". The use of
    <literal>\K</literal> does not interfere with the setting of captured
    substrings. For example, when the pattern <literal>(foo)\Kbar</literal>
    matches "foobar", the first substring is still set to "foo".
-  </para>
+  </simpara>
 
  </section>
 
  <section xml:id="regexp.reference.unicode">
   <title>Unicode character properties</title>
-  <para>
+  <simpara>
    Since 5.1.0, three
    additional escape sequences to match generic character types are available
    when <emphasis>UTF-8 mode</emphasis> is selected. They are:
-  </para>
+  </simpara>
   <variablelist>
    <varlistentry>
     <term><emphasis>\p{xx}</emphasis></term>
@@ -640,20 +640,20 @@
     <listitem><simpara>an extended Unicode sequence</simpara></listitem>
    </varlistentry>
   </variablelist>
-  <para>
+  <simpara>
    The property names represented by <literal>xx</literal> above are limited
    to the Unicode general category properties. Each character has exactly one
    such property, specified by a two-letter abbreviation. For compatibility with
    Perl, negation can be specified by including a circumflex between the
    opening brace and the property name. For example, <literal>\p{^Lu}</literal>
    is the same as <literal>\P{Lu}</literal>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If only one letter is specified with <literal>\p</literal> or
    <literal>\P</literal>, it includes all the properties that start with that
    letter. In this case, in the absence of negation, the curly brackets in the
    escape sequence are optional; these two examples have the same effect:
-  </para>
+  </simpara>
   <informalexample>
    <programlisting>
 <![CDATA[
@@ -865,19 +865,19 @@
     </tbody>
    </tgroup>
   </table>
-  <para>
+  <simpara>
    Extended properties such as <literal>InMusicalSymbols</literal> are not
    supported by PCRE.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Specifying case-insensitive (caseless) matching does not affect these escape sequences.
    For example, <literal>\p{Lu}</literal> always matches only upper case letters.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Sets of Unicode characters are defined as belonging to certain scripts. A
    character from one of these sets can be matched using a script name. For
    example:
-  </para>
+  </simpara>
   <itemizedlist>
    <listitem>
     <simpara><literal>\p{Greek}</literal></simpara>
@@ -886,10 +886,10 @@
     <simpara><literal>\P{Han}</literal></simpara>
    </listitem>
   </itemizedlist>
-  <para>
+  <simpara>
    Those that are not part of an identified script are lumped together as
    <literal>Common</literal>. The current list of scripts is:
-  </para>
+  </simpara>
   <table>
    <title>Supported scripts</title>
    <tgroup cols="5">
@@ -1044,15 +1044,15 @@
     </tbody>
    </tgroup>
   </table>
-  <para>
+  <simpara>
    The <literal>\X</literal> escape matches a Unicode extended grapheme
    cluster. An extended grapheme cluster is one or more Unicode characters
    that combine to form a single glyph. In effect, this can be thought of as
    the Unicode equivalent of <literal>.</literal> as it will match one
    composed character, regardless of how many individual characters are
    actually used to render it.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    In versions of PCRE older than 8.32 (which corresponds to PHP versions
    before 5.4.14 when using the bundled PCRE library), <literal>\X</literal>
    is equivalent to <literal>(?>\PM\pM*)</literal>. That is, it matches a
@@ -1060,26 +1060,26 @@
    with the "mark" property, and treats the sequence as an atomic group (see
    below). Characters with the "mark" property are typically accents that
    affect the preceding character.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Matching characters by Unicode property is not fast, because PCRE has
    to search a structure that contains data for over fifteen thousand
    characters. That is why the traditional escape sequences such as
    <literal>\d</literal> and <literal>\w</literal> do not use Unicode properties
    in PCRE.
-  </para>
+  </simpara>
  </section>
 
  <section xml:id="regexp.reference.anchors">
   <title>Anchors</title>
-  <para>
+  <simpara>
    Outside a character class, in the default matching mode, the
    circumflex character (<literal>^</literal>) is an assertion which
    is true only if the current matching point is at the start of
    the subject string. Inside a character class, circumflex (<literal>^</literal>)
    has an entirely different meaning (see below).
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Circumflex (<literal>^</literal>) need not be the first character
    of the pattern if a number of alternatives are involved, but it
    should be the first thing in each alternative in which it appears
@@ -1088,8 +1088,8 @@
    if the pattern is constrained to match only at the start of the subject,
    it is said to be an "anchored" pattern. (There are also other
    constructs that can cause a pattern to be anchored.)
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    A dollar character (<literal>$</literal>) is an assertion which is
    &true; only if the current matching point is at the end of the subject
    string, or immediately before a newline character that is the last
@@ -1098,14 +1098,14 @@
    alternatives are involved, but it should be the last item in any branch
    in which it appears. Dollar has no special meaning in a
    character class.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The meaning of dollar can be changed so that it matches only
    at the very end of the string, by setting the
    <link linkend="reference.pcre.pattern.modifiers">PCRE_DOLLAR_ENDONLY</link>
    option at compile or matching time. This does not affect the \Z assertion.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The meanings of the circumflex and dollar characters are
    changed if the
    <link linkend="reference.pcre.pattern.modifiers">PCRE_MULTILINE</link> option
@@ -1120,19 +1120,19 @@
    option is ignored if
    <link linkend="reference.pcre.pattern.modifiers">PCRE_MULTILINE</link> is
    set.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Note that the sequences \A, \Z, and \z can be used to match
    the start and end of the subject in both modes, and if all
    branches of a pattern start with \A is it always anchored,
    whether <link linkend="reference.pcre.pattern.modifiers">PCRE_MULTILINE</link>
    is set or not.
-  </para>
+  </simpara>
  </section>
 
  <section xml:id="regexp.reference.dot">
   <title>Dot</title>
-  <para>
+  <simpara>
    Outside a character class, a dot in the pattern matches any
    one character in the subject, including a non-printing
    character, but not (by default) newline. If the
@@ -1142,25 +1142,25 @@
    circumflex and dollar, the only relationship being that they
    both involve newline characters. Dot has no special meaning
    in a character class.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    <emphasis>\C</emphasis> can be used to match single byte. It makes sense
    in <emphasis>UTF-8 mode</emphasis> where full stop matches the whole
    character which can consist of multiple bytes.
-  </para>
+  </simpara>
  </section>
 
  <section xml:id="regexp.reference.character-classes">
   <title>Character classes</title>
-  <para>
+  <simpara>
    An opening square bracket introduces a character class,
    terminated by a closing square bracket. A closing square
    bracket on its own is not special. If a closing square
    bracket is required as a member of the class, it should be
    the first data character in the class (after an initial
    circumflex, if present) or escaped with a backslash.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    A character class matches a single character in the subject;
    the character must be in the set of characters defined by
    the class, unless the first character in the class is a
@@ -1168,8 +1168,8 @@
    the set defined by the class. If a circumflex is actually
    required as a member of the class, ensure it is not the
    first character, or escape it with a backslash.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    For example, the character class [aeiou] matches any lower
    case vowel, while [^aeiou] matches any character that is not
    a lower case vowel. Note that a circumflex is just a
@@ -1178,22 +1178,22 @@
    assertion: it still consumes a character from the subject
    string, and fails if the current pointer is at the end of
    the string.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    When case-insensitive (caseless) matching is set, any letters
    in a class represent both their upper case and lower case
    versions, so for example, an insensitive [aeiou] matches "A"
    as well as "a", and an insensitive [^aeiou] does not match
    "A", whereas a sensitive (caseful) version would.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The newline character is never treated in any special way in
    character classes, whatever the setting of the <link
    linkend="reference.pcre.pattern.modifiers">PCRE_DOTALL</link>
    or <link linkend="reference.pcre.pattern.modifiers">PCRE_MULTILINE</link>
    options is. A class such as [^a] will always match a newline.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The minus (hyphen) character can be used to specify a range
    of characters in a character class. For example, [d-m]
    matches any letter between d and m, inclusive. If a minus
@@ -1201,8 +1201,8 @@
    backslash or appear in a position where it cannot be
    interpreted as indicating a range, typically as the first or last
    character in the class.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    It is not possible to have the literal character "]" as the
    end character of a range. A pattern such as [W-]46] is
    interpreted as a class of two characters ("W" and "-")
@@ -1212,8 +1212,8 @@
    interpreted as a single class containing a range followed by two
    separate characters. The octal or hexadecimal representation
    of "]" can also be used to end a range.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Ranges operate in ASCII collating sequence. They can also be
    used for characters specified numerically, for example
    [\000-\037]. If a range that includes letters is used when
@@ -1222,8 +1222,8 @@
    [][\^_`wxyzabc], matched case-insensitively, and if character
    tables for the "fr" locale are in use, [\xc8-\xcb] matches
    accented E characters in both cases.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The character types \d, \D, \s, \S, \w, and \W may also
    appear in a character class, and add the characters that
    they match to the class. For example, [\dABCDEF] matches any
@@ -1232,14 +1232,14 @@
    restricted set of characters than the matching lower case type.
    For example, the class [^\W_] matches any letter or digit,
    but not underscore.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    All non-alphanumeric characters other than \, -, ^ (at the
    start) and the terminating ] are non-special in character
    classes, but it does no harm if they are escaped. The pattern
    terminator is always special and must be escaped when used
    within an expression.
-  </para>
+  </simpara>
   <para>
    Perl supports the POSIX notation for character classes. This uses names
    enclosed by <literal>[:</literal> and <literal>:]</literal> within
@@ -1273,31 +1273,31 @@
    11). This makes "space" different to <literal>\s</literal>, which does not include VT (for
    Perl compatibility).
   </para>
-  <para>
+  <simpara>
    The name <literal>word</literal> is a Perl extension, and <literal>blank</literal> is a GNU extension
    from Perl 5.8. Another Perl extension is negation, which is indicated
    by a <literal>^</literal> character after the colon. For example,
    <literal>[12[:^digit:]]</literal> matches "1", "2", or any non-digit.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    In UTF-8 mode, characters with values greater than 128 do not match any
    of the POSIX character classes.
    As of libpcre 8.10 some character classes are changed to use
    Unicode character properties, in which case the mentioned restriction does
    not apply. Refer to the <link xlink:href="&url.pcre.man;">PCRE(3) manual</link>
    for details.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Unicode character properties can appear inside a character class. They can
    not be part of a range. The minus (hyphen) character after a Unicode
    character class will match literally. Trying to end a range with a Unicode
    character property will result in a warning.
-  </para>
+  </simpara>
  </section>
 
  <section xml:id="regexp.reference.alternation">
   <title>Alternation</title>
-  <para>
+  <simpara>
    Vertical bar characters are used to separate alternative
    patterns. For example, the pattern
    <literal>gilbert|sullivan</literal>
@@ -1309,9 +1309,9 @@
    subpattern (defined below), "succeeds" means matching the
    rest of the main pattern as well as the alternative in the
    subpattern.
-  </para>
-  <para>
-   It is possible to record which alternative was matched by using 
+  </simpara>
+  <simpara>
+   It is possible to record which alternative was matched by using
    <literal>(*MARK:NAME)</literal> or <literal>(*:NAME)</literal>.
    Any number of such <literal>(*MARK)</literal> verbs may appear and their
    names do not have to be unique. When a match succeeds, the name of the
@@ -1320,7 +1320,7 @@
    can be read from the <parameter>matches</parameter> of
    <function>preg_match</function> and will be passed to the
    <parameter>callback</parameter> of <function>preg_replace_callback</function> etc.
-  </para>
+  </simpara>
  </section>
 
  <section xml:id="regexp.reference.internal-options">
@@ -1373,7 +1373,7 @@
     </tgroup>
    </table>
   </para>
-  <para>
+  <simpara>
    For example, (?im) sets case-insensitive (caseless), multiline matching. It is
    also possible to unset these options by preceding the letter
    with a hyphen, and a combined setting and unsetting such as
@@ -1385,14 +1385,14 @@
    <link linkend="reference.pcre.pattern.modifiers">PCRE_EXTENDED</link>,
    is also permitted. If a letter appears both before and after the
    hyphen, the option is unset.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    When an option change occurs at top level (that is, not inside
    subpattern parentheses), the change applies to the remainder of the
    pattern that follows. So <literal>/ab(?i)c/</literal> matches only "abc"
    and "abC".
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If an option change occurs inside a subpattern, the effect
    is different. This is a change of behaviour in Perl 5.005.
    An option change inside a subpattern affects only that part
@@ -1413,8 +1413,8 @@
    "C" the first branch is abandoned before the option setting.
    This is because the effects of option settings happen at
    compile time. There would be some very weird behaviour otherwise.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The PCRE-specific options <link
    linkend="reference.pcre.pattern.modifiers">PCRE_UNGREEDY</link> and
    <link linkend="reference.pcre.pattern.modifiers">PCRE_EXTRA</link> can
@@ -1423,37 +1423,37 @@
    setting is special in that it must always occur earlier in
    the pattern than any of the additional features it turns on,
    even when it is at top level. It is best put at the start.
-  </para>
+  </simpara>
  </section>
 
  <section xml:id="regexp.reference.subpatterns">
   <title>Subpatterns</title>
-  <para>
+  <simpara>
    Subpatterns are delimited by parentheses (round brackets),
    which can be nested. Marking part of a pattern as a subpattern
    does two things:
-  </para>
+  </simpara>
   <orderedlist>
    <listitem>
-    <para>
+    <simpara>
      It localizes a set of alternatives. For example, the pattern
      <literal>cat(aract|erpillar|)</literal> matches one of the words "cat",
      "cataract", or "caterpillar". Without the parentheses, it would match
      "cataract", "erpillar" or the empty string.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      It sets up the subpattern as a capturing subpattern (as defined above).
      When the whole pattern matches, that portion of the subject string
      that matched the subpattern is passed back to the caller via the
      <emphasis>ovector</emphasis> argument of <function>pcre_exec</function>.
      Opening parentheses are counted from left to right (starting from 1) to
      obtain the numbers of the capturing subpatterns.
-    </para>
+    </simpara>
    </listitem>
   </orderedlist>
-  <para>
+  <simpara>
    For example, if the string "the red king" is matched against
    the pattern
 
@@ -1461,8 +1461,8 @@
 
    the captured substrings are "red king", "red", and "king",
    and are numbered 1, 2, and 3.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The fact that plain parentheses fulfill two functions is not
    always helpful. There are often times when a grouping subpattern
    is required without a capturing requirement. If an
@@ -1478,13 +1478,13 @@
    are numbered 1 and 2. The maximum number of captured substrings
    is 65535. It may not be possible to compile such large patterns,
    however, depending on the configuration options of libpcre.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    As a convenient shorthand, if any option settings are
    required at the start of a non-capturing subpattern, the
    option letters may appear between the "?" and the ":". Thus
    the two patterns
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting>
@@ -1495,30 +1495,30 @@
    </programlisting>
   </informalexample>
 
-  <para>
+  <simpara>
    match exactly the same set of strings. Because alternative
    branches are tried from left to right, and options are not
    reset until the end of the subpattern is reached, an option
    setting in one branch does affect subsequent branches, so
    the above patterns match "SUNDAY" as well as "Saturday".
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    It is possible to name a subpattern using the syntax
    <literal>(?P&lt;name&gt;pattern)</literal>. This subpattern will then
    be indexed in the matches array by its normal numeric position and
    also by name. There are two alternative syntaxes
    <literal>(?&lt;name&gt;pattern)</literal> and <literal>(?'name'pattern)</literal>.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    Sometimes it is necessary to have multiple matching, but alternating
    subgroups in a regular expression. Normally, each of these would be given
    their own backreference number even though only one of them would ever
    possibly match. To overcome this, the <literal>(?|</literal> syntax allows
    having duplicate numbers. Consider the following regex matched against the
    string <literal>Sunday</literal>:
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting>
@@ -1526,13 +1526,13 @@
    </programlisting>
   </informalexample>
 
-  <para>
+  <simpara>
    Here <literal>Sun</literal> is stored in backreference 2, while
    backreference 1 is empty. Matching <literal>Saturday</literal> yields
    <literal>Sat</literal> in backreference 1 while backreference 2 does
    not exist. Changing the pattern to use the <literal>(?|</literal> fixes
    this problem:
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting>
@@ -1540,10 +1540,10 @@
    </programlisting>
   </informalexample>
 
-  <para>
+  <simpara>
    Using this pattern, both <literal>Sun</literal> and <literal>Sat</literal>
    would be stored in backreference 1.
-  </para>
+  </simpara>
  </section>
 
  <section xml:id="regexp.reference.repetition">
@@ -1561,7 +1561,7 @@
      see below)</simpara></listitem>
    </itemizedlist>
   </para>
-  <para>
+  <simpara>
    The general repetition quantifier specifies a minimum and
    maximum number of permitted matches, by giving the two
    numbers in curly brackets (braces), separated by a comma.
@@ -1585,7 +1585,7 @@
 
    matches exactly 8 digits.
 
-  </para>
+  </simpara>
   <simpara>
    Prior to PHP 8.4.0, an opening curly bracket that
    appears in a position where a quantifier is not allowed, or
@@ -1600,11 +1600,11 @@
    Further, as of PHP 8.4.0, space characters around quantifiers such as
    <literal>\d{0 , 8}</literal> and <literal>\d{ 0 , 8 }</literal> are allowed.
   </simpara>
-  <para>
+  <simpara>
    The quantifier {0} is permitted, causing the expression to
    behave as if the previous item and the quantifier were not
    present.
-  </para>
+  </simpara>
   <para>
    For convenience (and historical compatibility) the three
    most common quantifiers have single-character abbreviations:
@@ -1629,21 +1629,21 @@
     </tgroup>
    </table>
   </para>
-  <para>
+  <simpara>
    It is possible to construct infinite loops by following a
    subpattern that can match no characters with a quantifier
    that has no upper limit, for example:
 
    <literal>(a?)*</literal>
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Earlier versions of Perl and PCRE used to give an error at
    compile time for such patterns. However, because there are
    cases where this can be useful, such patterns are now
    accepted, but if any repetition of the subpattern does in
    fact match no characters, the loop is forcibly broken.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    By default, the quantifiers are "greedy", that is, they
    match as much as possible (up to the maximum number of permitted
    times), without causing the rest of the pattern to
@@ -1661,8 +1661,8 @@
 
    fails, because it matches the entire string due to the
    greediness of the .* item.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    However, if a quantifier is followed by a question mark,
    then it becomes lazy, and instead matches the minimum
    number of times possible, so the pattern
@@ -1680,29 +1680,29 @@
 
    which matches one digit by preference, but can match two if
    that is the only way the rest of the pattern matches.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If the <link linkend="reference.pcre.pattern.modifiers">PCRE_UNGREEDY</link>
    option is set (an option which is not
    available in Perl) then the quantifiers are not greedy by
    default, but individual ones can be made greedy by following
    them with a question mark. In other words, it inverts the
    default behaviour.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Quantifiers followed by <literal>+</literal> are "possessive". They eat
    as many characters as possible and don't return to match the rest of the
    pattern. Thus <literal>.*abc</literal> matches "aabc" but
    <literal>.*+abc</literal> doesn't because <literal>.*+</literal> eats the
    whole string. Possessive quantifiers can be used to speed up processing.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    When a parenthesized subpattern is quantified with a minimum
    repeat count that is greater than 1 or with a limited maximum,
    more store is required for the compiled pattern, in
    proportion to the size of the minimum or maximum.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If a pattern starts with .* or .{0,} and the <link
    linkend="reference.pcre.pattern.modifiers">PCRE_DOTALL</link>
    option (equivalent to Perl's /s) is set, thus allowing the .
@@ -1717,8 +1717,8 @@
    pattern begins with .* in order to
    obtain this optimization, or
    alternatively using ^ to indicate anchoring explicitly.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    When a capturing subpattern is repeated, the value captured
    is the substring that matched the final iteration. For example, after
 
@@ -1734,19 +1734,19 @@
 
    matches "aba" the value of the second captured substring is
    "b".
-  </para>
+  </simpara>
  </section>
 
  <section xml:id="regexp.reference.back-references">
   <title>Back references</title>
-  <para>
+  <simpara>
    Outside a character class, a backslash followed by a digit
    greater than 0 (and possibly further digits) is a back
    reference to a capturing subpattern earlier (i.e. to its
    left) in the pattern, provided there have been that many
    previous capturing left parentheses.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    However, if the decimal number following the backslash is
    less than 10, it is always taken as a back reference, and
    causes an error only if there are not that many capturing
@@ -1758,8 +1758,8 @@
    in an earlier iteration. See the section
    <link linkend="regexp.reference.escape">escape sequences</link> for further details of the handling
    of digits following a backslash.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    A back reference matches whatever actually matched the capturing
    subpattern in the current subject string, rather than
    anything matching the subpattern itself. So the pattern
@@ -1776,8 +1776,8 @@
    matches "rah rah" and "RAH RAH", but not "RAH rah", even
    though the original capturing subpattern is matched
    case-insensitively (caselessly).
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    There may be more than one back reference to the same subpattern.
    If a subpattern has not actually been used in a
    particular match, then any back references to it always
@@ -1793,8 +1793,8 @@
    back reference. If the <link
    linkend="reference.pcre.pattern.modifiers">PCRE_EXTENDED</link> option
    is set, this can be whitespace. Otherwise an empty comment can be used.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    A back reference that occurs inside the parentheses to which
    it refers fails when the subpattern is first used, so, for
    example, (a\1) never matches. However, such references can
@@ -1809,8 +1809,8 @@
    that the first iteration does not need to match the back
    reference. This can be done using alternation, as in the
    example above, or by a quantifier with a minimum of zero.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The <literal>\g</literal> escape sequence can be
    used for absolute and relative referencing of subpatterns.
    This escape sequence must be followed by an unsigned number or a negative
@@ -1821,27 +1821,27 @@
    backslash. The sequence helps to distinguish back references from octal
    characters and also makes it easier to have a back reference followed
    by a literal number, e.g. <literal>\g{2}1</literal>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The use of the <literal>\g</literal> sequence with a negative number
    signifies a relative reference. For example, <literal>(foo)(bar)\g{-1}</literal>
    would match the sequence "foobarbar" and <literal>(foo)(bar)\g{-2}</literal>
    matches "foobarfoo". This can be useful in long patterns as an alternative
    to keeping track of the number of subpatterns in order to reference
    a specific previous subpattern.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Back references to the named subpatterns can be achieved by
    <literal>(?P=name)</literal>,
    <literal>\k&lt;name&gt;</literal>, <literal>\k'name'</literal>,
    <literal>\k{name}</literal>, <literal>\g{name}</literal>,
    <literal>\g&lt;name&gt;</literal> or <literal>\g'name'</literal>.
-  </para>
+  </simpara>
  </section>
 
  <section xml:id="regexp.reference.assertions">
   <title>Assertions</title>
-  <para>
+  <simpara>
    An assertion is a test on the characters following or
    preceding the current matching point that does not actually
    consume any characters. The simple assertions coded as \b,
@@ -1849,8 +1849,8 @@
    assertions are coded as subpatterns. There are two
    kinds: those that <emphasis>look ahead</emphasis> of the current position in the
    subject string, and those that <emphasis>look behind</emphasis> it.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    An assertion subpattern is matched in the normal way, except
    that it does not cause the current matching position to be
    changed. <emphasis>Lookahead</emphasis> assertions start with (?= for positive
@@ -1873,8 +1873,8 @@
    whatsoever, because the assertion (?!foo) is always &true;
    when the next three characters are "bar". A lookbehind
    assertion is needed to achieve this effect.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    <emphasis>Lookbehind</emphasis> assertions start with (?&lt;= for positive assertions
    and (?&lt;! for negative assertions. For example,
 
@@ -1914,8 +1914,8 @@
    once-only subpatterns can be particularly useful for matching
    at the ends of strings; an example is given at the end
    of the section on once-only subpatterns.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Several assertions (of any sort) may occur in succession.
    For example,
 
@@ -1932,14 +1932,14 @@
    "123abcfoo". A pattern to do that is
 
    <literal>(?&lt;=\d{3}...)(?&lt;!999)foo</literal>
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This time the first assertion looks at the preceding six
    characters, checking that the first three are digits, and
    then the second assertion checks that the preceding three
    characters are not "999".
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Assertions can be nested in any combination. For example,
 
    <literal>(?&lt;=(?&lt;!foo)bar)baz</literal>
@@ -1951,8 +1951,8 @@
 
    is another pattern which matches "foo" preceded by three
    digits and any three characters that are not "999".
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Assertion subpatterns are not capturing subpatterns, and may
    not be repeated, because it makes no sense to assert the
    same thing several times. If any kind of assertion contains
@@ -1961,16 +1961,16 @@
    pattern. However, substring capturing is carried out only
    for positive assertions, because it does not make sense for
    negative assertions.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Assertions count towards the maximum of 200 parenthesized
    subpatterns.
-  </para>
+  </simpara>
  </section>
 
  <section xml:id="regexp.reference.onlyonce">
   <title>Once-only subpatterns</title>
-  <para>
+  <simpara>
    With both maximizing and minimizing repetition, failure of
    what follows normally causes the repeated item to be
    re-evaluated to see if a different number of repeats allows the
@@ -1979,14 +1979,14 @@
    to cause it fail earlier than it otherwise might, when the
    author of the pattern knows there is no point in carrying
    on.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Consider, for example, the pattern \d+foo when applied to
    the subject line
 
    <literal>123456bar</literal>
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    After matching all 6 digits and then failing to match "foo",
    the normal action of the matcher is to try again with only 5
    digits matching the \d+ item, and then with 4, and so on,
@@ -1998,32 +1998,32 @@
    parenthesis, starting with (?&gt; as in this example:
 
    <literal>(?&gt;\d+)bar</literal>
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This kind of parenthesis "locks up" the part of the pattern
    it contains once it has matched, and a failure further into
    the pattern is prevented from backtracking into it.
    Backtracking past it to previous items, however, works as normal.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    An alternative description is that a subpattern of this type
    matches the string of characters that an identical standalone
    pattern would match, if anchored at the current point
    in the subject string.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Once-only subpatterns are not capturing subpatterns. Simple
    cases such as the above example can be thought of as a maximizing
    repeat that must swallow everything it can. So,
    while both \d+ and \d+? are prepared to adjust the number of
    digits they match in order to make the rest of the pattern
    match, (?&gt;\d+) can only match an entire sequence of digits.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This construction can of course contain arbitrarily complicated
    subpatterns, and it can be nested.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Once-only subpatterns can be used in conjunction with
    lookbehind assertions to specify efficient matching at the end
    of the subject string. Consider a simple pattern such as
@@ -2051,8 +2051,8 @@
    assertion does a single test on the last four characters. If
    it fails, the match fails immediately. For long strings,
    this approach makes a significant difference to the processing time.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    When a pattern contains an unlimited repeat inside a subpattern
    that can itself be repeated an unlimited number of
    times, the use of a once-only subpattern is the only way to
@@ -2081,18 +2081,18 @@
    <literal>((?>\D+)|&lt;\d+>)*[!?]</literal>
 
    sequences of non-digits cannot be broken, and failure happens quickly.
-  </para>
+  </simpara>
  </section>
 
  <section xml:id="regexp.reference.conditional">
   <title>Conditional subpatterns</title>
-  <para>
+  <simpara>
    It is possible to cause the matching process to obey a subpattern
    conditionally or to choose between two alternative
    subpatterns, depending on the result of an assertion, or
    whether a previous capturing subpattern matched or not. The
    two possible forms of conditional subpattern are
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting>
@@ -2102,13 +2102,13 @@
 ]]>
    </programlisting>
   </informalexample>
-  <para>
+  <simpara>
    If the condition is satisfied, the yes-pattern is used; otherwise
    the no-pattern (if present) is used. If there are
    more than two alternatives in the subpattern, a compile-time
    error occurs.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    There are two kinds of condition. If the text between the
    parentheses consists of a sequence of digits, then the
    condition is satisfied if the capturing subpattern of that
@@ -2117,7 +2117,7 @@
    more readable (assume the <link
    linkend="reference.pcre.pattern.modifiers">PCRE_EXTENDED</link>
    option) and to divide it into three parts for ease of discussion:
-  </para>
+  </simpara>
   <informalexample>
    <programlisting>
 <![CDATA[
@@ -2125,7 +2125,7 @@
 ]]>
    </programlisting>
   </informalexample>
-  <para>
+  <simpara>
    The first part matches an optional opening parenthesis, and
    if that character is present, sets it as the first captured
    substring. The second part matches one or more characters
@@ -2138,19 +2138,19 @@
    subpattern matches nothing. In other words, this pattern
    matches a sequence of non-parentheses, optionally enclosed
    in parentheses.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If the condition is the string <literal>(R)</literal>, it is satisfied if
    a recursive call to the pattern or subpattern has been made. At "top
    level", the condition is false.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If the condition is not a sequence of digits or (R), it must be an
    assertion. This may be a positive or negative lookahead or
    lookbehind assertion. Consider this pattern, again containing
    non-significant white space, and with the two alternatives on
    the second line:
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting>
@@ -2160,7 +2160,7 @@
 ]]>
    </programlisting>
   </informalexample>
-  <para>
+  <simpara>
    The condition is a positive lookahead assertion that matches
    an optional sequence of non-letters followed by a letter. In
    other words, it tests for the presence of at least one
@@ -2169,23 +2169,23 @@
    matched against the second. This pattern matches strings in
    one of the two forms dd-aaa-dd or dd-dd-dd, where aaa are
    letters and dd are digits.
-  </para>
+  </simpara>
  </section>
 
  <section xml:id="regexp.reference.comments">
   <title>Comments</title>
-  <para>
+  <simpara>
    The sequence (?# marks the start of a comment which
    continues up to the next closing parenthesis. Nested
    parentheses are not permitted. The characters that make up a
    comment play no part in the pattern matching at all.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If the <link linkend="reference.pcre.pattern.modifiers">PCRE_EXTENDED</link>
    option is set, an unescaped # character outside a character class
    introduces a comment that continues up to the next newline character
    in the pattern.
-  </para>
+  </simpara>
   <para>
    <example>
     <title>Usage of comments in PCRE pattern</title>
@@ -2225,7 +2225,7 @@ int(1)
 
  <section xml:id="regexp.reference.recursive">
   <title>Recursive patterns</title>
-  <para>
+  <simpara>
    Consider the problem of matching a string in parentheses,
    allowing for unlimited nested parentheses. Without the use
    of recursion, the best that can be done is to use a pattern
@@ -2240,15 +2240,15 @@ int(1)
    ignored):
 
    <literal>\( ( (?>[^()]+) | (?R) )* \)</literal>
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    First it matches an opening parenthesis. Then it matches any
    number of substrings which can either be a sequence of
    non-parentheses, or a recursive match of the pattern itself
    (i.e. a correctly parenthesized substring). Finally there is
    a closing parenthesis.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This particular example pattern contains nested unlimited
    repeats, and so the use of a once-only subpattern for matching
    strings of non-parentheses is important when applying
@@ -2262,8 +2262,8 @@ int(1)
    indeed because there are so many different ways the + and *
    repeats can carve up the subject, and all have to be tested
    before failure can be reported.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The values set for any capturing subpatterns are those from
    the outermost level of the recursion at which the subpattern
    value is set. If the pattern above is matched against
@@ -2284,15 +2284,15 @@ int(1)
    saves data for the first 15 capturing parentheses only, as
    there is no way to give an out-of-memory error from within a
    recursion.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    <literal>(?1)</literal>, <literal>(?2)</literal> and so on
    can be used for recursive subpatterns too. It is also possible to use named
    subpatterns: <literal>(?P&gt;name)</literal> or
    <literal>(?&amp;name)</literal>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If the syntax for a recursive subpattern reference (either by number or
    by name) is used outside the parentheses to which it refers, it operates
    like a subroutine in a programming language. An earlier example
@@ -2304,21 +2304,21 @@ int(1)
    is used, it does match "sense and responsibility" as well as the other
    two strings. Such references must, however, follow the subpattern to
    which they refer.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    The maximum length of a subject string is the largest positive number
    that an integer variable can hold. However, PCRE uses recursion to
    handle subpatterns and indefinite repetition. This means that the
    available stack space may limit the size of a subject string that can be
    processed by certain patterns.
-  </para>
+  </simpara>
 
  </section>
 
  <section xml:id="regexp.reference.performance">
   <title>Performance</title>
-  <para>
+  <simpara>
    Certain items that may appear in patterns are more efficient
    than others. It is more efficient to use a character class
    like [aeiou] than a set of alternatives such as (a|e|i|o|u).
@@ -2326,8 +2326,8 @@ int(1)
    required behaviour is usually the most efficient. Jeffrey
    Friedl's book contains a lot of discussion about optimizing
    regular expressions for efficient performance.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    When a pattern begins with .* and the <link
    linkend="reference.pcre.pattern.modifiers">PCRE_DOTALL</link> option is
    set, the pattern is implicitly anchored by PCRE, since it
@@ -2345,23 +2345,23 @@ int(1)
    a newline character) with the first captured substring being
    "and". In order to do this, PCRE has to retry the match
    starting after every newline in the subject.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If you are using such a pattern with subject strings that do
    not contain newlines, the best performance is obtained by
    setting <link linkend="reference.pcre.pattern.modifiers">PCRE_DOTALL</link>,
    or starting the pattern with ^.* to
    indicate explicit anchoring. That saves PCRE from having to
    scan along the subject looking for a newline to restart at.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Beware of patterns that contain nested indefinite repeats.
    These can take a long time to run when applied to a string
    that does not match. Consider the pattern fragment
 
    <literal>(a+)*</literal>
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This can match "aaaa" in 33 different ways, and this number
    increases very rapidly as the string gets longer. (The *
    repeat can match 0, 1, 2, 3, or 4 times, and for each of
@@ -2370,8 +2370,8 @@ int(1)
    that the entire match is going to fail, PCRE has in principle
    to try every possible variation, and this can take an
    extremely long time.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    An optimization catches some of the more simple cases such
    as
 
@@ -2390,7 +2390,7 @@ int(1)
    instantly when applied to a whole line of "a" characters,
    whereas the latter takes an appreciable time with strings
    longer than about 20 characters.
-  </para>
+  </simpara>
  </section>
 </chapter>
 

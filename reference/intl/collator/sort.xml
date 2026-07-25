@@ -9,28 +9,28 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="Collator">
    <modifier>public</modifier> <type>bool</type><methodname>Collator::sort</methodname>
    <methodparam><type>array</type><parameter role="reference">array</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer><constant>Collator::SORT_REGULAR</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type>bool</type><methodname>collator_sort</methodname>
    <methodparam><type>Collator</type><parameter>object</parameter></methodparam>
    <methodparam><type>array</type><parameter role="reference">array</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer><constant>Collator::SORT_REGULAR</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>This function sorts an array according to current locale rules.</para>
-  <para>
+  <simpara>This function sorts an array according to current locale rules.</simpara>
+  <simpara>
    Equivalent to standard PHP
    <function>sort</function> .
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -40,44 +40,44 @@
     <varlistentry>
      <term><parameter>object</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <classname>Collator</classname> object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Array of strings to sort.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Optional sorting type, one of the following:
-      </para>
+      </simpara>
       <para>
        <itemizedlist>
         <listitem>
-         <para>
+         <simpara>
           <constant>Collator::SORT_REGULAR</constant>
           - compare items normally (don't change types)
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>Collator::SORT_NUMERIC</constant>
           - compare items numerically
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>Collator::SORT_STRING</constant>
           - compare items as strings
-         </para>
+         </simpara>
         </listitem>
        </itemizedlist>
        Default sorting type is <constant>Collator::SORT_REGULAR</constant>.
@@ -92,9 +92,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

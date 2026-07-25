@@ -5,7 +5,7 @@
   <refname>openssl_x509_parse</refname>
   <refpurpose>Parse an X509 certificate and return the information as an array</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,11 +13,11 @@
    <methodparam><type class="union"><type>OpenSSLCertificate</type><type>string</type></type><parameter>certificate</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>short_names</parameter><initializer>&true;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>openssl_x509_parse</function> returns information about the
    supplied <parameter>certificate</parameter>, including fields such as subject
    name, issuer name, purposes, valid from and valid to dates etc.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,20 +27,20 @@
     <varlistentry>
      <term><parameter>certificate</parameter></term>
      <listitem>
-      <para>
+      <simpara>
         X509 certificate. See <link linkend="openssl.certparams">Key/Certificate parameters</link> for a list of valid values.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>short_names</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>short_names</parameter> controls how the data is indexed in the
        array - if <parameter>short_names</parameter> is &true; (the default) then
        fields will be indexed with the short name form, otherwise, the long name
        form will be used - e.g.: CN is the shortname form of commonName.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -49,10 +49,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    <emphasis>The structure of the returned data is (deliberately) not
    yet documented, as it is still subject to change.</emphasis>
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

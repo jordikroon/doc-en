@@ -9,19 +9,19 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="Transliterator">
    <modifier>public</modifier> <type class="union"><type>Transliterator</type><type>null</type></type><methodname>Transliterator::createInverse</methodname>
    <void/>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type class="union"><type>Transliterator</type><type>null</type></type><methodname>transliterator_create_inverse</methodname>
    <methodparam><type>Transliterator</type><parameter>transliterator</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Opens the inverse transliterator.
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -34,10 +34,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a <classname>Transliterator</classname> object on success,
    or &null; on failure
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

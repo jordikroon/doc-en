@@ -29,17 +29,17 @@
    can be used to denote a negative <type>int</type>.
   </simpara>
 
-  <para>
+  <simpara>
    To use octal notation, precede the number with a <literal>0</literal> (zero).
    As of PHP 8.1.0, octal notation can also be preceded with <literal>0o</literal> or <literal>0O</literal>.
    To use hexadecimal notation precede the number with <literal>0x</literal>.
    To use binary notation precede the number with <literal>0b</literal>.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    As of PHP 7.4.0, integer literals may contain underscores (<literal>_</literal>) between digits,
    for better readability of literals. These underscores are removed by PHP's scanner.
-  </para>
+  </simpara>
 
   <example>
    <title>Integer literals</title>
@@ -57,12 +57,12 @@ $a = 1_234_567; // decimal number (as of PHP 7.4.0)
    </programlisting>
   </example>
 
-  <para>
+  <simpara>
    Formally, the structure for <type>int</type> literals is as of PHP 8.1.0
    (previously, the <literal>0o</literal> or <literal>0O</literal> octal
    prefixes were not allowed, and prior to PHP 7.4.0 the underscores were
    not allowed):
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting>
@@ -84,7 +84,7 @@ integer     : decimal
    </programlisting>
   </informalexample>
 
-  <para>
+  <simpara>
    The size of an <type>int</type> is platform-dependent, although a maximum
    value of about two billion is the usual value (that's 32 bits signed).
    64-bit platforms usually have a maximum value of about 9E18.
@@ -93,18 +93,18 @@ integer     : decimal
    using the constant <constant>PHP_INT_SIZE</constant>, maximum value using
    the constant <constant>PHP_INT_MAX</constant>,
    and minimum value using the constant <constant>PHP_INT_MIN</constant>.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="language.types.integer.overflow">
   <title>Integer overflow</title>
 
-  <para>
+  <simpara>
    If PHP encounters a number beyond the bounds of the <type>int</type>
    type, it will be interpreted as a <type>float</type> instead. Also, an
    operation which results in a number beyond the bounds of the
    <type>int</type> type will return a <type>float</type> instead.
-  </para>
+  </simpara>
 
   <example>
    <title>Integer overflow</title>
@@ -125,13 +125,13 @@ var_dump(PHP_INT_MAX + 1);       // 32-bit system: float(2147483648)
  <sect2 xml:id="language.types.integer.division">
   <title>Integer division</title>
 
-  <para>
+  <simpara>
    There is no <type>int</type> division operator in PHP, to achieve this
    use the <function>intdiv</function> function.
    <literal>1/2</literal> yields the <type>float</type> <literal>0.5</literal>.
    The value can be cast to an <type>int</type> to round it towards zero, or
    the <function>round</function> function provides finer control over rounding.
-  </para>
+  </simpara>
 
   <example>
    <title>Divisions</title>
@@ -209,26 +209,26 @@ var_dump(intval(8.1)); // 8 in both cases
     </programlisting>
    </example>
 
-   <para>
+   <simpara>
     If the float is beyond the boundaries of <type>int</type> (usually
     <literal>+/- 2.15e+9 = 2^31</literal> on 32-bit platforms and
     <literal>+/- 9.22e+18 = 2^63</literal> on 64-bit platforms),
     the result is undefined, since the <type>float</type> doesn't
     have enough precision to give an exact <type>int</type> result.
     No warning, not even a notice will be issued when this happens!
-   </para>
+   </simpara>
 
    <note>
-    <para>
+    <simpara>
      <literal>NaN</literal>, <literal>Inf</literal> and <literal>-Inf</literal> will always be zero when cast to <type>int</type>.
-    </para>
+    </simpara>
    </note>
 
    <warning>
-    <para>
+    <simpara>
      Never cast an unknown fraction to <type>int</type>, as this can
      sometimes lead to unexpected results.
-    </para>
+    </simpara>
 
     <informalexample>
      <programlisting role="php">
@@ -240,10 +240,10 @@ echo (int) ( (0.1+0.7) * 10 ); // echoes 7!
      </programlisting>
     </informalexample>
 
-    <para>
+    <simpara>
      See also the <link linkend="warn.float-precision">warning about float
      precision</link>.
-    </para>
+    </simpara>
    </warning>
   </sect3>
 

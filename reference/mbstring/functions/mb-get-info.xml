@@ -5,7 +5,7 @@
   <refname>mb_get_info</refname>
   <refpurpose>Get internal settings of mbstring</refpurpose>
  </refnamediv>
-   
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -24,7 +24,7 @@
     <varlistentry>
      <term><parameter>type</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If <parameter>type</parameter> is not specified or is specified as <literal>"all"</literal>,
        <literal>"internal_encoding"</literal>, <literal>"http_input"</literal>,
        <literal>"http_output"</literal>, <literal>"http_output_conv_mimetypes"</literal>,
@@ -33,9 +33,9 @@
        <literal>"encoding_translation"</literal>, <literal>"language"</literal>,
        <literal>"detect_order"</literal>, <literal>"substitute_character"</literal>
        and <literal>"strict_detection"</literal>
-       will be returned. 
-      </para>
-      <para>
+       will be returned.
+      </simpara>
+      <simpara>
        If <parameter>type</parameter> is specified as
        <literal>"internal_encoding"</literal>, <literal>"http_input"</literal>,
        <literal>"http_output"</literal>, <literal>"http_output_conv_mimetypes"</literal>,
@@ -45,20 +45,20 @@
        <literal>"detect_order"</literal>, <literal>"substitute_character"</literal>
        or <literal>"strict_detection"</literal>
        the specified setting parameter will be returned.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   An <type>array</type> of type information if <parameter>type</parameter> 
+  <simpara>
+   An <type>array</type> of type information if <parameter>type</parameter>
    is not specified, otherwise a specific <parameter>type</parameter>,
    &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

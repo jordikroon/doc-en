@@ -11,13 +11,13 @@
    <type>mixed</type><methodname>next</methodname>
    <methodparam><type class="union"><type>array</type><type>object</type></type><parameter role="reference">array</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>next</function> behaves like
    <function>current</function>, with one difference.  It advances
    the internal array pointer one place forward before returning the
    element value.  That means it returns the next array value and
    advances the internal array pointer by one.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,9 +27,9 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <type>array</type> being affected.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -38,10 +38,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the array value in the next place that's pointed to by the
    internal array pointer, or &false; if there are no more elements.
-  </para>
+  </simpara>
   &return.falseproblem;
  </refsect1>
 
@@ -87,12 +87,12 @@ echo $mode = end($transport), PHP_EOL;     // $mode = 'plane';
   &reftitle.notes;
   <note>
    <simpara>
-    The end of an array is indistinguishable from a <type>bool</type> &false; element. 
+    The end of an array is indistinguishable from a <type>bool</type> &false; element.
     To properly traverse an array which may contain &false; elements, see the
     <link linkend="control-structures.foreach"><literal>foreach</literal></link> function.
    </simpara>
    <simpara>
-    To still use <function>next</function> and properly check if the end of the array 
+    To still use <function>next</function> and properly check if the end of the array
     has been reached, verify that the <function>key</function> is &null;.
    </simpara>
   </note>

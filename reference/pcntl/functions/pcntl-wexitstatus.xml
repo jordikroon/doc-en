@@ -5,18 +5,18 @@
   <refname>pcntl_wexitstatus</refname>
   <refpurpose>Returns the return code of a terminated child</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>int</type><type>false</type></type><methodname>pcntl_wexitstatus</methodname>
    <methodparam><type>int</type><parameter>status</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the return code of a terminated child.  This function is
    only useful if <function>pcntl_wifexited</function> returned
    &true;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -35,10 +35,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the return code.
    If the functionality is not supported by the OS, &false; is returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

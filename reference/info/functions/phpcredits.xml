@@ -5,18 +5,18 @@
   <refname>phpcredits</refname>
   <refpurpose>Prints out the credits for PHP</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>true</type><methodname>phpcredits</methodname>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer><constant>CREDITS_ALL</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function prints out the credits listing the PHP developers,
    modules, etc. It generates the appropriate HTML codes to insert
-   the information in a page. 
-  </para>   
+   the information in a page.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,10 +26,10 @@
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        To generate a custom credits page, you may want to use the
        <parameter>flags</parameter> parameter.
-      </para>
+      </simpara>
       <para>
        <table>
         <title>Pre-defined <function>phpcredits</function> flags</title>
@@ -66,7 +66,7 @@
           <row>
            <entry>CREDITS_GENERAL</entry>
            <entry>
-            General credits: Language design and concept, PHP authors 
+            General credits: Language design and concept, PHP authors
             and SAPI module.
            </entry>
           </row>
@@ -98,9 +98,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -155,10 +155,10 @@ phpcredits(CREDITS_ALL - CREDITS_FULLPAGE);
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     <function>phpcredits</function> outputs plain text instead of HTML when
     using the CLI mode.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

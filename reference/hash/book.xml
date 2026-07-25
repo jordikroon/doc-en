@@ -4,17 +4,17 @@
  <?phpdoc extension-membership="core" ?>
  <title>HASH Message Digest Framework</title>
  <titleabbrev>Hash</titleabbrev>
- 
+
  <!-- {{{ preface -->
  <preface xml:id="intro.hash">
   &reftitle.intro;
-  <para>
+  <simpara>
    This extension provides functions that can be used for direct or
    incremental processing of arbitrary length messages using a variety of
    hashing algorithms, including the generation of <acronym>HMAC</acronym>
    values and key derivations including <acronym>HKDF</acronym> and
    <acronym>PBKDF2</acronym>.
-  </para>
+  </simpara>
   <para>
    There are roughly three categories of hashing algorithms, and a complete list of
    algorithms can be found in the documentation for <function>hash_algos</function>.
@@ -52,25 +52,25 @@
       Standards</link>.
      </simpara>
      <caution>
-      <para>
+      <simpara>
        Some of the early cryptographic algorithms, such as <literal>"md4"</literal>,
        <literal>"md5"</literal>, and <literal>"sha1"</literal>, have been proven
        to be prone to collision attacks and it is generally recommended to no
        longer use these for cryptographic applications.
-      </para>
+      </simpara>
      </caution>
     </listitem>
    </itemizedlist>
   </para>
 
-  <para>
+  <simpara>
    See also the <link linkend="faq.passwords">FAQ on Safe Password Hashing</link>
    for information on best practices for using hash functions in handling
    passwords.
-  </para>
+  </simpara>
  </preface>
  <!-- }}} -->
- 
+
  &reference.hash.setup;
  &reference.hash.constants;
  &reference.hash.hashcontext;

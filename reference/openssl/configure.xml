@@ -2,36 +2,36 @@
 <!-- $Revision$ -->
 <section xml:id="openssl.installation" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  &reftitle.install;
- <para>
+ <simpara>
   To use PHP's OpenSSL support you must also compile PHP <option
   role="configure">--with-openssl</option>.
- </para>
- <para>
+ </simpara>
+ <simpara>
   The OpenSSL library also has additional requirements for normal operation at
   run-time. Most notably, OpenSSL requires access to a random or pseudo-random
   number generator; on most Unix and Unix-like platforms (including Linux),
   this means that it must have access to a <literal>/dev/urandom</literal> or
   <literal>/dev/random</literal> device.
- </para>
- <para>
+ </simpara>
+ <simpara>
   The configure option <option role="configure">--with-system-ciphers</option>
   is available which causes PHP to use the system cipher list instead of a hard-coded default.
- </para>
+ </simpara>
  <note>
   <title>Note to Win32 Users</title>
-  <para>
+  <simpara>
    &ext.windows.path.dll;
    <filename>libeay32.dll</filename>,
    or, as of OpenSSL 1.1, <filename>libcrypto-*.dll</filename>
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Additionally, if you are planning to use the key generation and certificate
    signing functions, you will need to install a valid
    <filename>openssl.cnf</filename> file on your system.
    We include a sample configuration file
    in our win32 binary distributions, in the
    <filename class="directory">extras/ssl</filename> directory.
-  </para>
+  </simpara>
   <para>
    PHP will search for the <filename>openssl.cnf</filename> using the
    following logic:

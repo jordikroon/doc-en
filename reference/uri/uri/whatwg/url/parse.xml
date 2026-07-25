@@ -44,7 +44,7 @@
     <term><parameter>errors</parameter></term>
     <listitem>
      <simpara>
-      An &array; to pass a list of <classname>Uri\WhatWg\UrlValidationError</classname>
+      An &array; to pass a list of <exceptionname>Uri\WhatWg\UrlValidationError</exceptionname>
       instances by reference to provide extended information about the errors triggered during parsing.
      </simpara>
     </listitem>

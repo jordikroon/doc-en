@@ -6,13 +6,13 @@
 
  <partintro xml:id="strings.seealso">
   &reftitle.seealso;
-  <para>
+  <simpara>
    For even more powerful string handling and manipulating functions
    take a look at the <link linkend="ref.pcre">Perl
    compatible regular expression functions</link>.
    For working with multibyte character encodings, take a look at the
    <link linkend="ref.mbstring">Multibyte String functions</link>.
-  </para>
+  </simpara>
  </partintro>
 
  &reference.strings.entities.functions;

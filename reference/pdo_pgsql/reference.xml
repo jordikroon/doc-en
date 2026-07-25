@@ -9,11 +9,11 @@
 
    <section xml:id="ref.pdo-pgsql.intro">
    &reftitle.intro;
-    <para>
+    <simpara>
      PDO_PGSQL is a driver that implements the <link linkend="intro.pdo">PHP
      Data Objects (PDO) interface</link>
      to enable access from PHP to PostgreSQL databases.
-    </para>
+    </simpara>
    </section>
 
    <section xml:id="ref.pdo-pgsql.resources">
@@ -54,53 +54,53 @@
       <varlistentry>
        <term>DSN prefix</term>
        <listitem>
-        <para>
+        <simpara>
         The DSN prefix is <userinput>pgsql:</userinput>.
-        </para>
+        </simpara>
        </listitem>
       </varlistentry>
       <varlistentry>
        <term><literal>host</literal></term>
        <listitem>
-        <para>
+        <simpara>
          The hostname on which the database server resides.
-        </para>
+        </simpara>
        </listitem>
       </varlistentry>
       <varlistentry>
        <term><literal>port</literal></term>
        <listitem>
-        <para>
+        <simpara>
          The port on which the database server is running.
-        </para>
+        </simpara>
        </listitem>
       </varlistentry>
       <varlistentry>
        <term><literal>dbname</literal></term>
        <listitem>
-        <para>
+        <simpara>
          The name of the database.
-        </para>
+        </simpara>
        </listitem>
       </varlistentry>
       <varlistentry>
        <term><literal>user</literal></term>
        <listitem>
-        <para>
+        <simpara>
          The name of the user for the connection. If you specify the user name
          in the DSN, PDO ignores the value of the user name argument in the
          PDO constructor.
-        </para>
+        </simpara>
        </listitem>
       </varlistentry>
       <varlistentry>
        <term><literal>password</literal></term>
        <listitem>
-        <para>
+        <simpara>
          The password of the user for the connection. If you specify the
          password in the DSN, PDO ignores the value of the password argument
          in the PDO constructor.
-        </para>
+        </simpara>
        </listitem>
       </varlistentry>
       <varlistentry>

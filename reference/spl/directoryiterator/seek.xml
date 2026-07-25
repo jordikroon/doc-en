@@ -12,9 +12,9 @@
    <methodparam><type>int</type><parameter>offset</parameter></methodparam>
   </methodsynopsis>
 
-  <para>
+  <simpara>
    Seek to a given position in the <classname>DirectoryIterator</classname>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The zero-based numeric position to seek to.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,9 +35,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -45,10 +45,10 @@
   <para>
    <example>
     <title><methodname>DirectoryIterator::seek</methodname> example</title>
-    <para>
-     Seek to the fourth item in the directory containing the script. 
+    <simpara>
+     Seek to the fourth item in the directory containing the script.
      The first two are usually <literal>.</literal> and <literal>..</literal>
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -65,7 +65,7 @@ if ($iterator->valid()) {
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

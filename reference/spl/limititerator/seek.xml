@@ -11,9 +11,9 @@
    <modifier>public</modifier> <type>int</type><methodname>LimitIterator::seek</methodname>
    <methodparam><type>int</type><parameter>offset</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Moves the iterator to the offset specified by <parameter>offset</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -23,9 +23,9 @@
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The position to seek to.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -34,15 +34,15 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the offset position after seeking.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
   <para>
-   Throws an <classname>OutOfBoundsException</classname> if the position is 
+   Throws an <exceptionname>OutOfBoundsException</exceptionname> if the position is
    outside of the limits specified in <methodname>LimitIterator::__construct</methodname>.
   </para>
  </refsect1>

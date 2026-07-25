@@ -5,7 +5,7 @@
   <refname>ucwords</refname>
   <refpurpose>Uppercase the first character of each word in a string</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,22 +13,22 @@
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>separators</parameter><initializer>" \t\r\n\f\v"</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a string with the first character of each word in
    <parameter>string</parameter> capitalized, if that character is an ASCII
    character between <literal>"a"</literal> (0x61) and <literal>"z"</literal>
    (0x7a).
-  </para>
-  <para>
-   For this function, a word is a string of characters that are not listed in 
-   the <parameter>separators</parameter> parameter. By default, these are: 
+  </simpara>
+  <simpara>
+   For this function, a word is a string of characters that are not listed in
+   the <parameter>separators</parameter> parameter. By default, these are:
    space, horizontal tab, carriage return, newline, form-feed and vertical tab.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    To do a similar conversion on multibyte strings, use
    <function>mb_convert_case</function> with the <constant>MB_CASE_TITLE</constant>
    mode.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -38,17 +38,17 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>separators</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The optional <parameter>separators</parameter> contains the word separator characters.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -57,9 +57,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the modified string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

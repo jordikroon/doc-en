@@ -12,14 +12,14 @@
    <type class="union"><type>string</type><type>float</type></type><methodname>microtime</methodname>
    <methodparam choice="opt"><type>bool</type><parameter>as_float</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>microtime</function> returns the current Unix timestamp with
    microseconds. This function is only available on operating systems that
    support the gettimeofday() system call.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    For performance measurements, using <function>hrtime</function> is recommended.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,11 +29,11 @@
     <varlistentry>
      <term><parameter>as_float</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If used and set to &true;, <function>microtime</function> will return a
        <type>float</type> instead of a <type>string</type>, as described in
        the return values section below.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -42,19 +42,19 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    By default, <function>microtime</function> returns a <type>string</type> in
-   the form "msec sec", where <literal>sec</literal> is the number of seconds 
-   since the Unix epoch (0:00:00 January 1,1970 GMT), and <literal>msec</literal> 
-   measures microseconds that have elapsed since <literal>sec</literal> 
+   the form "msec sec", where <literal>sec</literal> is the number of seconds
+   since the Unix epoch (0:00:00 January 1,1970 GMT), and <literal>msec</literal>
+   measures microseconds that have elapsed since <literal>sec</literal>
    and is also expressed in seconds as a decimal fraction.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If <parameter>as_float</parameter> is set to &true;, then
    <function>microtime</function> returns a <type>float</type>, which
    represents the current time in seconds since the Unix epoch accurate to the
    nearest microsecond.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

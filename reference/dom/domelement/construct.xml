@@ -14,14 +14,14 @@
    <methodparam><type>string</type><parameter>qualifiedName</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>value</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>namespace</parameter><initializer>""</initializer></methodparam>
-  </constructorsynopsis> 
-  <para>
-   Creates a new <classname>DOMElement</classname> object. This object is read only. 
-   It may be appended to a document, but additional nodes may not be appended to this node until 
-   the node is associated with a document. To create a writeable node, use 
-   <xref linkend="domdocument.createelement"/> or 
+  </constructorsynopsis>
+  <simpara>
+   Creates a new <classname>DOMElement</classname> object. This object is read only.
+   It may be appended to a document, but additional nodes may not be appended to this node until
+   the node is associated with a document. To create a writeable node, use
+   <xref linkend="domdocument.createelement"/> or
    <xref linkend="domdocument.createelementns"/>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -30,26 +30,26 @@
     <varlistentry>
      <term><parameter>qualifiedName</parameter></term>
      <listitem>
-      <para>
-       The tag name of the element. When also passing in namespaceURI, the element name 
+      <simpara>
+       The tag name of the element. When also passing in namespaceURI, the element name
        may take a prefix to be associated with the URI.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The value of the element.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>namespace</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A namespace URI to create the element within a specific namespace.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

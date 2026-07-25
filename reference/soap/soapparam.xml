@@ -10,9 +10,9 @@
 <!-- {{{ SoapParam intro -->
   <section xml:id="soapparam.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
      Represents parameter to a SOAP call.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -49,15 +49,15 @@
     <varlistentry xml:id="soapparam.props.param-data">
      <term><varname>param_data</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapparam.props.param-name">
      <term><varname>param_name</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

@@ -10,9 +10,9 @@
 <!-- {{{ DateTimeZone intro -->
   <section xml:id="datetimezone.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Representation of time zone.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -118,7 +118,7 @@
 <!-- }}} -->
 
   </section>
-  
+
 <!-- {{{ DateTimeZone constants -->
   <section xml:id="datetimezone.constants">
    &reftitle.constants;
@@ -129,7 +129,7 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>Africa time zones.</para>
+      <simpara>Africa time zones.</simpara>
      </listitem>
     </varlistentry>
 
@@ -139,7 +139,7 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>America time zones.</para>
+      <simpara>America time zones.</simpara>
      </listitem>
     </varlistentry>
 
@@ -149,7 +149,7 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>Antarctica time zones.</para>
+      <simpara>Antarctica time zones.</simpara>
      </listitem>
     </varlistentry>
 
@@ -159,7 +159,7 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>Arctic time zones.</para>
+      <simpara>Arctic time zones.</simpara>
      </listitem>
     </varlistentry>
 
@@ -169,7 +169,7 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>Asia time zones.</para>
+      <simpara>Asia time zones.</simpara>
      </listitem>
     </varlistentry>
 
@@ -179,7 +179,7 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>Atlantic time zones.</para>
+      <simpara>Atlantic time zones.</simpara>
      </listitem>
     </varlistentry>
 
@@ -189,7 +189,7 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>Australia time zones.</para>
+      <simpara>Australia time zones.</simpara>
      </listitem>
     </varlistentry>
 
@@ -199,7 +199,7 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>Europe time zones.</para>
+      <simpara>Europe time zones.</simpara>
      </listitem>
     </varlistentry>
 
@@ -209,7 +209,7 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>Indian time zones.</para>
+      <simpara>Indian time zones.</simpara>
      </listitem>
     </varlistentry>
 
@@ -219,7 +219,7 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>Pacific time zones.</para>
+      <simpara>Pacific time zones.</simpara>
      </listitem>
     </varlistentry>
 
@@ -229,7 +229,7 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>UTC time zones.</para>
+      <simpara>UTC time zones.</simpara>
      </listitem>
     </varlistentry>
 
@@ -239,7 +239,7 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>All time zones.</para>
+      <simpara>All time zones.</simpara>
      </listitem>
     </varlistentry>
 
@@ -249,7 +249,7 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>All time zones including backwards compatible.</para>
+      <simpara>All time zones including backwards compatible.</simpara>
      </listitem>
     </varlistentry>
 
@@ -259,7 +259,7 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>Time zones per country.</para>
+      <simpara>Time zones per country.</simpara>
      </listitem>
     </varlistentry>
 

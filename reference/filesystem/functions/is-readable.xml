@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.is-readable">
+<refentry xml:id="function.is-readable" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>is_readable</refname>
   <refpurpose>Tells whether a file exists and is readable</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>bool</type><methodname>is_readable</methodname>
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Tells whether a file exists and is readable.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path to the file.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,10 +35,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the file or directory specified by
    <parameter>filename</parameter> exists and is readable, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -69,21 +69,21 @@ if (is_readable($filename)) {
 
  <refsect1 role="notes">
   &reftitle.notes;
-  <para>
+  <simpara>
    Keep in mind that PHP may be accessing the file as the user
    id that the web server runs as (often 'nobody').
-  </para>
+  </simpara>
   &note.clearstatcache;
   &tip.fopen-wrapper.stat;
   <note>
-   <para>
+   <simpara>
     The check is done using the real UID/GID instead of the effective one.
-   </para>
+   </simpara>
   </note>
-  <para>
+  <simpara>
    This function may return &true; for directories. Use
    <function>is_dir</function> to distinguish file and directory.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

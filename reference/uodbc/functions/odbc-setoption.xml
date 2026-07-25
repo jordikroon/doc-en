@@ -5,7 +5,7 @@
   <refname>odbc_setoption</refname>
   <refpurpose>Adjust ODBC settings</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -15,7 +15,7 @@
    <methodparam><type>int</type><parameter>option</parameter></methodparam>
    <methodparam><type>int</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function allows fiddling with the ODBC options for a
    particular connection or query result.  It was written to help
    find work around to problems in quirky ODBC drivers.  You should
@@ -24,8 +24,8 @@
    certainly need a good ODBC reference to explain all the different
    options and values that can be used.  Different driver versions
    support different options.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Because the effects may vary depending on the ODBC driver, use of
    this function in scripts to be made publicly available is
    strongly discouraged.  Also, some ODBC options are not available
@@ -34,7 +34,7 @@
    particular job it can make PHP work so your boss doesn't tell you
    to use a commercial product, that's all that really
    matters.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -44,37 +44,37 @@
     <varlistentry>
      <term><parameter>odbc</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Is a connection id or result id on which to change the settings.
        For SQLSetConnectOption(), this is a connection id.
        For SQLSetStmtOption(), this is a result id.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>which</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Is the ODBC function to use. The value should be
        1 for SQLSetConnectOption() and
        2 for SQLSetStmtOption().
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>option</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The option to set.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The value for the given <parameter>option</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -83,9 +83,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

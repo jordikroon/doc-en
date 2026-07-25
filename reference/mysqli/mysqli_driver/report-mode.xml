@@ -9,24 +9,24 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <fieldsynopsis>
    <type>int</type><varname linkend="mysqli-driver.report-mode">mysqli_driver-&gt;report_mode</varname>
   </fieldsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type>true</type><methodname>mysqli_report</methodname>
    <methodparam><type>int</type><parameter>flags</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   Depending on the flags, it sets mysqli error reporting mode to exception, warning or none.  
-   When set to <constant>MYSQLI_REPORT_ALL</constant> or <constant>MYSQLI_REPORT_INDEX</constant> 
+  <simpara>
+   Depending on the flags, it sets mysqli error reporting mode to exception, warning or none.
+   When set to <constant>MYSQLI_REPORT_ALL</constant> or <constant>MYSQLI_REPORT_INDEX</constant>
    it will also inform about queries that don't use an index (or use a bad index).
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    As of PHP 8.1.0, the default setting is <literal>MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT</literal>.
    Previously, it was <constant>MYSQLI_REPORT_OFF</constant>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -82,9 +82,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

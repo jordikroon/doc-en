@@ -2,12 +2,12 @@
 <!-- $Revision$ -->
 <section xml:id="xml.installation" xmlns="http://docbook.org/ns/docbook">
  &reftitle.install;
- <para>
+ <simpara>
   &installation.enabled.disable;
   <option role="configure">--disable-xml</option>
- </para>
+ </simpara>
  <!-- TODO the following needs researched and updated -->
- <para>
+ <simpara>
   These functions are enabled by default, using the bundled expat library.
   You can disable XML support with
   <option role="configure">--disable-xml</option>.
@@ -16,7 +16,7 @@
   Apache. If you don't want to use the bundled expat library, configure
   PHP with <option role="configure">--with-expat-dir=DIR</option>, where DIR should
   point to the base installation directory of expat.
- </para>
+ </simpara>
  &windows.builtin;
 </section>
 

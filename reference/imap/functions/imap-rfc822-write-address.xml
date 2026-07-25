@@ -13,10 +13,10 @@
    <methodparam><type>string</type><parameter>hostname</parameter></methodparam>
    <methodparam><type>string</type><parameter>personal</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a properly formatted email address as defined in <link
    xlink:href="&url.rfc;2822">RFC2822</link> given the needed information.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -25,27 +25,27 @@
     <varlistentry>
      <term><parameter>mailbox</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The mailbox name, see <function>imap_open</function> for more
        information
-      </para>
+      </simpara>
       &imap.mailboxname.insecure;
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>hostname</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The email host part
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>personal</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The name of the account owner
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -53,10 +53,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a string properly formatted email address as defined in <link
    xlink:href="&url.rfc;2822">RFC2822</link>, &return.falseforfailure;.
-   </para>
+   </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;

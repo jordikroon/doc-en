@@ -12,10 +12,10 @@
    <type>string</type><methodname>gettype</methodname>
    <methodparam><type>mixed</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the type of the PHP variable <parameter>value</parameter>. For
    type checking, use <literal>is_*</literal> functions.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The variable being type checked.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

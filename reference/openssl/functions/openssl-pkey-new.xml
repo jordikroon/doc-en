@@ -5,18 +5,18 @@
   <refname>openssl_pkey_new</refname>
   <refpurpose>Generates a new private key</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>OpenSSLAsymmetricKey</type><type>false</type></type><methodname>openssl_pkey_new</methodname>
    <methodparam choice="opt"><type class="union"><type>array</type><type>null</type></type><parameter>options</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>openssl_pkey_new</function> generates a new private
    key.
    How to obtain the public component of the key is shown in an example below.
-  </para>
+  </simpara>
   &note.openssl.cnf;
  </refsect1>
 
@@ -375,10 +375,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an <classname>OpenSSLAsymmetricKey</classname> instance for
    the pkey on success, or &false; on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

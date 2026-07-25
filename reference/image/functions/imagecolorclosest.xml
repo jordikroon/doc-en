@@ -14,16 +14,16 @@
    <methodparam><type>int</type><parameter>green</parameter></methodparam>
    <methodparam><type>int</type><parameter>blue</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the index of the color in the palette of the image which
    is "closest" to the specified <acronym>RGB</acronym> value.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The "distance" between the desired color and each color in the
    palette is calculated as if the <acronym>RGB</acronym> values
    represented points in three-dimensional space.
-  </para>
-  <para>&gd.image.colors;</para>
+  </simpara>
+  <simpara>&gd.image.colors;</simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -33,19 +33,19 @@
     <varlistentry>
      <term><parameter>red</parameter></term>
      <listitem>
-      <para>&gd.value.red;</para>
+      <simpara>&gd.value.red;</simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>green</parameter></term>
      <listitem>
-      <para>&gd.value.green;</para>
+      <simpara>&gd.value.green;</simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>blue</parameter></term>
      <listitem>
-      <para>&gd.value.blue;</para>
+      <simpara>&gd.value.blue;</simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -55,10 +55,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the index of the closest color, in the palette of the image, to
    the specified one
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

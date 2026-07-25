@@ -5,7 +5,7 @@
   <refname>iconv_set_encoding</refname>
   <refpurpose>Set current setting for character encoding conversion</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,10 +13,10 @@
    <methodparam><type>string</type><parameter>type</parameter></methodparam>
    <methodparam><type>string</type><parameter>encoding</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Changes the value of the internal configuration variable specified by
    <parameter>type</parameter> to <parameter>encoding</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -39,9 +39,9 @@
     <varlistentry>
      <term><parameter>encoding</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The character set.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -50,9 +50,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

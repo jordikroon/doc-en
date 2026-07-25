@@ -12,12 +12,12 @@
    <methodparam><type>Odbc\Result</type><parameter>statement</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>row</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Fetches a row of the data that was returned by <function>odbc_do</function>
    or <function>odbc_exec</function>. After <function>odbc_fetch_row</function>
    is called, the fields of that row can be accessed with
    <function>odbc_result</function>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -26,21 +26,21 @@
     <varlistentry>
      <term><parameter>statement</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &odbc.result.object;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>row</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If <parameter>row</parameter> is not specified,
        <function>odbc_fetch_row</function> will try to fetch the next row in
        the result set. Calls to <function>odbc_fetch_row</function> with and
        without <parameter>row</parameter> can be mixed.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        To step through the result more than once, you can call
        <function>odbc_fetch_row</function> with
        <parameter>row</parameter> 1, and then continue doing
@@ -48,7 +48,7 @@
        <parameter>row</parameter> to review the result.  If a driver
        doesn't support fetching rows by number, the
        <parameter>row</parameter> parameter is ignored.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -56,9 +56,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if there was a row, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

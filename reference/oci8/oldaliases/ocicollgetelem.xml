@@ -8,7 +8,7 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&Alias; <function>OCICollection::getElem</function></para>
+  <simpara>&Alias; <function>OCICollection::getElem</function></simpara>
   &warn.deprecated.alias-5-4-0;
  </refsect1>
 

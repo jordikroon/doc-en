@@ -3,21 +3,21 @@
 
 <chapter xml:id="mbstring.http" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <title>HTTP Input and Output</title>
- <para>
+ <simpara>
   HTTP input/output character encoding conversion may convert
   binary data also. Users are supposed to control character
   encoding conversion if binary data is used for HTTP
   input/output.
- </para>
+ </simpara>
  <note>
-  <para>
+  <simpara>
    If <literal>enctype</literal> for HTML form is
    set to <literal>multipart/form-data</literal> and
    <literal>mbstring.encoding_translation</literal> is set to On
    in &php.ini; the POST'ed variables and the names of uploaded files
    will be converted to the internal character encoding as well.
    However, the conversion isn't applied to the query keys.
-  </para>
+  </simpara>
  </note>
  <para>
   <itemizedlist>
@@ -25,7 +25,7 @@
     <simpara>
      HTTP Input
     </simpara>
-    <para> 
+    <para>
      There is no way to control HTTP input character
      conversion from a PHP script. To disable HTTP input character
      conversion, it has to be done in &php.ini;.
@@ -43,25 +43,25 @@ mbstring.encoding_translation = Off
       </programlisting>
      </example>
     </para>
-    <para>
+    <simpara>
      When using PHP as an Apache module, it is possible to
      override those settings in each Virtual Host directive in
      &httpd.conf; or per directory with &htaccess;. Refer to the <link
       linkend="configuration">Configuration</link> section and
      Apache Manual for details.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
     <simpara>
      HTTP Output
     </simpara>
-    <para>
+    <simpara>
      There are several ways to enable output character encoding
      conversion. One is using &php.ini;, another
      is using <function>ob_start</function> with
-     <function>mb_output_handler</function> as the 
+     <function>mb_output_handler</function> as the
      <literal>ob_start</literal> callback function.
-    </para>
+    </simpara>
    </listitem>
   </itemizedlist>
  </para>

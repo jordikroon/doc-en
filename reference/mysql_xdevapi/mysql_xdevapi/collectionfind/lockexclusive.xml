@@ -33,13 +33,13 @@
    <varlistentry>
     <term><parameter>lock_waiting_option</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Optional waiting option. By default it is <constant>MYSQLX_LOCK_DEFAULT</constant>. Valid values are these constants:
-     </para>
+     </simpara>
      <itemizedlist>
-      <listitem><para><constant>MYSQLX_LOCK_DEFAULT</constant></para></listitem>
-      <listitem><para><constant>MYSQLX_LOCK_NOWAIT</constant></para></listitem>
-      <listitem><para><constant>MYSQLX_LOCK_SKIP_LOCKED</constant></para></listitem>
+      <listitem><simpara><constant>MYSQLX_LOCK_DEFAULT</constant></simpara></listitem>
+      <listitem><simpara><constant>MYSQLX_LOCK_NOWAIT</constant></simpara></listitem>
+      <listitem><simpara><constant>MYSQLX_LOCK_SKIP_LOCKED</constant></simpara></listitem>
      </itemizedlist>
     </listitem>
    </varlistentry>
@@ -48,9 +48,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a CollectionFind object that can be used for further processing.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

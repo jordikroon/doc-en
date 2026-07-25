@@ -24,12 +24,12 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the maximum random value returned by a call to
    <function>mt_rand</function> without arguments, which is the maximum value
    that can be used for its <parameter>max</parameter> parameter without the
    result being scaled up (and therefore less random).
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="seealso">
   &reftitle.seealso;

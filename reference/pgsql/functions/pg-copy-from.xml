@@ -19,11 +19,11 @@
    <methodparam choice="opt"><type>string</type><parameter>separator</parameter><initializer>"\t"</initializer></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>null_as</parameter><initializer>"\\\\N"</initializer></methodparam>
   </methodsynopsis>
-  <para>
-   <function>pg_copy_from</function> inserts records into a table from 
-   <parameter>rows</parameter>. It issues a <literal>COPY FROM</literal> SQL command 
+  <simpara>
+   <function>pg_copy_from</function> inserts records into a table from
+   <parameter>rows</parameter>. It issues a <literal>COPY FROM</literal> SQL command
    internally to insert records.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -39,38 +39,38 @@
     <varlistentry>
      <term><parameter>table_name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Name of the table into which to copy the <parameter>rows</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>rows</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An <type>iterable</type> data to be copied into <parameter>table_name</parameter>.
        Each value in <parameter>rows</parameter> becomes a row in <parameter>table_name</parameter>.
        Each value in <parameter>rows</parameter> should be a delimited string of the values
        to insert into each field.  Values should be linefeed terminated.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>separator</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The token that separates values for each field in each element of
        <parameter>rows</parameter>.  Default is <literal>\t</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>null_as</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        How SQL <literal>NULL</literal> values are represented in the
        <parameter>rows</parameter>.  Default is <literal>\\N</literal> (<literal>"\\\\N"</literal>).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -79,9 +79,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-   <para>
+   <simpara>
     &return.success;
-   </para>
+   </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -117,19 +117,19 @@
 <![CDATA[
 <?php
    $db = pg_connect("dbname=publisher") or die("Could not connect");
-   
+
    $rows = pg_copy_to($db, $table_name);
-   
+
    pg_query($db, "DELETE FROM $table_name");
-   
+
    pg_copy_from($db, $table_name, $rows);
 ?>
 ]]>
     </programlisting>
-   </example> 
+   </example>
   </para>
  </refsect1>
-  
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

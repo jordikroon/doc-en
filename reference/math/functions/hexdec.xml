@@ -11,17 +11,17 @@
     <type class="union"><type>int</type><type>float</type></type><methodname>hexdec</methodname>
     <methodparam><type>string</type><parameter>hex_string</parameter></methodparam>
    </methodsynopsis>
-  <para>
+  <simpara>
    Returns the decimal equivalent of the hexadecimal number
    represented by the <parameter>hex_string</parameter> argument.
    <function>hexdec</function> converts a hexadecimal string to a
-   decimal number. 
-  </para>
-  <para>
-   <function>hexdec</function> will ignore any non-hexadecimal 
+   decimal number.
+  </simpara>
+  <simpara>
+   <function>hexdec</function> will ignore any non-hexadecimal
    characters it encounters.
    As of PHP 7.4.0 supplying any invalid characters is deprecated.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -30,9 +30,9 @@
     <varlistentry>
      <term><parameter>hex_string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The hexadecimal string to convert
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -40,9 +40,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The decimal representation of <parameter>hex_string</parameter>
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -100,11 +100,11 @@ var_dump(hexdec("that")); // print "int(10)"
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     The function can convert numbers that are too large to fit into the platforms
     <type>int</type> type, larger values are returned as <type>float</type> in
     that case.
-   </para>
+   </simpara>
   </note>
  </refsect1>
  <refsect1 role="seealso">

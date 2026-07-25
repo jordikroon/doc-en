@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>array</type><methodname>ReflectionClass::getProperties</methodname>
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>filter</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Retrieves reflected properties.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,11 +24,11 @@
     <varlistentry>
      <term><parameter>filter</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The optional filter, for filtering desired property types. It's configured using
        the <link linkend="reflectionproperty.constants.modifiers">ReflectionProperty constants</link>,
        and defaults to all property types.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,9 +37,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An array of <classname>ReflectionProperty</classname> objects.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -68,10 +68,10 @@
   &reftitle.examples;
   <example xml:id="reflectionclass.getproperties.example.filter">
    <title><function>ReflectionClass::getProperties</function> filtering example</title>
-   <para>
+   <simpara>
     This example demonstrates usage of the optional <parameter>filter</parameter>
     parameter, where it essentially skips private properties.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

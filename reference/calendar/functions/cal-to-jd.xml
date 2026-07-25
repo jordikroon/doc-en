@@ -15,7 +15,7 @@
    <methodparam><type>int</type><parameter>day</parameter></methodparam>
    <methodparam><type>int</type><parameter>year</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>cal_to_jd</function> calculates the Julian day count
    for a date in the specified <parameter>calendar</parameter>.
    Supported <parameter>calendar</parameter>s are
@@ -23,7 +23,7 @@
    <constant>CAL_JULIAN</constant>,
    <constant>CAL_JEWISH</constant> and
    <constant>CAL_FRENCH</constant>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -33,51 +33,51 @@
     <varlistentry>
      <term><parameter>calendar</parameter></term>
      <listitem>
-      <para>
-       Calendar to convert from, one of 
+      <simpara>
+       Calendar to convert from, one of
        <constant>CAL_GREGORIAN</constant>,
        <constant>CAL_JULIAN</constant>,
        <constant>CAL_JEWISH</constant> or
        <constant>CAL_FRENCH</constant>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>month</parameter></term>
      <listitem>
-      <para>
-       The month as a number, the valid range depends 
+      <simpara>
+       The month as a number, the valid range depends
        on the <parameter>calendar</parameter>
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>day</parameter></term>
      <listitem>
-      <para>
-       The day as a number, the valid range depends 
+      <simpara>
+       The day as a number, the valid range depends
        on the <parameter>calendar</parameter>
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>year</parameter></term>
      <listitem>
-      <para>
-       The year as a number, the valid range depends 
+      <simpara>
+       The year as a number, the valid range depends
        on the <parameter>calendar</parameter>
-      </para>
+      </simpara>
      </listitem>
-    </varlistentry>  
+    </varlistentry>
    </variablelist>
   </para>
  </refsect1>
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A Julian Day number.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">
@@ -85,10 +85,10 @@
   <para>
    <simplelist>
     <member><function>cal_from_jd</function></member>
-    <member><function>frenchtojd</function></member> 
-    <member><function>gregoriantojd</function></member>  
-    <member><function>jewishtojd</function></member>  
-    <member><function>juliantojd</function></member>  
+    <member><function>frenchtojd</function></member>
+    <member><function>gregoriantojd</function></member>
+    <member><function>jewishtojd</function></member>
+    <member><function>juliantojd</function></member>
     <member><function>unixtojd</function></member>
    </simplelist>
   </para>

@@ -13,9 +13,9 @@
    <modifier>public</modifier> <methodname>DOMEntityReference::__construct</methodname>
    <methodparam><type>string</type><parameter>name</parameter></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Creates a new <classname>DOMEntityReference</classname> object.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The name of the entity reference.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

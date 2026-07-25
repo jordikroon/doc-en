@@ -7,11 +7,11 @@
  <!-- {{{ Requirements -->
  <section xml:id="gmp.requirements">
   &reftitle.required;
-  <para>
+  <simpara>
    The <acronym>GMP</acronym> library can be downloaded from <link
    xlink:href="&url.gmp;">&url.gmp;</link>. This site also has the
    <acronym>GMP</acronym> manual available.
-  </para>
+  </simpara>
   <simpara>
    At least <acronym>GMP</acronym> version 4.2 is required, with some functions
    requiring a more recent version of the <acronym>GMP</acronym> library.
