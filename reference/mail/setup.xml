@@ -7,7 +7,7 @@
  <!-- {{{ Requirements -->
  <section xml:id="mail.requirements">
   &reftitle.required;
-  <para>
+  <simpara>
    For the Mail functions to be available, PHP must have access to the
    <literal>sendmail</literal> binary on your system during compile time.
    If you use another mail program, such as <productname>qmail</productname>
@@ -19,7 +19,7 @@
    It's highly recommended to have sendmail available from your
    <envar>PATH</envar>.  Also, the user that compiled PHP must have
    permission to access the sendmail binary.
-  </para>
+  </simpara>
  </section>
  <!-- }}} -->
 

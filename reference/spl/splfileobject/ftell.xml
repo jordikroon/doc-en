@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type class="union"><type>int</type><type>false</type></type><methodname>SplFileObject::ftell</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the position of the file pointer which represents the current offset in the file stream.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
     Returns the position of the file pointer as an integer, or &false; on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -2,39 +2,39 @@
 <!-- $Revision$ -->
 <sect1 xml:id="install.cloud.digitalocean" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <title>DigitalOcean</title>
- <para>
+ <simpara>
   DigitalOcean offers the following platforms to get PHP installed,
   and running web application on its cloud-hosting infrastructure.
- </para>
+ </simpara>
  <itemizedlist spacing="compact">
   <listitem>
-   <para>
+   <simpara>
     <link xlink:href="&url.docean.cloudways;">Cloudways</link>:
     One-click deployment of major PHP applications:
     WordPress, Magento, Drupal, Laravel, and more.
-   </para>
+   </simpara>
   </listitem>
   <listitem>
-   <para>
+   <simpara>
     <link xlink:href="&url.docean.droplet;">Droplet</link>:
     Virtual machine boxes and installing
     <link xlink:href="https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-16-04">
      Lamp stack on a Linux server
     </link>.
-   </para>
+   </simpara>
   </listitem>
   <listitem>
-   <para>
+   <simpara>
     <link xlink:href="&url.docean.app.platform;">App Platform</link>:
     Managed infrastructure to build, deploy, and scale apps quickly.
     Learn
     <link xlink:href="https://docs.digitalocean.com/products/app-platform/getting-started/sample-apps/php/">
      how to run PHP application on the App Platform
     </link>.
-   </para>
+   </simpara>
   </listitem>
   <listitem>
-   <para>
+   <simpara>
     <link xlink:href="&url.docean.functions;">Functions</link>:
     Serverless platform that allows developers to run code without provisioning or managing servers.
     PHP is supported natively.
@@ -42,7 +42,7 @@
     <link xlink:href="https://docs.digitalocean.com/products/functions/reference/runtimes/php/">
      how to create serverless functions in PHP
     </link>.
-   </para>
+   </simpara>
   </listitem>
  </itemizedlist>
 </sect1>

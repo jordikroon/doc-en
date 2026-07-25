@@ -2,12 +2,12 @@
 <!-- $Revision$ -->
  <sect1 xml:id="install.cloud.ec2" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
   <title>Amazon EC2</title>
-  <para>
+  <simpara>
    PHP installs on the <link xlink:href="&url.cloud.ec2;">EC2 cloud platform</link>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    See also the <link xlink:href="&url.cloud.ec2.sdk;">AWS SDK for PHP</link>.
-  </para>
+  </simpara>
  </sect1>
 
 <!-- Keep this comment at the end of the file

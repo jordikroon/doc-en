@@ -11,11 +11,11 @@
    <modifier>public</modifier> <type>int</type><methodname>ArrayObject::getFlags</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the behavior flags of the <classname>ArrayObject</classname>. See the
    <link linkend="arrayobject.setflags">ArrayObject::setFlags</link>
    method for a list of the available flags.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the behavior flags of the ArrayObject.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

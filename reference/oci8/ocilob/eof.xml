@@ -5,16 +5,16 @@
   <refname>OCILob::eof</refname>
   <refpurpose>Tests for end-of-file on a large object's descriptor</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="OCILob">
    <modifier>public</modifier> <type>bool</type><methodname>OCILob::eof</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Tells whether the internal pointer of large object is at the end of LOB.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,10 +24,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if internal pointer of large object is at the end of LOB.
    Otherwise returns &false;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -56,9 +56,9 @@
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     This function will return an Oracle error if <xref linkend="ocilob.setbuffering"/> is enabled on the LOB.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

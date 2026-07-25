@@ -5,7 +5,7 @@
   <refname>openssl_x509_export_to_file</refname>
   <refpurpose>Exports a certificate to file</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,11 +14,11 @@
    <methodparam><type>string</type><parameter>output_filename</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>no_text</parameter><initializer>&true;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>openssl_x509_export_to_file</function> stores
    <parameter>certificate</parameter> into a file named by
    <parameter>output_filename</parameter> in a <acronym>PEM</acronym> encoded format.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,9 +29,9 @@
     <varlistentry>
      <term><parameter>output_filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path to the output file.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -46,9 +46,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

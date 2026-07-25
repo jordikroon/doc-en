@@ -13,9 +13,9 @@
    <type>int</type><methodname>imagegetinterpolation</methodname>
    <methodparam><type>GdImage</type><parameter>image</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the currently set interpolation method of the <parameter>image</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,9 +27,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the interpolation method.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

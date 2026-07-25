@@ -12,10 +12,10 @@
    <modifier>public</modifier> <type>int</type><methodname>SplFileObject::fpassthru</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Reads to EOF on the given file pointer from the current position and
    writes the results to the output buffer.
-  </para>
+  </simpara>
   <para>
    You may need to call <methodname>SplFileObject::rewind</methodname> to reset the file
    pointer to the beginning of the file if you have already written data
@@ -30,10 +30,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the number of characters read from <parameter>handle</parameter>
    and passed through to the output.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

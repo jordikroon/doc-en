@@ -5,18 +5,18 @@
   <refname>intl_error_name</refname>
   <refpurpose>Get symbolic name for a given error code</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>string</type><methodname>intl_error_name</methodname>
    <methodparam><type>int</type><parameter>errorCode</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Return ICU error code name.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   <para>
@@ -24,23 +24,23 @@
     <varlistentry>
      <term><parameter>errorCode</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        ICU error code.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The returned string will be the same as the name of the error code
    constant.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -65,7 +65,7 @@ Symbolic name for -128 is U_USING_FALLBACK_WARNING.
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

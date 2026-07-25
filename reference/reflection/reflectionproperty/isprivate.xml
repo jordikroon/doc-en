@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>ReflectionProperty::isPrivate</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks whether the property is private.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &true; if the property is private, &false; otherwise.
-  </para>
+  </simpara>
   <note>
    <simpara>
     Note this refers only to the main visibility, and not to a <link linkend="language.oop5.visibility-members-aviz">set-visibility</link>, if specified.

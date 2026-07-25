@@ -5,16 +5,16 @@
   <refname>SplPriorityQueue::current</refname>
   <refpurpose>Return current node pointed by the iterator</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="SplPriorityQueue">
    <modifier>public</modifier> <type>mixed</type><methodname>SplPriorityQueue::current</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get the current datastructure node.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The value or priority (or both) of the current node, depending on the extract flag.
-  </para>
+  </simpara>
  </refsect1>
 </refentry>
 <!-- Keep this comment at the end of the file

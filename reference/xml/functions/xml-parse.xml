@@ -14,10 +14,10 @@
    <methodparam><type>string</type><parameter>data</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>is_final</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>xml_parse</function> parses an XML document. The handlers for
    the configured events are called as many times as necessary.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,29 +27,29 @@
     <varlistentry>
      <term><parameter>parser</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A reference to the XML parser to use.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>data</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Chunk of data to parse.  A document may be parsed piece-wise by
        calling <function>xml_parse</function> several times with new data,
        as long as the <parameter>is_final</parameter> parameter is set and
        &true; when the last data is parsed.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>is_final</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If set and &true;, <parameter>data</parameter> is the last piece of
        data sent in this parse.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -58,22 +58,22 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns 1 on success or 0 on failure.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    For unsuccessful parses, error information can be retrieved with
    <function>xml_get_error_code</function>,
    <function>xml_error_string</function>,
    <function>xml_get_current_line_number</function>,
    <function>xml_get_current_column_number</function> and
    <function>xml_get_current_byte_index</function>.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     Some errors (such as entity errors) are reported at the end of the data, thus only if
     <parameter>is_final</parameter> is set and &true;.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -98,11 +98,11 @@
   &reftitle.examples;
   <example xml:id="xml_parse.example.chunked">
    <title>Chunked parsing of large XML documents</title>
-   <para>
+   <simpara>
      This example shows how large XML documents can be read and parsed in
      chunks, so that it not necessary to keep the whole document in memory.
      Error handling is omitted for brevity.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

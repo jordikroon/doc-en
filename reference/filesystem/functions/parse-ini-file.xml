@@ -5,7 +5,7 @@
   <refname>parse_ini_file</refname>
   <refpurpose>Parse a configuration file</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,14 +14,14 @@
    <methodparam choice="opt"><type>bool</type><parameter>process_sections</parameter><initializer>&false;</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>scanner_mode</parameter><initializer><constant>INI_SCANNER_NORMAL</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>parse_ini_file</function> loads in the
    ini file specified in <parameter>filename</parameter>,
    and returns the settings in it in an associative array.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The structure of the ini file is the same as the &php.ini;'s.
-  </para>
+  </simpara>
   <warning>
    <simpara>
     This function must not be used with untrusted inputs, unless
@@ -39,45 +39,45 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The filename of the ini file being parsed. If a relative path is used,
        it is evaluated relative to the current working directory, then the
        <link linkend="ini.include-path">include_path</link>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>process_sections</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        By setting the <parameter>process_sections</parameter>
        parameter to &true;, you get a multidimensional array, with
        the section names and settings included. The default
-       for <parameter>process_sections</parameter> is &false;      
-      </para>
+       for <parameter>process_sections</parameter> is &false;
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>scanner_mode</parameter></term>
      <listitem>
-      <para>
-       Can either be <constant>INI_SCANNER_NORMAL</constant> (default) or 
-       <constant>INI_SCANNER_RAW</constant>. If <constant>INI_SCANNER_RAW</constant> 
+      <simpara>
+       Can either be <constant>INI_SCANNER_NORMAL</constant> (default) or
+       <constant>INI_SCANNER_RAW</constant>. If <constant>INI_SCANNER_RAW</constant>
        is supplied, then option values will not be parsed.
-      </para>
+      </simpara>
       &ini.scanner.typed;
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The settings are returned as an associative <type>array</type> on success,
    and &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -112,13 +112,13 @@ urls[git] = "http://git.php.net"
    </example>
    <example>
     <title><function>parse_ini_file</function> example</title>
-    <para>
+    <simpara>
      <link linkend="language.constants">Constants</link> (but not "magic constants" like <constant>__FILE__</constant>)
      may also be parsed
      in the ini file so if you define a constant as an ini value before
      running <function>parse_ini_file</function>, it will be integrated into
      the results.  Only ini values are evaluated, and the value must be just the constant.  For example:
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -282,20 +282,20 @@ quoted = "She said \"Exactly my point\"." ; Results in a string with quote marks
 hint = "Use \\\" to escape double quote" ; Results in: Use \" to escape double quote
 ]]>
     </programlisting>
-    <para>
+    <simpara>
      There is an exception made for Windows-like paths: it's possible to not escape trailing backslash
      if the quoted string is directly followed by a linebreak:
-    </para>
+    </simpara>
     <programlisting>
 <![CDATA[
 save_path = "C:\Temp\"
 ]]>
     </programlisting>
-    <para>
+    <simpara>
      If one does need to escape double quote followed by linebreak in a multiline value,
      it's possible to use value concatenation in the following way
      (there is one double-quoted string directly followed by another one):
-    </para>
+    </simpara>
     <programlisting>
 <![CDATA[
 long_text = "Lorem \"ipsum\"""
@@ -311,10 +311,10 @@ long_text = "Lorem \"ipsum\"""
 code = "\${test}"
 ]]>
     </programlisting>
-    <para>
+    <simpara>
      Escaping characters is not supported in the <constant>INI_SCANNER_RAW</constant> mode
      (in this mode all characters are processed "as is").
-    </para>
+    </simpara>
     <para>
      Note that the ini parser doesn't support standard escape sequences (<code>\n</code>, <code>\t</code>, etc.).
      If necessary, post-process the result of <function>parse_ini_file</function> with <function>stripcslashes</function> function.
@@ -326,18 +326,18 @@ code = "\${test}"
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     This function has nothing to do with the
     &php.ini; file. It is already processed by
     the time you run your script. This function can be used to
     read in your own application's configuration files.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     If a value in the ini file contains any non-alphanumeric
     characters it needs to be enclosed in double-quotes (").
-   </para>
+   </simpara>
   </note>
   <note>
    <simpara>
@@ -354,23 +354,23 @@ code = "\${test}"
    </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     Entries without an equal sign are ignored. For example, "foo"
     is ignored whereas "bar =" is parsed and added with an empty
-    value. For example, MySQL has a "no-auto-rehash" setting 
+    value. For example, MySQL has a "no-auto-rehash" setting
     in <filename>my.cnf</filename> that does not take a value, so
     it is ignored.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     ini files are generally treated as plain text by web servers and thus served to browsers if requested.
     That means for security you must either keep your ini files outside of your docroot or reconfigure your
     web server to not serve them.  Failure to do either of those may introduce a security risk.
-   </para>
+   </simpara>
   </note>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

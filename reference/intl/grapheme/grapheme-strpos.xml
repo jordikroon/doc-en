@@ -7,7 +7,7 @@
  </refnamediv>
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type class="union"><type>int</type><type>false</type></type><methodname>grapheme_strpos</methodname>
    <methodparam><type>string</type><parameter>haystack</parameter></methodparam>
@@ -15,9 +15,9 @@
    <methodparam choice="opt"><type>int</type><parameter>offset</parameter><initializer>0</initializer></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>locale</parameter><initializer>""</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Find position (in grapheme units) of first occurrence of a string
-  </para> 
+  </simpara>
   </refsect1>
 
  <refsect1 role="parameters">
@@ -27,29 +27,29 @@
     <varlistentry>
      <term><parameter>haystack</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string to look in. Must be valid UTF-8.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>needle</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string to look for. Must be valid UTF-8.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The optional <parameter>offset</parameter> parameter allows you to specify where in <parameter>haystack</parameter> to
        start searching as an offset in grapheme units (not bytes or characters).
        If the offset is negative, it is treated relative to the end of the string.
        The position returned is still relative to the beginning of <parameter>haystack</parameter>
        regardless of the value of <parameter>offset</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -64,9 +64,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the position as an integer. If <parameter>needle</parameter> is not found, <function>grapheme_strpos</function> will return &false;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

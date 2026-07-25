@@ -3,11 +3,11 @@
 <sect1 xml:id="language.types.array">
  <title>Arrays</title>
 
- <para>
+ <simpara>
   For a list of all array functions, see the <link linkend="ref.array">array functions</link> chapter in the documentation.
- </para>
+ </simpara>
 
- <para>
+ <simpara>
   An <type>array</type> in PHP is actually an ordered map. A map is a type that
   associates <emphasis>values</emphasis> to <emphasis>keys</emphasis>. This type
   is optimized for several different uses; it can be treated as an array,
@@ -15,13 +15,13 @@
   collection, stack, queue, and probably more. As <type>array</type> values can
   be other <type>array</type>s, trees and multidimensional <type>array</type>s
   are also possible.
- </para>
+ </simpara>
 
- <para>
+ <simpara>
   Explanation of those data structures is beyond the scope of this manual, but
   at least one example is provided for each of them. For more information, look
   towards the considerable literature that exists about this broad topic.
- </para>
+ </simpara>
 
  <sect2 xml:id="language.types.array.syntax">
   <title>Syntax</title>
@@ -29,12 +29,12 @@
   <sect3 xml:id="language.types.array.syntax.array-func">
    <title>Specifying with <function>array</function></title>
 
-   <para>
+   <simpara>
     An <type>array</type> can be created using the <function>array</function>
     language construct. It takes any number of comma-separated
     <literal><replaceable>key</replaceable> =&gt; <replaceable>value</replaceable></literal> pairs
     as arguments.
-   </para>
+   </simpara>
 
    <synopsis>
 array(
@@ -45,18 +45,18 @@ array(
 )</synopsis>
    <!-- Do not fix the whitespace for the synopsis end element. A limitation of PhD prevents proper trimming -->
 
-   <para>
+   <simpara>
     The comma after the last array element is optional and can be omitted. This is usually done
     for single-line arrays, i.e. <literal>array(1, 2)</literal> is preferred over
     <literal>array(1, 2, )</literal>. For multi-line arrays on the other hand the trailing comma
     is commonly used, as it allows easier addition of new elements at the end.
-   </para>
+   </simpara>
 
    <note>
-    <para>
+    <simpara>
      A short array syntax exists which replaces
      <literal>array()</literal> with <literal>[]</literal>.
-    </para>
+    </simpara>
    </note>
 
    <example>
@@ -81,11 +81,11 @@ var_dump($array1, $array2);
     </programlisting>
    </example>
 
-   <para>
+   <simpara>
     The <replaceable>key</replaceable> can either be an <type>int</type>
     or a <type>string</type>. The <replaceable>value</replaceable> can be
     of any type.
-   </para>
+   </simpara>
 
    <para xml:id="language.types.array.key-casts">
     Additionally the following <replaceable>key</replaceable> casts will occur:
@@ -127,10 +127,10 @@ var_dump($array1, $array2);
     </itemizedlist>
    </para>
 
-   <para>
+   <simpara>
     If multiple elements in the array declaration use the same key, only the last one
     will be used as all others are overwritten.
-   </para>
+   </simpara>
 
    <example>
     <title>Type Casting and Overwriting example</title>
@@ -156,16 +156,16 @@ array(1) {
 }
 ]]>
     </screen>
-    <para>
+    <simpara>
      As all the keys in the above example are cast to <literal>1</literal>, the value will be overwritten
      on every new element and the last assigned value <literal>"d"</literal> is the only one left over.
-    </para>
+    </simpara>
    </example>
 
-   <para>
+   <simpara>
     PHP arrays can contain <type>int</type> and <type>string</type> keys at the same time
     as PHP does not distinguish between indexed and associative arrays.
-   </para>
+   </simpara>
 
    <example>
     <title>Mixed <type>int</type> and <type>string</type> keys</title>
@@ -199,10 +199,10 @@ array(4) {
     </screen>
    </example>
 
-   <para>
+   <simpara>
     The <replaceable>key</replaceable> is optional. If it is not specified, PHP will
     use the increment of the largest previously used <type>int</type> key.
-   </para>
+   </simpara>
 
    <example>
     <title>Indexed arrays without key</title>
@@ -231,9 +231,9 @@ array(4) {
     </screen>
    </example>
 
-   <para>
+   <simpara>
     It is possible to specify the key only for some elements and leave it out for others:
-   </para>
+   </simpara>
 
    <example>
     <title>Keys not on all elements</title>
@@ -265,19 +265,19 @@ array(4) {
 }
 ]]>
     </screen>
-    <para>
+    <simpara>
      As you can see the last value <literal>"d"</literal> was assigned the key
      <literal>7</literal>. This is because the largest integer key before that
      was <literal>6</literal>.
-    </para>
+    </simpara>
    </example>
 
    <example>
     <title>Complex Type Casting and Overwriting example</title>
-    <para>
+    <simpara>
      This example includes all variations of type casting of keys and overwriting
      of elements.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -378,9 +378,9 @@ array(2) {
   <sect3 xml:id="language.types.array.syntax.accessing">
    <title>Accessing array elements with square bracket syntax</title>
 
-   <para>
+   <simpara>
     Array elements can be accessed using the <literal>array[key]</literal> syntax.
-   </para>
+   </simpara>
 
    <example>
     <title>Accessing array elements</title>
@@ -414,12 +414,12 @@ string(3) "foo"
    </example>
 
    <note>
-    <para>
+    <simpara>
      Prior to PHP 8.0.0, square brackets and curly braces could be used interchangeably
      for accessing array elements (e.g. <literal>$array[42]</literal> and <literal>$array{42}</literal>
      would both do the same thing in the example above).
      The curly brace syntax was deprecated as of PHP 7.4.0 and no longer supported as of PHP 8.0.0.
-    </para>
+    </simpara>
    </note>
 
    <example>
@@ -440,37 +440,37 @@ var_dump($secondElement);
    </example>
 
    <note>
-    <para>
+    <simpara>
       Attempting to access an array key which has not been defined is
       the same as accessing any other undefined variable:
       an <constant>E_WARNING</constant>-level error message
       (<constant>E_NOTICE</constant>-level prior to PHP 8.0.0) will be
       issued, and the result will be &null;.
-    </para>
+    </simpara>
    </note>
    <note>
-    <para>
+    <simpara>
      Array dereferencing a scalar value which is not a <type>string</type>
      yields &null;. Prior to PHP 7.4.0, that did not issue an error message.
      As of PHP 7.4.0, this issues <constant>E_NOTICE</constant>;
      as of PHP 8.0.0, this issues <constant>E_WARNING</constant>.
-    </para>
+    </simpara>
    </note>
   </sect3>
 
   <sect3 xml:id="language.types.array.syntax.modifying">
    <title>Creating/modifying with square bracket syntax</title>
 
-   <para>
+   <simpara>
     An existing <type>array</type> can be modified by explicitly setting values
     in it.
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     This is done by assigning values to the <type>array</type>, specifying the
     key in brackets. The key can also be omitted, resulting in an empty pair of
     brackets (<literal>[]</literal>).
-   </para>
+   </simpara>
 
    <synopsis>
 $arr[<replaceable>key</replaceable>] = <replaceable>value</replaceable>;
@@ -478,7 +478,7 @@ $arr[] = <replaceable>value</replaceable>;
 // <replaceable>key</replaceable> may be an <type>int</type> or <type>string</type>
 // <replaceable>value</replaceable> may be any value of any type</synopsis>
 
-   <para>
+   <simpara>
     If <varname>$arr</varname> doesn't exist yet or is set to &null; or &false;, it will be created, so this is
     also an alternative way to create an <type>array</type>. This practice is
     however discouraged because if <varname>$arr</varname> already contains
@@ -487,7 +487,7 @@ $arr[] = <replaceable>value</replaceable>;
     for <link linkend="language.types.string.substr">string access
     operator</link>. It is always better to initialize a variable by a direct
     assignment.
-   </para>
+   </simpara>
    <note>
     <simpara>
      As of PHP 7.1.0, applying the empty index operator on a string throws a fatal
@@ -501,11 +501,11 @@ $arr[] = <replaceable>value</replaceable>;
     </simpara>
    </note>
 
-   <para>
+   <simpara>
     To change a certain
     value, assign a new value to that element using its key. To remove a
     key/value pair, call the <function>unset</function> function on it.
-   </para>
+   </simpara>
 
    <example>
     <title>Using Square Brackets with Arrays</title>
@@ -540,12 +540,12 @@ var_dump($arr);
      As of PHP 8.3.0, it can also be a negative integer.
     </simpara>
 
-    <para>
+    <simpara>
      Note that the maximum integer key used for this <emphasis>need not
      currently exist in the <type>array</type></emphasis>. It need only have
      existed in the <type>array</type> at some time since the last time the
      <type>array</type> was re-indexed. The following example illustrates:
-    </para>
+    </simpara>
 
     <informalexample>
      <programlisting role="php">
@@ -606,11 +606,11 @@ Array
   <sect3 xml:id="language.types.array.syntax.destructuring">
    <title>Array destructuring</title>
 
-   <para>
+   <simpara>
     Arrays can be destructured using the <literal>[]</literal> (as of PHP 7.1.0) or
     <function>list</function> language constructs. These
     constructs can be used to destructure an array into distinct variables.
-   </para>
+   </simpara>
 
    <example>
     <title>Array Destructuring</title>
@@ -629,10 +629,10 @@ echo $baz, PHP_EOL;    // prints "baz"
     </programlisting>
    </example>
 
-   <para>
+   <simpara>
     Array destructuring can be used in &foreach; to destructure
     a multi-dimensional array while iterating over it.
-   </para>
+   </simpara>
 
    <example>
     <title>Array Destructuring in Foreach</title>
@@ -652,10 +652,10 @@ foreach ($source_array as [$id, $name]) {
     </programlisting>
    </example>
 
-   <para>
+   <simpara>
     Array elements will be ignored if the variable is not provided. Array
     destructuring always starts at index <literal>0</literal>.
-   </para>
+   </simpara>
 
    <example>
     <title>Ignoring Elements</title>
@@ -673,11 +673,11 @@ echo $baz;    // prints "baz"
     </programlisting>
    </example>
 
-   <para>
+   <simpara>
     As of PHP 7.1.0, associative arrays can be destructured too. This also
     allows for easier selection of the right element in numerically indexed
     arrays as the index can be explicitly specified.
-   </para>
+   </simpara>
 
    <example>
     <title>Destructuring Associative Arrays</title>
@@ -702,9 +702,9 @@ echo $baz, PHP_EOL;    // prints "baz"
     </programlisting>
    </example>
 
-   <para>
+   <simpara>
     Array destructuring can be used for easy swapping of two variables.
-   </para>
+   </simpara>
 
    <example>
     <title>Swapping Two Variable</title>
@@ -724,24 +724,24 @@ echo $b, PHP_EOL;    // prints 1
    </example>
 
    <note>
-    <para>
+    <simpara>
       The spread operator (<literal>...</literal>) is not supported in assignments.
-    </para>
+    </simpara>
    </note>
 
    <note>
-    <para>
+    <simpara>
       Attempting to access an array key which has not been defined is
       the same as accessing any other undefined variable:
       an <constant>E_WARNING</constant>-level error message
       (<constant>E_NOTICE</constant>-level prior to PHP 8.0.0) will be
       issued, and the result will be &null;.
-    </para>
+    </simpara>
    </note>
    <note>
-    <para>
+    <simpara>
       Destructuring a scalar value assigns &null; to all variables.
-    </para>
+    </simpara>
    </note>
   </sect3>
 
@@ -750,19 +750,19 @@ echo $b, PHP_EOL;    // prints 1
  <sect2 xml:id="language.types.array.useful-funcs">
   <title>Useful functions</title>
 
-  <para>
+  <simpara>
    There are quite a few useful functions for working with arrays. See the
    <link linkend="ref.array">array functions</link> section.
-  </para>
+  </simpara>
 
   <note>
-   <para>
+   <simpara>
     The <function>unset</function> function allows removing keys from an
     <type>array</type>. Be aware that the array will <emphasis>not</emphasis> be
     reindexed. If a true "remove and shift" behavior is desired, the
     <type>array</type> can be reindexed using the
     <function>array_values</function> function.
-   </para>
+   </simpara>
 
    <example>
     <title>Unsetting Intermediate Elements</title>
@@ -788,11 +788,11 @@ var_dump($b);
    </example>
   </note>
 
-  <para>
+  <simpara>
    The &foreach; control
    structure exists specifically for <type>array</type>s. It provides an easy
    way to traverse an <type>array</type>.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="language.types.array.donts">
@@ -801,12 +801,12 @@ var_dump($b);
   <sect3 xml:id="language.types.array.foo-bar">
    <title>Why is <literal>$foo[bar]</literal> wrong?</title>
 
-   <para>
+   <simpara>
     Always use quotes around a string literal array index. For example,
     <literal>$foo['bar']</literal> is correct, while
     <literal>$foo[bar]</literal> is not. But why? It is common to encounter this
     kind of syntax in old scripts:
-   </para>
+   </simpara>
 
    <informalexample>
     <programlisting role="php">
@@ -820,7 +820,7 @@ echo $foo[bar];
     </programlisting>
    </informalexample>
 
-   <para>
+   <simpara>
     This is wrong, but it works. The reason is that this code has an undefined
     constant (<literal>bar</literal>) rather than a <type>string</type> (<literal>'bar'</literal> - notice the
     quotes). It works because PHP automatically converts a
@@ -829,7 +829,7 @@ echo $foo[bar];
     contains the bare <type>string</type>. For instance, if there is no defined
     constant named <constant>bar</constant>, then PHP will substitute in the
     <type>string</type> <literal>'bar'</literal> and use that.
-   </para>
+   </simpara>
    <warning>
     <simpara>
      The fallback to treat an undefined constant as bare string issues an error
@@ -837,7 +837,7 @@ echo $foo[bar];
      This has been deprecated as of PHP 7.2.0, and issues an error
      of level <constant>E_WARNING</constant>.
      As of PHP 8.0.0, it has been removed and throws an
-     <classname>Error</classname> exception.
+     <exceptionname>Error</exceptionname> exception.
     </simpara>
    </warning>
 
@@ -893,9 +893,9 @@ Good: 2
 ]]>
    </screen>
 
-   <para>
+   <simpara>
     More examples to demonstrate this behaviour:
-   </para>
+   </simpara>
 
    <example>
     <title>More Examples</title>
@@ -959,12 +959,12 @@ print "Hello $_GET['foo']";
     </programlisting>
    </informalexample>
 
-   <para>
+   <simpara>
     As stated in the <link linkend="language.types.array.syntax">syntax</link>
     section, what's inside the square brackets ('<literal>[</literal>' and
     '<literal>]</literal>') must be an expression. This means that code like
     this works:
-   </para>
+   </simpara>
 
    <informalexample>
     <programlisting role="php">
@@ -976,10 +976,10 @@ echo $arr[somefunc($bar)];
     </programlisting>
    </informalexample>
 
-   <para>
+   <simpara>
     This is an example of using a function return value as the array index. PHP
     also knows about constants:
-   </para>
+   </simpara>
 
    <informalexample>
     <programlisting role="php">
@@ -993,11 +993,11 @@ $error_descriptions[E_NOTICE]  = "This is just an informal notice";
     </programlisting>
    </informalexample>
 
-   <para>
+   <simpara>
     Note that <constant>E_ERROR</constant> is also a valid identifier, just like
     <literal>bar</literal> in the first example. But the last example is in fact
     the same as writing:
-   </para>
+   </simpara>
 
    <informalexample>
     <programlisting role="php">
@@ -1011,20 +1011,20 @@ $error_descriptions[8] = "This is just an informal notice";
     </programlisting>
    </informalexample>
 
-   <para>
+   <simpara>
     because <constant>E_ERROR</constant> equals <literal>1</literal>, etc.
-   </para>
+   </simpara>
 
    <sect4 xml:id="language.types.array.foo-bar.why">
     <title>So why is it bad then?</title>
 
-    <para>
+    <simpara>
      At some point in the future, the PHP team might want to add another
      constant or keyword, or a constant in other code may interfere. For
      example, it is already wrong to use the words <literal>empty</literal> and
      <literal>default</literal> this way, since they are
      <link linkend="reserved">reserved keywords</link>.
-    </para>
+    </simpara>
 
     <note>
      <simpara>
@@ -1052,7 +1052,7 @@ $error_descriptions[8] = "This is just an informal notice";
    <literal>array($scalarValue)</literal>.
   </para>
 
-  <para>
+  <simpara>
    If an <type>object</type> is converted to an <type>array</type>, the result
    is an <type>array</type> whose elements are the <type>object</type>'s
    properties. The keys are the member variable names, with a few notable
@@ -1062,7 +1062,7 @@ $error_descriptions[8] = "This is just an informal notice";
    prepended values have <literal>NUL</literal> bytes on either side.
    Uninitialized <link linkend="language.oop5.properties.typed-properties">typed properties</link>
    are silently discarded.
-  </para>
+  </simpara>
 
   <example>
    <title>Converting to an Array</title>
@@ -1097,9 +1097,9 @@ array (
    </screen>
   </example>
 
-  <para>
+  <simpara>
    These <literal>NUL</literal> can result in some unexpected behaviour:
-  </para>
+  </simpara>
 
   <example>
    <title>Casting an Object to an Array</title>
@@ -1135,25 +1135,25 @@ array(3) {
    </screen>
   </example>
 
-  <para>
+  <simpara>
    The above will appear to have two keys named 'AA', although one of them is
    actually named '\0A\0A'.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    Converting &null; to an <type>array</type> results in an empty
    <type>array</type>.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="language.types.array.comparing">
   <title>Comparing</title>
 
-  <para>
+  <simpara>
    It is possible to compare arrays with the <function>array_diff</function>
    function and with
    <link linkend="language.operators.array">array operators</link>.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="language.types.array.unpacking">
@@ -1224,14 +1224,14 @@ var_dump($arr6); // [1, 2, 3, 4, 5, 6]
 
   <note>
    <para>
-    Keys that are neither integers nor strings throw a <classname>TypeError</classname>.
+    Keys that are neither integers nor strings throw a <exceptionname>TypeError</exceptionname>.
     Such keys can only be generated by a <interfacename>Traversable</interfacename> object.
    </para>
   </note>
   <note>
-   <para>
+   <simpara>
     Prior to PHP 8.1, unpacking an array which has a string key is not supported:
-   </para>
+   </simpara>
    <informalexample>
     <programlisting role="php">
 <![CDATA[
@@ -1256,9 +1256,9 @@ $arr6 = [...$arr4, ...$arr5]; // works. [1, 2, 3, 4, 5]
  <sect2 xml:id="language.types.array.examples">
   <title>Examples</title>
 
-  <para>
+  <simpara>
    The array type in PHP is very versatile. Here are some examples:
-  </para>
+  </simpara>
 
   <example>
    <title>Array Versatility</title>
@@ -1373,10 +1373,10 @@ Do you like yellow?
    </screen>
   </example>
 
-  <para>
+  <simpara>
    Changing the values of the <type>array</type> directly is possible
    by passing them by reference.
-  </para>
+  </simpara>
 
   <example xml:id="language.types.array.examples.changeloop">
    <title>Changing element in the loop</title>
@@ -1409,9 +1409,9 @@ Array
    </screen>
   </example>
 
-  <para>
+  <simpara>
    This example creates a one-based array.
-  </para>
+  </simpara>
 
   <example>
    <title>One-based index</title>
@@ -1454,12 +1454,12 @@ var_dump($files);
    </programlisting>
   </example>
 
-  <para>
+  <simpara>
    <type>Array</type>s are ordered. The order can be changed using various
    sorting functions. See the <link linkend="ref.array">array functions</link>
    section for more information. The <function>count</function> function can be
    used to count the number of items in an <type>array</type>.
-  </para>
+  </simpara>
 
   <example>
    <title>Sorting an array</title>
@@ -1473,11 +1473,11 @@ print_r($files);
    </programlisting>
   </example>
 
-  <para>
+  <simpara>
    Because the value of an <type>array</type> can be anything, it can also be
    another <type>array</type>. This enables the creation of recursive and
    multi-dimensional <type>array</type>s.
-  </para>
+  </simpara>
 
   <example>
    <title>Recursive and multi-dimensional arrays</title>
@@ -1515,11 +1515,11 @@ var_dump($juices);
    </programlisting>
   </example>
 
-  <para>
+  <simpara>
    <type>Array</type> assignment always involves value copying. Use the
    <link linkend="language.operators">reference operator</link> to copy an
    <type>array</type> by reference.
-  </para>
+  </simpara>
 
   <example>
    <title>Array Copying</title>

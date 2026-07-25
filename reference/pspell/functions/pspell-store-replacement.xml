@@ -5,7 +5,7 @@
   <refname>pspell_store_replacement</refname>
   <refpurpose>Store a replacement pair for a word</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -24,7 +24,7 @@
    use <function>pspell_config_personal</function> and
    <function>pspell_config_repl</function> to set the path where to save your
    custom wordlists, and then use <function>pspell_save_wordlist</function>
-   for the changes to be written to disk. 
+   for the changes to be written to disk.
   </simpara>
  </refsect1>
 
@@ -41,17 +41,17 @@
     <varlistentry>
      <term><parameter>misspelled</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The misspelled word.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>correct</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The fixed spelling for the <parameter>misspelled</parameter> word.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -60,9 +60,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -107,10 +107,10 @@ pspell_save_wordlist($pspell);
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     This function will not work unless you have pspell .11.2 and aspell .32.5
     or later.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

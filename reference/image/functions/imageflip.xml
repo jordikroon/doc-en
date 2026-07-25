@@ -13,10 +13,10 @@
    <methodparam><type>GdImage</type><parameter>image</parameter></methodparam>
    <methodparam><type>int</type><parameter>mode</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Flips the <parameter>image</parameter> image using the given
-   <parameter>mode</parameter>. 
-  </para>
+   <parameter>mode</parameter>.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,9 +27,9 @@
     <varlistentry>
      <term><parameter>mode</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Flip mode, this can be one of the <constant>IMG_FLIP_<replaceable>*</replaceable></constant> constants:
-      </para>
+      </simpara>
       <para>
        <informaltable>
         <tgroup cols="2">
@@ -70,9 +70,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -97,10 +97,10 @@
   <para>
    <example>
     <title>Flips an image vertically</title>
-    <para>
-     This example uses the <constant>IMG_FLIP_VERTICAL</constant> 
+    <simpara>
+     This example uses the <constant>IMG_FLIP_VERTICAL</constant>
      constant.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -133,9 +133,9 @@ imagejpeg($im);
   <para>
    <example>
     <title>Flips the image horizontally</title>
-    <para>
+    <simpara>
      This example uses the <constant>IMG_FLIP_HORIZONTAL</constant> constant.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

@@ -14,9 +14,9 @@
    <type class="union"><type>string</type><type>false</type></type><methodname>stream_resolve_include_path</methodname>
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Resolve <parameter>filename</parameter> against the include path according to the same rules as <function>fopen</function>/<function>include</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,9 +26,9 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The filename to resolve.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <!--
@@ -47,9 +47,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a <type>string</type> containing the resolved absolute filename, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -57,9 +57,9 @@
   <para>
    <example>
     <title><function>stream_resolve_include_path</function> example</title>
-    <para>
+    <simpara>
      Basic usage example.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

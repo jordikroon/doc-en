@@ -5,7 +5,7 @@
   <refname>ini_get_all</refname>
   <refpurpose>Gets all configuration options</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,9 +13,9 @@
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>extension</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>details</parameter><initializer>&true;</initializer></methodparam>
   </methodsynopsis>
-  <para>
-   Returns all the registered configuration options. 
-  </para>
+  <simpara>
+   Returns all the registered configuration options.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,19 +25,19 @@
     <varlistentry>
      <term><parameter>extension</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An optional extension name. If not &null; or the &string; <literal>core</literal>, the function returns only options
        specific for that extension.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>details</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Retrieve details settings or only the current value for each setting.
        Default is &true; (retrieve details).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -46,31 +46,31 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an associative array with directive name as the array key.
    Returns &false; and raises an <constant>E_WARNING</constant> level error
    if the <parameter>extension</parameter> doesn't exist.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    When <parameter>details</parameter> is &true; (default) the array will
    contain <literal>global_value</literal> (set in
    &php.ini;), <literal>local_value</literal> (perhaps set with
    <function>ini_set</function> or &htaccess;), and
    <literal>access</literal> (the access level).
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    When <parameter>details</parameter> is &false; the value will be the
    current value of the option.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    See the <link linkend="configuration.changes.modes">manual section</link>
    for information on what access levels mean.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     It's possible for a directive to have multiple access levels, which is
     why <literal>access</literal> shows the appropriate bitmask values.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -162,10 +162,10 @@ Array
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     <function>ini_get_all</function> ignores "array" ini options such as
     <literal>pdo.dsn.<replaceable>*</replaceable></literal>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

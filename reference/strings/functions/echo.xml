@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://docbook.org/ns/docbook" xml:id="function.echo">
+<refentry xml:id="function.echo" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>echo</refname>
   <refpurpose>Output one or more strings</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -15,13 +15,13 @@
   <simpara>
    Outputs one or more expressions, with no additional newlines or spaces.
   </simpara>
-  <para>
+  <simpara>
    <literal>echo</literal> is not a function but a language construct.
    Its arguments are a list of expressions following the <literal>echo</literal>
    keyword, separated by commas, and not delimited by parentheses.
    Unlike some other language constructs, <literal>echo</literal> does not have
    any return value, so it cannot be used in the context of an expression.
-  </para>
+  </simpara>
   <para>
    <literal>echo</literal> also has a shortcut syntax, where you can
    immediately follow the opening tag with an equals sign. This syntax is available
@@ -35,10 +35,10 @@ I have <?=$foo?> foo.
     </programlisting>
    </informalexample>
   </para>
-  <para>
+  <simpara>
    The major differences to <function>print</function> are that
    <literal>echo</literal> accepts multiple arguments and doesn't have a return value.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -48,12 +48,12 @@ I have <?=$foo?> foo.
     <varlistentry>
      <term><parameter>expressions</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        One or more string expressions to output, separated by commas.
        Non-string values will be coerced to strings, even when
        <link linkend="language.types.declarations.strict">the
        <literal>strict_types</literal> directive</link> is enabled.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -62,9 +62,9 @@ I have <?=$foo?> foo.
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -186,13 +186,13 @@ echo("hello", " world"), PHP_EOL;
   </note>
 
   <tip>
-   <para>
+   <simpara>
     Passing multiple arguments to <literal>echo</literal> can avoid
     complications arising from the precedence of the concatenation operator in
     PHP. For instance, the concatenation operator has higher precedence than
     the ternary operator, and prior to PHP 8.0.0 had the same precedence as addition
     and subtraction:
-   </para>
+   </simpara>
    <programlisting role="php">
     <![CDATA[
 <?php
@@ -210,10 +210,10 @@ echo 'Sum: ' . 1 + 2;
 echo 'Sum: ' . (1 + 2);
 ]]>
    </programlisting>
-   <para>
+   <simpara>
     If multiple arguments are passed in, then parentheses will not be
     required to enforce precedence, because each expression is separate:
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

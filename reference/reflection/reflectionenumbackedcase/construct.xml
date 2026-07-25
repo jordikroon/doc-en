@@ -21,17 +21,17 @@
    <varlistentry>
     <term><parameter>class</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       An enum instance or a name.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>constant</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       An enum constant name.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>

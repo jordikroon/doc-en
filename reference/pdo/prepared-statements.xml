@@ -3,12 +3,12 @@
 
 <chapter xml:id="pdo.prepared-statements" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <title>Prepared statements and stored procedures</title>
- <para>
+ <simpara>
   Many of the more mature databases support the concept of prepared
   statements.  What are they? They can be thought of as a kind of compiled
-  template for the SQL that an application wants to run, that can be customized 
+  template for the SQL that an application wants to run, that can be customized
   using variable parameters.  Prepared statements offer two major benefits:
- </para>
+ </simpara>
  <itemizedlist>
   <listitem>
    <simpara>
@@ -33,12 +33,12 @@
    </simpara>
   </listitem>
  </itemizedlist>
- <para>
+ <simpara>
   Prepared statements are so useful that they are the only feature that PDO
-  will emulate for drivers that don't support them.  This ensures that an 
-  application will be able to use the same data access paradigm regardless of 
+  will emulate for drivers that don't support them.  This ensures that an
+  application will be able to use the same data access paradigm regardless of
   the capabilities of the database.
- </para>
+ </simpara>
  <para>
   <example>
    <title>Repeated inserts using prepared statements</title>
@@ -131,7 +131,7 @@ foreach ($stmt as $row) {
 <![CDATA[
 <?php
 $stmt = $dbh->prepare("CALL sp_returns_string(?)");
-$stmt->bindParam(1, $return_value, PDO::PARAM_STR, 4000); 
+$stmt->bindParam(1, $return_value, PDO::PARAM_STR, 4000);
 
 // call the stored procedure
 $stmt->execute();
@@ -156,7 +156,7 @@ print "procedure returned $return_value\n";
 <?php
 $stmt = $dbh->prepare("CALL sp_takes_string_returns_string(?)");
 $value = 'hello';
-$stmt->bindParam(1, $value, PDO::PARAM_STR|PDO::PARAM_INPUT_OUTPUT, 4000); 
+$stmt->bindParam(1, $value, PDO::PARAM_STR|PDO::PARAM_INPUT_OUTPUT, 4000);
 
 // call the stored procedure
 $stmt->execute();

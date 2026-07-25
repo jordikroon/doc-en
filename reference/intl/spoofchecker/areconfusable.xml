@@ -14,9 +14,9 @@
    <methodparam><type>string</type><parameter>string2</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter role="reference">errorCode</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks whether two given strings can easily be mistaken.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,26 +25,26 @@
    <varlistentry>
     <term><parameter>string1</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       First string to check.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>string2</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Second string to check.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>errorCode</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       This variable is set by-reference to &integer; containing an error, if there
       was any.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -52,9 +52,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if two given strings can be confused, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

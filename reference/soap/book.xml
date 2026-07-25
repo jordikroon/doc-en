@@ -8,12 +8,12 @@
 
  <preface xml:id="intro.soap">
   &reftitle.intro;
-  <para>
+  <simpara>
    The SOAP extension can be used to write SOAP Servers and Clients. It supports
    subsets of <link xlink:href="&spec.soap1.1;">SOAP 1.1</link>, <link
    xlink:href="&spec.soap1.2;">SOAP 1.2</link> and <link
    xlink:href="&spec.wsdl;">WSDL 1.1</link> specifications.
-  </para>
+  </simpara>
  </preface>
 
  &reference.soap.setup;

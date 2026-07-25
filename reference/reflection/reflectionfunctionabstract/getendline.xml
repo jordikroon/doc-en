@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type class="union"><type>int</type><type>false</type></type><methodname>ReflectionFunctionAbstract::getEndLine</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get the ending line number.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The ending line number of the user defined function, or &false; if unknown.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

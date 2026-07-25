@@ -12,13 +12,13 @@
    <modifier>public</modifier> <modifier>static</modifier> <type>array</type><methodname>IntlChar::getUnicodeVersion</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the Unicode version information.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The version array is filled in with the version information for the Unicode standard that is currently used by ICU.
    For example, Unicode version 3.1.1 is represented as an array with the values <literal>[3, 1, 1, 0]</literal>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,9 +28,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An array containing the Unicode version number.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

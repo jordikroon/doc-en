@@ -11,10 +11,10 @@
    <modifier>public</modifier> <type>bool</type><methodname>XSLTProcessor::importStylesheet</methodname>
    <methodparam><type>object</type><parameter>stylesheet</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   This method imports the stylesheet into the 
+  <simpara>
+   This method imports the stylesheet into the
    <classname>XSLTProcessor</classname> for transformations.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -23,11 +23,11 @@
     <varlistentry>
      <term><parameter>stylesheet</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The imported style sheet as a <classname>Dom\Document</classname>,
        <classname>DOMDocument</classname> or
        <classname>SimpleXMLElement</classname> object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,9 +35,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

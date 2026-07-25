@@ -12,10 +12,10 @@
    <methodparam><type class="union"><type>string</type><type>null</type></type><parameter>namespace</parameter></methodparam>
    <methodparam><type>string</type><parameter>localName</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   Gets the value of the attribute in namespace <parameter>namespace</parameter> 
-   with local name <parameter>localName</parameter> for the current node. 
-  </para>
+  <simpara>
+   Gets the value of the attribute in namespace <parameter>namespace</parameter>
+   with local name <parameter>localName</parameter> for the current node.
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -24,17 +24,17 @@
     <varlistentry>
      <term><parameter>namespace</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The namespace URI.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>localName</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The local name.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -42,11 +42,11 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The value of the attribute, or an empty string if no attribute with the
-   given <parameter>localName</parameter> and <parameter>namespace</parameter> 
+   given <parameter>localName</parameter> and <parameter>namespace</parameter>
    is found.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="seealso">
   &reftitle.seealso;

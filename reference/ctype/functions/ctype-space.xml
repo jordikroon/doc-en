@@ -13,10 +13,10 @@
    <type>bool</type><methodname>ctype_space</methodname>
    <methodparam><type>mixed</type><parameter>text</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks if all of the characters in the provided <type>string</type>,
    <parameter>text</parameter>, creates whitespace.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -39,13 +39,13 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   Returns &true; if every character in <parameter>text</parameter> 
-   creates some sort of white space, &false; otherwise. Besides the 
+  <simpara>
+   Returns &true; if every character in <parameter>text</parameter>
+   creates some sort of white space, &false; otherwise. Besides the
    blank character this also includes tab, vertical tab, line feed,
    carriage return and form feed characters.
    &ctype.result.empty-string;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

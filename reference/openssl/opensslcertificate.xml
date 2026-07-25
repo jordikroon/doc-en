@@ -10,9 +10,9 @@
 <!-- {{{ OpenSSLCertificate intro -->
   <section xml:id="opensslcertificate.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     A fully opaque class which replaces <literal>OpenSSL X.509</literal> resources as of PHP 8.0.0.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

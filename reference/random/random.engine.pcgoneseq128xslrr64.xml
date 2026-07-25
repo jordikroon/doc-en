@@ -8,10 +8,10 @@
 <!-- {{{ Random\Engine\PcgOneseq128XslRr64 intro -->
   <section xml:id="random-engine-pcgoneseq128xslrr64.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Implements a <link xlink:href="&url.random.pcg;">Permuted congruential generator (PCG)</link> with
     128 bits of state, XSL and RR output transformations, and 64 bits of output.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

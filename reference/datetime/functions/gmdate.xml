@@ -13,11 +13,11 @@
    <methodparam><type>string</type><parameter>format</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>timestamp</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Identical to the <function>date</function> function except that
-   the time returned is Greenwich Mean Time (GMT). 
-  </para>
- </refsect1> 
+   the time returned is Greenwich Mean Time (GMT).
+  </simpara>
+ </refsect1>
 
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -26,24 +26,24 @@
     <varlistentry>
      <term><parameter>format</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The format of the outputted date <type>string</type>. See the formatting
        options for the <function>date</function> function.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
-    
+
     &date.timestamp.description;
-   
+
    </variablelist>
   </para>
- </refsect1>   
+ </refsect1>
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a formatted date string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

@@ -10,9 +10,9 @@
 <!-- {{{ CurlHandle intro -->
   <section xml:id="curlhandle.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     A fully opaque class which replaces <literal>curl</literal> resources as of PHP 8.0.0.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

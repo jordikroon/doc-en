@@ -4,45 +4,45 @@
   <title>Database issues</title>
   <titleabbrev>Database issues</titleabbrev>
 
-  <para>
+  <simpara>
    This section holds common questions about relation between
    PHP and databases. Yes, PHP can access virtually any
    database available today.
-  </para>
+  </simpara>
 
   <qandaset>
    <qandaentry xml:id="faq.databases.mssql">
     <question>
-     <para>
+     <simpara>
       I heard it's possible to access Microsoft SQL Server from PHP. How?
-     </para>
+     </simpara>
     </question>
     <answer>
-     <para>
+     <simpara>
       On Unix machines you can use <link linkend="ref.pdo-odbc">PDO_ODBC</link>
       or the <link linkend="book.uodbc">Unified ODBC API</link>.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       On Windows machines you can also use <link linkend="ref.pdo-sqlsrv">PDO_SQLSRV</link>
       or <link linkend="book.sqlsrv">SQLSRV</link>.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       Also see the answer to the next question.
-     </para>
+     </simpara>
     </answer>
    </qandaentry>
 
    <qandaentry xml:id="faq.databases.access">
     <question>
-     <para>Can I access Microsoft Access databases?</para>
+     <simpara>Can I access Microsoft Access databases?</simpara>
     </question>
     <answer>
-     <para>
+     <simpara>
       If you are running PHP on a Unix box and want to talk to MS Access
       on a Windows box you will need Unix ODBC drivers.
       <link xlink:href="&url.openlink;">OpenLink Software</link> has Unix-based
       ODBC drivers that can do this.
-     </para>
+     </simpara>
      <para>
       Another alternative is to use an SQL server that has
       Windows ODBC drivers and use that to store the data, which you can
@@ -51,20 +51,20 @@
       and PHP both understand, such as flat files or dBase databases.
       On this point Tim Hayes from OpenLink software writes:
       <blockquote>
-       <para>
+       <simpara>
         Using another database as an intermediary is not a good idea, when you can
         use ODBC from PHP straight to your database - i.e. with OpenLink's drivers. If
         you do need to use an intermediary file format, OpenLink have now released
         Virtuoso (a virtual database engine) for NT, Linux and other Unix platforms.
         Please visit our <link xlink:href="&url.openlink;">website</link> for a free download.
-       </para>
+       </simpara>
       </blockquote>
      </para>
-     <para>
+     <simpara>
       One option that has proved successful is to use MySQL and its
       MyODBC drivers on Windows and synchronizing the databases. Steve Lawrence
       writes:
-     </para>
+     </simpara>
      <para>
       <itemizedlist>
        <listitem>

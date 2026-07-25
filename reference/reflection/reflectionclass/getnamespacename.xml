@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>string</type><methodname>ReflectionClass::getNamespaceName</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the namespace name.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The namespace name.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

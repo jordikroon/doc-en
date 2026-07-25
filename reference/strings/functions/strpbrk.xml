@@ -5,7 +5,7 @@
   <refname>strpbrk</refname>
   <refpurpose>Search a string for any of a set of characters</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,10 +13,10 @@
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
    <methodparam><type>string</type><parameter>characters</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>strpbrk</function> searches the <parameter>string</parameter>
    string for a <parameter>characters</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,17 +26,17 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string where <parameter>characters</parameter> is looked for.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>characters</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        This parameter is case sensitive.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -45,10 +45,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a string starting from the character found, or &false; if it is
    not found.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

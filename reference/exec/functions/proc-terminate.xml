@@ -13,17 +13,17 @@
    <methodparam><type>resource</type><parameter>process</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>signal</parameter><initializer>15</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Signals a <parameter>process</parameter> (created using
    <function>proc_open</function>) that it should terminate.
    <function>proc_terminate</function> returns immediately and does not wait
    for the process to terminate.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    <function>proc_terminate</function> allows you terminate the process and
    continue with other tasks.  You may poll the process (to see if it has
    stopped yet) by using the <function>proc_get_status</function> function.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -33,21 +33,21 @@
     <varlistentry>
      <term><parameter>process</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <function>proc_open</function> <type>resource</type> that will
        be closed.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>signal</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        This optional parameter is only useful on <acronym>POSIX</acronym>
        operating systems; you may specify a signal to send to the process
        using the <literal>kill(2)</literal> system call.  The default is
        <literal>SIGTERM</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -56,9 +56,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the termination status of the process that was run.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

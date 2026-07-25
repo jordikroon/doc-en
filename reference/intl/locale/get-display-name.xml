@@ -9,26 +9,26 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="Locale">
    <modifier>public</modifier> <modifier>static</modifier> <type class="union"><type>string</type><type>false</type></type><methodname>Locale::getDisplayName</methodname>
    <methodparam><type>string</type><parameter>locale</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>displayLocale</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>locale_get_display_name</methodname>
    <methodparam><type>string</type><parameter>locale</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>displayLocale</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns an appropriately localized display name for the input locale. If <parameter>locale</parameter> is
    &null; then the default locale is used.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -38,15 +38,15 @@
     <varlistentry>
      <term><parameter>locale</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The locale to return a display name for.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>displayLocale</parameter></term>
      <listitem>
-      <para>optional format locale</para>
+      <simpara>optional format locale</simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -55,9 +55,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Display name of the locale in the format appropriate for <parameter>displayLocale</parameter>, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

@@ -3,15 +3,15 @@
 
 <chapter xml:id="pdo.error-handling" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <title>Errors and error handling</title>
- <para>
+ <simpara>
   PDO offers you a choice of 3 different error handling strategies, to fit
   your style of application development.
- </para>
+ </simpara>
  <itemizedlist>
   <listitem>
-   <para>
+   <simpara>
     <constant>PDO::ERRMODE_SILENT</constant>
-   </para>
+   </simpara>
    <para>
      Prior to PHP 8.0.0, this was the default mode. PDO will simply set the error code for you
      to inspect using the <methodname>PDO::errorCode</methodname> and
@@ -26,41 +26,41 @@
     </para>
   </listitem>
   <listitem>
-   <para>
+   <simpara>
     <constant>PDO::ERRMODE_WARNING</constant>
-   </para>
-   <para>
+   </simpara>
+   <simpara>
      In addition to setting the error code, PDO will emit a traditional
      E_WARNING message. This setting is useful during debugging/testing, if
      you just want to see what problems occurred without interrupting the
      flow of the application.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <constant>PDO::ERRMODE_EXCEPTION</constant>
-    </para>
-    <para>
+    </simpara>
+    <simpara>
      As of PHP 8.0.0, this is the default mode.
      In addition to setting the error code, PDO will throw a
-     <classname>PDOException</classname>
+     <exceptionname>PDOException</exceptionname>
      and set its properties to reflect the error code and error
      information. This setting is also useful during debugging, as it will
      effectively "blow up" the script at the point of the error, very
      quickly pointing a finger at potential problem areas in your code
      (remember: transactions are automatically rolled back if the exception
      causes the script to terminate).
-    </para>
-    <para>
+    </simpara>
+    <simpara>
      Exception mode is also useful because you can structure your error
      handling more clearly than with traditional PHP-style warnings, and
      with less code/nesting than by running in silent mode and explicitly
      checking the return value of each database call.
-    </para>
-    <para>
+    </simpara>
+    <simpara>
      See <link linkend="language.exceptions">Exceptions</link> for more
      information about Exceptions in PHP.
-    </para>
+    </simpara>
    </listitem>
  </itemizedlist>
  <para>
@@ -73,7 +73,7 @@
   containing the SQLSTATE code, the driver specific error code and driver
   specific error string.
  </para>
- 
+
  <para>
   <example>
    <title>Create a PDO instance and set the error mode</title>
@@ -105,7 +105,7 @@ Stack trace:
  </para>
  <note>
   <para>
-   <methodname>PDO::__construct</methodname> will always throw a <classname>PDOException</classname> if the connection fails
+   <methodname>PDO::__construct</methodname> will always throw a <exceptionname>PDOException</exceptionname> if the connection fails
    regardless of which <constant>PDO::ATTR_ERRMODE</constant> is currently set.
   </para>
  </note>

@@ -5,7 +5,7 @@
   <refname>SimpleXMLElement::attributes</refname>
   <refpurpose>Identifies an element's attributes</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="SimpleXMLElement">
@@ -13,9 +13,9 @@
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>namespaceOrPrefix</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>isPrefix</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function provides the attributes and values defined within an xml tag.
-  </para>
+  </simpara>
   &simplexml.iteration;
  </refsect1>
 
@@ -26,17 +26,17 @@
     <varlistentry>
      <term><parameter>namespaceOrPrefix</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An optional namespace for the retrieved attributes
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>isPrefix</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Default to &false;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -45,14 +45,14 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a <classname>SimpleXMLElement</classname> object that can be
    iterated over to loop through the attributes on the tag.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Returns &null; if called on a <classname>SimpleXMLElement</classname>
    object that already represents an attribute and not a tag.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

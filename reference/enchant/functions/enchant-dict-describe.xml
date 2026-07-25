@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.enchant-dict-describe">
+<refentry xml:id="function.enchant-dict-describe" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>enchant_dict_describe</refname>
   <refpurpose>Describes an individual dictionary</refpurpose>

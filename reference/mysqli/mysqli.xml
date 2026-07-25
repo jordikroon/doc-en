@@ -3,21 +3,21 @@
 <reference xml:id="class.mysqli" role="class" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
  <title>The mysqli class</title>
  <titleabbrev>mysqli</titleabbrev>
- 
+
  <partintro>
- 
+
 <!-- {{{ ClassName intro -->
   <section xml:id="mysqli.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Represents a connection between PHP and a MySQL database.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
- 
+
   <section xml:id="mysqli.synopsis">
    &reftitle.classsynopsis;
- 
+
 <!-- {{{ Synopsis -->
    <classsynopsis class="class">
     <ooclass>
@@ -139,10 +139,10 @@
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.mysqli')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[@role='mysqli'])"/>
    </classsynopsis>
 <!-- }}} -->
- 
+
   </section>
  </partintro>
- 
+
  &reference.mysqli.entities.mysqli;
 
 </reference>

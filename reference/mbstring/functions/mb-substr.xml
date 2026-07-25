@@ -5,7 +5,7 @@
   <refname>mb_substr</refname>
   <refpurpose>Get part of string</refpurpose>
  </refnamediv>
-   
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -15,14 +15,14 @@
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>length</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>encoding</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Performs a multi-byte safe
    <function>substr</function> operation based on
    number of characters. Position is
    counted from the beginning of
    <parameter>string</parameter>. First character's position is
-   0. Second character position is 1, and so on. 
-  </para>
+   0. Second character position is 1, and so on.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -32,15 +32,15 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <type>string</type> to extract the substring from.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>start</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If <parameter>start</parameter> is non-negative, the returned string
        will start at the <parameter>start</parameter>'th position in
        <parameter>string</parameter>, counting from zero. For instance,
@@ -48,12 +48,12 @@
        position <literal>0</literal> is '<literal>a</literal>', the
        character at position <literal>2</literal> is
        '<literal>c</literal>', and so forth.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If <parameter>start</parameter> is negative, the returned string
        will start at the <parameter>start</parameter>'th character
        from the end of <parameter>string</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -78,12 +78,12 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    <function>mb_substr</function> returns the portion of
    <parameter>string</parameter> specified by the
    <parameter>start</parameter> and
    <parameter>length</parameter> parameters.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

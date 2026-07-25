@@ -5,17 +5,17 @@
   <refname>get_loaded_extensions</refname>
   <refpurpose>Returns an array with the names of all modules compiled and loaded</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>array</type><methodname>get_loaded_extensions</methodname>
    <methodparam choice="opt"><type>bool</type><parameter>zend_extensions</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function returns the names of all the modules compiled and
    loaded in the PHP interpreter.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,10 +25,10 @@
     <varlistentry>
      <term><parameter>zend_extensions</parameter></term>
      <listitem>
-      <para>
-       Only return Zend extensions, if not then regular extensions, like 
+      <simpara>
+       Only return Zend extensions, if not then regular extensions, like
        mysqli are listed. Defaults to &false; (return regular extensions).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,9 +37,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an indexed array of all the modules names.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

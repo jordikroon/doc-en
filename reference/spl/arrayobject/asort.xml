@@ -11,15 +11,15 @@
    <modifier>public</modifier> <type>true</type><methodname>ArrayObject::asort</methodname>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer><constant>SORT_REGULAR</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sorts the entries in ascending order,
    such that its keys maintain their correlation with the values they
    are associated with.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This is used mainly when sorting associative arrays where the actual
    element order is significant.
-  </para>
+  </simpara>
   &note.sort-unstable;
  </refsect1>
 
@@ -32,9 +32,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -83,10 +83,10 @@ d = lemon
 a = orange
 ]]>
     </screen>
-    <para>
+    <simpara>
      The fruits have been sorted in alphabetical order, and the key
      associated with each entry has been maintained.
-    </para>
+    </simpara>
    </example>
   </para>
  </refsect1>

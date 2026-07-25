@@ -5,7 +5,7 @@
   <refname>gmp_init</refname>
   <refpurpose>Create GMP number</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,9 +13,9 @@
    <methodparam><type class="union"><type>int</type><type>string</type></type><parameter>num</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>base</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
-   Creates a GMP number from an integer or string. 
-  </para>
+  <simpara>
+   Creates a GMP number from an integer or string.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -65,9 +65,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &gmp.return;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -115,13 +115,13 @@ $b = gmp_init("0xFFFFDEBACDFEDF7200");
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     It is not necessary to call this function in order to use integers or
     strings in place of GMP numbers in GMP functions (such as with
     <function>gmp_add</function>). Function arguments are automatically
     converted to GMP numbers, if such conversion is possible and needed, using
     the same rules as <function>gmp_init</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -131,7 +131,7 @@ $b = gmp_init("0xFFFFDEBACDFEDF7200");
    <member><methodname>GMP::__construct</methodname></member>
   </simplelist>
  </refsect1>
- 
+
 </refentry>
 <!-- Keep this comment at the end of the file
 Local variables:

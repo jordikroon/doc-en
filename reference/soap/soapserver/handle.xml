@@ -12,10 +12,10 @@
    <modifier>public</modifier> <type>void</type><methodname>SoapServer::handle</methodname>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>request</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Processes a SOAP request, calls necessary functions, and sends a response
    back.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,10 +25,10 @@
     <varlistentry>
      <term><parameter>request</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The SOAP request. If this argument is omitted, the request is assumed to be
        in the raw POST data of the HTTP request.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,9 +37,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

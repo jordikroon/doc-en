@@ -2,7 +2,7 @@
 <!-- $Revision$ -->
 <refentry xml:id="function.utf8-decode" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
-  <refname>utf8_decode</refname> 
+  <refname>utf8_decode</refname>
   <refpurpose>
    Converts a string from UTF-8 to ISO-8859-1, replacing invalid or unrepresentable
    characters
@@ -20,17 +20,17 @@
    <type>string</type><methodname>utf8_decode</methodname>
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function converts the string <parameter>string</parameter> from the
    <literal>UTF-8</literal> encoding to <literal>ISO-8859-1</literal>. Bytes
    in the string which are not valid <literal>UTF-8</literal>, and
    <literal>UTF-8</literal> characters which do not exist in
    <literal>ISO-8859-1</literal> (that is, code points above
    <literal>U+00FF</literal>) are replaced with <literal>?</literal>.
-  </para>
+  </simpara>
 
   <note>
-   <para>
+   <simpara>
     Many web pages marked as using the <literal>ISO-8859-1</literal> character
     encoding actually use the similar <literal>Windows-1252</literal> encoding,
     and web browsers will interpret <literal>ISO-8859-1</literal> web pages as
@@ -41,7 +41,7 @@
     control characters. This function will not convert such
     <literal>Windows-1252</literal> characters correctly. Use a different
     function if <literal>Windows-1252</literal> conversion is required.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -52,9 +52,9 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A UTF-8 encoded string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -63,9 +63,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the ISO-8859-1 translation of <parameter>string</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -139,11 +139,11 @@ string(1) "?"
   &reftitle.notes;
   <note>
    <title>Deprecation and alternatives</title>
-   <para>
+   <simpara>
     This function is <emphasis>deprecated</emphasis> as of PHP 8.2.0,
     and will be removed in a future version. Existing uses should be checked
     and replaced with appropriate alternatives.
-   </para>
+   </simpara>
    <para>
     Similar functionality can be achieved with <function>mb_convert_encoding</function>,
     which supports ISO-8859-1 and many other character encodings.

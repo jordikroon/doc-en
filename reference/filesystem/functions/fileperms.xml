@@ -5,16 +5,16 @@
   <refname>fileperms</refname>
   <refpurpose>Gets file permissions</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>int</type><type>false</type></type><methodname>fileperms</methodname>
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets permissions for the given file.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path to the file.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,25 +35,25 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the file's permissions as a numeric mode. Lower bits of this mode
    are the same as the permissions expected by <function>chmod</function>,
    however on most platforms the return value will also include information on
    the type of file given as <parameter>filename</parameter>. The examples
    below demonstrate how to test the return value for specific permissions and
    file types on POSIX systems, including Linux and macOS.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    For local files, the specific return value is that of the
    <literal>st_mode</literal> member of the structure returned by the C
    library's <function>stat</function> function. Exactly which bits are set
    can vary from platform to platform, and looking up your specific platform's
    documentation is recommended if parsing the non-permission bits of the
    return value is required.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Returns &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

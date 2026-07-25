@@ -5,7 +5,7 @@
   <refname>getservbyname</refname>
   <refpurpose>Get port number associated with an Internet service and protocol</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,12 +13,12 @@
    <methodparam><type>string</type><parameter>service</parameter></methodparam>
    <methodparam><type>string</type><parameter>protocol</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>getservbyname</function> returns the Internet port
    which corresponds to <parameter>service</parameter> for the
    specified <parameter>protocol</parameter> as per
    <filename>/etc/services</filename>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,18 +28,18 @@
     <varlistentry>
      <term><parameter>service</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The Internet service name, as a string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>protocol</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>protocol</parameter> is either <literal>"tcp"</literal>
        or <literal>"udp"</literal> (in lowercase).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -48,10 +48,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the port number, or &false; if <parameter>service</parameter> or
    <parameter>protocol</parameter> is not found.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

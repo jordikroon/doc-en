@@ -5,7 +5,7 @@
   <refname>openssl_open</refname>
   <refpurpose>Open sealed data</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -17,7 +17,7 @@
    <methodparam><type>string</type><parameter>cipher_algo</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>iv</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>openssl_open</function> opens (decrypts) <parameter>data</parameter> using an envelope
    key that is decrypted from <parameter>encrypted_key</parameter> using
    <parameter>private_key</parameter>. The decryption is done using
@@ -25,7 +25,7 @@
    cipher method requires it. The function fills <parameter>output</parameter> with the decrypted
    data. The envelope key is usually generated when the data are sealed using a public key that is
    associated with the private key. See <function>openssl_seal</function> for more information.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -35,33 +35,33 @@
     <varlistentry>
      <term><parameter>data</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The sealed data.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>output</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If the call is successful the opened data is returned in this parameter.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>encrypted_key</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The encrypted symmetric key that can be decrypted using <parameter>private_key</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>private_key</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The private key used for decrypting <parameter>encrypted_key</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -82,11 +82,11 @@
     <varlistentry>
      <term><parameter>iv</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The initialization vector used for decryption of <parameter>data</parameter>. It is required
        if the cipher method requires IV. This can be found out by calling
        <function>openssl_cipher_iv_length</function> with <parameter>cipher_algo</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -95,9 +95,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

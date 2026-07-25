@@ -5,7 +5,7 @@
   <refname>pspell_add_to_session</refname>
   <refpurpose>Add the word to the wordlist in the current session</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -33,9 +33,9 @@
     <varlistentry>
      <term><parameter>word</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The added word.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -44,9 +44,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

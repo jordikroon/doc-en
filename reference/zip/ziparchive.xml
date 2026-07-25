@@ -3,9 +3,9 @@
 <reference xml:id="class.ziparchive" role="class" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
  <title>The <classname>ZipArchive</classname> class</title>
  <titleabbrev>ZipArchive</titleabbrev>
- 
+
  <partintro>
- 
+
 <!-- {{{ ZipArchive intro -->
   <section xml:id="ziparchive.intro">
    &reftitle.intro;
@@ -14,7 +14,7 @@
    </simpara>
   </section>
 <!-- }}} -->
- 
+
   <section xml:id="ziparchive.synopsis">
    &reftitle.classsynopsis;
 

@@ -13,16 +13,16 @@
    <methodparam><type>string</type><parameter>format</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>timestamp</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a number formatted according to the given format string using the
    given integer <parameter>timestamp</parameter> or the current local time
    if no timestamp is given. In other words, <parameter>timestamp</parameter>
    is optional and defaults to the value of <function>time</function>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Unlike the function <function>date</function>, <function>idate</function>
    accepts just one char in the <parameter>format</parameter> parameter.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -131,30 +131,30 @@
       </para>
      </listitem>
     </varlistentry>
-    
+
     &date.timestamp.description;
-      
+
    </variablelist>
   </para>
  </refsect1>
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an <type>int</type> on success, &return.falseforfailure;.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    As <function>idate</function> always returns an <type>int</type> and
    as they can't start with a "0", <function>idate</function> may return
    fewer digits than you would expect. See the example below.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-   
+
    &date.timezone.errors.description;
- 
+
  </refsect1>
 
  <refsect1 role="changelog">

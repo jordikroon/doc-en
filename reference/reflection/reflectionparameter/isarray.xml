@@ -8,7 +8,7 @@
 
  <refsynopsisdiv>
    &warn.deprecated.function-8-0-0;
-  <para>See the example below for an alternative way to derive this information.</para>
+  <simpara>See the example below for an alternative way to derive this information.</simpara>
  </refsynopsisdiv>
 
  <refsect1 role="description">
@@ -18,9 +18,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>ReflectionParameter::isArray</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks if the parameter expects an array.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,9 +30,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &true; if an <type>array</type> is expected, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -63,10 +63,10 @@
   <para>
    <example>
     <title>PHP 8.0.0 equivalent</title>
-    <para>
+    <simpara>
      As of PHP 8.0.0, the following code will report if a type declares arrays,
      including as part of a union.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

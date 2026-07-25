@@ -5,7 +5,7 @@
   <refname>gmp_pow</refname>
   <refpurpose>Raise number into power</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,9 +13,9 @@
    <methodparam><type class="union"><type>GMP</type><type>int</type><type>string</type></type><parameter>num</parameter></methodparam>
    <methodparam><type>int</type><parameter>exponent</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Raise <parameter>num</parameter> into power <parameter>exponent</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,18 +25,18 @@
     <varlistentry>
      <term><parameter>num</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The base number.
-      </para>
-      &gmp.parameter; 
+      </simpara>
+      &gmp.parameter;
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>exponent</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The positive power to raise the <parameter>num</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -45,10 +45,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   The new (raised) number, as a GMP number. The case of 
+  <simpara>
+   The new (raised) number, as a GMP number. The case of
    <literal>0^0</literal> yields 1.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

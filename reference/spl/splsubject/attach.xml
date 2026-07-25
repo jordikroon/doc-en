@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>void</type><methodname>SplSubject::attach</methodname>
    <methodparam><type>SplObserver</type><parameter>observer</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Attaches an <classname>SplObserver</classname> so that it can be notified of updates.
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -27,9 +27,9 @@
     <varlistentry>
      <term><parameter>observer</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <classname>SplObserver</classname> to attach.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -38,9 +38,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
 

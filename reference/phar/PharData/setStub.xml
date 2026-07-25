@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="phardata.setstub">
+<refentry xml:id="phardata.setstub" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>PharData::setStub</refname>
   <refpurpose>Dummy function (Phar::setStub is not valid for PharData)</refpurpose>
@@ -14,10 +14,10 @@
   </methodsynopsis>
 
 
-  <para>
+  <simpara>
    Non-executable tar/zip archives cannot have a stub, so this method simply
    throws an exception.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -55,9 +55,9 @@
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws <classname>PharException</classname> on all method calls
-  </para>
+  <simpara>
+   Throws <exceptionname>PharException</exceptionname> on all method calls
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

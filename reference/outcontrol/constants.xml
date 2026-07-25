@@ -5,18 +5,18 @@
  &extension.constants.core;
  <variablelist xml:id="outcontrol.constants.flags-passed-to-handler">
   <title>Status flags passed to output handler</title>
-  <para>
+  <simpara>
    The following flags are passed to the second (<parameter>phase</parameter>) parameter of the output handler set by <function>ob_start</function> as part of a bitmask:
-  </para>
+  </simpara>
   <varlistentry xml:id="constant.php-output-handler-start">
    <term>
     <constant>PHP_OUTPUT_HANDLER_START</constant>
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
+    <simpara>
      Indicates that output buffering has begun.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
   <varlistentry xml:id="constant.php-output-handler-write">
@@ -25,9 +25,9 @@
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
+    <simpara>
      Indicates that the output buffer is being flushed, and had data to output.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
   <varlistentry xml:id="constant.php-output-handler-flush">
@@ -36,9 +36,9 @@
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
+    <simpara>
      Indicates that the buffer has been flushed.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
   <varlistentry xml:id="constant.php-output-handler-clean">
@@ -47,9 +47,9 @@
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
+    <simpara>
      Indicates that the output buffer has been cleaned.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
   <varlistentry xml:id="constant.php-output-handler-final">
@@ -58,9 +58,9 @@
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
+    <simpara>
      Indicates that this is the final output buffering operation.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
   <varlistentry xml:id="constant.php-output-handler-cont">
@@ -69,14 +69,14 @@
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
+    <simpara>
      Indicates that the buffer has been flushed, but output buffering will
      continue.
-    </para>
-    <para>
+    </simpara>
+    <simpara>
      This is an alias for
      <constant>PHP_OUTPUT_HANDLER_WRITE</constant>.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
   <varlistentry xml:id="constant.php-output-handler-end">
@@ -85,34 +85,34 @@
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
+    <simpara>
      Indicates that output buffering has ended.
-    </para>
-    <para>
+    </simpara>
+    <simpara>
      This is an alias for
      <constant>PHP_OUTPUT_HANDLER_FINAL</constant>.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
  </variablelist>
  <variablelist xml:id="outcontrol.constants.buffer-control-flags">
   <title>Output buffer control flags</title>
-  <para>
+  <simpara>
    The following flags can be passed to the third (<parameter>flags</parameter>) parameter of the output handler set by <function>ob_start</function> as a bitmask:
-  </para>
+  </simpara>
   <varlistentry xml:id="constant.php-output-handler-cleanable">
    <term>
     <constant>PHP_OUTPUT_HANDLER_CLEANABLE</constant>
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
+    <simpara>
      Controls whether an output buffer created by
      <function>ob_start</function> can be cleaned
      by <function>ob_clean</function>.
      This flag does not control the behaviour of
      <function>ob_end_clean</function> or <function>ob_get_clean</function>.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
   <varlistentry xml:id="constant.php-output-handler-flushable">
@@ -121,13 +121,13 @@
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
+    <simpara>
      Controls whether an output buffer created by
      <function>ob_start</function> can be flushed
      by <function>ob_flush</function>.
      This flag does not control the behaviour of
      <function>ob_end_flush</function> or <function>ob_get_flush</function>.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
   <varlistentry xml:id="constant.php-output-handler-removable">
@@ -136,12 +136,12 @@
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
+    <simpara>
      Controls whether an output buffer created by
      <function>ob_start</function> can be removed before the end of the script
      or when calling <function>ob_end_clean</function>, <function>ob_end_flush</function>,
      <function>ob_get_clean</function> or <function>ob_get_flush</function>.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
   <varlistentry xml:id="constant.php-output-handler-stdflags">
@@ -150,30 +150,30 @@
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
+    <simpara>
      The default set of output buffer flags; currently equivalent to
      <constant>PHP_OUTPUT_HANDLER_CLEANABLE</constant> |
      <constant>PHP_OUTPUT_HANDLER_FLUSHABLE</constant> |
      <constant>PHP_OUTPUT_HANDLER_REMOVABLE</constant>.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
  </variablelist>
  <variablelist xml:id="outcontrol.constants.flags-returned-by-handler">
   <title>Output handler status flags</title>
-  <para>
+  <simpara>
    The following flags are part of the <literal>flags</literal> bitmask
    returned by <function>ob_get_status</function>:
-  </para>
+  </simpara>
   <varlistentry xml:id="constant.php-output-handler-started">
    <term>
     <constant>PHP_OUTPUT_HANDLER_STARTED</constant>
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
+    <simpara>
      Indicates that the output handler was called.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
   <varlistentry xml:id="constant.php-output-handler-disabled">
@@ -182,12 +182,12 @@
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
+    <simpara>
      Indicates that the output handler is disabled.
      This flag is set when the output handler returns &false;
      or fails while processing the buffer.
      Prior to PHP 8.4.0, this flag could be set when starting an output buffer.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
   <varlistentry xml:id="constant.php-output-handler-processed">
@@ -196,10 +196,10 @@
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
+    <simpara>
      Indicates that the output handler successfully processed the buffer.
      Available as of PHP 8.4.0.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
  </variablelist>

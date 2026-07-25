@@ -13,18 +13,18 @@
    <methodparam><type class="union"><type>int</type><type>string</type></type><parameter>codepoint</parameter></methodparam>
    <methodparam><type>int</type><parameter>property</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks a binary Unicode property for a code point.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Unicode, especially in version 3.2, defines many more properties than the original set in UnicodeData.txt.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The properties APIs are intended to reflect Unicode properties as defined in the Unicode Character Database (UCD)
    and Unicode Technical Reports (UTR). For details about the properties see
    <link xlink:href="&url.unicode.ucd;">&url.unicode.ucd;</link>.
    For names of Unicode properties see the UCD file PropertyAliases.txt.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -47,11 +47,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; or &false; according to the binary Unicode property value for <parameter>codepoint</parameter>.
    Also &false; if <parameter>property</parameter> is out of bounds or if the Unicode version does not have data for
    the property at all, or not for this code point. Returns &null; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

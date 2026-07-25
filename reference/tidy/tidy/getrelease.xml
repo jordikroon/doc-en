@@ -8,19 +8,19 @@
  </refnamediv>
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="tidy">
    <modifier>public</modifier> <type>string</type><methodname>tidy::getRelease</methodname>
    <void/>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type>string</type><methodname>tidy_get_release</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the release date of the Tidy library.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">

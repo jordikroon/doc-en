@@ -10,9 +10,9 @@
 <!-- {{{ InflateContext intro -->
   <section xml:id="inflatecontext.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     A fully opaque class which replaces <literal>zlib.inflate</literal> resources as of PHP 8.0.0.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

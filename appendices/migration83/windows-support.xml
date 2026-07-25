@@ -5,10 +5,10 @@
  <sect2 xml:id="migration83.windows-support.core">
   <title>Core</title>
 
-  <para>
+  <simpara>
    Minimum supported Windows version has been bumped to Windows 8 or
    Windows Server 2012.
-  </para>
+  </simpara>
  </sect2>
 
 </sect1>

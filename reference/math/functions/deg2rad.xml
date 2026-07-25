@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.deg2rad">
+<refentry xml:id="function.deg2rad" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>deg2rad</refname>
   <refpurpose>
@@ -13,10 +13,10 @@
    <type>float</type><methodname>deg2rad</methodname>
    <methodparam><type>float</type><parameter>num</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function converts <parameter>num</parameter> from degrees
    to the radian equivalent.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -25,9 +25,9 @@
     <varlistentry>
      <term><parameter>num</parameter></term>
      <listitem>
-      <para>
-       Angular value in degrees 
-      </para>
+      <simpara>
+       Angular value in degrees
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,9 +35,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The radian equivalent of <parameter>num</parameter>
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;

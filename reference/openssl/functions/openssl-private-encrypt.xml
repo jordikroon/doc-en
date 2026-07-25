@@ -5,7 +5,7 @@
   <refname>openssl_private_encrypt</refname>
   <refpurpose>Encrypts data with private key</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -15,16 +15,16 @@
    <methodparam><modifier role="attribute">#[\SensitiveParameter]</modifier><type class="union"><type>OpenSSLAsymmetricKey</type><type>OpenSSLCertificate</type><type>array</type><type>string</type></type><parameter>private_key</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>padding</parameter><initializer><constant>OPENSSL_PKCS1_PADDING</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>openssl_private_encrypt</function> encrypts <parameter>data</parameter>
    with private <parameter>private_key</parameter> and stores the result into
    <parameter>encrypted_data</parameter>. Encrypted data can be decrypted via
-   <function>openssl_public_decrypt</function>. 
-  </para>
-  <para>
+   <function>openssl_public_decrypt</function>.
+  </simpara>
+  <simpara>
    This function can be used e.g. to sign data (or its hash) to prove that it
    is not written by someone else.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -34,34 +34,34 @@
     <varlistentry>
      <term><parameter>data</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>encrypted_data</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>private_key</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>private_key</parameter> must be the private key that corresponds
        to the public key that will be used to decrypt the data.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>padding</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>padding</parameter> can be one of
        <constant>OPENSSL_PKCS1_PADDING</constant>,
        <constant>OPENSSL_NO_PADDING</constant>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -70,9 +70,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

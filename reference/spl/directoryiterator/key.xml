@@ -12,9 +12,9 @@
    <void/>
   </methodsynopsis>
 
-  <para>
+  <simpara>
    Get the key for the current <classname>DirectoryIterator</classname> item.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The key for the current <classname>DirectoryIterator</classname> item as an &integer;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -44,7 +44,7 @@
       <row>
        <entry>8.1.0</entry>
        <entry>
-        When the iterator is uninitialized, an <classname>Error</classname> is
+        When the iterator is uninitialized, an <exceptionname>Error</exceptionname> is
         thrown now. Previously, the method returned &false;.
        </entry>
       </row>

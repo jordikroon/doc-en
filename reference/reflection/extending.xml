@@ -3,13 +3,13 @@
 
 <chapter xml:id="reflection.extending" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <title>Extending</title>
- <para>
+ <simpara>
   If you want to create specialized versions of the
   built-in classes (say, for creating colorized HTML when
   being exported, having easy-access member variables instead
   of methods or having utility methods), you may go ahead
   and extend them.
- </para>
+ </simpara>
  <example>
   <title>Extending the built-in classes</title>
   <programlisting role="php">
@@ -68,12 +68,12 @@ object(My_Reflection_Method)#1 (3) {
   </screen>
  </example>
  <caution>
-  <para>
+  <simpara>
    If you're overwriting the constructor, remember to call
    the parent's constructor before any code you insert.
-   Failing to do so will result in the following: 
+   Failing to do so will result in the following:
    <literal>Fatal error: Internal error: Failed to retrieve the reflection object</literal>
-  </para>
+  </simpara>
  </caution>
 </chapter>
 

@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>SQLite3::exec</methodname>
    <methodparam><type>string</type><parameter>query</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Executes a result-less query against a given database.
-  </para>
+  </simpara>
   <note>
    <simpara>
     SQLite3 may need to create <link xlink:href="&url.sqlite.tempfiles;">temporary files</link>
@@ -30,10 +30,10 @@
     <varlistentry>
      <term><parameter>query</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The SQL query to execute (typically an INSERT, UPDATE, or DELETE
        query).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -43,9 +43,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the query succeeded, &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

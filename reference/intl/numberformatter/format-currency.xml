@@ -9,26 +9,26 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="NumberFormatter">
    <modifier>public</modifier> <type class="union"><type>string</type><type>false</type></type><methodname>NumberFormatter::formatCurrency</methodname>
    <methodparam><type>float</type><parameter>amount</parameter></methodparam>
    <methodparam><type>string</type><parameter>currency</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>numfmt_format_currency</methodname>
    <methodparam><type>NumberFormatter</type><parameter>formatter</parameter></methodparam>
    <methodparam><type>float</type><parameter>amount</parameter></methodparam>
    <methodparam><type>string</type><parameter>currency</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Format the currency value according to the formatter rules.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -38,25 +38,25 @@
     <varlistentry>
      <term><parameter>formatter</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <classname>NumberFormatter</classname> object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>amount</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The numeric currency value.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>currency</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The 3-letter ISO 4217 currency code indicating the currency to use.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -66,9 +66,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    String representing the formatted currency value, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -117,13 +117,13 @@ echo $fmt->formatCurrency(1234567.891234567890000, "RUR")."\n";
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     Formats achievable by this method of formatting cannot fully use the possibilities of underlying ICU library,
     such as to format currency with narrow currency symbol.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     To fully utilize them use <function>msgfmt_format_message</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

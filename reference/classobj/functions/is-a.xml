@@ -13,11 +13,11 @@
    <methodparam><type>string</type><parameter>class</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>allow_string</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Determines if the given <parameter>object_or_class</parameter> is the
    <parameter>class</parameter> object type,
    or has <parameter>class</parameter> as one of its supertypes.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -26,26 +26,26 @@
     <varlistentry>
      <term><parameter>object_or_class</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A class name or an object instance.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>class</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The class or interface name
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>allow_string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If this parameter set to &false;, string class name as <parameter>object_or_class</parameter>
        is not allowed. This also prevents from calling autoloader if the class doesn't exist.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -53,11 +53,11 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if <parameter>object_or_class</parameter> is the
    <parameter>class</parameter> object type,
    or has <parameter>class</parameter> as one of its supertypes, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;

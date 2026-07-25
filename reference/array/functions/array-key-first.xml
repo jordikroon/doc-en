@@ -12,10 +12,10 @@
    <type class="union"><type>int</type><type>string</type><type>null</type></type><methodname>array_key_first</methodname>
    <methodparam><type>array</type><parameter>array</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get the first key of the given <parameter>array</parameter> without affecting
    the internal array pointer.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
    <varlistentry>
     <term><parameter>array</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       An array.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -34,10 +34,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the first key of <parameter>array</parameter> if the array is not empty;
    &null; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>SQLite3Result::reset</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Resets the result set back to the first row.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,10 +24,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the result set is successfully reset
    back to the first row, &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

@@ -13,10 +13,10 @@
    <methodparam choice="opt"><type class="union"><type>resource</type><type>string</type><type>null</type></type><parameter>file</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>quality</parameter><initializer>-1</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>imagejpeg</function> creates a <acronym>JPEG</acronym> file from
    the given <parameter>image</parameter>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -26,17 +26,17 @@
     <varlistentry>
      <term><parameter>file</parameter></term>
      <listitem>
-      <para>&gd.image.path;</para>
+      <simpara>&gd.image.path;</simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>quality</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>quality</parameter> is optional, and ranges from 0 (worst
-       quality, smaller file) to 100 (best quality, biggest file). The 
+       quality, smaller file) to 100 (best quality, biggest file). The
        default (<literal>-1</literal>) uses the default IJG quality value (about 75).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -44,16 +44,16 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
   &gd.return.trueonerror;
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
   <simpara>
-   Throws a <classname>ValueError</classname> if <parameter>quality</parameter> is invalid.
+   Throws a <exceptionname>ValueError</exceptionname> if <parameter>quality</parameter> is invalid.
   </simpara>
  </refsect1>
 
@@ -71,7 +71,7 @@
      <row>
       <entry>8.4.0</entry>
       <entry>
-       Now throws a <classname>ValueError</classname> if <parameter>quality</parameter> is invalid.
+       Now throws a <exceptionname>ValueError</exceptionname> if <parameter>quality</parameter> is invalid.
       </entry>
      </row>
      &gd.changelog.image-param;
@@ -153,10 +153,10 @@ imagejpeg($im, NULL, 75);
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     If you want to output Progressive JPEGs, you need to set interlacing
     on with <function>imageinterlace</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

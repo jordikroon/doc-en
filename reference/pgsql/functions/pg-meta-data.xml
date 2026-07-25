@@ -17,10 +17,10 @@
    <methodparam><type>string</type><parameter>table_name</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>extended</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_meta_data</function> returns table definition for
    <literal>table_name</literal> as an array.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -36,17 +36,17 @@
     <varlistentry>
      <term><parameter>table_name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The name of the table.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>extended</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Flag for returning extended meta data. Default to &false;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -55,9 +55,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An <type>array</type> of the table definition, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -76,7 +76,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>

@@ -5,30 +5,30 @@
   <refname>oci_client_version</refname>
   <refpurpose>Returns the Oracle client library version</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>string</type><methodname>oci_client_version</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a string containing the version number of the Oracle C client library that PHP is linked with.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
   &reftitle.parameters;
-  <para>
+  <simpara>
     None
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the version number as a &string;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -50,11 +50,11 @@
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     Oracle libraries before 10<emphasis>g</emphasis>R2 do not have the underlying
     functionality to get the client library version number.  The
     string "Unknown" will be returned in this case.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

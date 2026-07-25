@@ -5,20 +5,20 @@
   <refname>getlastmod</refname>
   <refpurpose>Gets time of last page modification</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>int</type><type>false</type></type><methodname>getlastmod</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the time of the last modification of the main script of execution.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If you're interested in getting the last modification time
    of a different file, consider using <function>filemtime</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,11 +28,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the time of the last modification of the current
    page. The value returned is a Unix timestamp, suitable for
    feeding to <function>date</function>. Returns &false; on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

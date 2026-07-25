@@ -16,10 +16,10 @@
    <methodparam><type>string</type><parameter>value</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>array</type><type>null</type></type><parameter>controls</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Compare <parameter>value</parameter> of <parameter>attribute</parameter>
    with value of same attribute in an LDAP directory entry.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,41 +29,41 @@
     <varlistentry>
      <term><parameter>ldap</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &ldap.parameter.ldap;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>dn</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The distinguished name of an LDAP entity.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>attribute</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The attribute name.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The compared value.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>controls</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Array of <link linkend="ldap.controls">LDAP Controls</link> to send with the request.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -72,10 +72,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if <parameter>value</parameter> matches otherwise returns
    &false;. Returns -1 on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -106,10 +106,10 @@
 
  <refsect1 role="examples">
   &reftitle.examples;
-  <para>
+  <simpara>
    The following example demonstrates how to check whether or not given password matches
    the one defined in DN specified entry.
-  </para>
+  </simpara>
   <para>
    <example>
     <title>Complete example of password check</title>
@@ -160,9 +160,9 @@ if ($ds) {
  <refsect1 role="notes">
   &reftitle.notes;
   <warning>
-   <para>
+   <simpara>
     <function>ldap_compare</function> can NOT be used to compare BINARY values!
-   </para>
+   </simpara>
   </warning>
  </refsect1>
 

@@ -13,10 +13,10 @@
    <modifier>public</modifier> <type>bool</type><methodname>DOMDocument::relaxNGValidate</methodname>
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Performs <link xlink:href="&url.relaxng;">relaxNG</link> validation on the document
-   based on the given RNG schema. 
-  </para>
+   based on the given RNG schema.
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -25,9 +25,9 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The RNG file.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,9 +35,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="seealso">
   &reftitle.seealso;

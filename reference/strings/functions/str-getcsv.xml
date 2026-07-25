@@ -17,10 +17,10 @@
    <methodparam choice="opt"><type>string</type><parameter>enclosure</parameter><initializer>"\""</initializer></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>escape</parameter><initializer>"\\"</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Parses a string input for fields in <acronym>CSV</acronym> format
    and returns an array containing the fields read.
-  </para>
+  </simpara>
   <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('function.fgetcsv')/db:refsect1[@role='description']//db:note/.)"/>
  </refsect1>
 
@@ -31,9 +31,9 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string to parse.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('function.fgetcsv')/db:refsect1[@role='parameters']//db:varlistentry[db:term[db:parameter[text()='separator']]]/.)"/>
@@ -46,9 +46,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an indexed array containing the fields read.
-  </para>
+  </simpara>
  </refsect1>
 
  <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('function.fgetcsv')/db:refsect1[@role='errors']/.)"/>

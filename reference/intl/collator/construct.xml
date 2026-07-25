@@ -11,9 +11,9 @@
    <modifier>public</modifier> <methodname>Collator::__construct</methodname>
    <methodparam><type>string</type><parameter>locale</parameter></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Creates a new instance of <classname>Collator</classname>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -23,13 +23,13 @@
     <varlistentry>
      <term><parameter>locale</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The locale whose collation rules should be used. Special values for
        locales can be passed in - if an empty &string; is passed for the locale, the
        default locale's collation rules will be used. If <literal>"root"</literal> is passed,
        <link xlink:href="&url.icu.uca;">UCA</link> rules will be used.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        The <parameter>locale</parameter> attribute is typically the most important attribute for
        correct sorting and matching, according to the user expectations in
        different countries and regions. The default
@@ -51,14 +51,14 @@
         is represented by:
         L&lt;language&gt;_Z&lt;script&gt;_R&lt;region&gt;_V&lt;variant&gt;_K&lt;keyword&gt;.
         for <emphasis>RFC4646</emphasis> locale naming.
-        
+
         <example><title>Locale format</title>
         Example:
         Locale="sv" (Swedish) "Kypper" &lt; "Köpfe"
         Locale="de" (German) "Köpfe" &lt; "Kypper"
         </example>
        -->
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -67,12 +67,12 @@
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Returns an "empty" object on error. 
+  <simpara>
+   Returns an "empty" object on error.
    Use <function>intl_get_error_code</function>
    and/or <function>intl_get_error_message</function>
    to know what happened.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

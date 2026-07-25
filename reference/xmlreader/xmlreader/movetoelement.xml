@@ -11,9 +11,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>XMLReader::moveToElement</methodname>
    <void/>
   </methodsynopsis>
-  <para>
-   Moves cursor to the parent Element of current Attribute. 
-  </para>
+  <simpara>
+   Moves cursor to the parent Element of current Attribute.
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -21,10 +21,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   Returns &true; if successful and &false; if it fails or not positioned on 
+  <simpara>
+   Returns &true; if successful and &false; if it fails or not positioned on
    Attribute when this method is called.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="seealso">
   &reftitle.seealso;

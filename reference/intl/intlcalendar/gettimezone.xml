@@ -8,24 +8,24 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="IntlCalendar">
    <modifier>public</modifier> <type class="union"><type>IntlTimeZone</type><type>false</type></type><methodname>IntlCalendar::getTimeZone</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>IntlTimeZone</type><type>false</type></type><methodname>intlcal_get_time_zone</methodname>
    <methodparam><type>IntlCalendar</type><parameter>calendar</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the <classname>IntlTimeZone</classname> object associated with this
    calendar.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -42,10 +42,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An <classname>IntlTimeZone</classname> object corresponding to the one used
    internally in this object.  Returns &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

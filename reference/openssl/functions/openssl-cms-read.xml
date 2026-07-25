@@ -14,9 +14,9 @@
    <methodparam><type>string</type><parameter>input_filename</parameter></methodparam>
    <methodparam><type>array</type><parameter role="reference">certificates</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Performs the exact analog to <function>openssl_pkcs7_read</function>.
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -28,17 +28,17 @@
    <varlistentry>
     <term><parameter>input_filename</parameter></term>
     <listitem>
-     <para>
-      
-     </para>
+     <simpara>
+
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>certificates</parameter></term>
     <listitem>
-     <para>
-      
-     </para>
+     <simpara>
+
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -46,9 +46,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
 

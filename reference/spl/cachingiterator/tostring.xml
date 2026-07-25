@@ -15,9 +15,9 @@
 
    &warn.undocumented.func;
 
- <para>
+ <simpara>
   Get the string representation of the current element.
- </para>
+ </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,9 +27,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The <type>string</type> representation of the current element.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

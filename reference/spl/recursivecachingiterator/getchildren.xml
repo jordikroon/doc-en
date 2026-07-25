@@ -23,9 +23,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The inner iterator's children, as a RecursiveCachingIterator; or &null; if there is no children.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

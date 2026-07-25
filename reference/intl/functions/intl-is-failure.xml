@@ -12,9 +12,9 @@
    <type>bool</type><methodname>intl_is_failure</methodname>
    <methodparam><type>int</type><parameter>errorCode</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <!-- description goes here -->
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,11 +24,11 @@
     <varlistentry>
      <term><parameter>errorCode</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        is a value that returned by functions:
        <function>intl_get_error_code</function>,
        <function>collator_get_error_code</function> .
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,10 +37,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &true; if it the code indicates some failure, and &false;
    in case of success or a warning.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

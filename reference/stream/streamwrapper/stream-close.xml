@@ -13,13 +13,13 @@
    <modifier>public</modifier> <type>void</type><methodname>streamWrapper::stream_close</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
    This method is called in response to <function>fclose</function>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    All resources that were locked, or allocated, by the wrapper should be
    released.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,9 +29,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
 <!--

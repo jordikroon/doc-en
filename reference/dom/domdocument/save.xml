@@ -14,10 +14,10 @@
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>options</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
-   Creates an XML document from the DOM representation. This function is usually 
-   called after building a new dom document from scratch as in the example below. 
-  </para>
+  <simpara>
+   Creates an XML document from the DOM representation. This function is usually
+   called after building a new dom document from scratch as in the example below.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,17 +27,17 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The path to the saved XML document.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>options</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Additional Options. Currently only <link linkend="libxml.constants">LIBXML_NOEMPTYTAG</link> is supported.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -46,9 +46,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the number of bytes written or &false; if an error occurred.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

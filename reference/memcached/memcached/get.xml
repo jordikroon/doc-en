@@ -23,8 +23,8 @@
    <link linkend="memcached.callbacks">Read-through caching callback</link> may be
    specified via <parameter>cache_cb</parameter> parameter.
   </para>
-  <para>
-  </para>
+  <simpara>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -34,26 +34,26 @@
     <varlistentry>
      <term><parameter>key</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The key of the item to retrieve.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>cache_cb</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Read-through caching callback or &null;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>get_flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Flags to control the returned result. When <constant>Memcached::GET_EXTENDED</constant>
        is given, the function will also return the CAS token.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

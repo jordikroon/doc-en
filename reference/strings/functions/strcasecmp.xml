@@ -5,7 +5,7 @@
   <refname>strcasecmp</refname>
   <refpurpose>Binary safe case-insensitive string comparison</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,11 +13,11 @@
    <methodparam><type>string</type><parameter>string1</parameter></methodparam>
    <methodparam><type>string</type><parameter>string2</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Binary safe case-insensitive string comparison.
    The comparison is not locale aware; only ASCII letters are compared in a
    case-insensitive way.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,17 +27,17 @@
     <varlistentry>
      <term><parameter>string1</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The first string
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>string2</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The second string
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -82,7 +82,7 @@ if (strcasecmp($var1, $var2) == 0) {
 ?>
 ]]>
     </programlisting>
-   </example>   
+   </example>
   </para>
  </refsect1>
 

@@ -16,12 +16,12 @@
    <methodparam choice="opt"><type>string</type><parameter>database</parameter><initializer>"main"</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer><constant>SQLITE3_OPEN_READONLY</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Opens a stream resource to read or write a BLOB, which would be selected by:
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    SELECT <parameter>column</parameter> FROM <parameter>database</parameter>.<parameter>table</parameter> WHERE rowid = <parameter>rowid</parameter>
-  </para>
+  </simpara>
   <note>
    <simpara>
     It is not possible to change the size of a BLOB by writing to the stream.
@@ -38,43 +38,43 @@
     <varlistentry>
      <term><parameter>table</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The table name.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>column</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The column name.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>rowid</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The row ID.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>database</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The symbolic name of the DB
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
-       Either <constant>SQLITE3_OPEN_READONLY</constant> or 
+      <simpara>
+       Either <constant>SQLITE3_OPEN_READONLY</constant> or
        <constant>SQLITE3_OPEN_READWRITE</constant> to open the stream
        for reading only, or for reading and writing, respectively.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -84,9 +84,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a stream resource, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

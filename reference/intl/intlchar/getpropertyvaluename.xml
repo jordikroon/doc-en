@@ -14,9 +14,9 @@
    <methodparam><type>int</type><parameter>value</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>type</parameter><initializer><constant>IntlChar::LONG_PROPERTY_NAME</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the Unicode name for a given property value, as given in the Unicode database file PropertyValueAliases.txt.
-  </para>
+  </simpara>
   <note>
    <para>
     Some of the names in PropertyValueAliases.txt can only be retrieved using
@@ -44,17 +44,17 @@
     <term><parameter>property</parameter></term>
     <listitem>
      &intl.property.parameter;
-     <para>
+     <simpara>
       If out of range, or this method doesn't work with the given value, &false; is returned.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>value</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Selector for a value for the given property. If out of range, &false; is returned.
-     </para>
+     </simpara>
      <para>
       In general, valid values range from <literal>0</literal> up to some maximum. There are a couple exceptions:
       <simplelist>
@@ -71,13 +71,13 @@
    <varlistentry>
     <term><parameter>type</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Selector for which name to get. If out of range, &false; is returned.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       All values have a long name. Most have a short name, but some do not. Unicode allows for additional names;
       if present these will be returned by adding 1, 2, etc. to <constant>IntlChar::LONG_PROPERTY_NAME</constant>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -85,15 +85,15 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the name, or &false; if either the <parameter>property</parameter> or the <parameter>type</parameter>
    is out of range. Returns &null; on failure.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If a given <parameter>type</parameter> returns &false;, then all larger values of <parameter>type</parameter>
    will return &false;, with one exception: if &false; is returned for <constant>IntlChar::SHORT_PROPERTY_NAME</constant>,
    then <constant>IntlChar::LONG_PROPERTY_NAME</constant> (and higher) may still return a non-&false; value.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

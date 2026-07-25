@@ -5,16 +5,16 @@
   <refname>oci_new_cursor</refname>
   <refpurpose>Allocates and returns a new cursor (statement handle)</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>resource</type><type>false</type></type><methodname>oci_new_cursor</methodname>
    <methodparam><type>resource</type><parameter>connection</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Allocates a new statement handle on the specified connection.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,10 +24,10 @@
     <varlistentry>
      <term><parameter>connection</parameter></term>
      <listitem>
-      <para>
-       An Oracle connection identifier, returned by 
+      <simpara>
+       An Oracle connection identifier, returned by
        <function>oci_connect</function> or <function>oci_pconnect</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -36,9 +36,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a new statement handle, or &false; on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

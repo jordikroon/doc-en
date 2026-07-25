@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.ftok">
+<refentry xml:id="function.ftok" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>ftok</refname>
   <refpurpose>Convert a pathname and a project identifier to a System V IPC key</refpurpose>

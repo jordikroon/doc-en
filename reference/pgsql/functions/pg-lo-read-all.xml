@@ -15,20 +15,20 @@
    <type>int</type><methodname>pg_lo_read_all</methodname>
    <methodparam><type>PgSql\Lob</type><parameter>lob</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_lo_read_all</function> reads a large object and passes
    it straight through to the browser after sending all pending
    headers. Mainly intended for sending binary data like images or
    sound.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    To use the large object interface, it is necessary to
    enclose it within a transaction block.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     This function used to be called <function>pg_loreadall</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -49,9 +49,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Number of bytes read.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -70,7 +70,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -89,10 +89,10 @@
 ?>
 ]]>
     </programlisting>
-   </example> 
+   </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

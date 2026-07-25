@@ -5,7 +5,7 @@
   <refname>syslog</refname>
   <refpurpose>Generate a system log message</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,18 +13,18 @@
    <methodparam><type>int</type><parameter>priority</parameter></methodparam>
    <methodparam><type>string</type><parameter>message</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>syslog</function> generates a log message that will be
    distributed by the system logger.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    For information on setting up a user defined log handler, see the
    <citerefentry><refentrytitle>syslog.conf</refentrytitle>
    <manvolnum>5</manvolnum></citerefentry> Unix manual page.  More
    information on the syslog facilities and option can be found in the man
    pages for <citerefentry><refentrytitle>syslog</refentrytitle>
    <manvolnum>3</manvolnum></citerefentry> on Unix machines.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -53,9 +53,9 @@
     <varlistentry>
      <term><parameter>message</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The message to send.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -64,9 +64,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -103,17 +103,17 @@ closelog();
 
  <refsect1 role="notes">
   &reftitle.notes;
-  <para>
+  <simpara>
    On Windows, the syslog service is emulated using the Event
    Log.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     Use of <constant>LOG_LOCAL0</constant> through
     <literal>LOG_LOCAL7</literal> for the <parameter>facility</parameter>
     parameter of <function>openlog</function> is not available
     in Windows.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

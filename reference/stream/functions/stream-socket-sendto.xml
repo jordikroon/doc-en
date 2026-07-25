@@ -14,10 +14,10 @@
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>address</parameter><initializer>""</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sends the specified <parameter>data</parameter> through the
-   <parameter>socket</parameter>.  
-  </para>
+   <parameter>socket</parameter>.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,17 +27,17 @@
     <varlistentry>
      <term><parameter>socket</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The socket to send <parameter>data</parameter> to.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>data</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The data to be sent.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -65,13 +65,13 @@
     <varlistentry>
      <term><parameter>address</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The address specified when the socket stream was created will be used
        unless an alternate address is specified in <parameter>address</parameter>.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If specified, it must be in dotted quad (or [ipv6]) format.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -80,9 +80,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a result code, as an integer,&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

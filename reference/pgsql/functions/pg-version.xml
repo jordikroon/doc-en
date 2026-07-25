@@ -14,13 +14,13 @@
    <type>array</type><methodname>pg_version</methodname>
    <methodparam choice="opt"><type class="union"><type>PgSql\Connection</type><type>null</type></type><parameter>connection</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_version</function> returns an array with the client, protocol
    and server version.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    For more detailed server information, use <function>pg_parameter_status</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -39,10 +39,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   Returns an array with <literal>client</literal>, <literal>protocol</literal> 
+  <simpara>
+   Returns an array with <literal>client</literal>, <literal>protocol</literal>
    and <literal>server</literal> keys and values (if available).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -67,7 +67,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -78,9 +78,9 @@
 <?php
   $dbconn = pg_connect("host=localhost port=5432 dbname=mary")
      or die("Could not connect");
-     
+
   $v = pg_version($dbconn);
-  
+
   echo $v['client'];
 ?>
 ]]>

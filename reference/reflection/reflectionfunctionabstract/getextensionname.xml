@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type class="union"><type>string</type><type>false</type></type><methodname>ReflectionFunctionAbstract::getExtensionName</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get the extensions name.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,10 +24,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The name of the extension which defined the function,
    or &false; for user-defined functions.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

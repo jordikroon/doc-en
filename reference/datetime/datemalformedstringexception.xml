@@ -8,9 +8,9 @@
 <!-- {{{ DateMalformedStringException intro -->
   <section xml:id="datemalformedstringexception.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Thrown when an invalid Date/Time string is detected.
-   </para>
+   </simpara>
    <para>
     This can be as value to
     <methodname>DateTimeImmutable::__construct</methodname>,

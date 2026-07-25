@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="function.base64-encode">
+<refentry xml:id="function.base64-encode" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>base64_encode</refname>
   <refpurpose>Encodes data with MIME base64</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>string</type><methodname>base64_encode</methodname>
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Encodes the given <parameter>string</parameter> with base64.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This encoding is designed to make binary data survive transport through
    transport layers that are not 8-bit clean, such as mail bodies.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Base64-encoded data takes about 33% more space than the original
    data.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -32,9 +32,9 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The data to encode.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -43,9 +43,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The encoded data, as a string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

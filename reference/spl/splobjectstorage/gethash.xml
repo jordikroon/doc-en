@@ -14,20 +14,20 @@
    <modifier>public</modifier> <type>string</type><methodname>SplObjectStorage::getHash</methodname>
    <methodparam><type>object</type><parameter>object</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This method calculates an identifier for the objects added to an
    <classname>SplObjectStorage</classname> object.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The implementation in <classname>SplObjectStorage</classname> returns
    the same value as <function>spl_object_hash</function>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The storage object will never contain more than one object with the same identifier.
    As such, it can be used to implement a set (a collection of unique values)
    where the quality of an object being unique is determined by the value
    returned by this function being unique.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -37,9 +37,9 @@
    <varlistentry>
     <term><parameter>object</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The object whose identifier is to be calculated.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -47,17 +47,17 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A <type>string</type> with the calculated identifier.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   A <classname>RuntimeException</classname> is thrown when the returned
+  <simpara>
+   A <exceptionname>RuntimeException</exceptionname> is thrown when the returned
    value is not a <type>string</type>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

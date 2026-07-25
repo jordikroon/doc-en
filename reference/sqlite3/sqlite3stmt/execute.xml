@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type class="union"><type>SQLite3Result</type><type>false</type></type><methodname>SQLite3Stmt::execute</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Executes a prepared statement and returns a result set object.
-  </para>
+  </simpara>
   <caution>
    <para>
     Result set objects retrieved by calling this method on the same statement
@@ -34,10 +34,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an <classname>SQLite3Result</classname> object on successful execution of the prepared
    statement, &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

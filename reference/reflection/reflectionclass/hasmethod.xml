@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>ReflectionClass::hasMethod</methodname>
    <methodparam><type>string</type><parameter>name</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks whether a specific method is defined in a class.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Name of the method being checked for.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,9 +35,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &true; if it has the method, otherwise &false;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

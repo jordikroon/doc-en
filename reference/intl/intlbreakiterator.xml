@@ -10,7 +10,7 @@
 <!-- {{{ IntlBreakIterator intro -->
   <section xml:id="intlbreakiterator.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     A “break iterator” is an ICU object that exposes methods for locating
     boundaries in text (e.g. word or sentence boundaries).
     The PHP <classname>IntlBreakIterator</classname> serves as the base class
@@ -19,7 +19,7 @@
     suitable subclasses, such as
     <classname>IntlRuleBasedBreakIterator</classname> or
     <classname>IntlCodePointBreakIterator</classname>.
-   </para>
+   </simpara>
    <para>
     This class implements <interfacename>IteratorAggregate</interfacename>. Traversing an
     <classname>IntlBreakIterator</classname> yields non-negative integer

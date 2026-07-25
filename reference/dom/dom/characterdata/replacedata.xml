@@ -13,7 +13,7 @@
    <methodparam><type>int</type><parameter>count</parameter></methodparam>
    <methodparam><type>string</type><parameter>data</parameter></methodparam>
   </methodsynopsis>
-  <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('domcharacterdata.replacedata')/db:refsect1[@role='description']/db:para[1])"/>
+  <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('domcharacterdata.replacedata')/db:refsect1[@role='description']/db:simpara[1])"/>
  </refsect1>
 
  <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('domcharacterdata.replacedata')/db:refsect1[@role='parameters'])" />

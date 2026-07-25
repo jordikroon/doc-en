@@ -10,10 +10,10 @@
 <!-- {{{ ReflectionClassConstant intro -->
   <section xml:id="reflectionclassconstant.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     The <classname>ReflectionClassConstant</classname> class reports
     information about a class constant.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -77,7 +77,7 @@
 
   </section>
 
-  
+
 <!-- {{{ ReflectionClass properties -->
   <section xml:id="reflectionclassconstant.props">
    &reftitle.properties;
@@ -85,19 +85,19 @@
     <varlistentry xml:id="reflectionclassconstant.props.name">
      <term><varname>name</varname></term>
      <listitem>
-      <para>
+      <simpara>
        Name of the class constant. Read-only, throws
-       <classname>ReflectionException</classname> in attempt to write.
-      </para>
+       <exceptionname>ReflectionException</exceptionname> in attempt to write.
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="reflectionclassconstant.props.class">
      <term><varname>class</varname></term>
      <listitem>
-      <para>
+      <simpara>
        Name of the class where the class constant is defined. Read-only, throws
-       <classname>ReflectionException</classname> in attempt to write.
-      </para>
+       <exceptionname>ReflectionException</exceptionname> in attempt to write.
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -117,11 +117,11 @@
        <type>int</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Indicates <link linkend="language.oop5.visibility">public</link>
         constants.
         Prior to PHP 7.4.0, the value was <literal>256</literal>.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
 
@@ -131,11 +131,11 @@
        <type>int</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Indicates <link linkend="language.oop5.visibility">protected</link>
         constants.
         Prior to PHP 7.4.0, the value was <literal>512</literal>.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
 
@@ -145,11 +145,11 @@
        <type>int</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Indicates <link linkend="language.oop5.visibility">private</link>
         constants.
         Prior to PHP 7.4.0, the value was <literal>1024</literal>.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
 
@@ -159,20 +159,20 @@
        <type>int</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Indicates <link linkend="language.oop5.final">final</link>
         constants. Available as of PHP 8.1.0.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
 
     </variablelist>
     <note>
-     <para>
+     <simpara>
       The values of these constants may change between PHP versions.
       It is recommended to always use the constants
       and not rely on the values directly.
-     </para>
+     </simpara>
     </note>
    </section>
   </section>

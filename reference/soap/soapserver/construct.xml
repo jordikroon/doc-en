@@ -13,10 +13,10 @@
    <methodparam><type class="union"><type>string</type><type>null</type></type><parameter>wsdl</parameter></methodparam>
    <methodparam choice="opt"><type>array</type><parameter>options</parameter><initializer>[]</initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    This constructor allows the creation of <classname>SoapServer</classname>
    objects in WSDL or non-WSDL mode.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,51 +26,51 @@
     <varlistentry>
      <term><parameter>wsdl</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        To use the SoapServer in WSDL mode, pass the URI of a WSDL file.
        Otherwise, pass &null; and set the <literal>uri</literal> option to the
        target namespace for the server.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>options</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Allow setting a default SOAP version (<literal>soap_version</literal>),
        internal character encoding (<literal>encoding</literal>),
        and actor URI (<literal>actor</literal>).
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        The <literal>classmap</literal> option can be used to map some WSDL
        types to PHP classes. This option must be an array with WSDL types
        as keys and names of PHP classes as values.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        The <literal>typemap</literal> option is an array of type mappings.
        Type mapping is an array with keys <literal>type_name</literal>,
        <literal>type_ns</literal> (namespace URI), <literal>from_xml</literal>
        (callback accepting one string parameter) and <literal>to_xml</literal>
        (callback accepting one object parameter).
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        The <literal>cache_wsdl</literal> option is one of
        <constant>WSDL_CACHE_NONE</constant>,
        <constant>WSDL_CACHE_DISK</constant>,
        <constant>WSDL_CACHE_MEMORY</constant> or
        <constant>WSDL_CACHE_BOTH</constant>.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        There is also a <literal>features</literal> option which can be set to
        <constant>SOAP_WAIT_ONE_WAY_CALLS</constant>,
        <constant>SOAP_SINGLE_ELEMENT_ARRAYS</constant>,
        <constant>SOAP_USE_XSI_ARRAY_TYPE</constant>.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        The <literal>send_errors</literal> option can be set to &false; to sent a
        generic error message ("Internal error") instead of the specific error
        message sent otherwise.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

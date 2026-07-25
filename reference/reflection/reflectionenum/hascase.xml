@@ -11,9 +11,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>ReflectionEnum::hasCase</methodname>
    <methodparam><type>string</type><parameter>name</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Determines if a given case is defined on an Enum.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -23,9 +23,9 @@
    <varlistentry>
     <term><parameter>name</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The case to check for.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -33,9 +33,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &true; if the case is defined, &false; if not.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

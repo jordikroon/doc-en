@@ -16,10 +16,10 @@
    <methodparam><type>int</type><parameter>options</parameter></methodparam>
    <methodparam><type class="union"><type>string</type><type>null</type></type><parameter role="reference">opened_path</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This method is called immediately after the wrapper is initialized (f.e. by
    <function>fopen</function> and <function>file_get_contents</function>).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,28 +29,28 @@
     <varlistentry>
      <term><parameter>path</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Specifies the URL that was passed to the original function.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         The URL can be broken apart with <function>parse_url</function>.  Note that only URLs
         delimited by :// are supported. : and :/ while technically valid URLs, are not.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>mode</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The mode used to open the file, as detailed for <function>fopen</function>.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         Remember to check if the <parameter>mode</parameter> is valid for the
         <parameter>path</parameter> requested.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
@@ -92,12 +92,12 @@
     <varlistentry>
      <term><parameter>opened_path</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If the <parameter>path</parameter> is opened successfully,
        and <constant>STREAM_USE_PATH</constant> is set in <parameter>options</parameter>,
        <parameter>opened_path</parameter> should be set to the full
        path of the file/resource that was actually opened.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -106,16 +106,16 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors"><!-- {{{ -->
   &reftitle.errors;
   &userstream.not.implemented.warning;
  </refsect1><!-- }}} -->
- 
+
 
 <!-- {{{
  <refsect1 role="examples">
@@ -145,7 +145,7 @@
   &reftitle.notes;
   &userstream.updates.context;
  </refsect1><!-- }}} -->
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

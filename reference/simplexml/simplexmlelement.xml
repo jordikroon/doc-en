@@ -3,21 +3,21 @@
 <reference xml:id="class.simplexmlelement" role="class" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
  <title>The SimpleXMLElement class</title>
  <titleabbrev>SimpleXMLElement</titleabbrev>
- 
+
  <partintro>
- 
+
 <!-- {{{ SimpleXMLElement intro -->
   <section xml:id="simplexmlelement.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Represents an element in an XML document.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
- 
+
   <section xml:id="simplexmlelement.synopsis">
    &reftitle.classsynopsis;
- 
+
 <!-- {{{ Synopsis -->
    <classsynopsis class="class">
     <ooclass>
@@ -42,7 +42,7 @@
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.simplexmlelement')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[@role='SimpleXMLElement'])"/>
    </classsynopsis>
 <!-- }}} -->
- 
+
   </section>
 
   <section role="changelog">
@@ -69,9 +69,9 @@
     </tgroup>
    </informaltable>
   </section>
- 
+
  </partintro>
- 
+
  &reference.simplexml.entities.simplexmlelement;
 
 </reference>

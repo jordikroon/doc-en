@@ -12,12 +12,12 @@
    <type>true</type><methodname>libxml_set_external_entity_loader</methodname>
    <methodparam><type class="union"><type>callable</type><type>null</type></type><parameter>resolver_function</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Changes the default external entity loader.
    This can be used to suppress the expansion of arbitrary external entities to avoid XXE attacks,
    even when <constant>LIBXML_NOENT</constant> has been set for the respective operation,
    and is usually preferable over calling <function>libxml_disable_entity_loader</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -71,9 +71,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

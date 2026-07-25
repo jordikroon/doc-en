@@ -19,7 +19,7 @@
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
   </methodsynopsis>
   <simpara>
-   Opens a new zip archive for reading. 
+   Opens a new zip archive for reading.
   </simpara>
  </refsect1>
  <refsect1 role="parameters">

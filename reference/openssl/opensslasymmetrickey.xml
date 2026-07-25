@@ -10,9 +10,9 @@
 <!-- {{{ OpenSSLAsymmetricKey intro -->
   <section xml:id="opensslasymmetrickey.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     A fully opaque class which replaces <literal>OpenSSL key</literal> resources as of PHP 8.0.0.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

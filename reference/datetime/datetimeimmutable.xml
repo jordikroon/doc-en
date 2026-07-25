@@ -9,14 +9,14 @@
 
   <section xml:id="datetimeimmutable.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Representation of date and time.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     This class behaves the same as <classname>DateTime</classname>
     except new objects are returned when modification methods such as
     <function>DateTime::modify</function> are called.
-   </para>
+   </simpara>
   </section>
 
   <section xml:id="datetimeimmutable.synopsis">

@@ -14,11 +14,11 @@
    <type>bool</type><methodname>is_iterable</methodname>
    <methodparam><type>mixed</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Verify that the contents of a variable is accepted by the
    <type>iterable</type> pseudo-type, i.e. that it is either an <type>array</type> or
    an object implementing <classname>Traversable</classname>
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,9 +28,9 @@
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The value to check
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -39,10 +39,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   Returns &true; if <parameter>value</parameter> is iterable, &false; 
+  <simpara>
+   Returns &true; if <parameter>value</parameter> is iterable, &false;
    otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -63,8 +63,8 @@ var_dump(is_iterable(new stdClass()));  // bool(false)
 ?>
 ]]>
     </programlisting>
-   </example>   
-  </para>   
+   </example>
+  </para>
  </refsect1>
 
  <refsect1 role="seealso">

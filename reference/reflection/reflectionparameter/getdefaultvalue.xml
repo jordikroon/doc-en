@@ -12,11 +12,11 @@
    <modifier>public</modifier> <type>mixed</type><methodname>ReflectionParameter::getDefaultValue</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the default value of the parameter for any user-defined or internal function or method.
-   If the parameter is not optional a <classname>ReflectionException</classname>
+   If the parameter is not optional a <exceptionname>ReflectionException</exceptionname>
    will be thrown.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,11 +26,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The parameters default value.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="changelog">
   &reftitle.changelog;
   <para>
@@ -47,7 +47,7 @@
        <entry>8.0.0</entry>
        <entry>
         This method now allows getting the default value of parameters of built-in functions and
-        built-in class methods. Previously, a <classname>ReflectionException</classname> was thrown.
+        built-in class methods. Previously, a <exceptionname>ReflectionException</exceptionname> was thrown.
        </entry>
       </row>
      </tbody>
@@ -93,7 +93,7 @@ Default value: baz
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

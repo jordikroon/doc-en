@@ -13,10 +13,10 @@
    <methodparam><type class="union"><type>GMP</type><type>int</type><type>string</type></type><parameter>num1</parameter></methodparam>
    <methodparam><type class="union"><type>GMP</type><type>int</type><type>string</type></type><parameter>num2</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function computes the least common multiple (lcm) of
    <parameter>num1</parameter> and <parameter>num2</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -39,9 +39,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &gmp.return;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

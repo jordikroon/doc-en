@@ -16,12 +16,12 @@
    <methodparam><type>int</type><parameter>blue</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>alpha</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This sets the specified index in the palette to the specified
    color. This is useful for creating flood-fill-like effects in
    palleted images without the overhead of performing the actual
    flood-fill.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -31,35 +31,35 @@
     <varlistentry>
      <term><parameter>color</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An index in the palette.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>red</parameter></term>
      <listitem>
-      <para>&gd.value.red;</para>
+      <simpara>&gd.value.red;</simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>green</parameter></term>
      <listitem>
-      <para>&gd.value.green;</para>
+      <simpara>&gd.value.green;</simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>blue</parameter></term>
      <listitem>
-      <para>&gd.value.blue;</para>
+      <simpara>&gd.value.blue;</simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>alpha</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Value of alpha component.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -67,9 +67,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The function returns &null; on success, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

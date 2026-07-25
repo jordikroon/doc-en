@@ -5,7 +5,7 @@
   <refname>implode</refname>
   <refpurpose>Join array elements with a string</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -24,9 +24,9 @@
    <methodparam><type>array</type><parameter>array</parameter></methodparam>
    <methodparam><type>string</type><parameter>separator</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Join array elements with a <parameter>separator</parameter> string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -36,17 +36,17 @@
     <varlistentry>
      <term><parameter>separator</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Optional. Defaults to an empty string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The array of strings to implode.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -55,10 +55,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a string containing a string representation of all the array
    elements in the same order, with the separator string between each element.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog"><!-- {{{ -->
@@ -112,7 +112,7 @@ var_dump(implode(['a', 'b', 'c'])); // string(3) "abc"
 ?>
 ]]>
     </programlisting>
-   </example>   
+   </example>
   </para>
  </refsect1>
 

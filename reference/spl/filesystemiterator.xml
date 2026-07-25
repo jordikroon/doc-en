@@ -10,9 +10,9 @@
   <!-- {{{ FilesystemIterator intro -->
   <section xml:id="filesystemiterator.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     The Filesystem iterator
-   </para>
+   </simpara>
   </section>
   <!-- }}} -->
 
@@ -171,7 +171,7 @@
     <varlistentry xml:id="filesystemiterator.constants.new-current-and-key">
      <term><constant>FilesystemIterator::NEW_CURRENT_AND_KEY</constant></term>
      <listitem>
-      <para>Same as <literal>FilesystemIterator::KEY_AS_FILENAME | FilesystemIterator::CURRENT_AS_FILEINFO</literal>.</para>
+      <simpara>Same as <literal>FilesystemIterator::KEY_AS_FILENAME | FilesystemIterator::CURRENT_AS_FILEINFO</literal>.</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="filesystemiterator.constants.other-mode-mask">
@@ -183,17 +183,17 @@
     <varlistentry xml:id="filesystemiterator.constants.skip-dots">
      <term><constant>FilesystemIterator::SKIP_DOTS</constant></term>
      <listitem>
-      <para>Skips dot files (<literal>.</literal> and <literal>..</literal>).</para>
+      <simpara>Skips dot files (<literal>.</literal> and <literal>..</literal>).</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="filesystemiterator.constants.unix-paths">
      <term><constant>FilesystemIterator::UNIX_PATHS</constant></term>
      <listitem>
-      <para>
+      <simpara>
        Makes paths use Unix-style forward slash irrespective of system default.
        Note that the <parameter>path</parameter> that is passed to the
        constructor is not modified.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

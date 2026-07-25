@@ -8,22 +8,22 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="IntlCalendar">
    <modifier>public</modifier> <type>true</type><methodname>IntlCalendar::setMinimalDaysInFirstWeek</methodname>
    <methodparam><type>int</type><parameter>days</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type>true</type><methodname>intlcal_set_minimal_days_in_first_week</methodname>
    <methodparam><type>IntlCalendar</type><parameter>calendar</parameter></methodparam>
    <methodparam><type>int</type><parameter>days</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets the smallest number of days the first week of a year or month must
    have in the new year or month.  For instance, in the Gregorian calendar, if
    this value is 1, then the first week of the year will necessarily include
@@ -32,7 +32,7 @@
    matches the day of the week returned by
    <function>IntlCalendar::getFirstDayOfWeek</function>; otherwise it will be
    the previous yearʼs last week.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -47,9 +47,9 @@
    <varlistentry>
     <term><parameter>days</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The number of minimal days to set.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -57,17 +57,17 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   <classname>ValueError</classname> if <parameter>days</parameter> is out of range
+  <simpara>
+   <exceptionname>ValueError</exceptionname> if <parameter>days</parameter> is out of range
    (less than <literal>1</literal> or more than <literal>7</literal>).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -85,7 +85,7 @@
       <row>
        <entry>8.0.0</entry>
        <entry>
-        A <classname>ValueError</classname> is now thrown on invalid input.  Previously, &false; was returned.
+        A <exceptionname>ValueError</exceptionname> is now thrown on invalid input.  Previously, &false; was returned.
        </entry>
       </row>
      </tbody>

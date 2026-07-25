@@ -8,12 +8,12 @@
 <!-- {{{ variant intro -->
   <section xml:id="variant.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     The VARIANT is COM's equivalent of the PHP zval; it is a structure that
     can contain a value with a range of different possible types.  The variant
     class provided by the COM extension allows you to have more control over
     the way that PHP passes values to and from COM.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -50,7 +50,7 @@ print "The value is " . $v . "<br/>";
     </example>
    </para>
    <note>
-    <para>
+    <simpara>
      When returning
      a value or fetching a variant property, the variant is converted to a PHP
      value only when there is a direct mapping between the types that would
@@ -61,11 +61,11 @@ print "The value is " . $v . "<br/>";
      <function>print</function>ing it.  You may use the wide range of variant
      functions to perform arithmetic operations on variants without forcing a
      conversion or risking a loss of data.
-    </para>
+    </simpara>
    </note>
-   <para>
+   <simpara>
     See also <function>variant_get_type</function>.
-   </para>
+   </simpara>
   </section>
 
  </partintro>

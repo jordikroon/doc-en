@@ -5,23 +5,23 @@
   <refname>ldap_free_result</refname>
   <refpurpose>Free result memory</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>bool</type><methodname>ldap_free_result</methodname>
    <methodparam><type>LDAP\Result</type><parameter>result</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Frees up the memory allocated internally to store the result. All result
    memory will be automatically freed when the script terminates.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Typically all the memory allocated for the LDAP result gets freed at the
    end of the script. In case the script is making successive searches which
    return large result sets, <function>ldap_free_result</function> could be
    called to keep the runtime memory usage by the script low.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -31,9 +31,9 @@
     <varlistentry>
      <term><parameter>result</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &ldap.parameter.result;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -42,9 +42,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

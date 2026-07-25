@@ -5,16 +5,16 @@
   <refname>extension_loaded</refname>
   <refpurpose>Find out whether an extension is loaded</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>bool</type><methodname>extension_loaded</methodname>
    <methodparam><type>string</type><parameter>extension</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Finds out whether the extension is loaded.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>extension</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The extension name. This parameter is case-insensitive.
-      </para>
+      </simpara>
       <para>
        You can see the names of various extensions by using
        <function>phpinfo</function> or if you're using the
@@ -61,10 +61,10 @@ ctype
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the extension identified by <parameter>extension</parameter>
    is loaded, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

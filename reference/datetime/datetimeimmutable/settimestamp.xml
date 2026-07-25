@@ -13,10 +13,10 @@
    <modifier>public</modifier> <type>DateTimeImmutable</type><methodname>DateTimeImmutable::setTimestamp</methodname>
    <methodparam><type>int</type><parameter>timestamp</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a new <type>DateTimeImmutable</type> object constructed from the
    old one, with the date and time set based on an Unix timestamp.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -37,16 +37,16 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &date.datetimeimmutable.return.modifiedobject;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
   &reftitle.examples;
   <example>
    <title><function>DateTimeImmutable::setTimestamp</function> example</title>
-   <para>&style.oop;</para>
+   <simpara>&style.oop;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

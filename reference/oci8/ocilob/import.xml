@@ -5,17 +5,17 @@
   <refname>OCILob::import</refname>
   <refpurpose>Imports file data to the LOB</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="OCILob">
    <modifier>public</modifier> <type>bool</type><methodname>OCILob::import</methodname>
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Writes data from the <parameter>filename</parameter> in to the current
    position of large object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path to the file.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -36,9 +36,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

@@ -3,23 +3,23 @@
 <reference xml:id="class.mysqli-driver" role="class" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
  <title>The mysqli_driver class</title>
  <titleabbrev>mysqli_driver</titleabbrev>
- 
+
  <partintro>
- 
+
 <!-- {{{ ClassName intro -->
   <section xml:id="mysqli-driver.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     The <classname>mysqli_driver</classname> class is an instance of the monostate
     pattern, i.e. there is only one driver which can be accessed though an arbitrary
     amount of <classname>mysqli_driver</classname> instances.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
- 
+
   <section xml:id="mysqli-driver.synopsis">
    &reftitle.classsynopsis;
- 
+
 <!-- {{{ Synopsis -->
    <classsynopsis class="class">
     <ooclass>
@@ -53,7 +53,7 @@
     </fieldsynopsis>
    </classsynopsis>
 <!-- }}} -->
- 
+
   </section>
 <!-- {{{ mysqli_driver properties -->
   <section xml:id="mysqli-driver.props">
@@ -62,19 +62,19 @@
     <varlistentry xml:id="mysqli-driver.props.client-info">
      <term><varname>client_info</varname></term>
      <listitem>
-      <para>The Client API header version</para>
+      <simpara>The Client API header version</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="mysqli-driver.props.client-version">
      <term><varname>client_version</varname></term>
      <listitem>
-      <para>The Client version</para>
+      <simpara>The Client version</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="mysqli-driver.props.driver-version">
      <term><varname>driver_version</varname></term>
      <listitem>
-      <para>The MySQLi Driver version</para>
+      <simpara>The MySQLi Driver version</simpara>
       <warning><simpara>This property has
       been <emphasis>deprecated</emphasis> as of PHP 8.1.0. Relying on this
       property is highly discouraged.</simpara></warning>
@@ -83,7 +83,7 @@
     <varlistentry xml:id="mysqli-driver.props.embedded">
      <term><varname>embedded</varname></term>
      <listitem>
-      <para>Whether MySQLi Embedded support is enabled</para>
+      <simpara>Whether MySQLi Embedded support is enabled</simpara>
       <warning><simpara>This property has
       been <emphasis>removed</emphasis> as of PHP 8.0.0.</simpara></warning>
      </listitem>
@@ -91,7 +91,7 @@
     <varlistentry xml:id="mysqli-driver.props.reconnect">
      <term><varname>reconnect</varname></term>
      <listitem>
-      <para>Allow or prevent reconnect (see the <link linkend="ini.mysqli.reconnect">mysqli.reconnect</link> INI directive)</para>
+      <simpara>Allow or prevent reconnect (see the <link linkend="ini.mysqli.reconnect">mysqli.reconnect</link> INI directive)</simpara>
       <warning>
        <simpara>This property has been <emphasis>removed</emphasis>
         along with the <link linkend="ini.mysqli.reconnect">mysqli.reconnect</link> INI directive as of PHP 8.2.0.
@@ -102,14 +102,14 @@
     <varlistentry xml:id="mysqli-driver.props.report-mode">
      <term><varname>report_mode</varname></term>
      <listitem>
-      <para>
+      <simpara>
        Set to <constant>MYSQLI_REPORT_OFF</constant>,
        <constant>MYSQLI_REPORT_ALL</constant> or any combination of
        <constant>MYSQLI_REPORT_STRICT</constant> (throw Exceptions for errors),
        <constant>MYSQLI_REPORT_ERROR</constant> (report errors) and
        <constant>MYSQLI_REPORT_INDEX</constant> (errors regarding indexes).
        See also <function>mysqli_report</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -156,9 +156,9 @@
     </tgroup>
    </informaltable>
   </section>
-  
+
  </partintro>
- 
+
  &reference.mysqli.entities.mysqli-driver;
 
 </reference>

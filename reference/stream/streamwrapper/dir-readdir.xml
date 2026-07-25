@@ -13,9 +13,9 @@
    <modifier>public</modifier> <type class="union"><type>string</type><type>bool</type></type><methodname>streamWrapper::dir_readdir</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
    This method is called in response to <function>readdir</function>.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -26,10 +26,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Should return <type>string</type> representing the next filename, or
    &false; if there is no next file.
-  </para>
+  </simpara>
   <warning>
    <simpara>
     Returning <type>true</type> or <type>false</type> will have the same
@@ -39,9 +39,9 @@
    </simpara>
   </warning>
   <note>
-   <para>
+   <simpara>
     A non-boolean return value will be casted to <type>string</type>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -49,7 +49,7 @@
   &reftitle.errors;
   &userstream.not.implemented.warning;
  </refsect1><!-- }}} -->
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>

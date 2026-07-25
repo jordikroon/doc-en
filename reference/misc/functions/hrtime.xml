@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://docbook.org/ns/docbook" xml:id="function.hrtime">
+<refentry xml:id="function.hrtime" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>hrtime</refname>
   <refpurpose>Get the system's high resolution time</refpurpose>
@@ -25,10 +25,10 @@
     <varlistentry>
      <term><parameter>as_number</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Whether the high resolution time should be returned as <type>array</type>
        or number.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,13 +37,13 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array of integers in the form [seconds, nanoseconds], if the
    parameter <parameter>as_number</parameter> is false. Otherwise the nanoseconds
    are returned as <type>int</type> (64bit platforms) or <type>float</type>
    (32bit platforms).
    Returns &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

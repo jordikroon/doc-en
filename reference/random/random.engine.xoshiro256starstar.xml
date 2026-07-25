@@ -8,9 +8,9 @@
 <!-- {{{ Random\Engine\Xoshiro256StarStar intro -->
   <section xml:id="random-engine-xoshiro256starstar.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Implements the <link xlink:href="&url.random.xoshiro;">xoshiro256**</link> algorithm.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

@@ -12,13 +12,13 @@
    <methodparam><type>Odbc\Connection</type><parameter>odbc</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>bool</type><type>null</type></type><parameter>enable</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Toggles autocommit behaviour.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    By default, auto-commit is on for a connection.  Disabling
    auto-commit is equivalent with starting a transaction.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -33,12 +33,12 @@
     <varlistentry>
      <term><parameter>enable</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If <parameter>enable</parameter> is &true;, auto-commit is enabled, if
        it is &false; auto-commit is disabled.
        If &null; is passed, this function returns the auto-commit status for
        <parameter>odbc</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -46,16 +46,16 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    With a &null; <parameter>enable</parameter> parameter, this function returns
    auto-commit status for <parameter>odbc</parameter>. Non-zero is
    returned if auto-commit is on, 0 if it is off, or &false; if an error
    occurs.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If <parameter>enable</parameter> is non-null, this function returns &true; on
    success and &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

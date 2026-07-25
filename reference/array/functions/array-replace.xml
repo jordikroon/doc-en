@@ -12,15 +12,15 @@
    <methodparam><type>array</type><parameter>array</parameter></methodparam>
    <methodparam rep="repeat"><type>array</type><parameter>replacements</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>array_replace</function> creates a new array and assigns items into
    it for each key in each of the provided arrays. If a key appears in multiple
    input arrays, the value from the right-most input array will be used.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    <function>array_replace</function> does not process elements items recursively,
    it replaces the entire value for each key when it does a replacement.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -29,18 +29,18 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The array in which elements are replaced.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>replacements</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Arrays from which elements will be extracted.
        Values from later arrays overwrite the previous values.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -48,9 +48,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an <type>array</type>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;

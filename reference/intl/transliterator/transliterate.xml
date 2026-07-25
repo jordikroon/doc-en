@@ -9,14 +9,14 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="Transliterator">
    <modifier>public</modifier> <type class="union"><type>string</type><type>false</type></type><methodname>Transliterator::transliterate</methodname>
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>start</parameter><initializer>0</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>end</parameter><initializer>-1</initializer></methodparam>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>transliterator_transliterate</methodname>
    <methodparam><type class="union"><type>Transliterator</type><type>string</type></type><parameter>transliterator</parameter></methodparam>
@@ -24,9 +24,9 @@
    <methodparam choice="opt"><type>int</type><parameter>start</parameter><initializer>0</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>end</parameter><initializer>-1</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Transforms a string or part thereof using an ICU transliterator.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -35,39 +35,39 @@
    <varlistentry>
     <term><parameter>transliterator</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       In the procedural version, either a <classname>Transliterator</classname>
       or a <type>string</type> from which a
       <classname>Transliterator</classname> can be built.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>string</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The string to be transformed.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>start</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The start index (in UTF-16 code units) from which the string will start
       to be transformed, inclusive. Indexing starts at 0. The text before will
       be left as is.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>end</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The end index (in UTF-16 code units) until which the string will be
       transformed, exclusive. Indexing starts at 0. The text after will be
       left as is.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -75,9 +75,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The transformed string on success, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

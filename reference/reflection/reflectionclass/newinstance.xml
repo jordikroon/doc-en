@@ -12,10 +12,10 @@
    <modifier>public</modifier> <type>object</type><methodname>ReflectionClass::newInstance</methodname>
    <methodparam rep="repeat"><type>mixed</type><parameter>args</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Creates a new instance of the class. The given arguments are passed to the
    class constructor.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -26,10 +26,10 @@
     <varlistentry>
      <term><parameter>args</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Accepts a variable number of arguments which are passed to the class
        constructor, much like <function>call_user_func</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -38,20 +38,20 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   A <classname>ReflectionException</classname> if the class constructor is not public.
-  </para>
-  <para>
-   A <classname>ReflectionException</classname> if the class does not have a constructor
+  <simpara>
+   A <exceptionname>ReflectionException</exceptionname> if the class constructor is not public.
+  </simpara>
+  <simpara>
+   A <exceptionname>ReflectionException</exceptionname> if the class does not have a constructor
    and the <parameter>args</parameter> parameter contains one or more parameters.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

@@ -4,31 +4,31 @@
 
  <sect2 xml:id="migration82.windows-support.core">
   <title>Core</title>
-  <para>
+  <simpara>
    Windows specific error messages are no longer localized, but instead
    always displayed in English to better match PHP error messages.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Preliminary and highly experimental support for building on ARM64 has been added.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration82.windows-support.oci8">
   <title>OCI8</title>
-  <para>
+  <simpara>
    Because building against Oracle Client 10g is no longer supported anyway,
    the configuration option <command>--with-oci8</command> has been dropped.
    The <command>--with-oci8-11g</command>, <command>--with-oci8-12c</command> and
    <command>--with-oci8-19</command> configuration options are still supported.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration82.windows-support.zip">
   <title>Zip</title>
-  <para>
+  <simpara>
    The Zip extension is upgraded to version 1.21.0,
    and is now built as shared library (<acronym>DLL</acronym>) by default.
-  </para>
+  </simpara>
  </sect2>
 
 </sect1>

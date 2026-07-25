@@ -10,9 +10,9 @@
 <!-- {{{ IntlCalendar intro -->
   <section xml:id="intlcalendar.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
 
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -268,7 +268,7 @@
 <!-- }}} -->
 
   </section>
-  
+
 <!-- {{{ IntlCalendar constants -->
   <section xml:id="intlcalendar.constants">
    &reftitle.constants;
@@ -280,13 +280,13 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Calendar field numerically representing an era, for instance
        <literal>1</literal> for AD and <literal>0</literal> for BC in the
        Gregorian/Julian calendars and <literal>235</literal> for the Heisei
        (平成) era in the Japanese calendar. Not all calendars have more than
        one era.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -296,11 +296,11 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Calendar field for the year. This is not unique across eras.  If the
        calendar type has more than one era, generally the minimum value for
        this field will be <literal>1</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -310,7 +310,7 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Calendar field for the month. The month sequence is zero-based, so
        January (here used to signify the first month of the calendar; this
        may be called another name, such as Muharram in the Islamic calendar)
@@ -318,7 +318,7 @@
        <literal>1</literal>, …, December by <literal>11</literal> and, for
        calendars that have it, the 13th or leap month by
        <literal>12</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -328,12 +328,12 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Calendar field for the number of the week of the year. This depends on
        which day of the week is <link linkend="intlcalendar.getfirstdayofweek">deemed to start the
        week</link> and the <link linkend="intlcalendar.getminimaldaysinfirstweek">minimal number of days
        in a week</link>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -343,12 +343,12 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Calendar field for the number of the week of the month. This depends on
        which day of the week is <link linkend="intlcalendar.getfirstdayofweek">deemed to start the
        week</link> and the <link linkend="intlcalendar.getminimaldaysinfirstweek">minimal number of days
        in a week</link>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -358,11 +358,11 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Calendar field for the day of the month. The same as
        <constant>IntlCalendar::FIELD_DAY_OF_MONTH</constant>, which has a
        clearer name.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -372,11 +372,11 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Calendar field for the day of the year. For the Gregorian calendar,
        starts with <literal>1</literal> and ends with
        <literal>365</literal> or <literal>366</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -386,11 +386,11 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Calendar field for the day of the week. Its values start with
        <literal>1</literal> (Sunday, see <link linkend="intlcalendar.constants.dow-sunday"><constant>IntlCalendar::DOW_SUNDAY</constant></link>
        and subsequent constants) and the last valid value is 7 (Saturday).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -400,14 +400,14 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Given a day of the week (Sunday, Monday, …), this calendar
        field assigns an ordinal to such a day of the week in a specific month.
        Thus, if the value of this field is <literal>1</literal> and the value of the day of the
        week is <literal>2</literal> (Monday), then the set day of the month is the 1st Monday of the
        month; the maximum value is <literal>5</literal>.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Additionally, the value <literal>0</literal> and negative values are
        also allowed. The value <literal>0</literal> encompasses the seven days
        that occur immediately before the first seven days of a month (which
@@ -416,8 +416,8 @@
        the month – <literal>-1</literal> points to the last occurrence of a
        day of the week in a month, <literal>-2</literal> to the second last,
        and so on.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Unlike <link linkend="intlcalendar.constants.field-week-of-month"><constant>IntlCalendar::FIELD_WEEK_OF_MONTH</constant></link>
        and  <link linkend="intlcalendar.constants.field-week-of-year"><constant>IntlCalendar::FIELD_WEEK_OF_YEAR</constant></link>,
        this value does not depend on
@@ -425,7 +425,7 @@
        <function>IntlCalendar::getMinimalDaysInFirstWeek</function>. The first
        Monday is the first Monday, even if it occurs in a week that belongs to
        the previous month.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -435,11 +435,11 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Calendar field indicating whether a time is before noon (value
        <literal>0</literal>, AM) or after (<literal>1</literal>). Midnight is
        AM, noon is PM.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -449,11 +449,11 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Calendar field for the hour, without specifying whether itʼs in the
        morning or in the afternoon. Valid values are <literal>0</literal> to
        <literal>11</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -463,10 +463,10 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Calendar field for the full (24h) hour of the day. Valid values are
        <literal>0</literal> to <literal>23</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -476,9 +476,9 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Calendar field for the minutes component of the time.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -488,9 +488,9 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Calendar field for the seconds component of the time.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -500,9 +500,9 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Calendar field the milliseconds component of the time.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -512,11 +512,11 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Calendar field indicating the raw offset of the timezone, in
        milliseconds. The raw offset is the timezone offset, excluding any
        offset due to daylight saving time.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -526,10 +526,10 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Calendar field for the daylight saving time offset of the calendarʼs
        timezone, in milliseconds, if active for calendarʼs time.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -539,10 +539,10 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Calendar field representing the year for <link linkend="intlcalendar.constants.field-week-of-year">week of year</link>
        purposes.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -552,13 +552,13 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Calendar field for the localized day of the week. This is a value
        between <literal>1</literal> and <literal>7</literal>,
        <literal>1</literal> being used for the day of the week that matches
        the value returned by
        <function>IntlCalendar::getFirstDayOfWeek</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -568,13 +568,13 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Calendar field for a year number representation that is continuous
        across eras. For the Gregorian calendar, the value of this field
        matches that of <constant>IntlCalendar::FIELD_YEAR</constant> for AD
        years; a BC year <literal>y</literal> is represented by <literal>-y +
        1</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -584,11 +584,11 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Calendar field for a modified Julian day number. It is different from a
        conventional Julian day number in that its transitions occur at local
        zone midnight rather than at noon UTC. It uniquely identifies a date.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -598,7 +598,7 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Calendar field encompassing the information in
        <constant>IntlCalendar::FIELD_HOUR_OF_DAY</constant>,
        <constant>IntlCalendar::FIELD_MINUTE</constant>,
@@ -608,7 +608,7 @@
        not the amount of milliseconds elapsed in the day since on DST
        transitions it will have discontinuities analog to those of the wall
        time.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -618,10 +618,10 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Calendar field whose value is <literal>1</literal> for indicating a
        leap month and <literal>0</literal> otherwise.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -631,9 +631,9 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        The total number of fields.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -643,9 +643,9 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Alias for <link linkend="intlcalendar.constants.field-date"><constant>IntlCalendar::FIELD_DATE</constant></link>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -655,7 +655,7 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>Sunday.</para>
+      <simpara>Sunday.</simpara>
      </listitem>
     </varlistentry>
 
@@ -665,7 +665,7 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>Monday.</para>
+      <simpara>Monday.</simpara>
      </listitem>
     </varlistentry>
 
@@ -675,7 +675,7 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>Tuesday.</para>
+      <simpara>Tuesday.</simpara>
      </listitem>
     </varlistentry>
 
@@ -685,7 +685,7 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>Wednesday.</para>
+      <simpara>Wednesday.</simpara>
      </listitem>
     </varlistentry>
 
@@ -695,7 +695,7 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>Thursday.</para>
+      <simpara>Thursday.</simpara>
      </listitem>
     </varlistentry>
 
@@ -705,7 +705,7 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>Friday.</para>
+      <simpara>Friday.</simpara>
      </listitem>
     </varlistentry>
 
@@ -715,7 +715,7 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>Saturday.</para>
+      <simpara>Saturday.</simpara>
      </listitem>
     </varlistentry>
 
@@ -725,10 +725,10 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Output of <function>IntlCalendar::getDayOfWeekType</function>
        indicating a day of week is a weekday.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -738,10 +738,10 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Output of <function>IntlCalendar::getDayOfWeekType</function>
        indicating a day of week belongs to the weekend.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -751,10 +751,10 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Output of <function>IntlCalendar::getDayOfWeekType</function>
        indicating the weekend begins during the given day of week.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -764,10 +764,10 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Output of <function>IntlCalendar::getDayOfWeekType</function>
        indicating the weekend ends during the given day of week.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -777,14 +777,14 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Output of <function>IntlCalendar::getSkippedWallTimeOption</function>
        indicating that wall times in the skipped range should refer to the
        same instant as wall times with one hour less and of
        <function>IntlCalendar::getRepeatedWallTimeOption</function>
        indicating the wall times in the repeated range should refer to the
        instant of the first occurrence of such wall time.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -794,14 +794,14 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Output of <function>IntlCalendar::getSkippedWallTimeOption</function>
        indicating that wall times in the skipped range should refer to the
        same instant as wall times with one hour after and of
        <function>IntlCalendar::getRepeatedWallTimeOption</function>
        indicating the wall times in the repeated range should refer to the
        instant of the second occurrence of such wall time.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -811,11 +811,11 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Output of <function>IntlCalendar::getSkippedWallTimeOption</function>
        indicating that wall times in the skipped range should refer to the
        instant when the daylight saving time transition occurs (begins).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 

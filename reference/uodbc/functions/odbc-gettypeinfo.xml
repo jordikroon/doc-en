@@ -5,7 +5,7 @@
   <refname>odbc_gettypeinfo</refname>
   <refpurpose>Retrieves information about data types supported by the data source</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,9 +13,9 @@
    <methodparam><type>Odbc\Connection</type><parameter>odbc</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>data_type</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Retrieves information about data types supported by the data source.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -31,10 +31,10 @@
     <varlistentry>
      <term><parameter>data_type</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The data type, which can be used to restrict the information to a
        single data type.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -43,9 +43,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &odbc.result.object-return-falseforfailure;
-  </para>
+  </simpara>
   <para>
    The result set has the following columns:
    <itemizedlist>
@@ -66,9 +66,9 @@
     <listitem><simpara>MAXIMUM_SCALE</simpara></listitem>
    </itemizedlist>
   </para>
-  <para>
+  <simpara>
    The result set is ordered by DATA_TYPE and TYPE_NAME.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

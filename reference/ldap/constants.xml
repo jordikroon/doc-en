@@ -65,10 +65,10 @@
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
+    <simpara>
      Specifies the maximum number of entries that can be
      returned on a search operation.
-    </para>
+    </simpara>
     <note>
      <simpara>
       The actual size limit for operations is also bounded

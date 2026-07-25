@@ -12,10 +12,10 @@
    <type>string</type><methodname>urlencode</methodname>
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function is convenient when encoding a string to be used in a query
    part of a URL, as a convenient way to pass variables to the next page.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string to be encoded.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -36,7 +36,7 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a string in which all non-alphanumeric characters except
    <literal>-_.</literal> have been replaced with a percent
    (<literal>%</literal>) sign followed by two hex digits and spaces encoded
@@ -46,12 +46,12 @@
    differs from the <link xlink:href="&url.rfc;3986">RFC 3986</link> encoding (see
    <function>rawurlencode</function>) in that for historical reasons, spaces
    are encoded as plus (+) signs.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
-  &reftitle.examples; 
-  <para>  
+  &reftitle.examples;
+  <para>
    <example>
     <title><function>urlencode</function> example</title>
     <programlisting role="php">
@@ -102,23 +102,23 @@ bar: Not the same content as Data123!@-_ +
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     Be careful about variables that may match HTML entities. Things like
     &amp;amp, &amp;copy and &amp;pound are parsed by the browser and the
     actual entity is used instead of the desired variable name.  This is an
     obvious hassle that the W3C has been telling people about for years.
     The reference is here: <link xlink:href="&url.argsep;">&url.argsep;</link>.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     PHP supports changing the argument separator to the W3C-suggested
     semi-colon through the arg_separator .ini directive.  Unfortunately most
     user agents do not send form data in this semi-colon separated format.
     A more portable way around this is to use &amp;amp; instead of &amp; as
     the separator.  You don't need to change PHP's arg_separator for this.
     Leave it as &amp;, but simply encode your URLs using
-    <function>htmlentities</function> or 
+    <function>htmlentities</function> or
     <function>htmlspecialchars</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

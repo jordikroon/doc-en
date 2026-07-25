@@ -10,11 +10,11 @@
 <!-- {{{ SoapServer intro -->
   <section xml:id="soapserver.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     The SoapServer class provides a server for the <link xlink:href="&spec.soap1.1;">SOAP 1.1</link>
     and <link xlink:href="&spec.soap1.2;">SOAP 1.2</link> protocols. It can be
     used with or without a WSDL service description.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -48,15 +48,15 @@
     <varlistentry xml:id="soapserver.props.service">
      <term><varname>service</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapserver.props.soap-fault">
      <term><varname>__soap_fault</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

@@ -2,9 +2,9 @@
 <!-- $Revision$ -->
   <sect1 xml:id="install.fpm.configuration" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
    <title>Configuration</title>
-   <para>
+   <simpara>
     FPM uses &php.ini; syntax for its configuration file - <filename>php-fpm.conf</filename>, and pool configuration files.
-   </para>
+   </simpara>
 
    <sect2>
     <title>List of global <filename>php-fpm.conf</filename> directives</title>
@@ -15,9 +15,9 @@
        <type>string</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Path to PID file. Default value: none.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="error-log">
@@ -26,11 +26,11 @@
        <type>string</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Path to error log file. Default value:
         <literal>#INSTALL_PREFIX#/log/php-fpm.log</literal>.
         If it's set to "syslog", log is sent to syslogd instead of being written in a local file.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="log-level">
@@ -39,10 +39,10 @@
        <type>string</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Error log level. Possible values: alert, error, warning, notice,
         debug. Default value: notice.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="log-limit">
@@ -51,12 +51,12 @@
        <type>int</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Log limit for the logged lines which allows to log messages longer than
         1024 characters without wrapping.
         Default value: 1024.
         Available as of PHP 7.3.0.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="log-buffering">
@@ -65,11 +65,11 @@
        <type>bool</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Experimental logging without extra buffering.
         Default value: yes.
         Available as of PHP 7.3.0.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="syslog-facility">
@@ -78,10 +78,10 @@
        <type>string</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         used to specify what type of program is logging the message.
         Default value: daemon.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="syslog-ident">
@@ -90,12 +90,12 @@
        <type>string</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Prepended to every message.
         If you have multiple FPM instances running on the same server,
         you can change the default value which must suit common needs.
         Default value: php-fpm.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="emergency-restart-threshold">
@@ -104,11 +104,11 @@
        <type>int</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         If this number of child processes exit with SIGSEGV or SIGBUS within
         the time interval set by <literal>emergency_restart_interval</literal>,
         then FPM will restart. A value of 0 means 'Off'. Default value: 0 (Off).
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="emergency-restart-interval">
@@ -117,13 +117,13 @@
        <type>mixed</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Interval of time used by <literal>emergency_restart_interval</literal> to determine when
         a graceful restart will be initiated. This can be useful to work around
         accidental corruptions in an accelerator's shared memory.
         Available Units: s(econds), m(inutes), h(ours), or d(ays).
         Default Unit: seconds. Default value: 0 (Off).
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="process-control-timeout">
@@ -132,11 +132,11 @@
        <type>mixed</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Time limit for child processes to wait for a reaction on signals from
         master. Available units: s(econds), m(inutes), h(ours), or d(ays)
         Default Unit: seconds. Default value: 0.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="process-max">
@@ -145,12 +145,12 @@
        <type>int</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         The maximum number of processes FPM will fork. This has been design
         to control the global number of processes when using dynamic PM
         within a lot of pools. Use it with caution.
         Default value: 0.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="process-priority">
@@ -159,11 +159,11 @@
        <type>int</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Specify the nice(2) priority to apply to the master process (only if set).
         The value can vary from -19 (highest priority) to 20 (lower priority).
         Default value: not set.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="daemonize">
@@ -172,10 +172,10 @@
        <type>bool</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Send FPM to background. Set to 'no' to keep FPM in foreground for
         debugging. Default value: yes.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="rlimit-files-master">
@@ -184,10 +184,10 @@
        <type>int</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Set open file descriptor rlimit for the master process.
         Default value: system defined value.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="rlimit-core-master">
@@ -196,10 +196,10 @@
        <type>int</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Set max core size rlimit for the master process.
         Default value: 0.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="events-mechanism">
@@ -208,11 +208,11 @@
        <type>string</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Specify the event mechanism FPM will use.
         The following is available: epoll, kqueue (*BSD), port (Solaris), poll, select.
         Default value: not set (auto detection preferring epoll and kqueue).
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="systemd-interval">
@@ -221,12 +221,12 @@
        <type>int</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         When FPM is build with systemd integration, specify the interval,
         in second, between health report notification to systemd.
         Set to 0 to disable.
         Default value: 10.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
     </variablelist>
@@ -235,10 +235,10 @@
 
    <sect2>
     <title>List of pool directives</title>
-    <para>
+    <simpara>
      With FPM you can run several pools of processes with different setting.
      These are settings that can be tweaked per pool.
-    </para>
+    </simpara>
     <variablelist>
      <varlistentry xml:id="listen">
       <term>
@@ -246,11 +246,11 @@
        <type>string</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         The address on which to accept FastCGI requests. Valid syntaxes are:
         'ip.add.re.ss:port', 'port', '/path/to/unix/socket'. This option is
         mandatory for each pool.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="listen-backlog">
@@ -259,11 +259,11 @@
        <type>int</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Set listen(2) backlog. A value of <literal>-1</literal> means maximum on BSD systems.
         Default value: <literal>-1</literal> (FreeBSD or OpenBSD) or <literal>511</literal>
         (Linux and other platforms).
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="listen-allowed-clients">
@@ -272,13 +272,13 @@
        <type>string</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         List of IPv4 or IPv6 addresses of FastCGI clients which are allowed to connect. Equivalent
         to the FCGI_WEB_SERVER_ADDRS environment variable in the original PHP FastCGI (5.2.2+).
         Makes sense only with a tcp listening socket. Each address must be separated by a comma.
         If this value is left blank, connections will be accepted from any ip address.
         Default value: not set (any ip address accepted).
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="listen-owner">
@@ -287,12 +287,12 @@
        <type>string</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Set permissions for unix socket, if one is used. In Linux, read/write
         permissions must be set in order to allow connections from a web
         server. Many BSD-derived systems allow connections regardless of permissions.
         Default values: user and group are set as the running user, mode is set to 0660.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="listen-group">
@@ -301,9 +301,9 @@
        <type>string</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         See <literal>listen.owner</literal>.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="listen-mode">
@@ -312,9 +312,9 @@
        <type>string</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         See <literal>listen.owner</literal>.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="listen-acl-users">
@@ -323,11 +323,11 @@
        <type>string</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         When POSIX Access Control Lists are supported you can set them using this option.
         When set, <literal>listen.owner</literal> and <literal>listen.group</literal>
         are ignored. Value is a comma separated list of user names.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="listen-acl-groups">
@@ -336,10 +336,10 @@
        <type>string</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         See <literal>listen.acl_users</literal>.
         Value is a comma separated list of group names.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="listen-setfib">
@@ -348,10 +348,10 @@
        <type>int</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Set the associated the route table (FIB). FreeBSD only.
         Default Value: <literal>-1</literal>. Since PHP 8.2.0.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="user">
@@ -360,9 +360,9 @@
        <type>string</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Unix user of FPM processes. This option is mandatory.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="group">
@@ -371,10 +371,10 @@
        <type>string</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Unix group of FPM processes. If not set, the default user's group is
         used.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="pm">
@@ -383,15 +383,15 @@
        <type>string</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Choose how the process manager will control the number of child
         processes. Possible values: <literal>static</literal>, <literal>ondemand</literal>,
         <literal>dynamic</literal>.
         This option is mandatory.
-       </para>
-       <para>
+       </simpara>
+       <simpara>
         <literal>static</literal> - the number of child processes is fixed (<literal>pm.max_children</literal>).
-       </para>
+       </simpara>
        <simpara>
         <literal>ondemand</literal> - the processes spawn on demand (when requested,
         as opposed to dynamic, where <literal>pm.start_servers</literal> are started
@@ -416,12 +416,12 @@
         when <literal>pm</literal> is set to <literal>dynamic</literal> or <literal>ondemand</literal>.
         This option is mandatory.
        </simpara>
-       <para>
+       <simpara>
         This option sets the limit on the number of simultaneous requests that
         will be served. Equivalent to the ApacheMaxClients directive with
         mpm_prefork and to the <varname>PHP_FCGI_CHILDREN</varname> environment variable in the
         original PHP FastCGI.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="pm.start-servers">
@@ -430,11 +430,11 @@
        <type>int</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         The number of child processes created on startup.
         Used only when <literal>pm</literal> is set to <literal>dynamic</literal>.
         Default Value: (min_spare_servers + max_spare_servers) / 2.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="pm.min-spare-servers">
@@ -443,11 +443,11 @@
        <type>int</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         The desired minimum number of idle server processes. Used only when
         <literal>pm</literal> is set to <literal>dynamic</literal>. Also
         mandatory in this case.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="pm.max-spare-servers">
@@ -456,11 +456,11 @@
        <type>int</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         The desired maximum number of idle server processes. Used only when
         <literal>pm</literal> is set to <literal>dynamic</literal>. Also
         mandatory in this case.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="pm.max-spawn-rate">
@@ -469,11 +469,11 @@
        <type>int</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         The number of rate to spawn child processes at once. Used only when
         <literal>pm</literal> is set to <literal>dynamic</literal>.
         Default value: 32
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="pm.process-idle-timeout">
@@ -482,12 +482,12 @@
        <type>mixed</type>
       </term>
       <listitem>
-       <para>
-        The number of seconds after which an idle process will be killed. 
+       <simpara>
+        The number of seconds after which an idle process will be killed.
         Used only when <literal>pm</literal> is set to <literal>ondemand</literal>.
         Available units: s(econds)(default), m(inutes), h(ours), or d(ays).
         Default value: 10s.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="pm.max-requests">
@@ -496,12 +496,12 @@
        <type>int</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         The number of requests each child process should execute before
         respawning. This can be useful to work around memory leaks in 3rd party
         libraries. For endless request processing specify '0'. Equivalent to
         <varname>PHP_FCGI_MAX_REQUESTS</varname>. Default value: 0.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="pm.status-listen">
@@ -510,14 +510,14 @@
        <type>string</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         The address on which to accept FastCGI status request. This creates a new invisible pool
         that can handle requests independently. This is useful if the main pool is busy with long
         running requests because it is still possible to get the
         <link linkend="fpm.status">FPM status page</link> before finishing the long running
         requests. The syntax is the same as for <link linkend="listen">listen</link> directive.
         Default value: none.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="pm.status-path">
@@ -526,11 +526,11 @@
        <type>string</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         The URI to view the <link linkend="fpm.status">FPM status page</link>. This value must
         start with a leading slash (/). If this value is not set, no URI will be recognized as
         a status page. Default value: none.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="ping.path">
@@ -539,12 +539,12 @@
        <type>string</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         The ping URI to call the monitoring page of FPM. If this value is not
         set, no URI will be recognized as a ping page. This could be used to test
         from outside that FPM is alive and responding. Please note that the value must
         start with a leading slash (/).
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="ping.response">
@@ -553,11 +553,11 @@
        <type>string</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         This directive may be used to customize the response to a ping
         request. The response is formatted as text/plain with a 200 response code.
         Default value: pong.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="worker-process-priority">
@@ -566,11 +566,11 @@
        <type>int</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Specify the nice(2) priority to apply to the worker process (only if set).
         The value can vary from -19 (highest priority) to 20 (lower priority).
         Default value: not set.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="process-dumpable">
@@ -579,12 +579,12 @@
        <type>bool</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Set the process dumpable flag (PR_SET_DUMPABLE prctl) even if the process user
         or group is different than the master process user. It allows to create process
         core dump and ptrace the process for the pool user.
         Default Value: no. Since PHP 7.0.29, 7.1.17 and 7.2.5.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="prefix">
@@ -593,9 +593,9 @@
        <type>string</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Specify prefix for path evaluation
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="request-terminate-timeout">
@@ -604,13 +604,13 @@
        <type>mixed</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         The timeout for serving a single request after which the worker
         process will be killed. This option should be used when the 'max_execution_time'
         ini option does not stop script execution for some reason. A value of '0' means
         'Off'. Available units: s(econds)(default), m(inutes), h(ours), or d(ays).
         Default value: 0.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="request-terminate-timeout-track-finished">
@@ -619,14 +619,14 @@
        <type>bool</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         The timeout set by
         <link linkend="request-terminate-timeout">request_terminate_timeout</link> is not engaged
         after a <link linkend="function.fastcgi-finish-request">fastcgi_finish_request</link> or
         when application has finished and internal shutdown functions are being called. This
         directive will enable timeout limit to be applied unconditionally even in such cases.
         Default value: no. Since PHP 7.3.0.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="request-slowlog-timeout">
@@ -635,12 +635,12 @@
        <type>mixed</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         The timeout for serving a single request after which a PHP backtrace
         will be dumped to the 'slowlog' file. A value of '0' means 'Off'.
         Available units: s(econds)(default), m(inutes), h(ours), or d(ays).
         Default value: 0.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="request-slowlog-trace-depth">
@@ -649,10 +649,10 @@
        <type>int</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         The depth of slowlog log stack trace.
         Default value: 20. Since PHP 7.2.0.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="slowlog">
@@ -661,10 +661,10 @@
        <type>string</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         The log file for slow requests. Default value:
         <literal>#INSTALL_PREFIX#/log/php-fpm.log.slow</literal>.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="rlimit-files">
@@ -673,9 +673,9 @@
        <type>int</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Set open file descriptor rlimit for child processes in this pool. Default value: system defined value.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="rlimit-core">
@@ -684,10 +684,10 @@
        <type>int</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Set max core size rlimit for child processes in this pool. Possible Values: 'unlimited' or an integer greater or equal to 0.
         Default value: system defined value.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="chroot">
@@ -696,10 +696,10 @@
        <type>string</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Chroot to this directory at the start. This value must be defined as
         an absolute path. When this value is not set, chroot is not used.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="chdir">
@@ -708,10 +708,10 @@
        <type>string</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Chdir to this directory at the start. This value must be an absolute
         path. Default value: current directory or / when chroot.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="catch-workers-output">
@@ -720,11 +720,11 @@
        <type>bool</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Redirect worker stdout and stderr into main error log. If not set,
         stdout and stderr will be redirected to /dev/null according to FastCGI specs.
         Default value: no.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="decorate-workers-output">
@@ -733,12 +733,12 @@
        <type>bool</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Enable the output decoration for workers output when <link
         linkend="catch-workers-output">catch_workers_output</link> is enabled.
         Default value: yes.
         Available as of PHP 7.3.0.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="clear-env">
@@ -747,13 +747,13 @@
        <type>bool</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Clear environment in FPM workers.
         Prevents arbitrary environment variables from reaching FPM worker processes
         by clearing the environment in workers before env vars specified in this
         pool configuration are added.
         Default value: Yes.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="security-limit-extensions">
@@ -762,13 +762,13 @@
        <type>string</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Limits the extensions of the main script FPM will allow to parse.
         This can prevent configuration mistakes on the web server side.
         You should only limit FPM to .php extensions to prevent malicious
         users to use other extensions to execute php code.
         Default value: .php .phar
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="apparmor-hat">
@@ -777,10 +777,10 @@
        <type>string</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         If AppArmor is enabled, it allows to change a hat.
         Default value: not set
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="access-log">
@@ -789,10 +789,10 @@
        <type>string</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         The access log file.
         Default value: not set
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
      <varlistentry xml:id="access-format">
@@ -996,10 +996,10 @@
        <type>array</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         A list of request_uri values which should be filtered from the access log.
         Default value: not set. Since PHP 8.2.0.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
     </variablelist>
@@ -1031,10 +1031,10 @@ php_admin_value[memory_limit] = 32M
      not overwrite previously defined <filename>php.ini</filename> values,
      but will append the new value instead.
     </para>
-    <para>
+    <simpara>
      Settings defined with <literal>php_admin_value</literal> and <literal>php_admin_flag</literal>
      cannot be overridden with <function>ini_set</function>.
-    </para>
+    </simpara>
     <para>
      PHP settings can be set in the webserver configuration.
      <example>
@@ -1050,13 +1050,13 @@ fastcgi_param  PHP_ADMIN_VALUE "open_basedir=/var/www/htdocs";
       </programlisting>
      </example>
      <caution>
-      <para>
+      <simpara>
        Because these settings are passed to php-fpm as fastcgi headers,
        php-fpm should not be bound to a worldwide accessible address.
        Otherwise, anyone could alter the PHP configuration options.
        See also
        <link linkend="listen-allowed-clients">listen.allowed_clients</link>.
-      </para>
+      </simpara>
      </caution>
      <note>
       <simpara>

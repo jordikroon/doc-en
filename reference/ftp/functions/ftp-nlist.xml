@@ -26,12 +26,12 @@
     <varlistentry>
      <term><parameter>directory</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The directory to be listed. This parameter can also include arguments, eg.
        <literal>ftp_nlist($ftp, "-la /your/dir");</literal>.
        Note that this parameter isn't escaped so there may be some issues with
-       filenames containing spaces and other characters. 
-      </para>
+       filenames containing spaces and other characters.
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -39,10 +39,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array of filenames from the specified directory on success or
    &false; on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -61,7 +61,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -84,7 +84,7 @@ $contents = ftp_nlist($ftp, ".");
 var_dump($contents);
 
 ?>
-]]>  
+]]>
     </programlisting>
     &example.outputs.similar;
     <screen>

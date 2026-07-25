@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="phar.setstub">
+<refentry xml:id="phar.setstub" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>Phar::setStub</refname>
   <refpurpose>Used to set the PHP loader or bootstrap stub of a Phar archive</refpurpose>
@@ -14,10 +14,10 @@
   </methodsynopsis>
   &phar.write;
 
-  <para>
+  <simpara>
    This method is used to add a PHP bootstrap loader stub to a new Phar archive, or
    to replace the loader stub in an existing Phar archive.
-  </para>
+  </simpara>
   <para>
    The loader stub for a Phar archive is used whenever an archive is included directly
    as in this example:
@@ -35,10 +35,10 @@ php myphar.phar
     ]]>
    </screen>
   </para>
-  <para>
+  <simpara>
    The loader is not accessed when including a file through the <literal>phar</literal>
    stream wrapper like so:
-  </para>
+  </simpara>
   <programlisting role="php">
    <![CDATA[
 <?php
@@ -56,10 +56,10 @@ include 'phar://myphar.phar/somefile.php';
     <varlistentry>
      <term><parameter>stub</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A string or an open stream handle to use as the executable stub for this
        phar archive.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -90,13 +90,13 @@ include 'phar://myphar.phar/somefile.php';
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   <classname>UnexpectedValueException</classname> is thrown if
+  <simpara>
+   <exceptionname>UnexpectedValueException</exceptionname> is thrown if
    <link linkend="ini.phar.readonly">phar.readonly</link> is enabled
    in php.ini.
-   <classname>PharException</classname> is thrown if any problems are encountered
+   <exceptionname>PharException</exceptionname> is thrown if any problems are encountered
    flushing changes to disk.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -130,8 +130,8 @@ include 'phar://myphar.phar/somefile.php';
   <para>
    <example>
     <title>A <function>Phar::setStub</function> example</title>
-    <para>
-    </para>
+    <simpara>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

@@ -13,10 +13,10 @@
    <methodparam><type class="union"><type>string</type><type>null</type></type><parameter>filename</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>foreground_color</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
-   Outputs or save an <acronym>XBM</acronym> version of the given 
-   <parameter>image</parameter>. 
-  </para>
+  <simpara>
+   Outputs or save an <acronym>XBM</acronym> version of the given
+   <parameter>image</parameter>.
+  </simpara>
   <note>
    <simpara>
     <function>imagexbm</function> doesn't apply any padding, so the image width
@@ -33,25 +33,25 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>The path to save the file to, given as &string;. If &null;, the raw image stream will be output directly.</para>
-      <para>
+      <simpara>The path to save the file to, given as &string;. If &null;, the raw image stream will be output directly.</simpara>
+      <simpara>
        The <parameter>filename</parameter> (without the .xbm extension) is also
        used for the C identifiers of the <acronym>XBM</acronym>, whereby non
        alphanumeric characters of the current locale are substituted by
        underscores. If <parameter>filename</parameter> is set to &null;,
        <literal>image</literal> is used to build the C identifiers.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>foreground_color</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        You can set the foreground color with this parameter by setting an
        identifier obtained from <function>imagecolorallocate</function>.
        The default foreground color is black. All other colors are treated as
        background.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -59,9 +59,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
   &gd.return.trueonerror;
  </refsect1>
 

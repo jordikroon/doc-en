@@ -13,7 +13,7 @@
    <methodparam><type>int</type><parameter>julian_day</parameter></methodparam>
    <methodparam><type>int</type><parameter>calendar</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>cal_from_jd</function> converts the Julian day given in
    <parameter>julian_day</parameter> into a date of the specified
    <parameter>calendar</parameter>. Supported
@@ -22,7 +22,7 @@
    <constant>CAL_JULIAN</constant>,
    <constant>CAL_JEWISH</constant> and
    <constant>CAL_FRENCH</constant>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -32,17 +32,17 @@
     <varlistentry>
      <term><parameter>julian_day</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Julian day as integer
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>calendar</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Calendar to convert to
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -51,13 +51,13 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array containing calendar information like month, day, year,
    day of week (<literal>dow</literal>), abbreviated and full names of weekday and month and the
    date in string form "month/day/year".
    The day of week ranges from <literal>0</literal> (Sunday) to
    <literal>6</literal> (Saturday).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -99,9 +99,9 @@ Array
   <para>
    <simplelist>
     <member><function>cal_to_jd</function></member>
-    <member><function>jdtofrench</function></member>  
+    <member><function>jdtofrench</function></member>
     <member><function>jdtogregorian</function></member>
-    <member><function>jdtojewish</function></member>  
+    <member><function>jdtojewish</function></member>
     <member><function>jdtojulian</function></member>
     <member><function>jdtounix</function></member>
    </simplelist>

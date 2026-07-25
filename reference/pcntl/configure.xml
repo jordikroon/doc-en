@@ -2,17 +2,17 @@
 <!-- $Revision$ -->
 <section xml:id="pcntl.installation" xmlns="http://docbook.org/ns/docbook">
  &reftitle.install;
- <para>
+ <simpara>
   Process Control support in PHP is not enabled by default.
   You have to compile the CGI or CLI version of PHP with
   <option role="configure">--enable-pcntl</option> configuration
   option when compiling PHP to enable Process Control support.
- </para>
+ </simpara>
  <note>
-  <para>
+  <simpara>
    Currently, this module will not function on non-Unix platforms
    (Windows).
-  </para>
+  </simpara>
  </note>
 </section>
 

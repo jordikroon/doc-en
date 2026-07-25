@@ -5,7 +5,7 @@
   <refname>socket_read</refname>
   <refpurpose>Reads a maximum of length bytes from a socket</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,12 +14,12 @@
    <methodparam><type>int</type><parameter>length</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>mode</parameter><initializer><constant>PHP_BINARY_READ</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    The function <function>socket_read</function> reads from the <classname>Socket</classname> instance
    <parameter>socket</parameter> created by the
    <function>socket_create</function> or
-   <function>socket_accept</function> functions. 
-  </para>
+   <function>socket_accept</function> functions.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,22 +29,22 @@
     <varlistentry>
      <term><parameter>socket</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A <classname>Socket</classname> instance created with <function>socket_create</function>
        or <function>socket_accept</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The maximum number of bytes read is specified by the
        <parameter>length</parameter> parameter. Otherwise you can use
        <literal>\r</literal>, <literal>\n</literal>,
        or <literal>\0</literal> to end reading (depending on the <parameter>mode</parameter>
        parameter, see below).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -75,19 +75,19 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    <function>socket_read</function> returns the data as a string on success,
    or &false; on error (including if the remote host has closed the
    connection). The error code can be retrieved with
    <function>socket_last_error</function>. This code may be passed to
    <function>socket_strerror</function> to get a textual representation of
    the error.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     <function>socket_read</function> returns a zero length string ("")
     when there is no more data to read.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

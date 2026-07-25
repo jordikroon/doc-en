@@ -12,10 +12,10 @@
    <modifier>public</modifier> <type>bool</type><methodname>ReflectionFunctionAbstract::isVariadic</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks if the function is
    <link linkend="functions.variable-arg-list">variadic</link>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the function is variadic, otherwise &false;.
-  </para>
+  </simpara>
  </refsect1>
 </refentry>
 <!-- Keep this comment at the end of the file

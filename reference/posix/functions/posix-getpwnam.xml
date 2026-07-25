@@ -5,16 +5,16 @@
   <refname>posix_getpwnam</refname>
   <refpurpose>Return info about a user by username</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>array</type><type>false</type></type><methodname>posix_getpwnam</methodname>
    <methodparam><type>string</type><parameter>username</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns an <type>array</type> of information about the given user.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>username</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An alphanumeric username.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -36,7 +36,7 @@
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
   <para>
-   On success an array with the following elements is returned, else 
+   On success an array with the following elements is returned, else
    &false; is returned:
    <table>
     <title>The user information array</title>

@@ -5,16 +5,16 @@
   <refname>gmp_sqrtrem</refname>
   <refpurpose>Square root with remainder</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>array</type><methodname>gmp_sqrtrem</methodname>
    <methodparam><type class="union"><type>GMP</type><type>int</type><type>string</type></type><parameter>num</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Calculate the square root of a number, with remainder.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,10 +24,10 @@
     <varlistentry>
      <term><parameter>num</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number being square rooted.
-      </para>
-      &gmp.parameter; 
+      </simpara>
+      &gmp.parameter;
      </listitem>
     </varlistentry>
    </variablelist>
@@ -36,12 +36,12 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns array where first element is the integer square root of
    <parameter>num</parameter> and the second is the remainder
    (i.e., the difference between <parameter>num</parameter> and the
    first element squared).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

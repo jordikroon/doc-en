@@ -15,11 +15,11 @@
    <methodparam><type>int</type><parameter>blue</parameter></methodparam>
    <methodparam><type>int</type><parameter>alpha</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function is guaranteed to return a color index for a
    requested color, either the exact color or the closest possible
    alternative.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -29,29 +29,29 @@
     <varlistentry>
      <term><parameter>red</parameter></term>
      <listitem>
-      <para>&gd.value.red;</para>
+      <simpara>&gd.value.red;</simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>green</parameter></term>
      <listitem>
-      <para>&gd.value.green;</para>
+      <simpara>&gd.value.green;</simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>blue</parameter></term>
      <listitem>
-      <para>&gd.value.blue;</para>
+      <simpara>&gd.value.blue;</simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>alpha</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A value between <literal>0</literal> and <literal>127</literal>.
-       <literal>0</literal> indicates completely opaque while 
+       <literal>0</literal> indicates completely opaque while
        <literal>127</literal> indicates completely transparent.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -61,9 +61,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a color index.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -101,7 +101,7 @@ $colors[] = imagecolorresolvealpha($im, 0, 0, 200, 127);
 // Output
 print_r($colors);
 ?>
-]]>  
+]]>
    </programlisting>
    &example.outputs.similar;
    <screen>

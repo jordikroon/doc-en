@@ -3,7 +3,7 @@
 <reference xml:id="class.parseerror" role="exception" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
  <title>ParseError</title>
  <titleabbrev>ParseError</titleabbrev>
- 
+
  <partintro>
 
   <section xml:id="parseerror.intro">
@@ -15,12 +15,12 @@
    </para>
    <note>
     <simpara>
-     <classname>ParseError</classname> extends <classname>CompileError</classname>
-     as of PHP 7.3.0. Formerly, it extended <classname>Error</classname>.
+     <exceptionname>ParseError</exceptionname> extends <exceptionname>CompileError</exceptionname>
+     as of PHP 7.3.0. Formerly, it extended <exceptionname>Error</exceptionname>.
     </simpara>
-   </note> 
+   </note>
   </section>
- 
+
   <section xml:id="parseerror.synopsis">
    &reftitle.classsynopsis;
 
@@ -41,7 +41,7 @@
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.error')/db:refentry/db:refsect1[@role='description']/descendant::db:constructorsynopsis[@role='Error'])"/>
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.error')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[@role='Error'])"/>
    </classsynopsis>
- 
+
   </section>
  </partintro>
 </reference>

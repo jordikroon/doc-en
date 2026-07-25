@@ -15,9 +15,9 @@
    <methodparam choice="opt"><type>int</type><parameter>depth</parameter><initializer>512</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Takes a JSON encoded string and converts it into a PHP value.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,41 +27,41 @@
     <varlistentry>
      <term><parameter>json</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <parameter>json</parameter> <type>string</type> being decoded.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        This function only works with UTF-8 encoded strings.
-      </para>
+      </simpara>
       &json.implementation.superset;
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>associative</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        When &true;, JSON objects will be returned as
        associative &array;s; when &false;, JSON objects will be returned as &object;s.
        When &null;, JSON objects will be returned as associative &array;s or
        &object;s depending on whether <constant>JSON_OBJECT_AS_ARRAY</constant>
        is set in the <parameter>flags</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>depth</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Maximum nesting depth of the structure being decoded.
        The value must be greater than <literal>0</literal>,
        and less than or equal to <literal>2147483647</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Bitmask of
        <constant>JSON_BIGINT_AS_STRING</constant>,
        <constant>JSON_INVALID_UTF8_IGNORE</constant>,
@@ -70,7 +70,7 @@
        <constant>JSON_THROW_ON_ERROR</constant>.
        The behaviour of these constants is described on the
        <link linkend="json.constants">JSON constants</link> page.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -79,23 +79,23 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the value encoded in <parameter>json</parameter> as an appropriate
    PHP type. Unquoted values <literal>true</literal>, <literal>false</literal>
    and <literal>null</literal> are returned as &true;,
    &false; and &null; respectively. &null; is returned if the
    <parameter>json</parameter> cannot be decoded or if the encoded data is
    deeper than the nesting limit.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    If <parameter>depth</parameter> is outside the allowed range,
-   a <classname>ValueError</classname> is thrown as of PHP 8.0.0,
+   a <exceptionname>ValueError</exceptionname> is thrown as of PHP 8.0.0,
    while previously, an error of level <constant>E_WARNING</constant> was raised.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -210,7 +210,7 @@ print $obj->{'foo-bar'}; // 12345
 // the following strings are valid JavaScript but not valid JSON
 
 // the name and value must be enclosed in double quotes
-// single quotes are not valid 
+// single quotes are not valid
 $bad_json = "{ 'bar': 'baz' }";
 json_decode($bad_json); // null
 
@@ -318,15 +318,15 @@ object(stdClass)#1 (1) {
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     The JSON spec is not JavaScript, but a subset of JavaScript.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     In the event of a failure to decode, <function>json_last_error</function>
     can be used to determine the exact nature of the error.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

@@ -5,18 +5,18 @@
   <refname>oci_free_statement</refname>
   <refpurpose>Frees all resources associated with statement or cursor</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>bool</type><methodname>oci_free_statement</methodname>
    <methodparam><type>resource</type><parameter>statement</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Frees resources associated with Oracle's cursor or statement, which was
    received from as a result of <function>oci_parse</function> or obtained
    from Oracle.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,9 +26,9 @@
     <varlistentry>
      <term><parameter>statement</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A valid OCI statement identifier.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,9 +37,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

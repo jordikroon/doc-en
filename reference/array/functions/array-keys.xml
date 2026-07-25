@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.array-keys">
+<refentry xml:id="function.array-keys" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>array_keys</refname>
   <refpurpose>Return all the keys or a subset of the keys of an array</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="procedural">
@@ -18,15 +18,15 @@
    <methodparam><type>mixed</type><parameter>filter_value</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>strict</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>array_keys</function> returns the keys, numeric and
    string, from the <parameter>array</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If a <parameter>filter_value</parameter> is specified,
    then only the keys for that value are returned. Otherwise, all
    the keys from the <parameter>array</parameter> are returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -36,25 +36,25 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An array containing keys to return.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>filter_value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If specified, then only keys containing this value are returned.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>strict</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Determines if strict comparison (===) should be used during the search.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -63,9 +63,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array of all the keys in <parameter>array</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

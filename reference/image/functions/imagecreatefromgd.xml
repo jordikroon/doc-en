@@ -11,9 +11,9 @@
    <type class="union"><type>GdImage</type><type>false</type></type><methodname>imagecreatefromgd</methodname>
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Create a new image from GD file or URL.
-  </para>
+  </simpara>
   &tip.fopen-wrapper;
  </refsect1>
  <refsect1 role="parameters">
@@ -23,9 +23,9 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path to the GD file.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -33,7 +33,7 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>&gd.return.identifier;</para>
+  <simpara>&gd.return.identifier;</simpara>
  </refsect1>
 
  <refsect1 role="changelog">

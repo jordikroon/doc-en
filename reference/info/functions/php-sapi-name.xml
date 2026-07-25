@@ -5,7 +5,7 @@
   <refname>php_sapi_name</refname>
   <refpurpose>Returns the type of interface between web server and PHP</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -28,19 +28,19 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the interface type, as a lowercase string, &return.falseforfailure;.
-  </para>
-  <para>
-   Although not exhaustive, the possible return values include 
-   <literal>apache</literal>, 
-   <literal>apache2handler</literal>, 
-   <literal>cgi</literal> (until PHP 5.3), 
+  </simpara>
+  <simpara>
+   Although not exhaustive, the possible return values include
+   <literal>apache</literal>,
+   <literal>apache2handler</literal>,
+   <literal>cgi</literal> (until PHP 5.3),
    <literal>cgi-fcgi</literal>, <literal>cli</literal>, <literal>cli-server</literal>,
    <literal>embed</literal>, <literal>fpm-fcgi</literal>,
-   <literal>litespeed</literal>, 
+   <literal>litespeed</literal>,
    <literal>phpdbg</literal>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -48,10 +48,10 @@
   <para>
    <example>
     <title><function>php_sapi_name</function> example</title>
-    <para>
+    <simpara>
      This example checks for the substring <literal>cgi</literal>
      because it may also be <literal>cgi-fcgi</literal>.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -72,18 +72,18 @@ if (substr($sapi_type, 0, 3) == 'cgi') {
   &reftitle.notes;
   <note>
    <title>An alternative approach</title>
-   <para>
+   <simpara>
     The PHP constant <constant>PHP_SAPI</constant> has the same value
     as <function>php_sapi_name</function>.
-   </para>
+   </simpara>
   </note>
   <tip>
    <title>A potential gotcha</title>
-   <para>
+   <simpara>
     The defined <acronym>SAPI</acronym> may not be obvious, because for
-    example instead of <literal>apache</literal> it may be defined as 
+    example instead of <literal>apache</literal> it may be defined as
     <literal>apache2handler</literal>.
-   </para>
+   </simpara>
   </tip>
  </refsect1>
 

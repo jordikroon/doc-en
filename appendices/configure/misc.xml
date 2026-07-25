@@ -8,9 +8,9 @@
      <option role="configure">--enable-debug</option>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Compile with debugging symbols.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="configure.with-layout">
@@ -18,11 +18,11 @@
      <option role="configure">--with-layout=TYPE</option>
     </term>
     <listitem>
-     <para>
-      Sets how installed files will be laid out. Type is one of PHP (default) 
+     <simpara>
+      Sets how installed files will be laid out. Type is one of PHP (default)
       or GNU. Note that if installing manpages under PREFIX (default), choose the
       GNU style in order for them to be found in the search path of <filename>manpath</filename> utility.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="configure.with-pear">
@@ -30,9 +30,9 @@
      <option role="configure">--with-pear=DIR</option>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Install PEAR in DIR (default PREFIX/lib/php).
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="configure.without-pear">
@@ -40,9 +40,9 @@
      <option role="configure">--without-pear</option>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Do not install PEAR.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
 
@@ -51,9 +51,9 @@
      <option role="configure">--enable-sigchild</option>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Enable PHP's own SIGCHLD handler.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="configure.disable-rpath">
@@ -61,9 +61,9 @@
      <option role="configure">--disable-rpath</option>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Disable passing additional runtime library search paths.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="configure.enable-libgcc">
@@ -71,9 +71,9 @@
      <option role="configure">--enable-libgcc</option>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Enable explicitly linking against libgcc.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="configure.enable-php-streams">
@@ -81,10 +81,10 @@
      <option role="configure">--enable-php-streams</option>
     </term>
     <listitem>
-     <para>
-      Include experimental PHP streams. Do not use unless you are testing the 
+     <simpara>
+      Include experimental PHP streams. Do not use unless you are testing the
 code!
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="configure.with-zlib-dir">
@@ -92,9 +92,9 @@ code!
      <option role="configure">--with-zlib-dir[=DIR]</option>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Define the location of zlib install directory.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
 
@@ -103,9 +103,9 @@ code!
      <option role="configure">--with-tsrm-pthreads</option>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Use POSIX threads (default).
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="configure.enable-shared">
@@ -113,9 +113,9 @@ code!
      <option role="configure">--enable-shared[=PKGS]</option>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Build shared libraries [default=yes].
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="configure.enable-static">
@@ -123,9 +123,9 @@ code!
      <option role="configure">--enable-static[=PKGS]</option>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Build static libraries [default=yes].
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="configure.enable-fast-install">
@@ -133,9 +133,9 @@ code!
      <option role="configure">--enable-fast-install[=PKGS]</option>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Optimize for fast installation [default=yes].
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="configure.with-gnu-ld">
@@ -143,9 +143,9 @@ code!
      <option role="configure">--with-gnu-ld</option>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Assume the C compiler uses GNU ld [default=no].
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="configure.disable-libtool-lock">
@@ -153,9 +153,9 @@ code!
      <option role="configure">--disable-libtool-lock</option>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Avoid locking (might break parallel builds).
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="configure.with-pic">
@@ -163,9 +163,9 @@ code!
      <option role="configure">--with-pic</option>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Try to use only PIC/non-PIC objects [default=use both].
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
 
@@ -174,10 +174,10 @@ code!
      <option role="configure">--enable-versioning</option>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Export only required symbols.
       See INSTALL for more information.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>

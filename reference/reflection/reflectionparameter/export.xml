@@ -19,9 +19,9 @@
    <methodparam><type>string</type><parameter>parameter</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>return</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Exports.
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -34,25 +34,25 @@
     <varlistentry>
      <term><parameter>function</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The function name.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>parameter</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The parameter name.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>return</parameter></term>
      <listitem>
-      <para>
-       &reflection.export.param.return;       
-      </para>
+      <simpara>
+       &reflection.export.param.return;
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -61,9 +61,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The exported reflection.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

@@ -15,9 +15,9 @@
    <methodparam choice="opt"><type class="union"><type>array</type><type>null</type></type><parameter>xpath</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>array</type><type>null</type></type><parameter>nsPrefixes</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Canonicalize nodes to a string
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,18 +26,18 @@
    <varlistentry>
     <term><parameter>exclusive</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Enable exclusive parsing of only the nodes matched by the provided
       xpath or namespace prefixes.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>withComments</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Retain comments in output.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
@@ -47,9 +47,9 @@
    <varlistentry>
     <term><parameter>nsPrefixes</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       An array of namespace prefixes to filter the nodes by.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -57,9 +57,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns canonicalized nodes as a string&return.falseforfailure;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -67,9 +67,9 @@
   <para>
    <example>
     <title>Example with XPath query</title>
-    <para>
+    <simpara>
      This example demonstrates advanced usage canonicalizing and filtering the nodes by an XPath query.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

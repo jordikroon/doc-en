@@ -44,7 +44,7 @@
     <type>string</type>
    </term>
    <listitem>
-    <para>
+    <simpara>
      Whether to pool ODBC connections. Can be one of <literal>"strict"</literal>,
      <literal>"relaxed"</literal> or <literal>"off"</literal> (equals to
      <literal>""</literal>). The parameter describes how strict the connection
@@ -55,24 +55,24 @@
      the use of cached connections when similar connection parameters are
      used.  This can result in increased use of the cache, at the risk of
      bleeding connection information between (for example) virtual hosts.
-    </para>
-    <para>
+    </simpara>
+    <simpara>
      This setting can only be changed from the &php.ini;
      file, and affects the entire process; any other modules loaded into the
      process that use the same ODBC libraries will be affected too, including
      the <link linkend="ref.uodbc">Unified ODBC extension</link>.
-    </para>
+    </simpara>
     <warning>
-     <para>
+     <simpara>
       <userinput>relaxed</userinput> matching should not be used on a shared
       server, for security reasons.
-     </para>
+     </simpara>
     </warning>
     <tip>
-     <para>
+     <simpara>
       Leave this setting at the default <userinput>strict</userinput> setting
       unless you have good reason to change it.
-     </para>
+     </simpara>
     </tip>
    </listitem>
   </varlistentry>
@@ -82,25 +82,25 @@
     <type>string</type>
    </term>
    <listitem>
-    <para>
+    <simpara>
      If you compile PDO_ODBC using the <literal>db2</literal> flavour,
      this setting sets the value of the DB2INSTANCE environment variable on
      Linux and UNIX operating systems to the specified name of the DB2
      instance. This enables PDO_ODBC to resolve the location of the DB2
      libraries and make cataloged connections to DB2 databases.
-    </para>
-    <para>
+    </simpara>
+    <simpara>
      This setting can only be changed from the &php.ini;
      file, and affects the entire process; any other modules loaded into the
      process that use the same ODBC libraries will be affected too, including
      the <link linkend="ref.uodbc">Unified ODBC extension</link>.
-    </para>
-    <para>
+    </simpara>
+    <simpara>
      This setting has no effect on Windows.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
-  
+
  </variablelist>
  </para>
 </section>

@@ -14,25 +14,25 @@
    <type>bool</type><methodname>is_scalar</methodname>
    <methodparam><type>mixed</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Finds whether an <link linkend="language.expressions">expression</link> is
    evaluated as a scalar value.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    See <link linkend="language.types.type-system.atomic.scalar">scalar types</link> for more information.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     <function>is_scalar</function> does not consider <type>resource</type>
-    type values to be scalar as resources are abstract datatypes 
-    which are currently based on integers. This implementation detail should 
+    type values to be scalar as resources are abstract datatypes
+    which are currently based on integers. This implementation detail should
     not be relied upon, as it may change.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     <function>is_scalar</function> does not consider NULL to be scalar.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -43,9 +43,9 @@
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The variable being evaluated.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -54,10 +54,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if <parameter>value</parameter> is a scalar, &false;
    otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -70,7 +70,7 @@
            programmers.  -->
 <![CDATA[
 <?php
-function show_var($var) 
+function show_var($var)
 {
     if (is_scalar($var)) {
         echo $var, PHP_EOL;

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.disk-free-space">
+<refentry xml:id="function.disk-free-space" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>disk_free_space</refname>
   <refpurpose>Returns available space on filesystem or disk partition</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>float</type><type>false</type></type><methodname>disk_free_space</methodname>
    <methodparam><type>string</type><parameter>directory</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Given a string containing a directory, this function will return the
    number of bytes available on the corresponding filesystem or disk
    partition.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,15 +26,15 @@
     <varlistentry>
      <term><parameter>directory</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A directory of the filesystem or disk partition.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         Given a file name instead of a directory, the behaviour of the
         function is unspecified and may differ between operating systems and
         PHP versions.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
@@ -44,10 +44,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the number of available bytes as a float
    &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

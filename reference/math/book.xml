@@ -8,13 +8,13 @@
  <!-- {{{ preface -->
  <preface xml:id="intro.math">
   &reftitle.intro;
-  <para>
+  <simpara>
    These math functions will only handle values within the range of
    the <type>int</type> and <type>float</type> types.
    To handle larger numbers, take a look at the
    <link linkend="book.bc">arbitrary precision math</link> or
    <link linkend="book.gmp">GNU Multiple Precision functions</link> functions.
-  </para>
+  </simpara>
 
   <section>
    &reftitle.seealso;

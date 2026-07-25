@@ -11,10 +11,10 @@
    <modifier>public</modifier> <type class="union"><type>DOMAttr</type><type>false</type></type><methodname>DOMDocument::createAttribute</methodname>
    <methodparam><type>string</type><parameter>localName</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   This function creates a new instance of class <classname>DOMAttr</classname>. 
+  <simpara>
+   This function creates a new instance of class <classname>DOMAttr</classname>.
    &dom.node.inserted;
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -23,9 +23,9 @@
     <varlistentry>
      <term><parameter>localName</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The name of the attribute.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -33,9 +33,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The new <classname>DOMAttr</classname> or &false; if an error occurred.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="errors">
   &reftitle.errors;
@@ -48,9 +48,9 @@
     <varlistentry>
      <term><constant>DOM_INVALID_CHARACTER_ERR</constant></term>
      <listitem>
-      <para>
+      <simpara>
        Raised if <parameter>localName</parameter> contains an invalid character.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

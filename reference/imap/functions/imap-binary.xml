@@ -11,10 +11,10 @@
    <type class="union"><type>string</type><type>false</type></type><methodname>imap_binary</methodname>
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Convert an 8bit string to a base64 string according to <link
    xlink:href="&url.rfc;2045">RFC2045</link>, Section 6.8.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -23,9 +23,9 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The 8bit string
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -33,9 +33,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a base64 encoded string, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="seealso">
   &reftitle.seealso;

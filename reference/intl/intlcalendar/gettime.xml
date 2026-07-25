@@ -8,24 +8,24 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="IntlCalendar">
    <modifier>public</modifier> <type class="union"><type>float</type><type>false</type></type><methodname>IntlCalendar::getTime</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>float</type><type>false</type></type><methodname>intlcal_get_time</methodname>
    <methodparam><type>IntlCalendar</type><parameter>calendar</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the time associated with this object, expressed as the number of
    milliseconds since the epoch.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -42,10 +42,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A <type>float</type> representing the number of milliseconds elapsed since the
    reference time (1 Jan 1970 00:00:00 UTC),&return.falseforfailure;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

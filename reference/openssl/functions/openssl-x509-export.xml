@@ -5,7 +5,7 @@
   <refname>openssl_x509_export</refname>
   <refpurpose>Exports a certificate as a string</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,11 +14,11 @@
    <methodparam><type>string</type><parameter role="reference">output</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>no_text</parameter><initializer>&true;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>openssl_x509_export</function> stores
    <parameter>certificate</parameter> into a string named by
    <parameter>output</parameter> in a <acronym>PEM</acronym> encoded format.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,9 +29,9 @@
     <varlistentry>
      <term><parameter>output</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        On success, this will hold the <acronym>PEM</acronym>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -46,9 +46,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

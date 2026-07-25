@@ -14,21 +14,21 @@
    <methodparam><type>PgSql\Result</type><parameter>result</parameter></methodparam>
    <methodparam><type>int</type><parameter>field_code</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_result_error_field</function> returns one of the detailed error message
    fields associated with <parameter>result</parameter> instance. The error field is specified by
    the <parameter>field_code</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Because <function>pg_query</function> and <function>pg_query_params</function> return &false; if the query fails,
    you must use <function>pg_send_query</function> and
    <function>pg_get_result</function> to get the result handle.
-  </para>
-  <para>
-   If you need to get additional error information from failed <function>pg_query</function> queries,  
+  </simpara>
+  <simpara>
+   If you need to get additional error information from failed <function>pg_query</function> queries,
    use <function>pg_set_error_verbosity</function> and <function>pg_last_error</function>
    and then parse the result.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -44,7 +44,7 @@
     <varlistentry>
      <term><parameter>field_code</parameter></term>
      <listitem>
-        <para>
+        <simpara>
          Possible <parameter>field_code</parameter> values are: <constant>PGSQL_DIAG_SEVERITY</constant>,
          <constant>PGSQL_DIAG_SQLSTATE</constant>, <constant>PGSQL_DIAG_MESSAGE_PRIMARY</constant>,
          <constant>PGSQL_DIAG_MESSAGE_DETAIL</constant>,
@@ -54,7 +54,7 @@
          <constant>PGSQL_DIAG_CONTEXT</constant>, <constant>PGSQL_DIAG_SOURCE_FILE</constant>,
          <constant>PGSQL_DIAG_SOURCE_LINE</constant> or
          <constant>PGSQL_DIAG_SOURCE_FUNCTION</constant>.
-        </para>
+        </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -63,8 +63,8 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>A <type>string</type> containing the contents of the error field, &null; if the field does not exist or &false;
-  on failure.</para>
+  <simpara>A <type>string</type> containing the contents of the error field, &null; if the field does not exist or &false;
+  on failure.</simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -83,7 +83,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -97,7 +97,7 @@
   if (!pg_connection_busy($dbconn)) {
       pg_send_query($dbconn, "select * from doesnotexist;");
   }
-  
+
   $res1 = pg_get_result($dbconn);
   echo pg_result_error_field($res1, PGSQL_DIAG_SQLSTATE);
 ?>

@@ -21,18 +21,18 @@
     <varlistentry>
      <term><parameter>context</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Hashing context returned by <function>hash_init</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>binary</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        When set to &true;, outputs raw binary data.
        &false; outputs lowercase hexits.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -41,11 +41,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a string containing the calculated message digest as lowercase hexits
    unless <parameter>binary</parameter> is set to true in which case the raw
    binary representation of the message digest is returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

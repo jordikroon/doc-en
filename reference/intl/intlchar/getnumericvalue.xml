@@ -12,13 +12,13 @@
    <modifier>public</modifier> <modifier>static</modifier> <type class="union"><type>float</type><type>null</type></type><methodname>IntlChar::getNumericValue</methodname>
    <methodparam><type class="union"><type>int</type><type>string</type></type><parameter>codepoint</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the numeric value for a Unicode code point as defined in the Unicode Character Database.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    For characters without any numeric values in the Unicode Character Database, this function will return
    <constant>IntlChar::NO_NUMERIC_VALUE</constant>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -35,12 +35,12 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Numeric value of <parameter>codepoint</parameter>,
    or <constant>IntlChar::NO_NUMERIC_VALUE</constant> if none is defined. This
    constant was added in PHP 7.0.6, prior to this version the literal value
    (<type>float</type>)<literal>-123456789</literal> may be used instead. Returns &null; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

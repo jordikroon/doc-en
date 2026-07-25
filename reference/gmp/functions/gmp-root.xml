@@ -5,7 +5,7 @@
   <refname>gmp_root</refname>
   <refpurpose>Take the integer part of nth root</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,10 +13,10 @@
    <methodparam><type class="union"><type>GMP</type><type>int</type><type>string</type></type><parameter>num</parameter></methodparam>
    <methodparam><type>int</type><parameter>nth</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Takes the <parameter>nth</parameter> root of <parameter>num</parameter> and
    returns the integer component of the result.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,15 +26,15 @@
     <varlistentry>
      <term><parameter>num</parameter></term>
      <listitem>
-      &gmp.parameter; 
+      &gmp.parameter;
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>nth</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The positive root to take of <parameter>num</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -43,9 +43,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The integer component of the resultant root, as a GMP number.
-  </para>
+  </simpara>
  </refsect1>
 </refentry>
 <!-- Keep this comment at the end of the file

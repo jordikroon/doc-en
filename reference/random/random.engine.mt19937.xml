@@ -8,9 +8,9 @@
 <!-- {{{ Random\Engine\Mt19937 intro -->
   <section xml:id="random-engine-mt19937.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Implements the <link xlink:href="&url.random.mersenne-twister;">Mt19937</link> (“Mersenne Twister”) algorithm.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

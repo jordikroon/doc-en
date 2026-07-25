@@ -17,9 +17,9 @@
    <methodparam choice="opt"><type>int</type><parameter>pregFlags</parameter><initializer>0</initializer></methodparam>
   </constructorsynopsis>
 
-  <para>
+  <simpara>
    Creates a new regular expression iterator.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -30,17 +30,17 @@
     <varlistentry>
      <term><parameter>iterator</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The recursive iterator to apply this regex filter to.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>pattern</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The regular expression to match.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -64,9 +64,9 @@
     <varlistentry>
      <term><parameter>pregFlags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The regular expression flags. These flags depend on the operation mode parameter:
-      </para>
+      </simpara>
       <para>
       <table>
         <title><classname>RegexIterator</classname> preg_flags</title>
@@ -123,9 +123,9 @@
   <para>
    <example>
     <title><function>RecursiveRegexIterator::__construct</function> example</title>
-    <para>
+    <simpara>
       Creates a new RegexIterator that filters all strings that start with 'test'.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

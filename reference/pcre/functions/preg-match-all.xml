@@ -16,16 +16,16 @@
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>offset</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Searches <parameter>subject</parameter> for all matches to the regular
    expression given in <parameter>pattern</parameter> and puts them in
    <parameter>matches</parameter> in the order specified by
    <parameter>flags</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    After the first match is found, the subsequent searches  are continued
    on from end of the last match.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -35,26 +35,26 @@
     <varlistentry>
      <term><parameter>pattern</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The pattern to search for, as a string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>subject</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>matches</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Array of all matches in multi-dimensional array ordered according to
        <parameter>flags</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -72,11 +72,11 @@
         <varlistentry>
          <term><constant>PREG_PATTERN_ORDER</constant></term>
          <listitem>
-          <para>
+          <simpara>
            Orders results so that <varname>$matches[0]</varname> is an array of full
            pattern matches, <varname>$matches[1]</varname> is an array of strings matched by
            the first parenthesized subpattern, and so on.
-          </para>
+          </simpara>
           <para>
            <informalexample>
             <programlisting role="php">
@@ -97,16 +97,16 @@ echo $out[1][0] . ", " . $out[1][1] . "\n";
 example: , this is a test
 ]]>
             </screen>
-            <para>
+            <simpara>
              So, <varname>$out[0]</varname> contains an array of strings that matched the full pattern,
              and <varname>$out[1]</varname> contains an array of strings enclosed by tags.
-            </para>
+            </simpara>
            </informalexample>
           </para>
-          <para>
+          <simpara>
            If the pattern contains named subpatterns, <varname>$matches</varname>
            additionally contains entries for keys with the subpattern name.
-          </para>
+          </simpara>
           <para>
            If the pattern contains duplicate named subpatterns, only the rightmost
            subpattern is stored in <varname>$matches[NAME]</varname>.
@@ -129,7 +129,7 @@ print_r($matches['match']);
 <![CDATA[
 Array
 (
-    [0] => 
+    [0] =>
     [1] => bar
 )
 ]]>
@@ -242,12 +242,12 @@ Array
         <varlistentry>
          <term><constant>PREG_UNMATCHED_AS_NULL</constant></term>
          <listitem>
-          <para>
+          <simpara>
            If this flag is passed, unmatched subpatterns are reported as &null;;
            otherwise they are reported as an empty <type>string</type>.
-          </para>
+          </simpara>
          </listitem>
-        </varlistentry>  
+        </varlistentry>
        </variablelist>
       </para>
      </listitem>
@@ -255,11 +255,11 @@ Array
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Normally, the search starts from the beginning of the subject string.
        The optional parameter <parameter>offset</parameter> can be used to
        specify the alternate place from which to start the search (in bytes).
-      </para>
+      </simpara>
       <note>
        <para>
         Using <parameter>offset</parameter> is not equivalent to passing
@@ -279,9 +279,9 @@ Array
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the number of full pattern matches (which might be zero),&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

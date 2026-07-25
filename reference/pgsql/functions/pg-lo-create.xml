@@ -18,27 +18,27 @@
    <type>int</type><methodname>pg_lo_create</methodname>
    <methodparam><type>mixed</type><parameter>object_id</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_lo_create</function> creates a large
    object and returns the <varname>OID</varname> of the large
    object.  PostgreSQL access modes
    <constant>INV_READ</constant> and <constant>INV_WRITE</constant>
    are not supported, the object is created always with both read and write
    access.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    To use the large object interface, it is necessary to
    enclose it within a transaction block.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Instead of using the large object interface (which has no access controls
    and is cumbersome to use), try PostgreSQL's <varname>bytea</varname>
    column type and <function>pg_escape_bytea</function>.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     This function used to be called <function>pg_locreate</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -55,11 +55,11 @@
     <varlistentry>
      <term><parameter>object_id</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If an <parameter>object_id</parameter> is given the function
        will try to create a large object with this id, else a free
        object id is assigned by the server.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -68,9 +68,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A large object <varname>OID</varname>, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -110,7 +110,7 @@
 ?>
 ]]>
     </programlisting>
-   </example> 
+   </example>
   </para>
  </refsect1>
 </refentry>

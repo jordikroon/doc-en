@@ -5,7 +5,7 @@
   <refname>socket_create</refname>
   <refpurpose>Create a socket (endpoint for communication)</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,11 +14,11 @@
    <methodparam><type>int</type><parameter>type</parameter></methodparam>
    <methodparam><type>int</type><parameter>protocol</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Creates and returns a <classname>Socket</classname> instance, also referred to as an endpoint
    of communication. A typical network connection is made up of 2 sockets, one
    performing the role of the client, and another performing the role of the server.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,10 +28,10 @@
     <varlistentry>
      <term><parameter>domain</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <parameter>domain</parameter> parameter specifies the protocol
        family to be used by the socket.
-      </para>
+      </simpara>
       <table>
        <title>Available address/protocol families</title>
        <tgroup cols="2">
@@ -71,10 +71,10 @@
     <varlistentry>
      <term><parameter>type</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <parameter>type</parameter> parameter selects the type of communication
        to be used by the socket.
-      </para>
+      </simpara>
       <table>
        <title>Available socket types</title>
        <tgroup cols="2">
@@ -131,7 +131,7 @@
     <varlistentry>
      <term><parameter>protocol</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <parameter>protocol</parameter> parameter sets the specific
        protocol within the specified <parameter>domain</parameter> to be used
        when communicating on the returned socket. The proper value can be
@@ -139,7 +139,7 @@
        the desired protocol is TCP, or UDP the corresponding constants
        <constant>SOL_TCP</constant>, and <constant>SOL_UDP</constant>
        can also be used.
-      </para>
+      </simpara>
       <table>
        <title>Common protocols</title>
        <tgroup cols="2">
@@ -191,24 +191,24 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    <function>socket_create</function> returns a <classname>Socket</classname> instance on success,
    or &false; on error. The actual error code can be retrieved by calling
    <function>socket_last_error</function>. This error code may be passed to
    <function>socket_strerror</function> to get a textual explanation of the
    error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    If an invalid <parameter>domain</parameter> or
    <parameter>type</parameter> is given, <function>socket_create</function>
    defaults to <constant>AF_INET</constant> and
    <constant>SOCK_STREAM</constant> respectively and additionally emits an
    <constant>E_WARNING</constant> message.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

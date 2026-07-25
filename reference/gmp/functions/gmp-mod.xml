@@ -5,7 +5,7 @@
   <refname>gmp_mod</refname>
   <refpurpose>Modulo operation</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,11 +13,11 @@
    <methodparam><type class="union"><type>GMP</type><type>int</type><type>string</type></type><parameter>num1</parameter></methodparam>
    <methodparam><type class="union"><type>GMP</type><type>int</type><type>string</type></type><parameter>num2</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Calculates <parameter>num1</parameter> modulo
    <parameter>num2</parameter>. The result is always non-negative, the
    sign of <parameter>num2</parameter> is ignored.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,16 +27,16 @@
     <varlistentry>
      <term><parameter>num1</parameter></term>
      <listitem>
-      &gmp.parameter; 
+      &gmp.parameter;
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>num2</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The modulo that is being evaluated.
-      </para>
-      &gmp.parameter; 
+      </simpara>
+      &gmp.parameter;
      </listitem>
     </varlistentry>
    </variablelist>
@@ -45,9 +45,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &gmp.return;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

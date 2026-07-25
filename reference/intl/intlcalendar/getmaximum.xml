@@ -8,28 +8,28 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="IntlCalendar">
    <modifier>public</modifier> <type class="union"><type>int</type><type>false</type></type><methodname>IntlCalendar::getMaximum</methodname>
    <methodparam><type>int</type><parameter>field</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>int</type><type>false</type></type><methodname>intlcal_get_maximum</methodname>
    <methodparam><type>IntlCalendar</type><parameter>calendar</parameter></methodparam>
    <methodparam><type>int</type><parameter>field</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the global maximum for a field, in this specific calendar. This value
    is larger or equal to that returned by
    <function>IntlCalendar::getActualMaximum</function>, which is in its turn
    larger or equal to that returned by
    <function>IntlCalendar::getLeastMaximum</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -52,10 +52,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An <type>int</type> representing a field value in the fieldʼs
    unit&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

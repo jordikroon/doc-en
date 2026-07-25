@@ -12,9 +12,9 @@
    <modifier>public</modifier> <modifier>static</modifier> <type class="union"><type>int</type><type>null</type></type><methodname>IntlChar::getBlockCode</methodname>
    <methodparam><type class="union"><type>int</type><type>string</type></type><parameter>codepoint</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the Unicode allocation block that contains the character.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -31,10 +31,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the block value for <parameter>codepoint</parameter>.
    See the <literal>IntlChar::BLOCK_CODE_*</literal> constants for possible return values. Returns &null; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -3,14 +3,14 @@
  <sect1 xml:id="language.oop5.overloading" xmlns="http://docbook.org/ns/docbook">
   <title>Overloading</title>
 
-  <para>
+  <simpara>
    Overloading in PHP provides means to dynamically
    <quote>create</quote> properties and methods.
    These dynamic entities are processed via magic methods
    one can establish in a class for various action types.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    The overloading methods are invoked when interacting with
    properties or methods that have not been declared or are not
    <link linkend="language.oop5.visibility">visible</link> in
@@ -18,28 +18,28 @@
    <quote>inaccessible properties</quote> and <quote>inaccessible
    methods</quote> to refer to this combination of declaration
    and visibility.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    All overloading methods must be defined as <literal>public</literal>.
-  </para>
+  </simpara>
 
   <note>
-   <para>
+   <simpara>
     None of the arguments of these magic methods can be
     <link linkend="functions.arguments.by-reference">passed by
     reference</link>.
-   </para>
+   </simpara>
   </note>
 
   <note>
-   <para>
+   <simpara>
     PHP's interpretation of <quote>overloading</quote> is
     different than most object-oriented languages. Overloading
     traditionally provides the ability to have multiple methods
     with the same name but different quantities and types of
     arguments.
-   </para>
+   </simpara>
   </note>
 
   <sect2 xml:id="language.oop5.overloading.members">
@@ -63,53 +63,53 @@
     <methodparam><type>string</type><parameter>name</parameter></methodparam>
    </methodsynopsis>
 
-   <para>
+   <simpara>
     <link linkend="object.set">__set()</link> is run when writing data to
     inaccessible (protected or private) or non-existing properties.
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     <link linkend="object.get">__get()</link> is utilized for reading data from
     inaccessible (protected or private) or non-existing properties.
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     <link linkend="object.isset">__isset()</link> is triggered by calling
     <function>isset</function> or <function>empty</function>
     on inaccessible (protected or private) or non-existing properties.
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     <link linkend="object.unset">__unset()</link> is invoked when
     <function>unset</function> is used on inaccessible (protected or private)
     or non-existing properties.
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     The <varname>$name</varname> argument is the name of the
     property being interacted with. The <link linkend="object.set">__set()</link>
     method's <varname>$value</varname> argument specifies the
     value the <varname>$name</varname>'ed property should be set
     to.
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     Property overloading only works in object context. These magic
     methods will not be triggered in static context. Therefore
     these methods should not be declared
     <link linkend="language.oop5.static">static</link>.
-    A warning is issued if one of the magic overloading 
+    A warning is issued if one of the magic overloading
     methods is declared <literal>static</literal>.
-   </para>
+   </simpara>
 
    <note>
-    <para>
+    <simpara>
      The return value of <link linkend="object.set">__set()</link> is ignored
      because of the way PHP processes the assignment operator.
      Similarly, <link linkend="object.get">__get()</link> is never called when
      chaining assignments together like this:
      <literal><![CDATA[ $a = $obj->b = 8; ]]></literal>
-    </para>
+    </simpara>
    </note>
 
    <note>
@@ -249,22 +249,22 @@ Notice:  Undefined property via __get(): hidden in <file> on line 70 in <file> o
     <methodparam><type>array</type><parameter>arguments</parameter></methodparam>
    </methodsynopsis>
 
-   <para>
+   <simpara>
     <link linkend="object.call">__call()</link> is triggered when invoking
     inaccessible methods in an object context.
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     <link linkend="object.callstatic">__callStatic()</link> is triggered when invoking
     inaccessible methods in a static context.
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     The <varname>$name</varname> argument is the name of the
     method being called. The <varname>$arguments</varname>
     argument is an enumerated array containing the parameters
     passed to the <varname>$name</varname>'ed method.
-   </para>
+   </simpara>
 
    <example>
     <title>

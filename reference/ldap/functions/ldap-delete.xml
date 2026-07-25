@@ -14,9 +14,9 @@
    <methodparam><type>string</type><parameter>dn</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>array</type><type>null</type></type><parameter>controls</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Deletes a particular entry in LDAP directory.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,25 +26,25 @@
     <varlistentry>
      <term><parameter>ldap</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &ldap.parameter.ldap;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>dn</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The distinguished name of an LDAP entity.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>controls</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Array of <link linkend="ldap.controls">LDAP Controls</link> to send with the request.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -53,9 +53,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

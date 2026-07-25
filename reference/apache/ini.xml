@@ -2,12 +2,12 @@
 <!-- $Revision$ -->
 <section xml:id="apache.configuration" xmlns="http://docbook.org/ns/docbook">
  &reftitle.runtime;
- <para>
+ <simpara>
   The behaviour of the Apache PHP module is affected by settings in &php.ini;.
   Configuration settings from &php.ini; may be overridden by
   <link linkend="configuration.changes.apache">php_flag</link> settings
   in the server configuration file or local &htaccess; files.
- </para>
+ </simpara>
  <example>
   <title>Turning off PHP parsing for a directory using &htaccess;</title>
   <programlisting>php_flag engine off</programlisting>
@@ -54,9 +54,9 @@
   </table>
   &ini.php.constants;
  </para>
- 
+
  &ini.descriptions.title;
- 
+
  <para>
   <variablelist>
    <varlistentry xml:id="ini.engine">
@@ -65,7 +65,7 @@
      <type>bool</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Turns PHP parsing on or off.
       This directive is really only useful in the Apache module
       version of PHP. It is used by sites that would like to turn
@@ -73,7 +73,7 @@
       server basis. By putting <userinput>engine off</userinput>
       in the appropriate places in the &httpd.conf; file, PHP can
       be enabled or disabled.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="ini.child-terminate">
@@ -82,10 +82,10 @@
      <type>bool</type>
     </term>
     <listitem>
-     <para>
-      Specify whether PHP scripts may request child process termination on end of request, 
+     <simpara>
+      Specify whether PHP scripts may request child process termination on end of request,
       see also <function>apache_child_terminate</function>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="ini.last-modified">
@@ -94,9 +94,9 @@
      <type>bool</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Send PHP scripts modification date as Last-Modified: header for this request.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="ini.xbithack">
@@ -105,9 +105,9 @@
      <type>bool</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Parse files with executable bit set as PHP regardless of their file ending.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>

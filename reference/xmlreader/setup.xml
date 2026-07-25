@@ -14,11 +14,11 @@
  <!-- {{{ Installation -->
  <section xml:id="xmlreader.installation">
   &reftitle.install;
-  <para>
+  <simpara>
    The XMLReader ships with PHP source.
    &installation.enabled.disable;
    <option role="configure">--disable-xmlreader</option>
-  </para>
+  </simpara>
  </section>
  <!-- }}} -->
 

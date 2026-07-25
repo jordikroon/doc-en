@@ -4,46 +4,46 @@
 <sect2 xml:id="migration70.incompatible.error-handling">
  <title>Changes to error and exception handling</title>
 
- <para>
+ <simpara>
   Many fatal and recoverable fatal errors have been converted to exceptions in
-  PHP 7. These error exceptions inherit from the <classname>Error</classname>
-  class, which itself implements the <classname>Throwable</classname>
+  PHP 7. These error exceptions inherit from the <exceptionname>Error</exceptionname>
+  class, which itself implements the <exceptionname>Throwable</exceptionname>
   interface (the new base interface all exceptions inherit).
- </para>
+ </simpara>
 
- <para>
+ <simpara>
   This means that custom error handlers may no longer be triggered because
   exceptions may be thrown instead (causing new fatal errors for uncaught
-  <classname>Error</classname> exceptions).
- </para>
+  <exceptionname>Error</exceptionname> exceptions).
+ </simpara>
 
- <para>
+ <simpara>
   A fuller description of how errors operate in PHP 7 can be found
   <link linkend="language.errors.php7">on the PHP 7 errors page</link>. This
   migration guide will merely enumerate the changes that affect backward
   compatibility.
- </para>
+ </simpara>
 
  <sect3 xml:id="migration70.incompatible.error-handling.set-exception-handler">
   <title>
    <function>set_exception_handler</function> is no longer guaranteed to
-   receive <classname>Exception</classname> objects
+   receive <exceptionname>Exception</exceptionname> objects
   </title>
 
-  <para>
+  <simpara>
    Code that implements an exception handler registered with
    <function>set_exception_handler</function> using a type declaration of
-   <classname>Exception</classname> will cause a fatal error when an
-   <classname>Error</classname> object is thrown.
-  </para>
+   <exceptionname>Exception</exceptionname> will cause a fatal error when an
+   <exceptionname>Error</exceptionname> object is thrown.
+  </simpara>
 
-  <para>
+  <simpara>
    If the handler needs to work on both PHP 5 and 7, you should remove the
    type declaration from the handler, while code that is being migrated to
    work on PHP 7 exclusively can simply replace the
-   <classname>Exception</classname> type declaration with
-   <classname>Throwable</classname> instead.
-  </para>
+   <exceptionname>Exception</exceptionname> type declaration with
+   <exceptionname>Throwable</exceptionname> instead.
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -67,32 +67,32 @@ function handler(Throwable $e) { /* ... */ }
  <sect3 xml:id="migration70.incompatible.error-handling.constructors">
   <title>Internal constructors always throw exceptions on failure</title>
 
-  <para>
+  <simpara>
    Previously, some internal classes would return &null; or an unusable object
    when the constructor failed. All internal classes will now throw an
-   <classname>Exception</classname> in this case in the same way that user
+   <exceptionname>Exception</exceptionname> in this case in the same way that user
    classes already had to.
-  </para>
+  </simpara>
  </sect3>
 
  <sect3 xml:id="migration70.incompatible.error-handling.parse">
-  <title>Parse errors throw <classname>ParseError</classname></title>
+  <title>Parse errors throw <exceptionname>ParseError</exceptionname></title>
 
-  <para>
-   Parser errors now throw a <classname>ParseError</classname> object. Error
+  <simpara>
+   Parser errors now throw a <exceptionname>ParseError</exceptionname> object. Error
    handling for <function>eval</function> should now include a &catch; block
    that can handle this error.
-  </para>
+  </simpara>
  </sect3>
 
  <sect3 xml:id="migration70.incompatible.error-handling.strict">
   <title>E_STRICT notices severity changes</title>
 
-  <para>
+  <simpara>
    All of the <constant>E_STRICT</constant> notices have been reclassified to
    other levels. <constant>E_STRICT</constant> constant is retained, so calls like
    <literal>error_reporting(E_ALL|E_STRICT)</literal> will not cause an error.
-  </para>
+  </simpara>
   <para>
    <table>
     <title><constant>E_STRICT</constant> notices severity changes</title>

@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>ReflectionClass</type><methodname>ReflectionMethod::getDeclaringClass</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the declaring class for the reflected method.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,10 +24,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A <classname>ReflectionClass</classname> object of the class that the
    reflected method is part of.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -12,21 +12,21 @@
    <type>array</type><methodname>apache_get_modules</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get a list of loaded Apache modules.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
   &reftitle.parameters;
   &no.function.parameters;
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An <type>array</type> of loaded Apache modules.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -13,10 +13,10 @@
    <methodparam><type>GdImage</type><parameter>image</parameter></methodparam>
    <methodparam><type>array</type><parameter>rectangle</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Crops an image to the given rectangular area and returns the resulting image.
    The given <parameter>image</parameter> is not modified.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -27,11 +27,11 @@
    <varlistentry>
     <term><parameter>rectangle</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The cropping rectangle as <type>array</type> with keys
       <literal>x</literal>, <literal>y</literal>, <literal>width</literal> and
       <literal>height</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -39,9 +39,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Return cropped image object on success&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -72,9 +72,9 @@
   &reftitle.examples;
   <example xml:id="imagecrop.example.basic">
    <title><function>imagecrop</function> example</title>
-   <para>
+   <simpara>
      This example shows how to crop an image to a square area.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

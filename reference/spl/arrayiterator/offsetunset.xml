@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>void</type><methodname>ArrayIterator::offsetUnset</methodname>
    <methodparam><type>mixed</type><parameter>key</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Unsets a value for an offset.
-  </para>
+  </simpara>
   <para>
    If iteration is in progress, and <methodname>ArrayIterator::offsetUnset</methodname> is used to
    unset the current index of iteration, the iteration position will be advanced to the next index.
@@ -34,9 +34,9 @@
     <varlistentry>
      <term><parameter>key</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The offset to unset.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -45,9 +45,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

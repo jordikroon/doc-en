@@ -5,7 +5,7 @@
   <refname>openssl_seal</refname>
   <refpurpose>Seal (encrypt) data</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -17,7 +17,7 @@
    <methodparam><type>string</type><parameter>cipher_algo</parameter></methodparam>
    <methodparam choice="opt"><type>string</type><parameter role="reference">iv</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>openssl_seal</function> seals (encrypts) <parameter>data</parameter> using the
    specified <parameter>cipher_algo</parameter> with a randomly generated secret key. The key is
    then encrypted with each of the public keys in <parameter>public_key</parameter> array,
@@ -26,7 +26,7 @@
    recipient must receive both the sealed data and the envelope key that was encrypted with the
    recipient's public key. The IV (Initialization Vector) is generated, and its value is returned in
    <parameter>iv</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -36,33 +36,33 @@
     <varlistentry>
      <term><parameter>data</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The data to seal.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>sealed_data</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The sealed data.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>encrypted_keys</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Array of encrypted keys.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>public_key</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Array of <classname>OpenSSLAsymmetricKey</classname> instances containing public keys.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -83,11 +83,11 @@
     <varlistentry>
      <term><parameter>iv</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The initialization vector for decryption of <parameter>data</parameter>. It is required if
        the cipher method requires IV. This can be found out by calling
        <function>openssl_cipher_iv_length</function> with <parameter>cipher_algo</parameter>.
-      </para>
+      </simpara>
       <caution>
        <simpara>
         The IV cannot be set explicitly. Any value set in it is overwritten by randomly generated
@@ -102,12 +102,12 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the length of the sealed data on success, or &false; on error.
    If successful the sealed data is returned in
    <parameter>sealed_data</parameter>, and the envelope keys in
    <parameter>encrypted_keys</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

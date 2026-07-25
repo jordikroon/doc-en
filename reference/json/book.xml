@@ -8,13 +8,13 @@
 
  <preface xml:id="intro.json">
   &reftitle.intro;
-  <para>
+  <simpara>
    This extension implements the <link
    xlink:href="&url.json;">JavaScript Object Notation (JSON)</link>
-   data-interchange format. PHP comes with a parser 
+   data-interchange format. PHP comes with a parser
    that is specifically written for PHP and licensed under the
    PHP license.
-  </para>
+  </simpara>
   &json.implementation.superset;
  </preface>
 

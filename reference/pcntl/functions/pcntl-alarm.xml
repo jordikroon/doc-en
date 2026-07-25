@@ -5,19 +5,19 @@
   <refname>pcntl_alarm</refname>
   <refpurpose>Set an alarm clock for delivery of a signal</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>int</type><methodname>pcntl_alarm</methodname>
    <methodparam><type>int</type><parameter>seconds</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Creates a timer that will send a <constant>SIGALRM</constant> signal to
    the process after the given number of seconds.
    Any call to <function>pcntl_alarm</function> will cancel any previously
    set alarm.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,10 +27,10 @@
     <varlistentry>
      <term><parameter>seconds</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number of seconds to wait. If <parameter>seconds</parameter> is
        zero, no new alarm is created.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -39,11 +39,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the time in seconds that any previously scheduled alarm had
    remaining before it was to be delivered, or <literal>0</literal> if there
    was no previously scheduled alarm.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

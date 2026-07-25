@@ -5,7 +5,7 @@
   <refname>odbc_procedures</refname>
   <refpurpose>Get the list of procedures stored in a specific data source</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -15,9 +15,9 @@
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>schema</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>procedure</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Lists all procedures in the requested range.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -33,27 +33,27 @@
     <varlistentry>
      <term><parameter>catalog</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &odbc.parameter.catalog;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>schema</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &odbc.parameter.schema;
        &odbc.parameter.search;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>procedure</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The name.
        &odbc.parameter.search;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -62,9 +62,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &odbc.result.object-return; containing the information&return.falseforfailure;.
-  </para>
+  </simpara>
   <para>
    The result set has the following columns:
    <itemizedlist>

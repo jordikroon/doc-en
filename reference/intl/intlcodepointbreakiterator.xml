@@ -10,10 +10,10 @@
 <!-- {{{ IntlCodePointBreakIterator intro -->
   <section xml:id="intlcodepointbreakiterator.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     This <link linkend="class.intlbreakiterator">break iterator</link>
     identifies the boundaries between UTF-8 code points.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

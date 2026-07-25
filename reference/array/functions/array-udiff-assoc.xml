@@ -13,10 +13,10 @@
    <methodparam rep="repeat"><type>array</type><parameter>arrays</parameter></methodparam>
    <methodparam><type>callable</type><parameter>value_compare_func</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Computes the difference of arrays with additional index check, compares
    data by a callback function.
-  </para>
+  </simpara>
   <note>
    <simpara>
     Please note that this function only checks one dimension of a n-dimensional
@@ -32,17 +32,17 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The first array.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>arrays</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Arrays to compare against.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -57,7 +57,7 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    <function>array_udiff_assoc</function> returns an <type>array</type>
    containing all the values from <parameter>array</parameter>
    that are not present in any of the other arguments.
@@ -67,7 +67,7 @@
    callback. In this aspect the behaviour is opposite to the behaviour of
    <function>array_diff_assoc</function> which uses internal function for
    comparison.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;

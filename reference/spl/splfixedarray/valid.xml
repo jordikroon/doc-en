@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>SplFixedArray::valid</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks if the array contains any more elements.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the array contains any more elements, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

@@ -16,9 +16,9 @@
    <methodparam choice="opt"><type>int</type><parameter>major</parameter><initializer>0</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>minor</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Creates a special or ordinary file.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,38 +28,38 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The file to create
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        This parameter is constructed by a bitwise OR between file type (one of
        the following constants: <constant>POSIX_S_IFREG</constant>,
        <constant>POSIX_S_IFCHR</constant>, <constant>POSIX_S_IFBLK</constant>,
        <constant>POSIX_S_IFIFO</constant> or
        <constant>POSIX_S_IFSOCK</constant>) and permissions.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>major</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The major device kernel identifier (required to pass when using
        <constant>S_IFCHR</constant> or <constant>S_IFBLK</constant>).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>minor</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The minor device kernel identifier.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -68,9 +68,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

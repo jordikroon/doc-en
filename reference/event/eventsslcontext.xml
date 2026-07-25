@@ -7,11 +7,11 @@
 <!-- {{{ EventSslContext intro -->
   <section xml:id="eventsslcontext.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Represents
     <literal>SSL_CTX</literal>
     structure. Provides methods and properties to configure the SSL context.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
   <section xml:id="eventsslcontext.synopsis">
@@ -158,11 +158,11 @@
       <varname>local_cert</varname>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Path to local certificate file on filesystem. It must be a <acronym>PEM</acronym>-encoded
        file which contains certificate. It can optionally contain the
        certificate chain of issuers.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="eventsslcontext.props.local-pk">
@@ -170,9 +170,9 @@
       <varname>local_pk</varname>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Path to local private key file
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -187,11 +187,11 @@
       <constant>EventSslContext::SSLv2_CLIENT_METHOD</constant>
      </term>
      <listitem>
-      <para>
+      <simpara>
        SSLv2 client method. See
        <literal>SSL_CTX_new(3)</literal>
        man page.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="eventsslcontext.constants.sslv3-client-method">
@@ -199,11 +199,11 @@
       <constant>EventSslContext::SSLv3_CLIENT_METHOD</constant>
      </term>
      <listitem>
-      <para>
+      <simpara>
        SSLv3 client method. See
        <literal>SSL_CTX_new(3)</literal>
        man page.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="eventsslcontext.constants.sslv23-client-method">
@@ -211,11 +211,11 @@
       <constant>EventSslContext::SSLv23_CLIENT_METHOD</constant>
      </term>
      <listitem>
-      <para>
+      <simpara>
        SSLv23 client method. See
        <literal>SSL_CTX_new(3)</literal>
        man page.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="eventsslcontext.constants.tls-client-method">
@@ -223,11 +223,11 @@
       <constant>EventSslContext::TLS_CLIENT_METHOD</constant>
      </term>
      <listitem>
-      <para>
+      <simpara>
        TLS client method. See
        <literal>SSL_CTX_new(3)</literal>
        man page.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="eventsslcontext.constants.sslv2-server-method">
@@ -235,11 +235,11 @@
       <constant>EventSslContext::SSLv2_SERVER_METHOD</constant>
      </term>
      <listitem>
-      <para>
+      <simpara>
        SSLv2 server method. See
        <literal>SSL_CTX_new(3)</literal>
        man page.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="eventsslcontext.constants.sslv3-server-method">
@@ -247,11 +247,11 @@
       <constant>EventSslContext::SSLv3_SERVER_METHOD</constant>
      </term>
      <listitem>
-      <para>
+      <simpara>
        SSLv3 server method. See
        <literal>SSL_CTX_new(3)</literal>
        man page.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="eventsslcontext.constants.sslv23-server-method">
@@ -259,11 +259,11 @@
       <constant>EventSslContext::SSLv23_SERVER_METHOD</constant>
      </term>
      <listitem>
-      <para>
+      <simpara>
        SSLv23 server method. See
        <literal>SSL_CTX_new(3)</literal>
        man page.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="eventsslcontext.constants.tls-server-method">
@@ -271,11 +271,11 @@
       <constant>EventSslContext::TLS_SERVER_METHOD</constant>
      </term>
      <listitem>
-      <para>
+      <simpara>
        TLS server method. See
        <literal>SSL_CTX_new(3)</literal>
        man page.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="eventsslcontext.constants.opt-local-cert">

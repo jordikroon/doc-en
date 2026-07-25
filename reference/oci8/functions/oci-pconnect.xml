@@ -5,7 +5,7 @@
   <refname>oci_pconnect</refname>
   <refpurpose>Connect to an Oracle database using a persistent connection</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -16,17 +16,17 @@
    <methodparam choice="opt"><type>string</type><parameter>encoding</parameter><initializer>""</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>session_mode</parameter><initializer><constant>OCI_DEFAULT</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
-   Creates a persistent connection to an Oracle server and logs on. 
-  </para>
-  <para>
+  <simpara>
+   Creates a persistent connection to an Oracle server and logs on.
+  </simpara>
+  <simpara>
    Persistent connections are cached and re-used between requests, resulting in
    reduced overhead on each page load; a typical PHP application will have a
    single persistent connection open against an Oracle server per Apache child
    process (or PHP FPM process). See the <link linkend="oci8.connection">OCI8
    Connection Handling and Connection Pooling</link> section for more
    information.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -36,17 +36,17 @@
     <varlistentry>
      <term><parameter>username</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The Oracle user name.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>password</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The password for <parameter>username</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -73,9 +73,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a connection identifier or &false; on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -112,9 +112,9 @@ echo "</table>\n";
     </programlisting>
    </example>
   </para>
-  <para>
+  <simpara>
     See <function>oci_connect</function> for further examples of parameter usage.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="notes">

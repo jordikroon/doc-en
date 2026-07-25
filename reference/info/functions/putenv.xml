@@ -5,19 +5,19 @@
   <refname>putenv</refname>
   <refpurpose>Sets the value of an environment variable</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>bool</type><methodname>putenv</methodname>
    <methodparam><type>string</type><parameter>assignment</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Adds <parameter>assignment</parameter> to the server environment.  The
    environment variable will only exist for the duration of the current
    request. At the end of the request the environment is restored to its
    original state.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,9 +27,9 @@
     <varlistentry>
      <term><parameter>assignment</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The setting, like <literal>"FOO=BAR"</literal>
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -38,9 +38,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

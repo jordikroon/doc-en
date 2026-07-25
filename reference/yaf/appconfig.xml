@@ -6,7 +6,7 @@
  <para>
   You should give an array of config or an ini config file(see
   <classname>Yaf_Config_Ini</classname>) path to
-  <methodname>Yaf_Application::__construct</methodname>. 
+  <methodname>Yaf_Application::__construct</methodname>.
  </para>
  <para>
   Yaf will merge the application configurations and user configurations
@@ -158,16 +158,16 @@ yaf.dispatcher.catchException = 0
       <type>string</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        The directory of the application, that is the folder which contains the
        "controllers", "views", "models", "plugins" folders.
-      </para>
+      </simpara>
       <para>
        <note>
-        <para>
+        <simpara>
             This config entry is the only one which doesn't has a default value.
             You should always define it manually.
-        </para>
+        </simpara>
        </note>
       </para>
      </listitem>
@@ -178,10 +178,10 @@ yaf.dispatcher.catchException = 0
       <type>string</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        The file ext of the PHP script, used in class autoloading(
        <classname>Yaf_Loader</classname>).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="configuration.yaf.view.ext">
@@ -190,9 +190,9 @@ yaf.dispatcher.catchException = 0
       <type>string</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        The file ext of the view template scripts.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="configuration.yaf.modules">
@@ -201,13 +201,13 @@ yaf.dispatcher.catchException = 0
       <type>string</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        A comma-separated list of the registered modules, used in the route
-       process, especially while there are more than three segments in the PATH_INFO, 
-      </para>
-      <para>
+       process, especially while there are more than three segments in the PATH_INFO,
+      </simpara>
+      <simpara>
        Yaf need a way to find out whether the first segment is a module name or not.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="configuration.yaf.library">
@@ -216,16 +216,16 @@ yaf.dispatcher.catchException = 0
       <type>string</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        The local library directory, see <classname>Yaf_Loader</classname> and
        <link linkend="ini.yaf.library">yaf.library</link>.
-       </para>
+       </simpara>
        <note>
-        <para>
+        <simpara>
             After Yaf 2.1.6, this config entry can be an array. The library path
-            will try to use the items setted in <link 
+            will try to use the items setted in <link
             linkend="configuration.yaf.library.directory">application.library.directory</link>
-        </para>
+        </simpara>
        </note>
      </listitem>
     </varlistentry>
@@ -235,11 +235,11 @@ yaf.dispatcher.catchException = 0
       <type>string</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Alias of <link
         linkend="configuration.yaf.library">application.library</link>. Introduced
        in Yaf 2.1.6
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="configuration.yaf.library.namespace">
@@ -248,12 +248,12 @@ yaf.dispatcher.catchException = 0
       <type>string</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        A comma-separated prefix of local library namespace.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Introduced in Yaf 2.1.6
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="configuration.yaf.bootstrap">
@@ -262,9 +262,9 @@ yaf.dispatcher.catchException = 0
       <type>string</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        A absolute path of the Bootstrap class script.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="configuration.yaf.baseuri">
@@ -273,16 +273,16 @@ yaf.dispatcher.catchException = 0
       <type>string</type>
      </term>
      <listitem>
-      <para>
-       Used to remove a fixed prefix of request uri in route process. 
+      <simpara>
+       Used to remove a fixed prefix of request uri in route process.
        Take a example, comes a request with request uri
        "/prefix/controller/action". if you set application.baseUri to
        "/prefix", then only "/controller/action" will take as the PATH_INFO in
        route process.
-      </para>
-      <para>
-       In generally, there is no need to set this value. 
-      </para>
+      </simpara>
+      <simpara>
+       In generally, there is no need to set this value.
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="configuration.yaf.dispatcher.throwexception">
@@ -370,9 +370,9 @@ yaf.dispatcher.catchException = 0
        Set yaf runtime configure in application.ini, like:
        <link linkend="ini.yaf.lowcase-path">application.system.lowcase_path</link>
        <note>
-        <para>
+        <simpara>
         only those <constant>INI_ALL</constant> configures can be set in this way
-       </para>
+       </simpara>
        </note>
       </para>
      </listitem>

@@ -5,7 +5,7 @@
   <refname>openssl_pkcs12_export</refname>
   <refpurpose>Exports a <acronym>PKCS</acronym>#12 Compatible Certificate Store File to variable</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -16,11 +16,11 @@
    <methodparam><modifier role="attribute">#[\SensitiveParameter]</modifier><type>string</type><parameter>passphrase</parameter></methodparam>
    <methodparam choice="opt"><type>array</type><parameter>options</parameter><initializer>[]</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>openssl_pkcs12_export</function> stores
    <parameter>certificate</parameter> into a string named by
    <parameter>output</parameter> in a <acronym>PKCS</acronym>#12 file format.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -31,26 +31,26 @@
     <varlistentry>
      <term><parameter>output</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        On success, this will hold the <acronym>PKCS</acronym>#12.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>private_key</parameter></term>
      <listitem>
-      <para>
+      <simpara>
       Private key component of <acronym>PKCS</acronym>#12 file.
       See <link linkend="openssl.certparams">Public/Private Key parameters</link> for a list of valid values.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>passphrase</parameter></term>
      <listitem>
-      <para>
+      <simpara>
       Encryption password for unlocking the <acronym>PKCS</acronym>#12 file.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -87,9 +87,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

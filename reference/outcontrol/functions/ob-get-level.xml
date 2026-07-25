@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.ob-get-level">
+<refentry xml:id="function.ob-get-level" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>ob_get_level</refname>
   <refpurpose>Return the nesting level of the output buffering mechanism</refpurpose>
@@ -12,9 +12,9 @@
    <type>int</type><methodname>ob_get_level</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the nesting level of the output buffering mechanism.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,10 +24,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the level of nested output buffering handlers or zero if output
    buffering is not active.
-  </para>
+  </simpara>
   <caution>
    <simpara>
     The value for identical levels between <function>ob_get_level</function>

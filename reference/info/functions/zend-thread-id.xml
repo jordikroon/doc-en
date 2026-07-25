@@ -5,16 +5,16 @@
   <refname>zend_thread_id</refname>
   <refpurpose>Returns a unique identifier for the current thread</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>int</type><methodname>zend_thread_id</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function returns a unique identifier for the current thread.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the thread id as an integer.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -56,10 +56,10 @@ Current thread id is: 7864
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     This function is only available if PHP has been built with ZTS (Zend
     Thread Safety) support and debug mode (<literal>--enable-debug</literal>).
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

@@ -8,9 +8,9 @@
   <!-- {{{ PSpell\Dictionary intro -->
   <section xml:id="pspell-dictionary.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     A fully opaque class which replaces a <literal>pspell</literal> resource as of PHP 8.1.0.
-   </para>
+   </simpara>
   </section>
   <!-- }}} -->
 

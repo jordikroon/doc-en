@@ -12,9 +12,9 @@
    <modifier>public</modifier> <modifier>static</modifier> <type class="union"><type>bool</type><type>null</type></type><methodname>IntlChar::isblank</methodname>
    <methodparam><type class="union"><type>int</type><type>string</type></type><parameter>codepoint</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Determines whether the specified code point is a "blank" or "horizontal space", a character that visibly separates words on a line.
-  </para>
+  </simpara>
   <para>
    The following are equivalent definitions:
    <simplelist>
@@ -43,10 +43,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if
    <parameter>codepoint</parameter> is either a "blank" or "horizontal space" character, &false; if not. Returns &null; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

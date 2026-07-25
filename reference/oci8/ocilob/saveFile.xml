@@ -5,7 +5,7 @@
   <refname>OCILob::saveFile</refname>
   <refpurpose>&Alias; <function>OCILob::import</function></refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <simpara>

@@ -5,7 +5,7 @@
   <refname>vsprintf</refname>
   <refpurpose>Return a formatted string</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,10 +13,10 @@
    <methodparam><type>string</type><parameter>format</parameter></methodparam>
    <methodparam><type>array</type><parameter>values</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Operates as <function>sprintf</function> but accepts an array of
    arguments, rather than a variable number of arguments.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,8 +27,8 @@
     <varlistentry>
      <term><parameter>values</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,10 +37,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Return array values as a formatted string according to
    <parameter>format</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

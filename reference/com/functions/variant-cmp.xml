@@ -14,12 +14,12 @@
    <methodparam choice="opt"><type>int</type><parameter>locale_id</parameter><initializer><constant>LOCALE_SYSTEM_DEFAULT</constant></initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Compares <parameter>left</parameter> with <parameter>right</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This function will only compare scalar values, not arrays or variant records.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -28,26 +28,26 @@
     <varlistentry>
      <term><parameter>left</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The left operand.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>right</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The right operand.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>locale_id</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A valid Locale Identifier to use when comparing strings (this affects
        string collation).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>

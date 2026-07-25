@@ -5,7 +5,7 @@
   <refname>getmxrr</refname>
   <refpurpose>Get MX records corresponding to a given Internet host name</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,10 +14,10 @@
    <methodparam><type>array</type><parameter role="reference">hosts</parameter></methodparam>
    <methodparam choice="opt"><type>array</type><parameter role="reference">weights</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
-   Searches DNS for MX records corresponding to 
-   <parameter>hostname</parameter>. 
-  </para>
+  <simpara>
+   Searches DNS for MX records corresponding to
+   <parameter>hostname</parameter>.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,27 +27,27 @@
     <varlistentry>
      <term><parameter>hostname</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The Internet host name.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>hosts</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A list of the MX records found is placed into the array
-       <parameter>hosts</parameter>. 
-      </para>
+       <parameter>hosts</parameter>.
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>weights</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If the <parameter>weights</parameter> array is given, it will be filled
        with the weight information gathered.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -56,30 +56,30 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if any records are found; returns &false; if no records
    were found or if an error occurred.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     This function should not be used for the purposes of address
     verification.  Only the mailexchangers found in DNS are returned,
     however, according to <link xlink:href="&url.rfc;2821">RFC 2821</link>
     when no mail exchangers are listed, <parameter>hostname</parameter>
     itself should be used as the only mail exchanger with a priority of
     <literal>0</literal>.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     For compatibility with Windows before this was implemented, then try the
     <link xlink:href="&url.php.pear;">PEAR</link> class
     <link xlink:href="&url.pear.package;Net_DNS">Net_DNS</link>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

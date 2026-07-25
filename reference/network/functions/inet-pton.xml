@@ -5,18 +5,18 @@
   <refname>inet_pton</refname>
   <refpurpose>Converts a human readable IP address to its packed in_addr representation</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>inet_pton</methodname>
    <methodparam><type>string</type><parameter>ip</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function converts a human readable IPv4 or IPv6 address (if PHP
    was built with IPv6 support enabled) into an address family appropriate
    32bit or 128bit binary structure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,9 +26,9 @@
     <varlistentry>
      <term><parameter>ip</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A human readable IPv4 or IPv6 address.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,12 +37,12 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the <literal>in_addr</literal> representation of the given
    <parameter>ip</parameter>, or &false; if a syntactically invalid
    <parameter>ip</parameter> is given (for example, an IPv4 address
    without dots or an IPv6 address without colons).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -54,12 +54,12 @@
  <![CDATA[
 <?php
 $in_addr = inet_pton('127.0.0.1');
- 
+
 $in6_addr = inet_pton('::1');
 ?>
 ]]>
     </programlisting>
-   </example>   
+   </example>
   </para>
  </refsect1>
 

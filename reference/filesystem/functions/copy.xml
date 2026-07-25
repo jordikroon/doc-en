@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.copy">
+<refentry xml:id="function.copy" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>copy</refname>
   <refpurpose>Copies file</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,13 +14,13 @@
    <methodparam><type>string</type><parameter>to</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>resource</type><type>null</type></type><parameter>context</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Makes a copy of the file <parameter>from</parameter> to
    <parameter>to</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If you wish to move a file, use the <function>rename</function> function.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,33 +30,33 @@
     <varlistentry>
      <term><parameter>from</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path to the source file.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>to</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The destination path. If <parameter>to</parameter> is a URL, the
        copy operation may fail if the wrapper does not support overwriting of
        existing files.
-      </para>
+      </simpara>
       <warning>
-       <para>
+       <simpara>
         If the destination file already exists, it will be overwritten.
-       </para>
+       </simpara>
       </warning>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>context</parameter></term>
      <listitem>
-      <para>
-       A valid context resource created with 
+      <simpara>
+       A valid context resource created with
        <function>stream_context_create</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -65,9 +65,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -97,7 +97,7 @@ if (!copy($file, $newfile)) {
    <simplelist>
     <member><function>move_uploaded_file</function></member>
     <member><function>rename</function></member>
-    <member>The section of the manual about <link 
+    <member>The section of the manual about <link
      linkend="features.file-upload">handling file uploads</link></member>
    </simplelist>
   </para>

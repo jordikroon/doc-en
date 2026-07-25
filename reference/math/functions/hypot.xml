@@ -29,17 +29,17 @@
     <varlistentry>
      <term><parameter>x</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Length of first side
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>y</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Length of second side
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -47,9 +47,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Calculated length of the hypotenuse
-  </para>
+  </simpara>
  </refsect1>
 </refentry>
 

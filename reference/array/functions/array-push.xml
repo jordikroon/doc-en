@@ -48,17 +48,17 @@ $array[] = $var;
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input array.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>values</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The values to push onto the end of the <parameter>array</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -66,9 +66,9 @@ $array[] = $var;
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the new number of elements in the array.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

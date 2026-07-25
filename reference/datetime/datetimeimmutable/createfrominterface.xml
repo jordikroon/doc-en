@@ -21,12 +21,12 @@
     <varlistentry>
      <term><parameter>object</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <classname>DateTimeInterface</classname> object that needs
        to be converted to an immutable version. This object is not modified, but
        instead a new <classname>DateTimeImmutable</classname> object is
        created containing the same date, time, and timezone information.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,9 +35,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a new <classname>DateTimeImmutable</classname> instance.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

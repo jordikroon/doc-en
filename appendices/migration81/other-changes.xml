@@ -8,21 +8,21 @@
   <sect3 xml:id="migration81.other-changes.sapi.cli">
    <title>CLI</title>
 
-   <para>
+   <simpara>
     Using <option>-a</option> without the <link linkend="book.readline">readline extension</link> will now result in an error.
     Previously, <option>-a</option> without readline had the same behavior as
     calling <command>php</command> without any arguments, apart from printing an additional
     <literal>"Interactive mode enabled"</literal> message.
     This mode was <emphasis>not</emphasis> interactive.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration81.other-changes.sapi.phpdbg">
    <title>PHPDBG</title>
 
-   <para>
+   <simpara>
     Remote functionality from <link linkend="book.phpdbg">phpdbg</link> has been removed.
-   </para>
+   </simpara>
   </sect3>
  </sect2>
 
@@ -32,13 +32,13 @@
   <sect3 xml:id="migration81.other-changes.functions.core">
    <title>Core</title>
 
-   <para>
+   <simpara>
     The order of properties used in &foreach;, <function>var_dump</function>,
     <function>serialize</function>, object comparison, etc. was changed.
     Properties are now ordered naturally according to their declaration
     and inheritance. Properties declared in a base class are going
     to be before the child properties.
-   </para>
+   </simpara>
    <para>
     This order is consistent with internal layout of properties in
     <code>zend_object</code> structure and repeats the order in
@@ -50,21 +50,21 @@
   <sect3 xml:id="migration81.other-changes.functions.filter">
    <title>Filter</title>
 
-   <para>
+   <simpara>
     The <constant>FILTER_FLAG_ALLOW_OCTAL</constant> flag of the
     <constant>FILTER_VALIDATE_INT</constant> filter
     now accept octal string with the leading octal prefix
     (<literal>"0o"</literal>/<literal>"0O"</literal>).
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration81.other-changes.functions.gmp">
    <title>GMP</title>
 
-   <para>
+   <simpara>
     All <link linkend="book.gmp">GMP</link> functions now accept octal string with the leading octal prefix
     (<literal>"0o"</literal>/<literal>"0O"</literal>).
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration81.other-changes.functions.pdo-odbc">
@@ -74,7 +74,7 @@
     <methodname>PDO::getAttribute</methodname> with
     <constant>PDO::ATTR_SERVER_INFO</constant> and
     <constant>PDO::ATTR_SERVER_VERSION</constant>
-    now return values instead of throwing <classname>PDOException</classname>.
+    now return values instead of throwing <exceptionname>PDOException</exceptionname>.
    </para>
   </sect3>
 
@@ -92,9 +92,9 @@
   <sect3 xml:id="migration81.other-changes.functions.standard">
    <title>Standard</title>
 
-   <para>
+   <simpara>
     <function>syslog</function> is now binary safe.
-   </para>
+   </simpara>
   </sect3>
  </sect2>
 
@@ -104,14 +104,14 @@
   <sect3 xml:id="migration81.other-changes.extensions.gd">
    <title>GD</title>
 
-   <para>
+   <simpara>
     <function>imagewebp</function> can now do lossless WebP encoding
     by passing <constant>IMG_WEBP_LOSSLESS</constant> as the quality.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     This constant is only defined, if the used libgd supports
     lossless WebP encoding.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration81.other-changes.extensions.mysqli">
@@ -129,16 +129,16 @@
 
    <itemizedlist>
     <listitem>
-     <para>
+     <simpara>
       The <link linkend="book.openssl">OpenSSL extension</link> now requires at least OpenSSL version 1.0.2.
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       OpenSSL 3.0 is now supported. Be aware that many ciphers are no longer
       enabled by default (part of the legacy provider), and that parameter
       validation (e.g. minimum key sizes) is stricter now.
-     </para>
+     </simpara>
     </listitem>
    </itemizedlist>
   </sect3>
@@ -148,14 +148,14 @@
 
    <itemizedlist>
     <listitem>
-     <para>
+     <simpara>
       SHA256 is now used by default for signatures.
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       Added support for OpenSSL_SHA256 and OpenSSL_SHA512 signatures.
-     </para>
+     </simpara>
     </listitem>
    </itemizedlist>
   </sect3>
@@ -165,9 +165,9 @@
 
    <itemizedlist>
     <listitem>
-     <para>
+     <simpara>
       Added support for SHA256 and SHA512 for the security protocol.
-     </para>
+     </simpara>
     </listitem>
    </itemizedlist>
   </sect3>
@@ -188,20 +188,20 @@
 
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      The <link linkend="ini.log-errors-max-len">log_errors_max_len</link>
      INI directive has been removed.
      It no longer had an effect since PHP 8.0.0.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      A leading dollar in a quoted string can now be escaped: <literal>"\${"</literal> will now be
      interpreted as a string with contents <literal>${</literal>.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      Backslashes in double quoted strings are now more consistently treated as
      escape characters. Previously, <literal>"foo\\"</literal> followed by
      something other than a newline was not considered as a terminated string.
@@ -211,7 +211,7 @@
      contents <literal>foo\</literal> rather than an unterminated string.
      This exception exists to support naive uses of Windows file paths such as
      <literal>"C:\foo\"</literal>.
-    </para>
+    </simpara>
    </listitem>
   </itemizedlist>
  </sect2>

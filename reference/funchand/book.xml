@@ -7,10 +7,10 @@
 
  <preface xml:id="intro.funchand">
   &reftitle.intro;
-  <para>
+  <simpara>
    These functions all handle various operations involved in working
    with functions.
-  </para>
+  </simpara>
  </preface>
 
  &reference.funchand.reference;

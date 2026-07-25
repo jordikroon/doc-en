@@ -9,7 +9,7 @@
  <refsynopsisdiv>
   &warn.deprecated.function-8-5-0;
  </refsynopsisdiv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -18,10 +18,10 @@
    <methodparam><type>CurlHandle</type><parameter>handle</parameter></methodparam>
   </methodsynopsis>
   &note.resource-migration-8.0-dead-function;
-  <para>
+  <simpara>
    Closes a cURL session and frees all resources.  The cURL handle,
    <parameter>handle</parameter>, is also deleted.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -35,9 +35,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

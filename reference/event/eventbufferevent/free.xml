@@ -13,9 +13,9 @@
    <methodname>EventBufferEvent::free</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
    Free resources allocated by buffer event.
-  </para>
+  </simpara>
   <para>
    Usually there is no need to call this method, since normally it is done
    within internal object destructors. However, sometimes we have a long-time
@@ -32,9 +32,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 </refentry>
 <!-- Keep this comment at the end of the file

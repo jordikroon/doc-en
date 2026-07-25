@@ -13,15 +13,15 @@
    <methodparam><type>float</type><parameter>num1</parameter></methodparam>
    <methodparam><type>float</type><parameter>num2</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the floating point remainder of dividing the dividend
    (<parameter>num1</parameter>) by the divisor (<parameter>num2</parameter>).
-   The remainder (<varname>r</varname>) is defined as: num1 = i * num2 + r, for 
+   The remainder (<varname>r</varname>) is defined as: num1 = i * num2 + r, for
    some integer <varname>i</varname>. If <parameter>num2</parameter> is
    non-zero, <varname>r</varname> has the same sign as
    <parameter>num1</parameter> and a magnitude less than the magnitude of
    <parameter>num2</parameter>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -30,17 +30,17 @@
     <varlistentry>
      <term><parameter>num1</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The dividend
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>num2</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The divisor
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -48,11 +48,11 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   The floating point remainder of 
+  <simpara>
+   The floating point remainder of
    <parameter>num1</parameter>/<parameter>num2</parameter>.
    <constant>NAN</constant> (<type>float</type>) if the second argument is 0.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;

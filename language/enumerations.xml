@@ -5,33 +5,33 @@
    <title>Enumerations overview</title>
    <?phpdoc print-version-for="enumerations"?>
 
-   <para>
+   <simpara>
     Enumerations, or "Enums", allow a developer to define a custom type that is limited to one
     of a discrete number of possible values. That can be especially helpful when defining a
     domain model, as it enables "making invalid states unrepresentable."
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     Enums appear in many languages with a variety of different features. In PHP,
     Enums are a special kind of object. The Enum itself is a class, and its possible
     cases are all single-instance objects of that class. That means Enum cases are
     valid objects and may be used anywhere an object may be used, including type checks.
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     The most popular example of enumerations is the built-in boolean type, which is an
     enumerated type with legal values &true; and &false;.
     Enums allows developers to define their own arbitrarily robust enumerations.
-   </para>
+   </simpara>
   </sect1>
   <sect1 xml:id="language.enumerations.basics">
    <title>Basic enumerations</title>
 
-   <para>
+   <simpara>
     Enums are similar to classes, and share the same namespaces as classes, interfaces, and traits.
     They are also autoloadable the same way. An Enum defines a new type, which has a fixed, limited
     number of possible legal values.
-   </para>
+   </simpara>
 
 
    <programlisting role="php" annotations="non-interactive">
@@ -48,13 +48,13 @@ enum Suit
 ]]>
    </programlisting>
 
-   <para>
+   <simpara>
     This declaration creates a new enumerated type named <literal>Suit</literal>, which has
     four and only four legal values: <literal>Suit::Hearts</literal>, <literal>Suit::Diamonds</literal>,
     <literal>Suit::Clubs</literal>, and <literal>Suit::Spades</literal>. Variables may be assigned
     to one of those legal values. A function may be type checked against an enumerated type,
     in which case only values of that type may be passed.
-   </para>
+   </simpara>
 
    <informalexample>
     <programlisting role="php">
@@ -88,20 +88,20 @@ pick_a_card('Spades');
     </programlisting>
    </informalexample>
 
-   <para>
+   <simpara>
     An Enumeration may have zero or more <literal>case</literal> definitions, with no maximum.
     A zero-case enum is syntactically valid, if rather useless.
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     For Enumeration cases, the same syntax rules apply as to any label in PHP, see
     <link linkend="language.constants">Constants</link>.
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     By default, cases are not intrinsically backed by a scalar value. That is, <literal>Suit::Hearts</literal>
     is not equal to <literal>"0"</literal>. Instead, each case is backed by a singleton object of that name. That means that:
-   </para>
+   </simpara>
 
    <informalexample>
     <programlisting role="php">
@@ -134,25 +134,25 @@ if ($a !== 'Spades') {
     </programlisting>
    </informalexample>
 
-   <para>
+   <simpara>
     It also means that enum values are never <literal>&lt;</literal> or <literal>&gt;</literal> each other,
     since those comparisons are not meaningful on objects. Those comparisons will always return
     &false; when working with enum values.
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     This type of case, with no related data, is called a "Pure Case."  An Enum that contains
     only Pure Cases is called a Pure Enum.
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     All Pure Cases are implemented as instances of their enum type. The enum type is represented internally as a class.
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     All Cases have a read-only property, <literal>name</literal>, that is the case-sensitive name
     of the case itself.
-   </para>
+   </simpara>
 
    <informalexample>
     <programlisting role="php">
@@ -173,26 +173,26 @@ print Suit::Spades->name;
     </programlisting>
    </informalexample>
 
-   <para>
+   <simpara>
     It is also possible to use the <function>defined</function> and <function>constant</function>
     functions to check for the existence of or read an enum case if the name is obtained dynamically.
     This is, however, discouraged as using <link linkend="language.enumerations.backed">Backed enums</link>
     should work for most use cases.
-   </para>
+   </simpara>
 
   </sect1>
 
  <sect1 xml:id="language.enumerations.backed">
   <title>Backed enumerations</title>
 
-  <para>
+  <simpara>
    By default, Enumerated Cases have no scalar equivalent. They are simply singleton objects. However,
    there are ample cases where an Enumerated Case needs to be able to round-trip to a database or
    similar datastore, so having a built-in scalar (and thus trivially serializable) equivalent defined
    intrinsically is useful.
-  </para>
+  </simpara>
 
-  <para>To define a scalar equivalent for an Enumeration, the syntax is as follows:</para>
+  <simpara>To define a scalar equivalent for an Enumeration, the syntax is as follows:</simpara>
 
   <programlisting role="php" annotations="non-interactive">
 <![CDATA[
@@ -208,13 +208,13 @@ enum Suit: string
 ]]>
   </programlisting>
 
-  <para>
+  <simpara>
    A case that has a scalar equivalent is called a Backed Case, as it is "Backed"
    by a simpler value. An Enum that contains all Backed Cases is called a "Backed Enum."
    A Backed Enum may contain only Backed Cases. A Pure Enum may contain only Pure Cases.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    A Backed Enum may be backed by types of <literal>int</literal> or <literal>string</literal>,
    and a given enumeration supports only a single type at a time (that is, no union of <literal>int|string</literal>).
    If an enumeration is marked as having a scalar equivalent, then all cases must have a unique
@@ -222,7 +222,7 @@ enum Suit: string
    (e.g., sequential integers). Backed cases must be unique; two backed enum cases may
    not have the same scalar equivalent. However, a constant may refer to a case, effectively
    creating an alias. See <link linkend="language.enumerations.constants">Enumeration constants</link>.
-  </para>
+  </simpara>
 
   <para>
    The equivalent values may be a constant scalar expression.
@@ -231,10 +231,10 @@ enum Suit: string
    That is, <code>1 + 1</code> was allowed, but <code>1 + SOME_CONST</code> was not.
   </para>
 
-  <para>
+  <simpara>
    Backed Cases have an additional read-only property, <literal>value</literal>, which is the value
    specified in the definition.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -255,10 +255,10 @@ print Suit::Clubs->value;
    </programlisting>
   </informalexample>
 
-  <para>
+  <simpara>
    In order to enforce the <literal>value</literal> property as read-only, a variable cannot
    be assigned as a reference to it. That is, the following throws an error:
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -288,7 +288,7 @@ $ref = &$suit->value;
   <simplelist>
    <member>
     <literal>from(int|string): self</literal> will take a scalar and return the corresponding
-    Enum Case. If one is not found, it will throw a <classname>ValueError</classname>. This is mainly
+    Enum Case. If one is not found, it will throw a <exceptionname>ValueError</exceptionname>. This is mainly
     useful in cases where the input scalar is trusted and a missing enum value should be
     considered an application-stopping error.
    </member>
@@ -300,15 +300,15 @@ $ref = &$suit->value;
    </member>
   </simplelist>
 
-  <para>
+  <simpara>
    The <literal>from()</literal> and <literal>tryFrom()</literal> methods follow standard
    weak/strong typing rules. In weak typing mode, passing an integer or string is acceptable
    and the system will coerce the value accordingly. Passing a float will also work and be
    coerced. In strict typing mode, passing an integer to <literal>from()</literal> on a
-   string-backed enum (or vice versa) will result in a <classname>TypeError</classname>,
+   string-backed enum (or vice versa) will result in a <exceptionname>TypeError</exceptionname>,
    as will a float in all circumstances. All other parameter types will throw a TypeError
    in both modes.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -343,18 +343,18 @@ print $suit->value . "\n";
    </programlisting>
   </informalexample>
 
-  <para>Manually defining a <literal>from()</literal> or <literal>tryFrom()</literal> method on a Backed Enum will result in a fatal error.</para>
+  <simpara>Manually defining a <literal>from()</literal> or <literal>tryFrom()</literal> method on a Backed Enum will result in a fatal error.</simpara>
 
   </sect1>
 
  <sect1 xml:id="language.enumerations.methods">
   <title>Enumeration methods</title>
 
-  <para>
+  <simpara>
    Enums (both Pure Enums and Backed Enums) may contain methods, and may implement interfaces.
    If an Enum implements an interface, then any type check for that interface will also accept
    all cases of that Enum.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -401,15 +401,15 @@ print Suit::Diamonds->shape(); // prints "Rectangle"
    </programlisting>
   </informalexample>
 
-  <para>
+  <simpara>
    In this example, all four instances of <literal>Suit</literal> have two methods,
    <literal>color()</literal> and <literal>shape()</literal>. As far as calling code
    and type checks are concerned, they behave exactly the same as any other object instance.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    On a Backed Enum, the interface declaration goes after the backing type declaration.
-  </para>
+  </simpara>
 
   <programlisting role="php" annotations="non-interactive">
    <![CDATA[
@@ -439,26 +439,26 @@ enum Suit: string implements Colorful
 ]]>
   </programlisting>
 
-  <para>
+  <simpara>
    Inside a method, the <literal>$this</literal> variable is defined and refers to the Case instance.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    Methods may be arbitrarily complex, but in practice will usually return a static value or
    &match; on <literal>$this</literal> to provide
    different results for different cases.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    Note that in this case it would be a better data modeling practice to also define a
    <literal>SuitColor</literal> Enum Type with values Red and Black and return that instead.
    However, that would complicate this example.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    The above hierarchy is logically similar to the following class structure
    (although this is not the actual code that runs):
-  </para>
+  </simpara>
 
   <programlisting role="php" annotations="non-interactive">
 <![CDATA[
@@ -500,20 +500,20 @@ final class Suit implements UnitEnum, Colorful
 ]]>
   </programlisting>
 
-  <para>
+  <simpara>
    Methods may be public, private, or protected, although in practice private and
    protected are equivalent as inheritance is not allowed.
-  </para>
+  </simpara>
 
  </sect1>
 
  <sect1 xml:id="language.enumerations.static-methods">
   <title>Enumeration static methods</title>
 
-  <para>
+  <simpara>
    Enumerations may also have static methods. The use for static methods on the
    enumeration itself is primarily for alternative constructors. E.g.:
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -541,22 +541,22 @@ var_dump(Size::fromLength(50));
    </programlisting>
   </informalexample>
 
-  <para>
+  <simpara>
    Static methods may be public, private, or protected, although in practice private
    and protected are equivalent as inheritance is not allowed.
-  </para>
+  </simpara>
 
  </sect1>
 
  <sect1 xml:id="language.enumerations.constants">
   <title>Enumeration constants</title>
 
-  <para>
+  <simpara>
    Enumerations may include constants, which may be public, private, or protected,
    although in practice private and protected are equivalent as inheritance is not allowed.
-  </para>
+  </simpara>
 
-  <para>An enum constant may refer to an enum case:</para>
+  <simpara>An enum constant may refer to an enum case:</simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -581,11 +581,11 @@ var_dump(Size::Huge);
  <sect1 xml:id="language.enumerations.traits">
   <title>Traits</title>
 
-  <para>Enumerations may leverage traits, which will behave the same as on classes.
+  <simpara>Enumerations may leverage traits, which will behave the same as on classes.
    The caveat is that traits <literal>use</literal>d in an enum must not contain properties.
    They may only include methods, static methods, and constants. A trait with properties will
    result in a fatal error.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -634,19 +634,19 @@ var_dump($suit->shape());
  <sect1 xml:id="language.enumerations.expressions">
   <title>Enum values in constant expressions</title>
 
-  <para>
+  <simpara>
    Because cases are represented as constants on the enum itself, they may be used as static
    values in most constant expressions: property defaults, static variable defaults, parameter
    defaults, global and class constant values. They may not be used in other enum case values, but
    normal constants may refer to an enum case.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    However, implicit magic method calls such as <classname>ArrayAccess</classname> on enums are not allowed in static
    or constant definitions as we cannot absolutely guarantee that the resulting value is deterministic
    or that the method invocation is free of side effects. Function calls, method calls, and
    property access continue to be invalid operations in constant expressions.
-  </para>
+  </simpara>
 
   <programlisting role="php" annotations="non-interactive">
 <![CDATA[
@@ -701,10 +701,10 @@ $foo = new Foo();
  <sect1 xml:id="language.enumerations.object-differences">
   <title>Differences from objects</title>
 
-  <para>
+  <simpara>
    Although Enums are built on classes and objects, they do not support all object-related functionality.
    In particular, Enum cases are forbidden from having state.
-  </para>
+  </simpara>
 
   <simplelist>
    <member>Constructors and Destructors are forbidden.</member>
@@ -715,7 +715,7 @@ $foo = new Foo();
    <member>Enums must always be declared before they are used.</member>
   </simplelist>
 
-  <para>The following object functionality is available, and behaves just as it does on any other object:</para>
+  <simpara>The following object functionality is available, and behaves just as it does on any other object:</simpara>
 
   <simplelist>
    <member>Public, private, and protected methods.</member>
@@ -735,12 +735,12 @@ $foo = new Foo();
    <member><constant>__CLASS__</constant> and <constant>__FUNCTION__</constant> constants behave as normal</member>
   </simplelist>
 
-  <para>
+  <simpara>
    The <literal>::class</literal> magic constant on an Enum type evaluates to the type
    name including any namespace, exactly the same as an object. The <literal>::class</literal>
    magic constant on a Case instance also evaluates to the Enum type, as it is an
    instance of that type.
-  </para>
+  </simpara>
 
   <para>
    Additionally, enum cases may not be instantiated directly with <literal>new</literal>, nor with
@@ -798,17 +798,17 @@ var_dump(SuitBacked::cases());
    </programlisting>
   </informalexample>
 
-  <para>Manually defining a <literal>cases()</literal> method on an Enum will result in a fatal error.</para>
+  <simpara>Manually defining a <literal>cases()</literal> method on an Enum will result in a fatal error.</simpara>
  </sect1>
 
  <sect1 xml:id="language.enumerations.serialization">
   <title>Serialization</title>
 
-  <para>
+  <simpara>
    Enumerations are serialized differently from objects. Specifically, they have a new serialization code,
    <literal>"E"</literal>, that specifies the name of the enum case. The deserialization routine is then
    able to use that to set a variable to the existing singleton value. That ensures that:
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -831,9 +831,9 @@ print serialize(Suit::Hearts);
    </programlisting>
   </informalexample>
 
-  <para>
+  <simpara>
    On deserialization, if an enum and case cannot be found to match a serialized
-   value a warning will be issued and &false; returned.</para>
+   value a warning will be issued and &false; returned.</simpara>
 
   <simpara>
    The <literal>allowed_classes</literal> option of
@@ -841,16 +841,16 @@ print serialize(Suit::Hearts);
    <link linkend="language.enumerations">Enumerations</link>.
   </simpara>
 
-  <para>
+  <simpara>
    If a Pure Enum is serialized to JSON, an error will be thrown. If a Backed Enum
    is serialized to JSON, it will be represented by its scalar value only, in the
    appropriate type. The behavior of both may be overridden by implementing
    <classname>JsonSerializable</classname>.
-  </para>
+  </simpara>
 
-  <para>For <function>print_r</function>, the output of an enum case is slightly different
+  <simpara>For <function>print_r</function>, the output of an enum case is slightly different
    from objects to minimize confusion.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -1005,12 +1005,12 @@ function query($fields, $filter, SortOrder $order = SortOrder::Asc)
 }
 ]]>
     </programlisting>
-    <para>
+    <simpara>
      The <literal>query()</literal> function can now proceed safe in the knowledge that
      <literal>$order</literal> is guaranteed to be either <literal>SortOrder::Asc</literal>
      or <literal>SortOrder::Desc</literal>. Any other value would have resulted in a
-     <classname>TypeError</classname>, so no further error checking or testing is needed.
-    </para>
+     <exceptionname>TypeError</exceptionname>, so no further error checking or testing is needed.
+    </simpara>
    </example>
   </para>
 
@@ -1046,18 +1046,18 @@ var_dump($status->label());
 ]]>
     </programlisting>
 
-    <para>
+    <simpara>
      In this example, a user's status may be one of, and exclusively, <literal>UserStatus::Pending</literal>,
      <literal>UserStatus::Active</literal>, <literal>UserStatus::Suspended</literal>, or
      <literal>UserStatus::CanceledByUser</literal>. A function can type a parameter against
      <literal>UserStatus</literal> and then only accept those four values, period.
-    </para>
+    </simpara>
 
-    <para>
+    <simpara>
      All four values have a <literal>label()</literal> method, which returns a human-readable string.
      That string is independent of the "machine name" scalar equivalent string, which can be used in,
      for example, a database field or an HTML select box.
-    </para>
+    </simpara>
 
     <programlisting role="php">
 <![CDATA[

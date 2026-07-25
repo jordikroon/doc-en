@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.is-executable">
+<refentry xml:id="function.is-executable" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>is_executable</refname>
   <refpurpose>Tells whether the filename is executable</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>bool</type><methodname>is_executable</methodname>
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Tells whether the filename is executable.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path to the file.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,11 +35,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the filename exists and is executable, or &false; on
    error. On POSIX systems, a file is executable if the executable bit of the
    file permissions is set. For Windows, see the note below.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

@@ -12,19 +12,19 @@
    <modifier>public</modifier> <type>bool</type><methodname>ArrayAccess::offsetExists</methodname>
    <methodparam><type>mixed</type><parameter>offset</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Whether or not an offset exists.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This method is executed when using <function>isset</function> or
    <function>empty</function> on objects implementing <classname>ArrayAccess</classname>.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     When using <function>empty</function> <function>ArrayAccess::offsetGet</function> will
     be called and checked if empty only if <function>ArrayAccess::offsetExists</function>
     returns &true;.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -34,9 +34,9 @@
    <variablelist>
     <varlistentry><term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An offset to check for.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -46,13 +46,13 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     The return value will be casted to <type>bool</type> if non-boolean was returned.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

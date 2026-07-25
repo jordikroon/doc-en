@@ -31,18 +31,18 @@
     <varlistentry>
      <term><parameter>haystack</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string from which to get the first occurrence
        of <parameter>needle</parameter>
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>needle</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string to find in <parameter>haystack</parameter>
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -69,10 +69,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the portion of <parameter>haystack</parameter>,
    or &false; if <parameter>needle</parameter> is not found.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

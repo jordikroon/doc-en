@@ -13,14 +13,14 @@
    <methodparam><type>string</type><parameter>name</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>value</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Defines a cookie to be sent along with the SOAP requests.
-  </para>
+  </simpara>
   <note>
-   <para>
-    Calling this method will affect all following calls to 
+   <simpara>
+    Calling this method will affect all following calls to
     <classname>SoapClient</classname> methods.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -31,17 +31,17 @@
     <varlistentry>
      <term><parameter>name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The name of the cookie.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The value of the cookie. If not specified, the cookie will be deleted.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -50,9 +50,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
   &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

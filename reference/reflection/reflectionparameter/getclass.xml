@@ -17,9 +17,9 @@
    <modifier>public</modifier> <type class="union"><type>ReflectionClass</type><type>null</type></type><methodname>ReflectionParameter::getClass</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets a <classname>ReflectionClass</classname> object for the parameter being reflected or &null;.
-  </para>
+  </simpara>
   <para>
    As of PHP 8.0.0 this function is deprecated and not recommended. Instead, use
    <methodname>ReflectionParameter::getType</methodname> to get the <classname>ReflectionType</classname>
@@ -37,10 +37,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A <classname>ReflectionClass</classname> object, or &null; if no type is declared,
    or the declared type is not a class or interface.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

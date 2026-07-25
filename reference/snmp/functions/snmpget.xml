@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.snmpget">
+<refentry xml:id="function.snmpget" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>snmpget</refname>
   <refpurpose>Fetch an <acronym>SNMP</acronym> object</refpurpose>

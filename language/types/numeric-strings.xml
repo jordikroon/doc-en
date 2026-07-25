@@ -2,14 +2,14 @@
 <!-- $Revision$ -->
 <sect1 xml:id="language.types.numeric-strings" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <title>Numeric strings</title>
- <para>
+ <simpara>
   A PHP <type>string</type> is considered numeric if it can be interpreted as
   an <type>int</type> or a <type>float</type>.
- </para>
+ </simpara>
 
- <para>
+ <simpara>
   Formally as of PHP 8.0.0:
- </para>
+ </simpara>
 
  <informalexample>
   <programlisting>
@@ -25,18 +25,18 @@ NUM_STRING       ({INT_NUM_STRING} | {FLOAT_NUM_STRING})
   </programlisting>
  </informalexample>
 
- <para>
+ <simpara>
   PHP also has a concept of <emphasis>leading</emphasis> numeric strings.
   This is simply a string which starts like a numeric string followed by
   any characters.
- </para>
+ </simpara>
 
  <note>
-  <para>
+  <simpara>
    Any string that contains the letter <literal>E</literal> (case insensitive)
    bounded by numbers will be seen as a number expressed in scientific notation.
    This can produce unexpected results.
-  </para>
+  </simpara>
   <example>
    <title>Scientific Notation Comparisons</title>
    <programlisting role="php">
@@ -82,7 +82,7 @@ var_dump("2E1" == "020"); // true, "2E1" is 2 * (10 ^ 1), or 20
     <listitem>
      <simpara>
       The <type>string</type> is not numeric, throw a
-      <classname>TypeError</classname>.
+      <exceptionname>TypeError</exceptionname>.
      </simpara>
     </listitem>
    </orderedlist>
@@ -91,12 +91,12 @@ var_dump("2E1" == "020"); // true, "2E1" is 2 * (10 ^ 1), or 20
 
  <sect2 xml:id="language.types.numeric-string.prior">
   <title>Behavior prior to PHP 8.0.0</title>
-  <para>
+  <simpara>
    Prior to PHP 8.0.0, a <type>string</type> was considered numeric only if it
    had <emphasis>leading</emphasis> whitespaces, if it had
    <emphasis>trailing</emphasis> whitespaces then the string was considered to
    be leading numeric.
-  </para>
+  </simpara>
 
   <para>
    Prior to PHP 8.0.0, when a string was used in a numeric context it would

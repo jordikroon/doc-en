@@ -2,7 +2,7 @@
 <!-- $Revision$ -->
 <refentry xml:id="function.pg-field-type-oid" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
-  <refname>pg_field_type_oid</refname> 
+  <refname>pg_field_type_oid</refname>
   <refpurpose>
    Returns the type ID (OID) for the corresponding field number
   </refpurpose>
@@ -15,23 +15,23 @@
    <methodparam><type>PgSql\Result</type><parameter>result</parameter></methodparam>
    <methodparam><type>int</type><parameter>field</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_field_type_oid</function> returns an integer containing the
    OID of the base type of the given <parameter>field</parameter> in the
    given <parameter>result</parameter> instance.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
     You can get more information about the field type by querying PostgreSQL's
     <literal>pg_type</literal> system table using the OID obtained with this function.
     The PostgreSQL <function>format_type</function> function will convert a
     type OID into an SQL standard type name.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     If the field uses a PostgreSQL domain (rather than a basic type), it is
     the OID of the domain's underlying type that is returned, rather than the OID
     of the domain itself.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -48,9 +48,9 @@
     <varlistentry>
      <term><parameter>field</parameter></term>
       <listitem>
-       <para>
+       <simpara>
         Field number, starting from 0.
-       </para>
+       </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -59,9 +59,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The OID of the field's base type.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -80,7 +80,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -104,10 +104,10 @@
 Title field type OID: 1043
 ]]>
     </screen>
-   </example> 
+   </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

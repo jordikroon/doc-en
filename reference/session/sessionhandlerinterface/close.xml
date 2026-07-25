@@ -12,10 +12,10 @@
    <modifier>public</modifier> <type>bool</type><methodname>SessionHandlerInterface::close</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Closes the current session. This function is automatically executed when
    closing the session, or explicitly via <function>session_write_close</function>.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -26,9 +26,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &returns.session.storage.retval;
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

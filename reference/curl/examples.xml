@@ -11,9 +11,9 @@
    that you initialize a cURL session using the
    <function>curl_init</function>, then you can set all your
    options for the transfer via the <function>curl_setopt</function>,
-   then you can execute the session with the 
+   then you can execute the session with the
    <function>curl_exec</function>.
-   Here is an example that uses the cURL functions to fetch the 
+   Here is an example that uses the cURL functions to fetch the
    example.com homepage into a file:
    <example>
     <title>Using PHP's cURL module to fetch the example.com homepage</title>

@@ -13,11 +13,11 @@
    <methodparam><type>string</type><parameter>qualifiedName</parameter></methodparam>
    <methodparam><type>string</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   Sets an attribute with namespace <parameter>namespace</parameter> and 
+  <simpara>
+   Sets an attribute with namespace <parameter>namespace</parameter> and
    name <parameter>qualifiedName</parameter> to the given value. If the attribute
    does not exist, it will be created.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -26,25 +26,25 @@
     <varlistentry>
      <term><parameter>namespace</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The namespace URI.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>qualifiedName</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The qualified name of the attribute, as <literal>prefix:tagname</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The value of the attribute.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -52,9 +52,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="errors">
   &reftitle.errors;
@@ -67,19 +67,19 @@
     <varlistentry>
      <term><constant>DOM_NO_MODIFICATION_ALLOWED_ERR</constant></term>
      <listitem>
-      <para>
+      <simpara>
        Raised if the node is readonly.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><constant>DOM_NAMESPACE_ERR</constant></term>
      <listitem>
-      <para>
+      <simpara>
        Raised if <parameter>qualifiedName</parameter> is a malformed qualified
-       name, or if <parameter>qualifiedName</parameter> has a prefix and 
+       name, or if <parameter>qualifiedName</parameter> has a prefix and
        <parameter>namespace</parameter> is &null;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

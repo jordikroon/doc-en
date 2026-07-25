@@ -13,10 +13,10 @@
    <methodparam><type>array</type><parameter>haystack</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>strict</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Searches for <parameter>needle</parameter> in <parameter>haystack</parameter> using loose comparison
    unless <parameter>strict</parameter> is set.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -25,41 +25,41 @@
     <varlistentry>
      <term><parameter>needle</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The searched value.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         If <parameter>needle</parameter> is a string, the comparison is done
         in a case-sensitive manner.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>haystack</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The array.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>strict</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If the third parameter <parameter>strict</parameter> is set to &true;
        then the <function>in_array</function> function will also check the
        <link linkend="language.types">types</link> of the
        <parameter>needle</parameter> in the <parameter>haystack</parameter>.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         Prior to PHP 8.0.0, a <literal>string</literal> <parameter>needle</parameter> will match an array
         value of <literal>0</literal> in non-strict mode, and vice versa.  That may lead to undesireable
         results.  Similar edge cases exist for other types, as well.  If not absolutely certain of the
         types of values involved, always use the <parameter>strict</parameter> flag to avoid unexpected behavior.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
@@ -68,10 +68,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if <parameter>needle</parameter> is found in the array,
    &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;
@@ -91,10 +91,10 @@ if (in_array("mac", $os)) {
 ?>
 ]]>
     </programlisting>
-    <para>
+    <simpara>
      The second condition fails because <function>in_array</function>
      is case-sensitive, so the program above will display:
-    </para>
+    </simpara>
     <screen>
 <![CDATA[
 Got Irix

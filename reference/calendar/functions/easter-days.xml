@@ -13,18 +13,18 @@
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>year</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>mode</parameter><initializer><constant>CAL_EASTER_DEFAULT</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the number of days after March 21 on which Easter falls
    for a given year. If no year is specified, the current year is
    assumed.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This function can be used instead of
    <function>easter_date</function> to calculate Easter for years
    which fall outside the range of Unix timestamps (i.e. before 1970
    or after 2037).
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The date of Easter Day was defined by the Council of Nicaea in
    AD325 as the Sunday after the first full moon which falls on or
    after the Spring Equinox.  The Equinox is assumed to always fall
@@ -38,7 +38,7 @@
    XIII in October 1582, and into Britain and its then colonies in
    September 1752) two correction factors are added to make the
    cycle more accurate.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -48,33 +48,33 @@
     <varlistentry>
      <term><parameter>year</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The year as a positive number. If omitted or &null;, defaults to the
        current year according to the local time.
-      </para>
+      </simpara>
      </listitem>
-    </varlistentry>  
+    </varlistentry>
     <varlistentry>
      <term><parameter>mode</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Allows Easter dates to be calculated based
        on the Gregorian calendar during the years 1582 - 1752 when set to
        <constant>CAL_EASTER_ROMAN</constant>. See the <link linkend="calendar.constants">calendar constants</link> for more valid
-       constants.      
-       </para>
+       constants.
+       </simpara>
      </listitem>
-    </varlistentry>  
+    </varlistentry>
    </variablelist>
   </para>
  </refsect1>
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The number of days after March 21st that the Easter Sunday
    is in the given <parameter>year</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

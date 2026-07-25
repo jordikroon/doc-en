@@ -16,7 +16,7 @@
    <methodparam choice="opt"><type>int</type><parameter>replacement_cost</parameter><initializer>1</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>deletion_cost</parameter><initializer>1</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    The Levenshtein distance is defined as the minimal number of
    characters you have to replace, insert or delete to transform
    <parameter>string1</parameter> into <parameter>string2</parameter>.
@@ -26,7 +26,7 @@
    <parameter>string2</parameter> (rather good when compared to
    <function>similar_text</function>, which is <literal>O(max(n,m)**3)</literal>,
    but still expensive).
-  </para>
+  </simpara>
   <para>
    If <parameter>insertion_cost</parameter>, <parameter>replacement_cost</parameter>
    and/or <parameter>deletion_cost</parameter> are unequal to <literal>1</literal>,
@@ -43,41 +43,41 @@
     <varlistentry>
      <term><parameter>string1</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        One of the strings being evaluated for Levenshtein distance.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>string2</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        One of the strings being evaluated for Levenshtein distance.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>insertion_cost</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Defines the cost of insertion.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>replacement_cost</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Defines the cost of replacement.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>deletion_cost</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Defines the cost of deletion.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -86,10 +86,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    This function returns the Levenshtein-Distance between the
    two argument strings.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

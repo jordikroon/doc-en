@@ -12,17 +12,17 @@
    <modifier>public</modifier> <type>string</type><methodname>mysqli_sql_exception::getSqlState</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a string containing the SQLSTATE error code for the last error.
    The error code consists of five characters.
    The values are specified by ANSI SQL and ODBC. For a list of possible values, see
    <link xlink:href="&url.mysql.docs.error;">&url.mysql.docs.error;</link>.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     Note that not all MySQL errors are yet mapped to SQLSTATE's.
     The value <literal>HY000</literal> (general error) is used for unmapped errors.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -33,9 +33,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a string containing the SQLSTATE error code for the last error. The error code consists of five characters.
-  </para>
+  </simpara>
  </refsect1>
 </refentry>
 <!-- Keep this comment at the end of the file

@@ -5,7 +5,7 @@
   <refname>array_fill</refname>
   <refpurpose>Fill an array with values</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,12 +14,12 @@
    <methodparam><type>int</type><parameter>count</parameter></methodparam>
    <methodparam><type>mixed</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Fills an array with
    <parameter>count</parameter> entries of the value of the
    <parameter>value</parameter> parameter, keys starting at the
    <parameter>start_index</parameter> parameter.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,36 +30,36 @@
     <varlistentry>
      <term><parameter>start_index</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The first index of the returned array.
-      </para>
-      <para>
-       If <parameter>start_index</parameter> is negative, 
-       the first index of the returned array will be 
-       <parameter>start_index</parameter> and the following 
+      </simpara>
+      <simpara>
+       If <parameter>start_index</parameter> is negative,
+       the first index of the returned array will be
+       <parameter>start_index</parameter> and the following
        indices will start from zero prior to PHP 8.0.0;
        as of PHP 8.0.0, negative keys are incremented normally
        (see <link linkend="function.array-fill.example.negative-start-index">example</link>).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
     <varlistentry>
      <term><parameter>count</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Number of elements to insert.
        Must be greater than or equal to zero, and less than or equal to <literal>2147483647</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Value to use for filling
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -69,17 +69,17 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the filled array
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws a <classname>ValueError</classname> if <parameter>count</parameter> is
+  <simpara>
+   Throws a <exceptionname>ValueError</exceptionname> if <parameter>count</parameter> is
    out of range.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -96,7 +96,7 @@
      <row>
       <entry>8.0.0</entry>
       <entry>
-       <function>array_fill</function> now throws a <classname>ValueError</classname>
+       <function>array_fill</function> now throws a <exceptionname>ValueError</exceptionname>
        if <parameter>count</parameter> is out of range; previously <constant>E_WARNING</constant>
        was raised, and the function returned &false;.
       </entry>
@@ -172,17 +172,17 @@ Array
     </screen>
    </example>
   </para>
-  <para>
+  <simpara>
    Note that index <literal>-1</literal> is not present prior to PHP 8.0.0.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="notes">
   &reftitle.notes;
-  <para>
-   See also the <link linkend="language.types.array">Arrays</link> 
+  <simpara>
+   See also the <link linkend="language.types.array">Arrays</link>
    section of manual for a detailed explanation of negative keys.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

@@ -5,19 +5,19 @@
   <refname>posix_isatty</refname>
   <refpurpose>Determine if a file descriptor is an interactive terminal</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>bool</type><methodname>posix_isatty</methodname>
    <methodparam><type class="union"><type>resource</type><type>int</type></type><parameter>file_descriptor</parameter></methodparam>
   </methodsynopsis>
-   <para>
+   <simpara>
     Determines if the file descriptor <parameter>file_descriptor</parameter> refers to a valid
     terminal type device.
-  </para>
+  </simpara>
  </refsect1>
-    
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   <para>
@@ -26,13 +26,13 @@
    </variablelist>
   </para>
  </refsect1>
-       
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if <parameter>file_descriptor</parameter> is an open descriptor connected
    to a terminal and &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -71,7 +71,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
-       
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

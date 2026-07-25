@@ -14,10 +14,10 @@
  <!-- {{{ Installation -->
  <section xml:id="dom.installation">
   &reftitle.install;
-  <para>
+  <simpara>
    &installation.enabled.disable;
    <option role="configure">--disable-dom</option>
-  </para>
+  </simpara>
  </section>
  <!-- }}} -->
 

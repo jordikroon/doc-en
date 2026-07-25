@@ -9,14 +9,14 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    <filename>ssh2.shell://</filename>
    <filename>ssh2.exec://</filename>
    <filename>ssh2.tunnel://</filename>
    <filename>ssh2.sftp://</filename>
    <filename>ssh2.scp://</filename>
    (PECL)
-  </para>
+  </simpara>
 
   <note>
    <title>This wrapper is not enabled by default</title>

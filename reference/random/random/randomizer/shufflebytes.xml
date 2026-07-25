@@ -11,13 +11,13 @@
    <modifier>public</modifier> <type>string</type><methodname>Random\Randomizer::shuffleBytes</methodname>
    <methodparam><type>string</type><parameter>bytes</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a uniformly selected permutation of the input <parameter>bytes</parameter>.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    Each possible permutation of the input <parameter>bytes</parameter> is equally likely to be returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,12 +26,12 @@
    <varlistentry>
     <term><parameter>bytes</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The &string; whose bytes are shuffled.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       The input &string; will not be modified.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -39,9 +39,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A permutation of the bytes of <parameter>bytes</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

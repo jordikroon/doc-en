@@ -44,15 +44,15 @@
 
  <simplesect xml:id="install.windows.pecl" annotations="chunk:false">
   <title>Pre-built PECL Extensions</title>
-  <para>
+  <simpara>
    Pre-built Windows versions of PECL extensions are distributed as DLL
    files on the extension's PECL page.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Binaries are not available for extensions that use features specific
    to other systems, like Unix, or depend on libraries that are not
    available on Windows.
-  </para>
+  </simpara>
  </simplesect>
 
 
@@ -62,16 +62,16 @@
    There are four types of PHP builds:
    <itemizedlist spacing="compact">
     <listitem>
-     <para>Thread-Safe (TS) - for single process web servers, like Apache with mod_php</para>
+     <simpara>Thread-Safe (TS) - for single process web servers, like Apache with mod_php</simpara>
     </listitem>
     <listitem>
-     <para>Non-Thread-Safe (NTS) - for IIS and other FastCGI web servers (Apache with mod_fastcgi) and recommended for command-line scripts</para>
+     <simpara>Non-Thread-Safe (NTS) - for IIS and other FastCGI web servers (Apache with mod_fastcgi) and recommended for command-line scripts</simpara>
     </listitem>
     <listitem>
-     <para>x86 - for 32-bit systems.</para>
+     <simpara>x86 - for 32-bit systems.</simpara>
     </listitem>
     <listitem>
-     <para>x64 - for 64-bit systems.</para>
+     <simpara>x64 - for 64-bit systems.</simpara>
     </listitem>
    </itemizedlist>
   </para>

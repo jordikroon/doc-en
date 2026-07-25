@@ -11,10 +11,10 @@
  <!-- {{{ Resources -->
  <section xml:id="filesystem.resources">
   &reftitle.resources;
-  <para>
+  <simpara>
    The file system uses <literal>streams</literal> as their resource type. Streams
    are documented in its own reference chapter, <link linkend="book.stream">Streams</link>.
-  </para>
+  </simpara>
  </section>
  <!-- }}} -->
 

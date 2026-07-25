@@ -10,9 +10,9 @@
 <!-- {{{ IntlGregorianCalendar intro -->
   <section xml:id="intlgregoriancalendar.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
 
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -43,7 +43,7 @@
 <!-- }}} -->
 
   </section>
-  
+
  </partintro>
 
  &reference.intl.entities.intlgregoriancalendar;

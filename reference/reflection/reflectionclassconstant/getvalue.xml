@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>mixed</type><methodname>ReflectionClassConstant::getValue</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the class constant's value.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The value of the class constant.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

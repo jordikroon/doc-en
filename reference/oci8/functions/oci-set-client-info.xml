@@ -5,7 +5,7 @@
   <refname>oci_set_client_info</refname>
   <refpurpose>Sets the client information</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,21 +13,21 @@
    <methodparam><type>resource</type><parameter>connection</parameter></methodparam>
    <methodparam><type>string</type><parameter>client_info</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets the client information for Oracle tracing.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The client information is registered with the database when the next
    'round-trip' from PHP to the database occurs, typically when an SQL
    statement is executed.
-  </para>
-  <para>
-   The client information can subsequently be queried from database 
+  </simpara>
+  <simpara>
+   The client information can subsequently be queried from database
    administration views such as <literal>V$SESSION</literal>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The value may be retained across persistent connections.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -43,9 +43,9 @@
     <varlistentry>
      <term><parameter>client_info</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        User chosen string up to 64 bytes long.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -54,9 +54,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

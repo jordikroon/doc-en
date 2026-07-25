@@ -18,18 +18,18 @@
    <classname>DateTime</classname>. Consider using the
    <classname>DateTimeImmutable</classname> and features instead.
   </para>
-  <para>
+  <simpara>
    Returns a new DateTime object.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   <variablelist>
    <varlistentry>
     <term><parameter>datetime</parameter></term>
     <listitem>
-     <para>&date.formats.parameter;</para>
+     <simpara>&date.formats.parameter;</simpara>
      <simpara>
       Enter <literal>"now"</literal> here to obtain the current time when using
       the <parameter>timezone</parameter> parameter.
@@ -64,9 +64,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a new DateTime instance.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

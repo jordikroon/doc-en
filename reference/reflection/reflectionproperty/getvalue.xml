@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>mixed</type><methodname>ReflectionProperty::getValue</methodname>
    <methodparam choice="opt"><type class="union"><type>object</type><type>null</type></type><parameter>object</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the property's value.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -38,9 +38,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The current value of the property.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -61,7 +61,7 @@
        <methodname>ReflectionProperty::getValue</methodname> right away.
        Previously, they needed to be made accessible by calling
        <methodname>ReflectionProperty::setAccessible</methodname>; otherwise
-       a <classname>ReflectionException</classname> was thrown.
+       a <exceptionname>ReflectionException</exceptionname> was thrown.
       </entry>
      </row>
      <row>
@@ -85,7 +85,7 @@
 <?php
 class Foo {
     public static $staticProperty = 'foobar';
-    
+
     public $property = 'barfoo';
     protected $privateProperty = 'foofoo';
 }

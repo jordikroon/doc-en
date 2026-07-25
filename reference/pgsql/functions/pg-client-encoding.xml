@@ -10,28 +10,28 @@
  </refnamediv>
 
  <refsect1 role="description">
-  &reftitle.description;     
+  &reftitle.description;
   <methodsynopsis>
    <type>string</type><methodname>pg_client_encoding</methodname>
    <methodparam choice="opt"><type class="union"><type>PgSql\Connection</type><type>null</type></type><parameter>connection</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
-   PostgreSQL supports automatic character set conversion between 
+  <simpara>
+   PostgreSQL supports automatic character set conversion between
    server and client for certain character sets.
    <function>pg_client_encoding</function> returns the client
    encoding as a string. The returned string will be one of the
    standard PostgreSQL encoding identifiers.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     If libpq is compiled without multibyte encoding support,
     <function>pg_client_encoding</function> always returns
     <literal>SQL_ASCII</literal>. Supported encoding depends on PostgreSQL
     version.  Refer to the PostgreSQL Documentation supported encodings.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     The function used to be called <function>pg_clientencoding</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -51,9 +51,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
     The client encoding.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -78,7 +78,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -103,7 +103,7 @@ Client encoding is: ISO-8859-1
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

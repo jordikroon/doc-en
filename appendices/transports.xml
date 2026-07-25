@@ -2,19 +2,19 @@
 <!-- $Revision$ -->
 <appendix xml:id="transports" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <title>List of Supported Socket Transports</title>
- <para>
+ <simpara>
   The following is a list of the various URL style socket transports
   that PHP has built-in for use with the streams based socket
   functions such as <function>fsockopen</function>, and
   <function>stream_socket_client</function>.  These transports do
-  <emphasis>not</emphasis> apply to the 
+  <emphasis>not</emphasis> apply to the
   <link linkend="ref.sockets">Socket Functions</link> of the Sockets extension.
- </para>
+ </simpara>
 
- <para>
+ <simpara>
   For a list of transports installed in your version of
   PHP use <function>stream_get_transports</function>.
- </para>
+ </simpara>
 
  <section xml:id="transports.inet">
   <title>Internet Domain: TCP, UDP, SSL, and TLS</title>
@@ -68,7 +68,7 @@
    <title>IPv6 numeric addresses with port numbers</title>
    <simpara>
     In the second example above, while the IPv4 and hostname
-    examples are left untouched apart from the addition of 
+    examples are left untouched apart from the addition of
     their colon and portnumber, the IPv6 address is wrapped in
     square brackets: <literal>[fe80::1]</literal>.  This is to
     distinguish between the colons used in an IPv6 address and
@@ -77,8 +77,8 @@
   </note>
 
   <simpara>
-   The <literal>ssl://</literal> and <literal>tls://</literal> transports 
-   (available only when openssl support is compiled into PHP) are extensions 
+   The <literal>ssl://</literal> and <literal>tls://</literal> transports
+   (available only when openssl support is compiled into PHP) are extensions
    of the <literal>tcp://</literal> transport which include SSL encryption.
   </simpara>
 

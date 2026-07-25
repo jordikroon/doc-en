@@ -30,17 +30,17 @@
     <varlistentry>
      <term><parameter>string1</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The first string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>string2</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The second string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -85,7 +85,7 @@ if (strcmp($var1, $var2) !== 0) {
 ?>
 ]]>
     </programlisting>
-   </example>   
+   </example>
   </para>
  </refsect1>
 

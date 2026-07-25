@@ -4,19 +4,19 @@
   <refname>fdatasync</refname>
   <refpurpose>Synchronizes data (but not meta-data) to the file</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>bool</type><methodname>fdatasync</methodname>
    <methodparam><type>resource</type><parameter>stream</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function synchronizes <parameter>stream</parameter> contents to storage media, just like <function>fsync</function> does,
    but it does not synchronize file meta-data.
    Note that this function is only effectively different in POSIX systems.
    In Windows, this function is aliased to <function>fsync</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -35,9 +35,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -64,7 +64,7 @@ fclose($stream);
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

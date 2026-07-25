@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.gmp-div">
+<refentry xml:id="function.gmp-div" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>gmp_div</refname>
   <refpurpose>&Alias; <function>gmp_div_q</function></refpurpose>

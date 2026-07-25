@@ -5,30 +5,30 @@
   <refname>SplHeap::next</refname>
   <refpurpose>Move to the next node</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="SplHeap">
    <modifier>public</modifier> <type>void</type><methodname>SplHeap::next</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Move to the next node. This will delete the top node of the heap.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   &no.function.parameters;
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
- 
+
 </refentry>
 <!-- Keep this comment at the end of the file
 Local variables:

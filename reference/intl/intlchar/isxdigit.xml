@@ -12,17 +12,17 @@
    <modifier>public</modifier> <modifier>static</modifier> <type class="union"><type>bool</type><type>null</type></type><methodname>IntlChar::isxdigit</methodname>
    <methodparam><type class="union"><type>int</type><type>string</type></type><parameter>codepoint</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Determines whether the specified code point is a hexadecimal digit.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    &true; for characters with general category "Nd" (decimal digit numbers) as
    well as Latin letters a-f and A-F in both ASCII and Fullwidth ASCII.
    (That is, for letters with code points 0041..0046, 0061..0066, FF21..FF26, FF41..FF46.)
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This is equivalent to <literal>IntlChar::digit($codepoint, 16) &gt;= 0</literal>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -39,10 +39,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if
    <parameter>codepoint</parameter> is a hexadecimal character, &false; if not. Returns &null; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -72,9 +72,9 @@ bool(false)
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     In order to narrow the definition of hexadecimal digits to only ASCII characters use:
-   </para>
+   </simpara>
    <programlisting role="php">
     <![CDATA[
 <?php

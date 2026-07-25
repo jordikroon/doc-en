@@ -7,10 +7,10 @@
  <sect3 xml:id="migration70.incompatible.other.new-by-ref">
   <title>New objects cannot be assigned by reference</title>
 
-  <para>
+  <simpara>
    The result of the &new; statement can no longer be assigned to a variable
    by reference:
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -39,9 +39,9 @@ Parse error: syntax error, unexpected 'new' (T_NEW) in /tmp/test.php on line 3
  <sect3 xml:id="migration70.incompatible.other.classes">
   <title>Invalid class, interface and trait names</title>
 
-  <para>
+  <simpara>
    The following names cannot be used to name classes, interfaces or traits:
-  </para>
+  </simpara>
 
   <itemizedlist>
    <listitem>
@@ -67,11 +67,11 @@ Parse error: syntax error, unexpected 'new' (T_NEW) in /tmp/test.php on line 3
    </listitem>
   </itemizedlist>
 
-  <para>
+  <simpara>
    Furthermore, the following names should not be used. Although they will not
    generate an error in PHP 7.0, they are reserved for future use and should
    be considered deprecated.
-  </para>
+  </simpara>
 
   <itemizedlist>
    <listitem>
@@ -92,10 +92,10 @@ Parse error: syntax error, unexpected 'new' (T_NEW) in /tmp/test.php on line 3
  <sect3 xml:id="migration70.incompatible.other.php-tags">
   <title>ASP and script PHP tags removed</title>
 
-  <para>
+  <simpara>
    Support for using ASP and script tags to delimit PHP code has been removed.
    The affected tags are:
-  </para>
+  </simpara>
 
   <table>
    <title>Removed ASP and script tags</title>
@@ -127,12 +127,12 @@ Parse error: syntax error, unexpected 'new' (T_NEW) in /tmp/test.php on line 3
  <sect3 xml:id="migration70.incompatible.other.incompatible-this">
   <title>Calls from incompatible context removed</title>
 
-  <para>
+  <simpara>
    <link linkend="migration56.deprecated.incompatible-context">Previously deprecated in PHP 5.6</link>,
    static calls made to a non-static method with an incompatible context will
    now result in the called method having an undefined
    <literal>$this</literal> variable and a deprecation warning being issued.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -174,12 +174,12 @@ NULL
  <sect3 xml:id="migration70.incompatible.other.yield">
   <title>&yield; is now a right associative operator</title>
 
-  <para>
+  <simpara>
    The &yield; construct no longer requires parentheses, and has been changed
    to a right associative operator with precedence between
    <literal>print</literal> and <literal>=&gt;</literal>. This can result in
    changed behaviour:
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -201,19 +201,19 @@ yield ($foo or die);
    </programlisting>
   </informalexample>
 
-  <para>
+  <simpara>
    Parentheses can be used to disambiguate those cases.
-  </para>
+  </simpara>
  </sect3>
 
  <sect3 xml:id="migration70.incompatible.other.func-parameters">
   <title>Functions cannot have multiple parameters with the same name</title>
 
-  <para>
+  <simpara>
    It is no longer possible to define two or more function parameters with the
    same name. For example, the following function will trigger an
    <constant>E_COMPILE_ERROR</constant>:
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -231,12 +231,12 @@ function foo($a, $b, $unused, $unused) {
  <sect3 xml:id="migration70.incompatible.other.func-parameter-modified">
   <title>Functions inspecting arguments report the <emphasis>current</emphasis> parameter value</title>
 
-  <para>
+  <simpara>
    <function>func_get_arg</function>, <function>func_get_args</function>,
    <function>debug_backtrace</function> and exception backtraces will no longer
    report the original value that was passed to a parameter, but will instead
    provide the current value (which might have been modified).
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -267,11 +267,11 @@ foo(1);?>
  <sect3 xml:id="migration70.incompatible.other.multiple-default">
   <title>Switch statements cannot have multiple default blocks</title>
 
-  <para>
+  <simpara>
    It is no longer possible to define two or more default blocks in a switch
    statement. For example, the following switch statement will trigger an
    <constant>E_COMPILE_ERROR</constant>:
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -292,28 +292,28 @@ switch (1) {
  <sect3 xml:id="migration70.incompatible.other.http-raw-post-data">
   <title><varname>$HTTP_RAW_POST_DATA</varname> removed</title>
 
-  <para>
+  <simpara>
    <varname>$HTTP_RAW_POST_DATA</varname> is no longer available. The
    <link linkend="wrappers.php.input"><literal>php://input</literal></link>
    stream should be used instead.
-  </para>
+  </simpara>
  </sect3>
 
  <sect3 xml:id="migration70.incompatible.other.ini-comments">
   <title><literal>#</literal> comments in INI files removed</title>
 
-  <para>
+  <simpara>
    Support for prefixing comments with <literal>#</literal> in INI files has been
    removed. <literal>;</literal> (semi-colon) should be used instead. This change
    applies to &php.ini;, as well as files handled by
    <function>parse_ini_file</function> and <function>parse_ini_string</function>.
-  </para>
+  </simpara>
  </sect3>
 
  <sect3 xml:id="migration70.incompatible.other.json-to-jsond">
   <title>JSON extension replaced with JSOND</title>
 
-  <para>
+  <simpara>
    The JSON extension has been replaced with JSOND, causing three minor BC
    breaks. Firstly, a number must not end in a decimal point (i.e.
    <literal>34.</literal> must be changed to either <literal>34.0</literal> or
@@ -322,82 +322,82 @@ switch (1) {
    (i.e. <literal>3.e3</literal> must be changed to either
    <literal>3.0e3</literal> or <literal>3e3</literal>).
    Finally, an empty string is no longer considered valid JSON.
-  </para>
+  </simpara>
  </sect3>
 
  <sect3 xml:id="migration70.incompatible.other.internal-function-failure-overflow">
   <title>Internal function failure on overflow</title>
 
-  <para>
+  <simpara>
    Previously, internal functions would silently truncate numbers produced from
    float-to-integer coercions when the float was too large to represent as an
    integer. Now, an E_WARNING will be emitted and &null; will be returned.
-  </para>
+  </simpara>
  </sect3>
 
  <sect3 xml:id="migration70.incompatible.other.fixes-custom-session-handler">
   <title>Fixes to custom session handler return values</title>
 
-  <para>
+  <simpara>
    Any predicate functions implemented by custom session handlers that return
    either &false; or <literal>-1</literal> will be fatal errors. If any value
    from these functions other than a boolean, <literal>-1</literal>, or
    <literal>0</literal> is returned, then it will fail and an E_WARNING will be
    emitted.
-  </para>
+  </simpara>
  </sect3>
 
  <sect3 xml:id="migration70.incompatible.other.sort-order">
   <title>Sort order of equal elements</title>
-  <para>
+  <simpara>
    The internal sorting algorithm has been improved, what may result in
    different sort order of elements, which compare as equal, than before.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     Don't rely on the order of elements which compare as equal; it might change
     anytime.
-   </para>
+   </simpara>
   </note>
  </sect3>
 
  <sect3 xml:id="migration70.incompatible.other.break-continue">
   <title>Misplaced break and continue statements</title>
-  <para>
+  <simpara>
    <literal>break</literal> and <literal>continue</literal> statements outside of
    a loop or <literal>switch</literal> control structure are now detected at
    compile-time instead of run-time as before, and trigger an
    <constant>E_COMPILE_ERROR</constant>.
-  </para>
+  </simpara>
  </sect3>
 
  <sect3 xml:id="migration70.incompatible.other.break-continue-constant">
   <title>Constant disallowed as break and continue argument</title>
-  <para>
+  <simpara>
    <literal>break</literal> and <literal>continue</literal> statements no longer
    allow their argument to be a constant, and trigger a
    <constant>E_COMPILE_ERROR</constant>.
-  </para>
+  </simpara>
  </sect3>
 
  <sect3 xml:id="migration70.incompatible.other.mhash">
   <title>Mhash is not an extension anymore</title>
-  <para>
+  <simpara>
    The Mhash extension has been fully integrated into the <link
    linkend="book.hash">Hash</link> extension. Therefore, it is no longer
    possible to detect Mhash support with <function>extension_loaded</function>;
    use <function>function_exists</function> instead. Furthermore, Mhash is no
    longer reported by <function>get_loaded_extensions</function> and related
    features.
-  </para>
+  </simpara>
  </sect3>
 
  <sect3 xml:id="migration70.incompatible.other.declare-ticks">
   <title>declare(ticks)</title>
-  <para>
+  <simpara>
    The <link linkend="control-structures.declare.ticks">declare(ticks)</link>
    directive does no longer leak into different compilation units.
-  </para>
+  </simpara>
  </sect3>
 </sect2>
 

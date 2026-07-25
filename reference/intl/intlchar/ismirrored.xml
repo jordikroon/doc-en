@@ -12,12 +12,12 @@
    <modifier>public</modifier> <modifier>static</modifier> <type class="union"><type>bool</type><type>null</type></type><methodname>IntlChar::isMirrored</methodname>
    <methodparam><type class="union"><type>int</type><type>string</type></type><parameter>codepoint</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Determines whether the code point has the Bidi_Mirrored property.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This property is set for characters that are commonly used in Right-To-Left contexts and need to be displayed with a "mirrored" glyph.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -34,10 +34,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if
    <parameter>codepoint</parameter> has the Bidi_Mirrored property, &false; if not. Returns &null; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

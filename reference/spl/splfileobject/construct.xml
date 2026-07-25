@@ -15,9 +15,9 @@
    <methodparam choice="opt"><type>bool</type><parameter>useIncludePath</parameter><initializer>&false;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>resource</type><type>null</type></type><parameter>context</parameter><initializer>&null;</initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Construct a new file object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,34 +27,34 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The file to read.
-      </para>
+      </simpara>
       &tip.fopen-wrapper;
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>mode</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The mode in which to open the file. See <function>fopen</function> for a list of allowed modes.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>useIncludePath</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Whether to search in the <link linkend="ini.include-path">include_path</link> for <parameter>filename</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>context</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A valid context resource created with <function>stream_context_create</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -63,12 +63,12 @@
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws a <classname>RuntimeException</classname> if the <parameter>filename</parameter> cannot be opened.
-  </para>
-  <para>
-   Throws a <classname>LogicException</classname> if the <parameter>filename</parameter> is a directory.
-  </para>
+  <simpara>
+   Throws a <exceptionname>RuntimeException</exceptionname> if the <parameter>filename</parameter> cannot be opened.
+  </simpara>
+  <simpara>
+   Throws a <exceptionname>LogicException</exceptionname> if the <parameter>filename</parameter> is a directory.
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -76,9 +76,9 @@
   <para>
    <example>
     <title><methodname>SplFileObject::__construct</methodname> example</title>
-    <para>
+    <simpara>
      This example opens the current file and iterates over its contents line by line.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

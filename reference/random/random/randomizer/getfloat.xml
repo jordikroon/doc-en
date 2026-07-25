@@ -13,10 +13,10 @@
    <methodparam><type>float</type><parameter>max</parameter></methodparam>
    <methodparam choice="opt"><type>Random\IntervalBoundary</type><parameter>boundary</parameter><initializer><constant>Random\IntervalBoundary::ClosedOpen</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a uniformly selected, equidistributed float from a requested interval.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Due to the limited precision, not all real numbers can be exactly represented as
    a floating point number.
 
@@ -35,14 +35,14 @@
    <literal>4.0</literal> and <literal>8.0</literal>,
    <literal>8.0</literal> and <literal>16.0</literal>,
    and so on.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Randomly sampling an arbitrary number within the requested interval, for example
    by dividing two integers, might result in a biased distribution for this reason.
 
    The necessary rounding will cause some floats to be returned more often than
    others, especially around powers of two when the density of floats changes.
-  </para>
+  </simpara>
   <para>
    <methodname>Random\Randomizer::getFloat</methodname> implements an algorithm that
    will return a uniformly selected float from the largest possible set of exactly
@@ -58,7 +58,7 @@
    Stepping will start from the interval boundary with the larger absolute value
    to ensure the steps align with the exactly representable floats.
   </para>
-  <para>
+  <simpara>
    Closed interval boundaries will always be included in the set of selectable
    floats.
 
@@ -66,9 +66,9 @@
    the boundary with the smaller absolute value is a closed boundary, the distance
    between that boundary and its nearest selectable float will be smaller than the
    step size.
-  </para>
+  </simpara>
   <caution>
-   <para>
+   <simpara>
     Post-processing the returned floats is likely going to break the uniform
     equidistribution, because the intermediate floats within a mathematical
     operation are experiencing implicit rounding.
@@ -76,7 +76,7 @@
     The requested interval should match the desired interval as closely as possible
     and rounding should only be performed as an explicit operation right before
     displaying the selected number to a user.
-   </para>
+   </simpara>
   </caution>
   <refsect2>
    <title>Explanation of the Algorithm Using Example Values</title>
@@ -154,10 +154,10 @@
     The reason for that is that the requested interval is closed at the lower boundary
     (<literal>1.625</literal>) and closed boundaries are always included.
    </para>
-   <para>
+   <simpara>
     Finally the algorithm uniformly selects one of the four selectable values at random
     and returns it.
-   </para>
+   </simpara>
    <refsect3 xml:id="random-randomizer.getfloat.affine-transformation">
     <title>Why Dividing Two Integers Does Not Work</title>
     <para>
@@ -236,25 +236,25 @@
     <varlistentry>
      <term><parameter>min</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The lower bound of the interval.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>max</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The upper bound of the interval.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>boundary</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Specifies whether the interval boundaries are possible return values.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -263,13 +263,13 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A uniformly selected, equidistributed float from the interval specified by <parameter>min</parameter>,
    <parameter>max</parameter>, and <parameter>boundary</parameter>.
 
    Whether <parameter>min</parameter> and <parameter>max</parameter> are possible return values depends
    on the value of <parameter>boundary</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -278,19 +278,19 @@
    <listitem>
     <simpara>
      If the value of <parameter>min</parameter> is not finite (<function>is_finite</function>),
-     a <classname>ValueError</classname> will be thrown.
+     a <exceptionname>ValueError</exceptionname> will be thrown.
     </simpara>
    </listitem>
    <listitem>
     <simpara>
      If the value of <parameter>max</parameter> is not finite (<function>is_finite</function>),
-     a <classname>ValueError</classname> will be thrown.
+     a <exceptionname>ValueError</exceptionname> will be thrown.
     </simpara>
    </listitem>
    <listitem>
     <simpara>
      If the requested interval does not contain any values,
-     a <classname>ValueError</classname> will be thrown.
+     a <exceptionname>ValueError</exceptionname> will be thrown.
     </simpara>
    </listitem>
    &random.engineErrors;
@@ -332,23 +332,23 @@ Lat: +69.244304 Lng: -53.548951
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     This method implements the γ-section algorithm as published in
     <link xlink:href="&url.random.gamma-section;">
      Drawing Random Floating-Point Numbers from an Interval.
      Frédéric Goualard, ACM Trans. Model. Comput. Simul., 32:3, 2022
     </link>
     to obtain the desired behavioral properties.
-   </para>
+   </simpara>
   </note>
   <caution>
-   <para>
+   <simpara>
     Underflow is intentionally left unhandled in the γ-section algorithm.
     This may result in incorrect values being returned for intervals with
     boundaries in the subnormal range of floating point numbers, i.e.
     for boundaries with an absolute value smaller than approximately
     <literal>2<superscript>-1020</superscript></literal> (about <literal>8.9e-308</literal>).
-   </para>
+   </simpara>
   </caution>
  </refsect1>
 

@@ -13,9 +13,9 @@
    <modifier>public</modifier> <type class="union"><type>resource</type><type>false</type></type><methodname>streamWrapper::stream_cast</methodname>
    <methodparam><type>int</type><parameter>cast_as</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This method is called in response to <function>stream_select</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,13 +25,13 @@
     <varlistentry>
      <term><parameter>cast_as</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Can be <constant>STREAM_CAST_FOR_SELECT</constant> when
        <function>stream_select</function> is calling
        <function>stream_cast</function> or
        <constant>STREAM_CAST_AS_STREAM</constant> when
        <function>stream_cast</function> is called for other uses.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -40,9 +40,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Should return the underlying stream resource used by the wrapper, or &false;.
-  </para>
+  </simpara>
  </refsect1>
 
 <!--

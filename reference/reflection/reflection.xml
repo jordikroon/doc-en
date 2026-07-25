@@ -10,9 +10,9 @@
 <!-- {{{ Reflection intro -->
   <section xml:id="reflection.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     The reflection class.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

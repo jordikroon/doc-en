@@ -11,10 +11,10 @@
    <type>void</type><methodname>spl_autoload_call</methodname>
    <methodparam><type>string</type><parameter>class</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function can be used to manually search for a class, interface, trait, or enumeration
    using the registered __autoload functions.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>class</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The class name being searched.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,9 +35,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

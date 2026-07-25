@@ -13,10 +13,10 @@
    <modifier>public</modifier> <type>DateTimeImmutable</type><methodname>DateTimeImmutable::modify</methodname>
    <methodparam><type>string</type><parameter>modifier</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Creates a new <type>DateTimeImmutable</type> object with modified timestamp.
    The original object is not modified.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,7 +25,7 @@
    <varlistentry>
     <term><parameter>modifier</parameter></term>
     <listitem>
-     <para>&date.formats.parameter;</para>
+     <simpara>&date.formats.parameter;</simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -33,10 +33,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns <classname>DateTimeImmutable</classname> on success.
    &return.falseforfailure.style.procedural;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -83,7 +83,7 @@
   &reftitle.examples;
   <example>
    <title><function>DateTimeImmutable::modify</function> example</title>
-   <para>&style.oop;</para>
+   <simpara>&style.oop;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

@@ -5,7 +5,7 @@
   <refname>socket_create_listen</refname>
   <refpurpose>Opens a socket on port to accept connections</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,15 +13,15 @@
    <methodparam><type>int</type><parameter>port</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>backlog</parameter><initializer><constant>SOMAXCONN</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>socket_create_listen</function> creates a new <classname>Socket</classname> instance of
    type <constant>AF_INET</constant> listening on <emphasis>all</emphasis>
    local interfaces on the given port waiting for new connections.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This function is meant to ease the task of creating a new socket which
    only listens to accept new connections.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -31,21 +31,21 @@
     <varlistentry>
      <term><parameter>port</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The port on which to listen on all interfaces.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>backlog</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <parameter>backlog</parameter> parameter defines the maximum length
        the queue of pending connections may grow to.
        <constant>SOMAXCONN</constant> may be passed as
        <parameter>backlog</parameter> parameter, see
        <function>socket_listen</function> for more information.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -54,13 +54,13 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    <function>socket_create_listen</function> returns a new <classname>Socket</classname> instance
    on success or &false; on error. The error code can be retrieved with
    <function>socket_last_error</function>. This code may be passed to
    <function>socket_strerror</function> to get a textual explanation of the
    error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -103,11 +103,11 @@
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     If you want to create a socket which only listens on a certain
     interface you need to use <function>socket_create</function>,
     <function>socket_bind</function> and <function>socket_listen</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

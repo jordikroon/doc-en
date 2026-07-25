@@ -323,7 +323,7 @@
     Intl's internal error mechanism has been modernized so that it
     indicates more accurately which call site caused what error.
     Moreover, some ext/date exceptions have been wrapped inside a
-    <classname>IntlException</classname> now.
+    <exceptionname>IntlException</exceptionname> now.
    </simpara>
 
   </sect3>

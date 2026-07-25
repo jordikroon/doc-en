@@ -2,18 +2,18 @@
 <!-- $Revision$ -->
 <sect1 xml:id="install.unix.debian" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <title>Installing from packages on Debian GNU/Linux and related distributions</title>
- <para>
+ <simpara>
   While PHP can be installed from source, it is also available through
   packages from <link xlink:href="&url.debian;">Debian GNU/Linux</link>.
   This is also true for other distributions based on Debian, such as
   Ubuntu, Kali Linux, and Linux Mint.
- </para>
+ </simpara>
  &warn.install.third-party-support;
- <para>
+ <simpara>
   The packages can be installed using either the <command>apt</command> or
   <command>aptitude</command> commands. This manual page uses these two
   commands interchangeably.
- </para>
+ </simpara>
  <sect2 xml:id="install.unix.debian.apt">
   <title>Using APT</title>
    <simpara>
@@ -87,7 +87,7 @@
    </example>
    <simpara>
     APT will automatically add the appropriate lines to the
-    different &php.ini; related files like 
+    different &php.ini; related files like
     <filename>/etc/php/7.4/php.ini</filename>,
     <filename>/etc/php/7.4/conf.d/*.ini</filename>, etc. and depending on
     the extension will add entries similar to <literal>extension=foo.so</literal>.

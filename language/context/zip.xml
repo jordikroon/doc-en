@@ -9,9 +9,9 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    Zip context options are available for <literal>zip</literal> wrappers.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="options">
@@ -21,9 +21,9 @@
     <varlistentry xml:id="context.zip.password">
      <term><parameter>password</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Used to specify password used for encrypted archive.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

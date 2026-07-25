@@ -6,11 +6,11 @@
 
  <partintro xml:id="pcntl.seealso">
   &reftitle.seealso;
-  <para>
+  <simpara>
    A look at the section about
    <link linkend="ref.posix">POSIX functions</link>
    may be useful.
-  </para>
+  </simpara>
  </partintro>
 
  &reference.pcntl.entities.functions;

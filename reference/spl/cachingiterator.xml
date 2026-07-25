@@ -3,21 +3,21 @@
 <reference xml:id="class.cachingiterator" role="class" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
  <title>The CachingIterator class</title>
  <titleabbrev>CachingIterator</titleabbrev>
- 
+
  <partintro>
- 
+
 <!-- {{{ CachingIterator intro -->
   <section xml:id="cachingiterator.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     This object supports cached iteration over another iterator.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
- 
+
   <section xml:id="cachingiterator.synopsis">
    &reftitle.classsynopsis;
- 
+
 <!-- {{{ Synopsis -->
    <classsynopsis class="class">
     <ooclass>
@@ -90,7 +90,7 @@
 <!-- }}} -->
 
   </section>
-  
+
 <!-- {{{ CachingIterator constants -->
   <section xml:id="cachingiterator.constants">
    &reftitle.constants;
@@ -99,50 +99,50 @@
     <varlistentry xml:id="cachingiterator.constants.call-tostring">
      <term><constant>CachingIterator::CALL_TOSTRING</constant></term>
      <listitem>
-      <para>Convert every element to string.</para>
+      <simpara>Convert every element to string.</simpara>
      </listitem>
     </varlistentry>
 
     <varlistentry xml:id="cachingiterator.constants.catch-get-child">
      <term><constant>CachingIterator::CATCH_GET_CHILD</constant></term>
      <listitem>
-      <para>Don't throw exception in accessing children.</para>
+      <simpara>Don't throw exception in accessing children.</simpara>
      </listitem>
     </varlistentry>
 
     <varlistentry xml:id="cachingiterator.constants.tostring-use-key">
      <term><constant>CachingIterator::TOSTRING_USE_KEY</constant></term>
      <listitem>
-      <para>
+      <simpara>
        Use <link linkend="cachingiterator.key">key</link> for conversion to
        string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
     <varlistentry xml:id="cachingiterator.constants.tostring-use-current">
      <term><constant>CachingIterator::TOSTRING_USE_CURRENT</constant></term>
      <listitem>
-      <para>
+      <simpara>
        Use <link linkend="cachingiterator.current">current</link> for
-       conversion to string.</para>
+       conversion to string.</simpara>
      </listitem>
     </varlistentry>
 
     <varlistentry xml:id="cachingiterator.constants.tostring-use-inner">
      <term><constant>CachingIterator::TOSTRING_USE_INNER</constant></term>
      <listitem>
-      <para>
+      <simpara>
        Use <link linkend="iteratoriterator.getinneriterator">inner</link>
        for conversion to string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
     <varlistentry xml:id="cachingiterator.constants.full-cache">
      <term><constant>CachingIterator::FULL_CACHE</constant></term>
      <listitem>
-      <para>Cache all read data.</para>
+      <simpara>Cache all read data.</simpara>
      </listitem>
     </varlistentry>
 
@@ -175,9 +175,9 @@
 
 
  </partintro>
- 
+
  &reference.spl.entities.cachingiterator;
- 
+
 </reference>
 <!-- Keep this comment at the end of the file
 Local variables:

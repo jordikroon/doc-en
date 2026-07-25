@@ -12,10 +12,10 @@
    <modifier>private</modifier> <type>void</type><methodname>ReflectionExtension::__clone</methodname>
    <void/>
   </methodsynopsis>
-  <para>
-   The clone method prevents an object from being cloned. Reflection objects 
+  <simpara>
+   The clone method prevents an object from being cloned. Reflection objects
    cannot be cloned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    No value is returned, if called a fatal error will occur.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

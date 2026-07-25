@@ -5,7 +5,7 @@
   <refname>odbc_fetch_into</refname>
   <refpurpose>Fetch one result row into array</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,9 +14,9 @@
    <methodparam><type>array</type><parameter role="reference">array</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>row</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Fetch one result row into <type>array</type>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,28 +26,28 @@
     <varlistentry>
      <term><parameter>statement</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &odbc.result.object;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The result <type>array</type>
        that can be of any type since it will be converted to type
        array. The array will contain the column values starting at array
        index 0.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>row</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The row number.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -56,10 +56,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the number of columns in the result;
    &false; on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -97,9 +97,9 @@ $rc = odbc_fetch_into($res_id, $my_array);
 ?>
 ]]>
     </programlisting>
-    <para>
+    <simpara>
      or
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

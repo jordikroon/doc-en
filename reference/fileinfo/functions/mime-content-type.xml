@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.mime-content-type">
+<refentry xml:id="function.mime-content-type" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>mime_content_type</refname>
   <refpurpose>Detect MIME Content-type for a file</refpurpose>

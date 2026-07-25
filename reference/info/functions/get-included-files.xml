@@ -5,18 +5,18 @@
   <refname>get_included_files</refname>
   <refpurpose>Returns an array with the names of included or required files</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>array</type><methodname>get_included_files</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the names of all files that have been included using
    <function>include</function>, <function>include_once</function>,
    <function>require</function> or <function>require_once</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,18 +26,18 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array of the names of all files.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The script originally called is considered an "included file," so it will
-   be listed together with the files referenced by 
+   be listed together with the files referenced by
    <function>include</function> and family.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Files that are included or required multiple times only show up once in
    the returned array.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

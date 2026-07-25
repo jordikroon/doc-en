@@ -13,16 +13,16 @@
     by <methodname>PDOStatement::fetch</methodname>
     called with <constant>PDO::FETCH_LAZY</constant> fetch mode.
    </para>
-   <para>
+   <simpara>
     Objects of this class cannot be instantiated and are not serializable.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     The <classname>PDORow</classname> object allows access
     to the returned data as if both <constant>PDO::FETCH_OBJ</constant>
     and <constant>PDO::FETCH_BOTH</constant> mode was used.
     This means that the returned data can be accessed as object properties,
     and as an array both indexed by the column name and a column offset number.
-   </para>
+   </simpara>
    <caution>
     <simpara>
      Accessing an undefined property returns &null;
@@ -61,10 +61,10 @@
     <varlistentry xml:id="pdorow.props.querystring">
      <term><varname>queryString</varname></term>
      <listitem>
-      <para>
+      <simpara>
        Query string used by the <classname>PDOStatement</classname>
        that returned the <classname>PDORow</classname> object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -73,10 +73,10 @@
 
   <section role="errors">
    &reftitle.errors;
-   <para>
-    Throws an <classname>Error</classname> when trying to
+   <simpara>
+    Throws an <exceptionname>Error</exceptionname> when trying to
     write to or <function>unset</function> any property.
-   </para>
+   </simpara>
   </section>
 
  </partintro>

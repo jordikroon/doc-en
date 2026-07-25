@@ -9,9 +9,9 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &info.function.alias; <function>mysqli_real_escape_string</function>.
-  </para>
+  </simpara>
  </refsect1>
 </refentry>
 

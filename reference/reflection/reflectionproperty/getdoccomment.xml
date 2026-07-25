@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type class="union"><type>string</type><type>false</type></type><methodname>ReflectionProperty::getDocComment</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the doc comment for a property.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The doc comment if it exists, otherwise &false;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

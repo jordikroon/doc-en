@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>mixed</type><methodname>RecursiveTreeIterator::key</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the current key prefixed and postfixed.
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -27,9 +27,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the current key prefixed and postfixed.
-  </para>
+  </simpara>
  </refsect1>
 
 

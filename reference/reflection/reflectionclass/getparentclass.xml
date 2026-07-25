@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type class="union"><type>ReflectionClass</type><type>false</type></type><methodname>ReflectionClass::getParentClass</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get the parent class.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A <classname>ReflectionClass</classname> or &false; if there's no parent.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://docbook.org/ns/docbook" xml:id="function.print">
+<refentry xml:id="function.print" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>print</refname>
   <refpurpose>Output a string</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>int</type><methodname>print</methodname>
    <methodparam><type>string</type><parameter>expression</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Outputs <parameter>expression</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    <literal>print</literal> is not a function but a language construct.
    Its argument is the expression following the <literal>print</literal> keyword,
    and is not delimited by parentheses.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The major differences to <function>echo</function> are that
    <literal>print</literal> only accepts a single argument and always returns
    <literal>1</literal>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -34,11 +34,11 @@
     <varlistentry>
      <term><parameter>expression</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The expression to be output. Non-string values will be coerced to strings,
        even when <link linkend="language.types.declarations.strict">the
        <literal>strict_types</literal> directive</link> is enabled.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -47,9 +47,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns <literal>1</literal>, always.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

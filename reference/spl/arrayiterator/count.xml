@@ -12,10 +12,10 @@
    <modifier>public</modifier> <type>int</type><methodname>ArrayIterator::count</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the number of elements in the <type>array</type>, or the number of
    public properties in the <type>object</type>.
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -28,10 +28,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The number of elements or public properties in the associated
    <type>array</type> or <type>object</type>, respectively.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

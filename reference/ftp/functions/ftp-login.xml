@@ -13,9 +13,9 @@
    <methodparam><type>string</type><parameter>username</parameter></methodparam>
    <methodparam><modifier role="attribute">#[\SensitiveParameter]</modifier><type>string</type><parameter>password</parameter></methodparam>
   </methodsynopsis>
-  <para> 
+  <simpara>
    Logs in to the given FTP connection.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -30,17 +30,17 @@
     <varlistentry>
      <term><parameter>username</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The username (<literal>USER</literal>).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>password</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The password (<literal>PASS</literal>).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -48,10 +48,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
    If login fails, PHP will also throw a warning.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -70,7 +70,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -79,13 +79,13 @@
     <programlisting role="php">
 <![CDATA[
 <?php
-                     
+
 $ftp_server = "ftp.example.com";
 $ftp_user = "foo";
 $ftp_pass = "bar";
 
 // set up a connection or die
-$ftp = ftp_connect($ftp_server) or die("Couldn't connect to $ftp_server"); 
+$ftp = ftp_connect($ftp_server) or die("Couldn't connect to $ftp_server");
 
 // try to login
 if (@ftp_login($ftp, $ftp_user, $ftp_pass)) {
@@ -95,9 +95,9 @@ if (@ftp_login($ftp, $ftp_user, $ftp_pass)) {
 }
 
 // close the connection
-ftp_close($ftp);  
+ftp_close($ftp);
 ?>
-]]>  
+]]>
     </programlisting>
    </example>
   </para>

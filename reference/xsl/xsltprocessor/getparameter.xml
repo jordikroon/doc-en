@@ -12,10 +12,10 @@
    <methodparam><type>string</type><parameter>namespace</parameter></methodparam>
    <methodparam><type>string</type><parameter>name</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets a parameter if previously set by
    <function>XSLTProcessor::setParameter</function>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -24,17 +24,17 @@
     <varlistentry>
      <term><parameter>namespace</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The namespace URI of the XSLT parameter.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The local name of the XSLT parameter.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -42,9 +42,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The value of the parameter (as a string), or &false; if it's not set.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="seealso">
   &reftitle.seealso;

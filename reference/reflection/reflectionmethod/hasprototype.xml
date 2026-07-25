@@ -11,9 +11,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>ReflectionMethod::hasPrototype</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns whether a method has a prototype.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -23,9 +23,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the method has a prototype, otherwise &false;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

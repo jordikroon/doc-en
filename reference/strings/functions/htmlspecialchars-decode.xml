@@ -15,16 +15,16 @@
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>ENT_QUOTES | ENT_SUBSTITUTE | ENT_HTML401</initializer></methodparam>
   </methodsynopsis>
 
-  <para>
+  <simpara>
    This function is the opposite of <function>htmlspecialchars</function>. It
    converts special HTML entities back to characters.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The converted entities are: <literal>&amp;amp;</literal>,
    <literal>&amp;quot;</literal> (when <constant>ENT_NOQUOTES</constant> is not set),
    <literal>&amp;#039;</literal> (when <constant>ENT_QUOTES</constant> is set),
    <literal>&amp;lt;</literal> and <literal>&amp;gt;</literal>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -34,9 +34,9 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string to decode.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -110,9 +110,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the decoded string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

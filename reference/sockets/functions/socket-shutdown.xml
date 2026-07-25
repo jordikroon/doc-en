@@ -5,7 +5,7 @@
   <refname>socket_shutdown</refname>
   <refpurpose>Shuts down a socket for receiving, sending, or both</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,15 +13,15 @@
    <methodparam><type>Socket</type><parameter>socket</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>mode</parameter><initializer>2</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    The <function>socket_shutdown</function> function allows you to stop
    incoming, outgoing or all data (the default) from being sent through the
    <parameter>socket</parameter>
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     The associated buffer, or buffers, may or may not be emptied.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -32,9 +32,9 @@
     <varlistentry>
      <term><parameter>socket</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A <classname>Socket</classname> instance created with <function>socket_create</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -76,9 +76,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

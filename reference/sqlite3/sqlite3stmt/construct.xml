@@ -24,17 +24,17 @@
    <varlistentry>
     <term><parameter>sqlite3</parameter></term>
     <listitem>
-     <para>
-      
-     </para>
+     <simpara>
+
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>query</parameter></term>
     <listitem>
-     <para>
-      
-     </para>
+     <simpara>
+
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>

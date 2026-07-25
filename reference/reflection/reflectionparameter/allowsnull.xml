@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>ReflectionParameter::allowsNull</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks whether the parameter allows &null;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &true; if &null; is allowed, otherwise &false;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

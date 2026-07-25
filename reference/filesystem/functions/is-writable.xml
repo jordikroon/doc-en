@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.is-writable">
+<refentry xml:id="function.is-writable" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>is_writable</refname>
   <refpurpose>Tells whether the filename is writable</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>bool</type><methodname>is_writable</methodname>
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns &true; if the <parameter>filename</parameter> exists and is
    writable.  The filename argument may be a directory name allowing you
    to check if a directory is writable.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Keep in mind that PHP may be accessing the file as the user id
    that the web server runs as (often 'nobody').
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,21 +30,21 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The filename being checked.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the <parameter>filename</parameter> exists and is
-   writable.  
-  </para>
+   writable.
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -75,11 +75,11 @@ if (is_writable($filename)) {
 
  <refsect1 role="notes">
   &reftitle.notes;
-  
+
   &note.clearstatcache;
   &tip.fopen-wrapper.stat;
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

@@ -12,9 +12,9 @@
    <type>int</type><methodname>connection_status</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the connection status bitfield.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,11 +24,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the connection status bitfield, which can be used against the
    <link linkend="misc.constants"><constant>CONNECTION_<replaceable>*</replaceable></constant></link>
    constants to determine the connection status.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

@@ -5,16 +5,16 @@
   <refname>mb_preferred_mime_name</refname>
   <refpurpose>Get MIME charset string</refpurpose>
  </refnamediv>
-   
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>mb_preferred_mime_name</methodname>
    <methodparam><type>string</type><parameter>encoding</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get a MIME charset <type>string</type> for a specific encoding.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>encoding</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The encoding being checked.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,12 +35,12 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The MIME <literal>charset</literal> <type>string</type> for character encoding
    <parameter>encoding</parameter>,
    or &false; if no charset is preferred for the given <parameter>encoding</parameter>.
-  </para>
- </refsect1> 
+  </simpara>
+ </refsect1>
 
  <refsect1 role="examples">
   &reftitle.examples;

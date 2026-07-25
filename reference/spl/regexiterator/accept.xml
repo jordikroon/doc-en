@@ -27,9 +27,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &true; if a match, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -37,9 +37,9 @@
   <para>
    <example xml:id="regexiterator.accept.example.basic">
     <title><methodname>RegexIterator::accept</methodname> example</title>
-    <para>
+    <simpara>
      This example shows that only items matching the regular expression are accepted.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

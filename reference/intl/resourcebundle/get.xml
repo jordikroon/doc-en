@@ -9,26 +9,26 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="ResourceBundle">
    <modifier>public</modifier> <type class="union"><type>ResourceBundle</type><type>array</type><type>string</type><type>int</type><type>null</type></type><methodname>ResourceBundle::get</methodname>
    <methodparam><type class="union"><type>string</type><type>int</type></type><parameter>index</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>fallback</parameter><initializer>&true;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>ResourceBundle</type><type>array</type><type>string</type><type>int</type><type>null</type></type><methodname>resourcebundle_get</methodname>
    <methodparam><type>ResourceBundle</type><parameter>bundle</parameter></methodparam>
    <methodparam><type class="union"><type>string</type><type>int</type></type><parameter>index</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>fallback</parameter><initializer>&true;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get the data from the bundle by index or string key.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -38,25 +38,25 @@
     <varlistentry>
      <term><parameter>bundle</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <classname>ResourceBundle</classname> object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>index</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Data index, must be string or integer.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>fallback</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Whether locale should match exactly or fallback to parent locale is allowed.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -65,11 +65,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the data located at the index or &null; on error. Strings, integers and binary data strings
    are returned as corresponding PHP types, integer array is returned as PHP array. Complex types are
    returned as <classname>ResourceBundle</classname> object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

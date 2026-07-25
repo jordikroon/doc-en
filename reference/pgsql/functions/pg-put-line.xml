@@ -14,35 +14,35 @@
    <methodparam choice="opt"><type>PgSql\Connection</type><parameter>connection</parameter></methodparam>
    <methodparam><type>string</type><parameter>query</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_put_line</function> sends a NULL-terminated string
    to the PostgreSQL backend server.  This is needed in conjunction
    with PostgreSQL's <literal>COPY FROM</literal> command.
-  </para>
-  <para><literal>COPY</literal> is a high-speed data loading interface
-   supported by PostgreSQL.  Data is passed in without being parsed, 
+  </simpara>
+  <simpara><literal>COPY</literal> is a high-speed data loading interface
+   supported by PostgreSQL.  Data is passed in without being parsed,
    and in a single transaction.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    An alternative to using raw <function>pg_put_line</function> commands
-   is to use <function>pg_copy_from</function>.  This is a far simpler 
+   is to use <function>pg_copy_from</function>.  This is a far simpler
    interface.
-  </para>
+  </simpara>
   <note>
-   <para> 
+   <simpara>
     The application must explicitly send the two characters "\."
     on the last line to indicate to the backend that it has finished
     sending its data, before issuing <function>pg_end_copy</function>.
-   </para>
+   </simpara>
   </note>
   <warning>
-   <para>
+   <simpara>
     Use of the <function>pg_put_line</function> causes most large object
     operations, including <function>pg_lo_read</function> and
     <function>pg_lo_tell</function>, to subsequently fail. You can use
     <function>pg_copy_from</function> and <function>pg_copy_to</function>
     instead.
-   </para>
+   </simpara>
   </warning>
  </refsect1>
 
@@ -59,10 +59,10 @@
     <varlistentry>
      <term><parameter>query</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A line of text to be sent directly to the PostgreSQL backend.  A <literal>NULL</literal>
        terminator is added automatically.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -71,9 +71,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -92,7 +92,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -100,7 +100,7 @@
     <title><function>pg_put_line</function> example</title>
     <programlisting role="php">
 <![CDATA[
-<?php 
+<?php
   $conn = pg_pconnect("dbname=foo");
   pg_query($conn, "create table bar (a int4, b char(16), d float8)");
   pg_query($conn, "copy bar from stdin");

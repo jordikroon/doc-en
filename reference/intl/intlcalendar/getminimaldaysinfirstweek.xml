@@ -8,21 +8,21 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="IntlCalendar">
    <modifier>public</modifier> <type class="union"><type>int</type><type>false</type></type><methodname>IntlCalendar::getMinimalDaysInFirstWeek</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>int</type><type>false</type></type><methodname>intlcal_get_minimal_days_in_first_week</methodname>
    <methodparam><type>IntlCalendar</type><parameter>calendar</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the smallest number of days the first week of a year or month must
    have in the new year or month.  For instance, in the Gregorian calendar, if
    this value is 1, then the first week of the year will necessarily include
@@ -31,7 +31,7 @@
    matches the day of the week returned by
    <function>IntlCalendar::getFirstDayOfWeek</function>; otherwise it will be
    the previous yearʼs last week.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -48,9 +48,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An <type>int</type> representing a number of days&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
 

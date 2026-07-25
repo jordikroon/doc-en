@@ -11,9 +11,9 @@
    <modifier>public</modifier> <type>string</type><methodname>SplFileObject::__toString</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    This method will return the current line as a string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -23,9 +23,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the current line as a string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

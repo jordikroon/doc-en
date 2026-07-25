@@ -9,23 +9,23 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="MessageFormatter">
    <modifier>public</modifier> <type>string</type><methodname>MessageFormatter::getLocale</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type>string</type><methodname>msgfmt_get_locale</methodname>
    <methodparam><type>MessageFormatter</type><parameter>formatter</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get the locale for which the formatter was created.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -35,9 +35,9 @@
     <varlistentry>
      <term><parameter>formatter</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The formatter resource
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -47,9 +47,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The locale name
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

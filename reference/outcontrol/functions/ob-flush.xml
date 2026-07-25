@@ -12,21 +12,21 @@
    <type>bool</type><methodname>ob_flush</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function calls the output handler
    (with the <constant>PHP_OUTPUT_HANDLER_FLUSH</constant> flag),
    flushes (sends) its return value
    and discards the contents of the active output buffer.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This function does not turn off the active output buffer like
    <function>ob_end_flush</function> or <function>ob_get_flush</function> does.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    <function>ob_flush</function> will fail
    without an active output buffer started with the
    <constant>PHP_OUTPUT_HANDLER_FLUSHABLE</constant> flag.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -36,16 +36,16 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    If the function fails it generates an <constant>E_NOTICE</constant>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

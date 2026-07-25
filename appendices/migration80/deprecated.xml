@@ -9,11 +9,11 @@
 
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      If a parameter with a default value is followed by a required parameter, the default value has
      no effect. This is deprecated as of PHP 8.0.0 and can generally be resolved by dropping the
      default value, without a change in functionality:
-    </para>
+    </simpara>
     <para>
      <programlisting role="php">
 <![CDATA[
@@ -41,11 +41,11 @@ function test(?A $a, $b) {}       // Recommended
     </para>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      Calling <function>get_defined_functions</function> with <parameter>exclude_disabled</parameter>
      explicitly set to &false; is deprecated and no longer has an effect.
      <function>get_defined_functions</function> will never include disabled functions.
-    </para>
+    </simpara>
    </listitem>
   </itemizedlist>
  </sect2>
@@ -55,36 +55,36 @@ function test(?A $a, $b) {}       // Recommended
 
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      <function>enchant_broker_set_dict_path</function> and
      <function>enchant_broker_get_dict_path</function>
      are deprecated, because that functionality is neither available in libenchant &lt; 1.5 nor in
      libenchant-2.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <function>enchant_dict_add_to_personal</function> is deprecated; use
      <function>enchant_dict_add</function> instead.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <function>enchant_dict_is_in_session</function> is deprecated; use
      <function>enchant_dict_is_added</function> instead.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <function>enchant_broker_free</function> and <function>enchant_broker_free_dict</function> are
      deprecated; unset the object instead.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The <constant>ENCHANT_MYSPELL</constant> and <constant>ENCHANT_ISPELL</constant> constants are
      deprecated.
-    </para>
+    </simpara>
    </listitem>
   </itemizedlist>
  </sect2>
@@ -92,14 +92,14 @@ function test(?A $a, $b) {}       // Recommended
  <sect2 xml:id="migration80.deprecated.libxml">
   <title>LibXML</title>
 
-  <para>
+  <simpara>
    <function>libxml_disable_entity_loader</function> has been deprecated. As libxml 2.9.0 is now
    required, external entity loading is guaranteed to be disabled by default, and this function is
    no longer needed to protect against XXE attacks, unless the (still vulnerable)
    <constant>LIBXML_NOENT</constant> is used.
    In that case, it is recommended to refactor the code using
    <function>libxml_set_external_entity_loader</function> to suppress loading of external entities.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration80.deprecated.pgsql">
@@ -107,16 +107,16 @@ function test(?A $a, $b) {}       // Recommended
 
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      The constant <constant>PGSQL_LIBPQ_VERSION_STR</constant> now has the same value as
      <constant>PGSQL_LIBPQ_VERSION</constant>, and thus is deprecated.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      Function aliases in the pgsql extension have been deprecated.
      See the following list for which functions should be used instead:
-    </para>
+    </simpara>
     <para>
      <simplelist>
       <member><function>pg_errormessage</function> → <function>pg_last_error</function></member>
@@ -154,11 +154,11 @@ function test(?A $a, $b) {}       // Recommended
 
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      Sort comparison functions that return &true; or &false; will now throw a deprecation warning, and
      should be replaced with an implementation that returns an integer less than, equal to, or greater
      than zero.
-    </para>
+    </simpara>
     <para>
      <programlisting role="php">
 <![CDATA[
@@ -169,7 +169,7 @@ usort($array, fn($a, $b) => $a > $b);
 usort($array, fn($a, $b) => $a <=> $b);
 ?>
 ]]>
-     </programlisting> 
+     </programlisting>
     </para>
    </listitem>
   </itemizedlist>
@@ -180,10 +180,10 @@ usort($array, fn($a, $b) => $a <=> $b);
 
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      Using an empty file as ZipArchive is deprecated. Libzip 1.6.0 does not accept empty files as
      valid zip archives any longer. The existing workaround will be removed in the next version.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
     <para>

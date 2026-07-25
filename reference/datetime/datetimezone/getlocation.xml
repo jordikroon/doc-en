@@ -9,19 +9,19 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="DateTimeZone">
    <modifier>public</modifier> <type class="union"><type>array</type><type>false</type></type><methodname>DateTimeZone::getLocation</methodname>
    <void/>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type class="union"><type>array</type><type>false</type></type><methodname>timezone_location_get</methodname>
    <methodparam><type>DateTimeZone</type><parameter>object</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns location information for a timezone, including country code, latitude/longitude and comments.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -35,9 +35,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Array containing location information about timezone&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -74,14 +74,14 @@ Array
     </screen>
    </example>
   </para>
-  <para>
+  <simpara>
    The <literal>country_code</literal> elements contains the ISO 3166-1
    alpha-2 country code for each entry. The <literal>latitude</literal> and
    <literal>longitude</literal> elements the coordinates of the named city
    from the time zone identifier, and <literal>comments</literal> contain
    (when not &false;) a hint of where in the given country this timezone
    applies. This information is suitable to present to end-users.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

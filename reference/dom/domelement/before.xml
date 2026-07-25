@@ -11,9 +11,9 @@
    <modifier>public</modifier> <type>void</type><methodname>DOMElement::before</methodname>
    <methodparam rep="repeat"><type class="union"><type>DOMNode</type><type>string</type></type><parameter>nodes</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Adds the passed <parameter>nodes</parameter> before the element.
-  </para>
+  </simpara>
  </refsect1>
 
  <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('domchildnode.before')/db:refsect1[@role='parameters'])" />
@@ -25,9 +25,9 @@
   &reftitle.examples;
   <example xml:id="domelement.before.example.basic">
    <title><methodname>DOMElement::before</methodname> example</title>
-   <para>
+   <simpara>
     Adds nodes before the hello element.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

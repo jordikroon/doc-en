@@ -13,9 +13,9 @@
    <methodparam><type>mixed</type><parameter>key</parameter></methodparam>
    <methodparam><type>mixed</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets a value for a given offset.
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -28,17 +28,17 @@
     <varlistentry>
      <term><parameter>key</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The index to set for.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The new value to store at the index.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -47,9 +47,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

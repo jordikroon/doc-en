@@ -13,11 +13,11 @@
    <methodparam><type>CurlHandle</type><parameter>handle</parameter></methodparam>
    <methodparam><type>int</type><parameter>flags</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Pause or unpause a cURL session. A session can be paused while a transfer is in progress,
    in either the read, write or both directions, by calling this function from a callback
    registered with <function>curl_setopt</function>.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -28,9 +28,9 @@
    <varlistentry>
     <term><parameter>flags</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       One of <constant>CURLPAUSE_<replaceable>*</replaceable></constant> constants.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -38,9 +38,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an error code (<constant>CURLE_OK</constant> for no error).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

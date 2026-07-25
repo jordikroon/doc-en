@@ -42,9 +42,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -68,7 +68,7 @@ var_dump($info->getFileInfo());
     &example.outputs.similar;
     <screen>
 <![CDATA[
-object(MyFoo)#2 (0) { } 
+object(MyFoo)#2 (0) { }
 ]]>
     </screen>
    </example>

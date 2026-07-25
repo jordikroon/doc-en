@@ -16,7 +16,7 @@
    <methodparam choice="opt"><type>PgSql\Connection</type><parameter>connection</parameter></methodparam>
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_escape_identifier</function> escapes an identifier
    (e.g. table, field names) for querying the database.  It returns an
    escaped identifier string for PostgreSQL
@@ -28,7 +28,7 @@
    or <function>pg_escape_string</function> must be used. For bytea
    type fields, <function>pg_escape_bytea</function> must be used
    instead.
-  </para>
+  </simpara>
  </refsect1>
 
 <refsect1 role="parameters">
@@ -44,9 +44,9 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A <type>string</type> containing text to be escaped.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -55,9 +55,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A <type>string</type> containing the escaped data, or &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -84,13 +84,13 @@
     <title><function>pg_escape_identifier</function> example</title>
     <programlisting role="php">
 <![CDATA[
-<?php 
+<?php
   // Connect to the database
   $dbconn = pg_connect('dbname=foo');
-  
+
   // Escape the table name data
   $escaped = pg_escape_identifier($table_name);
-  
+
   // Select rows from $table_name
   pg_query("SELECT * FROM {$escaped};");
 ?>
@@ -99,7 +99,7 @@
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

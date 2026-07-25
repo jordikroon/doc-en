@@ -3,19 +3,19 @@
 <reference xml:id="class.errorexception" role="exception" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
  <title>ErrorException</title>
  <titleabbrev>ErrorException</titleabbrev>
- 
+
  <partintro>
- 
+
   <section xml:id="errorexception.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     An Error Exception.
-   </para>
+   </simpara>
   </section>
- 
+
   <section xml:id="errorexception.synopsis">
    &reftitle.classsynopsis;
- 
+
    <classsynopsis class="class">
     <ooexception>
      <exceptionname>ErrorException</exceptionname>
@@ -44,16 +44,16 @@
     <classsynopsisinfo role="comment">&InheritedMethods;</classsynopsisinfo>
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.exception')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[@role='Exception'])"/>
    </classsynopsis>
- 
+
   </section>
- 
+
   <section xml:id="errorexception.props">
    &reftitle.properties;
    <variablelist>
     <varlistentry xml:id="errorexception.props.severity">
      <term><varname>severity</varname></term>
      <listitem>
-      <para>The severity of the exception</para>
+      <simpara>The severity of the exception</simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -104,12 +104,12 @@ Stack trace:
     </example>
    </para>
   </section>
- 
+
  </partintro>
- 
+
  &language.predefined.errorexception.construct;
  &language.predefined.errorexception.getseverity;
- 
+
 </reference>
 <!-- Keep this comment at the end of the file
 Local variables:

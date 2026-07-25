@@ -13,10 +13,10 @@
    <type>array</type><methodname>mysqli_get_links_stats</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>mysqli_get_links_stats</function> returns information about open
    and cached MySQL links.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -33,28 +33,28 @@
     <varlistentry>
      <term><parameter>total</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An <type>int</type> indicating the total number of open links in
        any state.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>active_plinks</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An <type>int</type> representing the number of active persistent
        connections.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>cached_plinks</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An <type>int</type> representing the number of inactive persistent
        connections.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

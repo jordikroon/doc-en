@@ -2,23 +2,23 @@
 <!-- $Revision$ -->
 <section xml:id="oci8.test" xmlns="http://docbook.org/ns/docbook">
  <title>Testing</title>
- <para>
+ <simpara>
   The OCI8 test suite is in <filename>ext/oci8/tests</filename>.
   After OCI8 tests are run this directory will also contain logs of
   any failures.
- </para>
- <para>
+ </simpara>
+ <simpara>
   Before running PHP's tests, edit <filename>details.inc</filename>
   and set $user, $password and the $dbase connection string.  The
   OCI8 test suite has been developed using
   the <literal>SYSTEM</literal> account.  Some tests will fail if
   the test user does not have equivalent permissions.
- </para>
- <para>
+ </simpara>
+ <simpara>
   If Oracle Database Resident Connection Pooling is being
   tested, set $test_drcp to &true; and ensure the
   connection string uses an appropriate DRCP pooled server.
- </para>
+ </simpara>
  <para>
   An alternative to editing <filename>details.inc</filename> is the
   set environment variables, for example:
@@ -76,19 +76,19 @@
 ]]>
   </programlisting>
  </para>
- <para>
+ <simpara>
   When the tests have completed, review any test failures. On slow
   systems, some tests may take longer than the default test
   timeout in <filename>run-tests.php</filename>.  To correct this,
   set the environment variable <literal>TEST_TIMEOUT</literal> to
   a larger number of seconds.
- </para>
- <para>
+ </simpara>
+ <simpara>
   On fast machines with a local database configured for light load
   (e.g. Oracle 11<emphasis>g</emphasis>R2 XE) some tests might fail with ORA-12516 or
   ORA-12520 errors.  To prevent this, increase the database
   <literal>PROCESSES</literal> parameter using the following steps:
- </para>
+ </simpara>
  <para>
   Connect as the oracle software owner:
   <programlisting>
@@ -97,10 +97,10 @@
 ]]>
   </programlisting>
  </para>
- <para>
+ <simpara>
   Set the necessary Oracle environment with <filename>oracle_env.sh</filename> or
   <filename>oraenv</filename>, as described above.
- </para>
+ </simpara>
  <para>
   Start the SQL*Plus command line tool and
   increase <literal>PROCESSES</literal>

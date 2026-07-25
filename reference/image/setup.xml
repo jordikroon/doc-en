@@ -7,11 +7,11 @@
  <!-- {{{ Requirements -->
  <section xml:id="image.requirements">
   &reftitle.required;
-  <para>
+  <simpara>
    If you have the <acronym>GD</acronym> library (available at <link
    xlink:href="&url.gd;">&url.gd;</link>) you will also be able to create
    and manipulate images.
-  </para>
+  </simpara>
   <para>
    The format of images you are able to manipulate depend on the
    version of <acronym>GD</acronym> you install, and any other libraries
@@ -86,10 +86,10 @@
    </table>
   </para>
 
-  <para>
+  <simpara>
    You may wish to enhance <acronym>GD</acronym> to deal with different fonts.
    The <link xlink:href="&url.freetype;">FreeType 2</link> library is supported.
-  </para>
+  </simpara>
  </section>
  <!-- }}} -->
 

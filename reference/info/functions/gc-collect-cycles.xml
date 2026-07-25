@@ -12,9 +12,9 @@
    <type>int</type><methodname>gc_collect_cycles</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Forces collection of any existing garbage cycles.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns number of collected cycles.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

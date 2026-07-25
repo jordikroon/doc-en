@@ -18,10 +18,10 @@
    <methodparam choice="opt"><type>string</type><parameter>filename</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>foreground</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>image2wbmp</function> outputs or save a <acronym>WBMP</acronym>
-   version of the given <parameter>image</parameter>. 
-  </para>
+   version of the given <parameter>image</parameter>.
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -30,29 +30,29 @@
     <varlistentry>
      <term><parameter>image</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An image resource, returned by one of the image creation functions,
        such as <function>imagecreatetruecolor</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path to the saved file. If not given, the raw image stream will be
        output directly.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>foreground</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        You can set the foreground color with this parameter by setting an
        identifier obtained from <function>imagecolorallocate</function>.
        The default foreground color is black.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -60,9 +60,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
   &gd.return.trueonerror;
  </refsect1>
  <refsect1 role="examples">

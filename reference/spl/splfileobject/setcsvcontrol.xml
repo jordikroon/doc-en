@@ -14,10 +14,10 @@
    <methodparam choice="opt"><type>string</type><parameter>enclosure</parameter><initializer>"\""</initializer></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>escape</parameter><initializer>"\\"</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets the delimiter, enclosure and escape character for
    parsing <acronym>CSV</acronym> fields.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -32,9 +32,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('function.fgetcsv')/db:refsect1[@role='errors']/.)"/>
@@ -83,7 +83,7 @@ foreach ($file as $row) {
 ?>
 ]]>
     </programlisting>
-    <para>Contents of data.csv</para>
+    <simpara>Contents of data.csv</simpara>
     <programlisting role="txt">
 <![CDATA[
 <?php

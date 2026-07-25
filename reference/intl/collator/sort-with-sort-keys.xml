@@ -9,26 +9,26 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="Collator">
    <modifier>public</modifier> <type>bool</type><methodname>Collator::sortWithSortKeys</methodname>
    <methodparam><type>array</type><parameter role="reference">array</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type>bool</type><methodname>collator_sort_with_sort_keys</methodname>
    <methodparam><type>Collator</type><parameter>object</parameter></methodparam>
    <methodparam><type>array</type><parameter role="reference">array</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Similar to <function>collator_sort</function>
    but uses ICU sorting keys produced by ucol_getSortKey() to gain more speed
    on large arrays.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -38,15 +38,15 @@
     <varlistentry>
      <term><parameter>object</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <classname>Collator</classname> object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>Array of strings to sort</para>
+      <simpara>Array of strings to sort</simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -55,9 +55,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

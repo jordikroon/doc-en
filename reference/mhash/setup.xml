@@ -7,11 +7,11 @@
  <!-- {{{ Requirements -->
  <section xml:id="mhash.requirements">
   &reftitle.required;
-  <para>
+  <simpara>
    To use it, download the mhash distribution from <link
    xlink:href="&url.mhash;">its web site</link> and follow the included
    installation instructions.
-  </para>
+  </simpara>
  </section>
  <!-- }}} -->
 

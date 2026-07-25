@@ -11,10 +11,10 @@
    <type class="union"><type>GdImage</type><type>false</type></type><methodname>imagecreatefromxpm</methodname>
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>imagecreatefromxpm</function> returns an image identifier
    representing the image obtained from the given filename.
-  </para>
+  </simpara>
   &tip.fopen-wrapper;
  </refsect1>
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path to the XPM image.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -34,7 +34,7 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>&gd.return.identifier;</para>
+  <simpara>&gd.return.identifier;</simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -80,7 +80,7 @@ $xpm = imagecreatefromxpm('./example.xpm');
 // Do image operations here
 
 // PHP has no support for writing xpm images
-// so in this case we save the image as a 
+// so in this case we save the image as a
 // jpeg file with 100% quality
 imagejpeg($xpm, './example.jpg', 100);
 ?>

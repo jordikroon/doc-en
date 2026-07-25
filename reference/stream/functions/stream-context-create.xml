@@ -12,10 +12,10 @@
    <methodparam choice="opt"><type class="union"><type>array</type><type>null</type></type><parameter>options</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>array</type><type>null</type></type><parameter>params</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Creates and returns a stream context with any options supplied in
    <parameter>options</parameter> preset.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,24 +25,24 @@
     <varlistentry>
      <term><parameter>options</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Must be an associative array of associative arrays in the format
        <literal>$arr['wrapper']['option'] = $value</literal>, or &null;. Refer to <link linkend="context">context options</link> for a list of available wrappers and options.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Defaults to &null;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>params</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Must be an associative array in the format
        <literal>$arr['parameter'] = $value</literal>, or &null;.
        Refer to <link linkend="context.params">context parameters</link> for
        a listing of standard stream parameters.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -51,9 +51,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A stream context <type>resource</type>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

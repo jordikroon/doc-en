@@ -12,13 +12,13 @@
    <modifier>public</modifier> <type>void</type><methodname>php_user_filter::onClose</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    This method is called upon filter shutdown (typically, this is also
    during stream shutdown), and is executed <emphasis>after</emphasis>
    the <literal>flush</literal> method is called.  If any resources
    were allocated or initialized during <literal>onCreate()</literal>
    this would be the time to destroy or dispose of them.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -29,9 +29,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Return value is ignored.
-  </para>
+  </simpara>
  </refsect1>
 
 

@@ -9,11 +9,11 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    <!-- TODO Proper description -->
    The <filename>data:</filename> (<link xlink:href="&url.rfc;2397">RFC
    2397</link>) stream wrapper.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="usage">

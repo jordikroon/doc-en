@@ -20,9 +20,9 @@
    <varlistentry>
     <term><parameter>objectOrClass</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       An enum instance or a name.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>

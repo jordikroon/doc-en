@@ -5,7 +5,7 @@
   <refname>stream_socket_enable_crypto</refname>
   <refpurpose>Turns encryption on/off on an already connected socket</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -34,17 +34,17 @@
     <varlistentry>
      <term><parameter>stream</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The stream resource.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>enable</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Enable/disable cryptography on the stream.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -74,18 +74,18 @@
         <listitem><simpara><constant>STREAM_CRYPTO_METHOD_TLSv1_3_SERVER</constant> (as of PHP 7.4.0)</simpara></listitem>
        </itemizedlist>
       </para>
-      <para>
+      <simpara>
        If omitted, the <literal>crypto_method</literal> context option on
        the stream's SSL context will be used instead.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>session_stream</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Seed the stream with settings from <parameter>session_stream</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -94,11 +94,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; on success, &false; if negotiation has failed or
    <literal>0</literal> if there isn't enough data and you should try again
    (only for non-blocking sockets).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -122,7 +122,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples"><!-- {{{ -->
   &reftitle.examples;
   <para>
@@ -160,7 +160,7 @@ fclose($fp);
    </example><!-- }}} -->
   </para>
  </refsect1><!-- }}} -->
- 
+
  <refsect1 role="seealso"><!-- {{{ -->
   &reftitle.seealso;
   <para>

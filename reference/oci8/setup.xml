@@ -7,42 +7,42 @@
  <!-- {{{ Requirements -->
  <section xml:id="oci8.requirements">
   &reftitle.required;
-  <para>
+  <simpara>
    OCI8 3.0 is included with PHP 8. It is also available from &link.pecl;. For
    PHP 7, use OCI8 2.2 from &link.pecl;. OCI8 requires Oracle
    10<emphasis>g</emphasis> or later Oracle client libraries.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If the Oracle Database is on the same machine as PHP, the database software
    already contains the necessary libraries and header files.  When PHP is on a
    different machine, use the free
    <link xlink:href="&url.oracle.instant.client;">Oracle Instant Client</link> libraries.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    To use Oracle Instant Client, install the <literal>Basic</literal>
    or <literal>Basic Light</literal> Oracle Instant Client ZIP file, RPM
    package, or DMG package.  When building OCI8 from source code, also install
    the Instant Client <literal>SDK</literal>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    You must run PHP with the same, or a more recent, version of the
    Oracle libraries that OCI8 was built with.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     Oracle's standard client-server network interoperability allows connections
     between different versions of Oracle Client and Oracle Database.  For
     certified configurations see Oracle Support's Doc ID 207303.1.  In
     summary, Oracle Client 19, 18 and 12.2 can connect to Oracle Database 11.2
     or greater. Oracle Client 12.1 can connect to Oracle Database 10.2 or
     greater. Oracle Client 11.2 can connect to Oracle Database 9.2 or greater.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     Full OCI8 feature support is only available when using the most
     recent versions of the Oracle client libraries and database.
-   </para>
+   </simpara>
   </note>
  </section>
  <!-- }}} -->

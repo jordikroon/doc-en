@@ -10,10 +10,10 @@
 <!-- {{{ ReflectionProperty intro -->
   <section xml:id="reflectionproperty.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     The <classname>ReflectionProperty</classname> class reports
     information about class properties.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -113,7 +113,7 @@
 
   </section>
 
-  
+
 <!-- {{{ ReflectionProperty properties -->
   <section xml:id="reflectionproperty.props">
    &reftitle.properties;
@@ -121,26 +121,26 @@
     <varlistentry xml:id="reflectionproperty.props.name">
      <term><varname>name</varname></term>
      <listitem>
-      <para>
+      <simpara>
        Name of the property. Read-only, throws
-       <classname>ReflectionException</classname> in attempt to write.
-      </para>
+       <exceptionname>ReflectionException</exceptionname> in attempt to write.
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="reflectionproperty.props.class">
      <term><varname>class</varname></term>
      <listitem>
-      <para>
+      <simpara>
        Name of the class where the property is defined. Read-only, throws
-       <classname>ReflectionException</classname> in attempt to write.
-      </para>
+       <exceptionname>ReflectionException</exceptionname> in attempt to write.
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </section>
 <!-- }}} -->
 
-  
+
 <!-- {{{ ReflectionProperty constants -->
   <section xml:id="reflectionproperty.constants">
    &reftitle.constants;
@@ -154,11 +154,11 @@
        <type>int</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Indicates <link linkend="language.oop5.static">static</link>
         properties.
         Prior to PHP 7.4.0, the value was <literal>1</literal>.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
 
@@ -168,10 +168,10 @@
        <type>int</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Indicates <link linkend="language.oop5.properties.readonly-properties">readonly</link>
         properties. Available as of PHP 8.1.0.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
 
@@ -181,11 +181,11 @@
        <type>int</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Indicates <link linkend="language.oop5.visibility">public</link>
         properties.
         Prior to PHP 7.4.0, the value was <literal>256</literal>.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
 
@@ -195,11 +195,11 @@
        <type>int</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Indicates <link linkend="language.oop5.visibility">protected</link>
         properties.
         Prior to PHP 7.4.0, the value was <literal>512</literal>.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
 
@@ -209,11 +209,11 @@
        <type>int</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Indicates <link linkend="language.oop5.visibility">private</link>
         properties.
         Prior to PHP 7.4.0, the value was <literal>1024</literal>.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
 
@@ -283,11 +283,11 @@
 
     </variablelist>
     <note>
-     <para>
+     <simpara>
       The values of these constants may change between PHP versions.
       It is recommended to always use the constants
       and not rely on the values directly.
-     </para>
+     </simpara>
     </note>
    </section>
   </section>

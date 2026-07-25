@@ -11,22 +11,22 @@
    <type>array</type><methodname>array_merge</methodname>
    <methodparam rep="repeat"><type>array</type><parameter>arrays</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Merges the elements of one or more arrays together so that the values of
    one are appended to the end of the previous one. It returns the resulting
    array.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If the input arrays have the same string keys, then the later value for
    that key will overwrite the previous one.  If, however, the arrays
    contain numeric keys, the later value will <emphasis
    role="strong">not</emphasis> overwrite the original value, but will be
    appended.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Values in the input arrays with numeric keys will be renumbered with
    incrementing keys starting from zero in the result array.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -35,9 +35,9 @@
     <varlistentry>
      <term><parameter>arrays</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Variable list of arrays to merge.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -45,10 +45,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the resulting array.
    If called without any arguments, returns an empty &array;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -125,9 +125,9 @@ $result = array_merge($array1, $array2);
 print_r($result);
 ]]>
     </programlisting>
-    <para>
+    <simpara>
      Don't forget that numeric keys will be renumbered!
-    </para>
+    </simpara>
     <screen role="php">
 <![CDATA[
 Array
@@ -136,12 +136,12 @@ Array
 )
 ]]>
     </screen>
-    <para>
+    <simpara>
      If you want to append array elements from the second array to the
      first array while not overwriting the elements from the first
      array and not re-indexing, use the
      <literal>+</literal> array union operator:
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -154,12 +154,12 @@ $result = $array1 + $array2;
 var_dump($result);
 ]]>
     </programlisting>
-    <para>
+    <simpara>
      The keys from the first array will be preserved. If an array key
      exists in both arrays, then the element from the first array will
      be used and the matching key's element from the second array will
      be ignored.
-    </para>
+    </simpara>
     <screen role="php">
 <![CDATA[
 array(5) {

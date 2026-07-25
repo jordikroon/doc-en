@@ -12,10 +12,10 @@
    <methodparam><type>array</type><parameter role="reference">array</parameter></methodparam>
    <methodparam><type>callable</type><parameter>callback</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sorts <parameter>array</parameter> in place by values using a
    user-supplied comparison function to determine the order.
-  </para>
+  </simpara>
   &note.sort-unstable;
   &note.no-key-association;
  </refsect1>
@@ -27,9 +27,9 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input array.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -44,9 +44,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -103,10 +103,10 @@ foreach ($a as $key => $value) {
 4: 6
 ]]>
     </screen>
-    <para>
+    <simpara>
      The spaceship operator may be used to
      simplify the internal comparison even further.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -128,10 +128,10 @@ foreach ($a as $key => $value) {
    </example>
   </para>
   <note>
-   <para>
+   <simpara>
     Obviously in this trivial case the <function>sort</function>
     function would be more appropriate.
-   </para>
+   </simpara>
   </note>
   <para>
    <example xml:id="function.usort.examples.multi">
@@ -166,10 +166,10 @@ $fruits[1]: grapes
 $fruits[2]: lemons
 ]]>
     </screen>
-    <para>
+    <simpara>
      When sorting a multi-dimensional array, <varname>$a</varname> and
      <varname>$b</varname> contain references to the first index of the array.
-    </para>
+    </simpara>
    </example>
   </para>
   <para>
@@ -255,12 +255,12 @@ z, c
     <title>
      <function>usort</function> example using the spaceship operator
     </title>
-    <para>
+    <simpara>
      The spaceship operator allows for straightforward comparison of
      compound values across multiple axes. The following example will sort
      <literal>$people</literal> by last name, then by first name if the
      last name matches.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

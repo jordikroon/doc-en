@@ -15,21 +15,21 @@
    <type class="union"><type>string</type><type>false</type></type><methodname>pg_result_error</methodname>
    <methodparam><type>PgSql\Result</type><parameter>result</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_result_error</function> returns any error message
    associated with the <parameter>result</parameter> instance. Therefore,
    the user has a better chance of getting the correct error message than
    with <function>pg_last_error</function>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The function <function>pg_result_error_field</function> can give much greater
    detail on result errors than <function>pg_result_error</function>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Because <function>pg_query</function> returns &false; if the query fails,
    you must use <function>pg_send_query</function> and
    <function>pg_get_result</function> to get the result handle.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -48,10 +48,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a <type>string</type>. Returns empty string if there is no error. If there is an error associated with the
    <parameter>result</parameter> parameter, returns &false;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -70,7 +70,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -84,7 +84,7 @@
   if (!pg_connection_busy($dbconn)) {
       pg_send_query($dbconn, "select * from doesnotexist;");
   }
-  
+
   $res1 = pg_get_result($dbconn);
   echo pg_result_error($res1);
 ?>

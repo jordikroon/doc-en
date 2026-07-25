@@ -21,9 +21,9 @@
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>sigfile</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>encoding</parameter><initializer><constant>OPENSSL_ENCODING_SMIME</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function verifies a CMS signature, either attached or detached, with the specified encoding.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -32,74 +32,74 @@
    <varlistentry>
     <term><parameter>input_filename</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The input file.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>flags</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Flags to pass to <function>cms_verify</function>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>certificates</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       A file with the signer certificate and optionally intermediate certificates.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>ca_info</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       An array containing self-signed certificate authority certificates.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>untrusted_certificates_filename</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       A file containing additional intermediate certificates.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>content</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       A file pointing to the content when signatures are detached.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>pk7</parameter></term>
     <listitem>
-     <para>
+     <simpara>
 
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>sigfile</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       A file to save the signature to.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>encoding</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The encoding of the input file. One of <constant>OPENSSL_ENCODING_SMIME</constant>,
       <constant>OPENSSL_ENCODING_DER</constant> or <constant>OPENSSL_ENCODING_PEM</constant>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -107,9 +107,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

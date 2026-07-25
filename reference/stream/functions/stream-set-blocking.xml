@@ -13,13 +13,13 @@
    <methodparam><type>resource</type><parameter>stream</parameter></methodparam>
    <methodparam><type>bool</type><parameter>enable</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets blocking or non-blocking mode on a <parameter>stream</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This function works for any stream that supports non-blocking mode
    (currently, regular files and socket streams).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,15 +29,15 @@
     <varlistentry>
      <term><parameter>stream</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The stream.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>enable</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If <parameter>enable</parameter> is &false;, the given stream
        will be switched to non-blocking mode, and if &true;, it
        will be switched to blocking mode.  This affects calls like
@@ -46,7 +46,7 @@
        <function>fgets</function> call will always return right away
        while in blocking mode it will wait for data to become available
        on the stream.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -55,16 +55,16 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>On Windows, this has no affect on local files. Non-blocking IO for local files is not supported on Windows.
-   </para>
+   <simpara>On Windows, this has no affect on local files. Non-blocking IO for local files is not supported on Windows.
+   </simpara>
   </note>
  </refsect1>
 

@@ -14,10 +14,10 @@
    <methodparam choice="opt"><type class="union"><type>array</type><type>int</type></type><parameter>options</parameter><initializer><constant>FILTER_DEFAULT</constant></initializer></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>add_empty</parameter><initializer>&true;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function is useful for retrieving many values without
    repetitively calling <function>filter_input</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -73,11 +73,11 @@
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     There is no <literal>REQUEST_TIME</literal> key in
     <constant>INPUT_SERVER</constant> array because it is inserted into the
     <varname>$_SERVER</varname> later.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

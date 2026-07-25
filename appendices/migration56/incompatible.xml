@@ -11,11 +11,11 @@
  <sect2 xml:id="migration56.incompatible.array-keys">
   <title>Array keys won't be overwritten when defining an array as a property of a class via an array literal</title>
 
-  <para>
+  <simpara>
    Previously, arrays declared as class properties which mixed explicit and
    implicit keys could have array elements silently overwritten if an explicit
    key was the same as a sequential implicit key. For example:
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -65,20 +65,20 @@ array(3) {
  <sect2 xml:id="migration56.incompatible.json-decode">
   <title><function>json_decode</function> strictness</title>
 
-  <para>
+  <simpara>
    <function>json_decode</function> now rejects non-lowercase variants of the
    JSON literals <literal>true</literal>, <literal>false</literal> and
    <literal>null</literal> at all times, as per the JSON specification, and
    sets <function>json_last_error</function> accordingly. Previously, inputs
    to <function>json_decode</function> that consisted solely of one of these
    values in upper or mixed case were accepted.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    This change will only affect cases where invalid JSON was being passed to
    <function>json_decode</function>: valid JSON input is unaffected and will
    continue to be parsed normally.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration56.incompatible.peer-verification">
@@ -90,34 +90,34 @@ array(3) {
  <sect2 xml:id="migration56.incompatible.gmp">
   <title><link linkend="book.gmp">GMP</link> resources are now objects</title>
 
-  <para>
+  <simpara>
    <link linkend="book.gmp">GMP</link> resources are now objects. The
    functional API implemented in the GMP extension has not changed, and code
    should run unmodified unless it checks explicitly for a resource using
    <function>is_resource</function> or similar.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration56.incompatible.mcrypt">
   <title><link linkend="book.mcrypt">Mcrypt</link> functions now require valid keys and IVs</title>
 
-  <para>
+  <simpara>
    <function>mcrypt_encrypt</function>, <function>mcrypt_decrypt</function>,
    <function>mcrypt_cbc</function>, <function>mcrypt_cfb</function>,
    <function>mcrypt_ecb</function>, <function>mcrypt_generic</function> and
    <function>mcrypt_ofb</function> will no longer accept keys or IVs with
    incorrect sizes, and block cipher modes that require IVs will now fail if
    an IV isn't provided.
-  </para>
+  </simpara>
  </sect2>
- 
+
  <sect2 xml:id="migration56.incompatible.curl">
   <title><link linkend="book.curl">cURL</link> file uploads</title>
 
-  <para>
+  <simpara>
    Uploads using the @file syntax now require CURLOPT_SAFE_UPLOAD to be set to
    &false;. <classname>CURLFile</classname> should be used instead.
-  </para>
+  </simpara>
  </sect2>
 </sect1>
 

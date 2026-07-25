@@ -16,17 +16,17 @@
    <methodparam choice="opt"><type>string</type><parameter>encoding</parameter><initializer>""</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>session_mode</parameter><initializer><constant>OCI_DEFAULT</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a connection identifier needed for most other OCI8 operations.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    For performance, most applications should use persistent connections
    with <function>oci_pconnect</function> instead
    of <function>oci_connect</function>.
    See <link linkend="oci8.connection">Connection Handling</link> for general
    information on connection management and connection pooling.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The second and subsequent calls to <function>oci_connect</function>
    with the same parameters will return the connection handle returned
    from the first call. This means that transactions in one handle are
@@ -34,7 +34,7 @@
    <emphasis>same</emphasis> underlying database connection. If two
    handles need to be transactionally isolated from each other, use
    <function>oci_new_connect</function> instead.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -44,17 +44,17 @@
     <varlistentry>
      <term><parameter>username</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The Oracle user name.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>password</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The password for <parameter>username</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -81,9 +81,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a connection identifier or &false; on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -325,12 +325,12 @@ echo "c2 is $c2<br>\n";
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     An incorrectly installed or configured OCI8 extension will often
     manifest itself as a connection problem or error.
     See <link linkend="oci8.setup">Installing/Configuring</link> for
     troubleshooting information.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

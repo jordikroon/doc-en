@@ -9,50 +9,50 @@
  <!-- {{{ preface -->
  <preface xml:id="intro.ldap">
   &reftitle.intro;
-  <para>
+  <simpara>
    LDAP is the Lightweight Directory Access Protocol, and is a
    protocol used to access "Directory Servers". The Directory is a
    special kind of database that holds information in a tree
    structure.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The concept is similar to your hard disk directory structure,
    except that in this context, the root directory is "The world"
    and the first level subdirectories are "countries". Lower levels
    of the directory structure contain entries for companies,
    organisations or places, while yet lower still we find directory
    entries for people, and perhaps equipment or documents.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    To refer to a file in a subdirectory on your hard disk, you might
    use something like:
-  </para>
+  </simpara>
   <literallayout>
    /usr/local/myapp/docs
   </literallayout>
-  <para>
+  <simpara>
    The forwards slash marks each division in the reference, and the
    sequence is read from left to right.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The equivalent to the fully qualified file reference in LDAP is
    the "distinguished name", referred to simply as "dn". An example
    dn might be:
-  </para>
+  </simpara>
   <literallayout>
    cn=John Smith,ou=Accounts,o=My Company,c=US
   </literallayout>
-  <para>
+  <simpara>
    The comma marks each division in the reference, and the sequence
    is read from right to left. You would read this dn as:
-  </para>
+  </simpara>
   <literallayout>
    country = US
    organization = My Company
    organizationalUnit = Accounts
    commonName = John Smith
   </literallayout>
-  <para>
+  <simpara>
    In the same way as there are no hard rules about how you organise
    the directory structure of a hard disk, a directory server
    manager can set up any structure that is meaningful for the
@@ -61,35 +61,35 @@
    server unless you know something about its structure, any more
    than you can use a database without some knowledge of what is
    available.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Lots of information about LDAP can be found at
-  </para>
+  </simpara>
 
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      <link xlink:href="&url.ldap.netscape;">Mozilla</link>
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <link xlink:href="&url.ldap.openldap;">OpenLDAP Project</link>
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      Internet Engineering Taskforce RFCs
      <link xlink:href="&url.rfc;4510">4510</link> through <link xlink:href="&url.rfc;4519">4519</link>.
-    </para>
+    </simpara>
    </listitem>
   </itemizedlist>
 
-  <para>
+  <simpara>
    The Netscape SDK contains a helpful
    <link xlink:href="&url.ldap.netscape.sdk.docs;">Programmer's Guide</link> in
    HTML format.
-  </para>
+  </simpara>
  </preface>
  <!-- }}} -->
 

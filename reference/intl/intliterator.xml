@@ -10,7 +10,7 @@
 <!-- {{{ IntlIterator intro -->
   <section xml:id="intliterator.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     This class represents iterator objects throughout the intl extension
     whenever the iterator cannot be identified with any other object provided
     by the extension. The distinct iterator object used internally by the
@@ -23,10 +23,10 @@
     defined in that interface. Both these methods and the internal iterator
     objects provided to <literal>foreach</literal> are backed by the same
     state (e.g. the position of the iterator and its current value).
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     Subclasses may provide richer functionality.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

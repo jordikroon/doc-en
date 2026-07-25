@@ -5,7 +5,7 @@
   <refname>pfsockopen</refname>
   <refpurpose>Open persistent Internet or Unix domain socket connection</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -16,30 +16,30 @@
    <methodparam choice="opt"><type>string</type><parameter role="reference">error_message</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>float</type><type>null</type></type><parameter>timeout</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function behaves exactly as <function>fsockopen</function> with the
    difference that the connection is not closed after the script finishes.
    It is the persistent version of <function>fsockopen</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
   &reftitle.parameters;
-  <para>
+  <simpara>
    For parameter information, see the <function>fsockopen</function>
    documentation.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    <function>pfsockopen</function> returns a file pointer which may be used
    together with the other file functions (such as
    <function>fgets</function>, <function>fgetss</function>,
    <function>fwrite</function>, <function>fclose</function>, and
    <function>feof</function>),&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.rmdir">
+<refentry xml:id="function.rmdir" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>rmdir</refname>
   <refpurpose>Removes directory</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,11 +13,11 @@
    <methodparam><type>string</type><parameter>directory</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>resource</type><type>null</type></type><parameter>context</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Attempts to remove the directory named by <parameter>directory</parameter>.
    The directory must be empty, and the relevant permissions must permit this.
    A <constant>E_WARNING</constant> level error will be generated on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,9 +27,9 @@
     <varlistentry>
      <term><parameter>directory</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path to the directory.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -44,9 +44,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

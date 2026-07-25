@@ -11,9 +11,9 @@
    <modifier>public</modifier> <type>int</type><methodname>Random\Randomizer::nextInt</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -35,7 +35,7 @@
   <itemizedlist>
    <listitem>
     <simpara>
-      To avoid inconsistencies, 32 bit PHP will throw <classname>Random\RandomException</classname>
+      To avoid inconsistencies, 32 bit PHP will throw <exceptionname>Random\RandomException</exceptionname>
       if the output size of <methodname>Random\Engine::generate</methodname> exceeds 32 bits,
       as the selected integer cannot be returned losslessly.
       This affects the native 64 bit engines <classname>Random\Engine\PcgOneseq128XslRr64</classname> and

@@ -7,10 +7,10 @@
  <partintro>
   <section xml:id="gmp.seealso">
    &reftitle.seealso;
-   <para>
+   <simpara>
     More mathematical functions can be found in the
     <xref linkend="refs.math" /> section
-   </para>
+   </simpara>
   </section>
  </partintro>
 

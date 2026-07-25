@@ -5,7 +5,7 @@
   <refname>bcmul</refname>
   <refpurpose>Multiply two arbitrary precision numbers</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the result as a string.
-  </para>
+  </simpara>
  </refsect1>
 
  <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('function.bcadd')/db:refsect1[@role='errors'])" />
@@ -75,7 +75,7 @@ echo bcmul('2', '4'); // 8
    </programlisting>
   </example>
  </refsect1>
- 
+
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
@@ -97,7 +97,7 @@ echo bcmul('5', '2', 2);     // prints "10", not "10.00"
    </para>
   </note>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

@@ -13,14 +13,14 @@
    <type>bool</type><methodname>header_register_callback</methodname>
    <methodparam><type>callable</type><parameter>callback</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Registers a function that will be called when PHP starts sending output.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The <parameter>callback</parameter> is executed just after PHP prepares all
    headers to be sent, and before any other output is sent, creating a window
    to manipulate the outgoing headers before being sent.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,10 +29,10 @@
    <varlistentry>
     <term><parameter>callback</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Function called just before the headers are sent. It gets no parameters
       and the return value is ignored.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -40,11 +40,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <example xml:id="header-register-callback.example.basic">
@@ -83,11 +83,11 @@ a
 
  <refsect1 role="notes">
   &reftitle.notes;
-  <para>
+  <simpara>
    <function>header_register_callback</function> is executed just as the
    headers are about to be sent out, so any output from this function can
    break output.
-  </para>
+  </simpara>
   &note.network.header.sapi;
  </refsect1>
 

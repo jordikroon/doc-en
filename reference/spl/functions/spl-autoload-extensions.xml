@@ -11,16 +11,16 @@
    <type>string</type><methodname>spl_autoload_extensions</methodname>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>file_extensions</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function can modify and check the file extensions that the built in
-   <function>__autoload</function> fallback function <function>spl_autoload</function> 
+   <function>__autoload</function> fallback function <function>spl_autoload</function>
    will be using.
-  </para>
+  </simpara>
   <note>
     <simpara>
       There should not be a space between the defined file extensions.
     </simpara>
-  </note>  
+  </note>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,13 +30,13 @@
     <varlistentry>
      <term><parameter>file_extensions</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If &null;, it simply returns the current list
        of extensions each separated by comma. To modify the list of file
        extensions, simply invoke the functions with the new list of file
        extensions to use in a single string with each extensions separated
        by comma.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -45,10 +45,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A comma delimited list of default file extensions for
    <function>spl_autoload</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -88,7 +88,7 @@ spl_autoload_extensions(".php,.inc");
    </programlisting>
   </example>
  </refsect1>
- 
+
 </refentry>
 <!-- Keep this comment at the end of the file
 Local variables:

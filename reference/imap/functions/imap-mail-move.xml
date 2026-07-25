@@ -14,13 +14,13 @@
    <methodparam><type>string</type><parameter>mailbox</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Moves mail messages specified by <parameter>message_nums</parameter> to the
    specified <parameter>mailbox</parameter>.
    Note that the mail messages are actually <emphasis>copied</emphasis> to the
    <parameter>mailbox</parameter>, and the original messages are flagged for deletion.
    That implies that the messages in <parameter>mailbox</parameter> are assigned new UIDs.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -30,19 +30,19 @@
     <varlistentry>
      <term><parameter>message_nums</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>message_nums</parameter> is a range not just message numbers
        (as described in <link xlink:href="&url.rfc;2060">RFC2060</link>).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>mailbox</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The mailbox name, see <function>imap_open</function> for more
        information
-      </para>
+      </simpara>
       &imap.mailboxname.insecure;
      </listitem>
     </varlistentry>
@@ -67,9 +67,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -92,11 +92,11 @@
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
-    <function>imap_mail_move</function> will flag the original 
-    mail with a delete flag, to successfully delete it a call to 
+   <simpara>
+    <function>imap_mail_move</function> will flag the original
+    mail with a delete flag, to successfully delete it a call to
     the <function>imap_expunge</function> function must be made.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

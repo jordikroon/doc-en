@@ -5,19 +5,19 @@
   <refname>stream_supports_lock</refname>
   <refpurpose>Tells whether the stream supports locking</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>bool</type><methodname>stream_supports_lock</methodname>
    <methodparam><type>resource</type><parameter>stream</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   Tells whether the stream supports locking through 
+  <simpara>
+   Tells whether the stream supports locking through
    <function>flock</function>.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters"><!-- {{{ -->
   &reftitle.parameters;
   <para>
@@ -25,9 +25,9 @@
     <varlistentry>
      <term><parameter>stream</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The stream to check.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -36,11 +36,11 @@
 
  <refsect1 role="returnvalues"><!-- {{{ -->
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1><!-- }}} -->
- 
+
  <refsect1 role="seealso"><!-- {{{ -->
   &reftitle.seealso;
   <para>

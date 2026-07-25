@@ -11,21 +11,21 @@
    <modifier>public</modifier> <type>bool</type><methodname>tidyNode::hasSiblings</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Tells if the node has siblings.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
   &reftitle.parameters;
   &no.function.parameters;
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the node has siblings, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -40,9 +40,9 @@
 $html = <<< HTML
 <html><head>
 <?php echo '<title>title</title>'; ?>
-<# 
+<#
   /* JSTE code */
-  alert('Hello World'); 
+  alert('Hello World');
 #>
 </head>
 <body>

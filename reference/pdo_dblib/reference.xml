@@ -9,25 +9,25 @@
 
    <section xml:id="ref.pdo-dblib.intro">
    &reftitle.intro;
-    <para>
+    <simpara>
      PDO_DBLIB is a driver that implements the <link linkend="intro.pdo">PHP
      Data Objects (PDO) interface</link> to enable access from PHP to
      Microsoft SQL Server and Sybase databases through the FreeTDS library.
-    </para>
-    <para>
+    </simpara>
+    <simpara>
      This extension is not available anymore on Windows.
-    </para>
-    <para>
+    </simpara>
+    <simpara>
      On Windows, you should use SqlSrv, an alternative driver for MS SQL is
      available from Microsoft: <link xlink:href="&url.sqlsrv;">&url.sqlsrv;
      </link>.
-    </para>
-    <para>
+    </simpara>
+    <simpara>
      If it is not possible to use SqlSrv, you can use the
      <link linkend="ref.pdo-odbc">PDO_ODBC</link> driver to connect to
      Microsoft SQL Server and Sybase databases, as the native Windows DB-LIB
      is ancient, thread un-safe and no longer supported by Microsoft.
-    </para>
+    </simpara>
    </section>
   </partintro>
 
@@ -45,55 +45,55 @@
       <varlistentry>
        <term>DSN prefix</term>
        <listitem>
-        <para>
+        <simpara>
          The DSN prefix is <userinput>sybase:</userinput> if PDO_DBLIB was
          linked against the Sybase ct-lib libraries,
          <userinput>mssql:</userinput> if PDO_DBLIB was linked against the
          Microsoft SQL Server libraries, or <userinput>dblib:</userinput> if
          PDO_DBLIB was linked against the FreeTDS libraries.
-        </para>
+        </simpara>
        </listitem>
       </varlistentry>
       <varlistentry>
        <term><literal>host</literal></term>
        <listitem>
-        <para>
+        <simpara>
          The hostname on which the database server resides.
          Defaults to 127.0.0.1.
-        </para>
+        </simpara>
        </listitem>
       </varlistentry>
       <varlistentry>
        <term><literal>dbname</literal></term>
        <listitem>
-        <para>
+        <simpara>
          The name of the database.
-        </para>
+        </simpara>
        </listitem>
       </varlistentry>
       <varlistentry>
        <term><literal>charset</literal></term>
        <listitem>
-        <para>
+        <simpara>
          The client character set.
-        </para>
+        </simpara>
        </listitem>
       </varlistentry>
       <varlistentry>
        <term><literal>appname</literal></term>
        <listitem>
-        <para>
+        <simpara>
          The application name (used in sysprocesses).
          Defaults to "PHP Generic DB-lib" or "PHP freetds".
-        </para>
+        </simpara>
        </listitem>
       </varlistentry>
       <varlistentry>
        <term><literal>secure</literal></term>
        <listitem>
-        <para>
+        <simpara>
          Currently unused.
-        </para>
+        </simpara>
        </listitem>
       </varlistentry>
      </variablelist>

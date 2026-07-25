@@ -9,30 +9,30 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="MessageFormatter">
    <modifier>public</modifier> <modifier>static</modifier> <type class="union"><type>string</type><type>false</type></type><methodname>MessageFormatter::formatMessage</methodname>
    <methodparam><type>string</type><parameter>locale</parameter></methodparam>
    <methodparam><type>string</type><parameter>pattern</parameter></methodparam>
    <methodparam><type>array</type><parameter>values</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>msgfmt_format_message</methodname>
    <methodparam><type>string</type><parameter>locale</parameter></methodparam>
    <methodparam><type>string</type><parameter>pattern</parameter></methodparam>
    <methodparam><type>array</type><parameter>values</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Quick formatting function that formats the string without having to
    explicitly create the formatter object. Use this function when the format
    operation is done only once and does not need any parameters or state to be
    kept or when wanting to customize the output by providing additional context to ICU directly.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -42,27 +42,27 @@
     <varlistentry>
      <term><parameter>locale</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The locale to use for formatting locale-dependent parts
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>pattern</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The pattern <type>string</type> to insert things into.
        The pattern uses an 'apostrophe-friendly' syntax;
        see <link xlink:href="&url.icu.quoting;">Quoting/Escaping</link> for details.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>values</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <type>array</type> of values to insert into the format <type>string</type>
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -72,9 +72,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The formatted pattern string or &false; if an error occurred
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

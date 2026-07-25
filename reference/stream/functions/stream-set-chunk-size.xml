@@ -13,9 +13,9 @@
    <methodparam><type>resource</type><parameter>stream</parameter></methodparam>
    <methodparam><type>int</type><parameter>size</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Set the stream chunk size.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,17 +24,17 @@
    <varlistentry>
     <term><parameter>stream</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The target stream.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>size</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The desired new chunk size.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -42,17 +42,17 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the previous chunk size on success.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   A <classname>ValueError</classname> is thrown if <parameter>size</parameter>
+  <simpara>
+   A <exceptionname>ValueError</exceptionname> is thrown if <parameter>size</parameter>
    is less than 1 or greater than <constant>PHP_INT_MAX</constant>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog"><!-- {{{ -->
@@ -70,7 +70,7 @@
       <row>
        <entry>8.0.0</entry>
        <entry>
-        A <classname>ValueError</classname> is now thrown if
+        A <exceptionname>ValueError</exceptionname> is now thrown if
         <parameter>size</parameter> is less than 1 or greater than
         <constant>PHP_INT_MAX</constant>. Previously, an
         <constant>E_WARNING</constant> level error was emitted and &false; was

@@ -15,10 +15,10 @@
    <methodparam><type>PgSql\Connection</type><parameter>connection</parameter></methodparam>
    <methodparam><type>int</type><parameter>visibility</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Determines the visibility of the context's error messages returned by <function>pg_last_error</function>
    and <function>pg_result_error</function>
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -34,11 +34,11 @@
     <varlistentry>
      <term><parameter>visibility</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The required visibility: <constant>PGSQL_SHOW_CONTEXT_NEVER</constant>,
        <constant>PGSQL_SHOW_CONTEXT_ERRORS</constant>
        or <constant>PGSQL_SHOW_CONTEXT_ALWAYS</constant>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -47,11 +47,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The previous visibility level: <constant>PGSQL_SHOW_CONTEXT_NEVER</constant>,
    <constant>PGSQL_SHOW_CONTEXT_ERRORS</constant>
    or <constant>PGSQL_SHOW_CONTEXT_ALWAYS</constant>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

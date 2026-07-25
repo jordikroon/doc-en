@@ -29,17 +29,17 @@
    <varlistentry>
     <term><parameter>class</parameter></term>
     <listitem>
-     <para>
+     <simpara>
      The name of the class containing the function
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>function</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The name of the function
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -47,9 +47,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The return value or Closure previously set.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

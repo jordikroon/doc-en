@@ -32,12 +32,12 @@
    statement, unless emulation mode is on.
   </para>
   <note>
-   <para>
+   <simpara>
     Parameter markers can represent a complete data literal only.
-    Neither part of literal, nor keyword, nor identifier, nor whatever arbitrary query 
-    part can be bound using parameters. For example, you cannot bind multiple values 
+    Neither part of literal, nor keyword, nor identifier, nor whatever arbitrary query
+    part can be bound using parameters. For example, you cannot bind multiple values
     to a single parameter in the IN() clause of an SQL statement.
-   </para>
+   </simpara>
   </note>
   <para>
    Calling <methodname>PDO::prepare</methodname> and
@@ -48,12 +48,12 @@
    <methodname>PDOStatement::execute</methodname> helps to prevent SQL injection attacks by eliminating the need to
    manually quote and escape the parameters.
   </para>
-  <para>
+  <simpara>
    PDO will emulate prepared statements/bound parameters for drivers that do
    not natively support them, and can also rewrite named or question mark
    style parameter markers to something more appropriate, if the driver
    supports one style but not the other.
-  </para>
+  </simpara>
   <note>
    <simpara>
     The parser used for emulated prepared statements and for
@@ -66,11 +66,11 @@
     which is natively supported by the driver.
    </simpara>
   </note>
-  <para>
+  <simpara>
     As of PHP 7.4.0, question marks can be escaped by doubling them. That means that
     the <literal>??</literal> string will be translated to <literal>?</literal>
     when sending the query to the database.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -79,15 +79,15 @@
     <varlistentry>
      <term><parameter>query</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        This must be a valid SQL statement template for the target database server.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>options</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        This array holds one or more key=&gt;value pairs to set
        attribute values for the PDOStatement object that this method
        returns. You would most commonly use this to set the
@@ -95,7 +95,7 @@
        <literal>PDO::CURSOR_SCROLL</literal> to request a scrollable cursor.
        Some drivers have driver-specific options that may be set at
        prepare-time.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -110,7 +110,7 @@
    <classname>PDOStatement</classname> object.
    If the database server cannot successfully prepare the statement,
    <methodname>PDO::prepare</methodname> returns &false; or emits
-   <classname>PDOException</classname> (depending on <link linkend="pdo.error-handling">error handling</link>).
+   <exceptionname>PDOException</exceptionname> (depending on <link linkend="pdo.error-handling">error handling</link>).
   </para>
   <note>
    <para>

@@ -5,7 +5,7 @@
   <refname>SimpleXMLElement::children</refname>
   <refpurpose>Finds children of given node</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="SimpleXMLElement">
@@ -13,10 +13,10 @@
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>namespaceOrPrefix</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>isPrefix</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This method finds the children of an element. The result follows normal
    iteration rules.
-  </para>
+  </simpara>
   &simplexml.iteration;
  </refsect1>
 
@@ -27,20 +27,20 @@
     <varlistentry>
      <term><parameter>namespaceOrPrefix</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An <acronym>XML</acronym> namespace.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>isPrefix</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If <parameter>isPrefix</parameter> is &true;,
        <parameter>namespaceOrPrefix</parameter> will be regarded as a prefix. If &false;,
        <parameter>namespaceOrPrefix</parameter> will be regarded as a namespace
        <acronym>URL</acronym>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -49,11 +49,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   Returns a <classname>SimpleXMLElement</classname> element, whether the node 
+  <simpara>
+   Returns a <classname>SimpleXMLElement</classname> element, whether the node
    has children or not, unless the node represents an attribute, in which case
    &null; is returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -141,7 +141,7 @@ int(1)
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

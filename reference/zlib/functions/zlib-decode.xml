@@ -13,9 +13,9 @@
    <methodparam><type>string</type><parameter>data</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>max_length</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Uncompress any raw/gzip/zlib encoded data.
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -27,17 +27,17 @@
    <varlistentry>
     <term><parameter>data</parameter></term>
     <listitem>
-     <para>
-      
-     </para>
+     <simpara>
+
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>max_length</parameter></term>
     <listitem>
-     <para>
-      
-     </para>
+     <simpara>
+
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -45,9 +45,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the uncompressed data, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

@@ -11,22 +11,22 @@
    <type>array</type><methodname>gd_info</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets information about the version and capabilities of the installed GD
    library.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
   &reftitle.parameters;
   &no.function.parameters;
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an associative array.
-  </para>
+  </simpara>
   <para>
    <table>
     <title>Elements of array returned by <function>gd_info</function></title>

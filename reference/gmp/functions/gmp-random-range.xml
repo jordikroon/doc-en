@@ -12,14 +12,14 @@
    <methodparam><type class="union"><type>GMP</type><type>int</type><type>string</type></type><parameter>min</parameter></methodparam>
    <methodparam><type class="union"><type>GMP</type><type>int</type><type>string</type></type><parameter>max</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Generate a random number. The number will be between
    <parameter>min</parameter> and <parameter>max</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    <parameter>min</parameter> and <parameter>max</parameter> can both be negative,
    but <parameter>min</parameter> must always be less than <parameter>max</parameter>.
-  </para>
+  </simpara>
   &caution.cryptographically-insecure;
  </refsect1>
 
@@ -30,17 +30,17 @@
     <varlistentry>
      <term><parameter>min</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A GMP number representing the lower bound for the random number
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>max</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A GMP number representing the upper bound for the random number
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -49,13 +49,13 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a <classname>GMP</classname> object which contains
    a uniformly selected integer from the closed interval
    [<parameter>min</parameter>, <parameter>max</parameter>]. Both
    <parameter>min</parameter> and <parameter>max</parameter> are
    possible return values.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

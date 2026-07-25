@@ -12,10 +12,10 @@
    <modifier>public</modifier> <type>array</type><methodname>SplFileObject::getCsvControl</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the delimiter, enclosure and escape character used for
    parsing <acronym>CSV</acronym> fields.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an indexed array containing the delimiter, enclosure and escape character.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

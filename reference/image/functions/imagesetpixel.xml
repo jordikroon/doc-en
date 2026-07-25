@@ -14,10 +14,10 @@
    <methodparam><type>int</type><parameter>y</parameter></methodparam>
    <methodparam><type>int</type><parameter>color</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>imagesetpixel</function> draws a pixel at the specified
    coordinate.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -27,25 +27,25 @@
     <varlistentry>
      <term><parameter>x</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        x-coordinate.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>y</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        y-coordinate.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>color</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &gd.identifier.color;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -53,9 +53,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -80,9 +80,9 @@
   <para>
    <example>
     <title><function>imagesetpixel</function> example</title>
-    <para>
+    <simpara>
      A random drawing that ends with a regular picture.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -91,12 +91,12 @@ $x = 200;
 $y = 200;
 
 $gd = imagecreatetruecolor($x, $y);
- 
+
 $corners[0] = array('x' => 100, 'y' =>  10);
 $corners[1] = array('x' =>   0, 'y' => 190);
 $corners[2] = array('x' => 200, 'y' => 190);
 
-$red = imagecolorallocate($gd, 255, 0, 0); 
+$red = imagecolorallocate($gd, 255, 0, 0);
 
 for ($i = 0; $i < 100000; $i++) {
   imagesetpixel($gd, round($x), round($y), $red);
@@ -104,7 +104,7 @@ for ($i = 0; $i < 100000; $i++) {
   $x = ($x + $corners[$a]['x']) / 2;
   $y = ($y + $corners[$a]['y']) / 2;
 }
- 
+
 header('Content-Type: image/png');
 imagepng($gd);
 

@@ -15,9 +15,9 @@
    <methodparam choice="opt"><type>int</type><parameter>cachingIteratorFlags</parameter><initializer><constant>CachingIterator::CATCH_GET_CHILD</constant></initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>mode</parameter><initializer><constant>RecursiveTreeIterator::SELF_FIRST</constant></initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Constructs a new <classname>RecursiveTreeIterator</classname> from the supplied recursive iterator.
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -30,34 +30,34 @@
     <varlistentry>
      <term><parameter>iterator</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <classname>RecursiveIterator</classname> or <classname>IteratorAggregate</classname> to iterate over.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
-       Flags may be provided which will affect the behavior of some methods. 
+      <simpara>
+       Flags may be provided which will affect the behavior of some methods.
        A list of the flags can found under <link linkend="recursivetreeiterator.constants">RecursiveTreeIterator predefined constants</link>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>caching_it_flags</parameter></term>
      <listitem>
-      <para>
-       Flags to affect the behavior of the <classname>RecursiveCachingIterator</classname> used internally. 
-      </para>
+      <simpara>
+       Flags to affect the behavior of the <classname>RecursiveCachingIterator</classname> used internally.
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>mode</parameter></term>
      <listitem>
-      <para>
-       Flags to affect the behavior of the <classname>RecursiveIteratorIterator</classname> used internally. 
-      </para>
+      <simpara>
+       Flags to affect the behavior of the <classname>RecursiveIteratorIterator</classname> used internally.
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

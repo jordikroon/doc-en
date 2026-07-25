@@ -14,17 +14,17 @@
    <methodparam choice="opt"><type class="union"><type>callable</type><type>null</type></type><parameter>callback</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>mode</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Iterates over each value in the <parameter>array</parameter>
    passing them to the <parameter>callback</parameter> function.
    If the <parameter>callback</parameter> function returns &true;, the
    current value from <parameter>array</parameter> is returned into
    the result &array;.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Array keys are preserved, and may result in gaps if the <parameter>array</parameter> was indexed.
    The result &array; can be reindexed using the <function>array_values</function> function.
-  </para>
+  </simpara>
 </refsect1>
 
  <refsect1 role="parameters">
@@ -35,23 +35,23 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The array to iterate over
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
     <varlistentry>
      <term><parameter>callback</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The callback function to use
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If no <parameter>callback</parameter> is supplied, all empty entries of
        <parameter>array</parameter> will be removed. See <function>empty</function>
        for how PHP defines empty in this case.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -82,9 +82,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the filtered array.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -241,10 +241,10 @@ array(2) {
  <refsect1 role="notes">
   &reftitle.notes;
   <caution>
-   <para>
+   <simpara>
     If the array is changed from the callback function (e.g. element
     added or unset) the behavior of this function is undefined.
-   </para>
+   </simpara>
   </caution>
  </refsect1>
 

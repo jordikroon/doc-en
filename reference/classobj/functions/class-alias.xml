@@ -13,11 +13,11 @@
    <methodparam><type>string</type><parameter>alias</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>autoload</parameter><initializer>&true;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Creates an alias named <parameter>alias</parameter>
    based on the user defined class <parameter>class</parameter>.
    The aliased class is exactly the same as the original class.
-  </para>
+  </simpara>
   <simpara>
    The class alias cannot be any of the PHP <link linkend="reserved.other-reserved-words">reserved words</link>.
   </simpara>
@@ -35,26 +35,26 @@
     <varlistentry>
      <term><parameter>class</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The original class.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>alias</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The alias name for the class.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>autoload</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Whether to <link linkend="language.oop5.autoload">autoload</link>
        if the original class is not found.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -62,9 +62,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

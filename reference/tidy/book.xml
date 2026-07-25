@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
- 
+
 <book xml:id="book.tidy" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <?phpdoc extension-membership="bundledexternal" ?>
  <title>Tidy</title>
  <titleabbrev>Tidy</titleabbrev>
- 
+
  <!-- {{{ preface -->
  <preface xml:id="intro.tidy">
   &reftitle.intro;
-  <para>
+  <simpara>
    Tidy is a binding for the Tidy HTML clean and repair utility which
    allows you to not only clean and otherwise manipulate HTML, XHTML,
    and XML documents, but also traverse the document tree, including
    ones with embedded scripting languages such as PHP or ASP within
    them using object-oriented constructs.
-  </para>
+  </simpara>
  </preface>
  <!-- }}} -->
- 
+
  &reference.tidy.setup;
  &reference.tidy.constants;
  &reference.tidy.examples;

@@ -5,7 +5,7 @@
   <refname>odbc_connect</refname>
   <refpurpose>Connect to a datasource</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -38,42 +38,42 @@
     <varlistentry>
      <term><parameter>dsn</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The database source name for the connection. Alternatively, a
        DSN-less connection string can be used.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>user</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The username.
        This parameter is ignored if <parameter>dsn</parameter> contains <literal>uid</literal>.
        To connect without specifying a <parameter>user</parameter>,
        use &null;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>password</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The password.
        This parameter is ignored if <parameter>dsn</parameter> contains <literal>pwd</literal>.
        To connect without specifying a <parameter>password</parameter>,
        use &null;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>cursor_option</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        This sets the type of cursor to be used
        for this connection. This parameter is not normally needed, but
        can be useful for working around problems with some ODBC drivers.
-      </para>
+      </simpara>
       <simpara>
        The following constants are defined for cursortype:
       </simpara>
@@ -104,9 +104,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an ODBC connection, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

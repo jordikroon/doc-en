@@ -5,7 +5,7 @@
   <refname>oci_parse</refname>
   <refpurpose>Prepares an Oracle statement for execution</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,17 +13,17 @@
    <methodparam><type>resource</type><parameter>connection</parameter></methodparam>
    <methodparam><type>string</type><parameter>sql</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Prepares <parameter>sql</parameter> using
    <parameter>connection</parameter> and returns the statement identifier,
-   which can be used with <function>oci_bind_by_name</function>, 
+   which can be used with <function>oci_bind_by_name</function>,
    <function>oci_execute</function> and other functions.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Statement identifiers can be freed
    with <function>oci_free_statement</function> or by setting the
    variable to &null;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -33,24 +33,24 @@
     <varlistentry>
      <term><parameter>connection</parameter></term>
      <listitem>
-      <para>
-       An Oracle connection identifier, returned by 
+      <simpara>
+       An Oracle connection identifier, returned by
        <function>oci_connect</function>, <function>oci_pconnect</function>, or <function>oci_new_connect</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>sql</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The SQL or PL/SQL statement.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        SQL statements <emphasis>should not</emphasis> end with a
        semi-colon (&quot;;&quot;).  PL/SQL
        statements <emphasis>should</emphasis> end with a semi-colon
        (&quot;;&quot;).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -59,9 +59,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a statement handle on success, or &false; on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -142,12 +142,12 @@ oci_close($conn);
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
-    This function <emphasis>does not</emphasis> validate 
+   <simpara>
+    This function <emphasis>does not</emphasis> validate
     <parameter>sql</parameter>. The only way to find out if
     <parameter>sql</parameter> is a valid SQL or PL/SQL statement
     is to execute it.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

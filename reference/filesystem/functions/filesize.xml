@@ -5,16 +5,16 @@
   <refname>filesize</refname>
   <refpurpose>Gets file size</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>int</type><type>false</type></type><methodname>filesize</methodname>
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the size for the given file.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path to the file.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,10 +35,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the size of the file in bytes, or &false; (and generates an error
    of level <constant>E_WARNING</constant>) in case of an error.
-  </para>
+  </simpara>
   &fs.file.32bit;
  </refsect1>
 

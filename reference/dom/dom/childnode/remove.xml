@@ -11,7 +11,7 @@
    <modifier>public</modifier> <type>void</type><methodname>Dom\ChildNode::remove</methodname>
    <void/>
   </methodsynopsis>
-  <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('domchildnode.remove')/db:refsect1[@role='description']/db:para[1])"/>
+  <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('domchildnode.remove')/db:refsect1[@role='description']/db:simpara[1])"/>
  </refsect1>
 
  <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('domchildnode.remove')/db:refsect1[@role='parameters'])" />

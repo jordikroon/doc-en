@@ -18,9 +18,9 @@
    <methodparam><type>Reflector</type><parameter>reflector</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>return</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Exports a reflection.
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -33,17 +33,17 @@
     <varlistentry>
      <term><parameter>reflector</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &reflection.export.param.name;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>return</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &reflection.export.param.return;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -52,9 +52,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &reflection.export.return;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>CachingIterator::offsetExists</methodname>
    <methodparam><type>string</type><parameter>key</parameter></methodparam>
   </methodsynopsis>
-  
+
   &warn.undocumented.func;
-  
+
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>key</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The index being checked.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -36,9 +36,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if an entry referenced by the offset exists, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

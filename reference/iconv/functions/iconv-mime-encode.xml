@@ -5,7 +5,7 @@
   <refname>iconv_mime_encode</refname>
   <refpurpose>Composes a <literal>MIME</literal> header field</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -34,17 +34,17 @@ Subject: =?ISO-8859-1?Q?Pr=FCfung_f=FCr?= Entwerfen von einer MIME kopfzeile
     <varlistentry>
      <term><parameter>field_name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The field name.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>field_value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The field value.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -150,10 +150,10 @@ Subject: =?ISO-8859-1?Q?Pr=FCfung_f=FCr?= Entwerfen von einer MIME kopfzeile
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an encoded <literal>MIME</literal> field on success,
    or &false; if an error occurs during the encoding.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

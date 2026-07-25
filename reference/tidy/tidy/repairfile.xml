@@ -8,7 +8,7 @@
  </refnamediv>
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="tidy">
    <modifier>public</modifier> <modifier>static</modifier> <type class="union"><type>string</type><type>false</type></type><methodname>tidy::repairFile</methodname>
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
@@ -16,7 +16,7 @@
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>encoding</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>useIncludePath</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>tidy_repair_file</methodname>
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
@@ -25,9 +25,9 @@
    <methodparam choice="opt"><type>bool</type><parameter>useIncludePath</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
 
-  <para>
+  <simpara>
    Repairs the given file and returns it as a string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -37,46 +37,46 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The file to be repaired.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>config</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The config <parameter>config</parameter> can be passed either as an
        array or as a string. If a string is passed, it is interpreted as the
        name of the configuration file, otherwise, it is interpreted as the
        options themselves.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Check http://tidy.sourceforge.net/docs/quickref.html for an
        explanation about each option.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>encoding</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <parameter>encoding</parameter> parameter sets the encoding for
-       input/output documents. The possible values for encoding  are: 
+       input/output documents. The possible values for encoding  are:
        <literal>ascii</literal>, <literal>latin0</literal>, <literal>latin1</literal>,
        <literal>raw</literal>, <literal>utf8</literal>, <literal>iso2022</literal>,
        <literal>mac</literal>, <literal>win1252</literal>, <literal>ibm858</literal>,
        <literal>utf16</literal>, <literal>utf16le</literal>, <literal>utf16be</literal>,
        <literal>big5</literal>, and <literal>shiftjis</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>useIncludePath</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Search for the file in the <link linkend="ini.include-path">include_path</link>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -85,9 +85,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the repaired contents as a string, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

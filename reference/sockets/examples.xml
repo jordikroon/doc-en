@@ -6,7 +6,7 @@
  <para>
   <example>
    <title>Socket example: Simple TCP/IP server</title>
-   <para>
+   <simpara>
     This example shows a simple talkback server. Change the
     <varname>address</varname> and <varname>port</varname> variables
     to suit your setup and execute. You may then connect to the
@@ -14,7 +14,7 @@
     10000</command> (where the address and port match your
     setup). Anything you type will then be output on the server
     side, and echoed back to you. To disconnect, enter 'quit'.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 #!/usr/local/bin/php -q
@@ -84,11 +84,11 @@ socket_close($sock);
  <para>
   <example>
    <title>Socket example: Simple TCP/IP client</title>
-   <para>
+   <simpara>
     This example shows a simple, one-shot HTTP client. It simply
     connects to a page, submits a HEAD request, echoes the reply,
     and exits.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

@@ -2,10 +2,10 @@
 <sect1 xml:id="language.operators.increment">
  <title>Incrementing/Decrementing Operators</title>
  <titleabbrev>Increment and Decrement</titleabbrev>
- <para>
+ <simpara>
   PHP supports pre- and post-increment and decrement operators.
   Those unary operators allow to increment or decrement the value by one.
- </para>
+ </simpara>
  <table>
   <title>Increment/decrement Operators</title>
   <tgroup cols="3">
@@ -89,31 +89,31 @@ int(4)
   </example>
 
   <warning>
-   <para>
+   <simpara>
     The increment and decrement operators have no effect on values
     of type <type>bool</type>.
     A <constant>E_WARNING</constant> is emitted as of PHP 8.3.0,
     because this will implicitly cast the value to <type>int</type> in the future.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     The decrement operator has no effect on values
     of type <type>null</type>.
     A <constant>E_WARNING</constant> is emitted as of PHP 8.3.0,
     because this will implicitly cast the value to <type>int</type> in the future.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     The decrement operator has no effect on non-
     <link linkend="language.types.numeric-strings">numeric string</link>.
     A <constant>E_WARNING</constant> is emitted as of PHP 8.3.0,
-    because a <classname>TypeError</classname> will be thrown in the future.
-   </para>
+    because a <exceptionname>TypeError</exceptionname> will be thrown in the future.
+   </simpara>
   </warning>
   <note>
-   <para>
+   <simpara>
     Internal objects that support overloading addition and/or subtraction
     can also be incremented and/or decremented.
     One such internal object is <classname>GMP</classname>.
-   </para>
+   </simpara>
   </note>
  </para>
 
@@ -187,7 +187,7 @@ A14
   </example>
 
   <warning>
-   <para>
+   <simpara>
     If the alphanumerical string can be interpreted as a
     <link linkend="language.types.numeric-strings">numeric string</link>
     it will be cast to an <type>int</type> or <type>float</type>.
@@ -195,7 +195,7 @@ A14
     numbers written in exponential notation.
     The <function>str_increment</function> function does not suffer from
     these implicit type cast.
-   </para>
+   </simpara>
    <example>
     <title>Alphanumerical string converted to float</title>
     <programlisting role="php">
@@ -214,11 +214,11 @@ string(3) "5e0"
 float(6)
 ]]>
     </screen>
-    <para>
+    <simpara>
      This is because the value <literal>"5e0"</literal> is interpreted
      as a <type>float</type> and cast to the value <literal>5.0</literal>
      before being incremented.
-    </para>
+    </simpara>
    </example>
   </warning>
  </sect2>

@@ -5,22 +5,22 @@
   <refname>ignore_user_abort</refname>
   <refpurpose>Set whether a client disconnect should abort script execution</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>int</type><methodname>ignore_user_abort</methodname>
    <methodparam choice="opt"><type class="union"><type>bool</type><type>null</type></type><parameter>enable</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets whether a client disconnect should cause a script to be aborted.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    When running PHP as a command line script, and the script's tty goes
    away without the script being terminated then the script will die the
    next time it tries to write anything, unless
    <parameter>enable</parameter> is set to &true;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,12 +30,12 @@
     <varlistentry>
      <term><parameter>enable</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If set and not &null;, this function will set the <link
        linkend="ini.ignore-user-abort">ignore_user_abort</link> ini setting
        to the given <parameter>enable</parameter>. Otherwise, this function will
        only return the previous setting without changing it.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -44,9 +44,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the previous setting, as an integer.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -86,8 +86,8 @@ set_time_limit(0);
 
 echo 'Testing connection handling in PHP';
 
-// Run a pointless loop that sometime 
-// hopefully will make us click away from 
+// Run a pointless loop that sometime
+// hopefully will make us click away from
 // page or click the "Stop" button.
 while(1)
 {
@@ -101,11 +101,11 @@ while(1)
     sleep(10);
 }
 
-// If this is reached, then the 'break' 
+// If this is reached, then the 'break'
 // was triggered from inside the while loop
 
 // So here we can log, or perform any other tasks
-// we need without actually being dependent on the 
+// we need without actually being dependent on the
 // browser.
 ?>
 ]]>
@@ -116,12 +116,12 @@ while(1)
 
  <refsect1 role="notes">
   &reftitle.notes;
-  <para>
+  <simpara>
    PHP will not detect that the user has aborted the connection until
    an attempt is made to send information to the client. Simply using
    an echo statement does not guarantee that information is sent, see
-   <function>flush</function>. 
-  </para>
+   <function>flush</function>.
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

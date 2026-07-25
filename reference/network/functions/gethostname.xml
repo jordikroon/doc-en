@@ -5,17 +5,17 @@
   <refname>gethostname</refname>
   <refpurpose>Gets the host name</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>gethostname</methodname>
    <void/>
   </methodsynopsis>
-  <para>
-   <function>gethostname</function> gets the standard host name for 
+  <simpara>
+   <function>gethostname</function> gets the standard host name for
    the local machine.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,10 +25,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   Returns a string with the hostname on success, otherwise &false; is 
+  <simpara>
+   Returns a string with the hostname on success, otherwise &false; is
    returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

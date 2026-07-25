@@ -13,9 +13,9 @@
    <methodparam><type>array</type><parameter>haystack</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>strict</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Searches for <parameter>needle</parameter> in <parameter>haystack</parameter>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -24,29 +24,29 @@
     <varlistentry>
      <term><parameter>needle</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The searched value.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         If <parameter>needle</parameter> is a string, the comparison is done
         in a case-sensitive manner.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>haystack</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The array.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>strict</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If the third parameter <parameter>strict</parameter> is set to &true;
        then the <function>array_search</function> function will search for
        <emphasis>identical</emphasis> elements in the
@@ -54,7 +54,7 @@
        <link linkend="language.types">strict type comparison</link> of the
        <parameter>needle</parameter> in the <parameter>haystack</parameter>,
        and objects must be the same instance.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -62,16 +62,16 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the key for <parameter>needle</parameter> if it is found in the
    array, &false; otherwise.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If <parameter>needle</parameter> is found in <parameter>haystack</parameter>
    more than once, the first matching key is returned. To return the keys for
    all matching values, use <function>array_keys</function> with the optional
    <parameter>filter_value</parameter> parameter instead.
-  </para>
+  </simpara>
   &return.falseproblem;
  </refsect1>
  <refsect1 role="examples">

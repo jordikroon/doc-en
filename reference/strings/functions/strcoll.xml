@@ -5,7 +5,7 @@
   <refname>strcoll</refname>
   <refpurpose>Locale based string comparison</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,15 +13,15 @@
    <methodparam><type>string</type><parameter>string1</parameter></methodparam>
    <methodparam><type>string</type><parameter>string2</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Note that this comparison is case sensitive, and unlike
    <function>strcmp</function> this function is not binary safe.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    <function>strcoll</function> uses the current locale for doing the
    comparisons.  If the current locale is C or POSIX, this function is
    equivalent to <function>strcmp</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -31,17 +31,17 @@
     <varlistentry>
      <term><parameter>string1</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The first string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>string2</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The second string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -50,12 +50,12 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &lt; 0 if <parameter>string1</parameter> is less than
    <parameter>string2</parameter>; &gt; 0 if
    <parameter>string1</parameter> is greater than
    <parameter>string2</parameter>, and 0 if they are equal.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

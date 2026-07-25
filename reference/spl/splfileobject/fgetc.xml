@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type class="union"><type>string</type><type>false</type></type><methodname>SplFileObject::fgetc</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets a character from the file.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a string containing a single character read from the file or &false; on EOF.
-  </para>
+  </simpara>
   &return.falseproblem;
  </refsect1>
 

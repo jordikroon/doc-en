@@ -13,14 +13,14 @@
    <void/>
   </methodsynopsis>
 
-  <para>
+  <simpara>
    Checks whether the current element is valid.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     The standard implementation of this function will initially return &false;
     until the inner iterator is advanced to the first accepted element.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -31,9 +31,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &true; if the current element is valid, otherwise &false;
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

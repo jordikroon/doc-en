@@ -12,16 +12,16 @@
    <type>bool</type><methodname>dl</methodname>
    <methodparam><type>string</type><parameter>extension_filename</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Loads the PHP extension given by the parameter
    <parameter>extension_filename</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Use <function>extension_loaded</function> to test whether a given
    extension is already available or not. This works on both built-in
    extensions and dynamically loaded ones (either through &php.ini; or
    <function>dl</function>).
-  </para>
+  </simpara>
   <warning>
    <simpara>
     This function is only available for the <acronym>CLI</acronym> and embed <acronym>SAPI</acronym>s,
@@ -37,22 +37,22 @@
     <varlistentry>
      <term><parameter>extension_filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        This parameter is <emphasis>only</emphasis> the filename of the
        extension to load which also depends on your platform. For example,
        the <link linkend="ref.sockets">sockets</link> extension (if compiled
-       as a shared module, not the default!) would be called 
+       as a shared module, not the default!) would be called
        <filename>sockets.so</filename> on Unix platforms whereas it is called
        <filename>php_sockets.dll</filename> on the Windows platform.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        The directory where the extension is loaded from depends on your
        platform:
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Windows - If not explicitly set in the &php.ini;, the extension is
        loaded from <filename>C:\php5\</filename> by default.
-      </para>
+      </simpara>
       <para>
        Unix - If not explicitly set in the &php.ini;, the default extension
        directory depends on
@@ -92,7 +92,7 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success; If the functionality of loading modules is not available
    or has been disabled (by setting
    <link linkend="ini.enable-dl">enable_dl</link> off
@@ -100,7 +100,7 @@
    and execution is stopped. If <function>dl</function> fails because the
    specified library couldn't be loaded, in addition to &false; an
    <constant>E_WARNING</constant> message is emitted.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -135,9 +135,9 @@ if (!extension_loaded('sqlite')) {
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     <function>dl</function> is case sensitive on Unix platforms.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

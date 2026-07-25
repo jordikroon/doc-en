@@ -13,9 +13,9 @@
    <methodparam><type>string</type><parameter>data</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>length</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Writes the contents of <parameter>data</parameter> to the file
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,20 +25,20 @@
     <varlistentry>
      <term><parameter>data</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string to be written to the file.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If the <parameter>length</parameter> argument is <type>int</type>, writing will
        stop after <parameter>length</parameter> bytes have been written or
        the end of <parameter>data</parameter> is reached, whichever comes
        first.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -47,9 +47,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the number of bytes written, or &false; on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

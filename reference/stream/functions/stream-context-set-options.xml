@@ -12,9 +12,9 @@
    <methodparam><type>resource</type><parameter>context</parameter></methodparam>
    <methodparam><type>array</type><parameter>options</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets options on the specified context.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,27 +24,27 @@
     <varlistentry>
      <term><parameter>context</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The stream or context resource to apply the options to.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>options</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The options to set for <parameter>context</parameter>.
-      </para>
+      </simpara>
       <note>
        <para>
         <parameter>options</parameter> must be an associative
         &array; of associative arrays in the format
         <code>$array['wrapper']['option'] = $value</code>.
        </para>
-       <para>
+       <simpara>
         Refer to <link linkend="context">context options and parameters</link>
         for a listing of stream options.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
@@ -54,9 +54,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

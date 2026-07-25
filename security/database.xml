@@ -196,11 +196,11 @@ insert into pg_shadow(usename,usesysid,usesuper,usecatupd,passwd)
       original query and to terminate it.
     </para>
     <note>
-     <para>
+     <simpara>
       It is a common technique to force the SQL parser to ignore the rest of the
       query written by the developer with <literal>--</literal> which is the
       comment sign in SQL.
-     </para>
+     </simpara>
     </note>
     <para>
      A feasible way to gain passwords is to circumvent your search result pages.
@@ -258,7 +258,7 @@ $query = "UPDATE usertable SET pwd='$pwd' WHERE uid='$uid';";
      If a malicious user submits the value
      <literal>' or uid like'%admin%</literal> to <varname>$uid</varname> to
      change the admin's password, or simply sets <varname>$pwd</varname> to
-     <literal>hehehe', trusted=100, admin='yes</literal> to gain more 
+     <literal>hehehe', trusted=100, admin='yes</literal> to gain more
      privileges, then the query will be twisted:
      <informalexample>
       <programlisting role="php">
@@ -331,11 +331,11 @@ $result = mssql_query($query);
      account with which to access this machine.
     </para>
     <note>
-     <para>
+     <simpara>
       Some examples above are tied to a specific database server, but it
       does not mean that a similar attack is impossible against other products.
       Your database server may be similarly vulnerable in another manner.
-     </para>
+     </simpara>
     </note>
     <para>
      <mediaobject>
@@ -353,7 +353,7 @@ $result = mssql_query($query);
 
     <sect2 xml:id="security.database.avoiding">
      <title>Avoidance Techniques</title>
-     <para>
+     <simpara>
       The recommended way to avoid SQL injection is by binding all data via
       prepared statements. Using parameterized queries isn't enough to entirely
       avoid SQL injection, but it is the easiest and safest way to provide input
@@ -361,11 +361,11 @@ $result = mssql_query($query);
       <literal>SET</literal>, and <literal>VALUES</literal> clauses must be
       replaced with placeholders. The actual data will be bound during the
       execution and sent separately from the SQL command.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       Parameter binding can only be used for data. Other dynamic parts of the
       SQL query must be filtered against a known list of allowed values.
-     </para>
+     </simpara>
      <para>
       <example>
       <title>Avoiding SQL injection by using PDO prepared statements</title>

@@ -12,9 +12,9 @@
    <type>array</type><methodname>stream_context_get_params</methodname>
    <methodparam><type>resource</type><parameter>context</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Retrieves parameter and options information from the stream or context.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,10 +24,10 @@
     <varlistentry>
      <term><parameter>context</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A stream <type>resource</type> or a
        <link linkend="context">context</link> <type>resource</type>
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -36,9 +36,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an associate array containing all context options and parameters.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -46,9 +46,9 @@
   <para>
    <example>
     <title><function>stream_context_get_params</function> example</title>
-    <para>
+    <simpara>
      Basic usage example
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

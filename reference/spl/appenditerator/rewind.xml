@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>void</type><methodname>AppendIterator::rewind</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Rewind to the first element of the first inner Iterator.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

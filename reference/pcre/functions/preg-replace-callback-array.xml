@@ -16,11 +16,11 @@
    <methodparam choice="opt"><type>int</type><parameter role="reference">count</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    The behavior of this function is similar to
    <function>preg_replace_callback</function>, except that callbacks are
    executed on a per-pattern basis.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,48 +30,48 @@
     <varlistentry>
      <term><parameter>pattern</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An associative array mapping patterns (keys) to <type>callable</type>s (values).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>subject</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string or an array with strings to search and replace.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>limit</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The maximum possible replacements for each pattern in each
        <parameter>subject</parameter> string. Defaults to
        <literal>-1</literal> (no limit).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>count</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If specified, this variable will be filled with the number of
        replacements done.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>flags</parameter> can be a combination of the
        <constant>PREG_OFFSET_CAPTURE</constant> and
        <constant>PREG_UNMATCHED_AS_NULL</constant> flags, which influence the
        format of the matches array.
        See the description in <function>preg_match</function> for more details.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -80,15 +80,15 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    <function>preg_replace_callback_array</function> returns an array if the
    <parameter>subject</parameter> parameter is an array, or a string
    otherwise. On errors the return value is &null;
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If matches are found, the new subject will be returned, otherwise
-   <parameter>subject</parameter> will be returned unchanged. 
-  </para>
+   <parameter>subject</parameter> will be returned unchanged.
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

@@ -13,9 +13,9 @@
    <methodparam><type>Traversable</type><parameter>iterator</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>class</parameter><initializer>&null;</initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Creates an iterator from anything that is traversable.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
     <varlistentry>
      <term><parameter>iterator</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The traversable iterator.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>

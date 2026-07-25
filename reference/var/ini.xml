@@ -33,9 +33,9 @@
   </table>
   &ini.php.constants;
  </para>
- 
+
  &ini.descriptions.title;
- 
+
  <para>
   <variablelist>
    <varlistentry xml:id="ini.unserialize-callback-func">
@@ -44,15 +44,15 @@
      <type>string</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       The callback specified is called when <function>unserialize</function>
       attempts to use an undefined class. A warning appears if the specified
       callback function is not defined, or if the callback function fails to
       define the missing class.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       See also <function>unserialize</function> and <link linkend="language.oop5.autoload">Autoloading Classes</link>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="ini.unserialize-max-depth">
@@ -61,15 +61,15 @@
      <type>int</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       The maximum depth of structures permitted during unserialization when
       using <function>unserialize</function>, and is intended to prevent stack
       overflows. This can be disabled by setting
       <literal>unserialize_max_depth=0</literal>.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       See also <function>unserialize</function> and <link linkend="language.oop5.autoload">Autoloading Classes</link>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
 

@@ -5,27 +5,27 @@
   <refname>php_uname</refname>
   <refpurpose>Returns information about the operating system PHP is running on</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>string</type><methodname>php_uname</methodname>
    <methodparam choice="opt"><type>string</type><parameter>mode</parameter><initializer>"a"</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>php_uname</function> returns a description of the operating
    system PHP is running on.  This is the same string you see at the very
    top of the <function>phpinfo</function> output.  For the name of just
    the operating system, consider using the <constant>PHP_OS</constant>
    constant, but keep in mind this constant will contain the operating
    system PHP was <emphasis>built</emphasis> on.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    On some older UNIX platforms, it may not be able to determine the
    current OS information in which case it will revert to displaying
-   the OS PHP was built on.  This will only happen if your uname() 
+   the OS PHP was built on.  This will only happen if your uname()
    library call either doesn't exist or doesn't work.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -61,13 +61,13 @@
         </listitem>
         <listitem>
          <simpara>
-          <literal>'n'</literal>: Host name. eg. 
+          <literal>'n'</literal>: Host name. eg.
           <literal>localhost.example.com</literal>.
          </simpara>
         </listitem>
         <listitem>
          <simpara>
-          <literal>'r'</literal>: Release name. eg. 
+          <literal>'r'</literal>: Release name. eg.
           <literal>5.1.2-RELEASE</literal>.
          </simpara>
         </listitem>
@@ -92,9 +92,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the description, as a string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -111,7 +111,7 @@
      <row>
       <entry>8.4.0</entry>
       <entry>
-       Throws a <classname>ValueError</classname> when an invalid
+       Throws a <exceptionname>ValueError</exceptionname> when an invalid
        <parameter>mode</parameter> is specified.
       </entry>
      </row>

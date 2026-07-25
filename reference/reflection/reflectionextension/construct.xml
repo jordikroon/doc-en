@@ -12,9 +12,9 @@
    <modifier>public</modifier> <methodname>ReflectionExtension::__construct</methodname>
    <methodparam><type>string</type><parameter>name</parameter></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Construct a <classname>ReflectionExtension</classname> <type>object</type>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Name of the extension.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,9 +35,9 @@
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws <classname>ReflectionException</classname> if the extension to reflect does not exist.
-  </para>
+  <simpara>
+   Throws <exceptionname>ReflectionException</exceptionname> if the extension to reflect does not exist.
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

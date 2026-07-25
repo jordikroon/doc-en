@@ -9,9 +9,9 @@
 <!-- {{{ SQLite3 intro -->
   <section xml:id="sqlite3.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     A class that interfaces SQLite 3 databases.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

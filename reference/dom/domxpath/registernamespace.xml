@@ -14,10 +14,10 @@
    <methodparam><type>string</type><parameter>prefix</parameter></methodparam>
    <methodparam><type>string</type><parameter>namespace</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   Registers the <parameter>namespace</parameter> and 
+  <simpara>
+   Registers the <parameter>namespace</parameter> and
    <parameter>prefix</parameter> with the DOMXPath object.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -26,17 +26,17 @@
     <varlistentry>
      <term><parameter>prefix</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The prefix.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>namespace</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The URI of the namespace.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -44,9 +44,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 </refentry>
 <!-- Keep this comment at the end of the file

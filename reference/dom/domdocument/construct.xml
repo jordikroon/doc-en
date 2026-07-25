@@ -13,10 +13,10 @@
    <modifier>public</modifier> <methodname>DOMDocument::__construct</methodname>
    <methodparam choice="opt"><type>string</type><parameter>version</parameter><initializer>"1.0"</initializer></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>encoding</parameter><initializer>""</initializer></methodparam>
-  </constructorsynopsis> 
-  <para>
+  </constructorsynopsis>
+  <simpara>
    Creates a new <classname>DOMDocument</classname> object.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -25,17 +25,17 @@
     <varlistentry>
      <term><parameter>version</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The version number of the document as part of the XML declaration.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>encoding</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The encoding of the document as part of the XML declaration.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

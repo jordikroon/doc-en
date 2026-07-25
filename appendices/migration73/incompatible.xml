@@ -66,7 +66,7 @@ while ($foo) {
   <sect3 xml:id="migration73.incompatible.core.arrayaccess">
    <title>Strict Interpretation of Integer String Keys on ArrayAccess</title>
 
-   <para>
+   <simpara>
     Array accesses of type <literal>$obj["123"]</literal>, where
     <literal>$obj</literal> implements <classname>ArrayAccess</classname> and
     <literal>"123"</literal> is an integer <type>string</type> literal will no
@@ -75,7 +75,7 @@ while ($foo) {
     <literal>$obj->offsetGet(123)</literal>. This matches existing behavior for
     non-literals. The behavior of arrays is not affected in any way, they
     continue to implicitly convert integral string keys to integers.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration73.incompatible.core.static-properties">
@@ -160,69 +160,69 @@ foo(...gen());
   <sect3 xml:id="migration73.incompatible.core.misc">
    <title>Miscellaneous</title>
 
-   <para>
+   <simpara>
     The <filename>ext_skel</filename> utility has been completely redesigned with
     new options and some old options removed. This is now written in PHP and has
     no external dependencies.
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     Support for BeOS has been dropped.
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     Exceptions thrown due to automatic conversion of warnings into exceptions in
     <literal>EH_THROW</literal> mode (e.g. some <classname>DateTime</classname>
     exceptions) no longer populate <function>error_get_last</function> state. As
     such, they now work the same way as manually thrown exceptions.
-   </para>
+   </simpara>
 
-   <para>
-    <classname>TypeError</classname> now reports wrong types as
+   <simpara>
+    <exceptionname>TypeError</exceptionname> now reports wrong types as
     <literal>int</literal> and <literal>bool</literal> instead of
     <literal>integer</literal> and <literal>boolean</literal>, respectively.
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     Undefined variables passed to <function>compact</function> will now be
     reported as a notice.
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     <function>getimagesize</function> and related functions now report the mime
     type of BMP images as <literal>image/bmp</literal> instead of
     <literal>image/x-ms-bmp</literal>, since the former has been registered with
     the IANA (see <link xlink:href="&url.rfc;7903">RFC 7903</link>).
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     <function>stream_socket_get_name</function> will now return IPv6 addresses
     wrapped in brackets. For example <literal>"[::1]:1337"</literal> will be
     returned instead of <literal>"::1:1337"</literal>.
-   </para>
+   </simpara>
   </sect3>
  </sect2>
 
  <sect2 xml:id="migration73.incompatible.bc">
   <title>BCMath Arbitrary Precision Mathematics</title>
 
-  <para>
+  <simpara>
    All warnings thrown by <link linkend="ref.bc">BCMath functions</link> are
    now using PHP's error handling. Formerly some warnings have directly been
    written to stderr.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    <function>bcmul</function> and <function>bcpow</function> now return numbers
    with the requested scale. Formerly, the returned numbers may have omitted
    trailing decimal zeroes.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration73.incompatible.imap">
   <title>IMAP, POP3 and NNTP</title>
 
-  <para>
+  <simpara>
    <command>rsh</command>/<command>ssh</command> logins are disabled by default.
    Use <link
    linkend="ini.imap.enable-insecure-rsh">imap.enable_insecure_rsh</link> if you
@@ -230,38 +230,38 @@ foo(...gen());
    before passing them to the <command>rsh</command>/<command>ssh</command>
    command, thus passing untrusted data to this function with
    <command>rsh</command>/<command>ssh</command> enabled is insecure.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration73.incompatible.mbstring">
   <title>Multibyte String</title>
 
-  <para>
+  <simpara>
     Due to added support for named captures, <literal>mb_ereg_*()</literal>
     patterns using named captures will behave differently. In particular named
     captures will be part of matches and <function>mb_ereg_replace</function>
     will interpret additional syntax. See <link
     linkend="migration73.new-features.mbstring.named-captures">Named
     Captures</link> for more information.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration73.incompatible.mysqli">
   <title>MySQL Improved Extension</title>
 
-  <para>
+  <simpara>
    Prepared statements now properly report the fractional seconds for
    <literal>DATETIME</literal>, <literal>TIME</literal> and
    <literal>TIMESTAMP</literal> columns with decimals specifier (e.g.
    <literal>TIMESTAMP(6)</literal> when using microseconds). Formerly, the
    fractional seconds part was simply omitted from the returned values.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration73.incompatible.pdo-mysql">
   <title>MySQL Functions (PDO_MYSQL)</title>
 
-  <para>
+  <simpara>
    Prepared statements now properly report the fractional seconds for
    <literal>DATETIME</literal>, <literal>TIME</literal> and
    <literal>TIMESTAMP</literal> columns with decimals specifier (e.g.
@@ -273,47 +273,47 @@ foo(...gen());
    connections having <constant>PDO::ATTR_EMULATE_PREPARES</constant>=&true;
    (which is the default) were not affected by the bug fixed and have already
    been getting the proper fractional seconds values from the engine.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration73.incompatible.reflection">
   <title>Reflection</title>
 
-  <para>
+  <simpara>
    <link linkend="book.reflection">Reflection</link> export to string now uses
    <literal>int</literal> and <literal>bool</literal> instead of
    <literal>integer</literal> and <literal>boolean</literal>, respectively.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration73.incompatible.spl">
   <title>Standard PHP Library (SPL)</title>
 
-  <para>
+  <simpara>
    If an <link linkend="book.spl">SPL</link> autoloader throws an exception,
    following autoloaders will not be executed. Previously all autoloaders were
    executed and exceptions were chained.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration73.incompatible.simplexml">
   <title>SimpleXML</title>
 
-  <para>
+  <simpara>
    Mathematic operations involving <link
    linkend="book.simplexml">SimpleXML</link> objects will now treat the text as
    an <type>int</type> or <type>float</type>, whichever is more appropriate.
    Previously values were treated as <type>int</type>s unconditionally.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration73.incompatible.cookie-decode">
   <title>Incoming Cookies</title>
 
-  <para>
+  <simpara>
    As of PHP 7.3.23, the <emphasis>names</emphasis> of incoming cookies are no
    longer url-decoded for security reasons.
-  </para>
+  </simpara>
  </sect2>
 
 </sect1>

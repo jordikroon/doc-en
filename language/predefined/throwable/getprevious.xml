@@ -25,10 +25,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   Returns the previous <classname>Throwable</classname> if available, or
+  <simpara>
+   Returns the previous <exceptionname>Throwable</exceptionname> if available, or
    &null; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

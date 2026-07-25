@@ -16,10 +16,10 @@
    <methodparam><type>int</type><parameter>iterations</parameter></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>digest_algo</parameter><initializer>"sha1"</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>openssl_pbkdf2</function> computes PBKDF2 (Password-Based Key Derivation Function 2),
    a key derivation function defined in PKCS5 v2.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -29,9 +29,9 @@
    <varlistentry>
     <term><parameter>password</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Password from which the derived key is generated.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
@@ -45,29 +45,29 @@
    <varlistentry>
     <term><parameter>key_length</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Length of desired output key.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>iterations</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The number of iterations desired.
       <link xlink:href="https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-132.pdf">NIST
        recommends at least 1,000</link>. As of 2023, OWASP recommends 600,000 iterations for
       PBKDF2-HMAC-SHA256 and 210,000 for PBKDF2-HMAC-SHA512.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>digest_algo</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Optional hash or digest algorithm from <function>openssl_get_md_methods</function>.  Defaults
       to SHA-1. It is recommended to set it to SHA-256 or SHA-512.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -75,9 +75,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns raw binary string&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

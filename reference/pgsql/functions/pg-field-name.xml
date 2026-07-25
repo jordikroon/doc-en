@@ -14,16 +14,16 @@
    <methodparam><type>PgSql\Result</type><parameter>result</parameter></methodparam>
    <methodparam><type>int</type><parameter>field</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_field_name</function> returns the name of the field
    occupying the given <parameter>field</parameter> in the
    given <parameter>result</parameter> instance.  Field
    numbering starts from 0.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     This function used to be called <function>pg_fieldname</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -40,9 +40,9 @@
     <varlistentry>
      <term><parameter>field</parameter></term>
       <listitem>
-       <para>
+       <simpara>
         Field number, starting from 0.
-       </para>
+       </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -51,9 +51,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The field name.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -72,7 +72,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -103,22 +103,22 @@ column 0
 fieldname: author
 printed length: 6 characters
 storage length: -1 bytes
-field type: varchar 
+field type: varchar
 
 column 1
 fieldname: year
 printed length: 4 characters
 storage length: 2 bytes
-field type: int2 
+field type: int2
 
 column 2
 fieldname: title
 printed length: 24 characters
 storage length: -1 bytes
-field type: varchar 
+field type: varchar
 ]]>
     </screen>
-   </example> 
+   </example>
   </para>
  </refsect1>
 

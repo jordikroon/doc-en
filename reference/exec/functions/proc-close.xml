@@ -13,7 +13,7 @@
    <type>int</type><methodname>proc_close</methodname>
    <methodparam><type>resource</type><parameter>process</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>proc_close</function> is similar to <function>pclose</function>
    except that it only works on processes opened by
    <function>proc_open</function>.
@@ -22,7 +22,7 @@
    when this function is called, in
    order to avoid a deadlock - the child process may not be able to exit
    while the pipes are open.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -32,10 +32,10 @@
     <varlistentry>
      <term><parameter>process</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <function>proc_open</function> <type>resource</type> that will
        be closed.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -45,7 +45,7 @@
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
   <simpara>
-   Returns the termination status of the process that was run. In case of 
+   Returns the termination status of the process that was run. In case of
    an error, <literal>-1</literal> is returned.
   </simpara>
   &note.sigchild;

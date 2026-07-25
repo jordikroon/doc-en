@@ -11,9 +11,9 @@
    <modifier>public</modifier> <methodname>Random\Randomizer::__construct</methodname>
    <methodparam choice="opt"><type class="union"><type>Random\Engine</type><type>null</type></type><parameter>engine</parameter><initializer>&null;</initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -25,13 +25,13 @@
    <varlistentry>
     <term><parameter>engine</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The <classname>Random\Engine</classname> to use to generate randomness.
-     </para>
+     </simpara>
 
-     <para>
+     <simpara>
       If <parameter>engine</parameter> is omitted or &null;, a new <classname>Random\Engine\Secure</classname> object will be used.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>

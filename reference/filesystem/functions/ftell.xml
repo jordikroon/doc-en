@@ -5,16 +5,16 @@
   <refname>ftell</refname>
   <refpurpose>Returns the current position of the file read/write pointer</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>int</type><type>false</type></type><methodname>ftell</methodname>
    <methodparam><type>resource</type><parameter>stream</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the position of the file pointer referenced by <parameter>stream</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,12 +24,12 @@
     <varlistentry>
      <term><parameter>stream</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The file pointer must be valid, and must point to a file successfully
        opened by <function>fopen</function> or <function>popen</function>.
        <function>ftell</function> gives undefined results for append-only streams
        (opened with "a" flag).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -38,13 +38,13 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the position of the file pointer referenced by
    <parameter>stream</parameter> as an integer; i.e., its offset into the file stream.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If an error occurs, returns &false;.
-  </para>
+  </simpara>
   &fs.file.32bit;
  </refsect1>
 

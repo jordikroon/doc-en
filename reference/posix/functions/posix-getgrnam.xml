@@ -5,16 +5,16 @@
   <refname>posix_getgrnam</refname>
   <refpurpose>Return info about a group by name</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>array</type><type>false</type></type><methodname>posix_getgrnam</methodname>
    <methodparam><type>string</type><parameter>name</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   Gets information about a group provided its name. 
-  </para>
+  <simpara>
+   Gets information about a group provided its name.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,7 +24,7 @@
     <varlistentry>
      <term><parameter>name</parameter></term>
      <listitem>
-      <para>The name of the group</para>
+      <simpara>The name of the group</simpara>
      </listitem>
     </varlistentry>
    </variablelist>

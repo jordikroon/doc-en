@@ -12,10 +12,10 @@
    <methodparam><type>array</type><parameter role="reference">array</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer><constant>SORT_REGULAR</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sorts <parameter>array</parameter> in place by values
    in descending order.
-  </para>
+  </simpara>
   &note.sort-unstable;
   &note.no-key-association;
   &note.reset-index;
@@ -28,9 +28,9 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input array.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     &sort.flags.parameter;
@@ -40,9 +40,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -89,9 +89,9 @@ foreach ($fruits as $key => $val) {
 3 = apple
 ]]>
     </screen>
-    <para>
+    <simpara>
      The fruits have been sorted in reverse alphabetical order.
-    </para>
+    </simpara>
    </example>
   </para>
  </refsect1>

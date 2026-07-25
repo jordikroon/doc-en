@@ -3,7 +3,7 @@
 <appendix xml:id="snmp.constants" xmlns="http://docbook.org/ns/docbook">
  &reftitle.constants;
  &extension.constants;
- 
+
  <variablelist>
   <title>For the
    <function>snmp_set_oid_output_format</function>
@@ -69,8 +69,8 @@
    </listitem>
   </varlistentry>
  </variablelist>
- 
- 
+
+
  <variablelist>
   <title>For the
    <function>snmp_set_valueretrieval</function>
@@ -82,7 +82,7 @@
    </term>
    <listitem>
     <simpara>
-     
+
     </simpara>
    </listitem>
   </varlistentry>
@@ -93,7 +93,7 @@
    </term>
    <listitem>
     <simpara>
-     
+
     </simpara>
    </listitem>
   </varlistentry>
@@ -104,13 +104,13 @@
    </term>
    <listitem>
     <simpara>
-     
+
     </simpara>
    </listitem>
   </varlistentry>
  </variablelist>
- 
- 
+
+
  <variablelist>
   <title>
    SNMP types as returned if SNMP_VALUE_OBJECT was used with
@@ -123,7 +123,7 @@
    </term>
    <listitem>
     <simpara>
-     
+
     </simpara>
    </listitem>
   </varlistentry>
@@ -134,7 +134,7 @@
    </term>
    <listitem>
     <simpara>
-     
+
     </simpara>
    </listitem>
   </varlistentry>
@@ -145,7 +145,7 @@
    </term>
    <listitem>
     <simpara>
-     
+
     </simpara>
    </listitem>
   </varlistentry>
@@ -156,7 +156,7 @@
    </term>
    <listitem>
     <simpara>
-     
+
     </simpara>
    </listitem>
   </varlistentry>
@@ -167,7 +167,7 @@
    </term>
    <listitem>
     <simpara>
-     
+
     </simpara>
    </listitem>
   </varlistentry>
@@ -178,7 +178,7 @@
    </term>
    <listitem>
     <simpara>
-     
+
     </simpara>
    </listitem>
   </varlistentry>
@@ -189,7 +189,7 @@
    </term>
    <listitem>
     <simpara>
-     
+
     </simpara>
    </listitem>
   </varlistentry>
@@ -200,7 +200,7 @@
    </term>
    <listitem>
     <simpara>
-     
+
     </simpara>
    </listitem>
   </varlistentry>
@@ -211,7 +211,7 @@
    </term>
    <listitem>
     <simpara>
-     
+
     </simpara>
    </listitem>
   </varlistentry>
@@ -222,7 +222,7 @@
    </term>
    <listitem>
     <simpara>
-     
+
     </simpara>
    </listitem>
   </varlistentry>
@@ -233,7 +233,7 @@
    </term>
    <listitem>
     <simpara>
-     
+
     </simpara>
    </listitem>
   </varlistentry>
@@ -244,7 +244,7 @@
    </term>
    <listitem>
     <simpara>
-     
+
     </simpara>
    </listitem>
   </varlistentry>

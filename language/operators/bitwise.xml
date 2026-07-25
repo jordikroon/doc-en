@@ -60,7 +60,7 @@
    </tbody>
   </tgroup>
  </table>
- <para>
+ <simpara>
   Bit shifting in PHP is arithmetic.
   Bits shifted off either end are discarded.
   Left shifts have zeros shifted in on the right while the sign
@@ -68,40 +68,40 @@
   is not preserved.
   Right shifts have copies of the sign bit shifted in on the left,
   meaning the sign of an operand is preserved.
- </para>
- <para>
+ </simpara>
+ <simpara>
   Use parentheses to ensure the desired
   <link linkend="language.operators.precedence">precedence</link>.
   For example, <literal>$a &amp; $b == true</literal> evaluates
   the equivalency then the bitwise and; while
   <literal>($a &amp; $b) == true</literal> evaluates the bitwise and
   then the equivalency.
- </para>
- <para>
+ </simpara>
+ <simpara>
   If both operands for the <literal>&amp;</literal>, <literal>|</literal> and
   <literal>^</literal> operators are strings, then the operation will be
   performed on the ASCII values of the characters that make up the strings and
   the result will be a string. In all other cases, both operands will be
   <link linkend="language.types.integer.casting">converted to integers</link>
   and the result will be an integer.
- </para>
- <para>
+ </simpara>
+ <simpara>
   If the operand for the <literal>~</literal> operator is a string, the
   operation will be performed on the ASCII values of the characters that make
   up the string and the result will be a string, otherwise the operand and the
   result will be treated as integers.
- </para>
- <para>
+ </simpara>
+ <simpara>
   Both operands and the result for the <literal>&lt;&lt;</literal> and
   <literal>&gt;&gt;</literal> operators are always treated as integers.
- </para>
- <para>
+ </simpara>
+ <simpara>
   PHP's error_reporting ini setting uses bitwise values,
   providing a real-world demonstration of turning
   bits off. To show all errors, except for notices,
   the php.ini file instructions say to use:
   <userinput>E_ALL &amp; ~E_NOTICE</userinput>
- </para>
+ </simpara>
  <para>
   <informalexample>
    <para>
@@ -119,16 +119,16 @@
    </para>
   </informalexample>
  </para>
- <para>
+ <simpara>
   Another way to accomplish that is using XOR (<literal>^</literal>) to find
   bits that are on in only one value or the other: <userinput>E_ALL ^
   E_NOTICE</userinput>
- </para>
- <para>
+ </simpara>
+ <simpara>
   error_reporting can also be used to demonstrate turning bits on.
   The way to show just errors and recoverable errors is:
   <userinput>E_ERROR | E_RECOVERABLE_ERROR</userinput>
- </para>
+ </simpara>
  <para>
   <informalexample>
    <para>
@@ -638,10 +638,10 @@ Expression: 0 = -4 << 62
   </example>
  </para>
  <warning>
-  <para>
+  <simpara>
    Use functions from the <link linkend="book.gmp">gmp</link> extension for
    bitwise manipulation on numbers beyond <constant>PHP_INT_MAX</constant>.
-  </para>
+  </simpara>
  </warning>
 
  <sect2 role="seealso">

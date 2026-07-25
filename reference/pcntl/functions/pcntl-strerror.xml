@@ -12,12 +12,12 @@
    <type>string</type><methodname>pcntl_strerror</methodname>
    <methodparam><type>int</type><parameter>error_code</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the system error message associated with the given <parameter>error_code</parameter>
    (<literal>errno</literal>) of the last pcntl function that failed.
    The <parameter>error_code</parameter> parameter may be obtained by calling
    <function>pcntl_get_last_error</function>.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -27,10 +27,10 @@
    <varlistentry>
     <term><parameter>error_code</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       An error number (<literal>errno</literal>),
       returned by <function>pcntl_get_last_error</function>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -38,20 +38,20 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the error message, as a string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
   &reftitle.examples;
   <example>
    <title><function>pcntl_strerror</function> example</title>
-   <para>
+   <simpara>
     This example will attempt to wait on child processes
     in a situation where no child process exists,
     then will print out the corresponding error message.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

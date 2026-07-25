@@ -5,20 +5,20 @@
   <refname>session_name</refname>
   <refpurpose>Get and/or set the current session name</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>session_name</methodname>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>name</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>session_name</function> returns the name of the current
    session. If <parameter>name</parameter> is given,
    <function>session_name</function> will update the session name and return
    the <emphasis>old</emphasis> session name.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If a new session <parameter>name</parameter> is
    supplied, <function>session_name</function> modifies the HTTP cookie
    (and outputs the content when <link linkend="ini.session.use-trans-sid">session.use_trans_sid</link> is
@@ -27,13 +27,13 @@
    <function>session_name</function> must be called
    before <function>session_start</function> for the session to work
    properly.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The session name is reset to the default value stored in
    <literal>session.name</literal> at request startup time. Thus, you need to
    call <function>session_name</function> for every request (and before
    <function>session_start</function> is called).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -43,20 +43,20 @@
     <varlistentry>
      <term><parameter>name</parameter></term>
      <listitem>
-      <para>
-       The session name references the name of the session, which is 
+      <simpara>
+       The session name references the name of the session, which is
        used in cookies and URLs (e.g. <literal>PHPSESSID</literal>). It
        should contain only alphanumeric characters; it should be short and
        descriptive (i.e. for users with enabled cookie warnings).
        If <parameter>name</parameter> is specified and not &null;, the name of the current
        session is changed to its value.
-      </para>
+      </simpara>
       <para>
        <warning>
-        <para>
+        <simpara>
          The session name can't consist of digits only, at least one letter
          must be present. Otherwise a new session id is generated every time.
-        </para>
+        </simpara>
        </warning>
       </para>
      </listitem>
@@ -67,11 +67,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the name of the current session. If <parameter>name</parameter> is given
    and function updates the session name, name of the <emphasis>old</emphasis> session
    is returned, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

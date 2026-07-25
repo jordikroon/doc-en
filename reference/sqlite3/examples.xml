@@ -3,9 +3,9 @@
 
 <chapter xml:id="sqlite3.examples" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  &reftitle.examples;
- <para>
+ <simpara>
   Description here...
- </para>
+ </simpara>
  <example>
   <title>SQLite3 Example</title>
   <programlisting role="php">

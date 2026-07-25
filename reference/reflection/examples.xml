@@ -3,10 +3,10 @@
 
 <chapter xml:id="reflection.examples" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  &reftitle.examples;
- <para>
+ <simpara>
   Many examples exist within the Reflection documentation, typically
   within the __construct documentation for each class.
- </para>
+ </simpara>
  <example>
   <title>Reflection Example from Shell (a Terminal)</title>
   <programlisting role="shell">

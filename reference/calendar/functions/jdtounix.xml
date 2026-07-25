@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xml:id="function.jdtounix" xmlns="http://docbook.org/ns/docbook"> 
+<refentry xml:id="function.jdtounix" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>jdtounix</refname>
   <refpurpose>Convert Julian Day to Unix timestamp</refpurpose>
@@ -12,11 +12,11 @@
    <type>int</type><methodname>jdtounix</methodname>
    <methodparam><type>int</type><parameter>julian_day</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function will return a Unix timestamp corresponding to the
    Julian Day given in <parameter>julian_day</parameter>. The time returned is
    UTC.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,10 +26,10 @@
     <varlistentry>
      <term><parameter>julian_day</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A julian day number between <literal>2440588</literal> and <literal>106751993607888</literal>
        on 64bit systems, or between <literal>2440588</literal> and <literal>2465443</literal> on 32bit systems.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -38,17 +38,17 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The unix timestamp for the start (midnight, not noon) of the given Julian day
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    If <parameter>julian_day</parameter> is outside of the allowed range,
-   a <classname>ValueError</classname> is thrown.
-  </para>
+   a <exceptionname>ValueError</exceptionname> is thrown.
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -66,7 +66,7 @@
       <entry>8.0.0</entry>
       <entry>
        This function no longer returns &false; on failure, but raises a
-       <classname>ValueError</classname> instead.
+       <exceptionname>ValueError</exceptionname> instead.
       </entry>
      </row>
      <row>
@@ -85,7 +85,7 @@
   &reftitle.seealso;
   <para>
    <simplelist>
-    <member><function>unixtojd</function></member> 
+    <member><function>unixtojd</function></member>
    </simplelist>
   </para>
  </refsect1>

@@ -4,7 +4,7 @@
  <refnamediv>
   <refname>DOMXPath::query</refname>
   <refpurpose>
-   Evaluates the given XPath expression 
+   Evaluates the given XPath expression
   </refpurpose>
  </refnamediv>
  <refsect1 role="description">
@@ -15,9 +15,9 @@
    <methodparam choice="opt"><type class="union"><type>DOMNode</type><type>null</type></type><parameter>contextNode</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>registerNodeNS</parameter><initializer>&true;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Executes the given XPath <parameter>expression</parameter>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -26,19 +26,19 @@
     <varlistentry>
      <term><parameter>expression</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The XPath expression to execute.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>contextNode</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The optional <parameter>contextNode</parameter> can be specified for
-       doing relative XPath queries. By default, the queries are relative to 
+       doing relative XPath queries. By default, the queries are relative to
        the root element.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     &dom.parameters.register_node_ns;
@@ -47,12 +47,12 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a <classname>DOMNodeList</classname> containing all nodes matching
    the given XPath <parameter>expression</parameter>. Any expression which
    does not return nodes will return an empty
    <classname>DOMNodeList</classname>.
-  </para>
+  </simpara>
   <para>
    If the <parameter>expression</parameter> is malformed or the
    <parameter>contextNode</parameter> is invalid,
@@ -125,10 +125,10 @@ Found The Grapes of Wrath, by John Steinbeck
 Found The Pearl, by John Steinbeck
 ]]>
     </screen>
-    <para>
+    <simpara>
      We can also use the <parameter>contextNode</parameter> parameter to shorten
      our expression:
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

@@ -13,26 +13,26 @@
    <modifier>public</modifier> <type>bool</type><methodname>DOMDocument::validate</methodname>
    <void/>
   </methodsynopsis>
-  <para>
-   Validates the document based on its DTD. 
-  </para>
-  <para>
-   You can also use the <literal>validateOnParse</literal> property of 
+  <simpara>
+   Validates the document based on its DTD.
+  </simpara>
+  <simpara>
+   You can also use the <literal>validateOnParse</literal> property of
    <classname>DOMDocument</classname> to make a DTD validation.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
   &reftitle.parameters;
   &no.function.parameters;
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
    If the document has no DTD attached, this method will return &false;.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;
@@ -50,9 +50,9 @@ if ($dom->validate()) {
 ?>
 ]]>
     </programlisting>
-    <para>
+    <simpara>
      You can also validate your XML file while loading it:
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

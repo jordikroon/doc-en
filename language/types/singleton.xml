@@ -3,12 +3,12 @@
 <sect1 xml:id="language.types.singleton">
  <title>Singleton types</title>
 
- <para>
+ <simpara>
   Singleton types are those which allow only one value.
   PHP has support for two singleton types:
   <type>false</type> as of PHP 8.0.0 and <type>true</type>
   as of PHP 8.2.0.
- </para>
+ </simpara>
 
  <warning>
   <simpara>

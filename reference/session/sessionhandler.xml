@@ -10,7 +10,7 @@
 <!-- {{{ SessionHandler intro -->
   <section xml:id="sessionhandler.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     <classname>SessionHandler</classname> is a special class that can be used
     to expose the current internal PHP session save handler by inheritance.
     There are seven methods which wrap the seven internal session save handler
@@ -25,35 +25,35 @@
     extensions such as SQLite (as <parameter>sqlite</parameter>), Memcache (as
     <parameter>memcache</parameter>), and Memcached (as
     <parameter>memcached</parameter>).
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     When a plain instance of <classname>SessionHandler</classname> is set as the save handler using
     <function>session_set_save_handler</function> it will wrap the current save handlers.
     A class extending from <classname>SessionHandler</classname> allows you to override
     the methods or intercept or filter them by calls the parent class methods which ultimately wrap
     the internal PHP session handlers.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     This allows you, for example, to intercept the <parameter>read</parameter> and <parameter>write</parameter>
     methods to encrypt/decrypt the session data and then pass the result to and from the parent class.
     Alternatively one might chose to entirely override a method like the garbage collection callback
     <parameter>gc</parameter>.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     Because the <classname>SessionHandler</classname> wraps the current internal save handler
     methods, the above example of encryption can be applied to any internal save handler without
     having to know the internals of the handlers.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     To use this class, first set the save handler you wish to expose using
     <link linkend="ini.session.save-handler">session.save_handler</link> and then pass an instance of
     <classname>SessionHandler</classname> or one extending it to <function>session_set_save_handler</function>.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     Please note that the callback methods of this class are designed to be called internally by
     PHP and are not meant to be called from user-space code.  The return values are equally processed internally
     by PHP.  For more information on the session workflow, please refer to <function>session_set_save_handler</function>.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -85,11 +85,11 @@
   <section xml:id="session.notes">
    &reftitle.notes;
    <warning>
-    <para>
+    <simpara>
      This class is designed to expose the current internal PHP session save handler, if you want to
      write your own custom save handlers, please implement the <classname>SessionHandlerInterface</classname>
      interface instead of extending from <classname>SessionHandler</classname>.
-    </para>
+    </simpara>
    </warning>
   </section>
 
@@ -199,12 +199,12 @@ session_start();
     </programlisting>
    </example>
    <note>
-    <para>
+    <simpara>
      Since this class' methods are designed to be called internally by PHP as part of the normal session workflow,
      child class calls to parent methods (i.e. the actual internal native handlers) will return &false; unless
      the session has actually been started (either automatically, or by explicit <function>session_start</function>).
      This is important to consider when writing unit tests where the class methods might be invoked manually.
-    </para>
+    </simpara>
    </note>
   </section>
 

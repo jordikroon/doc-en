@@ -12,27 +12,27 @@
    <methodparam><type>array</type><parameter>array</parameter></methodparam>
    <methodparam rep="repeat"><type>array</type><parameter>replacements</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>array_replace_recursive</function> replaces the values of
    <parameter>array</parameter> with the same values from all the following
    arrays. If a key from the first array exists in the second array, its value
    will be replaced by the value from the second array. If the key exists in the
    second array, and not the first, it will be created in the first array.
-   If a key only exists in the first array, it will be left as is. 
+   If a key only exists in the first array, it will be left as is.
    If several arrays are passed for replacement, they will be processed
    in order, the later array overwriting the previous values.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    <function>array_replace_recursive</function> is recursive : it will recurse into
    arrays and apply the same process to the inner value.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    When the value in the first array is scalar, it will be replaced
    by the value in the second array, may it be scalar or array.
    When the value in the first array and the second array
    are both arrays, <function>array_replace_recursive</function> will replace
    their respective value recursively.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -41,17 +41,17 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The array in which elements are replaced.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>replacements</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Arrays from which elements will be extracted.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -59,9 +59,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an <type>array</type>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;

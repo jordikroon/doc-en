@@ -8,14 +8,14 @@
 
  &warn.deprecated.feature-7-2-0.removed-8-0-0;
 
- <para>
+ <simpara>
   You might often find it difficult to get an existing PHP application
-  to work in a given multibyte environment. This happens because most 
-  PHP applications out there are written with the standard string 
-  functions such as <function>substr</function>, which are known to 
+  to work in a given multibyte environment. This happens because most
+  PHP applications out there are written with the standard string
+  functions such as <function>substr</function>, which are known to
   not properly handle multibyte-encoded strings.
- </para>
- <para>
+ </simpara>
+ <simpara>
   mbstring supports a 'function overloading' feature which enables
   you to add multibyte awareness to such an application without
   code modification by overloading multibyte counterparts on
@@ -24,7 +24,7 @@
   <function>substr</function> if function overloading is enabled.
   This feature makes it easy to port applications that only support
   single-byte encodings to a multibyte environment in many cases.
- </para>
+ </simpara>
  <para>
   To use function overloading, set
   <literal>mbstring.func_overload</literal> in &php.ini; to a
@@ -115,12 +115,12 @@
   </table>
  </para>
  <note>
-  <para>
+  <simpara>
    It is not recommended to use the function overloading option in
    the per-directory context, because it's not confirmed yet to be
    stable enough in a production environment and may lead to undefined
    behaviour.
-  </para>
+  </simpara>
  </note>
 </chapter>
 

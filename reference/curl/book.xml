@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
- 
+
 <book xml:id="book.curl" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <?phpdoc extension-membership="bundledexternal" ?>
  <title>Client URL Library</title>
@@ -9,7 +9,7 @@
  <!-- {{{ preface -->
  <preface xml:id="intro.curl">
   &reftitle.intro;
-  <para>
+  <simpara>
    PHP supports libcurl, a library created by Daniel Stenberg, that
    allows you to connect and communicate to many different types of
    servers with many different types of protocols. libcurl currently
@@ -18,10 +18,10 @@
    POST, HTTP PUT, FTP uploading (this can also be done with PHP's
    ftp extension), HTTP form based upload, proxies, cookies, and
    user+password authentication.
-  </para>
+  </simpara>
  </preface>
  <!-- }}} -->
- 
+
  &reference.curl.setup;
  &reference.curl.constants;
  &reference.curl.examples;

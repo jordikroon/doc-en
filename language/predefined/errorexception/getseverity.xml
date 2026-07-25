@@ -5,28 +5,28 @@
   <refname>ErrorException::getSeverity</refname>
   <refpurpose>Gets the exception severity</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="ErrorException">
    <modifier>final</modifier> <modifier>public</modifier> <type>int</type><methodname>ErrorException::getSeverity</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the severity of the exception.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   &no.function.parameters;
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the severity level of the exception.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

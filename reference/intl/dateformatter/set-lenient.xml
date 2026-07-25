@@ -8,27 +8,27 @@
  </refnamediv>
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
    <methodsynopsis role="IntlDateFormatter">
    <modifier>public</modifier> <type>void</type><methodname>IntlDateFormatter::setLenient</methodname>
    <methodparam><type>bool</type><parameter>lenient</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type>void</type><methodname>datefmt_set_lenient</methodname>
    <methodparam><type>IntlDateFormatter</type><parameter>formatter</parameter></methodparam>
    <methodparam><type>bool</type><parameter>lenient</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
   Define if the parser is strict or lenient in interpreting inputs that do not match the pattern exactly.
-  Enabling lenient parsing allows the parser to accept otherwise flawed date or 
+  Enabling lenient parsing allows the parser to accept otherwise flawed date or
   time patterns, parsing as much as possible to obtain a value.
-  Extra space, unrecognized tokens, or invalid values ("February 30th") are not accepted.  
-  </para> 
+  Extra space, unrecognized tokens, or invalid values ("February 30th") are not accepted.
+  </simpara>
   </refsect1>
 
  <refsect1 role="parameters">
@@ -38,31 +38,31 @@
     <varlistentry>
      <term><parameter>formatter</parameter></term>
      <listitem>
-      <para>
-       The formatter resource      
-      </para>
+      <simpara>
+       The formatter resource
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>lenient</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Sets whether the parser is lenient or not, default is &true; (lenient).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
-   
- 
+
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
    <example>
@@ -71,11 +71,11 @@
 <![CDATA[
 <?php
 $fmt = datefmt_create(
-    'en_US', 
-    IntlDateFormatter::FULL, 
-    IntlDateFormatter::FULL, 
-    'America/Los_Angeles', 
-    IntlDateFormatter::GREGORIAN, 
+    'en_US',
+    IntlDateFormatter::FULL,
+    IntlDateFormatter::FULL,
+    'America/Los_Angeles',
+    IntlDateFormatter::GREGORIAN,
     'dd/MM/yyyy'
 );
 echo 'lenient of the formatter is : ';
@@ -160,7 +160,7 @@ Trying to do parse('35/13/1971').
 Result is : 66038400
 Now lenient of the formatter is : FALSE
 Trying to do parse('35/13/1971').
-Result is : 
+Result is :
 Error_msg is : Date parsing failed: U_PARSE_ERROR
 Error_code is : 9
 

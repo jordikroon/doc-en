@@ -15,32 +15,32 @@
    <methodparam><type>string</type><parameter>query</parameter></methodparam>
    <methodparam><type>array</type><parameter>params</parameter></methodparam>
   </methodsynopsis>
-  <para>
-    Submits a command to the server and waits for the result, with the ability 
+  <simpara>
+    Submits a command to the server and waits for the result, with the ability
     to pass parameters separately from the SQL command text.
-  </para>
-  <para>
-    <function>pg_query_params</function> is like <function>pg_query</function>, 
-    but offers additional functionality: parameter 
-    values can be specified separately from the command string proper. 
-  </para>
-  <para>
+  </simpara>
+  <simpara>
+    <function>pg_query_params</function> is like <function>pg_query</function>,
+    but offers additional functionality: parameter
+    values can be specified separately from the command string proper.
+  </simpara>
+  <simpara>
     If parameters are used, they are referred to in the
     <parameter>query</parameter> string as $1, $2, etc. The same parameter may
     appear more than once in the <parameter>query</parameter>; the same value
     will be used in that case. <parameter>params</parameter> specifies the
     actual values of the parameters. A &null; value in this array means the
     corresponding parameter is SQL <literal>NULL</literal>.
-  </para>
-  <para>
-    The primary advantage of <function>pg_query_params</function> over <function>pg_query</function> 
-    is that parameter values 
-    may be separated from the <parameter>query</parameter> string, thus avoiding the need for tedious 
-    and error-prone quoting and escaping. Unlike <function>pg_query</function>, 
-    <function>pg_query_params</function> allows at 
-    most one SQL command in the given string. (There can be semicolons in it, 
+  </simpara>
+  <simpara>
+    The primary advantage of <function>pg_query_params</function> over <function>pg_query</function>
+    is that parameter values
+    may be separated from the <parameter>query</parameter> string, thus avoiding the need for tedious
+    and error-prone quoting and escaping. Unlike <function>pg_query</function>,
+    <function>pg_query_params</function> allows at
+    most one SQL command in the given string. (There can be semicolons in it,
     but not more than one nonempty command.)
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -56,34 +56,34 @@
     <varlistentry>
      <term><parameter>query</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The parameterized SQL statement.  Must contain only a single statement.
-       (multiple statements separated by semi-colons are not allowed.)  If any parameters 
+       (multiple statements separated by semi-colons are not allowed.)  If any parameters
        are used, they are referred to as $1, $2, etc.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        User-supplied values should always be passed as parameters, not
        interpolated into the query string, where they form possible
        <link linkend="security.database.sql-injection"> SQL injection</link>
        attack vectors and introduce bugs when handling data containing quotes.
        If for some reason you cannot use a parameter, ensure that interpolated
        values are <link  linkend="function.pg-escape-string">properly escaped</link>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>params</parameter></term>
      <listitem>
-      <para>
+      <simpara>
         An array of parameter values to substitute for the $1, $2, etc. placeholders
         in the original prepared query string.  The number of elements in the array
         must match the number of placeholders.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Values intended for <literal>bytea</literal> fields are not supported as
        parameters. Use <function>pg_escape_bytea</function> instead, or use the
        large object functions.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -92,9 +92,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
     An <classname>PgSql\Result</classname> instance on success, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -114,7 +114,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -140,7 +140,7 @@ $result = pg_query($dbconn, "SELECT * FROM shops WHERE name = '{$str}'");
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

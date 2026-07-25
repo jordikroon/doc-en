@@ -12,36 +12,36 @@
    <methodparam><type>mixed</type><parameter>var</parameter></methodparam>
    <methodparam rep="repeat" choice="opt"><type>mixed</type><parameter>vars</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Like <function>array</function>, this is not really a function,
    but a language construct. <function>list</function> is used to
    assign a list of variables in one operation.
    Only arrays and objects that implement <link linkend="class.arrayaccess">ArrayAccess</link> can be unpacked.
    <function>list</function> expressions can not be completely empty.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     Before PHP 7.1.0, <function>list</function> only worked on numerical arrays and assumes
     the numerical indices start at 0.
-   </para>
+   </simpara>
   </note>
-  <para>
+  <simpara>
    As of PHP 7.1.0, <function>list</function> can also contain explicit keys, allowing for the
    destructuring of arrays with non-integer or non-sequential keys. For more details on
    array destructuring, see the <link linkend="language.types.array.syntax.destructuring">array destructuring section</link>.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     Attempting to access an array key which has not been defined is
     the same as accessing any other undefined variable:
     an <constant>E_WARNING</constant>-level error message
     (<constant>E_NOTICE</constant>-level prior to PHP 8.0.0) will be
     issued, and the result will be &null;.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     Attempting to unpack a scalar assigns &null; to all variables.
     Attempting to unpack an object that does not implement ArrayAccess is a fatal error.
-   </para>
+   </simpara>
   </note>
  </refsect1>
  <refsect1 role="parameters">
@@ -51,9 +51,9 @@
     <varlistentry>
      <term><parameter>var</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A variable.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -61,9 +61,9 @@
     <varlistentry>
      <term><parameter>vars</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Further variables.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -71,9 +71,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the assigned array.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="changelog">
   &reftitle.changelog;
@@ -175,10 +175,10 @@ int(3)
     </screen>
    </example>
   </para>
-  <para>
+  <simpara>
    The order in which the indices of the array to be consumed by
    <function>list</function> are defined is irrelevant.
-  </para>
+  </simpara>
   <para>
    <example>
     <title><function>list</function> and order of index definitions</title>
@@ -191,10 +191,10 @@ list($x, $y, $z) = $foo;
 var_dump($foo, $x, $y, $z);
 ]]>
     </programlisting>
-    <para>
+    <simpara>
      Gives the following output (note the order of the elements compared in
      which order they were written in the <function>list</function> syntax):
-    </para>
+    </simpara>
     <screen>
 <![CDATA[
 array(4) {

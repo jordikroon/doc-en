@@ -124,9 +124,9 @@
    <listitem>
     &gd.constants.types;
     <note>
-     <para>
+     <simpara>
       This constant has the same value as <constant>IMG_JPG</constant>
-     </para>
+     </simpara>
     </note>
    </listitem>
   </varlistentry>
@@ -290,9 +290,9 @@
    <listitem>
     &gd.constants.arc;
     <note>
-     <para>
+     <simpara>
       This constant has the same value as <constant>IMG_ARC_PIE</constant>
-     </para>
+     </simpara>
     </note>
    </listitem>
   </varlistentry>

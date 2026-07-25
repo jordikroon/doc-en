@@ -5,17 +5,17 @@
   <refname>eval</refname>
   <refpurpose>Evaluate a string as PHP code</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>mixed</type><methodname>eval</methodname>
    <methodparam><type>string</type><parameter>code</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Evaluates the given <parameter>code</parameter> as PHP.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The code being evaluated inherits the
    <link linkend="language.variables.scope">variable scope</link>
    of the line on which the <function>eval</function> call occurs.
@@ -24,15 +24,15 @@
    However, all functions and classes defined will be defined in the global namespace.
    In other words, the compiler considers the evaluated code as if it were a
    separate <link linkend="function.include">included</link> file.
-  </para>
+  </simpara>
   <caution>
-   <para>
+   <simpara>
     The <function>eval</function> language construct is <emphasis>very dangerous</emphasis>
     because it allows execution of arbitrary PHP code. <emphasis>Its use thus is
     discouraged.</emphasis> If you have carefully verified that there is no other option
     than to use this construct, pay special attention <emphasis>not to pass any user
     provided data</emphasis> into it without properly validating it beforehand.
-   </para>
+   </simpara>
   </caution>
  </refsect1>
 
@@ -43,32 +43,32 @@
     <varlistentry>
      <term><parameter>code</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Valid PHP code to be evaluated.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        The code must not be wrapped in opening and closing
        <link linkend="language.basic-syntax.phpmode">PHP tags</link>, i.e.
        <literal>'echo "Hi!";'</literal> must be passed instead of
        <literal>'&lt;?php echo "Hi!"; ?&gt;'</literal>. It is still possible to leave and
        re-enter PHP mode though using the appropriate PHP tags, e.g.
        <literal>'echo "In PHP mode!"; ?&gt;In HTML mode!&lt;?php echo "Back in PHP mode!";'</literal>.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Apart from that the passed code must be valid PHP. This includes that all statements
        must be properly terminated using a semicolon.
        <literal>'echo "Hi!"'</literal> for example will cause a parse error, whereas
        <literal>'echo "Hi!";'</literal> will work.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        A <literal>return</literal> statement will immediately terminate the
-       evaluation of the code. 
-      </para>
-      <para>
+       evaluation of the code.
+      </simpara>
+      <simpara>
        The code will be executed in the scope of the code calling <function>eval</function>. Thus any
        variables defined or changed in the <function>eval</function> call will remain visible after
        it terminates.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -77,16 +77,16 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   <function>eval</function> returns &null; unless 
+  <simpara>
+   <function>eval</function> returns &null; unless
    <literal>return</literal> is called in the evaluated code, in which case
    the value passed to <literal>return</literal> is returned. As of PHP 7, if there is a
-   parse error in the evaluated code, <function>eval</function> throws a <classname>ParseError</classname> exception.
+   parse error in the evaluated code, <function>eval</function> throws a <exceptionname>ParseError</exceptionname> exception.
    Before PHP 7, in this case <function>eval</function> returned
    &false; and execution of the following code continued normally. It is
    not possible to catch a parse error in <function>eval</function>
    using <function>set_error_handler</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -124,9 +124,9 @@ This is a cup with my coffee in it.
 
   &tip.ob-capture;
   <note>
-   <para>
+   <simpara>
     In case of a fatal error in the evaluated code, the whole script exits.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

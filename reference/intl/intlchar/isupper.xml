@@ -12,13 +12,13 @@
    <modifier>public</modifier> <modifier>static</modifier> <type class="union"><type>bool</type><type>null</type></type><methodname>IntlChar::isupper</methodname>
    <methodparam><type class="union"><type>int</type><type>string</type></type><parameter>codepoint</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Determines whether the specified code point has the general category "Lu" (uppercase letter).
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     This misses some characters that are also uppercase but have a different general category value. In order to include those, use <function>IntlChar::isUUppercase</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -36,10 +36,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if
    <parameter>codepoint</parameter> is an Lu uppercase letter, &false; if not. Returns &null; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

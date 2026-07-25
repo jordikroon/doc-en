@@ -14,10 +14,10 @@
    <modifier>public</modifier> <type>bool</type><methodname>SQLite3::enableExceptions</methodname>
    <methodparam choice="opt"><type>bool</type><parameter>enable</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Controls whether the <classname>SQLite3</classname> instance will
    throw exceptions or warnings on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,16 +26,16 @@
    <varlistentry>
     <term><parameter>enable</parameter></term>
     <listitem>
-     <para>
-      When &true;, the <classname>SQLite3</classname> instance, and 
+     <simpara>
+      When &true;, the <classname>SQLite3</classname> instance, and
       <classname>SQLite3Stmt</classname> and <classname>SQLite3Result</classname>
       instances derived from it, will throw exceptions on error.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       When &false;, the <classname>SQLite3</classname> instance, and
       <classname>SQLite3Stmt</classname> and <classname>SQLite3Result</classname>
       instances derived from it, will raise warnings on error.
-     </para>
+     </simpara>
      <para>
       For either mode, the error code and message, if any, will be available via
       <methodname>SQLite3::lastErrorCode</methodname> and
@@ -48,9 +48,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the old value; &true; if exceptions were enabled, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

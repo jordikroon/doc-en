@@ -5,7 +5,7 @@
   <refname>oci_fetch_all</refname>
   <refpurpose>Fetches multiple rows from a query into a two-dimensional array</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -16,14 +16,14 @@
    <methodparam choice="opt"><type>int</type><parameter>limit</parameter><initializer>-1</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>OCI_FETCHSTATEMENT_BY_COLUMN | OCI_ASSOC</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Fetches multiple rows from a query into a two-dimensional array.
    By default, all rows are returned.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This function can be called only once for each query executed
    with <function>oci_execute</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -39,36 +39,36 @@
     <varlistentry>
      <term><parameter>output</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The variable to contain the returned rows.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
         LOB columns are returned as strings, where Oracle supports
         conversion.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
         See <function>oci_fetch_array</function> for more information
         on how data and types are fetched.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number of initial rows to discard when fetching the
        result. The default value is 0, so the first row onwards is
        returned.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>limit</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number of rows to return.  The default is -1 meaning return
        all the rows from <parameter>offset</parameter> + 1 onwards.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -127,23 +127,23 @@
         </tgroup>
        </table>
       </para>
-      <para>
+      <simpara>
        Use the addition operator &quot;+&quot; to choose a combination
        of array structure and index modes.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Oracle's default, non-case sensitive column names will have
        uppercase array keys.  Case-sensitive column names will have
        array keys using the exact column case.
        Use <function>var_dump</function>
        on <parameter>output</parameter> to verify the appropriate case
        to use for each query.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
         Queries that have more than one column with the same name
         should use column aliases.  Otherwise only one of the columns
         will appear in an associative array.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -152,10 +152,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the number of rows in <parameter>output</parameter>, which
    may be 0 or more.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -320,31 +320,31 @@ oci_close($conn);
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
      Using <parameter>offset</parameter> is very inefficient.  All the
      rows to be skipped are included in the result set that is
      returned from the database to PHP.  They are then discarded.  It
      is more efficient to use SQL to restrict the offset and range of
      rows in the query.  See <function>oci_fetch_array</function> for
      an example.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     Queries that return a large number of rows can be more memory
     efficient if a single-row fetching function
     like <function>oci_fetch_array</function> is used.
-   </para>
+   </simpara>
   </note>
   <note>
    &oci.use.setprefetch;
   </note>
   <note>
-   <para>
+   <simpara>
     Will not return rows from Oracle Database 12<emphasis>c</emphasis>
     Implicit Result Sets.  Use <function>oci_fetch_array</function>
     instead.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

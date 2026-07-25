@@ -5,7 +5,7 @@
   <refname>Error::getPrevious</refname>
   <refpurpose>Returns previous Throwable</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="Error">
@@ -16,18 +16,18 @@
    Returns previous Throwable (the third parameter of <methodname>Error::__construct</methodname>).
   </para>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   &no.function.parameters;
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   Returns the previous <classname>Throwable</classname> if available 
+  <simpara>
+   Returns the previous <exceptionname>Throwable</exceptionname> if available
    or &null; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -35,9 +35,9 @@
   <para>
    <example>
     <title><methodname>Error::getPrevious</methodname> example</title>
-    <para>
+    <simpara>
      Looping over, and printing out, error trace.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -72,7 +72,7 @@ try {
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

@@ -14,9 +14,9 @@
    <modifier>public</modifier> <modifier>static</modifier> <type class="union"><type>IntlBreakIterator</type><type>null</type></type><methodname>IntlBreakIterator::createLineInstance</methodname>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>locale</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -28,9 +28,9 @@
    <varlistentry>
     <term><parameter>locale</parameter></term>
     <listitem>
-     <para>
-      
-     </para>
+     <simpara>
+
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -38,9 +38,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   
-  </para>
+  <simpara>
+
+  </simpara>
  </refsect1>
 
 

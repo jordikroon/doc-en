@@ -8,18 +8,18 @@
  <partintro>
   <section xml:id="gmp.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     A GMP number. These objects support overloaded
     <link linkend="language.operators.arithmetic">arithmetic</link>,
     <link linkend="language.operators.bitwise">bitwise</link> and
     <link linkend="language.operators.comparison">comparison</link> operators.
-   </para>
+   </simpara>
    <note>
-    <para>
+    <simpara>
      No object-oriented interface is provided to manipulate
      <classname>GMP</classname> objects. Please use the
      <link linkend="book.gmp">procedural GMP API</link>.
-    </para>
+    </simpara>
    </note>
   </section>
 

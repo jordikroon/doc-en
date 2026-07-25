@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>array</type><methodname>ReflectionClass::getMethods</methodname>
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>filter</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets an array of methods for the class.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,11 +24,11 @@
     <varlistentry>
      <term><parameter>filter</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Filter the results to include only methods with certain attributes. Defaults
        to no filtering.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Any bitwise disjunction of <constant>ReflectionMethod::IS_STATIC</constant>,
        <constant>ReflectionMethod::IS_PUBLIC</constant>,
        <constant>ReflectionMethod::IS_PROTECTED</constant>,
@@ -37,7 +37,7 @@
        <constant>ReflectionMethod::IS_FINAL</constant>,
        so that all methods with <emphasis>any</emphasis> of the given
        attributes will be returned.
-      </para>
+      </simpara>
       <note>
        <simpara>
         Note that other bitwise operations, for instance <literal>~</literal>
@@ -53,12 +53,12 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An <type>array</type> of <classname>ReflectionMethod</classname> objects
    reflecting each method.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="changelog">
   &reftitle.changelog;
   <informaltable>

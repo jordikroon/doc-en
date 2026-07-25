@@ -4,26 +4,26 @@
 <sect2 xml:id="migration70.incompatible.variable-handling">
  <title>Changes to variable handling</title>
 
- <para>
+ <simpara>
   PHP 7 now uses an abstract syntax tree when parsing source files. This has
   permitted many improvements to the language which were previously
   impossible due to limitations in the parser used in earlier versions of
   PHP, but has resulted in the removal of a few special cases for consistency
   reasons, which has resulted in backward compatibility breaks. These cases
   are detailed in this section.
- </para>
+ </simpara>
 
  <sect3 xml:id="migration70.incompatible.variable-handling.indirect">
   <title>
    Changes to the handling of indirect variables, properties, and methods
   </title>
 
-  <para>
+  <simpara>
    Indirect access to variables, properties, and methods will now be
    evaluated strictly in left-to-right order, as opposed to the previous mix
    of special cases. The table below shows how the order of evaluation has
    changed.
-  </para>
+  </simpara>
 
   <para>
    <table>
@@ -86,17 +86,17 @@
    </table>
   </para>
 
-  <para>
+  <simpara>
    Code that used the old right-to-left evaluation order must be rewritten to
    explicitly use that evaluation order with curly braces (see the above
    middle column). This will make the code both forwards compatible with PHP
    7.x and backwards compatible with PHP 5.x.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    This also affects the &global; keyword. The curly brace syntax can be
    used to emulate the previous behaviour if required:
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -167,20 +167,20 @@ array(3) {
     </screen>
    </informalexample>
 
-   <para>
+   <simpara>
     In general, it is recommended not to rely on the order in which
     <function>list</function> assignments occur, as this is an implementation
     detail that may change again in the future.
-   </para>
+   </simpara>
   </sect4>
 
   <sect4 xml:id="migration70.incompatible.variable-handling.list.empty">
    <title>Empty <function>list</function> assignments have been removed</title>
 
-   <para>
+   <simpara>
     <function>list</function> constructs can no longer be empty. The following
     are no longer allowed:
-   </para>
+   </simpara>
 
    <informalexample>
     <programlisting role="php">
@@ -198,10 +198,10 @@ list($x, list(), $y) = $a;
   <sect4 xml:id="migration70.incompatible.variable-handling.list.string">
    <title><function>list</function> cannot unpack <type>string</type>s</title>
 
-   <para>
+   <simpara>
     <function>list</function> can no longer unpack <type>string</type>
     variables. <function>str_split</function> should be used instead.
-   </para>
+   </simpara>
   </sect4>
  </sect3>
 
@@ -211,11 +211,11 @@ list($x, list(), $y) = $a;
    assignments has changed
   </title>
 
-  <para>
+  <simpara>
    The order of the elements in an array has changed when those elements have
    been automatically created by referencing them in a by reference
    assignment. For example:
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -258,11 +258,11 @@ array(2) {
    Parentheses around function arguments no longer affect behaviour
   </title>
 
-  <para>
+  <simpara>
    In PHP 5, using redundant parentheses around a function argument could
    quiet strict standards warnings when the function argument was passed by
    reference. The warning will now always be issued.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">

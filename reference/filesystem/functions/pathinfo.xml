@@ -13,38 +13,38 @@
    <methodparam><type>string</type><parameter>path</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer><constant>PATHINFO_ALL</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pathinfo</function> returns information about
    <parameter>path</parameter>: either an associative array or a string,
    depending on <parameter>flags</parameter>.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     For information on retrieving the current path info, read
     the section on <link linkend="language.variables.predefined">
     predefined reserved variables</link>.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     <function>pathinfo</function> operates naively on the input string,
     and is not aware of the actual filesystem, or path components such
     as "<literal>..</literal>".
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     On Windows systems only, the <literal>\</literal> character will
     be interpreted as a directory separator. On other systems it will
     be treated like any other character.
-   </para>
+   </simpara>
   </note>
   <caution>
-   <para>
+   <simpara>
     <function>pathinfo</function> is locale aware, so for it to parse a path
     containing multibyte characters correctly, the matching locale must be set using
     the <function>setlocale</function> function.
-   </para>
+   </simpara>
   </caution>
  </refsect1>
 
@@ -55,24 +55,24 @@
     <varlistentry>
      <term><parameter>path</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The path to be parsed.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If present, specifies a specific element to be returned; one of
        <constant>PATHINFO_DIRNAME</constant>,
        <constant>PATHINFO_BASENAME</constant>,
        <constant>PATHINFO_EXTENSION</constant> or
        <constant>PATHINFO_FILENAME</constant>.
-      </para>
-      <para>If <parameter>flags</parameter> is not specified, returns all
+      </simpara>
+      <simpara>If <parameter>flags</parameter> is not specified, returns all
        available elements.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -81,40 +81,40 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    If the <parameter>flags</parameter> parameter is not passed, an
    associative <type>array</type> containing the following elements is
    returned:
    <literal>dirname</literal>, <literal>basename</literal>,
    <literal>extension</literal> (if any), and <literal>filename</literal>.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     If the <parameter>path</parameter> has more than one extension,
     <constant>PATHINFO_EXTENSION</constant> returns only the last one and
     <constant>PATHINFO_FILENAME</constant> only strips the last one.
     (see first example below).
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     If the <parameter>path</parameter> does not have an extension, no
     <literal>extension</literal> element will be returned
     (see second example below).
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     If the <literal>basename</literal> of the <parameter>path</parameter> starts
     with a dot, the following characters are interpreted as
     <literal>extension</literal>, and the <literal>filename</literal> is empty
     (see third example below).
-   </para>
+   </simpara>
   </note>
-  <para>
+  <simpara>
    If <parameter>flags</parameter> is present, returns a
    <type>string</type> containing the requested element.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -197,11 +197,11 @@ Array
   <para>
    <example>
     <title><function>pathinfo</function> example with array dereferencing</title>
-    <para>
+    <simpara>
      The <parameter>flags</parameter> parameter is not a bitmask. Only a single value
      may be provided.  To select only a limited set of parsed values, use array
      destructuring like so:
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

@@ -13,10 +13,10 @@
    <methodparam choice="opt"><type>int</type><parameter>port</parameter><initializer>21</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>timeout</parameter><initializer>90</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>ftp_connect</function> opens an FTP connection to the
-   specified <parameter>hostname</parameter>.  
-  </para>
+   specified <parameter>hostname</parameter>.
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -25,30 +25,30 @@
     <varlistentry>
      <term><parameter>hostname</parameter></term>
      <listitem>
-      <para>
-       The FTP server address. This parameter shouldn't have any trailing 
+      <simpara>
+       The FTP server address. This parameter shouldn't have any trailing
        slashes and shouldn't be prefixed with <literal>ftp://</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>port</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        This parameter specifies an alternate port to connect to. If it is
        omitted or set to zero, then the default FTP port, 21, will be used.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>timeout</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        This parameter specifies the timeout in seconds for all subsequent network operations.
        If omitted, the default value is 90 seconds. The timeout can be changed and
        queried at any time with <function>ftp_set_option</function> and
        <function>ftp_get_option</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -56,9 +56,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an <classname>FTP\Connection</classname> instance on success,&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -83,7 +83,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -96,10 +96,10 @@
 $ftp_server = "ftp.example.com";
 
 // set up a connection or die
-$ftp = ftp_connect($ftp_server) or die("Couldn't connect to $ftp_server"); 
+$ftp = ftp_connect($ftp_server) or die("Couldn't connect to $ftp_server");
 
 ?>
-]]>  
+]]>
     </programlisting>
    </example>
   </para>

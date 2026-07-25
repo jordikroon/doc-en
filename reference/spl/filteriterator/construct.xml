@@ -12,10 +12,10 @@
    <modifier>public</modifier> <methodname>FilterIterator::__construct</methodname>
    <methodparam><type>Iterator</type><parameter>iterator</parameter></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Constructs a new <classname>FilterIterator</classname>, which consists of
    a passed in <parameter>iterator</parameter> with filters applied to it.
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -28,9 +28,9 @@
     <varlistentry>
      <term><parameter>iterator</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The iterator that is being filtered.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

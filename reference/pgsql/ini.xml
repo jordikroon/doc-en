@@ -57,60 +57,60 @@
  </table>
   &ini.php.constants;
   </para>
-  
+
   &ini.descriptions.title;
-  
+
   <para>
   <variablelist>
-   
+
    <varlistentry xml:id="ini.pgsql.allow-persistent">
     <term>
      <parameter>pgsql.allow_persistent</parameter>
      <type>bool</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Whether to allow persistent Postgres connections.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
-   
+
    <varlistentry xml:id="ini.pgsql.max-persistent">
     <term>
      <parameter>pgsql.max_persistent</parameter>
      <type>int</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       The maximum number of persistent Postgres connections per
       process.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
-   
+
    <varlistentry xml:id="ini.pgsql.max-links">
     <term>
      <parameter>pgsql.max_links</parameter>
      <type>int</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       The maximum number of Postgres connections per process,
       including persistent connections.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
-   
+
    <varlistentry xml:id="ini.pgsql.auto-reset-persistent">
     <term>
      <parameter>pgsql.auto_reset_persistent</parameter>
      <type>int</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Detect broken persistent links with <function>pg_pconnect</function>.
-      Needs a little overhead. 
-     </para>
+      Needs a little overhead.
+     </simpara>
     </listitem>
    </varlistentry>
 
@@ -120,9 +120,9 @@
      <type>int</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Whether or not to ignore PostgreSQL backend notices.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
 
@@ -132,12 +132,12 @@
      <type>int</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Whether or not to log PostgreSQL backends notice messages.  The PHP
       directive <link linkend="ini.pgsql.ignore-notice">
       pgsql.ignore_notice</link> must be off in order to log notice
       messages.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
 

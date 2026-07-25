@@ -5,7 +5,7 @@
   <refname>stream_context_set_option</refname>
   <refpurpose>Sets an option for a stream/wrapper/context</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -37,65 +37,65 @@
     <varlistentry>
      <term><parameter>stream_or_context</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The stream or context resource to apply the options to.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>wrapper</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The name of the wrapper (which may be different than the protocol).
        Refer to <link linkend="context">context options and parameters</link>
        for a listing of stream options.
-     </para>
+     </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>option_name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The name of the option.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The value of the option.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>options</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The options to set for <parameter>stream_or_context</parameter>.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         <parameter>options</parameter> must be an associative
         array of associative arrays in the format
         <literal>$arr['wrapper']['option'] = $value</literal>.
-       </para>
-       <para>
+       </simpara>
+       <simpara>
        Refer to <link linkend="context">context options and parameters</link>
        for a listing of stream options.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1><!-- }}} -->
- 
+
  <refsect1 role="returnvalues"><!-- {{{ -->
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1><!-- }}} -->
 
  <refsect1 role="changelog">

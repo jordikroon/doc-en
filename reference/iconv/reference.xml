@@ -6,9 +6,9 @@
 
   <partintro>
    &reftitle.seealso;
-   <para>
+   <simpara>
     See also <link linkend="ref.recode">GNU Recode functions</link>.
-   </para>
+   </simpara>
   </partintro>
 
  &reference.iconv.entities.functions;

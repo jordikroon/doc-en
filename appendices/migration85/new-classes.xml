@@ -23,8 +23,8 @@
  <sect2 xml:id="migration85.new-classes.filter">
   <title>Filter</title>
   <simplelist>
-   <member><classname>Filter\FilterException</classname></member>
-   <member><classname>Filter\FilterFailedException</classname></member>
+   <member><exceptionname>Filter\FilterException</exceptionname></member>
+   <member><exceptionname>Filter\FilterFailedException</exceptionname></member>
   </simplelist>
   <!-- RFC: https://wiki.php.net/rfc/filter_throw_on_failure -->
  </sect2>
@@ -39,13 +39,13 @@
  <sect2 xml:id="migration85.new-classes.uri">
   <title>URI</title>
   <simplelist>
-   <member><classname>Uri\UriException</classname></member>
-   <member><classname>Uri\InvalidUriException</classname></member>
+   <member><exceptionname>Uri\UriException</exceptionname></member>
+   <member><exceptionname>Uri\InvalidUriException</exceptionname></member>
    <member><classname>Uri\UriComparisonMode</classname></member>
    <member><classname>Uri\Rfc3986\Uri</classname></member>
-   <member><classname>Uri\WhatWg\InvalidUrlException</classname></member>
+   <member><exceptionname>Uri\WhatWg\InvalidUrlException</exceptionname></member>
    <member><classname>Uri\WhatWg\UrlValidationErrorType</classname></member>
-   <member><classname>Uri\WhatWg\UrlValidationError</classname></member>
+   <member><exceptionname>Uri\WhatWg\UrlValidationError</exceptionname></member>
    <member><classname>Uri\WhatWg\Url</classname></member>
   </simplelist>
   <!-- RFC: https://wiki.php.net/rfc/url_parsing_api -->

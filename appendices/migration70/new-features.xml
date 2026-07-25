@@ -7,7 +7,7 @@
  <sect2 xml:id="migration70.new-features.scalar-type-declarations">
   <title>Scalar type declarations</title>
 
-  <para>
+  <simpara>
    Scalar
    <link linkend="language.types.declarations">type declarations</link>
    come in two flavours: coercive (default) and strict. The following types
@@ -16,7 +16,7 @@
     numbers (<type>float</type>), and booleans (<literal>bool</literal>). They
     augment the other types introduced in PHP 5: class names, interfaces,
     <type>array</type> and <type>callable</type>.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -39,7 +39,7 @@ int(9)
    </screen>
   </informalexample>
 
-  <para>
+  <simpara>
    To enable strict mode, a single &declare; directive must be placed at the
    top of the file. This means that the strictness of typing for scalars is
    configured on a per-file basis. This directive not only affects the type
@@ -47,21 +47,21 @@ int(9)
    <link linkend="language.types.declarations">return type declarations</link>,
    built-in PHP functions, and functions from loaded
    extensions.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    Full documentation and examples of scalar type declarations can be found in
    the
    <link linkend="language.types.declarations">type declaration</link>
    reference.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration70.new-features.return-type-declarations">
   <title>Return type declarations</title>
 
-  <para>
-   PHP 7 adds support for 
+  <simpara>
+   PHP 7 adds support for
    <link linkend="language.types.declarations">return type declarations</link>.
    Similarly to
    <link linkend="language.types.declarations">argument type declarations</link>,
@@ -70,7 +70,7 @@ int(9)
    <link linkend="language.types.declarations">types</link>
    are available for return type declarations as are available for argument
    type declarations.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -100,23 +100,23 @@ Array
    </screen>
   </informalexample>
 
-  <para>
+  <simpara>
    Full documentation and examples of return type declarations can be found in
    the
    <link linkend="language.types.declarations">return type declarations</link>.
    reference.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration70.new-features.null-coalesce-op">
   <title>Null coalescing operator</title>
 
-  <para>
+  <simpara>
    The null coalescing operator (<literal>??</literal>) has been added as
    syntactic sugar for the common case of needing to use a ternary in
    conjunction with <function>isset</function>. It returns its first operand
    if it exists and is not &null;; otherwise it returns its second operand.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -143,12 +143,12 @@ $username = $_GET['user'] ?? $_POST['user'] ?? 'nobody';
 
  <sect2 xml:id="migration70.new-features.spaceship-op">
   <title>Spaceship operator</title>
-  <para>
-   The spaceship operator is used for comparing two expressions. It returns -1, 0 
-   or 1 when <varname>$a</varname> is respectively less than, equal to, or greater 
+  <simpara>
+   The spaceship operator is used for comparing two expressions. It returns -1, 0
+   or 1 when <varname>$a</varname> is respectively less than, equal to, or greater
    than <varname>$b</varname>. Comparisons are performed according to PHP's usual
    <link linkend="types.comparisons">type comparison rules</link>.
-  </para>
+  </simpara>
   <informalexample>
    <programlisting role="php">
 <![CDATA[
@@ -162,7 +162,7 @@ echo 2 <=> 1; // 1
 echo 1.5 <=> 1.5; // 0
 echo 1.5 <=> 2.5; // -1
 echo 2.5 <=> 1.5; // 1
- 
+
 // Strings
 echo "a" <=> "a"; // 0
 echo "a" <=> "b"; // -1
@@ -179,11 +179,11 @@ echo "b" <=> "a"; // 1
  <sect2 xml:id="migration70.new-features.define-array">
   <title>Constant arrays using <function>define</function></title>
 
-  <para>
+  <simpara>
    <type>Array</type> constants can now be defined with
    <function>define</function>. In PHP 5.6, they could only be defined with
    &const;.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -205,11 +205,11 @@ echo ANIMALS[1]; // outputs "cat"
  <sect2 xml:id="migration70.new-features.anonymous-classes">
   <title>Anonymous classes</title>
 
-  <para>
+  <simpara>
    Support for anonymous classes has been added via <literal>new
    class</literal>. These can be used in place of full class definitions for
    throwaway objects:
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -251,20 +251,20 @@ object(class@anonymous)#2 (0) {
    </screen>
   </informalexample>
 
-  <para>
-   Full documentation can be found in the 
+  <simpara>
+   Full documentation can be found in the
    <link linkend="language.oop5.anonymous">anonymous class reference</link>.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration70.new-features.unicode-codepoint-escape-syntax">
   <title>Unicode codepoint escape syntax</title>
 
-  <para>
+  <simpara>
    This takes a Unicode codepoint in hexadecimal form, and outputs that
    codepoint in UTF-8 to a double-quoted string or a heredoc. Any valid
    codepoint is accepted, with leading 0's being optional.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -330,11 +330,11 @@ echo $getX->call(new A);
  <sect2 xml:id="migration70.new-features.filtered-unserialize">
   <title>Filtered <function>unserialize</function></title>
 
-  <para>
+  <simpara>
    This feature seeks to provide better security when unserializing objects on
    untrusted data. It prevents possible code injections by enabling the
    developer to whitelist classes that can be unserialized.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -357,11 +357,11 @@ $data = unserialize($foo, ["allowed_classes" => true]);
  <sect2 xml:id="migration70.new-features.intlchar">
   <title><classname>IntlChar</classname></title>
 
-  <para>
+  <simpara>
    The new <classname>IntlChar</classname> class seeks to expose additional
    ICU functionality. The class itself defines a number of static methods and
    constants that can be used to manipulate unicode characters.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -383,27 +383,27 @@ bool(true)
    </screen>
   </informalexample>
 
-  <para>
+  <simpara>
    In order to use this class, the <link linkend="book.intl">Intl</link> extension must be installed.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration70.new-features.expectations">
   <title>Expectations</title>
 
-  <para>
+  <simpara>
    Expectations are a
    backwards compatible enhancement to the older <function>assert</function>
    function. They allow for zero-cost assertions in production code, and
    provide the ability to throw custom exceptions when the assertion fails.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    While the old API continues to be maintained for compatibility,
    <function>assert</function> is now a language construct, allowing the first
    parameter to be an expression rather than just a <type>string</type> to be
    evaluated or a <type>bool</type> value to be tested.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -425,20 +425,20 @@ Fatal error: Uncaught CustomError: Some error message
    </screen>
   </informalexample>
 
-  <para>
+  <simpara>
    Full details on this feature, including how to configure it in both
    development and production environments, can be found on the manual page
    of the <function>assert</function> language construct.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration70.new-features.group-use-declarations">
   <title>Group <literal>use</literal> declarations</title>
 
-  <para>
+  <simpara>
    Classes, functions and constants being imported from the same &namespace;
    can now be grouped together in a single &use.namespace; statement.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -470,14 +470,14 @@ use const some\namespace\{ConstA, ConstB, ConstC};
  <sect2 xml:id="migration70.new-features.generator-return-expressions">
   <title>Generator Return Expressions</title>
 
-  <para>
+  <simpara>
    This feature builds upon the generator functionality introduced into PHP 5.5.
    It enables for a <literal>return</literal> statement to be used within a
    generator to enable for a final expression to be returned (return by
-   reference is not allowed). This value can be fetched using the new 
+   reference is not allowed). This value can be fetched using the new
    <literal>Generator::getReturn()</literal> method, which may only be used
    once the generator has finished yielding values.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -508,24 +508,24 @@ echo $gen->getReturn(), PHP_EOL;
    </screen>
   </informalexample>
 
-  <para>
+  <simpara>
    Being able to explicitly return a final value from a generator is a handy
    ability to have. This is because it enables for a final value to be returned
    by a generator (from perhaps some form of coroutine computation) that can be
    specifically handled by the client code executing the generator. This is far
    simpler than forcing the client code to firstly check whether the final
    value has been yielded, and then if so, to handle that value specifically.
-  </para>
+  </simpara>
  </sect2>
  <sect2 xml:id="migration70.new-features.generator-delegation">
   <title>Generator delegation</title>
 
-  <para>
+  <simpara>
    Generators can now delegate to another generator,
    <classname>Traversable</classname> object or <type>array</type>
    automatically, without needing to write boilerplate in the outermost
    generator by using the &yield.from; construct.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -566,10 +566,10 @@ foreach (gen() as $val)
  <sect2 xml:id="migration70.new-features.intdiv">
   <title>Integer division with <function>intdiv</function></title>
 
-  <para>
+  <simpara>
    The new <function>intdiv</function> function performs an integer division
    of its operands and returns it.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -591,14 +591,14 @@ int(3)
  <sect2 xml:id="migration70.new-features.session-options">
   <title>Session options</title>
 
-  <para>
+  <simpara>
    <function>session_start</function> now accepts an <type>array</type> of
    options that override the
    <link linkend="session.configuration">session configuration directives</link>
    normally set in php.ini.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    These options have also been expanded to support
    <link linkend="ini.session.lazy-write">session.lazy_write</link>, which is
    on by default and causes PHP to only overwrite any session file if the
@@ -606,14 +606,14 @@ int(3)
    an option that can only be passed to <function>session_start</function> to
    indicate that the session data should be read and then the session should
    immediately be closed unchanged.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    For example, to set
    <link linkend="ini.session.cache-limiter">session.cache_limiter</link> to
    <literal>private</literal> and immediately close the session after reading
    it:
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -632,29 +632,29 @@ session_start([
  <sect2 xml:id="migration70.new-features.preg-repace-callback-array-function">
   <title><function>preg_replace_callback_array</function></title>
 
-  <para>
+  <simpara>
    The new <function>preg_replace_callback_array</function> function enables
    code to be written more cleanly when using the
    <function>preg_replace_callback</function> function. Prior to PHP 7,
    callbacks that needed to be executed per regular expression required the
    callback function to be polluted with lots of branching.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    Now, callbacks can be registered to each regular expression using an
    associative array, where the key is a regular expression and the value is a
    callback.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration70.new-features.csprng-functions">
   <title>CSPRNG Functions</title>
 
-  <para>
+  <simpara>
    Two new functions have been added to generate cryptographically secure
    integers and strings in a cross platform way:
    <function>random_bytes</function> and <function>random_int</function>.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration70.new-features.list-arrayaccess">
@@ -663,13 +663,13 @@ session_start([
    <classname>ArrayAccess</classname>
   </title>
 
-  <para>
+  <simpara>
    Previously, <function>list</function> was not guaranteed to operate
    correctly with objects implementing <classname>ArrayAccess</classname>.
    This has been fixed.
-  </para>
+  </simpara>
  </sect2>
- 
+
  <sect2 xml:id="migration70.new-features.others">
   <title>Other Features</title>
   <itemizedlist>

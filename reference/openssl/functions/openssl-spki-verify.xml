@@ -12,9 +12,9 @@
    <type>bool</type><methodname>openssl_spki_verify</methodname>
    <methodparam><type>string</type><parameter>spki</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
     Validates the supplied signed public key and challenge
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -23,9 +23,9 @@
     <varlistentry>
      <term><parameter>spki</parameter></term>
      <listitem>
-      <para>
-        Expects a valid signed public key and challenge 
-      </para>
+      <simpara>
+        Expects a valid signed public key and challenge
+      </simpara>
      </listitem>
     </varlistentry>
   </variablelist>
@@ -33,26 +33,26 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
   <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    Emits an <constant>E_WARNING</constant> level error if an invalid argument
    is passed via the <parameter>spki</parameter> parameter.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
   &reftitle.examples;
   <example xml:id="openssl_spki_verify.example.basic">
    <title><function>openssl_spki_verify</function> example</title>
-   <para>
+   <simpara>
       Validates an existing signed public key and challenge
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -70,9 +70,9 @@ if (openssl_spki_verify(preg_replace('/SPKAC=/', '', $spkac))) {
   </example>
   <example xml:id="openssl_spki_verify.example.keygen">
    <title><function>openssl_spki_verify</function> example from &lt;keygen&gt;</title>
-   <para>
+   <simpara>
       Validates an existing signed public key and challenge issued from the &lt;keygen&gt; element
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

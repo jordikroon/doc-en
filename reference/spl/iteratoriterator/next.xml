@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>void</type><methodname>IteratorIterator::next</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Forward to the next element.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

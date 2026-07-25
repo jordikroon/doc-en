@@ -13,7 +13,7 @@
    <methodparam choice="opt"><type>int</type><parameter>port</parameter><initializer>21</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>timeout</parameter><initializer>90</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>ftp_ssl_connect</function> opens an <emphasis>explicit</emphasis> SSL-FTP connection to the
    specified <parameter>hostname</parameter>. That implies that
    <function>ftp_ssl_connect</function> will succeed even if the server is not
@@ -21,22 +21,22 @@
    appropriate <literal>AUTH FTP</literal> command, so <function>ftp_login</function> will fail.
    The connection established by <function>ftp_ssl_connect</function> will <emphasis>not</emphasis> do
    peer-certificate verification.
-  </para>
+  </simpara>
   <note>
    <title>Why this function may not exist</title>
-   <para>
+   <simpara>
     Before PHP 7.0.0, <function>ftp_ssl_connect</function> was only available if both
     the ftp module and the <link linkend="ref.openssl">OpenSSL</link>
     support have been built statically into php; this means that on Windows this
     function had been undefined in the official PHP builds. To have this
     function available on Windows, it had been necessary to compile own PHP binaries.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     <function>ftp_ssl_connect</function> is not intended for use with sFTP.
     To use sFTP with PHP, please see <function>ssh2_sftp</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
  <refsect1 role="parameters">
@@ -46,30 +46,30 @@
     <varlistentry>
      <term><parameter>hostname</parameter></term>
      <listitem>
-      <para>
-       The FTP server address. This parameter shouldn't have any trailing 
+      <simpara>
+       The FTP server address. This parameter shouldn't have any trailing
        slashes and shouldn't be prefixed with <literal>ftp://</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>port</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        This parameter specifies an alternate port to connect to. If it is
        omitted or set to zero, then the default FTP port, 21, will be used.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>timeout</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        This parameter specifies the timeout for all subsequent network operations.
        If omitted, the default value is 90 seconds. The timeout can be changed and
        queried at any time with <function>ftp_set_option</function> and
        <function>ftp_get_option</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -77,9 +77,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an <classname>FTP\Connection</classname> instance on success,&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://docbook.org/ns/docbook" xml:id="function.strnatcasecmp">
+<refentry xml:id="function.strnatcasecmp" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>strnatcasecmp</refname>
   <refpurpose>Case insensitive string comparisons using a "natural order" algorithm</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,13 +13,13 @@
    <methodparam><type>string</type><parameter>string1</parameter></methodparam>
    <methodparam><type>string</type><parameter>string2</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function implements a comparison algorithm that orders alphanumeric
    strings in the way a human being would.  The behaviour of this function is
    similar to <function>strnatcmp</function>, except that the comparison is
    not case sensitive.  For more information see: Martin Pool's <link
    xlink:href="&url.strnatcmp;">Natural Order String Comparison</link> page.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,17 +29,17 @@
     <varlistentry>
      <term><parameter>string1</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The first string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>string2</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The second string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

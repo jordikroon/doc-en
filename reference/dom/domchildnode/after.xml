@@ -4,18 +4,18 @@
   <refname>DOMChildNode::after</refname>
   <refpurpose>Adds nodes after the node</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="DOMChildNode">
    <modifier>public</modifier> <type>void</type><methodname>DOMChildNode::after</methodname>
    <methodparam rep="repeat"><type class="union"><type>DOMNode</type><type>string</type></type><parameter>nodes</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Adds the passed <parameter>nodes</parameter> after the node.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   <para>
@@ -23,21 +23,21 @@
     <varlistentry>
      <term><parameter>nodes</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Nodes to be added after the node.
        Strings are automatically converted to text nodes.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

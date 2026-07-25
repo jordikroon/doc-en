@@ -5,7 +5,7 @@
   <refname>openssl_csr_export</refname>
   <refpurpose>Exports a <acronym>CSR</acronym> as a string</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,12 +14,12 @@
    <methodparam><type>string</type><parameter role="reference">output</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>no_text</parameter><initializer>&true;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>openssl_csr_export</function> takes the Certificate Signing
    Request represented by <parameter>csr</parameter> and stores it in
    <acronym>PEM</acronym> format in <parameter>output</parameter>, which is passed by
    reference.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,10 +30,10 @@
     <varlistentry>
      <term><parameter>output</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        on success, this string will contain the <acronym>PEM</acronym>
        encoded <acronym>CSR</acronym>
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -48,9 +48,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

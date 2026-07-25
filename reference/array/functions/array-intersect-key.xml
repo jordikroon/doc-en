@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.array-intersect-key">
+<refentry xml:id="function.array-intersect-key" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>array_intersect_key</refname>
   <refpurpose>Computes the intersection of arrays using keys for comparison</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,11 +13,11 @@
    <methodparam><type>array</type><parameter>array</parameter></methodparam>
    <methodparam rep="repeat"><type>array</type><parameter>arrays</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>array_intersect_key</function> returns an array
    containing all the entries of <parameter>array</parameter>
    which have keys that are present in all the arguments.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,17 +27,17 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The array with master keys to check.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>arrays</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Arrays to compare keys against.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -46,11 +46,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   Returns an associative array containing all the entries of 
+  <simpara>
+   Returns an associative array containing all the entries of
    <parameter>array</parameter> which have keys that are present in all
    arguments.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -100,21 +100,21 @@ array(2) {
     </screen>
    </example>
   </para>
-  <para>
+  <simpara>
    In our example you see that only the keys <literal>'blue'</literal>
    and <literal>'green'</literal> are present in both arrays and thus
    returned. Also notice that the values for the keys
    <literal>'blue'</literal> and <literal>'green'</literal> differ between
    the two arrays. A match still occurs because only the keys are checked.
    The values returned are those of <parameter>array</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The two keys from the <literal>key =&gt; value</literal> pairs are
    considered equal only if
    <literal>(string) $key1 === (string) $key2 </literal>. In other words
    a strict type check is executed so the string representation must be
    the same.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

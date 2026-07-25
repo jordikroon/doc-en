@@ -55,10 +55,10 @@
   </para>
 
   <note>
-   <para>
+   <simpara>
     If the SQLSTATE error code is not set or there is no driver-specific
     error, the elements following element 0 will be set to &null;.
-    </para>
+    </simpara>
   </note>
 
   <para>

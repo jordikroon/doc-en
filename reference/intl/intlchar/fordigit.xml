@@ -13,20 +13,20 @@
    <methodparam><type>int</type><parameter>digit</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>base</parameter><initializer>10</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Determines the character representation for a specific digit in the specified radix.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If the value of radix is not a valid radix, or the value of digit is not a valid digit in the specified radix,
    the null character (<literal>U+0000</literal>) is returned.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The radix argument is valid if it is greater than or equal to <literal>2</literal> and less than or equal to <literal>36</literal>.
    The digit argument is valid if <literal>0 &lt;= digit &lt; radix</literal>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If the digit is less than <literal>10</literal>, then '0' + digit is returned. Otherwise, the value 'a' + digit - 10 is returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -35,17 +35,17 @@
    <varlistentry>
     <term><parameter>digit</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The number to convert to a character.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>base</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The radix (defaults to <literal>10</literal>).
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -53,9 +53,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The character representation (as a <type>int</type>) of the specified digit in the specified radix.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

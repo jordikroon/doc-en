@@ -11,9 +11,9 @@
    <type>array</type><methodname>stream_get_meta_data</methodname>
    <methodparam><type>resource</type><parameter>stream</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns information about an existing <parameter>stream</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -23,10 +23,10 @@
     <varlistentry>
      <term><parameter>stream</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The stream can be any stream created by <function>fopen</function>,
        <function>fsockopen</function> <function>pfsockopen</function> and <function>stream_socket_client</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,37 +35,37 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The result array contains the following items:
-  </para>
+  </simpara>
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      <literal>timed_out</literal> (bool) - &true; if the stream
      timed out while waiting for data on the last call to
      <function>fread</function> or <function>fgets</function>.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <literal>blocked</literal> (bool) - &true; if the stream is
      in blocking IO mode. See <function>stream_set_blocking</function>.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <literal>eof</literal> (bool) - &true; if the stream has reached
      end-of-file.  Note that for socket streams this member can be &true;
      even when <literal>unread_bytes</literal> is non-zero.  To
      determine if there is more data to be read, use
      <function>feof</function> instead of reading this item.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <literal>unread_bytes</literal> (int) - the number of bytes
      currently contained in the PHP's own internal buffer.
-    </para>
+    </simpara>
     <note>
      <simpara>
       You shouldn't use this value in a script.
@@ -73,24 +73,24 @@
     </note>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <literal>stream_type</literal> (string) - a label describing
      the underlying implementation of the stream.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <literal>wrapper_type</literal> (string) - a label describing
      the protocol wrapper implementation layered over the stream.
      See <xref linkend="wrappers"/> for more information about wrappers.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <literal>wrapper_data</literal> (mixed) - wrapper specific
      data attached to this stream.  See <xref linkend="wrappers"/> for
      more information about wrappers and their wrapper data.
-    </para>
+    </simpara>
    </listitem>
    <!-- {{{ needs updating when stream filters are included again
    <listitem>
@@ -103,29 +103,29 @@
    </listitem>
    -->
    <listitem>
-    <para>
+    <simpara>
      <literal>mode</literal> (string) - the type of access required for
      this stream (see Table 1 of the <link
      linkend="function.fopen">fopen()</link> reference)
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <literal>seekable</literal> (bool) - whether the current stream can
      be seeked.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <literal>uri</literal> (string) - the URI/filename associated with this
      stream.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <literal>crypto</literal> (array) - the TLS connection metadata for this
      stream. (Note: Only provided when the resource's stream uses TLS.)
-    </para>
+    </simpara>
    </listitem>
   </itemizedlist>
  </refsect1>
@@ -277,9 +277,9 @@ array(8) {
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>This function does NOT work on sockets created by the <link
+   <simpara>This function does NOT work on sockets created by the <link
      linkend="ref.sockets">Socket extension</link>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

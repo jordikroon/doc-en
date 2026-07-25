@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type class="union"><type>string</type><type>false</type></type><methodname>COMPersistHelper::GetCurFileName</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Retrieves the current name of the file associated with the object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the current name of the file associated with the object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

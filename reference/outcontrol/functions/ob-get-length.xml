@@ -5,16 +5,16 @@
   <refname>ob_get_length</refname>
   <refpurpose>Return the length of the output buffer</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>int</type><type>false</type></type><methodname>ob_get_length</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    This will return the length of the contents in the output buffer, in bytes.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,10 +24,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the length of the output buffer contents, in bytes, or &false; if no
    buffering is active.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

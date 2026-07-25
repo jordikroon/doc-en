@@ -13,10 +13,10 @@
    <modifier>public</modifier> <type>int</type><methodname>streamWrapper::stream_tell</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
    This method is called in response to <function>fseek</function> to
    determine the current position.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,9 +26,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Should return the current position of the stream.
-  </para>
+  </simpara>
  </refsect1>
 
 <!--

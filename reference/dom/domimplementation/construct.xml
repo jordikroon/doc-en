@@ -13,16 +13,16 @@
    <methodname>DOMImplementation::__construct</methodname>
    <void/>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Creates a new <classname>DOMImplementation</classname> object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
   &reftitle.parameters;
   &no.function.parameters;
  </refsect1>
- 
+
 </refentry>
 
 <!-- Keep this comment at the end of the file

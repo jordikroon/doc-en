@@ -11,9 +11,9 @@
    <type>int</type><methodname>posix_sysconf</methodname>
    <methodparam><type>int</type><parameter>conf_id</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns system runtime information.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -23,12 +23,12 @@
     <varlistentry>
      <term><parameter>conf_id</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Identifier of the variable with the following constants
        <constant>POSIX_SC_ARG_MAX</constant>, <constant>POSIX_SC_PAGESIZE</constant>,
        <constant>POSIX_SC_NPROCESSORS_CONF</constant>, <constant>POSIX_SC_NPROCESSORS_ONLN</constant>,
        <constant>POSIX_SC_CHILD_MAX</constant>, <constant>POSIX_SC_CLK_TCK</constant>
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,18 +37,18 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the numeric value related to <parameter>conf_id</parameter>
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
   &reftitle.examples;
   <example xml:id="function.posix-sysconf.example.basic">
    <title><function>posix_sysconf</function> example</title>
-   <para>
+   <simpara>
     Returns the number of active cpus.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

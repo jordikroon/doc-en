@@ -11,9 +11,9 @@
    <modifier>public</modifier> <methodname>SensitiveParameterValue::__construct</methodname>
    <methodparam><type>mixed</type><parameter>value</parameter></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Construct a <classname>SensitiveParameterValue</classname> holding a sensitive value.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -22,9 +22,9 @@
    <varlistentry>
     <term><parameter>value</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       An arbitrary value that should be stored inside the <classname>SensitiveParameterValue</classname> object.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>

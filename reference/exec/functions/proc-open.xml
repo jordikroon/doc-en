@@ -19,10 +19,10 @@
    <methodparam choice="opt"><type class="union"><type>array</type><type>null</type></type><parameter>env_vars</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>array</type><type>null</type></type><parameter>options</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-    <para>
+    <simpara>
      <function>proc_open</function> is similar to <function>popen</function>
      but provides a much greater degree of control over the program execution.
-    </para>
+    </simpara>
 
 <!-- ptys are currently disabled in the sources
     <para>
@@ -46,10 +46,10 @@
     <varlistentry>
      <term><parameter>command</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The commandline to execute as &string;. Special characters have to be properly escaped,
        and proper quoting has to be applied.
-      </para>
+      </simpara>
       <note>
        <simpara>
         On <emphasis>Windows</emphasis>, unless <literal>bypass_shell</literal> is set to &true; in
@@ -64,28 +64,28 @@
         <parameter>command</parameter> (see example below).
        </simpara>
       </note>
-      <para>
+      <simpara>
        As of PHP 7.4.0, <parameter>command</parameter> may be passed as &array; of command parameters.
        In this case the process will be opened directly (without going through a shell)
        and PHP will take care of any necessary argument escaping.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         On Windows, the argument escaping of the &array; elements assumes that the
         command line parsing of the executed command is compatible with the parsing
         of command line arguments done by the VC runtime.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>descriptor_spec</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An indexed array where the key represents the descriptor number and the
        value represents how PHP will pass that descriptor to the child
        process. 0 is stdin, 1 is stdout, while 2 is stderr.
-      </para>
+      </simpara>
       <para>
        Each element can be:
        <simplelist>
@@ -104,7 +104,7 @@
         </member>
        </simplelist>
       </para>
-      <para>
+      <simpara>
        The file descriptor numbers are not limited to 0, 1 and 2 - you may
        specify any valid file descriptor number and it will be passed to the
        child process. This allows your script to interoperate with other
@@ -112,36 +112,36 @@
        passing passphrases to programs like PGP, GPG and openssl in a more
        secure manner. It is also useful for reading status information
        provided by those programs on auxiliary file descriptors.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>pipes</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Will be set to an indexed array of file pointers that correspond to
        PHP's end of any pipes that are created.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>cwd</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The initial working dir for the command. This must be an
        <emphasis role="strong">absolute</emphasis> directory path, or &null;
        if you want to use the default value (the working dir of the current
        PHP process)
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>env_vars</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An array with the environment variables for the command that will be
        run, or &null; to use the same environment as the current PHP process
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -181,11 +181,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a resource representing the process, which should be freed using
    <function>proc_close</function> when you are finished with it. On failure
    returns &false;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -366,22 +366,22 @@ if (is_resource($process)) {
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     Windows compatibility: Descriptors beyond 2 (stderr) are made available to
     the child process as inheritable handles, but since the Windows
     architecture does not associate file descriptor numbers with low-level
     handles, the child process does not (yet) have a means of accessing those
     handles. Stdin, stdout and stderr work as expected.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
    If you only need a uni-directional (one-way) process pipe, use
    <function>popen</function> instead, as it is much easier to use.
-   </para>
+   </simpara>
   </note>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

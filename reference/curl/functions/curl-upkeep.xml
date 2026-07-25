@@ -11,19 +11,19 @@
    <type>bool</type><methodname>curl_upkeep</methodname>
    <methodparam><type>CurlHandle</type><parameter>handle</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Available if built against libcurl &gt;= 7.62.0.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Some protocols have "connection upkeep" mechanisms.
    These mechanisms usually send some traffic on existing connections in order to keep them alive;
    this can prevent connections from being closed due to overzealous firewalls, for example.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Connection upkeep is currently available only for HTTP/2 connections.
    A small amount of traffic is usually sent to keep a connection alive.
    HTTP/2 maintains its connection by sending a HTTP/2 PING frame.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -37,9 +37,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -31,15 +31,15 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    If <parameter>odbc</parameter> is specified, the last state
    of that connection is returned, else the last state of any connection
    is returned.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This function returns meaningful value only if last odbc query failed
    (i.e. <function>odbc_exec</function> returned &false;).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

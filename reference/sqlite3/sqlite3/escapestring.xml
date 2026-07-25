@@ -12,15 +12,15 @@
    <modifier>public</modifier> <modifier>static</modifier> <type>string</type><methodname>SQLite3::escapeString</methodname>
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a string that has been properly escaped for safe inclusion in an
    SQL statement.
-  </para>
+  </simpara>
   &note.not-bin-safe;
-  <para>
+  <simpara>
    To properly handle BLOB fields which may contain NUL characters, use
    <function>SQLite3Stmt::bindParam</function> instead.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,9 +30,9 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string to be escaped.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -42,10 +42,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a properly escaped string that may be used safely in an SQL
    statement.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="notes">

@@ -6,16 +6,16 @@
   <refname>$GLOBALS</refname>
   <refpurpose>References all variables available in global scope</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    An associative <type>array</type> containing references to all variables which
    are currently defined in the global scope of the script. The
    variable names are the keys of the array.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -73,16 +73,16 @@ array_pop($GLOBALS);
    </para>
   </warning>
  </refsect1>
- 
+
  <refsect1 role="notes">
   &reftitle.notes;
   &note.is-superglobal;
   <note>
    <title>Variable availability</title>
-   <para>
+   <simpara>
     Unlike all of the other <link linkend="language.variables.superglobals">superglobals</link>,
     <varname>$GLOBALS</varname> has essentially always been available in PHP.
-   </para>
+   </simpara>
   </note>
   <note>
    <para>
@@ -120,9 +120,9 @@ foreach ($globals as $key => $value) {
    </para>
   </note>
  </refsect1>
- 
+
 </refentry>
- 
+
 <!-- Keep this comment at the end of the file
 Local variables:
 mode: sgml

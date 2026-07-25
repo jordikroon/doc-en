@@ -9,18 +9,18 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <fieldsynopsis><type class="union"><type>string</type><type>null</type></type><varname linkend="mysqli.info">mysqli-&gt;info</varname></fieldsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type class="union"><type>string</type><type>null</type></type><methodname>mysqli_info</methodname>
    <methodparam><type>mysqli</type><parameter>mysql</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    The <function>mysqli_info</function> function returns a string providing
    information about the last query executed. The nature of this string is
    provided below:
-  </para>
+  </simpara>
   <para>
   <table xml:id="mysqli.info.description">
    <title>Possible mysqli_info return values</title>
@@ -57,10 +57,10 @@
   </table>
   </para>
   <note>
-   <para>
+   <simpara>
     Queries which do not fall into one of the preceding formats are not supported.
     In these situations, <function>mysqli_info</function> will return an empty string.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -75,16 +75,16 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A character string representing additional information about the most recently executed query.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
   &reftitle.examples;
   <example>
    <title><varname>$mysqli-&gt;info</varname> example</title>
-   <para>&style.oop;</para>
+   <simpara>&style.oop;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -99,7 +99,7 @@ $mysqli->query("INSERT INTO t1 SELECT * FROM City ORDER BY ID LIMIT 150");
 printf("%s\n", $mysqli->info);
 ]]>
    </programlisting>
-   <para>&style.procedural;</para>
+   <simpara>&style.procedural;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

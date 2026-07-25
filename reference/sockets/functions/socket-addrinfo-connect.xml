@@ -12,10 +12,10 @@
    <type class="union"><type>Socket</type><type>false</type></type><methodname>socket_addrinfo_connect</methodname>
    <methodparam><type>AddressInfo</type><parameter>address</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Create a <classname>Socket</classname> instance, and connect it to the provided <classname>AddressInfo</classname> instance.  The return
    value of this function may be used with the rest of the socket functions.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -25,9 +25,9 @@
    <varlistentry>
     <term><parameter>address</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       <classname>AddressInfo</classname> instance created from <function>socket_addrinfo_lookup</function>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -35,9 +35,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a <classname>Socket</classname> instance on success or &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

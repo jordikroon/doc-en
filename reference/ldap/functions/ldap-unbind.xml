@@ -12,9 +12,9 @@
    <type>bool</type><methodname>ldap_unbind</methodname>
    <methodparam><type>LDAP\Connection</type><parameter>ldap</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Unbinds from the LDAP directory.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>ldap</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &ldap.parameter.ldap;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,9 +35,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

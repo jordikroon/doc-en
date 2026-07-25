@@ -9,19 +9,19 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="DateTimeZone">
    <modifier>public</modifier> <type>string</type><methodname>DateTimeZone::getName</methodname>
    <void/>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type>string</type><methodname>timezone_name_get</methodname>
    <methodparam><type>DateTimeZone</type><parameter>object</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the name of the timezone.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,9 +30,9 @@
    <varlistentry>
     <term><parameter>object</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The <classname>DateTimeZone</classname> for which to get a name.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -40,7 +40,7 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Depending on zone type, UTC offset (type 1), timezone abbreviation (type
    2), and timezone identifiers as published in the IANA timezone database
    (type 3), the descriptor string to create a new
@@ -48,7 +48,7 @@
    rules. For example <literal>02:00</literal>, <literal>CEST</literal>, or
    one of the timezone names in the <link linkend="timezones">list of
    timezones</link>.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

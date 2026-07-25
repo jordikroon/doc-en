@@ -12,10 +12,10 @@
    <type>int</type><methodname>memory_get_peak_usage</methodname>
    <methodparam choice="opt"><type>bool</type><parameter>real_usage</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the peak of memory, in bytes, that's been allocated to your PHP
    script.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,11 +25,11 @@
     <varlistentry>
      <term><parameter>real_usage</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Set this to &true; to get the real size of memory allocated from
        system. If not set or &false; only the memory used by
        <literal>emalloc()</literal> is reported.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -38,9 +38,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the memory peak in bytes.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

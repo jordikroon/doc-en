@@ -5,7 +5,7 @@
   <refname>gmp_div_r</refname>
   <refpurpose>Remainder of the division of numbers</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,12 +14,12 @@
    <methodparam><type class="union"><type>GMP</type><type>int</type><type>string</type></type><parameter>num2</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>rounding_mode</parameter><initializer><constant>GMP_ROUND_ZERO</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Calculates remainder of the integer division of
    <parameter>num1</parameter> by <parameter>num2</parameter>. The
    remainder has the sign of the <parameter>num1</parameter> argument,
    if not zero.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,28 +29,28 @@
     <varlistentry>
      <term><parameter>num1</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number being divided.
-      </para>
-      &gmp.parameter; 
+      </simpara>
+      &gmp.parameter;
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>num2</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number that <parameter>num1</parameter> is being divided by.
-      </para>
-      &gmp.parameter; 
+      </simpara>
+      &gmp.parameter;
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>rounding_mode</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        See the <function>gmp_div_q</function> function for description
        of the <parameter>rounding_mode</parameter> argument.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -59,9 +59,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The remainder, as a GMP number.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -9,23 +9,23 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="Locale">
    <modifier>public</modifier> <modifier>static</modifier> <type class="union"><type>array</type><type>null</type></type><methodname>Locale::parseLocale</methodname>
    <methodparam><type>string</type><parameter>locale</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>array</type><type>null</type></type><methodname>locale_parse</methodname>
    <methodparam><type>string</type><parameter>locale</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a key-value array of locale ID subtag elements.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -35,11 +35,11 @@
     <varlistentry>
      <term><parameter>locale</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The locale to extract the subtag array from. Note: The 'variant' and
        'private' subtags can take maximum 15 values whereas 'extlang' can take
        maximum 3 values.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -48,18 +48,18 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array containing a list of key-value pairs, where the keys
    identify the particular locale ID subtags, and the values are the
    associated subtag values. The array will be ordered as the locale id
    subtags e.g. in the locale id if variants are '-varX-varY-varZ' then the
    returned array will have variant0=&gt;varX , variant1=&gt;varY ,
    variant2=&gt;varZ
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Returns &null; when the length of <parameter>locale</parameter> exceeds
    <constant>INTL_MAX_LOCALE_LEN</constant>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

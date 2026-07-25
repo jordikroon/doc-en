@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.str-rot13">
+<refentry xml:id="function.str-rot13" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>str_rot13</refname>
   <refpurpose>Perform the rot13 transform on a string</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>string</type><methodname>str_rot13</methodname>
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Performs the ROT13 encoding on the <parameter>string</parameter> argument and
    returns the resulting string.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The ROT13 encoding simply shifts every letter by 13 places in the alphabet
    while leaving non-alpha characters untouched. Encoding and decoding are
    done by the same function, passing an encoded string as argument will
    return the original version.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -31,9 +31,9 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -42,9 +42,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the ROT13 version of the given string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

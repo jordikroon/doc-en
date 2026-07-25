@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<section xmlns="http://docbook.org/ns/docbook" xml:id="sem.installation">
+<section xml:id="sem.installation" xmlns="http://docbook.org/ns/docbook">
  &reftitle.install;
  <simpara>
   Support for this functions are not enabled by default.

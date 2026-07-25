@@ -9,9 +9,9 @@
 <!-- {{{ SimpleXMLIterator intro -->
   <section xml:id="simplexmliterator.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     The SimpleXMLIterator provides recursive iteration over all nodes of a <classname>SimpleXMLElement</classname> object.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

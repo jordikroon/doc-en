@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>int</type><methodname>MultipleIterator::getFlags</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets information about the flags.
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -27,9 +27,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Information about the flags, as an <type>int</type>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

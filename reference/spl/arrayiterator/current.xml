@@ -5,16 +5,16 @@
   <refname>ArrayIterator::current</refname>
   <refpurpose>Return current array entry</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="ArrayIterator">
    <modifier>public</modifier> <type>mixed</type><methodname>ArrayIterator::current</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get the current <type>array</type> entry.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The current <type>array</type> entry.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

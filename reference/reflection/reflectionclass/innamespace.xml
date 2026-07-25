@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>ReflectionClass::inNamespace</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks if this class is defined in a namespace.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
   Returns &true; if the class is in specified namespace or &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

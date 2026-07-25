@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.dirname">
+<refentry xml:id="function.dirname" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>dirname</refname>
   <refpurpose>Returns a parent directory's path</refpurpose>
@@ -13,31 +13,31 @@
    <methodparam><type>string</type><parameter>path</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>levels</parameter><initializer>1</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Given a string containing the path of a file or directory, this function
    will return the parent directory's path that is
    <parameter>levels</parameter> up from the current directory.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     <function>dirname</function> operates naively on the input string,
     and is not aware of the actual filesystem, or path components such
     as "<literal>..</literal>".
-   </para>
+   </simpara>
   </note>
   <caution>
-   <para>
+   <simpara>
     On Windows, <function>dirname</function> assumes the currently set codepage, so for it to see the
     correct directory name with multibyte character paths, the matching codepage must
     be set.
     If <parameter>path</parameter> contains characters which are invalid for the
     current codepage, the behavior of <function>dirname</function> is undefined.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     On other systems, <function>dirname</function> assumes <parameter>path</parameter>
     to be encoded in an ASCII compatible encoding. Otherwise, the behavior of
     the function is undefined.
-   </para>
+   </simpara>
   </caution>
  </refsect1>
 
@@ -48,25 +48,25 @@
     <varlistentry>
      <term><parameter>path</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A path.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        On Windows, both slash (<literal>/</literal>) and backslash
        (<literal>\</literal>) are used as directory separator character. In
        other environments, it is the forward slash (<literal>/</literal>).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>levels</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number of parent directories to go up.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        This must be an integer greater than 0.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -75,13 +75,13 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the path of a parent directory. If there are no slashes in
    <parameter>path</parameter>, a dot ('<literal>.</literal>') is returned,
    indicating the current directory. Otherwise, the returned string is
    <parameter>path</parameter> with any trailing
    <literal>/component</literal> removed.
-  </para>
+  </simpara>
 
   <caution>
    <para>

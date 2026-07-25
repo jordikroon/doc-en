@@ -11,9 +11,9 @@
    <modifier>public</modifier> <type>Iterator</type><methodname>DOMNodeList::getIterator</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns an external iterator for the node list.
-  </para>
+  </simpara>
  </refsect1>
 
  <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('iteratoraggregate.getiterator')/db:refsect1[@role='parameters'])" />

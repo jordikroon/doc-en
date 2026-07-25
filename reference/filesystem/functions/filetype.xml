@@ -5,16 +5,16 @@
   <refname>filetype</refname>
   <refpurpose>Gets file type</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>filetype</methodname>
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the type of the given file.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path to the file.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,15 +35,15 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the type of the file. Possible values are fifo, char,
    dir, block, link, file, socket and unknown.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Returns &false; if an error occurs. <function>filetype</function> will also
    produce an <constant>E_NOTICE</constant> message if the stat call fails
    or if the file type is unknown.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

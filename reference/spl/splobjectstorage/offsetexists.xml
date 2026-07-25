@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>SplObjectStorage::offsetExists</methodname>
    <methodparam><type>object</type><parameter>object</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks whether an <type>object</type> exists in the storage.
-  </para>
+  </simpara>
   <note>
    <para>
     <methodname>SplObjectStorage::offsetExists</methodname> is an alias of <methodname>SplObjectStorage::contains</methodname>.
@@ -29,9 +29,9 @@
     <varlistentry>
      <term><parameter>object</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <type>object</type> to look for.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -40,10 +40,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the <type>object</type> exists in the storage,
    and &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

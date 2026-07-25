@@ -5,7 +5,7 @@
   <refname>number_format</refname>
   <refpurpose>Format a number with grouped thousands</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -15,9 +15,9 @@
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>decimal_separator</parameter><initializer>"."</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>thousands_separator</parameter><initializer>","</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Formats a number with grouped thousands and optionally decimal digits using the rounding half up rule.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,15 +27,15 @@
     <varlistentry>
      <term><parameter>num</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number being formatted.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>decimals</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Sets the number of decimal digits.
        If <literal>0</literal>, the <parameter>decimal_separator</parameter> is
        omitted from the return value.
@@ -44,23 +44,23 @@
        the decimal point.
        Prior to PHP 8.3.0, negative values were ignored and handled the
        same as <literal>0</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>decimal_separator</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Sets the separator for the decimal point.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>thousands_separator</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Sets the thousands separator.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -69,9 +69,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A formatted version of <parameter>num</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -102,8 +102,8 @@
       <row>
        <entry>7.2.0</entry>
        <entry>
-        <function>number_format</function> was changed to not being able to return 
-        <literal>-0</literal>, previously <literal>-0</literal> could be returned 
+        <function>number_format</function> was changed to not being able to return
+        <literal>-0</literal>, previously <literal>-0</literal> could be returned
         for cases like where <parameter>num</parameter> would be <literal>-0.01</literal>.
        </entry>
       </row>
@@ -118,11 +118,11 @@
   <para>
    <example>
     <title><function>number_format</function> Example</title>
-    <para>
+    <simpara>
      For instance, French notation usually use two decimals,
      comma (',') as decimal separator, and space (' ') as
      thousand separator. The following example demonstrates various ways to format a number:
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -175,7 +175,7 @@ string(5) "1,000"
    </screen>
   </example>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

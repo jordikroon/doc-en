@@ -12,10 +12,10 @@
    <modifier>public</modifier> <type>bool</type><methodname>SessionHandlerInterface::destroy</methodname>
    <methodparam><type>string</type><parameter>id</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Destroys a session. Called by <function>session_regenerate_id</function> (with $destroy = &true;),
    <function>session_destroy</function> and when <function>session_decode</function> fails.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
     <varlistentry>
      <term><parameter>id</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The session ID being destroyed.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -36,9 +36,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &returns.session.storage.retval;
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

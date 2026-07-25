@@ -52,13 +52,13 @@
   <itemizedlist>
    <listitem>
     <simpara><constant>MYSQLI_REFRESH_REPLICA</constant></simpara>
-    <para>
+    <simpara>
      This constant has been added as a replacement for
      <constant>MYSQLI_REFRESH_SLAVE</constant>,
      in line with an upstream change in MySQL.
      The old constant is still available for backwards-compatibility reasons,
      but may be deprecated/removed in the future.
-    </para>
+    </simpara>
    </listitem>
   </itemizedlist>
  </sect2>
@@ -92,9 +92,9 @@
  <sect2 xml:id="migration81.constants.sockets">
   <title>Sockets</title>
 
-  <para>
+  <simpara>
    The following socket options are now defined if they are supported:
-  </para>
+  </simpara>
   <itemizedlist>
    <listitem>
     <simpara><constant>SO_ACCEPTFILTER</constant></simpara>

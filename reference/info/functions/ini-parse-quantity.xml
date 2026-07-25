@@ -12,9 +12,9 @@
    <type>int</type><methodname>ini_parse_quantity</methodname>
    <methodparam><type>string</type><parameter>shorthand</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the interpreted size in bytes on success from an <link linkend="faq.using.shorthandbytes">ini shorthand</link>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,7 +24,7 @@
     <varlistentry>
      <term><parameter>shorthand</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Ini shorthand to parse, must be a number followed by an optional multiplier.
 
        The following multipliers are supported: <literal>k</literal>/<literal>K</literal> (<literal>1024</literal>),
@@ -34,7 +34,7 @@
        The number can be a decimal, hex (prefixed with <literal>0x</literal> or <literal>0X</literal>),
        octal (prefixed with <literal>0o</literal>, <literal>0O</literal> or <literal>0</literal>) or binary (prefixed with
        <literal>0b</literal> or <literal>0B</literal>)
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -43,16 +43,16 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the interpreted size in bytes as an &integer;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    If the value cannot be parsed, or an invalid multiplier is used, an <constant>E_WARNING</constant> is raised.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

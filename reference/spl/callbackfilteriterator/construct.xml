@@ -13,10 +13,10 @@
    <methodparam><type>Iterator</type><parameter>iterator</parameter></methodparam>
    <methodparam><type>callable</type><parameter>callback</parameter></methodparam>
   </constructorsynopsis>
-  <para>
-   Creates a filtered iterator using the <parameter>callback</parameter> to 
+  <simpara>
+   Creates a filtered iterator using the <parameter>callback</parameter> to
    determine which items are accepted or rejected.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,22 +25,22 @@
    <varlistentry>
     <term><parameter>iterator</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The iterator to be filtered.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>callback</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The callback, which should return &true; to accept the current item
       or &false; otherwise.
       See <link linkend="callbackfilteriterator.examples">Examples</link>.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       May be any valid <type>callable</type> value.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>

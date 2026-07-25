@@ -5,16 +5,16 @@
   <refname>gmp_com</refname>
   <refpurpose>Calculates one's complement</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>GMP</type><methodname>gmp_com</methodname>
    <methodparam><type class="union"><type>GMP</type><type>int</type><type>string</type></type><parameter>num</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the one's complement of <parameter>num</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,7 +24,7 @@
     <varlistentry>
      <term><parameter>num</parameter></term>
      <listitem>
-      &gmp.parameter; 
+      &gmp.parameter;
      </listitem>
     </varlistentry>
    </variablelist>
@@ -33,9 +33,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the one's complement of <parameter>num</parameter>, as a GMP number.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>int</type><methodname>SplObjectStorage::count</methodname>
    <methodparam choice="opt"><type>int</type><parameter>mode</parameter><initializer><constant>COUNT_NORMAL</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Counts the number of objects in the storage.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,11 +24,11 @@
     <varlistentry>
      <term><parameter>mode</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If the optional <parameter>mode</parameter> parameter is set to
        <constant>COUNT_RECURSIVE</constant> (or 1), <function>SplObjectStorage::count</function>
        will recursively count the storage.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,9 +37,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The number of objects in the storage.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

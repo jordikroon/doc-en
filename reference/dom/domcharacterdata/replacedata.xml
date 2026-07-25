@@ -15,10 +15,10 @@
    <methodparam><type>int</type><parameter>count</parameter></methodparam>
    <methodparam><type>string</type><parameter>data</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Replace <parameter>count</parameter> characters starting from position
    <parameter>offset</parameter> with <parameter>data</parameter>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -27,27 +27,27 @@
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The offset from which to start replacing.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>count</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number of characters to replace. If the sum of
        <parameter>offset</parameter> and <parameter>count</parameter> exceeds
        the length, then all characters to the end of the data are replaced.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>data</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string with which the range must be replaced.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -55,9 +55,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="errors">
   &reftitle.errors;
@@ -70,11 +70,11 @@
     <varlistentry>
      <term><constant>DOM_INDEX_SIZE_ERR</constant></term>
      <listitem>
-      <para>
+      <simpara>
        Raised if <parameter>offset</parameter> is negative or greater than the
        number of UTF-8 codepoints in data, or if <parameter>count</parameter> is
        negative.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

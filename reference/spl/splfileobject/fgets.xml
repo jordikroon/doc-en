@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>string</type><methodname>SplFileObject::fgets</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets a line from the file.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,16 +24,16 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a string containing the next line from the file.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws a <classname>RuntimeException</classname> if the file cannot be read.
-  </para>
+  <simpara>
+   Throws a <exceptionname>RuntimeException</exceptionname> if the file cannot be read.
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -41,7 +41,7 @@
   <para>
    <example>
     <title><methodname>SplFileObject::fgets</methodname> example</title>
-    <para>This example simply outputs the contents of <literal>file.txt</literal> line-by-line.</para>
+    <simpara>This example simply outputs the contents of <literal>file.txt</literal> line-by-line.</simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

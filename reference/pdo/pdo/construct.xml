@@ -16,10 +16,10 @@
    <methodparam choice="opt"><modifier role="attribute">#[\SensitiveParameter]</modifier><type class="union"><type>string</type><type>null</type></type><parameter>password</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>array</type><type>null</type></type><parameter>options</parameter><initializer>&null;</initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Creates a PDO instance to represent a connection to the requested
-   database. 
-  </para>
+   database.
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -28,52 +28,52 @@
     <varlistentry>
      <term><parameter>dsn</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The Data Source Name, or DSN, contains the information required to
        connect to the database.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        In general, a DSN consists of the PDO driver name, followed by a colon,
        followed by the PDO driver-specific connection syntax. Further
        information is available from the <link linkend="pdo.drivers">PDO
        driver-specific documentation</link>.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        The <parameter>dsn</parameter> parameter supports three
        different methods of specifying the arguments required to create
        a database connection:
-      </para>
+      </simpara>
       <para>
        <variablelist>
         <varlistentry><term>Driver invocation</term>
          <listitem>
-          <para>
+          <simpara>
            <parameter>dsn</parameter> contains the full DSN.
-          </para>
+          </simpara>
          </listitem>
         </varlistentry>
         <varlistentry><term>URI invocation</term>
          <listitem>
-          <para>
+          <simpara>
            <parameter>dsn</parameter> consists of <userinput>uri:</userinput>
            followed by a URI that defines the location of a file containing
            the DSN string. The URI can specify a local file or a remote URL.
-          </para>
-          <para><userinput>uri:file:///path/to/dsnfile</userinput></para>
+          </simpara>
+          <simpara><userinput>uri:file:///path/to/dsnfile</userinput></simpara>
          </listitem>
         </varlistentry>
         <varlistentry><term>Aliasing</term>
          <listitem>
           <para>
-           <parameter>dsn</parameter> consists of a name 
-           <parameter>name</parameter> that maps to 
+           <parameter>dsn</parameter> consists of a name
+           <parameter>name</parameter> that maps to
            <code>pdo.dsn.<parameter>name</parameter></code> in &php.ini;
            defining the DSN string.
           </para>
           <note>
-           <para>
+           <simpara>
             The alias must be defined in &php.ini;, and not &htaccess; or &httpd.conf;
-           </para>
+           </simpara>
           </note>
          </listitem>
         </varlistentry>
@@ -84,27 +84,27 @@
     <varlistentry>
      <term><parameter>username</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The user name for the DSN string. This parameter is optional for
        some PDO drivers.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>password</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The password for the DSN string. This parameter is optional for
        some PDO drivers.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>options</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A key=&gt;value array of driver-specific connection options.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -113,11 +113,11 @@
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   A <classname>PDOException</classname> is thrown if the attempt
+  <simpara>
+   A <exceptionname>PDOException</exceptionname> is thrown if the attempt
    to connect to the requested database fails,
    regardless of which <constant>PDO::ATTR_ERRMODE</constant> is currently set.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -139,22 +139,22 @@ $dbh = new PDO($dsn, $user, $password);
     </programlisting>
    </example>
    <example><title>Create a PDO instance via URI invocation</title>
-    <para>
+    <simpara>
      The following example assumes that the file
      <filename>/usr/local/dbconnect</filename> exists with file permissions
      that enable PHP to read the file. The file contains the PDO DSN to
      connect to a DB2 database through the PDO_ODBC driver:
-    </para>
+    </simpara>
     <screen>
 <![CDATA[
 odbc:DSN=SAMPLE;UID=john;PWD=mypass
 ]]>
     </screen>
-    <para>
+    <simpara>
      The PHP script can then create a database connection by simply
      passing the <literal>uri:</literal> parameter and pointing to
      the file URI:
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -170,11 +170,11 @@ $dbh = new PDO($dsn, $user, $password);
     </programlisting>
    </example>
    <example><title>Create a PDO instance using an alias</title>
-    <para>
+    <simpara>
      The following example assumes that &php.ini; contains the following
      entry to enable a connection to a MySQL database using only the
      alias <literal>mydb</literal>:
-    </para>
+    </simpara>
     <programlisting role="ini">
 [PDO]
 pdo.dsn.mydb="mysql:dbname=testdb;host=localhost"

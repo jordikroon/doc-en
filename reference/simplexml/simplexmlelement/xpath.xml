@@ -5,17 +5,17 @@
   <refname>SimpleXMLElement::xpath</refname>
   <refpurpose>Runs XPath query on XML data</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="SimpleXMLElement">
    <modifier>public</modifier> <type class="union"><type>array</type><type>null</type><type>false</type></type><methodname>SimpleXMLElement::xpath</methodname>
    <methodparam><type>string</type><parameter>expression</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    The <literal>xpath</literal> method searches the SimpleXML node for
    children matching the <acronym>XPath</acronym> <parameter>expression</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
     <varlistentry>
      <term><parameter>expression</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An XPath path
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -36,10 +36,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an <type>array</type> of SimpleXMLElement objects on success; or &null; or &false; in
    case of an error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

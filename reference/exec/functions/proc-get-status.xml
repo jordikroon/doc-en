@@ -12,12 +12,12 @@
    <type>array</type><methodname>proc_get_status</methodname>
    <methodparam><type>resource</type><parameter>process</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>proc_get_status</function> fetches data about a
    process opened using <function>proc_open</function>.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   <para>
@@ -25,10 +25,10 @@
     <varlistentry>
      <term><parameter>process</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <function>proc_open</function> <type>resource</type> that will
        be evaluated.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,10 +37,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An <type>array</type> of collected information.
    The returned array contains the following elements:
-  </para>
+  </simpara>
   <para>
   <informaltable>
    <tgroup cols="3">

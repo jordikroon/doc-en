@@ -12,28 +12,28 @@
    <title>SPL Exceptions Class Tree</title>
    <itemizedlist>
     <listitem>
-     <simpara><classname>LogicException</classname> (extends <classname>Exception</classname>)</simpara>
+     <simpara><exceptionname>LogicException</exceptionname> (extends <exceptionname>Exception</exceptionname>)</simpara>
      <itemizedlist>
       <listitem>
-       <simpara><classname>BadFunctionCallException</classname></simpara>
+       <simpara><exceptionname>BadFunctionCallException</exceptionname></simpara>
        <itemizedlist>
-        <listitem><simpara><classname>BadMethodCallException</classname></simpara></listitem>
+        <listitem><simpara><exceptionname>BadMethodCallException</exceptionname></simpara></listitem>
        </itemizedlist>
       </listitem>
-      <listitem><simpara><classname>DomainException</classname></simpara></listitem>
-      <listitem><simpara><classname>InvalidArgumentException</classname></simpara></listitem>
-      <listitem><simpara><classname>LengthException</classname></simpara></listitem>
-      <listitem><simpara><classname>OutOfRangeException</classname></simpara></listitem>
+      <listitem><simpara><exceptionname>DomainException</exceptionname></simpara></listitem>
+      <listitem><simpara><exceptionname>InvalidArgumentException</exceptionname></simpara></listitem>
+      <listitem><simpara><exceptionname>LengthException</exceptionname></simpara></listitem>
+      <listitem><simpara><exceptionname>OutOfRangeException</exceptionname></simpara></listitem>
      </itemizedlist>
     </listitem>
     <listitem>
-     <simpara><classname>RuntimeException</classname> (extends <classname>Exception</classname>)</simpara>
+     <simpara><exceptionname>RuntimeException</exceptionname> (extends <exceptionname>Exception</exceptionname>)</simpara>
      <itemizedlist>
-      <listitem><simpara><classname>OutOfBoundsException</classname></simpara></listitem>
-      <listitem><simpara><classname>OverflowException</classname></simpara></listitem>
-      <listitem><simpara><classname>RangeException</classname></simpara></listitem>
-      <listitem><simpara><classname>UnderflowException</classname></simpara></listitem>
-      <listitem><simpara><classname>UnexpectedValueException</classname></simpara></listitem>
+      <listitem><simpara><exceptionname>OutOfBoundsException</exceptionname></simpara></listitem>
+      <listitem><simpara><exceptionname>OverflowException</exceptionname></simpara></listitem>
+      <listitem><simpara><exceptionname>RangeException</exceptionname></simpara></listitem>
+      <listitem><simpara><exceptionname>UnderflowException</exceptionname></simpara></listitem>
+      <listitem><simpara><exceptionname>UnexpectedValueException</exceptionname></simpara></listitem>
      </itemizedlist>
     </listitem>
    </itemizedlist>

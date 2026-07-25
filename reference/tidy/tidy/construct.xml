@@ -14,9 +14,9 @@
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>encoding</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>useIncludePath</parameter><initializer>&false;</initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Constructs a new <classname>tidy</classname> object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,47 +26,47 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If the <parameter>filename</parameter> parameter is given, this function
        will also read that file and initialize the object with the file,
        acting like <function>tidy_parse_file</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>config</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The config <parameter>config</parameter> can be passed either as an
        array or as a string. If a string is passed, it is interpreted as the
        name of the configuration file, otherwise, it is interpreted as the
        options themselves.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        For an explanation about each option, visit <link xlink:href="&url.tidy.conf;">&url.tidy.conf;</link>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>encoding</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <parameter>encoding</parameter> parameter sets the encoding for
-       input/output documents. The possible values for encoding  are: 
+       input/output documents. The possible values for encoding  are:
        <literal>ascii</literal>, <literal>latin0</literal>, <literal>latin1</literal>,
        <literal>raw</literal>, <literal>utf8</literal>, <literal>iso2022</literal>,
        <literal>mac</literal>, <literal>win1252</literal>, <literal>ibm858</literal>,
        <literal>utf16</literal>, <literal>utf16le</literal>, <literal>utf16be</literal>,
        <literal>big5</literal>, and <literal>shiftjis</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>useIncludePath</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Search for the file in the <link linkend="ini.include-path">include_path</link>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

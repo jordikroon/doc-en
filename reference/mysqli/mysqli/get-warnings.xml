@@ -9,12 +9,12 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="mysqli">
    <modifier>public</modifier> <type class="union"><type>mysqli_warning</type><type>false</type></type><methodname>mysqli::get_warnings</methodname>
    <void/>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type class="union"><type>mysqli_warning</type><type>false</type></type><methodname>mysqli_get_warnings</methodname>
    <methodparam><type>mysqli</type><parameter>mysql</parameter></methodparam>
@@ -60,7 +60,7 @@
   &reftitle.examples;
   <example>
    <title>Traversing the linked list to fetch all warnings</title>
-   <para>&style.oop;</para>
+   <simpara>&style.oop;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -81,7 +81,7 @@ if ($mysqli->warning_count > 0) {
 }
 ]]>
    </programlisting>
-   <para>&style.procedural;</para>
+   <simpara>&style.procedural;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

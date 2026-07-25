@@ -10,58 +10,58 @@
   <sect3 xml:id="migration73.new-features.core.heredoc">
    <title>More Flexible Heredoc and Nowdoc Syntax</title>
 
-   <para>
+   <simpara>
     The closing marker for doc strings is no longer required to be followed by a
     semicolon or newline. Additionally the closing marker may be indented, in
     which case the indentation will be stripped from all lines in the doc string.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration73.new-features.core.destruct-reference">
    <title>Array Destructuring supports Reference Assignments</title>
 
-   <para>
+   <simpara>
     Array destructuring now supports reference assignments using the syntax
     <literal>[&amp;$a, [$b, &amp;$c]] = $d</literal>. The same is also supported
     for <function>list</function>.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration73.new-features.core.instanceof-literals">
    <title>Instanceof Operator accepts Literals</title>
 
-   <para>
+   <simpara>
     <literal>instanceof</literal> now allows literals as the first operand, in
     which case the result is always &false;.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration73.new-features.core.compileerror">
    <title>CompileError Exception instead of some Compilation Errors</title>
 
-   <para>
-    A new <classname>CompileError</classname> exception has been added, from
-    which <classname>ParseError</classname> inherits. A small number of
-    compilation errors will now throw a <classname>CompileError</classname>
+   <simpara>
+    A new <exceptionname>CompileError</exceptionname> exception has been added, from
+    which <exceptionname>ParseError</exceptionname> inherits. A small number of
+    compilation errors will now throw a <exceptionname>CompileError</exceptionname>
     instead of generating a fatal error. Currently this only affects compilation
     errors that may be thrown by <function>token_get_all</function> in
     <constant>TOKEN_PARSE</constant> mode, but more errors may be converted in
     the future.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration73.new-features.core.trailing-commas">
    <title>Trailing Commas are allowed in Calls</title>
 
-   <para>
+   <simpara>
     Trailing commas in function and method calls are now allowed.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration73.new-features.core.argon2id">
    <title>Argon2id Support</title>
 
-   <para>
+   <simpara>
     The <option role="configure">--with-password-argon2[=dir]</option> configure
     argument now provides support for both Argon2i and Argon2id hashes in the
     <function>password_hash</function>, <function>password_verify</function>,
@@ -71,7 +71,7 @@
     Support for both Argon2i and Argon2id in the <function>password_*</function>
     functions now requires PHP be linked against libargon2 reference library ≥
     20161029.
-   </para>
+   </simpara>
   </sect3>
 
  </sect2>
@@ -116,10 +116,10 @@
  <sect2 xml:id="migration73.new-features.bc">
   <title>BC Math Functions</title>
 
-  <para>
+  <simpara>
    <function>bcscale</function> can now also be used as getter to retrieve the
    current scale in use.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration73.new-features.ldap">
@@ -193,37 +193,37 @@ mb_strtoupper("Straße");
       <simpara>
        <constant>MB_CASE_UPPER</constant> (used by <function>mb_strtoupper</function>)
       </simpara>
-     </listitem> 
+     </listitem>
      <listitem>
       <simpara>
        <constant>MB_CASE_TITLE</constant>
       </simpara>
-     </listitem> 
+     </listitem>
      <listitem>
       <simpara>
        <constant>MB_CASE_FOLD</constant>
       </simpara>
-     </listitem> 
+     </listitem>
      <listitem>
       <simpara>
        <constant>MB_CASE_LOWER_SIMPLE</constant>
       </simpara>
-     </listitem> 
+     </listitem>
      <listitem>
       <simpara>
        <constant>MB_CASE_UPPER_SIMPLE</constant>
       </simpara>
-     </listitem> 
+     </listitem>
      <listitem>
       <simpara>
        <constant>MB_CASE_TITLE_SIMPLE</constant>
       </simpara>
-     </listitem> 
+     </listitem>
      <listitem>
       <simpara>
        <constant>MB_CASE_FOLD_SIMPLE</constant> (used by case-insensitive operations)
       </simpara>
-     </listitem> 
+     </listitem>
     </itemizedlist>
     Only unconditional, language agnostic full case-mapping is performed.
    </para>
@@ -232,50 +232,50 @@ mb_strtoupper("Straße");
   <sect3 xml:id="migration73.new-features.mbstring.case-insensitive-ops">
    <title>Case-Insensitive String Operations use Case-Folding</title>
 
-   <para>
+   <simpara>
     Case-insensitive string operations now use case-folding instead of case-
     mapping during comparisons. This means that more characters will be
     considered (case insensitively) equal now.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration73.new-features.mbstring.mb-case-title">
    <title>MB_CASE_TITLE performs Title-Case Conversion</title>
 
-   <para>
+   <simpara>
     <function>mb_convert_case</function> with <constant>MB_CASE_TITLE</constant>
     now performs title-case conversion based on the Cased and CaseIgnorable
     derived Unicode properties. In particular this also improves handling of
     quotes and apostrophes.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration73.new-features.mbstring.ucd11">
    <title>Unicode 11 Support</title>
 
-   <para>
+   <simpara>
     The <link linkend="book.mbstring">Multibyte String</link> data tables have
     been updated for Unicode 11.
-   </para> 
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration73.new-features.mbstring.long-strings">
    <title>Long String Support</title>
 
-   <para>
+   <simpara>
     The <link linkend="ref.mbstring">Multibyte String Functions</link> now
     correctly support strings larger than 2GB.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration73.new-features.mbstring.performance">
    <title>Performance Improvements</title>
 
-   <para>
+   <simpara>
     Performance of the <link linkend="book.mbstring">Multibyte String</link>
     extension has been significantly improved across the board. The largest
     improvements are in case conversion functions.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration73.new-features.mbstring.named-captures">
@@ -318,12 +318,12 @@ mb_ereg_replace('\s*(?<word>\w+)\s*', "_\k<word>_\k'word'_", ' foo ');
  <sect2 xml:id="migration73.new-features.realine">
   <title>Readline</title>
 
-  <para>
+  <simpara>
    Support for the <literal>completion_append_character</literal> and
    <literal>completion_suppress_append</literal> options has been added to
    <function>readline_info</function>. These options are only available if PHP
    is linked against libreadline (rather than libedit).
-  </para>
+  </simpara>
  </sect2>
 
 </sect1>

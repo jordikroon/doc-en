@@ -9,10 +9,10 @@
   <!-- {{{ Collator intro -->
   <section xml:id="collator.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Provides string comparison capability with support for appropriate
     locale-sensitive sort orderings.
-   </para>
+   </simpara>
   </section>
   <!-- }}} -->
 

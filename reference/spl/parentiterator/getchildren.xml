@@ -11,9 +11,9 @@
    <modifier>public</modifier> <type>ParentIterator</type><methodname>ParentIterator::getChildren</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get the inner iterator's children contained in a ParentIterator.
-  </para>
+  </simpara>
 
    &warn.undocumented.func;
 
@@ -26,9 +26,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An <type>object</type>.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

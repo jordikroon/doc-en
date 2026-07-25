@@ -11,7 +11,7 @@
    <type>array</type><methodname>date_parse</methodname>
    <methodparam><type>string</type><parameter>datetime</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>date_parse</function> parses the given
    <parameter>datetime</parameter> string according to the same rules as
    <function>strtotime</function> and
@@ -21,14 +21,14 @@
    <function>DateTimeImmutable::__construct</function>), it returns an
    associative array with the information that it could detect in the given
    <parameter>datetime</parameter> string.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If no information about a certain group of elements can be found, these
    array elements will be set to &false; or are missing. If needed for
    constructing a timestamp or <classname>DateTimeImmutable</classname> object from
    the same <parameter>datetime</parameter> string, more fields can be set to
    a non-&false; value. See the examples for cases where that happens.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -38,10 +38,10 @@
     <varlistentry>
      <term><parameter>datetime</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Date/time in format accepted by
        <function>DateTimeImmutable::__construct</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -50,16 +50,16 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns <type>array</type> with information about the parsed date/time.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The returned array has keys for <literal>year</literal>,
    <literal>month</literal>, <literal>day</literal>, <literal>hour</literal>,
    <literal>minute</literal>, <literal>second</literal>,
    <literal>fraction</literal>, and <literal>is_localtime</literal>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If <literal>is_localtime</literal> is present then
    <literal>zone_type</literal> indicates the type of timezone. For type
    <literal>1</literal> (UTC offset) the <literal>zone</literal>,
@@ -68,8 +68,8 @@
    <literal>is_dst</literal> are added; and for type <literal>3</literal>
    (timezone identifier) the <literal>tz_abbr</literal>,
    <literal>tz_id</literal> are added.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If relative time elements are present in the
    <parameter>datetime</parameter> string such as <literal>+3 days</literal>,
    the returned array includes a nested array with the key
@@ -78,41 +78,41 @@
    <literal>hour</literal>, <literal>minute</literal>,
    <literal>second</literal>, and if necessary <literal>weekday</literal>, and
    <literal>weekdays</literal>, depending on the string that was passed in.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The array includes <literal>warning_count</literal> and
    <literal>warnings</literal> fields. The first one indicate how many
    warnings there were.
    The keys of elements <literal>warnings</literal> array indicate the
    position in the given <parameter>datetime</parameter> where the warning
    occurred, with the string value describing the warning itself.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The array also contains <literal>error_count</literal> and
    <literal>errors</literal> fields. The first one indicate how many errors
    were found.
    The keys of elements <literal>errors</literal> array indicate the
    position in the given <parameter>datetime</parameter> where the error
    occurred, with the string value describing the error itself.
-  </para>
+  </simpara>
   <warning>
-   <para>
+   <simpara>
     The number of array elements in the <literal>warnings</literal> and
     <literal>errors</literal> arrays might be less than
     <literal>warning_count</literal> or <literal>error_count</literal> if they
     occurred at the same position.
-   </para>
+   </simpara>
   </warning>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    In case the date/time format has an error, the element 'errors' will
    contain the error messages.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="changelog">
   &reftitle.changelog;
   <informaltable>

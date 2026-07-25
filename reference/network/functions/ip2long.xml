@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="function.ip2long">
+<refentry xml:id="function.ip2long" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>ip2long</refname>
   <refpurpose>Converts a string containing an (IPv4) Internet Protocol dotted address into a long integer</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>int</type><type>false</type></type><methodname>ip2long</methodname>
    <methodparam><type>string</type><parameter>ip</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    The function <function>ip2long</function> generates a long integer
    representation of IPv4 Internet network address from its Internet
-   standard format (dotted string) representation. 
-  </para>
-  <para>
+   standard format (dotted string) representation.
+  </simpara>
+  <simpara>
    <function>ip2long</function> will also work with non-complete IP
    addresses. Read <link xlink:href="&url.ip2long.tech;">&url.ip2long.tech;</link>
    for more info.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -31,9 +31,9 @@
     <varlistentry>
      <term><parameter>ip</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A standard format address.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -42,10 +42,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the long integer or &false; if <parameter>ip</parameter>
    is invalid.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -68,10 +68,10 @@ echo $out;
   <para>
    <example>
     <title>Displaying an IP address</title>
-    <para>
+    <simpara>
      This second example shows how to print a converted address with the
      <function>printf</function> function:
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -95,19 +95,19 @@ if ($long == -1 || $long === FALSE) {
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     Because PHP's <type>int</type> type is signed, and many IP addresses
     will result in negative integers on 32-bit architectures, you need to use
     the "%u" formatter of <function>sprintf</function> or
     <function>printf</function> to get the string representation of the
     unsigned IP address.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     <function>ip2long</function> will return <literal>-1</literal> for the IP
     <literal>255.255.255.255</literal> on 32-bit systems due to the integer value overflowing.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

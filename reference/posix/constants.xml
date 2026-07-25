@@ -6,9 +6,9 @@
  <section xml:id="posix.constants.access">
   <title><function>posix_access</function> constants</title>
   <note>
-   <para>
+   <simpara>
     Please note that some of these constants may not be available on every system.
-   </para>
+   </simpara>
   </note>
   <variablelist>
    <varlistentry xml:id="constant.posix-f-ok">
@@ -61,9 +61,9 @@
  <section xml:id="posix.constants.mknod">
   <title><function>posix_mknod</function> constants</title>
   <note>
-   <para>
+   <simpara>
     Please note that some of them may not be available on your system.
-   </para>
+   </simpara>
   </note>
   <variablelist>
    <varlistentry xml:id="constant.posix-s-ifblk">
@@ -127,17 +127,17 @@
  <section xml:id="posix.constants.setrlimit">
   <title><function>posix_setrlimit</function> constants</title>
   <note>
-   <para>
+   <simpara>
     Please note that some of them may not be available on your system.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     You may wish to read the below notes in conjunction with the manpage for
     <function>setrlimit</function> on your specific operating system, as there
     is variance in how these limits are interpreted, even across operating
     systems that claim to implement POSIX in full.
-   </para>
+   </simpara>
   </note>
   <variablelist>
    <varlistentry xml:id="constant.posix-rlimit-as">

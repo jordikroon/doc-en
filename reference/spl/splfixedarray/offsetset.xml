@@ -5,7 +5,7 @@
   <refname>SplFixedArray::offsetSet</refname>
   <refpurpose>Sets a new value at a specified index</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="SplFixedArray">
@@ -13,11 +13,11 @@
    <methodparam><type>int</type><parameter>index</parameter></methodparam>
    <methodparam><type>mixed</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets the value at the specified <parameter>index</parameter> to <parameter>value</parameter>.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   <para>
@@ -25,38 +25,38 @@
     <varlistentry>
      <term><parameter>index</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The index being set.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The new value for the <parameter>index</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws <classname>RuntimeException</classname> when <parameter>index</parameter> is outside
+  <simpara>
+   Throws <exceptionname>RuntimeException</exceptionname> when <parameter>index</parameter> is outside
    the defined size of the array or when <parameter>index</parameter> cannot be parsed as an integer.
-  </para>
+  </simpara>
  </refsect1>
- 
+
 </refentry>
 <!-- Keep this comment at the end of the file
 Local variables:

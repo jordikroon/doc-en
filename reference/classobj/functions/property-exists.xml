@@ -14,16 +14,16 @@
    <methodparam><type class="union"><type>object</type><type>string</type></type><parameter>object_or_class</parameter></methodparam>
    <methodparam><type>string</type><parameter>property</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function checks if the given <parameter>property</parameter> exists in
    the specified class.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     As opposed with <function>isset</function>,
     <function>property_exists</function> returns &true; even if the property
     has the value &null;.
-   </para>
+   </simpara>
   </note>
  </refsect1>
  <refsect1 role="parameters">
@@ -33,17 +33,17 @@
     <varlistentry>
      <term><parameter>object_or_class</parameter></term>
       <listitem>
-       <para>
+       <simpara>
         The class name or an object of the class to test for
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
     <varlistentry>
      <term><parameter>property</parameter></term>
       <listitem>
-       <para>
+       <simpara>
         The name of the property
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
    </variablelist>
@@ -51,9 +51,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the property exists, &false; if it doesn't exist.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -93,14 +93,14 @@ myClass::test();
   &reftitle.notes;
   &note.uses-autoload;
   <note>
-   <para>
+   <simpara>
     The <function>property_exists</function> function cannot detect properties
     that are magically accessible using the <link linkend="language.oop5.overloading.members"><literal>__get</literal></link>
     magic method.
-   </para>
+   </simpara>
   </note>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

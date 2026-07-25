@@ -13,10 +13,10 @@
    <methodparam><type>string</type><parameter>class</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>allow_string</parameter><initializer>&true;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks if the given <parameter>object_or_class</parameter> has the class
    <parameter>class</parameter> as one of its parents or implements it.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -25,26 +25,26 @@
     <varlistentry>
      <term><parameter>object_or_class</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A class name or an object instance. No error is generated if the class does not exist.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>class</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The class name
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>allow_string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If this parameter set to false, string class name as <parameter>object_or_class</parameter>
        is not allowed. This also prevents from calling autoloader if the class doesn't exist.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -52,11 +52,11 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    This function returns &true; if the object <parameter>object_or_class</parameter>,
    belongs to a class which is a subclass of
    <parameter>class</parameter>, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;

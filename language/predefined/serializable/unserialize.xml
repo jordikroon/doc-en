@@ -12,16 +12,16 @@
    <modifier>public</modifier> <type>void</type><methodname>Serializable::unserialize</methodname>
    <methodparam><type>string</type><parameter>data</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Called during unserialization of the object.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     This method acts as the
     <link linkend="language.oop5.decon.constructor">constructor</link> of the object. The
     <link linkend="object.construct">__construct()</link> method will <emphasis>not</emphasis> be called after this
     method.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -32,9 +32,9 @@
     <varlistentry>
      <term><parameter>data</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string representation of the object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -44,9 +44,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The return value from this method is ignored.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

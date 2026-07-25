@@ -14,11 +14,11 @@
    <methodparam><type>string</type><parameter>directory</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>resource</type><type>null</type></type><parameter>context</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  
-  <para>
+
+  <simpara>
    A pseudo-object-oriented mechanism for reading a directory.  The
    given <parameter>directory</parameter> is opened.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,9 +27,9 @@
    <varlistentry>
     <term><parameter>directory</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Directory to open
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
@@ -43,9 +43,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an instance of <classname>Directory</classname>, or &false; in case of error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -75,7 +75,7 @@
   <para>
    <example>
     <title><function>dir</function> example</title>
-    <para>
+    <simpara>
      Please note the fashion in which <function>Directory::read</function>'s
      return value is checked in the example below. We are explicitly
      testing whether the return value is identical to (equal to and of
@@ -83,7 +83,7 @@
      Comparison Operators</link> for more information) &false; since
      otherwise, any directory entry whose name evaluates to &false; will
      stop the loop.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -116,10 +116,10 @@ cli
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     The order in which directory entries are returned by the read method is
     system-dependent.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 </refentry>

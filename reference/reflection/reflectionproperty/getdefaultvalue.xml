@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>mixed</type><methodname>ReflectionProperty::getDefaultValue</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the implicit or explicitly declared default value for a property.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">

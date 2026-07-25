@@ -14,9 +14,9 @@
    <methodparam><type>int</type><parameter>event</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>pid</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sends a CTRL event to another process in the same process group.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,20 +25,20 @@
    <varlistentry>
     <term><parameter>event</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The <literal>CTRL</literal> event to send;
       either <constant>PHP_WINDOWS_EVENT_CTRL_C</constant>
       or <constant>PHP_WINDOWS_EVENT_CTRL_BREAK</constant>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>pid</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The ID of the process to which to send the event to. If <literal>0</literal>
       is given, the event is sent to all processes of the process group.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -46,21 +46,21 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
   &reftitle.examples;
   <example xml:id="sapi-windows-generate-ctrl-event.example.basic">
    <title>Basic <function>sapi_windows_generate_ctrl_event</function> Usage</title>
-   <para>
+   <simpara>
      This example shows how to pass along <literal>CTRL+BREAK</literal> events to a child
      process. In this case the child process echoes <literal>I'm still alive</literal>
      every second, until the user presses <literal>CTRL+BREAK</literal>, what causes
      only the child process to be terminated.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

@@ -14,10 +14,10 @@
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>retries</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Reopens the specified stream to a new <parameter>mailbox</parameter> on an
    <acronym>IMAP</acronym> or <acronym>NNTP</acronym> server.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -27,10 +27,10 @@
     <varlistentry>
      <term><parameter>mailbox</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The mailbox name, see <function>imap_open</function> for more
        information
-      </para>
+      </simpara>
       &imap.mailboxname.insecure;
      </listitem>
     </varlistentry>
@@ -78,9 +78,9 @@
     <varlistentry>
      <term><parameter>retries</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Number of maximum connect attempts
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -88,9 +88,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the stream is reopened, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

@@ -5,7 +5,7 @@
   <refname>constant</refname>
   <refpurpose>Returns the value of a constant</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -35,9 +35,9 @@
     <varlistentry>
      <term><parameter>name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The constant name.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -46,17 +46,17 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the value of the constant.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   If the constant is not defined, an <classname>Error</classname> exception is thrown.
+  <simpara>
+   If the constant is not defined, an <exceptionname>Error</exceptionname> exception is thrown.
    Prior to PHP 8.0.0, an <constant>E_WARNING</constant> level error was generated in that case.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -74,7 +74,7 @@
       <entry>8.0.0</entry>
       <entry>
        If the constant is not defined, <function>constant</function> now throws an
-       <classname>Error</classname> exception; previously an <constant>E_WARNING</constant>
+       <exceptionname>Error</exceptionname> exception; previously an <constant>E_WARNING</constant>
        was generated, and &null; was returned.
       </entry>
      </row>

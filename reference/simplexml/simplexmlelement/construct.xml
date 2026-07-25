@@ -17,11 +17,11 @@
    <methodparam choice="opt"><type>string</type><parameter>namespaceOrPrefix</parameter><initializer>""</initializer></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>isPrefix</parameter><initializer>&false;</initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Creates a new <classname>SimpleXMLElement</classname> object.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   <para>
@@ -29,53 +29,53 @@
     <varlistentry>
      <term><parameter>data</parameter></term>
      <listitem>
-      <para>
-       A well-formed XML string or the path or URL to an XML document if 
+      <simpara>
+       A well-formed XML string or the path or URL to an XML document if
        <parameter>dataIsURL</parameter> is &true;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>options</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Optionally used to specify <link linkend="libxml.constants">additional
        Libxml parameters</link>, which affect reading of XML documents. Options which affect the
        output of XML documents (e.g. <constant>LIBXML_NOEMPTYTAG</constant>) are silently ignored.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         It may be necessary to pass <constant>LIBXML_PARSEHUGE</constant>
         to be able to process deeply nested XML or very large text nodes.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>dataIsURL</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        By default, <parameter>dataIsURL</parameter> is &false;. Use &true; to
-       specify that <parameter>data</parameter> is a path or URL to an XML 
+       specify that <parameter>data</parameter> is a path or URL to an XML
        document instead of <type>string</type> data.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>namespaceOrPrefix</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Namespace prefix or URI.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>isPrefix</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &true; if <parameter>namespaceOrPrefix</parameter> is a prefix, &false; if it's a URI;
        defaults to &false;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -84,29 +84,29 @@
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    Produces an <constant>E_WARNING</constant> error message for each error
-   found in the XML data and additionally throws an <classname>Exception</classname> if the XML data
+   found in the XML data and additionally throws an <exceptionname>Exception</exceptionname> if the XML data
    could not be parsed.
-  </para>
+  </simpara>
   <tip>
-   <para>
+   <simpara>
     Use <function>libxml_use_internal_errors</function> to suppress all XML
     errors, and <function>libxml_get_errors</function> to iterate over them
     afterwards.
-   </para>
+   </simpara>
   </tip>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
    <note>
-    <para>
+    <simpara>
      Listed examples may include <literal>examples/simplexml-data.php</literal>,
      which refers to the XML string found in the first example
      of the <link linkend="simplexml.examples-basic">basic usage</link> guide.
-    </para>
+    </simpara>
    </note>
    <example>
     <title>Create a SimpleXMLElement object</title>
@@ -146,7 +146,7 @@ echo $sxe->asXML();
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

@@ -14,9 +14,9 @@
    <methodparam><type>int</type><parameter>encoding</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>level</parameter><initializer>-1</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Compress data with the specified encoding.
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -28,27 +28,27 @@
    <varlistentry>
     <term><parameter>data</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The data to compress.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>encoding</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The compression algorithm. Either <constant>ZLIB_ENCODING_RAW</constant>,
       <constant>ZLIB_ENCODING_DEFLATE</constant> or
       <constant>ZLIB_ENCODING_GZIP</constant>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>level</parameter></term>
     <listitem>
-     <para>
-      
-     </para>
+     <simpara>
+
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -56,9 +56,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

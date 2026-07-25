@@ -6,7 +6,7 @@
   <title>Core</title>
   <simplelist>
    <member><classname>Deprecated</classname></member>
-   <member><classname>RequestParseBodyException</classname></member>
+   <member><exceptionname>RequestParseBodyException</exceptionname></member>
   </simplelist>
  </sect2>
 

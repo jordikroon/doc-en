@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.bin2hex">
+<refentry xml:id="function.bin2hex" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>bin2hex</refname>
   <refpurpose>Convert binary data into hexadecimal representation</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>string</type><methodname>bin2hex</methodname>
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns an ASCII string containing the hexadecimal representation
    of <parameter>string</parameter>. The conversion is done byte-wise
    with the high-nibble first.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,9 +26,9 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,9 +37,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the hexadecimal representation of the given string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -68,7 +68,7 @@ string(12) "Hello world!"
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

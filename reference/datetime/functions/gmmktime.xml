@@ -17,19 +17,19 @@
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>day</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>year</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
-   Identical to <function>mktime</function> except the passed parameters represents a 
+  <simpara>
+   Identical to <function>mktime</function> except the passed parameters represents a
    GMT date. <function>gmmktime</function> internally uses <function>mktime</function>
    so only times valid in derived local time can be used.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Like <function>mktime</function>, optional arguments may be left out in
    order from right to left, with any omitted arguments being set to the
    current corresponding GMT value.
-  </para>
+  </simpara>
   <simpara>
    Calling <function>gmmktime</function> without any arguments is not
-   supported, and will result in an <classname>ArgumentCountError</classname>.
+   supported, and will result in an <exceptionname>ArgumentCountError</exceptionname>.
    <function>time</function> can be used to get the current timestamp.
   </simpara>
  </refsect1>
@@ -41,62 +41,62 @@
     <varlistentry>
      <term><parameter>hour</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number of the hour relative to the start of the day determined by
        <parameter>month</parameter>, <parameter>day</parameter> and <parameter>year</parameter>.
        Negative values reference the hour before midnight of the day in question.
        Values greater than 23 reference the appropriate hour in the following day(s).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>minute</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number of the minute relative to the start of the <parameter>hour</parameter>.
        Negative values reference the minute in the previous hour.
        Values greater than 59 reference the appropriate minute in the following hour(s).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>second</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number of seconds relative to the start of the <parameter>minute</parameter>.
        Negative values reference the second in the previous minute.
        Values greater than 59 reference the appropriate second in the following minute(s).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>month</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number of the month relative to the end of the previous year.
        Values 1 to 12 reference the normal calendar months of the year in question.
        Values less than 1 (including negative values) reference the months in the previous year in reverse order, so 0 is December, -1 is November, etc.
        Values greater than 12 reference the appropriate month in the following year(s).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>day</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number of the day relative to the end of the previous month.
        Values 1 to 28, 29, 30 or 31 (depending upon the month) reference the normal days in the relevant month.
        Values less than 1 (including negative values) reference the days in the previous month, so 0 is the last day of the previous month, -1 is the day before that, etc.
        Values greater than the number of days in the relevant month reference the appropriate day in the following month(s).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>year</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The year
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -105,10 +105,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a <type>int</type> Unix timestamp on success, or &false; if the
    timestamp doesn't fit in a PHP integer.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

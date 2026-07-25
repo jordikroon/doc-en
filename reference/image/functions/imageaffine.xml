@@ -14,9 +14,9 @@
    <methodparam><type>array</type><parameter>affine</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>array</type><type>null</type></type><parameter>clip</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -29,17 +29,17 @@
    <varlistentry>
     <term><parameter>affine</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Array with keys 0 to 5.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>clip</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Array with keys "x", "y", "width" and "height"; or &null;.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -47,9 +47,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Return affined image object on success&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

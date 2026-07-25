@@ -65,7 +65,7 @@
 
   <section xml:id="returntypewillchange.seealso">
    &reftitle.seealso;
-   <para><link linkend="language.attributes">Attributes overview</link></para>
+   <simpara><link linkend="language.attributes">Attributes overview</link></simpara>
   </section>
 
  </partintro>

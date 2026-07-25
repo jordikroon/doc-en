@@ -12,10 +12,10 @@
    <methodparam><type>string</type><parameter>headers</parameter></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>default_hostname</parameter><initializer>"UNKNOWN"</initializer></methodparam>
   </methodsynopsis>
-  <para>
-   Gets an object of various header elements, similar to 
+  <simpara>
+   Gets an object of various header elements, similar to
    <function>imap_header</function>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -24,17 +24,17 @@
     <varlistentry>
      <term><parameter>headers</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The parsed headers data
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>default_hostname</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The default host name
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -42,11 +42,11 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an object similar to the one returned by
-   <function>imap_header</function>, except for the flags and other 
+   <function>imap_header</function>, except for the flags and other
    properties that come from the IMAP server.
-   </para>
+   </simpara>
  </refsect1>
  <refsect1 role="seealso">
   &reftitle.seealso;

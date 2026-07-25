@@ -2,11 +2,11 @@
 <!-- $Revision$ -->
 <sect1 xml:id="language.oop5.final" xmlns="http://docbook.org/ns/docbook">
  <title>Final Keyword</title>
- <para>
+ <simpara>
   The final keyword prevents child classes from overriding a method, property, or constant by
   prefixing the definition with <literal>final</literal>. If the class
   itself is being defined final then it cannot be extended.
- </para>
+ </simpara>
  <para>
   <example>
    <title>Final methods example</title>
@@ -17,7 +17,7 @@ class BaseClass {
    public function test() {
        echo "BaseClass::test() called\n";
    }
-   
+
    final public function moreTesting() {
        echo "BaseClass::moreTesting() called\n";
    }
@@ -29,7 +29,7 @@ class ChildClass extends BaseClass {
    }
 }
 // Results in Fatal error: Cannot override final method BaseClass::moreTesting()
-?> 
+?>
 ]]>
    </programlisting>
   </example>
@@ -54,7 +54,7 @@ final class BaseClass {
 class ChildClass extends BaseClass {
 }
 // Results in Fatal error: Class ChildClass may not inherit from final class (BaseClass)
-?> 
+?>
 ]]>
    </programlisting>
   </example>

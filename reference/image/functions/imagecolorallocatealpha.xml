@@ -15,11 +15,11 @@
    <methodparam><type>int</type><parameter>blue</parameter></methodparam>
    <methodparam><type>int</type><parameter>alpha</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>imagecolorallocatealpha</function> behaves identically to
    <function>imagecolorallocate</function> with the addition of the transparency
    parameter <parameter>alpha</parameter>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -29,29 +29,29 @@
     <varlistentry>
      <term><parameter>red</parameter></term>
      <listitem>
-      <para>&gd.value.red;</para>
+      <simpara>&gd.value.red;</simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>green</parameter></term>
      <listitem>
-      <para>&gd.value.green;</para>
+      <simpara>&gd.value.green;</simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>blue</parameter></term>
      <listitem>
-      <para>&gd.value.blue;</para>
+      <simpara>&gd.value.blue;</simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>alpha</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A value between <literal>0</literal> and <literal>127</literal>.
-       <literal>0</literal> indicates completely opaque while 
+       <literal>0</literal> indicates completely opaque while
        <literal>127</literal> indicates completely transparent.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -62,9 +62,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A color identifier or &false; if the allocation failed.
-  </para>
+  </simpara>
   &return.falseproblem;
  </refsect1>
 
@@ -137,12 +137,12 @@ imagepng($image);
   </example>
   <example xml:id="imagecolorallocatealpha.example.convert">
    <title>Convert typical alpha values for use with <function>imagecolorallocatealpha</function></title>
-   <para>
+   <simpara>
     Usually alpha values of <literal>0</literal> designate fully transparent pixels,
     and the alpha channel has 8 bits. To convert such alpha values to be compatible
     with <function>imagecolorallocatealpha</function>, some simple arithmetic is
     sufficient:
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

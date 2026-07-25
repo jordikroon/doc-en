@@ -17,24 +17,24 @@
    <methodparam><type>bool</type><parameter>delete_old_rdn</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>array</type><type>null</type></type><parameter>controls</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Does the same thing as <function>ldap_rename</function> but returns
    an <classname>LDAP\Result</classname> instance to be parsed with <function>ldap_parse_result</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
   &reftitle.parameters;
-  <para>
+  <simpara>
     See <function>ldap_rename</function>
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &ldap.return-result;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

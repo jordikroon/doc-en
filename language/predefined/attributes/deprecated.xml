@@ -48,25 +48,25 @@
     <varlistentry xml:id="deprecated.props.message">
      <term><varname>message</varname></term>
      <listitem>
-      <para>
+      <simpara>
        An optional message explaining the reason for the deprecation and possible replacement functionality.
        Will be included in the emitted deprecation message.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="deprecated.props.since">
      <term><varname>since</varname></term>
      <listitem>
-       <para>
+       <simpara>
         An optional string indicating since when the functionality is deprecated.
         The contents are not validated by PHP and may contain a version number,
         a date or any other value that is considered appropriate.
         Will be included in the emitted deprecation message.
-       </para>
-       <para>
+       </simpara>
+       <simpara>
         Functionality that is part of PHP will use Major.Minor as the <varname>since</varname> value,
         for example <literal>'8.4'</literal>.
-       </para>
+       </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

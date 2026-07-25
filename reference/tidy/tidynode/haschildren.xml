@@ -11,21 +11,21 @@
    <modifier>public</modifier> <type>bool</type><methodname>tidyNode::hasChildren</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Tells if the node has children.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
   &reftitle.parameters;
   &no.function.parameters;
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the node has children, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -40,9 +40,9 @@
 $html = <<< HTML
 <html><head>
 <?php echo '<title>title</title>'; ?>
-<# 
+<#
   /* JSTE code */
-  alert('Hello World'); 
+  alert('Hello World');
 #>
 </head>
 <body>

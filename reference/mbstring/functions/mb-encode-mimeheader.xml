@@ -5,7 +5,7 @@
   <refname>mb_encode_mimeheader</refname>
   <refpurpose>Encode string for MIME header</refpurpose>
  </refnamediv>
-   
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -16,10 +16,10 @@
    <methodparam choice="opt"><type>string</type><parameter>newline</parameter><initializer>"\r\n"</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>indent</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Encodes a given <type>string</type>
    <parameter>string</parameter> by the MIME header encoding scheme.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,64 +29,64 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <type>string</type> being encoded.
        Its encoding should be same as <function>mb_internal_encoding</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>charset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>charset</parameter> specifies the name of the character set
        in which <parameter>string</parameter> is represented in. The default value
        is determined by the current NLS setting (<literal>mbstring.language</literal>).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>transfer_encoding</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>transfer_encoding</parameter> specifies the scheme of MIME
        encoding. It should be either <literal>"B"</literal> (Base64) or
        <literal>"Q"</literal> (Quoted-Printable). Falls back to
        <literal>"B"</literal> if not given.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>newline</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>newline</parameter> specifies the EOL (end-of-line) marker
        with which <function>mb_encode_mimeheader</function> performs
        line-folding (a <link xlink:href="&url.rfc;2822">RFC</link> term,
        the act of breaking a line longer than a certain length into multiple
        lines. The length is currently hard-coded to 74 characters).
        Falls back to <literal>"\r\n"</literal> (CRLF) if not given.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>indent</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Indentation of the first line (number of characters in the header
        before <parameter>string</parameter>).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A converted version of the <type>string</type> represented in ASCII.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -148,11 +148,11 @@ echo $addr;
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     This function isn't designed to break lines at higher-level
     contextual break points (word boundaries, etc.).
     This behaviour may clutter up the original string with unexpected spaces.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

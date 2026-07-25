@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <chapter xml:id="outcontrol.flushing-system-buffers" xmlns="http://docbook.org/ns/docbook">
  <title>Flushing System Buffers</title>
- <para>
+ <simpara>
   PHP provides two related ways
   to flush (send and discard the contents of) system buffers:
   through calling <function>flush</function>
@@ -9,14 +9,14 @@
   with <function>ob_implicit_flush</function>
   or the <link linkend="ini.implicit-flush">implicit_flush</link>
   &php.ini; setting.
- </para>
+ </simpara>
 
  <section>
   <title>Output Flushing Behaviour</title>
-  <para>
+  <simpara>
    With implicit flushing disabled, PHP will flush output only
    when <function>flush</function> is called or when the script ends.
-  </para>
+  </simpara>
   <para>
    With implicit flushing enabled, PHP will attempt to flush
    after every block of code resulting in output.
@@ -78,11 +78,11 @@
 
  <section>
   <title>Limitations</title>
-  <para>
+  <simpara>
    This functionality cannot flush user-level output buffers.
    To use these together, user-level output buffers must be flushed
    before flushing system buffers in order for PHP to produce any output.
-  </para>
+  </simpara>
   <warning>
    <simpara>
     Calling <function>flush</function> or implicit flushing being enabled
@@ -92,7 +92,7 @@
     by sending headers before these handlers can do so.
    </simpara>
   </warning>
-  <para>
+  <simpara>
    Buffering implemented by the underlying software/hardware
    cannot be overridden by PHP and should be taken into account
    when working with PHP's buffer control functions.
@@ -105,7 +105,7 @@
    On consoles that implement line buffering,
    newline characters could be inserted in the appropriate places
    before flushing output.
-  </para>
+  </simpara>
  </section>
 
  <section>

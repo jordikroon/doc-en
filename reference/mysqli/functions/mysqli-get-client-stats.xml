@@ -12,13 +12,13 @@
    <type>array</type><methodname>mysqli_get_client_stats</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns client per-process statistics.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     &mysqli.available.mysqlnd;
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -26,12 +26,12 @@
   &reftitle.parameters;
   &no.function.parameters;
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array with client stats.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

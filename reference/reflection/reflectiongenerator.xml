@@ -10,10 +10,10 @@
 <!-- {{{ ReflectionGenerator intro -->
   <section xml:id="reflectiongenerator.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     The <classname>ReflectionGenerator</classname> class reports
     information about a generator.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

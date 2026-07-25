@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.umask">
+<refentry xml:id="function.umask" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>umask</refname>
   <refpurpose>Changes the current umask</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>int</type><methodname>umask</methodname>
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>mask</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>umask</function> sets PHP's umask to
    <parameter>mask</parameter> &amp; 0777 and returns the old
    umask. When PHP is being used as a server module, the umask
    is restored when each request is finished.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,21 +27,21 @@
     <varlistentry>
      <term><parameter>mask</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The new umask.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   If <parameter>mask</parameter> is &null;, <function>umask</function> 
+  <simpara>
+   If <parameter>mask</parameter> is &null;, <function>umask</function>
    simply returns the current umask otherwise the old umask is returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -92,13 +92,13 @@ if ($old != umask()) {
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     Avoid using this function in multithreaded webservers. It is better to
     change the file permissions with <function>chmod</function> after
     creating the file. Using <function>umask</function> can lead to
     unexpected behavior of concurrently running scripts and the webserver
     itself because they all use the same umask.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

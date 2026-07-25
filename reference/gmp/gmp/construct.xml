@@ -12,9 +12,9 @@
    <methodparam choice="opt"><type class="union"><type>int</type><type>string</type></type><parameter>num</parameter><initializer>0</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>base</parameter><initializer>0</initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Creates a GMP number from an integer or string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">

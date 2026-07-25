@@ -12,10 +12,10 @@
    <modifier>public</modifier> <methodname>SplFileInfo::__construct</methodname>
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Creates a new SplFileInfo object for the file_name specified. The file
    does not need to exist, or be readable.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path to the file.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

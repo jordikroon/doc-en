@@ -12,9 +12,9 @@
    <modifier>public</modifier> <modifier>static</modifier> <type class="union"><type>string</type><type>false</type><type>null</type></type><methodname>IntlChar::getFC_NFKC_Closure</methodname>
    <methodparam><type class="union"><type>int</type><type>string</type></type><parameter>codepoint</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the FC_NFKC_Closure property string for a character.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -31,10 +31,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the FC_NFKC_Closure property string for the <parameter>codepoint</parameter>, or an empty string if there is none.
    Returns &null; or &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

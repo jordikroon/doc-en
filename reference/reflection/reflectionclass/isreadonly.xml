@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>ReflectionClass::isReadOnly</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks if a class is <link linkend="language.oop5.basic.class.readonly">readonly</link>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &true; if a class is readonly, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

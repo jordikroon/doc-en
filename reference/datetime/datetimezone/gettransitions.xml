@@ -8,13 +8,13 @@
  </refnamediv>
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="DateTimeZone">
    <modifier>public</modifier> <type class="union"><type>array</type><type>false</type></type><methodname>DateTimeZone::getTransitions</methodname>
    <methodparam choice="opt"><type>int</type><parameter>timestampBegin</parameter><initializer><constant>PHP_INT_MIN</constant></initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>timestampEnd</parameter><initializer>2147483647</initializer></methodparam>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type class="union"><type>array</type><type>false</type></type><methodname>timezone_transitions_get</methodname>
    <methodparam><type>DateTimeZone</type><parameter>object</parameter></methodparam>
@@ -31,17 +31,17 @@
     <varlistentry>
      <term><parameter>timestampBegin</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Begin timestamp.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>timestampEnd</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        End timestamp.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -50,18 +50,18 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a numerically indexed array of
    transition arrays on success, &return.falseforfailure;. DateTimeZone
    objects wrapping type 1 (UTC offsets) and type 2 (abbreviations) do not
    contain any transitions, and calling this method on them will return
    &false;.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If <parameter>timestampBegin</parameter> is given, the first entry in the
    returned array will contain a transition element at the time of
    <parameter>timestampBegin</parameter>.
-  </para>
+  </simpara>
   <para>
    <table>
     <title>Transition Array Structure</title>
@@ -212,7 +212,7 @@ Array
             [ts] => 1761440400
             [time] => 2025-10-26T01:00:00+00:00
             [offset] => 0
-            [isdst] => 
+            [isdst] =>
             [abbr] => GMT
         )
 

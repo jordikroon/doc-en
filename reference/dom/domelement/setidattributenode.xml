@@ -12,10 +12,10 @@
    <methodparam><type>DOMAttr</type><parameter>attr</parameter></methodparam>
    <methodparam><type>bool</type><parameter>isId</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Declares the attribute specified by <parameter>attr</parameter> to be of
    type ID.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -24,31 +24,31 @@
     <varlistentry>
      <term><parameter>attr</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The attribute node.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>isId</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Set it to &true; if you want <parameter>name</parameter> to be of type
        ID, &false; otherwise.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="errors">
   &reftitle.errors;
   <simpara>
@@ -60,23 +60,23 @@
     <varlistentry>
      <term><constant>DOM_NO_MODIFICATION_ALLOWED_ERR</constant></term>
      <listitem>
-      <para>
+      <simpara>
        Raised if the node is readonly.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><constant>DOM_NOT_FOUND_ERR</constant></term>
      <listitem>
-      <para>
+      <simpara>
        Raised if <parameter>name</parameter> is not an attribute of this element.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

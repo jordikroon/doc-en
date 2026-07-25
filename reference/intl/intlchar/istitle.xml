@@ -12,12 +12,12 @@
    <modifier>public</modifier> <modifier>static</modifier> <type class="union"><type>bool</type><type>null</type></type><methodname>IntlChar::istitle</methodname>
    <methodparam><type class="union"><type>int</type><type>string</type></type><parameter>codepoint</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Determines whether the specified code point is a titlecase letter.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    &true; for general category "Lt" (titlecase letter).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -34,10 +34,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if
    <parameter>codepoint</parameter> is a titlecase letter, &false; if not. Returns &null; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -10,11 +10,11 @@
 
  <refsynopsisdiv>
   <warning>
-   <para>
+   <simpara>
     This function has been <emphasis>DEPRECATED</emphasis> as of PHP 8.1.0.
     Relying on this function is highly discouraged. Use
     <function>date_sun_info</function> instead.
-   </para>
+   </simpara>
   </warning>
  </refsynopsisdiv>
 
@@ -30,10 +30,10 @@
    <methodparam choice="opt"><type class="union"><type>float</type><type>null</type></type><parameter>zenith</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>float</type><type>null</type></type><parameter>utcOffset</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-   <para>
+   <simpara>
     <function>date_sunset</function> returns the sunset time for a given
     day (specified as a <parameter>timestamp</parameter>) and location.
-   </para>
+   </simpara>
   </refsect1>
 
  <refsect1 role="parameters">
@@ -43,10 +43,10 @@
     <varlistentry>
      <term><parameter>timestamp</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <parameter>timestamp</parameter> of the day from which the sunset
        time is taken.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -88,19 +88,19 @@
     <varlistentry>
      <term><parameter>latitude</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Defaults to North, pass in a negative value for South.
        See also: <link linkend="ini.date.default-latitude">date.default_latitude</link>
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>longitude</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Defaults to East, pass in a negative value for West.
        See also: <link linkend="ini.date.default-longitude">date.default_longitude</link>
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -145,12 +145,12 @@
     <varlistentry>
      <term><parameter>utcOffset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Specified in hours.
        The <parameter>utcOffset</parameter> is ignored, if
        <parameter>returnFormat</parameter> is
        <constant>SUNFUNCS_RET_TIMESTAMP</constant>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -159,21 +159,21 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the sunset time in a specified <parameter>returnFormat</parameter> on
    success&return.falseforfailure;. One potential reason for failure is that the
    sun does not set at all, which happens inside the polar circles for part of
    the year.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-   
+
    &date.timezone.errors.description;
- 
+
  </refsect1>
- 
+
  <refsect1 role="changelog">
   &reftitle.changelog;
   <para>

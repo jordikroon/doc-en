@@ -11,11 +11,11 @@
    <type>string</type><methodname>imap_utf8</methodname>
    <methodparam><type>string</type><parameter>mime_encoded_text</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Converts the given <parameter>mime_encoded_text</parameter> to
    UTF-8, if the declared charset is known to libc-client.
    Otherwise the given text is decoded, but not converted to UTF-8.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -24,12 +24,12 @@
     <varlistentry>
      <term><parameter>mime_encoded_text</parameter></term>
      <listitem>
-      <para>
-       A MIME encoded string. MIME encoding method and the UTF-8 
-       specification are described in <link 
+      <simpara>
+       A MIME encoded string. MIME encoding method and the UTF-8
+       specification are described in <link
        xlink:href="&url.rfc;2047">RFC2047</link> and <link
        xlink:href="&url.rfc;2044">RFC2044</link> respectively.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,9 +37,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the decoded string, if possible converted to UTF-8.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -5,18 +5,18 @@
   <refname>posix_setegid</refname>
   <refpurpose>Set the effective GID of the current process</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>bool</type><methodname>posix_setegid</methodname>
    <methodparam><type>int</type><parameter>group_id</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Set the effective group ID of the current process. This is a
    privileged function and needs appropriate privileges (usually
    root) on the system to be able to perform this function.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,9 +26,9 @@
     <varlistentry>
      <term><parameter>group_id</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The group id.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,9 +37,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -47,9 +47,9 @@
   <para>
    <example>
     <title><function>posix_setegid</function> example</title>
-    <para>
+    <simpara>
      This example will print out the effective group id, once changed.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

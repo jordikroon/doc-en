@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>void</type><methodname>SplObjectStorage::unserialize</methodname>
    <methodparam><type>string</type><parameter>data</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Unserializes storage entries and attach them to the current storage.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>data</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The serialized representation of a storage.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,9 +35,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

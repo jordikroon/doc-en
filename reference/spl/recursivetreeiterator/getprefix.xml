@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>string</type><methodname>RecursiveTreeIterator::getPrefix</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the string to place in front of current element
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -27,9 +27,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the string to place in front of current element
-  </para>
+  </simpara>
  </refsect1>
 
 

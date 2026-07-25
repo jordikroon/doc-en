@@ -44,17 +44,17 @@
     <varlistentry>
      <term><parameter>min</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Optional lowest value to be returned (default: 0)
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>max</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Optional highest value to be returned (default: <function>mt_getrandmax</function>)
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -62,10 +62,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A random integer value between <parameter>min</parameter> (or 0)
    and <parameter>max</parameter> (or <function>mt_getrandmax</function>, inclusive).
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="errors">
   &reftitle.errors;
@@ -73,7 +73,7 @@
    <listitem>
     <simpara>
      If <parameter>max</parameter> is less than <parameter>min</parameter>, a
-     <classname>ValueError</classname> will be thrown.
+     <exceptionname>ValueError</exceptionname> will be thrown.
     </simpara>
    </listitem>
   </itemizedlist>
@@ -93,7 +93,7 @@
       <row>
       <entry>8.0.0</entry>
       <entry>
-       A <classname>ValueError</classname> will be thrown if <parameter>max</parameter> is less than <parameter>min</parameter>;
+       A <exceptionname>ValueError</exceptionname> will be thrown if <parameter>max</parameter> is less than <parameter>min</parameter>;
        previously an <constant>E_WARNING</constant> was raised, and the function returned &false;.
       </entry>
      </row>
@@ -150,13 +150,13 @@ echo mt_rand(5, 15), "\n";
  <refsect1 role="notes">
   &reftitle.notes;
   <warning>
-   <para>
+   <simpara>
     <parameter>min</parameter> <parameter>max</parameter> range must
     be within the range <function>mt_getrandmax</function>. i.e. (<parameter>max</parameter> -
     <parameter>min</parameter>) &lt;= <function>mt_getrandmax</function>
     Otherwise, <function>mt_rand</function> may return poorer random numbers
     than it should.
-   </para>
+   </simpara>
   </warning>
  </refsect1>
  <refsect1 role="seealso">

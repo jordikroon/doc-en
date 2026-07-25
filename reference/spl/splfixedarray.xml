@@ -3,25 +3,25 @@
 <reference xml:id="class.splfixedarray" role="class" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
  <title>The SplFixedArray class</title>
  <titleabbrev>SplFixedArray</titleabbrev>
- 
+
  <partintro>
- 
+
 <!-- {{{ splfixedarray intro -->
   <section xml:id="splfixedarray.intro">
    &reftitle.intro;
-   <para>
-    The SplFixedArray class provides the main functionalities of array. The 
-    main difference between a SplFixedArray and a normal PHP array is that 
-    the SplFixedArray must be resized manually and allows only integers within 
+   <simpara>
+    The SplFixedArray class provides the main functionalities of array. The
+    main difference between a SplFixedArray and a normal PHP array is that
+    the SplFixedArray must be resized manually and allows only integers within
     the range as indexes. The advantage is that it uses less memory than
     a standard <type>array</type>.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
- 
+
   <section xml:id="splfixedarray.synopsis">
    &reftitle.classsynopsis;
- 
+
 <!-- {{{ Synopsis -->
    <classsynopsis class="class">
     <ooclass>
@@ -49,7 +49,7 @@
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.splfixedarray')/db:refentry/db:refsect1[@role='description']/descendant::db:constructorsynopsis[@role='SplFixedArray'])"/>
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.splfixedarray')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[@role='SplFixedArray'])"/>
    </classsynopsis>
- 
+
   </section>
 
   <section role="changelog">
@@ -166,7 +166,7 @@ RuntimeException: Index invalid or out of range
    </para>
   </section>
 <!-- }}} -->
- 
+
 <!-- {{{ splfixedarray properties
   <section xml:id="splfixedarray.props">
    &reftitle.properties;
@@ -180,11 +180,11 @@ RuntimeException: Index invalid or out of range
    </variablelist>
   </section>
 }}} -->
- 
+
  </partintro>
- 
+
  &reference.spl.entities.splfixedarray;
- 
+
 </reference>
 <!-- Keep this comment at the end of the file
 Local variables:

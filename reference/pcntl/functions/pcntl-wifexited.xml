@@ -5,16 +5,16 @@
   <refname>pcntl_wifexited</refname>
   <refpurpose>Checks if status code represents a normal exit</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>bool</type><methodname>pcntl_wifexited</methodname>
    <methodparam><type>int</type><parameter>status</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks whether the child status code represents a normal exit.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -33,10 +33,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the child status code represents a normal exit, &false;
    otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

@@ -13,10 +13,10 @@
    <type>bool</type><methodname>ctype_print</methodname>
    <methodparam><type>mixed</type><parameter>text</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks if all of the characters in the provided <type>string</type>,
    <parameter>text</parameter>, are printable.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -39,13 +39,13 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   Returns &true; if every character in <parameter>text</parameter> 
-   will actually create output (including blanks). Returns &false; if 
-   <parameter>text</parameter> contains control characters or characters 
+  <simpara>
+   Returns &true; if every character in <parameter>text</parameter>
+   will actually create output (including blanks). Returns &false; if
+   <parameter>text</parameter> contains control characters or characters
    that do not have any output or control function at all.
    &ctype.result.empty-string;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

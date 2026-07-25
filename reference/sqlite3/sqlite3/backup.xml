@@ -21,10 +21,10 @@
    or for copying in-memory databases to or from persistent files.
   </para>
   <tip>
-   <para>
+   <simpara>
     As of SQLite 3.27.0 (2019-02-07), it is also possible to use the statement
     <literal>VACUUM INTO 'file.db';</literal> to backup the database to a new file.
-   </para>
+   </simpara>
   </tip>
  </refsect1>
 
@@ -42,21 +42,21 @@
    <varlistentry>
     <term><parameter>sourceDatabase</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The database name is <literal>"main"</literal> for the main database,
       <literal>"temp"</literal> for the temporary database,
       or the name specified after the <literal>AS</literal> keyword
       in an <literal>ATTACH</literal> statement for an attached database.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>destinationDatabase</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Analogous to <parameter>sourceDatabase</parameter>
       but for the <parameter>destination</parameter>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -64,9 +64,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

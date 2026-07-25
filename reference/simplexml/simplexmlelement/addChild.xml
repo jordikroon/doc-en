@@ -15,9 +15,9 @@
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>value</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>namespace</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Adds a child element to the node and returns a SimpleXMLElement of the child.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,29 +27,29 @@
     <varlistentry>
      <term><parameter>qualifiedName</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The name of the child element to add.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If specified, the value of the child element.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Special characters <literal>&lt;</literal> and <literal>&gt;</literal> get escaped
        automatically, <literal>&amp;</literal> must be escaped manually.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>namespace</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If specified, the namespace to which the child element belongs.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -58,21 +58,21 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The <literal>addChild</literal> method returns a <type>SimpleXMLElement</type>
    object representing the child added to the XML node on success; &null; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
    <note>
-    <para>
+    <simpara>
      Listed examples may include <literal>examples/simplexml-data.php</literal>,
      which refers to the XML string found in the first example
      of the <link linkend="simplexml.examples-basic">basic usage</link> guide.
-    </para>
+    </simpara>
    </note>
    <example>
     <title>Add attributes and children to a SimpleXML element</title>
@@ -96,7 +96,7 @@ $character->addChild('actor', 'John Doe');
 
 $rating = $movie->addChild('rating', '5');
 $rating->addAttribute('type', 'stars');
- 
+
 echo $sxe->asXML();
 
 ?>

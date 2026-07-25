@@ -3,17 +3,17 @@
 
 <appendix xml:id="classobj.examples">
  &reftitle.examples;
- <para>
+ <simpara>
   In this example, we first define a base class and an extension
   of the class. The base class describes a general vegetable,
   whether it is edible, and what is its color. The subclass
   <varname>Spinach</varname> adds a method to cook it and another to
   find out if it is cooked.
- </para>
+ </simpara>
  <para>
   <example>
    <title>Class Definitions</title>
-   <para><varname>Vegetable</varname></para>
+   <simpara><varname>Vegetable</varname></simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -43,7 +43,7 @@ class Vegetable {
 ?>
 ]]>
    </programlisting>
-   <para><varname>Spinach</varname></para>
+   <simpara><varname>Spinach</varname></simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -72,12 +72,12 @@ class Spinach extends Vegetable {
    </programlisting>
   </example>
  </para>
- <para>
+ <simpara>
  We then instantiate 2 objects from these classes and print out
  information about them, including their class parentage.
  We also define some utility functions, mainly to have a nice printout
  of the variables.
- </para>
+ </simpara>
  <para>
   <example>
    <title>test_script.php</title>
@@ -159,12 +159,12 @@ Object does not belong to a subclass of Spinach
 Object belongs to class Spinach, a subclass of Vegetable
 ]]>
    </screen>
-   <para>
+   <simpara>
     One important thing to note in the example above is that
     the object <varname>$leafy</varname> is an instance of the class
     <classname>Spinach</classname> which is a subclass of
     <classname>Vegetable</classname>.
-   </para>
+   </simpara>
   </example>
  </para>
 </appendix>

@@ -12,11 +12,11 @@
    <type class="union"><type>array</type><type>float</type></type><methodname>gettimeofday</methodname>
    <methodparam choice="opt"><type>bool</type><parameter>as_float</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This is an interface to gettimeofday(2). It returns an
    associative array containing the data returned from the system
    call.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,9 +26,9 @@
     <varlistentry>
      <term><parameter>as_float</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        When set to &true;, a float instead of an array is returned.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,10 +37,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    By default an <type>array</type> is returned. If <parameter>as_float</parameter>
    is set, then a <type>float</type> is returned.
-  </para>
+  </simpara>
   <para>
    Array keys:
    <itemizedlist>

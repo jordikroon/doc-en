@@ -8,34 +8,34 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="IntlCalendar">
    <modifier>public</modifier> <modifier>static</modifier> <type class="union"><type>IntlCalendar</type><type>null</type></type><methodname>IntlCalendar::fromDateTime</methodname>
    <methodparam><type class="union"><type>DateTime</type><type>string</type></type><parameter>datetime</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>locale</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>IntlCalendar</type><type>null</type></type><methodname>intlcal_from_date_time</methodname>
    <methodparam><type class="union"><type>DateTime</type><type>string</type></type><parameter>datetime</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>locale</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Creates an <classname>IntlCalendar</classname> object either from a
    <classname>DateTime</classname> object or from a string from which a
    <classname>DateTime</classname> object can be built.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The new calendar will represent not only the same instant as the
    given <classname>DateTime</classname> (subject to precision loss for dates
    very far into the past or future), but also the same timezone (subject to
    the caveat that different timezone databases will be used, and therefore
    the results may differ).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -44,10 +44,10 @@
    <varlistentry>
     <term><parameter>datetime</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       A <classname>DateTime</classname> object or a <type>string</type> that
       can be passed to <function>DateTime::__construct</function>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -55,11 +55,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The created <classname>IntlCalendar</classname> object or &null; in case of
    failure. If a <type>string</type> is passed, any exception that occurs
    inside the <classname>DateTime</classname> constructor is propagated.
-  </para>
+  </simpara>
  </refsect1>
 
 

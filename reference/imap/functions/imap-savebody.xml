@@ -15,9 +15,9 @@
    <methodparam choice="opt"><type>string</type><parameter>section</parameter><initializer>""</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
-   Saves a part or the whole body of the specified message. 
-  </para>
+  <simpara>
+   Saves a part or the whole body of the specified message.
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -27,27 +27,27 @@
     <varlistentry>
      <term><parameter>file</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The path to the saved file as a string, or a valid file descriptor
        returned by <function>fopen</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>message_num</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The message number
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>section</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The part number. It is a string of integers delimited by period which
        index into a body part list as per the IMAP4 specification
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -82,9 +82,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -103,7 +103,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

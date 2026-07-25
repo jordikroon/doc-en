@@ -8,32 +8,32 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="IntlCalendar">
    <modifier>public</modifier> <modifier>static</modifier> <type class="union"><type>IntlIterator</type><type>false</type></type><methodname>IntlCalendar::getKeywordValuesForLocale</methodname>
    <methodparam><type>string</type><parameter>keyword</parameter></methodparam>
    <methodparam><type>string</type><parameter>locale</parameter></methodparam>
    <methodparam><type>bool</type><parameter>onlyCommon</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>IntlIterator</type><type>false</type></type><methodname>intlcal_get_keyword_values_for_locale</methodname>
    <methodparam><type>string</type><parameter>keyword</parameter></methodparam>
    <methodparam><type>string</type><parameter>locale</parameter></methodparam>
    <methodparam><type>bool</type><parameter>onlyCommon</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    For a given locale key, get the set of values for that key that would result
    in a different behavior. For now, only the <literal>'calendar'</literal>
    keyword is supported.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This function requires ICU 4.2 or later.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -43,26 +43,26 @@
    <varlistentry>
     <term><parameter>keyword</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The locale keyword for which relevant values are to be queried. Only
       <literal>'calendar'</literal> is supported.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>locale</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The locale onto which the keyword/value pair are to be appended.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>onlyCommon</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Whether to show only the values commonly used for the specified locale.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -70,10 +70,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An iterator that yields strings with the locale keyword
    values&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<reference xmlns="http://docbook.org/ns/docbook" xml:id="enum.random-intervalboundary" role="enum">
+<reference xml:id="enum.random-intervalboundary" xmlns="http://docbook.org/ns/docbook" role="enum">
  <title>The Random\IntervalBoundary Enum</title>
  <titleabbrev>Random\IntervalBoundary</titleabbrev>
 

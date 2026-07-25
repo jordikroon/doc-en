@@ -12,9 +12,9 @@
    <modifier>private</modifier> <type>void</type><methodname>ReflectionProperty::__clone</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Clones.
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -27,9 +27,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   
-  </para>
+  <simpara>
+
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

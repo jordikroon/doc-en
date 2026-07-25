@@ -12,13 +12,13 @@
    <type class="union"><type>string</type><type>bool</type></type><methodname>curl_exec</methodname>
    <methodparam><type>CurlHandle</type><parameter>handle</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Execute the given cURL session.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This function should be called after initializing a cURL session and all
-   the options for the session are set. 
-  </para>
+   the options for the session are set.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -32,23 +32,23 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    On success, this function flushes the result directly to the
    <literal>stdout</literal> and returns &true;, &return.falseforfailure;.
    However, if the <constant>CURLOPT_RETURNTRANSFER</constant>
    option is <link linkend="function.curl-setopt">set</link>, it will return
    the result on success, &false; on failure.
-  </para>
+  </simpara>
   &return.falseproblem;
   <note>
-   <para>
+   <simpara>
     Note that response status codes which indicate errors (such as <literal>404
     Not found</literal>) are not regarded as failure.
     <function>curl_getinfo</function> can be used to check for these.
-   </para>
+   </simpara>
   </note>
  </refsect1>
-   
+
  <refsect1 role="changelog">
   &reftitle.changelog;
   <informaltable>
@@ -89,7 +89,7 @@ curl_exec($ch);
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

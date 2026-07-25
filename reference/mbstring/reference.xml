@@ -2,7 +2,7 @@
 <!-- $Revision$ -->
 
  <reference xml:id="ref.mbstring" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <title>Multibyte String &Functions;</title> 
+  <title>Multibyte String &Functions;</title>
 
   <partintro>
     <title>References</title>
@@ -13,20 +13,20 @@
      information regarding these topics.
      <itemizedlist>
       <listitem>
-       <para>
+       <simpara>
         Unicode materials
-       </para>
-       <para>
+       </simpara>
+       <simpara>
         <link xlink:href="&url.unicode;">&url.unicode;</link>
-       </para>
+       </simpara>
       </listitem>
       <listitem>
-       <para>
+       <simpara>
         Japanese/Korean/Chinese character information
-       </para>
-       <para>
+       </simpara>
+       <simpara>
         <link xlink:href="&url.oreilly.cjk-inf;">&url.oreilly.cjk-inf;</link>
-       </para>
+       </simpara>
       </listitem>
      </itemizedlist>
     </para>

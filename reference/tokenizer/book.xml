@@ -8,16 +8,16 @@
 
  <preface xml:id="intro.tokenizer">
   &reftitle.intro;
-  <para>
+  <simpara>
    The tokenizer functions provide an interface to the
    PHP tokenizer embedded in the Zend Engine. Using these
    functions you may write your own PHP source analyzing
    or modification tools without having to deal with the
    language specification at the lexical level.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    See also the <link linkend="tokens">appendix about tokens</link>.
-  </para>
+  </simpara>
  </preface>
 
  &reference.tokenizer.setup;

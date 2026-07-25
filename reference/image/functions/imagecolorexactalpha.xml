@@ -15,10 +15,10 @@
    <methodparam><type>int</type><parameter>blue</parameter></methodparam>
    <methodparam><type>int</type><parameter>alpha</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the index of the specified color+alpha in the palette of the
    image.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -28,29 +28,29 @@
     <varlistentry>
      <term><parameter>red</parameter></term>
      <listitem>
-      <para>&gd.value.red;</para>
+      <simpara>&gd.value.red;</simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>green</parameter></term>
      <listitem>
-      <para>&gd.value.green;</para>
+      <simpara>&gd.value.green;</simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>blue</parameter></term>
      <listitem>
-      <para>&gd.value.blue;</para>
+      <simpara>&gd.value.blue;</simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>alpha</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A value between <literal>0</literal> and <literal>127</literal>.
-       <literal>0</literal> indicates completely opaque while 
+       <literal>0</literal> indicates completely opaque while
        <literal>127</literal> indicates completely transparent.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -60,10 +60,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the index of the specified color+alpha in the palette of the
    image, or -1 if the color does not exist in the image's palette.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

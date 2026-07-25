@@ -19,9 +19,9 @@
    </simpara>
   </warning>
 
-  <para>
+  <simpara>
    This method checks whether the current <classname>SimpleXMLElement</classname> element has sub-elements.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -31,9 +31,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &true; if the current element has sub-elements, otherwise &false;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

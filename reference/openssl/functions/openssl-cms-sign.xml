@@ -19,9 +19,9 @@
    <methodparam choice="opt"><type>int</type><parameter>encoding</parameter><initializer><constant>OPENSSL_ENCODING_SMIME</constant></initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>untrusted_certificates_filename</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function signs a file with an X.509 certificate and key.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,68 +30,68 @@
    <varlistentry>
     <term><parameter>input_filename</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The name of the file to be signed.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>output_filename</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The name of the file to deposit the results.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>certificate</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The signing certificate.
       See <link linkend="openssl.certparams">Key/Certificate parameters</link> for a list of valid values.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>private_key</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The key associated with <parameter>certificate</parameter>.
       See <link linkend="openssl.certparams">Key/Certificate parameters</link> for a list of valid values.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>headers</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       An array of headers to be included in S/MIME output.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>flags</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Flags to be passed to <function>cms_sign</function>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>encoding</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The encoding of the output file. One of <constant>OPENSSL_ENCODING_SMIME</constant>,
       <constant>OPENSSL_ENCODING_DER</constant> or <constant>OPENSSL_ENCODING_PEM</constant>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>untrusted_certificates_filename</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Intermediate certificates to be included in the signature.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -99,9 +99,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

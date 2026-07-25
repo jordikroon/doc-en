@@ -15,22 +15,22 @@
    <methodparam><type>string</type><parameter>statement_name</parameter></methodparam>
    <methodparam><type>array</type><parameter>params</parameter></methodparam>
   </methodsynopsis>
-  <para>
-    Sends a request to execute a prepared statement with given parameters, and 
+  <simpara>
+    Sends a request to execute a prepared statement with given parameters, and
     waits for the result.
-  </para>
-  <para>
-    <function>pg_execute</function> is like <function>pg_query_params</function>, 
-    but the command to be executed is 
-    specified by naming a previously-prepared statement, instead of giving a 
-    query string. This feature allows commands that will be used repeatedly to 
-    be parsed and planned just once, rather than each time they are executed. 
-    The statement must have been prepared previously in the current session. 
-  </para>
-  <para>
-    The parameters are identical to <function>pg_query_params</function>, except that the name of a 
+  </simpara>
+  <simpara>
+    <function>pg_execute</function> is like <function>pg_query_params</function>,
+    but the command to be executed is
+    specified by naming a previously-prepared statement, instead of giving a
+    query string. This feature allows commands that will be used repeatedly to
+    be parsed and planned just once, rather than each time they are executed.
+    The statement must have been prepared previously in the current session.
+  </simpara>
+  <simpara>
+    The parameters are identical to <function>pg_query_params</function>, except that the name of a
     prepared statement is given instead of a query string.
-  </para>
+  </simpara>
  </refsect1>
 
 <refsect1 role="parameters">
@@ -46,27 +46,27 @@
     <varlistentry>
      <term><parameter>statement_name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The name of the prepared statement to execute.  if
        "" is specified, then the unnamed statement is executed.  The name must have
-       been previously prepared using <function>pg_prepare</function>, 
+       been previously prepared using <function>pg_prepare</function>,
        <function>pg_send_prepare</function> or a <literal>PREPARE</literal> SQL
        command.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>params</parameter></term>
      <listitem>
-      <para>
+      <simpara>
         An array of parameter values to substitute for the $1, $2, etc. placeholders
         in the original prepared query string.  The number of elements in the array
         must match the number of placeholders.
-      </para>
+      </simpara>
       <warning>
-       <para>
+       <simpara>
         Elements are converted to strings by calling this function.
-       </para>
+       </simpara>
       </warning>
      </listitem>
     </varlistentry>
@@ -76,9 +76,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
     An <classname>PgSql\Result</classname> instance on success, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -98,7 +98,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -126,7 +126,7 @@ $result = pg_execute($dbconn, "my_query", array("Clothes Clothes Clothes"));
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

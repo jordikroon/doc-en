@@ -4,14 +4,14 @@
 <reference xml:id="wrappers" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <title>Supported Protocols and Wrappers</title>
  <partintro>
-  <para>
+  <simpara>
    PHP comes with many built-in wrappers for various URL-style protocols
    for use with the filesystem functions such as <function>fopen</function>,
    <function>copy</function>, <function>file_exists</function> and
    <function>filesize</function>.
    In addition to these wrappers, it is possible to register custom wrappers
    using the <function>stream_wrapper_register</function> function.
-  </para>
+  </simpara>
   <note>
    <simpara>
     The URL syntax used to describe a wrapper only supports the
@@ -20,7 +20,7 @@
    </simpara>
   </note>
  </partintro>
- 
+
  &language.wrappers.file;
  &language.wrappers.http;
  &language.wrappers.ftp;
@@ -33,7 +33,7 @@
  &language.wrappers.rar;
  &language.wrappers.audio;
  &language.wrappers.expect;
- 
+
 </reference>
 
 <!-- Keep this comment at the end of the file

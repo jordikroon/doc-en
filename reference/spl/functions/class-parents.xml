@@ -14,10 +14,10 @@
    <methodparam><type class="union"><type>object</type><type>string</type></type><parameter>object_or_class</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>autoload</parameter><initializer>&true;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function returns an array with the name of the parent classes of
    the given <parameter>object_or_class</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,18 +27,18 @@
     <varlistentry>
      <term><parameter>object_or_class</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An object (class instance) or a string (class name).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>autoload</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Whether to <link linkend="language.oop5.autoload">autoload</link>
        if not already loaded.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -47,9 +47,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An array on success, or &false; when the given class doesn't exist.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

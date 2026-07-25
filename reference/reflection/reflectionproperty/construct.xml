@@ -22,17 +22,17 @@
     <varlistentry>
      <term><parameter>class</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Either a string containing the name of the class to reflect, or an object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>property</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The name of the property being reflected.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -41,10 +41,10 @@
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    Trying to get or set private or protected class property's values
    will result in an exception being thrown.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

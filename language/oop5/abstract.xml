@@ -3,7 +3,7 @@
  <sect1 xml:id="language.oop5.abstract" xmlns="http://docbook.org/ns/docbook">
   <title>Class Abstraction</title>
 
-  <para>
+  <simpara>
    PHP has abstract classes, methods, and properties.
    Classes defined as abstract cannot be instantiated, and any class that
    contains at least one abstract method or property must also be abstract.
@@ -11,15 +11,15 @@
    they cannot define the implementation. Properties defined as abstract
    may declare a requirement for <literal>get</literal> or <literal>set</literal>
    behavior, and may provide an implementation for one, but not both, operations.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    When inheriting from an abstract class, all methods marked abstract in
    the parent's class declaration must be defined by the child class,
    and follow the usual
    <link linkend="language.oop5.inheritance">inheritance</link> and
    <link linkend="language.oop.lsp">signature compatibility</link> rules.
-  </para>
+  </simpara>
 
   <simpara>
    As of PHP 8.4, an abstract class may declare an abstract property, either public or protected.

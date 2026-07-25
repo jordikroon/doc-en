@@ -14,10 +14,10 @@
    <methodparam choice="opt"><type class="union"><type>DOMNode</type><type>null</type></type><parameter>node</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>options</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
-   Creates an XML document from the DOM representation. This function is usually 
-   called after building a new dom document from scratch as in the example below. 
-  </para>
+  <simpara>
+   Creates an XML document from the DOM representation. This function is usually
+   called after building a new dom document from scratch as in the example below.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,10 +27,10 @@
     <varlistentry>
      <term><parameter>node</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Use this parameter to output only a specific node without XML declaration
        rather than the entire document.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -45,9 +45,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the XML, or &false; if an error occurred.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="errors">
   &reftitle.errors;
@@ -60,9 +60,9 @@
     <varlistentry>
      <term><constant>DOM_WRONG_DOCUMENT_ERR</constant></term>
      <listitem>
-      <para>
+      <simpara>
        Raised if <parameter>node</parameter> is from another document.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

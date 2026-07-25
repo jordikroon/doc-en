@@ -5,7 +5,7 @@
   <refname>time_nanosleep</refname>
   <refpurpose>Delay for a number of seconds and nanoseconds</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,10 +13,10 @@
    <methodparam><type>int</type><parameter>seconds</parameter></methodparam>
    <methodparam><type>int</type><parameter>nanoseconds</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Delays program execution for the given number of
    <parameter>seconds</parameter> and <parameter>nanoseconds</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,17 +26,17 @@
     <varlistentry>
      <term><parameter>seconds</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Must be a non-negative integer.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>nanoseconds</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Must be a non-negative integer less than 1 billion.
-      </para>
+      </simpara>
       <note>
        <simpara>
         On Windows, the system may sleep longer that the given number of nanoseconds,
@@ -51,9 +51,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
   <para>
    If the delay was interrupted by a signal, an associative array will be
    returned with the components:

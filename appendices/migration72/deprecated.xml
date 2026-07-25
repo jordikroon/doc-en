@@ -7,13 +7,13 @@
  <sect2 xml:id="migration72.deprecated.unquoted-strings">
   <title>Unquoted strings</title>
 
-  <para>
+  <simpara>
    Unquoted strings that are non-existent global constants are taken to be
    strings of themselves. This behaviour used to emit an
    <constant>E_NOTICE</constant>, but will now emit an
    <constant>E_WARNING</constant>. In the next major version of PHP, an
-   <classname>Error</classname> exception will be thrown instead.
-  </para>
+   <exceptionname>Error</exceptionname> exception will be thrown instead.
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -34,143 +34,143 @@ string(11) "NONEXISTENT"
  <sect2 xml:id="migration72.deprecated.png2wbmp-jpeg2wbmp">
   <title><function>png2wbmp</function> and <function>jpeg2wbmp</function></title>
 
-  <para>
+  <simpara>
    The <function>png2wbmp</function> and <function>jpeg2wbmp</function>
    functions from the GD extension have now been deprecated and will be removed
    in the next major version of PHP.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration72.deprecated.INTL_IDNA_VARIANT_2003-variant">
   <title><constant>INTL_IDNA_VARIANT_2003</constant> variant</title>
 
-  <para>
+  <simpara>
    The Intl extension has deprecated the
    <constant>INTL_IDNA_VARIANT_2003</constant> variant, which is currently
    being used as the default for <function>idn_to_ascii</function> and
    <function>idn_to_utf8</function>. PHP 7.4 will see these defaults changed to
    <constant>INTL_IDNA_VARIANT_UTS46</constant>, and the next major version of
    PHP will remove <constant>INTL_IDNA_VARIANT_2003</constant> altogether.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration72.deprecated.__autoload-method">
   <title><function>__autoload</function> method</title>
 
-  <para>
+  <simpara>
    The <function>__autoload</function> method has been deprecated because it is
    inferior to <function>spl_autoload_register</function> (due to it not being
    able to chain autoloaders), and there is no interoperability between the two
    autoloading styles.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration72.deprecated.track_errors-and-php_errormsg">
   <title><parameter>track_errors</parameter> ini setting and <literal>$php_errormsg</literal> variable</title>
 
-  <para>
+  <simpara>
    When the <parameter>track_errors</parameter> ini setting is enabled, a
    <literal>$php_errormsg</literal> variable is created in the local scope when
    a non-fatal error occurs. Given that the preferred way of retrieving such
    error information is by using <function>error_get_last</function>, this
    feature has been deprecated.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration72.deprecated.create_function-function">
   <title><function>create_function</function> function</title>
 
-  <para>
+  <simpara>
    Given the security issues of this function (being a thin wrapper around
    <function>eval</function>), this dated function has now been deprecated.
    The preferred alternative is to use <link linkend="functions.anonymous">anonymous functions</link>.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration72.deprecated.mbstringfunc_overload-ini-setting">
   <title><parameter>mbstring.func_overload</parameter> ini setting</title>
 
-  <para>
+  <simpara>
    Given the interoperability problems of string-based functions being used in
    environments with this setting enabled, it has now been deprecated.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration72.deprecated.unset-cast">
   <title><literal>(unset)</literal> cast</title>
 
-  <para>
+  <simpara>
    Casting any expression to this type will always result in &null;, and so
    this superfluous casting type has now been deprecated.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration72.deprecated.parse_str-no-second-arg">
   <title><function>parse_str</function> without a second argument</title>
 
-  <para>
+  <simpara>
    Without the second argument to <function>parse_str</function>, the query
    string parameters would populate the local symbol table.
    Given the security implications of this, using
    <function>parse_str</function> without a second argument has now been
    deprecated. The function should always be used with two arguments, as the
    second argument causes the query string to be parsed into an array.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration72.deprecated.gmp_random-function">
   <title><function>gmp_random</function> function</title>
 
-  <para>
+  <simpara>
    This function generates a random number based upon a range that is
    calculated by an unexposed, platform-specific limb size. Because of this,
    the function has now been deprecated. The preferred way of generating a
    random number using the GMP extension is by
    <function>gmp_random_bits</function> and
    <function>gmp_random_range</function>.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration72.deprecated.each-function">
   <title><function>each</function> function</title>
 
-  <para>
+  <simpara>
    This function is far slower at iteration than a normal
    <literal>foreach</literal>, and causes implementation issues for some
    language changes. It has therefore been deprecated.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration72.deprecated.assert-string-arg">
   <title><function>assert</function> with a string argument</title>
 
-  <para>
+  <simpara>
    Using <function>assert</function> with a string argument required the string
    to be <function>eval</function>'ed. Given the potential for remote code
    execution, using <function>assert</function> with a string argument has now
    been deprecated in favour of using boolean expressions.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration72.deprecated.errcontext-arg-of-error-handlers">
   <title><literal>$errcontext</literal> argument of error handlers</title>
 
-  <para>
+  <simpara>
    The <literal>$errcontext</literal> argument contains all local variables of
    the error site. Given its rare usage, and the problems it causes with
    internal optimisations, it has now been deprecated.
    Instead, a debugger should be used to retrieve
    information on local variables at the error site.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration72.deprecated.read_exif_data-function">
   <title><function>read_exif_data</function> function</title>
 
-  <para>
+  <simpara>
    The <function>read_exif_data</function> alias has been deprecated.
    The <function>exif_read_data</function> function should be used instead.
-  </para>
+  </simpara>
  </sect2>
 
 </sect1>

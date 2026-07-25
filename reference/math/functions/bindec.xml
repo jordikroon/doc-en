@@ -11,21 +11,21 @@
     <type class="union"><type>int</type><type>float</type></type><methodname>bindec</methodname>
     <methodparam><type>string</type><parameter>binary_string</parameter></methodparam>
    </methodsynopsis>
-  <para>
+  <simpara>
    Returns the decimal equivalent of the binary number represented by
    the <parameter>binary_string</parameter> argument.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    <function>bindec</function> converts a binary number to an
    <type>int</type> or, if needed for size reasons, <type>float</type>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    <function>bindec</function> interprets all
    <parameter>binary_string</parameter> values as unsigned
    integers. This is because <function>bindec</function> sees
    the most significant bit as another order of magnitude
    rather than as the sign bit.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -34,27 +34,27 @@
     <varlistentry>
      <term><parameter>binary_string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The binary string to convert.
        Any invalid characters in <parameter>binary_string</parameter> are silently ignored.
        As of PHP 7.4.0 supplying any invalid characters is deprecated.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
   <warning>
-   <para>
+   <simpara>
     The parameter must be a string.
     Using other data types will produce unexpected results.
-   </para>
+   </simpara>
   </warning>
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The decimal value of <parameter>binary_string</parameter>
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -216,11 +216,11 @@ NOTE:         interpreted to be the largest unsigned integer
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     The function can convert numbers that are too large to fit into the platforms
     <type>int</type> type, larger values are returned as <type>float</type> in
     that case.
-   </para>
+   </simpara>
   </note>
  </refsect1>
  <refsect1 role="seealso">

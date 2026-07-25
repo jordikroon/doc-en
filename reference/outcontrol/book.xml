@@ -8,7 +8,7 @@
 
  <preface xml:id="intro.outcontrol">
   &reftitle.intro;
-  <para>
+  <simpara>
    The Output Control functions allow you to control when output is
    sent from the script. This can be useful in several different
    situations, especially if you need to send headers to the browser
@@ -17,7 +17,7 @@
    <function>header</function> or <function>setcookie</function>,
    only functions such as <function>echo</function> and data between
    blocks of PHP code.
-  </para>
+  </simpara>
  </preface>
 
  &reference.outcontrol.setup;

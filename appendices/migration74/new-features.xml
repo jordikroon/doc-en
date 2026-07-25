@@ -168,21 +168,21 @@ $fruits = ['banana', 'orange', ...$parts, 'watermelon'];
   <sect3 xml:id="migration74.new-features.core.weakreference">
    <title>Weak references</title>
 
-   <para>
+   <simpara>
     <link linkend="class.weakreference">Weak references</link> allow the programmer to retain a reference to an object
     that does not prevent the object from being destroyed.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration74.new-features.core.tostring-exceptions">
    <title>Allow exceptions from __toString()</title>
 
-   <para>
+   <simpara>
     Throwing exceptions from <link linkend="object.tostring">__toString()</link>
     is now permitted. Previously this resulted in a fatal error. Existing
     recoverable fatal errors in string conversions have been converted to
-    <classname>Error</classname> exceptions.
-   </para>
+    <exceptionname>Error</exceptionname> exceptions.
+   </simpara>
   </sect3>
 
  </sect2>
@@ -190,95 +190,95 @@ $fruits = ['banana', 'orange', ...$parts, 'watermelon'];
  <sect2 xml:id="migration74.new-features.curl">
   <title>CURL</title>
 
-  <para>
+  <simpara>
    <classname>CURLFile</classname> now supports stream wrappers in addition
    to plain file names, if the extension has been built against libcurl &gt;= 7.56.0.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration74.new-features.filter">
   <title>Filter</title>
 
-  <para>
+  <simpara>
    The <constant>FILTER_VALIDATE_FLOAT</constant> filter now supports the
    <literal>min_range</literal> and <literal>max_range</literal>
    options, with the same semantics as <constant>FILTER_VALIDATE_INT</constant>.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration74.new-features.ffi">
   <title>FFI</title>
 
-  <para>
+  <simpara>
    FFI is a new extension, which provides a simple way to call
    native functions, access native variables, and create/access
    data structures defined in C libraries.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration74.new-features.gd">
   <title>GD</title>
 
-  <para>
+  <simpara>
    Added the <constant>IMG_FILTER_SCATTER</constant> image filter
    to apply a scatter filter to images.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration74.new-features.hash">
   <title>Hash</title>
 
-  <para>
+  <simpara>
    Added <literal>crc32c</literal> hash using Castagnoli's polynomial.
    This CRC32 variant is used by storage systems, such as
    iSCSI, SCTP, Btrfs and ext4.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration74.new-features.mbstring">
   <title>Multibyte String</title>
 
-  <para>
+  <simpara>
    Added the <function>mb_str_split</function> function, which provides
    the same functionality as <function>str_split</function>, but operating
    on code points rather than bytes.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration74.new-features.opcache">
   <title>OPcache</title>
 
-  <para>
+  <simpara>
    <link linkend="opcache.preloading">Support for preloading code</link> has been added.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration74.new-features.pcre">
   <title>Regular Expressions (Perl-Compatible)</title>
 
-  <para>
+  <simpara>
    The <function>preg_replace_callback</function> and <function>preg_replace_callback_array</function>
    functions now accept an additional <parameter>flags</parameter> argument, with support for the
    <constant>PREG_OFFSET_CAPTURE</constant> and <constant>PREG_UNMATCHED_AS_NULL</constant> flags.
    This influences the format of the matches array passed to the callback function.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration74.new-features.pdo">
   <title>PDO</title>
 
-  <para>
+  <simpara>
    The username and password can now be specified as part of the PDO DSN for
    the mysql, mssql, sybase, dblib, firebird and oci drivers. Previously this
    was only supported by the pgsql driver. If a username/password is specified
    both in the constructor and the DSN, the constructor takes precedence.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    It is now possible to escape question marks in SQL queries to avoid them
    being interpreted as parameter placeholders. Writing <literal>??</literal>
    allows sending a single question mark to the database and e.g. use the
    PostgreSQL JSON key exists (<literal>?</literal>) operator.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration74.new-features.pdo_oci">
@@ -292,16 +292,16 @@ $fruits = ['banana', 'orange', ...$parts, 'watermelon'];
  <sect2 xml:id="migration74.new-features.pdo_sqlite">
   <title>PDO_SQLite</title>
 
-  <para>
+  <simpara>
    <literal>PDOStatement::getAttribute(PDO::SQLITE_ATTR_READONLY_STATEMENT)</literal>
    allows checking whether the statement is read-only, i.e. if it doesn't modify
    the database.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    <literal>PDO::setAttribute(PDO::SQLITE_ATTR_EXTENDED_RESULT_CODES, true)</literal>
    enables the use of SQLite3 extended result codes in <function>PDO::errorInfo</function>
    and <function>PDOStatement::errorInfo</function>.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration74.new-features.sqlite3">
@@ -323,11 +323,11 @@ $fruits = ['banana', 'orange', ...$parts, 'watermelon'];
 
   <sect3 xml:id="migration74.new-features.standard.strip-tags">
    <title>strip_tags() with array of tag names</title>
-   <para>
+   <simpara>
     <function>strip_tags</function> now also accepts an array of allowed tags:
     instead of <literal>strip_tags($str, '&lt;a&gt;&lt;p&gt;')</literal>
     you can now write <literal>strip_tags($str, ['a', 'p'])</literal>.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration74.new-features.standard.magic-serialize">
@@ -361,11 +361,11 @@ public function __unserialize(array $data): void
 
   <sect3 xml:id="migration74.new-features.standard.array-merge-no-args">
    <title>Array merge functions without arguments</title>
-   <para>
+   <simpara>
     <function>array_merge</function> and <function>array_merge_recursive</function>
     may now be called without any arguments, in which case they will return an empty array.
     This is useful in conjunction with the spread operator, e.g. <literal>array_merge(...$arrays)</literal>.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration74.new-features.standard.proc-open">
@@ -405,10 +405,10 @@ proc_open($cmd, [1 => ['pipe', 'w'], 2 => ['null']], $pipes);
 
   <sect3 xml:id="migration74.new-features.standard.sodium-argon-hash">
    <title>argon2i(d) without libargon</title>
-   <para>
+   <simpara>
     <function>password_hash</function> now has the argon2i and argon2id implementations
     from the sodium extension when PHP is built without libargon.
-   </para>
+   </simpara>
   </sect3>
 
  </sect2>

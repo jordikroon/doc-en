@@ -14,10 +14,10 @@
    <methodparam><type>string</type><parameter>section</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
-   Fetch of a particular section of the body of the specified messages. 
+  <simpara>
+   Fetch of a particular section of the body of the specified messages.
    Body parts are not decoded by this function.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -27,18 +27,18 @@
     <varlistentry>
      <term><parameter>message_num</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The message number
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>section</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The part number. It is a string of integers delimited by period which
        index into a body part list as per the IMAP4 specification
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -73,10 +73,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a particular section of the body of the specified messages as a
    text string, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -95,7 +95,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

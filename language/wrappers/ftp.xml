@@ -10,11 +10,11 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    Allows read access to existing files and creation of new files
    via FTP.  If the server does not support passive mode ftp, the
    connection will fail.
-  </para>
+  </simpara>
   <simpara>
    You can open files for either reading or writing, but not both
    simultaneously.  If the remote file already exists on the ftp
@@ -109,10 +109,10 @@
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     FTPS is only supported when the <link linkend="book.openssl">openssl</link>
     extension is enabled.
-   </para>
+   </simpara>
    <simpara>
     If the server does not support SSL, then the connection falls back
     to regular unencrypted ftp.

@@ -13,12 +13,12 @@
    <methodparam><type class="union"><type>callable</type><type>null</type></type><parameter>handler</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>add</parameter><initializer>&true;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets or removes a <literal>CTRL</literal> event handler, which allows Windows
    CLI processes to intercept or ignore <literal>CTRL+C</literal> and
    <literal>CTRL+BREAK</literal> events. Note that in multithreaded environments,
    this is only possible when called from the main thread.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -74,9 +74,9 @@
    <varlistentry>
     <term><parameter>add</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       If &true;, the handler is set. If &false;, the handler is removed.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -84,18 +84,18 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
   &reftitle.examples;
   <example xml:id="sapi-windows-set-ctrl-handler.example.basic">
    <title>Basic <function>sapi_windows_set_ctrl_handler</function> Usage</title>
-   <para>
+   <simpara>
      This example shows how to intercept <literal>CTRL</literal> events.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

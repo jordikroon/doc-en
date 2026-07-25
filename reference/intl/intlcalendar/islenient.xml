@@ -8,25 +8,25 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="IntlCalendar">
    <modifier>public</modifier> <type>bool</type><methodname>IntlCalendar::isLenient</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type>bool</type><methodname>intlcal_is_lenient</methodname>
    <methodparam><type>IntlCalendar</type><parameter>calendar</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns whether the current date/time interpretations is lenient (the
    default). If that is case, some out of range values for fields will be
    accepted instead of raising an error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -43,9 +43,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A <type>bool</type> representing whether the calendar is set to lenient mode.
-  </para>
+  </simpara>
  </refsect1>
 
 

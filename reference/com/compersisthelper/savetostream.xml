@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>COMPersistHelper::SaveToStream</methodname>
    <methodparam><type>resource</type><parameter>stream</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Saves an object to the specified stream.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -33,9 +33,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

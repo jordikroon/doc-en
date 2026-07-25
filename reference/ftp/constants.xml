@@ -19,9 +19,9 @@
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
+    <simpara>
      See <function>ftp_set_option</function> for information.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
   <varlistentry xml:id="constant.ftp-autoresume">
@@ -30,10 +30,10 @@
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
+    <simpara>
      Automatically determine resume position and start position for GET and PUT requests
      (only works if FTP_AUTOSEEK is enabled)
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
   <varlistentry xml:id="constant.ftp-failed">
@@ -42,9 +42,9 @@
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
+    <simpara>
      Asynchronous transfer has failed
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
   <varlistentry xml:id="constant.ftp-finished">
@@ -53,9 +53,9 @@
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
+    <simpara>
      Asynchronous transfer has finished
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
   <varlistentry xml:id="constant.ftp-moredata">
@@ -64,9 +64,9 @@
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
+    <simpara>
      Asynchronous transfer is still active
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
   <varlistentry xml:id="constant.ftp-text">
@@ -75,7 +75,7 @@
     (<type>int</type>)
    </term>
    <listitem>
-    <para>Alias of <constant>FTP_ASCII</constant>.</para>
+    <simpara>Alias of <constant>FTP_ASCII</constant>.</simpara>
    </listitem>
   </varlistentry>
   <varlistentry xml:id="constant.ftp-binary">
@@ -93,7 +93,7 @@
     (<type>int</type>)
    </term>
    <listitem>
-    <para>Alias of <constant>FTP_BINARY</constant>.</para>
+    <simpara>Alias of <constant>FTP_BINARY</constant>.</simpara>
    </listitem>
   </varlistentry>
   <varlistentry xml:id="constant.ftp-timeout-sec">
@@ -102,9 +102,9 @@
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
+    <simpara>
      See <function>ftp_set_option</function> for information.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
   <varlistentry xml:id="constant.ftp-usepasvaddress">
@@ -113,9 +113,9 @@
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
+    <simpara>
      See <function>ftp_set_option</function> for information.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
  </variablelist>

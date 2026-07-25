@@ -12,15 +12,15 @@
    <modifier>public</modifier> <type>void</type><methodname>Iterator::rewind</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Rewinds back to the first element of the Iterator.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     This is the <emphasis>first</emphasis> method called when starting a
     &foreach; loop. It will <emphasis>not</emphasis> be
     executed <emphasis>after</emphasis> &foreach; loops.
-   </para>
+   </simpara>
    <simpara>
     As &foreach; always calls <methodname>rewind</methodname> before starting
     iteration, manually advancing the iterator position (for example via
@@ -40,9 +40,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Any returned value is ignored.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

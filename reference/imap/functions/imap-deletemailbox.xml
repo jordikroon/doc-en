@@ -12,9 +12,9 @@
    <methodparam><type>IMAP\Connection</type><parameter>imap</parameter></methodparam>
    <methodparam><type>string</type><parameter>mailbox</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Deletes the specified <parameter>mailbox</parameter>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -24,10 +24,10 @@
     <varlistentry>
      <term><parameter>mailbox</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The mailbox name, see <function>imap_open</function> for more
        information
-      </para>
+      </simpara>
       &imap.mailboxname.insecure;
      </listitem>
     </varlistentry>
@@ -36,9 +36,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -57,7 +57,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

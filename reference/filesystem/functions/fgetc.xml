@@ -5,16 +5,16 @@
   <refname>fgetc</refname>
   <refpurpose>Gets character from file pointer</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>fgetc</methodname>
    <methodparam><type>resource</type><parameter>stream</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets a character from the given file pointer.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -33,10 +33,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a string containing a single character read from the file pointed
    to by <parameter>stream</parameter>. Returns &false; on EOF.
-  </para>
+  </simpara>
   &return.falseproblem;
  </refsect1>
 

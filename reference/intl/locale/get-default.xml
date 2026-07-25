@@ -9,39 +9,39 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="Locale">
    <modifier>public</modifier> <modifier>static</modifier> <type>string</type><methodname>Locale::getDefault</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type>string</type><methodname>locale_get_default</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the default locale value. At the PHP initialization this value is set
-   to 'intl.default_locale' value from &php.ini; if that value exists or 
+   to 'intl.default_locale' value from &php.ini; if that value exists or
    from ICU's function uloc_getDefault().
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
   &reftitle.parameters;
-  <para>
-  </para>
+  <simpara>
+  </simpara>
  </refsect1>
 
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The current runtime locale
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

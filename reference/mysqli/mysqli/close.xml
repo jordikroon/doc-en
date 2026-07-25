@@ -6,30 +6,30 @@
   <refname>mysqli_close</refname>
   <refpurpose>Closes a previously opened database connection</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="mysqli">
    <modifier>public</modifier> <type>true</type><methodname>mysqli::close</methodname>
    <void/>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type>true</type><methodname>mysqli_close</methodname>
    <methodparam><type>mysqli</type><parameter>mysql</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Closes a previously opened database connection.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Open non-persistent MySQL connections and result sets are automatically
-   closed when their objects are destroyed. Explicitly closing open 
+   closed when their objects are destroyed. Explicitly closing open
    connections and freeing result sets is optional. However, it's a good idea
    to close the connection as soon as the script finishes performing all of its
    database operations, if it still has a lot of processing to do after
    getting the results.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -43,9 +43,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -76,7 +76,7 @@
   &reftitle.examples;
   <example>
    <title><methodname>mysqli::close</methodname> example</title>
-   <para>&style.oop;</para>
+   <simpara>&style.oop;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -94,7 +94,7 @@ foreach ($result as $row) {
 }
 ]]>
    </programlisting>
-   <para>&style.procedural;</para>
+   <simpara>&style.procedural;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -118,11 +118,11 @@ foreach ($result as $row) {
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
-    <function>mysqli_close</function> will not close persistent connections. 
+   <simpara>
+    <function>mysqli_close</function> will not close persistent connections.
     For additional details, see the manual page on
     <link linkend="features.persistent-connections">persistent connections</link>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

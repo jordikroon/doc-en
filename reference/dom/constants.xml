@@ -277,7 +277,7 @@
    </tgroup>
   </table>
   <table>
-   <title><classname>DOMException</classname> / <classname>Dom\Exception</classname> constants</title>
+   <title><exceptionname>DOMException</exceptionname> / <exceptionname>Dom\Exception</exceptionname> constants</title>
    <tgroup cols="3">
     <thead>
      <row>

@@ -5,7 +5,7 @@
   <refname>count_chars</refname>
   <refpurpose>Return information about characters used in a string</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,10 +13,10 @@
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>mode</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Counts the number of occurrences of every byte-value (0..255) in
    <parameter>string</parameter> and returns it in various ways.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,17 +26,17 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The examined string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>mode</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        See return values.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

@@ -50,11 +50,11 @@
      <type>string</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
        Location of Certificate Authority file on local filesystem which should
        be used with the verify_peer context option to authenticate the
        identity of the remote peer.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="ini.openssl.capath">
@@ -63,11 +63,11 @@
      <type>string</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
        If cafile is not specified or if the certificate is not found there, the
        directory pointed to by capath is searched for a suitable certificate.
        capath must be a correctly hashed certificate directory.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="ini.openssl.libctx">
@@ -90,9 +90,9 @@
   </variablelist>
  </para>
 
- <para>
+ <simpara>
   See also the <link linkend="context.ssl">SSL stream context</link> options.
- </para>
+ </simpara>
 
 </section>
 

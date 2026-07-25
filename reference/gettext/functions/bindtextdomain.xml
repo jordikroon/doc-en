@@ -13,10 +13,10 @@
    <methodparam><type>string</type><parameter>domain</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>directory</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    The <function>bindtextdomain</function> function sets or gets the path
    for a domain.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,19 +26,19 @@
     <varlistentry>
      <term><parameter>domain</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The domain.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>directory</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The directory path.
        An empty string means the current directory.
        If &null;, the currently set directory is returned.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -47,10 +47,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The full pathname for the <parameter>domain</parameter> currently being set,
    &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -111,10 +111,10 @@ echo bindtextdomain($domain, '/usr/share/myapp/locale');
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     The <function>bindtextdomain</function> information is maintained per process,
     not per thread.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 </refentry>

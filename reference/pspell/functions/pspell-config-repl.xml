@@ -5,7 +5,7 @@
   <refname>pspell_config_repl</refname>
   <refpurpose>Set a file that contains replacement pairs</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,20 +13,20 @@
    <methodparam><type>PSpell\Config</type><parameter>config</parameter></methodparam>
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Set a file that contains replacement pairs.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The replacement pairs improve the quality of the spellchecker. When a word
    is misspelled, and a proper suggestion was not found in the list,
    <function>pspell_store_replacement</function> can be used to store a
    replacement pair and then <function>pspell_save_wordlist</function> to
-   save the wordlist along with the replacement pairs. 
-  </para>
-  <para>
+   save the wordlist along with the replacement pairs.
+  </simpara>
+  <simpara>
    <function>pspell_config_repl</function> should be used on a config
    before calling <function>pspell_new_config</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -42,9 +42,9 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The file should be writable by whoever PHP runs as (e.g. nobody).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -53,9 +53,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -98,10 +98,10 @@ pspell_check($pspell, "thecat");
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     This function will not work unless you have pspell .11.2 and aspell .32.5
     or later.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

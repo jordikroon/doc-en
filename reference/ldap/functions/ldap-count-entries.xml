@@ -5,7 +5,7 @@
   <refname>ldap_count_entries</refname>
   <refpurpose>Count the number of entries in a search</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,10 +13,10 @@
    <methodparam><type>LDAP\Connection</type><parameter>ldap</parameter></methodparam>
    <methodparam><type>LDAP\Result</type><parameter>result</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the number of entries stored in the result of previous search
    operations.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,17 +26,17 @@
     <varlistentry>
      <term><parameter>ldap</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &ldap.parameter.ldap;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>result</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &ldap.parameter.result;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -73,9 +73,9 @@
   <para>
    <example xml:id="ldap-count-entries.example.basic">
     <title><function>ldap_count_entries</function> example</title>
-    <para>
+    <simpara>
      Retrieve number of entries in the result.
-    </para>
+    </simpara>
     <programlisting role="php">
      <![CDATA[
      // $ds is a valid LDAP\Connection instance for a directory server

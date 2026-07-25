@@ -14,11 +14,11 @@
    <methodparam><type>int</type><parameter>y</parameter></methodparam>
    <methodparam><type>int</type><parameter>color</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Performs a flood fill starting at the given coordinate (top left is 0, 0)
    with the given <parameter>color</parameter> in the
    <parameter>image</parameter>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -28,25 +28,25 @@
     <varlistentry>
      <term><parameter>x</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        x-coordinate of start point.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>y</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        y-coordinate of start point.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>color</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The fill color. &gd.identifier.color;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -54,9 +54,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

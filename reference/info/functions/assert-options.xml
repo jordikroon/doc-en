@@ -9,7 +9,7 @@
  <refsynopsisdiv>
   &warn.deprecated.function-8-3-0;
  </refsynopsisdiv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -17,10 +17,10 @@
    <methodparam><type>int</type><parameter>option</parameter></methodparam>
    <methodparam choice="opt"><type>mixed</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Set the various <function>assert</function> control options or just query
    their current settings.
-  </para>
+  </simpara>
   <note>
    <simpara>
     The use of <function>assert_options</function> is discouraged
@@ -62,7 +62,7 @@
            <entry>ASSERT_EXCEPTION</entry>
            <entry>assert.exception</entry>
            <entry>1</entry>
-           <entry>throws an <classname>AssertionError</classname> for each failed assertions</entry>
+           <entry>throws an <exceptionname>AssertionError</exceptionname> for each failed assertions</entry>
           </row>
           <row>
            <entry>ASSERT_WARNING</entry>
@@ -100,9 +100,9 @@
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An optional new value for the option.
-      </para>
+      </simpara>
       <para>
        The callback function set via <constant>ASSERT_CALLBACK</constant> or
        <link linkend="ini.assert.callback">assert.callback</link>
@@ -161,17 +161,17 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the original setting of any option.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    If <parameter>option</parameter> is not a valid option a
-   <classname>ValueError</classname> is thrown.
-  </para>
+   <exceptionname>ValueError</exceptionname> is thrown.
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -196,7 +196,7 @@
        <entry>8.0.0</entry>
        <entry>
         If <parameter>option</parameter> is not a valid option,
-        a <classname>ValueError</classname> is now thrown.
+        a <exceptionname>ValueError</exceptionname> is now thrown.
         Previously &false; was returned.
        </entry>
       </row>
@@ -214,7 +214,7 @@
    <programlisting role="php">
 <![CDATA[
 <?php
-// This is our function to handle 
+// This is our function to handle
 // assert failures
 function assert_failure($file, $line, $assertion, $message)
 {
@@ -236,7 +236,7 @@ assert_options(ASSERT_CALLBACK, 'assert_failure');
 // Make an assert that would fail
 test_assert(1);
 
-// This is never reached due to ASSERT_BAIL 
+// This is never reached due to ASSERT_BAIL
 // being true
 echo 'Never reached';
 ?>

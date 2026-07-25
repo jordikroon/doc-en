@@ -14,16 +14,16 @@
    <methodparam><type>int</type><parameter>day</parameter></methodparam>
    <methodparam><type>int</type><parameter>year</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Converts a date from the French Republican Calendar to a Julian
    Day Count.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    These routines only convert dates in years 1 through 14
    (Gregorian dates 22 September 1792 through 22 September
    1806). This more than covers the period when the calendar was in
    use.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -33,43 +33,43 @@
     <varlistentry>
      <term><parameter>month</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The month as a number from 1 (for Vendémiaire) to 13 (for the period of 5-6 days at the end of each year)
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>day</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The day as a number from 1 to 30
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>year</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The year as a number between 1 and 14
-      </para>
+      </simpara>
      </listitem>
-    </varlistentry>  
+    </varlistentry>
    </variablelist>
   </para>
  </refsect1>
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The julian day for the given french revolution date as an integer.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>
    <simplelist>
-    <member><function>jdtofrench</function></member> 
+    <member><function>jdtofrench</function></member>
     <member><function>cal_to_jd</function></member>
    </simplelist>
   </para>

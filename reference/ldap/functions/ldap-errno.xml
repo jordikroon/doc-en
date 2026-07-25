@@ -5,18 +5,18 @@
   <refname>ldap_errno</refname>
   <refpurpose>Return the LDAP error number of the last LDAP command</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>int</type><methodname>ldap_errno</methodname>
    <methodparam><type>LDAP\Connection</type><parameter>ldap</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the standardized error number returned by the last LDAP command.
    This number can be converted into a textual error message using
    <function>ldap_err2str</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,9 +26,9 @@
     <varlistentry>
      <term><parameter>ldap</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &ldap.parameter.ldap;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,10 +37,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Return the LDAP error number of the last LDAP command for this
    link.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

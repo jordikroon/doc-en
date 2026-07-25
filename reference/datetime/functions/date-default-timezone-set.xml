@@ -13,18 +13,18 @@
    <type>bool</type><methodname>date_default_timezone_set</methodname>
    <methodparam><type>string</type><parameter>timezoneId</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>date_default_timezone_set</function> sets the default timezone
    used by all date/time functions.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Instead of using this function to set the default timezone in your script,
    you can also use the INI setting <link
    linkend="ini.date.timezone">date.timezone</link> to set the default
    timezone.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   <para>
@@ -32,12 +32,12 @@
     <varlistentry>
      <term><parameter>timezoneId</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The timezone identifier, like <literal>UTC</literal>,
        <literal>Africa/Lagos</literal>, <literal>Asia/Hong_Kong</literal>, or
        <literal>Europe/Lisbon</literal>. The list of valid identifiers is
        available in the <xref linkend="timezones"/>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -46,11 +46,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    This function returns &false; if the
    <parameter>timezoneId</parameter> isn't valid, or &true;
    otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

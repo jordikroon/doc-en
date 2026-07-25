@@ -5,16 +5,16 @@
   <refname>curl_version</refname>
   <refpurpose>Gets cURL version information</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>array</type><type>false</type></type><methodname>curl_version</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns information about the cURL version.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,7 +25,7 @@
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
   <para>
-   Returns an associative array with the following elements: 
+   Returns an associative array with the following elements:
    <informaltable>
     <tgroup cols="2">
      <thead>
@@ -124,23 +124,23 @@
   <para>
    <example>
     <title><function>curl_version</function> example</title>
-    <para>
-     This example will check which features that's available 
-     in cURL build by using the <literal>'features'</literal> bitmask returned 
+    <simpara>
+     This example will check which features that's available
+     in cURL build by using the <literal>'features'</literal> bitmask returned
      by <function>curl_version</function>.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
 // Get curl version array
 $version = curl_version();
 
-// These are the bitfields that can be used 
+// These are the bitfields that can be used
 // to check for features in the curl build
 $bitfields = Array(
-            'CURL_VERSION_IPV6', 
-            'CURL_VERSION_KERBEROS4', 
-            'CURL_VERSION_SSL', 
+            'CURL_VERSION_IPV6',
+            'CURL_VERSION_KERBEROS4',
+            'CURL_VERSION_SSL',
             'CURL_VERSION_LIBZ'
             );
 

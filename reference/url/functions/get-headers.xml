@@ -14,10 +14,10 @@
    <methodparam choice="opt"><type>bool</type><parameter>associative</parameter><initializer>&false;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>resource</type><type>null</type></type><parameter>context</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>get_headers</function> returns an array with the headers sent
    by the server in response to a HTTP request.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,29 +27,29 @@
     <varlistentry>
      <term><parameter>url</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The target URL.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>associative</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If the optional <parameter>associative</parameter> parameter is set to true,
-       <function>get_headers</function> parses the response and sets the 
+       <function>get_headers</function> parses the response and sets the
        array's keys.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>context</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A valid context resource created with
        <function>stream_context_create</function>, or &null; to use the
        default context.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -58,10 +58,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an indexed or associative array with the headers, or &false; on
    failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

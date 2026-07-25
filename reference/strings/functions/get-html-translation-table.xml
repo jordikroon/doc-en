@@ -5,7 +5,7 @@
   <refname>get_html_translation_table</refname>
   <refpurpose>Returns the translation table used by <function>htmlspecialchars</function> and <function>htmlentities</function></refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,21 +14,21 @@
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>ENT_QUOTES | ENT_SUBSTITUTE | ENT_HTML401</initializer></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>encoding</parameter><initializer>"UTF-8"</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>get_html_translation_table</function> will return the
    translation table that is used internally for
    <function>htmlspecialchars</function> and
    <function>htmlentities</function>.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     Special characters can be encoded in several ways. E.g.
     <literal>"</literal> can be encoded as <literal>&amp;quot;</literal>,
     <literal>&amp;#34;</literal> or <literal>&amp;#x22</literal>.
     <function>get_html_translation_table</function> returns only the form used
     by <function>htmlspecialchars</function> and
     <function>htmlentities</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -39,10 +39,10 @@
     <varlistentry>
      <term><parameter>table</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Which table to return. Either <constant>HTML_ENTITIES</constant> or
        <constant>HTML_SPECIALCHARS</constant>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -106,10 +106,10 @@
     <varlistentry>
      <term><parameter>encoding</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Encoding to use.
        If omitted, the default value for this argument is UTF-8.
-      </para>
+      </simpara>
       &reference.strings.charsets;
      </listitem>
     </varlistentry>
@@ -119,10 +119,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the translation table as an array, with the original characters
    as keys and entities as values.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

@@ -11,13 +11,13 @@
    <type>true</type><methodname>natsort</methodname>
    <methodparam><type>array</type><parameter role="reference">array</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function implements a sort algorithm that orders alphanumeric strings
    in the way a human being would while maintaining key/value associations.
    This is described as a "natural ordering".  An example of the difference
    between this algorithm and the regular computer string sorting algorithms
    (used in <function>sort</function>) can be seen in the example below.
-  </para>
+  </simpara>
   &note.sort-unstable;
   &note.reset-index;
  </refsect1>
@@ -28,9 +28,9 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input array.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -39,9 +39,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -105,10 +105,10 @@ Array
 )
 ]]>
     </screen>
-    <para>
+    <simpara>
      For more information see: Martin Pool's <link xlink:href="&url.strnatcmp;">Natural Order String Comparison</link>
      page.
-    </para>
+    </simpara>
    </example>
    <example>
     <title><function>natsort</function> examples demonstrating potential gotchas</title>
@@ -122,7 +122,7 @@ natsort($negative);
 print_r($negative);
 
 echo "Zero padding\n";
-$zeros = array('09', '8', '10', '009', '011', '0'); 
+$zeros = array('09', '8', '10', '009', '011', '0');
 print_r($zeros);
 natsort($zeros);
 print_r($zeros);

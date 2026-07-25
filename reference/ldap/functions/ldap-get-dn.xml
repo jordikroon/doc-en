@@ -5,7 +5,7 @@
   <refname>ldap_get_dn</refname>
   <refpurpose>Get the DN of a result entry</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,9 +13,9 @@
    <methodparam><type>LDAP\Connection</type><parameter>ldap</parameter></methodparam>
    <methodparam><type>LDAP\ResultEntry</type><parameter>entry</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Finds out the DN of an entry in the result.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,17 +25,17 @@
     <varlistentry>
      <term><parameter>ldap</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &ldap.parameter.ldap;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>entry</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &ldap.parameter.entry;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -44,9 +44,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the DN of the result entry and &false; on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

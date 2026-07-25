@@ -10,10 +10,10 @@
 <!-- {{{ Reflector intro -->
   <section xml:id="reflector.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     <classname>Reflector</classname> is an interface implemented by all
     exportable Reflection classes.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

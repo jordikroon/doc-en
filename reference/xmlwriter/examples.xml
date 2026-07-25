@@ -4,9 +4,9 @@
  &reftitle.examples;
  <section xml:id="example.xmlwriter-simple">
   <title>Creating a simple XML document</title>
-  <para>
+  <simpara>
    This example shows how to use XMLWriter to create a XML document in memory.
-  </para>
+  </simpara>
   <para>
    <example>
     <title>Creating a simple XML document</title>
@@ -78,9 +78,9 @@ echo xmlwriter_output_memory($xw);
 
  <section xml:id="example.xmlwriter-namespace">
   <title>Working with XML namespaces</title>
-  <para>
+  <simpara>
    This example shows how to create namespaced XML elements.
-  </para>
+  </simpara>
   <para>
    <example>
     <title>Working with XML namespaces</title>
@@ -123,9 +123,9 @@ echo xmlwriter_output_memory($xw);
 
  <section xml:id="example.xmlwriter-oop">
   <title>Working with the OO API</title>
-  <para>
+  <simpara>
    This example shows how to work with XMLWriter's object-oriented API.
-  </para>
+  </simpara>
   <para>
    <example>
     <title>Working with the OO API</title>

@@ -9,24 +9,24 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="MessageFormatter">
    <modifier>public</modifier> <type class="union"><type>array</type><type>false</type></type><methodname>MessageFormatter::parse</methodname>
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>array</type><type>false</type></type><methodname>msgfmt_parse</methodname>
    <methodparam><type>MessageFormatter</type><parameter>formatter</parameter></methodparam>
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Parses input <type>string</type> and return any extracted items as an <type>array</type>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -36,17 +36,17 @@
     <varlistentry>
      <term><parameter>formatter</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The message formatter
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <type>string</type> to parse
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -56,9 +56,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An <type>array</type> containing the items extracted, or &false; on error
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -14,9 +14,9 @@
    <modifier>public</modifier> <type>int</type><methodname>SQLite3::lastErrorCode</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the numeric result code of the most recent failed SQLite request.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,10 +26,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an integer value representing the numeric result code of the most
    recent failed SQLite request.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

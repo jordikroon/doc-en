@@ -12,10 +12,10 @@
    <methodparam><type>string</type><parameter>localName</parameter></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>value</parameter><initializer>""</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function creates a new instance of class
    <classname>DOMElement</classname>. &dom.node.inserted;
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -24,24 +24,24 @@
     <varlistentry>
      <term><parameter>localName</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The tag name of the element.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The value of the element. By default, an empty element will be created.
        The value can also be set later with <link linkend="domnode.props.nodevalue">DOMElement::$nodeValue</link>.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        The value is used verbatim except that the &lt; and &gt; entity
        references will escaped. Note that &amp; has to be manually escaped;
        otherwise it is regarded as starting an entity reference. Also " won't be
        escaped.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -49,10 +49,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a new instance of class <classname>DOMElement</classname> or &false;
    if an error occurred.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="errors">
   &reftitle.errors;
@@ -65,9 +65,9 @@
     <varlistentry>
      <term><constant>DOM_INVALID_CHARACTER_ERR</constant></term>
      <listitem>
-      <para>
+      <simpara>
        Raised if <parameter>localName</parameter> contains an invalid character.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

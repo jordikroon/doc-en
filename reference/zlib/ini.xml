@@ -43,9 +43,9 @@
   </table>
    &ini.php.constants;
 </para>
- 
+
  &ini.descriptions.title;
- 
+
  <para>
  <variablelist>
   <varlistentry xml:id="ini.zlib.output-compression">
@@ -54,7 +54,7 @@
     <type>bool</type>/<type>int</type>
    </term>
    <listitem>
-    <para>
+    <simpara>
      Whether to transparently compress pages. If this option is set
      to "On" in &php.ini; or the Apache configuration, pages are
      compressed if the browser sends an "Accept-Encoding: gzip" or
@@ -62,17 +62,17 @@
      "deflate") and "Vary: Accept-Encoding" headers are added to
      the output.
      In runtime, it can be set only before sending any output.
-    </para>
-    <para>
+    </simpara>
+    <simpara>
      This option also accepts integer values instead of boolean
      "On"/"Off", using this you can set the output buffer size
      (default is 4KB).
-    </para>
+    </simpara>
     <note>
-     <para>
-      <link linkend="ini.output-handler">output_handler</link> must be 
+     <simpara>
+      <link linkend="ini.output-handler">output_handler</link> must be
       empty if this is set 'On' ! Instead you must use <literal>zlib.output_handler</literal>.
-     </para>
+     </simpara>
     </note>
    </listitem>
   </varlistentry>
@@ -83,11 +83,11 @@
     <type>int</type>
    </term>
    <listitem>
-    <para>
+    <simpara>
      Compression level used for transparent output compression. Specify a
      value between 0 (no compression) to 9 (most compression). The default
      value, -1, lets the server decide which level to use.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
 
@@ -97,11 +97,11 @@
     <type>string</type>
    </term>
    <listitem>
-    <para>
+    <simpara>
      You cannot specify additional output handlers if zlib.output_compression
      is activated here. This setting does the same as <link linkend="ini.output-handler">
      output_handler</link> but in a different order.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
 

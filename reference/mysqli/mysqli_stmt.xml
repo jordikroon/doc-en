@@ -3,21 +3,21 @@
 <reference xml:id="class.mysqli-stmt" role="class" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
  <title>The mysqli_stmt class</title>
  <titleabbrev>mysqli_stmt</titleabbrev>
- 
+
  <partintro>
- 
+
 <!-- {{{ ClassName intro -->
   <section xml:id="mysqli-stmt.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Represents a prepared statement.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
- 
+
   <section xml:id="mysqli-stmt.synopsis">
    &reftitle.classsynopsis;
- 
+
 <!-- {{{ Synopsis -->
    <classsynopsis class="class">
     <ooclass>
@@ -90,7 +90,7 @@
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.mysqli-stmt')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[@role='mysqli_stmt'])"/>
    </classsynopsis>
 <!-- }}} -->
- 
+
   </section>
 
   <section xml:id="mysqli-stmt.props">
@@ -101,15 +101,15 @@
       <varname>id</varname>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Stores the statement ID.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </section>
  </partintro>
- 
+
  &reference.mysqli.entities.mysqli-stmt;
 
 </reference>

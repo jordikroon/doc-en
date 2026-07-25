@@ -11,10 +11,10 @@
     <type class="union"><type>int</type><type>float</type></type><methodname>octdec</methodname>
     <methodparam><type>string</type><parameter>octal_string</parameter></methodparam>
    </methodsynopsis>
-  <para>
+  <simpara>
    Returns the decimal equivalent of the octal number
    represented by the <parameter>octal_string</parameter> argument.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -23,11 +23,11 @@
     <varlistentry>
      <term><parameter>octal_string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The octal string to convert.
        Any invalid characters in <parameter>octal_string</parameter> are silently ignored.
        As of PHP 7.4.0 supplying any invalid characters is deprecated.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,9 +35,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The decimal representation of <parameter>octal_string</parameter>
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -89,11 +89,11 @@ echo octdec(decoct(45));
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     The function can convert numbers that are too large to fit into the platforms
     <type>int</type> type, larger values are returned as <type>float</type> in
     that case.
-   </para>
+   </simpara>
   </note>
  </refsect1>
  <refsect1 role="seealso">

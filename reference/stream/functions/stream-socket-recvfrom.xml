@@ -14,10 +14,10 @@
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter role="reference">address</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>stream_socket_recvfrom</function> accepts
    data from a remote socket up to <parameter>length</parameter> bytes.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,17 +27,17 @@
     <varlistentry>
      <term><parameter>socket</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The remote socket.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number of bytes to receive from the <parameter>socket</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -74,10 +74,10 @@
     <varlistentry>
      <term><parameter>address</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If <parameter>address</parameter> is provided it will be populated with
        the address of the remote socket.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -86,9 +86,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the read data, as a string,&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -127,19 +127,19 @@ fclose($server);
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     If a message received is longer than the <parameter>length</parameter>
     parameter, excess bytes may be discarded depending on the type of socket
     the message is received from (such as UDP).
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     Calls to <function>stream_socket_recvfrom</function> on socket-based
     streams, after calls to buffer-based stream functions (like
     <function>fread</function> or <function>stream_get_line</function>) read
     data directly from the socket and bypass the stream buffer.
-    </para>
+    </simpara>
   </note>
  </refsect1>
 

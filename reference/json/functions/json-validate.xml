@@ -14,35 +14,35 @@
    <methodparam choice="opt"><type>int</type><parameter>depth</parameter><initializer>512</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns whether the given &string; is syntactically valid JSON.
    If <function>json_validate</function> returns &true;, <function>json_decode</function>
    will successfully decode the given string when using the same
    <parameter>depth</parameter> and <parameter>flags</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If <function>json_validate</function> returns &false;, the cause
    can be retrieved using <function>json_last_error</function> and
    <function>json_last_error_msg</function>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    <function>json_validate</function> uses less memory than
    <function>json_decode</function> if the decoded JSON payload is
    not used, because it does not need to build the array or
    object structure containing the payload.
-  </para>
+  </simpara>
   <caution>
-   <para>
+   <simpara>
     Calling <function>json_validate</function> immediately before
     <function>json_decode</function> will unnecessarily parse the string
     twice, as <function>json_decode</function> implicitly performs
     validation during decoding.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     <function>json_validate</function> should therefore only be used
     if the decode JSON payload is not immediately used and knowing whether
     the string contains valid JSON is needed.
-   </para>
+   </simpara>
   </caution>
  </refsect1>
 
@@ -53,33 +53,33 @@
     <varlistentry>
      <term><parameter>json</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string to validate.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        This function only works with UTF-8 encoded strings.
-      </para>
+      </simpara>
       &json.implementation.superset;
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>depth</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Maximum nesting depth of the structure being decoded.
        The value must be greater than <literal>0</literal>,
        and less than or equal to <literal>2147483647</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Currently only
        <constant>JSON_INVALID_UTF8_IGNORE</constant>
        is accepted.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -88,22 +88,22 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the given string is syntactically valid JSON, otherwise
    returns &false;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    If <parameter>depth</parameter> is outside the allowed range,
-   a <classname>ValueError</classname> is thrown.
-  </para>
-  <para>
+   a <exceptionname>ValueError</exceptionname> is thrown.
+  </simpara>
+  <simpara>
    If <parameter>flags</parameter> is not a valid flag,
-   a <classname>ValueError</classname> is thrown.
-  </para>
+   a <exceptionname>ValueError</exceptionname> is thrown.
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

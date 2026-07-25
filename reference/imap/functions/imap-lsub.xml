@@ -13,9 +13,9 @@
    <methodparam><type>string</type><parameter>reference</parameter></methodparam>
    <methodparam><type>string</type><parameter>pattern</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets an array of all the mailboxes that you have subscribed.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -25,10 +25,10 @@
     <varlistentry>
      <term><parameter>reference</parameter></term>
      <listitem>
-      <para>
-       <parameter>reference</parameter> should normally be just the server 
+      <simpara>
+       <parameter>reference</parameter> should normally be just the server
        specification as described in <function>imap_open</function>
-      </para>
+      </simpara>
       &imap.mailboxname.insecure;
      </listitem>
     </varlistentry>
@@ -43,9 +43,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array of all the subscribed mailboxes, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -64,7 +64,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

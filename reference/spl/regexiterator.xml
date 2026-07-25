@@ -9,9 +9,9 @@
 <!-- {{{  intro -->
   <section xml:id="regexiterator.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     This iterator can be used to filter another iterator based on a regular expression.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -101,49 +101,49 @@
      <varlistentry xml:id="regexiterator.constants.all-matches">
       <term><constant>RegexIterator::ALL_MATCHES</constant></term>
       <listitem>
-       <para>
-        Return all matches for the current entry 
+       <simpara>
+        Return all matches for the current entry
         (see <function>preg_match_all</function>).
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
 
      <varlistentry xml:id="regexiterator.constants.get-match">
       <term><constant>RegexIterator::GET_MATCH</constant></term>
       <listitem>
-       <para>
-        Return the first match for the current entry 
+       <simpara>
+        Return the first match for the current entry
         (see <function>preg_match</function>).
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
 
      <varlistentry xml:id="regexiterator.constants.match">
       <term><constant>RegexIterator::MATCH</constant></term>
       <listitem>
-       <para>
-        Only execute match (filter) for the current entry 
+       <simpara>
+        Only execute match (filter) for the current entry
         (see <function>preg_match</function>).
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
 
      <varlistentry xml:id="regexiterator.constants.replace">
       <term><constant>RegexIterator::REPLACE</constant></term>
       <listitem>
-       <para>
-        Replace the current entry 
+       <simpara>
+        Replace the current entry
         (see <function>preg_replace</function>; Not fully implemented yet)
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
 
      <varlistentry xml:id="regexiterator.constants.split">
       <term><constant>RegexIterator::SPLIT</constant></term>
       <listitem>
-       <para>
+       <simpara>
         Returns the split values for the current entry (see <function>preg_split</function>).
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
     </variablelist>
@@ -154,9 +154,9 @@
      <varlistentry xml:id="regexiterator.constants.use-key">
       <term><constant>RegexIterator::USE_KEY</constant></term>
       <listitem>
-       <para>
+       <simpara>
         Special flag: Match the entry key instead of the entry value.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
 

@@ -13,11 +13,11 @@
    <methodparam><type>array</type><parameter>keys</parameter></methodparam>
    <methodparam><type>mixed</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Fills an array with the
    value of the <parameter>value</parameter> parameter, using the
    values of the <parameter>keys</parameter> array as keys.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,19 +28,19 @@
     <varlistentry>
      <term><parameter>keys</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Array of values that will be used as keys. Illegal values
        for key will be converted to <type>string</type>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Value to use for filling
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -50,9 +50,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the filled array
-  </para>
+  </simpara>
  </refsect1>
 
 <!--

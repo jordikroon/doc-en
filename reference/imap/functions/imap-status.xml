@@ -13,9 +13,9 @@
    <methodparam><type>string</type><parameter>mailbox</parameter></methodparam>
    <methodparam><type>int</type><parameter>flags</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets status information about the given <parameter>mailbox</parameter>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -25,10 +25,10 @@
     <varlistentry>
      <term><parameter>mailbox</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The mailbox name, see <function>imap_open</function> for more
        information
-      </para>
+      </simpara>
       &imap.mailboxname.insecure;
      </listitem>
     </varlistentry>
@@ -83,16 +83,16 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    This function returns an object containing status information, &return.falseforfailure;.
    The object has the following properties: <literal>messages</literal>,
-   <literal>recent</literal>, <literal>unseen</literal>, 
-   <literal>uidnext</literal>, and <literal>uidvalidity</literal>.  
-  </para>
-  <para>
+   <literal>recent</literal>, <literal>unseen</literal>,
+   <literal>uidnext</literal>, and <literal>uidvalidity</literal>.
+  </simpara>
+  <simpara>
    <literal>flags</literal> is also set, which contains a bitmask which can
    be checked against any of the above constants.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -111,7 +111,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>

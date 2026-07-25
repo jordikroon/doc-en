@@ -13,11 +13,11 @@
    <methodparam><type>callable</type><parameter>callback</parameter></methodparam>
    <methodparam choice="opt"><type>mixed</type><parameter>arg</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Applies the user-defined <parameter>callback</parameter> function to each
    element of the <parameter>array</parameter>. This function will recurse
    into deeper arrays.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -26,39 +26,39 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input array.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>callback</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Typically, <parameter>callback</parameter> takes on two parameters.
        The <parameter>array</parameter> parameter's value being the first, and
        the key/index second.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         If <parameter>callback</parameter> needs to be working with the
         actual values of the array, specify the first parameter of
         <parameter>callback</parameter> as a
         <link linkend="language.references">reference</link>. Then,
         any changes made to those elements will be made in the
         original array itself.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>arg</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If the optional <parameter>arg</parameter> parameter is supplied,
        it will be passed as the third parameter to the
        <parameter>callback</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -68,9 +68,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -120,10 +120,10 @@ b holds banana
 sour holds lemon
 ]]>
     </screen>
-    <para>
+    <simpara>
      You may notice that the key '<literal>sweet</literal>' is never displayed. Any key that holds an
      <type>array</type> will not be passed to the function.
-    </para>
+    </simpara>
    </example>
   </para>
  </refsect1>

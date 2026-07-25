@@ -3,18 +3,18 @@
 <reference xml:id="class.mysqli-warning" role="class" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
  <title>The mysqli_warning class</title>
  <titleabbrev>mysqli_warning</titleabbrev>
- 
+
  <partintro>
- 
+
 <!-- {{{ ClassName intro -->
   <section xml:id="mysqli-warning.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Represents a MySQL warning.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
- 
+
   <section xml:id="mysqli-warning.synopsis">
    &reftitle.classsynopsis;
 
@@ -50,7 +50,7 @@
 
   </section>
 
-  
+
 <!-- {{{ mysqli_warning properties -->
   <section xml:id="mysqli-warning.props">
    &reftitle.properties;
@@ -58,19 +58,19 @@
     <varlistentry xml:id="mysqli-warning.props.message">
      <term><varname>message</varname></term>
      <listitem>
-      <para>Message string</para>
+      <simpara>Message string</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="mysqli-warning.props.sqlstate">
      <term><varname>sqlstate</varname></term>
      <listitem>
-      <para>SQL state</para>
+      <simpara>SQL state</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="mysqli-warning.props.errno">
      <term><varname>errno</varname></term>
      <listitem>
-      <para>Error number</para>
+      <simpara>Error number</simpara>
      </listitem>
     </varlistentry>
    </variablelist>

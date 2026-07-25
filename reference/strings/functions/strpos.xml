@@ -14,10 +14,10 @@
    <methodparam><type>string</type><parameter>needle</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>offset</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Find the numeric position of the first occurrence of
    <parameter>needle</parameter> in the <parameter>haystack</parameter> string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,28 +27,28 @@
     <varlistentry>
      <term><parameter>haystack</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string to search in.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>needle</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string to search for.
-      </para>
+      </simpara>
       &strings.parameter.needle.non-string;
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If specified, search will start this number of characters counted from
        the beginning of the string. If the offset is negative, the search will start
        this number of characters counted from the end of the string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -57,14 +57,14 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the position of where the needle exists relative to the beginning of
    the <parameter>haystack</parameter> string (independent of <parameter>offset</parameter>).
    Also note that string positions start at <literal>0</literal>, and not <literal>1</literal>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Returns &false; if the needle was not found.
-  </para>
+  </simpara>
   &return.falseproblem;
  </refsect1>
 
@@ -75,7 +75,7 @@
     <simpara>
      If <parameter>offset</parameter> is greater than the length of
      <parameter>haystack</parameter>, a
-     <classname>ValueError</classname> will be thrown.
+     <exceptionname>ValueError</exceptionname> will be thrown.
     </simpara>
    </listitem>
   </itemizedlist>

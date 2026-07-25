@@ -5,7 +5,7 @@
   <refname>socket_write</refname>
   <refpurpose>Write to a socket</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,11 +14,11 @@
    <methodparam><type>string</type><parameter>data</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>length</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    The function <function>socket_write</function> writes to the
    <parameter>socket</parameter> from the given
    <parameter>data</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,27 +28,27 @@
     <varlistentry>
      <term><parameter>socket</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>data</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The buffer to be written.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The optional parameter <parameter>length</parameter> can specify an
        alternate length of bytes written to the socket. If this length is
        greater than <parameter>data</parameter>'s length,
        it is silently truncated to the length of <parameter>data</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -57,20 +57,20 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the number of bytes successfully written to the socket&return.falseforfailure;.
    The error code can be retrieved with
    <function>socket_last_error</function>. This code may be passed to
    <function>socket_strerror</function> to get a textual explanation of the
    error.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     It is perfectly valid for <function>socket_write</function> to
     return zero which means no bytes have been written. Be sure to use the
     <literal>===</literal> operator to check for &false; in case of an
     error.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -100,14 +100,14 @@
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     <function>socket_write</function> does not necessarily write all bytes
     from <parameter>data</parameter>. It's valid that, depending on the network
     buffers etc., only a certain amount of data, even one byte, is written
     despite <parameter>data</parameter> being longer.
     A loop must be used to ensure that the rest of <parameter>data</parameter>
     is transmitted.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

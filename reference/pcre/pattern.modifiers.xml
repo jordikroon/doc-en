@@ -3,11 +3,11 @@
 <article xml:id="reference.pcre.pattern.modifiers" xmlns="http://docbook.org/ns/docbook">
  <title>Pattern Modifiers</title>
  <titleabbrev>Possible modifiers in regex patterns</titleabbrev>
-  <para>
+  <simpara>
    The current possible PCRE modifiers are listed below.  The names
    in parentheses refer to internal PCRE names for these modifiers.
    Spaces and newlines are ignored in modifiers, other characters cause error.
-  </para>
+  </simpara>
   <para>
    <blockquote>
     <variablelist>
@@ -129,11 +129,11 @@
         <literal>.*?</literal>).
        </simpara>
        <note>
-        <para>
+        <simpara>
          It is usually not possible to match more than <link
          linkend="ini.pcre.backtrack-limit">pcre.backtrack_limit</link>
          characters in ungreedy mode.
-        </para>
+        </simpara>
        </note>
       </listitem>
      </varlistentry>

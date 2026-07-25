@@ -5,7 +5,7 @@
   <refname>pspell_config_personal</refname>
   <refpurpose>Set a file that contains personal wordlist</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,16 +13,16 @@
    <methodparam><type>PSpell\Config</type><parameter>config</parameter></methodparam>
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Set a file that contains personal wordlist. The personal wordlist will be
    loaded and used in addition to the standard one after you call
    <function>pspell_new_config</function>. The file is also the file where
    <function>pspell_save_wordlist</function> will save personal wordlist to.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    <function>pspell_config_personal</function> should be used on a config
-   before calling <function>pspell_new_config</function>. 
-  </para>
+   before calling <function>pspell_new_config</function>.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -38,10 +38,10 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The personal wordlist. If the file does not exist, it will be created.
-       The file should be writable by whoever PHP runs as (e.g. nobody).    
-      </para>
+       The file should be writable by whoever PHP runs as (e.g. nobody).
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -50,9 +50,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -94,10 +94,10 @@ pspell_check($pspell, "thecat");
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     This function will not work unless you have pspell .11.2 and aspell .32.5
     or later.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

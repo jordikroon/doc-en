@@ -12,10 +12,10 @@
    <modifier>public</modifier> <type>string</type><methodname>SimpleXMLElement::__toString</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns text content that is directly in this element.
    Does not return text content that is inside this element's children.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -26,9 +26,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the string content on success or an empty string on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

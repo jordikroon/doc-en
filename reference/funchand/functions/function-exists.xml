@@ -5,17 +5,17 @@
   <refname>function_exists</refname>
   <refpurpose>Return &true; if the given function has been defined</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>bool</type><methodname>function_exists</methodname>
    <methodparam><type>string</type><parameter>function</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks the list of defined functions, both built-in (internal) and
-   user-defined, for <parameter>function</parameter>. 
-  </para>
+   user-defined, for <parameter>function</parameter>.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
     <varlistentry>
      <term><parameter>function</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The function name, as a string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -36,15 +36,15 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if <parameter>function</parameter> exists and is a
    function, &false; otherwise.
-  </para>
+  </simpara>
   <note>
-   <para>
-    This function will return &false; for constructs, such as 
+   <simpara>
+    This function will return &false; for constructs, such as
     <function>include_once</function> and <function>echo</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -71,10 +71,10 @@ if (function_exists('imap_open')) {
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     A function name may exist even if the function itself is unusable due to
     configuration or compiling options (with the <link linkend="ref.image">image</link> functions being an example).
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

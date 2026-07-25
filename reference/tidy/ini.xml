@@ -44,9 +44,9 @@
      <type>string</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Default path for tidy config file.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="ini.tidy.clean-output">
@@ -55,14 +55,14 @@
      <type>bool</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Turns on/off the output repairing by Tidy.
-     </para>
+     </simpara>
      <warning>
-      <para>
+      <simpara>
        Do not turn on <literal>tidy.clean_output</literal> if you are generating
        non-html content such as dynamic images.
-      </para>
+      </simpara>
      </warning>
     </listitem>
    </varlistentry>

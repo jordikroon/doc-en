@@ -8,25 +8,25 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="IntlCalendar">
    <modifier>public</modifier> <type class="union"><type>int</type><type>false</type></type><methodname>IntlCalendar::getFirstDayOfWeek</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>int</type><type>false</type></type><methodname>intlcal_get_first_day_of_week</methodname>
    <methodparam><type>IntlCalendar</type><parameter>calendar</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    The week day deemed to start a week, either the default value for this
    locale or the value set with
    <function>IntlCalendar::setFirstDayOfWeek</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -43,11 +43,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    One of the constants <constant>IntlCalendar::DOW_SUNDAY</constant>,
    <constant>IntlCalendar::DOW_MONDAY</constant>, …,
    <constant>IntlCalendar::DOW_SATURDAY</constant>&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
 

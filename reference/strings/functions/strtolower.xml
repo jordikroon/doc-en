@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.strtolower">
+<refentry xml:id="function.strtolower" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>strtolower</refname>
   <refpurpose>Make a string lowercase</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>string</type><methodname>strtolower</methodname>
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns <parameter>string</parameter> with all ASCII alphabetic characters
    converted to lowercase.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Bytes in the range <literal>"A"</literal> (0x41) to <literal>"Z"</literal>
    (0x5a) will be converted to the corresponding lowercase letter by adding 32
    to each byte value.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This can be used to convert ASCII characters within strings encoded with
    UTF-8, since multibyte UTF-8 characters will be ignored. To convert multibyte
    non-ASCII characters, use <function>mb_strtolower</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -35,9 +35,9 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -46,9 +46,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the lowercased string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -82,7 +82,7 @@ echo $str; // Prints mary had a little lamb and she loved it so
 ?>
 ]]>
     </programlisting>
-   </example>   
+   </example>
   </para>
  </refsect1>
 

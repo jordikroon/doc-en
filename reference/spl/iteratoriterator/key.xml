@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>mixed</type><methodname>IteratorIterator::key</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get the key of the current element.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The key of the current element.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

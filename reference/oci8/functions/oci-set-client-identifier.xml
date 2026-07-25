@@ -5,7 +5,7 @@
   <refname>oci_set_client_identifier</refname>
   <refpurpose>Sets the client identifier</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,27 +13,27 @@
    <methodparam><type>resource</type><parameter>connection</parameter></methodparam>
    <methodparam><type>string</type><parameter>client_id</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets the client identifier used by various database components to
    identify lightweight application users who authenticate as the same
    database user.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The client identifier is registered with the database when the next
    'round-trip' from PHP to the database occurs, typically when an SQL
    statement is executed.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The identifier can subsequently be queried, for example
    with <literal>SELECT SYS_CONTEXT('USERENV','CLIENT_IDENTIFIER')
    FROM DUAL</literal>.  Database administration views such
    as <literal>V$SESSION</literal> will also contain the value.  It
    can be used with <literal>DBMS_MONITOR.CLIENT_ID_TRACE_ENABLE</literal>
    for tracing and can also be used for auditing.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The value may be retained across page requests that use the same persistent connection.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -49,9 +49,9 @@
     <varlistentry>
      <term><parameter>client_id</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        User chosen string up to 64 bytes long.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -60,9 +60,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

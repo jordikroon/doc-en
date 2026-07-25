@@ -10,9 +10,9 @@
 <!-- {{{ XmlParser intro -->
   <section xml:id="xmlparser.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     A fully opaque class which replaces <literal>xml</literal> resources as of PHP 8.0.0.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

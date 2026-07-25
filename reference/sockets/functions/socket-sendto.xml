@@ -5,7 +5,7 @@
   <refname>socket_sendto</refname>
   <refpurpose>Sends a message to a socket, whether it is connected or not</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -17,12 +17,12 @@
    <methodparam><type>string</type><parameter>address</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>port</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    The function <function>socket_sendto</function> sends
    <parameter>length</parameter> bytes from <parameter>data</parameter>
    through the socket <parameter>socket</parameter> to the
    <parameter>port</parameter> at the address <parameter>address</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -32,33 +32,33 @@
     <varlistentry>
      <term><parameter>socket</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A <classname>Socket</classname> instance created using <function>socket_create</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>data</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The sent data will be taken from buffer <parameter>data</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>length</parameter> bytes from <parameter>data</parameter> will be
        sent.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
       <para>
-       The value of <parameter>flags</parameter> can be any combination of 
+       The value of <parameter>flags</parameter> can be any combination of
        the following flags, joined with the binary OR (<literal>|</literal>)
        operator.
        <table>
@@ -100,18 +100,18 @@
     <varlistentry>
      <term><parameter>address</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        IP address of the remote host.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>port</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>port</parameter> is the remote port number at which the data
        will be sent.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -120,10 +120,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    <function>socket_sendto</function> returns the number of bytes sent to the
    remote host, or &false; if an error occurred.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

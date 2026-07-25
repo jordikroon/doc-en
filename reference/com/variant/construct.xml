@@ -14,9 +14,9 @@
    <methodparam choice="opt"><type>int</type><parameter>type</parameter><initializer><constant>VT_EMPTY</constant></initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>codepage</parameter><initializer><constant>CP_ACP</constant></initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Constructs a new variant object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">

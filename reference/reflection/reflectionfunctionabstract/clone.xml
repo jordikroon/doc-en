@@ -12,9 +12,9 @@
    <modifier>private</modifier> <type>void</type><methodname>ReflectionFunctionAbstract::__clone</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Clones a function.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

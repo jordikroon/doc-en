@@ -5,18 +5,18 @@
   <refname>long2ip</refname>
   <refpurpose>Converts a long integer address into a string in (IPv4) Internet standard dotted format</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>string</type><methodname>long2ip</methodname>
    <methodparam><type>int</type><parameter>ip</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    The function <function>long2ip</function> generates an Internet address
    in dotted format (i.e.: aaa.bbb.ccc.ddd) from the long integer
    representation.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,9 +26,9 @@
     <varlistentry>
      <term><parameter>ip</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A proper address representation in long integer.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,9 +37,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the Internet IP address as a <type>string</type>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog"><!-- {{{ -->
@@ -74,11 +74,11 @@
  <refsect1 role="notes"><!-- {{{ -->
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     On 32-bit architectures, casting integer representations of IP addresses
     from <type>string</type> to <type>int</type> will not give
     correct results for numbers which exceed <constant>PHP_INT_MAX</constant>.
-   </para>
+   </simpara>
   </note>
  </refsect1><!-- }}} -->
 

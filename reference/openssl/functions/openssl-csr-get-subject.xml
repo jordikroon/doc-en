@@ -13,11 +13,11 @@
    <methodparam><type class="union"><type>OpenSSLCertificateSigningRequest</type><type>string</type></type><parameter>csr</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>short_names</parameter><initializer>&true;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>openssl_csr_get_subject</function> returns subject
    distinguished name information encoded in the <parameter>csr</parameter>
     including fields commonName (CN), organizationName (O), countryName (C) etc.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,12 +28,12 @@
     <varlistentry>
      <term><parameter>short_names</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>short_names</parameter> controls how the data is indexed in the
        array - if <parameter>short_names</parameter> is &true; (the default) then
        fields will be indexed with the short name form, otherwise, the long name
        form will be used - e.g.: CN is the shortname form of commonName.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -42,11 +42,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an associative array with subject description, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="changelog">
   &reftitle.changelog;
   <informaltable>

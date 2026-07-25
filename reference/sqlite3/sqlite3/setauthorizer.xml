@@ -12,7 +12,7 @@
    <modifier>public</modifier> <type>bool</type><methodname>SQLite3::setAuthorizer</methodname>
    <methodparam><type class="union"><type>callable</type><type>null</type></type><parameter>callback</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets a callback that will be called by SQLite every time an action is performed
    (reading, deleting, updating, etc.). This is used when preparing a SQL statement from
    an untrusted source to ensure that the SQL statements do not try to access data they
@@ -22,12 +22,12 @@
    be able to make arbitrary changes to the database. An authorizer could then be put in
    place while the user-entered SQL is being prepared that disallows everything except
    SELECT statements.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The authorizer callback may be called multiple times for each statement prepared by
    SQLite. A <literal>SELECT</literal> or <literal>UPDATE</literal> query will call the
    authorizer for every column that would be read or updated.
-  </para>
+  </simpara>
   <para>
    The authorizer is called with up to five parameters. The first parameter is always
    given, and is an <type>int</type> (action code) matching a constant from
@@ -81,57 +81,57 @@
     </tgroup>
    </table>
   </para>
-  <para>
+  <simpara>
    The 4th parameter will be the name of the database (<literal>"main"</literal>,
    <literal>"temp"</literal>, etc.) if applicable.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The 5th parameter to the authorizer callback is the name of the inner-most trigger or
    view that is responsible for the access attempt or &null; if this access attempt is
    directly from top-level SQL code.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    When the callback returns <constant>SQLite3::OK</constant>, that means the operation
    requested is accepted. When the callback returns <constant>SQLite3::DENY</constant>,
    the call that triggered the authorizer will fail with an error message explaining that
    access is denied.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If the action code is <constant>SQLite3::READ</constant> and the callback returns
    <constant>SQLite3::IGNORE</constant> then the prepared statement is
    constructed to substitute a &null; value in place of the table column that would have
    been read if <constant>SQLite3::OK</constant> had been returned. The
    <constant>SQLite3::IGNORE</constant> return can be used to deny an untrusted user
    access to individual columns of a table.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    When a table is referenced by a <literal>SELECT</literal> but no column values are
    extracted from that table (for example in a query like <literal>"SELECT count(*) FROM
    table"</literal>) then the <constant>SQLite3::READ</constant> authorizer callback is
    invoked once for that table with a column name that is an empty string.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If the action code is <constant>SQLite3::DELETE</constant> and the callback returns
    <constant>SQLite3::IGNORE</constant> then the DELETE operation proceeds but the
    truncate optimization is disabled and all rows are deleted individually.
-  </para>
+  </simpara>
   <para>
    Only a single authorizer can be in place on a database connection at a time. Each call
    to <methodname>SQLite3::setAuthorizer</methodname> overrides the previous call. Disable the
    authorizer by installing a &null; callback. The authorizer is disabled by default.
   </para>
-  <para>
+  <simpara>
    The authorizer callback must not do anything that will modify the database connection
    that invoked the authorizer callback.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Note that the authorizer is only called when a statement is prepared, not when it's
    executed.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    More details can be found in the
    <link xlink:href="&url.sqlite;c3ref/set_authorizer.html">SQLite3 documentation</link>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -140,12 +140,12 @@
    <varlistentry>
     <term><parameter>callback</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The <type>callable</type> to be called.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       If &null; is passed instead, this will disable the current authorizer callback.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -153,9 +153,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -171,11 +171,11 @@
   &reftitle.examples;
   <example>
    <title><methodname>SQLite3::setAuthorizer</methodname> example</title>
-   <para>
+   <simpara>
      This only allows access to reading, and only some columns of the
      <literal>users</literal> table will be returned. Other columns will be replaced with
      &null;.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

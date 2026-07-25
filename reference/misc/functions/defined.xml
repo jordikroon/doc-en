@@ -5,28 +5,28 @@
   <refname>defined</refname>
   <refpurpose>Checks whether a constant with the given name exists</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>bool</type><methodname>defined</methodname>
    <methodparam><type>string</type><parameter>constant_name</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks whether a constant with the given <parameter>constant_name</parameter>
    is defined.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This function works also with <link
    linkend="language.oop5.constants">class constants</link> and <link
    linkend="language.types.enumerations">enum cases</link>.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     If you want to see if a variable exists, use <function>isset</function>
     as <function>defined</function> only applies to <link linkend="language.constants">constants</link>. If you want to see if a
     function exists, use <function>function_exists</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -37,9 +37,9 @@
     <varlistentry>
      <term><parameter>constant_name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The constant name.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -48,10 +48,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the named constant given by <parameter>constant_name</parameter>
    has been defined, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xml:id="function.cal-days-in-month" xmlns="http://docbook.org/ns/docbook"> 
+<refentry xml:id="function.cal-days-in-month" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>cal_days_in_month</refname>
   <refpurpose>Return the number of days in a month for a given year and calendar</refpurpose>
@@ -14,11 +14,11 @@
    <methodparam><type>int</type><parameter>month</parameter></methodparam>
    <methodparam><type>int</type><parameter>year</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function will return the number of days in the
    <parameter>month</parameter> of <parameter>year</parameter> for
    the specified <parameter>calendar</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,25 +28,25 @@
     <varlistentry>
      <term><parameter>calendar</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Calendar to use for calculation
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>month</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Month in the selected calendar
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>year</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Year in the selected calendar
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -55,9 +55,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The length in days of the selected month in the given calendar
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

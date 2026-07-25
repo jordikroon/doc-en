@@ -9,28 +9,28 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="mysqli_stmt">
    <modifier>public</modifier> <type>bool</type><methodname>mysqli_stmt::reset</methodname>
    <void/>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type>bool</type><methodname>mysqli_stmt_reset</methodname>
    <methodparam><type>mysqli_stmt</type><parameter>statement</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Resets a prepared statement on client and server to state after prepare.
-  </para>
-  <para>
-    It resets the statement on the server, data sent using <function>mysqli_stmt_send_long_data</function>, 
-    unbuffered result sets and current errors. It does not clear bindings or stored result sets. 
+  </simpara>
+  <simpara>
+    It resets the statement on the server, data sent using <function>mysqli_stmt_send_long_data</function>,
+    unbuffered result sets and current errors. It does not clear bindings or stored result sets.
     Stored result sets will be cleared when executing the prepared statement (or closing it).
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    To prepare a statement with another query use function
    <function>mysqli_stmt_prepare</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -44,9 +44,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

@@ -7,12 +7,12 @@
  <sect2 xml:id="migration71.new-features.nullable-types">
   <title>Nullable types</title>
 
-  <para>
+  <simpara>
    Type declarations for parameters and return values can now be marked as
    nullable by prefixing the type name with a question mark. This signifies
    that as well as the specified type, &null; can be passed as an argument, or
    returned as a value, respectively.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -59,12 +59,12 @@ Fatal error: Uncaught ArgumentCountError: Too few arguments to function test(), 
  <sect2 xml:id="migration71.new-features.void-functions">
   <title>Void functions</title>
 
-  <para>
+  <simpara>
    A <type>void</type> return type has been introduced. Functions declared with
    void as their return type must either omit their return statement altogether,
    or use an empty return statement. &null; is not a valid return value for a
    void function.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -96,22 +96,22 @@ int(1)
    </screen>
   </informalexample>
 
-  <para>
+  <simpara>
    Attempting to use a void function's return value simply evaluates to
    &null;, with no warnings emitted. The reason for this is because warnings
    would implicate the use of generic higher order functions.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration71.new-features.symmetric-array-destructuring">
   <title>Symmetric array destructuring</title>
 
-  <para>
+  <simpara>
    The shorthand array syntax (<literal>[]</literal>) may now be used to
    destructure arrays for assignments (including within
    <literal>foreach</literal>), as an alternative to the existing
    <function>list</function> syntax, which is still supported.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -145,9 +145,9 @@ foreach ($data as [$id, $name]) {
  <sect2 xml:id="migration71.new-features.class-constant-visibility">
   <title>Class constant visibility</title>
 
-  <para>
+  <simpara>
    Support for specifying the visibility of class constants has been added.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -168,16 +168,16 @@ class ConstDemo
  <sect2 xml:id="migration71.new-features.iterable-pseudo-type">
   <title><type>iterable</type> pseudo-type</title>
 
-  <para>
+  <simpara>
    A new pseudo-type (similar to <type>callable</type>) called
    <type>iterable</type> has been introduced. It may be used in parameter
    and return types, where it accepts either arrays or objects that implement
    the <classname>Traversable</classname> interface. With respect to subtyping,
-   parameter types of child classes may broaden a parent's declaration of <type>array</type> 
+   parameter types of child classes may broaden a parent's declaration of <type>array</type>
    or <classname>Traversable</classname> to <type>iterable</type>. With return types,
    child classes may narrow a parent's return type of <type>iterable</type> to
    <type>array</type> or an object that implements <classname>Traversable</classname>.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -197,11 +197,11 @@ function iterator(iterable $iter)
  <sect2 xml:id="migration71.new-features.mulit-catch-exception-handling">
   <title>Multi catch exception handling</title>
 
-  <para>
+  <simpara>
    Multiple exceptions per catch block may now be specified using the pipe
    character (<literal>|</literal>). This is useful for when different
    exceptions from different class hierarchies are handled the same.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -220,11 +220,11 @@ try {
  <sect2 xml:id="migration71.new-features.support-for-keys-in-list">
   <title>Support for keys in <function>list</function></title>
 
-  <para>
+  <simpara>
    You can now specify keys in <function>list</function>, or its new shorthand
    <literal>[]</literal> syntax. This enables destructuring of arrays with
    non-integer or non-sequential keys.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -258,14 +258,14 @@ foreach ($data as ["id" => $id, "name" => $name]) {
  <sect2 xml:id="migration71.new-features.support-for-negative-string-offsets">
   <title>Support for negative string offsets</title>
 
-  <para>
+  <simpara>
    Support for negative string offsets has been added to the
    <link linkend="book.strings">string manipulation functions</link>
    accepting offsets, as well as to
    <link linkend="language.types.string.substr">string indexing</link> with
    <literal>[]</literal> or <literal>{}</literal>. In such cases, a negative
    offset is interpreted as being an offset from the end of the string.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -284,11 +284,11 @@ int(3)
    </screen>
   </informalexample>
 
-  <para>
+  <simpara>
    Negative string and array offsets are now also supported in the simple
    variable parsing syntax inside of strings.
-  </para>
-  
+  </simpara>
+
   <informalexample>
    <programlisting role="php">
 <![CDATA[
@@ -310,21 +310,21 @@ The last character of 'bar' is 'r'.
  <sect2 xml:id="migration71.new-features.support-for-aead-in-ext-openssl">
   <title>Support for AEAD in ext/openssl</title>
 
-  <para>
+  <simpara>
    Support for AEAD (modes GCM and CCM) have been added by extending the
    <function>openssl_encrypt</function> and
    <function>openssl_decrypt</function> functions with additional parameters.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration71.new-features.convert-callables-to-closures">
   <title>Convert callables to <classname>Closure</classname>s with <methodname>Closure::fromCallable</methodname></title>
 
-  <para>
+  <simpara>
    A new static method has been introduced to the <classname>Closure</classname>
    class to allow for <type>callable</type>s to be easily converted into
    <classname>Closure</classname> objects.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -359,11 +359,11 @@ string(10) "some value"
  <sect2 xml:id="migration71.new-features.asynchronous-signal-handling">
   <title>Asynchronous signal handling</title>
 
-  <para>
+  <simpara>
    A new function called <function>pcntl_async_signals</function> has been
    introduced to enable asynchronous signal handling without using ticks (which
    introduce a lot of overhead).
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -390,7 +390,7 @@ SIGHUP
  <sect2 xml:id="migration71.new-features.http2-server-push-support-in-ext-curl">
   <title>HTTP/2 server push support in ext/curl</title>
 
-  <para>
+  <simpara>
    Support for server push has been added to the CURL extension (requires
    version 7.46 and above). This can be leveraged through the
    <function>curl_multi_setopt</function> function with the new
@@ -398,16 +398,16 @@ SIGHUP
    <constant>CURL_PUSH_OK</constant> and <constant>CURL_PUSH_DENY</constant> have also been
    added so that the execution of the server push callback can either be
    approved or denied.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration71.new-features.stream-context-options">
   <title>Stream Context Options</title>
 
-  <para>
+  <simpara>
    The <link linkend="context.socket.tcp_nodelay">tcp_nodelay</link> stream
    context option has been added.
-  </para>
+  </simpara>
  </sect2>
 
 </sect1>

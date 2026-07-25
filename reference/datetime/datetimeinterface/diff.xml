@@ -11,7 +11,7 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="DateTimeInterface">
    <modifier>public</modifier> <type>DateInterval</type><methodname>DateTimeInterface::diff</methodname>
    <methodparam><type>DateTimeInterface</type><parameter>targetObject</parameter></methodparam>
@@ -27,17 +27,17 @@
    <methodparam><type>DateTimeInterface</type><parameter>targetObject</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>absolute</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type>DateInterval</type><methodname>date_diff</methodname>
    <methodparam><type>DateTimeInterface</type><parameter>baseObject</parameter></methodparam>
    <methodparam><type>DateTimeInterface</type><parameter>targetObject</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>absolute</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the difference between two <classname>DateTimeInterface</classname>
    objects.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -46,17 +46,17 @@
    <varlistentry>
     <term><parameter>datetime</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The date to compare to.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>absolute</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Should the interval be forced to be positive?
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -64,36 +64,36 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The <classname>DateInterval</classname> object represents the
    difference between the two dates.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The <parameter>absolute</parameter> parameter only affects the
    <parameter>invert</parameter> property of a
    <classname>DateInterval</classname> object.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The return value more specifically represents the clock-time interval to
    apply to the original object (<parameter>$this</parameter> or
    <parameter>$originObject</parameter>) to arrive at the
    <parameter>$targetObject</parameter>. This process is not always
    reversible.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The method is aware of DST changeovers, and hence can return an interval of
    <literal>24 hours and 30 minutes</literal>, as per one of the examples. If
    you want to calculate with absolute time, you need to convert both the
    <parameter>$this</parameter>/<parameter>$baseObject</parameter>, and
    <parameter>$targetObject</parameter> to UTC first.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
   &reftitle.examples;
   <example>
    <title><function>DateTimeImmutable::diff</function> example</title>
-   <para>&style.oop;</para>
+   <simpara>&style.oop;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -109,7 +109,7 @@ echo $interval->format('%R%a days');
 +2 days
 ]]>
    </screen>
-   <para>&style.procedural;</para>
+   <simpara>&style.procedural;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -149,12 +149,12 @@ echo $interval->format("%H:%I:%S (Full days: %a)"), "\n";
 
   <example>
    <title><methodname>DateTimeInterface::diff</methodname> range</title>
-   <para>
+   <simpara>
     The value that the method returns is the exact amount of time to get from
     <parameter>$this</parameter> to <parameter>$targetObject</parameter>.
     Comparing January 1st to December 31st returns therefore 364, and not 365,
     days (for non-leap years).
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -175,11 +175,11 @@ Full days: 364
   <example>
    <title><classname>DateTime</classname> object comparison</title>
    <note>
-    <para>
+    <simpara>
      <classname>DateTimeImmutable</classname> and
      <classname>DateTime</classname> objects can be compared using
      <link linkend="language.operators.comparison">comparison operators</link>.
-    </para>
+    </simpara>
    </note>
    <programlisting role="php">
 <![CDATA[

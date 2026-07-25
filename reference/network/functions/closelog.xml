@@ -5,17 +5,17 @@
   <refname>closelog</refname>
   <refpurpose>Close connection to system logger</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>true</type><methodname>closelog</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>closelog</function> closes the descriptor being used to write to
    the system logger.  The use of <function>closelog</function> is optional.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

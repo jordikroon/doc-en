@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type class="union"><type>ReflectionClass</type><type>null</type></type><methodname>ReflectionParameter::getDeclaringClass</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the declaring class.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A <classname>ReflectionClass</classname> object or &null; if called on function.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -48,7 +48,7 @@ class Baz extends Foo
 {
 }
 
-$param = new \ReflectionParameter(['Baz', 'bar'], 0); 
+$param = new \ReflectionParameter(['Baz', 'bar'], 0);
 
 var_dump($param->getDeclaringClass());
 ]]>
@@ -65,7 +65,7 @@ object(ReflectionClass)#2 (1) {
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

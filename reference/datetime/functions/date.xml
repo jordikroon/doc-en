@@ -13,12 +13,12 @@
    <methodparam><type>string</type><parameter>format</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>timestamp</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a string formatted according to the given format string using the
    given integer <parameter>timestamp</parameter> (Unix timestamp) or the current time
    if no timestamp is given. In other words, <parameter>timestamp</parameter>
    is optional and defaults to the value of <function>time</function>.
-  </para>
+  </simpara>
   <warning>
    <para>
     Unix timestamps do not handle timezones. Use the
@@ -57,9 +57,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a formatted date string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -180,19 +180,19 @@ echo date("Y-m-d H:i:s") . "\n";                   // 2001-03-10 17:16:18 (the M
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     To generate a timestamp from a string representation of the date, you
     may be able to use <function>strtotime</function>. Additionally, some
     databases have functions to convert their date formats into timestamps
     (such as MySQL's <link xlink:href="&url.mysql.docs.date;">UNIX_TIMESTAMP</link>
     function).
-   </para>
+   </simpara>
   </note>
   <tip>
-   <para>
+   <simpara>
     Timestamp of the start of the request is available in
     <varname>$_SERVER['REQUEST_TIME']</varname>.
-   </para>
+   </simpara>
   </tip>
  </refsect1>
 

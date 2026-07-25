@@ -13,10 +13,10 @@
    <type>bool</type><methodname>ctype_digit</methodname>
    <methodparam><type>mixed</type><parameter>text</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks if all of the characters in the provided <type>string</type>,
    <parameter>text</parameter>, are numerical.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -39,11 +39,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if every character in the string
    <parameter>text</parameter> is a decimal digit, &false; otherwise.
    &ctype.result.empty-string;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

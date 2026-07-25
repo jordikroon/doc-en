@@ -8,10 +8,10 @@
   <!-- {{{ ReflectionEnum intro -->
   <section xml:id="reflectionenum.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     The <classname>ReflectionEnum</classname> class reports
     information about an Enum.
-   </para>
+   </simpara>
   </section>
   <!-- }}} -->
 

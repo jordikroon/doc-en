@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.readline-clear-history">
+<refentry xml:id="function.readline-clear-history" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>readline_clear_history</refname>
   <refpurpose>Clears the history</refpurpose>

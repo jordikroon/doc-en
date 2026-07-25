@@ -3,7 +3,7 @@
 <!-- splitted from ./en/functions/pgsql.xml, last change in rev 1.52 -->
 <refentry xml:id="function.pg-field-type" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
-  <refname>pg_field_type</refname> 
+  <refname>pg_field_type</refname>
   <refpurpose>
    Returns the type name for the corresponding field number
   </refpurpose>
@@ -16,22 +16,22 @@
    <methodparam><type>PgSql\Result</type><parameter>result</parameter></methodparam>
    <methodparam><type>int</type><parameter>field</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_field_type</function> returns a string containing the
    base type name of the given <parameter>field</parameter> in the
    given <parameter>result</parameter> instance.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     If the field uses a PostgreSQL domain (rather than a basic type), it is
-    the name of the domain's underlying type that is returned, rather than the 
+    the name of the domain's underlying type that is returned, rather than the
     name of the domain itself.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     This function used to be called <function>pg_fieldtype</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -48,9 +48,9 @@
     <varlistentry>
      <term><parameter>field</parameter></term>
       <listitem>
-       <para>
+       <simpara>
         Field number, starting from 0.
-       </para>
+       </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -59,9 +59,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A <type>string</type> containing the base name of the field's type.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -80,7 +80,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -104,10 +104,10 @@
 Title field type: varchar
 ]]>
     </screen>
-   </example> 
+   </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

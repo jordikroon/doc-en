@@ -9,18 +9,18 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="NumberFormatter">
    <modifier>public</modifier> <type class="union"><type>float</type><type>false</type></type><methodname>NumberFormatter::parseCurrency</methodname>
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
    <methodparam><type>string</type><parameter role="reference">currency</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter role="reference">offset</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>float</type><type>false</type></type><methodname>numfmt_parse_currency</methodname>
    <methodparam><type>NumberFormatter</type><parameter>formatter</parameter></methodparam>
@@ -28,9 +28,9 @@
    <methodparam><type>string</type><parameter role="reference">currency</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter role="reference">offset</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Parse a string into a float and a currency using the current formatter.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -40,27 +40,27 @@
     <varlistentry>
      <term><parameter>formatter</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <classname>NumberFormatter</classname> object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>currency</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Parameter to receive the currency name (3-letter ISO 4217 currency
        code).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Offset in the string at which to begin parsing. On return, this value
        will hold the offset at which parsing ended.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -70,9 +70,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The parsed numeric value or &false; on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

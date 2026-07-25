@@ -11,9 +11,9 @@
    <type>float</type><methodname>floatval</methodname>
    <methodparam><type>mixed</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the <type>float</type> value of <parameter>value</parameter>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -22,11 +22,11 @@
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        May be any scalar type. <function>floatval</function> should not be used
        on objects, as doing so will emit an <constant>E_WARNING</constant> level
        error and return 1.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -34,16 +34,16 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The float value of the given variable. Empty arrays return 0, non-empty
    arrays return 1.
-  </para>
-  <para>
-   Strings will most likely return 0 although this depends on the 
-   leftmost characters of the string. The common rules of 
-   <link linkend="language.types.float.casting">float casting</link> 
+  </simpara>
+  <simpara>
+   Strings will most likely return 0 although this depends on the
+   leftmost characters of the string. The common rules of
+   <link linkend="language.types.float.casting">float casting</link>
    apply.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

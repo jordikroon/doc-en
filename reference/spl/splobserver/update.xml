@@ -28,9 +28,9 @@
     <varlistentry>
      <term><parameter>subject</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <classname>SplSubject</classname> notifying the observer of an update.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -39,9 +39,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
 

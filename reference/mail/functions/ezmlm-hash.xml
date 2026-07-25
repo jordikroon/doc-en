@@ -30,9 +30,9 @@
     <varlistentry>
      <term><parameter>addr</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The email address that's being hashed.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -41,9 +41,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The hash value of <parameter>addr</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

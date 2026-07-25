@@ -26,10 +26,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the current entry is an <type>array</type> or an <type>object</type>,
    otherwise &false; is returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

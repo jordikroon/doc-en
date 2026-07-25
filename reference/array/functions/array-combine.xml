@@ -5,7 +5,7 @@
   <refname>array_combine</refname>
   <refpurpose>Creates an array by using one array for keys and another for its values</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,11 +13,11 @@
    <methodparam><type>array</type><parameter>keys</parameter></methodparam>
    <methodparam><type>array</type><parameter>values</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Creates an <type>array</type> by using the values from the
    <parameter>keys</parameter> array as keys and the values from the
    <parameter>values</parameter> array as the corresponding values.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,19 +28,19 @@
     <varlistentry>
      <term><parameter>keys</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Array of keys to be used. Illegal values for key will be
        converted to <type>string</type>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
     <varlistentry>
      <term><parameter>values</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <type>Array</type> of values to be used
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -50,19 +50,19 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the combined <type>array</type>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   As of PHP 8.0.0, a <classname>ValueError</classname> is thrown if the number of elements in
+  <simpara>
+   As of PHP 8.0.0, a <exceptionname>ValueError</exceptionname> is thrown if the number of elements in
    <parameter>keys</parameter> and <parameter>values</parameter> does not
    match.
    Prior to PHP 8.0.0, a <constant>E_WARNING</constant> was emitted instead.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -80,7 +80,7 @@
       <entry>8.0.0</entry>
       <entry>
        <function>array_combine</function> will now throw a
-       <classname>ValueError</classname> if the number of elements
+       <exceptionname>ValueError</exceptionname> if the number of elements
        for each array is not equal;
        previously this function returned &false; instead.
       </entry>
@@ -89,7 +89,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>

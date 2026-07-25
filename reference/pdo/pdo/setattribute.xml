@@ -25,10 +25,10 @@
     <varlistentry>
      <term><constant>PDO::ATTR_CASE</constant></term>
      <listitem>
-      <para>
+      <simpara>
        Force column names to a specific case.
        Can take one of the following values:
-      </para>
+      </simpara>
       <variablelist>
        <varlistentry>
         <term><constant>PDO::CASE_LOWER</constant></term>
@@ -60,10 +60,10 @@
     <varlistentry>
      <term><constant>PDO::ATTR_ERRMODE</constant></term>
      <listitem>
-      <para>
+      <simpara>
        Error reporting mode of PDO.
        Can take one of the following values:
-      </para>
+      </simpara>
       <variablelist>
        <varlistentry>
         <term><constant>PDO::ERRMODE_SILENT</constant></term>
@@ -85,7 +85,7 @@
         <term><constant>PDO::ERRMODE_EXCEPTION</constant></term>
         <listitem>
          <simpara>
-          Throws <classname>PDOException</classname>s.
+          Throws <exceptionname>PDOException</exceptionname>s.
          </simpara>
         </listitem>
        </varlistentry>
@@ -100,10 +100,10 @@
         This attribute is available with all drivers, not just Oracle.
        </simpara>
       </note>
-      <para>
+      <simpara>
        Determines if and how &null; and empty strings should be converted.
        Can take one of the following values:
-      </para>
+      </simpara>
       <variablelist>
        <varlistentry>
         <term><constant>PDO::NULL_NATURAL</constant></term>
@@ -135,23 +135,23 @@
     <varlistentry>
      <term><constant>PDO::ATTR_STRINGIFY_FETCHES</constant></term>
      <listitem>
-      <para>
+      <simpara>
        Controls whether fetched values (except &null;) are converted to strings.
        Takes a value of type <type>bool</type>: &true; to enable and &false; to
        disable (default).
        &null; values remain unchanged unless <constant>PDO::ATTR_ORACLE_NULLS</constant>
        is set to <constant>PDO::NULL_TO_STRING</constant>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><constant>PDO::ATTR_STATEMENT_CLASS</constant></term>
      <listitem>
-      <para>
+      <simpara>
        Set user-supplied statement class derived from PDOStatement.
        <!-- TODO improve description of the value it takes, or refer to other docs -->
        Requires <literal>array(string classname, array(mixed constructor_args))</literal>.
-      </para>
+      </simpara>
       <caution>
        <simpara>
         Cannot be used with persistent PDO instances.
@@ -162,17 +162,17 @@
     <varlistentry>
      <term><constant>PDO::ATTR_TIMEOUT</constant></term>
      <listitem>
-      <para>
+      <simpara>
        Specifies the timeout duration in seconds.
        Takes a value of type <type>int</type>.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         Not all drivers support this option, and its meaning may differ from
         driver to driver. For example, SQLite will wait for up to this time
         value before giving up on obtaining a writable lock, but other drivers
         may interpret this as a connection or a read timeout interval.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
@@ -184,11 +184,11 @@
         Only available for the OCI, Firebird, and MySQL drivers.
        </simpara>
       </note>
-      <para>
+      <simpara>
        Whether to autocommit every single statement.
        Takes a value of type <type>bool</type>: &true; to enable and
        &false; to disable. By default, &true;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -199,7 +199,7 @@
         Only available for the OCI, Firebird, and MySQL drivers.
        </simpara>
       </note>
-      <para>
+      <simpara>
        Whether enable or disable emulation of prepared statements.
        Some drivers do not support prepared statements natively or have
        limited support for them.
@@ -207,7 +207,7 @@
        otherwise PDO will attempt to use native prepared statements.
        In case the driver cannot successfully prepare the current query,
        PDO will always fall back to emulating the prepared statement.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -218,11 +218,11 @@
         Only available for the MySQL driver.
        </simpara>
       </note>
-      <para>
+      <simpara>
        Whether to use buffered queries.
        Takes a value of type <type>bool</type>: &true; to enable and
        &false; to disable. By default, &true;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -246,18 +246,18 @@
     <varlistentry>
      <term><parameter>attribute</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The attribute to modify.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The value to set the <parameter>attribute</parameter>,
        might require a specific type depending on the attribute.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -266,9 +266,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

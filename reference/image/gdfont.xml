@@ -8,9 +8,9 @@
 <!-- {{{ GdFont intro -->
   <section xml:id="gdfont.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     A fully opaque class which replaces <literal>gd font</literal> resources as of PHP 8.1.0.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

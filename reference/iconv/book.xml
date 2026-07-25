@@ -4,11 +4,11 @@
 <book xml:id="book.iconv" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <?phpdoc extension-membership="bundled" ?>
  <title>iconv</title>
- 
+
  <!-- {{{ preface -->
  <preface xml:id="intro.iconv">
   &reftitle.intro;
-  <para>
+  <simpara>
    This module contains an interface to iconv character set conversion
    facility. With this module, you can turn a string represented by a local
    character set into the one represented by another character set,
@@ -18,17 +18,17 @@
    as you expect. In such case, it'd be a good idea to install the
    <link xlink:href="&url.libiconv;">GNU libiconv</link> library. It will most
    likely end up with more consistent results.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    This extension comes with
    various utility functions that help you to write multilingual
    scripts. Let's have a look at the following sections to explore the new
    features.
-  </para> 
+  </simpara>
  </preface>
  <!-- }}} -->
- 
+
  &reference.iconv.setup;
  &reference.iconv.constants;
  &reference.iconv.reference;

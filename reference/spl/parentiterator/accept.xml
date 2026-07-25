@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>ParentIterator::accept</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Determines if the current element has children.
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -27,9 +27,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &true; if the current element is acceptable, otherwise &false;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

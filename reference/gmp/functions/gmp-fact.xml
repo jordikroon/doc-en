@@ -5,16 +5,16 @@
   <refname>gmp_fact</refname>
   <refpurpose>Factorial</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>GMP</type><methodname>gmp_fact</methodname>
    <methodparam><type class="union"><type>GMP</type><type>int</type><type>string</type></type><parameter>num</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Calculates factorial (<literal>num!</literal>) of <parameter>num</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,10 +24,10 @@
     <varlistentry>
      <term><parameter>num</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The factorial number.
-      </para>
-      &gmp.parameter; 
+      </simpara>
+      &gmp.parameter;
      </listitem>
     </varlistentry>
    </variablelist>
@@ -36,9 +36,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &gmp.return;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

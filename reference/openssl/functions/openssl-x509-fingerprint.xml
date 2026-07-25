@@ -5,7 +5,7 @@
   <refname>openssl_x509_fingerprint</refname>
   <refpurpose>Calculates the fingerprint, or digest, of a given X.509 certificate</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,10 +14,10 @@
    <methodparam choice="opt"><type>string</type><parameter>digest_algo</parameter><initializer>"sha1"</initializer></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>binary</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>openssl_x509_fingerprint</function> returns the digest of
    <parameter>certificate</parameter> as a string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,17 +28,17 @@
     <varlistentry>
      <term><parameter>digest_algo</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The digest method or hash algorithm to use, e.g. "sha256", one of <function>openssl_get_md_methods</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>binary</parameter></term>
      <listitem>
-      <para>
+      <simpara>
       When set to &true;, outputs raw binary data. &false; outputs lowercase hexits.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -47,12 +47,12 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
     Returns a string containing the calculated certificate fingerprint as lowercase hexits unless <parameter>binary</parameter> is set to &true; in which case the raw binary representation of the message digest is returned.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
     Returns &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

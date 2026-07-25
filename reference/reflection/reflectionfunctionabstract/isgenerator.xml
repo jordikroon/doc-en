@@ -21,10 +21,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the function is generator, &false; if it is not or &null;
    on failure.
-  </para>
+  </simpara>
  </refsect1>
 
 

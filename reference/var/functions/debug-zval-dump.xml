@@ -12,11 +12,11 @@
    <methodparam><type>mixed</type><parameter>value</parameter></methodparam>
    <methodparam rep="repeat"><type>mixed</type><parameter>values</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Dumps a string representation of an internal zval (Zend value) structure to output.
    This is mostly useful for understanding or debugging implementation details of the
    Zend Engine or PHP extensions.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -25,17 +25,17 @@
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The variable or value to dump.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>values</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Further variables or values to dump.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -43,9 +43,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -97,13 +97,13 @@ string(11) "Hello World" refcount(3)
   </para>
   <note>
    <title>Understanding the <literal>refcount</literal></title>
-   <para>
+   <simpara>
     The <literal>refcount</literal> value shown by this function may be
     surprising without a detailed understanding of the engine's implementation.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     The Zend Engine uses reference counting for two different purposes:
-   </para>
+   </simpara>
    <para>
     <simplelist>
      <member>
@@ -121,14 +121,14 @@ string(11) "Hello World" refcount(3)
      </member>
     </simplelist>
    </para>
-   <para>
+   <simpara>
     Because <function>debug_zval_dump</function> takes its input as normal
     parameters, passed by value, the copy on write technique will be used
     to pass them: rather than copying the data, the refcount will be increased
     by one for the lifetime of the function call. If the function modified the
     parameter after receiving it, then a copy would be made; since it does not,
     it will show a refcount one higher than in the calling scope.
-   </para>
+   </simpara>
    <para>
     The parameter passing also prevents <function>debug_zval_dump</function>
     showing variables which have been assigned by reference. To illustrate,
@@ -156,20 +156,20 @@ string(11) "Hello World" refcount(2)
      </screen>
     </informalexample>
    </para>
-   <para>
+   <simpara>
     Although <varname>$var1</varname>, <varname>$var2</varname>, and
     <varname>$var3</varname> are linked as references, only the
     <emphasis>value</emphasis> is passed to <function>debug_zval_dump</function>.
     That value is used once by the set of references, and once inside the
     <function>debug_zval_dump</function>, so shows a refcount of 2.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     Further complications arise because of optimisations made in the engine for
     different data types. Some types such as integers do not use "copy on write",
     so do not show a refcount at all. In other cases, the refcount shows extra
     copies used internally, such as when a literal string or array is stored as
     part of a code instruction.
-   </para>
+   </simpara>
   </note>
  </refsect1>
  <refsect1 role="seealso">

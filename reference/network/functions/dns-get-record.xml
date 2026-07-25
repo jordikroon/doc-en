@@ -5,7 +5,7 @@
   <refname>dns_get_record</refname>
   <refpurpose>Fetch DNS Resource Records associated with a hostname</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -16,10 +16,10 @@
    <methodparam choice="opt"><type>array</type><parameter role="reference">additional_records</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>raw</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Fetch DNS Resource Records associated with the given
    <parameter>hostname</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,62 +29,62 @@
     <varlistentry>
      <term><parameter>hostname</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>hostname</parameter> should be a valid DNS hostname such
        as "<literal>www.example.com</literal>". Reverse lookups can be generated
        using <literal>in-addr.arpa</literal> notation, but
        <function>gethostbyaddr</function> is more suitable for
        the majority of reverse lookups.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         Per DNS standards, email addresses are given in <literal>user.host</literal> format (for
         example: <literal>hostmaster.example.com</literal> as opposed to <literal>hostmaster@example.com</literal>),
         be sure to check this value and modify if necessary before using it
         with a functions such as <function>mail</function>.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>type</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        By default, <function>dns_get_record</function> will search for any
-       resource records associated with <parameter>hostname</parameter>. 
+       resource records associated with <parameter>hostname</parameter>.
        To limit the query, use one of the
        <constant>DNS_<replaceable>*</replaceable></constant>
        constants.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>authoritative_name_servers</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Passed by reference and, if given, will be populated with Resource
        Records for the <emphasis>Authoritative Name Servers</emphasis>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>additional_records</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Passed by reference and, if given, will be populated with any
        <emphasis>Additional Records</emphasis>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>raw</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <parameter>type</parameter> will be interpreted as a raw DNS type ID
        (the <constant>DNS_<replaceable>*</replaceable></constant> constants cannot be used).
        The return value will contain a <literal>data</literal> key, which needs
        to be manually parsed.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -346,14 +346,14 @@ Array
    </example>
    <example>
     <title>Using <function>dns_get_record</function> and DNS_ANY</title>
-    <para>
+    <simpara>
      Since it's very common to want the IP address of a mail server
      once the MX record has been resolved, <function>dns_get_record</function>
      also returns an array in <parameter>additional_records</parameter> which
      contains associate records.  <parameter>authoritative_name_servers</parameter>
      is returned as well containing a list of authoritative name
      servers.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

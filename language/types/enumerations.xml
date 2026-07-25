@@ -7,10 +7,10 @@
  <sect2 xml:id="language.types.enumerations.basics">
   <title>Basic Enumerations</title>
 
-  <para>
+  <simpara>
    Enumerations are a restricting layer on top of classes and class constants,
    intended to provide a way to define a closed set of possible values for a type.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -41,20 +41,20 @@ do_stuff(Suit::Spades);
   </simpara>
 
  </sect2>
- 
+
  <sect2 xml:id="language.types.enumerations.casting">
   <title>Casting</title>
-  
-  <para>
+
+  <simpara>
    If an <type>enum</type> is converted to an <type>object</type>, it is not
    modified. If an <type>enum</type> is converted to an <type>array</type>,
    an array with a single <literal>name</literal> key (for Pure enums) or
    an array with both <literal>name</literal> and <literal>value</literal> keys
    (for Backed enums) is created.  All other cast types will result in an error.
-  </para>
+  </simpara>
  </sect2>
 </sect1>
- 
+
 <!-- Keep this comment at the end of the file
 Local variables:
 mode: sgml

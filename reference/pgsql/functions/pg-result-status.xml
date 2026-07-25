@@ -16,10 +16,10 @@
    <methodparam><type>PgSql\Result</type><parameter>result</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>mode</parameter><initializer><constant>PGSQL_STATUS_LONG</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_result_status</function> returns the status of the <classname>PgSql\Result</classname> instance,
    or the PostgreSQL command completion tag associated with the result
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -35,12 +35,12 @@
     <varlistentry>
      <term><parameter>mode</parameter></term>
      <listitem>
-      <para>
-       Either <constant>PGSQL_STATUS_LONG</constant> to return the numeric status 
-       of the <parameter>result</parameter>, or <constant>PGSQL_STATUS_STRING</constant> 
+      <simpara>
+       Either <constant>PGSQL_STATUS_LONG</constant> to return the numeric status
+       of the <parameter>result</parameter>, or <constant>PGSQL_STATUS_STRING</constant>
        to return the command tag of the <parameter>result</parameter>.
        If not specified, <constant>PGSQL_STATUS_LONG</constant> is the default.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -49,13 +49,13 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Possible return values are <constant>PGSQL_EMPTY_QUERY</constant>,
    <constant>PGSQL_COMMAND_OK</constant>, <constant>PGSQL_TUPLES_OK</constant>, <constant>PGSQL_TUPLES_CHUNK</constant>, <constant>PGSQL_COPY_OUT</constant>,
    <constant>PGSQL_COPY_IN</constant>, <constant>PGSQL_BAD_RESPONSE</constant>, <constant>PGSQL_NONFATAL_ERROR</constant> and
    <constant>PGSQL_FATAL_ERROR</constant> if <constant>PGSQL_STATUS_LONG</constant> is
    specified.  Otherwise, a <type>string</type> containing the PostgreSQL command tag is returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -98,7 +98,7 @@ if ($status == PGSQL_COPY_IN)
    echo "Copy began.";
 else
    echo "Copy failed.";
- 
+
 ?>
 ]]>
     </programlisting>
@@ -111,7 +111,7 @@ Copy began.
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

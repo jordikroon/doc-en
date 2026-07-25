@@ -5,7 +5,7 @@
   <refname>mb_ereg_search</refname>
   <refpurpose>Multibyte regular expression match for predefined multibyte string</refpurpose>
  </refnamediv>
-   
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,9 +13,9 @@
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>pattern</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>options</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Performs a multibyte regular expression match for a predefined multibyte string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,29 +25,29 @@
     <varlistentry>
      <term><parameter>pattern</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The search pattern.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>options</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The search option. See <function>mb_regex_set_options</function> for explanation.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
   <simpara>
    <function>mb_ereg_search</function> returns &true; if the
    multibyte string matches with the regular expression, or &false;
-   otherwise. The <type>string</type> for matching is set by 
+   otherwise. The <type>string</type> for matching is set by
    <function>mb_ereg_search_init</function>. If
    <parameter>pattern</parameter> is not specified, the previous one
    is used.
@@ -80,7 +80,7 @@
 
  <refsect1 role="notes">
   &reftitle.notes;
-  
+
   &note.mbstring.encoding.internal;
  </refsect1>
 

@@ -12,9 +12,9 @@
    <type>bool</type><methodname>stream_is_local</methodname>
    <methodparam><type class="union"><type>resource</type><type>string</type></type><parameter>stream</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks if a stream, or a URL, is a local one or not.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>stream</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The stream <type>resource</type> or URL to check.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,9 +35,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -45,9 +45,9 @@
   <para>
    <example>
     <title><function>stream_is_local</function> example</title>
-    <para>
+    <simpara>
      Basic usage example.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

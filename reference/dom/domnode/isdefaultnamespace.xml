@@ -11,10 +11,10 @@
    <modifier>public</modifier> <type>bool</type><methodname>DOMNode::isDefaultNamespace</methodname>
    <methodparam><type>string</type><parameter>namespace</parameter></methodparam>
   </methodsynopsis>
-  
-  <para>
+
+  <simpara>
    Tells whether <parameter>namespace</parameter> is the default namespace.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -23,9 +23,9 @@
     <varlistentry>
      <term><parameter>namespace</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The namespace URI to look for.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -33,10 +33,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Return &true; if <parameter>namespace</parameter> is the default
    namespace, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

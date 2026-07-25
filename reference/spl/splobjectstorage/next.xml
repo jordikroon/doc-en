@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>void</type><methodname>SplObjectStorage::next</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Moves the iterator to the next <type>object</type> in the storage.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

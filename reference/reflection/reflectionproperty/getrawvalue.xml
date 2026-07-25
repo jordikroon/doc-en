@@ -41,7 +41,7 @@
  <refsect1 role="errors">
   &reftitle.errors;
   <simpara>
-   If the property is virtual, an <classname>Error</classname> will be thrown,
+   If the property is virtual, an <exceptionname>Error</exceptionname> will be thrown,
    as there is no raw value to retrieve.
   </simpara>
  </refsect1>

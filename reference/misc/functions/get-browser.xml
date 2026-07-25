@@ -5,7 +5,7 @@
   <refname>get_browser</refname>
   <refpurpose>Tells what the user's browser is capable of</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,11 +13,11 @@
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>user_agent</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>return_array</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Attempts to determine the capabilities of the user's browser, by looking
    up the browser's information in the <filename>browscap.ini</filename>
    file.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,23 +27,23 @@
     <varlistentry>
      <term><parameter>user_agent</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The User Agent to be analyzed. By default, the value of HTTP
        User-Agent header is used; however, you can alter this (i.e., look up
        another browser's info) by passing this parameter.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        You can bypass this parameter with a &null; value.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>return_array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If set to &true;, this function will return an <type>array</type>
        instead of an <type>object</type>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -52,24 +52,24 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The information is returned in an object or an array which will contain
    various data elements representing, for instance, the browser's major and
    minor version numbers and ID string; &true;/&false; values for features
    such as frames, JavaScript, and cookies; and so forth.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The <literal>cookies</literal> value simply means that the browser
    itself is capable of accepting cookies and does not mean the user has
    enabled the browser to accept cookies or not. The only way to test if
    cookies are accepted is to set one with <function>setcookie</function>,
    reload, and check for the value.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
     Returns &false; when no information can be retrieved, such as when the
-    <link linkend="ini.browscap">browscap</link> configuration setting in 
+    <link linkend="ini.browscap">browscap</link> configuration setting in
     &php.ini; has not been set.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -130,22 +130,22 @@ Array
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
-    In order for this to work, your <link 
-    linkend="ini.browscap">browscap</link> configuration setting in 
+   <simpara>
+    In order for this to work, your <link
+    linkend="ini.browscap">browscap</link> configuration setting in
     &php.ini; must point to the correct location of the
     <filename>browscap.ini</filename> file on your system.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     <filename>browscap.ini</filename> is not bundled with PHP, but you may
-    find an up-to-date <link 
+    find an up-to-date <link
     xlink:href="&url.browscap.download;">php_browscap.ini</link> file here.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     While <filename>browscap.ini</filename> contains information on
     many browsers, it relies on user updates to keep the database
     current. The format of the file is fairly self-explanatory.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

@@ -10,10 +10,10 @@
 <!-- {{{ GlobIterator intro -->
   <section xml:id="globiterator.intro">
    &reftitle.intro;
-   <para>
-    Iterates through a file system in a similar fashion to 
+   <simpara>
+    Iterates through a file system in a similar fashion to
     <function>glob</function>.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

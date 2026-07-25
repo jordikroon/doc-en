@@ -14,10 +14,10 @@
    <type>string</type><methodname>gethostbyname</methodname>
    <methodparam><type>string</type><parameter>hostname</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the IPv4 address of the Internet host specified by
    <parameter>hostname</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,9 +27,9 @@
     <varlistentry>
      <term><parameter>hostname</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The host name.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -38,10 +38,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the IPv4 address or a string containing the unmodified
    <parameter>hostname</parameter> on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

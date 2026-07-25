@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.dba-fetch">
+<refentry xml:id="function.dba-fetch" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>dba_fetch</refname>
   <refpurpose>Fetch data specified by key</refpurpose>

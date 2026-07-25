@@ -7,10 +7,10 @@
  <!-- {{{ Requirements -->
  <section xml:id="uodbc.requirements">
   &reftitle.required;
-  <para>
+  <simpara>
    To access any of the supported databases you need to have
    the required libraries installed.
-  </para>
+  </simpara>
  </section>
  <!-- }}} -->
 
@@ -25,10 +25,10 @@
  <!-- {{{ Resources -->
  <section xml:id="uodbc.resources">
   &reftitle.resources;
-  <para>
+  <simpara>
    Prior to PHP 8.4.0, this extension defined two resource types: an ODBC connection identifier
    and an ODBC result identifier.
-  </para>
+  </simpara>
  </section>
  <!-- }}} -->
 

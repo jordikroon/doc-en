@@ -9,9 +9,9 @@
 <!-- {{{ RecursiveIteratorIterator intro -->
   <section xml:id="recursiveiteratoriterator.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Can be used to iterate through recursive iterators.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

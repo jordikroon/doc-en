@@ -5,7 +5,7 @@
   <refname>fseek</refname>
   <refpurpose>Seeks on a file pointer</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,20 +14,20 @@
    <methodparam><type>int</type><parameter>offset</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>whence</parameter><initializer><constant>SEEK_SET</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets the file position indicator for the file referenced by
    <parameter>stream</parameter>. The new position, measured in bytes
    from the beginning of the file, is obtained by adding
    <parameter>offset</parameter> to the position specified by
    <parameter>whence</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    In general, it is allowed to seek past the end-of-file; if data is then
    written, reads in any unwritten region between the end-of-file and the
    sought position will yield bytes with value 0. However, certain streams
    may not support this behavior, especially when they have an underlying
    fixed size storage.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -43,15 +43,15 @@
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The offset.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        To move to a position before the end-of-file,
        a negative value in the <parameter>offset</parameter> must be passed and
        the <parameter>whence</parameter> parameter must be set
        to <constant>SEEK_END</constant>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -73,10 +73,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Upon success, returns <literal>0</literal>;
    otherwise, returns <literal>-1</literal>.
-  </para>
+  </simpara>
   <warning>
    <simpara>
     This function was created to imitate the C language function of the same
@@ -114,19 +114,19 @@ fseek($fp, 0);
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     If you have opened the file in append (<literal>a</literal> or
     <literal>a+</literal>) mode, any data you write to the file will always be
     appended, regardless of the file position, and the result of calling
     <function>fseek</function> will be undefined.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     Not all streams support seeking. For those that do not support seeking,
     forward seeking from the current position is accomplished by reading
     and discarding data; other forms of seeking will fail.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

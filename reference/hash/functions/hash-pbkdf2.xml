@@ -31,9 +31,9 @@
        Name of selected hashing algorithm (e.g. <literal>"sha256"</literal>).
        For a list of supported algorithms see <function>hash_hmac_algos</function>.
        <note>
-        <para>
+        <simpara>
          Non-cryptographic hash functions are not allowed.
-        </para>
+        </simpara>
        </note>
       </para>
      </listitem>
@@ -41,60 +41,60 @@
     <varlistentry>
      <term><parameter>password</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The password to use for the derivation.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>salt</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The salt to use for the derivation. This value should be generated randomly.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>iterations</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number of internal iterations to perform for the derivation.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The length of the output string. If <parameter>binary</parameter>
        is &true; this corresponds to the byte-length of the derived key, if
        <parameter>binary</parameter> is &false; this corresponds to twice the
        byte-length of the derived key (as every byte of the key is returned as
        two hexits).
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If <literal>0</literal> is passed, the entire output of the supplied
        algorithm is used.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>binary</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        When set to &true;, outputs raw binary data. &false; outputs lowercase
        hexits.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>options</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An array of options for the various hashing algorithms.
        Currently, only the <literal>"seed"</literal> key is
        supported by the MurmurHash variants.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -103,22 +103,22 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a string containing the derived key as lowercase hexits unless
    <parameter>binary</parameter> is set to &true; in which case the raw
    binary representation of the derived key is returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws a <classname>ValueError</classname> exception if the algorithm is
+  <simpara>
+   Throws a <exceptionname>ValueError</exceptionname> exception if the algorithm is
    unknown, the <parameter>iterations</parameter> parameter is less than or
    equal to <literal>0</literal>, the <parameter>length</parameter> is less
    than <literal>0</literal> or the <parameter>salt</parameter> is too long
    (greater than <constant>INT_MAX</constant><literal> - 4</literal>).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -136,7 +136,7 @@
       <row>
        <entry>8.0.0</entry>
        <entry>
-        Now throws a <classname>ValueError</classname> exception on error.
+        Now throws a <exceptionname>ValueError</exceptionname> exception on error.
         Previously, &false; was returned and an <constant>E_WARNING</constant>
         message was emitted.
        </entry>
@@ -187,12 +187,12 @@ string(20) "120fb6cffcf8b32c43e7"
  <refsect1 role="notes">
   &reftitle.notes;
   <caution>
-   <para>
+   <simpara>
     The PBKDF2 method can be used for hashing passwords for storage. However, it
     should be noted that <function>password_hash</function> or
     <function>crypt</function> with <constant>CRYPT_BLOWFISH</constant> are
     better suited for password storage.
-   </para>
+   </simpara>
   </caution>
  </refsect1>
 

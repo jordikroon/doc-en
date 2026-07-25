@@ -14,13 +14,13 @@
    <methodparam><type>string</type><parameter>string2</parameter></methodparam>
    <methodparam choice="opt"><type>float</type><parameter role="reference">percent</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This calculates the similarity between two strings as described in
    &book.programming.classics;. Note that this implementation does not use a
    stack as in Oliver's pseudo code, but recursive calls which may or may not
    speed up the whole process. Note also that the complexity of this algorithm
    is O(N**3) where N is the length of the longest string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,36 +30,36 @@
     <varlistentry>
      <term><parameter>string1</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The first string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>string2</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The second string.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         Swapping the <parameter>string1</parameter> and
         <parameter>string2</parameter> may yield a different result; see the
         example below.
-       </para>
-      </note> 
+       </simpara>
+      </note>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>percent</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        By passing a reference as third argument,
        <function>similar_text</function> will calculate the similarity in
        percent, by dividing the result of <function>similar_text</function> by
        the average of the lengths of the given strings times
        <literal>100</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -68,24 +68,24 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the number of matching chars in both strings.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The number of matching characters is calculated by finding the longest first
    common substring, and then doing this for the prefixes and the suffixes,
    recursively. The lengths of all found common substrings are added.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
   &reftitle.examples;
   <example xml:id="similar_text.example.swapping">
    <title><function>similar_text</function> argument swapping example</title>
-   <para>
+   <simpara>
     This example shows that swapping the <parameter>string1</parameter> and
     <parameter>string2</parameter> argument may yield different results.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

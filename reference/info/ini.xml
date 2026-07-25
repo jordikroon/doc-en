@@ -122,9 +122,9 @@
   </table>
   &ini.php.constants;
  </para>
- 
+
  &ini.descriptions.title;
- 
+
  <para>
   <variablelist>
    <varlistentry xml:id="ini.assert.active">
@@ -133,11 +133,11 @@
      <type>bool</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Enable <function>assert</function> evaluation.
       <link linkend="ini.zend.assertions">zend.assertions</link> should be
       used instead to control the behaviour of <function>assert</function>.
-     </para>
+     </simpara>
      &warn.deprecated.feature-8-3-0;
     </listitem>
    </varlistentry>
@@ -148,9 +148,9 @@
      <type>bool</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Terminate script execution on failed assertions.
-     </para>
+     </simpara>
      &warn.deprecated.feature-8-3-0;
     </listitem>
    </varlistentry>
@@ -161,9 +161,9 @@
      <type>bool</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Issue a PHP warning for each failed assertion.
-     </para>
+     </simpara>
      &warn.deprecated.feature-8-3-0;
     </listitem>
    </varlistentry>
@@ -174,9 +174,9 @@
      <type>string</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       User function to call on failed assertions.
-     </para>
+     </simpara>
      &warn.deprecated.feature-8-3-0;
     </listitem>
    </varlistentry>
@@ -188,12 +188,12 @@
     </term>
     <listitem>
      &warn.feature.removed-8-0-0;
-     <para>
+     <simpara>
       Use the current setting of <function>error_reporting</function> during
       assertion expression evaluation. If enabled, no errors are shown
       (implicit error_reporting(0)) while evaluation. If disabled, errors are
       shown according to the settings of <function>error_reporting</function>
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
 
@@ -203,10 +203,10 @@
      <type>bool</type>
     </term>
     <listitem>
-     <para>
-      Issue an <classname>AssertionError</classname> exception for the failed
+     <simpara>
+      Issue an <exceptionname>AssertionError</exceptionname> exception for the failed
       assertion.
-     </para>
+     </simpara>
      &warn.deprecated.feature-8-3-0;
     </listitem>
    </varlistentry>
@@ -217,17 +217,17 @@
       <type>bool</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       This directive allows to turn dynamic loading of
       PHP extensions with <function>dl</function> on and
       off.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       The main reason for turning dynamic loading off is
       security. With dynamic loading, it's possible to ignore all
       <link linkend="ini.open-basedir">open_basedir</link> restrictions.
       The default is to allow dynamic loading.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
 
@@ -237,27 +237,27 @@
       <type>int</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       This sets the maximum time in seconds a script is allowed to
       run before it is terminated by the parser.  This helps
       prevent poorly written scripts from tying up the server. The
       default setting is <literal>30</literal>.  When running PHP
       from the <link linkend="features.commandline">command
       line</link> the default setting is <literal>0</literal>.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       On non Windows systems, the maximum execution time is not affected by system calls,
       stream operations etc.  Please see the
       <function>set_time_limit</function> function for more
       details.
-     </para>
-     <para>
-      Your web server can have other timeout configurations that may 
-      also interrupt PHP execution. Apache has a 
-      <literal>Timeout</literal> directive and IIS has a CGI timeout 
-      function. Both default to 300 seconds. See your web server 
+     </simpara>
+     <simpara>
+      Your web server can have other timeout configurations that may
+      also interrupt PHP execution. Apache has a
+      <literal>Timeout</literal> directive and IIS has a CGI timeout
+      function. Both default to 300 seconds. See your web server
       documentation for specific details.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
 
@@ -267,14 +267,14 @@
       <type>int</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       This sets the maximum time in seconds a script is allowed to
       parse input data, like POST and GET. Timing begins at the moment PHP
       is invoked at the server and ends when execution begins.
-      The default setting is <literal>-1</literal>, which means that 
+      The default setting is <literal>-1</literal>, which means that
       <link linkend="ini.max-execution-time">max_execution_time</link>
       is used instead. Set to <literal>0</literal> to allow unlimited time.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
 
@@ -284,11 +284,11 @@
      <type>int</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Sets the max nesting depth of
       <link linkend="language.variables.external">input variables</link> (i.e.
       <varname>$_GET</varname>, <varname>$_POST</varname>.)
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
 
@@ -298,15 +298,15 @@
      <type>int</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       How many <link linkend="language.variables.external">input
-      variables</link> may be accepted (limit is applied to 
-      $_GET, $_POST and $_COOKIE superglobal separately). Use of this directive 
+      variables</link> may be accepted (limit is applied to
+      $_GET, $_POST and $_COOKIE superglobal separately). Use of this directive
       mitigates the possibility of denial of service attacks which use hash collisions.
       If there are more input variables than specified by this directive,
       an <constant>E_WARNING</constant> is issued, and further input
       variables are truncated from the request.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
 
@@ -316,9 +316,9 @@
      <type>bool</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Enables or disables the circular reference collector.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
 
@@ -328,24 +328,24 @@
      <type>int</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       The maximum native stack space that the operating system allows the
       program to consume.
       Trying to consume more than the operating system allows
       typically results in a hard crash with no easily available debugging
       information.
       To make debugging easier, the engine throws an
-      <classname>Error</classname>
+      <exceptionname>Error</exceptionname>
       before it happens (when the program uses more than
       <link linkend="ini.zend.max-allowed-stack-size">zend.max_allowed_stack_size</link>-<link linkend="ini.zend.reserved-stack-size">zend.reserved_stack_size</link>
       bytes of stack).
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       Recursion in user-defined code does not consume native stack space.
       However, internal functions and magic methods do.
       Very deep recursion involving these functions can cause the program to
       exhaust all available native stack space.
-     </para>
+     </simpara>
      <para>
       Possible values for this parameter are:
       <simplelist>
@@ -366,7 +366,7 @@
        </member>
       </simplelist>
      </para>
-     <para>
+     <simpara>
       As the stack size of
       <link linkend="language.fibers">fibers</link>
       is determined by
@@ -374,12 +374,12 @@
       the value of this parameter is used instead of
       <link linkend="ini.zend.max-allowed-stack-size">zend.max_allowed_stack_size</link>
       when checking stack usage during the execution of a Fiber.
-     </para>
+     </simpara>
      <note>
-      <para>
+      <simpara>
        This is not related to stack <emphasis>buffer</emphasis> overflows, and is not a security
        feature.
-      </para>
+      </simpara>
      </note>
     </listitem>
    </varlistentry>
@@ -390,12 +390,12 @@
      <type>int</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       The reserved stack size, in bytes.
       This is subtracted from the
       <link linkend="ini.zend.max-allowed-stack-size">max allowed stack size</link>,
       as a buffer, when checking the stack size.
-     </para>
+     </simpara>
      <para>
       Possible values for this parameter are:
       <simplelist>
@@ -416,14 +416,14 @@
      <type>int</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       The native stack size, in bytes, allocated for each
       <link linkend="language.fibers">Fiber</link>.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       The default value is 1MiB on systems with a pointer size lower than
       8 bytes, or 2MiB otherwise.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>

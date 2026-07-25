@@ -38,10 +38,10 @@
      <type>string</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       A default value for the <constant>CURLOPT_CAINFO</constant> option. This
       is required to be an absolute path.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>

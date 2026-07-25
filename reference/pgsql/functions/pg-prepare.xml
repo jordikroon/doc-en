@@ -18,13 +18,13 @@
    <methodparam><type>string</type><parameter>statement_name</parameter></methodparam>
    <methodparam><type>string</type><parameter>query</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_prepare</function> creates a prepared statement for later execution with
    <function>pg_execute</function> or <function>pg_send_execute</function>.
    This feature allows commands that will be used repeatedly to
    be parsed and planned just once, rather than each time they are executed.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The function creates a prepared statement named <parameter>statement_name</parameter> from the <parameter>query</parameter>
    string, which must contain a single SQL command. <parameter>statement_name</parameter> may be <literal>""</literal> to
    create an unnamed statement, in which case any pre-existing unnamed
@@ -32,14 +32,14 @@
    statement name is already defined in the current session. If any parameters
    are used, they are referred to in the <parameter>query</parameter> as <literal>$1</literal>,
    <literal>$2</literal>, etc.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Prepared statements for use with <function>pg_prepare</function> can also be created by
    executing SQL <literal>PREPARE</literal> statements. (But <function>pg_prepare</function> is
    more flexible since it  does not require parameter types to be pre-specified.) Also,
    although there is no PHP function for deleting a prepared statement, the
    SQL <literal>DEALLOCATE</literal> statement can be used for that purpose.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -55,21 +55,21 @@
     <varlistentry>
      <term><parameter>statement_name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The name to give the prepared statement.  Must be unique per-connection.  If
        <literal>""</literal> is specified, then an unnamed statement is created, overwriting any
        previously defined unnamed statement.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>query</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The parameterized SQL statement.  Must contain only a single statement
        (multiple statements separated by semi-colons are not allowed).  If any parameters
        are used, they are referred to as <literal>$1</literal>, <literal>$2</literal>, etc.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -78,9 +78,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An <classname>PgSql\Result</classname> instance on success, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -100,7 +100,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -129,7 +129,7 @@ $result = pg_execute($dbconn, "my_query", array("Clothes Clothes Clothes"));
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

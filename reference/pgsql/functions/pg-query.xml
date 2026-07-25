@@ -14,17 +14,17 @@
    <methodparam choice="opt"><type>PgSql\Connection</type><parameter>connection</parameter></methodparam>
    <methodparam><type>string</type><parameter>query</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_query</function> executes the <parameter>query</parameter>
    on the specified database <parameter>connection</parameter>.
    <function>pg_query_params</function> should be preferred
    in most cases.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If an error occurs, and &false; is returned, details of the error can
    be retrieved using the <function>pg_last_error</function>
    function if the connection is valid.
-  </para>
+  </simpara>
   <para>
    <note>
     <simpara>
@@ -35,11 +35,11 @@
    </note>
   </para>
   <note>
-   <para>
+   <simpara>
     This function used to be called <function>pg_exec</function>.
     <function>pg_exec</function> is still available for compatibility
     reasons, but users are encouraged to use the newer name.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -56,24 +56,24 @@
     <varlistentry>
      <term><parameter>query</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The SQL statement or statements to be executed. When multiple statements are passed to the function,
        they are automatically executed as one transaction, unless there are explicit BEGIN/COMMIT commands
        included in the query string. However, using multiple transactions in one function call is not recommended.
-      </para>
+      </simpara>
       <warning>
-       <para>
+       <simpara>
         String interpolation of user-supplied data is extremely dangerous and is
         likely to lead to <link linkend="security.database.sql-injection">SQL
         injection</link> vulnerabilities. In most cases
         <function>pg_query_params</function> should be preferred, passing
         user-supplied values as parameters rather than substituting them into
         the query string.
-       </para>
-       <para>
+       </simpara>
+       <simpara>
         Any user-supplied data substituted directly into a query string should
         be <link linkend="function.pg-escape-string">properly escaped</link>.
-       </para>
+       </simpara>
       </warning>
      </listitem>
     </varlistentry>
@@ -83,9 +83,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An <classname>PgSql\Result</classname> instance on success, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -105,7 +105,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -131,7 +131,7 @@ while ($row = pg_fetch_row($result)) {
   echo "Author: $row[0]  E-mail: $row[1]";
   echo "<br />\n";
 }
- 
+
 ?>
 ]]>
     </programlisting>
@@ -160,7 +160,7 @@ pg_query($conn, $query);
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

@@ -6,7 +6,7 @@
  <sect1 xml:id="features.dtrace.introduction">
   <title>Introduction to PHP and DTrace</title>
 
-  <para>
+  <simpara>
    DTrace is an always-available, low overhead, tracing framework
    available on a number of platforms including Solaris, macOS,
    Oracle Linux and BSD.  DTrace can trace operating system behavior
@@ -14,17 +14,17 @@
    used to infer performance statistics.  Probes are monitored by user
    created scripts written in the DTrace D scripting language. This
    allows efficient analysis of data points.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    PHP probes that are not being actively monitored by a user's DTrace
    D script do not contain instrumented code so there is no
    performance degradation during normal application execution.
    Probes that are being monitored incur an overhead low enough to
    generally allow DTrace monitoring on live production systems.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    PHP incorporates "User-level Statically Defined Tracing" (USDT)
    probes that are triggered at runtime. For example, when a D script
    is monitoring PHP's <literal>function-entry</literal> probe, then,
@@ -33,28 +33,28 @@
    could, for example, print probe arguments such as the source file
    location of the PHP function. Or the action could aggregate data
    such as the number of times each function is called.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    Only the PHP USDT probes are described here.  Refer to external
    general and operating system-specific DTrace literature to see how
    DTrace can be used to trace arbitrary functions, and how it can be
    used to trace operating system behavior.  Note not all DTrace
    features are available in all DTrace implementations.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    The static DTrace probes in PHP can alternatively be used with the
    SystemTap facility on some Linux distributions.
-  </para>
+  </simpara>
  </sect1>
 
  <sect1 xml:id="features.dtrace.dtrace">
   <title>Using PHP and DTrace</title>
-  <para>
+  <simpara>
    PHP can be configured with DTrace static probes on platforms that
    support DTrace Dynamic Tracing.
-  </para>
+  </simpara>
 
   <sect2 xml:id="features.dtrace.install">
    <title>Configuring PHP for DTrace Static Probes</title>
@@ -73,10 +73,10 @@
      </programlisting>
     </informalexample>
    </para>
-   <para>
+   <simpara>
     Instead of using <literal>chmod</literal>, you could instead use an
     ACL package rule to limit device access to a specific user.
-   </para>
+   </simpara>
 
    <para>
     Build PHP with the <literal>--enable-dtrace</literal> configuration parameter:
@@ -90,14 +90,14 @@
      </programlisting>
     </informalexample>
    </para>
-   <para>
+   <simpara>
     This makes the static probes available in core PHP.  Any PHP extensions
     that provide their own probes should be built separately as shared
     extensions.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     To enable probes, set <option>USE_ZEND_DTRACE=1</option> environment variable to the target PHP processes.
-   </para>
+   </simpara>
   </sect2>
 
   <sect2 xml:id="features.dtrace.static-probes">
@@ -173,9 +173,9 @@
     </tbody>
    </tgroup>
   </table>
-  <para>
+  <simpara>
    PHP extensions may also have additional static probes.
-  </para>
+  </simpara>
   </sect2>
 
   <sect2 xml:id="features.dtrace.list-probes">
@@ -216,25 +216,25 @@
     </informalexample>
    </para>
 
-   <para>
+   <simpara>
     The Provider column values consist of <literal>php</literal> and
     the process id of the currently running PHP process.
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     If the Apache web server is running, the module name might be, for
     example, <filename>libphp5.so</filename>, and there would be
     multiple blocks of listings, one per running Apache process.
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     The Function column refers to PHP's internal C implementation
     function names where each provider is located.
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     If a PHP process is not running, then no PHP probes will be shown.
-   </para>
+   </simpara>
   </sect2>
 
   <sect2 xml:id="features.dtrace.examples">
@@ -337,13 +337,13 @@ php*:::request-startup
     </example>
    </para>
 
-   <para>
+   <simpara>
     This script uses the <literal>-Z</literal> option to
     <filename>dtrace</filename>, allowing it to be run when there is no
     PHP process executing.  If this option were omitted the script
     would immediately terminate because it knows none of the probes to
     be monitored are in existence.
-   </para>
+   </simpara>
 
    <para>
     The script traces all core PHP static probe points throughout the
@@ -357,15 +357,15 @@ php*:::request-startup
     </informalexample>
    </para>
 
-   <para>
+   <simpara>
     Run a PHP script or application.  The monitoring D script will
     output each probe's arguments as it fires.
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     When monitoring is complete, the D script can be terminated with a
     <keycombo action='simul'><keycap>CTRL</keycap><keycap>C</keycap></keycombo>.
-   </para>
+   </simpara>
 
    <para>
     On multi-CPU machines the probe ordering might not appear to be
@@ -396,11 +396,11 @@ php*:::function-entry
 
  <sect1 xml:id="features.dtrace.systemtap">
   <title>Using SystemTap with PHP DTrace Static Probes</title>
-  <para>
+  <simpara>
    On some Linux distributions, the SystemTap tracing utility can be
    used to trace PHP's static DTrace probes.  This is available with
    PHP 5.4.20 and PHP 5.5.
-  </para>
+  </simpara>
 
   <sect2 xml:id="features.dtrace.systemtap-install">
    <title>Installing PHP with SystemTap</title>

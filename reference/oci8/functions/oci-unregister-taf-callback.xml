@@ -5,19 +5,19 @@
   <refname>oci_unregister_taf_callback</refname>
   <refpurpose>Unregister a user-defined callback function for Oracle Database TAF</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>bool</type><methodname>oci_unregister_taf_callback</methodname>
    <methodparam><type>resource</type><parameter>connection</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Unregister the user-defined callback function registered to <parameter>connection
    </parameter> by <function>oci_register_taf_callback</function>. See
    <link linkend="oci8.taf">OCI8 Transparent Application Failover (TAF) Support
    </link> for information.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,9 +27,9 @@
     <varlistentry>
      <term><parameter>connection</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An Oracle connection identifier.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -38,9 +38,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

@@ -5,11 +5,11 @@
  <title>Array &Functions;</title>
  <partintro xml:id="array.seealso">
    &reftitle.seealso;
-   <para>
+   <simpara>
     See also <function>is_array</function>, <function>explode</function>,
     <function>implode</function>,
     <function>preg_split</function>, and <function>unset</function>.
-   </para>
+   </simpara>
  </partintro>
 
  &reference.array.entities.functions;

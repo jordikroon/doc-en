@@ -18,10 +18,10 @@
    <methodparam><type>int</type><parameter>end_angle</parameter></methodparam>
    <methodparam><type>int</type><parameter>color</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>imagearc</function> draws an arc of circle centered at the given
    coordinates.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -31,59 +31,59 @@
     <varlistentry>
      <term><parameter>center_x</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        x-coordinate of the center.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>center_y</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        y-coordinate of the center.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>width</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The arc width.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>height</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The arc height.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>start_angle</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The arc start angle, in degrees.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>end_angle</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The arc end angle, in degrees.
        0° is located at the three-o'clock position, and the arc is drawn
        clockwise.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>color</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &gd.identifier.color;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -91,9 +91,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

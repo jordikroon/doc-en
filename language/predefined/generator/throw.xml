@@ -12,15 +12,15 @@
    <modifier>public</modifier> <type>mixed</type><methodname>Generator::throw</methodname>
    <methodparam><type>Throwable</type><parameter>exception</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Throws an exception into the generator and resumes execution of the generator.
    The behavior will be the same as if the current &yield; expression was replaced with
    a <literal>throw $exception</literal> statement.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If the generator is already closed when this method is invoked, the exception will
    be thrown in the caller's context instead.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,9 +29,9 @@
    <varlistentry>
     <term><parameter>exception</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Exception to throw into the generator.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -39,9 +39,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the yielded value.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -61,7 +61,7 @@ function gen() {
     }
     echo "Bar\n";
 }
- 
+
 $gen = gen();
 $gen->rewind();
 $gen->throw(new Exception('Test'));

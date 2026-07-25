@@ -14,10 +14,10 @@
    <methodparam><type>resource</type><parameter>stream</parameter></methodparam>
    <methodparam><type>int</type><parameter>size</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Takes the filepointer, <parameter>stream</parameter>, and truncates the file to
    length, <parameter>size</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,31 +27,31 @@
     <varlistentry>
      <term><parameter>stream</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The file pointer.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         The <parameter>stream</parameter> must be open for writing.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>size</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The size to truncate to.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         If <parameter>size</parameter> is larger than the file then the file
         is extended with null bytes.
-       </para>
-       <para>
+       </simpara>
+       <simpara>
         If <parameter>size</parameter> is smaller than the file then the file
         is truncated to that size.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
@@ -61,9 +61,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -91,12 +91,12 @@ fclose($handle);
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     The file pointer is <emphasis>not</emphasis> changed.
-   </para>
+   </simpara>
   </note>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

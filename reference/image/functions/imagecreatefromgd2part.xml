@@ -15,9 +15,9 @@
    <methodparam><type>int</type><parameter>width</parameter></methodparam>
    <methodparam><type>int</type><parameter>height</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Create a new image from a given part of GD2 file or URL.
-  </para>
+  </simpara>
   &tip.fopen-wrapper;
  </refsect1>
  <refsect1 role="parameters">
@@ -27,37 +27,37 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path to the GD2 image.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>x</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        x-coordinate of source point.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>y</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        y-coordinate of source point.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>width</parameter></term>
      <listitem>
-      <para>&gd.source.width;</para>
+      <simpara>&gd.source.width;</simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>height</parameter></term>
      <listitem>
-      <para>&gd.source.height;</para>
+      <simpara>&gd.source.height;</simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -65,7 +65,7 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>&gd.return.identifier;</para>
+  <simpara>&gd.return.identifier;</simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -102,7 +102,7 @@
 // For this example we need the image size before
 $image = getimagesize('./test.gd2');
 
-// Create the image instance now we got the image 
+// Create the image instance now we got the image
 // sizes
 $im = imagecreatefromgd2part('./test.gd2', 4, 4, ($image[0] / 2) - 6, ($image[1] / 2) - 6);
 

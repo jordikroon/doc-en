@@ -24,21 +24,21 @@ ob_end_flush();
     </programlisting>
    </example>
   </para>
-  <para>
+  <simpara>
    In the above example, the output from <function>echo</function>
    would be stored in the output buffer until
    <function>ob_end_flush</function> was called. In the mean time,
    the call to <function>setcookie</function> successfully stored a
    cookie without causing an error. (Headers cannot normally be sent
    to the browser after data has already been sent.)
-  </para>
+  </simpara>
  </section>
 
   <section xml:id="outcontrol.examples.rewrite">
   <title>Output rewrite usage</title>
-  <para>
-   Since PHP 7.1.0, <function>output_add_rewrite_var</function>, <function>output_reset_rewrite_vars</function> use dedicated output buffer. i.e. It does not use <link linkend="ini.session.use-trans-sid">trans sid</link> output buffer. 
-  </para>
+  <simpara>
+   Since PHP 7.1.0, <function>output_add_rewrite_var</function>, <function>output_reset_rewrite_vars</function> use dedicated output buffer. i.e. It does not use <link linkend="ini.session.use-trans-sid">trans sid</link> output buffer.
+  </simpara>
   <para>
    <example>
     <title>Output rewrite example</title>
@@ -77,9 +77,9 @@ output_add_rewrite_var('test', 'value');
     </screen>
    </example>
   </para>
-  <para>
+  <simpara>
    Since PHP 7.1.0, output rewrite functions have its own INI settings, <link linkend="ini.url-rewriter.tags">url_rewriter.tags</link> and <link linkend="ini.url-rewriter.hosts">url_rewriter.hosts</link>.
-  </para>
+  </simpara>
  </section>
 
 </appendix>

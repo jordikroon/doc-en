@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.shmop-write">
+<refentry xml:id="function.shmop-write" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>shmop_write</refname>
   <refpurpose>Write data into shared memory block</refpurpose>
@@ -60,7 +60,7 @@
   &reftitle.errors;
   <simpara>
    If <parameter>offset</parameter> is out of range, or a read-only shared memory segment
-   should be written to, a <classname>ValueError</classname> is thrown.
+   should be written to, a <exceptionname>ValueError</exceptionname> is thrown.
   </simpara>
  </refsect1>
 

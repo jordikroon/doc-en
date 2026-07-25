@@ -12,10 +12,10 @@
    <methodparam><type>string</type><parameter>target</parameter></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>data</parameter><initializer>""</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function creates a new instance of class
    <classname>DOMProcessingInstruction</classname>. &dom.node.inserted;
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -24,17 +24,17 @@
     <varlistentry>
      <term><parameter>target</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The target of the processing instruction.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>data</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The content of the processing instruction.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -42,9 +42,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The new <classname>DOMProcessingInstruction</classname> or &false; if an error occurred.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="errors">
   &reftitle.errors;
@@ -57,9 +57,9 @@
     <varlistentry>
      <term><constant>DOM_INVALID_CHARACTER_ERR</constant></term>
      <listitem>
-      <para>
+      <simpara>
        Raised if <parameter>target</parameter> contains an invalid character.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

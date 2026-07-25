@@ -5,7 +5,7 @@
   <refname>openssl_pkcs7_encrypt</refname>
   <refpurpose>Encrypt an S/MIME message</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -17,12 +17,12 @@
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>cipher_algo</parameter><initializer><constant>OPENSSL_CIPHER_AES_128_CBC</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>openssl_pkcs7_encrypt</function> takes the contents of the
    file named <parameter>input_filename</parameter> and encrypts them using an RC2
    40-bit cipher so that they can only be read by the intended recipients
    specified by <parameter>certificate</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -32,55 +32,55 @@
     <varlistentry>
      <term><parameter>input_filename</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>output_filename</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>certificate</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Either a lone X.509 certificate, or an array of X.509 certificates.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>headers</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>headers</parameter> is an array of headers that
        will be prepended to the data after it has been encrypted.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        <parameter>headers</parameter> can be either an associative array
        keyed by header name, or an indexed array, where each element contains
        a single header line.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>flags</parameter> can be used to specify options that affect
        the encoding process - see <link linkend="openssl.pkcs7.flags">PKCS7
        constants</link>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>cipher_algo</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        One of <link linkend="openssl.ciphers">cipher constants</link>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -89,9 +89,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

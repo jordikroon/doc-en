@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type class="union"><type>RecursiveIterator</type><type>null</type></type><methodname>RecursiveIteratorIterator::callGetChildren</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get children of the current element.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">

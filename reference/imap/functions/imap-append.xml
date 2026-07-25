@@ -15,9 +15,9 @@
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>options</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>internal_date</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
-   Appends a string <parameter>message</parameter> to the specified <parameter>folder</parameter>. 
-  </para>
+  <simpara>
+   Appends a string <parameter>message</parameter> to the specified <parameter>folder</parameter>.
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -27,41 +27,41 @@
     <varlistentry>
      <term><parameter>folder</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The mailbox name, see <function>imap_open</function> for more
        information
-      </para>
+      </simpara>
       &imap.mailboxname.insecure;
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>message</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The message to be append, as a string
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        When talking to the Cyrus IMAP server, you must use "\r\n" as
        your end-of-line terminator instead of "\n" or the operation will
        fail
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>options</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If provided, the <parameter>options</parameter> will also be written
        to the <parameter>folder</parameter>
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>internal_date</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If this parameter is set, it will set the INTERNALDATE on the appended message.  The parameter should be a date string that conforms to the rfc2060 specifications for a date_time value.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -69,9 +69,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

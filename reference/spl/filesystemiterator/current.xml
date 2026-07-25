@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type class="union"><type>string</type><type>SplFileInfo</type><type>FilesystemIterator</type></type><methodname>FilesystemIterator::current</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get file information of the current element.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -25,10 +25,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The filename, file information, or $this depending on the set flags.
    See the <link linkend="filesystemiterator.constants">FilesystemIterator constants</link>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -36,9 +36,9 @@
   <para>
    <example>
     <title><methodname>FilesystemIterator::current</methodname> example</title>
-    <para>
+    <simpara>
      This example will list the contents of the directory containing the script.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

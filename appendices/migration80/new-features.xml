@@ -10,59 +10,59 @@
   <sect3 xml:id="migration80.new-features.core.named-arguments">
    <title>Named Arguments</title>
 
-   <para>
+   <simpara>
     <!-- RFC: https://wiki.php.net/rfc/named_params -->
     Support for <link linkend="functions.named-arguments">Named Arguments</link> has been added.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration80.new-features.core.attributes">
    <title>Attributes</title>
 
-   <para>
+   <simpara>
     Support for <link linkend="language.attributes">Attributes</link> has been added.
     <!-- RFC: https://wiki.php.net/rfc/attributes_v2 -->
     <!-- RFC: https://wiki.php.net/rfc/attribute_amendments -->
     <!-- RFC: https://wiki.php.net/rfc/shorter_attribute_syntax -->
     <!-- RFC: https://wiki.php.net/rfc/shorter_attribute_syntax_change -->
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration80.new-features.core.property-promotion">
    <title>Constructor Property Promotion</title>
 
-   <para>
+   <simpara>
     Support for <link linkend="language.oop5.decon.constructor.promotion">constructor property promotion</link> (declaring properties in the constructor signature)
     has been added.
     <!-- RFC: https://wiki.php.net/rfc/constructor_promotion -->
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration80.new-features.core.union-types">
    <title>Union Types</title>
 
-   <para>
+   <simpara>
     Support for <link linkend="language.types.declarations.composite.union">union types</link> has been added.
     <!-- RFC: https://wiki.php.net/rfc/union_types_v2 -->
-   </para> 
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration80.new-features.core.match">
    <title>Match Expression</title>
 
-   <para>
+   <simpara>
     Support for <link linkend="control-structures.match"><literal>match</literal> expressions</link> has been added.
     <!-- RFC: https://wiki.php.net/rfc/match_expression_v2 -->
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration80.new-features.core.nullsafe-operator">
    <title>Nullsafe Operator</title>
 
-   <para>
+   <simpara>
     Support for the <link linkend="language.oop5.basic.nullsafe">nullsafe operator</link> (<literal>?-></literal>) has been added.
     <!-- RFC: https://wiki.php.net/rfc/nullsafe_operator -->
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration80.new-features.core.others">
@@ -70,21 +70,21 @@
 
    <itemizedlist>
     <listitem>
-     <para>
+     <simpara>
       The <link linkend="class.weakmap">WeakMap</link> class has been added.
       <!-- RFC: https://wiki.php.net/rfc/weak_maps -->
-     </para>
+     </simpara>
     </listitem>
     <listitem>
-     <para>
-      The <classname>ValueError</classname> class has been added.
-     </para>
+     <simpara>
+      The <exceptionname>ValueError</exceptionname> class has been added.
+     </simpara>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       Any number of function parameters may now be replaced by a variadic argument, as long as the
       types are compatible. For example, the following code is now allowed:
-     </para>
+     </simpara>
      <para>
       <programlisting role="php">
 <![CDATA[
@@ -101,9 +101,9 @@ class B extends A {
      </para>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       <type>static</type> (as in "late static binding") can now be used as a return type:
-     </para>
+     </simpara>
      <para>
       <programlisting role="php">
 <![CDATA[
@@ -148,11 +148,11 @@ class Test {
      </para>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       Traits can now define abstract private methods.
       Such methods must be implemented by the class using the trait.
       <!-- RFC: https://wiki.php.net/rfc/abstract_trait_method_validation -->
-     </para>
+     </simpara>
     </listitem>
     <listitem>
      <para>
@@ -192,10 +192,10 @@ function functionWithLongSignature(
      </para>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       Support for <type>mixed</type> type has been added.
       <!-- RFC: https://wiki.php.net/rfc/mixed_type_v2 -->
-     </para>
+     </simpara>
     </listitem>
     <listitem>
      <para>
@@ -233,9 +233,9 @@ class ChildClass extends ParentClass {
      </para>
     </listitem>
     <listitem>
-     <para>
+     <simpara>
       The <classname>InternalIterator</classname> has been added.
-     </para>
+     </simpara>
     </listitem>
    </itemizedlist>
   </sect3>
@@ -243,7 +243,7 @@ class ChildClass extends ParentClass {
 
  <sect2 xml:id="migration80.new-features.date">
   <title>Date and Time</title>
-  
+
   <itemizedlist>
    <listitem>
     <para>
@@ -252,11 +252,11 @@ class ChildClass extends ParentClass {
     </para>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The DateTime format specifier <literal>p</literal> has been added, which is the same as
      <literal>P</literal> but returns <literal>Z</literal> rather than <literal>+00:00</literal>
      for UTC.
-    </para>
+    </simpara>
    </listitem>
   </itemizedlist>
  </sect2>
@@ -274,68 +274,68 @@ class ChildClass extends ParentClass {
  <sect2 xml:id="migration80.new-features.filter">
   <title>Filter</title>
 
-  <para>
+  <simpara>
    <constant>FILTER_VALIDATE_BOOL</constant> has been added as an alias for
    <constant>FILTER_VALIDATE_BOOLEAN</constant>. The new name is preferred, as it uses the canonical
    type name.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration80.new-features.enchant">
   <title>Enchant</title>
 
-  <para>
+  <simpara>
    <function>enchant_dict_add</function>, <function>enchant_dict_is_added</function>, and
    <constant>LIBENCHANT_VERSION</constant> have been added.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration80.new-features.fpm">
   <title>FPM</title>
 
-  <para>
+  <simpara>
    Added a new option <literal>pm.status_listen</literal> that allows getting the status from
    different endpoint (e.g. port or UDS file) which is useful for getting the status when all
    children are busy with serving long running requests.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration80.new-features.hash">
   <title>Hash</title>
 
-  <para>
+  <simpara>
    <classname>HashContext</classname> objects can now be serialized.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration80.new-features.intl">
   <title>Internationalization Functions</title>
 
-  <para>
+  <simpara>
    The <constant>IntlDateFormatter::RELATIVE_FULL</constant>,
    <constant>IntlDateFormatter::RELATIVE_LONG</constant>,
    <constant>IntlDateFormatter::RELATIVE_MEDIUM</constant>, and
    <constant>IntlDateFormatter::RELATIVE_SHORT</constant>
    constants have been added.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration80.new-features.ldap">
   <title>LDAP</title>
 
-  <para>
+  <simpara>
    <function>ldap_count_references</function> has been added, which returns the number
    of reference messages in a search result.
-  </para>
+  </simpara>
  </sect2>
  <sect2 xml:id="migration80.new-features.opcache">
   <title>OPcache</title>
 
-  <para>
+  <simpara>
    If the <!--<link linkend="ini.opcache.record-warnings">-->opcache.record_warnings<!--</link>--> ini setting is
    enabled, OPcache will record compile-time warnings and replay them on the next include, even if
    it is served from cache.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration80.new-features.openssl">
@@ -375,11 +375,11 @@ class ChildClass extends ParentClass {
  <sect2 xml:id="migration80.new-features.pcre">
   <title>Regular Expressions (Perl-Compatible)</title>
 
-  <para>
+  <simpara>
    <function>preg_last_error_msg</function> has been added, which returns a human-readable message for the last
    PCRE error. It complements <function>preg_last_error</function>, which returns an integer enum value
    instead.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration80.new-features.reflection">
@@ -387,10 +387,10 @@ class ChildClass extends ParentClass {
 
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      The following methods can now return information about default values of
      parameters of internal functions:
-    </para>
+    </simpara>
     <para>
      <simplelist>
       <member><methodname>ReflectionParameter::isDefaultValueAvailable</methodname></member>
@@ -418,45 +418,45 @@ class ChildClass extends ParentClass {
 
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      <function>str_contains</function>, <function>str_starts_with</function> and
      <function>str_ends_with</function> have been added, which check whether <parameter>haystack</parameter> contains,
      starts with or ends with <parameter>needle</parameter>, respectively.
      <!-- RFC: https://wiki.php.net/rfc/str_contains -->
      <!-- RFC: https://wiki.php.net/rfc/add_str_starts_with_and_ends_with_functions -->
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <function>fdiv</function> has been added, which performs a floating-point division under IEEE 754 semantics.
      Division by zero is considered well-defined and will return one of <literal>Inf</literal>,
      <literal>-Inf</literal> or <literal>NaN</literal>.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <function>get_debug_type</function> has been added, which returns a type useful for error messages. Unlike
      <function>gettype</function>, it uses canonical type names, returns class names for objects, and
      indicates the resource type for resources.
      <!-- RFC: https://wiki.php.net/rfc/get_debug_type -->
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <function>printf</function> and friends now support the <literal>%h</literal> and
      <literal>%H</literal> format specifiers. These are the same as <literal>%g</literal> and
      <literal>%G</literal>, but always use <literal>"."</literal> as the decimal separator, rather
      than determining it through the <constant>LC_NUMERIC</constant> locale.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <function>printf</function> and friends now support using <literal>"*"</literal> as width or
      precision, in which case the width/precision is passed as an argument to printf. This also allows
      using precision <literal>-1</literal> with <literal>%g</literal>, <literal>%G</literal>,
      <literal>%h</literal> and <literal>%H</literal>. For example, the following code can be used to
      reproduce PHP's default floating point formatting:
-    </para>
+    </simpara>
     <para>
      <programlisting role="php">
 <![CDATA[
@@ -469,11 +469,11 @@ printf("%.*H", (int) ini_get("serialize_precision"), $float);
     </para>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <function>proc_open</function> now supports pseudo-terminal (PTY) descriptors. The following
      attaches <literal>stdin</literal>, <literal>stdout</literal> and <literal>stderr</literal> to the
      same PTY:
-    </para>
+    </simpara>
     <para>
      <programlisting role="php">
 <![CDATA[
@@ -485,11 +485,11 @@ $proc = proc_open($command, [['pty'], ['pty'], ['pty']], $pipes);
     </para>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <function>proc_open</function> now supports socket pair descriptors. The following attaches a
      distinct socket pair to <literal>stdin</literal>, <literal>stdout</literal> and
      <literal>stderr</literal>:
-    </para>
+    </simpara>
     <para>
      <programlisting role="php">
 <![CDATA[
@@ -499,24 +499,24 @@ $proc = proc_open($command, [['socket'], ['socket'], ['socket']], $pipes);
 ]]>
      </programlisting>
     </para>
-    <para>
+    <simpara>
      Unlike pipes, sockets do not suffer from blocking I/O issues on Windows. However, not all
      programs may work correctly with stdio sockets.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      Sorting functions are now stable, which means that equal-comparing elements will retain their
      original order.
      <!-- RFC: https://wiki.php.net/rfc/stable_sorting -->
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      <function>array_diff</function>, <function>array_intersect</function> and their variations can
      now be used with a single array as argument. This means that usages like the following are now
      possible:
-    </para>
+    </simpara>
     <para>
      <programlisting role="php">
 <![CDATA[
@@ -531,10 +531,10 @@ array_intersect(...$arrays);
     </para>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The <parameter>flag</parameter> parameter of <function>ob_implicit_flush</function> was changed
      to accept a <type>bool</type> rather than an <type>int</type>.
-    </para>
+    </simpara>
    </listitem>
   </itemizedlist>
  </sect2>
@@ -542,11 +542,11 @@ array_intersect(...$arrays);
  <sect2 xml:id="migration80.new-features.tokenizer">
   <title>Tokenizer</title>
 
-  <para>
+  <simpara>
    <classname>PhpToken</classname> adds an object-based interface to the tokenizer. It provides a
    more uniform and ergonomic representation, while being more memory efficient and faster.
    <!--  RFC: https://wiki.php.net/rfc/token_as_object -->
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration80.new-features.zip">
@@ -554,9 +554,9 @@ array_intersect(...$arrays);
 
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      The Zip extension has been updated to version 1.19.1.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
     <para>
@@ -593,10 +593,10 @@ array_intersect(...$arrays);
     </para>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The <varname>ZipArchive::lastId</varname> property to get the index value of
      the last added entry has been added.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
     <para>
@@ -615,9 +615,9 @@ array_intersect(...$arrays);
     </para>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      Optional compression / encryption features are now listed in phpinfo.
-    </para>
+    </simpara>
    </listitem>
   </itemizedlist>
  </sect2>

@@ -15,20 +15,20 @@
    <type class="union"><type>PgSql\Result</type><type>false</type></type><methodname>pg_get_result</methodname>
    <methodparam><type>PgSql\Connection</type><parameter>connection</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_get_result</function> gets an <classname>PgSql\Result</classname> instance from
    an asynchronous query executed by
    <function>pg_send_query</function>, <function>pg_send_query_params</function> or
    <function>pg_send_execute</function>.
-  </para>
-  <para><function>pg_send_query</function> and the
+  </simpara>
+  <simpara><function>pg_send_query</function> and the
    other asynchronous query functions
    can send multiple queries to a PostgreSQL server and
    <function>pg_get_result</function> is used to get each query's results,
    one by one.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   <para>
@@ -45,9 +45,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An <classname>PgSql\Result</classname> instance, or &false; if no more results are available.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -81,12 +81,12 @@
   if (!pg_connection_busy($dbconn)) {
       pg_send_query($dbconn, "select * from authors; select count(*) from authors;");
   }
-  
+
   $res1 = pg_get_result($dbconn);
   echo "First call to pg_get_result(): $res1\n";
   $rows1 = pg_num_rows($res1);
   echo "$res1 has $rows1 records\n\n";
-  
+
   $res2 = pg_get_result($dbconn);
   echo "Second call to pg_get_result(): $res2\n";
   $rows2 = pg_num_rows($res2);
@@ -104,7 +104,7 @@ Second call to pg_get_result(): Resource id #4
 Resource id #4 has 1 records
 ]]>
     </screen>
-   </example> 
+   </example>
   </para>
  </refsect1>
 

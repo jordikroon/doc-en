@@ -12,9 +12,9 @@
    <methodparam><type>string</type><parameter>data</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>max_length</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>   
-   This function inflates a deflated string.  
-  </para>
+  <simpara>
+   This function inflates a deflated string.
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -23,17 +23,17 @@
     <varlistentry>
      <term><parameter>data</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The data compressed by <function>gzdeflate</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>max_length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The maximum length of decoded data.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -41,14 +41,14 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The original uncompressed data or &false; on error.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The function will return an error if the uncompressed data is more than
-   32768 times the length of the compressed input <parameter>data</parameter> 
+   32768 times the length of the compressed input <parameter>data</parameter>
    or, unless <parameter>max_length</parameter> is <literal>0</literal>, more than the optional parameter <parameter>max_length</parameter>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;

@@ -12,10 +12,10 @@
    <methodparam><type class="union"><type>resource</type><type>int</type></type><parameter>file_descriptor</parameter></methodparam>
    <methodparam><type>int</type><parameter>name</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the value of a configurable limit from <parameter>name</parameter>
    for <parameter>file_descriptor</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,14 +26,14 @@
     <varlistentry>
      <term><parameter>name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The name of the configurable limit, one of the following.
        <constant>POSIX_PC_LINK_MAX</constant>, <constant>POSIX_PC_MAX_CANON</constant>,
        <constant>POSIX_PC_MAX_INPUT</constant>, <constant>POSIX_PC_NAME_MAX</constant>,
        <constant>POSIX_PC_PATH_MAX</constant>, <constant>POSIX_PC_PIPE_BUF</constant>,
        <constant>POSIX_PC_CHOWN_RESTRICTED</constant>, <constant>POSIX_PC_NO_TRUNC</constant>,
        <constant>POSIX_PC_ALLOC_SIZE_MIN</constant>, <constant>POSIX_PC_SYMLINK_MAX</constant>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -42,17 +42,17 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the configurable limit or &false;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws a <classname>ValueError</classname>
+  <simpara>
+   Throws a <exceptionname>ValueError</exceptionname>
    when <parameter>resource</parameter> is invalid.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -83,10 +83,10 @@
   &reftitle.examples;
   <example xml:id="function.posix-fpathconf.example.basic">
    <title><function>posix_fpathconf</function> example</title>
-   <para>
+   <simpara>
     This example will get the max path name's length in bytes
     for the current dir.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

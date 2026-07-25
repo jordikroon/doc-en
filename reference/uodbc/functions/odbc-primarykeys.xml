@@ -14,10 +14,10 @@
    <methodparam><type>string</type><parameter>schema</parameter></methodparam>
    <methodparam><type>string</type><parameter>table</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a result object that can be used to fetch the column names
    that comprise the primary key for a table.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -32,24 +32,24 @@
     <varlistentry>
      <term><parameter>catalog</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &odbc.parameter.catalog;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>schema</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &odbc.parameter.schema;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>table</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -57,9 +57,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &odbc.result.object-return-falseforfailure;
-  </para>
+  </simpara>
   <para>
    The result set has the following columns:
    <itemizedlist>

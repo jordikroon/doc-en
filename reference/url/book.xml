@@ -8,9 +8,9 @@
 
  <preface xml:id="intro.url">
   &reftitle.intro;
-  <para>
+  <simpara>
    Dealing with URL strings: encoding, decoding and parsing.
-  </para>
+  </simpara>
  </preface>
 
  &reference.url.constants;

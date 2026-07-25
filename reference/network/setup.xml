@@ -7,20 +7,20 @@
  <!-- {{{ Requirements -->
  <section xml:id="network.requirements">
   &reftitle.required;
-  <para>
+  <simpara>
    Functions <function>checkdnsrr</function>, <function>getmxrr</function> and
    <function>dns_get_record</function> requires Bind on Linux.
-  </para>
+  </simpara>
  </section>
  <!-- }}} -->
 
  <!-- {{{ Resources -->
  <section xml:id="network.resources">
   &reftitle.resources;
-  <para>
+  <simpara>
    This extension defines a file pointer resource returned by
    <function>fsockopen</function> and <function>pfsockopen</function>.
-  </para>
+  </simpara>
  </section>
  <!-- }}} -->
 

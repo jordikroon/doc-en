@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>ReflectionAttribute::isRepeated</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns whether the attribute of this name has been repeated on a code element.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; when attribute is used repeatedly, otherwise &false;.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

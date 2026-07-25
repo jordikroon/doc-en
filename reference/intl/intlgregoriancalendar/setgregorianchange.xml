@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>IntlGregorianCalendar::setGregorianChange</methodname>
    <methodparam><type>float</type><parameter>timestamp</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -26,9 +26,9 @@
    <varlistentry>
     <term><parameter>timestamp</parameter></term>
     <listitem>
-     <para>
-      
-     </para>
+     <simpara>
+
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -36,9 +36,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

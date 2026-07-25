@@ -12,7 +12,7 @@
    <modifier>public</modifier> <type>static</type><methodname>DateTimeImmutable::setMicrosecond</methodname>
    <methodparam><type>int</type><parameter>microsecond</parameter></methodparam>
   </methodsynopsis>
-  
+
   <simpara>
    Returns a new <type>DateTimeImmutable</type> object constructed from the
    old one, with modified microsecond part.
@@ -21,7 +21,7 @@
 
  <refsect1 role="parameters">
   &reftitle.parameters;
-  
+
   <variablelist>
    <varlistentry>
     <term><parameter>microsecond</parameter></term>
@@ -32,7 +32,7 @@
     </listitem>
    </varlistentry>
   </variablelist>
- 
+
  </refsect1>
 
  <refsect1 role="returnvalues">

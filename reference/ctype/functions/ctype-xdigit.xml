@@ -15,10 +15,10 @@
    <type>bool</type><methodname>ctype_xdigit</methodname>
    <methodparam><type>mixed</type><parameter>text</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks if all of the characters in the provided <type>string</type>,
    <parameter>text</parameter>, are hexadecimal 'digits'.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -41,12 +41,12 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   Returns &true; if every character in <parameter>text</parameter> is 
-   a hexadecimal 'digit', that is a decimal digit or a character from 
+  <simpara>
+   Returns &true; if every character in <parameter>text</parameter> is
+   a hexadecimal 'digit', that is a decimal digit or a character from
    <literal>[A-Fa-f]</literal> , &false; otherwise.
    &ctype.result.empty-string;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

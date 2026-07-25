@@ -5,7 +5,7 @@
   <refname>bcsub</refname>
   <refpurpose>Subtract one arbitrary precision number from another</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The result of the subtraction, as a string.
-  </para>
+  </simpara>
  </refsect1>
 
  <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('function.bcadd')/db:refsect1[@role='errors'])" />
@@ -73,7 +73,7 @@ echo bcsub($a, $b, 4);  // -3.7660
    </programlisting>
   </example>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

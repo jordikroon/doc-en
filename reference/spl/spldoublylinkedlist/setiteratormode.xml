@@ -21,9 +21,9 @@
     <varlistentry>
      <term><parameter>mode</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        There are two orthogonal sets of modes that can be set:
-      </para>
+      </simpara>
       <itemizedlist>
        <listitem>
         <simpara>The direction of the iteration (either one or the other):</simpara>
@@ -41,16 +41,16 @@
        </listitem>
       </itemizedlist>
 
-      <para>
+      <simpara>
        The default mode is: <constant>SplDoublyLinkedList::IT_MODE_FIFO</constant> | <constant>SplDoublyLinkedList::IT_MODE_KEEP</constant>
-      </para>
+      </simpara>
 
       <warning>
-       <para>
+       <simpara>
         The direction of iteration can not be changed for <classname>SplStack</classname> and
         <classname>SplQueue</classname> classes, it is always <constant>SplDoublyLinkedList::IT_MODE_FIFO</constant>.
-        Trying to modify it will result in a <classname>RuntimeException</classname> being thrown.
-       </para>
+        Trying to modify it will result in a <exceptionname>RuntimeException</exceptionname> being thrown.
+       </simpara>
       </warning>
      </listitem>
     </varlistentry>
@@ -60,9 +60,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the different modes and flags that affect the iteration.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

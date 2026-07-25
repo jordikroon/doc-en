@@ -5,7 +5,7 @@
   <refname>array_diff_key</refname>
   <refpurpose>Computes the difference of arrays using keys for comparison</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,12 +13,12 @@
    <methodparam><type>array</type><parameter>array</parameter></methodparam>
    <methodparam rep="repeat"><type>array</type><parameter>arrays</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Compares the keys from <parameter>array</parameter> against the keys
    from <parameter>arrays</parameter> and returns the difference.
    This function is like <function>array_diff</function> except the
    comparison is done on the keys instead of the values.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,18 +29,18 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The array to compare from
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
     <varlistentry>
      <term><parameter>arrays</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Arrays to compare against
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -50,11 +50,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an <type>array</type> containing all the entries from
    <parameter>array</parameter> whose keys are absent from all of the
    other arrays.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -88,13 +88,13 @@
   <para>
    <example>
     <title><function>array_diff_key</function> example</title>
-    <para>
+    <simpara>
      The two keys from the <literal>key =&gt; value</literal> pairs are
      considered equal only if
      <literal>(string) $key1 === (string) $key2 </literal>. In other words
      a strict type check is executed so the string representation must be
      the same.
-    </para>
+    </simpara>
         <programlisting role="php">
 <![CDATA[
 <?php
@@ -147,11 +147,11 @@ array(2) {
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     This function only checks one dimension of a n-dimensional
     array. Of course you can check deeper dimensions by using
     <literal>array_diff_key($array1[0], $array2[0]);</literal>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

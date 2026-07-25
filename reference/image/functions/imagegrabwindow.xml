@@ -13,13 +13,13 @@
    <methodparam><type>int</type><parameter>handle</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>client_area</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Grabs a window or its client area using a windows handle (HWND property in COM instance)
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     This function is only available on Windows.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -30,17 +30,17 @@
     <varlistentry>
      <term><parameter>handle</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The HWND window ID.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>client_area</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Include the client area of the application window.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -49,18 +49,18 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an image object on success, &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    E_NOTICE is issued if <parameter>handle</parameter> is invalid
    window handle.
    E_WARNING is issued if the Windows API is too old.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -98,9 +98,9 @@
   <para>
    <example>
     <title><function>imagegrabwindow</function> example</title>
-    <para>
+    <simpara>
      Capture a window (IE for example)
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -113,9 +113,9 @@ imagepng($im, "iesnap.png");
 ?>
 ]]>
     </programlisting>
-    <para>
+    <simpara>
      Capture a window (IE for example) but with its content
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

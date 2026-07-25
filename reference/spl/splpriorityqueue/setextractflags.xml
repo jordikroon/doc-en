@@ -23,7 +23,7 @@
      <listitem>
       <para>
        Defines what is extracted by <methodname>SplPriorityQueue::current</methodname>,
-       <methodname>SplPriorityQueue::top</methodname> and 
+       <methodname>SplPriorityQueue::top</methodname> and
        <methodname>SplPriorityQueue::extract</methodname>.
       </para>
       <itemizedlist>
@@ -31,9 +31,9 @@
        <listitem><simpara><constant>SplPriorityQueue::EXTR_PRIORITY</constant> (0x00000002): Extract the priority</simpara></listitem>
        <listitem><simpara><constant>SplPriorityQueue::EXTR_BOTH</constant> (0x00000003): Extract an array containing both</simpara></listitem>
       </itemizedlist>
-      <para>
+      <simpara>
        The default mode is <constant>SplPriorityQueue::EXTR_DATA</constant>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -42,9 +42,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the flags of extraction.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

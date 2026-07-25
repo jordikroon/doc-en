@@ -11,13 +11,13 @@
    <type>bool</type><methodname>stream_filter_remove</methodname>
    <methodparam><type>resource</type><parameter>stream_filter</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Removes a stream filter previously added to a stream with
    <function>stream_filter_prepend</function> or
    <function>stream_filter_append</function>.  Any data remaining in the
    filter's internal buffer will be flushed through to the next filter before
    removing it.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,9 +27,9 @@
     <varlistentry>
      <term><parameter>stream_filter</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The stream filter to be removed.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -38,9 +38,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -73,7 +73,7 @@ Guvf vf a test
 ]]>
     </screen>
    </example>
-   
+
   </para>
  </refsect1>
 

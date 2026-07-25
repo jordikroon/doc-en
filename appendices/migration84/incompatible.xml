@@ -467,10 +467,10 @@
  <sect2 xml:id="migration84.incompatible.date">
   <title>Date</title>
 
-  <para>
+  <simpara>
    <literal>number</literal> symbols in <link linkend="datetime.formats.relative">relative formats</link>
    once again accept multiple signs, e.g. <literal>+-2</literal>.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration84.incompatible.dom">

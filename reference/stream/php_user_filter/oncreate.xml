@@ -12,17 +12,17 @@
    <modifier>public</modifier> <type>bool</type><methodname>php_user_filter::onCreate</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    This method is called during instantiation of the filter class
    object.  If your filter allocates or initializes any other resources
    (such as a buffer), this is the place to do it.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    When your filter is first instantiated, and
    <literal>yourfilter-&gt;onCreate()</literal> is called, a number of properties
    will be available as shown in the table below.
-  </para>
+  </simpara>
   <para>
    <informaltable>
     <tgroup cols="2">
@@ -53,7 +53,7 @@
        <entry><literal>FilterClass-&gt;stream</literal></entry>
        <entry>
         The stream resource being filtered. Maybe available only during
-        <methodname>filter</methodname> calls when the 
+        <methodname>filter</methodname> calls when the
         <literal>closing</literal> parameter is set to &false;.
        </entry>
       </row>
@@ -71,10 +71,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Your implementation of
    this method should return &false; on failure, or &true; on success.
-  </para>
+  </simpara>
  </refsect1>
 
 

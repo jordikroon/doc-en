@@ -13,25 +13,25 @@
    <methodparam><type>string</type><parameter>str</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>delimiter</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>preg_quote</function> takes <parameter>str</parameter>
    and puts a backslash in front of every character that is part of
    the regular expression syntax.  This is useful if you have a
    run-time string that you need to match in some text and the
    string may contain special regex characters.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The special regular expression characters are:
    <literal>. \ + * ? [ ^ ] $ ( ) { } = ! &lt; &gt; | : - #</literal>
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Note that <literal>/</literal> is not a special regular expression character.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     Note that <function>preg_quote</function> is not meant to be applied to the
     $replacement string(s) of <function>preg_replace</function> etc.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -42,20 +42,20 @@
     <varlistentry>
      <term><parameter>str</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>delimiter</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If the optional <parameter>delimiter</parameter> is specified, it
        will also be escaped.  This is useful for escaping the delimiter
        that is required by the PCRE functions. The <literal>/</literal> is the most commonly
        used delimiter.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -64,9 +64,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the quoted (escaped) string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

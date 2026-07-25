@@ -29,17 +29,17 @@
     <varlistentry>
      <term><parameter>items</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &memcached.parameter.items;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>expiration</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &memcached.parameter.expiration;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

@@ -12,31 +12,31 @@
    <modifier>public</modifier> <type>object</type><methodname>ReflectionClass::newInstanceWithoutConstructor</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Creates a new instance of the class without invoking the constructor.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
   &reftitle.parameters;
-  <para>
-  </para>
+  <simpara>
+  </simpara>
  </refsect1>
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-  </para>
+  <simpara>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   A <classname>ReflectionException</classname> if the class is an internal
+  <simpara>
+   A <exceptionname>ReflectionException</exceptionname> if the class is an internal
    class that cannot be instantiated without invoking the constructor.
    This exception is limited only to internal classes that are
    <link linkend="language.oop5.final">final</link>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

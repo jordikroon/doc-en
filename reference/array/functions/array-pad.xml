@@ -5,7 +5,7 @@
   <refname>array_pad</refname>
   <refpurpose>Pad array to the specified length with a value</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,7 +14,7 @@
    <methodparam><type>int</type><parameter>length</parameter></methodparam>
    <methodparam><type>mixed</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>array_pad</function> returns a copy of the
    <parameter>array</parameter> padded to size specified by
    <parameter>length</parameter> with value
@@ -24,7 +24,7 @@
    absolute value of <parameter>length</parameter> is less than or
    equal to the length of the <parameter>array</parameter> then no
    padding takes place.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -34,26 +34,26 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Initial array of values to pad.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        New size of the array.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Value to pad if <parameter>array</parameter> is less than
        <parameter>length</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -62,15 +62,15 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a copy of the <parameter>array</parameter> padded to size specified
-   by <parameter>length</parameter> with value 
-   <parameter>value</parameter>. If <parameter>length</parameter> is 
-   positive then the array is padded on the right, if it's negative then 
+   by <parameter>length</parameter> with value
+   <parameter>value</parameter>. If <parameter>length</parameter> is
+   positive then the array is padded on the right, if it's negative then
    on the left. If the absolute value of <parameter>length</parameter> is less
    than or equal to the length of the <parameter>array</parameter> then no
    padding takes place.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

@@ -10,13 +10,13 @@
 <!-- {{{ IntlChar intro -->
   <section xml:id="intlchar.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     <classname>IntlChar</classname> provides access to a number of utility
     methods that can be used to access information about Unicode characters.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     The methods and constants adhere closely to the names and behavior used by the underlying ICU library.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

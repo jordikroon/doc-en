@@ -14,9 +14,9 @@
    <methodparam><type>int</type><parameter>option</parameter></methodparam>
    <methodparam><type class="union"><type>array</type><type>string</type><type>int</type><type>bool</type></type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets the value of the specified option to be <parameter>value</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,11 +26,11 @@
     <varlistentry>
      <term><parameter>ldap</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Either an <classname>LDAP\Connection</classname> instance, returned by
        <function>ldap_connect</function>, to set the option for that connection,
        or &null; to set the option globally.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -197,8 +197,8 @@
         </tgroup>
        </informaltable>
       </para>
-      <para>
-       <constant>LDAP_OPT_SERVER_CONTROLS</constant> and 
+      <simpara>
+       <constant>LDAP_OPT_SERVER_CONTROLS</constant> and
        <constant>LDAP_OPT_CLIENT_CONTROLS</constant> require a list of
        controls, this means that the value must be an array of controls. A
        control consists of an <emphasis>oid</emphasis> identifying the control,
@@ -209,25 +209,25 @@
        elements are key <emphasis>value</emphasis> with string value
        and key <emphasis>iscritical</emphasis> with boolean value.
        <emphasis>iscritical</emphasis> defaults to <emphasis>&false;</emphasis>
-       if not supplied. See <link 
+       if not supplied. See <link
        xlink:href="&url.ldap.openldap-c-api;">draft-ietf-ldapext-ldap-c-api-xx.txt</link>
        for details. See also the second example below.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
        All TLS options must be set globally before
        <function>ldap_connect</function> for ldaps connection or
        for the connection before <function>ldap_start_tls</function>.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The new value for the specified <parameter>option</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -236,9 +236,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -300,10 +300,10 @@ if (!ldap_set_option($ds, LDAP_OPT_SERVER_CONTROLS, array($ctrl1, $ctrl2))) {
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     This function is only available when using OpenLDAP 2.x.x OR Netscape
     Directory SDK x.x.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

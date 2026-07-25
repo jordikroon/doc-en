@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.fileowner">
+<refentry xml:id="function.fileowner" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>fileowner</refname>
   <refpurpose>Gets file owner</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>int</type><type>false</type></type><methodname>fileowner</methodname>
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the file owner.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path to the file.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,11 +35,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the user ID of the owner of the file, &return.falseforfailure;.
    The user ID is returned in numerical format, use
    <function>posix_getpwuid</function> to resolve it to a username.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

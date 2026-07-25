@@ -17,13 +17,13 @@
    <methodparam choice="opt"><type>bool</type><parameter>oneWay</parameter><initializer>&false;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>uriParserClass</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Performs SOAP request over HTTP.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This method can be overridden in subclasses to implement different transport
    layers, perform additional XML processing or other purpose.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -33,42 +33,42 @@
     <varlistentry>
      <term><parameter>request</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The XML SOAP request.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>location</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The URL to request.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>action</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The SOAP action.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>version</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The SOAP version.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>oneWay</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If <parameter>oneWay</parameter> is set to &true;, this method returns nothing.
        Use this where a response is not expected.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -86,9 +86,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The XML SOAP response.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

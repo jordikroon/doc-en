@@ -11,11 +11,11 @@
    <type>bool</type><methodname>imagepalettetotruecolor</methodname>
    <methodparam><type>GdImage</type><parameter>image</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   Converts a palette based image, created by functions like 
-   <function>imagecreate</function> to a true color image, like 
+  <simpara>
+   Converts a palette based image, created by functions like
+   <function>imagecreate</function> to a true color image, like
    <function>imagecreatetruecolor</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">

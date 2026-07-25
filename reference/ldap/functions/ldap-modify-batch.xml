@@ -15,10 +15,10 @@
    <methodparam><type>array</type><parameter>modifications_info</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>array</type><type>null</type></type><parameter>controls</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Modifies an existing entry in the LDAP directory. Allows detailed
    specification of the modifications to perform.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,90 +28,90 @@
     <varlistentry>
      <term><parameter>ldap</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An LDAP resource, returned by <function>ldap_connect</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>dn</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The distinguished name of an LDAP entity.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>modifications_info</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An array that specifies the modifications to make. Each entry in this
        array is an associative array with two or three keys:
        <literal>attrib</literal> maps to the name of the attribute to modify,
        <literal>modtype</literal> maps to the type of modification to perform,
        and (depending on the type of modification) <literal>values</literal>
        maps to an array of attribute values relevant to the modification.
-      </para>
+      </simpara>
       <para>
        Possible values for <literal>modtype</literal> include:
        <variablelist>
         <varlistentry>
          <term><constant>LDAP_MODIFY_BATCH_ADD</constant></term>
          <listitem>
-          <para>
+          <simpara>
            Each value specified through <literal>values</literal> is added (as
            an additional value) to the attribute named by
            <literal>attrib</literal>.
-          </para>
+          </simpara>
          </listitem>
         </varlistentry>
         <varlistentry>
          <term><constant>LDAP_MODIFY_BATCH_REMOVE</constant></term>
          <listitem>
-          <para>
+          <simpara>
            Each value specified through <literal>values</literal> is removed
            from the attribute named by <literal>attrib</literal>. Any value of
            the attribute not contained in the <literal>values</literal> array
            will remain untouched.
-          </para>
+          </simpara>
          </listitem>
         </varlistentry>
         <varlistentry>
          <term><constant>LDAP_MODIFY_BATCH_REMOVE_ALL</constant></term>
          <listitem>
-          <para>
+          <simpara>
            All values are removed from the attribute named by
            <literal>attrib</literal>. A <literal>values</literal> entry must
            not be provided.
-          </para>
+          </simpara>
          </listitem>
         </varlistentry>
         <varlistentry>
          <term><constant>LDAP_MODIFY_BATCH_REPLACE</constant></term>
          <listitem>
-          <para>
+          <simpara>
            All current values of the attribute named by
            <literal>attrib</literal> are replaced with the values specified
            through <literal>values</literal>.
-          </para>
+          </simpara>
          </listitem>
         </varlistentry>
        </variablelist>
       </para>
-      <para>
+      <simpara>
        Note that any value for <literal>attrib</literal> must be a string, any
        value for <literal>values</literal> must be an array of strings, and
        any value for <literal>modtype</literal> must be one of the
        LDAP_MODIFY_BATCH_* constants listed above.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>controls</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Array of <link linkend="ldap.controls">LDAP Controls</link> to send with the request.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -120,9 +120,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

@@ -5,7 +5,7 @@
   <refname>debug_backtrace</refname>
   <refpurpose>Generates a backtrace</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,11 +13,11 @@
    <methodparam choice="opt"><type>int</type><parameter>options</parameter><initializer><constant>DEBUG_BACKTRACE_PROVIDE_OBJECT</constant></initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>limit</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>debug_backtrace</function> generates a PHP backtrace.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters"><!-- {{{ -->
   &reftitle.parameters;
   <para>
@@ -98,22 +98,22 @@
     <varlistentry>
      <term><parameter>limit</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        This parameter can be used to limit the number of stack frames returned.
        By default (<parameter>limit</parameter>=<literal>0</literal>) it returns all stack frames.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1><!-- }}} -->
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array of associative <type>array</type>s. The possible returned elements
    are as follows:
-  </para>
+  </simpara>
   <para>
    <table>
     <title>Possible returned elements from <function>debug_backtrace</function></title>
@@ -212,10 +212,10 @@ include_once '/tmp/a.php';
 ?>
 ]]>
     </programlisting>
-    <para>
+    <simpara>
      Results similar to the following when executing
      <filename>/tmp/b.php</filename>:
-    </para>
+    </simpara>
     <screen>
 <![CDATA[
 Hi: friend
@@ -246,7 +246,7 @@ array(4) {
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

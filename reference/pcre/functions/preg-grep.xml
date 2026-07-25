@@ -5,7 +5,7 @@
   <refname>preg_grep</refname>
   <refpurpose>Return array entries that match the pattern</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,11 +14,11 @@
    <methodparam><type>array</type><parameter>array</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
-   Returns the array consisting of the elements of the 
+  <simpara>
+   Returns the array consisting of the elements of the
    <parameter>array</parameter> array that match the given
    <parameter>pattern</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,27 +28,27 @@
     <varlistentry>
      <term><parameter>pattern</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The pattern to search for, as a string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input array.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If set to <constant>PREG_GREP_INVERT</constant>, this function returns
        the elements of the input array that do <emphasis>not</emphasis> match
        the given <parameter>pattern</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -57,10 +57,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array indexed using the keys from the
    <parameter>array</parameter> array, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

@@ -63,9 +63,9 @@
   </table>
   &ini.php.constants;
  </para>
- 
+
  &ini.descriptions.title;
- 
+
  <para>
  <variablelist>
    <varlistentry xml:id="ini.uodbc.default-db">
@@ -74,88 +74,88 @@
     <type>string</type>
    </term>
    <listitem>
-    <para>
+    <simpara>
      ODBC data source to use if none is specified in
      <function>odbc_connect</function> or
      <function>odbc_pconnect</function>.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
-  
+
   <varlistentry xml:id="ini.uodbc.default-user">
    <term>
     <parameter>odbc.default_user</parameter>
     <type>string</type>
    </term>
    <listitem>
-    <para>
+    <simpara>
      User name to use if none is specified in
      <function>odbc_connect</function> or
      <function>odbc_pconnect</function>.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
-  
+
   <varlistentry xml:id="ini.uodbc.default-pw">
    <term>
     <parameter>odbc.default_pw</parameter>
     <type>string</type>
    </term>
    <listitem>
-    <para>
+    <simpara>
      Password to use if none is specified in
      <function>odbc_connect</function> or
      <function>odbc_pconnect</function>.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
-  
+
   <varlistentry xml:id="ini.uodbc.allow-persistent">
    <term>
     <parameter>odbc.allow_persistent</parameter>
     <type>bool</type>
    </term>
    <listitem>
-    <para>
+    <simpara>
      Whether to allow persistent ODBC connections.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
-  
+
   <varlistentry xml:id="ini.uodbc.check-persistent">
    <term>
     <parameter>odbc.check_persistent</parameter>
     <type>bool</type>
    </term>
    <listitem>
-    <para>
+    <simpara>
      Check that a connection is still valid before reuse.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
-  
+
   <varlistentry xml:id="ini.uodbc.max-persistent">
    <term>
     <parameter>odbc.max_persistent</parameter>
     <type>int</type>
    </term>
    <listitem>
-    <para>
+    <simpara>
      The maximum number of persistent ODBC connections per process.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
-  
+
   <varlistentry xml:id="ini.uodbc.max-links">
    <term>
     <parameter>odbc.max_links</parameter>
     <type>int</type>
    </term>
    <listitem>
-    <para>
+    <simpara>
      The maximum number of ODBC connections per process, including
      persistent connections.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
    <varlistentry xml:id="ini.uodbc.defaultlrl">
@@ -164,27 +164,27 @@
     <type>int</type>
    </term>
    <listitem>
-    <para>
+    <simpara>
      Handling of LONG fields. Specifies the number of bytes returned to
      variables.
      See <function>odbc_longreadlen</function> for details.
-    </para>
+    </simpara>
 
     &ini.shorthandbytes;
 
    </listitem>
   </varlistentry>
-  
+
   <varlistentry xml:id="ini.uodbc.defaultbinmode">
    <term>
     <parameter>odbc.defaultbinmode</parameter>
     <type>int</type>
    </term>
    <listitem>
-    <para>
+    <simpara>
      Handling of binary data.
      See <function>odbc_binmode</function> for details.
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
 
@@ -194,16 +194,16 @@
     <type>int</type>
    </term>
    <listitem>
-    <para>
+    <simpara>
      Controls the ODBC cursor model.
      Possible values are <constant>SQL_CURSOR_FORWARD_ONLY</constant>,
      <constant>SQL_CURSOR_KEYSET_DRIVEN</constant>,
      <constant>SQL_CURSOR_DYNAMIC</constant> and
      <constant>SQL_CURSOR_STATIC</constant> (default).
-    </para>
+    </simpara>
    </listitem>
   </varlistentry>
-  
+
  </variablelist>
  </para>
 </section>

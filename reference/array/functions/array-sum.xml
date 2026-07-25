@@ -11,9 +11,9 @@
    <type class="union"><type>int</type><type>float</type></type><methodname>array_sum</methodname>
    <methodparam><type>array</type><parameter>array</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>array_sum</function> returns the sum of values in an array.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -22,9 +22,9 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input array.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -32,10 +32,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the sum of values as an integer or float; <literal>0</literal> if the
    <parameter>array</parameter> is empty.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

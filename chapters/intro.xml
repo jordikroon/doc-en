@@ -8,15 +8,15 @@
 
   <section xml:id="intro-whatis" annotations="chunk:false">
    <info><title>What is PHP?</title></info>
-   <para>
+   <simpara>
     <acronym>PHP</acronym> (recursive acronym for <emphasis>PHP: Hypertext
     Preprocessor</emphasis>) is a widely-used open source general-purpose
     scripting language that is especially suited for web
     development and can be embedded into HTML.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     Nice, but what does that mean? An example:
-   </para>
+   </simpara>
    <para>
     <example>
      <info><title>An introductory example</title></info>
@@ -39,7 +39,7 @@
      </programlisting>
     </example>
    </para>
-   <para>
+   <simpara>
     Instead of lots of commands to output HTML (as seen in C or Perl),
     PHP pages contain HTML with embedded code that does
     <replaceable>something</replaceable> (in this case, output <computeroutput>Hi, I'm a PHP script!</computeroutput>).
@@ -47,8 +47,8 @@
     linkend="language.basic-syntax.phpmode">start and end processing
     instructions <code>&lt;?php</code> and <code>?&gt;</code></link>
     that allow jumping in and out of <quote>PHP mode.</quote>
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     What distinguishes PHP from something like client-side JavaScript
     is that the code is executed on the server, generating HTML which
     is then sent to the client. The client would receive
@@ -56,31 +56,31 @@
     what the underlying code was. A web server can even be configured
     to process all HTML files with PHP, and then there's no
     way that users can tell that PHP is being used.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     The best part about using PHP is that it is extremely simple
     for a newcomer, but offers many advanced features for
     a professional programmer. Don't be afraid to read the long
     list of PHP's features. With PHP, almost anyone can get up and running and be
     writing simple scripts in no time at all.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     Although PHP's development is focused on server-side scripting,
     much more can be done with it. Read on, and see more in the
     <link linkend="intro-whatcando">What can PHP do?</link> section,
     or go right to the <link linkend="tutorial">introductory
     tutorial</link> to jump straight to learning about web programming.
-   </para>
+   </simpara>
   </section>
 
   <section xml:id="intro-whatcando" annotations="chunk:false">
    <info><title>What can PHP do?</title></info>
-   <para>
+   <simpara>
     Anything. PHP is mainly focused on server-side scripting,
     so it can do anything any other CGI program can do, such
     as collect form data, generate dynamic page content, or
     send and receive cookies. But PHP can do much more.
-   </para>
+   </simpara>
    <para>
     There are two main areas where PHP scripts are used.
     <itemizedlist>
@@ -111,7 +111,7 @@
      </listitem>
     </itemizedlist>
    </para>
-   <para>
+   <simpara>
     PHP can be <link linkend="install">used</link> on all major operating systems, including
     Linux, many Unix variants (including HP-UX, Solaris and OpenBSD),
     Microsoft Windows, macOS, RISC OS, and probably others.
@@ -119,24 +119,24 @@
     includes Apache, IIS, and many others. And this includes any
     web server that can utilize the FastCGI PHP binary, like lighttpd
     and nginx. PHP works as either a module, or as a CGI processor.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     So with PHP, developers have the freedom of choosing an operating
     system and a web server. Furthermore, they also have the choice
     of using procedural programming or object-oriented
     programming (OOP), or a mixture of them both.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     PHP is not limited to outputting HTML. PHP's abilities include
     outputting rich file types, such as images or PDF files, encrypting data,
     and sending emails. It can also output easily any text, such as JSON
     or XML. PHP can autogenerate these files, and save them in the
     file system, instead of printing it out, forming a server-side cache for
     dynamic content.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     One of the strongest and most significant features in PHP is its
-    support for a <link linkend="refs.database">wide range of databases</link>. 
+    support for a <link linkend="refs.database">wide range of databases</link>.
     Writing a database-enabled web page is incredibly simple using one of
     the database specific extensions (e.g., for <link linkend="book.mysqli">mysql</link>),
     or using an abstraction layer like <link linkend="book.pdo">PDO</link>, or connect
@@ -144,35 +144,35 @@
     <link linkend="book.uodbc">ODBC</link> extension. Other databases may utilize
     <link linkend="book.curl">cURL</link> or <link linkend="book.sockets">sockets</link>,
     like CouchDB.
-   </para>
+   </simpara>
    <simpara>
     PHP also has support for talking to other services using protocols
     such as LDAP, IMAP, SNMP, NNTP, POP3, HTTP, COM (on Windows) and
     countless others. It can also open raw network sockets and
     interact using any other protocol.
    </simpara>
-   <para>
+   <simpara>
     PHP has useful <link linkend="refs.basic.text">text processing</link> features,
     which includes the Perl compatible regular expressions (<link linkend="book.pcre">PCRE</link>),
     and many extensions and tools to <link linkend="refs.xml">parse and access XML documents</link>.
     PHP standardizes all of the XML extensions on the solid base of <link linkend="book.libxml">libxml2</link>,
     and extends the feature set adding <link linkend="book.simplexml">SimpleXML</link>,
     <link linkend="book.xmlreader">XMLReader</link> and <link linkend="book.xmlwriter">XMLWriter</link> support.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     And many other interesting extensions exist, which are categorized both
     <link linkend="extensions">alphabetically</link> and by <link linkend="funcref">category</link>.
     And there are additional <link linkend="install.pecl.intro">PECL extensions</link> that may or may not be documented
     within the PHP manual itself, like <link xlink:href="&url.xdebug;">XDebug</link>.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     This page is not enough to list all
     the features and benefits PHP can offer. Read on in
     the sections about <link linkend="install">installing
     PHP</link>, and see the <link linkend="funcref">function
     reference</link> part for explanation of the extensions
     mentioned here.
-   </para>
+   </simpara>
   </section>
 
  </chapter>

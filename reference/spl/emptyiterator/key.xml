@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>never</type><methodname>EmptyIterator::key</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function must not be called. It throws an exception upon access.
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -27,16 +27,16 @@
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws an <classname>Exception</classname> if called.
-  </para>
+  <simpara>
+   Throws an <exceptionname>Exception</exceptionname> if called.
+  </simpara>
  </refsect1>
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 </refentry>
 <!-- Keep this comment at the end of the file

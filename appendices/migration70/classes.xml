@@ -53,37 +53,37 @@
   <itemizedlist>
    <listitem>
     <simpara>
-     <classname>Throwable</classname>
+     <exceptionname>Throwable</exceptionname>
     </simpara>
    </listitem>
    <listitem>
     <simpara>
-     <classname>Error</classname>
+     <exceptionname>Error</exceptionname>
     </simpara>
    </listitem>
    <listitem>
     <simpara>
-     <classname>TypeError</classname>
+     <exceptionname>TypeError</exceptionname>
     </simpara>
    </listitem>
    <listitem>
     <simpara>
-     <classname>ParseError</classname>
+     <exceptionname>ParseError</exceptionname>
     </simpara>
    </listitem>
    <listitem>
     <simpara>
-     <classname>AssertionError</classname>
+     <exceptionname>AssertionError</exceptionname>
     </simpara>
    </listitem>
    <listitem>
     <simpara>
-     <classname>ArithmeticError</classname>
+     <exceptionname>ArithmeticError</exceptionname>
     </simpara>
    </listitem>
    <listitem>
     <simpara>
-     <classname>DivisionByZeroError</classname>
+     <exceptionname>DivisionByZeroError</exceptionname>
     </simpara>
    </listitem>
   </itemizedlist>

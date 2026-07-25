@@ -184,9 +184,9 @@
  <sect2 xml:id="migration83.constants.sockets">
   <title>Sockets</title>
 
-  <para>
+  <simpara>
    The following socket options are now defined if they are supported:
-  </para>
+  </simpara>
 
   <itemizedlist>
    <listitem>

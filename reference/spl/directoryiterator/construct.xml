@@ -13,9 +13,9 @@
    <methodparam><type>string</type><parameter>directory</parameter></methodparam>
   </constructorsynopsis>
 
-  <para>
+  <simpara>
    Constructs a new directory iterator from a path.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
     <varlistentry>
      <term><parameter>directory</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The path of the directory to traverse.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -36,14 +36,14 @@
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws an <classname>UnexpectedValueException</classname>
+  <simpara>
+   Throws an <exceptionname>UnexpectedValueException</exceptionname>
    if the <parameter>directory</parameter> does not exist.
-  </para>
-  <para>
-   Throws a <classname>ValueError</classname>
+  </simpara>
+  <simpara>
+   Throws a <exceptionname>ValueError</exceptionname>
    if the <parameter>directory</parameter> is an empty string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -61,9 +61,9 @@
       <row>
        <entry>8.0.0</entry>
        <entry>
-        Now throws a <classname>ValueError</classname> if
+        Now throws a <exceptionname>ValueError</exceptionname> if
         <parameter>directory</parameter> is an empty string;
-        previously it threw a <classname>RuntimeException</classname>.
+        previously it threw a <exceptionname>RuntimeException</exceptionname>.
        </entry>
       </row>
      </tbody>
@@ -71,15 +71,15 @@
    </informaltable>
   </para>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
    <example>
     <title>A <methodname>DirectoryIterator::__construct</methodname> example</title>
-     <para>
+     <simpara>
       This example will list the contents of the directory containing the script.
-     </para>
+     </simpara>
      <programlisting role="php">
 <![CDATA[
 <?php
@@ -95,7 +95,7 @@ foreach ($dir as $fileinfo) {
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

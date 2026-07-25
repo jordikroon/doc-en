@@ -5,17 +5,17 @@
   <refname>posix_getsid</refname>
   <refpurpose>Get the current sid of the process</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>int</type><type>false</type></type><methodname>posix_getsid</methodname>
    <methodparam><type>int</type><parameter>process_id</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Return the session id of the process <parameter>process_id</parameter>.
    The session id of a process is the process group id of the session leader.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,12 +25,12 @@
     <varlistentry>
      <term><parameter>process_id</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The process identifier. If set to 0, the current process is
        assumed.  If an invalid <parameter>process_id</parameter> is
        specified, then &false; is returned and an error is set which
        can be checked with <function>posix_get_last_error</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -39,9 +39,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the identifier, as an <type>int</type>, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

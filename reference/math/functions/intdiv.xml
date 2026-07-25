@@ -12,9 +12,9 @@
    <methodparam><type>int</type><parameter>num1</parameter></methodparam>
    <methodparam><type>int</type><parameter>num2</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the integer quotient of the division of <parameter>num1</parameter> by <parameter>num2</parameter>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -22,35 +22,35 @@
    <varlistentry>
     <term><parameter>num1</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Number to be divided.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>num2</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Number which divides the <parameter>num1</parameter>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The integer quotient of the division of <parameter>num1</parameter> by <parameter>num2</parameter>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-    If <parameter>num2</parameter> is <literal>0</literal>, a <classname>DivisionByZeroError</classname>
+  <simpara>
+    If <parameter>num2</parameter> is <literal>0</literal>, a <exceptionname>DivisionByZeroError</exceptionname>
     exception is thrown. If the <parameter>num1</parameter> is <constant>PHP_INT_MIN</constant>
     and the <parameter>num2</parameter> is <literal>-1</literal>, then an
-    <classname>ArithmeticError</classname> exception is thrown.
-  </para>
+    <exceptionname>ArithmeticError</exceptionname> exception is thrown.
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;

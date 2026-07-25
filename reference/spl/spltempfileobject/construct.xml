@@ -12,9 +12,9 @@
    <modifier>public</modifier> <methodname>SplTempFileObject::__construct</methodname>
    <methodparam choice="opt"><type>int</type><parameter>maxMemory</parameter><initializer>2 * 1024 * 1024</initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Construct a new temporary file object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,16 +24,16 @@
     <varlistentry>
      <term><parameter>maxMemory</parameter></term>
      <listitem>
-      <para>
-       The maximum amount of memory (in bytes, default is 2 MB) for 
-       the temporary file to use. If the temporary file exceeds this 
+      <simpara>
+       The maximum amount of memory (in bytes, default is 2 MB) for
+       the temporary file to use. If the temporary file exceeds this
        size, it will be moved to a file in the system's temp directory.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If <parameter>maxMemory</parameter> is negative, only memory
-       will be used. If <parameter>maxMemory</parameter> is zero, 
+       will be used. If <parameter>maxMemory</parameter> is zero,
        no memory will be used.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -42,9 +42,9 @@
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws a <classname>RuntimeException</classname> if an error occurs.
-  </para>
+  <simpara>
+   Throws a <exceptionname>RuntimeException</exceptionname> if an error occurs.
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -52,7 +52,7 @@
   <para>
    <example>
     <title><methodname>SplTempFileObject</methodname> example</title>
-    <para>This example writes a temporary file in memory which can be written to and read from.</para>
+    <simpara>This example writes a temporary file in memory which can be written to and read from.</simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -88,7 +88,7 @@ And this is the second.
    <simplelist>
     <member><classname>SplFileObject</classname></member>
     <member>
-     <link linkend="wrappers.php">PHP input/output streams</link> 
+     <link linkend="wrappers.php">PHP input/output streams</link>
      (for <literal>php://temp</literal> and <literal>php://memory</literal>)
     </member>
    </simplelist>

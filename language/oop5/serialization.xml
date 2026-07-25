@@ -5,7 +5,7 @@
   <title>Serializing objects - objects in sessions</title>
   <titleabbrev>Object Serialization</titleabbrev>
 
-  <para>
+  <simpara>
    <function>serialize</function> returns a string containing a
    byte-stream representation of any value that can be stored in
    PHP. <function>unserialize</function> can use this string to
@@ -13,9 +13,9 @@
    save an object will save all variables in an object.  The
    methods in an object will not be saved, only the name of
    the class.
-  </para>
-  
-  <para>
+  </simpara>
+
+  <simpara>
    In order to be able to <function>unserialize</function> an object, the
    class of that object needs to be defined. That is, if you have an object
     of class A and serialize this, you'll
@@ -26,70 +26,70 @@
    This can be done for example by storing the class definition of class A
    in an include file and including this file or making use of the
    <function>spl_autoload_register</function> function.
-  </para>
-  
+  </simpara>
+
   <informalexample>
    <programlisting role="php">
 <![CDATA[
 <?php
 // A.php:
-  
+
   class A {
       public $one = 1;
-    
+
       public function show_one() {
           echo $this->one;
       }
   }
-  
+
 // page1.php:
 
   include "A.php";
-  
+
   $a = new A;
   $s = serialize($a);
   // store $s somewhere where page2.php can find it.
   file_put_contents('store', $s);
 
 // page2.php:
-  
+
   // this is needed for the unserialize to work properly.
   include "A.php";
 
   $s = file_get_contents('store');
   $a = unserialize($s);
 
-  // now use the function show_one() of the $a object.  
+  // now use the function show_one() of the $a object.
   $a->show_one();
 ?>
 ]]>
    </programlisting>
   </informalexample>
 
-  <para>
+  <simpara>
    It is strongly recommended that if an application serializes objects, for use
    later in the application, that the application includes the class definition
    for that object throughout the application. Not doing so might result in an
    object being unserialized without a class definition, which will result in
    PHP giving the object a class of <classname>__PHP_Incomplete_Class_Name</classname>,
    which has no methods and would render the object useless.
-  </para>
-  
-  <para>
+  </simpara>
+
+  <simpara>
    So if in the example above <varname>$a</varname> became part of a session
    by adding a new key to the <varname>$_SESSION</varname> superglobal array, you should include the
    file <literal>A.php</literal> on all of your pages, not only <filename>page1.php</filename>
    and <filename>page2.php</filename>.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    Beyond the above advice, note that you can also hook into the serialization
    and unserialization events on an object using the
    <link linkend="object.sleep">__sleep()</link> and
    <link linkend="object.wakeup">__wakeup()</link> methods. Using
    <link linkend="object.sleep">__sleep()</link> also allows you to only
    serialize a subset of the object's properties.
-  </para>
+  </simpara>
  </sect1>
 <!-- Keep this comment at the end of the file
 Local variables:

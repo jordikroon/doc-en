@@ -5,7 +5,7 @@
   <refname>mb_http_input</refname>
   <refpurpose>Detect HTTP input character encoding</refpurpose>
  </refnamediv>
-   
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -16,7 +16,7 @@
    Detects the HTTP input character encoding.
   </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   <para>
@@ -24,26 +24,26 @@
     <varlistentry>
      <term><parameter>type</parameter></term>
      <listitem>
-      <para>
-       Input string specifies the input type. 
+      <simpara>
+       Input string specifies the input type.
        <literal>"G"</literal> for GET, <literal>"P"</literal> for POST, <literal>"C"</literal> for COOKIE, <literal>"S"</literal> for string, <literal>"L"</literal> for list, and
-       <literal>"I"</literal> for the whole list (will return <type>array</type>). 
-       If type is omitted, it returns the last input type processed. 
-      </para>
+       <literal>"I"</literal> for the whole list (will return <type>array</type>).
+       If type is omitted, it returns the last input type processed.
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The character encoding name, as per the <parameter>type</parameter>,
    or an array of character encoding names, if <parameter>type</parameter> is <literal>"I"</literal>.
    If <function>mb_http_input</function> does not process specified
    HTTP input, it returns &false;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

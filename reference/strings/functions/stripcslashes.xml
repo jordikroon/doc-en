@@ -5,18 +5,18 @@
   <refname>stripcslashes</refname>
   <refpurpose>Un-quote string quoted with <function>addcslashes</function></refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>string</type><methodname>stripcslashes</methodname>
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a string with backslashes stripped off. Recognizes
    C-like <literal>\n</literal>, <literal>\r</literal> ..., octal
    and hexadecimal representation.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,9 +26,9 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string to be unescaped.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,9 +37,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the unescaped string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

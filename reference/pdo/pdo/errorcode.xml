@@ -23,7 +23,7 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an SQLSTATE, a five characters alphanumeric identifier defined in
    the ANSI SQL-92 standard.  Briefly, an SQLSTATE consists of a
    two characters class value followed by a three characters subclass value. A
@@ -33,7 +33,7 @@
    and errors that derive from the implementation of PDO (or perhaps ODBC,
    if you're using the ODBC driver) itself.  The subclass value '000' in any
    class indicates that there is no subclass for that SQLSTATE.
-  </para>
+  </simpara>
   <para>
    <methodname>PDO::errorCode</methodname> only retrieves error codes for operations
    performed directly on the database handle. If you create a PDOStatement
@@ -43,9 +43,9 @@
    You must call <methodname>PDOStatement::errorCode</methodname> to return the error
    code for an operation performed on a particular statement handle.
   </para>
-  <para>
+  <simpara>
    Returns &null; if no operation has been run on the database handle.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type class="union"><type>string</type><type>false</type></type><methodname>SplFileInfo::getLinkTarget</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the target of a filesystem link.
-  </para>
+  </simpara>
   <note>
    <para>
     The target may not be the real path on the filesystem. Use <methodname>SplFileInfo::getRealPath</methodname>
@@ -30,16 +30,16 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the target of the filesystem link on success, or &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws <classname>RuntimeException</classname> on error.
-  </para>
+  <simpara>
+   Throws <exceptionname>RuntimeException</exceptionname> on error.
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

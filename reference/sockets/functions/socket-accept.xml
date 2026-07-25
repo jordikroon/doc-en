@@ -5,14 +5,14 @@
   <refname>socket_accept</refname>
   <refpurpose>Accepts a connection on a socket</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>Socket</type><type>false</type></type><methodname>socket_accept</methodname>
    <methodparam><type>Socket</type><parameter>socket</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    After the socket <parameter>socket</parameter> has been created
    using <function>socket_create</function>, bound to a name with
    <function>socket_bind</function>, and told to listen for connections
@@ -26,14 +26,14 @@
    has been made non-blocking using
    <function>socket_set_blocking</function> or
    <function>socket_set_nonblock</function>, &false; will be returned.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The <classname>Socket</classname> instance returned by
    <function>socket_accept</function> may not be used to accept new
    connections. The original listening socket
    <parameter>socket</parameter>, however, remains open and may be
    reused.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -43,9 +43,9 @@
     <varlistentry>
      <term><parameter>socket</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A <classname>Socket</classname> instance created with <function>socket_create</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -54,13 +54,13 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a new <classname>Socket</classname> instance on success, or &false; on error. The actual
    error code can be retrieved by calling
    <function>socket_last_error</function>. This error code may be passed to
    <function>socket_strerror</function> to get a textual explanation of the
    error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

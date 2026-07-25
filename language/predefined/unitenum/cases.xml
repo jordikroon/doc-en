@@ -11,9 +11,9 @@
    <modifier>public</modifier> <modifier>static</modifier> <type>array</type><methodname>UnitEnum::cases</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    This method will return a packed array of all cases in an enumeration, in order of declaration.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -24,18 +24,18 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An array of all defined cases of this enumeration, in order of declaration.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
   &reftitle.examples;
   <example>
    <title>Basic usage</title>
-   <para>
+   <simpara>
     The following example illustrates how enum cases are returned.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

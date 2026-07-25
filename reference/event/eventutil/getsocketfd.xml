@@ -17,14 +17,14 @@
     <parameter>socket</parameter>
    </methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns numeric file descriptor of a socket or stream specified by
    <parameter>socket</parameter>
    argument just like the
    <literal>Event</literal>
    extension does it internally for all methods accepting socket resource or
    stream.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -34,9 +34,9 @@
      <parameter>socket</parameter>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Socket resource or stream.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>

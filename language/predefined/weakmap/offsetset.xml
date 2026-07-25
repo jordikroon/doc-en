@@ -13,10 +13,10 @@
    <methodparam><type>object</type><parameter>object</parameter></methodparam>
    <methodparam><type>mixed</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Updates the map with a new key-value pair. If the key already existed in
    the map, the old value is replaced with the new.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,17 +25,17 @@
    <varlistentry>
     <term><parameter>object</parameter></term>
     <listitem>
-     <para>
+     <simpara>
        The object serving as key of the key-value pair.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>value</parameter></term>
     <listitem>
-     <para>
+     <simpara>
        The arbitrary data serving as value of the key-value pair.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -43,9 +43,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
 

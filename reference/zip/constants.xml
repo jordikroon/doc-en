@@ -5,7 +5,7 @@
  &extension.constants;
 
   <simpara>
-   <classname>ZipArchive</classname> uses class constants. 
+   <classname>ZipArchive</classname> uses class constants.
    There are various types of constants, main are:
    Flags (prefixed with <literal>FL_</literal>),
    Global flags  (prefixed with <literal>AFL_</literal>),

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<reference role="class" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class.dotnet">
+<reference role="class" xml:id="class.dotnet" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink">
  <titleabbrev>dotnet</titleabbrev>
  <title>The dotnet class</title>
  <partintro>
@@ -8,34 +8,34 @@
 <!-- {{{ dotnet intro -->
   <section xml:id="dotnet.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     The dotnet class allows you to instantiate a class from a .Net assembly and
     call its methods and access its properties, if the class and the methods and
     properties are <link xlink:href="&url.com.visible;">visible to COM</link>.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     Neither instantiating static classes nor calling static methods is supported.
     Instantiating generic classes such as <literal>System.Collections.Generic.List</literal>
     is not supported either.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     Some .Net classes do not implement IDispatch, so while they can be instantiated,
     calling methods or accessing properties on these classes is not supported.
-   </para>
+   </simpara>
    <note>
-    <para>
+    <simpara>
      You need to install the .Net runtime on your web server to take advantage
      of this feature.
-    </para>
+    </simpara>
    </note>
    <note>
-    <para>
+    <simpara>
      Prior to PHP 8.0.0, .Net framework 4.0 and later were not supported by the <classname>dotnet</classname>
      class. If assemblies had been registered with <command>regasm.exe</command>,
      the classes could be instantiated as <classname>com</classname> objects, though.
      As of PHP 8.0.0, .Net framework 4.0 and later are supported via the &php.ini;
      directive <link linkend="ini.com.dotnet-version">com.dotnet_version</link>.
-    </para>
+    </simpara>
    </note>
   </section>
 <!-- }}} -->
@@ -63,17 +63,17 @@
 
   <section xml:id="class.dotnet.overloadedmethods">
    <title>Overloaded Methods</title>
-   <para>
+   <simpara>
     The returned object is an overloaded object, which means that PHP does
     not see any fixed methods as it does with regular classes; instead, any
     property or method accesses are passed through to COM and from there to
     DOTNET.  In other words, the .Net object is mapped through the COM
     interoperability layer provided by the .Net runtime.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     Once you have created a dotnet object, PHP treats it identically to any
     other COM object; all the same rules apply.
-   </para>
+   </simpara>
   </section>
 
   <section xml:id="class.dotnet.examples">

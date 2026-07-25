@@ -17,13 +17,13 @@
    <methodparam><type>int</type><parameter>offset</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>whence</parameter><initializer><constant>SEEK_CUR</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_lo_seek</function> seeks a position within an <classname>PgSql\Lob</classname> instance.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    To use the large object interface, it is necessary to
    enclose it within a transaction block.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -39,19 +39,19 @@
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number of bytes to seek.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>whence</parameter></term>
      <listitem>
-      <para>
-       One of the constants <constant>PGSQL_SEEK_SET</constant> (seek from object start), 
+      <simpara>
+       One of the constants <constant>PGSQL_SEEK_SET</constant> (seek from object start),
        <constant>PGSQL_SEEK_CUR</constant> (seek from current position)
        or <constant>PGSQL_SEEK_END</constant> (seek from object end) .
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -60,9 +60,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -81,7 +81,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -103,10 +103,10 @@
 ?>
 ]]>
     </programlisting>
-   </example> 
+   </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

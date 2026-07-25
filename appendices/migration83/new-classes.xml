@@ -9,47 +9,47 @@
   <itemizedlist>
    <listitem>
     <simpara>
-     <classname>DateError</classname>
+     <exceptionname>DateError</exceptionname>
     </simpara>
    </listitem>
    <listitem>
     <simpara>
-     <classname>DateObjectError</classname>
+     <exceptionname>DateObjectError</exceptionname>
     </simpara>
    </listitem>
    <listitem>
     <simpara>
-     <classname>DateRangeError</classname>
+     <exceptionname>DateRangeError</exceptionname>
     </simpara>
    </listitem>
    <listitem>
     <simpara>
-     <classname>DateException</classname>
+     <exceptionname>DateException</exceptionname>
     </simpara>
    </listitem>
    <listitem>
     <simpara>
-     <classname>DateInvalidOperationException</classname>
+     <exceptionname>DateInvalidOperationException</exceptionname>
     </simpara>
    </listitem>
    <listitem>
     <simpara>
-     <classname>DateInvalidTimeZoneException</classname>
+     <exceptionname>DateInvalidTimeZoneException</exceptionname>
     </simpara>
    </listitem>
    <listitem>
     <simpara>
-     <classname>DateMalformedIntervalStringException</classname>
+     <exceptionname>DateMalformedIntervalStringException</exceptionname>
     </simpara>
    </listitem>
    <listitem>
     <simpara>
-     <classname>DateMalformedPeriodStringException</classname>
+     <exceptionname>DateMalformedPeriodStringException</exceptionname>
     </simpara>
    </listitem>
    <listitem>
     <simpara>
-     <classname>DateMalformedStringException</classname>
+     <exceptionname>DateMalformedStringException</exceptionname>
     </simpara>
    </listitem>
   </itemizedlist>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
 <!-- splitted from ./en/functions/strings.xml, last change in rev 1.2 -->
-<refentry xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://docbook.org/ns/docbook" xml:id="function.md5-file">
+<refentry xml:id="function.md5-file" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>md5_file</refname>
   <refpurpose>Calculates the md5 hash of a given file</refpurpose>
@@ -13,13 +13,13 @@
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>binary</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Calculates the MD5 hash of the file specified by the
    <parameter>filename</parameter> parameter using the
-   <link xlink:href="&url.rfc;1321">RSA Data Security, Inc. 
+   <link xlink:href="&url.rfc;1321">RSA Data Security, Inc.
    MD5 Message-Digest Algorithm</link>, and returns that hash.
    The hash is a 32-character hexadecimal number.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,18 +29,18 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The filename
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>binary</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        When &true;, returns the digest in raw binary format with a length of
        16.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -49,9 +49,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a string on success, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

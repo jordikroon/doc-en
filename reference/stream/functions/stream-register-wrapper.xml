@@ -7,9 +7,9 @@
  </refnamediv>
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &info.function.alias; <function>stream_wrapper_register</function>.
-  </para>
+  </simpara>
  </refsect1>
 </refentry>
 

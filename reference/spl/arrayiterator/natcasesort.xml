@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>true</type><methodname>ArrayIterator::natcasesort</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sort the entries by values using a case insensitive "natural order" algorithm.
-  </para>
+  </simpara>
   &note.sort-unstable;
  </refsect1>
 
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

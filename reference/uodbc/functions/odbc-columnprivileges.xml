@@ -15,9 +15,9 @@
    <methodparam><type>string</type><parameter>table</parameter></methodparam>
    <methodparam><type>string</type><parameter>column</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Lists columns and associated privileges for the given table.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -32,36 +32,36 @@
     <varlistentry>
      <term><parameter>catalog</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &odbc.parameter.catalog;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>schema</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &odbc.parameter.schema;
        &odbc.parameter.search;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>table</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The table name.
        &odbc.parameter.search;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>column</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The column name.
        &odbc.parameter.search;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -69,11 +69,11 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &odbc.result.object-return-falseforfailure;
    This result object can be used to fetch a list of columns and
    associated privileges.
-  </para>
+  </simpara>
   <para>
    The result set has the following columns:
    <itemizedlist>

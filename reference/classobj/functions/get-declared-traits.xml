@@ -13,9 +13,9 @@
    <type>array</type><methodname>get_declared_traits</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -26,9 +26,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array with names of all declared traits in values.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

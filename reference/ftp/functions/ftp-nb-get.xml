@@ -15,15 +15,15 @@
    <methodparam choice="opt"><type>int</type><parameter>mode</parameter><initializer><constant>FTP_BINARY</constant></initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>offset</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>ftp_nb_get</function> retrieves a remote file from the FTP server,
-   and saves it into a local file. 
-  </para>
-  <para>
+   and saves it into a local file.
+  </simpara>
+  <simpara>
    The difference between this function and <function>ftp_get</function> is that
-   this function retrieves the file asynchronously, so your program can perform 
+   this function retrieves the file asynchronously, so your program can perform
    other operations while the file is being downloaded.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -38,32 +38,32 @@
     <varlistentry>
      <term><parameter>local_filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The local file path (will be overwritten if the file already exists).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>remote_filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The remote file path.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>mode</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The transfer mode. Must be either <constant>FTP_ASCII</constant> or
        <constant>FTP_BINARY</constant>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>The position in the remote file to start downloading from.</para>
+      <simpara>The position in the remote file to start downloading from.</simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -71,10 +71,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns <constant>FTP_FAILED</constant> or <constant>FTP_FINISHED</constant>
    or <constant>FTP_MOREDATA</constant>, or &false; on failure to open the local file.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -113,7 +113,7 @@
 // Initiate the download
 $ret = ftp_nb_get($ftp, "test", "README", FTP_BINARY);
 while ($ret == FTP_MOREDATA) {
-   
+
    // Do whatever you want
    echo ".";
 
@@ -134,13 +134,13 @@ if ($ret != FTP_FINISHED) {
 <![CDATA[
 <?php
 
-// Initiate 
-$ret = ftp_nb_get($ftp, "test", "README", FTP_BINARY, 
+// Initiate
+$ret = ftp_nb_get($ftp, "test", "README", FTP_BINARY,
                       filesize("test"));
-// OR: $ret = ftp_nb_get($ftp, "test", "README", 
+// OR: $ret = ftp_nb_get($ftp, "test", "README",
 //                           FTP_BINARY, FTP_AUTORESUME);
 while ($ret == FTP_MOREDATA) {
-   
+
    // Do whatever you want
    echo ".";
 
@@ -172,7 +172,7 @@ $ret = ftp_nb_get($ftp, "newfile", "README", FTP_BINARY, 100);
 while ($ret == FTP_MOREDATA) {
 
    /* ... */
-   
+
    // Continue downloading...
    $ret = ftp_nb_continue($ftp);
 }
@@ -181,13 +181,13 @@ while ($ret == FTP_MOREDATA) {
     </programlisting>
    </example>
   </para>
-  <para>
+  <simpara>
    In the example above, <filename>newfile</filename> is 100 bytes smaller
    than <filename>README</filename> on the FTP server because we started
-   reading at offset 100. If we didn't disable 
+   reading at offset 100. If we didn't disable
    <constant>FTP_AUTOSEEK</constant>, the first 100 bytes of
    <filename>newfile</filename> would be <literal>'\0'</literal>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="seealso">
   &reftitle.seealso;

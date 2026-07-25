@@ -12,10 +12,10 @@
    <modifier>public</modifier> <type class="union"><type>object</type><type>null</type></type><methodname>WeakReference::get</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets a weakly referenced object.
    If the object has already been destroyed, &null; is returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the referenced &object;, or &null; if the object has been destroyed.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

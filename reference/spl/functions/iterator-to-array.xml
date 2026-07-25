@@ -13,9 +13,9 @@
    <methodparam><type class="union"><type>Traversable</type><type>array</type></type><parameter>iterator</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>preserve_keys</parameter><initializer>&true;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Copy the elements of an iterator into an array.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,18 +25,18 @@
     <varlistentry>
      <term><parameter>iterator</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The iterator being copied.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>preserve_keys</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Whether to use the iterator element keys as index.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If a key is an <type>array</type> or
        <type>object</type>, a warning will be generated. &null; keys will be
        converted to an empty string, <type>float</type> keys will be
@@ -44,14 +44,14 @@
        <type>resource</type> keys will generate a warning and be converted to
        their resource ID, and <type>bool</type> keys will be converted to
        integers.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         If this parameter is not set or set to &true;, duplicate keys will be
         overwritten. The last value with a given key will be in the returned
         <type>array</type>. Set this parameter to &false; to get all the values
         in any case.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
@@ -61,9 +61,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An <type>array</type> containing the elements of the <parameter>iterator</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

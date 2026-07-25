@@ -12,13 +12,13 @@
    <methodparam><type>IMAP\Connection</type><parameter>imap</parameter></methodparam>
    <methodparam><type>string</type><parameter>quota_root</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Retrieve the quota level settings, and usage statics per mailbox.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    For a non-admin user version of this function,
    please see the <function>imap_get_quotaroot</function> function of PHP.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -28,11 +28,11 @@
     <varlistentry>
      <term><parameter>quota_root</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>quota_root</parameter> should normally be in the form of
        <literal>user.name</literal> where name is the mailbox you wish to
        retrieve information about.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -40,24 +40,24 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array with integer values limit and usage for the given
    mailbox.  The value of limit represents the total amount of space
    allowed for this mailbox.  The usage value represents the mailboxes
    current level of capacity.  Will return &false; in the case of failure.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    As of PHP 4.3, the function more properly reflects the
    functionality as dictated by the <link xlink:href="&url.rfc;2087">RFC2087</link>.
-   The array return value has changed to support an unlimited number of returned 
+   The array return value has changed to support an unlimited number of returned
    resources (i.e.  messages, or sub-folders) with each named resource receiving
    an individual array key.  Each key value then contains an another array with
    the usage and limit values within it.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    For backwards compatibility reasons, the original access methods are
    still available for use, although it is suggested to update.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -76,7 +76,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -131,14 +131,14 @@ imap_close($mbox);
  </refsect1>
  <refsect1 role="notes">
   &reftitle.notes;
-  <para>
+  <simpara>
    This function is currently only available to users of the c-client2000
    or greater library.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The given <parameter>imap</parameter> must be opened as the mail
    administrator, otherwise this function will fail.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="seealso">
   &reftitle.seealso;

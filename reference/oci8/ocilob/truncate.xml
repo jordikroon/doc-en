@@ -5,16 +5,16 @@
   <refname>OCILob::truncate</refname>
   <refpurpose>Truncates large object</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="OCILob">
    <modifier>public</modifier> <type>bool</type><methodname>OCILob::truncate</methodname>
    <methodparam choice="opt"><type>int</type><parameter>length</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Truncates the LOB.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,11 +24,11 @@
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If provided, this method will truncate the LOB to
        <parameter>length</parameter> bytes. Otherwise, it will completely
        purge the LOB.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,9 +37,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

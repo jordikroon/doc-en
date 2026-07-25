@@ -5,19 +5,19 @@
   <refname>pcntl_wifstopped</refname>
   <refpurpose>Checks whether the child process is currently stopped</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>bool</type><methodname>pcntl_wifstopped</methodname>
    <methodparam><type>int</type><parameter>status</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks whether the child process which caused the return is currently
    stopped; this is only possible if the call to
    <function>pcntl_waitpid</function> was done using the option
    <constant>WUNTRACED</constant>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -36,10 +36,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the child process which caused the return is
    currently stopped, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

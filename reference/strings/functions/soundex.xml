@@ -12,20 +12,20 @@
    <type>string</type><methodname>soundex</methodname>
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Calculates the soundex key of <parameter>string</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Soundex keys have the property that words pronounced similarly
    produce the same soundex key, and can thus be used to simplify
    searches in databases where you know the pronunciation but not
    the spelling.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This particular soundex function is one described by Donald Knuth
    in "The Art Of Computer Programming, vol. 3: Sorting And
    Searching", Addison-Wesley (1973), pp. 391-392.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -35,9 +35,9 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -46,11 +46,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the soundex key as a &string; with four characters.
    If at least one letter is contained in <parameter>string</parameter>, the returned
    string starts with a letter. Otherwise <literal>"0000"</literal> is returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

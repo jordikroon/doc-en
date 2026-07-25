@@ -9,16 +9,16 @@
  <!-- {{{ preface -->
  <preface xml:id="intro.session">
   &reftitle.intro;
-  <para>
+  <simpara>
    Session support in PHP consists of a way to preserve certain data
-   across subsequent accesses. 
-  </para>
-  <para>
+   across subsequent accesses.
+  </simpara>
+  <simpara>
    A visitor accessing your web site is assigned a unique id, the
    so-called session id. This is either stored in a cookie on the
    user side or is propagated in the URL.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The session support allows you to store data between requests in the
    <varname>$_SESSION</varname> superglobal array. When a visitor accesses
    your site, PHP will check automatically (if <link linkend="ini.session.auto-start">session.auto_start</link>
@@ -26,9 +26,9 @@
    <function>session_start</function>) whether a specific session
    id has been sent with the request. If this is the case, the prior
    saved environment is recreated.
-  </para>
+  </simpara>
   <caution>
-   <para>
+   <simpara>
     If you turn on <link linkend="ini.session.auto-start">
     session.auto_start</link> then the only way to put objects
     into your sessions is to load its class definition using
@@ -37,22 +37,22 @@
     <function>serialize</function> your object
     and <function>unserialize</function> it
     afterwards.
-   </para>
+   </simpara>
   </caution>
-  <para>
+  <simpara>
    <varname>$_SESSION</varname> (and all registered variables) are serialized
    internally by PHP using the serialization handler specified by the
    <link linkend="ini.session.serialize-handler">session.serialize_handler</link> ini setting,
    after the request finishes.  Registered variables which are undefined are
    marked as being not defined.  On subsequent accesses, these are not defined
-   by the session module unless the user defines them later. 
-  </para>
+   by the session module unless the user defines them later.
+  </simpara>
   <warning>
-   <para>
+   <simpara>
     Because session data is serialized, <type>resource</type> variables cannot
     be stored in the session.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
      Serialize handlers (<literal>php</literal>
      and <literal>php_binary</literal>) inherit register_globals
      limitations. Therefore, numeric index or string index contains
@@ -60,16 +60,16 @@
      and <literal>!</literal>) cannot be used. Using these will end up
      with errors at script shutdown. <literal>php_serialize</literal>
      does not have such limitations.
-   </para>
+   </simpara>
   </warning>
   <note>
-   <para>
+   <simpara>
     Please note when working with sessions that a record of a session
     is not created until a variable has been registered by adding a new
     key to the <varname>$_SESSION</varname> superglobal array. This
     holds true regardless of if a session has been started using the
     <function>session_start</function> function.
-   </para>
+   </simpara>
   </note>
  </preface>
  <!-- }}} -->

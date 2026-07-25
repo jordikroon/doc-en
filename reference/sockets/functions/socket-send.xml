@@ -5,7 +5,7 @@
   <refname>socket_send</refname>
   <refpurpose>Sends data to a connected socket</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -15,11 +15,11 @@
    <methodparam><type>int</type><parameter>length</parameter></methodparam>
    <methodparam><type>int</type><parameter>flags</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    The function <function>socket_send</function> sends
    <parameter>length</parameter> bytes to the socket
    <parameter>socket</parameter> from <parameter>data</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,34 +29,34 @@
     <varlistentry>
      <term><parameter>socket</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A <classname>Socket</classname> instance created with <function>socket_create</function>
        or <function>socket_accept</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>data</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A buffer containing the data that will be sent to the remote host.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
-       The number of bytes that will be sent to the remote host from 
+      <simpara>
+       The number of bytes that will be sent to the remote host from
        <parameter>data</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
       <para>
-       The value of <parameter>flags</parameter> can be any combination of 
+       The value of <parameter>flags</parameter> can be any combination of
        the following flags, joined with the binary OR (<literal>|</literal>)
        operator.
        <table>
@@ -101,9 +101,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   <function>socket_send</function> returns the number of bytes sent, or &false; on error. 
-  </para>
+  <simpara>
+   <function>socket_send</function> returns the number of bytes sent, or &false; on error.
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

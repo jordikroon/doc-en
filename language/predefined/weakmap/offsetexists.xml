@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>WeakMap::offsetExists</methodname>
    <methodparam><type>object</type><parameter>object</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks whether the passed object is referenced in the map.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -24,9 +24,9 @@
    <varlistentry>
     <term><parameter>object</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Object to check for.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -34,9 +34,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the object is contained in the map, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 </refentry>
 <!-- Keep this comment at the end of the file

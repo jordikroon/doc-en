@@ -13,11 +13,11 @@
    <type class="union"><type>object</type><type>false</type></type><methodname>apache_lookup_uri</methodname>
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This performs a partial request for a URI.  It goes just far
    enough to obtain all the important information about the given
    resource.
-  </para>
+  </simpara>
   &apache.req.module;
  </refsect1>
 
@@ -28,9 +28,9 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The filename (URI) that's being requested.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -39,10 +39,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An <type>object</type> of related URI information. The properties of
    this <type>object</type> are:
-  </para>
+  </simpara>
   <para>
    <simplelist>
     <member>status</member>
@@ -68,9 +68,9 @@
     <member>request_time</member>
    </simplelist>
   </para>
-  <para>
+  <simpara>
    Returns &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

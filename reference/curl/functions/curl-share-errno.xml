@@ -12,9 +12,9 @@
    <type>int</type><methodname>curl_share_errno</methodname>
    <methodparam><type>CurlShareHandle</type><parameter>share_handle</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Return an integer containing the last share curl error number.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,9 +26,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an integer containing the last share curl error number.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

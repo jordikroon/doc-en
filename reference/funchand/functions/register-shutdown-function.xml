@@ -5,7 +5,7 @@
   <refname>register_shutdown_function</refname>
   <refpurpose>Register a function for execution on shutdown</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,17 +13,17 @@
    <methodparam><type>callable</type><parameter>callback</parameter></methodparam>
    <methodparam rep="repeat"><type>mixed</type><parameter>args</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Registers a <parameter>callback</parameter> to be executed after script
    execution finishes or <function>exit</function> is called.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Multiple calls to <function>register_shutdown_function</function> can be
    made, and each will be called in the same order as they were registered.
    If you call <function>exit</function> within one registered shutdown
    function, processing will stop completely and no other registered
    shutdown functions will be called.
-  </para>
+  </simpara>
   <caution>
    <simpara>
     Since PHP 8.4.0, a parameterless <function>exit</function> call within a
@@ -32,10 +32,10 @@
     previous exit code in all versions.
    </simpara>
   </caution>
-  <para>
+  <simpara>
    Shutdown functions may also call <function>register_shutdown_function</function>
    themselves to add a shutdown function to the end of the queue.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -45,22 +45,22 @@
     <varlistentry>
      <term><parameter>callback</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The shutdown callback to register.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        The shutdown callbacks are executed as the part of the request, so
        it's possible to send output from them and access output buffers.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>args</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        It is possible to pass parameters to the shutdown function by passing
        additional parameters.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -69,9 +69,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -84,7 +84,7 @@
 <?php
 function shutdown()
 {
-    // This is our shutdown function, in 
+    // This is our shutdown function, in
     // here we can do any last operations
     // before the script is complete.
 
@@ -102,27 +102,27 @@ register_shutdown_function('shutdown');
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     The working directory of the script can change inside the shutdown function
     under some web servers, e.g. Apache.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     Shutdown functions will not be executed if the process is killed with a SIGTERM
     or SIGKILL signal. While you cannot intercept a SIGKILL, you can use <function>pcntl_signal</function>
     to install a handler for a SIGTERM which uses <function>exit</function> to
     end cleanly.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     Shutdown functions run separately from the time tracked by
     <link linkend="ini.max-execution-time">max_execution_time</link>. That means
     even if a process is terminated for running too long, shutdown functions will still be
     called.  Additionally, if the <literal>max_execution_time</literal> runs out while
     a shutdown function is running it will not be terminated.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

@@ -9,14 +9,14 @@
 
   <section xml:id="iteratoriterator.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     This iterator wrapper allows the conversion of anything that is
     <link linkend="class.traversable">Traversable</link> into an Iterator.
     It is important to understand that most classes that do not implement
     Iterators have reasons as most likely they do not allow the full
     Iterator feature set. If so, techniques should be provided to prevent
     misuse, otherwise expect exceptions or fatal errors.
-   </para>
+   </simpara>
   </section>
 
   <section xml:id="iteratoriterator.synopsis">
@@ -38,13 +38,13 @@
    </classsynopsis>
 
   </section>
- 
+
   <section role="notes">
    &reftitle.notes;
    <note>
-    <para>
+    <simpara>
      This class permits access to methods of the inner iterator via the __call magic method.
-    </para>
+    </simpara>
    </note>
   </section>
  </partintro>

@@ -2,11 +2,11 @@
 <!-- $Revision$ -->
 <appendix xml:id="tokenizer.constants" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  &reftitle.constants;
- <para>
+ <simpara>
   When the extension has either been compiled into PHP or dynamically loaded
   at runtime, the tokens listed in <xref linkend="tokens"/> are defined as
   constants.
- </para>
+ </simpara>
  <variablelist role="constant_list">
   <varlistentry xml:id="constant.token-parse">
    <term>

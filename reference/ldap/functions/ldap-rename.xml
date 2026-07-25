@@ -17,9 +17,9 @@
    <methodparam><type>bool</type><parameter>delete_old_rdn</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>array</type><type>null</type></type><parameter>controls</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    The entry specified by <parameter>dn</parameter> is renamed/moved.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,50 +29,50 @@
     <varlistentry>
      <term><parameter>ldap</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &ldap.parameter.ldap;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>dn</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The distinguished name of an LDAP entity.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>new_rdn</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The new RDN.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>new_parent</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The new parent/superior entry.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>delete_old_rdn</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If &true; the old RDN value(s) is removed, else the old RDN value(s)
        is retained as non-distinguished values of the entry.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>controls</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Array of <link linkend="ldap.controls">LDAP Controls</link> to send with the request.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -81,9 +81,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -115,12 +115,12 @@
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     This function currently only works with LDAPv3. You may have to use
     <function>ldap_set_option</function> prior to binding to use LDAPv3. This
     function is only available when using OpenLDAP 2.x.x OR Netscape
     Directory SDK x.x.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

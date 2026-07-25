@@ -11,10 +11,10 @@
    <type>variant</type><methodname>variant_not</methodname>
    <methodparam><type>mixed</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Performs bitwise not negation on <parameter>value</parameter> and
    returns the result.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -23,9 +23,9 @@
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The variant.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -34,17 +34,17 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the bitwise not negation. If <parameter>value</parameter> is
    &null;, the result will also be &null;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    Throws a <classname>com_exception</classname> on failure.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

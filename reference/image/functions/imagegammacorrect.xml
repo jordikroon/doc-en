@@ -13,10 +13,10 @@
    <methodparam><type>float</type><parameter>input_gamma</parameter></methodparam>
    <methodparam><type>float</type><parameter>output_gamma</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   Applies gamma correction to the given gd <parameter>image</parameter> 
+  <simpara>
+   Applies gamma correction to the given gd <parameter>image</parameter>
    given an input and an output gamma.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -26,17 +26,17 @@
     <varlistentry>
      <term><parameter>input_gamma</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input gamma.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>output_gamma</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The output gamma.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -44,9 +44,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

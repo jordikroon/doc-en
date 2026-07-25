@@ -14,9 +14,9 @@
    <methodparam><type class="union"><type>int</type><type>string</type></type><parameter>out_codepage</parameter></methodparam>
    <methodparam><type>string</type><parameter>subject</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Convert string from one codepage to another.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,27 +25,27 @@
    <varlistentry>
     <term><parameter>in_codepage</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The codepage of the <parameter>subject</parameter> string.
       Either the codepage name or identifier.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>out_codepage</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The codepage to convert the <parameter>subject</parameter> string to.
       Either the codepage name or identifier.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>subject</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The string to convert.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -53,18 +53,18 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The <parameter>subject</parameter> string converted to
    <parameter>out_codepage</parameter>, or &null; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    This function issues E_WARNING level errors, if invalid codepages are given,
    or if the subject is not valid for <parameter>in_codepage</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

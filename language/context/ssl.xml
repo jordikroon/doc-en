@@ -9,10 +9,10 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    Context options for <literal>ssl://</literal> and <literal>tls://</literal>
    transports.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="options">
@@ -25,10 +25,10 @@
       <type>string</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Peer name to be used. If this value is not set, then the name is guessed
        based on the hostname used when opening the stream.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="context.ssl.verify-peer">
@@ -37,12 +37,12 @@
       <type>bool</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Require verification of SSL certificate used.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Defaults to &true;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="context.ssl.verify-peer-name">
@@ -51,12 +51,12 @@
       <type>bool</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Require verification of peer name.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Defaults to &true;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="context.ssl.allow-self-signed">
@@ -65,13 +65,13 @@
       <type>bool</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Allow self-signed certificates. Requires
        <link linkend="context.ssl.verify-peer"><parameter>verify_peer</parameter></link>.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Defaults to &false;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="context.ssl.cafile">
@@ -80,11 +80,11 @@
       <type>string</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Location of Certificate Authority file on local filesystem
        which should be used with the <literal>verify_peer</literal>
        context option to authenticate the identity of the remote peer.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="context.ssl.capath">
@@ -93,12 +93,12 @@
       <type>string</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        If <literal>cafile</literal> is not specified or if the certificate
        is not found there, the directory pointed to by <literal>capath</literal>
        is searched for a suitable certificate.  <literal>capath</literal>
        must be a correctly hashed certificate directory.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="context.ssl.local-cert">
@@ -107,13 +107,13 @@
       <type>string</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Path to local certificate file on filesystem.  It must be a
        <acronym>PEM</acronym> encoded file which contains your certificate and
        private key. It can optionally contain the certificate chain of issuers.
        The private key also may be contained in a separate file specified
        by <literal>local_pk</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="context.ssl.local-pk">
@@ -122,10 +122,10 @@
       <type>string</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Path to local private key file on filesystem in case of separate
        files for certificate (<literal>local_cert</literal>) and private key.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="context.ssl.passphrase">
@@ -134,10 +134,10 @@
       <type>string</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Passphrase with which your <literal>local_cert</literal> file
        was encoded.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="context.ssl.verify-depth">
@@ -146,12 +146,12 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Abort if the certificate chain is too deep.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Defaults to no verification.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="context.ssl.ciphers">
@@ -160,13 +160,13 @@
       <type>string</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Sets the list of available ciphers. The format of the string is described
        in <link xlink:href="&url.openssl.ciphers;">ciphers(1)</link>.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Defaults to <literal>DEFAULT</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="context.ssl.capture-peer-cert">
@@ -175,10 +175,10 @@
       <type>bool</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        If set to &true; a <literal>peer_certificate</literal> context option
        will be created containing the peer certificate.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="context.ssl.capture-peer-cert-chain">
@@ -187,10 +187,10 @@
       <type>bool</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        If set to &true; a <literal>peer_certificate_chain</literal> context
        option will be created containing the certificate chain.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="context.ssl.sni-enabled">
@@ -199,10 +199,10 @@
       <type>bool</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        If set to &true; server name indication will be enabled. Enabling SNI
        allows multiple certificates on the same IP address.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="context.ssl.disable-compression">
@@ -211,10 +211,10 @@
       <type>bool</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        If set, disable TLS compression. This can help mitigate the CRIME attack
        vector.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="context.ssl.peer-fingerprint">
@@ -223,18 +223,18 @@
       <type>string</type> | <type>array</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Aborts when the remote certificate digest doesn't match the specified
        hash.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        When a <type>string</type> is used, the length will determine which hashing algorithm
        is applied, either "md5" (32) or "sha1" (40).
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        When an <type>array</type> is used, the keys indicate the hashing algorithm name
        and each corresponding value is the expected digest.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="context.ssl.security-level">
@@ -243,14 +243,14 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Sets the security level. If not specified the library default security level is used.
        The security levels are described in
        <link xlink:href="&url.openssl.security-level;">SSL_CTX_get_security_level(3)</link>.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Available as of PHP 7.2.0 and OpenSSL 1.1.0.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

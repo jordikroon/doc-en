@@ -5,7 +5,7 @@
   <refname>addcslashes</refname>
   <refpurpose>Quote string with slashes in a C style</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,10 +13,10 @@
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
    <methodparam><type>string</type><parameter>characters</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a string with backslashes before characters that are
-   listed in <parameter>characters</parameter> parameter. 
-  </para>
+   listed in <parameter>characters</parameter> parameter.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,22 +26,22 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string to be escaped.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>characters</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A list of characters to be escaped. If
        <parameter>characters</parameter> contains characters
        <literal>\n</literal>, <literal>\r</literal> etc., they are
        converted in C-like style, while other non-alphanumeric characters
        with ASCII codes lower than 32 and higher than 126 converted to
        octal representation.
-      </para>
+      </simpara>
       <para>
        When you define a sequence of characters in the <parameter>characters</parameter> argument
        make sure that you know what characters come between the
@@ -76,7 +76,7 @@ echo addcslashes("zoo['.']", 'z..A');
         </programlisting>
        </example>
       </para>
-      <para>
+      <simpara>
        Be careful if you choose to escape characters 0, a, b, f, n, r, t and
        v. They will be converted to \0, \a, \b, \f, \n, \r, \t and \v, all of
        which are predefined escape sequences in C. Many of these sequences are
@@ -84,7 +84,7 @@ echo addcslashes("zoo['.']", 'z..A');
        you may not get the desired result if you use the output of
        <function>addcslashes</function> to generate code in those languages
        with these characters defined in <parameter>characters</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -93,9 +93,9 @@ echo addcslashes("zoo['.']", 'z..A');
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the escaped string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.ob-end-flush">
+<refentry xml:id="function.ob-end-flush" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>ob_end_flush</refname>
   <refpurpose>
@@ -15,24 +15,24 @@
    <type>bool</type><methodname>ob_end_flush</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function calls the output handler
    (with the <constant>PHP_OUTPUT_HANDLER_FINAL</constant> flag),
    flushes (sends) it's return value,
    discards the contents of the active output buffer
    and turns off the active output buffer.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    <function>ob_end_flush</function> will fail
    without an active output buffer started with the
    <constant>PHP_OUTPUT_HANDLER_REMOVABLE</constant> flag.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    <function>ob_end_flush</function> will flush (send)
    the return value of the output handler
    even if the active output buffer was started without the
    <constant>PHP_OUTPUT_HANDLER_FLUSHABLE</constant> flag.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -42,16 +42,16 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    If the function fails it generates an <constant>E_NOTICE</constant>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -59,10 +59,10 @@
   <para>
    <example>
     <title><function>ob_end_flush</function> example</title>
-    <para>
+    <simpara>
      The following example shows an easy way to flush and end all output
      buffers:
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

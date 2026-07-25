@@ -13,9 +13,9 @@
    <type>string</type><methodname>timezone_version_get</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the current version of the timezonedb.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,23 +25,23 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a <type>string</type> in the format
    <literal>YYYY.increment</literal>, such as <literal>2022.2</literal>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If you have a timezone database version that is old (for example, it
    doesn't show the current year), then you can update the timezone information
    by either upgrading your PHP version, or installing the <link
    xlink:href="&url.pecl.package;timezonedb">timezonedb</link> PECL package.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Some Linux distributions patch PHP's date/time support to use an
    alternative source for timezone information. In which case this function
    will return <literal>0.system</literal>. You are encouraged to install the
    <link xlink:href="&url.pecl.package;timezonedb">timezonedb</link> PECL
    package in that case as well.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

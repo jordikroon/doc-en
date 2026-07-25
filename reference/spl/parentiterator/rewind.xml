@@ -11,9 +11,9 @@
    <modifier>public</modifier> <type>void</type><methodname>ParentIterator::rewind</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Rewinds the iterator.
-  </para>
+  </simpara>
 
    &warn.undocumented.func;
 
@@ -26,9 +26,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

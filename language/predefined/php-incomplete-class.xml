@@ -9,18 +9,18 @@
 
   <section xml:id="php-incomplete-class.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Created by <function>unserialize</function>
     when trying to unserialize an undefined class
     or a class that is not listed in the <literal>allowed_classes</literal>
     of <function>unserialize</function>'s <parameter>options</parameter> array.
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     Prior to PHP 7.2.0, using <function>is_object</function> on the
     <classname>__PHP_Incomplete_Class</classname> class would return &false;.
     As of PHP 7.2.0, &true; will be returned.
-   </para>
+   </simpara>
   </section>
 
   <section xml:id="php-incomplete-class.synopsis">
@@ -34,13 +34,13 @@
     </ooclass>
    </classsynopsis>
 
-   <para>
+   <simpara>
     This class has no default properties or methods.
     When created by <function>unserialize</function>,
     in addition to all unserialized properties and values
     the object will have a <literal>__PHP_Incomplete_Class_Name</literal> property
     which will contain the name of the unserialized class.
-   </para>
+   </simpara>
   </section>
 
   <section xml:id="php-incomplete-class.changelog" role="changelog">

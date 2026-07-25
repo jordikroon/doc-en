@@ -29,25 +29,25 @@
     <varlistentry>
      <term><parameter>server_key</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &memcached.parameter.server_key;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>keys</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Array of keys to retrieve.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>get_flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The flags for the get operation.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

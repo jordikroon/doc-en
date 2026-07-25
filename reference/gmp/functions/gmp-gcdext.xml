@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://docbook.org/ns/docbook" xml:id="function.gmp-gcdext">
+<refentry xml:id="function.gmp-gcdext" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>gmp_gcdext</refname>
   <refpurpose>Calculate GCD and multipliers</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,18 +13,18 @@
    <methodparam><type class="union"><type>GMP</type><type>int</type><type>string</type></type><parameter>num1</parameter></methodparam>
    <methodparam><type class="union"><type>GMP</type><type>int</type><type>string</type></type><parameter>num2</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Calculates g, s, and t, such that <literal>a*s + b*t = g =
    gcd(a,b)</literal>, where gcd is the greatest common divisor. Returns
    an array with respective elements g, s and t.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This function can be used to solve linear Diophantine equations in two
    variables. These are equations that allow only integer solutions and have the form:
    <literal>a*x + b*y = c</literal>.
    For more information, go to the <link xlink:href="&url.diophantine-equation;">"Diophantine
    Equation" page at MathWorld</link>
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -34,13 +34,13 @@
     <varlistentry>
      <term><parameter>num1</parameter></term>
      <listitem>
-      &gmp.parameter; 
+      &gmp.parameter;
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>num2</parameter></term>
      <listitem>
-      &gmp.parameter; 
+      &gmp.parameter;
      </listitem>
     </varlistentry>
    </variablelist>
@@ -49,9 +49,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An <type>array</type> of GMP numbers.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -14,10 +14,10 @@
    <methodparam><type>PgSql\Result</type><parameter>result</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>mode</parameter><initializer><constant>PGSQL_ASSOC</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_fetch_all</function> returns an array that
    contains all rows (records) in the <classname>PgSql\Result</classname> instance.
-  </para>
+  </simpara>
   &database.fetch-null;
  </refsect1>
 
@@ -43,10 +43,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An <type>array</type> with all rows in the result.  Each row is an array
    of field values indexed by field name.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -88,7 +88,7 @@
     <title>PostgreSQL fetch all</title>
     <programlisting role="php">
      <![CDATA[
-<?php 
+<?php
 $conn = pg_pconnect("dbname=publisher");
 if (!$conn) {
     echo "An error occurred.\n";

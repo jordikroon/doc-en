@@ -4,7 +4,7 @@
   <refname>imageavif</refname>
   <refpurpose>&gd.image.output;</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,10 +14,10 @@
    <methodparam choice="opt"><type>int</type><parameter>quality</parameter><initializer>-1</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>speed</parameter><initializer>-1</initializer></methodparam>
   </methodsynopsis>
-  
-  <para>
+
+  <simpara>
    Outputs or saves a <acronym>AVIF</acronym> Raster image from the given <parameter>image</parameter>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -27,29 +27,29 @@
     <varlistentry>
      <term><parameter>file</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &gd.image.path;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>quality</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>quality</parameter> is optional, and ranges from 0 (worst quality, smaller file)
        to 100 (best quality, larger file).
        If <literal>-1</literal> is provided, the default value <literal>52</literal> is used.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>speed</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>speed</parameter> is optional, and ranges from 0 (slow, smaller file)
        to 10 (fast, larger file).
        If <literal>-1</literal> is provided, the default value <literal>6</literal> is used.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -57,16 +57,16 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
   &gd.return.trueonerror;
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
   <simpara>
-   Throws a <classname>ValueError</classname> if <parameter>quality</parameter>
+   Throws a <exceptionname>ValueError</exceptionname> if <parameter>quality</parameter>
    or <parameter>speed</parameter> is invalid.
   </simpara>
  </refsect1>
@@ -85,7 +85,7 @@
      <row>
       <entry>8.4.0</entry>
       <entry>
-       Now throws a <classname>ValueError</classname> if <parameter>quality</parameter>
+       Now throws a <exceptionname>ValueError</exceptionname> if <parameter>quality</parameter>
        or <parameter>speed</parameter> is invalid.
       </entry>
      </row>

@@ -13,9 +13,9 @@
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>spool</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Embeds binary IPTC data into a JPEG image.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -24,26 +24,26 @@
     <varlistentry>
      <term><parameter>iptc_data</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The data to be written.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path to the JPEG image.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>spool</parameter></term>
      <listitem>
-      <para>
-       Spool flag. If the spool flag is less than 2 then the JPEG will be 
+      <simpara>
+       Spool flag. If the spool flag is less than 2 then the JPEG will be
        returned as a string. Otherwise the JPEG will be printed to STDOUT.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -51,11 +51,11 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    If <parameter>spool</parameter> is less than 2, the JPEG will be returned,
    &return.falseforfailure;. Otherwise returns &true; on success
    &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;
@@ -77,11 +77,11 @@ function iptc_make_tag($rec, $data, $value)
     }
     else
     {
-        $retval .= chr(0x80) . 
-                   chr(0x04) . 
-                   chr(($length >> 24) & 0xFF) . 
-                   chr(($length >> 16) & 0xFF) . 
-                   chr(($length >> 8) & 0xFF) . 
+        $retval .= chr(0x80) .
+                   chr(0x04) .
+                   chr(($length >> 24) & 0xFF) .
+                   chr(($length >> 16) & 0xFF) .
+                   chr(($length >> 8) & 0xFF) .
                    chr($length & 0xFF);
     }
 

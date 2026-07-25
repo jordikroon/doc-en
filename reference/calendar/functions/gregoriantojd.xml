@@ -2,7 +2,7 @@
 <!-- $Revision$ -->
 <refentry xml:id="function.gregoriantojd" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
-  <refname>gregoriantojd</refname> 
+  <refname>gregoriantojd</refname>
   <refpurpose>Converts a Gregorian date to Julian Day Count</refpurpose>
  </refnamediv>
 
@@ -14,9 +14,9 @@
    <methodparam><type>int</type><parameter>day</parameter></methodparam>
    <methodparam><type>int</type><parameter>year</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   The valid range for the Gregorian calendar is from November 25, 4714 B.C. to at least December 31, 9999 A.D.</para>
-  <para>
+  <simpara>
+   The valid range for the Gregorian calendar is from November 25, 4714 B.C. to at least December 31, 9999 A.D.</simpara>
+  <simpara>
    Although this function can handle dates all the way back to 4714
    B.C., such use may not be meaningful. The Gregorian calendar was
    not instituted until October 15, 1582 (or October 5, 1582 in the
@@ -24,7 +24,7 @@
    later. For example, Britain converted in 1752, The USSR in 1918
    and Greece in 1923. Most European countries used the Julian
    calendar prior to the Gregorian.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -34,42 +34,42 @@
     <varlistentry>
      <term><parameter>month</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The month as a number from 1 (for January) to 12 (for December)
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>day</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The day as a number from 1 to 31.
        If the month has less days then given, overflow occurs; see the example
        below.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>year</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The year as a number between -4714 and 9999.
        Negative numbers mean years B.C., positive numbers mean years A.D.
        Note that there is no year <literal>0</literal>; December 31, 1 B.C. is
        immediately followed by January 1, 1 A.D.
-      </para>
+      </simpara>
      </listitem>
-    </varlistentry>  
+    </varlistentry>
    </variablelist>
   </para>
  </refsect1>
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The julian day for the given gregorian date as an integer.
    Dates outside the valid range return <literal>0</literal>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -120,7 +120,7 @@ echo gregoriantojd(2, 31, 2018), PHP_EOL,
   &reftitle.seealso;
   <para>
    <simplelist>
-    <member><function>jdtogregorian</function></member> 
+    <member><function>jdtogregorian</function></member>
     <member><function>cal_to_jd</function></member>
    </simplelist>
   </para>

@@ -5,7 +5,7 @@
   <refname>openssl_pkey_get_private</refname>
   <refpurpose>Get a private key</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,10 +13,10 @@
    <methodparam><modifier role="attribute">#[\SensitiveParameter]</modifier><type class="union"><type>OpenSSLAsymmetricKey</type><type>OpenSSLCertificate</type><type>array</type><type>string</type></type><parameter>private_key</parameter></methodparam>
    <methodparam choice="opt"><modifier role="attribute">#[\SensitiveParameter]</modifier><type class="union"><type>string</type><type>null</type></type><parameter>passphrase</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>openssl_pkey_get_private</function> parses
    <parameter>private_key</parameter> and prepares it for use by other functions.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -42,10 +42,10 @@
     <varlistentry>
      <term><parameter>passphrase</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The optional parameter <parameter>passphrase</parameter> must be used
        if the specified key is encrypted (protected by a passphrase).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -54,9 +54,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an <classname>OpenSSLAsymmetricKey</classname> instance on success, or &false; on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

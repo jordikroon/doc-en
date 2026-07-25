@@ -10,7 +10,7 @@
    <function>call_user_method_array</function>
   </title>
 
-  <para>
+  <simpara>
    These functions were deprecated in PHP 4.1.0 in favour of
    <function>call_user_func</function> and
    <function>call_user_func_array</function>. You may also want to consider
@@ -19,45 +19,45 @@
    and/or the
    <link linkend="functions.variable-arg-list"><literal>...</literal></link>
    operator.
-  </para>
+  </simpara>
  </sect3>
 
  <sect3 xml:id="migration70.incompatible.removed-functions.ereg">
   <title>
    All ereg* functions
   </title>
-  <para>
+  <simpara>
    All <literal>ereg</literal> functions were removed.
    <link linkend="book.pcre">PCRE</link> is a recommended alternative.
-  </para>
+  </simpara>
  </sect3>
 
  <sect3 xml:id="migration70.incompatible.removed-functions.mcrypt">
   <title><link linkend="book.mcrypt">mcrypt</link> aliases</title>
 
-  <para>
+  <simpara>
    The deprecated <function>mcrypt_generic_end</function> function has been
    removed in favour of <function>mcrypt_generic_deinit</function>.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    Additionally, the deprecated <function>mcrypt_ecb</function>,
    <function>mcrypt_cbc</function>, <function>mcrypt_cfb</function> and
    <function>mcrypt_ofb</function> functions have been removed in favour of
    using <function>mcrypt_decrypt</function> with the appropriate
    <constant>MCRYPT_MODE_<replaceable>*</replaceable></constant> constant.
-  </para>
+  </simpara>
  </sect3>
 
  <sect3 xml:id="migration70.incompatible.removed-functions.mysql">
   <title>
    All ext/mysql functions
   </title>
-  <para>
+  <simpara>
    All <link linkend="book.mysql">ext/mysql</link> functions were removed. For
    details about choosing a different MySQL API, see
    <link linkend="mysqlinfo.api.choosing">Choosing a MySQL API</link>.
-  </para>
+  </simpara>
  </sect3>
 
  <sect3 xml:id="migration70.incompatible.removed-functions.mssql">
@@ -89,39 +89,39 @@
  <sect3 xml:id="migration70.incompatible.removed-functions.magic-quotes">
   <title><function>set_magic_quotes_runtime</function></title>
 
-  <para>
+  <simpara>
    <function>set_magic_quotes_runtime</function>, along with its alias
    <function>magic_quotes_runtime</function>, have been removed. They were
    deprecated in PHP 5.3.0, and became effectively non-functional with the
    removal of magic quotes in PHP 5.4.0.
-  </para>
+  </simpara>
  </sect3>
 
  <sect3 xml:id="migration70.incompatible.removed-functions.set-socket-blocking">
   <title><function>set_socket_blocking</function></title>
 
-  <para>
+  <simpara>
    The deprecated <function>set_socket_blocking</function> alias has been
    removed in favour of <function>stream_set_blocking</function>.
-  </para>
+  </simpara>
  </sect3>
 
  <sect3 xml:id="migration70.incompatible.removed-functions.dl">
   <title><function>dl</function> in PHP-FPM</title>
 
-  <para>
+  <simpara>
    <function>dl</function> can no longer be used in PHP-FPM. It remains
    functional in the CLI and embed SAPIs.
-  </para>
+  </simpara>
  </sect3>
 
  <sect3 xml:id="migration70.incompatible.removed-functions.gd">
   <title><link linkend="book.image">GD</link> Type1 functions</title>
 
-  <para>
+  <simpara>
    Support for PostScript Type1 fonts has been removed from the GD extension,
    resulting in the removal of the following functions:
-  </para>
+  </simpara>
 
   <itemizedlist>
    <listitem>
@@ -161,9 +161,9 @@
    </listitem>
   </itemizedlist>
 
-  <para>
+  <simpara>
    Using TrueType fonts and their associated functions is recommended instead.
-  </para>
+  </simpara>
  </sect3>
 </sect2>
 

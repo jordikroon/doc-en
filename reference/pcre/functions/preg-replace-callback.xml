@@ -17,12 +17,12 @@
    <methodparam choice="opt"><type>int</type><parameter role="reference">count</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    The behavior of this function is almost identical to
    <function>preg_replace</function>, except for the fact that instead of
    <parameter>replacement</parameter> parameter, one should specify a
    <parameter>callback</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -32,27 +32,27 @@
     <varlistentry>
      <term><parameter>pattern</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The pattern to search for. It can be either a string or an array with
        strings.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>callback</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A callback that will be called and passed an array of matched elements
        in the <parameter>subject</parameter> string. The callback should
        return the replacement string. This is the callback signature:
-      </para>
+      </simpara>
       <para>
        <methodsynopsis>
         <type>string</type><methodname><replaceable>handler</replaceable></methodname>
         <methodparam><type>array</type><parameter>matches</parameter></methodparam>
        </methodsynopsis>
       </para>
-      <para>
+      <simpara>
        You'll often need the <parameter>callback</parameter> function
        for a <function>preg_replace_callback</function> in just one place.
        In this case you can use an
@@ -62,7 +62,7 @@
        you have all information for the call in one place and do not
        clutter the function namespace with a callback function's name
        not used anywhere else.
-      </para>
+      </simpara>
       <para>
        <example>
         <title><function>preg_replace_callback</function> and
@@ -95,40 +95,40 @@ fclose($fp);
     <varlistentry>
      <term><parameter>subject</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string or an array with strings to search and replace.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>limit</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The maximum possible replacements for each pattern in each
        <parameter>subject</parameter> string. Defaults to
        <literal>-1</literal> (no limit).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>count</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If specified, this variable will be filled with the number of
        replacements done.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>flags</parameter> can be a combination of the
        <constant>PREG_OFFSET_CAPTURE</constant> and
        <constant>PREG_UNMATCHED_AS_NULL</constant> flags, which influence the
        format of the matches array.
        See the description in <function>preg_match</function> for more details.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -137,15 +137,15 @@ fclose($fp);
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    <function>preg_replace_callback</function> returns an array if the
    <parameter>subject</parameter> parameter is an array, or a string
    otherwise. On errors the return value is &null;
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If matches are found, the new subject will be returned, otherwise
    <parameter>subject</parameter> will be returned unchanged.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

@@ -20,10 +20,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a numerically indexed array containing the list of supported
    hashing algorithms.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -68,10 +68,10 @@
   <para>
    <example>
     <title><function>hash_algos</function> example</title>
-    <para>
+    <simpara>
      As of PHP 8.1.0, <function>hash_algos</function> will return the
      following list of algorithm names.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

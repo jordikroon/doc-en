@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.file-get-contents" xmlns:xlink="http://www.w3.org/1999/xlink">
+<refentry xml:id="function.file-get-contents" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
-  <refname>file_get_contents</refname> 
+  <refname>file_get_contents</refname>
   <refpurpose>Reads entire file into a string</refpurpose>
  </refnamediv>
 
@@ -16,23 +16,23 @@
    <methodparam choice="opt"><type>int</type><parameter>offset</parameter><initializer>0</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>length</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para> 
+  <simpara>
    This function is similar to <function>file</function>, except that
-   <function>file_get_contents</function> returns the file in a 
-   <type>string</type>, starting at the specified <parameter>offset</parameter> 
-   up to <parameter>length</parameter> bytes. On failure, 
+   <function>file_get_contents</function> returns the file in a
+   <type>string</type>, starting at the specified <parameter>offset</parameter>
+   up to <parameter>length</parameter> bytes. On failure,
    <function>file_get_contents</function> will return &false;.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    <function>file_get_contents</function> is the preferred way to read the
    contents of a file into a string.  It will use memory mapping techniques if
    supported by your OS to enhance performance.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     If you're opening a URI with special characters, such as spaces, you
     need to encode the URI with <function>urlencode</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -43,16 +43,16 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Name of the file to read.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>use_include_path</parameter></term>
      <listitem>
       <note>
-       <para>
+       <simpara>
         The <constant>FILE_USE_INCLUDE_PATH</constant> constant can be used
         to trigger <link linkend="ini.include-path">include path</link>
         search.
@@ -60,42 +60,42 @@
         linkend="language.types.declarations.strict">strict typing</link>
         is enabled, since <constant>FILE_USE_INCLUDE_PATH</constant> is an
         <type>int</type>. Use &true; instead.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>context</parameter></term>
      <listitem>
-      <para>
-       A valid context resource created with 
+      <simpara>
+       A valid context resource created with
        <function>stream_context_create</function>. If you don't need to use a
        custom context, you can skip this parameter by &null;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The offset where the reading starts on the original stream.
        Negative offsets count from the end of the stream.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Seeking (<parameter>offset</parameter>) is not supported with remote files.
        Attempting to seek on non-local files may work with small offsets, but this
        is unpredictable because it works on the buffered stream.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Maximum length of data read. The default is to read until end
-       of file is reached. Note that this parameter is applied to the 
+       of file is reached. Note that this parameter is applied to the
        stream processed by the filters.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -104,23 +104,23 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The function returns the read data &return.falseforfailure;.
-  </para>
+  </simpara>
   &return.falseproblem;
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    An <constant>E_WARNING</constant> level error is generated if <parameter>filename</parameter> cannot be found, <parameter>length</parameter>
    is less than zero, or if seeking to the specified <parameter>offset</parameter> in the stream fails.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    When <function>file_get_contents</function> is called on a directory,
    an <constant>E_WARNING</constant> level error is generated on Windows,
    and as of PHP 7.4 on other operating systems as well.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -194,7 +194,7 @@ var_dump($section);
     &example.outputs.similar;
     <screen>
 <![CDATA[
-string(14) "lle Bjori Ro" 
+string(14) "lle Bjori Ro"
 ]]>
     </screen>
    </example>

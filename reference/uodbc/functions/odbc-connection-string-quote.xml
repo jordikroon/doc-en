@@ -11,20 +11,20 @@
    <type>string</type><methodname>odbc_connection_string_quote</methodname>
    <methodparam><type>string</type><parameter>str</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Quotes a value for a connection string, according to ODBC rules.
    That is, it will be surrounded by quotes, and any ending curly
    braces will be escaped. This should be done for any connection
    string values that come from user input. Not doing so can lead
    to issues with parsing the connection string, or values being
    injected into the connection string.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Note that this function does not check if the string is already
    quoted, nor if the string needs quoting. For that, call
    <function>odbc_connection_string_is_quoted</function> and
    <function>odbc_connection_string_should_quote</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -33,9 +33,9 @@
    <varlistentry>
     <term><parameter>str</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The unquoted string.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -43,20 +43,20 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A quoted string, surrounded by curly braces, and properly escaped.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples"><!-- {{{ -->
   &reftitle.examples;
   <example xml:id="odbc-connection-string-quote.example.basic"><!-- {{{ -->
    <title><function>odbc_connection_string_quote</function> example</title>
-   <para>
+   <simpara>
     This example quotes a string, then puts it in a connection string.
     Note that the string is quoted, and the ending quote character in
     the middle of the string has been escaped.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

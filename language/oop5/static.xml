@@ -17,29 +17,29 @@
    </simpara>
   </tip>
 
-  <para>
+  <simpara>
    Declaring class properties or methods as static makes them accessible
    without needing an instantiation of the class.
    These can also be accessed statically within an instantiated class object.
-  </para>
+  </simpara>
 
   <sect2 xml:id="language.oop5.static.methods">
    <title>Static methods</title>
 
-   <para>
+   <simpara>
     Because static methods are callable without an instance of
     the object created, the pseudo-variable <varname>$this</varname> is
     not available inside methods declared as static.
-   </para>
+   </simpara>
 
    <warning>
-    <para>
-     Calling non-static methods statically throws an <classname>Error</classname>.
-    </para>
-    <para>
+    <simpara>
+     Calling non-static methods statically throws an <exceptionname>Error</exceptionname>.
+    </simpara>
+    <simpara>
      Prior to PHP 8.0.0, calling non-static methods statically was deprecated, and
      generated an <constant>E_DEPRECATED</constant> warning.
-    </para>
+    </simpara>
    </warning>
 
    <example>
@@ -56,27 +56,27 @@ class Foo {
 Foo::aStaticMethod();
 $classname = 'Foo';
 $classname::aStaticMethod();
-?> 
+?>
 ]]>
      </programlisting>
    </example>
   </sect2>
-  
+
   <sect2 xml:id="language.oop5.static.properties">
    <title>Static properties</title>
 
-   <para>
+   <simpara>
     Static properties are accessed using the
     <link linkend="language.oop5.paamayim-nekudotayim">Scope Resolution Operator</link>
     (<literal>::</literal>) and cannot be accessed through the object operator
     (<literal>-&gt;</literal>).
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     It's possible to reference the class using a variable.
     The variable's value cannot be a keyword (e.g. <literal>self</literal>,
     <literal>parent</literal> and <literal>static</literal>).
-   </para>
+   </simpara>
 
    <example>
     <title>Static property example</title>
@@ -104,7 +104,7 @@ print Foo::$my_static . "\n";
 
 $foo = new Foo();
 print $foo->staticValue() . "\n";
-print $foo->my_static . "\n";      // Undefined "Property" my_static 
+print $foo->my_static . "\n";      // Undefined "Property" my_static
 
 print $foo::$my_static . "\n";
 $classname = 'Foo';

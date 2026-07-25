@@ -12,10 +12,10 @@
    <modifier>public</modifier> <type class="union"><type>object</type><type>null</type></type><methodname>ReflectionClass::newInstanceArgs</methodname>
    <methodparam choice="opt"><type>array</type><parameter>args</parameter><initializer>[]</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Creates a new instance of the class, the given arguments are passed to the
    class constructor.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -26,9 +26,9 @@
     <varlistentry>
      <term><parameter>args</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The parameters to be passed to the class constructor as an <type>array</type>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,22 +37,22 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a new instance of the class, or &null; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   A <classname>ReflectionException</classname> if the class constructor is not public.
-  </para>
-  <para>
-   A <classname>ReflectionException</classname> if the class does not have a constructor
+  <simpara>
+   A <exceptionname>ReflectionException</exceptionname> if the class constructor is not public.
+  </simpara>
+  <simpara>
+   A <exceptionname>ReflectionException</exceptionname> if the class does not have a constructor
    and the <parameter>args</parameter> parameter contains one or more parameters.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>

@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>SplFileInfo::isFile</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks if the file referenced by this SplFileInfo object exists and is a regular file.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the file exists and is a regular file (not a link), &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -5,7 +5,7 @@
   <refname>mb_ereg_match</refname>
   <refpurpose>Regular expression match for multibyte string</refpurpose>
  </refnamediv>
-   
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -32,31 +32,31 @@
     <varlistentry>
      <term><parameter>pattern</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The regular expression pattern.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <type>string</type> being evaluated.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>options</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The search option. See <function>mb_regex_set_options</function> for explanation.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
   <simpara>
@@ -90,7 +90,7 @@
 
  <refsect1 role="notes">
   &reftitle.notes;
-  
+
   &note.mbstring.encoding.internal;
  </refsect1>
 

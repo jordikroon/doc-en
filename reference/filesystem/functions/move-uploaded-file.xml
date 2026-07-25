@@ -5,7 +5,7 @@
   <refname>move_uploaded_file</refname>
   <refpurpose>Moves an uploaded file to a new location</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,19 +13,19 @@
    <methodparam><type>string</type><parameter>from</parameter></methodparam>
    <methodparam><type>string</type><parameter>to</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function checks to ensure that the file designated by
    <parameter>from</parameter> is a valid upload file (meaning
    that it was uploaded via PHP's HTTP POST upload mechanism). If
    the file is valid, it will be moved to the filename given by
    <parameter>to</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This sort of check is especially important if there is any chance
    that anything done with uploaded files could reveal their
    contents to the user, or even to other users on the same
    system.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -35,40 +35,40 @@
     <varlistentry>
      <term><parameter>from</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The filename of the uploaded file.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>to</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The destination of the moved file.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; on success.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If <parameter>from</parameter> is not a valid upload file,
    then no action will occur, and
    <function>move_uploaded_file</function> will return
    &false;.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If <parameter>from</parameter> is a valid upload file, but
    cannot be moved for some reason, no action will occur, and
    <function>move_uploaded_file</function> will return
    &false;. Additionally, a warning will be issued.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -99,7 +99,7 @@ foreach ($_FILES["pictures"]["error"] as $key => $error) {
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     <function>move_uploaded_file</function> is
     <link linkend="ini.open-basedir">open_basedir</link>
     aware. However, restrictions are placed only on the
@@ -108,15 +108,15 @@ foreach ($_FILES["pictures"]["error"] as $key => $error) {
     with such restrictions. <function>move_uploaded_file</function> ensures
     the safety of this operation by allowing only those files uploaded
     through PHP to be moved.
-   </para>
+   </simpara>
   </note>
   <warning>
-   <para>
+   <simpara>
     If the destination file already exists, it will be overwritten.
-   </para>
+   </simpara>
   </warning>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

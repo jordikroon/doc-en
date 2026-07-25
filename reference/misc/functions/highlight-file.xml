@@ -5,7 +5,7 @@
   <refname>highlight_file</refname>
   <refpurpose>Syntax highlighting of a file</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,18 +13,18 @@
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>return</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Prints out or returns a syntax highlighted version of the code contained
    in <parameter>filename</parameter> using the colors defined in the
    built-in syntax highlighter for PHP.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Many servers are configured to automatically highlight files
    with a <emphasis>phps</emphasis> extension. For example,
    <filename>example.phps</filename> when viewed will show the
    syntax highlighted source of the file. To enable this, add this
    line to the &httpd.conf;:
-  </para>
+  </simpara>
   <screen>
 <![CDATA[
 AddType application/x-httpd-php-source .phps
@@ -39,18 +39,18 @@ AddType application/x-httpd-php-source .phps
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path to the PHP file to be highlighted.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>return</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Set this parameter to &true; to make this function return the
        highlighted code.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -59,11 +59,11 @@ AddType application/x-httpd-php-source .phps
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    If <parameter>return</parameter> is set to &true;, returns the highlighted
    code as a string instead of printing it out. Otherwise, it will return
    &true; on success, &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -93,12 +93,12 @@ AddType application/x-httpd-php-source .phps
  <refsect1 role="notes">
   &reftitle.notes;
   <caution>
-   <para>
+   <simpara>
     Care should be taken when using the <function>highlight_file</function>
     function to make sure that you do not inadvertently reveal sensitive
     information such as passwords or any other type of information that might
     create a potential security risk.
-   </para>
+   </simpara>
   </caution>
   &note.uses-ob;
  </refsect1>

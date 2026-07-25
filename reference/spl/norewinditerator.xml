@@ -9,9 +9,9 @@
 <!-- {{{ NoRewindIterator intro -->
   <section xml:id="norewinditerator.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     This iterator ignores rewind operations. This allows processing an iterator in multiple partial foreach loops.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

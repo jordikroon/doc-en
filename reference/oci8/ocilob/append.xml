@@ -5,22 +5,22 @@
   <refname>OCILob::append</refname>
   <refpurpose>Appends data from the large object to another large object</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="OCILob">
    <modifier>public</modifier> <type>bool</type><methodname>OCILob::append</methodname>
    <methodparam><type>OCILob</type><parameter>from</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   Appends data from the large object to the end of another large object. 
-  </para>
-  <para>
+  <simpara>
+   Appends data from the large object to the end of another large object.
+  </simpara>
+  <simpara>
    Writing to the large object with this method will fail if buffering was
    previously enabled. You must disable buffering before appending. You may
    need to flush buffers with <xref linkend="ocilob.flush"/> before
    disabling buffering.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,9 +30,9 @@
     <varlistentry>
      <term><parameter>from</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The copied LOB.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -41,9 +41,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

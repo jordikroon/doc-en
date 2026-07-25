@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>string</type><methodname>SplObjectStorage::serialize</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a string representation of the storage.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A string representing the storage.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -5,7 +5,7 @@
   <refname>fnmatch</refname>
   <refpurpose>Match filename against a pattern</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,10 +14,10 @@
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>fnmatch</function> checks if the passed <parameter>filename</parameter> would
    match the given shell wildcard <parameter>pattern</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -103,25 +103,25 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The tested string. This function is especially useful for filenames,
        but may also be used on regular strings.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        The average user may be used to shell patterns or at least in their
        simplest form to <literal>'?'</literal> and <literal>'*'</literal>
        wildcards so using <function>fnmatch</function> instead of
        <function>preg_match</function> for
        frontend search expression input may be way more convenient for
        non-programming users.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
       <para>
-       The value of <parameter>flags</parameter> can be any combination of 
+       The value of <parameter>flags</parameter> can be any combination of
        the following flags, joined with the
        <link linkend="language.operators.bitwise">binary OR (|) operator</link>.
        <table>
@@ -172,9 +172,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if there is a match, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -198,10 +198,10 @@ if (fnmatch("*gr[ae]y", $color)) {
  <refsect1 role="notes">
   &reftitle.notes;
   <warning>
-   <para>
+   <simpara>
     For now, this function is not available on non-POSIX compliant systems
     except Windows.
-   </para>
+   </simpara>
   </warning>
  </refsect1>
 

@@ -13,11 +13,11 @@
    <methodparam rep="repeat"><type>array</type><parameter>arrays</parameter></methodparam>
    <methodparam><type>callable</type><parameter>value_compare_func</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Computes the difference of arrays by using a callback function for data
    comparison. This is unlike <function>array_diff</function> which uses an
    internal function for comparing the data.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -26,17 +26,17 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The first array.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>arrays</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Arrays to compare against.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -51,10 +51,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array containing all the values of <parameter>array</parameter>
    that are not present in any of the other arguments.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;
@@ -85,7 +85,7 @@ $array2[1]->width = 9;  $array2[1]->height = 2;
 function compare_by_area($a, $b) {
     $areaA = $a->width * $a->height;
     $areaB = $b->width * $b->height;
-    
+
     if ($areaA < $areaB) {
         return -1;
     } elseif ($areaA > $areaB) {
@@ -149,7 +149,7 @@ class MyCalendar {
     public function checkAvailability() {
         return array_udiff($this->free, $this->booked, array($this, 'customCompare'));
     }
-    
+
     public function customCompare($free, $booked) {
         if (is_array($free)) $a = $free['date'];
         else $a = $free;
@@ -176,12 +176,12 @@ $myCalendar->bookAppointment(new DateTime('Friday this week'), "Fixing buggy cod
 // Check availability of days by comparing $booked dates against $free dates
 echo "I'm available on the following days this week...\n\n";
 foreach ($myCalendar->checkAvailability() as $free) {
-    echo $free->format('l'), "\n"; 
+    echo $free->format('l'), "\n";
 }
 echo "\n\n";
 echo "I'm busy on the following days this week...\n\n";
 foreach ($myCalendar->booked as $booked) {
-    echo $booked['date']->format('l'), ": ", $booked['note'], "\n"; 
+    echo $booked['date']->format('l'), ": ", $booked['note'], "\n";
 }
 ?>
 ]]>

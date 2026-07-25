@@ -13,9 +13,9 @@
    <type>bool</type><methodname>sapi_windows_cp_is_utf8</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
    Indicates whether the codepage of the current process is UTF-8 compatible.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns whether the codepage of the current process is UTF-8 compatible.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

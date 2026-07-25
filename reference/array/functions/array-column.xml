@@ -13,14 +13,14 @@
    <methodparam><type class="union"><type>int</type><type>string</type><type>null</type></type><parameter>column_key</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>int</type><type>string</type><type>null</type></type><parameter>index_key</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>array_column</function> returns the values from a single column of
    the <parameter>array</parameter>, identified by the
    <parameter>column_key</parameter>. Optionally, an
    <parameter>index_key</parameter> may be provided to index the values in the
    returned array by the values from the <parameter>index_key</parameter>
    column of the input array.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -29,38 +29,38 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A multi-dimensional array or an array of objects from which to pull a
        column of values from. If an array of objects is provided, then public
        properties can be directly pulled. In order for protected or private
        properties to be pulled, the class must implement both the
        <function>__get</function> and <function>__isset</function> magic
        methods.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>column_key</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The column of values to return. This value may be an integer key of the
        column you wish to retrieve, or it may be a string key name for an
        associative array or property name. It may also be &null; to return
        complete arrays or objects (this is useful together with
        <parameter>index_key</parameter> to reindex the array).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>index_key</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The column to use as the index/keys for the returned array. This value
        may be the integer key of the column, or it may be the string key name.
        The value is <link linkend="language.types.array.key-casts">cast</link>
        as usual for array keys (however, prior to PHP 8.0.0, objects supporting
        conversion to string were also allowed).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -68,9 +68,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array of values representing a single column from the input array.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="changelog">
   &reftitle.changelog;
@@ -88,7 +88,7 @@
        <entry>8.0.0</entry>
        <entry>
         Objects in columns indicated by <parameter>index_key</parameter> parameter
-        will no longer be cast to string and will now throw a <classname>TypeError</classname> instead.
+        will no longer be cast to string and will now throw a <exceptionname>TypeError</exceptionname> instead.
        </entry>
       </row>
      </tbody>
@@ -128,7 +128,7 @@ $records = [
         'last_name' => 'Doe',
     ]
 ];
- 
+
 $first_names = array_column($records, 'first_name');
 print_r($first_names);
 

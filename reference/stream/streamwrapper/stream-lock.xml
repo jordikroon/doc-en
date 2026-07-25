@@ -73,7 +73,7 @@
    Emits <constant>E_WARNING</constant> if call to this method fails (i.e. not implemented).
   </simpara>
  </refsect1><!-- }}} -->
- 
+
 
 <!--
  <refsect1 role="examples">

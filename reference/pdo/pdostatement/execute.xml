@@ -23,7 +23,7 @@
      their value as input and receive the output value, if any, of their
      associated parameter markers</para></listitem>
     <listitem>
-     <para>or an array of input-only parameter values has to be passed</para>
+     <simpara>or an array of input-only parameter values has to be passed</simpara>
     </listitem>
    </itemizedlist>
   </para>
@@ -36,20 +36,20 @@
     <varlistentry>
      <term><parameter>params</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An array of values with as many elements as there are bound
        parameters in the SQL statement being executed.
        All values are treated as <constant>PDO::PARAM_STR</constant>.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Multiple values cannot be bound to a single parameter; for example,
        it is not allowed to bind two values to a single named parameter in an IN()
        clause.
-      </para>
+      </simpara>
       <para>
-       Binding more values than specified is not possible; if more keys exist in 
-       <parameter>params</parameter> than in the SQL specified 
-       in the <methodname>PDO::prepare</methodname>, then the statement will 
+       Binding more values than specified is not possible; if more keys exist in
+       <parameter>params</parameter> than in the SQL specified
+       in the <methodname>PDO::prepare</methodname>, then the statement will
        fail and an error is emitted.
       </para>
      </listitem>
@@ -60,9 +60,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -171,10 +171,10 @@ $sth->execute($params);
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     Some drivers require to <link linkend="pdostatement.closecursor">close
     cursor</link> before executing next statement.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

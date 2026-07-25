@@ -10,9 +10,9 @@
 <!-- {{{ RecursiveTreeIterator intro -->
   <section xml:id="recursivetreeiterator.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Allows iterating over a <classname>RecursiveIterator</classname> to generate an ASCII graphic tree.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -98,7 +98,7 @@
 <!-- }}} -->
 
   </section>
-  
+
 <!-- {{{ RecursiveTreeIterator constants -->
   <section xml:id="recursivetreeiterator.constants">
    &reftitle.constants;

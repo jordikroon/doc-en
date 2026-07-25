@@ -15,14 +15,14 @@
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>STREAM_SERVER_BIND | STREAM_SERVER_LISTEN</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>resource</type><type>null</type></type><parameter>context</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Creates a stream or datagram socket on the specified
-   <parameter>address</parameter>.    
-  </para>
-  <para>
+   <parameter>address</parameter>.
+  </simpara>
+  <simpara>
    This function only creates a socket, to begin accepting connections
    use <function>stream_socket_accept</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -32,18 +32,18 @@
     <varlistentry>
      <term><parameter>address</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The type of socket created is determined by the transport specified
        using standard URL formatting: <literal>transport://target</literal>.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        For Internet Domain sockets (<constant>AF_INET</constant>) such as TCP and UDP, the
-       <literal>target</literal> portion of the 
+       <literal>target</literal> portion of the
        <parameter>remote_socket</parameter> parameter should consist of a
        hostname or IP address followed by a colon and a port number.  For
        Unix domain sockets, the <literal>target</literal> portion should
        point to the socket file on the filesystem.
-      </para>
+      </simpara>
       <simpara>
        Depending on the environment, Unix domain sockets may not be available.
        A list of available transports can be retrieved using
@@ -55,48 +55,48 @@
     <varlistentry>
      <term><parameter>error_code</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If the optional <parameter>error_code</parameter> and <parameter>error_message</parameter>
        arguments are present they will be set to indicate the actual system
        level error that occurred in the system-level <literal>socket()</literal>,
        <literal>bind()</literal>, and <literal>listen()</literal> calls. If
-       the value returned in <parameter>error_code</parameter> is 
+       the value returned in <parameter>error_code</parameter> is
        <literal>0</literal> and the function returned &false;, it is an
        indication that the error occurred before the <literal>bind()</literal>
-       call. This is most likely due to a problem initializing the socket. 
+       call. This is most likely due to a problem initializing the socket.
        Note that the <parameter>error_code</parameter> and
        <parameter>error_message</parameter> arguments will always be passed by reference.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>error_message</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        See <parameter>error_code</parameter> description.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A bitmask field which may be set to any combination of socket creation
        flags.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         For UDP sockets, you must use <constant>STREAM_SERVER_BIND</constant> as
         the <parameter>flags</parameter> parameter.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>context</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -105,9 +105,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the created stream, or &false; on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

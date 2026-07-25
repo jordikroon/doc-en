@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type class="union"><type>int</type><type>false</type></type><methodname>SplFileInfo::getMTime</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the time when the contents of the file were changed. The time returned is a Unix timestamp.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the last modified time for the file, in a Unix timestamp on success, or &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.readline-redisplay">
+<refentry xml:id="function.readline-redisplay" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>readline_redisplay</refname>
   <refpurpose>Redraws the display</refpurpose>

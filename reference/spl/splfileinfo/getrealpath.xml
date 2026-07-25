@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type class="union"><type>string</type><type>false</type></type><methodname>SplFileInfo::getRealPath</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    This method expands all symbolic links, resolves relative references and returns the real path to the file.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the path to the file, or &false; if the file does not exist.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -57,11 +57,11 @@ var_dump($info->getRealPath());
     &example.outputs.similar;
     <screen>
 <![CDATA[
-string(28) "/private/tmp/phptempfile.php" 
+string(28) "/private/tmp/phptempfile.php"
 string(12) "/private/tmp"
 bool(false)
 bool(false)
-string(12) "/private/tmp" 
+string(12) "/private/tmp"
 ]]>
     </screen>
    </example>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.enchant-broker-dict-exists">
+<refentry xml:id="function.enchant-broker-dict-exists" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>enchant_broker_dict_exists</refname>
   <refpurpose>Whether a dictionary exists or not</refpurpose>

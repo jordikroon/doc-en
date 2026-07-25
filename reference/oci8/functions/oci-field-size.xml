@@ -5,7 +5,7 @@
   <refname>oci_field_size</refname>
   <refpurpose>Returns field's size</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,9 +13,9 @@
    <methodparam><type>resource</type><parameter>statement</parameter></methodparam>
    <methodparam><type class="union"><type>string</type><type>int</type></type><parameter>column</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   Returns the size of a <parameter>column</parameter>. 
-  </para>
+  <simpara>
+   Returns the size of a <parameter>column</parameter>.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,17 +25,17 @@
     <varlistentry>
      <term><parameter>statement</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A valid OCI statement identifier.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>column</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Can be the field's index (1-based) or name.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -44,9 +44,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the size of a <parameter>column</parameter> in bytes,&return.falseforfailure;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -59,7 +59,7 @@
 <?php
 
 // Create the table with:
-//   CREATE TABLE mytab (number_col NUMBER, varchar2_col varchar2(1), 
+//   CREATE TABLE mytab (number_col NUMBER, varchar2_col varchar2(1),
 //                       clob_col CLOB, date_col DATE);
 
 $conn = oci_connect("hr", "hrpwd", "localhost/XE");

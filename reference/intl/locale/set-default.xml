@@ -9,24 +9,24 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="Locale">
    <modifier>public</modifier> <modifier>static</modifier> <type>true</type><methodname>Locale::setDefault</methodname>
    <methodparam><type>string</type><parameter>locale</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type>true</type><methodname>locale_set_default</methodname>
    <methodparam><type>string</type><parameter>locale</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets the default runtime locale to <parameter>locale</parameter>. This changes the value of INTL
    global 'default_locale' locale identifier. UAX #35 extensions are accepted.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -36,9 +36,9 @@
     <varlistentry>
      <term><parameter>locale</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Is a BCP 47 compliant language tag.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -48,9 +48,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

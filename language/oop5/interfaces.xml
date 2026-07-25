@@ -2,24 +2,24 @@
 <!-- $Revision$ -->
  <sect1 xml:id="language.oop5.interfaces" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
   <title>Object Interfaces</title>
-  <para>
+  <simpara>
    Object interfaces allow you to create code which specifies which methods and properties a
    class must implement, without having to define how these methods or properties are
    implemented.  Interfaces share a namespace with classes, traits, and enumerations, so they may
    not use the same name.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Interfaces are defined in the same way as a class, but with the <literal>interface</literal>
    keyword replacing the <literal>class</literal> keyword and without any of the methods having
    their contents defined.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    All methods declared in an interface must be public; this is the nature of an
    interface.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    In practice, interfaces serve two complementary purposes:
-  </para>
+  </simpara>
   <simplelist>
    <member>
     To allow developers to create objects of different classes that may be used interchangeably
@@ -34,60 +34,60 @@
     or so on to describe the significance of the behavior.
    </member>
   </simplelist>
-  <para>
+  <simpara>
    Interfaces may define
    <link linkend="language.oop5.magic">magic methods</link> to require implementing classes to
    implement those methods.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     Although they are supported, including <link linkend="language.oop5.decon.constructor">constructors</link>
     in interfaces is strongly discouraged. Doing so significantly reduces the flexibility of the object implementing the
     interface.  Additionally, constructors are not enforced by inheritance rules, which can cause inconsistent
     and unexpected behavior.
-   </para>
+   </simpara>
   </note>
 
   <sect2 xml:id="language.oop5.interfaces.implements">
    <title><literal>implements</literal></title>
-   <para>
+   <simpara>
     To implement an interface, the <literal>implements</literal> operator is used.
     All methods in the interface must be implemented within a class; failure to do
     so will result in a fatal error. Classes may implement more than one interface
     if desired by separating each interface with a comma.
-   </para>
+   </simpara>
    <warning>
-    <para>
+    <simpara>
      A class that implements an interface may use a different name for its parameters than
      the interface.  However, as of PHP 8.0 the language supports <link linkend="functions.named-arguments">named arguments</link>, which means
      callers may rely on the parameter name in the interface.  For that reason, it is strongly
      recommended that developers use the same parameter names as the interface being implemented.
-    </para>
+    </simpara>
    </warning>
    <note>
-    <para>
-     Interfaces can be extended like classes using the <link linkend="language.oop5.inheritance">extends</link> 
+    <simpara>
+     Interfaces can be extended like classes using the <link linkend="language.oop5.inheritance">extends</link>
      operator.
-    </para>
+    </simpara>
    </note>
    <note>
-    <para>
+    <simpara>
      The class implementing the interface must declare all methods in the interface
      with a <link linkend="language.oop.lsp">compatible signature</link>. A class can implement multiple interfaces
      which declare a method with the same name. In this case, the implementation must follow the
      <link linkend="language.oop.lsp">signature compatibility rules</link> for all the interfaces. So
      <link linkend="language.oop5.variance">covariance and contravariance</link> can be applied.
-    </para>
+    </simpara>
    </note>
   </sect2>
  <!-- Move this to OOP constants page? -->
   <sect2 xml:id="language.oop5.interfaces.constants">
    <title>Constants</title>
-   <para>
-    It's possible for interfaces to have constants. Interface constants work exactly 
+   <simpara>
+    It's possible for interfaces to have constants. Interface constants work exactly
     like <link linkend="language.oop5.constants">class constants</link>.
     Prior to PHP 8.1.0, they cannot be overridden by a class/interface that inherits them.
-   </para>
+   </simpara>
   </sect2>
   <sect2 xml:id="language.oop5.interfaces.properties">
    <title>Properties</title>
@@ -194,18 +194,18 @@ interface Template
 class WorkingTemplate implements Template
 {
     private $vars = [];
-  
+
     public function setVariable($name, $var)
     {
         $this->vars[$name] = $var;
     }
-  
+
     public function getHtml($template)
     {
         foreach($this->vars as $name => $value) {
             $template = str_replace('{' . $name . '}', $value, $template);
         }
- 
+
         return $template;
     }
 }
@@ -216,7 +216,7 @@ class WorkingTemplate implements Template
 class BadTemplate implements Template
 {
     private $vars = [];
-  
+
     public function setVariable($name, $var)
     {
         $this->vars[$name] = $var;
@@ -423,16 +423,16 @@ class Two extends One implements Usable, Updatable
 ]]>
      </programlisting>
    </example>
-   <para>
+   <simpara>
      An interface, together with type declarations, provides a good way to make sure
      that a particular object contains particular methods. See
      <link linkend="language.operators.type">instanceof</link> operator and
      <link linkend="language.types.declarations">type declarations</link>.
-   </para>
+   </simpara>
   </sect2>
 
  </sect1>
- 
+
 <!-- Keep this comment at the end of the file
 Local variables:
 mode: sgml

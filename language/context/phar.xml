@@ -9,9 +9,9 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    Context options for <literal>phar://</literal> wrapper.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="options">
@@ -24,9 +24,9 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        One of <link linkend="phar.constants.compression">Phar compression constants</link>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="context.phar.metadata">
@@ -35,9 +35,9 @@
       <type>mixed</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Phar metadata. See <function>Phar::setMetadata</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

@@ -14,10 +14,10 @@
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>service</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>array</type><parameter>hints</parameter><initializer>[]</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Lookup different ways we can connect to <parameter>host</parameter>.  The returned array contains
    a set of <classname>AddressInfo</classname> instances that we can bind to using <function>socket_addrinfo_bind</function>.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -27,27 +27,27 @@
    <varlistentry>
     <term><parameter>host</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Hostname to search.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>service</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The service to connect to. If service is a numeric string, it designates the port.
       Otherwise it designates a network service name, which is mapped to a port by the operating system.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>hints</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Hints provide criteria for selecting addresses returned.  You may specify the
       hints as defined by getaddrinfo.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -55,13 +55,13 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array of <classname>AddressInfo</classname> instances that can be used with
    the <function>socket_addrinfo_<replaceable>*</replaceable></function> family of functions.
    On failure, &false; is returned.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="changelog">
   &reftitle.changelog;
   <informaltable>
@@ -99,7 +99,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

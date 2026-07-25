@@ -5,7 +5,7 @@
   <refname>socket_select</refname>
   <refpurpose>Runs the select() system call on the given arrays of sockets with a specified timeout</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -16,12 +16,12 @@
    <methodparam><type class="union"><type>int</type><type>null</type></type><parameter>seconds</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>microseconds</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>socket_select</function> accepts arrays of sockets and waits for
    them to change status. Those coming with BSD sockets background will
    recognize that those socket arrays are in fact the so-called file
    descriptor sets. Three independent arrays of sockets are watched.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -31,37 +31,37 @@
     <varlistentry>
      <term><parameter>read</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The sockets listed in the <parameter>read</parameter> array will be
        watched to see if characters become available for reading (more
        precisely, to see if a read will not block - in particular, a socket
        is also ready on end-of-file, in which case a
        <function>socket_read</function> will return a zero length string).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>write</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The sockets listed in the <parameter>write</parameter> array will be
        watched to see if a write will not block.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>except</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The sockets listed in the <parameter>except</parameter> array will be
        watched for exceptions.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>seconds</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <parameter>seconds</parameter> and <parameter>microseconds</parameter>
        together form the <literal>timeout</literal> parameter. The
        <literal>timeout</literal> is an upper bound on the amount of time
@@ -70,31 +70,31 @@
        <function>socket_select</function> to return immediately. This is useful
        for polling. If <parameter>seconds</parameter> is &null; (no timeout),
        <function>socket_select</function> can block indefinitely.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>microseconds</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
   <warning>
-   <para>
+   <simpara>
     On exit, the arrays are modified to indicate which socket
     actually changed status.
-   </para>
+   </simpara>
   </warning>
-  <para>
+  <simpara>
    You do not need to pass every array to
    <function>socket_select</function>. You can leave it out and use an
    empty array or &null; instead. Also do not forget that those arrays are
    passed <emphasis>by reference</emphasis> and will be modified after
    <function>socket_select</function> returns.
-  </para>
+  </simpara>
   <note>
    <para>
     Due a limitation in the current Zend Engine it is not possible to pass a
@@ -119,13 +119,13 @@ socket_select($r, $w, $e, 0);
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    On success <function>socket_select</function> returns the number of
    sockets contained in the modified arrays, which may be zero if
    the timeout expires before anything interesting happens.On error &false;
    is returned. The error code can be retrieved with
    <function>socket_last_error</function>.
-  </para>
+  </simpara>
   <note>
    <para>
     Be sure to use the <literal>===</literal> operator when checking for an

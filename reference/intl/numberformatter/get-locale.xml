@@ -9,24 +9,24 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="NumberFormatter">
    <modifier>public</modifier> <type class="union"><type>string</type><type>false</type></type><methodname>NumberFormatter::getLocale</methodname>
    <methodparam choice="opt"><type>int</type><parameter>type</parameter><initializer><constant>ULOC_ACTUAL_LOCALE</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>numfmt_get_locale</methodname>
    <methodparam><type>NumberFormatter</type><parameter>formatter</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>type</parameter><initializer><constant>ULOC_ACTUAL_LOCALE</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get formatter locale name.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -36,20 +36,20 @@
     <varlistentry>
      <term><parameter>formatter</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <classname>NumberFormatter</classname> object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>type</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        You can choose between valid and actual locale (
        <constant>Locale::VALID_LOCALE</constant>,
        <constant>Locale::ACTUAL_LOCALE</constant>,
        respectively). The default is the actual locale.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -58,9 +58,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The locale name used to create the formatter, or &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

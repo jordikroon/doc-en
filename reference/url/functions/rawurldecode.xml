@@ -12,11 +12,11 @@
    <type>string</type><methodname>rawurldecode</methodname>
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a string in which the sequences with percent
    (<literal>%</literal>) signs followed by two hex digits have been replaced
    with literal characters.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,9 +26,9 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The URL to be decoded.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,9 +37,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the decoded URL, as a string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -63,10 +63,10 @@ echo rawurldecode('foo%20bar%40baz'); // foo bar@baz
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     <function>rawurldecode</function> does not decode plus symbols ('+')
     into spaces. <function>urldecode</function> does.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

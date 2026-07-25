@@ -9,20 +9,20 @@
  </refnamediv>
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="XMLWriter">
    <modifier>public</modifier> <type>bool</type><methodname>XMLWriter::text</methodname>
    <methodparam><type>string</type><parameter>content</parameter></methodparam>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type>bool</type><methodname>xmlwriter_text</methodname>
    <methodparam><type>XMLWriter</type><parameter>writer</parameter></methodparam>
    <methodparam><type>string</type><parameter>content</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Writes a text.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -32,7 +32,7 @@
     <varlistentry>
      <term><parameter>content</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The contents of the text.
        The characters <literal>&lt;</literal>, <literal>&gt;</literal>,
        <literal>&amp;</literal> and <literal>"</literal> are written as
@@ -41,7 +41,7 @@
        All other characters including <literal>&apos;</literal> are written literally.
        To write the special XML characters literally, or to write literal entity references,
        <function>xmlwriter_write_raw</function> has to be used.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -50,9 +50,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

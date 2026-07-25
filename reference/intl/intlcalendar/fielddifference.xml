@@ -8,34 +8,34 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="IntlCalendar">
    <modifier>public</modifier> <type class="union"><type>int</type><type>false</type></type><methodname>IntlCalendar::fieldDifference</methodname>
    <methodparam><type>float</type><parameter>timestamp</parameter></methodparam>
    <methodparam><type>int</type><parameter>field</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>int</type><type>false</type></type><methodname>intlcal_field_difference</methodname>
    <methodparam><type>IntlCalendar</type><parameter>calendar</parameter></methodparam>
    <methodparam><type>float</type><parameter>timestamp</parameter></methodparam>
    <methodparam><type>int</type><parameter>field</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Return the difference between the given time and the time this object is
    set to, with respect to the quantity specified the
    <parameter>field</parameter> parameter.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This method is meant to be called successively, first with the most
    significant field of interest down to the least significant field. To this
    end, as a side effect, this calendarʼs value for the field specified is
    advanced by the amount returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -50,20 +50,20 @@
    <varlistentry>
     <term><parameter>timestamp</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The time against which to compare the quantity represented by the
       <parameter>field</parameter>. For the result to be positive, the time
       given for this parameter must be ahead of the time of the object the
       method is being invoked on.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>field</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The field that represents the quantity being compared.
-     </para>
+     </simpara>
      &reference.intl.incfieldparam;
     </listitem>
    </varlistentry>
@@ -72,10 +72,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a (signed) difference of time in the unit associated with the
    specified field&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
 

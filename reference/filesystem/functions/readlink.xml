@@ -5,16 +5,16 @@
   <refname>readlink</refname>
   <refpurpose>Returns the target of a symbolic link</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>readlink</methodname>
    <methodparam><type>string</type><parameter>path</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>readlink</function> does the same as the readlink C function.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>path</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The symbolic link path.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,9 +35,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the contents of the symbolic link path or &false; on error.
-  </para>
+  </simpara>
   <note>
    <simpara>
     The function fails if <parameter>path</parameter> is not a symlink,

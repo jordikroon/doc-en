@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>void</type><methodname>RegexIterator::setPregFlags</methodname>
    <methodparam><type>int</type><parameter>pregFlags</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets the regular expression flags.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -36,9 +36,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -46,9 +46,9 @@
   <para>
    <example xml:id="regexiterator.setpregflags.example.basic">
     <title><function>RegexIterator::setPregFlags</function> example</title>
-    <para>
+    <simpara>
       Creates a new RegexIterator that filters all entries with where the array key starts with 'test'.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

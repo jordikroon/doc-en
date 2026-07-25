@@ -11,11 +11,11 @@
    <type>bool</type><methodname>odbc_next_result</methodname>
    <methodparam><type>Odbc\Result</type><parameter>statement</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks if there are more result sets available as well as allowing access
    to the next result set via <function>odbc_fetch_array</function>,
    <function>odbc_fetch_row</function>, <function>odbc_result</function>, etc.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>statement</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &odbc.result.object;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -34,9 +34,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if there are more result sets, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

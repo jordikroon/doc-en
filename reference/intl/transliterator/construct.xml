@@ -12,10 +12,10 @@
    <modifier>final</modifier> <modifier>private</modifier> <methodname>Transliterator::__construct</methodname>
    <void/>
   </constructorsynopsis>
-  <para>
+  <simpara>
    This method should not be called. Its only purpose is to deny instantiation
    with the <link linkend="language.oop5.basic.new">new</link> operator.
-  </para>
+  </simpara>
   <para>
    Use the factory methods <methodname>Transliterator::create</methodname> or
    <methodname>Transliterator::createFromRules</methodname> instead.

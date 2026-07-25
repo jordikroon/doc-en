@@ -7,27 +7,27 @@
  <!-- {{{ Requirements -->
  <section xml:id="com.requirements">
   &reftitle.required;
-  <para>
+  <simpara>
    COM functions are only available for the Windows version of PHP.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    .Net support requires the .Net runtime.
-  </para>
+  </simpara>
  </section>
  <!-- }}} -->
 
  <!-- {{{ Installation -->
  <section xml:id="com.installation">
   &reftitle.install;
-  <para>
+  <simpara>
    This extension requires <filename>php_com_dotnet.dll</filename>
    to be enabled inside of &php.ini; in order to use these functions.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    You are responsible for installing support for the various COM objects
    that you intend to use (such as MS Word); we don't and can't bundle all
    of those with PHP.
-  </para>
+  </simpara>
  </section>
  <!-- }}} -->
 

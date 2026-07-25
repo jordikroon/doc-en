@@ -11,7 +11,7 @@
    <type>string</type><methodname>decoct</methodname>
    <methodparam><type>int</type><parameter>num</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a string containing an octal representation of the given
    <parameter>num</parameter> argument. The largest number that can be
    converted depends on the platform in use. For 32-bit platforms this is
@@ -19,7 +19,7 @@
    <literal>37777777777</literal>. For 64-bit platforms this is usually
    <literal>9223372036854775807</literal> in decimal resulting in
    <literal>777777777777777777777</literal>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -28,9 +28,9 @@
     <varlistentry>
      <term><parameter>num</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Decimal value to convert
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -38,9 +38,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Octal string representation of <parameter>num</parameter>
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;

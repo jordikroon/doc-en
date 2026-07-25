@@ -12,10 +12,10 @@
    <modifier>public</modifier> <type>bool</type><methodname>ReflectionProperty::isDefault</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks whether the property was declared at compile-time, or whether the
    property was dynamically declared at run-time.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,10 +25,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &true; if the property was declared at compile-time, or &false; if
    it was created at run-time.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

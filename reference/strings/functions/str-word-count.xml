@@ -15,21 +15,21 @@
    <methodparam choice="opt"><type>int</type><parameter>format</parameter><initializer>0</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>characters</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
-   Counts the number of words inside <parameter>string</parameter>. 
-   If the optional <parameter>format</parameter> is not specified, then 
-   the return value will be an integer representing the number of words 
+  <simpara>
+   Counts the number of words inside <parameter>string</parameter>.
+   If the optional <parameter>format</parameter> is not specified, then
+   the return value will be an integer representing the number of words
    found. In the event the <parameter>format</parameter> is specified, the return
-   value will be an array, content of which is dependent on the 
-   <parameter>format</parameter>. The possible value for the 
+   value will be an array, content of which is dependent on the
+   <parameter>format</parameter>. The possible value for the
    <parameter>format</parameter> and the resultant outputs are listed below.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    For the purpose of this function, 'word' is defined as a locale dependent
    string containing alphabetic characters, which also may contain, but not start
    with &quot;'&quot; and &quot;-&quot; characters.
    Note that multibyte locales are not supported.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -39,9 +39,9 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -68,7 +68,7 @@
           position of the word inside the <parameter>string</parameter> and
           the value is the actual word itself
          </simpara>
-        </listitem> 
+        </listitem>
        </itemizedlist>
       </para>
      </listitem>
@@ -76,9 +76,9 @@
     <varlistentry>
      <term><parameter>characters</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A list of additional characters which will be considered as 'word'
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -87,10 +87,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array or an integer, depending on the
    <parameter>format</parameter> chosen.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

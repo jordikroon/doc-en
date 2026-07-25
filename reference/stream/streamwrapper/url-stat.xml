@@ -64,10 +64,10 @@
     <varlistentry>
      <term><parameter>path</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The file path or URL to stat.  Note that in the case of a URL, it must be a :// delimited
        URL.  Other URL forms are not supported.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -130,7 +130,7 @@
   &reftitle.errors;
   &userstream.not.implemented.warning;
  </refsect1><!-- }}} -->
- 
+
  <!-- {{{
  <refsect1 role="examples">
   &reftitle.examples;
@@ -159,7 +159,7 @@
   &reftitle.notes;
   &userstream.updates.context;
  </refsect1><!-- }}} -->
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

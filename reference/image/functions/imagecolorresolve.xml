@@ -14,12 +14,12 @@
    <methodparam><type>int</type><parameter>green</parameter></methodparam>
    <methodparam><type>int</type><parameter>blue</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function is guaranteed to return a color index for a
    requested color, either the exact color or the closest possible
    alternative.
-  </para>
-  <para>&gd.image.colors;</para>
+  </simpara>
+  <simpara>&gd.image.colors;</simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -29,19 +29,19 @@
     <varlistentry>
      <term><parameter>red</parameter></term>
      <listitem>
-      <para>&gd.value.red;</para>
+      <simpara>&gd.value.red;</simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>green</parameter></term>
      <listitem>
-      <para>&gd.value.green;</para>
+      <simpara>&gd.value.green;</simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>blue</parameter></term>
      <listitem>
-      <para>&gd.value.blue;</para>
+      <simpara>&gd.value.blue;</simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -49,9 +49,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a color index.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -89,7 +89,7 @@ $colors[] = imagecolorresolve($im, 0, 0, 200);
 // Output
 print_r($colors);
 ?>
-]]>  
+]]>
    </programlisting>
    &example.outputs.similar;
    <screen>

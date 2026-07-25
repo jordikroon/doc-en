@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type class="union"><type>ReflectionType</type><type>null</type></type><methodname>ReflectionFunctionAbstract::getReturnType</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the specified return type of a reflected function.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,10 +24,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a <classname>ReflectionType</classname> object if a return type is
    specified, &null; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -74,11 +74,11 @@ null
     </screen>
    </example>
   </para>
-  <para>
+  <simpara>
    This is because many internal functions do not have types specified for their
    parameters or return values. It is therefore best to avoid using this
    method on built-in functions.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

@@ -5,7 +5,7 @@
   <refname>strtok</refname>
   <refpurpose>Tokenize string</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -18,15 +18,15 @@
    <type class="union"><type>string</type><type>false</type></type><methodname>strtok</methodname>
    <methodparam><type>string</type><parameter>token</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>strtok</function> splits a string (<parameter>string</parameter>)
    into smaller strings (tokens), with each token being delimited by any
    character from <parameter>token</parameter>.
    That is, if you have a string like "This is an example string" you
    could tokenize this string into its individual words by using the
    space character as the <parameter>token</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Note that only the first call to strtok uses the <parameter>string</parameter> argument.
    Every subsequent call to strtok only needs the <parameter>token</parameter> to use, as
    it keeps track of where it is in the current string.  To start
@@ -35,13 +35,13 @@
    multiple tokens in the <parameter>token</parameter> parameter.  The string will be
    tokenized when any one of the characters in the <parameter>token</parameter> argument is
    found.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     This function behaves slightly different from what one may expect being
-    familiar with <function>explode</function>. 
+    familiar with <function>explode</function>.
     First, a sequence of two or more contiguous <parameter>token</parameter>
-    characters in the parsed string is considered to be a single delimiter. 
+    characters in the parsed string is considered to be a single delimiter.
     Also, a <parameter>token</parameter> situated at the start or end of the
     string is ignored.
     For example, if a string <literal>";aaa;;bbb;"</literal> is used, successive
@@ -50,7 +50,7 @@
     "aaa" and "bbb", and then &false;.
     As a result, the string will be split into only two elements, while
     <literal>explode(";", $string)</literal> would return an array of 5 elements.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -61,28 +61,28 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <type>string</type> being split up into smaller strings (tokens).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>token</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The delimiter used when splitting up <parameter>string</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A <type>string</type> token, or &false; if no more tokens are available.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -184,10 +184,10 @@ echo json_encode($parts),"\n";
 
  <refsect1 role="notes">
   &reftitle.notes;
-  
+
   &return.falseproblem;
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

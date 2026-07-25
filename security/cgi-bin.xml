@@ -215,12 +215,12 @@ AddHandler php-script .php
      <literal>#!</literal> shell-escape mechanism for launching
      itself.
     </para>
-    <para>
+    <simpara>
      To get PHP to handle <envar>PATH_INFO</envar> and
      <envar>PATH_TRANSLATED</envar> information correctly with this
      setup, the <link linkend="ini.cgi.discard-path">cgi.discard_path</link>
      ini directive has to be enabled.
-    </para>
+    </simpara>
    </sect1>
 
   </chapter>

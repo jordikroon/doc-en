@@ -14,18 +14,18 @@
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>name</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
 
-  <para>
+  <simpara>
    Returns the ID of the last inserted row, or the last value from a
    sequence object, depending on the underlying driver. For example,
    <link linkend="ref.pdo-pgsql">PDO_PGSQL</link> allows the name of any
    sequence object to be specified for the <parameter>name</parameter> parameter.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     This method may not return a meaningful or consistent result across
     different PDO drivers, because the underlying database may not even
     support the notion of auto-increment fields or sequences.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -36,9 +36,9 @@
     <varlistentry>
      <term><parameter>name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Name of the sequence object from which the ID should be returned.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

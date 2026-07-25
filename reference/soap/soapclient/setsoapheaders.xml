@@ -12,13 +12,13 @@
    <modifier>public</modifier> <type>bool</type><methodname>SoapClient::__setSoapHeaders</methodname>
    <methodparam choice="opt"><type class="union"><type>SoapHeader</type><type>array</type><type>null</type></type><parameter>headers</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Defines headers to be sent along with the SOAP requests.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     Calling this method will replace any previous values.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -29,11 +29,11 @@
     <varlistentry>
      <term><parameter>headers</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The headers to be set. It could be <classname>SoapHeader</classname>
        object or array of <classname>SoapHeader</classname> objects.
        If not specified or set to &null;, the headers will be deleted.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -42,9 +42,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -58,7 +58,7 @@
 
 $client = new SoapClient(null, array('location' => "http://localhost/soap.php",
                                      'uri'      => "http://test-uri/"));
-$header = new SoapHeader('http://soapinterop.org/echoheader/', 
+$header = new SoapHeader('http://soapinterop.org/echoheader/',
                             'echoMeStringRequest',
                             'hello world');
 
@@ -81,11 +81,11 @@ $client = new SoapClient(null, array('location' => "http://localhost/soap.php",
                                      'uri'      => "http://test-uri/"));
 $headers = array();
 
-$headers[] = new SoapHeader('http://soapinterop.org/echoheader/', 
+$headers[] = new SoapHeader('http://soapinterop.org/echoheader/',
                             'echoMeStringRequest',
                             'hello world');
 
-$headers[] = new SoapHeader('http://soapinterop.org/echoheader/', 
+$headers[] = new SoapHeader('http://soapinterop.org/echoheader/',
                             'echoMeStringRequest',
                             'hello world again');
 

@@ -3,7 +3,7 @@
 <reference xml:id="class.error" role="class" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
  <title>Error</title>
  <titleabbrev>Error</titleabbrev>
- 
+
  <partintro>
 
   <section xml:id="error.intro">
@@ -13,7 +13,7 @@
     internal PHP errors.
    </para>
   </section>
- 
+
   <section xml:id="error.synopsis">
    &reftitle.classsynopsis;
 
@@ -73,7 +73,7 @@
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.error')/db:refentry/db:refsect1[@role='description']/descendant::db:constructorsynopsis[@role='Error'])"/>
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.error')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[@role='Error'])"/>
    </classsynopsis>
- 
+
   </section>
 
     <section xml:id="error.props">
@@ -82,43 +82,43 @@
       <varlistentry xml:id="error.props.message">
        <term><varname>message</varname></term>
        <listitem>
-        <para>The error message</para>
+        <simpara>The error message</simpara>
        </listitem>
       </varlistentry>
       <varlistentry xml:id="error.props.code">
        <term><varname>code</varname></term>
        <listitem>
-        <para>The error code</para>
+        <simpara>The error code</simpara>
        </listitem>
       </varlistentry>
       <varlistentry xml:id="error.props.file">
        <term><varname>file</varname></term>
        <listitem>
-        <para>The filename where the error happened</para>
+        <simpara>The filename where the error happened</simpara>
        </listitem>
       </varlistentry>
       <varlistentry xml:id="error.props.line">
        <term><varname>line</varname></term>
        <listitem>
-        <para>The line where the error happened</para>
+        <simpara>The line where the error happened</simpara>
        </listitem>
       </varlistentry>
       <varlistentry xml:id="error.props.previous">
        <term><varname>previous</varname></term>
        <listitem>
-        <para>The previously thrown exception</para>
+        <simpara>The previously thrown exception</simpara>
        </listitem>
       </varlistentry>
       <varlistentry xml:id="error.props.string">
        <term><varname>string</varname></term>
        <listitem>
-        <para>The string representation of the stack trace</para>
+        <simpara>The string representation of the stack trace</simpara>
        </listitem>
       </varlistentry>
       <varlistentry xml:id="error.props.trace">
        <term><varname>trace</varname></term>
        <listitem>
-        <para>The stack trace as an array</para>
+        <simpara>The stack trace as an array</simpara>
        </listitem>
       </varlistentry>
      </variablelist>

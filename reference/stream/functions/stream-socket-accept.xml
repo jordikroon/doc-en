@@ -5,7 +5,7 @@
   <refname>stream_socket_accept</refname>
   <refpurpose>Accept a connection on a socket created by <function>stream_socket_server</function></refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,12 +14,12 @@
    <methodparam choice="opt"><type class="union"><type>float</type><type>null</type></type><parameter>timeout</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>string</type><parameter role="reference">peer_name</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Accept a connection on a socket previously created by
    <function>stream_socket_server</function>.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters"><!-- {{{ -->
   &reftitle.parameters;
   <para>
@@ -27,33 +27,33 @@
     <varlistentry>
      <term><parameter>socket</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The server socket to accept a connection from.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>timeout</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Override the default socket accept timeout. Time should be given in
        seconds. By default, <link linkend="ini.default-socket-timeout">default_socket_timeout</link>
        is used.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>peer_name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Will be set to the name (address) of the client which connected, if
        included and available from the selected transport.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         Can also be determined later using
         <function>stream_socket_get_name</function>.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
@@ -63,9 +63,9 @@
 
  <refsect1 role="returnvalues"><!-- {{{ -->
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a stream to the accepted socket connection&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1><!-- }}} -->
 
  <refsect1 role="changelog">
@@ -93,14 +93,14 @@
  <refsect1 role="notes"><!-- {{{ -->
   &reftitle.notes;
   <warning>
-   <para>
+   <simpara>
     This function should not be used with UDP server sockets. Instead, use
     <function>stream_socket_recvfrom</function> and
     <function>stream_socket_sendto</function>.
-   </para>
+   </simpara>
  </warning>
  </refsect1><!-- }}} -->
- 
+
  <refsect1 role="seealso"><!-- {{{ -->
   &reftitle.seealso;
   <para>

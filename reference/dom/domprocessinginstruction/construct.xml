@@ -14,13 +14,13 @@
    <methodparam><type>string</type><parameter>name</parameter></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>value</parameter><initializer>""</initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Creates a new <classname>DOMProcessingInstruction</classname> object.
-   This object is read only. It may be appended to a document, but 
-   additional nodes may not be appended to this node until 
-   the node is associated with a document. To create a writeable node, use 
+   This object is read only. It may be appended to a document, but
+   additional nodes may not be appended to this node until
+   the node is associated with a document. To create a writeable node, use
    <xref linkend="domdocument.createprocessinginstruction"/>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -29,17 +29,17 @@
     <varlistentry>
      <term><parameter>name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The tag name of the processing instruction.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The value of the processing instruction.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -59,7 +59,7 @@ $html = $dom->appendChild(new DOMElement('html'));
 $body = $html->appendChild(new DOMElement('body'));
 $pinode = new DOMProcessingInstruction('php', 'echo "Hello World"; ');
 $body->appendChild($pinode);
-echo $dom->saveXML(); 
+echo $dom->saveXML();
 
 ?>
 ]]>

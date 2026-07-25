@@ -5,7 +5,7 @@
   <refname>socket_recv</refname>
   <refpurpose>Receives data from a connected socket</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -15,20 +15,20 @@
    <methodparam><type>int</type><parameter>length</parameter></methodparam>
    <methodparam><type>int</type><parameter>flags</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    The <function>socket_recv</function> function receives
    <parameter>length</parameter> bytes of data in <parameter>data</parameter> from
    <parameter>socket</parameter>. <function>socket_recv</function> can
    be used to gather data from connected sockets. Additionally, one or
    more flags can be specified to modify the behaviour of the
    function.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    <parameter>data</parameter> is passed by reference, so it must be
    specified as a variable in the argument list. Data read from
    <parameter>socket</parameter> by <function>socket_recv</function>
    will be returned in <parameter>data</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -38,43 +38,43 @@
     <varlistentry>
      <term><parameter>socket</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <parameter>socket</parameter> must be a <classname>Socket</classname> instance previously
        created by <function>socket_create</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
     <varlistentry>
      <term><parameter>data</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The data received will be fetched to the variable specified with
        <parameter>data</parameter>. If an error occurs, if the
        connection is reset, or if no data is
        available, <parameter>data</parameter> will be set to &null;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Up to <parameter>length</parameter> bytes will be fetched from remote host.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
-       The value of <parameter>flags</parameter> can be any combination of 
+      <simpara>
+       The value of <parameter>flags</parameter> can be any combination of
        the following flags, joined with the binary OR (<literal>|</literal>)
        operator.
-      </para>
-      
+      </simpara>
+
       <table>
        <title>Possible values for <parameter>flags</parameter></title>
        <tgroup cols="2">
@@ -117,20 +117,20 @@
        </tgroup>
       </table>
      </listitem>
-    </varlistentry>    
+    </varlistentry>
    </variablelist>
   </para>
  </refsect1>
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    <function>socket_recv</function> returns the number of bytes received,
-   or &false; if there was an error. The actual error code can be retrieved by 
+   or &false; if there was an error. The actual error code can be retrieved by
    calling <function>socket_last_error</function>. This error code may be
    passed to <function>socket_strerror</function> to get a textual explanation
    of the error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -155,11 +155,11 @@
   <para>
    <example>
     <title><function>socket_recv</function> example</title>
-    <para>
+    <simpara>
      This example is a simple rewrite of the first example from
      <xref linkend="sockets.examples"/> to
      use <function>socket_recv</function>.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -237,7 +237,7 @@ OK.
    </example>
   </para>
  </refsect1>
-                     
+
 </refentry>
 <!-- Keep this comment at the end of the file
 Local variables:

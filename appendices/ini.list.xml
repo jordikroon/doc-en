@@ -2,13 +2,13 @@
 <!-- $Revision$ -->
  <section xml:id="ini.list" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>List of &php.ini; directives</title>
-  <para>
+  <simpara>
    This list includes the &php.ini; directives that can be used to configure PHP.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The "&Changeable;" column shows the modes determining when and where a directive may be set.
    See the <link linkend="configuration.changes.modes">Changeable mode values</link> section for their definitions.
-  </para>
+  </simpara>
   <para>
    <table>
     <title>Configuration options</title>

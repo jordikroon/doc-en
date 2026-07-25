@@ -10,11 +10,11 @@
 <!-- {{{ SoapClient intro -->
   <section xml:id="soapclient.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     The SoapClient class provides a client for <link xlink:href="&spec.soap1.1;">SOAP 1.1</link>,
     <link xlink:href="&spec.soap1.2;">SOAP 1.2</link> servers.
     It can be used in WSDL or non-WSDL mode.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -256,253 +256,253 @@
     <varlistentry xml:id="soapclient.props.default-headers">
      <term><varname>__default_headers</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.last-request">
      <term><varname>__last_request</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.last-request-headers">
      <term><varname>__last_request_headers</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.last-response">
      <term><varname>__last_response</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.last-response-headers">
      <term><varname>__last_response_headers</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.soap-fault">
      <term><varname>__soap_fault</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.classmap">
      <term><varname>_classmap</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.connection-timeout">
      <term><varname>_connection_timeout</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.cookies">
      <term><varname>_cookies</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.digest">
      <term><varname>_digest</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.encoding">
      <term><varname>_encoding</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.exceptions">
      <term><varname>_exceptions</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.features">
      <term><varname>_features</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.keep-alive">
      <term><varname>_keep_alive</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.login">
      <term><varname>_login</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.password">
      <term><varname>_password</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.proxy-host">
      <term><varname>_proxy_host</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.proxy-login">
      <term><varname>_proxy_login</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.proxy-password">
      <term><varname>_proxy_password</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.proxy-port">
      <term><varname>_proxy_port</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.soap-version">
      <term><varname>_soap_version</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.ssl-method">
      <term><varname>_ssl_method</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.stream-context">
      <term><varname>_stream_context</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.use-digest">
      <term><varname>_use_digest</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.use-proxy">
      <term><varname>_use_proxy</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.user-agent">
      <term><varname>_user_agent</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.compression">
      <term><varname>compression</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.httpsocket">
      <term><varname>httpsocket</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.httpurl">
      <term><varname>httpurl</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.location">
      <term><varname>location</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.sdl">
      <term><varname>sdl</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.style">
      <term><varname>style</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.trace">
      <term><varname>trace</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.typemap">
      <term><varname>typemap</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.uri">
      <term><varname>uri</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="soapclient.props.use">
      <term><varname>use</varname></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

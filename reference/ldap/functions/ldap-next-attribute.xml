@@ -5,7 +5,7 @@
   <refname>ldap_next_attribute</refname>
   <refpurpose>Get the next attribute in result</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,12 +13,12 @@
    <methodparam><type>LDAP\Connection</type><parameter>ldap</parameter></methodparam>
    <methodparam><type>LDAP\ResultEntry</type><parameter>entry</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Retrieves the attributes in an entry. The first call to
    <function>ldap_next_attribute</function> is made with the
    <parameter>entry</parameter> returned from
    <function>ldap_first_attribute</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,17 +28,17 @@
     <varlistentry>
      <term><parameter>ldap</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &ldap.parameter.ldap;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>entry</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &ldap.parameter.entry;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -47,10 +47,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the next attribute in an entry on success and &false; on
    error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

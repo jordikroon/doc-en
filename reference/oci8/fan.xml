@@ -2,7 +2,7 @@
 <!-- $Revision$ -->
 <chapter xml:id="oci8.fan" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <title>OCI8 Fast Application Notification (FAN) Support</title>
-  <para>
+  <simpara>
    FAN support gives fast connection failover, an Oracle Database high availability
    feature.  This allows PHP OCI8 scripts to be notified when a
    database machine or database instance becomes unavailable.  Without
@@ -10,19 +10,19 @@
    returned, which might be several minutes.  Enabling FAN in OCI8 can
    allow applications to detect errors and re-connect to an available
    database instance without the web user being aware of an outage.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    FAN support is available when the Oracle client libraries that PHP
    links with and the Oracle Database are either version 10gR2 or later.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    FAN benefits users of Oracle's clustering technology (RAC) because
    connections to surviving database instances can be immediately
    made.  Users of Oracle's Data Guard with a broker will see the FAN
    events generated when the standby database goes online.  Standalone
    databases will send FAN events when the database restarts.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    For active connections, when a machine or database instance becomes
    unavailable, a connection failure error will be returned by the
    OCI8 extension function currently being called.  On a subsequent
@@ -32,19 +32,19 @@
    machine or instance failure so PHP connect calls will establish a
    fresh connection without the script being aware of any service
    disruption.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    When <link linkend="ini.oci8.events">oci8.events</link>
    is <literal>On</literal>, it is suggested to
    set <link linkend="ini.oci8.ping-interval">oci8.ping_interval</link>
    to -1 to disable pinging, since enabling FAN events provide
    pro-active connection management of idle connections made invalid
    by a service disruption.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    To enable FAN support in PHP OCI8, build PHP OCI8 with Oracle 10gR2 or later
    libraries and then follow these steps:
-  </para>
+  </simpara>
   <para>
    <itemizedlist>
     <listitem>

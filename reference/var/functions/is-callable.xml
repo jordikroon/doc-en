@@ -16,11 +16,11 @@
    <methodparam choice="opt"><type>bool</type><parameter>syntax_only</parameter><initializer>&false;</initializer></methodparam>
    <methodparam choice="opt"><type>string</type><parameter role="reference">callable_name</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Verifies that <parameter>value</parameter> is a <type>callable</type>,
    or that it can be called using the
    <function>call_user_func</function> function.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,15 +30,15 @@
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The value to be checked.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>syntax_only</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If set to &true; the function only verifies that
        <parameter>value</parameter> might be a function or method. It will
        reject any values that are not <link linkend="object.invoke">invokable</link> objects,
@@ -46,18 +46,18 @@
        a valid structure to be used as a callback. A valid callable array
        has 2 entries, the first of which is an object
        or a string, and the second a string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>callable_name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Receives the "callable name", e.g.
        <literal>"SomeClass::someMethod"</literal>. Note, however, that despite
        the implication that <literal>SomeClass::someMethod()</literal> is a
        callable static method, this is not the case.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -66,10 +66,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   Returns &true; if <parameter>value</parameter> is callable, &false; 
+  <simpara>
+   Returns &true; if <parameter>value</parameter> is callable, &false;
    otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -170,7 +170,7 @@ bool(true)
 ]]>
     </screen>
    </example>
-  </para>   
+  </para>
  </refsect1>
 
  <refsect1 role="notes">

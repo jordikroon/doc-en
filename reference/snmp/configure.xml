@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="snmp.installation">
+<section xml:id="snmp.installation" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  &reftitle.install;
  <simpara>
   The Windows distribution of <link xlink:href="&url.net-snmp;">Net-SNMP</link> contains support files for SNMP in the

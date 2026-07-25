@@ -12,10 +12,10 @@
    <methodparam><type>FTP\Connection</type><parameter>ftp</parameter></methodparam>
    <methodparam><type>int</type><parameter>option</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   This function returns the value for the requested 
+  <simpara>
+   This function returns the value for the requested
    <parameter>option</parameter> from the specified FTP connection.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -45,7 +45,7 @@
           <row>
            <entry><constant>FTP_AUTOSEEK</constant></entry>
            <entry>
-            Returns &true; if this option is on, &false; otherwise. 
+            Returns &true; if this option is on, &false; otherwise.
            </entry>
           </row>
          </tbody>
@@ -59,11 +59,11 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   Returns the value on success or &false; if the given 
+  <simpara>
+   Returns the value on success or &false; if the given
    <parameter>option</parameter> is not supported. In the latter case, a
    warning message is also thrown.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -82,7 +82,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>

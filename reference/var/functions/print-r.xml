@@ -7,7 +7,7 @@
    Prints human-readable information about a variable
   </refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -15,16 +15,16 @@
    <methodparam><type>mixed</type><parameter>value</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>return</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>print_r</function> displays information about a variable
-   in a way that's readable by humans.  
-  </para>
-  <para>
+   in a way that's readable by humans.
+  </simpara>
+  <simpara>
    <function>print_r</function>, <function>var_dump</function> and
    <function>var_export</function> will
    also show protected and private properties of objects.
    Static class members will not be shown.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -34,19 +34,19 @@
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The expression to be printed.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>return</parameter></term>
      <listitem>
-      <para>
-       If you would like to capture the output of <function>print_r</function>, 
+      <simpara>
+       If you would like to capture the output of <function>print_r</function>,
        use the <parameter>return</parameter> parameter.  When this parameter is set
        to &true;, <function>print_r</function> will return the information rather than print it.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -55,16 +55,16 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    If given a <type>string</type>, <type>int</type> or <type>float</type>,
    the value itself will be printed.  If given an <type>array</type>, values
    will be presented in a format that shows keys and elements.  Similar
    notation is used for <type>object</type>s.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    When the <parameter>return</parameter> parameter is &true;, this function
    will return a <type>string</type>. Otherwise, the return value is &true;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

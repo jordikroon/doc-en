@@ -9,7 +9,7 @@
  </refnamediv>
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="XMLWriter">
    <modifier>public</modifier> <type>bool</type><methodname>XMLWriter::writeDtdEntity</methodname>
    <methodparam><type>string</type><parameter>name</parameter></methodparam>
@@ -19,7 +19,7 @@
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>systemId</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>notationData</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type>bool</type><methodname>xmlwriter_write_dtd_entity</methodname>
    <methodparam><type>XMLWriter</type><parameter>writer</parameter></methodparam>
@@ -30,9 +30,9 @@
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>systemId</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>notationData</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Writes a full DTD entity.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -42,17 +42,17 @@
     <varlistentry>
      <term><parameter>name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The name of the entity.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>content</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The content of the entity.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -61,9 +61,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

@@ -12,10 +12,10 @@
    <modifier>public</modifier> <modifier>static</modifier> <type class="union"><type>array</type><type>false</type></type><methodname>DateTimeImmutable::getLastErrors</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns an array of warnings and errors found while parsing
    a date/time string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,10 +25,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns array containing info about warnings and errors, or &false; if there
    are neither warnings nor errors.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -96,9 +96,9 @@ Array
 Failed to parse time string (asdfasdf) at position 0 (a): The timezone could not be found in the database
 ]]>
    </screen>
-   <para>
+   <simpara>
     The indexes 6, and 0 in the example output refer to the character index in the string where the error occurred.
-   </para>
+   </simpara>
   </example>
   <example>
    <title>Detecting rolled over dates</title>

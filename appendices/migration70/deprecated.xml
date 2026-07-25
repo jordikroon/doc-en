@@ -5,7 +5,7 @@
  <title>Deprecated features in PHP 7.0.x</title>
 
 <!-- password_hash() salt option, PHP4-style constructors etc -->
- 
+
 <!-- skeleton
  <sect2 xml:id="migration70.deprecated.id">
   <title>Title</title>
@@ -18,13 +18,13 @@
  <sect2 xml:id="migration70.deprecated.php4-constructors">
   <title>PHP 4 style constructors</title>
 
-  <para>
+  <simpara>
    PHP 4 style constructors (methods that have the same name as the class they
    are defined in) are deprecated, and will be removed in the future. PHP 7
    will emit <constant>E_DEPRECATED</constant> if a PHP 4 constructor is the
    only constructor defined within a class. Classes that implement a
    <function>__construct</function> method are unaffected.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -50,11 +50,11 @@ Deprecated: Methods with the same name as their class will not be constructors i
  <sect2 xml:id="migration70.deprecated.static-calls">
   <title>Static calls to non-static methods</title>
 
-  <para>
+  <simpara>
    <link linkend="language.oop5.static">Static</link> calls to methods that
    are not declared <command>static</command> are deprecated, and may be
    removed in the future.
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -83,23 +83,23 @@ I am not static!
  <sect2 xml:id="migration70.deprecated.pwshash-salt-option">
   <title><function>password_hash</function> salt option</title>
 
-  <para>
+  <simpara>
    The salt option for the <function>password_hash</function> function has been
    deprecated to prevent developers from generating their own (usually insecure)
    salts. The function itself generates a cryptographically secure salt when no
    salt is provided by the developer - therefore custom salt generation should not
    be needed.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration70.deprecated.capture-session-meta">
   <title><literal>capture_session_meta</literal> SSL context option</title>
 
-  <para>
+  <simpara>
    The <literal>capture_session_meta</literal> SSL context option has been
    deprecated. SSL metadata is now available through the
    <function>stream_get_meta_data</function> function.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration70.deprecated.ldap">

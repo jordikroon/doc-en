@@ -12,27 +12,27 @@
    <modifier>public</modifier> <type class="union"><type>int</type><type>false</type></type><methodname>SessionHandler::gc</methodname>
    <methodparam><type>int</type><parameter>max_lifetime</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Cleans up expired sessions. Called randomly by PHP internally when a session starts or when
    <function>session_start</function> is invoked.  The frequency this is called is
    based on the <link linkend="ini.session.gc-divisor">session.gc_divisor</link> and
    <link linkend="ini.session.gc-probability">session.gc_probability</link> configuration
    directives.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This method wraps the internal PHP save handler defined in the
    <link linkend="ini.session.save-handler">session.save_handler</link> ini setting that was set
    before this handler was set by <function>session_set_save_handler</function>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If this class is extended by inheritance, calling the parent <parameter>gc</parameter> method will invoke the
    wrapper for this method and therefore invoke the associated internal callback.  This allows this method to be
    overridden and or intercepted and filtered.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    For more information on what this method is expected to do, please refer to the documentation at
    <function>SessionHandlerInterface::gc</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -41,9 +41,9 @@
    <varlistentry>
     <term><parameter>max_lifetime</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Sessions that have not updated for the last <parameter>max_lifetime</parameter> seconds will be removed.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -51,10 +51,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the number of deleted sessions on success, &return.falseforfailure;.
    Note this value is returned internally to PHP for processing.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

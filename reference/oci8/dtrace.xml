@@ -2,19 +2,19 @@
 <!-- $Revision$ -->
 <chapter xml:id="oci8.dtrace" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <title>OCI8 and DTrace Dynamic Tracing</title>
- <para>
+ <simpara>
   OCI8 2.0 introduced static DTrace probes that can be used on
   operating systems that support DTrace.
   See <link linkend="features.dtrace">DTrace Dynamic Tracing</link>
   for an overview of PHP and DTrace.
- </para>
+ </simpara>
 
 <section>
  <title>Installing OCI8 with DTrace Support</title>
-  <para>
+  <simpara>
    To enable DTrace support in PHP OCI8, build OCI8 as a shared
    extension after setting <literal>PHP_DTRACE</literal>.
-  </para>
+  </simpara>
   <para>
    <informalexample>
     <screen>
@@ -25,12 +25,12 @@ $ pecl install oci8
     </screen>
    </informalexample>
   </para>
-  <para>
+  <simpara>
    Edit php.ini,
    set <link linkend="ini.extension-dir">extension_dir</link> to the
    directory with the created <filename>oci8.so</filename> and also
    enable the extension by adding:
-  </para>
+  </simpara>
   <para>
    <informalexample>
     <screen>
@@ -40,19 +40,19 @@ extension=oci8.so
     </screen>
    </informalexample>
   </para>
-  <para>
+  <simpara>
    If you install PHP OCI8 from PECL using <filename>phpize</filename> and
    <filename>configure</filename> (instead
    of <filename>pecl</filename>), you will still need to set
    <literal>PHP_DTRACE=yes</literal>. This is because
    the <literal>--enable-dtrace</literal> option will be ignored by the
    limited <filename>configure</filename> script of a PECL bundle.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    See <link linkend="install.pecl">Installation of PECL
    extensions</link> for general PECL installation instructions.
-  </para>
+  </simpara>
  </section>
 
  <section>
@@ -106,36 +106,36 @@ extension=oci8.so
     </tbody>
    </tgroup>
   </table>
-  <para>
+  <simpara>
    These probes are useful for tracing OCI8 scripts.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    The <varname>connection</varname> and <varname>statement</varname>
    are the pointers to internal structures used for tracking PHP
    connections and executed statements.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
     The <varname>client_id</varname> is the value set
     by <function>oci_set_client_identifier</function>.
-  </para>
+  </simpara>
 
-  <para>
-  </para>
+  <simpara>
+  </simpara>
 
-  <para>
-  </para>
+  <simpara>
+  </simpara>
 
-  <para>
-  </para>
+  <simpara>
+  </simpara>
 
 
-  <para>
+  <simpara>
    Core PHP also has static probes.
    See <link linkend="features.dtrace.static-probes">DTrace Static
    Probes in Core PHP</link>.
-  </para>
+  </simpara>
 
   <table>
    <title>Internal Debugging DTrace Probes in OCI8</title>
@@ -173,9 +173,9 @@ extension=oci8.so
     </tbody>
    </tgroup>
   </table>
-  <para>
+  <simpara>
    These probes are useful for OCI8 maintainers.  Refer to the OCI8 source code for arguments and to see when the will fire.
-  </para>
+  </simpara>
  </section>
 
  <section>
@@ -190,7 +190,7 @@ extension=oci8.so
     </programlisting>
    </informalexample>
   </para>
-  
+
   <para>
    The output will be similar to:
    <informalexample>
@@ -218,19 +218,19 @@ extension=oci8.so
    </informalexample>
   </para>
 
-   <para>
+   <simpara>
     The Provider column values consist of <literal>phpoci</literal> and
     the process id of the currently running PHP process.
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     The Function column refers to PHP's internal C implementation
     function names where each provider is located.
-   </para>
+   </simpara>
 
-   <para>
+   <simpara>
     If a PHP process is not running, then no PHP probes will be shown.
-   </para>
+   </simpara>
  </section>
 
  <section>
@@ -306,21 +306,21 @@ php*:::oci8-execute-mode
    </example>
   </para>
 
-  <para>
+  <simpara>
    This script uses the <literal>-Z</literal> option to
    <filename>dtrace</filename>, allowing it to be run when there is no
    PHP process executing.  If this option were omitted the script
    would immediately terminate when no PHP executable was running
    because it knows none of the probes to be monitored are in
    existence.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    On multi-CPU machines the probe ordering might not appear to be
    sequential. This depends on which CPU was processing the probes,
    and how threads migrate across CPUs.  Displaying probe time stamps
    helps reduce confusion.
-  </para>
+  </simpara>
 
   <para>
    The script traces all user-level PHP OCI8 static probe points
@@ -366,11 +366,11 @@ php*:::oci8-execute-mode
     </programlisting>
    </informalexample>
   </para>
-  
-  <para>
+
+  <simpara>
    When monitoring is complete, the D script can be terminated with a
    <keycombo action='simul'><keycap>CTRL</keycap><keycap>C</keycap></keycombo>.
-  </para>
+  </simpara>
 
  </section>
 

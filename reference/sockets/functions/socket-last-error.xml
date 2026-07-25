@@ -5,14 +5,14 @@
   <refname>socket_last_error</refname>
   <refpurpose>Returns the last error on the socket</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>int</type><methodname>socket_last_error</methodname>
    <methodparam choice="opt"><type class="union"><type>Socket</type><type>null</type></type><parameter>socket</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    If a <classname>Socket</classname> instance is passed to this function, the last error which
    occurred on this particular socket is returned. If <parameter>socket</parameter> is
    &null;, the error code of the last failed socket function is returned.
@@ -22,11 +22,11 @@
    not directly tied to a particular socket.  The error code is suitable to
    be fed to <function>socket_strerror</function> which returns a string
    describing the given error code.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If no error had occurred, or the error had been cleared with
    <function>socket_clear_error</function>, the function returns <literal>0</literal>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -36,9 +36,9 @@
     <varlistentry>
      <term><parameter>socket</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A <classname>Socket</classname> instance created with <function>socket_create</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -47,9 +47,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    This function returns a socket error code.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -88,7 +88,7 @@ $socket = @socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
 if ($socket === false) {
     $errorcode = socket_last_error();
     $errormsg = socket_strerror($errorcode);
-    
+
     die("Couldn't create socket: [$errorcode] $errormsg");
 }
 ?>
@@ -101,10 +101,10 @@ if ($socket === false) {
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     <function>socket_last_error</function> does not clear the error code, use
     <function>socket_clear_error</function> for this purpose.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

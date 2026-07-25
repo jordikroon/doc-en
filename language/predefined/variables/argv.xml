@@ -6,13 +6,13 @@
   <refname>$argv</refname>
   <refpurpose>Array of arguments passed to script</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    Contains an <type>array</type> of all the arguments passed to the script when running
    from the <link linkend="features.commandline">command line</link>.
-  </para>
+  </simpara>
   <note>
    <simpara>
     The first argument <varname>$argv[0]</varname> is always the name that was
@@ -34,7 +34,7 @@
    </simpara>
   </warning>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -72,12 +72,12 @@ array(4) {
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
-    This is also available as <varname>$_SERVER['argv']</varname>. 
-   </para>
+   <simpara>
+    This is also available as <varname>$_SERVER['argv']</varname>.
+   </simpara>
   </note>
  </refsect1>
-  
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>
@@ -89,7 +89,7 @@ array(4) {
  </refsect1>
 
 </refentry>
- 
+
 <!-- Keep this comment at the end of the file
 Local variables:
 mode: sgml

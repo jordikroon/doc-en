@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>void</type><methodname>FilesystemIterator::setFlags</methodname>
    <methodparam><type>int</type><parameter>flags</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets handling flags.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -25,10 +25,10 @@
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The handling flags to set.
        See the <link linkend="filesystemiterator.constants">FilesystemIterator constants</link>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,9 +37,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -47,11 +47,11 @@
   <para>
    <example>
     <title><methodname>FilesystemIterator::key</methodname> example</title>
-    <para>
+    <simpara>
      This example demonstrates the difference between the
      <link linkend="filesystemiterator.constants.key-as-pathname">FilesystemIterator::KEY_AS_PATHNAME</link> and
      <link linkend="filesystemiterator.constants.key-as-filename">FilesystemIterator::KEY_AS_FILENAME</link> flags.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

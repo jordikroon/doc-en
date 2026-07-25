@@ -3,26 +3,26 @@
 <reference xml:id="class.ocilob" role="class" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
  <title>The OCILob class</title>
  <titleabbrev>OCILob</titleabbrev>
- 
+
  <partintro>
- 
+
 <!-- {{{ ClassName intro -->
   <section xml:id="ocilob.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     OCI8 LOB functionality for large binary (BLOB) and character (CLOB) objects.
-   </para>
+   </simpara>
    <note>
-   <para>
+   <simpara>
     The <classname>OCI-Lob</classname> class was renamed to <classname>OCILob</classname> in PHP 8 and PECL OCI8 3.0.0 to align with PHP naming standards.
-   </para>
+   </simpara>
    </note>
   </section>
 <!-- }}} -->
- 
+
   <section xml:id="ocilob.synopsis">
    &reftitle.classsynopsis;
- 
+
 <!-- {{{ Synopsis -->
    <classsynopsis class="class">
     <ooclass>
@@ -33,11 +33,11 @@
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.ocilob')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[@role='OCILob'])"/>
    </classsynopsis>
 <!-- }}} -->
- 
+
   </section>
-  
+
  </partintro>
- 
+
  &reference.oci8.entities.ocilob;
 
 </reference>

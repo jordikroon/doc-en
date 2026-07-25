@@ -10,10 +10,10 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Read options from the named group from <filename>my.cnf</filename>
       or the file specified with <constant>MYSQLI_READ_DEFAULT_FILE</constant>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-read-default-file">
@@ -22,9 +22,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Read options from the named option file instead of from <filename>my.cnf</filename>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-opt-can-handle-expired-passwords">
@@ -59,9 +59,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Connect timeout in seconds.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-opt-read-timeout">
@@ -70,9 +70,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Command execution result timeout in seconds. Available as of PHP 7.2.0.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-opt-local-infile">
@@ -81,9 +81,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Enables command <literal>LOAD LOCAL INFILE</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-opt-int-and-float-native">
@@ -92,9 +92,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Convert integer and float columns back to PHP numbers. Only valid for mysqlnd.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-opt-net-cmd-buffer-size">
@@ -103,9 +103,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       The size of the internal command/network buffer. Only valid for mysqlnd.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-opt-net-read-buffer-size">
@@ -114,10 +114,10 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Maximum read chunk size in bytes when reading the body of a MySQL command packet.
       Only valid for mysqlnd.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-opt-ssl-verify-server-cert">
@@ -126,8 +126,8 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
-     </para>
+     <simpara>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-init-command">
@@ -136,9 +136,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Command to execute when connecting to MySQL server. Will automatically be re-executed when reconnecting.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-client-can-handle-expired-passwords">
@@ -182,10 +182,10 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Use SSL (encrypted protocol). This option should not be set by application programs;
       it is set internally in the MySQL client library.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-client-compress">
@@ -194,9 +194,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Use compression protocol.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-client-interactive">
@@ -205,13 +205,13 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Allow <literal>interactive_timeout</literal> seconds
       (instead of <literal>wait_timeout</literal> seconds) of inactivity before
       closing the connection.  The client's session
       <literal>wait_timeout</literal> variable will be set to
       the value of the session <literal>interactive_timeout</literal> variable.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-client-ignore-space">
@@ -220,9 +220,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Allow spaces after function names. Makes all functions names reserved words.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-client-no-schema">
@@ -231,17 +231,17 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Don't allow the <literal>db_name.tbl_name.col_name</literal> syntax.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-client-multi-queries">
     <term><constant>MYSQLI_CLIENT_MULTI_QUERIES</constant></term>
     <listitem>
-     <para>
+     <simpara>
       Allows multiple semicolon-delimited queries in a single <function>mysqli_query</function> call.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-store-result">
@@ -250,9 +250,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       For using buffered result sets. It has a value of <literal>0</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-store-result-copy-data">
@@ -282,9 +282,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       For using unbuffered result sets. It has a value of <literal>1</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-assoc">
@@ -293,9 +293,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Columns are returned into the array having the fieldname as the array index.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-num">
@@ -304,9 +304,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Columns are returned into the array having an enumerated index.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-both">
@@ -315,9 +315,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Columns are returned into the array having both a numerical index and the fieldname as the associative index.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-not-null-flag">
@@ -326,9 +326,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Indicates that a field is defined as <literal>NOT NULL</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-pri-key-flag">
@@ -337,9 +337,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is part of a primary index.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-unique-key-flag">
@@ -348,9 +348,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is part of a unique index.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
 
@@ -360,9 +360,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is part of an index.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-blob-flag">
@@ -371,9 +371,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>BLOB</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-unsigned-flag">
@@ -382,9 +382,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>UNSIGNED</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-zerofill-flag">
@@ -393,9 +393,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>ZEROFILL</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-auto-increment-flag">
@@ -404,9 +404,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>AUTO_INCREMENT</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-timestamp-flag">
@@ -415,9 +415,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>TIMESTAMP</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-set-flag">
@@ -426,9 +426,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>SET</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-num-flag">
@@ -437,9 +437,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>NUMERIC</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-part-key-flag">
@@ -448,9 +448,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is part of an multi-index.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-group-flag">
@@ -459,9 +459,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is part of <literal>GROUP BY</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-no-default-value-flag">
@@ -485,9 +485,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>DECIMAL</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-type-newdecimal">
@@ -496,9 +496,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Precision math <literal>DECIMAL</literal> or <literal>NUMERIC</literal> field.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-type-bit">
@@ -507,9 +507,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>BIT</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-type-tiny">
@@ -518,9 +518,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>TINYINT</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-type-short">
@@ -529,9 +529,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>SMALLINT</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-type-long">
@@ -540,9 +540,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>INT</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-type-float">
@@ -551,9 +551,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>FLOAT</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-type-double">
@@ -562,9 +562,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>DOUBLE</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-type-null">
@@ -573,9 +573,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>DEFAULT NULL</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-type-timestamp">
@@ -584,9 +584,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>TIMESTAMP</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-type-longlong">
@@ -595,9 +595,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>BIGINT</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-type-int24">
@@ -606,9 +606,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>MEDIUMINT</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-type-date">
@@ -617,9 +617,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>DATE</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-type-time">
@@ -628,9 +628,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>TIME</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-type-datetime">
@@ -639,9 +639,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>DATETIME</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-type-year">
@@ -650,9 +650,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>YEAR</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-type-newdate">
@@ -661,9 +661,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>DATE</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-type-interval">
@@ -672,9 +672,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Alias of <constant>MYSQLI_TYPE_ENUM</constant>. Removed as of PHP 8.4.0.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-type-enum">
@@ -683,9 +683,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>ENUM</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-type-set">
@@ -694,9 +694,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>SET</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-type-tiny-blob">
@@ -705,9 +705,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>TINYBLOB</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-type-medium-blob">
@@ -716,9 +716,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>MEDIUMBLOB</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-type-long-blob">
@@ -727,9 +727,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>LONGBLOB</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-type-blob">
@@ -738,9 +738,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>BLOB</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-type-var-string">
@@ -749,9 +749,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>VARCHAR</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-type-string">
@@ -760,9 +760,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>CHAR</literal> or <literal>BINARY</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-type-char">
@@ -771,10 +771,10 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>TINYINT</literal>.
       For <literal>CHAR</literal>, see <literal>MYSQLI_TYPE_STRING</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-type-geometry">
@@ -783,9 +783,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>GEOMETRY</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-type-json">
@@ -794,10 +794,10 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>JSON</literal>.
       Only valid for mysqlnd and MySQL 5.7.8 and up.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-type-vector">
@@ -806,17 +806,17 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>VECTOR</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-need-data">
     <term><constant>MYSQLI_NEED_DATA</constant></term>
     <listitem>
-     <para>
+     <simpara>
       More data available for bind variable.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-enum-flag">
@@ -825,9 +825,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
      Field is defined as <literal>ENUM</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-binary-flag">
@@ -836,9 +836,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Field is defined as <literal>BINARY</literal>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-cursor-type-for-update">
@@ -847,9 +847,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Removed as of PHP 8.4.0.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-cursor-type-no-cursor">
@@ -858,8 +858,8 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
-     </para>
+     <simpara>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-cursor-type-read-only">
@@ -868,8 +868,8 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
-     </para>
+     <simpara>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-cursor-type-scrollable">
@@ -878,9 +878,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Removed as of PHP 8.4.0.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-stmt-attr-cursor-type">
@@ -889,8 +889,8 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
-     </para>
+     <simpara>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-stmt-attr-prefetch-rows">
@@ -899,9 +899,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Removed as of PHP 8.4.0.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-stmt-attr-update-max-length">
@@ -910,8 +910,8 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
-     </para>
+     <simpara>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-set-charset-name">
@@ -920,8 +920,8 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
-     </para>
+     <simpara>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-report-index">
@@ -930,9 +930,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Report if no index or bad index was used in a query.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-report-error">
@@ -941,9 +941,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Report errors from mysqli function calls.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-report-strict">
@@ -952,9 +952,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Throw a <literal>mysqli_sql_exception</literal> for errors instead of warnings.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-report-all">
@@ -963,9 +963,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Set all options on (report all).
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-report-off">
@@ -974,9 +974,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Turns reporting off.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-debug-trace-enabled">
@@ -985,9 +985,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Is set to 1 if <function>mysqli_debug</function> functionality is enabled.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-server-public-key">
@@ -996,8 +996,8 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
-     </para>
+     <simpara>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-refresh-grant">
@@ -1006,10 +1006,10 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Refreshes the grant tables.
       Deprecated as of PHP 8.4.0.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-refresh-log">
@@ -1018,11 +1018,11 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Flushes the logs, like executing the
       <literal>FLUSH LOGS</literal> <acronym>SQL</acronym> statement.
       Deprecated as of PHP 8.4.0.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-refresh-tables">
@@ -1031,11 +1031,11 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Flushes the table cache, like executing the
       <literal>FLUSH TABLES</literal> <acronym>SQL</acronym> statement.
       Deprecated as of PHP 8.4.0.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-refresh-hosts">
@@ -1044,11 +1044,11 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Flushes the host cache, like executing the
       <literal>FLUSH HOSTS</literal> <acronym>SQL</acronym> statement.
       Deprecated as of PHP 8.4.0.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-refresh-replica">
@@ -1057,10 +1057,10 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Alias of <constant>MYSQLI_REFRESH_SLAVE</constant> constant.
       Available as of PHP 8.1.0. Deprecated as of PHP 8.4.0.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-refresh-status">
@@ -1069,11 +1069,11 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Reset the status variables, like executing the
       <literal>FLUSH STATUS</literal> <acronym>SQL</acronym> statement.
       Deprecated as of PHP 8.4.0.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-refresh-threads">
@@ -1082,10 +1082,10 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Flushes the thread cache.
       Deprecated as of PHP 8.4.0.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-refresh-slave">
@@ -1094,12 +1094,12 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       On a slave replication server: resets the master server information, and
       restarts the slave. Like executing the <literal>RESET SLAVE</literal>
       <acronym>SQL</acronym> statement.
       Deprecated as of PHP 8.4.0.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-refresh-master">
@@ -1108,12 +1108,12 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       On a master replication server: removes the binary log files listed in the
       binary log index, and truncates the index file. Like executing the
       <literal>RESET MASTER</literal> <acronym>SQL</acronym> statement.
       Deprecated as of PHP 8.4.0.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-refresh-backup-log">
@@ -1134,10 +1134,10 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Appends "AND CHAIN" to <function>mysqli_commit</function> or
       <function>mysqli_rollback</function>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-trans-cor-and-no-chain">
@@ -1146,10 +1146,10 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Appends "AND NO CHAIN" to <function>mysqli_commit</function> or
       <function>mysqli_rollback</function>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-trans-cor-release">
@@ -1158,10 +1158,10 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Appends "RELEASE" to <function>mysqli_commit</function> or
       <function>mysqli_rollback</function>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-trans-cor-no-release">
@@ -1170,10 +1170,10 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Appends "NO RELEASE" to <function>mysqli_commit</function> or
       <function>mysqli_rollback</function>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-trans-start-read-only">
@@ -1182,10 +1182,10 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Start the transaction as "START TRANSACTION READ ONLY" with
       <function>mysqli_begin_transaction</function>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-trans-start-read-write">
@@ -1194,10 +1194,10 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Start the transaction as "START TRANSACTION READ WRITE" with
       <function>mysqli_begin_transaction</function>.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-trans-start-with-consistent-snapshot">
@@ -1206,9 +1206,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Start the transaction as "START TRANSACTION WITH CONSISTENT SNAPSHOT".
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-client-ssl-dont-verify-server-cert">
@@ -1217,9 +1217,9 @@
      (<type>int</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Requires MySQL 5.6.5 and up.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-is-mariadb">
@@ -1228,10 +1228,10 @@
      (<type>bool</type>)
     </term>
     <listitem>
-     <para>
+     <simpara>
       Whether the mysqli extension has been built against a MariaDB client library.
       Available as of PHP 8.1.2.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry xml:id="constant.mysqli-async">

@@ -5,7 +5,7 @@
   <refname>tempnam</refname>
   <refpurpose>Create file with unique file name</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,12 +13,12 @@
    <methodparam><type>string</type><parameter>directory</parameter></methodparam>
    <methodparam><type>string</type><parameter>prefix</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Creates a file with a unique filename, with access permission set to 0600, in the specified directory.
    If the directory does not exist or is not writable, <function>tempnam</function> may
    generate a file in the system's temporary directory, and return
    the full path to that file, including its name.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,17 +28,17 @@
     <varlistentry>
      <term><parameter>directory</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The directory where the temporary filename will be created.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>prefix</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The prefix of the generated temporary filename.
-      </para>
+      </simpara>
       <note>
        <simpara>
         Only the first 63 characters of the prefix are used, the rest are ignored.
@@ -50,13 +50,13 @@
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the new temporary filename (with path), or &false; on
    failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -124,7 +124,7 @@ unlink($tmpfname);
    </simpara>
   </note>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

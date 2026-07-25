@@ -11,9 +11,9 @@
    <modifier>public</modifier> <methodname>Random\Engine\PcgOneseq128XslRr64::__construct</methodname>
    <methodparam choice="opt"><type class="union"><type>string</type><type>int</type><type>null</type></type><parameter>seed</parameter><initializer>&null;</initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -81,7 +81,7 @@
    <listitem>
     <simpara>
      If the length of a <type>string</type> <parameter>seed</parameter> is
-     not 16 bytes, a <classname>ValueError</classname> will be thrown.
+     not 16 bytes, a <exceptionname>ValueError</exceptionname> will be thrown.
     </simpara>
    </listitem>
   </itemizedlist>

@@ -9,24 +9,24 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="Collator">
    <modifier>public</modifier> <type class="union"><type>int</type><type>false</type></type><methodname>Collator::getAttribute</methodname>
    <methodparam><type>int</type><parameter>attribute</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>int</type><type>false</type></type><methodname>collator_get_attribute</methodname>
    <methodparam><type>Collator</type><parameter>object</parameter></methodparam>
    <methodparam><type>int</type><parameter>attribute</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get a value of an integer collator attribute.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -36,17 +36,17 @@
     <varlistentry>
      <term><parameter>object</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <classname>Collator</classname> object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>attribute</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Attribute to get value for.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -56,9 +56,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Attribute value,&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

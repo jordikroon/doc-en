@@ -34,10 +34,10 @@
     <varlistentry>
      <term><parameter>path</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The file path or URL to set metadata.  Note that in the case of a URL, it must be a :// delimited
        URL.  Other URL forms are not supported.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -79,11 +79,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
    If <parameter>option</parameter> is not implemented, &false; should be
    returned.
-  </para>
+  </simpara>
  </refsect1>
 
 <!--

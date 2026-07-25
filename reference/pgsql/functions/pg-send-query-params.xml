@@ -15,20 +15,20 @@
    <methodparam><type>string</type><parameter>query</parameter></methodparam>
    <methodparam><type>array</type><parameter>params</parameter></methodparam>
   </methodsynopsis>
-  <para>
-    Submits a command and separate parameters to the server without 
+  <simpara>
+    Submits a command and separate parameters to the server without
     waiting for the result(s).
-  </para>
-  <para>
-    This is equivalent to <function>pg_send_query</function> except that query 
-    parameters can be specified separately from the 
-    <parameter>query</parameter> string. The function's parameters are 
-    handled identically to <function>pg_query_params</function>. Like 
-    <function>pg_query_params</function>, it will not work on pre-7.4 PostgreSQL 
-    connections, and it allows only one command in the query string. 
-  </para>  
+  </simpara>
+  <simpara>
+    This is equivalent to <function>pg_send_query</function> except that query
+    parameters can be specified separately from the
+    <parameter>query</parameter> string. The function's parameters are
+    handled identically to <function>pg_query_params</function>. Like
+    <function>pg_query_params</function>, it will not work on pre-7.4 PostgreSQL
+    connections, and it allows only one command in the query string.
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   <para>
@@ -42,21 +42,21 @@
     <varlistentry>
      <term><parameter>query</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The parameterized SQL statement.  Must contain only a single statement.
-       (multiple statements separated by semi-colons are not allowed.)  If any parameters 
+       (multiple statements separated by semi-colons are not allowed.)  If any parameters
        are used, they are referred to as $1, $2, etc.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>params</parameter></term>
      <listitem>
-      <para>
+      <simpara>
         An array of parameter values to substitute for the $1, $2, etc. placeholders
         in the original prepared query string.  The number of elements in the array
         must match the number of placeholders.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -65,10 +65,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
     Returns &true; on success, &false; or <literal>0</literal> on failure.  Use <function>pg_get_result</function>
     to determine the query result.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -87,7 +87,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -108,7 +108,7 @@
 ?>
 ]]>
     </programlisting>
-   </example> 
+   </example>
   </para>
  </refsect1>
 

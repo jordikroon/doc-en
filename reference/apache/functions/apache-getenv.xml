@@ -13,10 +13,10 @@
    <methodparam><type>string</type><parameter>variable</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>walk_to_top</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
-   Retrieve an Apache environment variable specified by 
+  <simpara>
+   Retrieve an Apache environment variable specified by
    <parameter>variable</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,17 +26,17 @@
     <varlistentry>
      <term><parameter>variable</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The Apache environment variable
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>walk_to_top</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Whether to get the top-level variable available to all Apache layers.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -45,10 +45,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The value of the Apache environment variable on success, or &false; on
    failure
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -56,10 +56,10 @@
   <para>
    <example>
     <title><function>apache_getenv</function> example</title>
-    <para>
+    <simpara>
      The example above shows how to retrieve the value of the Apache
      environment variable <varname>SERVER_ADDR</varname>.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

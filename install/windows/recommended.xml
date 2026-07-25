@@ -4,12 +4,12 @@
  <title>Recommended configuration on Windows systems</title>
  <sect2>
   <title>OpCache</title>
-  <para>
+  <simpara>
    It is highly recommended to enable OpCache.
    This extension is included with PHP for Windows.
    It compiles and optimizes PHP scripts and caches them in memory so that
    they aren't compiled every time the page is loaded.
-  </para>
+  </simpara>
   <para>
    Set the &php.ini; to:
    <example>

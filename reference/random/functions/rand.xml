@@ -49,17 +49,17 @@
     <varlistentry>
      <term><parameter>min</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The lowest value to return (default: 0)
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>max</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The highest value to return (default: <function>getrandmax</function>)
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -67,10 +67,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A pseudo random value between <parameter>min</parameter>
    (or 0) and <parameter>max</parameter> (or <function>getrandmax</function>, inclusive).
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="changelog">
   &reftitle.changelog;
@@ -131,13 +131,13 @@ echo rand(5, 15), "\n";
  <refsect1 role="notes">
   &reftitle.notes;
   <warning>
-   <para>
+   <simpara>
     <parameter>min</parameter> <parameter>max</parameter> range must
     be within the range <function>getrandmax</function>. i.e.
     abs(<parameter>max</parameter> - <parameter>min</parameter>) &lt;=
     <function>getrandmax</function>.
     Otherwise, <function>rand</function> may return poor-quality random numbers.
-   </para>
+   </simpara>
   </warning>
  </refsect1>
 

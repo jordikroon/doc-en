@@ -12,10 +12,10 @@
    <methodparam><type>string</type><parameter>qualifiedName</parameter></methodparam>
    <methodparam><type>string</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets an attribute with name <parameter>qualifiedName</parameter> to the given
    value. If the attribute does not exist, it will be created.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -24,17 +24,17 @@
     <varlistentry>
      <term><parameter>qualifiedName</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The name of the attribute.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The value of the attribute.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -42,9 +42,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The created or modified <classname>DOMAttr</classname> or &false; if an error occurred.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="errors">
   &reftitle.errors;
@@ -57,9 +57,9 @@
     <varlistentry>
      <term><constant>DOM_NO_MODIFICATION_ALLOWED_ERR</constant></term>
      <listitem>
-      <para>
+      <simpara>
        Raised if the node is readonly.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

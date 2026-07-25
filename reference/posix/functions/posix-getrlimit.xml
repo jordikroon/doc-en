@@ -5,17 +5,17 @@
   <refname>posix_getrlimit</refname>
   <refpurpose>Return info about system resource limits</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>array</type><type>false</type></type><methodname>posix_getrlimit</methodname>
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>resource</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>posix_getrlimit</function> returns an <type>array</type>
    of information about the current resource's soft and hard limits.
-  </para>
+  </simpara>
   &posix.rlimits;
  </refsect1>
 
@@ -26,12 +26,12 @@
     <varlistentry>
      <term><parameter>resource</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If &null;, all current resource limits will be returned.
        Otherwise, specify the
        <link linkend="posix.constants.setrlimit">resource limit constant</link>
        to retrieve a specific limit.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -72,7 +72,7 @@
        <entry>
         The maximum size of the virtual memory for the process, in bytes.
        </entry>
-      </row> 
+      </row>
       <row>
        <entry>data</entry>
        <entry>

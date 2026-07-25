@@ -49,13 +49,13 @@ declare(ticks=TICK_VALUE);
    </programlisting>
   </informalexample>
  </para>
- <para>
+ <simpara>
   The <literal>statement</literal> part of the
   <literal>declare</literal> block will be executed - how
   it is executed and what side effects occur during execution
   may depend on the directive set in the
   <literal>directive</literal> block.
- </para>
+ </simpara>
  <para>
   The <literal>declare</literal> construct can also be used in the global
   scope, affecting all code following it (however if the file with
@@ -90,16 +90,16 @@ declare(ticks=1);
   within the <literal>declare</literal> block's
   <literal>directive</literal> section.
  </para>
- <para>
+ <simpara>
   Not all statements are tickable. Typically, condition
   expressions and argument expressions are not tickable.
- </para>
- <para>
+ </simpara>
+ <simpara>
   The event(s) that occur on each tick are specified using the
   <function>register_tick_function</function>. See the example
   below for more details. Note that more than one event can occur
   for each tick.
- </para>
+ </simpara>
  <para>
   <example>
    <title>Tick usage example</title>
@@ -166,9 +166,9 @@ declare(encoding='ISO-8859-1');
     will result in a parse error when combined with namespaces.
    </simpara>
   </caution>
-  <para>
+  <simpara>
    See also <link linkend="ini.zend.script-encoding">zend.script_encoding</link>.
-  </para>
+  </simpara>
  </sect2>
 </sect1>
 

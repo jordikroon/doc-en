@@ -11,7 +11,7 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="DateTimeInterface">
    <modifier>public</modifier> <type>string</type><methodname>DateTimeInterface::format</methodname>
    <methodparam><type>string</type><parameter>format</parameter></methodparam>
@@ -24,15 +24,15 @@
    <modifier>public</modifier> <type>string</type><methodname>DateTime::format</methodname>
    <methodparam><type>string</type><parameter>format</parameter></methodparam>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type>string</type><methodname>date_format</methodname>
    <methodparam><type>DateTimeInterface</type><parameter>object</parameter></methodparam>
    <methodparam><type>string</type><parameter>format</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns date formatted according to given format.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -42,13 +42,13 @@
    <varlistentry>
     <term><parameter>format</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The format of the outputted date <type>string</type>. See the formatting
       options below. There are also several
       <link linkend="datetimeinterface.constants.types">predefined date constants</link>
       that may be used instead, so for example <constant>DATE_RSS</constant>
       contains the format string <literal>'D, d M Y H:i:s'</literal>.
-     </para>
+     </simpara>
      <para>
       <table>
        <title>The following characters are recognized in the
@@ -338,18 +338,18 @@
        </tgroup>
       </table>
      </para>
-     <para>
+     <simpara>
       Unrecognized characters in the format string will be printed
       as-is.  The <literal>Z</literal> format will always return
       <literal>0</literal> when using <function>gmdate</function>.
-     </para>
+     </simpara>
      <note>
-      <para>
+      <simpara>
        Since this function only accepts <type>int</type> timestamps the
        <literal>u</literal> format character is only useful when using the
        <function>date_format</function> function with user based timestamps
        created with <function>date_create</function>.
-      </para>
+      </simpara>
      </note>
     </listitem>
    </varlistentry>
@@ -358,9 +358,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the formatted date string on success.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -397,7 +397,7 @@
   <para>
    <example>
     <title><function>DateTimeInterface::format</function> example</title>
-    <para>&style.oop;</para>
+    <simpara>&style.oop;</simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -412,7 +412,7 @@ echo $date->format('Y-m-d H:i:s');
 2000-01-01 00:00:00
 ]]>
     </screen>
-    <para>&style.procedural;</para>
+    <simpara>&style.procedural;</simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -484,9 +484,9 @@ echo $date->format('l \t\h\e jS');
 
  <refsect1 role="notes">
   &reftitle.notes;
-  <para>
+  <simpara>
    This method does not use locales. All output is in English.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

@@ -5,7 +5,7 @@
   <refname>odbc_execute</refname>
   <refpurpose>Execute a prepared statement</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,9 +13,9 @@
    <methodparam><type>Odbc\Result</type><parameter>statement</parameter></methodparam>
    <methodparam choice="opt"><type>array</type><parameter>params</parameter><initializer>[]</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Executes a statement prepared with <function>odbc_prepare</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,26 +25,26 @@
     <varlistentry>
      <term><parameter>statement</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &odbc.result.object; from <function>odbc_prepare</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>params</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Parameters in <parameter>params</parameter> will be
        substituted for placeholders in the prepared statement in order.
        Elements of this array will be converted to strings by calling this
        function.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Any parameters in <parameter>params</parameter> which
        start and end with single quotes will be taken as the name of a
        file to read and send to the database server as the data for the
        appropriate placeholder.
-      </para>
+      </simpara>
       <simpara>
        If you wish to store a string which actually begins and ends with
        single quotes, you must add a space or other non-single-quote character
@@ -61,9 +61,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -94,10 +94,10 @@
   <para>
    <example>
     <title><function>odbc_execute</function> and <function>odbc_prepare</function> example</title>
-    <para>
+    <simpara>
      In the following code, <varname>$success</varname> will only be
      &true; if all three parameters to myproc are IN parameters:
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -111,11 +111,11 @@ $success = odbc_execute($stmt, array($a, $b, $c));
     </programlisting>
    </example>
   </para>
-  <para>
+  <simpara>
    If you need to call a stored procedure using INOUT or OUT parameters,
    the recommended workaround is to use a native extension for your database
    (for example, <link linkend="ref.oci8">oci8</link> for Oracle).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

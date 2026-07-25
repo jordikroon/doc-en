@@ -12,10 +12,10 @@
    <type class="union"><type>int</type><type>string</type><type>null</type></type><methodname>key</methodname>
    <methodparam><type class="union"><type>array</type><type>object</type></type><parameter>array</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>key</function> returns the index element of the current array
    position.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The array.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -34,13 +34,13 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The <function>key</function> function simply returns the
    key of the array element that's currently being pointed to by the
    internal pointer.  It does not move the pointer in any way.  If the
-   internal pointer points beyond the end of the elements list or the array is 
+   internal pointer points beyond the end of the elements list or the array is
    empty, <function>key</function> returns &null;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

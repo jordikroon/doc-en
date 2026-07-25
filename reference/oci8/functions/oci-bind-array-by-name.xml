@@ -5,7 +5,7 @@
   <refname>oci_bind_array_by_name</refname>
   <refpurpose>Binds a PHP array to an Oracle PL/SQL array parameter</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -17,12 +17,12 @@
    <methodparam choice="opt"><type>int</type><parameter>max_item_length</parameter><initializer>-1</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>type</parameter><initializer><constant>SQLT_AFC</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Binds the PHP array <parameter>var</parameter> to the Oracle
    placeholder <parameter>param</parameter>, which points to an Oracle PL/SQL
    array. Whether it will be used for input or output will be determined at
-   run-time. 
-  </para>
+   run-time.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -32,106 +32,106 @@
     <varlistentry>
      <term><parameter>statement</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A valid OCI statement identifier.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>param</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The Oracle placeholder.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>var</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An array.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>max_array_length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Sets the maximum length both for incoming and result arrays.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>max_item_length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Sets maximum length for array items. If not specified or equals to -1,
        <function>oci_bind_array_by_name</function> will find the longest
        element in the incoming array and will use it as the maximum length.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>type</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Should be used to set the type of PL/SQL array items. See list of
        available types below:
-      </para>
+      </simpara>
       <para>
        <itemizedlist>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLT_NUM</constant> - for arrays of NUMBER.
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLT_INT</constant> - for arrays of INTEGER (Note: INTEGER
           it is actually a synonym for NUMBER(38), but
           <constant>SQLT_NUM</constant> type won't work in this case even
           though they are synonyms).
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLT_FLT</constant> - for arrays of FLOAT.
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLT_AFC</constant> - for arrays of CHAR.
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLT_CHR</constant> - for arrays of VARCHAR2.
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLT_VCS</constant> - for arrays of VARCHAR.
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLT_AVC</constant> - for arrays of CHARZ.
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLT_STR</constant> - for arrays of STRING.
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLT_LVC</constant> - for arrays of LONG VARCHAR.
-         </para>
+         </simpara>
         </listitem>
        <listitem>
-         <para>
+         <simpara>
           <constant>SQLT_ODT</constant> - for arrays of DATE.
-         </para>
+         </simpara>
         </listitem>
        </itemizedlist>
       </para>
@@ -143,9 +143,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

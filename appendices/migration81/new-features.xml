@@ -49,41 +49,41 @@ $arr2 = [...$arr1, 'c' => 'd']; //[1, 'a' => 'b', 'c' => 'd']
   <sect3 xml:id="migration81.new-features.core.named-arg-after-unpack">
    <title>Named Argument After Argument Unpacking</title>
 
-   <para>
+   <simpara>
     It is now possible to specify named arguments after an argument unpack.
     <!-- TODO Add an example -->
     e.g.
     foo(...$args, named: $arg).
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration81.new-features.core.upload-full-path-key">
    <title>full-path Key for File Uploads</title>
 
-   <para>
+   <simpara>
     File uploads now provide an additional <literal>full_path</literal> key,
     which contains the full path (rather than just the basename) of the uploaded file.
     This is intended for use in conjunction with "upload webkitdirectory".
-   </para>
+   </simpara>
    <!-- RFC: https://wiki.php.net/rfc/array_unpacking_string_keys -->
   </sect3>
 
   <sect3 xml:id="migration81.new-features.core.enums">
    <title>Enumerations</title>
 
-   <para>
+   <simpara>
     Support for <link linkend="language.enumerations">Enumerations</link> has been added.
     <!-- RFC: https://wiki.php.net/rfc/enumerations -->
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration81.new-features.core.fibers">
    <title>Fibers</title>
 
-   <para>
+   <simpara>
     Support for <link linkend="language.fibers">Fibers</link> has been added.
     <!-- RFC: https://wiki.php.net/rfc/fibers -->
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration81.new-features.core.callable-syntax">
@@ -104,10 +104,10 @@ $arr2 = [...$arr1, 'c' => 'd']; //[1, 'a' => 'b', 'c' => 'd']
   <sect3 xml:id="migration81.new-features.core.intersection-types">
    <title>Intersection Types</title>
 
-   <para>
+   <simpara>
     Support for <link linkend="language.types.type-system.composite.intersection">intersection types</link> has been added.
     <!-- RFC: https://wiki.php.net/rfc/pure-intersection-types -->
-   </para>
+   </simpara>
    <caution>
     <simpara>
      <link linkend="language.types.type-system.composite.intersection">
@@ -121,12 +121,12 @@ $arr2 = [...$arr1, 'c' => 'd']; //[1, 'a' => 'b', 'c' => 'd']
   <sect3 xml:id="migration81.new-features.core.never-type">
    <title>Never type</title>
 
-   <para>
+   <simpara>
     A new return only type &never; has been added.
     This indicates that a function either <function>exit</function>,
     throws an exception, or doesn't terminate.
     <!-- RFC: https://wiki.php.net/rfc/noreturn_type -->
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration81.new-features.core.new-in-initializer">
@@ -145,20 +145,20 @@ $arr2 = [...$arr1, 'c' => 'd']; //[1, 'a' => 'b', 'c' => 'd']
   <sect3 xml:id="migration81.new-features.core.readonly">
    <title>Readonly properties</title>
 
-   <para>
+   <simpara>
     Support for <link linkend="language.oop5.properties.readonly-properties">readonly</link> has been added.
     <!-- RFC: https://wiki.php.net/rfc/readonly_properties_v2 -->
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration81.new-features.core.final-constants">
    <title>Final class constants</title>
 
-   <para>
+   <simpara>
     Added support for <link linkend="language.oop5.final.example.php81">the <modifier>final</modifier> modifier for class constants</link>.
     Also, interface constants become overridable by default.
     <!-- RFC: https://wiki.php.net/rfc/final_class_const -->
-   </para>
+   </simpara>
   </sect3>
 
  </sect2>
@@ -166,13 +166,13 @@ $arr2 = [...$arr1, 'c' => 'd']; //[1, 'a' => 'b', 'c' => 'd']
  <sect2 xml:id="migration81.new-features.curl">
   <title>CURL</title>
 
-  <para>
+  <simpara>
    Added the <constant>CURLOPT_DOH_URL</constant> option.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    Added options for blob certificate when libcurl &gt;= 7.71.0:
-  </para>
+  </simpara>
   <itemizedlist>
    <listitem>
     <simpara><constant>CURLOPT_ISSUERCERT_BLOB</constant></simpara>
@@ -216,47 +216,47 @@ curl_setopt($curl, CURLOPT_POSTFIELDS, ['file' => $file]);
  <sect2 xml:id="migration81.new-features.fpm">
   <title>FPM</title>
 
-  <para>
+  <simpara>
    Added openmetrics status format. It can be used by Prometheus to fetch FPM
    metrics.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Added new pool option for the dynamic process manager called
    <literal>pm.max_spawn_rate</literal>. It allows to start a number of children
    at a faster rate when dynamic pm is selected.
    The default value is <literal>32</literal> which was the previous
    hard coded value.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration81.new-features.gd">
   <title>GD</title>
 
-  <para>
+  <simpara>
    Avif support is now available through
    <function>imagecreatefromavif</function> and
    <function>imageavif</function>,
    if libgd has been built with Avif support.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration81.new-features.hash">
   <title>Hash</title>
 
-  <para>
+  <simpara>
    The following functions <function>hash</function>,
    <function>hash_file</function>, and <function>hash_init</function>
    now support an additional optional <parameter>options</parameter>
    argument, which can be used to pass algorithm specific data.
-  </para>
+  </simpara>
 
   <sect3 xml:id="migration81.new-features.hash.murmurhash3">
    <title>MurmurHash3</title>
 
-   <para>
+   <simpara>
     Added support for <literal>MurmurHash3</literal> with streaming
     support. The following variants are implemented:
-   </para>
+   </simpara>
    <itemizedlist>
     <listitem>
      <simpara>murmur3a, 32-bit hash</simpara>
@@ -293,10 +293,10 @@ echo $h, "\n";
   <sect3 xml:id="migration81.new-features.hash.xxhash">
    <title>xxHash</title>
 
-   <para>
+   <simpara>
     Added support for <literal>xxHash</literal>.
     The following variants are implemented:
-   </para>
+   </simpara>
    <itemizedlist>
     <listitem>
      <simpara>xxh32, 32-bit hash</simpara>
@@ -353,13 +353,13 @@ echo $h, "\n";
   <sect3 xml:id="migration81.new-features.mysqli.local_infile_directory">
    <title>New INI directive <literal>mysqli.local_infile_directory</literal></title>
 
-   <para>
+   <simpara>
     The <link linkend="ini.mysqli.local-infile-directory">mysqli.local_infile_directory</link>
     INI directive has been added, which can be used to specify a directory from
     which files are allowed to be loaded. It is only meaningful if
     <link linkend="ini.mysqli.allow-local-infile">mysqli.allow_local_infile</link>
     is not enabled, as all directories are allowed in that case.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration81.new-features.mysqli.bind-in-execute">
@@ -411,13 +411,13 @@ echo $result->fetch_column();
  <sect2 xml:id="migration81.new-features.pdo_mysql">
   <title>PDO</title>
 
-  <para>
+  <simpara>
    The <constant>PDO::MYSQL_ATTR_LOCAL_INFILE_DIRECTORY</constant> attribute
    has been added, which can be used to specify a directory from which files
    are allowed to be loaded.
    It is only meaningful if <constant>PDO::MYSQL_ATTR_LOCAL_INFILE</constant>
    is not enabled, as all directories are allowed in that case.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration81.new-features.pdo_sqlite">
@@ -442,20 +442,20 @@ new PDO('sqlite:file:path/to/sqlite.db?mode=ro')
  <sect2 xml:id="migration81.new-features.posix">
   <title>POSIX</title>
 
-  <para>
+  <simpara>
    Added <constant>POSIX_RLIMIT_KQUEUES</constant> and <constant>POSIX_RLIMIT_NPTS</constant>.
    These rlimits are only available on FreeBSD.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration81.new-features.standard">
   <title>Standard</title>
 
-  <para>
+  <simpara>
    <function>fputcsv</function> now accepts a new
    <parameter>eol</parameter> argument which allows to define a custom
    End of Line sequence, the default remains the same and is <literal>"\n"</literal>.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration81.new-features.spl">

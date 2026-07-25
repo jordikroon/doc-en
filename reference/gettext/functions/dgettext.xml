@@ -5,7 +5,7 @@
   <refname>dgettext</refname>
   <refpurpose>Override the current domain</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,12 +13,12 @@
    <methodparam><type>string</type><parameter>domain</parameter></methodparam>
    <methodparam><type>string</type><parameter>message</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    The <function>dgettext</function> function allows you to override
    the current <parameter>domain</parameter> for a single message lookup.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   <para>
@@ -26,28 +26,28 @@
     <varlistentry>
      <term><parameter>domain</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The domain
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>message</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The message
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A <type>string</type> on success.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

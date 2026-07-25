@@ -5,16 +5,16 @@
   <refname>get_defined_functions</refname>
   <refpurpose>Returns an array of all defined functions</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>array</type><methodname>get_defined_functions</methodname>
    <methodparam choice="opt"><type>bool</type><parameter>exclude_disabled</parameter><initializer>&true;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets an array of all defined functions.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -23,10 +23,10 @@
    <varlistentry>
     <term><parameter>exclude_disabled</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Whether disabled functions should be excluded from the return value. This parameter has no effect
       since PHP 8.0.0.
-     </para>
+     </simpara>
      &warn.deprecated.feature-8-5-0;
     </listitem>
    </varlistentry>
@@ -35,13 +35,13 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a multidimensional array containing a list of all defined
    functions, both built-in (internal) and user-defined. The internal
    functions will be accessible via <varname>$arr["internal"]</varname>, and
    the user defined ones using <varname>$arr["user"]</varname> (see example
    below).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

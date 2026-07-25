@@ -6,10 +6,10 @@
  <title>Predefined Interfaces and Classes</title>
 
  <partintro>
-  <para>
+  <simpara>
    See also the <link linkend="spl.interfaces">SPL Interfaces</link> and <link
    linkend="reserved.classes">reserved classes</link>.
-  </para>
+  </simpara>
  </partintro>
 
  &language.predefined.traversable;

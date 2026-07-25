@@ -12,9 +12,9 @@
    <methodparam><type>FTP\Connection</type><parameter>ftp</parameter></methodparam>
    <methodparam><type>string</type><parameter>command</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   Sends an arbitrary <parameter>command</parameter> to the FTP server. 
-  </para>
+  <simpara>
+   Sends an arbitrary <parameter>command</parameter> to the FTP server.
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -29,9 +29,9 @@
     <varlistentry>
      <term><parameter>command</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The command to execute.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -39,11 +39,11 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the server's response as an array of strings, or &null; on failure.
    No parsing is performed on the response string, nor does
    <function>ftp_raw</function> determine if the command succeeded.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -62,7 +62,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -73,7 +73,7 @@
 <?php
 $ftp = ftp_connect("ftp.example.com");
 
-/* This is the same as: 
+/* This is the same as:
    ftp_login($ftp, "joeblow", "secret"); */
 ftp_raw($ftp, "USER joeblow");
 ftp_raw($ftp, "PASS secret");

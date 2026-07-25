@@ -5,7 +5,7 @@
   <refname>array_diff_uassoc</refname>
   <refpurpose>Computes the difference of arrays with additional index check which is performed by a user supplied callback function</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,15 +14,15 @@
    <methodparam rep="repeat"><type>array</type><parameter>arrays</parameter></methodparam>
    <methodparam><type>callable</type><parameter>key_compare_func</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Compares <parameter>array</parameter> against <parameter>arrays</parameter> and
    returns the difference. Unlike <function>array_diff</function> the array
    keys are used in the comparison.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Unlike <function>array_diff_assoc</function> a user supplied callback
    function is used for the indices comparison, not internal function.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -33,18 +33,18 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The array to compare from
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
     <varlistentry>
      <term><parameter>arrays</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Arrays to compare against
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -61,10 +61,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an <type>array</type> containing all the entries from
    <parameter>array</parameter> that are not present in any of the other arrays.
-  </para>
+  </simpara>
  </refsect1>
 
 <!--
@@ -79,7 +79,7 @@
   <para>
    <example>
     <title><function>array_diff_uassoc</function> example</title>
-    <para>
+    <simpara>
      In this example the <literal>"a" =&gt; "green"</literal>
      pair is present in both arrays and thus it is not in the output from the
      function. Unlike this, the pair <literal>0 =&gt; "red"</literal>
@@ -87,7 +87,7 @@
      automatically assigned to <literal>0</literal> in the first array,
      whereas it is assigned to <literal>1</literal> in the second array as the
      key <literal>0</literal> is already taken by <literal>yellow</literal>.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -119,16 +119,16 @@ Array
     </simpara>
    </example>
   </para>
- </refsect1> 
+ </refsect1>
 
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     This function only checks one dimension of an n-dimensional
     array. It is possible to check deeper dimensions by using, for example,
     <literal>array_diff_uassoc($array1[0], $array2[0], "key_compare_func");</literal>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

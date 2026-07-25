@@ -11,9 +11,9 @@
    <modifier>public</modifier> <type>ReflectionEnum</type><methodname>ReflectionEnumUnitCase::getEnum</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the reflection of the enum of this case.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -24,10 +24,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A <classname>ReflectionEnum</classname> instance describing the Enum
    this case belongs to.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

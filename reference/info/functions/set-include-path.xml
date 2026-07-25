@@ -5,17 +5,17 @@
   <refname>set_include_path</refname>
   <refpurpose>Sets the include_path configuration option</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>set_include_path</methodname>
    <methodparam><type>string</type><parameter>include_path</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets the <link linkend="ini.include-path">include_path</link>
-   configuration option for the duration of the script.  
-  </para>
+   configuration option for the duration of the script.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,10 +25,10 @@
     <varlistentry>
      <term><parameter>include_path</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The new value for the <link
        linkend="ini.include-path">include_path</link>
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,10 +37,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the old <link linkend="ini.include-path">include_path</link> on
    success&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -63,14 +63,14 @@ ini_set('include_path', '/usr/lib/pear');
   <para>
    <example>
     <title>Adding to the include path</title>
-    <para>
+    <simpara>
      Making use of the <constant>PATH_SEPARATOR</constant> constant, it is
      possible to extend the include path regardless of the operating system.
-    </para>
-    <para>
+    </simpara>
+    <simpara>
      In this example we add <filename>/usr/lib/pear</filename> to the end of
      the existing <literal>include_path</literal>.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

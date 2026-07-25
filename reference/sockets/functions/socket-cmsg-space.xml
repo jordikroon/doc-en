@@ -13,10 +13,10 @@
    <methodparam><type>int</type><parameter>type</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>num</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Calculates the size of the buffer that should be allocated for
    receiving the ancillary data.
-  </para>
+  </simpara>
   &warn.undocumented.func;
  </refsect1>
 
@@ -27,15 +27,15 @@
     <varlistentry>
      <term><parameter>level</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>type</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -44,8 +44,8 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-  </para>
+  <simpara>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

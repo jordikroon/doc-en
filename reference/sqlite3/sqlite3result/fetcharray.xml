@@ -14,10 +14,10 @@
    <modifier>public</modifier> <type class="union"><type>array</type><type>false</type></type><methodname>SQLite3Result::fetchArray</methodname>
    <methodparam choice="opt"><type>int</type><parameter>mode</parameter><initializer><constant>SQLITE3_BOTH</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Fetches a result row as an associative or numerically indexed array or both.
    By default, fetches as both.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -33,24 +33,24 @@
        <constant>SQLITE3_NUM</constant>, or <constant>SQLITE3_BOTH</constant>.
        <itemizedlist>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLITE3_ASSOC</constant>: returns an array indexed by column
           name as returned in the corresponding result set
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLITE3_NUM</constant>: returns an array indexed by column
           number as returned in the corresponding result set, starting at
           column 0
-         </para>
+         </simpara>
         </listitem>
         <listitem>
-         <para>
+         <simpara>
           <constant>SQLITE3_BOTH</constant>: returns an array indexed by both
           column name and number as returned in the corresponding result set,
           starting at column 0
-         </para>
+         </simpara>
         </listitem>
        </itemizedlist>
       </para>
@@ -63,18 +63,18 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a result row as an associatively or numerically indexed array or
    both. Alternately will return &false; if there are no more rows.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The types of the values of the returned array are mapped from SQLite3 types
    as follows: integers are mapped to <type>int</type> if they fit into the
    range <constant>PHP_INT_MIN</constant>..<constant>PHP_INT_MAX</constant>, and
    to <type>string</type> otherwise. Floats are mapped to <type>float</type>,
    <literal>NULL</literal> values are mapped to <type>null</type>, and strings
    and blobs are mapped to <type>string</type>.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

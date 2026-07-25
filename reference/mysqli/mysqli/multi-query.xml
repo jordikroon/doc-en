@@ -9,20 +9,20 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="mysqli">
    <modifier>public</modifier> <type>bool</type><methodname>mysqli::multi_query</methodname>
    <methodparam><type>string</type><parameter>query</parameter></methodparam>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type>bool</type><methodname>mysqli_multi_query</methodname>
    <methodparam><type>mysqli</type><parameter>mysql</parameter></methodparam>
    <methodparam><type>string</type><parameter>query</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Executes one or multiple queries which are concatenated by a semicolon.
-  </para>
+  </simpara>
   &mysqli.sqlinjection.warning;
   <para>
    Queries are sent in a single call to the database and processed sequentially.
@@ -31,7 +31,7 @@
    will continue processing the remaining queries asynchronously of PHP and make
    the results available for fetching.
   </para>
-  <para>
+  <simpara>
    It is recommended to use
    <link linkend="control-structures.do.while">do-while</link> to process multiple
    queries. The connection will be busy until all queries have completed and
@@ -42,8 +42,8 @@
    mysqli will wait for the response from the MySQL server.
    To check if there are more results,
    use <function>mysqli_more_results</function>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    For queries which produce a result set, such as
    <literal>SELECT, SHOW, DESCRIBE</literal> or
    <literal>EXPLAIN</literal>,
@@ -51,9 +51,9 @@
    can be used to retrieve the result set. For queries which do not produce a
    result set, the same functions can be used to retrieve information such as
    the number of affected rows.
-  </para>
+  </simpara>
   <tip>
-   <para>
+   <simpara>
     Executing <literal>CALL</literal> statements for stored procedures can
     produce multiple result sets. If the stored procedure contains
     <literal>SELECT</literal> statements, the result sets are returned in the
@@ -62,7 +62,7 @@
     prepared to retrieve multiple results. The final result from the procedure
     is a status result that includes no result set. The status indicates whether
     the procedure succeeded or an error occurred.
-   </para>
+   </simpara>
   </tip>
  </refsect1>
 
@@ -74,10 +74,10 @@
     <varlistentry>
      <term><parameter>query</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A string containing the queries to be executed.
        Multiple queries must be separated by a semicolon.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -86,11 +86,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &false; if the first statement failed.
    To retrieve subsequent errors from other statements you have to call
    <function>mysqli_next_result</function> first.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -102,7 +102,7 @@
   &reftitle.examples;
   <example>
    <title><methodname>mysqli::multi_query</methodname> example</title>
-   <para>&style.oop;</para>
+   <simpara>&style.oop;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -129,7 +129,7 @@ do {
 } while ($mysqli->next_result());
 ]]>
    </programlisting>
-   <para>&style.procedural;</para>
+   <simpara>&style.procedural;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

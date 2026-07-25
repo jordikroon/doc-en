@@ -11,7 +11,7 @@
    <modifier>public</modifier> <modifier>static</modifier> <type>static</type><methodname>DateTimeImmutable::createFromTimestamp</methodname>
    <methodparam><type class="union"><type>int</type><type>float</type></type><parameter>timestamp</parameter></methodparam>
   </methodsynopsis>
-  
+
   <simpara>
    Creates an instance from a Unix timestamp.
   </simpara>
@@ -19,7 +19,7 @@
 
  <refsect1 role="parameters">
   &reftitle.parameters;
-  
+
   <variablelist>
    <varlistentry>
     <term><parameter>timestamp</parameter></term>
@@ -31,7 +31,7 @@
     </listitem>
    </varlistentry>
   </variablelist>
- 
+
  </refsect1>
 
  <refsect1 role="returnvalues">

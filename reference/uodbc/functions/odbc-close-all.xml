@@ -11,12 +11,12 @@
    <type>void</type><methodname>odbc_close_all</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>odbc_close_all</function> will close down all
    connections to database server(s).
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   &no.function.parameters;
@@ -24,17 +24,17 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     This function will fail if there are open transactions on a connection.
     This connection will remain open in this case.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 </refentry>

@@ -14,13 +14,13 @@
    <methodparam choice="opt"><type>bool</type><parameter>useIncludePath</parameter><initializer>&false;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>resource</type><type>null</type></type><parameter>context</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Creates an <classname>SplFileObject</classname> <type>object</type> of
    the file. This is useful because <classname>SplFileObject</classname>
    contains additional methods for manipulating the file whereas
    <classname>SplFileInfo</classname> is only useful for gaining information,
    like whether the file is writable.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,27 +30,27 @@
     <varlistentry>
      <term><parameter>mode</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The mode for opening the file. See the <function>fopen</function>
-       documentation for descriptions of possible modes. The default 
+       documentation for descriptions of possible modes. The default
        is read only.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>useIncludePath</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &parameter.use_include_path;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>context</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &parameter.context;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -59,17 +59,17 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The opened file as an <classname>SplFileObject</classname> <type>object</type>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   A <classname>RuntimeException</classname> if the file cannot be
+  <simpara>
+   A <exceptionname>RuntimeException</exceptionname> if the file cannot be
    opened (e.g. insufficient access rights).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

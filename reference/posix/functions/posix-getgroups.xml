@@ -5,16 +5,16 @@
   <refname>posix_getgroups</refname>
   <refpurpose>Return the group set of the current process</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>array</type><type>false</type></type><methodname>posix_getgroups</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the group set of the current process.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,10 +24,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array of integers containing the numeric group ids of the group
    set of the current process, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

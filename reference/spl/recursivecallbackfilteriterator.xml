@@ -10,9 +10,9 @@
 <!-- {{{ RecursiveCallbackFilterIterator intro -->
   <section xml:id="recursivecallbackfilteriterator.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
 
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -51,10 +51,10 @@
   <!-- {{{ examples -->
   <section xml:id="recursivecallbackfilteriterator.examples">
    &reftitle.examples;
-   <para>
+   <simpara>
     The callback should accept up to three arguments:
     the current item, the current key and the iterator, respectively.
-   </para>
+   </simpara>
    <example xml:id="recursivecallbackfilteriterator.examples.args">
     <title>Available callback arguments</title>
     <programlisting role="php">
@@ -77,13 +77,13 @@ function my_callback($current, $key, $iterator) {
 ]]>
     </programlisting>
    </example>
-   <para>
+   <simpara>
     Filtering a recursive iterator generally involves two conditions.
     The first is that, to allow recursion, the callback function should return &true;
     if the current iterator item has children.
-    The second is the normal filter condition, such as a file size or extension 
+    The second is the normal filter condition, such as a file size or extension
     check as in the example below.
-   </para>
+   </simpara>
    <example xml:id="recursivecallbackfilteriterator.examples.basic">
     <title>Recursive callback basic example</title>
 <programlisting role="php">
@@ -104,7 +104,7 @@ $files = new RecursiveCallbackFilterIterator($dir, function ($current, $key, $it
     }
     return FALSE;
 });
- 
+
 foreach (new RecursiveIteratorIterator($files) as $file) {
     echo $file->getPathname() . PHP_EOL;
 }

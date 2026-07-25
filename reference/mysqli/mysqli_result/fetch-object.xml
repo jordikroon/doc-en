@@ -9,33 +9,33 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="mysqli_result">
    <modifier>public</modifier> <type class="union"><type>object</type><type>null</type><type>false</type></type><methodname>mysqli_result::fetch_object</methodname>
    <methodparam choice="opt"><type>string</type><parameter>class</parameter><initializer>"stdClass"</initializer></methodparam>
    <methodparam choice="opt"><type>array</type><parameter>constructor_args</parameter><initializer>[]</initializer></methodparam>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type class="union"><type>object</type><type>null</type><type>false</type></type><methodname>mysqli_fetch_object</methodname>
    <methodparam><type>mysqli_result</type><parameter>result</parameter></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>class</parameter><initializer>"stdClass"</initializer></methodparam>
    <methodparam choice="opt"><type>array</type><parameter>constructor_args</parameter><initializer>[]</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Fetches one row of data from the result set and returns it as an object,
    where each property represents the name of the result set's column.
    Each subsequent call to this function will return the next row within the
    result set, or &null; if there are no more rows.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If two or more columns of the result have the same name, the last
    column will take precedence and overwrite any previous data. To
    access multiple columns with the same name,
    <function>mysqli_fetch_row</function> may be used to fetch the numerically
    indexed array, or aliases may be used in the SQL query select list to give
    columns different names.
-  </para>
+  </simpara>
   <note xmlns="http://docbook.org/ns/docbook">
    <simpara>
      This function sets the properties
@@ -54,19 +54,19 @@
     <varlistentry>
      <term><parameter>class</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The name of the class to instantiate, set the properties of and return.
        If not specified, a <classname>stdClass</classname> object is returned.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>constructor_args</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An optional <type>array</type> of parameters to pass to the constructor
        for <parameter>class</parameter> objects.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -75,19 +75,19 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an object representing the fetched row, where each property
    represents the name of the result set's column, &null; if there
    are no more rows in the result set, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   A <classname>ValueError</classname> is thrown when
+  <simpara>
+   A <exceptionname>ValueError</exceptionname> is thrown when
    the <parameter>constructor_args</parameter> is non-empty with the class not having constructor.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -104,9 +104,9 @@
      <row>
       <entry>8.3.0</entry>
       <entry>
-       Now throws a <classname>ValueError</classname> exception when
+       Now throws a <exceptionname>ValueError</exceptionname> exception when
        the <parameter>constructor_args</parameter> is non-empty with the class not having constructor;
-       previously an <classname>Exception</classname> was thrown.
+       previously an <exceptionname>Exception</exceptionname> was thrown.
       </entry>
      </row>
      <row>
@@ -125,14 +125,14 @@
   &reftitle.examples;
   <example>
    <title><methodname>mysqli_result::fetch_object</methodname> example</title>
-   <para>&style.oop;</para>
+   <simpara>&style.oop;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
 
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 $mysqli = new mysqli("localhost", "my_user", "my_password", "world");
- 
+
 $query = "SELECT Name, CountryCode FROM City ORDER BY ID DESC";
 
 $result = $mysqli->query($query);
@@ -142,7 +142,7 @@ while ($obj = $result->fetch_object()) {
 }
 ]]>
    </programlisting>
-   <para>&style.procedural;</para>
+   <simpara>&style.procedural;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

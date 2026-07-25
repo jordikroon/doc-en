@@ -13,22 +13,22 @@
    <type>true</type><methodname>pg_close</methodname>
    <methodparam choice="opt"><type class="union"><type>PgSql\Connection</type><type>null</type></type><parameter>connection</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_close</function> closes the non-persistent
    connection to a PostgreSQL database associated with the given
    <parameter>connection</parameter> instance.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     Using <function>pg_close</function> is not usually necessary, as
     non-persistent open connections are automatically closed at the end
     of the script.
-   </para>
+   </simpara>
   </note>
-  <para>
+  <simpara>
    If there is open <classname>PgSql\Lob</classname> instance on the connection, do not
    close the connection before closing all <classname>PgSql\Lob</classname> instances.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -47,9 +47,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -75,7 +75,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -100,7 +100,7 @@ Connected successfully
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

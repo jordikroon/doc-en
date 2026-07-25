@@ -9,7 +9,7 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="mysqli">
    <modifier>public</modifier> <type>bool</type><methodname>mysqli::real_connect</methodname>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>hostname</parameter><initializer>&null;</initializer></methodparam>
@@ -20,7 +20,7 @@
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>socket</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type>bool</type><methodname>mysqli_real_connect</methodname>
    <methodparam><type>mysqli</type><parameter>mysql</parameter></methodparam>
@@ -32,24 +32,24 @@
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>socket</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Opens a connection to the MySQL database server
    with optional connection options.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This function differs from <function>mysqli_connect</function>:
-  </para>
+  </simpara>
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      <function>mysqli_real_connect</function> needs a valid object which has
      to be created by <function>mysqli_init</function>.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      There is a <parameter>flags</parameter> parameter.
-    </para>
+    </simpara>
    </listitem>
   </itemizedlist>
  </refsect1>
@@ -62,74 +62,74 @@
     <varlistentry>
      <term><parameter>hostname</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Can be either a host name or an IP address. When passing &null;, the value is retrieved from
        <link linkend="ini.mysqli.default-host">mysqli.default_host</link>.
        When possible, pipes will be used instead of the TCP/IP protocol.
        The TCP/IP protocol is used if a host name and port number are provided together e.g. <literal>localhost:3308</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>username</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The MySQL username or &null; to assume the username based on the
        <link linkend="ini.mysqli.default-user">mysqli.default_user</link> ini option.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>password</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The MySQL password or &null; to assume the password based on the
        <link linkend="ini.mysqli.default-pw">mysqli.default_pw</link> ini option.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>database</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The default database to be used when performing queries or &null;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>port</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The port number to attempt to connect to the MySQL server or &null; to assume the port based on the
        <link linkend="ini.mysqli.default-port">mysqli.default_port</link> ini option.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>socket</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The socket or named pipe that should be used or &null; to assume the socket based on the
        <link linkend="ini.mysqli.default-socket">mysqli.default_socket</link> ini option.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         Specifying the <parameter>socket</parameter> parameter will not
         explicitly determine the type of connection to be used when
         connecting to the MySQL server. How the connection is made to the
         MySQL database is determined by the <parameter>hostname</parameter>
         parameter.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        With the parameter <parameter>flags</parameter> you can set different
        connection options:
-      </para>
+      </simpara>
       <table xml:id="mysqli.real-connect.flags">
        <title>Supported flags</title>
        <tgroup cols="2">
@@ -166,7 +166,7 @@
         <row>
          <entry><constant>MYSQLI_CLIENT_SSL_DONT_VERIFY_SERVER_CERT</constant></entry>
          <entry>
-          Like <constant>MYSQLI_CLIENT_SSL</constant>, but disables validation of the provided 
+          Like <constant>MYSQLI_CLIENT_SSL</constant>, but disables validation of the provided
           SSL certificate. This is only for installations using MySQL Native Driver and MySQL 5.6 or later.
          </entry>
         </row>
@@ -174,11 +174,11 @@
        </tgroup>
       </table>
       <note>
-       <para>
+       <simpara>
         For security reasons the <constant>MULTI_STATEMENT</constant> flag is
         not supported in PHP. If you want to execute multiple queries use the
         <function>mysqli_multi_query</function> function.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
@@ -188,9 +188,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -226,7 +226,7 @@
   &reftitle.examples;
   <example>
    <title><methodname>mysqli::real_connect</methodname> example</title>
-   <para>&style.oop;</para>
+   <simpara>&style.oop;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -242,7 +242,7 @@ $mysqli->real_connect('localhost', 'my_user', 'my_password', 'my_db', null, null
 echo 'Success... ' . $mysqli->host_info . "\n";
 ]]>
    </programlisting>
-   <para>&style.oop; when extending mysqli class</para>
+   <simpara>&style.oop; when extending mysqli class</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -264,7 +264,7 @@ $db = new foo_mysqli('localhost', 'my_user', 'my_password', 'my_db');
 echo 'Success... ' . $db->host_info . "\n";
 ]]>
    </programlisting>
-   <para>&style.procedural;</para>
+   <simpara>&style.procedural;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

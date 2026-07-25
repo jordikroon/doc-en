@@ -16,16 +16,16 @@
    <methodparam choice="opt"><type>int</type><parameter>limit</parameter><initializer>-1</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter role="reference">count</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Searches <parameter>subject</parameter> for matches to
    <parameter>pattern</parameter> and replaces them with
    <parameter>replacement</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    To match an exact string, rather than a pattern,
    consider using <function>str_replace</function> or
    <function>str_ireplace</function> instead of this function.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -35,20 +35,20 @@
     <varlistentry>
      <term><parameter>pattern</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The pattern to search for. It can be either a string or an array with
        strings.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Several <link linkend="reference.pcre.pattern.modifiers">PCRE modifiers</link>
        are also available.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>replacement</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string or an array with strings to replace. If this parameter is a
        string and the <parameter>pattern</parameter> parameter is an array,
        all patterns will be replaced by that string. If both
@@ -58,8 +58,8 @@
        there are fewer elements in the <parameter>replacement</parameter>
        array than in the <parameter>pattern</parameter> array, any extra
        <parameter>pattern</parameter>s will be replaced by an empty string.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        <parameter>replacement</parameter> may contain references of the form
        <literal>\<replaceable>n</replaceable></literal> or
        <literal>$<replaceable>n</replaceable></literal>, with the latter form
@@ -70,57 +70,57 @@
        by the whole pattern. Opening parentheses are counted from left to right
        (starting from 1) to obtain the number of the capturing subpattern.
        Note that backslashes in &string; literals may require to be escaped.
-      </para>
-      <para>
-       When working with a replacement pattern where a backreference is 
+      </simpara>
+      <simpara>
+       When working with a replacement pattern where a backreference is
        immediately followed by another number (i.e.: placing a literal number
-       immediately after a matched pattern), you cannot use the familiar 
-       <literal>\1</literal> notation for your backreference.  
+       immediately after a matched pattern), you cannot use the familiar
+       <literal>\1</literal> notation for your backreference.
        <literal>\11</literal>, for example, would confuse
        <function>preg_replace</function> since it does not know whether you
-       want the <literal>\1</literal> backreference followed by a literal 
+       want the <literal>\1</literal> backreference followed by a literal
        <literal>1</literal>, or the <literal>\11</literal> backreference
-       followed by nothing.  In this case the solution is to use 
+       followed by nothing.  In this case the solution is to use
        <literal>${1}1</literal>.  This creates an isolated
        <literal>$1</literal> backreference, leaving the <literal>1</literal>
        as a literal.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>subject</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string or an array with strings to search and replace.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If <parameter>subject</parameter> is an array, then the search and
        replace is performed on every entry of <parameter>subject</parameter>,
        and the return value is an array as well.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If the <parameter>subject</parameter> array is associative, keys
        will be preserved in the returned value.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>limit</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The maximum possible replacements for each pattern in each
        <parameter>subject</parameter> string. Defaults to
        <literal>-1</literal> (no limit).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>count</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If specified, this variable will be filled with the number of
        replacements done.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -129,24 +129,24 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    <function>preg_replace</function> returns an array if the
    <parameter>subject</parameter> parameter is an array, or a string
    otherwise.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If matches are found, the new <parameter>subject</parameter> will
    be returned, otherwise <parameter>subject</parameter> will be
    returned unchanged or &null; if an error occurred.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    Using the "\e" modifier is an error;
    an <constant>E_WARNING</constant> is emitted in this case.
-  </para>
+  </simpara>
   &pcre.pattern.warning;
  </refsect1>
 
@@ -198,9 +198,9 @@ echo preg_replace($patterns, $replacements, $string);
 The bear black slow jumps over the lazy dog.
 ]]>
     </screen>
-    <para>
+    <simpara>
      By ksorting patterns and replacements, we should get what we wanted.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -251,9 +251,9 @@ $startDate = 5/27/1999
   <para>
    <example>
     <title>Strip whitespace</title>
-    <para>
+    <simpara>
      This example strips excess whitespace from a string.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -293,7 +293,7 @@ xp***to
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     When using arrays with <parameter>pattern</parameter> and
     <parameter>replacement</parameter>, the keys are processed in the order
     they appear in the array. This is <emphasis>not necessarily</emphasis> the
@@ -302,17 +302,17 @@ xp***to
     <parameter>replacement</parameter>, you should perform a
     <function>ksort</function> on each array prior to calling
     <function>preg_replace</function>.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     When both <parameter>pattern</parameter> and <parameter>replacement</parameter> are
     arrays, matching rules will operate sequentially.  That is, the second <parameter>pattern</parameter>/<parameter>replacement</parameter>
     pair will operate on the string that results from the first <parameter>pattern</parameter>/<parameter>replacement</parameter>
     pair, not the original string. If you want to simulate replacements operating in parallel,
     such as swapping two values, replace one pattern by an intermediary placeholder, then in a
     later pair replace that intermediary placeholder with the desired replacement.
-   </para>
+   </simpara>
    <informalexample>
     <programlisting role="php">
 <![CDATA[

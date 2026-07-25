@@ -12,9 +12,9 @@
    <methodparam><type>string</type><parameter>class</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>autoload</parameter><initializer>&true;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function checks whether or not the given class has been defined.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -23,18 +23,18 @@
     <varlistentry>
      <term><parameter>class</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The class name. The name is matched in a case-insensitive manner.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>autoload</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Whether to <link linkend="language.oop5.autoload">autoload</link>
        if not already loaded.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -42,10 +42,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if <parameter>class</parameter> is a defined class,
    &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;

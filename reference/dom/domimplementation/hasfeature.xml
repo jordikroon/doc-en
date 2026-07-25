@@ -14,15 +14,15 @@
    <methodparam><type>string</type><parameter>feature</parameter></methodparam>
    <methodparam><type>string</type><parameter>version</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   Test if the DOM implementation implements a specific 
+  <simpara>
+   Test if the DOM implementation implements a specific
    <parameter>feature</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    You can find a list of all features in the <link
    xlink:href="&url.dom2.features;">Conformance</link> section of the DOM
    specification.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -31,19 +31,19 @@
     <varlistentry>
      <term><parameter>feature</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The feature to test.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>version</parameter></term>
      <listitem>
-      <para>
-       The version number of the <parameter>feature</parameter> to test. In 
+      <simpara>
+       The version number of the <parameter>feature</parameter> to test. In
        level 2, this can be either <literal>2.0</literal> or
        <literal>1.0</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -51,9 +51,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -72,7 +72,7 @@
        <entry>8.0.0</entry>
        <entry>
         Calling this function statically will
-        now throw an <classname>Error</classname>.
+        now throw an <exceptionname>Error</exceptionname>.
         Previously, an <constant>E_DEPRECATED</constant> was raised.
        </entry>
       </row>

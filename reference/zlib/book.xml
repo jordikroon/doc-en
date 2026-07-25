@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
- 
+
 <book xml:id="book.zlib" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <?phpdoc extension-membership="bundled" ?>
  <title>Zlib Compression</title>
  <titleabbrev>Zlib</titleabbrev>
- 
+
  <!-- {{{ preface -->
  <preface xml:id="intro.zlib">
   &reftitle.intro;
-  <para>
+  <simpara>
    This module enables you to transparently read and write
    gzip (.gz) compressed files, through versions of most of
    the <link linkend="book.filesystem">filesystem</link> functions
    which work with gzip-compressed files (and uncompressed files,
    too, but not with sockets).
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     PHP comes with a fopen-wrapper for <filename>.gz</filename>-files.
     More information is available in the section about
     <xref linkend="wrappers.compression" />.
-   </para>
+   </simpara>
   </note>
  </preface>
  <!-- }}} -->
- 
+
  &reference.zlib.setup;
  &reference.zlib.constants;
  &reference.zlib.examples;

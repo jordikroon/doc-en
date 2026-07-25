@@ -12,11 +12,11 @@
    <type>string</type><methodname>textdomain</methodname>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>domain</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function sets the domain to search within when calls are
    made to <function>gettext</function>, usually the named after an
    application.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,10 +26,10 @@
     <varlistentry>
      <term><parameter>domain</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The new message domain, or &null; to get the current setting without
        changing it
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -38,10 +38,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    If successful, this function returns the current message
    domain, after possibly changing it.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -85,10 +85,10 @@
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     The <function>textdomain</function> information is maintained per process,
     not per thread.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 </refentry>

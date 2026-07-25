@@ -9,10 +9,10 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    Context options for <literal>ftp://</literal> and <literal>ftps://</literal>
    transports.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="options">
@@ -25,13 +25,13 @@
       <type>bool</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Allow overwriting of already existing files on remote server.
        Applies to write mode (uploading) only.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Defaults to &false;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="context.ftp.resume-pos">
@@ -40,12 +40,12 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        File offset at which to begin transfer. Applies to read mode (downloading) only.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Defaults to <literal>0</literal> (Beginning of File).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="context.ftp.proxy">
@@ -54,10 +54,10 @@
       <type>string</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Proxy FTP request via http proxy server. Applies to file read
        operations only. Ex: <literal>tcp://squid.example.com:8000</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

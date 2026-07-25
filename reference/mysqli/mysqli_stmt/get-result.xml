@@ -9,33 +9,33 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="mysqli_stmt">
    <modifier>public</modifier> <type class="union"><type>mysqli_result</type><type>false</type></type><methodname>mysqli_stmt::get_result</methodname>
    <void/>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type class="union"><type>mysqli_result</type><type>false</type></type><methodname>mysqli_stmt_get_result</methodname>
    <methodparam><type>mysqli_stmt</type><parameter>statement</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
     Retrieves a result set from a prepared statement as a
     <classname>mysqli_result</classname> object. The data will be fetched from
     the MySQL server to PHP. This method should be called only for
     queries which produce a result set.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     &mysqli.available.mysqlnd;
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     This function cannot be used together
     with <function>mysqli_stmt_store_result</function>. Both of these functions
     retrieve the full result set from the MySQL server.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -50,14 +50,14 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &false; on failure. For successful queries which produce a result set, such as <literal>SELECT, SHOW, DESCRIBE</literal> or
    <literal>EXPLAIN</literal>, <function>mysqli_stmt_get_result</function> will return
    a <classname>mysqli_result</classname> object. For other successful queries, <function>mysqli_stmt_get_result</function> will
    return &false;. The <function>mysqli_stmt_errno</function> function can be
    used to distinguish between the two reasons for &false;; due to a bug, prior to PHP 7.4.13,
    <function>mysqli_errno</function> had to be used for this purpose.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -127,10 +127,10 @@ foreach ($continentList as $continent) {
    &examples.outputs.similar;
    <screen>
 <![CDATA[
-Albania 3401200 Europe 
-Algeria 31471000 Africa 
-Afghanistan 22720000 Asia 
-Anguilla 8000 North America 
+Albania 3401200 Europe
+Algeria 31471000 Africa
+Afghanistan 22720000 Asia
+Anguilla 8000 North America
 ]]>
    </screen>
   </example>

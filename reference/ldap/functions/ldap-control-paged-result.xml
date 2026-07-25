@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Revision$ --> 
+<!-- $Revision$ -->
 <refentry xml:id='function.ldap-control-paged-result'
 xmlns="http://docbook.org/ns/docbook"
 xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -21,9 +21,9 @@ xmlns:xlink="http://www.w3.org/1999/xlink">
    <methodparam choice="opt"><type>bool</type><parameter>iscritical</parameter><initializer>&false;</initializer></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>cookie</parameter><initializer>""</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Enable LDAP pagination by sending the pagination control (page size, cookie...).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -33,36 +33,36 @@ xmlns:xlink="http://www.w3.org/1999/xlink">
     <varlistentry>
      <term><parameter>link</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An LDAP resource, returned by <function>ldap_connect</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>pagesize</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number of entries by page.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>iscritical</parameter></term>
      <listitem>
-      <para>
-       Indicates whether the pagination is critical or not. 
+      <simpara>
+       Indicates whether the pagination is critical or not.
        If true and if the server doesn't support pagination, the search
        will return no result.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>cookie</parameter></term>
      <listitem>
-      <para>
-       An opaque structure sent by the server 
+      <simpara>
+       An opaque structure sent by the server
        (<function>ldap_control_paged_result_response</function>).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     </variablelist>
@@ -71,9 +71,9 @@ xmlns:xlink="http://www.w3.org/1999/xlink">
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -136,7 +136,7 @@ xmlns:xlink="http://www.w3.org/1999/xlink">
    </example>
   </para>
   <para>
-   The example below show the retrieval of all the result paginated with 100 
+   The example below show the retrieval of all the result paginated with 100
    entries by page.
    <example>
     <title>LDAP pagination</title>
@@ -159,13 +159,13 @@ xmlns:xlink="http://www.w3.org/1999/xlink">
 
          $result  = ldap_search($ds, $dn, $filter, $justthese);
          $entries = ldap_get_entries($ds, $result);
-             
+
          foreach ($entries as $e) {
              echo $e['dn'] . PHP_EOL;
          }
 
          ldap_control_paged_result_response($ds, $result, $cookie);
-       
+
      } while($cookie !== null && $cookie != '');
      ]]>
     </programlisting>
@@ -176,9 +176,9 @@ xmlns:xlink="http://www.w3.org/1999/xlink">
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     Pagination control is a LDAPv3 protocol feature.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

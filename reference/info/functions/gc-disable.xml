@@ -12,10 +12,10 @@
    <type>void</type><methodname>gc_disable</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Deactivates the circular reference collector, setting
    <link linkend="ini.zend.enable-gc">zend.enable_gc</link> to <literal>0</literal>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

@@ -9,7 +9,7 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    Files opened for reading via the <filename>ogg://</filename> wrapper
    are treated as compressed audio encoded using the <literal>OGG/Vorbis</literal> codec.
    Similarly, files opened for writing or appending via the
@@ -22,7 +22,7 @@
    and the encoding rate range described by:
    <parameter>bitrate_lower</parameter>, <parameter>bitrate_upper</parameter>,
    <parameter>bitrate_nominal</parameter>, and <parameter>bitrate_window</parameter>.
-  </para>
+  </simpara>
 
   <simpara><filename>ogg://</filename> (PECL)</simpara>
   <note>

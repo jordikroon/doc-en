@@ -5,7 +5,7 @@
   <refname>odbc_prepare</refname>
   <refpurpose>Prepares a statement for execution</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,16 +13,16 @@
    <methodparam><type>Odbc\Connection</type><parameter>odbc</parameter></methodparam>
    <methodparam><type>string</type><parameter>query</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Prepares a statement for execution. &odbc.result.object; can be used
    later to execute the statement with <function>odbc_execute</function>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Some databases (such as IBM DB2, MS SQL Server, and Oracle) support
    stored procedures that accept parameters of type IN, INOUT, and OUT as
    defined by the ODBC specification.  However, the Unified ODBC driver
    currently only supports parameters of type IN to stored procedures.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -38,9 +38,9 @@
     <varlistentry>
      <term><parameter>query</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The query string statement being prepared.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -49,10 +49,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &odbc.result.object-return; if the SQL command was prepared
    successfully. Returns &false; on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -78,10 +78,10 @@
   <para>
    <example>
     <title><function>odbc_execute</function> and <function>odbc_prepare</function> example</title>
-    <para>
+    <simpara>
      In the following code, <varname>$success</varname> will only be
      &true; if all three parameters to myproc are IN parameters:
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -95,11 +95,11 @@ $success = odbc_execute($stmt, array($a, $b, $c));
     </programlisting>
    </example>
   </para>
-  <para>
+  <simpara>
    If you need to call a stored procedure using INOUT or OUT parameters,
    the recommended workaround is to use a native extension for your database
    (for example, <link linkend="ref.oci8">oci8</link> for Oracle).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

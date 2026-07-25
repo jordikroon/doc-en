@@ -12,11 +12,11 @@
    <modifier>public</modifier> <type class="union"><type>string</type><type>false</type></type><methodname>ReflectionClass::getDocComment</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets doc comments from a class. Doc comments start with <literal>/**</literal>, followed by whitespace.
    If there are multiple doc comments above the class definition,
    the one closest to the class will be taken.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -27,9 +27,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The doc comment if it exists, otherwise &false;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -56,7 +56,7 @@ var_dump($rc->getDocComment());
     &example.outputs;
     <screen>
 <![CDATA[
-string(61) "/** 
+string(61) "/**
  * A test class
  *
  * @param  foo bar

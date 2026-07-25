@@ -12,13 +12,13 @@
    <modifier>private</modifier> <methodname>IntlCalendar::__construct</methodname>
    <void/>
   </constructorsynopsis>
-  <para>
+  <simpara>
    A private constructor for disallowing instantiation with the
    <link linkend="language.oop5.basic.new">new</link> operator.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Call <function>IntlCalendar::createInstance</function> instead.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">

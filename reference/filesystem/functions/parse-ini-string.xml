@@ -5,7 +5,7 @@
   <refname>parse_ini_string</refname>
   <refpurpose>Parse a configuration string</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,13 +14,13 @@
    <methodparam choice="opt"><type>bool</type><parameter>process_sections</parameter><initializer>&false;</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>scanner_mode</parameter><initializer><constant>INI_SCANNER_NORMAL</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>parse_ini_string</function> returns the settings in string
    <parameter>ini_string</parameter> in an associative array.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The structure of the ini string is the same as the &php.ini;'s.
-  </para>
+  </simpara>
   <warning>
    <simpara>
     This function must not be used with untrusted inputs, unless
@@ -38,43 +38,43 @@
     <varlistentry>
      <term><parameter>ini_string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The contents of the ini file being parsed.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>process_sections</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        By setting the <parameter>process_sections</parameter>
        parameter to &true;, you get a multidimensional array, with
        the section names and settings included. The default
-       for <parameter>process_sections</parameter> is &false;      
-      </para>
+       for <parameter>process_sections</parameter> is &false;
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>scanner_mode</parameter></term>
      <listitem>
-      <para>
-       Can either be <constant>INI_SCANNER_NORMAL</constant> (default) or 
-       <constant>INI_SCANNER_RAW</constant>. If <constant>INI_SCANNER_RAW</constant> 
+      <simpara>
+       Can either be <constant>INI_SCANNER_NORMAL</constant> (default) or
+       <constant>INI_SCANNER_RAW</constant>. If <constant>INI_SCANNER_RAW</constant>
        is supplied, then option values will not be parsed.
-      </para>
+      </simpara>
       &ini.scanner.typed;
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The settings are returned as an associative <type>array</type> on success,
    and &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="notes">
@@ -82,10 +82,10 @@
   <note>
    <simpara>
     There are reserved words which must not be used as keys for
-    ini files.  These include: <literal>null</literal>, <literal>yes</literal>, 
+    ini files.  These include: <literal>null</literal>, <literal>yes</literal>,
     <literal>no</literal>, <literal>true</literal>, <literal>false</literal>,
     <literal>on</literal>, <literal>off</literal>, <literal>none</literal>.
-    Values <literal>null</literal>, <literal>off</literal>, <literal>no</literal> and 
+    Values <literal>null</literal>, <literal>off</literal>, <literal>no</literal> and
     <literal>false</literal> result in <literal>""</literal>, and values
     <literal>on</literal>, <literal>yes</literal> and <literal>true</literal> result
     in <literal>"1"</literal>, unless <constant>INI_SCANNER_TYPED</constant> mode is used.
@@ -94,7 +94,7 @@
    </simpara>
   </note>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

@@ -9,22 +9,22 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="mysqli">
    <modifier>public</modifier> <type class="union"><type>mysqli_result</type><type>false</type></type><methodname>mysqli::store_result</methodname>
    <methodparam choice="opt"><type>int</type><parameter>mode</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type class="union"><type>mysqli_result</type><type>false</type></type><methodname>mysqli_store_result</methodname>
    <methodparam><type>mysqli</type><parameter>mysql</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>mode</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Transfers the result set from the last query on the database connection
    represented by the <parameter>mysql</parameter> parameter to be used with
    the <function>mysqli_data_seek</function> function.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -67,11 +67,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a buffered result object or &false; if an error occurred.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     <function>mysqli_store_result</function> returns &false; in case the query
     didn't return a result set (if the query was, for example an INSERT
     statement). This function also returns &false; if the reading of the
@@ -84,7 +84,7 @@
     result set (memory for it cannot be allocated). If
     <function>mysqli_field_count</function> returns a non-zero value, the
     statement should have produced a non-empty result set.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -118,21 +118,21 @@
 
  <refsect1 role="examples">
   &reftitle.examples;
-  <para>
+  <simpara>
    See <function>mysqli_multi_query</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     Although it is always good practice to free the memory used by the result
     of a query using the <function>mysqli_free_result</function> function,
     when transferring large result sets using the
     <function>mysqli_store_result</function> this becomes particularly
     important.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

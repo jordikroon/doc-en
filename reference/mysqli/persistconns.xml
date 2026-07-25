@@ -4,22 +4,22 @@
 
  <title>The mysqli Extension and Persistent Connections</title>
 
- <para>
+ <simpara>
   The idea behind persistent connections is
   that a connection between a client process and a database can be
   reused by a client process, rather than being created and destroyed
   multiple times. This reduces the overhead of creating fresh
   connections every time one is required, as unused connections are
   cached and ready to be reused.
- </para>
- 
- <para>
+ </simpara>
+
+ <simpara>
   Unlike the mysql extension, mysqli does not provide a separate function
   for opening persistent connections. To open a persistent connection you
   must prepend <literal>p:</literal> to the hostname when connecting.
- </para>
+ </simpara>
 
- <para>
+ <simpara>
   The problem with persistent connections is that they can be left in
   unpredictable states by clients. For example, a table lock might be
   activated before a client terminates unexpectedly. A new client
@@ -27,95 +27,95 @@
   <quote>as is</quote>. Any cleanup would need to be done by the new
   client process before it could make good use of the persistent
   connection, increasing the burden on the programmer.
- </para>
+ </simpara>
 
- <para>
+ <simpara>
   The persistent connection of the <literal>mysqli</literal> extension
   however provides built-in cleanup handling code. The cleanup carried
   out by <literal>mysqli</literal> includes:
- </para>
+ </simpara>
 
  <itemizedlist>
 
   <listitem>
-   <para>
+   <simpara>
     Rollback active transactions
-   </para>
+   </simpara>
   </listitem>
 
   <listitem>
-   <para>
+   <simpara>
     Close and drop temporary tables
-   </para>
+   </simpara>
   </listitem>
 
   <listitem>
-   <para>
+   <simpara>
     Unlock tables
-   </para>
+   </simpara>
   </listitem>
 
   <listitem>
-   <para>
+   <simpara>
     Reset session variables
-   </para>
+   </simpara>
   </listitem>
 
   <listitem>
-   <para>
+   <simpara>
     Close prepared statements (always happens with PHP)
-   </para>
+   </simpara>
   </listitem>
 
   <listitem>
-   <para>
+   <simpara>
     Close handler
-   </para>
+   </simpara>
   </listitem>
 
   <listitem>
-   <para>
+   <simpara>
     Release locks acquired with <function>GET_LOCK</function>
-   </para>
+   </simpara>
   </listitem>
 
  </itemizedlist>
 
- <para>
+ <simpara>
   This ensures that persistent connections are in a clean state on
   return from the connection pool, before the client process uses them.
- </para>
+ </simpara>
 
- <para>
+ <simpara>
   The <literal>mysqli</literal> extension does this cleanup by
   automatically calling the C-API function
   <literal>mysql_change_user()</literal>.
- </para>
+ </simpara>
 
- <para>
+ <simpara>
   The automatic cleanup feature has advantages and disadvantages though.
   The advantage is that the programmer no longer needs to worry about
   adding cleanup code, as it is called automatically. However, the
   disadvantage is that the code could <emphasis>potentially</emphasis>
   be a little slower, as the code to perform the cleanup needs to run
   each time a connection is returned from the connection pool.
- </para>
+ </simpara>
 
- <para>
+ <simpara>
   It is possible to switch off the automatic cleanup code, by compiling
   PHP with
 
   <constant>MYSQLI_NO_CHANGE_USER_ON_PCONNECT</constant>
 
   defined.
- </para>
+ </simpara>
 
  <note>
-  <para>
+  <simpara>
    The <literal>mysqli</literal> extension supports persistent
    connections when using either MySQL Native Driver or MySQL Client
    Library.
-  </para>
+  </simpara>
  </note>
 
 </chapter>

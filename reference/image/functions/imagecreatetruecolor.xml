@@ -12,10 +12,10 @@
    <methodparam><type>int</type><parameter>width</parameter></methodparam>
    <methodparam><type>int</type><parameter>height</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>imagecreatetruecolor</function> returns an image object
    representing a black image of the specified size.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -24,17 +24,17 @@
     <varlistentry>
      <term><parameter>width</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Image width.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>height</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Image height.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -42,7 +42,7 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>&gd.return.identifier;</para>
+  <simpara>&gd.return.identifier;</simpara>
  </refsect1>
 
  <refsect1 role="changelog">

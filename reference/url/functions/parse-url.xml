@@ -13,17 +13,17 @@
    <methodparam><type>string</type><parameter>url</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>component</parameter><initializer>-1</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function parses a URL and returns an associative array containing any
    of the various components of the URL that are present.
    The values of the array elements are <emphasis>not</emphasis> URL decoded.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This function is <emphasis role="strong">not</emphasis> meant to validate
    the given URL, it only breaks it up into the parts listed below. Partial and invalid
    URLs are also accepted, <function>parse_url</function> tries its best to
    parse them correctly.
-  </para>
+  </simpara>
   <caution>
    <simpara>
     This function does not follow any established URI or URL standard.
@@ -58,9 +58,9 @@
     <varlistentry>
      <term><parameter>url</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The URL to parse.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -68,7 +68,7 @@
     <varlistentry>
      <term><parameter>component</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Specify one of <constant>PHP_URL_SCHEME</constant>,
        <constant>PHP_URL_HOST</constant>, <constant>PHP_URL_PORT</constant>,
        <constant>PHP_URL_USER</constant>, <constant>PHP_URL_PASS</constant>,
@@ -77,7 +77,7 @@
        URL component as a <type>string</type> (except when
        <constant>PHP_URL_PORT</constant> is given, in which case the return
        value will be an <type>int</type>).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -86,10 +86,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    On seriously malformed URLs, <function>parse_url</function> may return
    &false;.
-  </para>
+  </simpara>
   <para>
    If the <parameter>component</parameter> parameter is omitted, an
    associative <type>array</type> is returned. At least one element will be
@@ -102,7 +102,7 @@
     </listitem>
     <listitem>
      <simpara>
-      <varname remap="structfield">host</varname> 
+      <varname remap="structfield">host</varname>
      </simpara>
     </listitem>
     <listitem>
@@ -137,7 +137,7 @@
     </listitem>
    </itemizedlist>
   </para>
-  <para>
+  <simpara>
    If the <parameter>component</parameter> parameter is specified,
    <function>parse_url</function> returns a <type>string</type> (or an
    <type>int</type>, in the case of <constant>PHP_URL_PORT</constant>)
@@ -145,7 +145,7 @@
    within the given URL, &null; will be returned.
    As of PHP 8.0.0, <function>parse_url</function> distinguishes absent and empty
    queries and fragments:
-  </para>
+  </simpara>
   <para>
    <informalexample>
     <screen>
@@ -158,13 +158,13 @@ http://example.com/foo?# → query = "",   fragment = ""
     </screen>
    </informalexample>
   </para>
-  <para>
+  <simpara>
     Previously all cases resulted in query and fragment being &null;.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Note that control characters (cf. <function>ctype_cntrl</function>) in the
    components are replaced with underscores (<literal>_</literal>).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -278,12 +278,12 @@ array(3) {
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     This function is intended specifically for the purpose of parsing URLs
     and not URIs. However, to comply with PHP's backwards compatibility
     requirements it makes an exception for the <literal>file://</literal> scheme where triple
     slashes (<literal>file:///...</literal>) are allowed. For any other scheme this is invalid.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

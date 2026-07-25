@@ -9,23 +9,23 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="Locale">
    <modifier>public</modifier> <modifier>static</modifier> <type class="union"><type>array</type><type>false</type><type>null</type></type><methodname>Locale::getKeywords</methodname>
    <methodparam><type>string</type><parameter>locale</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>array</type><type>false</type><type>null</type></type><methodname>locale_get_keywords</methodname>
    <methodparam><type>string</type><parameter>locale</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the keywords for the input locale.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -35,9 +35,9 @@
     <varlistentry>
      <term><parameter>locale</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The locale to extract the keywords from
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -47,9 +47,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Associative <type>array</type> containing the keyword-value pairs for this locale
-  </para>
+  </simpara>
   &intl.locale-len.return;
  </refsect1>
 

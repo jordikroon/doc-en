@@ -16,21 +16,21 @@
    <methodparam choice="opt"><type class="union"><type>bool</type><type>null</type></type><parameter>secure</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>bool</type><type>null</type></type><parameter>httponly</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>Alternative signature available as of PHP 7.3.0:</para>
+  <simpara>Alternative signature available as of PHP 7.3.0:</simpara>
   <methodsynopsis>
    <type>bool</type><methodname>session_set_cookie_params</methodname>
    <methodparam><type>array</type><parameter>lifetime_or_options</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Set cookie parameters defined in the &php.ini; file. The effect of this
    function only lasts for the duration of the script. Thus, you need to
    call <function>session_set_cookie_params</function> for every request and
    before <function>session_start</function> is called.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This function updates the runtime ini values of the corresponding PHP ini configuration
    keys which can be retrieved with the <function>ini_get</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -40,11 +40,11 @@
     <varlistentry>
      <term><parameter>lifetime_or_options</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        When using the first signature, <link linkend="ini.session.cookie-lifetime">lifetime</link> of the
        session cookie, defined in seconds.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        When using the second signature,
        an associative <type>array</type> which may have any of the keys
        <literal>lifetime</literal>, <literal>path</literal>, <literal>domain</literal>,
@@ -56,46 +56,46 @@
        same as the default values of the explicit parameters. If the
        <literal>samesite</literal> element is omitted, no SameSite cookie
        attribute is set.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>path</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <link linkend="ini.session.cookie-path">Path</link> on the domain where
        the cookie will work. Use a single slash ('/') for all paths on the
        domain.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>domain</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Cookie <link linkend="ini.session.cookie-domain">domain</link>, for
        example 'www.php.net'. To make cookies visible on all subdomains then
        the domain must be prefixed with a dot like '.php.net'.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>secure</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If &true; cookie will only be sent over
        <link linkend="ini.session.cookie-secure">secure</link> connections.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>httponly</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If set to &true; then PHP will attempt to send the
        <link linkend="ini.session.cookie-httponly">httponly</link>
        flag when setting the session cookie.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -104,9 +104,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

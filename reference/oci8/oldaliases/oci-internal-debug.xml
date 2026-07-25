@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.oci-internal-debug">
+<refentry xml:id="function.oci-internal-debug" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>oci_internal_debug</refname>
   <refpurpose>Enables or disables internal debug output</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>void</type><methodname>oci_internal_debug</methodname>
    <methodparam><type>bool</type><parameter>onoff</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Enables or disables internal debug output.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>onoff</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Set this to &false; to turn debug output off or &true; to turn it on.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,17 +35,17 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-    <para>
+    <simpara>
       This function was removed in PHP 8 and PECL OCI8 3.0.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

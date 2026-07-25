@@ -14,12 +14,12 @@
    <methodparam><type>int</type><parameter>day</parameter></methodparam>
    <methodparam><type>int</type><parameter>year</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks the validity of the date formed by the arguments. A date
    is considered valid if each parameter is properly defined.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   <para>
@@ -27,27 +27,27 @@
     <varlistentry>
      <term><parameter>month</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The month is between 1 and 12 inclusive.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>day</parameter></term>
      <listitem>
-      <para>
-       The day is within the allowed number of days for the given 
-       <parameter>month</parameter>.  Leap <parameter>year</parameter>s 
+      <simpara>
+       The day is within the allowed number of days for the given
+       <parameter>month</parameter>.  Leap <parameter>year</parameter>s
        are taken into consideration.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>year</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The year is between 1 and 32767 inclusive.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -56,9 +56,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the date given is valid; otherwise returns &false;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

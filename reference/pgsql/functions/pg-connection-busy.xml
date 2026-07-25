@@ -15,11 +15,11 @@
    <type>bool</type><methodname>pg_connection_busy</methodname>
    <methodparam><type>PgSql\Connection</type><parameter>connection</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_connection_busy</function> determines whether or not a connection
    is busy.  If it is busy, a previous query is still executing.
    If <function>pg_get_result</function> is used on the connection, it will be blocked.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -38,9 +38,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-   <para>
+   <simpara>
     Returns &true; if the connection is busy, &false; otherwise.
-   </para>
+   </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -59,7 +59,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>

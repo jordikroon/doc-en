@@ -12,9 +12,9 @@
    <modifier>public</modifier> <methodname>NoRewindIterator::__construct</methodname>
    <methodparam><type>Iterator</type><parameter>iterator</parameter></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Constructs a NoRewindIterator.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>iterator</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The iterator being used.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -38,10 +38,10 @@
   <para>
    <example>
     <title><methodname>NoRewindIterator::__construct</methodname> example</title>
-    <para>
+    <simpara>
      The second loop does not output because the iterator is only used once,
      as it does not rewind.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

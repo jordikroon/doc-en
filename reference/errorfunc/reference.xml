@@ -5,9 +5,9 @@
  <title>Error Handling &Functions;</title>
  <partintro>
   &reftitle.seealso;
-   <para>
+   <simpara>
     See also <function>syslog</function>.
-   </para>
+   </simpara>
  </partintro>
 
  &reference.errorfunc.entities.functions;

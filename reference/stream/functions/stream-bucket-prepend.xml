@@ -27,27 +27,27 @@
    <varlistentry>
     <term><parameter>brigade</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       <parameter>brigade</parameter> is a resource pointing to a <literal>bucket brigade</literal>
       which contains one or more <literal>bucket</literal> objects.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>bucket</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       A bucket object.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

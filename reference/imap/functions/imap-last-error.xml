@@ -11,12 +11,12 @@
    <type class="union"><type>string</type><type>false</type></type><methodname>imap_last_error</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the full text of the last <acronym>IMAP</acronym> error message
-   that occurred on the current page. The error stack is untouched; calling 
+   that occurred on the current page. The error stack is untouched; calling
    <function>imap_last_error</function> subsequently, with no intervening
-   errors, will return the same error. 
-  </para>
+   errors, will return the same error.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,10 +26,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the full text of the last IMAP error message that occurred on the
    current page. Returns &false; if no error messages are available.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="seealso">
   &reftitle.seealso;

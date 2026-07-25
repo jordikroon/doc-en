@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.ob-list-handlers">
+<refentry xml:id="function.ob-list-handlers" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>ob_list_handlers</refname>
   <refpurpose>List all output handlers in use</refpurpose>
@@ -12,9 +12,9 @@
    <type>array</type><methodname>ob_list_handlers</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Lists all output handlers in use.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,10 +24,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    This will return an array with the output handlers in use (if any).
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If <link linkend="ini.output-buffering">output_buffering</link> is enabled
    and no <link linkend="ini.output-handler">output_handler</link> is set,
    or no callback or &null; was passed to <function>ob_start</function>,
@@ -37,8 +37,8 @@
    is equivalent to passing
    an <link linkend="functions.internal">internal (built-in) function</link>
    to <function>ob_start</function>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If a <type>callable</type> was passed to <function>ob_start</function>,
    the <link linkend="language.namespaces.basics">fully qualified name</link>
    of the <type>callable</type> is returned.
@@ -49,7 +49,7 @@
    method is returned.
    If the <type>callable</type> is a <classname>Closure</classname>,
    <literal>"Closure::__invoke"</literal> is returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

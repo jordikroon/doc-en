@@ -6,16 +6,16 @@
 
  <section xml:id="intl.examples.basic">
   <title>Basic usage of this extension</title>
-  <para>
+  <simpara>
    Each module provides two kind of APIs: a procedural one and an object
    oriented one. Both are actually identical and described in the
    corresponding document.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     All input strings must be in UTF-8 encoding. All output strings are
     also in UTF-8.
-   </para>
+   </simpara>
   </note>
   <example>
    <title>Example of using the procedural API</title>

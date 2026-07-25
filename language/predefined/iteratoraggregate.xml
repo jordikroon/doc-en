@@ -9,9 +9,9 @@
 
   <section xml:id="iteratoraggregate.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Interface to create an external Iterator.
-   </para>
+   </simpara>
   </section>
 
   <section xml:id="iteratoraggregate.synopsis">

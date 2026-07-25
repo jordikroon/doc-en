@@ -10,10 +10,10 @@
 <!-- {{{ ReflectionAttribute intro -->
   <section xml:id="reflectionattribute.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     The <classname>ReflectionAttribute</classname> class provides information about
     an <link linkend="language.attributes">Attribute</link>.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -81,20 +81,20 @@
        <type>int</type>
       </term>
       <listitem>
-       <para>
+       <simpara>
         Retrieve attributes using an
         <parameter>instanceof</parameter> check.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
 
     </variablelist>
     <note>
-     <para>
+     <simpara>
       The values of these constants may change between PHP versions.
       It is recommended to always use the constants
       and not rely on the values directly.
-     </para>
+     </simpara>
     </note>
    </section>
   </section>

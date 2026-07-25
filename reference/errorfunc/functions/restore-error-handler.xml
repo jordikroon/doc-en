@@ -12,11 +12,11 @@
    <type>true</type><methodname>restore_error_handler</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Used after changing the error handler function using
    <function>set_error_handler</function>, to revert to the previous error
-   handler (which could be the built-in or a user defined function). 
-  </para>
+   handler (which could be the built-in or a user defined function).
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,9 +26,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -36,10 +36,10 @@
   <para>
    <example>
     <title><function>restore_error_handler</function> example</title>
-    <para>
+    <simpara>
      Decide if <function>unserialize</function> caused an error, then
      restore the original error handler.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

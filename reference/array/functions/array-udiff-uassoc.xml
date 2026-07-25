@@ -14,14 +14,14 @@
    <methodparam><type>callable</type><parameter>value_compare_func</parameter></methodparam>
    <methodparam><type>callable</type><parameter>key_compare_func</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Computes the difference of arrays with additional index check, compares
    data and indexes by a callback function.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Note that the keys are used in the comparison unlike
    <function>array_diff</function> and <function>array_udiff</function>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -30,17 +30,17 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The first array.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>arrays</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Arrays to compare against.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -53,12 +53,12 @@
     <varlistentry>
      <term><parameter>key_compare_func</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The comparison of keys (indices) is done also by the callback function
        <parameter>key_compare_func</parameter>. This behaviour is unlike what
        <function>array_udiff_assoc</function> does, since the latter compares
        the indices by using an internal function.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -66,11 +66,11 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an <type>array</type> containing all the values from
    <parameter>array</parameter> that are not present in any of the other
    arguments.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;

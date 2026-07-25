@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>object</type><methodname>SplObjectStorage::current</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the current storage entry.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The <type>object</type> at the current iterator position.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -43,7 +43,7 @@
      <row>
       <entry>8.1.0</entry>
       <entry>
-       <function>SplObjectStorage::current</function> now throws an <classname>Error</classname> exception
+       <function>SplObjectStorage::current</function> now throws an <exceptionname>Error</exceptionname> exception
        if the current position is invalid.  Previously, &false; was returned instead.
       </entry>
      </row>

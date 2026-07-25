@@ -13,7 +13,7 @@
    <methodparam choice="opt"><type>bool</type><parameter>clear_realpath_cache</parameter><initializer>&false;</initializer></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>filename</parameter><initializer>""</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    When you use <function>stat</function>, <function>lstat</function>, or
    any of the other functions listed in the affected functions list (below),
    PHP caches the information those functions return in order to provide
@@ -24,23 +24,23 @@
    clear the status cache.  In these cases, you can use the
    <function>clearstatcache</function> function to clear the information
    that PHP caches about a file.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    You should also note that PHP doesn't cache information about non-existent
    files. So, if you call <function>file_exists</function> on a file that
    doesn't exist, it will return &false; until you create the file. If you
    create the file, it will return &true; even if you then delete the file.
    However <function>unlink</function> clears the cache automatically.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     This function caches information about specific filenames, so you only
     need to call <function>clearstatcache</function> if you are performing
     multiple operations on the same filename and require the information
     about that particular file to not be cached.
-   </para>
+   </simpara>
   </note>
-  <para>
+  <simpara>
    Affected functions include <function>stat</function>,
    <function>lstat</function>,
    <function>file_exists</function>,
@@ -59,7 +59,7 @@
    <function>filesize</function>,
    <function>filetype</function>, and
    <function>fileperms</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -69,18 +69,18 @@
     <varlistentry>
      <term><parameter>clear_realpath_cache</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Whether to <emphasis>also</emphasis> clear the realpath cache.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Clear the realpath cache for a specific filename only; only
        used if <parameter>clear_realpath_cache</parameter> is &true;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -89,9 +89,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

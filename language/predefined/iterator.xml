@@ -9,10 +9,10 @@
 
   <section xml:id="iterator.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Interface for external iterators or objects that can be iterated
     themselves internally.
-   </para>
+   </simpara>
   </section>
 
   <section xml:id="iterator.synopsis">
@@ -33,23 +33,23 @@
    </classsynopsis>
 
   </section>
-  
+
   <section xml:id="iterator.iterators">
    <title>Predefined iterators</title>
-   <para>
+   <simpara>
     PHP already provides a number of iterators for many day to day tasks.
     See <link linkend="spl.iterators">SPL iterators</link> for a list.
-   </para>
+   </simpara>
   </section>
 
   <section xml:id="iterator.examples">
    &reftitle.examples;
    <example xml:id="iterator.example.basic">
     <title>Basic usage</title>
-    <para>
+    <simpara>
      This example demonstrates in which order methods are called when
      using &foreach; with an iterator.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -59,7 +59,7 @@ class myIterator implements Iterator {
         "firstelement",
         "secondelement",
         "lastelement",
-    );  
+    );
 
     public function __construct() {
         $this->position = 0;
@@ -135,7 +135,7 @@ string(17) "myIterator::valid"
 
   <section xml:id="iterator.seealso">
   &reftitle.seealso;
-   <para>See also <link linkend="language.oop5.iterations">object iteration</link>.</para>
+   <simpara>See also <link linkend="language.oop5.iterations">object iteration</link>.</simpara>
   </section>
 
  </partintro>

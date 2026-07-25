@@ -30,18 +30,18 @@
      <parameter>buf</parameter>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Source buffer.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="seealso">
   &reftitle.seealso;

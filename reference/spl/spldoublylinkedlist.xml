@@ -3,21 +3,21 @@
 <reference xml:id="class.spldoublylinkedlist" role="class" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
  <title>The SplDoublyLinkedList class</title>
  <titleabbrev>SplDoublyLinkedList</titleabbrev>
- 
+
  <partintro>
- 
+
 <!-- {{{ spldoublylinkedlist intro -->
   <section xml:id="spldoublylinkedlist.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     The SplDoublyLinkedList class provides the main functionalities of a doubly linked list.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
- 
+
   <section xml:id="spldoublylinkedlist.synopsis">
    &reftitle.classsynopsis;
- 
+
 <!-- {{{ Synopsis -->
    <classsynopsis class="class">
     <ooclass>
@@ -70,7 +70,7 @@
     <classsynopsisinfo role="comment">&Methods;</classsynopsisinfo>
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.spldoublylinkedlist')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[@role='SplDoublyLinkedList'])"/>
    </classsynopsis>
- 
+
   </section>
 
 <!-- {{{ SplDoublyLinkedList constants -->
@@ -83,18 +83,18 @@
      <varlistentry xml:id="spldoublylinkedlist.constants.it-mode-lifo">
       <term><constant>SplDoublyLinkedList::IT_MODE_LIFO</constant></term>
       <listitem>
-       <para>
+       <simpara>
         The list will be iterated in a last in, first out order, like a stack.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
 
      <varlistentry xml:id="spldoublylinkedlist.constants.it-mode-fifo">
       <term><constant>SplDoublyLinkedList::IT_MODE_FIFO</constant></term>
       <listitem>
-       <para>
+       <simpara>
         The list will be iterated in a first in, first out order, like a queue.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
 
@@ -108,18 +108,18 @@
      <varlistentry xml:id="spldoublylinkedlist.constants.it-mode-delete">
       <term><constant>SplDoublyLinkedList::IT_MODE_DELETE</constant></term>
       <listitem>
-       <para>
+       <simpara>
         Iteration will remove the iterated elements.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
 
      <varlistentry xml:id="spldoublylinkedlist.constants.it-mode-keep">
       <term><constant>SplDoublyLinkedList::IT_MODE_KEEP</constant></term>
       <listitem>
-       <para>
+       <simpara>
         Iteration will not remove the iterated elements.
-       </para>
+       </simpara>
       </listitem>
      </varlistentry>
 
@@ -141,11 +141,11 @@
    </variablelist>
   </section>
 }}} -->
- 
+
  </partintro>
- 
+
  &reference.spl.entities.spldoublylinkedlist;
- 
+
 </reference>
 <!-- Keep this comment at the end of the file
 Local variables:

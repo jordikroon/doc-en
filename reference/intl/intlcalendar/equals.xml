@@ -8,25 +8,25 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="IntlCalendar">
    <modifier>public</modifier> <type>bool</type><methodname>IntlCalendar::equals</methodname>
    <methodparam><type>IntlCalendar</type><parameter>other</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type>bool</type><methodname>intlcal_equals</methodname>
    <methodparam><type>IntlCalendar</type><parameter>calendar</parameter></methodparam>
    <methodparam><type>IntlCalendar</type><parameter>other</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns true if this calendar and the given calendar have the same time.
    The settings, calendar types and field states do not have to be the same.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -41,9 +41,9 @@
    <varlistentry>
     <term><parameter>other</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The calendar to compare with the primary object.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -51,11 +51,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the current time of both this and the passed in
    <classname>IntlCalendar</classname> object are the same, or &false;
    otherwise.
-  </para>
+  </simpara>
   &intl.error.intl-calendar;
  </refsect1>
 

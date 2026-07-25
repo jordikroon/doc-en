@@ -19,9 +19,9 @@
    </simpara>
   </warning>
 
-  <para>
+  <simpara>
    This method returns the current element as a <classname>SimpleXMLElement</classname> object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -31,16 +31,16 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the current element as a <classname>SimpleXMLElement</classname> object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws an <classname>Error</classname> on failure.
-  </para>
+  <simpara>
+   Throws an <exceptionname>Error</exceptionname> on failure.
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -57,7 +57,7 @@
      <row>
       <entry>8.1.0</entry>
       <entry>
-       An <classname>Error</classname> is now thrown if
+       An <exceptionname>Error</exceptionname> is now thrown if
        <methodname>SimpleXMLElement::current</methodname> is called on an
        invalid iterator.  Previously, &null; was returned.
       </entry>

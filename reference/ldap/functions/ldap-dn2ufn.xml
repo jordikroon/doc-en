@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.ldap-dn2ufn">
+<refentry xml:id="function.ldap-dn2ufn" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>ldap_dn2ufn</refname>
   <refpurpose>Convert DN to User Friendly Naming format</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>ldap_dn2ufn</methodname>
    <methodparam><type>string</type><parameter>dn</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Turns the specified <parameter>dn</parameter>, into a more user-friendly
    form, stripping off type names.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
     <varlistentry>
      <term><parameter>dn</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The distinguished name of an LDAP entity.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -36,9 +36,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the user friendly name, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

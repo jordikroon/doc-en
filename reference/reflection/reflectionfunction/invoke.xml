@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>mixed</type><methodname>ReflectionFunction::invoke</methodname>
    <methodparam rep="repeat"><type>mixed</type><parameter>args</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Invokes a reflected function.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,11 +24,11 @@
     <varlistentry>
      <term><parameter>args</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The passed in argument list. It accepts a variable number of
        arguments which are passed to the function much like
        <function>call_user_func</function> is.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,9 +37,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the result of the invoked function call.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

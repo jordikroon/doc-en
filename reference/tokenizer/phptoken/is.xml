@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>PhpToken::is</methodname>
    <methodparam><type class="union"><type>int</type><type>string</type><type>array</type></type><parameter>kind</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Tells whether the token is of given <parameter>kind</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -23,9 +23,9 @@
    <varlistentry>
      <term><parameter>kind</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Either a single value to match the token's id or textual content, or an array thereof.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
   </variablelist>
@@ -33,9 +33,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A boolean value whether the token is of given kind.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

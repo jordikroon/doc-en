@@ -5,7 +5,7 @@
   <refname>get_magic_quotes_gpc</refname>
   <refpurpose>Gets the current configuration setting of magic_quotes_gpc</refpurpose>
  </refnamediv>
- 
+
  <refsynopsisdiv>
    &warn.deprecated.function-7-4-0.removed-8-0-0;
  </refsynopsisdiv>
@@ -16,9 +16,9 @@
    <type>false</type><methodname>get_magic_quotes_gpc</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Always returns &false;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,9 +28,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Always returns &false;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

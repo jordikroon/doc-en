@@ -123,17 +123,17 @@
        <varlistentry>
         <term><parameter>context</parameter></term>
         <listitem>
-         <para>
+         <simpara>
           Holds the return value from the very last call to the step function.
-         </para>
+         </simpara>
         </listitem>
        </varlistentry>
        <varlistentry>
         <term><parameter>rowcount</parameter></term>
         <listitem>
-         <para>
+         <simpara>
           Holds the number of rows over which the aggregate was performed.
-         </para>
+         </simpara>
         </listitem>
        </varlistentry>
       </variablelist>

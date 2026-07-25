@@ -9,28 +9,28 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="Locale">
    <modifier>public</modifier> <modifier>static</modifier> <type class="union"><type>bool</type><type>null</type></type><methodname>Locale::filterMatches</methodname>
    <methodparam><type>string</type><parameter>languageTag</parameter></methodparam>
    <methodparam><type>string</type><parameter>locale</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>canonicalize</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>bool</type><type>null</type></type><methodname>locale_filter_matches</methodname>
    <methodparam><type>string</type><parameter>languageTag</parameter></methodparam>
    <methodparam><type>string</type><parameter>locale</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>canonicalize</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks if a <parameter>languageTag</parameter> filter matches with <parameter>locale</parameter> according to RFC 4647's
    basic filtering algorithm
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -40,26 +40,26 @@
     <varlistentry>
      <term><parameter>languageTag</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The language tag to check
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>locale</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The language range to check against
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>canonicalize</parameter></term>
      <listitem>
-     <para>
+     <simpara>
       If true, the arguments will be converted to canonical form before
       matching.
-     </para>
+     </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -69,9 +69,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &true; if <parameter>locale</parameter> matches <parameter>languageTag</parameter> &false; otherwise.
-  </para>
+  </simpara>
   &intl.locale-len.return;
  </refsect1>
 

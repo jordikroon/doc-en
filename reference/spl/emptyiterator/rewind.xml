@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>void</type><methodname>EmptyIterator::rewind</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    No operation, nothing to do.
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -27,9 +27,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

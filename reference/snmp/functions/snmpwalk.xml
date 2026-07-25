@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.snmpwalk">
+<refentry xml:id="function.snmpwalk" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>snmpwalk</refname>
   <refpurpose>Fetch all the <acronym>SNMP</acronym> objects from an agent</refpurpose>

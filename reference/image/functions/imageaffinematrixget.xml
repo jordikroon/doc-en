@@ -13,9 +13,9 @@
    <methodparam><type>int</type><parameter>type</parameter></methodparam>
    <methodparam><type class="union"><type>array</type><type>float</type></type><parameter>options</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns an affine transformation matrix.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,25 +24,25 @@
    <varlistentry>
     <term><parameter>type</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       One of the <constant>IMG_AFFINE_<replaceable>*</replaceable></constant> constants.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>options</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       If <parameter>type</parameter> is <constant>IMG_AFFINE_TRANSLATE</constant>
       or <constant>IMG_AFFINE_SCALE</constant>,
       <parameter>options</parameter> has to be an <type>array</type> with keys <literal>x</literal>
       and <literal>y</literal>, both having <type>float</type> values.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       If <parameter>type</parameter> is <constant>IMG_AFFINE_ROTATE</constant>,
       <constant>IMG_AFFINE_SHEAR_HORIZONTAL</constant> or <constant>IMG_AFFINE_SHEAR_VERTICAL</constant>,
       <parameter>options</parameter> has to be a <type>float</type> specifying the angle.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -50,11 +50,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An affine transformation matrix (an array with keys
    <literal>0</literal> to <literal>5</literal> and float values)
    &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

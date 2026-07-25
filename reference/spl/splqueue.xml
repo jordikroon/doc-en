@@ -3,22 +3,22 @@
 <reference xml:id="class.splqueue" role="class" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
  <title>The SplQueue class</title>
  <titleabbrev>SplQueue</titleabbrev>
- 
+
  <partintro>
- 
+
 <!-- {{{ splqueue intro -->
   <section xml:id="splqueue.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     The SplQueue class provides the main functionalities of a queue implemented using a doubly linked list by
     setting the iterator mode to <constant>SplDoublyLinkedList::IT_MODE_FIFO</constant>.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
- 
+
   <section xml:id="splqueue.synopsis">
    &reftitle.classsynopsis;
- 
+
 <!-- {{{ Synopsis -->
    <classsynopsis class="class">
     <ooclass>

@@ -8,10 +8,10 @@
 <!-- {{{ ReflectionEnumUnitCase intro -->
   <section xml:id="reflectionenumunitcase.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     The <classname>ReflectionEnumUnitCase</classname> class reports
     information about an Enum unit case, which has no scalar equivalent.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

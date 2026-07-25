@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.shmop-open">
+<refentry xml:id="function.shmop-open" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>shmop_open</refname>
   <refpurpose>Create or open shared memory block</refpurpose>
@@ -112,7 +112,7 @@
   &reftitle.errors;
   <simpara>
    If <parameter>mode</parameter> is invalid, or <parameter>size</parameter> is less than or equal to zero,
-   a <classname>ValueError</classname> is thrown.
+   a <exceptionname>ValueError</exceptionname> is thrown.
    On other failures, <constant>E_WARNING</constant> is emitted.
   </simpara>
  </refsect1>
@@ -139,7 +139,7 @@
       <entry>8.0.0</entry>
       <entry>
        If <parameter>mode</parameter> is invalid, or <parameter>size</parameter> is less than or equal to zero,
-       a <classname>ValueError</classname> is thrown; previously <constant>E_WARNING</constant> was emitted instead,
+       a <exceptionname>ValueError</exceptionname> is thrown; previously <constant>E_WARNING</constant> was emitted instead,
        and the function returned &false;.
       </entry>
      </row>

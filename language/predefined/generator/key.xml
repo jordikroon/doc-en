@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>mixed</type><methodname>Generator::key</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the key of the yielded value.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the yielded key.
-  </para>
+  </simpara>
  </refsect1>
 
   <refsect1 role="examples">

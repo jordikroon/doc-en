@@ -8,10 +8,10 @@
   <!-- {{{ IntlDatePatternGenerator intro -->
   <section xml:id="intldatepatterngenerator.intro">
    &reftitle.intro;
-   
+
    <simpara>
     Generates localized date and/or time format pattern strings suitable for use in <classname>IntlDateFormatter</classname>.
-   </simpara> 
+   </simpara>
   </section>
   <!-- }}} -->
 

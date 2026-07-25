@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>ReflectionClass::implementsInterface</methodname>
    <methodparam><type class="union"><type>ReflectionClass</type><type>string</type></type><parameter>interface</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks whether it implements an interface.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>interface</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The interface name.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,16 +35,16 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
   <para>
    <methodname>ReflectionClass::implementsInterface</methodname> throws an
-   <classname>ReflectionException</classname> if <parameter>interface</parameter>
+   <exceptionname>ReflectionException</exceptionname> if <parameter>interface</parameter>
    is not an interface.
   </para>
  </refsect1>

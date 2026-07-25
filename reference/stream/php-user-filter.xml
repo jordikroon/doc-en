@@ -56,7 +56,7 @@
 
   </section>
 
-  
+
 <!-- {{{ php_user_filter properties -->
   <section xml:id="php-user-filter.props">
    &reftitle.properties;
@@ -64,10 +64,10 @@
     <varlistentry xml:id="php-user-filter.props.filtername">
      <term><varname>filtername</varname></term>
      <listitem>
-      <para>
+      <simpara>
        Name of the filter registered by
        <function>stream_filter_append</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="php-user-filter.props.params">

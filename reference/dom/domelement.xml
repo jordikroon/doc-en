@@ -3,23 +3,23 @@
 <reference xml:id="class.domelement" role="class" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
  <title>The DOMElement class</title>
  <titleabbrev>DOMElement</titleabbrev>
- 
+
  <partintro>
- 
+
 <!-- {{{ DOMElement intro -->
 <!--
   <section xml:id="domelement.intro">
    &reftitle.intro;
    <para>
-    
+
    </para>
   </section>
 -->
 <!-- }}} -->
- 
+
   <section xml:id="domelement.synopsis">
    &reftitle.classsynopsis;
- 
+
 <!-- {{{ Synopsis -->
    <classsynopsis class="class">
     <ooclass>
@@ -108,9 +108,9 @@
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.domnode')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[@role='DOMNode'])"/>
    </classsynopsis>
 <!-- }}} -->
- 
+
   </section>
- 
+
 <!-- {{{ DOMElement properties -->
   <section xml:id="domelement.props">
    &reftitle.properties;
@@ -118,55 +118,55 @@
     <varlistentry xml:id="domelement.props.childelementcount">
      <term><varname>childElementCount</varname></term>
      <listitem>
-      <para>The number of child elements.</para>
+      <simpara>The number of child elements.</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domelement.props.firstelementchild">
      <term><varname>firstElementChild</varname></term>
      <listitem>
-      <para>First child element or &null;.</para>
+      <simpara>First child element or &null;.</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domelement.props.lastelementchild">
      <term><varname>lastElementChild</varname></term>
      <listitem>
-      <para>Last child element or &null;.</para>
+      <simpara>Last child element or &null;.</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domelement.props.nextelementsibling">
      <term><varname>nextElementSibling</varname></term>
      <listitem>
-      <para>The next sibling element or &null;.</para>
+      <simpara>The next sibling element or &null;.</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domelement.props.previouselementsibling">
      <term><varname>previousElementSibling</varname></term>
      <listitem>
-      <para>The previous sibling element or &null;.</para>
+      <simpara>The previous sibling element or &null;.</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domelement.props.schematypeinfo">
      <term><varname>schemaTypeInfo</varname></term>
      <listitem>
-      <para>Not implemented yet, always return &null;</para>
+      <simpara>Not implemented yet, always return &null;</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domelement.props.tagname">
      <term><varname>tagName</varname></term>
      <listitem>
-      <para>The element name</para>
+      <simpara>The element name</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domelement.props.classname">
      <term><varname>className</varname></term>
      <listitem>
-      <para>A string representing the classes of the element separated by spaces.</para>
+      <simpara>A string representing the classes of the element separated by spaces.</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domelement.props.id">
      <term><varname>id</varname></term>
      <listitem>
-      <para>Reflects the element ID through the <literal>"id"</literal> attribute.</para>
+      <simpara>Reflects the element ID through the <literal>"id"</literal> attribute.</simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -221,7 +221,7 @@
    &dom.note.utf8;
   </section>
 <!-- }}} -->
-  
+
 <!-- {{{ See also -->
 <!--
   <section role="seealso">
@@ -234,11 +234,11 @@
   </section>
 -->
 <!-- }}} -->
- 
+
  </partintro>
- 
+
  &reference.dom.entities.domelement;
- 
+
 </reference>
 <!-- Keep this comment at the end of the file
 Local variables:

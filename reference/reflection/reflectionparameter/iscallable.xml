@@ -8,7 +8,7 @@
 
  <refsynopsisdiv>
    &warn.deprecated.function-8-0-0;
-  <para>See the example below for an alternative way to derive this information.</para>
+  <simpara>See the example below for an alternative way to derive this information.</simpara>
  </refsynopsisdiv>
 
  <refsect1 role="description">
@@ -18,9 +18,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>ReflectionParameter::isCallable</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -33,10 +33,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the parameter is <type>callable</type>, &false; if it is
    not or &null; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -67,10 +67,10 @@
  <para>
   <example>
    <title>PHP 8.0.0 equivalent</title>
-   <para>
+   <simpara>
     As of PHP 8.0.0, the following code will report if a type supports callables,
     including as part of a union.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

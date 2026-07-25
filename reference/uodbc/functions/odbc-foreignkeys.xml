@@ -5,7 +5,7 @@
   <refname>odbc_foreignkeys</refname>
   <refpurpose>Retrieves a list of foreign keys</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -18,11 +18,11 @@
    <methodparam><type>string</type><parameter>fk_schema</parameter></methodparam>
    <methodparam><type>string</type><parameter>fk_table</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Retrieves a list of foreign keys in the specified table or a list of
    foreign keys in other tables that refer to the primary key in the
    specified table
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -38,49 +38,49 @@
     <varlistentry>
      <term><parameter>pk_catalog</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The catalog (&apos;qualifier&apos; in ODBC 2 parlance) of the primary key table.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>pk_schema</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The schema (&apos;owner&apos; in ODBC 2 parlance) of the primary key table.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>pk_table</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The primary key table.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>fk_catalog</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The catalog (&apos;qualifier&apos; in ODBC 2 parlance) of the foreign key table.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>fk_schema</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The schema (&apos;owner&apos; in ODBC 2 parlance) of the foreign key table.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>fk_table</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The foreign key table.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -89,9 +89,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &odbc.result.object-return-falseforfailure;
-  </para>
+  </simpara>
   <para>
    The result set has the following columns:
    <itemizedlist>

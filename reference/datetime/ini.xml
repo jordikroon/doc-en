@@ -63,11 +63,11 @@
      <type>float</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       The default latitude
       ranging from <literal>0</literal> at the equator,
       to <literal>+90</literal> northward, and <literal>-90</literal> southward.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
 
@@ -77,11 +77,11 @@
      <type>float</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       The default longitude
       ranging from <literal>0</literal> at the prime meridian
       to <literal>+180</literal> eastward and <literal>−180</literal> westward.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
 
@@ -91,14 +91,14 @@
      <type>float</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       The default sunrise zenith.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       The default value is 90°50'. The additional 50' is due to two
       components: the Sun's radius, which is 16', and the atmospheric
       refraction, which is 34'.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
 
@@ -108,9 +108,9 @@
      <type>float</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       The default sunset zenith.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
 
@@ -120,13 +120,13 @@
      <type>string</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       The default timezone used by all date/time functions.
       The precedence order for which timezone is used if none
       is explicitly mentioned is described in the
       <function>date_default_timezone_get</function> page. See <xref
       linkend="timezones"/> for a list of supported timezones.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>

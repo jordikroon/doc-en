@@ -9,11 +9,11 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    Socket context options are available for all wrappers that work over
    sockets, like <literal>tcp</literal>, <literal>http</literal> and
    <literal>ftp</literal>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="options">
@@ -23,86 +23,86 @@
     <varlistentry xml:id="context.socket.bindto">
      <term><parameter>bindto</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Used to specify the IP address (either IPv4 or IPv6) and/or the
        port number that PHP will use to access the network. The syntax
        is <literal>ip:port</literal> for IPv4 addresses, and
        <literal>[ip]:port</literal> for IPv6 addresses.
        Setting the IP or the port to <literal>0</literal> will let the system
        choose the IP and/or port.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         As FTP creates two socket connections during normal operation,
         the port number cannot be specified using this option.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="context.socket.backlog">
      <term><parameter>backlog</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Used to  limit  the  number  of  outstanding  connections  in  the
        socket's  listen  queue.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         This is only applicable to <function>stream_socket_server</function>.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="context.socket.ipv6_v6only">
      <term><parameter>ipv6_v6only</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Overrides the OS default regarding mapping IPv4 into IPv6.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         This is important in particular when trying to listen on IPv4 addresses
         separately while there exists a binding on <literal>[::]</literal>.
-       </para>
-       <para>
+       </simpara>
+       <simpara>
         This is only applicable to <function>stream_socket_server</function>.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="context.socket.so_reuseport">
      <term><parameter>so_reuseport</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Allows multiple bindings to a same ip:port pair, even from separate processes.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         This is only applicable to <function>stream_socket_server</function>.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="context.socket.so_broadcast">
      <term><parameter>so_broadcast</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Enables sending and receiving data to/from broadcast addresses.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         This is only applicable to <function>stream_socket_server</function>.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="context.socket.tcp_nodelay">
      <term><parameter>tcp_nodelay</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Setting this option to &true; will set <literal>SOL_TCP,NO_DELAY=1</literal>
        appropriately, thus disabling the TCP Nagle algorithm.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

@@ -15,7 +15,7 @@
    <methodparam choice="opt"><type class="union"><type>Throwable</type><type>null</type></type><parameter>previous</parameter><initializer>&null;</initializer></methodparam>
   </constructorsynopsis>
   <simpara>
-   Constructs a <classname>Uri\WhatWg\InvalidUrlException</classname> object.
+   Constructs a <exceptionname>Uri\WhatWg\InvalidUrlException</exceptionname> object.
   </simpara>
  </refsect1>
 
@@ -34,7 +34,7 @@
     <term><parameter>errors</parameter></term>
     <listitem>
      <simpara>
-      An &array; of <classname>Uri\WhatWg\UrlValidationError</classname> objects.
+      An &array; of <exceptionname>Uri\WhatWg\UrlValidationError</exceptionname> objects.
      </simpara>
     </listitem>
    </varlistentry>

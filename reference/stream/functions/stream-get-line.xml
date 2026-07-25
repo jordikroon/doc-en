@@ -13,20 +13,20 @@
    <methodparam><type>int</type><parameter>length</parameter></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>ending</parameter><initializer>""</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets a line from the given handle.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Reading ends when <parameter>length</parameter> bytes have been read, when
    the non-empty string specified by <parameter>ending</parameter> is found (which is
    <emphasis>not</emphasis> included in the return value), or on <acronym>EOF</acronym>
    (whichever comes first).
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This function is nearly identical to <function>fgets</function> except in
    that it allows end of line delimiters other than the standard \n, \r, and
    \r\n, and does <emphasis>not</emphasis> return the delimiter itself.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -36,28 +36,28 @@
     <varlistentry>
      <term><parameter>stream</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A valid file handle.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The maximum number of bytes to read from the handle.
        Negative values are not supported.
        Zero (<literal>0</literal>) means the default socket chunk size,
        i.e. <literal>8192</literal> bytes.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>ending</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An optional string delimiter.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -66,12 +66,12 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a string of up to <parameter>length</parameter> bytes read from the file
    pointed to by <parameter>stream</parameter>,&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
-  
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <simplelist>

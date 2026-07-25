@@ -261,9 +261,9 @@
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
+    <simpara>
      Enable <function xmlns="http://docbook.org/ns/docbook">assert</function> evaluation.
-    </para>
+    </simpara>
     &warn.deprecated.feature-8-3-0;
    </listitem>
   </varlistentry>
@@ -273,9 +273,9 @@
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
+    <simpara>
      Callback to call on failed assertions.
-    </para>
+    </simpara>
     &warn.deprecated.feature-8-3-0;
    </listitem>
   </varlistentry>
@@ -285,9 +285,9 @@
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
+    <simpara>
      Terminate execution on failed assertions.
-    </para>
+    </simpara>
     &warn.deprecated.feature-8-3-0;
    </listitem>
   </varlistentry>
@@ -297,9 +297,9 @@
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
-     Throws an <classname>AssertionError</classname> for each failed assertion
-    </para>
+    <simpara>
+     Throws an <exceptionname>AssertionError</exceptionname> for each failed assertion
+    </simpara>
     &warn.deprecated.feature-8-3-0;
    </listitem>
   </varlistentry>
@@ -309,9 +309,9 @@
     (<type>int</type>)
    </term>
    <listitem>
-    <para>
+    <simpara>
      Issues a PHP warning for each failed assertion
-    </para>
+    </simpara>
     &warn.deprecated.feature-8-3-0;
    </listitem>
   </varlistentry>

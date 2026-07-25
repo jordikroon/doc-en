@@ -6,7 +6,7 @@
   <refpurpose>Determine whether to save a replacement pairs list
   along with the wordlist</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,19 +14,19 @@
    <methodparam><type>PSpell\Config</type><parameter>config</parameter></methodparam>
    <methodparam><type>bool</type><parameter>save</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pspell_config_save_repl</function> determines whether
    <function>pspell_save_wordlist</function> will save the replacement pairs
    along with the wordlist. Usually there is no need to use this function
    because if <function>pspell_config_repl</function> is used, the
    replacement pairs will be saved by
    <function>pspell_save_wordlist</function> anyway, and if it is not,
-   the replacement pairs will not be saved. 
-  </para>
-  <para>
+   the replacement pairs will not be saved.
+  </simpara>
+  <simpara>
    <function>pspell_config_save_repl</function> should be used on a config
-   before calling <function>pspell_new_config</function>. 
-  </para>
+   before calling <function>pspell_new_config</function>.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -42,9 +42,9 @@
     <varlistentry>
      <term><parameter>save</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &true; if replacement pairs should be saved, &false; otherwise.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -53,9 +53,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -78,10 +78,10 @@
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     This function will not work unless you have pspell .11.2 and aspell .32.5
     or later.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

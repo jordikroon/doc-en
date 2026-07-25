@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>int</type><methodname>SplFileObject::getFlags</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the flags set for an instance of SplFileObject as an <type>int</type>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an <type>int</type> representing the flags.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

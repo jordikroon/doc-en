@@ -12,16 +12,16 @@
    <modifier>public</modifier> <modifier>static</modifier> <type class="union"><type>bool</type><type>null</type></type><methodname>IntlChar::isdefined</methodname>
    <methodparam><type class="union"><type>int</type><type>string</type></type><parameter>codepoint</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Determines whether the specified code point is "defined", which usually means that it is assigned a character.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    &true; for general categories other than "Cn" (other, not assigned).
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     Note that non-character code points (e.g., U+FDD0) are not "defined" (they are Cn), but surrogate code points are "defined" (Cs).
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -39,10 +39,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if
    <parameter>codepoint</parameter> is a defined character, &false; if not. Returns &null; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

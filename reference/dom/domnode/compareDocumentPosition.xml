@@ -22,9 +22,9 @@
    <varlistentry>
     <term><parameter>other</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The node for which the position should be compared for, relative to this node.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>

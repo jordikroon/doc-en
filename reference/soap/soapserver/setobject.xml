@@ -25,9 +25,9 @@
     <varlistentry>
      <term><parameter>object</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The object to handle the requests.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -36,9 +36,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
     &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
 

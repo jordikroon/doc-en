@@ -18,9 +18,9 @@
    <methodparam><type>string</type><parameter>name</parameter></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>return</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Exports a Reflected function.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,17 +30,17 @@
     <varlistentry>
      <term><parameter>name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &reflection.export.param.name;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>return</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &reflection.export.param.return;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -49,9 +49,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &reflection.export.return;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

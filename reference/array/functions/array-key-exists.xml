@@ -5,7 +5,7 @@
   <refname>array_key_exists</refname>
   <refpurpose>Checks if the given key or index exists in the array</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,12 +13,12 @@
    <methodparam><type class="union"><type>string</type><type>int</type><type>float</type><type>bool</type><type>resource</type><type>null</type></type><parameter>key</parameter></methodparam>
    <methodparam><type>array</type><parameter>array</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>array_key_exists</function> returns &true; if the
    given <parameter>key</parameter> is set in the array.
    <parameter>key</parameter> can be any value possible
    for an array index.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,17 +28,17 @@
     <varlistentry>
      <term><parameter>key</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Value to check.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An array with keys to check.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -47,14 +47,14 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     <function>array_key_exists</function> will search for the keys in the first dimension only.
     Nested keys in multidimensional arrays will not be found.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -124,11 +124,11 @@ bool(true)
   </para>
   <example>
    <title><function>array_key_exists</function> vs <function>isset</function></title>
-   <para>
+   <simpara>
     <function>isset</function> does not return &true; for array keys
     that correspond to a &null; value, while
     <function>array_key_exists</function> does.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

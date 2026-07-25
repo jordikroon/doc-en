@@ -126,11 +126,11 @@
  <refsect1 role="errors">
   &reftitle.errors;
   <simpara>
-   A <classname>ReflectionException</classname> if the object is lazy and
+   A <exceptionname>ReflectionException</exceptionname> if the object is lazy and
    non-initialized.
   </simpara>
   <simpara>
-   An <classname>Error</classname> if the object is being initialized, or if the
+   An <exceptionname>Error</exceptionname> if the object is being initialized, or if the
    object properties are being iterated with
    <link linkend="control-structures.foreach"><literal>foreach</literal></link>.
   </simpara>

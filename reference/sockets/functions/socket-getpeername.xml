@@ -5,7 +5,7 @@
   <refname>socket_getpeername</refname>
   <refpurpose>Queries the remote side of the given socket</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,10 +14,10 @@
    <methodparam><type>string</type><parameter role="reference">address</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter role="reference">port</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Queries the remote side of the given socket which may either result in
    host/port or in a Unix filesystem path, dependent on its type.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,16 +27,16 @@
     <varlistentry>
      <term><parameter>socket</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A <classname>Socket</classname> instance created with <function>socket_create</function>
        or <function>socket_accept</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>address</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If the given socket is of type <constant>AF_INET</constant> or
        <constant>AF_INET6</constant>, <function>socket_getpeername</function>
        will return the peers (remote) <emphasis>IP address</emphasis> in
@@ -44,22 +44,22 @@
        <literal>fe80::1</literal>) in the <parameter>address</parameter>
        parameter and, if the optional <parameter>port</parameter> parameter is
        present, also the associated port.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If the given socket is of type <constant>AF_UNIX</constant>,
        <function>socket_getpeername</function> will return the Unix filesystem
        path (e.g. <literal>/var/run/daemon.sock</literal>) in the
        <parameter>address</parameter> parameter.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>port</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If given, this will hold the port associated to
        <parameter>address</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -68,12 +68,12 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success; <function>socket_getpeername</function> may also return
    &false; if the socket type is not any of <constant>AF_INET</constant>,
    <constant>AF_INET6</constant>, or <constant>AF_UNIX</constant>, in which
    case the last socket error code is <emphasis>not</emphasis> updated.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -96,20 +96,20 @@
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     <function>socket_getpeername</function> should not be used with
     <constant>AF_UNIX</constant> sockets created with <function>socket_accept</function>.
     Only sockets created with <function>socket_connect</function> or a primary
     server socket following a call to <function>socket_bind</function> will return
     meaningful values.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     For having <function>socket_getpeername</function> to return a meaningful value,
-    the socket it is applied upon must of course be one for which the concept of 
+    the socket it is applied upon must of course be one for which the concept of
     "peer" makes sense.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

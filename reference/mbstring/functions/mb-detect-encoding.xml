@@ -14,35 +14,35 @@
    <methodparam choice="opt"><type class="union"><type>array</type><type>string</type><type>null</type></type><parameter>encodings</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>strict</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Detects the most likely character encoding for <type>string</type> <parameter>string</parameter>
    from a list of candidates.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    As of PHP 8.1 this function uses heuristics to detect which of the valid text encodings in the specified
    list is most likely to be correct and may not be in order of <parameter>encodings</parameter> provided.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Automatic detection of the intended character encoding can never be entirely reliable;
    without some additional information, it is similar to decoding an encrypted string
    without the key. It is always preferable to use an indication of character encoding
    stored or transmitted with the data, such as a "Content-Type" HTTP header.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This function is most useful with multibyte encodings, where not all sequences of
    bytes form a valid string. If the input string contains such a sequence, that
    encoding will be rejected.
-  </para>
+  </simpara>
 
   <warning>
    <title>The result is not accurate</title>
-   <para>
+   <simpara>
     The name of this function is misleading, it performs "guessing" rather than "detection".
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     The guesses are far from accurate, and therefore you cannot use this function to accurately
     detect the correct character encoding.
-   </para>
+   </simpara>
   </warning>
  </refsect1>
 
@@ -53,41 +53,41 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <type>string</type> being inspected.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>encodings</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A list of character encodings to try. The list may be specified as
        an array of strings, or a single string separated by commas.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If <parameter>encodings</parameter> is omitted or &null;,
        the current detect_order (set with the <link linkend="ini.mbstring.detect-order">
        mbstring.detect_order</link> configuration option, or <function>mb_detect_order</function>
        function) will be used.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>strict</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Controls the behaviour when <parameter>string</parameter>
        is not valid in any of the listed <parameter>encodings</parameter>.
        If <parameter>strict</parameter> is set to &false;, the closest matching
        encoding will be returned; if <parameter>strict</parameter> is set to &true;,
        &false; will be returned.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        The default value for <parameter>strict</parameter> can be set
        with the <link linkend="ini.mbstring.strict-detection">
        mbstring.strict_detection</link> configuration option.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -96,10 +96,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The detected character encoding, or &false; if the string is not valid
    in any of the listed encodings.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -199,11 +199,11 @@ string(10) "ISO-8859-1"
     </screen>
    </example>
   </para>
-  <para>
+  <simpara>
    In some cases, the same sequence of bytes may form a valid string in multiple
    character encodings, and it is impossible to know which interpretation was
    intended. For instance, among many others, the byte sequence "\xC4\xA2" could be:
-  </para>
+  </simpara>
   <para>
    <simplelist>
     <member>

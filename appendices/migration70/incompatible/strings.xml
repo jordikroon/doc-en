@@ -7,10 +7,10 @@
  <sect3 xml:id="migration70.incompatible.strings.hex">
   <title>Hexadecimal strings are no longer considered numeric</title>
 
-  <para>
+  <simpara>
    Strings containing hexadecimal numbers are no longer considered to be
    numeric. For example:
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -45,11 +45,11 @@ string(3) "foo"
    </screen>
   </informalexample>
 
-  <para>
+  <simpara>
    <function>filter_var</function> can be used to check if a
    <type>string</type> contains a hexadecimal number, and also to convert a
    string of that type to an <type>int</type>:
-  </para>
+  </simpara>
 
   <informalexample>
    <programlisting role="php">
@@ -70,13 +70,13 @@ var_dump($int); // int(65535)
  <sect3 xml:id="migration70.incompatible.strings.unicode-escapes">
   <title><literal>\u{</literal> may cause errors</title>
 
-  <para>
+  <simpara>
    Due to the addition of the new
    <link linkend="migration70.new-features.unicode-codepoint-escape-syntax">Unicode codepoint escape syntax</link>,
    strings containing a literal <literal>\u{</literal> followed by an invalid
    sequence will cause a fatal error. To avoid this, the leading backslash
    should be escaped.
-  </para>
+  </simpara>
  </sect3>
 </sect2>
 

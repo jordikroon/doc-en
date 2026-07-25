@@ -5,25 +5,25 @@
   <refname>OCILob::setBuffering</refname>
   <refpurpose>Changes current state of buffering for the large object</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="OCILob">
    <modifier>public</modifier> <type>bool</type><methodname>OCILob::setBuffering</methodname>
    <methodparam><type>bool</type><parameter>mode</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets the buffering for the large object, depending on the value of the
-   <parameter>mode</parameter> parameter. 
-  </para>
-  <para>
+   <parameter>mode</parameter> parameter.
+  </simpara>
+  <simpara>
    Use of this function may provide performance improvements by buffering
    small reads and writes of LOBs by reducing the number of network
-   round-trips and LOB versions. 
+   round-trips and LOB versions.
    <function>OCILob::flush</function>
    should be used to flush buffers, when you have finished working
    with the large object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -33,9 +33,9 @@
     <varlistentry>
      <term><parameter>mode</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &true; for on and &false; for off.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -44,10 +44,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success; Repeated calls to this method with the same flag will
-   return &true;. 
-  </para>
+   return &true;.
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

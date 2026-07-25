@@ -5,7 +5,7 @@
   <refname>quotemeta</refname>
   <refpurpose>Quote meta characters</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,7 +14,7 @@
   </methodsynopsis>
   <para>
    Returns a version of str with a backslash character (<literal>\</literal>)
-   before every character that is among these: 
+   before every character that is among these:
    <screen>. \ + * ? [ ^ ] ( $ )</screen>
   </para>
  </refsect1>
@@ -26,9 +26,9 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -37,10 +37,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the string with meta characters quoted, or &false; if an empty
    string is given as <parameter>string</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

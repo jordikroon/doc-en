@@ -30,7 +30,7 @@
  <sect2 xml:id="migration74.constants.sockets">
   <title>Sockets</title>
 
-  <para>Added the following FreeBSD-specific socket options:</para>
+  <simpara>Added the following FreeBSD-specific socket options:</simpara>
   <itemizedlist>
    <listitem>
     <simpara><constant>SO_LABEL</constant></simpara>

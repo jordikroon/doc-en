@@ -11,9 +11,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>ReflectionProperty::isPromoted</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks whether the property is <link linkend="language.oop5.decon.constructor.promotion">promoted</link>
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -23,9 +23,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &true; if the property is promoted, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -27,7 +27,7 @@ $return_value = match (subject_expression) {
 };
 ]]>
   </programlisting>
-  
+
   <example>
    <title>Basic <literal>match</literal> usage</title>
     <programlisting role="php">
@@ -95,7 +95,7 @@ string(8) "Teenager"
  <para>
   The <literal>match</literal> expression is similar to a
   <literal>switch</literal> statement but has some key differences:
-  
+
   <itemizedlist>
    <listitem>
     <simpara>
@@ -146,11 +146,11 @@ $result = match ($x) {
   </informalexample>
  </para>
 
- <para>
+ <simpara>
   <literal>match</literal> expression arms may contain multiple expressions
   separated by a comma.  That is a logical OR, and is a short-hand for multiple
   match arms with the same right-hand side.
- </para>
+ </simpara>
  <para>
   <informalexample>
    <programlisting role="php" annotations="non-interactive">
@@ -192,11 +192,11 @@ $expressionResult = match ($condition) {
   </note>
  </para>
 
- <para>
+ <simpara>
   A <literal>match</literal> expression must be exhaustive.  If the
   subject expression is not handled by any match arm an
-  <classname>UnhandledMatchError</classname> is thrown.
- </para>
+  <exceptionname>UnhandledMatchError</exceptionname> is thrown.
+ </simpara>
 
  <example>
   <title>Example of an unhandled match expression</title>

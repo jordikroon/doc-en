@@ -4,18 +4,18 @@
  <sect1 xml:id="migration74.removed-extensions" xmlns:xlink="http://www.w3.org/1999/xlink">
  <title>Removed Extensions</title>
 
- <para>
+ <simpara>
   These extensions have been moved to PECL and are no longer part of the PHP
   distribution. The PECL package versions of these extensions will be created
   according to user demand.
- </para>
+ </simpara>
 
  <itemizedlist>
   <listitem>
    <simpara>
     <link linkend="book.ibase">Firebird/Interbase</link>
     - access to an InterBase and/or Firebird based database is still
-    available with the PDO Firebird driver. 
+    available with the PDO Firebird driver.
    </simpara>
   </listitem>
   <listitem>

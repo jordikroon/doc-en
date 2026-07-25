@@ -5,7 +5,7 @@
   <refname>mb_convert_variables</refname>
   <refpurpose>Convert character code in variable(s)</refpurpose>
  </refnamediv>
-   
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -15,20 +15,20 @@
    <methodparam><type>mixed</type><parameter role="reference">var</parameter></methodparam>
    <methodparam rep="repeat"><type>mixed</type><parameter role="reference">vars</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   Converts 
+  <simpara>
+   Converts
    character encoding of variables <parameter>var</parameter> and <parameter>vars</parameter> in
-   encoding <parameter>from_encoding</parameter> to encoding 
-   <parameter>to_encoding</parameter>. 
-  </para>
-  <para>
+   encoding <parameter>from_encoding</parameter> to encoding
+   <parameter>to_encoding</parameter>.
+  </simpara>
+  <simpara>
    <function>mb_convert_variables</function> join strings in Array
    or Object to detect encoding, since encoding detection tends to
    fail for short strings. Therefore, it is impossible to mix
    encoding in single array or object.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   <para>
@@ -36,51 +36,51 @@
     <varlistentry>
      <term><parameter>to_encoding</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The encoding that the <type>string</type> is being converted to.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>from_encoding</parameter></term>
      <listitem>
-      <para>
-       <parameter>from_encoding</parameter> is specified as an <type>array</type> 
+      <simpara>
+       <parameter>from_encoding</parameter> is specified as an <type>array</type>
        or comma separated <type>string</type>, it tries to detect encoding from
-       <parameter>from-coding</parameter>. When <parameter>from_encoding</parameter> 
+       <parameter>from-coding</parameter>. When <parameter>from_encoding</parameter>
        is omitted, <literal>detect_order</literal> is used.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>var</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <parameter>var</parameter> is the reference to the
        variable being converted. String, Array and Object are accepted.
        <function>mb_convert_variables</function> assumes all parameters
        have the same encoding.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>vars</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Additional <parameter>var</parameter>s.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   The character encoding before conversion for success, 
+  <simpara>
+   The character encoding before conversion for success,
    or &false; for failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -8,9 +8,9 @@
 
  <preface xml:id="intro.sqlite3">
   &reftitle.intro;
-  <para>
+  <simpara>
    Support for SQLite version 3 databases.
-  </para>
+  </simpara>
  </preface>
 
  &reference.sqlite3.setup;

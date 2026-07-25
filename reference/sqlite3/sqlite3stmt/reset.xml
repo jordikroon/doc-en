@@ -12,10 +12,10 @@
    <modifier>public</modifier> <type>bool</type><methodname>SQLite3Stmt::reset</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Resets the prepared statement to its state prior to execution. All bindings
    remain intact after reset.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the statement is successfully reset, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

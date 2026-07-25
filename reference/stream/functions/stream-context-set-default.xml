@@ -5,7 +5,7 @@
   <refname>stream_context_set_default</refname>
   <refpurpose>Set the default stream context</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -19,7 +19,7 @@
    <function>stream_context_create</function>.
   </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters"><!-- {{{ -->
   &reftitle.parameters;
   <para>
@@ -27,29 +27,29 @@
     <varlistentry>
      <term><parameter>options</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The options to set for the default context.
-      </para>
+      </simpara>
       <note>
-       <para>
+       <simpara>
         <parameter>options</parameter> must be an associative
         array of associative arrays in the format
         <literal>$arr['wrapper']['option'] = $value</literal>.
-       </para>
+       </simpara>
       </note>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1><!-- }}} -->
- 
+
  <refsect1 role="returnvalues"><!-- {{{ -->
   &reftitle.returnvalues;
-  <para>
-   Returns the default stream context. 
-  </para>
+  <simpara>
+   Returns the default stream context.
+  </simpara>
  </refsect1><!-- }}} -->
- 
+
  <refsect1 role="examples"><!-- {{{ -->
   &reftitle.examples;
   <para>
@@ -79,7 +79,7 @@ readfile('http://www.example.com');
    </example><!-- }}} -->
   </para>
  </refsect1><!-- }}} -->
- 
+
  <refsect1 role="seealso"><!-- {{{ -->
   &reftitle.seealso;
   <para>

@@ -3,7 +3,7 @@
 <!-- splitted from ./en/functions/pgsql.xml, last change in rev 1.82 -->
 <refentry xml:id="function.pg-last-oid" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
-  <refname>pg_last_oid</refname> 
+  <refname>pg_last_oid</refname>
   <refpurpose>Returns the last row's OID</refpurpose>
  </refnamediv>
 
@@ -13,33 +13,33 @@
    <type class="union"><type>string</type><type>int</type><type>false</type></type><methodname>pg_last_oid</methodname>
    <methodparam><type>PgSql\Result</type><parameter>result</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_last_oid</function> is used to retrieve the
    <varname>OID</varname> assigned to an inserted row.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    OID field became an optional field from PostgreSQL 7.2 and will
    not be present by default in PostgreSQL 8.1. When the
-   OID field is not present in a table, the programmer must use 
+   OID field is not present in a table, the programmer must use
    <function>pg_result_status</function> to check for successful
    insertion.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    To get the value of a <literal>SERIAL</literal> field in an inserted
    row, it is necessary to use the PostgreSQL <literal>CURRVAL</literal>
    function, naming the sequence whose last value is required.  If the
    name of the sequence is unknown, the <literal>pg_get_serial_sequence</literal>
    PostgreSQL 8.0 function is necessary.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    PostgreSQL 8.1 has a function <literal>LASTVAL</literal> that returns
    the value of the most recently used sequence in the session.  This avoids
    the need for naming the sequence, table or column altogether.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     This function used to be called <function>pg_getlastoid</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -59,11 +59,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An <type>int</type> or <type>string</type> containing the OID assigned to the most recently inserted
    row in the specified <parameter>connection</parameter>, or &false; on error or
    no available OID.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

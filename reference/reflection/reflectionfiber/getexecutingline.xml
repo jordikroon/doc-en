@@ -11,11 +11,11 @@
    <modifier>public</modifier> <type class="union"><type>int</type><type>null</type></type><methodname>ReflectionFiber::getExecutingLine</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the line number of the current execution point in the reflected <classname>Fiber</classname>.
    If the reflected fiber is used outside a user-defined function, &null; is returned.
-   If the fiber has not been started or has terminated, an <classname>Error</classname> is thrown.
-  </para>
+   If the fiber has not been started or has terminated, an <exceptionname>Error</exceptionname> is thrown.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The line number of the current execution point in the fiber.
-  </para>
+  </simpara>
  </refsect1>
 
 

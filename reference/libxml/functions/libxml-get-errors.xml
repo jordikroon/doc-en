@@ -13,9 +13,9 @@
    <type>array</type><methodname>libxml_get_errors</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Retrieve array of errors.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,10 +25,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array with <type>LibXMLError</type> objects if there are any
    errors in the buffer, or an empty array otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -36,9 +36,9 @@
   <para>
    <example>
     <title>A <function>libxml_get_errors</function> example</title>
-    <para>
+    <simpara>
      This example demonstrates how to build a simple libxml error handler.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

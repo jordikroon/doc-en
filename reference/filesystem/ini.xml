@@ -62,9 +62,9 @@
    </tgroup>
   </table>
  </para>
- 
+
  &ini.descriptions.title;
- 
+
  <para>
   <variablelist>
    <varlistentry xml:id="ini.allow-url-fopen">
@@ -73,14 +73,14 @@
      <type>bool</type>
     </term>
     <listitem>
-     <para>
-      This option enables the URL-aware fopen wrappers that enable 
-      accessing URL object like files. Default wrappers are provided for 
+     <simpara>
+      This option enables the URL-aware fopen wrappers that enable
+      accessing URL object like files. Default wrappers are provided for
       the access of <link linkend="features.remote-files">remote files</link>
       using the ftp or http protocol, some extensions like
       <link linkend="ref.zlib">zlib</link> may register additional
-      wrappers. 
-     </para>
+      wrappers.
+     </simpara>
     </listitem>
    </varlistentry>
 
@@ -90,15 +90,15 @@
      <type>bool</type>
     </term>
     <listitem>
-     <para>
-      This option allows the use of URL-aware fopen wrappers with the following 
-      functions: <function>include</function>, <function>include_once</function>, 
+     <simpara>
+      This option allows the use of URL-aware fopen wrappers with the following
+      functions: <function>include</function>, <function>include_once</function>,
       <function>require</function>, <function>require_once</function>.
-     </para>
+     </simpara>
      <note>
-      <para>
-       This setting requires allow_url_fopen to be on. 
-      </para>
+      <simpara>
+       This setting requires allow_url_fopen to be on.
+      </simpara>
      </note>
     </listitem>
    </varlistentry>
@@ -109,9 +109,9 @@
      <type>string</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Define the user agent for PHP to send.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
 
@@ -121,10 +121,10 @@
      <type>int</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       Default timeout (in seconds) for socket based streams.
       Specifying a negative value means an infinite timeout.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
 
@@ -134,11 +134,11 @@
      <type>string</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       The email address to be used on unauthenticated FTP connections and
       as the value of From header for HTTP connections, when using the ftp
       and http wrappers, respectively.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
 
@@ -148,28 +148,28 @@
      <type>bool</type>
     </term>
     <listitem>
-     <para>
+     <simpara>
       When turned on, PHP will examine the data read by
       <function>fgets</function> and <function>file</function> to see if it
       is using Unix, MS-Dos or Macintosh line-ending conventions.
-     </para>
-     <para>This enables PHP to interoperate with Macintosh systems,
+     </simpara>
+     <simpara>This enables PHP to interoperate with Macintosh systems,
       but defaults to Off, as there is a very small performance penalty
       when detecting the EOL conventions for the first line, and also
       because people using carriage-returns as item separators under
       Unix systems would experience non-backwards-compatible behaviour.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
-   
+
    <varlistentry xml:id="ini.sys-temp-dir">
     <term>
      <parameter>sys_temp_dir</parameter>
      <type>string</type>
     </term>
     <listitem>
-     <para>
-     </para>
+     <simpara>
+     </simpara>
     </listitem>
    </varlistentry>
 

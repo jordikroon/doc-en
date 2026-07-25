@@ -5,23 +5,23 @@
   <refname>oci_close</refname>
   <refpurpose>Closes an Oracle connection</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>bool</type><type>null</type></type><methodname>oci_close</methodname>
    <methodparam><type>resource</type><parameter>connection</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Unsets <parameter>connection</parameter>.  The underlying database
    connection is closed if no other resources are using it and if it
    was created with <function>oci_connect</function>
    or <function>oci_new_connect</function>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    It is recommended to close connections that are no longer needed
    because this makes database resources available for other users.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -31,11 +31,11 @@
     <varlistentry>
      <term><parameter>connection</parameter></term>
      <listitem>
-      <para>
-       An Oracle connection identifier returned by 
+      <simpara>
+       An Oracle connection identifier returned by
        <function>oci_connect</function>, <function>oci_pconnect</function>,
        or <function>oci_new_connect</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -44,21 +44,21 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &null; when <link linkend="ini.oci8.old-oci-close-semantics">oci8.old_oci_close_semantics</link> is enabled,
    or &true; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
   &reftitle.examples;
   <example>
    <title>Closing a connection</title>
-   <para>
+   <simpara>
     Resources associated with a connection should be closed to ensure
     the underlying database connection is properly terminated and the
     database resources are released.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -85,10 +85,10 @@ oci_close($conn);
 
   <example>
    <title>Database connections are not closed until all references are closed</title>
-   <para>
+   <simpara>
     The internal refcount of a connection identifier must be zero
     before the underlying connection to the database is closed.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -108,14 +108,14 @@ oci_close($conn);
 
 // $conn is no longer usable in the script but the underlying database
 // connection is still held open until $stid is freed.
-var_dump($conn);  // prints NULL  
+var_dump($conn);  // prints NULL
 
 // While PHP sleeps, querying the Oracle V$SESSION view in a
 // terminal window will show that the database user is still connected.
 sleep(10);
 
 // When $stid is freed, the database connection is physically closed
-oci_free_statement($stid);  
+oci_free_statement($stid);
 
 // While PHP sleeps, querying the Oracle V$SESSION view in a
 // terminal window will show that the database user has disconnected.
@@ -128,10 +128,10 @@ sleep(10);
 
   <example>
    <title>Closing a connection opened more than once</title>
-   <para>
+   <simpara>
      When database credentials are reused, both connections must be closed
      before the underlying database connection is closed.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -157,11 +157,11 @@ var_dump($conn2);  // displays that $conn2 is still a valid connection resource
 
   <example>
    <title>Connections are closed when variables go out of scope</title>
-   <para>
+   <simpara>
     When all variables referencing a connection go out of scope and
     are freed by PHP, a rollback occurs (if necessary) and the
     underlying connection to the database is closed.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -192,19 +192,19 @@ print $r;  // displays the function return value "Finished"
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     Variables that have a dependency on the connection identifier,
     such as statement identifiers returned
     by <function>oci_parse</function>, must also be freed before the
     underlying database connection is closed.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     The <function>oci_close</function> function does not close the
     underlying database connections created
     with <function>oci_pconnect</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

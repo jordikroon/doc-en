@@ -14,9 +14,9 @@
    <methodparam><type>string</type><parameter>user_id</parameter></methodparam>
    <methodparam><type>string</type><parameter>rights</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sets the ACL for a giving mailbox.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -26,28 +26,28 @@
     <varlistentry>
      <term><parameter>mailbox</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The mailbox name, see <function>imap_open</function> for more
        information
-      </para>
+      </simpara>
       &imap.mailboxname.insecure;
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>user_id</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The user to give the rights to.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>rights</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The rights to give to the user. Passing an empty string will delete
        acl.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -55,9 +55,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -76,13 +76,13 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="notes">
   &reftitle.notes;
-  <para>
+  <simpara>
    This function is currently only available to users of the c-client2000 or
    greater library.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="seealso">
   &reftitle.seealso;

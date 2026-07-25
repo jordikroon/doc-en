@@ -4,7 +4,7 @@
  <?phpdoc extension-membership="pecl" ?>
  <title>IMAP, POP3 and NNTP</title>
  <titleabbrev>IMAP</titleabbrev>
- 
+
  <!-- {{{ preface -->
  <preface xml:id="intro.imap">
   &reftitle.intro;
@@ -13,15 +13,15 @@
     This extension is <emphasis>DEPRECATED</emphasis> and <emphasis>UNBUNDLED</emphasis> as of PHP 8.4.0.
    </simpara>
   </warning>
-  <para>
+  <simpara>
    These functions enable you to operate with the <acronym>IMAP</acronym>
    protocol, as well as the <acronym>NNTP</acronym>, <acronym>POP3</acronym>
    and local mailbox access methods.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Be warned, however, that some IMAP functions will not work
    correctly with the POP protocol.
-  </para>
+  </simpara>
   <warning>
    <simpara>
     The IMAP extension is not thread-safe; it should not be used with ZTS builds.
@@ -29,7 +29,7 @@
   </warning>
  </preface>
  <!-- }}} -->
- 
+
  &reference.imap.setup;
  &reference.imap.constants;
  &reference.imap.reference;

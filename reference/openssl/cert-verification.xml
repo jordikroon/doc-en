@@ -3,14 +3,14 @@
 
 <appendix xml:id="openssl.cert.verification" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
 <title>Certificate Verification</title>
- <para>
+ <simpara>
   When calling a function that will verify a signature/certificate, the
   <parameter>ca_info</parameter> parameter is an array containing file and
   directory names that specify the locations of trusted CA files. If a
   directory is specified, then it must be a correctly formed hashed
   directory as the <command>openssl</command> command would use.
- </para>
-</appendix> 
+ </simpara>
+</appendix>
 
 <!-- Keep this comment at the end of the file
 Local variables:

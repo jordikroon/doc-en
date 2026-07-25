@@ -15,11 +15,11 @@
    <methodparam><type>int</type><parameter>type</parameter></methodparam>
    <methodparam><type>int</type><parameter>protocol</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>stream_socket_pair</function> creates a pair of connected,
    indistinguishable socket streams. This function is commonly used in IPC
-   (Inter-Process Communication).     
-  </para>
+   (Inter-Process Communication).
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,36 +29,36 @@
     <varlistentry>
      <term><parameter>domain</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The protocol family to be used: <constant>STREAM_PF_INET</constant>,
        <constant>STREAM_PF_INET6</constant> or
        <constant>STREAM_PF_UNIX</constant>
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>type</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The type of communication to be used:
        <constant>STREAM_SOCK_DGRAM</constant>,
        <constant>STREAM_SOCK_RAW</constant>,
        <constant>STREAM_SOCK_RDM</constant>,
        <constant>STREAM_SOCK_SEQPACKET</constant> or
        <constant>STREAM_SOCK_STREAM</constant>
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>protocol</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The protocol to be used: <constant>STREAM_IPPROTO_ICMP</constant>,
        <constant>STREAM_IPPROTO_IP</constant>,
        <constant>STREAM_IPPROTO_RAW</constant>,
        <constant>STREAM_IPPROTO_TCP</constant> or
-       <constant>STREAM_IPPROTO_UDP</constant>       
-      </para>
+       <constant>STREAM_IPPROTO_UDP</constant>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -73,10 +73,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an <type>array</type> with the two socket resources on success, or
    &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -84,10 +84,10 @@
   <para>
    <example>
     <title>A <function>stream_socket_pair</function> example</title>
-    <para>
+    <simpara>
      This example shows the basic usage of
      <function>stream_socket_pair</function> in Inter-Process Communication.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

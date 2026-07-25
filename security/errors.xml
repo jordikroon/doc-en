@@ -3,10 +3,10 @@
 <!-- splitted from ./index.xml, last change in rev 1.66 -->
   <chapter xml:id="security.errors" xmlns="http://docbook.org/ns/docbook">
    <title>Error Reporting</title>
-   <para>
+   <simpara>
     With PHP security, there are two sides to error reporting. One is
     beneficial to increasing security, the other is detrimental.
-   </para>
+   </simpara>
    <para>
     A standard attack tactic involves profiling a system by feeding
     it improper data, and checking for the kinds, and contexts, of the
@@ -55,19 +55,19 @@
      </programlisting>
     </example>
    </para>
-   <para>
+   <simpara>
     Regardless of the method of error handling, the ability to probe a
     system for errors leads to providing an attacker with more
     information.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     For example, the very style of a generic PHP error indicates a system
     is running PHP. If the attacker was looking at an <literal>.html</literal> page, and
     wanted to probe for the back-end (to look for known weaknesses in
     the system), by feeding it the wrong data they may be able to
     determine that a system was built with PHP.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     A function error can indicate whether a system may be running a
     specific database engine, or give clues as to how a web page or
     programmed or designed. This allows for deeper investigation into
@@ -76,15 +76,15 @@
     an attacker can determine the order of authentication in a script,
     (from the line number errors) as well as probe for exploits that
     may be exploited in different locations in the script.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     A filesystem or general PHP error can indicate what permissions
     the web server has, as well as the structure and organization of
     files on the web server. Developer written error code can aggravate
     this problem, leading to easy exploitation of formerly "hidden"
     information.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     There are three major solutions to this issue. The first is to
     scrutinize all functions, and attempt to compensate for the bulk
     of the errors. The second is to disable error reporting entirely
@@ -92,7 +92,7 @@
     handling functions to create your own error handler. Depending
     on your security policy, you may find all three to be applicable
     to your situation.
-   </para>
+   </simpara>
    <para>
     One way of catching this issue ahead of time is to make use of
     PHP's own <function>error_reporting</function>, to help you

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<reference xmlns="http://docbook.org/ns/docbook" xml:id="class.pgsql-connection" role="class">
+<reference xml:id="class.pgsql-connection" xmlns="http://docbook.org/ns/docbook" role="class">
  <title>The PgSql\Connection class</title>
  <titleabbrev>PgSql\Connection</titleabbrev>
 
@@ -8,9 +8,9 @@
   <!-- {{{ PgSql\Connection intro -->
   <section xml:id="pgsql-connection.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     A fully opaque class which replaces a <literal>pgsql link</literal> resource as of PHP 8.1.0.
-   </para>
+   </simpara>
   </section>
   <!-- }}} -->
 

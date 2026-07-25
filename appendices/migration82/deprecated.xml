@@ -71,7 +71,7 @@
  <sect2 xml:id="migration82.deprecated.mbstring">
   <title>MBString</title>
 
-  <para>
+  <simpara>
    Usage of the <literal>QPrint</literal>, <literal>Base64</literal>,
    <literal>Uuencode</literal>, and <literal>HTML-ENTITIES</literal>
    'text encodings' is deprecated for all MBString functions.
@@ -83,7 +83,7 @@
    Moreover, PHP has separate, built-in implementations of all of them;
    for example, UUencoded data can be handled using
    <function>convert_uuencode</function>/<function>convert_uudecode</function>.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration82.deprecated.spl">
@@ -98,10 +98,10 @@
  <sect2 xml:id="migration82.deprecated.standard">
   <title>Standard</title>
 
-  <para>
+  <simpara>
    <function>utf8_encode</function> and <function>utf8_decode</function>
    have been deprecated.
-  </para>
+  </simpara>
  </sect2>
 
 </sect1>

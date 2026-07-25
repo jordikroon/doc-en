@@ -9,24 +9,24 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="Locale">
    <modifier>public</modifier> <modifier>static</modifier> <type class="union"><type>string</type><type>false</type></type><methodname>Locale::acceptFromHttp</methodname>
    <methodparam><type>string</type><parameter>header</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>locale_accept_from_http</methodname>
    <methodparam><type>string</type><parameter>header</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Tries to find locale that can satisfy the language list that is requested by the
    HTTP "Accept-Language" header.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -36,9 +36,9 @@
     <varlistentry>
      <term><parameter>header</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string containing the "Accept-Language" header according to format in RFC 2616.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -48,13 +48,13 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The corresponding locale identifier.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Returns &false; when the length of <parameter>header</parameter> exceeds
    <constant>INTL_MAX_LOCALE_LEN</constant>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -13,21 +13,21 @@
    <modifier>public</modifier> <type>bool</type><methodname>DOMNode::hasChildNodes</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function checks if the node has children.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
   &reftitle.parameters;
   &no.function.parameters;
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="seealso">
   &reftitle.seealso;

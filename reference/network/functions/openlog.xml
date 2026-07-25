@@ -5,7 +5,7 @@
   <refname>openlog</refname>
   <refpurpose>Open connection to system logger</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,16 +14,16 @@
    <methodparam><type>int</type><parameter>flags</parameter></methodparam>
    <methodparam><type>int</type><parameter>facility</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>openlog</function> opens a connection to the system
-   logger for a program.  
-  </para>
-  <para> 
+   logger for a program.
+  </simpara>
+  <simpara>
    The use of <function>openlog</function> is optional. It
    will automatically be called by <function>syslog</function> if
    necessary, in which case <parameter>prefix</parameter> will default
    to the empty string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -33,9 +33,9 @@
     <varlistentry>
      <term><parameter>prefix</parameter></term>
      <listitem>
-      <para>
-       The string <parameter>prefix</parameter> is added to each message. 
-      </para>
+      <simpara>
+       The string <parameter>prefix</parameter> is added to each message.
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -91,9 +91,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

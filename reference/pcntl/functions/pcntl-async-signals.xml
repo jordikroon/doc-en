@@ -12,12 +12,12 @@
    <type>bool</type><methodname>pcntl_async_signals</methodname>
    <methodparam choice="opt"><type class="union"><type>bool</type><type>null</type></type><parameter>enable</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    If the <parameter>enable</parameter> parameter is &null;,
    <function>pcntl_async_signals</function> returns whether asynchronous signal
    handling is enabled. Otherwise, asynchronous signal handling is enabled or
    disabled.
-  </para>
+  </simpara>
  </refsect1><!-- }}} -->
 
  <refsect1 role="parameters"><!-- {{{ -->
@@ -26,9 +26,9 @@
    <varlistentry>
     <term><parameter>enable</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Whether asynchronous signal handling should be enabled.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -36,12 +36,12 @@
 
  <refsect1 role="returnvalues"><!-- {{{ -->
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    When used as getter (<parameter>enable</parameter> parameter is &null;) it returns
    whether asynchronous signal handling is enabled. When used as setter (<parameter>enable</parameter>
    parameter is not &null;), it returns whether asynchronous signal
    handling was enabled <emphasis>before</emphasis> the function call.
-  </para>
+  </simpara>
  </refsect1><!-- }}} -->
 
  <refsect1 role="changelog">

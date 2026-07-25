@@ -5,16 +5,16 @@
   <refname>OCICollection::free</refname>
   <refpurpose>Frees the resources associated with the collection object</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="OCICollection">
    <modifier>public</modifier> <type>bool</type><methodname>OCICollection::free</methodname>
    <void/>
   </methodsynopsis>
-  <para>
-   Frees the resources associated with the collection object. 
-  </para>
+  <simpara>
+   Frees the resources associated with the collection object.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

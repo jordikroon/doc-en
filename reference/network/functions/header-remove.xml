@@ -12,9 +12,9 @@
    <type>void</type><methodname>header_remove</methodname>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>name</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Removes an HTTP header previously set using <function>header</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The header name to be removed. When &null;, all previously set headers are removed.
-      </para>
+      </simpara>
       <note>
        <simpara>
         This parameter is case-insensitive.
@@ -40,9 +40,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -77,7 +77,7 @@
 <?php
 header("X-Foo: Bar");
 header("X-Bar: Baz");
-header_remove("X-Foo"); 
+header_remove("X-Foo");
 ?>
 ]]>
     </programlisting>
@@ -95,7 +95,7 @@ X-Bar: Baz
 <?php
 header("X-Foo: Bar");
 header("X-Bar: Baz");
-header_remove(); 
+header_remove();
 ?>
 ]]>
     </programlisting>
@@ -111,10 +111,10 @@ header_remove();
  <refsect1 role="notes"><!-- {{{ -->
   &reftitle.notes;
   <caution>
-   <para>
+   <simpara>
     This function will remove <emphasis>all</emphasis> headers set by PHP,
     including cookies, session and the <literal>X-Powered-By</literal> headers.
-   </para>
+   </simpara>
   </caution>
   &note.network.header.sapi;
  </refsect1><!-- }}} -->

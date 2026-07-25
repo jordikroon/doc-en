@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type class="union"><type>int</type><type>false</type></type><methodname>RecursiveIteratorIterator::getMaxDepth</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the maximum allowable depth.
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -27,9 +27,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The maximum accepted depth, or &false; if any depth is allowed.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

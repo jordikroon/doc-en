@@ -12,9 +12,9 @@
    <methodparam><type>GdImage</type><parameter>image1</parameter></methodparam>
    <methodparam><type>GdImage</type><parameter>image2</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Makes the colors of the palette version of an image more closely match the true color version.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -23,18 +23,18 @@
     <varlistentry>
      <term><parameter>image1</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A truecolor image object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>image2</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A palette image object pointing to an image that has the same
        size as <parameter>image1</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -42,9 +42,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

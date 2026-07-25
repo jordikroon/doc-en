@@ -9,9 +9,9 @@
 <!-- {{{ SQLite3Stmt intro -->
   <section xml:id="sqlite3stmt.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     A class that handles prepared statements for the SQLite 3 extension.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

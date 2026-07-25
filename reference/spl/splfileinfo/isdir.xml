@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>SplFileInfo::isDir</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    This method can be used to determine if the file is a directory.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if a directory, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

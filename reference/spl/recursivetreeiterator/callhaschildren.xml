@@ -13,9 +13,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>RecursiveTreeIterator::callHasChildren</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
    Called for each element to test whether it has children.
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -28,9 +28,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &true; if there are children, otherwise &false;
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

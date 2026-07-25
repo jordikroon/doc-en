@@ -22,10 +22,10 @@
    <methodparam><type>int</type><parameter>num_points</parameter></methodparam>
    <methodparam><type>int</type><parameter>color</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>imagefilledpolygon</function> creates a filled polygon
    in the given <parameter>image</parameter>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -35,18 +35,18 @@
     <varlistentry>
      <term><parameter>points</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An array containing the <literal>x</literal> and <literal>y</literal>
        coordinates of the polygons vertices consecutively.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>num_points</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Total number of points (vertices), which must be at least 3.
-      </para>
+      </simpara>
       <simpara>
        If this parameter is omitted as per the second signature, <parameter>points</parameter>
        must have an even number of elements, and <parameter>num_points</parameter> is
@@ -57,9 +57,9 @@
     <varlistentry>
      <term><parameter>color</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &gd.identifier.color;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -67,9 +67,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

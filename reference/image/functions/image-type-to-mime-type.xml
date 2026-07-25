@@ -12,10 +12,10 @@
    <type>string</type><methodname>image_type_to_mime_type</methodname>
    <methodparam><type>int</type><parameter>image_type</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    The <function>image_type_to_mime_type</function> function will determine
    the Mime-Type for an IMAGETYPE constant.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>image_type</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        One of the <constant>IMAGETYPE_<replaceable>*</replaceable></constant> constants.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

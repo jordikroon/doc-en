@@ -5,18 +5,18 @@
   <refname>array_count_values</refname>
   <refpurpose>Counts the occurrences of each distinct value in an array</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type>array</type><methodname>array_count_values</methodname>
    <methodparam><type>array</type><parameter>array</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>array_count_values</function> returns an array using
    the values of <parameter>array</parameter> (which must be &integer;s or &string;s) as keys and
    their frequency in <parameter>array</parameter> as values.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,9 +27,9 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The array of values to count
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
@@ -39,18 +39,18 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an associative array of values from <parameter>array</parameter> as
    keys and their count as value.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    Throws <constant>E_WARNING</constant> for every element which is not
    <type>string</type> or <type>int</type>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

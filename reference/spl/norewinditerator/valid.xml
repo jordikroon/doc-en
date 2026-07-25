@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>NoRewindIterator::valid</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks whether the iterator is valid.
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -27,9 +27,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

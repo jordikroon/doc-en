@@ -15,14 +15,14 @@
   </methodsynopsis>
   <para>
    This function appends a child to an existing list of children or creates
-   a new list of children. The child can be created with e.g. 
+   a new list of children. The child can be created with e.g.
    <methodname>DOMDocument::createElement</methodname>,
    <methodname>DOMDocument::createTextNode</methodname> etc. or simply by using
    any other node.
   </para>
-  <para>
+  <simpara>
    When using an existing node it will be moved.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -31,9 +31,9 @@
     <varlistentry>
      <term><parameter>node</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The appended child.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -41,9 +41,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The node added or &false; on error.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="errors">
   &reftitle.errors;
@@ -56,35 +56,35 @@
     <varlistentry>
      <term><constant>DOM_NO_MODIFICATION_ALLOWED_ERR</constant></term>
      <listitem>
-      <para>
+      <simpara>
        Raised if this node is readonly or if the previous parent of the node
        being inserted is readonly.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><constant>DOM_HIERARCHY_REQUEST_ERR</constant></term>
      <listitem>
-      <para>
-       Raised if this node is of a type that does not allow children of the 
-       type of the <parameter>node</parameter> node, or if the node to 
+      <simpara>
+       Raised if this node is of a type that does not allow children of the
+       type of the <parameter>node</parameter> node, or if the node to
        append is one of this node's ancestors or this node itself.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><constant>DOM_WRONG_DOCUMENT_ERR</constant></term>
      <listitem>
-      <para>
-       Raised if <parameter>node</parameter> was created from a different 
+      <simpara>
+       Raised if <parameter>node</parameter> was created from a different
        document than the one that created this node.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -106,7 +106,7 @@ echo $doc->saveXML();
     </programlisting>
    </example>
   </para>
-  
+
   <para>
    <example>
     <title>Nested children</title>
@@ -129,7 +129,7 @@ echo $doc->saveXML();
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

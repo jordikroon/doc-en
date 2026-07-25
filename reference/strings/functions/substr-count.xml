@@ -15,16 +15,16 @@
    <methodparam choice="opt"><type>int</type><parameter>offset</parameter><initializer>0</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>length</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>substr_count</function> returns the number of times the
    <parameter>needle</parameter> substring occurs in the
    <parameter>haystack</parameter> string. Please note that
    <parameter>needle</parameter> is case sensitive.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     This function doesn't count overlapped substrings. See the example below!
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -35,37 +35,37 @@
     <varlistentry>
      <term><parameter>haystack</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string to search in
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>needle</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The substring to search for
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The offset where to start counting. If the offset is negative, counting
        starts from the end of the string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The maximum length after the specified offset to search for the
        substring. It outputs a warning if the offset plus the length is
        greater than the <parameter>haystack</parameter> length.
        A negative length counts from the end of <parameter>haystack</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -74,9 +74,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    This function returns an <type>int</type>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

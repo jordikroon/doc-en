@@ -11,9 +11,9 @@
    <modifier>public</modifier> <type>void</type><methodname>DOMCharacterData::remove</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Removes the character data node.
-  </para>
+  </simpara>
  </refsect1>
 
  <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('domchildnode.remove')/db:refsect1[@role='parameters'])" />
@@ -23,9 +23,9 @@
   &reftitle.examples;
   <example xml:id="domcharacterdata.remove.example.basic">
    <title><methodname>DOMCharacterData::remove</methodname> example</title>
-   <para>
+   <simpara>
     Removes the character data.
-   </para>
+   </simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

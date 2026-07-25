@@ -58,12 +58,12 @@
        The built-in ICU locales and their data can be explored at
        <link xlink:href="&url.icu.locales;"/>.
       </simpara>
-      <para>
+      <simpara>
        The default value is empty, which forces the usage of ICU's default
        locale. Once set, the ini setting cannot be reset to this default value.
        It is not recommended that this default be relied on, as its effective
        value depends on the server's environment.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="ini.intl.error-level">
@@ -72,7 +72,7 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        The type of the error messages generated when an error occurs in ICU
        functions. This is a
        <link linkend="errorfunc.constants">PHP error level</link>, such as
@@ -81,10 +81,10 @@
        indicating error or the values returned by
        <function>intl_get_error_code</function> or by the class specific
        methods for retrieving error codes and messages.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        The default value is <literal>0</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="ini.intl.use-exceptions">
@@ -93,14 +93,14 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        If set to true, an exception will be raised whenever an error occurs in
        an intl function. The exception will be of type
-       <classname>IntlException</classname>. This is possibly in addition to the
+       <exceptionname>IntlException</exceptionname>. This is possibly in addition to the
        error message generated due to <link
         linkend="ini.intl.error-level">intl.error_level</link>.
-      </para>
-      <para>The default value is &false;.</para>
+      </simpara>
+      <simpara>The default value is &false;.</simpara>
      </listitem>
     </varlistentry>
 

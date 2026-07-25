@@ -8,24 +8,24 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="IntlCalendar">
    <modifier>public</modifier> <type>string</type><methodname>IntlCalendar::getType</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type>string</type><methodname>intlcal_get_type</methodname>
    <methodparam><type>IntlCalendar</type><parameter>calendar</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    A string describing the type of this calendar. This is one of the <link linkend="intlcalendar.getkeywordvaluesforlocale">valid values</link> for
    the calendar keyword value <literal>'calendar'</literal>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -42,10 +42,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A <type>string</type> representing the calendar type, such as
    <literal>'gregorian'</literal>, <literal>'islamic'</literal>, etc.
-  </para>
+  </simpara>
  </refsect1>
 
 

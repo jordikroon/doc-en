@@ -8,7 +8,7 @@
   &reftitle.required;
   &no.requirement;
   <note>
-   <para>
+   <simpara>
     Optionally you can use shared memory allocation (mm), developed by
     Ralf S. Engelschall, for session storage. You have to download
     <link xlink:href="&url.mm;">mm</link> and install it. This option is not
@@ -18,7 +18,7 @@
     based filesystem (such as tmpfs on Solaris/Linux, or <filename>/dev/md</filename> on BSD) to
     store sessions in files, because they are properly locked.
     Session data is stored in memory thus web server restart deletes it.
-   </para>
+   </simpara>
   </note>
  </section>
 

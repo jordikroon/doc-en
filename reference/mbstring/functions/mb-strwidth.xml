@@ -5,7 +5,7 @@
   <refname>mb_strwidth</refname>
   <refpurpose>Return width of string</refpurpose>
  </refnamediv>
-   
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,14 +13,14 @@
    <methodparam><type>string</type><parameter>string</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>encoding</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the width of <type>string</type> <parameter>string</parameter>,
    where halfwidth characters count as <literal>1</literal>, and fullwidth
    characters count as <literal>2</literal>.
    See <link xlink:href="&url.unicode.reports.tr;11/">&url.unicode.reports.tr;11/</link>
    for details regarding East Asian character widths.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The fullwidth characters are:
    <literal>U+1100</literal>-<literal>U+115F</literal>,
    <literal>U+11A3</literal>-<literal>U+11A7</literal>,
@@ -62,7 +62,7 @@
    <literal>U+20000</literal>-<literal>U+2FFFD</literal>,
    <literal>U+30000</literal>-<literal>U+3FFFD</literal>.
    All other characters are halfwidth characters.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -72,9 +72,9 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The <type>string</type> being decoded.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -89,9 +89,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The width of <type>string</type> <parameter>string</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

@@ -12,9 +12,9 @@
    <methodname>intl_get_error_message</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
    Get error message from last internationalization function called.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Description of an error occurred in the last API function call.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

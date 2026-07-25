@@ -12,10 +12,10 @@
    <modifier>public</modifier> <methodname>InfiniteIterator::__construct</methodname>
    <methodparam><type>Iterator</type><parameter>iterator</parameter></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Constructs an <classname>InfiniteIterator</classname>
    from an <classname>Iterator</classname>.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -26,9 +26,9 @@
     <varlistentry>
      <term><parameter>iterator</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The iterator to infinitely iterate over.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

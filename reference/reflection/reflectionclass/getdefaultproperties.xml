@@ -12,15 +12,15 @@
    <modifier>public</modifier> <type>array</type><methodname>ReflectionClass::getDefaultProperties</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets default properties from a class (including inherited properties).
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     This method only works for static properties when used on internal classes.
     The default value of a static class property can not be tracked when using
     this method on user defined classes.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -31,13 +31,13 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An <type>array</type> of default properties, with the key being the name of
    the property and the value being the default value of the property or &null;
    if the property doesn't have a default value. The function does not distinguish
    between static and non static properties and does not take visibility modifiers
    into account.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

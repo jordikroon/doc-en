@@ -12,10 +12,10 @@
    <type>int</type><methodname>json_last_error</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the last error (if any) occurred during the last JSON validation/encoding/decoding,
    which did not specify <constant>JSON_THROW_ON_ERROR</constant>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,10 +25,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   Returns an integer, the value can be one of the following 
-   constants: 
-  </para>
+  <simpara>
+   Returns an integer, the value can be one of the following
+   constants:
+  </simpara>
   <table>
    <title>JSON error codes</title>
    <tgroup cols="2">
@@ -121,7 +121,7 @@
 // A valid json string
 $json[] = '{"Organization": "PHP Documentation Team"}';
 
-// An invalid json string which will cause an syntax 
+// An invalid json string which will cause an syntax
 // error, in this case we used ' instead of " for quotation
 $json[] = "{'Organization': 'PHP Documentation Team'}";
 

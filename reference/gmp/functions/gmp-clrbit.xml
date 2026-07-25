@@ -13,10 +13,10 @@
    <methodparam><type>GMP</type><parameter>num</parameter></methodparam>
    <methodparam><type>int</type><parameter>index</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Clears (sets to 0) bit <parameter>index</parameter> in
    <parameter>num</parameter>. The index starts at 0.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,17 +26,17 @@
     <varlistentry>
      <term><parameter>num</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A <classname>GMP</classname> object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>index</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The index of the bit to clear.  Index 0 represents the least significant bit.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -45,9 +45,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -75,12 +75,12 @@ echo gmp_strval($a) . "\n";
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     Unlike most of the other GMP functions, <function>gmp_clrbit</function>
     must be called with a GMP object that already exists (using
     <function>gmp_init</function> for example). One will not be
     automatically created.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

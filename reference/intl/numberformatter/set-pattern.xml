@@ -9,25 +9,25 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="NumberFormatter">
    <modifier>public</modifier> <type>bool</type><methodname>NumberFormatter::setPattern</methodname>
    <methodparam><type>string</type><parameter>pattern</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type>bool</type><methodname>numfmt_set_pattern</methodname>
    <methodparam><type>NumberFormatter</type><parameter>formatter</parameter></methodparam>
    <methodparam><type>string</type><parameter>pattern</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Set the pattern used by the formatter. Can not be used on a rule-based
    formatter.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -37,19 +37,19 @@
     <varlistentry>
      <term><parameter>formatter</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <classname>NumberFormatter</classname> object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>pattern</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Pattern in syntax described in
        <link xlink:href="&url.icu.decimalformat;">ICU DecimalFormat
        documentation</link>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -59,9 +59,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -3,7 +3,7 @@
 <!-- splitted from ./en/functions/pgsql.xml, last change in rev 1.2 -->
 <refentry xml:id="function.pg-options" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
-  <refname>pg_options</refname> 
+  <refname>pg_options</refname>
   <refpurpose>Get the options associated with the connection</refpurpose>
  </refnamediv>
 
@@ -13,11 +13,11 @@
    <type>string</type><methodname>pg_options</methodname>
    <methodparam choice="opt"><type class="union"><type>PgSql\Connection</type><type>null</type></type><parameter>connection</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_options</function> will return a string containing
    the options specified on the given PostgreSQL
    <parameter>connection</parameter> instance.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -36,10 +36,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A <type>string</type> containing the <parameter>connection</parameter>
    options.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -64,7 +64,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>

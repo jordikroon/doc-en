@@ -9,23 +9,23 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="ResourceBundle">
    <modifier>public</modifier> <modifier>static</modifier> <type class="union"><type>array</type><type>false</type></type><methodname>ResourceBundle::getLocales</methodname>
    <methodparam><type>string</type><parameter>bundle</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>array</type><type>false</type></type><methodname>resourcebundle_locales</methodname>
    <methodparam><type>string</type><parameter>bundle</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get available locales from ResourceBundle name.
-   </para>
+   </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -35,10 +35,10 @@
     <varlistentry>
      <term><parameter>bundle</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path of ResourceBundle for which to get available locales, or
        empty string for default locales list.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -48,9 +48,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the list of locales supported by the bundle, or &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

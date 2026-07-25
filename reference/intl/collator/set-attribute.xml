@@ -6,29 +6,29 @@
   <refname>collator_set_attribute</refname>
   <refpurpose>Set collation attribute</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="Collator">
    <modifier>public</modifier> <type>bool</type><methodname>Collator::setAttribute</methodname>
    <methodparam><type>int</type><parameter>attribute</parameter></methodparam>
    <methodparam><type>int</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type>bool</type><methodname>collator_set_attribute</methodname>
    <methodparam><type>Collator</type><parameter>object</parameter></methodparam>
    <methodparam><type>int</type><parameter>attribute</parameter></methodparam>
    <methodparam><type>int</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <!-- description goes here -->
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -38,23 +38,23 @@
     <varlistentry>
      <term><parameter>object</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        <classname>Collator</classname> object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>attribute</parameter></term>
      <listitem>
-      <para>Attribute.</para>
+      <simpara>Attribute.</simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>value</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Attribute value.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -63,9 +63,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

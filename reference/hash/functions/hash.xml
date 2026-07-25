@@ -23,37 +23,37 @@
     <varlistentry>
      <term><parameter>algo</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Name of selected hashing algorithm (e.g. <literal>"sha256"</literal>).
        For a list of supported algorithms see <function>hash_algos</function>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>data</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Message to be hashed.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>binary</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        When set to &true;, outputs raw binary data.
        &false; outputs lowercase hexits.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>options</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An array of options for the various hashing algorithms.
        Currently, only the <literal>"seed"</literal> parameter is
        supported by the MurmurHash variants.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -62,11 +62,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a string containing the calculated message digest as lowercase hexits
    unless <parameter>binary</parameter> is set to true in which case the raw
    binary representation of the message digest is returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

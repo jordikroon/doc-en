@@ -11,18 +11,18 @@
    <type>bool</type><methodname>com_message_pump</methodname>
    <methodparam choice="opt"><type>int</type><parameter>timeout_milliseconds</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function will sleep for up to <parameter>timeout_milliseconds</parameter>
    milliseconds, or until a message arrives in the queue.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    The purpose of this function is to route COM calls between apartments and
    handle various synchronization issues.  This allows your script to wait
    efficiently for events to be triggered, while still handling other events
    or running other code in the background.  You should use it in a loop, as
    demonstrated by the example in the <function>com_event_sink</function>
    function, until you are finished using event bound COM objects.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -31,16 +31,16 @@
     <varlistentry>
      <term><parameter>timeout_milliseconds</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The timeout, in milliseconds.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If you do not specify a value for <parameter>timeout_milliseconds</parameter>,
        then 0 will be assumed.  A 0 value means that no waiting will be
        performed; if there are messages pending they will be dispatched as
        before; if there are no messages pending, the function will return
        &false; immediately without sleeping.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -48,11 +48,11 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    If a message or messages arrives before the timeout, they will be
    dispatched, and the function will return &true;. If the timeout occurs and
    no messages were processed, the return value will be &false;.
-  </para>
+  </simpara>
  </refsect1>
 </refentry>
 <!-- Keep this comment at the end of the file

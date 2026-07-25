@@ -7,13 +7,13 @@
  <!-- {{{ Requirements -->
  <section xml:id="iconv.requirements">
   &reftitle.required;
-  <para>
+  <simpara>
    You will need nothing if the system you are using is one of the recent
    POSIX-compliant systems because standard C libraries that are supplied in
    them must provide iconv facility. Otherwise, you have to get the
    <link xlink:href="&url.libiconv;">libiconv</link> library installed in
    your system.
-  </para>
+  </simpara>
  </section>
  <!-- }}} -->
 

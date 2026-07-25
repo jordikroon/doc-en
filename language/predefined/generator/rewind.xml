@@ -12,19 +12,19 @@
    <modifier>public</modifier> <type>void</type><methodname>Generator::rewind</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Executes the generator up to and including the <emphasis>first</emphasis> &yield;.
    If the generator is already at the <emphasis>first</emphasis> &yield;,
    no action will be taken.
    If the generator has ever advanced beyond a &yield; expression,
-   this method will throw an <classname>Exception</classname>.
-  </para>
+   this method will throw an <exceptionname>Exception</exceptionname>.
+  </simpara>
   <note>
-   <para>
+   <simpara>
     This is the <emphasis>first</emphasis> method called when starting a
     &foreach; loop. It will <emphasis>not</emphasis> be
     executed <emphasis>after</emphasis> &foreach; loops.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -35,9 +35,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

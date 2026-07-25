@@ -12,11 +12,11 @@
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>seed</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>mode</parameter><initializer><constant>MT_RAND_MT19937</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Seeds the random number generator with
    <parameter>seed</parameter> or with a random value
    if no <parameter>seed</parameter> is given.
-  </para>
+  </simpara>
 
   &note.randomseed;
   &caution.mt19937-tiny-seed;
@@ -29,15 +29,15 @@
     <varlistentry>
      <term><parameter>seed</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Fills the state with values generated with a linear congruential generator
        that was seeded with <parameter>seed</parameter> interpreted as an unsigned
        32 bit integer.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If <parameter>seed</parameter> is omitted or &null;, a random unsigned
        32-bit integer will be used.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -66,9 +66,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

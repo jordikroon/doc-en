@@ -3,22 +3,22 @@
 <reference xml:id="class.domdocumenttype" role="class" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
  <title>The DOMDocumentType class</title>
  <titleabbrev>DOMDocumentType</titleabbrev>
- 
+
  <partintro>
- 
+
 <!-- {{{ DOMDocumentType intro -->
   <section xml:id="domdocumenttype.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Each <classname>DOMDocument</classname> has a <literal>doctype</literal>
     attribute whose value is either &null; or a <classname>DOMDocumentType</classname> object.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
- 
+
   <section xml:id="domdocumenttype.synopsis">
    &reftitle.classsynopsis;
- 
+
 <!-- {{{ Synopsis -->
    <classsynopsis class="class">
     <ooclass>
@@ -78,9 +78,9 @@
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.domnode')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[@role='DOMNode'])"/>
    </classsynopsis>
 <!-- }}} -->
- 
+
   </section>
- 
+
 <!-- {{{ DOMDocumentType properties -->
   <section xml:id="domdocumenttype.props">
    &reftitle.properties;
@@ -88,58 +88,58 @@
     <varlistentry xml:id="domdocumenttype.props.publicid">
      <term><varname>publicId</varname></term>
      <listitem>
-      <para>The public identifier of the external subset.</para>
+      <simpara>The public identifier of the external subset.</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domdocumenttype.props.systemid">
      <term><varname>systemId</varname></term>
      <listitem>
-      <para>
+      <simpara>
        The system identifier of the external subset. This may be an
        absolute <acronym>URI</acronym> or not.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domdocumenttype.props.name">
      <term><varname>name</varname></term>
      <listitem>
-      <para>
+      <simpara>
        The name of <acronym>DTD</acronym>; i.e., the name immediately following the
        <literal>DOCTYPE</literal> keyword.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domdocumenttype.props.entities">
      <term><varname>entities</varname></term>
      <listitem>
-      <para>
-       A <classname>DOMNamedNodeMap</classname> containing the general 
+      <simpara>
+       A <classname>DOMNamedNodeMap</classname> containing the general
        entities, both external and internal, declared in the <acronym>DTD</acronym>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domdocumenttype.props.notations">
      <term><varname>notations</varname></term>
      <listitem>
-      <para>
+      <simpara>
        A <classname>DOMNamedNodeMap</classname> containing the notations
        declared in the <acronym>DTD</acronym>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domdocumenttype.props.internalsubset">
      <term><varname>internalSubset</varname></term>
      <listitem>
-      <para>
+      <simpara>
        The internal subset as a string, or &null; if there is none. This
        does not contain the delimiting square brackets.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </section>
 <!-- }}} -->
-  
+
 <!-- {{{ See also -->
 <!--
   <section role="seealso">
@@ -152,9 +152,9 @@
   </section>
 -->
 <!-- }}} -->
- 
+
  </partintro>
- 
+
 </reference>
 <!-- Keep this comment at the end of the file
 Local variables:

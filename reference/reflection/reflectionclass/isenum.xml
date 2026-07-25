@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>ReflectionClass::isEnum</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks if a class is an <link linkend="language.enumerations">enum</link>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if this is an <link linkend="language.enumerations">enum</link>, &false; otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
 

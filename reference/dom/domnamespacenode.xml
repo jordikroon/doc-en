@@ -99,87 +99,87 @@
     <varlistentry xml:id="domnamespacenode.props.nodename">
      <term><varname>nodeName</varname></term>
      <listitem>
-      <para>
+      <simpara>
        The qualified name of this node.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domnamespacenode.props.nodevalue">
      <term><varname>nodeValue</varname></term>
      <listitem>
-      <para>
+      <simpara>
        The namespace URI declared by this node, or &null; if the empty namespace.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domnamespacenode.props.nodetype">
      <term><varname>nodeType</varname></term>
      <listitem>
-      <para>
+      <simpara>
        The type of the node. In this case it returns
        <link linkend="dom.constants">
         <constant>XML_NAMESPACE_DECL_NODE</constant>
        </link>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domnamespacenode.props.prefix">
      <term><varname>prefix</varname></term>
      <listitem>
-      <para>
+      <simpara>
        The namespace prefix declared by this node.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domnamespacenode.props.localname">
      <term><varname>localName</varname></term>
      <listitem>
-      <para>
+      <simpara>
        The local part of the qualified name of this node.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domnamespacenode.props.namespaceuri">
      <term><varname>namespaceURI</varname></term>
      <listitem>
-      <para>
+      <simpara>
        The namespace URI declared by this node, or &null; if it is unspecified.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domnamespacenode.props.isconnected">
      <term><varname>isConnected</varname></term>
      <listitem>
-      <para>
+      <simpara>
        Whether the node is connected to a document.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domnamespacenode.props.ownerdocument">
      <term><varname>ownerDocument</varname></term>
      <listitem>
-      <para>
+      <simpara>
        The <classname>DOMDocument</classname> object associated with this node,
        or &null; if this node is a <classname>DOMDocument</classname>
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domnamespacenode.props.parentnode">
      <term><varname>parentNode</varname></term>
      <listitem>
-      <para>
+      <simpara>
        The parent of this node.
        If there is no such node, this returns &null;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="domnamespacenode.props.parentelement">
      <term><varname>parentElement</varname></term>
      <listitem>
-      <para>
+      <simpara>
        The parent element of this node.
        If there is no such element, this returns &null;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

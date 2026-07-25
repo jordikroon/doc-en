@@ -5,16 +5,16 @@
   <refname>ini_get</refname>
   <refpurpose>Gets the value of a configuration option</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>ini_get</methodname>
    <methodparam><type>string</type><parameter>option</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the value of the configuration option on success.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>option</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The configuration option name.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -88,16 +88,16 @@ post_max_size in bytes = 8388608
   &reftitle.notes;
   <note>
    <title>When querying boolean values</title>
-   <para>
+   <simpara>
     A boolean ini value of <literal>off</literal> will be returned as an
     empty string or "0" while a boolean ini value of <literal>on</literal> will
     be returned as "1".
     The function can also return the literal string of INI value.
-   </para>
+   </simpara>
   </note>
   <note>
    <title>When querying memory size values</title>
-   <para>
+   <simpara>
     Many ini memory size values, such as
     <link linkend="ini.upload-max-filesize">upload_max_filesize</link>, are
     stored in the &php.ini; file in shorthand notation.
@@ -107,13 +107,13 @@ post_max_size in bytes = 8388608
     will not have otherwise expected results.  The
     <function>ini_parse_quantity</function> function can be used to convert
     the shorthand notation into bytes.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     <function>ini_get</function> can't read "array" ini options such as
     <literal>pdo.dsn.<replaceable>*</replaceable></literal>, and returns &false; in this case.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

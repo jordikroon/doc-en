@@ -7,27 +7,27 @@
  <!-- {{{ Installation -->
  <section xml:id="hash.installation">
   &reftitle.install;
-  <para>
+  <simpara>
    The Hash extension is a core PHP extension, so it is always enabled.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Prior to PHP 7.4.0, the Hash extension was bundled and compiled into PHP by
    default, but could be explicitly disabled using <option role="configure">--disable-hash</option>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Prior to 5.1.2, the Hash extension was installed as a
    <link xlink:href="&url.pecl.package;hash">PECL module</link>.
-  </para>
+  </simpara>
  </section>
  <!-- }}} -->
 
  <!-- {{{ Resources -->
  <section xml:id="hash.resources">
   &reftitle.resources;
-  <para>
+  <simpara>
    This extension defines a Hashing Context resource returned by
    <function>hash_init</function>.
-  </para>
+  </simpara>
  </section>
  <!-- }}} -->
 

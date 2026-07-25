@@ -2,38 +2,38 @@
 <!-- $Revision$ -->
 <sect1 xml:id="language.oop5.constants" xmlns="http://docbook.org/ns/docbook">
  <title>Class Constants</title>
- <para>
+ <simpara>
   It is possible to define <link linkend="language.constants">constants</link>
   on a per-class basis remaining the same and unchangeable.
   The default visibility of class constants is <literal>public</literal>.
- </para>
+ </simpara>
  <note>
-  <para>
+  <simpara>
    Class constants can be redefined by a child class.
    As of PHP 8.1.0, class constants cannot be redefined by a child class
    if it is defined as <link linkend="language.oop5.final">final</link>.
-  </para>
+  </simpara>
  </note>
- <para>
+ <simpara>
   It's also possible for interfaces to have constants. Look
   at the <link linkend="language.oop5.interfaces">interface documentation</link>
   for examples.
- </para>
- <para>
+ </simpara>
+ <simpara>
   It's possible to reference the class using a variable.
   The variable's value can not be a keyword (e.g. <literal>self</literal>,
   <literal>parent</literal> and <literal>static</literal>).
- </para>
- <para>
+ </simpara>
+ <simpara>
   Note that class constants are allocated once per class, and not for each
   class instance.
- </para>
- <para>
+ </simpara>
+ <simpara>
   As of PHP 8.3.0, class constants can have a scalar type such as <literal>bool</literal>,
   <literal>int</literal>, <literal>float</literal>, <literal>string</literal>, or even
   <literal>array</literal>. When using <literal>array</literal>, the contents can only be
   other scalar types.
- </para>
+ </simpara>
  <example>
   <title>Defining and using a constant</title>
   <programlisting role="php">
@@ -61,11 +61,11 @@ echo $class::CONSTANT."\n";
 ]]>
   </programlisting>
  </example>
- <para>
+ <simpara>
   The special <constant>::class</constant> constant allows
   for fully qualified class name resolution at compile time,
   this is useful for namespaced classes:
- </para>
+ </simpara>
  <example>
   <title>Namespaced ::class example</title>
   <programlisting role="php">
@@ -122,9 +122,9 @@ Fatal error: Uncaught Error: Cannot access private const Foo::BAZ in …
    </screen>
  </example>
  <note>
-  <para>
+  <simpara>
    As of PHP 7.1.0 visibility modifiers are allowed for class constants.
-  </para>
+  </simpara>
  </note>
  <example>
   <title>Class constant visibility variance check, as of PHP 8.3.0</title>
@@ -175,10 +175,10 @@ echo Foo::{$name}, PHP_EOL; // bar
   </programlisting>
  </example>
  <note>
-  <para>
+  <simpara>
    As of PHP 8.3.0, class constants can be fetched dynamically using a
    variable.
-  </para>
+  </simpara>
  </note>
  <example>
   <title>Assigning types to class constants, as of PHP 8.3.0</title>

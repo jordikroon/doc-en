@@ -5,18 +5,18 @@
   <refname>AppendIterator::__construct</refname>
   <refpurpose>Constructs an AppendIterator</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <constructorsynopsis role="AppendIterator">
    <modifier>public</modifier> <methodname>AppendIterator::__construct</methodname>
    <void/>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Constructs an AppendIterator.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   &no.function.parameters;
@@ -98,16 +98,16 @@ while ($appendIterator->valid()) {
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="notes">
   &reftitle.notes;
   <caution>
-   <para>
-    When using <function>iterator_to_array</function> to copy the values of the AppendIterator 
-    into an array, you have to set the optional <parameter>use_key</parameter> argument to 
-    &false;. When <parameter>use_key</parameter> is not &false; any keys reoccurring in inner 
+   <simpara>
+    When using <function>iterator_to_array</function> to copy the values of the AppendIterator
+    into an array, you have to set the optional <parameter>use_key</parameter> argument to
+    &false;. When <parameter>use_key</parameter> is not &false; any keys reoccurring in inner
     iterators will get overwritten in the returned array. There is no way to preserve the original keys.
-   </para>
+   </simpara>
   </caution>
  </refsect1>
 

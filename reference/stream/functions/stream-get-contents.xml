@@ -2,7 +2,7 @@
 <!-- $Revision$ -->
 <refentry xml:id="function.stream-get-contents" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
-  <refname>stream_get_contents</refname> 
+  <refname>stream_get_contents</refname>
   <refpurpose>Reads remainder of a stream into a string</refpurpose>
  </refnamediv>
  <refsect1 role="description">
@@ -13,13 +13,13 @@
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>length</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>offset</parameter><initializer>-1</initializer></methodparam>
   </methodsynopsis>
-  <para> 
+  <simpara>
    Identical to <function>file_get_contents</function>, except that
    <function>stream_get_contents</function> operates on an already open
    stream resource and returns the remaining contents in a string, up to
    <parameter>length</parameter> bytes and starting at the specified
    <parameter>offset</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,27 +29,27 @@
     <varlistentry>
      <term><parameter>stream</parameter> (<type>resource</type>)</term>
      <listitem>
-      <para>
+      <simpara>
        A stream resource (e.g. returned from <function>fopen</function>)
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>length</parameter> (<type>int</type>)</term>
      <listitem>
-      <para>
+      <simpara>
        The maximum bytes to read. Defaults to &null; (read all the remaining
        buffer).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>offset</parameter> (<type>int</type>)</term>
      <listitem>
-      <para>
+      <simpara>
        Seek to the specified offset before reading. If this number is negative,
        no seeking will occur and reading will start from the current position.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -58,9 +58,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a string&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -120,11 +120,11 @@ if ($stream = fopen('http://www.example.net', 'r')) {
   &reftitle.notes;
   &note.bin-safe;
   <note>
-   <para>
+   <simpara>
     When specifying a <parameter>length</parameter> value other than &null;, this function will
     immediately allocate an internal buffer of that size even if the
     actual contents are significantly shorter.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

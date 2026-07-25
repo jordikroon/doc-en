@@ -13,12 +13,12 @@
    <methodparam><type>int</type><parameter>offset</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>whence</parameter><initializer><constant>SEEK_SET</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Seek to a position in the file measured in bytes
    from the beginning of the file, obtained by adding
    <parameter>offset</parameter> to the position specified by
    <parameter>whence</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,10 +28,10 @@
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The offset. A negative value can be used to move backwards through the file which
        is useful when SEEK_END is used as the <parameter>whence</parameter> value.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -45,9 +45,9 @@
         <member><constant>SEEK_END</constant> - Set position to end-of-file plus <parameter>offset</parameter>.</member>
        </simplelist>
       </para>
-      <para>
+      <simpara>
        If <parameter>whence</parameter> is not specified, it is assumed to be <constant>SEEK_SET</constant>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -56,10 +56,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns 0 if the seek was successful, -1 otherwise. Note that seeking
    past EOF is not considered an error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

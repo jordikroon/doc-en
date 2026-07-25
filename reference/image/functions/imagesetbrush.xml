@@ -12,21 +12,21 @@
    <methodparam><type>GdImage</type><parameter>image</parameter></methodparam>
    <methodparam><type>GdImage</type><parameter>brush</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>imagesetbrush</function> sets the brush image to be
    used by all line drawing functions (such as <function>imageline</function>
    and <function>imagepolygon</function>) when drawing with the special
    colors <constant>IMG_COLOR_BRUSHED</constant> or
    <constant>IMG_COLOR_STYLEDBRUSHED</constant>.
-  </para>
+  </simpara>
   <caution>
-   <para>
+   <simpara>
     You need not take special action when you are finished with a brush, but
-    if you destroy the brush image (or let PHP destroy it), you must not use the 
+    if you destroy the brush image (or let PHP destroy it), you must not use the
     <constant>IMG_COLOR_BRUSHED</constant> or
     <constant>IMG_COLOR_STYLEDBRUSHED</constant> colors until you have set a
     new brush image!
-   </para>
+   </simpara>
   </caution>
  </refsect1>
  <refsect1 role="parameters">
@@ -37,9 +37,9 @@
     <varlistentry>
      <term><parameter>brush</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An image object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -47,9 +47,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

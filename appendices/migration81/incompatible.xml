@@ -65,7 +65,7 @@ var_dump(B::counter()); // int(4), previously int(2)
     <link linkend="functions.named-arguments">named arguments</link>.
     As of PHP 8.0.0, but prior to PHP 8.1.0, the below emits a deprecation notice
     on the definition, but runs successfully when called. As of PHP 8.1.0, an error
-    of class <classname>ArgumentCountError</classname> is thrown, as it would be when
+    of class <exceptionname>ArgumentCountError</exceptionname> is thrown, as it would be when
     called with positional arguments.
 
     <informalexample>
@@ -105,17 +105,17 @@ ArgumentCountError - makeyogurt(): Argument #1 ($container) not passed
      </screen>
     </informalexample>
    </para>
-   <para>
+   <simpara>
     Note that a default value of &null; can be used before required parameters to
     specify a <link linkend="language.types.declarations.nullable">nullable type</link>,
     but the parameter will still be required.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration81.incompatible.core.type-compatibility-internal">
    <title>Return Type Compatibility with Internal Classes</title>
 
-   <para>
+   <simpara>
     Most non-final internal methods now require overriding methods to declare
     a compatible return type, otherwise a deprecated notice is emitted during
     inheritance validation.
@@ -123,106 +123,106 @@ ArgumentCountError - makeyogurt(): Argument #1 ($container) not passed
     PHP cross-version compatibility concerns,
     a <classname>ReturnTypeWillChange</classname> attribute can be added to silence
     the deprecation notice.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration81.incompatible.core.new-keywords">
    <title>New Keywords</title>
-   <para>
+   <simpara>
     <literal>readonly</literal> is a keyword now. However, it still may be used
     as function name.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     <literal>never</literal> is now a reserved word, so it cannot be used to name a class,
     interface or trait, and is also prohibited from being used in namespaces.
-   </para>
+   </simpara>
   </sect3>
  </sect2>
 
  <sect2 xml:id="migration81.incompatible.resource2object">
   <title>Resource to Object Migration</title>
 
-  <para>
+  <simpara>
    Several &resource;s have been migrated to &object;s.
    Return value checks using <function>is_resource</function> should be replaced with checks for &false;.
-  </para>
+  </simpara>
   <itemizedlist>
    <listitem>
-    <para>
+    <simpara>
      The <link linkend="book.fileinfo">FileInfo</link> functions now accept and return
      <classname>finfo</classname> objects instead of
      <literal>fileinfo</literal> &resource;s.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The <link linkend="book.ftp">FTP</link> functions now accept and return
      <classname>FTP\Connection</classname> objects instead of
      <literal>ftp</literal> &resource;s.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The <link linkend="book.imap">IMAP</link> functions now accept and return
      <classname>IMAP\Connection</classname> objects instead of
      <literal>imap</literal> &resource;s.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The <link linkend="book.ldap">LDAP</link> functions now accept and return
      <classname>LDAP\Connection</classname> objects instead of
      <literal>ldap link</literal> &resource;s.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The <link linkend="book.ldap">LDAP</link> functions now accept and return
      <classname>LDAP\Result</classname> objects instead of
      <literal>ldap result</literal> &resource;s.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The <link linkend="book.ldap">LDAP</link> functions now accept and return
      <classname>LDAP\ResultEntry</classname> objects instead of
      <literal>ldap result entry</literal> &resource;s.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The <link linkend="book.pgsql">PgSQL</link> functions now accept and return
      <classname>PgSql\Connection</classname> objects instead of
      <literal>pgsql link</literal> &resource;s.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The <link linkend="book.pgsql">PgSQL</link> functions now accept and return
      <classname>PgSql\Result</classname> objects instead of
      <literal>pgsql result</literal> &resource;s.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The <link linkend="book.pgsql">PgSQL</link> functions now accept and return
      <classname>PgSql\Lob</classname> objects instead of
      <literal>pgsql large object</literal> &resource;s.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The <link linkend="book.pspell">PSpell</link> functions now accept and return
      <classname>PSpell\Dictionary</classname> objects instead of
      <literal>pspell</literal> &resource;s.
-    </para>
+    </simpara>
    </listitem>
    <listitem>
-    <para>
+    <simpara>
      The <link linkend="book.pspell">PSpell</link> functions now accept and return
      <classname>PSpell\Config</classname> objects instead of
      <literal>pspell config</literal> &resource;s.
-    </para>
+    </simpara>
    </listitem>
   </itemizedlist>
  </sect2>
@@ -230,19 +230,19 @@ ArgumentCountError - makeyogurt(): Argument #1 ($container) not passed
  <sect2 xml:id="migration81.incompatible.mysqli">
   <title>MySQLi</title>
 
-  <para>
+  <simpara>
    <function>mysqli_fetch_fields</function>, and
    <function>mysqli_fetch_field_direct</function> will now always return
    <literal>0</literal> for the <property>max_length</property>.
    This information can be computed by iterating over the result set,
    and taking the maximum length. This is what PHP was doing
    internally previously.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    The <constant>MYSQLI_STMT_ATTR_UPDATE_MAX_LENGTH</constant>
    option no longer has any effect.
-  </para>
+  </simpara>
 
   <para>
    The <constant>MYSQLI_STORE_RESULT_COPY_DATA</constant>
@@ -273,20 +273,20 @@ ArgumentCountError - makeyogurt(): Argument #1 ($container) not passed
  <sect2 xml:id="migration81.incompatible.mysqlnd">
   <title>MySQLnd</title>
 
-  <para>
+  <simpara>
    The <link linkend="ini.mysqlnd.fetch_data_copy">mysqlnd.fetch_data_copy</link>
    INI directive has been removed.
    This should not result in user-visible behavior changes.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration81.incompatible.openssl">
   <title>OpenSSL</title>
 
-  <para>
+  <simpara>
    EC private keys will now be exported in <acronym>PKCS</acronym>#8 format rather than
    traditional format, just like all other keys.
-  </para>
+  </simpara>
   <simpara>
    <function>openssl_pkcs7_encrypt</function> and
    <function>openssl_cms_encrypt</function> will now default to using
@@ -298,11 +298,11 @@ ArgumentCountError - makeyogurt(): Argument #1 ($container) not passed
  <sect2 xml:id="migration81.incompatible.pdo">
   <title>PHP Data Objects</title>
 
-  <para>
+  <simpara>
    <constant>PDO::ATTR_STRINGIFY_FETCHES</constant> now stringifies values
    of type &boolean; to <literal>"0"</literal> or
    <literal>"1"</literal>. Previously &boolean;s were not stringified.
-  </para>
+  </simpara>
   <para>
    Calling <methodname>PDOStatement::bindColumn</methodname> with
    <constant>PDO::PARAM_LOB</constant> will now constantly bind a stream
@@ -314,24 +314,24 @@ ArgumentCountError - makeyogurt(): Argument #1 ($container) not passed
   <sect3 xml:id="migration81.incompatible.pdo.mysql">
    <title>MySQL Driver</title>
 
-   <para>
+   <simpara>
     Integers and floats in result sets will now be returned using native
     PHP types instead of &string;s when using emulated prepared statements.
     This matches the behavior of native prepared statements.
     The previous behaviour can be restored by enabling the
     <constant>PDO::ATTR_STRINGIFY_FETCHES</constant> option.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration81.incompatible.pdo.sqlite">
    <title>SQLite Driver</title>
 
-   <para>
+   <simpara>
     Integers and floats in results sets will now be returned using native
     PHP types.
     The previous behaviour can be restored by enabling the
     <constant>PDO::ATTR_STRINGIFY_FETCHES</constant> option.
-   </para>
+   </simpara>
   </sect3>
  </sect2>
 
@@ -348,11 +348,11 @@ ArgumentCountError - makeyogurt(): Argument #1 ($container) not passed
  <sect2 xml:id="migration81.incompatible.standard">
   <title>Standard</title>
 
-  <para>
+  <simpara>
    <function>version_compare</function> no longer accepts undocumented operator abbreviations.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    <function>htmlspecialchars</function>,
    <function>htmlentities</function>,
    <function>htmlspecialchars_decode</function>,
@@ -364,27 +364,27 @@ ArgumentCountError - makeyogurt(): Argument #1 ($container) not passed
    <literal>&amp;#039;</literal> while previously nothing was done.
    Additionally, malformed UTF-8 will be replaced by a Unicode substitution
    character, instead of resulting in an empty string.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    <function>debug_zval_dump</function> now prints the refcount of a reference
    wrappers with their refcount, instead of only prepending
    <literal>&amp;</literal> to the value.
    This more accurately models reference representation since PHP 7.0.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    <function>debug_zval_dump</function> now prints <literal>interned</literal>
    instead of a dummy refcount for interned strings and immutable arrays.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration81.incompatible.spl">
   <title>Standard PHP Library (SPL)</title>
 
-  <para>
+  <simpara>
    <classname>SplFixedArray</classname>, will now be JSON encoded like an &array;
-  </para>
+  </simpara>
  </sect2>
 
 </sect1>

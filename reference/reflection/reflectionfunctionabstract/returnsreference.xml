@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>ReflectionFunctionAbstract::returnsReference</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks whether the function returns a reference.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &true; if it returns a reference, otherwise &false;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

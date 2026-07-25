@@ -16,9 +16,9 @@
    <methodparam choice="opt"><modifier role="attribute">#[\SensitiveParameter]</modifier><type>string</type><parameter>new_password</parameter><initializer>""</initializer></methodparam>
    <methodparam choice="opt"><type>array</type><parameter role="reference">controls</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Performs a PASSWD extended operation.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,17 +27,17 @@
    <varlistentry>
     <term><parameter>ldap</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       &ldap.parameter.ldap;
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>user</parameter></term>
     <listitem>
-     <para>
+     <simpara>
        dn of the user to change the password of.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
@@ -51,19 +51,19 @@
    <varlistentry>
     <term><parameter>new_password</parameter></term>
     <listitem>
-     <para>
+     <simpara>
        The new password for this user. May be omitted or empty to have a generated password.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>controls</parameter></term>
     <listitem>
-     <para>
+     <simpara>
        If provided, a password policy request control is send with the request and this is
        filled with an array of <link linkend="ldap.controls">LDAP Controls</link>
        returned with the request.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -71,10 +71,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
     Returns the generated password if <parameter>new_password</parameter> is empty or omitted.
     Otherwise returns &true; on success and &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

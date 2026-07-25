@@ -6,10 +6,10 @@
 
  <partintro>
   &reftitle.seealso;
-  <para>
+  <simpara>
    See also <function>header</function> and
    <function>setcookie</function>.
-  </para>
+  </simpara>
  </partintro>
 
  &reference.outcontrol.entities.functions;

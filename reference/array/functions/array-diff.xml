@@ -13,11 +13,11 @@
    <methodparam><type>array</type><parameter>array</parameter></methodparam>
    <methodparam rep="repeat"><type>array</type><parameter>arrays</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Compares <parameter>array</parameter> against one or more other arrays and
    returns the values in <parameter>array</parameter> that are not present in
    any of the other arrays.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,17 +27,17 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The array to compare from
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>arrays</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Arrays to compare against
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -46,11 +46,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an <type>array</type> containing all the entries from
    <parameter>array</parameter> that are not present in any of the other arrays.
    Keys in the <parameter>array</parameter> array are preserved.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -88,10 +88,10 @@ print_r($result);
 ?>
 ]]>
     </programlisting>
-    <para>
+    <simpara>
      Multiple occurrences in <varname>$array1</varname> are all
      treated the same way. This will output :
-    </para>
+    </simpara>
     <screen>
 <![CDATA[
 Array
@@ -103,11 +103,11 @@ Array
    </example>
   </para>
 
-  <para>
+  <simpara>
    Two elements are considered equal if and only if
    <literal>(string) $elem1 === (string) $elem2</literal>. That is,
    when the <link linkend="language.types.string.casting">string representation</link> is the same.
-  </para>
+  </simpara>
 
   <para>
    <example>
@@ -145,19 +145,19 @@ var_dump($result);
     </programlisting>
    </example>
   </para>
-  <para>
+  <simpara>
    To use an alternate comparison function, see <function>array_udiff</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     This function only checks one dimension of a n-dimensional
     array. Of course you can check deeper dimensions by using
     <literal>array_diff($array1[0], $array2[0]);</literal>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

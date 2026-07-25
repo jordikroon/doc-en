@@ -12,11 +12,11 @@
    <type>array</type><methodname>headers_list</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>headers_list</function> will return a list of headers to be sent
    to the browser / client.  To determine whether or not these headers have
    been sent yet, use <function>headers_sent</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,9 +26,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a numerically indexed array of headers.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

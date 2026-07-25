@@ -9,9 +9,9 @@
 
   <section xml:id="stdclass.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     A generic empty class with dynamic properties.
-   </para>
+   </simpara>
 
    <para>
     Objects of this class can be instantiated with
@@ -29,12 +29,12 @@
     <code>#[\AllowDynamicProperties]</code> attribute.
    </para>
 
-   <para>
+   <simpara>
     This is not a base class as PHP does not have a concept of a universal base
     class. However, it is possible to create a custom class that extends from
     <classname>stdClass</classname> and as a result inherits the functionality
     of dynamic properties.
-   </para>
+   </simpara>
   </section>
 
   <section xml:id="stdclass.synopsis">
@@ -47,9 +47,9 @@
     </ooclass>
    </classsynopsis>
 
-   <para>
+   <simpara>
     This class has no methods or default properties.
-   </para>
+   </simpara>
   </section>
 
   <section xml:id="stdclass.examples" role="examples">

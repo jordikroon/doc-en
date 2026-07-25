@@ -5,7 +5,7 @@
   <refname>pspell_suggest</refname>
   <refpurpose>Suggest spellings of a word</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -32,9 +32,9 @@
     <varlistentry>
      <term><parameter>word</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The tested word.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -43,9 +43,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an array of possible spellings.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

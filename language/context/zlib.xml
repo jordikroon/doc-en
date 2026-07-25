@@ -9,9 +9,9 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    Zlib context options are available for <literal>zlib</literal> wrappers.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="options">
@@ -21,9 +21,9 @@
     <varlistentry xml:id="context.zlib.level">
      <term><parameter>level</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Used to specify the compression level (<literal>0</literal> - <literal>9</literal>).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

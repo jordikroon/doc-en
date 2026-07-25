@@ -12,9 +12,9 @@
    <modifier>public</modifier> <methodname>ReflectionFunction::__construct</methodname>
    <methodparam><type class="union"><type>Closure</type><type>string</type></type><parameter>function</parameter></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Constructs a <classname>ReflectionFunction</classname> object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>function</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The name of the function to reflect or a <link linkend="functions.anonymous">closure</link>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,10 +35,10 @@
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   A <classname>ReflectionException</classname> if the <parameter>function</parameter>
+  <simpara>
+   A <exceptionname>ReflectionException</exceptionname> if the <parameter>function</parameter>
    parameter does not contain a valid function.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

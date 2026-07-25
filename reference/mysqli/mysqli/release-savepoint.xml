@@ -9,12 +9,12 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="mysqli">
    <modifier>public</modifier> <type>bool</type><methodname>mysqli::release_savepoint</methodname>
    <methodparam><type>string</type><parameter>name</parameter></methodparam>
   </methodsynopsis>
-  <para>&style.procedural;:</para>
+  <simpara>&style.procedural;:</simpara>
   <methodsynopsis>
    <type>bool</type><methodname>mysqli_release_savepoint</methodname>
    <methodparam><type>mysqli</type><parameter>mysql</parameter></methodparam>
@@ -34,9 +34,9 @@
     <varlistentry>
      <term><parameter>name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The identifier of the savepoint.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -45,9 +45,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

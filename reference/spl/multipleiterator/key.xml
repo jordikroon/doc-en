@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>array</type><methodname>MultipleIterator::key</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get the registered iterator instances key() result.
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -27,21 +27,21 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An <type>array</type> of all registered iterator instances.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   A <classname>RuntimeException</classname> if the iterator is invalid (as of PHP 8.1.0), or
+  <simpara>
+   A <exceptionname>RuntimeException</exceptionname> if the iterator is invalid (as of PHP 8.1.0), or
    mode <constant>MIT_NEED_ALL</constant> is set, and at least one attached iterator is not valid.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Calling this method from <xref linkend="control-structures.foreach"/>
    triggers warning "Illegal type returned".
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -58,7 +58,7 @@
      <row>
       <entry>8.1.0</entry>
       <entry>
-       A <classname>RuntimeException</classname> is now thrown if
+       A <exceptionname>RuntimeException</exceptionname> is now thrown if
        <methodname>MultipleIterator::key</methodname> is called on an
        invalid iterator.  Previously, &false; was returned.
       </entry>

@@ -14,9 +14,9 @@
    <methodparam><type>int</type><parameter>offset</parameter></methodparam>
    <methodparam><type>int</type><parameter>count</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   Returns the specified substring. 
-  </para>
+  <simpara>
+   Returns the specified substring.
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -25,17 +25,17 @@
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Start offset of substring to extract.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>count</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number of characters to extract.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -43,11 +43,11 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   The specified substring. If the sum of <parameter>offset</parameter> 
+  <simpara>
+   The specified substring. If the sum of <parameter>offset</parameter>
    and <parameter>count</parameter> exceeds the length, then all UTF-8 codepoints
    to the end of the data are returned.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="errors">
   &reftitle.errors;
@@ -60,11 +60,11 @@
     <varlistentry>
      <term><constant>DOM_INDEX_SIZE_ERR</constant></term>
      <listitem>
-      <para>
+      <simpara>
        Raised if <parameter>offset</parameter> is negative or greater than the
        number of UTF-8 codepoints in data, or if <parameter>count</parameter> is
        negative.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

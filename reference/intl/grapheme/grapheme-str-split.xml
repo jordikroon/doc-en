@@ -28,18 +28,18 @@
    <varlistentry>
     <term><parameter>string</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The <type>string</type> to split into grapheme clusters or chunks.
       <parameter>string</parameter> must be valid UTF-8.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>length</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Each element of the returned array will be composed of <parameter>length</parameter> grapheme clusters.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -56,7 +56,7 @@
   &reftitle.errors;
   <simpara>
    If <parameter>length</parameter> is less than <literal>1</literal>,
-   a <classname>ValueError</classname> will be thrown.
+   a <exceptionname>ValueError</exceptionname> will be thrown.
   </simpara>
  </refsect1>
 

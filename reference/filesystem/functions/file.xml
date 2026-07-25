@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.file">
+<refentry xml:id="function.file" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>file</refname>
   <refpurpose>Reads entire file into an array</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,14 +14,14 @@
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>resource</type><type>null</type></type><parameter>context</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Reads an entire file into an array.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     You can use <function>file_get_contents</function> to return the contents
     of a file as a string.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -32,9 +32,9 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path to the file.
-      </para>
+      </simpara>
       &tip.fopen-wrapper;
      </listitem>
     </varlistentry>
@@ -51,7 +51,7 @@
          </term>
          <listitem>
           <simpara>
-           Search for the file in the <link 
+           Search for the file in the <link
            linkend="ini.include-path">include_path</link>.
           </simpara>
          </listitem>
@@ -102,16 +102,16 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the file in an array. Each element of the array corresponds to a
    line in the file, with the newline still attached. Upon failure,
    <function>file</function> returns &false;.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     Each line in the resulting array will include the line ending, unless
     <constant>FILE_IGNORE_NEW_LINES</constant> is used.
-   </para>
+   </simpara>
   </note>
   &note.line-endings;
  </refsect1>
@@ -123,10 +123,10 @@
    if <parameter>flags</parameter> includes any invalid values, such
    as <constant>FILE_APPEND</constant>.
   </simpara>
-  <para>
+  <simpara>
    Emits an <constant>E_WARNING</constant> level error if the file
    does not exist.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

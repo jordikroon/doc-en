@@ -5,7 +5,7 @@
   <refname>OCILob::writeTemporary</refname>
   <refpurpose>Writes a temporary large object</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="OCILob">
@@ -13,14 +13,14 @@
    <methodparam><type>string</type><parameter>data</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>type</parameter><initializer><constant>OCI_TEMP_CLOB</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Creates a temporary large object and writes <parameter>data</parameter>
    to it.
-  </para>  
-  <para>
+  </simpara>
+  <simpara>
    You should use <xref linkend="ocilob.close"/> when you are done
    with this object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,9 +30,9 @@
     <varlistentry>
      <term><parameter>data</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The data to write.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -42,7 +42,7 @@
        Can be one of the following:
        <simplelist>
         <member>
-         <constant>OCI_TEMP_BLOB</constant> is used to create temporary BLOBs 
+         <constant>OCI_TEMP_BLOB</constant> is used to create temporary BLOBs
         </member>
         <member>
          <constant>OCI_TEMP_CLOB</constant> is used to create
@@ -58,9 +58,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

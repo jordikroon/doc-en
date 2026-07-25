@@ -3,23 +3,23 @@
 <reference xml:id="class.parentiterator" role="class" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
  <title>The ParentIterator class</title>
  <titleabbrev>ParentIterator</titleabbrev>
- 
+
  <partintro>
- 
+
 <!-- {{{ ParentIterator intro -->
   <section xml:id="parentiterator.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     This extended <classname>FilterIterator</classname> allows a recursive
     iteration using <classname>RecursiveIteratorIterator</classname> that only
     shows those elements which have children.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
- 
+
   <section xml:id="parentiterator.synopsis">
    &reftitle.classsynopsis;
- 
+
 <!-- {{{ Synopsis -->
    <classsynopsis class="class">
     <ooclass>
@@ -40,9 +40,9 @@
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.filteriterator')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[@role='FilterIterator'])"/>
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.iteratoriterator')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[@role='IteratorIterator'])"/>
    </classsynopsis>
- 
+
   </section>
- 
+
 <!-- {{{ ParentIterator properties
   <section xml:id="parentiterator.props">
    &reftitle.properties;
@@ -56,11 +56,11 @@
    </variablelist>
   </section>
 }}} -->
- 
+
  </partintro>
- 
+
  &reference.spl.entities.parentiterator;
- 
+
 </reference>
 <!-- Keep this comment at the end of the file
 Local variables:

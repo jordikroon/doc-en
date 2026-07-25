@@ -11,17 +11,17 @@
    <modifier>public</modifier> <type class="union"><type>DOMElement</type><type>null</type></type><methodname>DOMDocument::getElementById</methodname>
    <methodparam><type>string</type><parameter>elementId</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function is similar to
-   <xref linkend="domdocument.getelementsbytagname"/> but 
+   <xref linkend="domdocument.getelementsbytagname"/> but
    searches for an element with a given id.
-  </para>
+  </simpara>
   <simpara>
    For this function to work, you will need either to set some ID attributes
    with <xref linkend="domelement.setidattribute"/>
-   or a DTD which defines an attribute to be of type ID. 
+   or a DTD which defines an attribute to be of type ID.
    In the latter case, you will need to validate your document with
-   <xref linkend="domdocument.validate"/> 
+   <xref linkend="domdocument.validate"/>
    or <link linkend="domdocument.props.validateonparse">DOMDocument::$validateOnParse</link> before using this function.
   </simpara>
  </refsect1>
@@ -32,9 +32,9 @@
     <varlistentry>
      <term><parameter>elementId</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The unique id value for an element.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -42,10 +42,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the <classname>DOMElement</classname> or &null; if the element is
-   not found. 
-  </para>
+   not found.
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;
@@ -70,7 +70,7 @@ echo "The element whose id is 'php-basics' is: " . $doc->getElementById('php-bas
    &example.outputs;
    <screen>
 <![CDATA[
-The element whose id is 'php-basics' is: book 
+The element whose id is 'php-basics' is: book
 ]]>
    </screen>
   </example>

@@ -18,12 +18,12 @@
    <methodparam choice="opt"><type>mixed</type><parameter>headerFault</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>lang</parameter><initializer>""</initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    This class is used to send SOAP fault responses from the PHP handler.
    <parameter>code</parameter>, <parameter>string</parameter>,
    <parameter>actor</parameter> and <parameter>details</parameter> are
    standard elements of a SOAP Fault.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -33,50 +33,50 @@
     <varlistentry>
      <term><parameter>code</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The error code of the <classname>SoapFault</classname>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The error message of the <classname>SoapFault</classname>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>actor</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A string identifying the actor that caused the error.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>details</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        More details about the cause of the error.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Can be used to select the proper fault encoding from WSDL.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>headerFault</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Can be used during SOAP header handling to report an error in the
        response header.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -135,9 +135,9 @@ $server->handle();
     </programlisting>
    </example>
   </para>
-  <para>
+  <simpara>
    It is possible to use PHP exception mechanism to throw SOAP Fault.
-  </para>
+  </simpara>
   <para>
    <example>
     <title>Some examples</title>

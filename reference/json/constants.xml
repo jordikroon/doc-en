@@ -3,11 +3,11 @@
 <appendix xml:id="json.constants" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  &reftitle.constants;
  &extension.constants;
- <para>
+ <simpara>
   The following constants indicate the type of error returned by
   <function>json_last_error</function> or stored as the <varname>code</varname>
-  of a <classname>JsonException</classname>.
- </para>
+  of a <exceptionname>JsonException</exceptionname>.
+ </simpara>
  <variablelist>
   <varlistentry xml:id="constant.json-error-none">
    <term>
@@ -159,10 +159,10 @@
   </varlistentry>
  </variablelist>
 
- <para>
+ <simpara>
   The following constants can be combined to form options for
   <function>json_decode</function>.
- </para>
+ </simpara>
  <variablelist>
   <varlistentry xml:id="constant.json-bigint-as-string">
    <term>
@@ -190,10 +190,10 @@
   </varlistentry>
  </variablelist>
 
- <para>
+ <simpara>
   The following constants can be combined to form options for
   <function>json_encode</function>.
- </para>
+ </simpara>
  <variablelist>
   <varlistentry xml:id="constant.json-hex-tag">
    <term>
@@ -335,10 +335,10 @@
   </varlistentry>
  </variablelist>
 
- <para>
+ <simpara>
   The following constants can be combined to form options for
   <function>json_decode</function> and <function>json_encode</function>.
- </para>
+ </simpara>
  <variablelist>
   <varlistentry xml:id="constant.json-invalid-utf8-ignore">
    <term>
@@ -372,7 +372,7 @@
    </term>
    <listitem>
     <simpara>
-     Throws <classname>JsonException</classname> if an error occurs instead
+     Throws <exceptionname>JsonException</exceptionname> if an error occurs instead
      of setting the global error state that is retrieved with
      <function>json_last_error</function> and <function>json_last_error_msg</function>.
      <constant>JSON_PARTIAL_OUTPUT_ON_ERROR</constant> takes precedence over

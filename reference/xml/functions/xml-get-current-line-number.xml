@@ -12,9 +12,9 @@
    <type>int</type><methodname>xml_get_current_line_number</methodname>
    <methodparam><type>XMLParser</type><parameter>parser</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the current line number for the given XML parser.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>parser</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A reference to the XML parser to get line number from.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,10 +35,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns which line the
    parser is currently at in its data buffer.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

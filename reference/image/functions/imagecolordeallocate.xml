@@ -12,11 +12,11 @@
    <methodparam><type>GdImage</type><parameter>image</parameter></methodparam>
    <methodparam><type>int</type><parameter>color</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   De-allocates a color previously allocated with 
+  <simpara>
+   De-allocates a color previously allocated with
    <function>imagecolorallocate</function> or
    <function>imagecolorallocatealpha</function>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -26,9 +26,9 @@
     <varlistentry>
      <term><parameter>color</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The color identifier.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -36,9 +36,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

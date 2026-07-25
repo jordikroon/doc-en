@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>Iterator</type><methodname>WeakMap::getIterator</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns an external iterator.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,17 +24,17 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An instance of an object implementing <classname>Iterator</classname> or
    <classname>Traversable</classname>
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws an <classname>Exception</classname> on failure.
-  </para>
+  <simpara>
+   Throws an <exceptionname>Exception</exceptionname> on failure.
+  </simpara>
  </refsect1>
 
 </refentry>

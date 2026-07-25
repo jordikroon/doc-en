@@ -11,30 +11,30 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="DateTime">
    <modifier>public</modifier> <type>DateTime</type><methodname>DateTime::add</methodname>
    <methodparam><type>DateInterval</type><parameter>interval</parameter></methodparam>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type>DateTime</type><methodname>date_add</methodname>
    <methodparam><type>DateTime</type><parameter>object</parameter></methodparam>
    <methodparam><type>DateInterval</type><parameter>interval</parameter></methodparam>
   </methodsynopsis>
 
-  <para>
+  <simpara>
    Adds the specified <classname>DateInterval</classname> object to the
    specified <classname>DateTime</classname> object.
-  </para>
+  </simpara>
   <para>
    Like <methodname>DateTimeImmutable::add</methodname> but works with
    <classname>DateTime</classname>.
   </para>
-  <para>
+  <simpara>
    The procedural version takes the <classname>DateTime</classname> object as
    its first argument.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -46,9 +46,9 @@
      <parameter>interval</parameter>
     </term>
     <listitem>
-     <para>
+     <simpara>
       A <classname>DateInterval</classname> object
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -56,9 +56,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &date.datetime.return.modifiedobject;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

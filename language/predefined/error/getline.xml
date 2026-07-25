@@ -5,28 +5,28 @@
   <refname>Error::getLine</refname>
   <refpurpose>Gets the line in which the error occurred</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="Error">
    <modifier>final</modifier> <modifier>public</modifier> <type>int</type><methodname>Error::getLine</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get line number where the error occurred.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   &no.function.parameters;
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the line number where the error occurred.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -15,11 +15,11 @@
    <modifier>public</modifier> <type>DateTimeImmutable</type><methodname>DateTimeImmutable::sub</methodname>
    <methodparam><type>DateInterval</type><parameter>interval</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a new <classname>DateTimeImmutable</classname> object, with the specified
    <classname>DateInterval</classname> object subtracted from the specified
    DateTimeImmutable object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,9 +30,9 @@
      <parameter>interval</parameter>
     </term>
     <listitem>
-     <para>
+     <simpara>
       A <classname>DateInterval</classname> object
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -40,9 +40,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &date.datetimeimmutable.return.modifiedobject;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -83,7 +83,7 @@
   &reftitle.examples;
   <example>
    <title><function>DateTimeImmutable::sub</function> example</title>
-   <para>&style.oop;</para>
+   <simpara>&style.oop;</simpara>
    <programlisting role="php">
 <![CDATA[
 <?php

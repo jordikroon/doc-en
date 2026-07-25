@@ -8,22 +8,22 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="IntlCalendar">
    <modifier>public</modifier> <type class="union"><type>int</type><type>false</type></type><methodname>IntlCalendar::getActualMaximum</methodname>
    <methodparam><type>int</type><parameter>field</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>int</type><type>false</type></type><methodname>intlcal_get_actual_maximum</methodname>
    <methodparam><type>IntlCalendar</type><parameter>calendar</parameter></methodparam>
    <methodparam><type>int</type><parameter>field</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns a fieldʼs relative maximum value around the current time. The exact
    semantics vary by field, but in the general case this is the value that
    would be obtained if one would set the field value into the
@@ -32,13 +32,13 @@
    <link linkend="intlcalendar.getmaximum">global maximum</link> or the field value
    wraps around, in which the value returned would be the global maximum
    or the value before the wrapping, respectively.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    For instance, in the gregorian calendar, the actual maximum value for the
    <link linkend="intlcalendar.constants.field-day-of-month">day of
    month</link> would vary between <literal>28</literal> and
    <literal>31</literal>, depending on the month and year of the current time.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -62,10 +62,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    An <type>int</type> representing the maximum value in the units associated
    with the given <parameter>field</parameter>&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
 

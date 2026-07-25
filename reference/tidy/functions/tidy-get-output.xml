@@ -11,9 +11,9 @@
    <type>string</type><methodname>tidy_get_output</methodname>
    <methodparam><type>tidy</type><parameter>tidy</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets a string with the repaired html.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -22,9 +22,9 @@
     <varlistentry>
      <term><parameter>tidy</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &tidy.object;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -32,9 +32,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the parsed tidy markup.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;

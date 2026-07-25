@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.fileatime">
+<refentry xml:id="function.fileatime" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>fileatime</refname>
   <refpurpose>Gets last access time of file</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Path to the file.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,10 +35,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the time the file was last accessed, &return.falseforfailure;.
    The time is returned as a Unix timestamp.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
@@ -72,17 +72,17 @@ if (file_exists($filename)) {
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     The atime of a file is supposed to change whenever the data blocks of a
     file are being read. This can be costly performance-wise when an
     application regularly accesses a very large number of files or
     directories.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     Some Unix filesystems can be mounted with atime updates disabled to
     increase the performance of such applications; USENET news spools are a
     common example. On such filesystems this function will be useless.
-   </para>
+   </simpara>
   </note>
   &note.filesystem-time-res;
   &note.clearstatcache;

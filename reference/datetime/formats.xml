@@ -1062,12 +1062,12 @@ object(DateTimeImmutable)#1 (3) {
   </note>
 
   <note>
-   <para xml:id="datetime.formats.relative.dayname-note">
+   <simpara xml:id="datetime.formats.relative.dayname-note">
     Observe the following remarks when the current day-of-week is the
     same as the day-of-week used in the date/time string. The current
     day-of-week could have been (re-)calculated by non-relative parts of
     the date/time string however.
-   </para>
+   </simpara>
    <orderedlist>
     <listitem>
      <simpara>

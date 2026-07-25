@@ -14,9 +14,9 @@
    <methodparam><type>string</type><parameter>filename</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>posix_eaccess</function> checks the effective user's permission of a file
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,26 +26,26 @@
     <varlistentry>
      <term><parameter>filename</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The name of a file to be tested.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>flags</parameter></term>
      <listitem>
-      <para>
+      <simpara>
         A mask consisting of one or more of <constant>POSIX_F_OK</constant>,
         <constant>POSIX_R_OK</constant>, <constant>POSIX_W_OK</constant> and
         <constant>POSIX_X_OK</constant>.
-       </para>
-       <para>
+       </simpara>
+       <simpara>
         <constant>POSIX_R_OK</constant>, <constant>POSIX_W_OK</constant> and
         <constant>POSIX_X_OK</constant> request checking whether the file
         exists and has read, write and execute permissions, respectively.
         <constant>POSIX_F_OK</constant> just requests checking for the
         existence of the file.
-       </para>
+       </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -54,9 +54,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -88,10 +88,10 @@
    <para>
    <example>
     <title><function>posix_eaccess</function> example</title>
-    <para>
+    <simpara>
      This example will check if the $file is readable and writable, otherwise
      will print an error message.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

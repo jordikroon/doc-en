@@ -11,29 +11,29 @@
    <type>string</type><methodname>get_called_class</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the name of the class the static method is called in.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
   &reftitle.parameters;
   &no.function.parameters;
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the class name.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    If <function>get_called_class</function> is called from outside a class,
-   an <classname>Error</classname> is thrown. Prior to PHP 8.0.0,
+   an <exceptionname>Error</exceptionname> is thrown. Prior to PHP 8.0.0,
    an <constant>E_WARNING</constant> level error was raised.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="changelog">
   &reftitle.changelog;
@@ -51,7 +51,7 @@
        <entry>8.0.0</entry>
        <entry>
         Calling this function from outside a class,
-        will now throw an <classname>Error</classname>.
+        will now throw an <exceptionname>Error</exceptionname>.
         Previously, an <constant>E_WARNING</constant> was raised
         and the function returned &false;.
        </entry>

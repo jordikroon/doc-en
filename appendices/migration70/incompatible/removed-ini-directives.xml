@@ -7,10 +7,10 @@
  <sect3 xml:id="migration70.incompatible.removed-ini-directives.features">
   <title>Removed features</title>
 
-  <para>
+  <simpara>
    The following INI directives have been removed as their associated features
    have also been removed:
-  </para>
+  </simpara>
 
   <itemizedlist>
    <listitem>

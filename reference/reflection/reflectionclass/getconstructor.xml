@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type class="union"><type>ReflectionMethod</type><type>null</type></type><methodname>ReflectionClass::getConstructor</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the constructor of the reflected class.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -25,12 +25,12 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A <classname>ReflectionMethod</classname> object reflecting the class' constructor, or &null; if the class
    has no constructor.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>

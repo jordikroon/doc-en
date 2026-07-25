@@ -5,7 +5,7 @@
   <refname>ldap_get_entries</refname>
   <refpurpose>Get all result entries</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,10 +13,10 @@
    <methodparam><type>LDAP\Connection</type><parameter>ldap</parameter></methodparam>
    <methodparam><type>LDAP\Result</type><parameter>result</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Reads multiple entries from the given result, and then reading the
    attributes and multiple values.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,17 +26,17 @@
     <varlistentry>
      <term><parameter>ldap</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &ldap.parameter.ldap;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>result</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        &ldap.parameter.result;
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -45,10 +45,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a complete result information in a multi-dimensional array on
    success,&return.falseforfailure;.
-  </para>
+  </simpara>
   <para>
    The structure of the array is as follows.
    The attribute index is converted to lowercase. (Attributes are

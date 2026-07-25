@@ -5,16 +5,16 @@
   <refname>posix_getgrgid</refname>
   <refpurpose>Return info about a group by group id</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>array</type><type>false</type></type><methodname>posix_getgrgid</methodname>
    <methodparam><type>int</type><parameter>group_id</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets information about a group provided its id.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>group_id</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The group id.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

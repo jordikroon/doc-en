@@ -12,17 +12,17 @@
    <type class="union"><type>string</type><type>null</type></type><methodname>cli_get_process_title</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the current process title, as set by
    <function>cli_set_process_title</function>. Note that this may not exactly
    match what is shown in <command>ps</command> or <command>top</command>,
    depending on your operating system.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    This function is available only in
    <link linkend="features.commandline">CLI</link> mode.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -33,18 +33,18 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Return a string with the current process title or &null; on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-   
-  <para>
+
+  <simpara>
    An <constant>E_WARNING</constant> will be generated if the operating system
    is unsupported.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -62,7 +62,7 @@ echo "Process title: " . cli_get_process_title() . "\n";
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

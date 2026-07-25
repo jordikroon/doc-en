@@ -5,16 +5,16 @@
   <refname>OCICollection::getElem</refname>
   <refpurpose>Returns value of the element</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="OCICollection">
    <modifier>public</modifier> <type class="union"><type>string</type><type>float</type><type>null</type><type>false</type></type><methodname>OCICollection::getElem</methodname>
    <methodparam><type>int</type><parameter>index</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns element's value with the index <parameter>index</parameter> (0-based).
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>index</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The element index. First index is 0.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,11 +35,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &false; if such element doesn't exist; &null; if element is &null;;
    string if element is column of a string datatype or number if element is
    numeric field.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

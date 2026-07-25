@@ -18,9 +18,9 @@
    <methodparam><type>CurlShareHandle</type><parameter>share_handle</parameter></methodparam>
   </methodsynopsis>
   &note.resource-migration-8.0-dead-function;
-  <para>
+  <simpara>
    Closes a cURL share handle and frees all resources.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -33,11 +33,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="changelog">
   &reftitle.changelog;
   <informaltable>
@@ -72,10 +72,10 @@
   <para>
    <example>
     <title><function>curl_share_setopt</function> example</title>
-    <para>
+    <simpara>
      This example will create a cURL share handle, add two cURL handles to it,
      and then run them with cookie data sharing.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -106,7 +106,7 @@ curl_share_close($sh);
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

@@ -23,10 +23,10 @@
    <methodname>Memcached::fetchAll</methodname>. If <parameter>with_cas</parameter>
    is true, the CAS token values will also be requested.
   </para>
-  <para>
+  <simpara>
    Instead of fetching the results explicitly, you can specify a <link linkend="memcached.callbacks">result callback</link> via
    <parameter>value_cb</parameter> parameter.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -36,25 +36,25 @@
     <varlistentry>
      <term><parameter>keys</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Array of keys to request.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>with_cas</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Whether to request CAS token values also.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>value_cb</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The result callback or &null;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>

@@ -18,11 +18,11 @@
    <methodparam choice="opt"><type>string</type><parameter>separator</parameter><initializer>"\t"</initializer></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>null_as</parameter><initializer>"\\\\N"</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>pg_copy_to</function> copies a table to an array. It
    issues <literal>COPY TO</literal> SQL command internally to
    retrieve records.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -38,27 +38,27 @@
     <varlistentry>
      <term><parameter>table_name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Name of the table from which to copy the data into <parameter>rows</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>separator</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The token that separates values for each field in each element of
        <parameter>rows</parameter>.  Default is <literal>\t</literal>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>null_as</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        How SQL <literal>NULL</literal> values are represented in the
        <parameter>rows</parameter>.  Default is <literal>\\N</literal> (<literal>"\\\\N"</literal>).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -67,9 +67,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-   <para>
+   <simpara>
     An <type>array</type> with one element for each line of <literal>COPY</literal> data, &return.falseforfailure;.
-   </para>
+   </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -98,19 +98,19 @@
 <![CDATA[
 <?php
    $db = pg_connect("dbname=publisher") or die("Could not connect");
-   
+
    $rows = pg_copy_to($db, $table_name);
-   
+
    pg_query($db, "DELETE FROM $table_name");
-   
+
    pg_copy_from($db, $table_name, $rows);
 ?>
 ]]>
     </programlisting>
-   </example> 
+   </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

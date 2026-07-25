@@ -11,10 +11,10 @@
    <type>array</type><methodname>get_object_vars</methodname>
    <methodparam><type>object</type><parameter>object</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   Gets the accessible non-static properties of the given 
+  <simpara>
+   Gets the accessible non-static properties of the given
    <parameter>object</parameter> according to scope.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -23,9 +23,9 @@
     <varlistentry>
      <term><parameter>object</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An object instance.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -33,10 +33,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   Returns an associative array of defined object accessible non-static properties 
+  <simpara>
+   Returns an associative array of defined object accessible non-static properties
    for the specified <parameter>object</parameter> in scope.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="examples">
   &reftitle.examples;
@@ -53,7 +53,7 @@ class foo {
     public $c;
     private $d;
     static $e;
-   
+
     public function test() {
         var_dump(get_object_vars($this));
     }
@@ -91,9 +91,9 @@ array(4) {
    </example>
   </para>
   <note>
-   <para>
+   <simpara>
     Uninitialized properties are considered inaccessible, and thus will not be included in the array.
-   </para>
+   </simpara>
   </note>
  </refsect1>
  <refsect1 role="seealso">

@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>int</type><methodname>DOMNode::getLineNo</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets line number for where the node was defined at parse time.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,10 +24,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the line number where the node was defined at parse time.
    If the node was created manually, the return value will be <literal>0</literal>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

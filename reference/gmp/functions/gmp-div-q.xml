@@ -5,7 +5,7 @@
   <refname>gmp_div_q</refname>
   <refpurpose>Divide numbers</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,10 +14,10 @@
    <methodparam><type class="union"><type>GMP</type><type>int</type><type>string</type></type><parameter>num2</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>rounding_mode</parameter><initializer><constant>GMP_ROUND_ZERO</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Divides <parameter>num1</parameter> by <parameter>num2</parameter> and
-   returns the integer result. 
-  </para>
+   returns the integer result.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,19 +27,19 @@
     <varlistentry>
      <term><parameter>num1</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number being divided.
-      </para>
-      &gmp.parameter; 
+      </simpara>
+      &gmp.parameter;
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>num2</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The number that <parameter>num1</parameter> is being divided by.
-      </para>
-      &gmp.parameter; 
+      </simpara>
+      &gmp.parameter;
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -79,9 +79,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &gmp.return;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -126,9 +126,9 @@ echo gmp_strval($div5) . "\n";
  <refsect1 role="notes">
   &reftitle.notes;
   <note>
-   <para>
+   <simpara>
     This function can also be called as <function>gmp_div</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 

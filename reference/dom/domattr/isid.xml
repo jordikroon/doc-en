@@ -13,22 +13,22 @@
    <modifier>public</modifier> <type>bool</type><methodname>DOMAttr::isId</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function checks if the attribute is a defined ID.
-  </para>
-  <para>
-   According to the DOM standard this requires a DTD which defines the 
+  </simpara>
+  <simpara>
+   According to the DOM standard this requires a DTD which defines the
    attribute ID to be of type ID. You need to validate your document with
    <xref linkend="domdocument.validate"/>
    or <property>DOMDocument::$validateOnParse</property> before using this function.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
   &reftitle.parameters;
   &no.function.parameters;
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
   <simpara>

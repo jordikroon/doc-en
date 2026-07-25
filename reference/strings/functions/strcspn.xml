@@ -5,7 +5,7 @@
   <refname>strcspn</refname>
   <refpurpose>Find length of initial segment not matching mask</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -15,21 +15,21 @@
    <methodparam choice="opt"><type>int</type><parameter>offset</parameter><initializer>0</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>length</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the length of the initial segment of
    <parameter>string</parameter> which does <emphasis>not</emphasis>
    contain any of the characters in <parameter>characters</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If <parameter>offset</parameter> and <parameter>length</parameter>
    are omitted, then all of <parameter>string</parameter> will be
    examined. If they are included, then the effect will be the same as
    calling <literal>strcspn(substr($string, $offset, $length),
    $characters)</literal> (see <xref linkend="function.substr"/>
    for more information).
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   <para>
@@ -37,27 +37,27 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string to examine.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>characters</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The string containing every disallowed character.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The position in <parameter>string</parameter> to
        start searching.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If <parameter>offset</parameter> is given and is non-negative,
        then <function>strcspn</function> will begin
        examining <parameter>string</parameter> at
@@ -66,53 +66,53 @@
        position <literal>0</literal> is '<literal>a</literal>', the
        character at position <literal>2</literal> is
        '<literal>c</literal>', and so forth.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If <parameter>offset</parameter> is given and is negative,
        then <function>strcspn</function> will begin
        examining <parameter>string</parameter> at
        the <parameter>offset</parameter>'th position from the end
        of <parameter>string</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The length of the segment from <parameter>string</parameter>
-       to examine. 
-      </para>
-      <para>
+       to examine.
+      </simpara>
+      <simpara>
        If <parameter>length</parameter> is given and is non-negative,
        then <parameter>string</parameter> will be examined
        for <parameter>length</parameter> characters after the starting
        position.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If <parameter>length</parameter> is given and is negative,
        then <parameter>string</parameter> will be examined from the
        starting position up to <parameter>length</parameter>
        characters from the end of <parameter>string</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the length of the initial segment of <parameter>string</parameter>
    which consists entirely of characters <emphasis>not</emphasis> in <parameter>characters</parameter>.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     When a <parameter>offset</parameter> parameter is set, the returned length
     is counted starting from this position, not from the beginning of
     <parameter>string</parameter>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -180,12 +180,12 @@ int(4)
    </screen>
   </example>
  </refsect1>
- 
+
  <refsect1 role="notes">
   &reftitle.notes;
   &note.bin-safe;
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>
@@ -194,7 +194,7 @@ int(4)
    </simplelist>
   </para>
  </refsect1>
- 
+
 </refentry>
 <!-- Keep this comment at the end of the file
 Local variables:

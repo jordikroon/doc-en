@@ -9,29 +9,29 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    An associative <type>array</type> that by default contains the contents of
    <varname>$_GET</varname>,
    <varname>$_POST</varname>&listendand;
    <varname>$_COOKIE</varname>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="notes">
   &reftitle.notes;
   &note.is-superglobal;
   <note>
-   <para>
+   <simpara>
     When running on the <link linkend="features.commandline">command line
-    </link>, this will <emphasis>not</emphasis> include the 
-    <link linkend="reserved.variables.argv">argv</link> and 
-    <link linkend="reserved.variables.argc">argc</link> entries; these are 
+    </link>, this will <emphasis>not</emphasis> include the
+    <link linkend="reserved.variables.argv">argv</link> and
+    <link linkend="reserved.variables.argc">argc</link> entries; these are
     present in the <varname>$_SERVER</varname>
     <type>array</type>.
-   </para>
+   </simpara>
   </note>
   <note>
-   <para>
+   <simpara>
     The variables in <varname>$_REQUEST</varname> are provided to the
     script via the GET, POST, and COOKIE input mechanisms and
     therefore could be modified by the remote user and cannot be
@@ -40,7 +40,7 @@
     <link linkend="ini.request-order">request_order</link>, and
     <link linkend="ini.variables-order">variables_order</link>
     configuration directives.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -51,9 +51,9 @@
    <member><link linkend="book.filter">The filter extension</link></member>
   </simplelist>
  </refsect1>
- 
+
 </refentry>
- 
+
 <!-- Keep this comment at the end of the file
 Local variables:
 mode: sgml

@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type>int</type><methodname>XSLTProcessor::getSecurityPrefs</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the security preferences.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,13 +24,13 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A bitmask consisting of <constant>XSL_SECPREF_READ_FILE</constant>,
    <constant>XSL_SECPREF_WRITE_FILE</constant>,
    <constant>XSL_SECPREF_CREATE_DIRECTORY</constant>,
    <constant>XSL_SECPREF_READ_NETWORK</constant>,
    <constant>XSL_SECPREF_WRITE_NETWORK</constant>.
-  </para>
+  </simpara>
  </refsect1>
 </refentry>
 <!-- Keep this comment at the end of the file

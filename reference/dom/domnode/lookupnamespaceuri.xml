@@ -13,10 +13,10 @@
    <modifier>public</modifier> <type class="union"><type>string</type><type>null</type></type><methodname>DOMNode::lookupNamespaceURI</methodname>
    <methodparam><type class="union"><type>string</type><type>null</type></type><parameter>prefix</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   Gets the namespace URI of the node based on the 
+  <simpara>
+   Gets the namespace URI of the node based on the
    <parameter>prefix</parameter>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -25,9 +25,9 @@
     <varlistentry>
      <term><parameter>prefix</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The prefix to look for. If this parameter is &null;, the method will return the default namespace URI, if any.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -35,9 +35,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the associated namespace URI or &null; if none is found.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="seealso">
   &reftitle.seealso;

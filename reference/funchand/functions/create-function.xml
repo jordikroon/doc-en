@@ -17,20 +17,20 @@
    <methodparam><type>string</type><parameter>args</parameter></methodparam>
    <methodparam><type>string</type><parameter>code</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Creates a function dynamically from the parameters passed, and returns a unique name for it.
-  </para>
+  </simpara>
   <caution>
-   <para>
+   <simpara>
     This function internally performs an <function>eval</function> and as such has the
     same security issues as <function>eval</function>. It also has bad performance
     and memory usage characteristics, because the created functions are global and
     can not be freed.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
     A native
     <link linkend="functions.anonymous">anonymous function</link> should be used instead.
-   </para>
+   </simpara>
   </caution>
  </refsect1>
  <refsect1 role="parameters">
@@ -45,17 +45,17 @@
     <varlistentry>
      <term><parameter>args</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The function arguments, as a single comma-separated string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>code</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The function code.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -64,12 +64,12 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a unique function name as a string, &return.falseforfailure;.
    Note that the name contains a non-printable character (<literal>"\0"</literal>),
    so care should be taken when printing the name or incorporating it in any other
    string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -80,10 +80,10 @@
      Creating a function dynamically, with <function>create_function</function>
      or anonymous functions
     </title>
-    <para>
+    <simpara>
      You can use a dynamically created function, to (for example) create a function from
      information gathered at run time. First, using <function>create_function</function>:
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -92,10 +92,10 @@ echo $newfunc(2, M_E) . "\n";
 ?>
 ]]>
     </programlisting>
-    <para>
+    <simpara>
      Now the same code, using an <link linkend="functions.anonymous">anonymous function</link>;
      note that the code and arguments are no longer contained in strings:
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -118,10 +118,10 @@ ln(2) + ln(2.718281828459) = 1.6931471805599
      Making a general processing function, with <function>create_function</function>
      or anonymous functions
     </title>
-    <para>
+    <simpara>
      Another use could be to have general handler function that can apply a set
      of operations to a list of parameters:
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -157,12 +157,12 @@ process("Twas brilling and the slithy toves", "Twas the night", $garr);
 ?>
 ]]>
     </programlisting>
-    <para>
+    <simpara>
      Again, here is the same code using
      <link linkend="functions.anonymous">anonymous functions</link>.
      Note that variable names in the code no longer need to be escaped,
      because they are not enclosed in a string.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -221,11 +221,11 @@ similar(a,b) = 11(45.833333333333%)
   <para>
    <example>
     <title>Using dynamic functions as callback functions</title>
-    <para>
+    <simpara>
      Perhaps the most common use for dynamic functions
      is to pass them as callbacks, for example when using
      <function>array_walk</function> or <function>usort</function>.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -235,9 +235,9 @@ print_r($av);
 ?>
 ]]>
     </programlisting>
-    <para>
+    <simpara>
      Converted to an <link linkend="functions.anonymous">anonymous function</link>:
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -259,9 +259,9 @@ Array
 )
 ]]>
     </screen>
-    <para>
+    <simpara>
      Sorting strings from longest to shortest with <function>create_function</function>:
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -274,9 +274,9 @@ print_r($sv);
 ?>
 ]]>
     </programlisting>
-    <para>
+    <simpara>
      Converted to an <link linkend="functions.anonymous">anonymous function</link>:
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

@@ -13,14 +13,14 @@
    <methodparam><type>float</type><parameter>angle</parameter></methodparam>
    <methodparam><type>int</type><parameter>background_color</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Rotates the <parameter>image</parameter> image using the given
-   <parameter>angle</parameter> in degrees. 
-  </para>
-  <para>
+   <parameter>angle</parameter> in degrees.
+  </simpara>
+  <simpara>
    The center of rotation is the center of the image, and the rotated
    image may have different dimensions than the original image.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -30,18 +30,18 @@
     <varlistentry>
      <term><parameter>angle</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Rotation angle, in degrees. The rotation angle is interpreted as the
        number of degrees to rotate the image anticlockwise.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>background_color</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Specifies the color of the uncovered zone after the rotation
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -49,9 +49,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an image object for the rotated image, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -96,9 +96,9 @@
   <para>
    <example>
     <title>Rotate an image 180 degrees</title>
-    <para>
+    <simpara>
      This example rotates an image 180 degrees - upside down.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

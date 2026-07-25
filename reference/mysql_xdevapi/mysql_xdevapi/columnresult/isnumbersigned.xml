@@ -17,7 +17,7 @@
    Retrieves a table's column information and is instantiated by the
    <methodname>mysql_xdevapi\RowResult::getColumns</methodname> method.
   </para>
-  
+
   &warn.undocumented.func;
  </refsect1>
 

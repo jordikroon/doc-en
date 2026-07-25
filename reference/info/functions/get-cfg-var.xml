@@ -5,26 +5,26 @@
   <refname>get_cfg_var</refname>
   <refpurpose>Gets the value of a PHP configuration option</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>string</type><type>array</type><type>false</type></type><methodname>get_cfg_var</methodname>
    <methodparam><type>string</type><parameter>option</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets the value of a PHP configuration <parameter>option</parameter>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This function will not return configuration information set when the PHP
    was compiled, or read from an Apache configuration file.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    To check whether the system is using a <link
    linkend="configuration.file">configuration file</link>, try retrieving the
    value of the cfg_file_path configuration setting. If this is available, a
    configuration file is being used.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -34,9 +34,9 @@
     <varlistentry>
      <term><parameter>option</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The configuration option name.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -45,10 +45,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the current value of the PHP configuration variable specified by
    <parameter>option</parameter>, or &false; if an error occurs.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

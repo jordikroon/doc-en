@@ -12,11 +12,11 @@
    <methodparam><type>GdImage</type><parameter>dst</parameter></methodparam>
    <methodparam><type>GdImage</type><parameter>src</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>imagepalettecopy</function> copies the palette from the
-   <parameter>src</parameter> image to the 
+   <parameter>src</parameter> image to the
    <parameter>dst</parameter> image.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -25,17 +25,17 @@
     <varlistentry>
      <term><parameter>dst</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The destination image object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>src</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The source image object.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -43,9 +43,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.void;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -84,15 +84,15 @@
 $palette1 = imagecreate(100, 100);
 $palette2 = imagecreate(100, 100);
 
-// Allocate the background to be 
+// Allocate the background to be
 // green in the first palette image
 $green = imagecolorallocate($palette1, 0, 255, 0);
 
 // Copy the palette from image 1 to image 2
 imagepalettecopy($palette2, $palette1);
 
-// Since the palette is now copied we can use the 
-// green color allocated to image 1 without using 
+// Since the palette is now copied we can use the
+// green color allocated to image 1 without using
 // imagecolorallocate() twice
 imagefilledrectangle($palette2, 0, 0, 99, 99, $green);
 

@@ -13,14 +13,14 @@
    <methodparam><type class="union"><type>int</type><type>string</type></type><parameter>codepoint</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>type</parameter><initializer><constant>IntlChar::UNICODE_CHAR_NAME</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Retrieves the name of a Unicode character.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Depending on <parameter>type</parameter>, the resulting character name is the "modern" name or the name that
    was defined in Unicode version 1.0. The name contains only "invariant" characters like A-Z, 0-9, space, and '-'.
    Unicode 1.0 names are only retrieved if they are different from the modern names and if ICU contains the data for them.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -52,10 +52,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The corresponding name, or an empty string if there is no name for this character,
    or &null; if there is no such code point.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -8,26 +8,26 @@
  </refnamediv>
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="IntlDateFormatter">
    <modifier>public</modifier> <type class="union"><type>string</type><type>false</type></type><methodname>IntlDateFormatter::getLocale</methodname>
    <methodparam choice="opt"><type>int</type><parameter>type</parameter><initializer><constant>ULOC_ACTUAL_LOCALE</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>datefmt_get_locale</methodname>
    <methodparam><type>IntlDateFormatter</type><parameter>formatter</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>type</parameter><initializer><constant>ULOC_ACTUAL_LOCALE</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Get locale used by the formatter.
-  </para> 
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   <para>
@@ -35,34 +35,34 @@
     <varlistentry>
      <term><parameter>formatter</parameter></term>
      <listitem>
-      <para>
-       The formatter resource      
-      </para>
+      <simpara>
+       The formatter resource
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>type</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        You can choose between valid and actual locale (
        <constant>Locale::VALID_LOCALE</constant>,
        <constant>Locale::ACTUAL_LOCALE</constant>,
        respectively). The default is the actual locale.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
   </para>
  </refsect1>
- 
- 
+
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The locale of this formatter, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <example>
@@ -133,7 +133,7 @@ Second Formatted output is Mittwoch, 31. Dezember 1969 16:00 Uhr GMT-08:00
 ]]>
   </screen>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

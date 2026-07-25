@@ -11,10 +11,10 @@
    <modifier>public</modifier> <type class="union"><type>string</type><type>null</type><type>false</type></type><methodname>XSLTProcessor::transformToXml</methodname>
    <methodparam><type>object</type><parameter>document</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Transforms the source node to a string applying the stylesheet given by
    the <function>xsltprocessor::importStylesheet</function> method.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('xsltprocessor.transformtodoc')/db:refsect1[@role='parameters']/*)"/>
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    The result of the transformation as a string or &false; on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <xi:include xpointer="xsltprocessor.transformtouri..changelog" />

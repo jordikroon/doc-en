@@ -12,9 +12,9 @@
    <modifier>public</modifier> <type class="union"><type>SplFileInfo</type><type>null</type></type><methodname>SplFileInfo::getPathInfo</methodname>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>class</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Gets an <classname>SplFileInfo</classname> object for the parent of the current file.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>class</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Name of an <classname>SplFileInfo</classname> derived class to use, or itself if &null;.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -36,9 +36,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an <classname>SplFileInfo</classname> object for the parent path of the file on success, or &null; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

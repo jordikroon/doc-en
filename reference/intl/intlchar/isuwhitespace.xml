@@ -12,16 +12,16 @@
    <modifier>public</modifier> <modifier>static</modifier> <type class="union"><type>bool</type><type>null</type></type><methodname>IntlChar::isUWhiteSpace</methodname>
    <methodparam><type class="union"><type>int</type><type>string</type></type><parameter>codepoint</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Check if a code point has the White_Space Unicode property.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This is the same as <literal>IntlChar::hasBinaryProperty($codepoint, IntlChar::PROPERTY_WHITE_SPACE)</literal>
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     This is different from both <function>IntlChar::isspace</function> and <function>IntlChar::isWhitespace</function>.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -39,10 +39,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if
    <parameter>codepoint</parameter> has the White_Space Unicode property, &false; if not. Returns &null; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

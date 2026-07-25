@@ -14,10 +14,10 @@
    <methodparam><type class="union"><type>string</type><type>null</type></type><parameter>namespace</parameter></methodparam>
    <methodparam><type>string</type><parameter>localName</parameter></methodparam>
   </methodsynopsis>
-  <para>
-   Retrieves a node specified by <parameter>localName</parameter> and 
+  <simpara>
+   Retrieves a node specified by <parameter>localName</parameter> and
    <parameter>namespace</parameter>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -26,17 +26,17 @@
     <varlistentry>
      <term><parameter>namespace</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The namespace URI of the node to retrieve.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>localName</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The local name of the node to retrieve.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -44,10 +44,10 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   A node (of any type) with the specified local name and namespace URI, or 
+  <simpara>
+   A node (of any type) with the specified local name and namespace URI, or
    &null; if no node is found.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="seealso">
   &reftitle.seealso;

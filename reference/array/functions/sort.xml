@@ -12,10 +12,10 @@
    <methodparam><type>array</type><parameter role="reference">array</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer><constant>SORT_REGULAR</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Sorts <parameter>array</parameter> in place by values
    in ascending order.
-  </para>
+  </simpara>
   &note.sort-unstable;
   &note.no-key-association;
   &note.reset-index;
@@ -28,9 +28,9 @@
     <varlistentry>
      <term><parameter>array</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input array.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     &sort.flags.parameter;
@@ -40,9 +40,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.true.always;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -93,9 +93,9 @@ fruits[3] = orange
     </screen>
    </example>
   </para>
-  <para>
+  <simpara>
    The fruits have been sorted in alphabetical order.
-  </para>
+  </simpara>
   <para>
    <example>
     <title><function>sort</function> example using case-insensitive natural
@@ -126,9 +126,9 @@ fruits[3] = orange20
     </screen>
    </example>
   </para>
-  <para>
+  <simpara>
    The fruits have been sorted like <function>natcasesort</function>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="notes">

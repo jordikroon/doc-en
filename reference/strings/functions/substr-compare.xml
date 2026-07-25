@@ -5,7 +5,7 @@
   <refname>substr_compare</refname>
   <refpurpose>Binary safe comparison of two strings from an offset, up to length characters</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -16,11 +16,11 @@
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>length</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>case_insensitive</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>substr_compare</function> compares <parameter>haystack</parameter>
    from position <parameter>offset</parameter> with <parameter>needle</parameter>
    up to <parameter>length</parameter> characters.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,46 +30,46 @@
     <varlistentry>
      <term><parameter>haystack</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The main string being compared.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>needle</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The secondary string being compared.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The start position for the comparison. If negative, it starts counting
        from the end of the string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The length of the comparison. The default value is the largest of the
        length of the <parameter>needle</parameter> compared to the length of
        <parameter>haystack</parameter> minus the
        <parameter>offset</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>case_insensitive</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If <parameter>case_insensitive</parameter> is &true;, comparison is
        case insensitive.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -79,13 +79,13 @@
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
   &strings.comparison.return;
-  <para>
+  <simpara>
    If <parameter>offset</parameter> is equal to (prior to PHP 7.2.18, 7.3.5) or
    greater than the length of <parameter>haystack</parameter>, or the
    <parameter>length</parameter> is set and is less than 0,
    <function>substr_compare</function> prints a warning and returns
    &false;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

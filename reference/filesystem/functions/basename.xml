@@ -5,7 +5,7 @@
   <refname>basename</refname>
   <refpurpose>Returns trailing name component of path</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -13,25 +13,25 @@
    <methodparam><type>string</type><parameter>path</parameter></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>suffix</parameter><initializer>""</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Given a string containing the path to a file or directory, this function
    will return the trailing name component.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     <function>basename</function> operates naively on the input string,
     and is not aware of the actual filesystem, or path components such
     as "<literal>..</literal>".
-   </para>
+   </simpara>
   </note>
   <caution>
-   <para>
-    <function>basename</function> is locale aware, so for it to see the 
-    correct basename with multibyte character paths, the matching locale must 
+   <simpara>
+    <function>basename</function> is locale aware, so for it to see the
+    correct basename with multibyte character paths, the matching locale must
     be set using the <function>setlocale</function> function.
     If <parameter>path</parameter> contains characters which are invalid for the
     current locale, the behavior of <function>basename</function> is undefined.
-   </para>
+   </simpara>
   </caution>
  </refsect1>
 
@@ -42,23 +42,23 @@
     <varlistentry>
      <term><parameter>path</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A path.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        On Windows, both slash (<literal>/</literal>) and backslash
        (<literal>\</literal>) are used as directory separator character. In
        other environments, it is the forward slash (<literal>/</literal>).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>suffix</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If the name component ends in <parameter>suffix</parameter> this will also
        be cut off.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -67,9 +67,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the base name of the given <parameter>path</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -97,13 +97,13 @@ echo "6) ".basename("/");
 3) passwd
 4) etc
 5) .
-6) 
+6)
 ]]>
     </screen>
    </example>
   </para>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

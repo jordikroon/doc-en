@@ -24,9 +24,9 @@
     <varlistentry>
      <term><parameter>child</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The removed child.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -34,9 +34,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    If the child could be removed the function returns the old child or &false; on error.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="errors">
   &reftitle.errors;
@@ -49,17 +49,17 @@
     <varlistentry>
      <term><constant>DOM_NO_MODIFICATION_ALLOWED_ERR</constant></term>
      <listitem>
-      <para>
+      <simpara>
        Raised if this node is readonly.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><constant>DOM_NOT_FOUND_ERR</constant></term>
      <listitem>
-      <para>
+      <simpara>
        Raised if <parameter>child</parameter> is not a child of this node.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -91,11 +91,11 @@ echo $doc->saveXML();
     <screen role="xml">
 <![CDATA[
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
           "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
 <book id="listing">
  <title>My lists</title>
- 
+
 </book>
 ]]>
     </screen>

@@ -9,14 +9,14 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>&style.oop;</para>
+  <simpara>&style.oop;</simpara>
   <methodsynopsis role="DateTime">
    <modifier>public</modifier> <type>DateTime</type><methodname>DateTime::setISODate</methodname>
    <methodparam><type>int</type><parameter>year</parameter></methodparam>
    <methodparam><type>int</type><parameter>week</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>dayOfWeek</parameter><initializer>1</initializer></methodparam>
   </methodsynopsis>
-  <para>&style.procedural;</para>
+  <simpara>&style.procedural;</simpara>
   <methodsynopsis>
    <type>DateTime</type><methodname>date_isodate_set</methodname>
    <methodparam><type>DateTime</type><parameter>object</parameter></methodparam>
@@ -24,18 +24,18 @@
    <methodparam><type>int</type><parameter>week</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>dayOfWeek</parameter><initializer>1</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Set a date according to the ISO 8601 standard - using weeks and day offsets
    rather than specific dates.
-  </para>
+  </simpara>
   <para>
    Like <methodname>DateTimeImmutable::setISODate</methodname> but works with
    <classname>DateTime</classname>.
   </para>
-  <para>
+  <simpara>
    The procedural version takes the <classname>DateTime</classname> object as
    its first argument.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -45,25 +45,25 @@
    <varlistentry>
     <term><parameter>year</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Year of the date.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>week</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Week of the date.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>dayOfWeek</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Offset from the first day of the week.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -71,9 +71,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &date.datetime.return.modifiedobject;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

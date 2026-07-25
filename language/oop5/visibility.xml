@@ -2,7 +2,7 @@
 <!-- $Revision$ -->
  <sect1 xml:id="language.oop5.visibility" xmlns="http://docbook.org/ns/docbook">
   <title>Visibility</title>
-  <para>
+  <simpara>
    The visibility of a property, a method or (as of PHP 7.1.0) a constant can be defined by prefixing
    the declaration with the keywords <literal>public</literal>,
    <literal>protected</literal> or
@@ -11,15 +11,15 @@
    only within the class itself and by inheriting and parent
    classes. Members declared as private may only be accessed by the
    class that defines the member.
-  </para>
+  </simpara>
 
   <sect2 xml:id="language.oop5.visibility-members">
    <title>Property Visibility</title>
-   <para>
+   <simpara>
     Class properties may be defined as public, private, or
     protected. Properties declared without any explicit visibility
     keyword are defined as public.
-   </para>
+   </simpara>
    <example>
     <title>Property declaration</title>
     <programlisting role="php" annotations="non-interactive">
@@ -72,7 +72,7 @@ echo $obj2->protected; // Fatal Error
 echo $obj2->private; // Undefined
 $obj2->printHello(); // Shows Public2, Protected2, Undefined
 
-?> 
+?>
 ]]>
     </programlisting>
    </example>
@@ -158,7 +158,7 @@ Fatal error: Uncaught Error: Cannot modify private(set) property Manager::$calls
 ]]>
      </screen>
     </example>
-    <para>There are a few caveats regarding asymmetric visibility:</para>
+    <simpara>There are a few caveats regarding asymmetric visibility:</simpara>
     <itemizedlist>
      <listitem>
       <simpara>
@@ -243,11 +243,11 @@ class SpecialBook extends Book
 
   <sect2 xml:id="language.oop5.visiblity-methods">
    <title>Method Visibility</title>
-   <para>
+   <simpara>
     Class methods may be defined as public, private, or
     protected. Methods declared without any explicit visibility
     keyword are defined as public.
-   </para>
+   </simpara>
    <example>
     <title>Method Declaration</title>
     <programlisting role="php" annotations="non-interactive">
@@ -304,7 +304,7 @@ $myclass2 = new MyClass2;
 $myclass2->MyPublic(); // Works
 $myclass2->Foo2(); // Public and Protected work, not Private
 
-class Bar 
+class Bar
 {
     public function test() {
         $this->testPrivate();
@@ -314,25 +314,25 @@ class Bar
     public function testPublic() {
         echo "Bar::testPublic\n";
     }
-    
+
     private function testPrivate() {
         echo "Bar::testPrivate\n";
     }
 }
 
-class Foo extends Bar 
+class Foo extends Bar
 {
     public function testPublic() {
         echo "Foo::testPublic\n";
     }
-    
+
     private function testPrivate() {
         echo "Foo::testPrivate\n";
     }
 }
 
 $myFoo = new Foo();
-$myFoo->test(); // Bar::testPrivate 
+$myFoo->test(); // Bar::testPrivate
                 // Foo::testPublic
 ?>
 ]]>
@@ -342,11 +342,11 @@ $myFoo->test(); // Bar::testPrivate
 
   <sect2 xml:id="language.oop5.visiblity-constants">
    <title>Constant Visibility</title>
-   <para>
+   <simpara>
     As of PHP 7.1.0, class constants may be defined as public, private, or
     protected. Constants declared without any explicit visibility
     keyword are defined as public.
-   </para>
+   </simpara>
    <example>
     <title>Constant Declaration as of PHP 7.1.0</title>
     <programlisting role="php" annotations="non-interactive">
@@ -406,12 +406,12 @@ $myclass2->foo2(); // Public and Protected work, not Private
 
   <sect2 xml:id="language.oop5.visibility-other-objects">
    <title>Visibility from other objects</title>
-   <para>
+   <simpara>
     Objects of the same type will have access to each others private and
     protected members even though they are not the same instances. This is
     because the implementation specific details are already known when inside
     those objects.
-   </para>
+   </simpara>
    <example>
     <title>Accessing private members of the same object type</title>
     <programlisting role="php" annotations="non-interactive">

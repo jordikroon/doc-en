@@ -9,11 +9,11 @@
 <!-- {{{ CURLStringFile intro -->
   <section xml:id="curlstringfile.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     <classname>CURLStringFile</classname> makes it possible to upload a file directly from a variable.
     This is similar to <classname>CURLFile</classname>, but works with the contents of the file, not filename.
     This class or <classname>CURLFile</classname> should be used to upload the contents of the file with <constant>CURLOPT_POSTFIELDS</constant>.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -49,7 +49,7 @@
 <!-- }}} -->
 
   </section>
-  
+
 <!-- {{{ CURLStringFile properties -->
   <section xml:id="curlstringfile.props">
    &reftitle.properties;
@@ -57,19 +57,19 @@
     <varlistentry xml:id="curlstringfile.props.data">
      <term><varname>data</varname></term>
      <listitem>
-      <para>The contents to be uploaded.</para>
+      <simpara>The contents to be uploaded.</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="curlstringfile.props.postname">
      <term><varname>postname</varname></term>
      <listitem>
-      <para>The name of the file to be used in the upload data.</para>
+      <simpara>The name of the file to be used in the upload data.</simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="curlstringfile.props.mime">
      <term><varname>mime</varname></term>
      <listitem>
-      <para>MIME type of the file (default is <literal>application/octet-stream</literal>).</para>
+      <simpara>MIME type of the file (default is <literal>application/octet-stream</literal>).</simpara>
      </listitem>
     </varlistentry>
    </variablelist>

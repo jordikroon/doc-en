@@ -13,11 +13,11 @@
    <methodparam><type>string</type><parameter>from</parameter></methodparam>
    <methodparam><type>string</type><parameter>to</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function renames on old mailbox to new mailbox (see
    <function>imap_open</function> for the format of
    <parameter>mbox</parameter> names).
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -27,20 +27,20 @@
     <varlistentry>
      <term><parameter>from</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The old mailbox name, see <function>imap_open</function> for more
        information
-      </para>
+      </simpara>
       &imap.mailboxname.insecure;
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>to</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The new mailbox name, see <function>imap_open</function> for more
        information
-      </para>
+      </simpara>
       &imap.mailboxname.insecure;
      </listitem>
     </varlistentry>
@@ -49,9 +49,9 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -70,7 +70,7 @@
    </tgroup>
   </informaltable>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

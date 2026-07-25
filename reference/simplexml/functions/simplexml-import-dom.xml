@@ -12,11 +12,11 @@
    <methodparam><type>object</type><parameter>node</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>class_name</parameter><initializer><constant>SimpleXMLElement::class</constant></initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This function takes a node of a <link linkend="book.dom">DOM</link>
    document and makes it into a SimpleXML node. This new object can
-   then be used as a native SimpleXML element. 
-  </para>
+   then be used as a native SimpleXML element.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,20 +26,20 @@
     <varlistentry>
      <term><parameter>node</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        A <link linkend="book.dom">DOM</link> Element node
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>class_name</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        You may use this optional parameter so that
-       <function>simplexml_import_dom</function> will return an object of 
-       the specified class. That class should extend the 
+       <function>simplexml_import_dom</function> will return an object of
+       the specified class. That class should extend the
        <type>SimpleXMLElement</type> class.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -48,15 +48,15 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns a <type>SimpleXMLElement</type> or &null; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
   <simpara>
-   Throws a <classname>TypeError</classname> when passed a
+   Throws a <exceptionname>TypeError</exceptionname> when passed a
    non-XML or non-HTML <parameter>node</parameter>.
   </simpara>
  </refsect1>
@@ -81,8 +81,8 @@
      <row>
       <entry>8.4.0</entry>
       <entry>
-       This function now throws a <classname>TypeError</classname> instead of
-       a <classname>ValueError</classname> when passed a
+       This function now throws a <exceptionname>TypeError</exceptionname> instead of
+       a <exceptionname>ValueError</exceptionname> when passed a
        non-XML or non-HTML <parameter>node</parameter>.
       </entry>
      </row>

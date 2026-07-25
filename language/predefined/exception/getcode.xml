@@ -5,31 +5,31 @@
   <refname>Exception::getCode</refname>
   <refpurpose>Gets the Exception code</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis role="Exception">
    <modifier>final</modifier> <modifier>public</modifier> <type>int</type><methodname>Exception::getCode</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns the Exception code.
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="parameters">
   &reftitle.parameters;
   &no.function.parameters;
  </refsect1>
- 
+
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the exception code as <type>int</type> in
-   <classname>Exception</classname> but possibly as other type in
-   <classname>Exception</classname> descendants (for example as
-   <type>string</type> in <classname>PDOException</classname>).
-  </para>
+   <exceptionname>Exception</exceptionname> but possibly as other type in
+   <exceptionname>Exception</exceptionname> descendants (for example as
+   <type>string</type> in <exceptionname>PDOException</exceptionname>).
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

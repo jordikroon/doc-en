@@ -26,9 +26,9 @@
     <varlistentry>
      <term><parameter>directory</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The path of the directory to be iterated over.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -48,14 +48,14 @@
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws an <classname>UnexpectedValueException</classname>
+  <simpara>
+   Throws an <exceptionname>UnexpectedValueException</exceptionname>
    if the <parameter>directory</parameter> does not exist.
-  </para>
-  <para>
-   Throws a <classname>ValueError</classname>
+  </simpara>
+  <simpara>
+   Throws a <exceptionname>ValueError</exceptionname>
    if the <parameter>directory</parameter> is an empty string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -73,9 +73,9 @@
       <row>
        <entry>8.0.0</entry>
        <entry>
-        Now throws a <classname>ValueError</classname> if
+        Now throws a <exceptionname>ValueError</exceptionname> if
         <parameter>directory</parameter> is an empty string;
-        previously it threw a <classname>RuntimeException</classname>.
+        previously it threw a <exceptionname>RuntimeException</exceptionname>.
        </entry>
       </row>
      </tbody>
@@ -120,7 +120,7 @@ SubPath:     fruit
 Key:         /tmp/fruit/apple.xml
 
 SubPathName: stuff.xml
-SubPath:     
+SubPath:
 Key:         /tmp/stuff.xml
 
 SubPathName: veggies/carrot.xml

@@ -5,7 +5,7 @@
   <refname>iconv_substr</refname>
   <refpurpose>Cut out part of a string</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -15,10 +15,10 @@
    <methodparam choice="opt"><type class="union"><type>int</type><type>null</type></type><parameter>length</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>encoding</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
-   Cuts a portion of <parameter>string</parameter> specified by the 
+  <simpara>
+   Cuts a portion of <parameter>string</parameter> specified by the
    <parameter>offset</parameter> and <parameter>length</parameter> parameters.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,38 +28,38 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The original string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>offset</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If <parameter>offset</parameter> is non-negative,
        <function>iconv_substr</function> cuts the portion out of
        <parameter>string</parameter> beginning at <parameter>offset</parameter>'th
        character, counting from zero.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If <parameter>offset</parameter> is negative,
        <function>iconv_substr</function> cuts out the portion beginning
        at the position, <parameter>offset</parameter> characters
        away from the end of <parameter>string</parameter>.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>length</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If <parameter>length</parameter> is given and is positive, the return
        value will contain at most <parameter>length</parameter> characters
        of the portion that begins at <parameter>offset</parameter>
        (depending on the length of <parameter>string</parameter>).
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        If negative <parameter>length</parameter> is passed,
        <function>iconv_substr</function> cuts the portion out of
        <parameter>string</parameter> from the <parameter>offset</parameter>'th
@@ -67,24 +67,24 @@
        <parameter>length</parameter> characters away from the end of the string.
        In case <parameter>offset</parameter> is also negative, the start position
        is calculated beforehand according to the rule explained above.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>encoding</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If <parameter>encoding</parameter> parameter is omitted or &null;,
        <parameter>string</parameter> are assumed to be encoded in
        <link linkend="iconv.configuration">iconv.internal_encoding</link>.
-      </para>
-      <para>
+      </simpara>
+      <simpara>
        Note that <parameter>offset</parameter> and <parameter>length</parameter>
        parameters are always deemed to represent offsets that are
        calculated on the basis of the character set determined by
        <parameter>encoding</parameter>, whilst the counterpart
        <function>substr</function> always takes these for byte offsets.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -93,16 +93,16 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the portion of <parameter>string</parameter> specified by the
    <parameter>offset</parameter> and <parameter>length</parameter> parameters.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    If <parameter>string</parameter> is shorter than <parameter>offset</parameter>
    characters long, &false; will be returned.
    If <parameter>string</parameter> is exactly <parameter>offset</parameter>
    characters long, an empty string will be returned.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

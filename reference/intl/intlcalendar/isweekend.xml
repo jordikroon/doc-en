@@ -8,28 +8,28 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop;
-  </para>
+  </simpara>
   <methodsynopsis role="IntlCalendar">
    <modifier>public</modifier> <type>bool</type><methodname>IntlCalendar::isWeekend</methodname>
    <methodparam choice="opt"><type class="union"><type>float</type><type>null</type></type><parameter>timestamp</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type>bool</type><methodname>intlcal_is_weekend</methodname>
    <methodparam><type>IntlCalendar</type><parameter>calendar</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>float</type><type>null</type></type><parameter>timestamp</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns whether either the obejctʼs current time or the provided timestamp
    occur during a weekend in this objectʼs calendar system.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    This function requires ICU 4.4 or later.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -44,11 +44,11 @@
    <varlistentry>
     <term><parameter>timestamp</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       An optional timestamp representing the number of milliseconds since the
       epoch, excluding leap seconds. If &null;, this objectʼs current time is
       used instead.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -56,10 +56,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    A <type>bool</type> indicating whether the given or this objectʼs time occurs
    in a weekend.
-  </para>
+  </simpara>
   &intl.error.intl-calendar;
  </refsect1>
 
@@ -75,13 +75,13 @@
 ini_set('date.timezone', 'Europe/Lisbon');
 
 $cal = new IntlGregorianCalendar(NULL, 'en_US');
-$cal->set(2013, 6 /* July */, 7); // a Sunday 
+$cal->set(2013, 6 /* July */, 7); // a Sunday
 
 var_dump($cal->isWeekend()); // true
 var_dump($cal->isWeekend(strtotime('2013-07-01 00:00:00'))); // false, Monday
 
 $cal = new IntlGregorianCalendar(NULL, 'ar_SA');
-$cal->set(2013, 6 /* July */, 7); // a Sunday 
+$cal->set(2013, 6 /* July */, 7); // a Sunday
 var_dump($cal->isWeekend()); // false, Sunday not in weekend in this calendar
 ]]>
     </programlisting>

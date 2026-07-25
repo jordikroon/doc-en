@@ -12,13 +12,13 @@
    <type class="union"><type>GdImage</type><type>false</type></type><methodname>imagegrabscreen</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Grabs a screenshot of the whole screen.
-  </para>
+  </simpara>
   <note>
-   <para>
+   <simpara>
     This function is only available on Windows.
-   </para>
+   </simpara>
   </note>
  </refsect1>
 
@@ -29,9 +29,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns an image object on success, &false; on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -71,10 +71,10 @@
   <para>
    <example>
     <title><function>imagegrabscreen</function> example</title>
-    <para>
+    <simpara>
       This example demonstrates how to take a screenshot of the current screen
       and save it as a png image.
-    </para>
+    </simpara>
     <programlisting role="php">
 <![CDATA[
 <?php

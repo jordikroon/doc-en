@@ -5,7 +5,7 @@
  <sect2 xml:id="migration82.other-changes.core">
   <title>Core changes</title>
 
-  <para>
+  <simpara>
    The <type>iterable</type> type is now a built-in compile time alias for
    <type class="union"><type>array</type><type>Traversable</type></type>.
    Error messages relating to <literal>iterable</literal> will therefore
@@ -15,12 +15,12 @@
    <classname>ReflectionNamedType</classname> with name <literal>iterable</literal>,
    however usage of <literal>iterable</literal> in union types will be
    converted to <literal>array|Traversable</literal>.
-  </para>
+  </simpara>
 
-  <para>
+  <simpara>
    The date format of sent cookies is now <literal>'D, d M Y H:i:s \G\M\T'</literal>;
    previously it was <literal>'D, d-M-Y H:i:s T'</literal>.
-  </para>
+  </simpara>
  </sect2>
 
  <sect2 xml:id="migration82.other-changes.sapi">
@@ -29,11 +29,11 @@
   <sect3 xml:id="migration82.other-changes.sapi.cli">
    <title>CLI</title>
 
-   <para>
+   <simpara>
     The STDOUT, STDERR and STDIN streams are no longer closed on resource destruction
     which is mostly when the CLI finishes. It is however still possible to
     explicitly close those streams using <function>fclose</function> and similar.
-   </para>
+   </simpara>
   </sect3>
  </sect2>
 
@@ -95,23 +95,23 @@
   <sect3 xml:id="migration82.other-changes.functions.random">
    <title>Random</title>
 
-   <para>
+   <simpara>
     <function>random_bytes</function> and <function>random_int</function>
-    now throw a <classname>\Random\RandomException</classname> on <acronym>CSPRNG</acronym> failures.
-    Previously a plain <classname>\Exception</classname> was thrown instead.
-   </para>
+    now throw a <exceptionname>\Random\RandomException</exceptionname> on <acronym>CSPRNG</acronym> failures.
+    Previously a plain <exceptionname>\Exception</exceptionname> was thrown instead.
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration82.other-changes.functions.spl">
    <title>SPL</title>
 
-   <para>
+   <simpara>
     The <parameter>iterator</parameter> parameter of
     <function>iterator_to_array</function> and <function>iterator_count</function>
     is widened to <type>iterable</type> from <classname>Iterator</classname>,
     allowing arrays to be passed.
     <!-- RFC: https://wiki.php.net/rfc/iterator_xyz_accept_array -->
-   </para>
+   </simpara>
   </sect3>
  </sect2>
 
@@ -121,15 +121,15 @@
   <sect3 xml:id="migration82.other-changes.extensions.date">
    <title>Date</title>
 
-   <para>
+   <simpara>
     The properties of <classname>DatePeriod</classname> are now properly declared.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration82.other-changes.extensions.intl">
    <title>Intl</title>
 
-   <para>
+   <simpara>
     Instances of
     <classname>IntlBreakIterator</classname>,
     <classname>IntlRuleBasedBreakIterator</classname>,
@@ -148,7 +148,7 @@
     and <classname>Transliterator</classname>
     are no longer serializable. Previously, they could be serialized, but
     unserialization yielded unusable objects or failed.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration82.other-changes.extensions.mysqli">
@@ -172,57 +172,57 @@
   <sect3 xml:id="migration82.other-changes.extensions.oci8">
    <title>OCI8</title>
 
-   <para>
+   <simpara>
     The minimum Oracle Client library version required is now 11.2.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration82.other-changes.extensions.pcre">
    <title>PCRE</title>
 
-   <para>
+   <simpara>
     NUL characters (<literal>\0</literal>) in pattern strings are now supported.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration82.other-changes.extensions.session">
    <title>Session</title>
 
-   <para>
+   <simpara>
     Trying to change the
     <link linkend="ini.session.cookie-samesite">session.cookie_samesite</link>
     INI directive while the session is active or output has already been sent
     will now fail and emit a warning.
     This aligns the behaviour with all other session INI settings.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration82.other-changes.extensions.sqlite3">
    <title>SQLite3</title>
 
-   <para>
+   <simpara>
     <link linkend="ini.sqlite3.defensive">sqlite3.defensive</link>
     is now <constant>INI_USER</constant>.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration82.other-changes.extensions.standard">
    <title>Standard</title>
 
-   <para>
+   <simpara>
     <function>getimagesize</function> now reports the actual image dimensions,
     bits and channels of AVIF images. Previously, the dimensions have been reported as 0x0,
     and bits and channels have not been reported at all.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration82.other-changes.extensions.tidy">
    <title>Tidy</title>
 
-   <para>
+   <simpara>
     The properties of the <classname>tidy</classname> class are now properly declared.
     And those of the <classname>tidyNode</classname> class are now properly declared as readonly.
-   </para>
+   </simpara>
   </sect3>
 
   <sect3 xml:id="migration82.other-changes.extensions.zip">
@@ -244,12 +244,12 @@
   <title>Changes to INI File Handling</title>
 
   <!-- Commit: https://github.com/php/php-src/commit/0f8b9eb49bd644f07175e9191d2cc146737446ad -->
-  <para>
+  <simpara>
    Support for binary (<literal>0b</literal>/<literal>0B</literal>) and octal
    (<literal>0o</literal>/<literal>0O</literal>) prefixes has been added to integer INI settings.
    Integer INI settings that start with a zero (<literal>0</literal>)
    continue to be interpreted as an octal integer.
-  </para>
+  </simpara>
 
   <para>
    Parsing of some ill-formatted values will now trigger a warning when this

@@ -5,17 +5,17 @@
   <refname>session_save_path</refname>
   <refpurpose>Get and/or set the current session save path</refpurpose>
  </refnamediv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
    <type class="union"><type>string</type><type>false</type></type><methodname>session_save_path</methodname>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>path</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    <function>session_save_path</function> returns the path of the current
-   directory used to save session data. 
-  </para>
+   directory used to save session data.
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,17 +25,17 @@
     <varlistentry>
      <term><parameter>path</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Session data path. If specified and not &null;, the path to which data is saved will
        be changed. <function>session_save_path</function> needs to be called
        before <function>session_start</function> for that purpose.
-      </para>
+      </simpara>
       <para>
        <note>
-        <para>
+        <simpara>
          On some operating systems, you may want to specify a path on a
          filesystem that handles lots of small files efficiently.
-        </para>
+        </simpara>
        </note>
       </para>
      </listitem>
@@ -46,9 +46,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the path of the current directory used for data storage, &return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">

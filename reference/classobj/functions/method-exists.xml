@@ -12,10 +12,10 @@
    <methodparam><type class="union"><type>object</type><type>string</type></type><parameter>object_or_class</parameter></methodparam>
    <methodparam><type>string</type><parameter>method</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Checks if the class method exists in the given
    <parameter>object_or_class</parameter>.
-  </para>
+  </simpara>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;
@@ -24,17 +24,17 @@
     <varlistentry>
      <term><parameter>object_or_class</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        An object instance or a class name
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>method</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The method name
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -42,11 +42,11 @@
  </refsect1>
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns &true; if the method given by <parameter>method</parameter>
    has been defined for the given <parameter>object_or_class</parameter>, &false;
    otherwise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -122,7 +122,7 @@ bool(true)
    </simpara>
   </note>
  </refsect1>
- 
+
  <refsect1 role="seealso">
   &reftitle.seealso;
   <para>

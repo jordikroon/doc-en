@@ -13,7 +13,7 @@
    <methodparam><type>callable</type><parameter>callback</parameter></methodparam>
   </methodsynopsis>
   <simpara>
-   Register a <parameter>callback</parameter> function to allow cancellation during archive close. 
+   Register a <parameter>callback</parameter> function to allow cancellation during archive close.
   </simpara>
  </refsect1>
 

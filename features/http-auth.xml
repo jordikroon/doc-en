@@ -4,24 +4,24 @@
   <title>HTTP authentication with PHP</title>
 
   <simpara>
-   It is possible to use the 
-   <function>header</function> function to send an <literal>"Authentication Required"</literal> 
-   message to the client browser causing it to pop up a Username/Password 
-   input window.  Once the user has filled in a username and a password, 
-   the URL containing the PHP script will be called again with the 
-   <link linkend="reserved.variables">predefined variables</link> 
-   <varname>PHP_AUTH_USER</varname>, <varname>PHP_AUTH_PW</varname>, 
-   and <varname>AUTH_TYPE</varname> set to the user name, password and 
-   authentication type respectively.  These predefined variables are found 
+   It is possible to use the
+   <function>header</function> function to send an <literal>"Authentication Required"</literal>
+   message to the client browser causing it to pop up a Username/Password
+   input window.  Once the user has filled in a username and a password,
+   the URL containing the PHP script will be called again with the
+   <link linkend="reserved.variables">predefined variables</link>
+   <varname>PHP_AUTH_USER</varname>, <varname>PHP_AUTH_PW</varname>,
+   and <varname>AUTH_TYPE</varname> set to the user name, password and
+   authentication type respectively.  These predefined variables are found
    in the <varname>$_SERVER</varname> array. <emphasis>Only</emphasis>
    the "Basic" authentication method is supported. See the
    <function>header</function> function for more information.
   </simpara>
 
-  <para>
+  <simpara>
    An example script fragment which would force client authentication
    on a page is as follows:
-  </para>
+  </simpara>
   <para>
    <example>
     <title>Basic HTTP Authentication example</title>
@@ -45,30 +45,30 @@ if (!isset($_SERVER['PHP_AUTH_USER'])) {
 
   <note>
    <title>Compatibility</title>
-   <para>
+   <simpara>
     Please be careful when coding the HTTP header lines. In order to guarantee maximum
     compatibility with all clients, the keyword "Basic" should be written with an
     uppercase "B", the realm string must be enclosed in double (not single) quotes,
-    and exactly one space should precede the <emphasis>401</emphasis> code in the 
+    and exactly one space should precede the <emphasis>401</emphasis> code in the
     <emphasis>HTTP/1.1 401</emphasis> header line. Authentication parameters have
     to be comma-separated.
-   </para>
+   </simpara>
   </note>
 
-  <para>
-   Instead of simply printing out <varname>PHP_AUTH_USER</varname> 
-   and <varname>PHP_AUTH_PW</varname>, as done in the above example, 
-   you may want to check the username and password for validity.  
-   Perhaps by sending a query to a database, or by looking up the 
+  <simpara>
+   Instead of simply printing out <varname>PHP_AUTH_USER</varname>
+   and <varname>PHP_AUTH_PW</varname>, as done in the above example,
+   you may want to check the username and password for validity.
+   Perhaps by sending a query to a database, or by looking up the
    user in a dbm file.
-  </para>
+  </simpara>
 
   <note>
    <title>Apache Configuration</title>
-   <para>
+   <simpara>
     PHP uses the presence of an <literal>AuthType</literal> directive
     to determine whether external authentication is in effect.
-   </para>
+   </simpara>
   </note>
 
   <simpara>

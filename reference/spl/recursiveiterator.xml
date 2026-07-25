@@ -10,10 +10,10 @@
 <!-- {{{ RecursiveIterator intro -->
   <section xml:id="recursiveiterator.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
     Classes implementing <classname>RecursiveIterator</classname> can be used to iterate
     over iterators recursively.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 

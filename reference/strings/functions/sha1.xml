@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://docbook.org/ns/docbook" xml:id="function.sha1">
+<refentry xml:id="function.sha1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>sha1</refname>
   <refpurpose>Calculate the sha1 hash of a string</refpurpose>
  </refnamediv>
- 
+
  <refsynopsisdiv>
   &warn.passwordhashing;
  </refsynopsisdiv>
- 
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -30,20 +30,20 @@
     <varlistentry>
      <term><parameter>string</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The input string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>binary</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If the optional <parameter>binary</parameter> is set to &true;,
        then the sha1 digest is instead returned in raw binary format with a
        length of 20, otherwise the returned value is a 40-character
        hexadecimal number.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -52,9 +52,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the sha1 hash as a string.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -12,10 +12,10 @@
    <methodparam><type>string</type><parameter>specification</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>options</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Creates a new DatePeriod object from an ISO8601 string, as specified with
    <parameter>specification</parameter>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,15 +24,15 @@
    <varlistentry>
     <term><parameter>specification</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       A subset of the <link xlink:href="&url.iso-8601.repeating_intervals;">ISO 8601 repeating
       interval specification</link>.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       An example of an accepted ISO 8601 interval specifications is
       <literal>R5/2008-03-01T13:00:00Z/P1Y2M10DT2H30M</literal>, which
       specifies:
-     </para>
+     </simpara>
      <itemizedlist>
       <listitem>
        <simpara>
@@ -52,10 +52,10 @@
       </listitem>
      </itemizedlist>
 
-     <para>
+     <simpara>
       Examples of some ISO 8601 interval specification features that PHP does
       not support are:
-     </para>
+     </simpara>
      <orderedlist>
       <listitem>
        <simpara>
@@ -73,20 +73,20 @@
    <varlistentry>
     <term><parameter>options</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       A bit field which can be used to control certain behaviour with start-
       and end- dates.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       With <constant>DatePeriod::EXCLUDE_START_DATE</constant> you
       exclude the start date from the set of recurring dates within the
       period.
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       With <constant>DatePeriod::INCLUDE_END_DATE</constant> you
       include the end date in the set of recurring dates within the
       period.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -94,23 +94,23 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Creates a new DatePeriod object.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    <classname>DatePeriod</classname> objects created with this method can be
    used as an iterator to generate a number of
    <classname>DateTimeImmutable</classname> objects.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws an <classname>DateMalformedPeriodStringException</classname> when
+  <simpara>
+   Throws an <exceptionname>DateMalformedPeriodStringException</exceptionname> when
    the <parameter>specification</parameter> cannot be parsed as a valid ISO 8601
    period.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

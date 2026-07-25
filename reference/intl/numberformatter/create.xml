@@ -10,36 +10,36 @@
 
  <refsect1 role="description">
   &reftitle.description;
-  <para>
+  <simpara>
    &style.oop; (method)
-  </para>
+  </simpara>
   <methodsynopsis role="NumberFormatter">
    <modifier>public</modifier> <modifier>static</modifier> <type class="union"><type>NumberFormatter</type><type>null</type></type><methodname>NumberFormatter::create</methodname>
    <methodparam><type>string</type><parameter>locale</parameter></methodparam>
    <methodparam><type>int</type><parameter>style</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>pattern</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.procedural;
-  </para>
+  </simpara>
   <methodsynopsis>
    <type class="union"><type>NumberFormatter</type><type>null</type></type><methodname>numfmt_create</methodname>
    <methodparam><type>string</type><parameter>locale</parameter></methodparam>
    <methodparam><type>int</type><parameter>style</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>pattern</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    &style.oop; (constructor):
-  </para>
+  </simpara>
    <constructorsynopsis role="NumberFormatter">
    <modifier>public</modifier> <methodname>NumberFormatter::__construct</methodname>
    <methodparam><type>string</type><parameter>locale</parameter></methodparam>
    <methodparam><type>int</type><parameter>style</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>pattern</parameter><initializer>&null;</initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    Creates a number formatter.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -49,15 +49,15 @@
     <varlistentry>
      <term><parameter>locale</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Locale in which the number would be formatted (locale name, e.g. en_CA).
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>style</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Style of the formatting, one of the
        <link linkend="intl.numberformatter-constants.unumberformatstyle">
         format style</link> constants. If
@@ -69,15 +69,15 @@
        documentation</link> or
        <link xlink:href="&url.icu.ruleformat;">ICU RuleBasedNumberFormat
        documentation</link>, respectively.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>pattern</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Pattern string if the chosen style requires a pattern.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -87,9 +87,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns <classname>NumberFormatter</classname> object or &null; on error.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">

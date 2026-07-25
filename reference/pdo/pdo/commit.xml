@@ -28,16 +28,16 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws a <classname>PDOException</classname> if there is no active transaction.
-  </para>
+  <simpara>
+   Throws a <exceptionname>PDOException</exceptionname> if there is no active transaction.
+  </simpara>
   &pdo.errors.exception-not-errmode;
  </refsect1>
 
