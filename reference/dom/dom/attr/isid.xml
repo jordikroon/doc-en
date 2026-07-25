@@ -11,7 +11,7 @@
    <modifier>public</modifier> <type>bool</type><methodname>Dom\Attr::isId</methodname>
    <void/>
   </methodsynopsis>
-  <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('domattr.isid')/db:refsect1[@role='description']/db:para[1])"/>
+  <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('domattr.isid')/db:refsect1[@role='description']/db:simpara[1])"/>
   <simpara>
    According to the DOM standard this requires a DTD which defines the
    attribute ID to be of type ID. To utilise this method the document
