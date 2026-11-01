@@ -50,10 +50,13 @@
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
   <simpara>
-   Returns <literal>-1</literal> if <parameter>a</parameter> is shorter than
-   <parameter>b</parameter>, <literal>1</literal> if <parameter>a</parameter>
-   is longer than <parameter>b</parameter>, and <literal>0</literal> if both
-   durations are equal.
+   Returns a value less than <literal>0</literal> if
+   <parameter>a</parameter> is shorter than <parameter>b</parameter>, a value
+   greater than <literal>0</literal> if <parameter>a</parameter> is longer
+   than <parameter>b</parameter>, and <literal>0</literal> if both durations
+   are equal.
+   No particular meaning can be reliably inferred from the value aside from
+   its sign.
    Negative durations are always smaller than positive ones.
   </simpara>
  </refsect1>
@@ -68,21 +71,21 @@
 $a = \Time\Duration::fromSeconds(1);
 $b = \Time\Duration::fromMilliseconds(1500);
 
-var_dump(\Time\Duration::compare($a, $b));
-var_dump(\Time\Duration::compare($b, $a));
-var_dump(\Time\Duration::compare($a, \Time\Duration::fromNanoseconds(1_000_000_000)));
+var_dump(\Time\Duration::compare($a, $b) < 0);
+var_dump(\Time\Duration::compare($b, $a) > 0);
+var_dump(\Time\Duration::compare($a, \Time\Duration::fromNanoseconds(1_000_000_000)) === 0);
 
 // Negative durations are smaller than positive ones.
-var_dump(\Time\Duration::compare($a->negate(), $a));
+var_dump(\Time\Duration::compare($a->negate(), $a) < 0);
 ]]>
    </programlisting>
    &example.outputs;
    <screen>
 <![CDATA[
-int(-1)
-int(1)
-int(0)
-int(-1)
+bool(true)
+bool(true)
+bool(true)
+bool(true)
 ]]>
    </screen>
   </example>

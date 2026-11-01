@@ -2,7 +2,7 @@
 <refentry xml:id="time-duration.absolute" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Time\Duration::absolute</refname>
-  <refpurpose>Returns the non-negative duration of the same length</refpurpose>
+  <refpurpose>Returns the absolute value of the duration</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
@@ -12,9 +12,10 @@
    <void/>
   </methodsynopsis>
   <simpara>
-   Returns the absolute value of the duration, that is, a duration of the
-   same length whose <property>Time\Duration::$negative</property> property
-   is &false;.
+   Returns the absolute value of the duration, that is, a duration with the
+   same <property>Time\Duration::$seconds</property> and
+   <property>Time\Duration::$nanoseconds</property> values whose
+   <property>Time\Duration::$negative</property> property is &false;.
   </simpara>
  </refsect1>
 
@@ -27,7 +28,6 @@
   &reftitle.returnvalues;
   <simpara>
    Returns a non-negative <classname>Time\Duration</classname> object.
-   If the duration is not negative, the object itself is returned.
   </simpara>
  </refsect1>
 

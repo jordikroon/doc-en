@@ -39,40 +39,6 @@
   </simpara>
  </refsect1>
 
- <refsect1 role="examples">
-  &reftitle.examples;
-  <example xml:id="time-duration.construct.example.basic">
-   <title>Creating a <classname>Time\Duration</classname></title>
-   <programlisting role="php">
-<![CDATA[
-<?php
-try {
-    $duration = new \Time\Duration();
-} catch (Error $e) {
-    echo $e->getMessage(), PHP_EOL;
-}
-
-$duration = \Time\Duration::fromSeconds(5);
-var_dump($duration);
-]]>
-   </programlisting>
-   &example.outputs;
-   <screen>
-<![CDATA[
-Call to private Time\Duration::__construct() from global scope
-object(Time\Duration)#1 (3) {
-  ["seconds"]=>
-  int(5)
-  ["nanoseconds"]=>
-  int(0)
-  ["negative"]=>
-  bool(false)
-}
-]]>
-   </screen>
-  </example>
- </refsect1>
-
  <refsect1 role="seealso">
   &reftitle.seealso;
   <simplelist>

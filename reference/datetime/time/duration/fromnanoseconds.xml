@@ -61,12 +61,6 @@
 <![CDATA[
 <?php
 var_dump(\Time\Duration::fromNanoseconds(1_500_000_000));
-
-// Measure elapsed time with hrtime().
-$start = hrtime(true);
-usleep(1000);
-$elapsed = \Time\Duration::fromNanoseconds(hrtime(true) - $start);
-var_dump($elapsed instanceof \Time\Duration);
 ]]>
    </programlisting>
    &example.outputs;
@@ -80,7 +74,32 @@ object(Time\Duration)#1 (3) {
   ["negative"]=>
   bool(false)
 }
-bool(true)
+]]>
+   </screen>
+  </example>
+  <example xml:id="time-duration.fromnanoseconds.example.hrtime">
+   <title>Measuring elapsed time with <function>hrtime</function></title>
+   <programlisting role="php">
+<![CDATA[
+<?php
+$start = hrtime(true);
+usleep(1000);
+$elapsed = \Time\Duration::fromNanoseconds(hrtime(true) - $start);
+
+var_dump($elapsed);
+]]>
+   </programlisting>
+   &example.outputs.similar;
+   <screen>
+<![CDATA[
+object(Time\Duration)#1 (3) {
+  ["seconds"]=>
+  int(0)
+  ["nanoseconds"]=>
+  int(1062541)
+  ["negative"]=>
+  bool(false)
+}
 ]]>
    </screen>
   </example>

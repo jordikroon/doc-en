@@ -14,6 +14,8 @@
   <simpara>
    Returns the difference between this duration and
    <parameter>duration</parameter>.
+   The signs of both durations are taken into account, so subtracting a
+   negative duration lengthens a positive one.
    If <parameter>duration</parameter> is longer than this duration, the
    result is negative.
   </simpara>

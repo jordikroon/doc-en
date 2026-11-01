@@ -12,8 +12,8 @@
    <methodparam><type>array</type><parameter>data</parameter></methodparam>
   </methodsynopsis>
   <simpara>
-   Restores a <classname>Time\Duration</classname> object from the
-   <parameter>data</parameter> produced by <function>serialize</function>.
+   Deserializes the &array; from the <parameter>data</parameter> parameter
+   into a <classname>Time\Duration</classname> object.
    This method is called by <function>unserialize</function> and is not
    meant to be called directly.
   </simpara>
@@ -26,9 +26,7 @@
     <term><parameter>data</parameter></term>
     <listitem>
      <simpara>
-      An <type>array</type> with the <literal>seconds</literal>,
-      <literal>nanoseconds</literal> and <literal>negative</literal>
-      elements, corresponding to the properties of the class.
+      The serialized data as an <type>array</type>.
      </simpara>
     </listitem>
    </varlistentry>
@@ -45,50 +43,9 @@
  <refsect1 role="errors">
   &reftitle.errors;
   <simpara>
-   An <exceptionname>Exception</exceptionname> is thrown if
-   <parameter>data</parameter> does not describe a valid duration, for
-   example if an element is missing or has the wrong type, if
-   <literal>seconds</literal> or <literal>nanoseconds</literal> are out of
-   range, if a duration of zero is marked as negative, or if the method is
-   called on an object that has already been initialized.
+   If <parameter>data</parameter> does not describe a valid duration, an
+   <exceptionname>Exception</exceptionname> is thrown.
   </simpara>
- </refsect1>
-
- <refsect1 role="examples">
-  &reftitle.examples;
-  <example xml:id="time-duration.unserialize.example.basic">
-   <title>Serializing and unserializing a <classname>Time\Duration</classname></title>
-   <programlisting role="php">
-<![CDATA[
-<?php
-$serialized = serialize(\Time\Duration::fromSeconds(1, 2)->negate());
-var_dump($serialized);
-
-var_dump(unserialize($serialized));
-
-try {
-    unserialize('O:13:"Time\Duration":3:{s:7:"seconds";i:0;s:11:"nanoseconds";i:1000000000;s:8:"negative";b:0;}');
-} catch (Exception $e) {
-    echo $e->getMessage(), PHP_EOL;
-}
-]]>
-   </programlisting>
-   &example.outputs;
-   <screen>
-<![CDATA[
-string(85) "O:13:"Time\Duration":3:{s:7:"seconds";i:1;s:11:"nanoseconds";i:2;s:8:"negative";b:1;}"
-object(Time\Duration)#2 (3) {
-  ["seconds"]=>
-  int(1)
-  ["nanoseconds"]=>
-  int(2)
-  ["negative"]=>
-  bool(true)
-}
-Invalid serialization data for Time\Duration object
-]]>
-   </screen>
-  </example>
  </refsect1>
 
  <refsect1 role="seealso">

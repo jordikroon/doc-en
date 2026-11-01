@@ -9,13 +9,6 @@
    <simpara>
     The base exception for the <literal>Time</literal> namespace.
    </simpara>
-   <simpara>
-    A <exceptionname>Time\TimeException</exceptionname> is thrown when a
-    <classname>Time\Duration</classname> cannot be represented, because its
-    length would exceed the supported range, and when a string passed to
-    <methodname>Time\Duration::fromIso8601DurationString</methodname> is not
-    a valid <acronym>ISO</acronym> 8601 duration.
-   </simpara>
   </section>
 
   <section xml:id="time-timeexception.synopsis">

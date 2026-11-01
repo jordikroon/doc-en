@@ -16,7 +16,7 @@
    <parameter>divisor</parameter>.
    Any remaining fraction of a nanosecond is truncated, so the result is
    rounded towards zero.
-   The sign of the duration is preserved, unless the result is zero.
+   The sign of the duration is preserved.
   </simpara>
  </refsect1>
 
@@ -68,7 +68,7 @@
 <![CDATA[
 <?php
 // Fractions of a nanosecond are truncated.
-var_dump(\Time\Duration::fromSeconds(10)->divideBy(3));
+var_dump(\Time\Duration::fromSeconds(10)->divideBy(3)->multiplyBy(3));
 
 try {
     \Time\Duration::fromSeconds(10)->divideBy(0);
@@ -80,11 +80,11 @@ try {
    &example.outputs;
    <screen>
 <![CDATA[
-object(Time\Duration)#2 (3) {
+object(Time\Duration)#3 (3) {
   ["seconds"]=>
-  int(3)
+  int(9)
   ["nanoseconds"]=>
-  int(333333333)
+  int(999999999)
   ["negative"]=>
   bool(false)
 }

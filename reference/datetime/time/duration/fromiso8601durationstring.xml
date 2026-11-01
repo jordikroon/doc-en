@@ -62,8 +62,7 @@
       same duration.
      </simpara>
      <simpara>
-      In contrast to <methodname>DateInterval::__construct</methodname>,
-      the date designators <literal>Y</literal>, <literal>M</literal>,
+      The date designators <literal>Y</literal>, <literal>M</literal>,
       <literal>W</literal> and <literal>D</literal> are rejected, because
       years, months, weeks and days do not have a fixed length.
       Fractional values, such as <literal>PT0.5S</literal>, are not
@@ -158,7 +157,6 @@ The ISO 8601 duration string could not be parsed
   <simplelist>
    <member><methodname>Time\Duration::fromSeconds</methodname></member>
    <member><methodname>Time\Duration::fromHours</methodname></member>
-   <member><methodname>DateInterval::__construct</methodname></member>
   </simplelist>
  </refsect1>
 
