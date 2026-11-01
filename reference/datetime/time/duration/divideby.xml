@@ -60,10 +60,10 @@
 <![CDATA[
 <?php
 // Fractions of a nanosecond are truncated.
-var_dump(Time\Duration::fromSeconds(10)->divideBy(3));
+var_dump(\Time\Duration::fromSeconds(10)->divideBy(3));
 
 try {
-    Time\Duration::fromSeconds(10)->divideBy(0);
+    \Time\Duration::fromSeconds(10)->divideBy(0);
 } catch (DivisionByZeroError $e) {
     echo $e->getMessage(), PHP_EOL;
 }

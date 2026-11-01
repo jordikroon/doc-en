@@ -56,13 +56,13 @@
    <programlisting role="php">
 <![CDATA[
 <?php
-var_dump(Time\Duration::fromNanoseconds(1_500_000_000));
+var_dump(\Time\Duration::fromNanoseconds(1_500_000_000));
 
 // Measure elapsed time with hrtime().
 $start = hrtime(true);
 usleep(1000);
-$elapsed = Time\Duration::fromNanoseconds(hrtime(true) - $start);
-var_dump($elapsed instanceof Time\Duration);
+$elapsed = \Time\Duration::fromNanoseconds(hrtime(true) - $start);
+var_dump($elapsed instanceof \Time\Duration);
 ]]>
    </programlisting>
    &example.outputs;

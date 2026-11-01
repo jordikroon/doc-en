@@ -38,7 +38,7 @@
    <programlisting role="php">
 <![CDATA[
 <?php
-$difference = Time\Duration::fromSeconds(10)->sub(Time\Duration::fromSeconds(25));
+$difference = \Time\Duration::fromSeconds(10)->sub(\Time\Duration::fromSeconds(25));
 
 var_dump($difference->negative);
 var_dump($difference->absolute());

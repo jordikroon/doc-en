@@ -61,11 +61,11 @@
    <programlisting role="php">
 <![CDATA[
 <?php
-var_dump(Time\Duration::fromHours(24));
+var_dump(\Time\Duration::fromHours(24));
 
 try {
-    Time\Duration::fromHours(PHP_INT_MAX);
-} catch (Time\TimeException $e) {
+    \Time\Duration::fromHours(PHP_INT_MAX);
+} catch (\Time\TimeException $e) {
     echo $e->getMessage(), PHP_EOL;
 }
 ]]>

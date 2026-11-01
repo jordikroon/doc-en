@@ -47,12 +47,12 @@
 <![CDATA[
 <?php
 try {
-    $duration = new Time\Duration();
+    $duration = new \Time\Duration();
 } catch (Error $e) {
     echo $e->getMessage(), PHP_EOL;
 }
 
-$duration = Time\Duration::fromSeconds(5);
+$duration = \Time\Duration::fromSeconds(5);
 var_dump($duration);
 ]]>
    </programlisting>

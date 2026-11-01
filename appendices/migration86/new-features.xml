@@ -307,10 +307,10 @@ var_dump(unpack('s>value', "\xff\xfe")); // ["value" => int(-2)]
    <programlisting role="php">
 <![CDATA[
 <?php
-$timeout = Time\Duration::fromSeconds(2)->add(Time\Duration::fromMilliseconds(500));
+$timeout = \Time\Duration::fromSeconds(2)->add(\Time\Duration::fromMilliseconds(500));
 
 printf("%d.%09d seconds\n", $timeout->seconds, $timeout->nanoseconds);
-var_dump($timeout > Time\Duration::fromSeconds(2));
+var_dump($timeout > \Time\Duration::fromSeconds(2));
 ]]>
    </programlisting>
    &example.outputs;

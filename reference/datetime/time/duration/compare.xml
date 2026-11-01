@@ -65,15 +65,15 @@
    <programlisting role="php">
 <![CDATA[
 <?php
-$a = Time\Duration::fromSeconds(1);
-$b = Time\Duration::fromMilliseconds(1500);
+$a = \Time\Duration::fromSeconds(1);
+$b = \Time\Duration::fromMilliseconds(1500);
 
-var_dump(Time\Duration::compare($a, $b));
-var_dump(Time\Duration::compare($b, $a));
-var_dump(Time\Duration::compare($a, Time\Duration::fromNanoseconds(1_000_000_000)));
+var_dump(\Time\Duration::compare($a, $b));
+var_dump(\Time\Duration::compare($b, $a));
+var_dump(\Time\Duration::compare($a, \Time\Duration::fromNanoseconds(1_000_000_000)));
 
 // Negative durations are smaller than positive ones.
-var_dump(Time\Duration::compare($a->negate(), $a));
+var_dump(\Time\Duration::compare($a->negate(), $a));
 ]]>
    </programlisting>
    &example.outputs;
@@ -92,12 +92,12 @@ int(-1)
 <![CDATA[
 <?php
 $durations = [
-    Time\Duration::fromMinutes(2),
-    Time\Duration::fromMilliseconds(250),
-    Time\Duration::fromSeconds(5),
+    \Time\Duration::fromMinutes(2),
+    \Time\Duration::fromMilliseconds(250),
+    \Time\Duration::fromSeconds(5),
 ];
 
-usort($durations, Time\Duration::compare(...));
+usort($durations, \Time\Duration::compare(...));
 
 foreach ($durations as $duration) {
     printf("%d.%09d\n", $duration->seconds, $duration->nanoseconds);

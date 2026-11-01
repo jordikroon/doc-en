@@ -102,19 +102,19 @@
    <programlisting role="php">
 <![CDATA[
 <?php
-var_dump(Time\Duration::fromIso8601DurationString('PT1H30M'));
+var_dump(\Time\Duration::fromIso8601DurationString('PT1H30M'));
 
-var_dump(Time\Duration::fromIso8601DurationString('PT90S')->seconds);
+var_dump(\Time\Duration::fromIso8601DurationString('PT90S')->seconds);
 
 try {
-    Time\Duration::fromIso8601DurationString('P1D');
-} catch (Time\TimeException $e) {
+    \Time\Duration::fromIso8601DurationString('P1D');
+} catch (\Time\TimeException $e) {
     echo $e->getMessage(), PHP_EOL;
 }
 
 try {
-    Time\Duration::fromIso8601DurationString('PT0.5S');
-} catch (Time\TimeException $e) {
+    \Time\Duration::fromIso8601DurationString('PT0.5S');
+} catch (\Time\TimeException $e) {
     echo $e->getMessage(), PHP_EOL;
 }
 ]]>

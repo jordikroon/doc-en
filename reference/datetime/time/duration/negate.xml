@@ -38,13 +38,13 @@
    <programlisting role="php">
 <![CDATA[
 <?php
-$duration = Time\Duration::fromSeconds(30);
+$duration = \Time\Duration::fromSeconds(30);
 
 var_dump($duration->negate()->negative);
 var_dump($duration->negate()->negate()->negative);
 
 // A zero duration has no sign.
-var_dump(Time\Duration::fromSeconds(0)->negate()->negative);
+var_dump(\Time\Duration::fromSeconds(0)->negate()->negative);
 ]]>
    </programlisting>
    &example.outputs;

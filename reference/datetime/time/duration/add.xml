@@ -55,14 +55,14 @@
    <programlisting role="php">
 <![CDATA[
 <?php
-$total = Time\Duration::fromMinutes(1)
-    ->add(Time\Duration::fromSeconds(30))
-    ->add(Time\Duration::fromMilliseconds(500));
+$total = \Time\Duration::fromMinutes(1)
+    ->add(\Time\Duration::fromSeconds(30))
+    ->add(\Time\Duration::fromMilliseconds(500));
 
 var_dump($total);
 
 // Adding a negative duration subtracts it.
-var_dump(Time\Duration::fromSeconds(10)->add(Time\Duration::fromSeconds(4)->negate())->seconds);
+var_dump(\Time\Duration::fromSeconds(10)->add(\Time\Duration::fromSeconds(4)->negate())->seconds);
 ]]>
    </programlisting>
    &example.outputs;

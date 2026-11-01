@@ -56,10 +56,10 @@
    <programlisting role="php">
 <![CDATA[
 <?php
-var_dump(Time\Duration::fromSeconds(10)->sub(Time\Duration::fromMilliseconds(2500)));
+var_dump(\Time\Duration::fromSeconds(10)->sub(\Time\Duration::fromMilliseconds(2500)));
 
 // Subtracting a larger duration results in a negative duration.
-var_dump(Time\Duration::fromSeconds(1)->sub(Time\Duration::fromSeconds(3)));
+var_dump(\Time\Duration::fromSeconds(1)->sub(\Time\Duration::fromSeconds(3)));
 ]]>
    </programlisting>
    &example.outputs;

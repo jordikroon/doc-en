@@ -61,10 +61,10 @@
    <programlisting role="php">
 <![CDATA[
 <?php
-var_dump(Time\Duration::fromMinutes(90));
+var_dump(\Time\Duration::fromMinutes(90));
 
 try {
-    Time\Duration::fromMinutes(-1);
+    \Time\Duration::fromMinutes(-1);
 } catch (ValueError $e) {
     echo $e->getMessage(), PHP_EOL;
 }

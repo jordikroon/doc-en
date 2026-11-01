@@ -148,7 +148,7 @@
     <programlisting role="php">
 <![CDATA[
 <?php
-$timeout = Time\Duration::fromMinutes(1)->add(Time\Duration::fromMilliseconds(1500));
+$timeout = \Time\Duration::fromMinutes(1)->add(\Time\Duration::fromMilliseconds(1500));
 
 var_dump($timeout);
 printf("%d.%09d seconds\n", $timeout->seconds, $timeout->nanoseconds);
@@ -175,19 +175,19 @@ object(Time\Duration)#3 (3) {
 <![CDATA[
 <?php
 $durations = [
-    Time\Duration::fromMinutes(2),
-    Time\Duration::fromMilliseconds(250),
-    Time\Duration::fromSeconds(5),
+    \Time\Duration::fromMinutes(2),
+    \Time\Duration::fromMilliseconds(250),
+    \Time\Duration::fromSeconds(5),
 ];
 
-usort($durations, Time\Duration::compare(...));
+usort($durations, \Time\Duration::compare(...));
 
 foreach ($durations as $duration) {
     printf("%d.%09d\n", $duration->seconds, $duration->nanoseconds);
 }
 
-var_dump(Time\Duration::fromMinutes(1) > Time\Duration::fromSeconds(59));
-var_dump(Time\Duration::fromSeconds(1) == Time\Duration::fromMilliseconds(1000));
+var_dump(\Time\Duration::fromMinutes(1) > \Time\Duration::fromSeconds(59));
+var_dump(\Time\Duration::fromSeconds(1) == \Time\Duration::fromMilliseconds(1000));
 ]]>
     </programlisting>
     &example.outputs;

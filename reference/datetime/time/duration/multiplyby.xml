@@ -61,11 +61,11 @@
    <programlisting role="php">
 <![CDATA[
 <?php
-var_dump(Time\Duration::fromMilliseconds(1500)->multiplyBy(4));
+var_dump(\Time\Duration::fromMilliseconds(1500)->multiplyBy(4));
 
 try {
-    Time\Duration::fromHours(1)->multiplyBy(3_000_000);
-} catch (Time\TimeException $e) {
+    \Time\Duration::fromHours(1)->multiplyBy(3_000_000);
+} catch (\Time\TimeException $e) {
     echo $e->getMessage(), PHP_EOL;
 }
 ]]>

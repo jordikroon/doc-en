@@ -56,7 +56,7 @@
    <programlisting role="php">
 <![CDATA[
 <?php
-var_dump(Time\Duration::fromMicroseconds(1_500_000));
+var_dump(\Time\Duration::fromMicroseconds(1_500_000));
 ]]>
    </programlisting>
    &example.outputs;

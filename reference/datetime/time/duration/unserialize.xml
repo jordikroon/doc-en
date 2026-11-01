@@ -61,7 +61,7 @@
    <programlisting role="php">
 <![CDATA[
 <?php
-$serialized = serialize(Time\Duration::fromSeconds(1, 2)->negate());
+$serialized = serialize(\Time\Duration::fromSeconds(1, 2)->negate());
 var_dump($serialized);
 
 var_dump(unserialize($serialized));

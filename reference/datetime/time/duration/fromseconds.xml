@@ -75,11 +75,11 @@
    <programlisting role="php">
 <![CDATA[
 <?php
-var_dump(Time\Duration::fromSeconds(90));
-var_dump(Time\Duration::fromSeconds(1, 500_000_000));
+var_dump(\Time\Duration::fromSeconds(90));
+var_dump(\Time\Duration::fromSeconds(1, 500_000_000));
 
 try {
-    Time\Duration::fromSeconds(0, 1_000_000_000);
+    \Time\Duration::fromSeconds(0, 1_000_000_000);
 } catch (ValueError $e) {
     echo $e->getMessage(), PHP_EOL;
 }
