@@ -43,10 +43,14 @@
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <simpara>
-   This method throws a <exceptionname>ValueError</exceptionname> if
-   <parameter>microseconds</parameter> is negative.
-  </simpara>
+  <itemizedlist>
+   <listitem>
+    <simpara>
+     If <parameter>microseconds</parameter> is negative, a
+     <exceptionname>ValueError</exceptionname> is thrown.
+    </simpara>
+   </listitem>
+  </itemizedlist>
  </refsect1>
 
  <refsect1 role="examples">

@@ -44,12 +44,20 @@
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <simpara>
-   This method throws a <exceptionname>ValueError</exceptionname> if
-   <parameter>divisor</parameter> is negative, and a
-   <exceptionname>DivisionByZeroError</exceptionname> if
-   <parameter>divisor</parameter> is <literal>0</literal>.
-  </simpara>
+  <itemizedlist>
+   <listitem>
+    <simpara>
+     If <parameter>divisor</parameter> is negative, a
+     <exceptionname>ValueError</exceptionname> is thrown.
+    </simpara>
+   </listitem>
+   <listitem>
+    <simpara>
+     If <parameter>divisor</parameter> is <literal>0</literal>, a
+     <exceptionname>DivisionByZeroError</exceptionname> is thrown.
+    </simpara>
+   </listitem>
+  </itemizedlist>
  </refsect1>
 
  <refsect1 role="examples">

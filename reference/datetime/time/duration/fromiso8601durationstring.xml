@@ -83,16 +83,31 @@
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   This method throws a <exceptionname>Time\TimeException</exceptionname> in
-   the following cases:
-   <simplelist>
-    <member><parameter>specification</parameter> cannot be parsed as an <acronym>ISO</acronym> 8601 duration</member>
-    <member><parameter>specification</parameter> contains a date designator (<literal>Y</literal>, <literal>M</literal>, <literal>W</literal> or <literal>D</literal>)</member>
-    <member><parameter>specification</parameter> is a date/time or a time interval rather than a duration</member>
-    <member>the resulting duration exceeds the <link linkend="time-duration.intro">maximum length of a duration</link></member>
-   </simplelist>
-  </para>
+  <itemizedlist>
+   <listitem>
+    <simpara>
+     If <parameter>specification</parameter> cannot be parsed as an
+     <acronym>ISO</acronym> 8601 duration, a
+     <exceptionname>Time\TimeException</exceptionname> is thrown.
+    </simpara>
+   </listitem>
+   <listitem>
+    <simpara>
+     If <parameter>specification</parameter> contains a date designator
+     (<literal>Y</literal>, <literal>M</literal>, <literal>W</literal> or
+     <literal>D</literal>), a
+     <exceptionname>Time\TimeException</exceptionname> is thrown.
+    </simpara>
+   </listitem>
+   <listitem>
+    <simpara>
+     If <parameter>specification</parameter> is a date/time or a time interval
+     rather than a duration, a
+     <exceptionname>Time\TimeException</exceptionname> is thrown.
+    </simpara>
+   </listitem>
+   &ext.datetime.duration-too-long;
+  </itemizedlist>
  </refsect1>
 
  <refsect1 role="examples">

@@ -43,15 +43,15 @@
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <simpara>
-   This method throws a <exceptionname>ValueError</exceptionname> if
-   <parameter>factor</parameter> is negative.
-  </simpara>
-  <simpara>
-   A <exceptionname>Time\TimeException</exceptionname> is thrown if the
-   resulting duration exceeds the
-   <link linkend="time-duration.intro">maximum length of a duration</link>.
-  </simpara>
+  <itemizedlist>
+   <listitem>
+    <simpara>
+     If <parameter>factor</parameter> is negative, a
+     <exceptionname>ValueError</exceptionname> is thrown.
+    </simpara>
+   </listitem>
+   &ext.datetime.duration-too-long;
+  </itemizedlist>
  </refsect1>
 
  <refsect1 role="examples">

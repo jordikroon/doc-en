@@ -52,20 +52,28 @@
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   This method throws a <exceptionname>ValueError</exceptionname> in the
-   following cases:
-   <simplelist>
-    <member><parameter>seconds</parameter> is negative</member>
-    <member><parameter>nanoseconds</parameter> is negative</member>
-    <member><parameter>nanoseconds</parameter> is greater than or equal to <literal>1000000000</literal></member>
-   </simplelist>
-  </para>
-  <simpara>
-   A <exceptionname>Time\TimeException</exceptionname> is thrown if
-   <parameter>seconds</parameter> exceeds the
-   <link linkend="time-duration.intro">maximum length of a duration</link>.
-  </simpara>
+  <itemizedlist>
+   <listitem>
+    <simpara>
+     If <parameter>seconds</parameter> is negative, a
+     <exceptionname>ValueError</exceptionname> is thrown.
+    </simpara>
+   </listitem>
+   <listitem>
+    <simpara>
+     If <parameter>nanoseconds</parameter> is negative, a
+     <exceptionname>ValueError</exceptionname> is thrown.
+    </simpara>
+   </listitem>
+   <listitem>
+    <simpara>
+     If <parameter>nanoseconds</parameter> is greater than or equal to
+     <literal>1000000000</literal>, a
+     <exceptionname>ValueError</exceptionname> is thrown.
+    </simpara>
+   </listitem>
+   &ext.datetime.duration-too-long;
+  </itemizedlist>
  </refsect1>
 
  <refsect1 role="examples">

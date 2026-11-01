@@ -41,11 +41,9 @@
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <simpara>
-   A <exceptionname>Time\TimeException</exceptionname> is thrown if the
-   resulting duration exceeds the
-   <link linkend="time-duration.intro">maximum length of a duration</link>.
-  </simpara>
+  <itemizedlist>
+   &ext.datetime.duration-too-long;
+  </itemizedlist>
  </refsect1>
 
  <refsect1 role="examples">
