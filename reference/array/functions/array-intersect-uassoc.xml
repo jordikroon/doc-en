@@ -8,7 +8,7 @@
  
  <refsect1 role="description">
   &reftitle.description;
-  <methodsynopsis>
+  <methodsynopsis condition="manual">
    <type>array</type><methodname>array_intersect_uassoc</methodname>
    <methodparam><type>array</type><parameter>array</parameter></methodparam>
    <methodparam rep="repeat"><type>array</type><parameter>arrays</parameter></methodparam>

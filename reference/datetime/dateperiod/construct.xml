@@ -16,7 +16,7 @@
    <methodparam><type>int</type><parameter>recurrences</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>options</parameter><initializer>0</initializer></methodparam>
   </constructorsynopsis>
-  <constructorsynopsis role="DatePeriod">
+  <constructorsynopsis condition="manual" role="DatePeriod">
    <modifier>public</modifier> <methodname>DatePeriod::__construct</methodname>
    <methodparam><type>DateTimeInterface</type><parameter>start</parameter></methodparam>
    <methodparam><type>DateInterval</type><parameter>interval</parameter></methodparam>
@@ -27,7 +27,7 @@
    <simpara>
     The following constructor variant has been deprecated:
    </simpara>
-   <constructorsynopsis role="DatePeriod">
+   <constructorsynopsis condition="manual" role="DatePeriod">
     <modifier>public</modifier> <methodname>DatePeriod::__construct</methodname>
     <methodparam><type>string</type><parameter>isostr</parameter></methodparam>
     <methodparam choice="opt"><type>int</type><parameter>options</parameter><initializer>0</initializer></methodparam>

@@ -16,7 +16,7 @@
   <simpara>
    Overloaded signature deprecated as of 8.3.0:
   </simpara>
-  <methodsynopsis>
+  <methodsynopsis condition="manual">
    <type class="union"><type>string</type><type>false</type></type><methodname>dba_fetch</methodname>
    <methodparam><type class="union"><type>string</type><type>array</type></type><parameter>key</parameter></methodparam>
    <methodparam><type>int</type><parameter>skip</parameter></methodparam>

@@ -17,7 +17,7 @@
     As of PHP 8.3.0, the <emphasis>following</emphasis> signature is deprecated.
    </simpara>
   </warning>
-  <methodsynopsis>
+  <methodsynopsis condition="manual">
    <type class="union"><type>LDAP\Connection</type><type>false</type></type><methodname>ldap_connect</methodname>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>host</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>port</parameter><initializer>389</initializer></methodparam>

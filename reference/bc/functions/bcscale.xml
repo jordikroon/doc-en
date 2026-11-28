@@ -16,7 +16,7 @@
    Sets the default scale parameter for all subsequent calls to bc math functions that
    do not explicitly specify a scale parameter.
   </para>
-  <methodsynopsis>
+  <methodsynopsis condition="manual">
    <type>int</type><methodname>bcscale</methodname>
    <methodparam choice="opt"><type>null</type><parameter>scale</parameter><initializer>&null;</initializer></methodparam>
   </methodsynopsis>

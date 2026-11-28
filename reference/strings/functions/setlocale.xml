@@ -15,7 +15,7 @@
    <methodparam rep="repeat"><type>string</type><parameter>rest</parameter></methodparam>
   </methodsynopsis>
   <simpara>Alternative signature (not supported with named arguments):</simpara>
-  <methodsynopsis>
+  <methodsynopsis condition="manual">
    <type class="union"><type>string</type><type>false</type></type><methodname>setlocale</methodname>
    <methodparam><type>int</type><parameter>category</parameter></methodparam>
    <methodparam><type>array</type><parameter>locale_array</parameter></methodparam>

@@ -13,7 +13,7 @@
     <methodparam rep="repeat"><type>mixed</type><parameter>values</parameter></methodparam>
    </methodsynopsis>
    <simpara>Alternative signature (not supported with named arguments):</simpara>
-   <methodsynopsis>
+   <methodsynopsis condition="manual">
     <type>mixed</type><methodname>min</methodname>
     <methodparam><type>array</type><parameter>value_array</parameter></methodparam>
    </methodsynopsis>

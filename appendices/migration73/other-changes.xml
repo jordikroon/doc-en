@@ -13,7 +13,7 @@
    <para>
     <function>setcookie</function> and <function>setrawcookie</function> now also
     support the following signature:
-    <methodsynopsis>
+    <methodsynopsis condition="manual">
      <type>bool</type><methodname>setcookie</methodname>
      <methodparam><type>string</type><parameter>name</parameter></methodparam>
      <methodparam choice="opt"><type>string</type><parameter>value</parameter><initializer>""</initializer></methodparam>
@@ -269,7 +269,7 @@
   <para>
    <function>session_set_cookie_params</function> now also supports the
    following signature:
-   <methodsynopsis>
+   <methodsynopsis condition="manual">
     <type>bool</type><methodname>session_set_cookie_params</methodname>
     <methodparam><type>array</type><parameter>options</parameter></methodparam>
    </methodsynopsis>

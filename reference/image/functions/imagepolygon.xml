@@ -15,7 +15,7 @@
    <methodparam><type>int</type><parameter>color</parameter></methodparam>
   </methodsynopsis>
   <simpara>Alternative signature (deprecated as of PHP 8.1.0)</simpara>
-  <methodsynopsis>
+  <methodsynopsis condition="manual">
    <type>bool</type><methodname>imagepolygon</methodname>
    <methodparam><type>GdImage</type><parameter>image</parameter></methodparam>
    <methodparam><type>array</type><parameter>points</parameter></methodparam>
