@@ -17,7 +17,7 @@
    <methodparam><type>int</type><parameter>field</parameter></methodparam>
    <methodparam><type>int</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <methodsynopsis condition="manual" role="IntlCalendar">
+  <methodsynopsis condition="stub-override" role="IntlCalendar">
    <modifier>public</modifier> <type>true</type><methodname>IntlCalendar::set</methodname>
    <methodparam><type>int</type><parameter>year</parameter></methodparam>
    <methodparam><type>int</type><parameter>month</parameter></methodparam>
@@ -35,7 +35,7 @@
    <methodparam><type>int</type><parameter>field</parameter></methodparam>
    <methodparam><type>int</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <methodsynopsis condition="manual">
+  <methodsynopsis condition="stub-override">
    <type>bool</type><methodname>intlcal_set</methodname>
    <methodparam><type>IntlCalendar</type><parameter>cal</parameter></methodparam>
    <methodparam><type>int</type><parameter>year</parameter></methodparam>

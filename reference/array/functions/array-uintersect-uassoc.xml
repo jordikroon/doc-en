@@ -7,7 +7,7 @@
  </refnamediv>
  <refsect1 role="description">
   &reftitle.description;
-  <methodsynopsis condition="manual">
+  <methodsynopsis condition="stub-override">
    <type>array</type><methodname>array_uintersect_uassoc</methodname>
    <methodparam><type>array</type><parameter>array1</parameter></methodparam>
    <methodparam rep="repeat"><type>array</type><parameter>arrays</parameter></methodparam>

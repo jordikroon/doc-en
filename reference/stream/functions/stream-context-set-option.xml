@@ -18,7 +18,7 @@
   <para>
    The following alternative signature is deprecated as of PHP 8.4.0,
    use <function>stream_context_set_options</function> instead.
-   <methodsynopsis condition="manual">
+   <methodsynopsis condition="stub-override">
     <type>bool</type><methodname>stream_context_set_option</methodname>
     <methodparam><type>resource</type><parameter>stream_or_context</parameter></methodparam>
     <methodparam><type>array</type><parameter>options</parameter></methodparam>

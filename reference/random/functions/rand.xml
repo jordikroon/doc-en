@@ -11,7 +11,7 @@
    <type>int</type><methodname>rand</methodname>
    <void/>
   </methodsynopsis>
-  <methodsynopsis condition="manual">
+  <methodsynopsis condition="stub-override">
    <type>int</type><methodname>rand</methodname>
    <methodparam><type>int</type><parameter>min</parameter></methodparam>
    <methodparam><type>int</type><parameter>max</parameter></methodparam>

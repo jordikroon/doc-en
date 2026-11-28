@@ -14,7 +14,7 @@
    <methodparam><type class="union"><type>object</type><type>null</type></type><parameter>object</parameter></methodparam>
    <methodparam><type>mixed</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <methodsynopsis condition="manual">
+  <methodsynopsis condition="stub-override">
    <modifier>public</modifier> <type>void</type><methodname>ReflectionProperty::setValue</methodname>
    <methodparam><type>mixed</type><parameter>value</parameter></methodparam>
   </methodsynopsis>

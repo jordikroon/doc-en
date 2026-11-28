@@ -20,7 +20,7 @@
    <methodparam choice="opt"><type>callable</type><parameter>update_timestamp</parameter></methodparam>
   </methodsynopsis>
   <simpara>Alternative signature (not supported with named arguments):</simpara>
-  <methodsynopsis condition="manual">
+  <methodsynopsis condition="stub-override">
    <type>bool</type><methodname>session_set_save_handler</methodname>
    <methodparam><type>object</type><parameter>sessionhandler</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>register_shutdown</parameter><initializer>&true;</initializer></methodparam>

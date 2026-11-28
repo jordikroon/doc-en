@@ -12,7 +12,7 @@
    <type>array</type><methodname>array_keys</methodname>
    <methodparam><type>array</type><parameter>array</parameter></methodparam>
   </methodsynopsis>
-  <methodsynopsis condition="manual" role="procedural">
+  <methodsynopsis condition="stub-override" role="procedural">
    <type>array</type><methodname>array_keys</methodname>
    <methodparam><type>array</type><parameter>array</parameter></methodparam>
    <methodparam><type>mixed</type><parameter>filter_value</parameter></methodparam>

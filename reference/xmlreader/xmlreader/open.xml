@@ -14,7 +14,7 @@
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>encoding</parameter><initializer>&null;</initializer></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
-  <methodsynopsis condition="manual" role="XMLReader">
+  <methodsynopsis condition="stub-override" role="XMLReader">
    <modifier>public</modifier> <type>bool</type><methodname>XMLReader::open</methodname>
    <methodparam><type>string</type><parameter>uri</parameter></methodparam>
    <methodparam choice="opt"><type class="union"><type>string</type><type>null</type></type><parameter>encoding</parameter><initializer>&null;</initializer></methodparam>

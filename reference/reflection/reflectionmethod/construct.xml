@@ -14,7 +14,7 @@
    <methodparam><type>string</type><parameter>method</parameter></methodparam>
   </constructorsynopsis>
   <simpara>Alternative signature (not supported with named arguments):</simpara>
-  <constructorsynopsis condition="manual" role="ReflectionMethod">
+  <constructorsynopsis condition="stub-override" role="ReflectionMethod">
    <modifier>public</modifier> <methodname>ReflectionMethod::__construct</methodname>
    <methodparam><type>string</type><parameter>classMethod</parameter></methodparam>
   </constructorsynopsis>

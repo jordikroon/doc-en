@@ -14,12 +14,12 @@
    <methodparam><type>array</type><parameter>array</parameter></methodparam>
   </methodsynopsis>
   <simpara>Alternative signature (not supported with named arguments):</simpara>
-  <methodsynopsis condition="manual">
+  <methodsynopsis condition="stub-override">
    <type>string</type><methodname>implode</methodname>
    <methodparam><type>array</type><parameter>array</parameter></methodparam>
   </methodsynopsis>
   <simpara>Legacy signature (deprecated as of PHP 7.4.0, removed as of PHP 8.0.0):</simpara>
-  <methodsynopsis condition="manual">
+  <methodsynopsis condition="stub-override">
    <type>string</type><methodname>implode</methodname>
    <methodparam><type>array</type><parameter>array</parameter></methodparam>
    <methodparam><type>string</type><parameter>separator</parameter></methodparam>
