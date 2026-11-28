@@ -61,7 +61,7 @@
    <para>
     <function>dba_open</function> and <function>dba_popen</function>
     now have the following enforced signature:
-    <methodsynopsis condition="stub-override">
+    <methodsynopsis>
      <type class="union"><type>resource</type><type>false</type></type><methodname>dba_open</methodname>
      <methodparam><type>string</type><parameter>path</parameter></methodparam>
      <methodparam><type>string</type><parameter>mode</parameter></methodparam>
@@ -74,7 +74,7 @@
    <para>
     <function>dba_fetch</function>'s optional skip argument is now at the end
     in line with PHP userland semantics. Its signature is now:
-    <methodsynopsis condition="stub-override">
+    <methodsynopsis>
      <type class="union"><type>string</type><type>false</type></type><methodname>dba_fetch</methodname>
      <methodparam><type class="union"><type>string</type><type>array</type></type><parameter>key</parameter></methodparam>
      <methodparam><type>resource</type><parameter>handle</parameter></methodparam>
@@ -82,7 +82,7 @@
     </methodsynopsis>
 
     The overloaded signature:
-    <methodsynopsis condition="stub-override">
+    <methodsynopsis>
      <type class="union"><type>string</type><type>false</type></type><methodname>dba_fetch</methodname>
      <methodparam><type class="union"><type>string</type><type>array</type></type><parameter>key</parameter></methodparam>
      <methodparam><type>int</type><parameter>skip</parameter></methodparam>
